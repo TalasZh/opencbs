@@ -23,44 +23,27 @@
 // Technical contact email : tech(at)octopusnetwork.org 
 
 using System;
-using System.Collections.Generic;
 using System.Windows.Forms;
 using Octopus.CoreDomain;
-using Octopus.CoreDomain.Database;
-using Octopus.GUI.Tools;
-using Octopus.Services;
 using Octopus.MultiLanguageRessources;
-using System.Drawing;
-using Octopus.Shared.Settings;
+using Octopus.Services;
 
 namespace Octopus.GUI.Login
 {
-	/// <summary>
-	/// Description r�sum�e de PasswordForm.
-	/// </summary>
-	public partial class FrmLogin : Form
-	{
-		private readonly string _userName;
+    public partial class FrmLogin : Form
+    {
+        private readonly string _userName;
         private readonly string _password;
-        private List<SqlDatabaseSettings> _sqlDatabases;
 
         public FrmLogin(string pUserName, string pPassword)
-		{
-			InitializeComponent();
+        {
+            InitializeComponent();
 
-			_userName = pUserName;
-		    _password = pPassword;
-            labelVersion.Text = TechnicalSettings.SoftwareVersion;
-            _DetectAllDatabase();
-            Height = 270;
-		}
+            _userName = pUserName;
+            _password = pPassword;
+        }
 
-	    private void _DetectAllDatabase()
-	    {
-            bWDetectDatabase.RunWorkerAsync();
-	    }
-
-        private void PasswordForm_Load(object sender, EventArgs e)
+        private void OnLoad(object sender, EventArgs e)
         {
             if (_userName != null)
                 textBoxUserName.Text = _userName;
@@ -69,39 +52,25 @@ namespace Octopus.GUI.Login
                 textBoxPassword.Text = _password;
 
             textBoxUserName.Focus();
-            
-            btnExtend.Tag = 1;
         }
 
-	    private void llOctopusWeb_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            System.Diagnostics.Process.Start("http://www.octopusnetwork.org");
-        }
-
-        private void buttonExit_Click(object sender, EventArgs e)
+        private void OnExitButtonClick(object sender, EventArgs e)
         {
             Close();
         }
 
-        private void bWDisplayDatabase_DoWork(object sender, System.ComponentModel.DoWorkEventArgs e)
+        private void OnOkButtonClick(object sender, EventArgs e)
         {
-            _sqlDatabases = ServicesProvider.GetInstance().GetDatabaseServices().GetSQLDatabasesSettings(
-                    TechnicalSettings.DatabaseServerName, TechnicalSettings.DatabaseLoginName,
-                    TechnicalSettings.DatabasePassword);
-        }
-
-        private void buttonOK_Click(object sender, EventArgs e)
-        {
-            if (!(_CheckUserAndPasswordTextBox()))
-                _SetUser();
+            if (!(UserIsValid()))
+                SetUser();
             else
                 MessageBox.Show(MultiLanguageStrings.GetString(
-                    Ressource.PasswordForm, 
+                    Ressource.PasswordForm,
                     "messageBoxUserPasswordBlank.Text"), "",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-	    private void _SetUser()
+        private void SetUser()
         {
             User user = ServicesProvider.GetInstance().GetUserServices().Find(textBoxUserName.Text, textBoxPassword.Text);
 
@@ -118,56 +87,16 @@ namespace Octopus.GUI.Login
                 User.CurrentUser = user;
                 Close();
             }
-	    }
-
-	    private bool _CheckUserAndPasswordTextBox()
-	    {
-	        return string.IsNullOrEmpty(textBoxUserName.Text) || string.IsNullOrEmpty(textBoxPassword.Text);
-	    }
-
-        private void btnExtend_Click(object sender, EventArgs e)
-        {
-            _DisplayDatabases();
         }
 
-	    private void _DisplayDatabases()
-	    {
-	        Height = Height == 315 ? 270 : 315;
-	        label1.ForeColor = label1.ForeColor == Color.White ? Color.Black : Color.White;
-
-	        btnExtend.BackgroundImage = (int) btnExtend.Tag == 1 ? 
-                Properties.Resources.uparrow : Properties.Resources.dowarrow;
-
-            btnExtend.Tag = (int)btnExtend.Tag == 1 ? 2 : 1;
-
-	        if(Height == 270) return;
-
-	        if (_sqlDatabases == null)
-	        {
-	            labelDetectDatabasesInProgress.Visible = true;
-	            panelDatabase.Enabled = false;
-	        }
-	        else
-	        {
-	            labelDetectDatabasesInProgress.Visible = false;
-	            panelDatabase.Enabled = true; 
-                cbDatabase.Items.Clear();
-	            foreach (SqlDatabaseSettings database in _sqlDatabases)
-	            {
-	                cbDatabase.Items.Add(database.Name);
-	            }
-
-	            cbDatabase.Text = TechnicalSettings.DatabaseName;
-	        }
-	    }
-
-        private void cbDatabase_SelectedValueChanged(object sender, EventArgs e)
+        private bool UserIsValid()
         {
-            string databaseName = TechnicalSettings.DatabaseName;
-            
-            TechnicalSettings.DatabaseName = cbDatabase.SelectedItem.ToString();
-            if (databaseName != cbDatabase.Text)
-                Restart.LaunchRestarter();
+            return string.IsNullOrEmpty(textBoxUserName.Text) || string.IsNullOrEmpty(textBoxPassword.Text);
         }
-	}
+
+        private void pictureBox_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
 }
