@@ -4,14 +4,14 @@
     <ProjectType>Local</ProjectType>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{B3288E21-E5A9-4620-BEF3-AFB0B207655C}</ProjectGuid>
+    <ProjectGuid>{963A6B8B-779C-4052-B39A-8ABBFBF16C1A}</ProjectGuid>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ApplicationIcon>
     </ApplicationIcon>
     <AssemblyKeyContainerName>
     </AssemblyKeyContainerName>
-    <AssemblyName>Octopus.Shared</AssemblyName>
+    <AssemblyName>Octopus.Manager</AssemblyName>
     <AssemblyOriginatorKeyFile>
     </AssemblyOriginatorKeyFile>
     <DefaultClientScript>JScript</DefaultClientScript>
@@ -19,7 +19,7 @@
     <DefaultTargetSchema>IE50</DefaultTargetSchema>
     <DelaySign>false</DelaySign>
     <OutputType>Library</OutputType>
-    <RootNamespace>Octopus.Shared</RootNamespace>
+    <RootNamespace>Octopus.Manager</RootNamespace>
     <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
     <StartupObject>
     </StartupObject>
@@ -38,7 +38,7 @@
     <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
     <ConfigurationOverrideFile>
     </ConfigurationOverrideFile>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
     <DocumentationFile>
     </DocumentationFile>
     <DebugSymbols>true</DebugSymbols>
@@ -93,7 +93,7 @@
     <NoWarn>
     </NoWarn>
     <Optimize>false</Optimize>
-    <RegisterForComInterop>true</RegisterForComInterop>
+    <RegisterForComInterop>false</RegisterForComInterop>
     <RemoveIntegerChecks>false</RemoveIntegerChecks>
     <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
     <WarningLevel>4</WarningLevel>
@@ -110,121 +110,117 @@
     <ErrorReport>prompt</ErrorReport>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+    <Reference Include="Ionic.Zip, Version=1.9.1.5, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Lib\log4net.dll</HintPath>
+      <HintPath>..\..\Lib\Ionic.Zip.dll</HintPath>
     </Reference>
     <Reference Include="System">
       <Name>System</Name>
     </Reference>
-    <Reference Include="System.ComponentModel.Composition, Version=4.0.0.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Lib\System.ComponentModel.Composition.dll</HintPath>
-    </Reference>
-    <Reference Include="System.configuration" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
     <Reference Include="System.Data">
       <Name>System.Data</Name>
     </Reference>
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
     <Reference Include="System.Drawing" />
-    <Reference Include="System.Runtime.Serialization">
-      <RequiredTargetFramework>3.0</RequiredTargetFramework>
-    </Reference>
-    <Reference Include="System.Security" />
-    <Reference Include="System.ServiceModel">
-      <RequiredTargetFramework>3.0</RequiredTargetFramework>
-    </Reference>
-    <Reference Include="System.Windows.Forms">
-      <Name>System.Windows.Forms</Name>
-    </Reference>
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml">
       <Name>System.XML</Name>
     </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="AmountComparer.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="AuditTrailFilter.cs" />
-    <Compile Include="Converter.cs" />
-    <Compile Include="CSV\CsvFileReader.cs" />
-    <Compile Include="CSV\CsvFileWriter.cs" />
-    <Compile Include="CSV\CsvImportExport.cs" />
-    <Compile Include="CSV\CsvParser.cs" />
-    <Compile Include="CustomClass.cs">
-    </Compile>
-    <Compile Include="FileSizeFormatProvider.cs" />
-    <Compile Include="Log.cs" />
-    <Compile Include="Settings\Remote\IRemoteServerSettings.cs" />
-    <Compile Include="Settings\Remote\RemoteServerSettings.cs" />
-    <Compile Include="Settings\GlobalSettings.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-      <DependentUpon>GlobalSettings.settings</DependentUpon>
-    </Compile>
-    <Compile Include="Settings\UserSettings.cs" />
-    <Compile Include="Settings\UserSettingsStore.cs" />
-    <Compile Include="Settings\UserSettingsStore.Designer.cs">
-      <DependentUpon>UserSettingsStore.settings</DependentUpon>
-      <AutoGen>True</AutoGen>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-    </Compile>
-    <Compile Include="AssemblyInfo.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="AutoUpdate.cs" />
-    <Compile Include="ExportFile.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Settings\ApplicationSettings.cs" />
-    <Compile Include="ImageComboBox.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="ImageComboBoxItem.cs" />
-    <Compile Include="LanguageProvider.cs" />
-    <Compile Include="NameFormatInfo.cs" />
-    <Compile Include="NonWorkingDateSingleton.cs" />
-    <Compile Include="OCurrency.cs" />
-    <Compile Include="PublicHolidaysComparer.cs" />
-    <Compile Include="Settings\Remote\XmlRemoteServerSettings.cs" />
-    <Compile Include="SQLInfoEnumerator.cs" />
-    <Compile Include="Settings\TechnicalSettings.cs" />
-    <Compile Include="SqlServerSettings.cs" />
-    <Compile Include="TimeProvider.cs" />
-    <Compile Include="Utils.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="app.config" />
-    <None Include="Settings\GlobalSettings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>GlobalSettings.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="Settings\UserSettingsStore.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>UserSettingsStore.Designer.cs</LastGenOutput>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Octopus.Enums\Octopus.Enums.csproj">
+    <ProjectReference Include="..\OpenCBS.ConnectionManager\OpenCBS.DatabaseConnection.csproj">
+      <Project>{30AF40FB-FA8B-4F5E-B41A-CA59E82BA5A0}</Project>
+      <Name>OpenCBS.DatabaseConnection</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OpenCBS.CoreDomain\OpenCBS.CoreDomain.csproj">
+      <Project>{D539C388-3848-4A3E-AB87-42B8E329755A}</Project>
+      <Name>OpenCBS.CoreDomain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OpenCBS.Enums\OpenCBS.Enums.csproj">
       <Project>{8AFC1E87-3856-4F05-8280-5360D33C200B}</Project>
-      <Name>Octopus.Enums</Name>
+      <Name>OpenCBS.Enums</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OpenCBS.Reports\OpenCBS.Reports.csproj">
+      <Project>{A2E4E382-5796-446C-85B1-8EF306AD50DE}</Project>
+      <Name>OpenCBS.Reports</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OpenCBS.Shared\OpenCBS.Shared.csproj">
+      <Project>{B3288E21-E5A9-4620-BEF3-AFB0B207655C}</Project>
+      <Name>OpenCBS.Shared</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadata Include="Service References\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Log4net.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="RemoteServerSettings.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Properties\" />
+    <Compile Include="Accounting\AccountingRuleManager.cs" />
+    <Compile Include="Accounting\AccountManager.cs" />
+    <Compile Include="BranchManager.cs" />
+    <Compile Include="CustomizableFieldsManager.cs" />
+    <Compile Include="CollateralProductManager.cs" />
+    <Compile Include="MenuItemManager.cs" />
+    <Compile Include="PaymentMethodManager.cs" />
+    <Compile Include="TellerManager.cs" />
+    <Compile Include="Currencies\ExchangeRateManager.cs" />
+    <Compile Include="Accounting\LoanScaleManager.cs" />
+    <Compile Include="Accounting\AccountingTransactionManager.cs" />
+    <Compile Include="Accounting\ProvisioningRuleManager.cs" />
+    <Compile Include="Accounting\StandardBookingManager.cs" />
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Clients\ClientManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Contracts\SavingManager.cs" />
+    <Compile Include="Contracts\LoanManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Currencies\CurrencyManager.cs" />
+    <Compile Include="DatabaseHelper.cs" />
+    <Compile Include="Database\BackupManager.cs" />
+    <Compile Include="Database\CompareDatabase.cs" />
+    <Compile Include="Database\DatabaseManager.cs" />
+    <Compile Include="EconomicActivityManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Events\FundingLineEventManager.cs" />
+    <Compile Include="Events\SavingEventManager.cs" />
+    <Compile Include="Events\EventManager.cs" />
+    <Compile Include="Export\ExportManager.cs" />
+    <Compile Include="FundingLineManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\ApplicationSettingsManager.cs" />
+    <Compile Include="Events\TrancheEventManager.cs" />
+    <Compile Include="OctopusCommand.cs" />
+    <Compile Include="Products\SavingProductManager.cs" />
+    <Compile Include="LocationsManager.cs" />
+    <Compile Include="Manager.cs" />
+    <Compile Include="InstallmentManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="InstallmentTypeManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MFIManager.cs" />
+    <Compile Include="NonWorkingDateManagement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Products\LoanProductManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PicturesManager.cs" />
+    <Compile Include="ProjectManager.cs" />
+    <Compile Include="QueryForObject\IterateSQL.cs" />
+    <Compile Include="QueryForObject\QueryEntity.cs" />
+    <Compile Include="QuestionnaireManager.cs" />
+    <Compile Include="RoleManager.cs" />
+    <Compile Include="SQLToolManager.cs" />
+    <Compile Include="UserManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
@@ -235,7 +231,7 @@
   </PropertyGroup>
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties GreenPepperConfigSutName="" GreenPepperConfigProjectName="" GreenPepperConfigRepositories="" GreenPepperConfigRunnerArgs="" GreenPepperCustomSud="" GreenPepperCustomSudArgs="" GreenPepperConfigRunnerProgram="" />
+      <UserProperties GreenPepperConfigRunnerProgram="" GreenPepperConfigRunnerArgs="" GreenPepperCustomSud="" GreenPepperCustomSudArgs="" GreenPepperConfigRepositories="" GreenPepperConfigProjectName="" GreenPepperConfigSutName="" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>

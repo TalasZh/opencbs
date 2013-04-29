@@ -212,45 +212,45 @@
       <Name>ZedGraph</Name>
       <HintPath>..\..\Lib\ZedGraph.dll</HintPath>
     </Reference>
-    <ProjectReference Include="..\Octopus.CoreDomain\Octopus.CoreDomain.csproj">
+    <ProjectReference Include="..\OpenCBS.CoreDomain\OpenCBS.CoreDomain.csproj">
       <Project>{D539C388-3848-4A3E-AB87-42B8E329755A}</Project>
-      <Name>Octopus.CoreDomain</Name>
+      <Name>OpenCBS.CoreDomain</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Octopus.Enums\Octopus.Enums.csproj">
+    <ProjectReference Include="..\OpenCBS.Enums\OpenCBS.Enums.csproj">
       <Project>{8AFC1E87-3856-4F05-8280-5360D33C200B}</Project>
-      <Name>Octopus.Enums</Name>
+      <Name>OpenCBS.Enums</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Octopus.ExceptionsHandler\Octopus.ExceptionsHandler.csproj">
+    <ProjectReference Include="..\OpenCBS.ExceptionsHandler\OpenCBS.ExceptionsHandler.csproj">
       <Project>{98B26AD8-D160-462B-B70F-982D8701154A}</Project>
-      <Name>Octopus.ExceptionsHandler</Name>
+      <Name>OpenCBS.ExceptionsHandler</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Octopus.Extensions\Octopus.Extensions.csproj">
+    <ProjectReference Include="..\OpenCBS.Extensions\OpenCBS.Extensions.csproj">
       <Project>{D63E15B6-24DF-4C27-8593-EFACE31FA52A}</Project>
-      <Name>Octopus.Extensions</Name>
+      <Name>OpenCBS.Extensions</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Octopus.GUI.Restarter\Octopus.GUI.Restarter.csproj">
+    <ProjectReference Include="..\OpenCBS.GUI.Restarter\OpenCBS.GUI.Restarter.csproj">
       <Project>{90B5218E-10F0-4123-80E3-C4E65D6CF209}</Project>
-      <Name>Octopus.GUI.Restarter</Name>
+      <Name>OpenCBS.GUI.Restarter</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Octopus.MultiLanguage\Octopus.MultiLanguageRessources.csproj">
+    <ProjectReference Include="..\OpenCBS.MultiLanguage\OpenCBS.MultiLanguageRessources.csproj">
       <Project>{1644EDA1-7196-4197-B752-A4D14F384E31}</Project>
-      <Name>Octopus.MultiLanguageRessources</Name>
+      <Name>OpenCBS.MultiLanguageRessources</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Octopus.Reports\Octopus.Reports.csproj">
+    <ProjectReference Include="..\OpenCBS.Reports\OpenCBS.Reports.csproj">
       <Project>{A2E4E382-5796-446C-85B1-8EF306AD50DE}</Project>
-      <Name>Octopus.Reports</Name>
+      <Name>OpenCBS.Reports</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Octopus.Services\Octopus.Services.csproj">
+    <ProjectReference Include="..\OpenCBS.Services\OpenCBS.Services.csproj">
       <Project>{A859D97A-51FB-4961-AF07-5856640511AF}</Project>
-      <Name>Octopus.Services</Name>
+      <Name>OpenCBS.Services</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Octopus.Shared\Octopus.Shared.csproj">
+    <ProjectReference Include="..\OpenCBS.Shared\OpenCBS.Shared.csproj">
       <Project>{B3288E21-E5A9-4620-BEF3-AFB0B207655C}</Project>
-      <Name>Octopus.Shared</Name>
+      <Name>OpenCBS.Shared</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Octopus.Stringifier\Octopus.Stringifier.csproj">
+    <ProjectReference Include="..\OpenCBS.Stringifier\OpenCBS.Stringifier.csproj">
       <Project>{FD33F8F6-6E7A-478B-A34F-14A96C612D8B}</Project>
-      <Name>Octopus.Stringifier</Name>
+      <Name>OpenCBS.Stringifier</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

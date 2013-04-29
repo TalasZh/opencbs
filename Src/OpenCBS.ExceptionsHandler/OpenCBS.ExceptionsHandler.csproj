@@ -4,14 +4,14 @@
     <ProjectType>Local</ProjectType>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{963A6B8B-779C-4052-B39A-8ABBFBF16C1A}</ProjectGuid>
+    <ProjectGuid>{98B26AD8-D160-462B-B70F-982D8701154A}</ProjectGuid>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ApplicationIcon>
     </ApplicationIcon>
     <AssemblyKeyContainerName>
     </AssemblyKeyContainerName>
-    <AssemblyName>Octopus.Manager</AssemblyName>
+    <AssemblyName>Octopus.ExceptionsHandler</AssemblyName>
     <AssemblyOriginatorKeyFile>
     </AssemblyOriginatorKeyFile>
     <DefaultClientScript>JScript</DefaultClientScript>
@@ -19,7 +19,7 @@
     <DefaultTargetSchema>IE50</DefaultTargetSchema>
     <DelaySign>false</DelaySign>
     <OutputType>Library</OutputType>
-    <RootNamespace>Octopus.Manager</RootNamespace>
+    <RootNamespace>Octopus.ExceptionsHandler</RootNamespace>
     <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
     <StartupObject>
     </StartupObject>
@@ -32,13 +32,13 @@
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>C:\dev_factory\Octopus\Build\</OutputPath>
     <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
     <BaseAddress>285212672</BaseAddress>
     <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
     <ConfigurationOverrideFile>
     </ConfigurationOverrideFile>
-    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
     <DocumentationFile>
     </DocumentationFile>
     <DebugSymbols>true</DebugSymbols>
@@ -109,118 +109,106 @@
     <PlatformTarget>AnyCPU</PlatformTarget>
     <ErrorReport>prompt</ErrorReport>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Test|AnyCPU' ">
+    <OutputPath>bin\Test\</OutputPath>
+  </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Ionic.Zip, Version=1.9.1.5, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Lib\Ionic.Zip.dll</HintPath>
-    </Reference>
     <Reference Include="System">
       <Name>System</Name>
-    </Reference>
-    <Reference Include="System.Configuration" />
-    <Reference Include="System.Core">
-      <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
     <Reference Include="System.Data">
       <Name>System.Data</Name>
     </Reference>
-    <Reference Include="System.Data.Linq">
-      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
     </Reference>
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml">
       <Name>System.XML</Name>
     </Reference>
-    <ProjectReference Include="..\Octopus.ConnectionManager\Octopus.DatabaseConnection.csproj">
-      <Project>{30AF40FB-FA8B-4F5E-B41A-CA59E82BA5A0}</Project>
-      <Name>Octopus.DatabaseConnection</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Octopus.CoreDomain\Octopus.CoreDomain.csproj">
-      <Project>{D539C388-3848-4A3E-AB87-42B8E329755A}</Project>
-      <Name>Octopus.CoreDomain</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Octopus.Enums\Octopus.Enums.csproj">
-      <Project>{8AFC1E87-3856-4F05-8280-5360D33C200B}</Project>
-      <Name>Octopus.Enums</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Octopus.Reports\Octopus.Reports.csproj">
-      <Project>{A2E4E382-5796-446C-85B1-8EF306AD50DE}</Project>
-      <Name>Octopus.Reports</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Octopus.Shared\Octopus.Shared.csproj">
-      <Project>{B3288E21-E5A9-4620-BEF3-AFB0B207655C}</Project>
-      <Name>Octopus.Shared</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Accounting\AccountingRuleManager.cs" />
-    <Compile Include="Accounting\AccountManager.cs" />
-    <Compile Include="BranchManager.cs" />
-    <Compile Include="CustomizableFieldsManager.cs" />
-    <Compile Include="CollateralProductManager.cs" />
-    <Compile Include="MenuItemManager.cs" />
-    <Compile Include="PaymentMethodManager.cs" />
-    <Compile Include="TellerManager.cs" />
-    <Compile Include="Currencies\ExchangeRateManager.cs" />
-    <Compile Include="Accounting\LoanScaleManager.cs" />
-    <Compile Include="Accounting\AccountingTransactionManager.cs" />
-    <Compile Include="Accounting\ProvisioningRuleManager.cs" />
-    <Compile Include="Accounting\StandardBookingManager.cs" />
     <Compile Include="AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Clients\ClientManager.cs">
+    <Compile Include="CustomExceptionHandler.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Contracts\SavingManager.cs" />
-    <Compile Include="Contracts\LoanManager.cs">
+    <Compile Include="Exceptions\AccountExceptions\OctopusBookingException.cs" />
+    <Compile Include="Exceptions\AccountExceptions\OctopusAccountException.cs" />
+    <Compile Include="Exceptions\AccountExceptions\OctopusAccountingRuleException.cs" />
+    <Compile Include="Exceptions\CollateralExceptions\OctopusCollateralDeleteException.cs" />
+    <Compile Include="Exceptions\CollateralExceptions\OctopusCollateralException.cs" />
+    <Compile Include="Exceptions\CollateralExceptions\OctopusCollateralSaveException.cs" />
+    <Compile Include="Exceptions\CollateralExceptions\OctopusCollateralUpdateException.cs" />
+    <Compile Include="Exceptions\ContractExceptions\OctopusContractExceptions.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Currencies\CurrencyManager.cs" />
-    <Compile Include="DatabaseHelper.cs" />
-    <Compile Include="Database\BackupManager.cs" />
-    <Compile Include="Database\CompareDatabase.cs" />
-    <Compile Include="Database\DatabaseManager.cs" />
-    <Compile Include="EconomicActivityManager.cs">
+    <Compile Include="Exceptions\ContractExceptions\OctopusContractSaveException.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Events\FundingLineEventManager.cs" />
-    <Compile Include="Events\SavingEventManager.cs" />
-    <Compile Include="Events\EventManager.cs" />
-    <Compile Include="Export\ExportManager.cs" />
-    <Compile Include="FundingLineManager.cs">
+    <Compile Include="Exceptions\ContractExceptions\OctopusDisburseException.cs" />
+    <Compile Include="Exceptions\ContractExceptions\OctopusInstallmentsException.cs" />
+    <Compile Include="Exceptions\ContractExceptions\OctopusPastDueDaysException.cs" />
+    <Compile Include="Exceptions\ContractExceptions\OctopusRepayException.cs" />
+    <Compile Include="Exceptions\ContractExceptions\OctopusReportsException.cs" />
+    <Compile Include="Exceptions\ContractExceptions\Rescheduling\ReschedulingContractClosedException.cs" />
+    <Compile Include="Exceptions\ContractExceptions\Rescheduling\ReschedulingException.cs" />
+    <Compile Include="Exceptions\CustomFieldExceptions\OctopusCustomFieldNameException.cs" />
+    <Compile Include="Exceptions\DOAExceptions\OctopusDOADeleteException.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Database\ApplicationSettingsManager.cs" />
-    <Compile Include="Events\TrancheEventManager.cs" />
-    <Compile Include="OctopusCommand.cs" />
-    <Compile Include="Products\SavingProductManager.cs" />
-    <Compile Include="LocationsManager.cs" />
-    <Compile Include="Manager.cs" />
-    <Compile Include="InstallmentManager.cs">
+    <Compile Include="Exceptions\DOAExceptions\OctopusDOAException.cs" />
+    <Compile Include="Exceptions\DOAExceptions\OctopusDOASaveException.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="InstallmentTypeManager.cs">
+    <Compile Include="Exceptions\DOAExceptions\OctopusDOAUpdateException.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="MFIManager.cs" />
-    <Compile Include="NonWorkingDateManagement.cs">
+    <Compile Include="Exceptions\ExchangeRateExceptions\OctopusExchangeRateException.cs" />
+    <Compile Include="Exceptions\ExportExceptions\OctopusCustomExportException.cs" />
+    <Compile Include="Exceptions\FundingLineExceptions\OctopusCorporateException.cs" />
+    <Compile Include="Exceptions\FundingLineExceptions\OctopusFundingLineEventException.cs" />
+    <Compile Include="Exceptions\FundingLineExceptions\OctopusFundingLineException.cs" />
+    <Compile Include="Exceptions\GeneralSettingExceptions\GeneralSettingException.cs" />
+    <Compile Include="Exceptions\MFIExceptions\OctopusMFIExceptions.cs" />
+    <Compile Include="Exceptions\TellerExceptions\OctopusTellerException.cs" />
+    <Compile Include="Exceptions\UserExceptions\OctopusRoleDeleteException.cs" />
+    <Compile Include="Exceptions\PackageExceptions\OctopusPackageDeleteException.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Products\LoanProductManager.cs">
+    <Compile Include="Exceptions\PackageExceptions\OctopusPackageException.cs" />
+    <Compile Include="Exceptions\PackageExceptions\OctopusPackageSaveException.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="PicturesManager.cs" />
-    <Compile Include="ProjectManager.cs" />
-    <Compile Include="QueryForObject\IterateSQL.cs" />
-    <Compile Include="QueryForObject\QueryEntity.cs" />
-    <Compile Include="QuestionnaireManager.cs" />
-    <Compile Include="RoleManager.cs" />
-    <Compile Include="SQLToolManager.cs" />
-    <Compile Include="UserManager.cs">
+    <Compile Include="Exceptions\ProjectExceptions\OctopusProjectException.cs" />
+    <Compile Include="Exceptions\ProjectExceptions\OctopusProjectSaveException.cs" />
+    <Compile Include="Exceptions\SavingExceptions\OctopusSavingProductException.cs" />
+    <Compile Include="Exceptions\SavingExceptions\OctopusSavingException.cs" />
+    <Compile Include="Exceptions\Tiers\OctopusTiersException.cs" />
+    <Compile Include="Exceptions\Tiers\OctopusTiersSaveException.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Exceptions\UserExceptions\OctopusUserDeleteException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exceptions\UserExceptions\OctopusUserException.cs" />
+    <Compile Include="OctopusLocationException.cs" />
+    <Compile Include="OctopusBranchException.cs" />
+    <Compile Include="OctopusException.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OpenCBS.Enums\OpenCBS.Enums.csproj">
+      <Project>{8AFC1E87-3856-4F05-8280-5360D33C200B}</Project>
+      <Name>OpenCBS.Enums</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OpenCBS.MultiLanguage\OpenCBS.MultiLanguageRessources.csproj">
+      <Project>{1644EDA1-7196-4197-B752-A4D14F384E31}</Project>
+      <Name>OpenCBS.MultiLanguageRessources</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OpenCBS.Shared\OpenCBS.Shared.csproj">
+      <Project>{B3288E21-E5A9-4620-BEF3-AFB0B207655C}</Project>
+      <Name>OpenCBS.Shared</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

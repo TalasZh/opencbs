@@ -60,13 +60,13 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Octopus.CoreDomain\Octopus.CoreDomain.csproj">
+    <ProjectReference Include="..\OpenCBS.CoreDomain\OpenCBS.CoreDomain.csproj">
       <Project>{D539C388-3848-4A3E-AB87-42B8E329755A}</Project>
-      <Name>Octopus.CoreDomain</Name>
+      <Name>OpenCBS.CoreDomain</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Octopus.Shared\Octopus.Shared.csproj">
+    <ProjectReference Include="..\OpenCBS.Shared\OpenCBS.Shared.csproj">
       <Project>{B3288E21-E5A9-4620-BEF3-AFB0B207655C}</Project>
-      <Name>Octopus.Shared</Name>
+      <Name>OpenCBS.Shared</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

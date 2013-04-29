@@ -99,9 +99,9 @@
     <Content Include="Restarter.ico" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Octopus.Shared\Octopus.Shared.csproj">
+    <ProjectReference Include="..\OpenCBS.Shared\OpenCBS.Shared.csproj">
       <Project>{B3288E21-E5A9-4620-BEF3-AFB0B207655C}</Project>
-      <Name>Octopus.Shared</Name>
+      <Name>OpenCBS.Shared</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
@@ -114,7 +114,7 @@
   -->
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties GreenPepperCustomSudArgs="" GreenPepperCustomSud="" GreenPepperConfigRunnerArgs="" GreenPepperConfigRunnerProgram="" GreenPepperConfigRepositories="" GreenPepperConfigProjectName="" GreenPepperConfigSutName="" />
+      <UserProperties GreenPepperConfigSutName="" GreenPepperConfigProjectName="" GreenPepperConfigRepositories="" GreenPepperConfigRunnerProgram="" GreenPepperConfigRunnerArgs="" GreenPepperCustomSud="" GreenPepperCustomSudArgs="" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>

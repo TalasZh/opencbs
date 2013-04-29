@@ -1205,9 +1205,9 @@
     <EmbeddedResource Include="resx\VillageForm.ru-RU.resx" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Octopus.Shared\Octopus.Shared.csproj">
+    <ProjectReference Include="..\OpenCBS.Shared\OpenCBS.Shared.csproj">
       <Project>{B3288E21-E5A9-4620-BEF3-AFB0B207655C}</Project>
-      <Name>Octopus.Shared</Name>
+      <Name>OpenCBS.Shared</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
@@ -1219,7 +1219,7 @@
   </PropertyGroup>
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties GreenPepperConfigRunnerArgs="" GreenPepperCustomSud="" GreenPepperCustomSudArgs="" GreenPepperConfigRunnerProgram="" />
+      <UserProperties GreenPepperConfigRunnerProgram="" GreenPepperCustomSudArgs="" GreenPepperCustomSud="" GreenPepperConfigRunnerArgs="" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>

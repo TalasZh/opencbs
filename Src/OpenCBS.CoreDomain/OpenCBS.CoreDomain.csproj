@@ -569,21 +569,21 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Octopus.Enums\Octopus.Enums.csproj">
+    <ProjectReference Include="..\OpenCBS.Enums\OpenCBS.Enums.csproj">
       <Project>{8AFC1E87-3856-4F05-8280-5360D33C200B}</Project>
-      <Name>Octopus.Enums</Name>
+      <Name>OpenCBS.Enums</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Octopus.ExceptionsHandler\Octopus.ExceptionsHandler.csproj">
+    <ProjectReference Include="..\OpenCBS.ExceptionsHandler\OpenCBS.ExceptionsHandler.csproj">
       <Project>{98B26AD8-D160-462B-B70F-982D8701154A}</Project>
-      <Name>Octopus.ExceptionsHandler</Name>
+      <Name>OpenCBS.ExceptionsHandler</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Octopus.MultiLanguage\Octopus.MultiLanguageRessources.csproj">
+    <ProjectReference Include="..\OpenCBS.MultiLanguage\OpenCBS.MultiLanguageRessources.csproj">
       <Project>{1644EDA1-7196-4197-B752-A4D14F384E31}</Project>
-      <Name>Octopus.MultiLanguageRessources</Name>
+      <Name>OpenCBS.MultiLanguageRessources</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Octopus.Shared\Octopus.Shared.csproj">
+    <ProjectReference Include="..\OpenCBS.Shared\OpenCBS.Shared.csproj">
       <Project>{B3288E21-E5A9-4620-BEF3-AFB0B207655C}</Project>
-      <Name>Octopus.Shared</Name>
+      <Name>OpenCBS.Shared</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
@@ -595,7 +595,7 @@
   </PropertyGroup>
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties GreenPepperCustomSudArgs="" GreenPepperCustomSud="" GreenPepperConfigRunnerArgs="" GreenPepperConfigRunnerProgram="" GreenPepperConfigRepositories="" GreenPepperConfigProjectName="" GreenPepperConfigSutName="" />
+      <UserProperties GreenPepperConfigSutName="" GreenPepperConfigProjectName="" GreenPepperConfigRepositories="" GreenPepperConfigRunnerProgram="" GreenPepperConfigRunnerArgs="" GreenPepperCustomSud="" GreenPepperCustomSudArgs="" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>

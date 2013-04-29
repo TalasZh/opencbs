@@ -303,37 +303,37 @@
     <Compile Include="Manager\TestQuestionnaireManager.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Octopus.ConnectionManager\Octopus.DatabaseConnection.csproj">
+    <ProjectReference Include="..\OpenCBS.ConnectionManager\OpenCBS.DatabaseConnection.csproj">
       <Project>{30AF40FB-FA8B-4F5E-B41A-CA59E82BA5A0}</Project>
-      <Name>Octopus.DatabaseConnection</Name>
+      <Name>OpenCBS.DatabaseConnection</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Octopus.CoreDomain\Octopus.CoreDomain.csproj">
+    <ProjectReference Include="..\OpenCBS.CoreDomain\OpenCBS.CoreDomain.csproj">
       <Project>{D539C388-3848-4A3E-AB87-42B8E329755A}</Project>
-      <Name>Octopus.CoreDomain</Name>
+      <Name>OpenCBS.CoreDomain</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Octopus.Enums\Octopus.Enums.csproj">
+    <ProjectReference Include="..\OpenCBS.Enums\OpenCBS.Enums.csproj">
       <Project>{8AFC1E87-3856-4F05-8280-5360D33C200B}</Project>
-      <Name>Octopus.Enums</Name>
+      <Name>OpenCBS.Enums</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Octopus.ExceptionsHandler\Octopus.ExceptionsHandler.csproj">
+    <ProjectReference Include="..\OpenCBS.ExceptionsHandler\OpenCBS.ExceptionsHandler.csproj">
       <Project>{98B26AD8-D160-462B-B70F-982D8701154A}</Project>
-      <Name>Octopus.ExceptionsHandler</Name>
+      <Name>OpenCBS.ExceptionsHandler</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Octopus.Manager\Octopus.Manager.csproj">
+    <ProjectReference Include="..\OpenCBS.Manager\OpenCBS.Manager.csproj">
       <Project>{963A6B8B-779C-4052-B39A-8ABBFBF16C1A}</Project>
-      <Name>Octopus.Manager</Name>
+      <Name>OpenCBS.Manager</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Octopus.Reports\Octopus.Reports.csproj">
+    <ProjectReference Include="..\OpenCBS.Reports\OpenCBS.Reports.csproj">
       <Project>{A2E4E382-5796-446C-85B1-8EF306AD50DE}</Project>
-      <Name>Octopus.Reports</Name>
+      <Name>OpenCBS.Reports</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Octopus.Services\Octopus.Services.csproj">
+    <ProjectReference Include="..\OpenCBS.Services\OpenCBS.Services.csproj">
       <Project>{A859D97A-51FB-4961-AF07-5856640511AF}</Project>
-      <Name>Octopus.Services</Name>
+      <Name>OpenCBS.Services</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Octopus.Shared\Octopus.Shared.csproj">
+    <ProjectReference Include="..\OpenCBS.Shared\OpenCBS.Shared.csproj">
       <Project>{B3288E21-E5A9-4620-BEF3-AFB0B207655C}</Project>
-      <Name>Octopus.Shared</Name>
+      <Name>OpenCBS.Shared</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
