@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A859D97A-51FB-4961-AF07-5856640511AF}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Octopus.Services</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Octopus.Services</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SignAssembly>false</SignAssembly>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'DebugWithTest|AnyCPU' ">
+    <OutputPath>C:\Documents and Settings\Administrateur\Bureau\output\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'FitNesse|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\OutputForFitNesse\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=11.5.3300.0, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=11.5.3300.0, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition, Version=4.0.0.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\System.ComponentModel.Composition.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <ProjectReference Include="..\Octopus.ConnectionManager\Octopus.DatabaseConnection.csproj">
+      <Project>{30AF40FB-FA8B-4F5E-B41A-CA59E82BA5A0}</Project>
+      <Name>Octopus.DatabaseConnection</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Octopus.CoreDomain\Octopus.CoreDomain.csproj">
+      <Project>{D539C388-3848-4A3E-AB87-42B8E329755A}</Project>
+      <Name>Octopus.CoreDomain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Octopus.Enums\Octopus.Enums.csproj">
+      <Project>{8AFC1E87-3856-4F05-8280-5360D33C200B}</Project>
+      <Name>Octopus.Enums</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Octopus.ExceptionsHandler\Octopus.ExceptionsHandler.csproj">
+      <Project>{98B26AD8-D160-462B-B70F-982D8701154A}</Project>
+      <Name>Octopus.ExceptionsHandler</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Octopus.Extensions\Octopus.Extensions.csproj">
+      <Project>{D63E15B6-24DF-4C27-8593-EFACE31FA52A}</Project>
+      <Name>Octopus.Extensions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Octopus.Manager\Octopus.Manager.csproj">
+      <Project>{963A6B8B-779C-4052-B39A-8ABBFBF16C1A}</Project>
+      <Name>Octopus.Manager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Octopus.MultiLanguage\Octopus.MultiLanguageRessources.csproj">
+      <Project>{1644EDA1-7196-4197-B752-A4D14F384E31}</Project>
+      <Name>Octopus.MultiLanguageRessources</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Octopus.Reports\Octopus.Reports.csproj">
+      <Project>{A2E4E382-5796-446C-85B1-8EF306AD50DE}</Project>
+      <Name>Octopus.Reports</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Octopus.Shared\Octopus.Shared.csproj">
+      <Project>{B3288E21-E5A9-4620-BEF3-AFB0B207655C}</Project>
+      <Name>Octopus.Shared</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Accounting\AccountingRuleServices.cs" />
+    <Compile Include="Accounting\AccountingServices.cs" />
+    <Compile Include="BranchService.cs" />
+    <Compile Include="CollateralProductServices.cs" />
+    <Compile Include="CustomizableFieldsServices.cs" />
+    <Compile Include="MenuItemServices.cs" />
+    <Compile Include="PaymentMethodServices.cs" />
+    <Compile Include="TellerService.cs" />
+    <Compile Include="Currencies\CurrencyServices.cs" />
+    <Compile Include="Currencies\ExchangeRateServices.cs" />
+    <Compile Include="Accounting\ChartOfAccountsServices.cs" />
+    <Compile Include="Accounting\StandardBookingServices.cs" />
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ClientServices.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Export\ExportServices.cs" />
+    <Compile Include="LoanServices.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RoleServices.cs" />
+    <Compile Include="Rules\IStrategyFundingLineEvent.cs" />
+    <Compile Include="Rules\RegExCheckerServices.cs" />
+    <Compile Include="Rules\ValidateAmountofEventFundingLine.cs" />
+    <Compile Include="SavingProductServices.cs" />
+    <Compile Include="SavingServices.cs" />
+    <Compile Include="DatabaseServices.cs" />
+    <Compile Include="DbAccess\ServicesProvider.cs" />
+    <Compile Include="DbAccess\IServices.cs" />
+    <Compile Include="DbAccess\IRemoteOperation.cs" />
+    <Compile Include="DbAccess\Remoting.cs" />
+    <Compile Include="DbAccess\Standard.cs" />
+    <Compile Include="EconomicActivityServices.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FundingLineServices.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ApplicationSettingsServices.cs" />
+    <Compile Include="GraphServices.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LocationServices.cs" />
+    <Compile Include="MFIServices.cs" />
+    <Compile Include="ProductServices.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PicturesServices.cs" />
+    <Compile Include="ProjectServices.cs" />
+    <Compile Include="QuestionnaireServices.cs" />
+    <Compile Include="Rules\Context.cs" />
+    <Compile Include="SecurityAspect.cs" />
+    <Compile Include="Services.cs" />
+    <Compile Include="ServicesHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Events\EventProcessorServices.cs" />
+    <Compile Include="SettingsImportExportServices.cs" />
+    <Compile Include="SQLToolServices.cs" />
+    <Compile Include="UserServices.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties GreenPepperConfigRunnerArgs="" GreenPepperCustomSud="" GreenPepperCustomSudArgs="" GreenPepperConfigRunnerProgram="" GreenPepperConfigRepositories="" GreenPepperConfigProjectName="" GreenPepperConfigSutName="" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

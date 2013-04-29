@@ -1,0 +1,339 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="APR" xml:space="preserve">
+    <value>Crédito - O reembolso parcial antecipado</value>
+  </data>
+  <data name="APTR" xml:space="preserve">
+    <value>Crédito - O total reembolso parcial antecipado 
+de um membro dentro de um grupo</value>
+  </data>
+  <data name="ATR" xml:space="preserve">
+    <value>Crédito - o reembolso total antecipado</value>
+  </data>
+  <data name="BLGL" xml:space="preserve">
+    <value>Crédito - transição de um  empréstimo mal parado para um bom empréstimo</value>
+  </data>
+  <data name="BLLL" xml:space="preserve">
+    <value>Crédito - um empréstimo mal parado para um empréstimo tardio</value>
+  </data>
+  <data name="BLRL" xml:space="preserve">
+    <value>Crédito - um empréstimo mal parado reprogramado para um 
+empréstimo de transição </value>
+  </data>
+  <data name="CSUE" xml:space="preserve">
+    <value>Segurança - salvar o cliente / actualizar a transacção </value>
+  </data>
+  <data name="FLNE" xml:space="preserve">
+    <value>Um incidente aconteceu na lina de financiamento </value>
+  </data>
+  <data name="GLBL" xml:space="preserve">
+    <value>Crédito - empréstimo bom para a transição do empréstimo 
+mal parado</value>
+  </data>
+  <data name="GLLL" xml:space="preserve">
+    <value>Crédito - empréstimo bom para a transição do empréstimo a
+trasado </value>
+  </data>
+  <data name="GLRL" xml:space="preserve">
+    <value>Crédito - empréstimo bom para  um empréstimo reprogramado</value>
+  </data>
+  <data name="LCIE" xml:space="preserve">
+    <value>O caso de seguro de crédito</value>
+  </data>
+  <data name="LCIP" xml:space="preserve">
+    <value>O prémio de seguro de crédito</value>
+  </data>
+  <data name="LCIW" xml:space="preserve">
+    <value>O seguro de crédito abatido</value>
+  </data>
+  <data name="LEE0" xml:space="preserve">
+    <value>Crédito - As joías 0</value>
+  </data>
+  <data name="LEE1" xml:space="preserve">
+    <value>Crédito - As joías 1</value>
+  </data>
+  <data name="LEE2" xml:space="preserve">
+    <value>Crédito - As joías 2</value>
+  </data>
+  <data name="LEE3" xml:space="preserve">
+    <value>Crédito - As joías 3</value>
+  </data>
+  <data name="LEE4" xml:space="preserve">
+    <value>Crédito - As joías 4</value>
+  </data>
+  <data name="LEE5" xml:space="preserve">
+    <value>Crédito - As joías 5</value>
+  </data>
+  <data name="LEE6" xml:space="preserve">
+    <value>Crédito - As joías 6</value>
+  </data>
+  <data name="LEE7" xml:space="preserve">
+    <value>Crédito - As joías 7</value>
+  </data>
+  <data name="LEE8" xml:space="preserve">
+    <value>Crédito - As joías 8</value>
+  </data>
+  <data name="LEE9" xml:space="preserve">
+    <value>Crédito - As joías 9</value>
+  </data>
+  <data name="LIAE" xml:space="preserve">
+    <value>Crédito - A acumulação dos juros no empréstimo </value>
+  </data>
+  <data name="LLBL" xml:space="preserve">
+    <value>Crédito - Empréstimo atrasado em transição para o 
+empréstimo mal parado</value>
+  </data>
+  <data name="LLGL" xml:space="preserve">
+    <value>Crédito - Empréstimo atrasado em transição para um 
+bom empréstimo </value>
+  </data>
+  <data name="LLPE" xml:space="preserve">
+    <value>Crédito - A prestação do empréstimo</value>
+  </data>
+  <data name="LLRL" xml:space="preserve">
+    <value>Crédito -Empréstimo atrasado em transição para um
+empréstimo reprogramado</value>
+  </data>
+  <data name="LODE" xml:space="preserve">
+    <value>Crédito - O desembolso de um empréstimo</value>
+  </data>
+  <data name="LOVE" xml:space="preserve">
+    <value>Crédito - A validação de um empréstimo</value>
+  </data>
+  <data name="PDLE" xml:space="preserve">
+    <value>Crédito - Empréstimo atrasado</value>
+  </data>
+  <data name="RBLE" xml:space="preserve">
+    <value>Crédito - O reembolso de um empréstimo mal parado</value>
+  </data>
+  <data name="RGLE" xml:space="preserve">
+    <value>Crédito - O reembolso de um bom empréstimo  </value>
+  </data>
+  <data name="ROLE" xml:space="preserve">
+    <value>Crédito - A reprogramação de um empréstimo</value>
+  </data>
+  <data name="ROWO" xml:space="preserve">
+    <value>Crédito - O reembolso de um empréstimo abatido</value>
+  </data>
+  <data name="RRLE" xml:space="preserve">
+    <value>Crédito - O reembolso de um empréstimo reprogramado</value>
+  </data>
+  <data name="SBCS" xml:space="preserve">
+    <value>Poupança - Bloco poupança compulsória</value>
+  </data>
+  <data name="SCIT" xml:space="preserve">
+    <value>Poupança - transferência proveniente de  outra 
+sucursal bancária</value>
+  </data>
+  <data name="SCLE" xml:space="preserve">
+    <value>Poupança - O encerramento</value>
+  </data>
+  <data name="SCTE" xml:space="preserve">
+    <value>Poupança - A transferência chegada</value>
+  </data>
+  <data name="SDIT" xml:space="preserve">
+    <value>Poupança - A transferência feita para outra sucursal bancária</value>
+  </data>
+  <data name="SDTE" xml:space="preserve">
+    <value>Poupança - A transferência feita para o exterior da agência 
+bancária</value>
+  </data>
+  <data name="SIAE" xml:space="preserve">
+    <value>Poupança - Os Juros accumulados</value>
+  </data>
+  <data name="SIPE" xml:space="preserve">
+    <value>Poupança - O lançamento dos juros acumulados</value>
+  </data>
+  <data name="SMFE" xml:space="preserve">
+    <value>Poupança - A taxa de administração por um período de tempo</value>
+  </data>
+  <data name="SOCE" xml:space="preserve">
+    <value>Poupança - Uma operação de crédito especial </value>
+  </data>
+  <data name="SODE" xml:space="preserve">
+    <value>Poupança - Uma operação de débito especial </value>
+  </data>
+  <data name="SOFE" xml:space="preserve">
+    <value>Poupança - Taxa especial no caso de saldo negativo</value>
+  </data>
+  <data name="SPDE" xml:space="preserve">
+    <value>Poupança - O depósito pendente</value>
+  </data>
+  <data name="SPDR" xml:space="preserve">
+    <value>Poupança - O depósito pendente foi  rejeitado</value>
+  </data>
+  <data name="SRLE" xml:space="preserve">
+    <value>Poupança - O reembolso do empréstimo </value>
+  </data>
+  <data name="SUCS" xml:space="preserve">
+    <value>Poupança - Desentupa poupança compulsória</value>
+  </data>
+  <data name="SVAE" xml:space="preserve">
+    <value>Poupança - Agios</value>
+  </data>
+  <data name="SVCE" xml:space="preserve">
+    <value>Poupança - O encerramento de uma conta</value>
+  </data>
+  <data name="SVDC" xml:space="preserve">
+    <value>Poupança - O déposito do cheque </value>
+  </data>
+  <data name="SVDE" xml:space="preserve">
+    <value>Poupança - O depósito</value>
+  </data>
+  <data name="SVIE" xml:space="preserve">
+    <value>Poupança - A nova conta</value>
+  </data>
+  <data name="SVLD" xml:space="preserve">
+    <value>Poupança - O desembolso do empréstimo</value>
+  </data>
+  <data name="SVRE" xml:space="preserve">
+    <value>Poupança - A conta reactivada </value>
+  </data>
+  <data name="SVWE" xml:space="preserve">
+    <value>Poupança - O levantamento</value>
+  </data>
+  <data name="SWFE" xml:space="preserve">
+    <value>Poupança - As taxas do levantamento</value>
+  </data>
+  <data name="TEET" xml:space="preserve">
+    <value>Crédito - A nova tranche da linha de crédito </value>
+  </data>
+  <data name="UCTE" xml:space="preserve">
+    <value>Segurança - Fechar a caixa</value>
+  </data>
+  <data name="ULIE" xml:space="preserve">
+    <value>Segurança - Acesso do utilizador</value>
+  </data>
+  <data name="ULOE" xml:space="preserve">
+    <value>Segurança - Saída do utilizador</value>
+  </data>
+  <data name="UMEE" xml:space="preserve">
+    <value>Contabilidade - Lançamento manual</value>
+  </data>
+  <data name="UOTE" xml:space="preserve">
+    <value>Segurança - Abrir a caixa</value>
+  </data>
+  <data name="USBE" xml:space="preserve">
+    <value>Contabilidade - Lançamento manual normal </value>
+  </data>
+  <data name="WROE" xml:space="preserve">
+    <value>Crédito - O abate do empréstimo</value>
+  </data>
+</root>

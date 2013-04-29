@@ -1,0 +1,28 @@
+<?xml version="1.0" standalone="yes" ?>
+<xs:schema id="DataSetElementaryMvts" targetNamespace="http://www.tempuri.org/DataSetElementaryMvts.xsd"
+	xmlns:mstns="http://www.tempuri.org/DataSetElementaryMvts.xsd" xmlns="http://www.tempuri.org/DataSetElementaryMvts.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"
+	attributeFormDefault="qualified" elementFormDefault="qualified">
+	<xs:element name="DataSetElementaryMvts" msdata:IsDataSet="true" msdata:Locale="fr-FR">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="ElementaryMvts">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Date" type="xs:string" />
+							<xs:element name="Account_number_debit" type="xs:string" minOccurs="0" />
+							<xs:element name="Account_number_credit" type="xs:string" minOccurs="0" />
+							<xs:element name="Amount" type="xs:decimal" />
+							<xs:element name="Currency_code" type="xs:string" minOccurs="0" />
+							<xs:element name="Username" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="Event_code" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="Funding_line" type="xs:string" />
+							<xs:element name="Number" type="xs:int" minOccurs="0" />
+							<xs:element name="Movement_set_id" type="xs:int" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

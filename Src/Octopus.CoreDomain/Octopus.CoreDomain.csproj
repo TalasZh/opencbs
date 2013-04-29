@@ -1,0 +1,601 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D539C388-3848-4A3E-AB87-42B8E329755A}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Octopus.CoreDomain</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Octopus.CoreDomain</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SignAssembly>false</SignAssembly>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'DebugWithTest|AnyCPU' ">
+    <OutputPath>C:\Documents and Settings\Administrateur\Bureau\output\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'FitNesse|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\OutputForFitNesse\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=12.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="DateDescriptionLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\DateDescriptionLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Octopus.Description.Number, Version=1.0.3196.26475, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\Octopus.Description.Number.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Accounting\Account.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Accounting\AccountingClosure.cs" />
+    <Compile Include="Accounting\ClosureOptions.cs" />
+    <Compile Include="Accounting\ContractAccountingRule.cs" />
+    <Compile Include="Accounting\AccountingRuleCollection.cs" />
+    <Compile Include="Accounting\Comparer\AccountComparer.cs" />
+    <Compile Include="Accounting\BookingToViewStock.cs" />
+    <Compile Include="Accounting\BookingToView.cs" />
+    <Compile Include="Accounting\ChartOfAccounts.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Accounting\ContractChartOfAccounts.cs" />
+    <Compile Include="Accounting\Currency.cs" />
+    <Compile Include="Accounting\Datasets\DataSetElementaryMvts.cs">
+      <DependentUpon>DataSetElementaryMvts.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Accounting\Booking.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Accounting\Datasets\DataSetElementaryMvts.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetElementaryMvts.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Accounting\BookingToExport.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Accounting\ExchangeRate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Accounting\DefaultAccounts.cs" />
+    <Compile Include="Accounting\FiscalYear.cs" />
+    <Compile Include="Accounting\FundingLineAccountingRule.cs" />
+    <Compile Include="Accounting\IAccountingRule.cs" />
+    <Compile Include="Accounting\Interfaces\IBooking.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Accounting\Interfaces\IChartOfAccounts.cs" />
+    <Compile Include="Accounting\LoanScaleRate.cs" />
+    <Compile Include="Accounting\LoanScaleTable.cs" />
+    <Compile Include="Accounting\AccountingTransaction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Accounting\PaymentMethod.cs" />
+    <Compile Include="Accounting\ProvisioningRate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Accounting\ProvisionTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ActionItemObject.cs" />
+    <Compile Include="Contracts\FlatRoundingSchedule.cs" />
+    <Compile Include="CustomFields\CollectionItem.cs" />
+    <Compile Include="CustomFields\CustomFields.cs" />
+    <Compile Include="CustomFields\Field.cs" />
+    <Compile Include="CustomizableField.cs" />
+    <Compile Include="Alerts\Alert_v2.cs" />
+    <Compile Include="Branch.cs" />
+    <Compile Include="Clients\VillageAttendee.cs" />
+    <Compile Include="Contracts\Collaterals\CollateralPropertyValue.cs" />
+    <Compile Include="Contracts\Collaterals\ContractCollateral.cs" />
+    <Compile Include="Clients\IClient.cs" />
+    <Compile Include="Contracts\Loans\CalculateInstallments\Declining\FixedPrincipalWithRealInterest.cs" />
+    <Compile Include="Contracts\Loans\IContract.cs" />
+    <Compile Include="Contracts\Loans\LoanEntryFee.cs" />
+    <Compile Include="Contracts\Loans\LoanRepayment\Repayment\FeesRepayment\RepayCommisionStrategy.cs" />
+    <Compile Include="Contracts\Loans\LoanRepayment\Repayment\RepayRealInterestInstallments\CalculateRealInterestInstallments.cs" />
+    <Compile Include="Contracts\Rescheduling\Reschedule.cs" />
+    <Compile Include="Contracts\Savings\CalculateInterests\Accrual\MinimalAmount\Weekly.cs" />
+    <Compile Include="Contracts\Savings\CalculateInterests\Accrual\MinimalAmount\Monthly.cs" />
+    <Compile Include="Contracts\Savings\CalculateInterests\CalculateInterestsStrategy.cs" />
+    <Compile Include="Contracts\Savings\CalculateInterests\Accrual\Daily.cs" />
+    <Compile Include="Contracts\Savings\CalculateInterests\DateCalculationStrategy.cs" />
+    <Compile Include="Contracts\Savings\CalculateInterests\Interfaces\ICalculateInterests.cs" />
+    <Compile Include="Contracts\Savings\CalculateInterests\Interfaces\IPostingInterests.cs" />
+    <Compile Include="Contracts\Savings\CalculateInterests\PostingInterestsStrategy.cs" />
+    <Compile Include="Contracts\Savings\CalculateInterests\Posting\EndOfWeek.cs" />
+    <Compile Include="Contracts\Savings\CalculateInterests\Posting\PostingMethods.cs" />
+    <Compile Include="Contracts\Savings\CalculateInterests\Posting\EndOfMonth.cs" />
+    <Compile Include="Contracts\Savings\CalculateInterests\Posting\EndOfYear.cs" />
+    <Compile Include="Contracts\Savings\ISavingsContract.cs" />
+    <Compile Include="Contracts\Savings\SavingsContract.cs" />
+    <Compile Include="Contracts\Loans\Tranches\Tranche.cs" />
+    <Compile Include="CreditScoring\Answer.cs" />
+    <Compile Include="CreditScoring\EnumDescription.cs" />
+    <Compile Include="CreditScoring\Question.cs" />
+    <Compile Include="CreditScoring\QuestionList.cs" />
+    <Compile Include="DatabaseConnection.cs" />
+    <Compile Include="Document.cs" />
+    <Compile Include="Events\Teller\CloseAmountNegativeDifferenceEvent.cs" />
+    <Compile Include="Events\Teller\CloseAmountPositiveDifferenceEvent.cs" />
+    <Compile Include="Events\Teller\CloseOfDayAmountEvent.cs" />
+    <Compile Include="Events\Loan\CreditInsuranceEvent.cs" />
+    <Compile Include="Events\Loan\LoanCloseEvent.cs" />
+    <Compile Include="Events\Teller\OpenAmountNegativeDifferenceEvent.cs" />
+    <Compile Include="Events\Teller\OpenAmountPositiveDifferenceEvent.cs" />
+    <Compile Include="Events\Teller\OpenOfDayAmountEvent.cs" />
+    <Compile Include="Events\Saving\LoanRepaymentFromSavingEvent.cs" />
+    <Compile Include="Events\Saving\SavingBlockCompulsarySavingsEvent.cs" />
+    <Compile Include="Events\Saving\SavingLoanDisbursementEvent.cs" />
+    <Compile Include="Events\Saving\SavingCreditInterBranchTransferEvent.cs" />
+    <Compile Include="Events\Saving\SavingDebitInterBranchTransferEvent.cs" />
+    <Compile Include="CustomCollection.cs" />
+    <Compile Include="Events\Saving\SavingUnblockCompulsorySavingsEvent.cs" />
+    <Compile Include="Events\Teller\TellerCashInEvent.cs" />
+    <Compile Include="Events\Teller\TellerCashOutEvent.cs" />
+    <Compile Include="Events\Teller\TellerEvent.cs" />
+    <Compile Include="MyInformation.cs" />
+    <Compile Include="Teller.cs" />
+    <Compile Include="LoanCycles\Cycle.cs" />
+    <Compile Include="LoanCycles\CycleObject.cs" />
+    <Compile Include="EconomicActivities\EconomicActivityLoanHistory.cs" />
+    <Compile Include="Database\SqlAccountsDatabase.cs" />
+    <Compile Include="EntryFee.cs" />
+    <Compile Include="Events\Loan\AuditTrailEvent.cs" />
+    <Compile Include="Events\Loan\LoanEntryFeeEvent.cs" />
+    <Compile Include="Events\Loan\LoanValidationEvent.cs" />
+    <Compile Include="Events\Loan\OverdueEvent.cs" />
+    <Compile Include="Events\Loan\PendingRepaymentEvent.cs" />
+    <Compile Include="Events\Loan\ProvisionEvent.cs" />
+    <Compile Include="Events\Saving\SavingDebitOperationEvent.cs" />
+    <Compile Include="Events\Saving\SavingPendingDepositRefusedEvent.cs" />
+    <Compile Include="Events\Saving\SavingDepositChequeEvent.cs" />
+    <Compile Include="Events\Saving\SavingReopenEvent.cs" />
+    <Compile Include="Events\Saving\SavingPendingDepositEvent.cs" />
+    <Compile Include="Events\Saving\SavingAgioEvent.cs" />
+    <Compile Include="Events\Saving\SavingOverdraftFeeEvent.cs" />
+    <Compile Include="Events\Saving\SavingCloseEvent.cs" />
+    <Compile Include="Events\Saving\ISavingsFees.cs" />
+    <Compile Include="Events\Saving\SavingClosureEvent.cs" />
+    <Compile Include="Events\Saving\SavingCreditTransferEvent.cs" />
+    <Compile Include="Events\Saving\SavingDebitTransferEvent.cs" />
+    <Compile Include="Events\Saving\SavingInterestsAccrualEvent.cs" />
+    <Compile Include="Events\Saving\SavingInterestsPostingEvent.cs" />
+    <Compile Include="Events\Loan\RepaymentOverWriteOffEvent.cs" />
+    <Compile Include="Events\Saving\SavingManagementFeeEvent.cs" />
+    <Compile Include="Events\Saving\SavingCreditOperationEvent.cs" />
+    <Compile Include="Events\Saving\SavingTransferEvent.cs" />
+    <Compile Include="Events\Loan\UserLogEvent.cs" />
+    <Compile Include="Export\Fields\ComplexField.cs" />
+    <Compile Include="Export\Fields\CustomField.cs" />
+    <Compile Include="Export\FieldType\DecimalFieldType.cs" />
+    <Compile Include="Export\FieldType\DateFieldType.cs" />
+    <Compile Include="Export\FieldType\IFieldType.cs" />
+    <Compile Include="Export\Files\AExportFile.cs" />
+    <Compile Include="Export\Files\AImportFile.cs" />
+    <Compile Include="Export\Files\ReimbursementImportFile.cs" />
+    <Compile Include="Export\Files\IFile.cs" />
+    <Compile Include="Export\Files\Installment.cs" />
+    <Compile Include="Export\Files\InstallmentExportFile.cs" />
+    <Compile Include="Export\FieldType\IntegerFieldType.cs" />
+    <Compile Include="Export\Fields\Field.cs" />
+    <Compile Include="Export\Fields\IField.cs" />
+    <Compile Include="Export\FieldType\StringFieldType.cs" />
+    <Compile Include="LoanCycles\RateCycle.cs" />
+    <Compile Include="LoanCycles\LoanAmountCycle.cs" />
+    <Compile Include="LoanCycles\LoanCycle.cs" />
+    <Compile Include="LoanCycles\MaturityCycle.cs" />
+    <Compile Include="MenuObject.cs" />
+    <Compile Include="Products\Collaterals\CollateralProduct.cs" />
+    <Compile Include="Products\Collaterals\CollateralProperty.cs" />
+    <Compile Include="Products\Collaterals\ICollateralProduct.cs" />
+    <Compile Include="Products\Collaterals\CollateralProductComparer.cs" />
+    <Compile Include="Products\ISavingProduct.cs" />
+    <Compile Include="Events\Loan\TrancheEvent.cs" />
+    <Compile Include="Products\ProductClientType.cs" />
+    <Compile Include="ReportAvailableForDownload.cs" />
+    <Compile Include="Clients\Bank.cs" />
+    <Compile Include="Clients\Client.cs" />
+    <Compile Include="Clients\FollowUp.cs" />
+    <Compile Include="Clients\Person.cs" />
+    <Compile Include="Clients\PovertyLevelIndicators.cs" />
+    <Compile Include="Clients\Village.cs" />
+    <Compile Include="Clients\VillageMember.cs" />
+    <Compile Include="Contracts\Loans\GenerateEvents\Accrual.cs" />
+    <Compile Include="Contracts\Loans\GenerateEvents\Cash.cs" />
+    <Compile Include="Contracts\Loans\LoanShare.cs" />
+    <Compile Include="Contracts\Savings\SavingBookContract.cs" />
+    <Compile Include="Database\SqlUpdateDatabaseScript.cs" />
+    <Compile Include="Events\Saving\SavingDepositEvent.cs" />
+    <Compile Include="Events\Saving\SavingWithdrawEvent.cs" />
+    <Compile Include="Events\Saving\SavingInitialDepositEvent.cs" />
+    <Compile Include="Events\Saving\SavingEvent.cs" />
+    <Compile Include="Products\IProduct.cs" />
+    <Compile Include="Products\SavingsBookProduct.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Clients\Contact.cs" />
+    <Compile Include="Locations\DistrictComparer.cs" />
+    <Compile Include="Clients\Member.cs" />
+    <Compile Include="Project.cs" />
+    <Compile Include="Clients\ContactRole.cs" />
+    <Compile Include="Alerts\Alert.cs" />
+    <Compile Include="Alerts\AlertComparer.cs" />
+    <Compile Include="Alerts\AlertStock.cs" />
+    <Compile Include="Contracts\Loans\CalculateInstallments\CalculateInstallmentsOptions.cs" />
+    <Compile Include="Contracts\Loans\CalculateInstallments\CalculateInstallmentsStrategy.cs" />
+    <Compile Include="Contracts\Loans\CalculateInstallments\Declining\ExoticStrategy.cs" />
+    <Compile Include="Contracts\Loans\CalculateInstallments\Declining\FixedInstallmentStrategy.cs" />
+    <Compile Include="Contracts\Loans\CalculateInstallments\Declining\FixedPrincipalStrategy.cs" />
+    <Compile Include="Contracts\Loans\CalculateInstallments\Flat\ExoticStrategy.cs" />
+    <Compile Include="Contracts\Loans\CalculateInstallments\Flat\FlatStrategy.cs" />
+    <Compile Include="Contracts\Loans\CalculateInstallments\Interfaces\ICalculateInstallments.cs" />
+    <Compile Include="Locations\City.cs" />
+    <Compile Include="Clients\Group.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Contracts\ClosureContractStock.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Contracts\Loans\Loan.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Locations\District.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EconomicActivities\EconomicActivity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Contracts\Loans\Installments\ExoticInstallment.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Products\ExoticProduct.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Clients\Guarantor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Contracts\Guarantees\Guarantee.cs" />
+    <Compile Include="Contracts\Loans\Installments\Installment.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Contracts\Loans\Installments\InstallmentType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Contracts\Loans\Installments\IInstallment.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Contracts\Loans\LoanRepayment\MaxRepayment\CalculateAmountToRepaySpecifiedInstallmentStrategy.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Contracts\Loans\LoanRepayment\CalculateFeesForAnticipatedRepayment\BaseToCalculateFeesForAnticipatedRepayment\CalculationBaseForAnticipatedFees.cs" />
+    <Compile Include="Contracts\Loans\LoanRepayment\CalculateFeesForAnticipatedRepayment\BaseToCalculateFeesForAnticipatedRepayment\RemainingInterest.cs" />
+    <Compile Include="Contracts\Loans\LoanRepayment\CalculateFeesForAnticipatedRepayment\BaseToCalculateFeesForAnticipatedRepayment\RemainingOLB.cs" />
+    <Compile Include="Contracts\Loans\LoanRepayment\CalculateFeesForAnticipatedRepayment\CalculateAnticipatedFeesStrategy.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Contracts\Loans\LoanRepayment\CalculateFeesForAnticipatedRepayment\AnticipatedFeesCalculate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Contracts\Loans\LoanRepayment\CalculateFeesForAnticipatedRepayment\AnticipatedFeesNotCalculate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Contracts\Loans\LoanRepayment\Interfaces\IFeesRepayment.cs" />
+    <Compile Include="Contracts\Loans\LoanRepayment\Interfaces\IInterestRepayment.cs" />
+    <Compile Include="Contracts\Loans\LoanRepayment\Repayment\FeesRepayment\AutomaticMethod.cs" />
+    <Compile Include="Contracts\Loans\LoanRepayment\Repayment\FeesRepayment\ManualMethod.cs" />
+    <Compile Include="Contracts\Loans\LoanRepayment\Repayment\FeesRepayment\RepayFeesStrategy.cs" />
+    <Compile Include="Contracts\Loans\LoanRepayment\Repayment\InterestRepayment\AutomaticMethod.cs" />
+    <Compile Include="Contracts\Loans\LoanRepayment\Repayment\InterestRepayment\ManualMethod.cs" />
+    <Compile Include="Contracts\Loans\LoanRepayment\Repayment\InterestRepayment\RepayInterestStrategy.cs" />
+    <Compile Include="Contracts\Loans\LoanRepayment\Repayment\RepayLateInstallments\CalculationBaseForLateFees.cs" />
+    <Compile Include="Contracts\Loans\LoanRepayment\MaxRepayment\CalculateMaximumAmountToRegradingLoanStrategy.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Contracts\Loans\LoanRepayment\MaxRepayment\CalculateMaximumAmountToRepayStrategy.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Contracts\Loans\LoanRepayment\CreditContractOptions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Contracts\Loans\LoanRepayment\CreditContractRepayment.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Contracts\Loans\LoanRepayment\Interfaces\IBaseToCalculateFeesForAnticipatedRepayment.cs" />
+    <Compile Include="Contracts\Loans\LoanRepayment\Interfaces\IBaseToCalculateFeesForLateRepayment.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Contracts\Loans\LoanRepayment\Interfaces\ICalculateFeesForAnticipatedRepayment.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Contracts\Loans\LoanRepayment\Interfaces\ICalculateFeesForLateRepayment.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Contracts\Loans\LoanRepayment\Interfaces\ICalculateFeesForTotalAnticipatedRepayment.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Contracts\Loans\LoanRepayment\Interfaces\IRepayNextInstallments.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Contracts\Loans\LoanRepayment\NonRepaymentPenalties.cs" />
+    <Compile Include="Contracts\Loans\LoanRepayment\Repayment\RepayLateInstallments\CalculateInstallments.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Contracts\Loans\LoanRepayment\Repayment\RepaymentMethod.cs" />
+    <Compile Include="Contracts\Loans\LoanRepayment\Repayment\RepayNextInstallments\Declining\DecliningExoticKeepNotExpectedInstallmentsWithNoCents.cs" />
+    <Compile Include="Contracts\Loans\LoanRepayment\Repayment\RepayNextInstallments\Declining\DecliningExoticKeepNotExpectedInstallmentsWithCents.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Contracts\Loans\LoanRepayment\Repayment\RepayNextInstallments\Declining\DecliningKeepExpectedInstallments.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Contracts\Loans\LoanRepayment\Repayment\RepayNextInstallments\Declining\DecliningKeepNotExpectedInstallments.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Contracts\Loans\LoanRepayment\Repayment\RepayNextInstallments\Flat\FlatExoticKeepNotExpectedInstallmentsWithCents.cs" />
+    <Compile Include="Contracts\Loans\LoanRepayment\Repayment\RepayNextInstallments\Flat\FlateKeepNotExpectedInstallmentsWithCents.cs" />
+    <Compile Include="Contracts\Loans\LoanRepayment\Repayment\RepayNextInstallments\Flat\FlateKeepExpectedInstallments.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Contracts\Loans\LoanRepayment\Repayment\RepayNextInstallments\Flat\FlateKeepNotExpectedInstallmentsWithNoCents.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Contracts\Loans\LoanRepayment\Repayment\RepayNextInstallments\Flat\FlatExoticKeepNotExpectedInstallmentsWithNoCents.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Contracts\Loans\LoanRepayment\Repayment\RepayNextInstallments\RepayNextInstallmentsStrategy.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FundingLines\FundingLineEvent.cs" />
+    <Compile Include="Criteres.cs" />
+    <Compile Include="Events\Loan\IEventProcessor.cs" />
+    <Compile Include="Events\Loan\AccruedInterestEvent.cs" />
+    <Compile Include="Clients\Corporate.cs" />
+    <Compile Include="FundingLines\FundingLine.cs" />
+    <Compile Include="MFI.cs" />
+    <Compile Include="Products\LoanProduct.cs" />
+    <Compile Include="Locations\Province.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Role.cs" />
+    <Compile Include="SearchResult\ClientSearchResult.cs" />
+    <Compile Include="SearchResult\CreditSearchResult.cs" />
+    <Compile Include="SearchResult\ProjetSearchResult.cs" />
+    <Compile Include="Database\SqlDatabaseSettings.cs" />
+    <Compile Include="SearchResult\SavingSearchResult.cs" />
+    <Compile Include="User.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Events\Loan\BadLoanRepaymentEvent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Events\Loan\Event.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Events\Loan\EventComparer.cs" />
+    <Compile Include="Events\Loan\EventStock.cs" />
+    <Compile Include="Events\Loan\StatisticalProvisionningEvent.cs" />
+    <Compile Include="Events\Loan\LoanDisbursmentEvent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Events\Loan\RegEvent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Events\Loan\RepaymentEvent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Events\Loan\RescheduledLoanRepaymentEvent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Events\Loan\RescheduleLoanEvent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Events\Loan\WriteOffEvent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Products\ProductComparer.cs" />
+    <Compile Include="Online\CoreDomainProvider.cs" />
+    <Compile Include="Online\ICoreDomain.cs" />
+    <Compile Include="Online\ICoreDomainRemoting.cs" />
+    <Compile Include="Online\Remoting.cs" />
+    <Compile Include="Online\Standard.cs" />
+    <Compile Include="Online\Token.cs" />
+    <Content Include="Accounting\Datasets\DataSetElementaryMvts.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetElementaryMvts.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Accounting\Datasets\DataSetElementaryMvts.xsc">
+      <DependentUpon>DataSetElementaryMvts.xsd</DependentUpon>
+    </None>
+    <None Include="Accounting\Datasets\DataSetElementaryMvts.xsx">
+      <DependentUpon>DataSetElementaryMvts.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{5AD368F8-9AD3-4E4C-97D8-1F4F1C124158}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Octopus.Enums\Octopus.Enums.csproj">
+      <Project>{8AFC1E87-3856-4F05-8280-5360D33C200B}</Project>
+      <Name>Octopus.Enums</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Octopus.ExceptionsHandler\Octopus.ExceptionsHandler.csproj">
+      <Project>{98B26AD8-D160-462B-B70F-982D8701154A}</Project>
+      <Name>Octopus.ExceptionsHandler</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Octopus.MultiLanguage\Octopus.MultiLanguageRessources.csproj">
+      <Project>{1644EDA1-7196-4197-B752-A4D14F384E31}</Project>
+      <Name>Octopus.MultiLanguageRessources</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Octopus.Shared\Octopus.Shared.csproj">
+      <Project>{B3288E21-E5A9-4620-BEF3-AFB0B207655C}</Project>
+      <Name>Octopus.Shared</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties GreenPepperCustomSudArgs="" GreenPepperCustomSud="" GreenPepperConfigRunnerArgs="" GreenPepperConfigRunnerProgram="" GreenPepperConfigRepositories="" GreenPepperConfigProjectName="" GreenPepperConfigSutName="" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

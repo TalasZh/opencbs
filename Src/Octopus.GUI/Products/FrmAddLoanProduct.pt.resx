@@ -1,0 +1,975 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="tabPageMainParameters.Text" xml:space="preserve">
+    <value>Parametros principais</value>
+  </data>
+  <data name="tabPageFees.Text" xml:space="preserve">
+    <value>Taxas</value>
+  </data>
+  <data name="tabPageOptionalParameters.Text" xml:space="preserve">
+    <value>Prestações exóticas</value>
+  </data>
+  <data name="tabLOC.Text" xml:space="preserve">
+    <value>Linha de crédito</value>
+  </data>
+  <data name="tabGuarantorsCollaterals.Text" xml:space="preserve">
+    <value>Garantias</value>
+  </data>
+  <data name="tabPage1.Text" xml:space="preserve">
+    <value>O seguro de crédito</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="gbAdvancedParameters.Size" type="System.Drawing.Size, System.Drawing">
+    <value>765, 330</value>
+  </data>
+  <data name="gbAdvancedParameters.Text" xml:space="preserve">
+    <value>Os parâmetros avançados</value>
+  </data>
+  <data name="cbUseLoanCycle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 20</value>
+  </data>
+  <data name="cbUseLoanCycle.Text" xml:space="preserve">
+    <value>Use cíclos</value>
+  </data>
+  <data name="groupBoxInterestRate.Text" xml:space="preserve">
+    <value>Taxa de juros (% por periodo)</value>
+  </data>
+  <data name="labelRateMax.Text" xml:space="preserve">
+    <value>Máx:</value>
+  </data>
+  <data name="labelRateOr.Size" type="System.Drawing.Size, System.Drawing">
+    <value>22, 16</value>
+  </data>
+  <data name="labelRateOr.Text" xml:space="preserve">
+    <value>ou</value>
+  </data>
+  <data name="groupBoxNumberOfInstallments.Text" xml:space="preserve">
+    <value>Número de prestações</value>
+  </data>
+  <data name="labelNbIMax.Text" xml:space="preserve">
+    <value>Máx:</value>
+  </data>
+  <data name="labelNbIOr.Size" type="System.Drawing.Size, System.Drawing">
+    <value>22, 16</value>
+  </data>
+  <data name="labelNbIOr.Text" xml:space="preserve">
+    <value>ou</value>
+  </data>
+  <data name="groupBoxAmount.Text" xml:space="preserve">
+    <value>Valor</value>
+  </data>
+  <data name="labelLoanCycle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 16</value>
+  </data>
+  <data name="labelLoanCycle.Text" xml:space="preserve">
+    <value>MZN</value>
+  </data>
+  <data name="labelLoanCycleMax.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 16</value>
+  </data>
+  <data name="labelLoanCycleMax.Text" xml:space="preserve">
+    <value>MZN</value>
+  </data>
+  <data name="labelLoanCycleMin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 16</value>
+  </data>
+  <data name="labelLoanCycleMin.Text" xml:space="preserve">
+    <value>MZN</value>
+  </data>
+  <data name="labelAmountMax.Text" xml:space="preserve">
+    <value>Máx:</value>
+  </data>
+  <data name="labelAmountOr.Size" type="System.Drawing.Size, System.Drawing">
+    <value>22, 16</value>
+  </data>
+  <data name="labelAmountOr.Text" xml:space="preserve">
+    <value>ou</value>
+  </data>
+  <data name="groupBoxAmountCycles.Text" xml:space="preserve">
+    <value>Valor dos cíclos</value>
+  </data>
+  <data name="label31.Text" xml:space="preserve">
+    <value>Usar:</value>
+  </data>
+  <data name="buttonNewAmountCycles.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonNewAmountCycles.Text" xml:space="preserve">
+    <value>Novo valor do ciclo</value>
+  </data>
+  <data name="panelAmountCycles.Size" type="System.Drawing.Size, System.Drawing">
+    <value>751, 264</value>
+  </data>
+  <data name="groupBoxAmountCycle.Text" xml:space="preserve">
+    <value>Propriedades do valor do cíclo</value>
+  </data>
+  <data name="label29.Text" xml:space="preserve">
+    <value>Máx:</value>
+  </data>
+  <data name="colCycle.Text" xml:space="preserve">
+    <value>Cíclo</value>
+  </data>
+  <data name="buttonRemoveAmountCycles.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonRemoveAmountCycles.Text" xml:space="preserve">
+    <value>Remover</value>
+  </data>
+  <data name="buttonAmountCyclesSave.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonAmountCyclesSave.Location" type="System.Drawing.Point, System.Drawing">
+    <value>441, 233</value>
+  </data>
+  <data name="buttonAmountCyclesSave.Text" xml:space="preserve">
+    <value>Gravar</value>
+  </data>
+  <data name="buttonCancelAmountCycles.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonCancelAmountCycles.Location" type="System.Drawing.Point, System.Drawing">
+    <value>640, 234</value>
+  </data>
+  <data name="buttonCancelAmountCycles.Text" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="buttonAddAmountCycle.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonAddAmountCycle.Text" xml:space="preserve">
+    <value>Adicionar</value>
+  </data>
+  <data name="lblCycleObjects.Text" xml:space="preserve">
+    <value>Objetos Ciclo:</value>
+  </data>
+  <data name="groupBoxRoundingType.Text" xml:space="preserve">
+    <value>Tipo de aredondamento</value>
+  </data>
+  <data name="comboBoxRoundingType.Items" xml:space="preserve">
+    <value>aproximado</value>
+  </data>
+  <data name="comboBoxRoundingType.Items1" xml:space="preserve">
+    <value>primeira parcela</value>
+  </data>
+  <data name="comboBoxRoundingType.Items2" xml:space="preserve">
+    <value>última parcela</value>
+  </data>
+  <data name="label32.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 16</value>
+  </data>
+  <data name="label32.Text" xml:space="preserve">
+    <value>Código :</value>
+  </data>
+  <data name="groupBox10.Text" xml:space="preserve">
+    <value>Anexar produto ao fundo e moéda</value>
+  </data>
+  <data name="groupBoxChargeInterestWithinGracePeriod.Text" xml:space="preserve">
+    <value>Juros durante o periodo de graça</value>
+  </data>
+  <data name="radioButtonChargeInterestNo.Text" xml:space="preserve">
+    <value>Não</value>
+  </data>
+  <data name="radioButtonChargeInterestYes.Text" xml:space="preserve">
+    <value>Sim</value>
+  </data>
+  <data name="groupBoxType.Text" xml:space="preserve">
+    <value>Anexar produto a tipo de clientes especifico</value>
+  </data>
+  <data name="clientTypeVillageCheckBox.Text" xml:space="preserve">
+    <value>Grupo não sol.</value>
+  </data>
+  <data name="clientTypeGroupCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 20</value>
+  </data>
+  <data name="clientTypeGroupCheckBox.Text" xml:space="preserve">
+    <value>Grupo Sol</value>
+  </data>
+  <data name="clientTypeAllCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 20</value>
+  </data>
+  <data name="clientTypeAllCheckBox.Text" xml:space="preserve">
+    <value>todos</value>
+  </data>
+  <data name="groupBoxInterestRateType.Text" xml:space="preserve">
+    <value>Tipo de cobrança</value>
+  </data>
+  <data name="rbDecliningFixedPrincipalRelaInterest.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 20</value>
+  </data>
+  <data name="rbDecliningFixedPrincipalRelaInterest.Text" xml:space="preserve">
+    <value>Capital fixo, com juro real</value>
+  </data>
+  <data name="rbDecliningFixedPrincipal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>185, 20</value>
+  </data>
+  <data name="rbDecliningFixedPrincipal.Text" xml:space="preserve">
+    <value>Declínio com o principal fixo</value>
+  </data>
+  <data name="rbDecliningFixedInstallments.Size" type="System.Drawing.Size, System.Drawing">
+    <value>198, 20</value>
+  </data>
+  <data name="rbDecliningFixedInstallments.Text" xml:space="preserve">
+    <value>Recusando com parcelas fixas</value>
+  </data>
+  <data name="rbFlat.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 20</value>
+  </data>
+  <data name="rbFlat.Text" xml:space="preserve">
+    <value>Plano</value>
+  </data>
+  <data name="groupBoxGracePeriod.Text" xml:space="preserve">
+    <value>Periodo de graça</value>
+  </data>
+  <data name="labelGPMax.Text" xml:space="preserve">
+    <value>Máx:</value>
+  </data>
+  <data name="labelGPOr.Size" type="System.Drawing.Size, System.Drawing">
+    <value>22, 16</value>
+  </data>
+  <data name="labelGPOr.Text" xml:space="preserve">
+    <value>ou</value>
+  </data>
+  <data name="labelInstallmentType.Text" xml:space="preserve">
+    <value>Tipo de prestação:</value>
+  </data>
+  <data name="labelName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 16</value>
+  </data>
+  <data name="labelName.Text" xml:space="preserve">
+    <value>Nome :</value>
+  </data>
+  <data name="gbAnticipatedRepayment.Text" xml:space="preserve">
+    <value>Taxas de pagamento total atencipado (ATR) e pagamento parcial antecipado (APR)</value>
+  </data>
+  <data name="groupBoxAPR.Text" xml:space="preserve">
+    <value>Taxas APR</value>
+  </data>
+  <data name="label43.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 16</value>
+  </data>
+  <data name="label43.Text" xml:space="preserve">
+    <value>valor :</value>
+  </data>
+  <data name="label42.Size" type="System.Drawing.Size, System.Drawing">
+    <value>22, 16</value>
+  </data>
+  <data name="label42.Text" xml:space="preserve">
+    <value>ou</value>
+  </data>
+  <data name="groupBoxPartialAnticipatedRepaymentBase.Text" xml:space="preserve">
+    <value>Base para taxas APR</value>
+  </data>
+  <data name="rbPrepaidPrincipal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>153, 20</value>
+  </data>
+  <data name="rbPrepaidPrincipal.Text" xml:space="preserve">
+    <value>% do capital pré-pago</value>
+  </data>
+  <data name="rbPartialRemainingOLB.Text" xml:space="preserve">
+    <value>% do BTE</value>
+  </data>
+  <data name="rbPartialRemainingInterest.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 20</value>
+  </data>
+  <data name="rbPartialRemainingInterest.Text" xml:space="preserve">
+    <value>% dos juros</value>
+  </data>
+  <data name="groupBoxTotalAnticipatedRepaymentBase.Text" xml:space="preserve">
+    <value>Base para taxas ATR</value>
+  </data>
+  <data name="rbRemainingOLB.Text" xml:space="preserve">
+    <value>% do BTE</value>
+  </data>
+  <data name="rbRemainingInterest.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 20</value>
+  </data>
+  <data name="rbRemainingInterest.Text" xml:space="preserve">
+    <value>% dos juros</value>
+  </data>
+  <data name="groupBoxAnticipatedRepayment.Text" xml:space="preserve">
+    <value>Pagamento em adiatado (% do valor em divida)</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 16</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>valor :</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Máx:</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 16</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Min</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>22, 16</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>ou</value>
+  </data>
+  <data name="groupBoxLateFees.Text" xml:space="preserve">
+    <value>Multas (% por dia em atraso)</value>
+  </data>
+  <data name="labelLateFeeGracePeriod.Location" type="System.Drawing.Point, System.Drawing">
+    <value>130, 202</value>
+  </data>
+  <data name="labelLateFeeGracePeriod.Size" type="System.Drawing.Size, System.Drawing">
+    <value>232, 16</value>
+  </data>
+  <data name="labelLateFeeGracePeriod.Text" xml:space="preserve">
+    <value>Periodo de graça para taxas de atrazo:</value>
+  </data>
+  <data name="groupBox8.Text" xml:space="preserve">
+    <value>Sob valor total do empréstimo</value>
+  </data>
+  <data name="label25.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 16</value>
+  </data>
+  <data name="label25.Text" xml:space="preserve">
+    <value>valor :</value>
+  </data>
+  <data name="label26.Text" xml:space="preserve">
+    <value>Máx:</value>
+  </data>
+  <data name="label28.Size" type="System.Drawing.Size, System.Drawing">
+    <value>22, 16</value>
+  </data>
+  <data name="label28.Text" xml:space="preserve">
+    <value>ou</value>
+  </data>
+  <data name="groupBox5.Text" xml:space="preserve">
+    <value>Sob capital em atraso</value>
+  </data>
+  <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 16</value>
+  </data>
+  <data name="label13.Text" xml:space="preserve">
+    <value>valor :</value>
+  </data>
+  <data name="label14.Text" xml:space="preserve">
+    <value>Máx:</value>
+  </data>
+  <data name="label16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>22, 16</value>
+  </data>
+  <data name="label16.Text" xml:space="preserve">
+    <value>ou</value>
+  </data>
+  <data name="groupBox7.Text" xml:space="preserve">
+    <value>Sob BTE</value>
+  </data>
+  <data name="label21.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 16</value>
+  </data>
+  <data name="label21.Text" xml:space="preserve">
+    <value>valor :</value>
+  </data>
+  <data name="label22.Text" xml:space="preserve">
+    <value>Máx:</value>
+  </data>
+  <data name="label24.Size" type="System.Drawing.Size, System.Drawing">
+    <value>22, 16</value>
+  </data>
+  <data name="label24.Text" xml:space="preserve">
+    <value>ou</value>
+  </data>
+  <data name="groupBox6.Text" xml:space="preserve">
+    <value>Sob juros em atraso</value>
+  </data>
+  <data name="label17.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 16</value>
+  </data>
+  <data name="label17.Text" xml:space="preserve">
+    <value>valor :</value>
+  </data>
+  <data name="label18.Text" xml:space="preserve">
+    <value>Máx:</value>
+  </data>
+  <data name="label20.Size" type="System.Drawing.Size, System.Drawing">
+    <value>22, 16</value>
+  </data>
+  <data name="label20.Text" xml:space="preserve">
+    <value>ou</value>
+  </data>
+  <data name="groupBoxEntryFees.Text" xml:space="preserve">
+    <value>Taxa inícial (% do empréstimo ou valor fixo)</value>
+  </data>
+  <data name="swbtnEntryFeesRemoveCycle.Text" xml:space="preserve">
+    <value>remover ciclo</value>
+  </data>
+  <data name="swbtnEntryFeesAddCycle.Text" xml:space="preserve">
+    <value>Adicionar ciclo</value>
+  </data>
+  <data name="cbRate.Items" xml:space="preserve">
+    <value>verdadeiro</value>
+  </data>
+  <data name="cbRate.Items1" xml:space="preserve">
+    <value>falso</value>
+  </data>
+  <data name="chEntryFeeName.Text" xml:space="preserve">
+    <value>Nome</value>
+  </data>
+  <data name="chEntryFeeValue.Text" xml:space="preserve">
+    <value>valor</value>
+  </data>
+  <data name="chEntryFeeRate.Text" xml:space="preserve">
+    <value>Taxa</value>
+  </data>
+  <data name="chEntryFeeIsAdded.Text" xml:space="preserve">
+    <value>é adicionado</value>
+  </data>
+  <data name="chEntryFeeCycleId.Text" xml:space="preserve">
+    <value>Id ciclo</value>
+  </data>
+  <data name="chEntryFeeNewId.Text" xml:space="preserve">
+    <value>novo Id</value>
+  </data>
+  <data name="chEntryFeeIndex.Text" xml:space="preserve">
+    <value>índice</value>
+  </data>
+  <data name="btnEntryFeesRemoveCycle.Text" xml:space="preserve">
+    <value>remover ciclo</value>
+  </data>
+  <data name="btnEntryFeesAddCycle.Text" xml:space="preserve">
+    <value>Adicionar ciclo</value>
+  </data>
+  <data name="lblEntryFeesFromCycle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>22, 16</value>
+  </data>
+  <data name="lblEntryFeesFromCycle.Text" xml:space="preserve">
+    <value>de</value>
+  </data>
+  <data name="cbEnableEntryFeesCycle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>186, 20</value>
+  </data>
+  <data name="cbEnableEntryFeesCycle.Text" xml:space="preserve">
+    <value>Utilize ciclo de empréstimos</value>
+  </data>
+  <data name="lblEntryFeesCycle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 16</value>
+  </data>
+  <data name="lblEntryFeesCycle.Text" xml:space="preserve">
+    <value>Ciclo do empréstimo:</value>
+  </data>
+  <data name="groupBoxExoticProducts.Text" xml:space="preserve">
+    <value>Prestações exóticas</value>
+  </data>
+  <data name="buttonCancelExoticProduct.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonCancelExoticProduct.Text" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="buttonSaveExoticProduct.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonSaveExoticProduct.Text" xml:space="preserve">
+    <value>Gravar</value>
+  </data>
+  <data name="groupBoxExoticInstallmentProperties.Text" xml:space="preserve">
+    <value>Própriedades de prestações exóticas</value>
+  </data>
+  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 16</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>Juros:</value>
+  </data>
+  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 16</value>
+  </data>
+  <data name="label10.Text" xml:space="preserve">
+    <value>Capital:</value>
+  </data>
+  <data name="buttonRemoveExoticInstallment.Text" xml:space="preserve">
+    <value>Remover</value>
+  </data>
+  <data name="buttonAddExoticInstallment.Text" xml:space="preserve">
+    <value>Adicionar</value>
+  </data>
+  <data name="columnHeader5.Text" xml:space="preserve">
+    <value>Capital (%)</value>
+  </data>
+  <data name="columnHeader6.Text" xml:space="preserve">
+    <value>Juros (%)</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>usar:</value>
+  </data>
+  <data name="buttonNewExoticProduct.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonNewExoticProduct.Text" xml:space="preserve">
+    <value>Nova tabela exótica</value>
+  </data>
+  <data name="checkBoxUseExceptionalInstallmen.Text" xml:space="preserve">
+    <value>Prestação exótica</value>
+  </data>
+  <data name="checkBoxFlexPackage.Text" xml:space="preserve">
+    <value>Permitir tabelas flexiveis</value>
+  </data>
+  <data name="drawNumGroupBox.Text" xml:space="preserve">
+    <value>Número máximo de parcelas</value>
+  </data>
+  <data name="drawingNumberLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>214, 16</value>
+  </data>
+  <data name="drawingNumberLabel.Text" xml:space="preserve">
+    <value>Número de levantamentos sob LOC:</value>
+  </data>
+  <data name="useLOCCheckBox.Text" xml:space="preserve">
+    <value>Limite de crédito</value>
+  </data>
+  <data name="maxLOCMaturityGroupBox.Text" xml:space="preserve">
+    <value>Maturidade das parcelas</value>
+  </data>
+  <data name="label45.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 16</value>
+  </data>
+  <data name="label45.Text" xml:space="preserve">
+    <value>valor:</value>
+  </data>
+  <data name="label48.Size" type="System.Drawing.Size, System.Drawing">
+    <value>22, 16</value>
+  </data>
+  <data name="label48.Text" xml:space="preserve">
+    <value>ou</value>
+  </data>
+  <data name="maxLOCAmountGroupBox.Text" xml:space="preserve">
+    <value>Valor máximo sob acordo LOC</value>
+  </data>
+  <data name="labelLOCAmount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 16</value>
+  </data>
+  <data name="labelLOCAmount.Text" xml:space="preserve">
+    <value>MZN</value>
+  </data>
+  <data name="labelLOCMaxAmount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 16</value>
+  </data>
+  <data name="labelLOCMaxAmount.Text" xml:space="preserve">
+    <value>MZN</value>
+  </data>
+  <data name="labelLOCMinAmount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 16</value>
+  </data>
+  <data name="labelLOCMinAmount.Text" xml:space="preserve">
+    <value>MZN</value>
+  </data>
+  <data name="label36.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 16</value>
+  </data>
+  <data name="label36.Text" xml:space="preserve">
+    <value>valor:</value>
+  </data>
+  <data name="label39.Size" type="System.Drawing.Size, System.Drawing">
+    <value>22, 16</value>
+  </data>
+  <data name="label39.Text" xml:space="preserve">
+    <value>ou</value>
+  </data>
+  <data name="cbUseCompulsorySavings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 20</value>
+  </data>
+  <data name="cbUseCompulsorySavings.Text" xml:space="preserve">
+    <value>Use poupança obrigatória</value>
+  </data>
+  <data name="gbCSAmount.Text" xml:space="preserve">
+    <value>Valor da poupança obrigatória</value>
+  </data>
+  <data name="rbCompulsoryAmountRate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 20</value>
+  </data>
+  <data name="rbCompulsoryAmountRate.Text" xml:space="preserve">
+    <value>Taxa</value>
+  </data>
+  <data name="rbCompulsoryAmountFlat.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 20</value>
+  </data>
+  <data name="rbCompulsoryAmountFlat.Text" xml:space="preserve">
+    <value>Fixo</value>
+  </data>
+  <data name="lbCompulsoryAmountType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 16</value>
+  </data>
+  <data name="lbCompulsoryAmountType.Text" xml:space="preserve">
+    <value>Tipo:</value>
+  </data>
+  <data name="lbCompulsoryAmountValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 16</value>
+  </data>
+  <data name="lbCompulsoryAmountValue.Text" xml:space="preserve">
+    <value>valor :</value>
+  </data>
+  <data name="lbCompulsoryAmountOr.Size" type="System.Drawing.Size, System.Drawing">
+    <value>22, 16</value>
+  </data>
+  <data name="lbCompulsoryAmountOr.Text" xml:space="preserve">
+    <value>ou</value>
+  </data>
+  <data name="checkBoxSetSepCollGuar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>336, 20</value>
+  </data>
+  <data name="checkBoxSetSepCollGuar.Text" xml:space="preserve">
+    <value>Selecionar valores diferentes para avalísta e garantias</value>
+  </data>
+  <data name="label34.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 16</value>
+  </data>
+  <data name="label34.Text" xml:space="preserve">
+    <value>% do valor do empréstimo</value>
+  </data>
+  <data name="label33.Size" type="System.Drawing.Size, System.Drawing">
+    <value>274, 16</value>
+  </data>
+  <data name="label33.Text" xml:space="preserve">
+    <value>Percentagem mínima para avalista e garantias</value>
+  </data>
+  <data name="groupBoxSepGuarColl.Text" xml:space="preserve">
+    <value>Separação</value>
+  </data>
+  <data name="label49.Size" type="System.Drawing.Size, System.Drawing">
+    <value>337, 16</value>
+  </data>
+  <data name="label49.Text" xml:space="preserve">
+    <value>Note: Colocar '0' se não quiser usar garantias or avalista.</value>
+  </data>
+  <data name="label44.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 16</value>
+  </data>
+  <data name="label44.Text" xml:space="preserve">
+    <value>% do valor do empréstimo</value>
+  </data>
+  <data name="label35.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 16</value>
+  </data>
+  <data name="label35.Text" xml:space="preserve">
+    <value>% do valor do empréstimo</value>
+  </data>
+  <data name="labelMinPercColl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>221, 16</value>
+  </data>
+  <data name="labelMinPercColl.Text" xml:space="preserve">
+    <value>Percentagem mínima para garantias:</value>
+  </data>
+  <data name="labelMinPercGuar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>217, 16</value>
+  </data>
+  <data name="labelMinPercGuar.Text" xml:space="preserve">
+    <value>Percentagem minima para avalistas:</value>
+  </data>
+  <data name="checkBoxGuarCollRequired.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 20</value>
+  </data>
+  <data name="checkBoxGuarCollRequired.Text" xml:space="preserve">
+    <value>Usar avalista e garantias</value>
+  </data>
+  <data name="radioButtonAmountCycle.Text" xml:space="preserve">
+    <value>Use valor do cíclo</value>
+  </data>
+  <data name="radioButtonSpecifiedAmount.Text" xml:space="preserve">
+    <value>Valor específico</value>
+  </data>
+  <data name="columnHeader3.Text" xml:space="preserve">
+    <value>Máx</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>Máx:</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>usar:</value>
+  </data>
+  <data name="buttonCancel.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonCancel.Text" xml:space="preserve">
+    <value>Fechar</value>
+  </data>
+  <data name="buttonSave.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonSave.Text" xml:space="preserve">
+    <value>Gravar</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAB+fn8AkYyKAJKOjgCVk5MAlpaWAKWmpQCwr68AsrOyALS2tQC2trYAuru7ALu8vAC/vbwAvb29AMG/
+        vgDBwcAAwcLCAMXDwwDHxsUAxcbHAMbIxwDMyMcAyMnIAMrKygDKyssAy8vLAMzMywDNzcwAz87OANLQ
+        0ADP0tEA0NPSANLT0gDU1NIA1NXUANjV1QDW1tUA19fVANjX1QDX2NcA2tnYANnZ2QDb2dkA29zcANzc
+        3ADd3t0A397eAN3f3gDf394A4d/fAN3g3wDf4N8A3uDgAN/h4ADh4eAA3+HhAOHh4QDg4uEA4uLhAOPi
+        4QDi4uIA4+LiAOTj4wDi5OMA5OTkAOLl5ADm5eQA5ubmAOTn5gDl5+YA5OjnAOXo5wDm6OcA6OjnAObp
+        6ADp6egA6unpAObq6QDn6uoA6urpAOvq6QDp6uoA6urqAOvr6ADn6+oA6uvpAOnr6gDq7OsA6uzsAOzs
+        7ADq7esA7O3sAO3t7ADs7uwA7u7uAOzv7QDu7+0A7e/uAO3v7wDu7+8A7+/vAO/w7gDx8fAA7/HxAO/y
+        8QDx8vEA8PPyAPHz8gDy9PQA9PT0APP19QD09fUA9Pb2APX29gD19/YA9ff3APb4+AD4+PgA9vn4APf5
+        +AD4+/oA+fv6APr8/AD6/fwA+/38APz9/AD7/v0A/P79APv+/gD8/v4A+//9APz//QD9//0A+//+APz/
+        /gD9//8A/v//AP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAR4aGiRtCHXOGhoaGhoaGR0eGf1dAhYQkhoaGgH6HiEREgXqJMIZxX4aGhX5vOSMySDM2Yldm
+        S2qJiH5ua4GJCzRViD5oZV5kGCJ4cIZ7JzVHWCB1Y1sqFQkNdoY8VolERH6JWEOJAgADiTlhiH5+R0eG
+        hn6HGgZZZAVRfoaGhkdHhoaGiBYseYgHiX5+hoZHR4Z+iFGJAQQPUSlxhoaDR0SISTqGKCYMDlJ5bEly
+        h0cvK313Lk8iITsZcGCHXDFBEIl8OCVpQF0RF4dsTIKJE009NzMthm1TiYmGflpQbwpHhn45HH1FP36G
+        hoZ+dGdOH0dHShQSCFRHR0dHREdGHgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Adicionar produto de empréstimo</value>
+  </data>
+</root>

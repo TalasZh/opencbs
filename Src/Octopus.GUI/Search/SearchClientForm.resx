@@ -1,0 +1,1116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="buttonPreview.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="listViewClient.Size" type="System.Drawing.Size, System.Drawing">
+    <value>755, 372</value>
+  </data>
+  <data name="&gt;&gt;groupBoxButtonBottom.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;textBoxCurrentlyPage.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="columnHeaderActive.Text" xml:space="preserve">
+    <value>Active</value>
+  </data>
+  <data name="buttonPreview.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="&gt;&gt;listViewClient.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="radioButtonCorporate.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="radioButtonPerson.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;groupBoxButtonBottom.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="buttonNext.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="textBoxQuery.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="&gt;&gt;checkBoxGroups.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;columnHeaderCity.Name" xml:space="preserve">
+    <value>columnHeaderCity</value>
+  </data>
+  <data name="buttonSearch.Location" type="System.Drawing.Point, System.Drawing">
+    <value>509, 47</value>
+  </data>
+  <data name="&gt;&gt;groupBoxCorporates.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="groupBoxButtonBottom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>755, 47</value>
+  </data>
+  <data name="labelTitleResult.Text" xml:space="preserve">
+    <value>Result:</value>
+  </data>
+  <data name="tableLayoutPanel1.RowCount" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="buttonCancel.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;columnHeaderActive.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="buttonCancel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="buttonPrintReport.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;listViewClient.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;checkBoxNotactive.Parent" xml:space="preserve">
+    <value>groupBoxActive</value>
+  </data>
+  <data name="buttonSearch.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9.75pt</value>
+  </data>
+  <data name="buttonPrintReport.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;buttonNext.Parent" xml:space="preserve">
+    <value>groupBoxButtonBottom</value>
+  </data>
+  <data name="&gt;&gt;imageListSort.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ImageList, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>Octopus.GUI.UserControl.SweetBaseForm, Octopus.GUI, Version=1.1.1.32154, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="columnHeader1.Text" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="checkBoxGroups.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9.75pt</value>
+  </data>
+  <data name="buttonNext.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 25</value>
+  </data>
+  <data name="checkBoxNotactive.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9.75pt, style=Bold</value>
+  </data>
+  <data name="buttonSearch.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="buttonNext.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="groupBoxSearchParameters.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="&gt;&gt;checkBoxPersons.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="groupBoxSearchParameters.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="textBoxCurrentlyPage.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="buttonPrintReport.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9.75pt</value>
+  </data>
+  <data name="buttonPrintReport.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="buttonPrintReport.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="columnHeader1.Width" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="groupBoxButtonBottom.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;buttonPrintReport.Type" xml:space="preserve">
+    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.32154, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;buttonPreview.Name" xml:space="preserve">
+    <value>buttonPreview</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSearchParameters.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxQuery.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="buttonSearch.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="checkBoxActive.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;groupBoxButtonBottom.Name" xml:space="preserve">
+    <value>groupBoxButtonBottom</value>
+  </data>
+  <data name="buttonPreview.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;checkBoxVillages.Parent" xml:space="preserve">
+    <value>groupBoxCorporates</value>
+  </data>
+  <data name="&gt;&gt;checkBoxPersons.Name" xml:space="preserve">
+    <value>checkBoxPersons</value>
+  </data>
+  <data name="&gt;&gt;columnHeaderLoanCycle.Name" xml:space="preserve">
+    <value>columnHeaderLoanCycle</value>
+  </data>
+  <data name="textBoxQuery.Size" type="System.Drawing.Size, System.Drawing">
+    <value>731, 20</value>
+  </data>
+  <data name="buttonPrintReport.Location" type="System.Drawing.Point, System.Drawing">
+    <value>635, 47</value>
+  </data>
+  <data name="labelTitleResult.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="labelTitleResult.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 131</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>SearchClientForm</value>
+  </data>
+  <data name="tableLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSearchParameters.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="checkBoxGroups.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 20</value>
+  </data>
+  <data name="buttonPrintReport.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 25</value>
+  </data>
+  <data name="columnHeaderMemberOf.Width" type="System.Int32, mscorlib">
+    <value>131</value>
+  </data>
+  <data name="&gt;&gt;buttonNext.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="buttonNext.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Search client</value>
+  </data>
+  <data name="buttonCancel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 25</value>
+  </data>
+  <data name="textBoxCurrentlyPage.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;textBoxQuery.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="buttonNext.Location" type="System.Drawing.Point, System.Drawing">
+    <value>438, 16</value>
+  </data>
+  <data name="buttonCancel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9.75pt</value>
+  </data>
+  <data name="checkBoxActive.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 20</value>
+  </data>
+  <data name="&gt;&gt;columnHeader1.Name" xml:space="preserve">
+    <value>columnHeader1</value>
+  </data>
+  <data name="&gt;&gt;checkBoxVillages.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;radioButtonPerson.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;groupBoxCorporates.Name" xml:space="preserve">
+    <value>groupBoxCorporates</value>
+  </data>
+  <data name="&gt;&gt;columnHeaderName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="checkBoxVillages.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9.75pt</value>
+  </data>
+  <data name="&gt;&gt;buttonSearch.Type" xml:space="preserve">
+    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.32154, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;checkBoxPersons.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="radioButtonCorporate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 20</value>
+  </data>
+  <data name="radioButtonPerson.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 6</value>
+  </data>
+  <data name="buttonPreview.Text" xml:space="preserve">
+    <value>Previous</value>
+  </data>
+  <data name="checkBoxPersons.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="labelTitleResult.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="columnHeaderCity.Width" type="System.Int32, mscorlib">
+    <value>101</value>
+  </data>
+  <data name="&gt;&gt;columnHeaderCity.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;listViewClient.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="listViewClient.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="buttonSearch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 25</value>
+  </data>
+  <data name="&gt;&gt;radioButtonPerson.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelTitleResult.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="groupBoxCorporates.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="buttonCancel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;columnHeaderDistrict.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;imageListSort.Name" xml:space="preserve">
+    <value>imageListSort</value>
+  </data>
+  <data name="buttonPreview.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;columnHeaderLoanCycle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonPrintReport.Name" xml:space="preserve">
+    <value>buttonPrintReport</value>
+  </data>
+  <data name="&gt;&gt;buttonCancel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="buttonSearch.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="buttonCancel.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="radioButtonCorporate.Text" xml:space="preserve">
+    <value>Corporates</value>
+  </data>
+  <data name="radioButtonPerson.Text" xml:space="preserve">
+    <value>Groups / Persons / Villages</value>
+  </data>
+  <data name="textBoxCurrentlyPage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>140, 18</value>
+  </data>
+  <data name="&gt;&gt;listViewClient.Name" xml:space="preserve">
+    <value>listViewClient</value>
+  </data>
+  <data name="columnHeaderName.Width" type="System.Int32, mscorlib">
+    <value>134</value>
+  </data>
+  <data name="buttonSearch.Text" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="columnHeaderName.Text" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="buttonSearch.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;textBoxCurrentlyPage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxActive.Name" xml:space="preserve">
+    <value>groupBoxActive</value>
+  </data>
+  <data name="buttonSearch.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="textBoxCurrentlyPage.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;groupBoxButtonBottom.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;checkBoxNotactive.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;checkBoxActive.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="groupBoxSearchParameters.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="checkBoxNotactive.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;buttonSearch.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="listViewClient.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 166</value>
+  </data>
+  <data name="groupBoxActive.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;buttonNext.Type" xml:space="preserve">
+    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.32154, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAB+fn8AkYyKAJKOjgCVk5MAlpaWAKWmpQCwr68AsrOyALS2tQC2trYAuru7ALu8vAC/vbwAvb29AMG/
+        vgDBwcAAwcLCAMXDwwDHxsUAxcbHAMbIxwDMyMcAyMnIAMrKygDKyssAy8vLAMzMywDNzcwAz87OANLQ
+        0ADP0tEA0NPSANLT0gDU1NIA1NXUANjV1QDW1tUA19fVANjX1QDX2NcA2tnYANnZ2QDb2dkA29zcANzc
+        3ADd3t0A397eAN3f3gDf394A4d/fAN3g3wDf4N8A3uDgAN/h4ADh4eAA3+HhAOHh4QDg4uEA4uLhAOPi
+        4QDi4uIA4+LiAOTj4wDi5OMA5OTkAOLl5ADm5eQA5ubmAOTn5gDl5+YA5OjnAOXo5wDm6OcA6OjnAObp
+        6ADp6egA6unpAObq6QDn6uoA6urpAOvq6QDp6uoA6urqAOvr6ADn6+oA6uvpAOnr6gDq7OsA6uzsAOzs
+        7ADq7esA7O3sAO3t7ADs7uwA7u7uAOzv7QDu7+0A7e/uAO3v7wDu7+8A7+/vAO/w7gDx8fAA7/HxAO/y
+        8QDx8vEA8PPyAPHz8gDy9PQA9PT0APP19QD09fUA9Pb2APX29gD19/YA9ff3APb4+AD4+PgA9vn4APf5
+        +AD4+/oA+fv6APr8/AD6/fwA+/38APz9/AD7/v0A/P79APv+/gD8/v4A+//9APz//QD9//0A+//+APz/
+        /gD9//8A/v//AP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAR4aGiRtCHXOGhoaGhoaGR0eGf1dAhYQkhoaGgH6HiEREgXqJMIZxX4aGhX5vOSMySDM2Yldm
+        S2qJiH5ua4GJCzRViD5oZV5kGCJ4cIZ7JzVHWCB1Y1sqFQkNdoY8VolERH6JWEOJAgADiTlhiH5+R0eG
+        hn6HGgZZZAVRfoaGhkdHhoaGiBYseYgHiX5+hoZHR4Z+iFGJAQQPUSlxhoaDR0SISTqGKCYMDlJ5bEly
+        h0cvK313Lk8iITsZcGCHXDFBEIl8OCVpQF0RF4dsTIKJE009NzMthm1TiYmGflpQbwpHhn45HH1FP36G
+        hoZ+dGdOH0dHShQSCFRHR0dHREdGHgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+</value>
+  </data>
+  <data name="buttonNext.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="&gt;&gt;checkBoxActive.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;columnHeaderPassportNumber.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBoxGroups.Parent" xml:space="preserve">
+    <value>groupBoxCorporates</value>
+  </data>
+  <data name="radioButtonPerson.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;columnHeaderName.Name" xml:space="preserve">
+    <value>columnHeaderName</value>
+  </data>
+  <data name="&gt;&gt;groupBoxCorporates.Parent" xml:space="preserve">
+    <value>groupBoxSearchParameters</value>
+  </data>
+  <data name="checkBoxActive.Text" xml:space="preserve">
+    <value>Active</value>
+  </data>
+  <data name="columnHeaderMemberOf.Text" xml:space="preserve">
+    <value>Member of</value>
+  </data>
+  <data name="checkBoxNotactive.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 20</value>
+  </data>
+  <data name="&gt;&gt;buttonPreview.Type" xml:space="preserve">
+    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.32154, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;columnHeaderMemberOf.Name" xml:space="preserve">
+    <value>columnHeaderMemberOf</value>
+  </data>
+  <data name="tableLayoutPanel1.ColumnCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="textBoxCurrentlyPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>147, 20</value>
+  </data>
+  <data name="checkBoxGroups.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="textBoxQuery.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="groupBoxSearchParameters.Size" type="System.Drawing.Size, System.Drawing">
+    <value>755, 125</value>
+  </data>
+  <data name="&gt;&gt;checkBoxGroups.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tableLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="checkBoxActive.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="buttonPrintReport.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>761, 594</value>
+  </data>
+  <data name="textBoxQuery.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 15</value>
+  </data>
+  <data name="buttonSearch.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;columnHeader1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxActive.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="radioButtonCorporate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 50</value>
+  </data>
+  <data name="checkBoxVillages.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 20</value>
+  </data>
+  <data name="&gt;&gt;groupBoxActive.Parent" xml:space="preserve">
+    <value>groupBoxSearchParameters</value>
+  </data>
+  <data name="&gt;&gt;radioButtonCorporate.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;groupBoxActive.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="checkBoxPersons.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 20</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.Name" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="buttonPreview.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="buttonNext.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="buttonPreview.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 25</value>
+  </data>
+  <data name="labelTitleResult.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 15.75pt, style=Italic</value>
+  </data>
+  <data name="&gt;&gt;groupBoxCorporates.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="checkBoxPersons.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSearchParameters.Name" xml:space="preserve">
+    <value>groupBoxSearchParameters</value>
+  </data>
+  <data name="columnHeaderPassportNumber.Width" type="System.Int32, mscorlib">
+    <value>127</value>
+  </data>
+  <data name="buttonCancel.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="&gt;&gt;buttonPreview.Parent" xml:space="preserve">
+    <value>groupBoxButtonBottom</value>
+  </data>
+  <data name="&gt;&gt;textBoxCurrentlyPage.Name" xml:space="preserve">
+    <value>textBoxCurrentlyPage</value>
+  </data>
+  <data name="radioButtonPerson.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9.75pt, style=Bold</value>
+  </data>
+  <data name="buttonPreview.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="&gt;&gt;radioButtonCorporate.Name" xml:space="preserve">
+    <value>radioButtonCorporate</value>
+  </data>
+  <data name="&gt;&gt;textBoxCurrentlyPage.Parent" xml:space="preserve">
+    <value>groupBoxButtonBottom</value>
+  </data>
+  <data name="checkBoxNotactive.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="buttonCancel.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;buttonPrintReport.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="buttonSearch.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="checkBoxActive.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 19</value>
+  </data>
+  <data name="buttonPrintReport.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="&gt;&gt;buttonCancel.Name" xml:space="preserve">
+    <value>buttonCancel</value>
+  </data>
+  <data name="tableLayoutPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="columnHeaderLoanCycle.Text" xml:space="preserve">
+    <value>Loan cycle</value>
+  </data>
+  <data name="groupBoxButtonBottom.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="&gt;&gt;columnHeaderMemberOf.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="columnHeaderLoanCycle.Width" type="System.Int32, mscorlib">
+    <value>67</value>
+  </data>
+  <data name="labelTitleResult.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="groupBoxCorporates.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 41</value>
+  </data>
+  <data name="&gt;&gt;checkBoxActive.Name" xml:space="preserve">
+    <value>checkBoxActive</value>
+  </data>
+  <data name="&gt;&gt;buttonCancel.Parent" xml:space="preserve">
+    <value>groupBoxButtonBottom</value>
+  </data>
+  <data name="checkBoxPersons.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9.75pt</value>
+  </data>
+  <data name="buttonPrintReport.Text" xml:space="preserve">
+    <value>Print result</value>
+  </data>
+  <data name="&gt;&gt;radioButtonCorporate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBoxGroups.Name" xml:space="preserve">
+    <value>checkBoxGroups</value>
+  </data>
+  <data name="buttonPrintReport.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="&gt;&gt;buttonSearch.Parent" xml:space="preserve">
+    <value>groupBoxSearchParameters</value>
+  </data>
+  <data name="&gt;&gt;labelTitleResult.Name" xml:space="preserve">
+    <value>labelTitleResult</value>
+  </data>
+  <data name="&gt;&gt;buttonPreview.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;columnHeaderActive.Name" xml:space="preserve">
+    <value>columnHeaderActive</value>
+  </data>
+  <data name="buttonCancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1179, 16</value>
+  </data>
+  <data name="groupBoxActive.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 78</value>
+  </data>
+  <data name="&gt;&gt;radioButtonPerson.Parent" xml:space="preserve">
+    <value>groupBoxCorporates</value>
+  </data>
+  <data name="checkBoxGroups.Text" xml:space="preserve">
+    <value>Solidarity group</value>
+  </data>
+  <data name="checkBoxGroups.Location" type="System.Drawing.Point, System.Drawing">
+    <value>107, 30</value>
+  </data>
+  <data name="buttonNext.Text" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="checkBoxNotactive.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 45</value>
+  </data>
+  <data name="checkBoxVillages.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;labelTitleResult.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="buttonPreview.Location" type="System.Drawing.Point, System.Drawing">
+    <value>315, 16</value>
+  </data>
+  <data name="buttonPrintReport.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;radioButtonCorporate.Parent" xml:space="preserve">
+    <value>groupBoxCorporates</value>
+  </data>
+  <data name="listViewClient.TabIndex" type="System.Int32, mscorlib">
+    <value>45</value>
+  </data>
+  <data name="&gt;&gt;labelTitleResult.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="groupBoxActive.Location" type="System.Drawing.Point, System.Drawing">
+    <value>405, 41</value>
+  </data>
+  <data name="columnHeaderPassportNumber.Text" xml:space="preserve">
+    <value>Passport number</value>
+  </data>
+  <data name="imageListSort.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAADo
+        EQAAAk1TRnQBSQFMAgEBBgEAAagBAAGsAQABEAEAARABAAT/ASEBEAj/AUIBTQE2BwABNgMAASgDAAFA
+        AwABIAMAAQEBAAEgBgABIBYAAykBPwMpAT8DKQE/AykBPwMpAT8DKQE/AykBPwMpAT8DKQE/AykBPwMp
+        AT8DKQE/AykBPwMgAS8QAAM2AVkBWAFUAUsB7wFYAVQBSwHvAVgBVAFLAe8BWAFUAUsB7wFYAVQBSwHv
+        AVgBVAFLAe8BWAFUAUsB7wFYAVQBSwHvAVgBVAFLAe8BWAFUAUsB7wFYAVQBSwHvAzYBWYAAAUYCRQF/
+        ASwBRQEAAf8BLAFFAQAB/wEsAUUBAAH/ASwBRQEAAf8BLAFFAQAB/wEsAUUBAAH/ASwBRQEAAf8BLAFF
+        AQAB/wEsAUUBAAH/ASwBRQEAAf8BLAFFAQAB/wEsAUUBAAH/ASwBRQEAAf8BLAFFAQAB/wMpAT8MAAM/
+        AW0BNwFOAQEB/wG6AcMBpwH/AboBwwGnAf8BugHDAacB/wG6AcMBpwH/AboBwwGnAf8BugHDAacB/wG6
+        AcMBpwH/AboBwwGnAf8BugHDAacB/wFBAVcBDwH/A0QBe4AAAUACPwFvATgBTwEDLf8B2QHeAc8B/wEs
+        AUUBAAH/AxYBHwMJAQwDIwEzAyMBMwFAAj8BbwEuAUcBAAH/AdcB3AHMAf8B9gH3AfMB/wH2AfcB8wH/
+        AfYB9wHzAf8B9gH3AfMB/wH2AfcB8wH/AfYB9wHzAf8B9gH3AfMB/wHhAeUB2QH/ATEBSQEAAf8DMAFL
+        gAADIAEvASwBRQEAAf8B2QHeAc8p/wGnAbIBjwH/A1cB3wQAAykBPwNZAc8DWQHPA1oB2wEsAUUBAAH/
+        AYUBlQFXHf8BkgGgAWcB/wJcAVgB5wMMARCEAANXAd8BggGSAVMl/wHyAfQB7wH/AUQBWgETAf8BTAJL
+        AY8EAAMsAUQBLAFFAQAB/wM3AVoDMgFQA0ABcAE7AVIBCAH/AZgBpQFvAf8BugHDAacB/wHdAeEB0wX/
+        AeUB6AHeAf8BugHDAacB/wGYAaUBbwH/AT8BVgENAf8BRQJEAXyIAAMxAU8BLAFFAQAB/wG0Ab0BnyH/
+        AYIBkgFTAf8BWAFUAUsB7wMWAR8EAAMSARgBRQFCAT0B9QE1AjQBVQQAAw0BEgNFAX0CWQFYAesBUQFm
+        ASQB/wG1Ab4BoQX/AboBwwGnAf8BUQFmASQB/wJZAVgB6wFJAkgBhwMWAR6MAAFMAksBjwEsAUUBAAH/
+        AVEBZQEjAf8BXQFwATMB/wG0Ab0Bnwn/AY8BnQFjAf8BXQFwATMB/wFEAVoBEwH/AVgBVAFLAe8DIAEv
+        DAABVQJTAbABWQJWAb4DGQEjBAADGwEmAlMBTAHxAWoBiAFEAf8B2QHdAc4F/wHZAd0BzgH/AYABjgFN
+        Af8CUwFMAfEDJAE2lAADKQE/ASwBRQEAAf8BOAFPAQMB/wHAAcgBrwn/AZsBqAGBAf8BLAFFAQAB/wNZ
+        Ac8DFgEfEAADKgFAA1kBzwFRAlABnwFHAkYBgAFGAkUBfwE4AVABBAH/AdMB2QHHDf8B2gHeAc8B/wE/
+        AVUBDAH/AzUBV5QAAUYCRQF/ATgBTwEDAf8B2QHeAc8R/wG0Ab0BnwH/ASwBRQEAAf8DIAEvFAADOgFi
+        AlUBUwHqAT8BVwE0AfgDWAHRAUoBXwEaFf8BVgFqASoB/wFGAkUBf5QAA1cB3wGPAZ0BYxn/AVEBZQEj
+        Af8BTAJLAY8UAAMNARIDWwHhAVUCUwGtAUoCSQGJAUMBWQERAf8B7AHvAecN/wHxAfMB7QH/AUsBYAEb
+        Af8DPwFtlAABLAFFAQAB/wHNAdMBvxn/AY8BnQFjAf8BWAJXAb8UAAMjATQBLAFFAQAB/wMeASsDFwEg
+        AlkBVwHrAaIBrgGIAf8B6AHqAeEB/wH3AfgB9QH/AegB6gHhAf8BqgG1AZMB/wJOAUoB8AMkATaUAAFY
+        AVQBSwHvAbQBvQGfGf8BagGHAUMB/wNUAa8UAAMpAT8BLAFFAQAB/wMDAQQEAANMAZMCXAFaAecBlQGi
+        AWsB/wG7AcMBpwH/AZUBogFrAf8CXAFaAecBUQJQAZ+YAANUAa8BUQFlASMV/wHmAekB3wH/ASwBRQEA
+        Af8DOQFfFAADJAE2ASsBNgESAfwDHQEqBAADCQEMAUcCRgGBA1sB4QEsAUUBAAH/A1oB2wFHAkYBgQMJ
+        AQyYAAMgAS8BWAFUAUsB7wGCAZIBUwH/AfIB9AHvCf8B2QHeAc8B/wFRAWUBIwH/A1kBzxgAAwoBDQNY
+        Ad0DVAGrAxMBGgMMBBABFgFCAkEBcwJMAUQB8wMlATekAAMxAU8BWAFUAUsB7wE4AU8BAwH/AV0BcAEz
+        Af8BUQFlASMB/wEsAUUBAAH/A1kBzwMLAQ8cAAM2AlkBVQFJAfIDWQHMAUgCRwGDA1QBrwJSAUAB9AFO
+        Ak0BlawAAwsBDwM5AV8BRgJFAX8BRgJFAX8DMQFPKAADIAEvAVECUAGfAVgCVwG/A1QBrwMxAU+cABz/
+        A6UB/wFXAZwBVwH/A+cx/wLOAZwB/wFXAZwBVwH/AcYB3gHGHf+AABz/A6UB/wElAVcBAAH/ApwBVwH/
+        A+cp/wPGAf8CVwElAf8CVwElAf8BxgHeAcYd/4AAHP8DpQH/ASUBVwEAAf8BJQFXAQAB/wKcAVcB/wPn
+        If8DxgH/AlcBJQH/ASUBVwEAAf8CVwElAf8BxgHeAcYd/4AAHP8DpQH/ASUBVwEAAf8BJQFXAQAB/wEl
+        AVcBAAH/ApwBVwH/A94Z/wPGAf8CVwElAf8BJQFXAQAB/wElAVcBAAH/AlcBJQH/AcYB3gHGHf+AAALO
+        AZwB/wLOAZwB/wLOAZwB/wLOAZwB/wLOAZwB/wLOAZwB/wLOAZwB/wKcAVcB/wElAVcBAAH/ASUBVwEA
+        Af8BJQFXAQAB/wElAVcBAAH/ApwBVwH/A+cR/wPGAf8CVwElAf8BJQFXAQAB/wElAVcBAAH/ASUBVwEA
+        Af8CVwElAf8DnAH/As4BnAH/As4BnAH/As4BnAH/As4BnAH/As4BnAH/As4BnAH/As4BnAH/VAADzgH/
+        A8YB/wPGAf8DxgH/A8YB/wPWAf8UAAElAVcBAAH/ASUBVwEAAf8BJQFXAQAB/wElAVcBAAH/ASUBVwEA
+        Af8BJQFXAQAB/wElAVcBAAH/ASUBVwEAAf8BJQFXAQAB/wElAVcBAAH/ASUBVwEAAf8BJQFXAQAB/wEl
+        AVcBAAH/ApwBVwH/A+cJ/wLOAZwB/wJXASUB/wElAVcBAAH/ASUBVwEAAf8BJQFXAQAB/wElAVcBAAH/
+        ASUBVwEAAf8BJQFXAQAB/wElAVcBAAH/ASUBVwEAAf8BJQFXAQAB/wElAVcBAAH/ASUBVwEAAf8BJQFX
+        AQAB/wElAVcBAAH/HAAD9wH/NAADtQH/AiUBAAH/AiUBAAH/AiUBAAH/AiUBAAH/A9YB/xQAASUBVwEA
+        Af8BJQFXAQAB/wElAVcBAAH/ASUBVwEAAf8BJQFXAQAB/wElAVcBAAH/ASUBVwEAAf8BJQFXAQAB/wEl
+        AVcBAAH/ASUBVwEAAf8BJQFXAQAB/wElAVcBAAH/ASUBVwEAAf8BJQFXAQAB/wKcAVcB/wLOAZwB/wPG
+        Af8CVwElAf8BJQFXAQAB/wElAVcBAAH/ASUBVwEAAf8BJQFXAQAB/wElAVcBAAH/ASUBVwEAAf8BJQFX
+        AQAB/wElAVcBAAH/ASUBVwEAAf8BJQFXAQAB/wElAVcBAAH/ASUBVwEAAf8BJQFXAQAB/wElAVcBAAH/
+        HAACVwElBf8wAAP3Af8CVwElAf8BJQFXAQAB/wIlAQAB/wFXAZwBJQX/FAABJQFXAQAB/wElAVcBAAH/
+        ASUBVwEAAf8BJQFXAQAB/wElAVcBAAH/ASUBVwEAAf8BJQFXAQAB/wElAVcBAAH/ASUBVwEAAf8BJQFX
+        AQAB/wElAVcBAAH/ASUBVwEAAf8BJQFXAQAB/wElAVcBAAH/ASUBVwEAAf8CVwElAf8CVwElAf8BJQFX
+        AQAB/wElAVcBAAH/ASUBVwEAAf8BJQFXAQAB/wElAVcBAAH/ASUBVwEAAf8BJQFXAQAB/wElAVcBAAH/
+        ASUBVwEAAf8BJQFXAQAB/wElAVcBAAH/ASUBVwEAAf8BJQFXAQAB/wElAVcBAAH/ASUBVwEAAf8YAAPn
+        Af8CVwElAf8DlAH/NAADpQH/AiUBAAH/AiUBAAH/A84B/xgAASUBVwEAAf8BJQFXAQAB/wElAVcBAAH/
+        ASUBVwEAAf8BJQFXAQAB/wElAVcBAAH/ASUBVwEAAf8BJQFXAQAB/wElAVcBAAH/ASUBVwEAAf8BJQFX
+        AQAB/wElAVcBAAH/ASUBVwEAAf8BJQFXAQAB/wJXASUB/wO1Af8DxgH/AlcBJQH/ASUBVwEAAf8BJQFX
+        AQAB/wElAVcBAAH/ASUBVwEAAf8BJQFXAQAB/wElAVcBAAH/ASUBVwEAAf8BJQFXAQAB/wElAVcBAAH/
+        ASUBVwEAAf8BJQFXAQAB/wElAVcBAAH/ASUBVwEAAf8BJQFXAQAB/xgAAVcBnAFXAf8CJQEAAf8CVwEl
+        Af8D9wH/MAAD9wH/AlcBJQH/AlcBJQX/GAABJQFXAQAB/wElAVcBAAH/ASUBVwEAAf8BJQFXAQAB/wEl
+        AVcBAAH/ASUBVwEAAf8BJQFXAQAB/wElAVcBAAH/ASUBVwEAAf8BJQFXAQAB/wElAVcBAAH/ASUBVwEA
+        Af8BJQFXAQAB/wJXASUB/wLOAZwJ/wLOAZwB/wJXASUB/wElAVcBAAH/ASUBVwEAAf8BJQFXAQAB/wEl
+        AVcBAAH/ASUBVwEAAf8BJQFXAQAB/wElAVcBAAH/ASUBVwEAAf8BJQFXAQAB/wElAVcBAAH/ASUBVwEA
+        Af8BJQFXAQAB/wElAVcBAAH/FAAD7wH/AlcBJQH/ASUBVwEAAf8CJQEAAf8CnAFXAf80AAKcAVcB/wOl
+        Af8cAALOAZwB/wLOAZwB/wLOAZwB/wLOAZwB/wLOAZwB/wLOAZwB/wLOAZwB/wKcAVcB/wElAVcBAAH/
+        ASUBVwEAAf8BJQFXAQAB/wElAVcBAAH/AlcBJQH/As4BnBH/A8YB/wJXASUB/wElAVcBAAH/ASUBVwEA
+        Af8BJQFXAQAB/wJXASUB/wOcAf8CzgGcAf8CzgGcAf8CzgGcAf8CzgGcAf8CzgGcAf8CzgGcAf8CzgGc
+        Af8UAAJXASUB/wIlAQAB/wIlAQAB/wIlAQAB/wJXASUB/wP3Af8wAAPvAf8D9wH/HAAc/wOlAf8BJQFX
+        AQAB/wElAVcBAAH/ASUBVwEAAf8CVwElAf8CzgGcGf8DxgH/AlcBJQH/ASUBVwEAAf8BJQFXAQAB/wJX
+        ASUB/wHGAd4Bxh3/EAAD9wH/ApwBVwH/A5wB/wOcAf8DnAH/A5QB/wPOAf9UABz/A6UB/wElAVcBAAH/
+        ASUBVwEAAf8CVwElAf8DxiH/A8YB/wJXASUB/wElAVcBAAH/AlcBJQH/AcYB3gHGHf+AABz/A6UB/wEl
+        AVcBAAH/ApwBVwH/A94p/wPGAf8CVwElAf8CVwElAf8BxgHeAcYd/4AAHP8DpQH/AVcBnAFXAf8D5zH/
+        As4BnAH/AVcBnAFXAf8BxgHeAcYd/4AAHP8D7wH/A+c5/wPvAf8D5x3/gAABQgFNAT4HAAE+AwABKAMA
+        AUADAAEgAwABAQEAAQEGAAEBFgAD/wEAAYABAQHgBwAB4A4AAQEGAAGAAQEBAAEBBAABgAEBARABAQQA
+        AcABAwGIAQMEAAHgAQcBgAEDBAAB4AEHAcABAwQAAeABBwHAAQMEAAHgAQcBwAEDBAAB4AEHAcQBBwQA
+        AeABBwHEAQcEAAHgAQ8BwAEfBAAB8AEPAeABPwQAAfgBPwHwAX8IAAT/BAAE/wQABP8EAAT/BAAC/wH4
+        AR8EAAH+Af8B+AEfBAAB/gF/AfgBHwQAAfwBfwH8AT8EAAH8AT8B/AE/BAAB+AE/Af4BfwQAAfgBHwH+
+        AX8EAAHwAR8C/wQABP8EAAT/BAAE/wQABP8WAAs=
+</value>
+  </data>
+  <data name="buttonPreview.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="textBoxCurrentlyPage.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="columnHeaderDistrict.Text" xml:space="preserve">
+    <value>District</value>
+  </data>
+  <data name="buttonPreview.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;columnHeaderDistrict.Name" xml:space="preserve">
+    <value>columnHeaderDistrict</value>
+  </data>
+  <data name="buttonNext.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="checkBoxNotactive.Text" xml:space="preserve">
+    <value>Not active</value>
+  </data>
+  <data name="checkBoxVillages.Text" xml:space="preserve">
+    <value>Non Solidarity group</value>
+  </data>
+  <data name="&gt;&gt;buttonNext.Name" xml:space="preserve">
+    <value>buttonNext</value>
+  </data>
+  <data name="groupBoxButtonBottom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 544</value>
+  </data>
+  <data name="columnHeaderDistrict.Width" type="System.Int32, mscorlib">
+    <value>104</value>
+  </data>
+  <data name="&gt;&gt;buttonSearch.Name" xml:space="preserve">
+    <value>buttonSearch</value>
+  </data>
+  <data name="&gt;&gt;checkBoxNotactive.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="buttonCancel.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="&gt;&gt;checkBoxNotactive.Name" xml:space="preserve">
+    <value>checkBoxNotactive</value>
+  </data>
+  <data name="&gt;&gt;textBoxQuery.Parent" xml:space="preserve">
+    <value>groupBoxSearchParameters</value>
+  </data>
+  <data name="checkBoxPersons.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 30</value>
+  </data>
+  <data name="$this.AutoScaleBaseSize" type="System.Drawing.Size, System.Drawing">
+    <value>5, 13</value>
+  </data>
+  <data name="groupBoxButtonBottom.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;buttonPrintReport.Parent" xml:space="preserve">
+    <value>groupBoxSearchParameters</value>
+  </data>
+  <data name="&gt;&gt;radioButtonPerson.Name" xml:space="preserve">
+    <value>radioButtonPerson</value>
+  </data>
+  <data name="radioButtonPerson.Size" type="System.Drawing.Size, System.Drawing">
+    <value>196, 20</value>
+  </data>
+  <data name="&gt;&gt;checkBoxVillages.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>761, 594</value>
+  </data>
+  <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="groupBoxSearchParameters" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="groupBoxButtonBottom" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="labelTitleResult" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="listViewClient" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100" /&gt;&lt;Rows Styles="Absolute,131,Absolute,32,Percent,100,Absolute,53,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="buttonPrintReport.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="radioButtonCorporate.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="checkBoxPersons.Text" xml:space="preserve">
+    <value>Persons</value>
+  </data>
+  <data name="buttonPreview.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="&gt;&gt;textBoxQuery.Name" xml:space="preserve">
+    <value>textBoxQuery</value>
+  </data>
+  <data name="checkBoxActive.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9.75pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;checkBoxVillages.Name" xml:space="preserve">
+    <value>checkBoxVillages</value>
+  </data>
+  <data name="&gt;&gt;checkBoxPersons.Parent" xml:space="preserve">
+    <value>groupBoxCorporates</value>
+  </data>
+  <data name="radioButtonCorporate.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9.75pt, style=Bold</value>
+  </data>
+  <data name="groupBoxCorporates.Size" type="System.Drawing.Size, System.Drawing">
+    <value>390, 76</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="columnHeaderCity.Text" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="labelTitleResult.Size" type="System.Drawing.Size, System.Drawing">
+    <value>755, 32</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="buttonCancel.Text" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="&gt;&gt;columnHeaderPassportNumber.Name" xml:space="preserve">
+    <value>columnHeaderPassportNumber</value>
+  </data>
+  <data name="&gt;&gt;checkBoxActive.Parent" xml:space="preserve">
+    <value>groupBoxActive</value>
+  </data>
+  <data name="labelTitleResult.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
+  </data>
+  <data name="checkBoxVillages.Location" type="System.Drawing.Point, System.Drawing">
+    <value>234, 30</value>
+  </data>
+  <data name="radioButtonPerson.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="checkBoxGroups.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="buttonPrintReport.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;buttonCancel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSearchParameters.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="buttonNext.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="buttonNext.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="checkBoxVillages.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>36</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="imageListSort.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>16, 10</value>
+  </metadata>
+</root>

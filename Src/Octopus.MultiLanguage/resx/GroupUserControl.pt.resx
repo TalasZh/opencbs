@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AmountCycle.Text" xml:space="preserve">
+    <value>A quantia do ciclo</value>
+  </data>
+  <data name="BorrowFromAnOtherOrganization.Text" xml:space="preserve">
+    <value>Emprestado de outra organização</value>
+  </data>
+  <data name="businessAddress_comments" xml:space="preserve">
+    <value>O endereço comercial não está prenchido</value>
+  </data>
+  <data name="BusinessCityEmpty.Text" xml:space="preserve">
+    <value>A cidade não está preenchida</value>
+  </data>
+  <data name="BusinessCountryEmpty.Text" xml:space="preserve">
+    <value>O país no endereço comercial não está preenchido</value>
+  </data>
+  <data name="bussinessAddressEmpty.Text" xml:space="preserve">
+    <value>O endereço comercial não está preenchido</value>
+  </data>
+  <data name="CannotAddRemoveMember.Text" xml:space="preserve">
+    <value>Este grupo já está activo. Não pode adicionar ou remover os membros deste grupo</value>
+  </data>
+  <data name="CantModifyGroup" xml:space="preserve">
+    <value>Não pode modificar este grupo: ele tem contractos activos.</value>
+  </data>
+  <data name="DateOfBirth.Text" xml:space="preserve">
+    <value>Data de nascimento</value>
+  </data>
+  <data name="EconomicActivity.Text" xml:space="preserve">
+    <value>Actividade econômica</value>
+  </data>
+  <data name="Experience.Text" xml:space="preserve">
+    <value>Experiência</value>
+  </data>
+  <data name="House.Text" xml:space="preserve">
+    <value>Casa</value>
+  </data>
+  <data name="Inheritance.Text" xml:space="preserve">
+    <value>Fundos próprios </value>
+  </data>
+  <data name="LabelAmount.Text" xml:space="preserve">
+    <value>Montante</value>
+  </data>
+  <data name="labelAmountAndCycleCaracteristics.Text" xml:space="preserve">
+    <value>e</value>
+  </data>
+  <data name="labelAmountBeetweenCycleCaracteristics.Text" xml:space="preserve">
+    <value>entre</value>
+  </data>
+  <data name="LabelDebts.Text" xml:space="preserve">
+    <value>Dívidas</value>
+  </data>
+  <data name="LandPlot.Text" xml:space="preserve">
+    <value>A parcela do terreno</value>
+  </data>
+  <data name="LeaderEmpty.Text" xml:space="preserve">
+    <value>O nome do líder não está preenchido</value>
+  </data>
+  <data name="Livestock.Text" xml:space="preserve">
+    <value>Cabeças de gado</value>
+  </data>
+  <data name="messageBoxClientAlreadyInGroup.Text" xml:space="preserve">
+    <value>Este cliente já faz parte deste grupo</value>
+  </data>
+  <data name="messageBoxGroupSaved.Text" xml:space="preserve">
+    <value>O grupo salvo</value>
+  </data>
+  <data name="MonthlyDisposable.Text" xml:space="preserve">
+    <value>O rendimento mensal disponível</value>
+  </data>
+  <data name="NameEmpty.Text" xml:space="preserve">
+    <value>O nome não está preenchido</value>
+  </data>
+  <data name="Nothing.Text" xml:space="preserve">
+    <value>nada</value>
+  </data>
+  <data name="OtherOrganizationNameEmpty.Text" xml:space="preserve">
+    <value>O nome da outra organização não está preenchido</value>
+  </data>
+  <data name="PassportNumber.Text" xml:space="preserve">
+    <value>N ° de passaporte</value>
+  </data>
+  <data name="PersonAlreadyInThisGroup.Text" xml:space="preserve">
+    <value>Esta pessoa já está neste grupo</value>
+  </data>
+  <data name="PersonHaveAContractWithAnOtherGroup.Text" xml:space="preserve">
+    <value>Esta pessoa tem um contrato com outro grupo</value>
+  </data>
+  <data name="PersonIsALeader.Text" xml:space="preserve">
+    <value>Esta pessoa é um líder de outro grupo</value>
+  </data>
+  <data name="PersonIsInGroupAlready" xml:space="preserve">
+    <value>Esta pessoa já faz parte de um grupo, mas as respostas satisfazem todos os critérios necessários para ser capaz de alterar o grupo. Posso modificar?</value>
+  </data>
+  <data name="PersonsInThisGroupAreNotEnough.Text" xml:space="preserve">
+    <value>Não existe um número de pessoas suficientes neste grupo</value>
+  </data>
+  <data name="PersonsIsAlreadyInAGroup.Text" xml:space="preserve">
+    <value>Essa pessoa já está em outro grupo</value>
+  </data>
+  <data name="SelectMember" xml:space="preserve">
+    <value>Por favor, selecione o membro que gostaria de remover.</value>
+  </data>
+  <data name="Sex.Text" xml:space="preserve">
+    <value>O sexo (Masculino, Feminino)</value>
+  </data>
+  <data name="textDateOfEstablishment.Text" xml:space="preserve">
+    <value>A data de constituição não está preenchida</value>
+  </data>
+  <data name="textDistrict.Text" xml:space="preserve">
+    <value>O distrito não está preenchido</value>
+  </data>
+  <data name="textErrors.Text" xml:space="preserve">
+    <value>Erros</value>
+  </data>
+  <data name="textLeader.Text" xml:space="preserve">
+    <value>O líder não está preenchido</value>
+  </data>
+  <data name="textName.Text" xml:space="preserve">
+    <value>O nome não está preenchido</value>
+  </data>
+  <data name="textNo.Text" xml:space="preserve">
+    <value>Não</value>
+  </data>
+  <data name="textNoPersonInGroup.Text" xml:space="preserve">
+    <value>Nenhuma pessoa neste grupo</value>
+  </data>
+  <data name="textVillage.Text" xml:space="preserve">
+    <value>A aldeia não está preenchida</value>
+  </data>
+  <data name="textYes.Text" xml:space="preserve">
+    <value>Sim</value>
+  </data>
+  <data name="CannotDeleteLeader.Text" xml:space="preserve">
+    <value>You cannot delete leader from the group. Reassign leader first.</value>
+  </data>
+  <data name="Businesscellphone.Text" xml:space="preserve">
+    <value>O número do telefone celular de negócios</value>
+  </data>
+  <data name="Businessphone.Text" xml:space="preserve">
+    <value>O telefone comercial</value>
+  </data>
+  <data name="Homephone.Text" xml:space="preserve">
+    <value>O telefone de casa</value>
+  </data>
+  <data name="Personalphone.Text" xml:space="preserve">
+    <value>O telefone pessoal</value>
+  </data>
+</root>

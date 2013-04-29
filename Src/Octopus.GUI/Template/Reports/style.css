@@ -1,0 +1,151 @@
+html, body
+{
+    font: 9pt normal Arial, sans-serif;
+	margin: 0;
+	border: 0;
+}
+
+#sort
+{
+    float: right;
+    margin: 10px;
+}
+
+#tags
+{
+    margin: 10px;
+}
+
+#menu
+{
+    margin: 10px;
+}
+
+div.report
+{
+    border: 1px solid #98BBAF;
+    float: left;
+    height: 100px;
+    margin: 0.46%; 
+    position: relative;
+    width: 32%;
+	overflow-y: hidden;
+}
+
+div.report.loading
+{
+    background: #fc0;
+}
+
+div.report.selected, div.report.loading
+{
+    background: #D9E5DF;
+}
+
+div.report div.overlay
+{
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: white;
+    filter: alpha(opacity=5);
+}
+
+div.report div.timer
+{
+    bottom: 10px;
+    color: #005038;
+    font: bold 8.25pt Arial, sans-serif;
+    position: absolute;
+    right: 10px;
+    z-index: 10;
+}
+
+div.report.loading div.overlay
+{
+    background: #D9E5DF url('loading.gif') center no-repeat;
+    filter: alpha(opacity=80);
+    z-index: 2;
+}
+
+h1
+{
+	color: #005038;
+	font: bold 20pt Arial, sans-serif;
+    text-align: center;
+}
+
+h2
+{
+    color: #005038;
+    font: bold 12pt Arial, sans-serif;
+    margin: 5px;
+}
+
+p
+{
+    margin: 5px;
+}
+
+#version
+{
+    clear: both;
+    color: Gray;
+    font: normal 10px Arial, sans-serif;
+    margin: 5px;
+}
+
+.report .star 
+{    
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    height: 15px;        
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 15px;
+}
+
+.report .star.on
+{
+    background-image: url('star_on.png');
+}
+
+.report .star.off
+{
+    background-image: url('star_off.png');
+}
+
+.report.off
+{
+    display: none;
+}
+
+.page, .sort
+{
+    color: Blue;
+    cursor: pointer;
+    padding: 0 5px;
+    text-decoration: underline;
+}
+
+body.sort-by-alphabet #sort-by-alphabet,
+body.sort-by-popularity #sort-by-popularity,
+span.tag-selected
+{
+    background: #004000;
+    color: White;
+    cursor: auto;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.open-count 
+{
+    left: 5px;
+    bottom: 5px;
+    position: absolute;
+}

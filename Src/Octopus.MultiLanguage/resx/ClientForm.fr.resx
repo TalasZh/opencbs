@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ContractSaved" xml:space="preserve">
+    <value>Le contrat a été sauvegardé</value>
+  </data>
+  <data name="ContractUpdated" xml:space="preserve">
+    <value>Le contrat a été mis à jour</value>
+  </data>
+  <data name="GroupEmptyWarning.Caption" xml:space="preserve">
+    <value>Attention</value>
+  </data>
+  <data name="Corporate.Text" xml:space="preserve">
+    <value>Personne Morale</value>
+  </data>
+  <data name="CorporateBad.Text" xml:space="preserve">
+    <value>Entreprise (Client en retard)</value>
+  </data>
+  <data name="DateOfAgreement.Text" xml:space="preserve">
+    <value>Date d'agrément</value>
+  </data>
+  <data name="EconomicActivity.Text" xml:space="preserve">
+    <value>l'activité économique</value>
+  </data>
+  <data name="EmployeesNumber.Text" xml:space="preserve">
+    <value>Nombre d'employés</value>
+  </data>
+  <data name="Group.Text" xml:space="preserve">
+    <value>Groupe</value>
+  </data>
+  <data name="GroupBad.Text" xml:space="preserve">
+    <value>Groupe (Client en retard)</value>
+  </data>
+  <data name="GroupEmptyWarning.Text" xml:space="preserve">
+    <value>Vous ne pouvez pas sauver le contrat si le groupe ne contient aucun membre.</value>
+  </data>
+  <data name="IdentifyCompanyNumber.Text" xml:space="preserve">
+    <value>Numéro SIRET</value>
+  </data>
+  <data name="InsertionType.Text" xml:space="preserve">
+    <value>Type d'insertion</value>
+  </data>
+  <data name="LegalForm.Text" xml:space="preserve">
+    <value>Forme juridique</value>
+  </data>
+  <data name="LegalInscription.Text" xml:space="preserve">
+    <value>Inscription légale</value>
+  </data>
+  <data name="Person.Text" xml:space="preserve">
+    <value>Personne</value>
+  </data>
+  <data name="PersonBad.Text" xml:space="preserve">
+    <value>Personne (Client en retard)</value>
+  </data>
+  <data name="VolunteersNumber.Text" xml:space="preserve">
+    <value>Nombre de volontaires</value>
+  </data>
+  <data name="CompulsorySavings.Text" xml:space="preserve">
+    <value>Epragne obligatoire</value>
+  </data>
+  <data name="RolloverNone.Text" xml:space="preserve">
+    <value>Aucun</value>
+  </data>
+  <data name="RolloverPrincipal.Text" xml:space="preserve">
+    <value>Principal</value>
+  </data>
+  <data name="RolloverPrincipalAndInterests.Text" xml:space="preserve">
+    <value>Principal et intérêts</value>
+  </data>
+  <data name="SavingsActive.Text" xml:space="preserve">
+    <value>Actif</value>
+  </data>
+  <data name="SavingsBook.Text" xml:space="preserve">
+    <value>Compte courant</value>
+  </data>
+  <data name="SavingsClosed.Text" xml:space="preserve">
+    <value>Fermé</value>
+  </data>
+  <data name="SavingsDeposit.Text" xml:space="preserve">
+    <value>Dépôt à terme</value>
+  </data>
+  <data name="Bad.Text" xml:space="preserve">
+    <value>(Mauvais Client)</value>
+  </data>
+  <data name="CapitalDue.Text" xml:space="preserve">
+    <value>Encours :</value>
+  </data>
+  <data name="Currency.Text" xml:space="preserve">
+    <value>Devise :</value>
+  </data>
+  <data name="lblEarlyRepaimentBaseInterest.Text" xml:space="preserve">
+    <value>Intérêts restant dû</value>
+  </data>
+  <data name="lblEarlyRepaimentBaseOLB.Text" xml:space="preserve">
+    <value>Encours restant dû</value>
+  </data>
+  <data name="PercentsDue.Text" xml:space="preserve">
+    <value>Intérêts dus :</value>
+  </data>
+  <data name="Status.Text" xml:space="preserve">
+    <value>Statut</value>
+  </data>
+  <data name="Project.Text" xml:space="preserve">
+    <value>Projet</value>
+  </data>
+  <data name="SaveProject.Text" xml:space="preserve">
+    <value>Enregistrer Projet</value>
+  </data>
+  <data name="UpdateProject.Text" xml:space="preserve">
+    <value>Mettre à jour Projet</value>
+  </data>
+  <data name="LateFeesGracePeriod.Text" xml:space="preserve">
+    <value>Pénalités de retard (% par jour) - Période de Grâce</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>Confirmer</value>
+  </data>
+  <data name="ConfirmCancelLastEvent" xml:space="preserve">
+    <value>Êtes vous sûr de vouloir annuler cette opération ?</value>
+  </data>
+  <data name="cannotView" xml:space="preserve">
+    <value>Vous n'avez pas la permission d'ouvrir ce contrat.</value>
+  </data>
+  <data name="save" xml:space="preserve">
+    <value>Enregistrer</value>
+  </data>
+  <data name="update" xml:space="preserve">
+    <value>Mettre à jour</value>
+  </data>
+  <data name="buttonSave.Text" xml:space="preserve">
+    <value>Mise à jour de de l'entreprise</value>
+  </data>
+  <data name="ContractHasPendingInstallment.Text" xml:space="preserve">
+    <value>Le contrat n'a pas d'échéances en attente</value>
+  </data>
+  <data name="ContractIsReadOnly.Text" xml:space="preserve">
+    <value>Il n'y a pas de ligne de financement pour ce prêt. Ce prêt n'est accessible qu'en lecture seule. Contactez votre administrateur pour changer les paramètres.</value>
+  </data>
+  <data name="labelGuaranteeIsActive.Text" xml:space="preserve">
+    <value>La garantie est active</value>
+  </data>
+  <data name="NotSet.Text" xml:space="preserve">
+    <value>Non configuré</value>
+  </data>
+  <data name="BalanceIsNotEnough" xml:space="preserve">
+    <value>Le montant sur le compte d'épargne obligatoire est de {0}. Il n'est pas suffisant pour couvrir le prêt à hauteur de {1}.</value>
+  </data>
+  <data name="CumpolsorySavingIsMandatory" xml:space="preserve">
+    <value>Sélectionnez un contrat d'épargne obligatoire pour ce crédit.</value>
+  </data>
+  <data name="LoanRequiresCompulsory" xml:space="preserve">
+    <value>Ce prêt requiert un compte d'épargne obligatoire pour être décaissé.</value>
+  </data>
+  <data name="ParametersAreWrong" xml:space="preserve">
+    <value>Certains paramètres sont mauvais. S'il vous plaît  de les vérifier et de réessayer.</value>
+  </data>
+  <data name="CompulsorySavingDetail.Text" xml:space="preserve">
+    <value>Sélectionner un compte d'épargne obligatoire</value>
+  </data>
+  <data name="CollateralAmountIsNotEnough" xml:space="preserve">
+    <value>Le montant des gages doit couvrir au minimum {0}, ce qui représente {1}% du total du prêt. Mettez à jour vos gages!</value>
+  </data>
+  <data name="CollateralGuarantorAmountIsNotEnough" xml:space="preserve">
+    <value>Le montant des garanties (garants + gages) doit couvrir au minimum {0}, ce qui représente {1}% du total du prêt. Mettez à jour vos garagts et gages.</value>
+  </data>
+  <data name="GuarantorAmountIsNotEnough" xml:space="preserve">
+    <value>Le montant des garants doit couvrir au minimum {0}, ce qui représente {1}% du total du prêt. Mettez à jour vos garants.</value>
+  </data>
+  <data name="SavingsAccountHasActiveLoans" xml:space="preserve">
+    <value>Ce compte d'épargne ne peut pas être clôturé car il a un contrat de crédit lié en cours.</value>
+  </data>
+  <data name="SavingsAccountHasPendingEvents" xml:space="preserve">
+    <value>Ce compte ne peut pas être fermé, il a des évènements en attente.</value>
+  </data>
+  <data name="DeleteCumpolsorySavingsFromLoan" xml:space="preserve">
+    <value>Etes vous sûr de vouloir supprimer ce compte d'épargne obligatoire pour ce prêt?</value>
+  </data>
+  <data name="TotalEntryFees" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="DeleteCollateralFromLoan" xml:space="preserve">
+    <value>Etes-vous certainde vouloir retirer ce gage de ce pret?</value>
+  </data>
+  <data name="NonSolidaryGroup" xml:space="preserve">
+    <value>Groupe non solidaire</value>
+  </data>
+  <data name="SavingsPending.Text" xml:space="preserve">
+    <value>En attente</value>
+  </data>
+  <data name="lblEarlyRepaimentBasePrincipal.Text" xml:space="preserve">
+    <value>% du principal</value>
+  </data>
+  <data name="ConfirmWriteOff.Text" xml:space="preserve">
+    <value>Êtes-vous sûr de vouloir passer ce prêt en perte ?</value>
+  </data>
+  <data name="Abandoned.Text" xml:space="preserve">
+    <value>Abandonné</value>
+  </data>
+  <data name="Active.Text" xml:space="preserve">
+    <value>Actif</value>
+  </data>
+  <data name="Closed.Text" xml:space="preserve">
+    <value>Clôturé</value>
+  </data>
+  <data name="Pending.Text" xml:space="preserve">
+    <value>En attente</value>
+  </data>
+  <data name="Refused.Text" xml:space="preserve">
+    <value>Refusé</value>
+  </data>
+  <data name="Validated.Text" xml:space="preserve">
+    <value>Validé</value>
+  </data>
+  <data name="WrittenOff.Text" xml:space="preserve">
+    <value>Radiés</value>
+  </data>
+  <data name="WaiveFee.Text" xml:space="preserve">
+    <value>Voulez-vous annuler les pénalités de retard pour le dernier paiement ?</value>
+  </data>
+  <data name="CompulsorySavingNotSelected.Text" xml:space="preserve">
+    <value>Aucun compte sélectionné</value>
+  </data>
+  <data name="Postponed.Text" xml:space="preserve">
+    <value>Reporté</value>
+  </data>
+</root>

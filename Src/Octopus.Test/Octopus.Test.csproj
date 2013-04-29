@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ECE3CED4-8326-4455-A0C2-D43336EF0B32}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Octopus.Test</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Octopus.Test</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'DebugWithTest|AnyCPU' ">
+    <OutputPath>C:\Documents and Settings\Administrateur\Bureau\output\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'FitNesse|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\OutputForFitNesse\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Test|AnyCPU' ">
+    <OutputPath>bin\Test\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="nunit.framework, Version=2.6.1.12217, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.mocks, Version=2.6.1.12217, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\nunit.mocks.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CoreDomain\Accounting\TestAccountingClosure.cs" />
+    <Compile Include="CoreDomain\Accounting\TestContractAccountingRule.cs" />
+    <Compile Include="CoreDomain\Accounting\TestAccountingRuleCollection.cs" />
+    <Compile Include="CoreDomain\Contracts\LoanRepayment\MaxRepayment\TestCalculateMaximumAmountToRepayWithCentsInAccrualMode.cs" />
+    <Compile Include="CoreDomain\Contracts\Loans\TestAddTranches.cs" />
+    <Compile Include="CoreDomain\Contracts\Loans\TestOLBCalculation.cs" />
+    <Compile Include="CoreDomain\Contracts\Loans\TestRescheduling.cs" />
+    <Compile Include="CoreDomain\Contracts\Savings\CalculateInterests\Daily.cs" />
+    <Compile Include="CoreDomain\Contracts\Savings\CalculateInterests\MinimalAmount\Weekly.cs" />
+    <Compile Include="CoreDomain\Contracts\Savings\CalculateInterests\MinimalAmount\Monthly.cs" />
+    <Compile Include="CoreDomain\Contracts\Savings\TestSavingBookProduct.cs" />
+    <Compile Include="CoreDomain\Contracts\Savings\PostingInterests\EndOfWeek.cs" />
+    <Compile Include="CoreDomain\Contracts\Savings\PostingInterests\EndOfDay.cs" />
+    <Compile Include="CoreDomain\Contracts\Savings\PostingInterests\EndOfMonth.cs" />
+    <Compile Include="CoreDomain\Contracts\Savings\PostingInterests\EndOfYear.cs" />
+    <Compile Include="CoreDomain\Contracts\Savings\TestSavingFees.cs" />
+    <Compile Include="CoreDomain\Events\TestBadLoanRepaymentEvent.cs" />
+    <Compile Include="CoreDomain\Events\TestEvent.cs" />
+    <Compile Include="CoreDomain\Events\TestEventStock.cs" />
+    <Compile Include="CoreDomain\Export\TestFieldType.cs" />
+    <Compile Include="CoreDomain\TestVillage.cs" />
+    <Compile Include="CoreDomain\TestVillageMember.cs" />
+    <Compile Include="DatabaseConnection\TestConnectionManager.cs" />
+    <Compile Include="Manager\Accounting\TestAccountingRuleManager.cs" />
+    <Compile Include="Manager\Accounting\TestAccountManager.cs" />
+    <Compile Include="Manager\TestLoanManager.cs" />
+    <Compile Include="Manager\Currencies\TestCurrencyManager.cs" />
+    <Compile Include="Manager\Currencies\TestExchangeRateManager.cs" />
+    <Compile Include="Manager\Accounting\TestAccountingTransactionManager.cs" />
+    <Compile Include="Manager\Accounting\TestProvisioningRuleManager.cs" />
+    <Compile Include="Manager\Database\TestDatabaseComparerManager.cs" />
+    <Compile Include="Manager\TestSavingsManager.cs" />
+    <Compile Include="TestSetup.cs" />
+    <Compile Include="Services\Accounting\TestAccountingRuleServices.cs" />
+    <Compile Include="Services\Accounting\TestAccountingServices.cs" />
+    <Compile Include="CoreDomain\Accounting\TestAccount.cs" />
+    <Compile Include="CoreDomain\Accounting\TestBooking.cs" />
+    <Compile Include="CoreDomain\Accounting\TestBookingToViewStock.cs" />
+    <Compile Include="CoreDomain\Accounting\TestBookingToView.cs" />
+    <Compile Include="CoreDomain\Accounting\TestChartOfAccounts.cs" />
+    <Compile Include="CoreDomain\Accounting\TestElementaryMvtToExport.cs" />
+    <Compile Include="CoreDomain\Accounting\TestExchangeRate.cs" />
+    <Compile Include="CoreDomain\Accounting\TestMovementSet.cs" />
+    <Compile Include="CoreDomain\Accounting\TestProvisioningTable.cs" />
+    <Compile Include="CoreDomain\Contracts\CalculateInstallments\TestCalculateInstallmentsFlatRateWithCents.cs" />
+    <Compile Include="CoreDomain\Contracts\CalculateInstallments\TestCalculateInstallmentsFlatRateWithoutCents.cs" />
+    <Compile Include="CoreDomain\Contracts\CalculateInstallments\TestCalculateInstallmentsDecliningRateWithoutCents.cs" />
+    <Compile Include="CoreDomain\Contracts\LoanRepayment\FeesForAnticipatedRepayment\TestCalculateFeesForAnticipatedRepaymentWithCents.cs" />
+    <Compile Include="CoreDomain\Contracts\LoanRepayment\FeesForAnticipatedRepayment\TestCalculateFeesForAnticipatedRepaymentWithNoCents.cs" />
+    <Compile Include="CoreDomain\Contracts\LoanRepayment\RepayLateInstallments\TestLateFeesCalculationWithCents.cs" />
+    <Compile Include="CoreDomain\Contracts\LoanRepayment\MaxRepayment\TestCalculateMaximumAmountToRegradingLoanWithCents.cs" />
+    <Compile Include="CoreDomain\Contracts\LoanRepayment\MaxRepayment\TestCalculateMaximumAmountToRegradingLoanWithNoCents.cs" />
+    <Compile Include="CoreDomain\Contracts\LoanRepayment\MaxRepayment\TestCalculateMaximumAmountToRepayWithCents.cs" />
+    <Compile Include="CoreDomain\Contracts\LoanRepayment\MaxRepayment\TestCalculateMaximumAmountToRepayWithNoCents.cs" />
+    <Compile Include="CoreDomain\Contracts\LoanRepayment\RepayLateInstallments\TestLateFeesCalculationWithNoCents.cs" />
+    <Compile Include="CoreDomain\Contracts\LoanRepayment\RepayLateInstallments\TestRepayLateInstallmentsWithCents.cs" />
+    <Compile Include="CoreDomain\Contracts\LoanRepayment\RepayLateInstallments\TestRepayLateInstallmentsWithNoCents.cs" />
+    <Compile Include="CoreDomain\Contracts\LoanRepayment\RepayNextInstallments\TestRepayNextInstallmentsWithCents.cs" />
+    <Compile Include="CoreDomain\Contracts\LoanRepayment\RepayNextInstallments\TestRepayNextInstallmentsWithNoCents.cs" />
+    <Compile Include="CoreDomain\Contracts\Savings\TestSaving.cs" />
+    <Compile Include="CoreDomain\Contracts\Savings\TestSavingEvent.cs" />
+    <Compile Include="CoreDomain\TestAlert.cs" />
+    <Compile Include="CoreDomain\TestAmountCycle.cs" />
+    <Compile Include="CoreDomain\TestAmountCycleStock.cs" />
+    <Compile Include="CoreDomain\Contracts\CalculateInstallments\TestCalculateInstallmentsDecliningRateWithCents.cs" />
+    <Compile Include="CoreDomain\TestCalculateInstallmentsOptions.cs" />
+    <Compile Include="CoreDomain\TestCity.cs" />
+    <Compile Include="CoreDomain\TestGroup.cs" />
+    <Compile Include="CoreDomain\TestClosureContractStock.cs" />
+    <Compile Include="CoreDomain\Contracts\Loans\TestLoan.cs" />
+    <Compile Include="CoreDomain\Contracts\Loans\TestCreditContract.cs" />
+    <Compile Include="CoreDomain\Contracts\Loans\TestCreditContractRepayment.cs" />
+    <Compile Include="CoreDomain\TestDistrictArea.cs" />
+    <Compile Include="CoreDomain\TestDomainOfApplication.cs" />
+    <Compile Include="CoreDomain\TestExoticInstallment.cs" />
+    <Compile Include="CoreDomain\TestExoticProduct.cs" />
+    <Compile Include="CoreDomain\TestFundingLine.cs" />
+    <Compile Include="CoreDomain\TestGuarantor.cs" />
+    <Compile Include="CoreDomain\TestInstallment.cs" />
+    <Compile Include="CoreDomain\TestInstallmentType.cs" />
+    <Compile Include="CoreDomain\TestMember.cs" />
+    <Compile Include="CoreDomain\TestPackage.cs" />
+    <Compile Include="CoreDomain\TestPerson.cs" />
+    <Compile Include="CoreDomain\TestProject.cs" />
+    <Compile Include="CoreDomain\TestProvinceArea.cs" />
+    <Compile Include="CoreDomain\TestUser.cs" />
+    <Compile Include="CoreDomain\TestMFI.cs" />
+    <Compile Include="DataUtil.cs" />
+    <Compile Include="Manager\Events\TestEventManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Manager\Events\TestSavingEventManager.cs" />
+    <Compile Include="Services\Accounting\TestStandardBookingServices.cs" />
+    <Compile Include="ExceptionsHandler\TestOctopusExceptionsHelper.cs" />
+    <Compile Include="Manager\AssemblyInfo.cs" />
+    <Compile Include="Manager\BaseManagerTest.cs" />
+    <Compile Include="Manager\DataHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Manager\Products\TestSavingProductManager.cs" />
+    <Compile Include="Manager\Clients\TestClientManager.cs" />
+    <Compile Include="Manager\Clients\TestClientManagementProxy.cs" />
+    <Compile Include="Manager\TestCreditManagementProxy.cs" />
+    <Compile Include="Manager\Database\TestGeneralSettingsManager.cs" />
+    <Compile Include="Manager\TestEconomicActivityManager.cs" />
+    <Compile Include="Manager\TestFundingLineManager.cs" />
+    <Compile Include="Manager\TestInstallmentManager.cs" />
+    <Compile Include="Manager\TestInstallmentManagementProxy.cs" />
+    <Compile Include="Manager\TestInstallmentTypeManager.cs" />
+    <Compile Include="Manager\TestLocationsManager.cs" />
+    <Compile Include="Manager\TestMFIManager.cs" />
+    <Compile Include="Manager\TestNonWorkingDateManager.cs" />
+    <Compile Include="Manager\Products\TestLoanProductManager.cs" />
+    <Compile Include="Manager\TestProjectManagerProxy.cs" />
+    <Compile Include="Manager\TestQueryForObject.cs" />
+    <Compile Include="Manager\TestUserManager.cs" />
+    <Compile Include="Services\AddDataForTestingTransaction.cs" />
+    <Compile Include="Services\BaseServicesTest.cs" />
+    <Compile Include="Services\Export\TestExportServices.cs" />
+    <Compile Include="Services\Savings\TestSavingProductServices.cs" />
+    <Compile Include="Services\Savings\TestSavingServices.cs" />
+    <Compile Include="Services\TestCheckRegExServices.cs" />
+    <Compile Include="Services\TestClientServices.cs" />
+    <Compile Include="Services\TestLoanServices.cs" />
+    <Compile Include="Services\TestDatabaseServices.cs" />
+    <Compile Include="Services\TestEconomicActivityServices.cs" />
+    <Compile Include="Services\TestFundingLineService.cs" />
+    <Compile Include="Services\TestGraphServices.cs" />
+    <Compile Include="Services\TestLocationsServices.cs" />
+    <Compile Include="Services\TestMFIServices.cs" />
+    <Compile Include="Services\TestProductServices.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Services\TestProjectServices.cs" />
+    <Compile Include="Services\TestServicesHelper.cs" />
+    <Compile Include="Services\TestServiceSynchronize.cs" />
+    <Compile Include="Services\TestUserServices.cs" />
+    <Compile Include="Shared\CommonTest.cs" />
+    <Compile Include="Shared\CsvTests.cs" />
+    <Compile Include="Shared\TestAmountComparer.cs" />
+    <Compile Include="Shared\TestConnectionManagement.cs" />
+    <Compile Include="Shared\TestGeneralSettings.cs" />
+    <Compile Include="Shared\TestNameFormatInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Shared\TestNonWorkingDateHelper.cs" />
+    <Compile Include="Shared\TestOCurrency.cs" />
+    <Compile Include="Shared\TestValidateUpdateDataBase.cs" />
+    <Compile Include="Manager\TestQuestionnaireManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Octopus.ConnectionManager\Octopus.DatabaseConnection.csproj">
+      <Project>{30AF40FB-FA8B-4F5E-B41A-CA59E82BA5A0}</Project>
+      <Name>Octopus.DatabaseConnection</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Octopus.CoreDomain\Octopus.CoreDomain.csproj">
+      <Project>{D539C388-3848-4A3E-AB87-42B8E329755A}</Project>
+      <Name>Octopus.CoreDomain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Octopus.Enums\Octopus.Enums.csproj">
+      <Project>{8AFC1E87-3856-4F05-8280-5360D33C200B}</Project>
+      <Name>Octopus.Enums</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Octopus.ExceptionsHandler\Octopus.ExceptionsHandler.csproj">
+      <Project>{98B26AD8-D160-462B-B70F-982D8701154A}</Project>
+      <Name>Octopus.ExceptionsHandler</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Octopus.Manager\Octopus.Manager.csproj">
+      <Project>{963A6B8B-779C-4052-B39A-8ABBFBF16C1A}</Project>
+      <Name>Octopus.Manager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Octopus.Reports\Octopus.Reports.csproj">
+      <Project>{A2E4E382-5796-446C-85B1-8EF306AD50DE}</Project>
+      <Name>Octopus.Reports</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Octopus.Services\Octopus.Services.csproj">
+      <Project>{A859D97A-51FB-4961-AF07-5856640511AF}</Project>
+      <Name>Octopus.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Octopus.Shared\Octopus.Shared.csproj">
+      <Project>{B3288E21-E5A9-4620-BEF3-AFB0B207655C}</Project>
+      <Name>Octopus.Shared</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="%40Sql\Init.sql" />
+    <None Include="Octopus.Test.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Manager\Database\DataSchemaPrototype.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="%40Sql\Objects.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties GreenPepperConfigSutName="" GreenPepperConfigProjectName="" GreenPepperConfigRepositories="" GreenPepperConfigRunnerArgs="" GreenPepperCustomSud="" GreenPepperCustomSudArgs="" GreenPepperConfigRunnerProgram="" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

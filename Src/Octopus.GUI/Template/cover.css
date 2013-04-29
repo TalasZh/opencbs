@@ -1,0 +1,318 @@
+/*// ***************************************************************
+  // *  Copyright Mobipocket.com 2006
+  // *  Author: Aurélien Durand
+  // *  File: cover.css
+  // *  Description: Style sheets for Library HTML views
+  // ***************************************************************/
+
+BODY
+{ 
+	margin: 0px;
+	border: 0px;
+	padding: 0px;
+	font-family:Tahoma;
+}
+
+.shelf_horizontal
+{
+	height:10px;
+	background-image: url('wood_horizontal.bmp');
+	background-repeat:repeat;		
+}
+
+.shelf_vertical
+{
+	width:10px;
+	background-image: url('wood_vertical.bmp');
+	background-repeat:repeat;
+}
+
+.shelf_back
+{
+	background-image: url('wood_back.gif');
+	background-repeat:repeat;
+}
+
+TABLE.book_ie5
+{
+	margin-top:5px;	
+}
+
+TABLE.book,TABLE.book_ie5
+{
+	width:180px;
+	height:175px;
+	FILTER: progid:DXImageTransform.Microsoft.Shadow(direction=45,color=#101010,strength=5);
+}
+
+TABLE.book,TABLE.book_ie5
+{
+	float:left;	
+	margin-bottom: 10px;		
+}
+
+.book td , .book_ie5 td
+{
+	text-align: center;
+	vertical-align: bottom;
+	margin: 0px;
+}
+
+IMG.cover_img , TD.default_cover, IMG.cover_img_enter , TD.default_cover_enter, IMG.img_rating_over , TD.default_cover_list
+{
+	cursor:hand;
+}
+
+IMG.cover_img_enter , TD.default_cover_enter
+{
+	border: 2px solid gray;
+}
+
+TD.default_cover , TD.default_cover_enter
+{
+	background-image:url('default_book_cover.gif');
+	width:100px;
+	height:150px;	
+}
+
+.default_cover div , .default_cover_enter div
+{
+	margin-left:8px;
+	margin-right:9px;
+	margin-top:6px;
+	margin-bottom:8px;
+	width:86px;
+	height:134px;
+	font-size:13px;
+	font-family:Verdana;
+	font-variant: small-caps;
+}
+
+TD.default_cover,TD.default_cover_enter,TD.default_cover_list
+{
+	text-align: center;
+	vertical-align: top;
+}
+
+.default_cover div,.default_cover_enter div,.default_cover_list div
+{
+	text-overflow : clip;
+	overflow : hidden;
+	font-weight:bold;
+	word-wrap:break-word;
+}
+
+SPAN.details,SPAN.description,A.link_popup,A.link_popup_over,IMG.img_rating_over
+{
+	vertical-align:top;
+	font-family:Tahoma;	
+	font-size:11.5px;
+}
+
+A.link_popup
+{
+	cursor:default;
+	text-decoration:none;
+	color:'#3333cc';
+	font-weight:normal;
+}
+
+A.link_popup_over
+{
+	cursor:hand;
+	text-decoration:underline;
+	color:'#3333cc';
+}
+
+SPAN.title_popup
+{
+	font-weight:bold;
+	font-size:medium;
+	word-wrap:break-word;
+}
+
+SPAN.details
+{
+	font-weight:bold;
+}
+
+SPAN.description
+{	
+	width:100%;
+	text-align:justify;
+	text-justify:newspaper;
+	text-overflow:ellipsis;
+	overflow :hidden;	
+	word-wrap:break-word;
+}
+
+.description P
+{
+	margin:0px;
+}
+
+DIV.popup_curved
+{
+	background: transparent;
+	position:absolute;
+	cursor:default;
+	/*If you have a lot of RAM... just uncomment those lines*/
+	/*FILTER: progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=95)
+			progid:DXImageTransform.Microsoft.Wipe(GradientSize=1.0, wipeStyle=1, motion='forward', duration=0.125)  
+			progid:DXImageTransform.Microsoft.Inset(duration=0.125) 
+			progid:DXImageTransform.Microsoft.Shadow(direction=135,color=#202020,strength=5);*/
+}	
+
+.popup_curved BR
+{
+	line-height:5px;
+}
+
+
+/*Draw the corners as empty B tags with specific borders
+Here:
+
+
+class popup_curved
+
+    * *-----------------* *				class line1
+  *						    *			class line2
+ *						     *			class line3
+*							  *			class line4
+*							  *			class line5
+|							  |			
+|							  |			
+|      class popup_content	  |			
+|							  |			
+|							  |			
+*							  *			class line5
+*							  *			class line4
+ *						     *			class line3
+  *						    *			class line2
+    * *-----------------* *				class line1
+
+*/
+
+.popup_curved.line1, 
+.popup_curved.line2, 
+.popup_curved.line3, 
+.popup_curved.line4,
+.popup_curved.line5
+{
+	display:block;
+	overflow:hidden; 
+	font-size:1px;
+}
+
+.popup_curved.line1, 
+.popup_curved.line2, 
+.popup_curved.line3, 
+.popup_curved.line4
+{
+	height:1px;
+}
+
+.popup_curved.line2, 
+.popup_curved.line3, 
+.popup_curved.line4, 
+.popup_curved.line5,
+.popup_curved.popup_content 
+{
+	background:white; 
+	border-left:1px solid gray; 
+	border-right:1px solid gray;	
+}
+
+
+.popup_curved.line1
+{
+	margin:0 6px; 
+	background:gray;
+}
+
+.popup_curved.line2
+{
+	margin:0 4px; 
+	border-width:0 2px;
+}
+
+.popup_curved.line3
+{
+	margin:0 3px;
+}
+
+.popup_curved.line4
+{
+	margin:0 2px;
+}
+
+.popup_curved.line5
+{
+	height:2px; 
+	margin:0 1px;
+}
+
+.popup_curved.popup_content
+{
+	padding-left:1em;
+	padding-right:1em;
+}
+
+.popup_curved.popup_content
+{
+	font-size:11.5px;
+}
+
+/*For the list view*/
+.book_list td
+{
+	text-align:center;
+	margin: 0px;
+}
+
+.list_content,.list_content_enter,.list_content_clicked
+{
+	padding-bottom:0.5em;
+	padding-top:0.5em;
+	page-break-after:always;
+	border-bottom:1px solid gray;	
+	text-align:left;
+}
+
+.list_content_enter
+{
+	background-color:'#F8F8F8';
+}
+
+.list_content_clicked
+{
+	background-color:'#DDEEFF';
+}
+
+TABLE.book_list
+{
+	width:140px;
+	FILTER: progid:DXImageTransform.Microsoft.Shadow(direction=45,color=#101010,strength=5);
+}
+
+TD.default_cover_list
+{
+	background-image:url('default_book_cover_small.gif');
+	width:80px;
+	height:120px;
+}
+
+.default_cover_list div
+{
+	width:68px;
+	height:100px;
+	
+	margin-left:7px;
+	margin-right:6px;
+	margin-top:4px;
+	margin-bottom:13px;
+
+	font-size:11px;
+	font-family:Verdana;
+	font-variant: small-caps;	
+}

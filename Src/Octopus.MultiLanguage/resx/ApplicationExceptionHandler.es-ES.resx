@@ -1,0 +1,705 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="PackageExceptionExoticProductNameAlreadyExist" xml:space="preserve">
+    <value>Exotic product name already exist!!</value>
+  </data>
+  <data name="AccountExceptionAccountIsNull.Text" xml:space="preserve">
+    <value>Seleccionar una cuenta</value>
+  </data>
+  <data name="AccountExceptionIncorrectAmountFormat.Text" xml:space="preserve">
+    <value>Tiene que entrar un valor positivo como monto</value>
+  </data>
+  <data name="AccountExceptionLabelIsNull.Text" xml:space="preserve">
+    <value>Falta el nuevo label</value>
+  </data>
+  <data name="AccountExceptionLocalNumberIsNull.Text" xml:space="preserve">
+    <value>El campo "número de cuenta local " está vacío</value>
+  </data>
+  <data name="AccountExceptionMovementSetUnbalanced.Text" xml:space="preserve">
+    <value>La operación contable tiene que estar equilibrada</value>
+  </data>
+  <data name="AccountExceptionNumberIsNull.Text" xml:space="preserve">
+    <value>Falta el número</value>
+  </data>
+  <data name="AllInstallmentRepaid.Text" xml:space="preserve">
+    <value>Este préstamo ha sido cancelado</value>
+  </data>
+  <data name="CantRepayInTheFutur.Text" xml:space="preserve">
+    <value>No puede seleccionar una fecha anterior al día de hoy</value>
+  </data>
+  <data name="CollateralExceptionAlreadyExist.Text" xml:space="preserve">
+    <value>Este nombre ya existe</value>
+  </data>
+  <data name="CollateralExceptionCastInvalid.Text" xml:space="preserve">
+    <value>Imposible de modificar o suprimir</value>
+  </data>
+  <data name="CollateralExceptionHasChildrens.Text" xml:space="preserve">
+    <value>este garante tiene hijos, es imposible suprimirlo</value>
+  </data>
+  <data name="CollateralExceptionNameIsNull.Text" xml:space="preserve">
+    <value>Falta el nombre</value>
+  </data>
+  <data name="CollateralExceptionNewNameIsNull.Text" xml:space="preserve">
+    <value>El campo "nuevo nombre" está vacío</value>
+  </data>
+  <data name="CollateralExceptionNoSelect.Text" xml:space="preserve">
+    <value>Debe elegir un garante antes</value>
+  </data>
+  <data name="ContractExceptionAmountIsNull.Text" xml:space="preserve">
+    <value>El campo " monto del préstamo" está vacío</value>
+  </data>
+  <data name="ContractExceptionAnticipatedRepaymentPenaltiesIsNull.Text" xml:space="preserve">
+    <value>El campo "penalidades por pago anticipado" está vacío</value>
+  </data>
+  <data name="ContractExceptionBeneficiaryIsActive.Text" xml:space="preserve">
+    <value>Este cliente ya es activo</value>
+  </data>
+  <data name="ContractExceptionBeneficiaryIsAllowOneLoans.Text" xml:space="preserve">
+    <value>Este cliente está autorizado a sacar un solo préstamo</value>
+  </data>
+  <data name="ContractExceptionBeneficiaryIsBad.Text" xml:space="preserve">
+    <value>Este cliente es moroso. No se puede crear un préstamo para un cliente moroso</value>
+  </data>
+  <data name="ContractExceptionBeneficiaryIsNull.Text" xml:space="preserve">
+    <value>El campo "beneficiario del préstamo" está vacío</value>
+  </data>
+  <data name="ContractExceptionContractIsNull.Text" xml:space="preserve">
+    <value>Por favor seleccionar un contrato</value>
+  </data>
+  <data name="ContractExceptionCreditCommiteeCommentNotModified.Text" xml:space="preserve">
+    <value>El campo "comentario" está vacío</value>
+  </data>
+  <data name="ContractExceptionDisburseDate.Text" xml:space="preserve">
+    <value>La fecha de desembolso debe estar entre la fecha de creación y la fecha del primer pago</value>
+  </data>
+  <data name="ContractExceptionEntryFeesIsNull.Text" xml:space="preserve">
+    <value>El campo "comisiones" está vacío</value>
+  </data>
+  <data name="ContractExceptionEventNotCancelable.Text" xml:space="preserve">
+    <value>No es posible cancelar este evento</value>
+  </data>
+  <data name="ContractExceptionFundingLineIsNull.Text" xml:space="preserve">
+    <value>La línea de fondeo de este contrato esta vacía</value>
+  </data>
+  <data name="ContractExceptionGracePeriodIsNull.Text" xml:space="preserve">
+    <value>El campo "periodo de gracia" está vacío</value>
+  </data>
+  <data name="ContractExceptionInstallmentTypeIsNull.Text" xml:space="preserve">
+    <value>El campo "tipo de cuota" está vacío</value>
+  </data>
+  <data name="ContractExceptionInterestRateIsNull.Text" xml:space="preserve">
+    <value>El campo "tasa de interés" está vacío</value>
+  </data>
+  <data name="ContractExceptionLoanOfficerIsNull.Text" xml:space="preserve">
+    <value>El asesor de crédito no está seleccionado</value>
+  </data>
+  <data name="ContractExceptionNonRepaymentPenaltiesIsNull.Text" xml:space="preserve">
+    <value>El campo "penalidades por atraso" está vacío</value>
+  </data>
+  <data name="ContractExceptionNumberOfInstallmentsIsNull.Text" xml:space="preserve">
+    <value>El campo "número de cuotas" está vacío</value>
+  </data>
+  <data name="ContractExceptionProjectIsNull.Text" xml:space="preserve">
+    <value>Por favor, guarde el proyecto antes!</value>
+  </data>
+  <data name="ContractExceptionStatusNotModified.Text" xml:space="preserve">
+    <value>El estatuto debe ser modificado</value>
+  </data>
+  <data name="DecimalAmount.Text" xml:space="preserve">
+    <value>Está usando una moneda sin centavos, el monto no puede tener centavos</value>
+  </data>
+  <data name="DisburseExceptionDateWrong.Text" xml:space="preserve">
+    <value>La fecha de desembolso debe estar entre la fecha de creación y la fecha del primer pago</value>
+  </data>
+  <data name="DOAExceptionAlreadyExist.Text" xml:space="preserve">
+    <value>La actividad ya existe, por favor elija otro nombre</value>
+  </data>
+  <data name="DOAExceptionCastInvalid.Text" xml:space="preserve">
+    <value>Imposible de modificar o suprimir</value>
+  </data>
+  <data name="DOAExceptionHasChildrens.Text" xml:space="preserve">
+    <value>Supresión imposible, existe subcategorías de esta actividad</value>
+  </data>
+  <data name="DOAExceptionNameIsNull.Text" xml:space="preserve">
+    <value>El campo "Nombre" está vacío</value>
+  </data>
+  <data name="DOAExceptionNewNameIsNull.Text" xml:space="preserve">
+    <value>El campo " Nuevo nombre" está vacío</value>
+  </data>
+  <data name="DOAExceptionNoSelect.Text" xml:space="preserve">
+    <value>Tiene que elegir el tipo de actividad antes</value>
+  </data>
+  <data name="errorTitle.Text" xml:space="preserve">
+    <value>Error en la aplicación</value>
+  </data>
+  <data name="ExchangeRateExceptionDateIsNull.Text" xml:space="preserve">
+    <value>Por favor seleccionar una fecha</value>
+  </data>
+  <data name="ExchangeRateExceptionExchangeRateIsNull.Text" xml:space="preserve">
+    <value>Para esta fecha, el campo "tipo de cambio" está vacío</value>
+  </data>
+  <data name="ExchangeRateExceptionRateIsEmpty.Text" xml:space="preserve">
+    <value>El campo "tasa" está vacío"</value>
+  </data>
+  <data name="InstallmentExceptionInstallmentAlreadyRepaid.Text" xml:space="preserve">
+    <value>Esta cuota ya está paga</value>
+  </data>
+  <data name="InstallmentExceptionInstallmentIsNull.Text" xml:space="preserve">
+    <value>Tiene que seleccionar una cuota antes!</value>
+  </data>
+  <data name="InstallmentExceptionNotFirstInstallmentToCancelRepay.Text" xml:space="preserve">
+    <value>No se puede cancelar esta cuota ya que las posteriores  no han sido canceladas todavía</value>
+  </data>
+  <data name="OctopusCorporateEventExceptionAmountIsBigger.Text" xml:space="preserve">
+    <value>El monto es demasiado alto (solo puede ser inferior a 100 millones)</value>
+  </data>
+  <data name="OctopusCorporateEventExceptionAmountIsEmpty.Text" xml:space="preserve">
+    <value>El campo "monto" está vacío</value>
+  </data>
+  <data name="OctopusCorporateEventExceptionAmountIsLessZero.Text" xml:space="preserve">
+    <value>El monto es inferior a 0</value>
+  </data>
+  <data name="OctopusCorporateEventExceptionAmountIsTaller.Text" xml:space="preserve">
+    <value>Las líneas de fondeo seleccionadas no tienen suficientes fondos para este préstamo</value>
+  </data>
+  <data name="OctopusCorporateEventExceptionCodeIsEmpty.Text" xml:space="preserve">
+    <value>El campo "código" está vacío</value>
+  </data>
+  <data name="OctopusCorporateEventExceptionCommitmentFinancialIsNotEnough.Text" xml:space="preserve">
+    <value>El compromiso financiero no es suficiente</value>
+  </data>
+  <data name="OctopusCorporateEventExceptionNameIsEmpty.Text" xml:space="preserve">
+    <value>El campo "Nombre" está vacío</value>
+  </data>
+  <data name="OctopusCorporateExceptionCityIsEmpty.Text" xml:space="preserve">
+    <value>El campo "ciudad" está vacío</value>
+  </data>
+  <data name="OctopusCorporateExceptionCodeIsEmpty.Text" xml:space="preserve">
+    <value>El campo "código" está vacío</value>
+  </data>
+  <data name="OctopusCorporateExceptionDistrictIsEmpty.Text" xml:space="preserve">
+    <value>El campo "localidad" está vacío</value>
+  </data>
+  <data name="OctopusCorporateExceptionEmployeeIsFalseFormat.Text" xml:space="preserve">
+    <value>El campo "Empleados" tiene que ser un número</value>
+  </data>
+  <data name="OctopusCorporateExceptionNameIsEmpty.Text" xml:space="preserve">
+    <value>El campo "nombre " está vacío</value>
+  </data>
+  <data name="OctopusCorporateExceptionProvinceIsEmpty.Text" xml:space="preserve">
+    <value>El campo "provincia" está vacío</value>
+  </data>
+  <data name="OctopusCorporateExceptionVolunteerIsEmpty.Text" xml:space="preserve">
+    <value>El campo "voluntario" está vacío</value>
+  </data>
+  <data name="OctopusCorporateExceptionVolunteerIsFalseFormat.Text" xml:space="preserve">
+    <value>El campo "voluntarios" tiene que ser un número</value>
+  </data>
+  <data name="OctopusFundingLineExceptionBeginDateGreaterEndDate.Text" xml:space="preserve">
+    <value>La fecha de inicio es posterior a la fecha de cierre</value>
+  </data>
+  <data name="OctopusFundingLineExceptionCodeIsEmpty.Text" xml:space="preserve">
+    <value>El campo "código" está vacío</value>
+  </data>
+  <data name="OctopusFundingLineExceptionNameIsEmpty.Text" xml:space="preserve">
+    <value>El campo " nombre" está vacío</value>
+  </data>
+  <data name="OME1.Text" xml:space="preserve">
+    <value>El campo " nombre" está vacío</value>
+  </data>
+  <data name="OME2.Text" xml:space="preserve">
+    <value>El campo "login" está vacío</value>
+  </data>
+  <data name="OME3.Text" xml:space="preserve">
+    <value>El campo "contaseña" está vacío</value>
+  </data>
+  <data name="OME4.Text" xml:space="preserve">
+    <value>Las contraseñas con distintas</value>
+  </data>
+  <data name="onlyChars.Text" xml:space="preserve">
+    <value>Caracteres permitidos: a-z, A-Z, 0-9 and_(guión bajo)</value>
+  </data>
+  <data name="onlyInts.Text" xml:space="preserve">
+    <value>Caracteres permitidos: 0-9</value>
+  </data>
+  <data name="onlyIntsAndUnderscore.Text" xml:space="preserve">
+    <value>Caracteres permitidos: 0-9 and - (dash)</value>
+  </data>
+  <data name="OTE1.Text" xml:space="preserve">
+    <value>Seleccionar un cliente antes</value>
+  </data>
+  <data name="OTE10.Text" xml:space="preserve">
+    <value>Si quiere insertar una dirección secundaria, el campo "localidad" no puede estar vacío</value>
+  </data>
+  <data name="OTE11.Text" xml:space="preserve">
+    <value>Si quiere insertar una dirección secundaria, el campo "ciudad" no puede estar vacío</value>
+  </data>
+  <data name="OTE12.Text" xml:space="preserve">
+    <value>Si quiere insertar una dirección secundaria, la principal no puede estar vacía</value>
+  </data>
+  <data name="OTE13.Text" xml:space="preserve">
+    <value>Por favor seleccione una localidad válida</value>
+  </data>
+  <data name="OTE14.Text" xml:space="preserve">
+    <value>Por favor seleccione una localidad secundaria válida</value>
+  </data>
+  <data name="OTE15.Text" xml:space="preserve">
+    <value>Por favor seleccione una persona</value>
+  </data>
+  <data name="OTE16.Text" xml:space="preserve">
+    <value>Esta persona ya está en otro grupo</value>
+  </data>
+  <data name="OTE17.Text" xml:space="preserve">
+    <value>Esta persona ya tiene un contrato vigente</value>
+  </data>
+  <data name="OTE18.Text" xml:space="preserve">
+    <value>Esta persona es el líder de un grupo</value>
+  </data>
+  <data name="OTE19.Text" xml:space="preserve">
+    <value>El campo "Nombre" está vacío</value>
+  </data>
+  <data name="OTE2.Text" xml:space="preserve">
+    <value>El campo "Tipo de actividad" está vacío</value>
+  </data>
+  <data name="OTE20.Text" xml:space="preserve">
+    <value>Seleccionar un líder</value>
+  </data>
+  <data name="OTE21.Text" xml:space="preserve">
+    <value>El número de dependientes tiene que ser un número</value>
+  </data>
+  <data name="OTE22.Text" xml:space="preserve">
+    <value>El número de hijos tiene que ser un número</value>
+  </data>
+  <data name="OTE23.Text" xml:space="preserve">
+    <value>El número de hijjos con educación primaria tiene que ser un número</value>
+  </data>
+  <data name="OTE24.Text" xml:space="preserve">
+    <value>La antigüedad en la actividad económica tiene que ser un número</value>
+  </data>
+  <data name="OTE25.Text" xml:space="preserve">
+    <value>El número de personas trabajando en la actividad tiene que ser un número</value>
+  </data>
+  <data name="OTE26.Text" xml:space="preserve">
+    <value>El monto prestado por otra IMF tiene que ser un número</value>
+  </data>
+  <data name="OTE27.Text" xml:space="preserve">
+    <value>El monto de deudas con otras organizaciones tiene que ser un número</value>
+  </data>
+  <data name="OTE28.Text" xml:space="preserve">
+    <value>El tamaño de la vivienda tiene que ser un número</value>
+  </data>
+  <data name="OTE29.Text" xml:space="preserve">
+    <value>La antigüedad en la vivienda  tiene que ser un número</value>
+  </data>
+  <data name="OTE3.Text" xml:space="preserve">
+    <value>La dirección principal está vacía</value>
+  </data>
+  <data name="OTE30.Text" xml:space="preserve">
+    <value>El tamaño de la explotación tiene que ser un número</value>
+  </data>
+  <data name="OTE31.Text" xml:space="preserve">
+    <value>La cantidad de cabezas del ganado tiene que ser un número</value>
+  </data>
+  <data name="OTE32.Text" xml:space="preserve">
+    <value>Los ingresos mensuales tienen que ser un número</value>
+  </data>
+  <data name="OTE33.Text" xml:space="preserve">
+    <value>Los gastos mensuales tienen que ser un número</value>
+  </data>
+  <data name="OTE34.Text" xml:space="preserve">
+    <value>Tiene que haber por lo menos {0} personas en un grupo</value>
+  </data>
+  <data name="OTE35.Text" xml:space="preserve">
+    <value>Este pasaporte ya ha sido utilizado</value>
+  </data>
+  <data name="OTE36.Text" xml:space="preserve">
+    <value>Este nombre ya existe en esta localidad</value>
+  </data>
+  <data name="OTE37.Text" xml:space="preserve">
+    <value>Este cliente es moroso. Tiene que explicar por qué</value>
+  </data>
+  <data name="OTE38.Text" xml:space="preserve">
+    <value>El ciclo del préstamos está vacío!</value>
+  </data>
+  <data name="OTE39.Text" xml:space="preserve">
+    <value>Un campo obligatorio está vacío!</value>
+  </data>
+  <data name="OTE4.Text" xml:space="preserve">
+    <value>El campo "Nombre" está vacío</value>
+  </data>
+  <data name="OTE40.Text" xml:space="preserve">
+    <value>El número de pasaporte sólo puede contener número (0-9) y mayúsculas</value>
+  </data>
+  <data name="OTE41.Text" xml:space="preserve">
+    <value>Por favor seleccione al asesor de crédito</value>
+  </data>
+  <data name="OTE5.Text" xml:space="preserve">
+    <value>las contraseñas son distintas</value>
+  </data>
+  <data name="OTE6.Text" xml:space="preserve">
+    <value>Falta el número de pasaporte</value>
+  </data>
+  <data name="OTE7.Text" xml:space="preserve">
+    <value>El campo "apellido" está vacío</value>
+  </data>
+  <data name="OTE8.Text" xml:space="preserve">
+    <value>El campo "ciudad" está vacío</value>
+  </data>
+  <data name="OTE9.Text" xml:space="preserve">
+    <value>El campo "ciclo de crédito" está vacío</value>
+  </data>
+  <data name="OUE1.Text" xml:space="preserve">
+    <value>Primero tiene que elegir un usuario</value>
+  </data>
+  <data name="OUE2.Text" xml:space="preserve">
+    <value>El administrador no puede ser borrado</value>
+  </data>
+  <data name="OUE3.Text" xml:space="preserve">
+    <value>El campo "nombre está vacío"</value>
+  </data>
+  <data name="OUE4.Text" xml:space="preserve">
+    <value>Falta la contraseña</value>
+  </data>
+  <data name="OUE5.Text" xml:space="preserve">
+    <value>Falta la posición</value>
+  </data>
+  <data name="OUE6.Text" xml:space="preserve">
+    <value>Este login ya existe. Tiene que elegir otro login</value>
+  </data>
+  <data name="OUE7.Text" xml:space="preserve">
+    <value>El campo "Nombre" está vacío</value>
+  </data>
+  <data name="OUE8.Text" xml:space="preserve">
+    <value>El campo "apellido" está vacío</value>
+  </data>
+  <data name="OUE9.Text" xml:space="preserve">
+    <value>El usuario tiene contratos, reasignar por favor</value>
+  </data>
+  <data name="PackageExceptionAlreadyDeleted.Text" xml:space="preserve">
+    <value>Este producto ya ha sido borrado</value>
+  </data>
+  <data name="PackageExceptionAmountBadlyInformed.Text" xml:space="preserve">
+    <value>Tiene que ingresar un valor mínimo y máximo O un valor fijo</value>
+  </data>
+  <data name="PackageExceptionAmountCycleStockIsBad.Text" xml:space="preserve">
+    <value>El campo "ciclo de crédito" está vacío</value>
+  </data>
+  <data name="PackageExceptionAmountCycleStockIsNull.Text" xml:space="preserve">
+    <value>Por facor seleccione un ciclo de crédito antes de guardar</value>
+  </data>
+  <data name="PackageExceptionAmountCycleStockNameAlreadyExist.Text" xml:space="preserve">
+    <value>Este nombre ya existe</value>
+  </data>
+  <data name="PackageExceptionAnticipatedTotalRepaymentPenaltiesBadlyInformed.Text" xml:space="preserve">
+    <value>Tiene que ingresar un valor mínimo y máximo O un valor fijo</value>
+  </data>
+  <data name="PackageExceptionEntryFeesBadlyInformed.Text" xml:space="preserve">
+    <value>Tiene que ingresar un valor mínimo y máximo O un valor fijo para comisiones</value>
+  </data>
+  <data name="PackageExceptionExoticInstallmentIsBad.Text" xml:space="preserve">
+    <value>Tiene que seleccionar una cuota antes de borrar</value>
+  </data>
+  <data name="PackageExceptionExoticInstallmentIsNull.Text" xml:space="preserve">
+    <value>Capital, interes y comisiones no han sido especificados</value>
+  </data>
+  <data name="PackageExceptionExoticProductContainsNoInstallment.Text" xml:space="preserve">
+    <value>No hay cuotas en este cronograma exótico</value>
+  </data>
+  <data name="PackageExceptionExoticProductInIncorrect.Text" xml:space="preserve">
+    <value>En cuotas exóticas, el coeficiente de intereses y capital tiene que ser igual a 100</value>
+  </data>
+  <data name="PackageExceptionExoticProductIsNull.Text" xml:space="preserve">
+    <value>No hay producto exótico</value>
+  </data>
+  <data name="PackageExceptionExoticProductNameIsNull.Text" xml:space="preserve">
+    <value>El nombre del producto exótico está vacío</value>
+  </data>
+  <data name="PackageExceptionGracePeriodGroupBadlyInformed.Text" xml:space="preserve">
+    <value>Tiene que ingresar un valor mínimo y máximo O un valor fijo para el periodo de gracia</value>
+  </data>
+  <data name="PackageExceptionGuarantedAmountBadlyInformed.Text" xml:space="preserve">
+    <value>Tiene que ingresar un valor mínimo y máximo O un valor fijo para el monto garantizado</value>
+  </data>
+  <data name="PackageExceptionGuarantedFeesBadlyInformed.Text" xml:space="preserve">
+    <value>Tiene que ingresar un valor mínimso y máximo O un valor fijo para gastos garantizados</value>
+  </data>
+  <data name="PackageExceptionInstallmentTypeIsBad.Text" xml:space="preserve">
+    <value>El tipo de cuota está vacío</value>
+  </data>
+  <data name="PackageExceptionInstallmentTypeIsNull.Text" xml:space="preserve">
+    <value>El tipo de cuota está vacío</value>
+  </data>
+  <data name="PackageExceptionInstallmentTypeNameAlreadyExist.Text" xml:space="preserve">
+    <value>El nombre ya existe</value>
+  </data>
+  <data name="PackageExceptionInstallmentTypeValuesAlreadyExist.Text" xml:space="preserve">
+    <value>Otro tipo de cuota con los mismos valores ya existe</value>
+  </data>
+  <data name="PackageExceptionInterestRateGroupBadlyInformed.Text" xml:space="preserve">
+    <value>Tiene que ingresar un valor mínimo y máximo O un valor fijo para la tasa de interés</value>
+  </data>
+  <data name="PackageExceptionNameAlreadyExist.Text" xml:space="preserve">
+    <value>Este nombre ya existe</value>
+  </data>
+  <data name="PackageExceptionNameIsNull.Text" xml:space="preserve">
+    <value>El campo "Nombre" está vacío</value>
+  </data>
+  <data name="PackageExceptionNonRepaymentPenaltiesBadlyInformed.Text" xml:space="preserve">
+    <value>Tiene que ingresar un valor mínimo y máximo O un valor fijo para penalidades por atraso</value>
+  </data>
+  <data name="PackageExceptionNumberOfInstallmentBadlyInformed.Text" xml:space="preserve">
+    <value>Tiene que ingresar un valor mínimo y máximo O un valor fijo para la cantidad de cuotas</value>
+  </data>
+  <data name="PackageExceptionPackageIsNull.Text" xml:space="preserve">
+    <value>Seleccionar un producto</value>
+  </data>
+  <data name="PackageExceptionProductCodeIsEmpty.Text" xml:space="preserve">
+    <value>El campo "código" está vacío</value>
+  </data>
+  <data name="ProjectExceptionAimIsNull.Text" xml:space="preserve">
+    <value>El campo "objetivo del proyecto" está vacío</value>
+  </data>
+  <data name="ProjectExceptionCACannotBeNullInFollowUp.Text" xml:space="preserve">
+    <value>el CA está vacío en el seguimiento</value>
+  </data>
+  <data name="ProjectExceptionCAIsBad.Text" xml:space="preserve">
+    <value>el CA no es number!</value>
+  </data>
+  <data name="ProjectExceptionClientIsNull.Text" xml:space="preserve">
+    <value>Por favor, guarde el cliente primero</value>
+  </data>
+  <data name="ProjectExceptionCodeIsNull.Text" xml:space="preserve">
+    <value>El código del proyecto está vacío</value>
+  </data>
+  <data name="ProjectExceptionFinancialPlanAmountIsBad.Text" xml:space="preserve">
+    <value>El monto del plan financiero tiene que ser un número!</value>
+  </data>
+  <data name="ProjectExceptionFinancialTotalPlanAmountIsBad.Text" xml:space="preserve">
+    <value>El monto total del plan financiero tiene que ser un número!</value>
+  </data>
+  <data name="ProjectExceptionNameIsNull.Text" xml:space="preserve">
+    <value>El nombre del proyecto está vacío</value>
+  </data>
+  <data name="ProvisioningRateNbOfDaysMaxEmpty.Text" xml:space="preserve">
+    <value>El número de días máximo está vacío</value>
+  </data>
+  <data name="ProvisioningRateNbOfDaysMinEmpty.Text" xml:space="preserve">
+    <value>El número de días mínimo está vacío</value>
+  </data>
+  <data name="ProvisioningRateRateEmpty.Text" xml:space="preserve">
+    <value>El campo "tasa" está vacío</value>
+  </data>
+  <data name="RepayExceptionAmountGreaterThanTotalRemainingAmount.Text" xml:space="preserve">
+    <value>El saldo es menor al monto especificado</value>
+  </data>
+  <data name="RepayExceptionAmountIsNull.Text" xml:space="preserve">
+    <value>El mpnto tiene que ser un número</value>
+  </data>
+  <data name="RepayExceptionMaxPastDueDaysReached.Text" xml:space="preserve">
+    <value>No se pagar la cuota de un préstamo en mora desde más de 180 días</value>
+  </data>
+  <data name="RepayExceptionNegativeAmount.Text" xml:space="preserve">
+    <value>El monto no puede ser negativo</value>
+  </data>
+  <data name="ReportsExceptionsNoResult.Text" xml:space="preserve">
+    <value>Ningún resultado</value>
+  </data>
+  <data name="SavingProductBalanceIsInvalid.Text" xml:space="preserve">
+    <value>El saldo no es válido</value>
+  </data>
+  <data name="SavingProductDepositAmountIsInvalid.Text" xml:space="preserve">
+    <value>El monto del depósito no es válido</value>
+  </data>
+  <data name="SavingProductDepositMinAmountIsInvalid.Text" xml:space="preserve">
+    <value>El monmto del depósito tiene que ser positivo</value>
+  </data>
+  <data name="SavingProductDuplicateProductName.Text" xml:space="preserve">
+    <value>Este nombre ya existe</value>
+  </data>
+  <data name="SavingProductInitialAmountIsInvalid.Text" xml:space="preserve">
+    <value>El monto inicial no es válido</value>
+  </data>
+  <data name="SavingProductInitialAmountMinIsInvalid.Text" xml:space="preserve">
+    <value>El monto inicial tiene que ser positivo</value>
+  </data>
+  <data name="SavingProductInterestRateIsInvalid.Text" xml:space="preserve">
+    <value>La tasa de interés no es válida</value>
+  </data>
+  <data name="SavingProductInterestRateMinMaxIsInvalid.Text" xml:space="preserve">
+    <value>La tasa de interés no es válida</value>
+  </data>
+  <data name="SavingProductNameIsEmpty.Text" xml:space="preserve">
+    <value>El campo" nombre" no puede estar vacío</value>
+  </data>
+  <data name="SavingProductWithdrawAmountIsInvalid.Text" xml:space="preserve">
+    <value>Los montos de retiro no son válidos</value>
+  </data>
+  <data name="SavingProductWithdrawMinAmountIsInvalid.Text" xml:space="preserve">
+    <value>Los montos de retiro tiene que ser positivos</value>
+  </data>
+  <data name="sqlError.Text" xml:space="preserve">
+    <value>Error al tratar de leer o editar la base de datos, por favor contacte su administrador</value>
+  </data>
+  <data name="ClientTypeIsEmpty.Text" xml:space="preserve">
+    <value>Please, check client type(s) of  product.</value>
+  </data>
+  <data name="SavingProductPeriodicityIsEmpty.Text" xml:space="preserve">
+    <value>Please, select proper periodicity for this product.</value>
+  </data>
+  <data name="ReopenFeesIsInvalid" xml:space="preserve">
+    <value>Reopen fees values are not correct.</value>
+  </data>
+  <data name="ReopenFeesMinIsInvalid" xml:space="preserve">
+    <value>Reopen fees min values are not correct.</value>
+  </data>
+  <data name="LoanHasNoCompulsorySavingsError.Text" xml:space="preserve">
+    <value>A compulsory savings account is necessary for this loan, please set it manually.</value>
+  </data>
+  <data name="SavingsEventCannotBeCanceled.Text" xml:space="preserve">
+    <value>This savings event cannot be canceled!</value>
+  </data>
+  <data name="PackageExceptionInstallmentTypeValuesAreUsed.Text" xml:space="preserve">
+    <value>This installment type cannot be deleted because it is used by loan or savings product!</value>
+  </data>
+  <data name="SavingsEventCommentIsEmpty.Text" xml:space="preserve">
+    <value>Event comment is empty!</value>
+  </data>
+  <data name="ContractExceptionEventCommentIsEmpty.Text" xml:space="preserve">
+    <value>Event comment is empty!</value>
+  </data>
+  <data name="FieldEmpty.Text" xml:space="preserve">
+    <value>List of fields is empty!</value>
+  </data>
+  <data name="FieldIsMandatory.Text" xml:space="preserve">
+    <value>Some fields are mandatory to fill!</value>
+  </data>
+  <data name="FieldIsNotUnique.Text" xml:space="preserve">
+    <value>Some fields are not unique and value already exists!</value>
+  </data>
+  <data name="CompulsorySavingsContractIsNotActive.Text" xml:space="preserve">
+    <value>Compulsory savings account is not active!</value>
+  </data>
+  <data name="PostingFrequencyIsInvalid.Text" xml:space="preserve">
+    <value>Term deposit period is wrong. Please check it and try again.</value>
+  </data>
+  <data name="DuplicatedAccount.Text" xml:space="preserve">
+    <value>Cambie el número de cuenta.</value>
+  </data>
+</root>

@@ -1,0 +1,2 @@
+add-pssnapin WixToolkit
+get-wxsdiff -wxsfile C:\dev_factory\Octopus\Src\Src\WixProject\Octopus.wxs -folderpath C:\dev_factory\Octopus\BuildRelease\Update -componentguid B4B47D80-2F95-431D-AFA3-8CA334CB5999

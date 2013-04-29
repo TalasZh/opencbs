@@ -1,0 +1,2553 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="gBProjectFinancialPlan.Text" xml:space="preserve">
+    <value>Финансовый план</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="lProjectNbOfNewJobs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 16</value>
+  </data>
+  <data name="lProjectNbOfNewJobs.Text" xml:space="preserve">
+    <value>№ новых работ</value>
+  </data>
+  <data name="lProjectCA.Text" xml:space="preserve">
+    <value>Перевернуть</value>
+  </data>
+  <data name="lProjectCorporateName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 16</value>
+  </data>
+  <data name="lProjectCorporateName.Text" xml:space="preserve">
+    <value>Имя</value>
+  </data>
+  <data name="lProjectCorporateSIRET.Size" type="System.Drawing.Size, System.Drawing">
+    <value>171, 16</value>
+  </data>
+  <data name="lProjectCorporateSIRET.Text" xml:space="preserve">
+    <value>Регистрационный номер</value>
+  </data>
+  <data name="lProjectJuridicStatus.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 16</value>
+  </data>
+  <data name="lProjectJuridicStatus.Text" xml:space="preserve">
+    <value>Юридический статус</value>
+  </data>
+  <data name="lProjectFiscalStatus.Size" type="System.Drawing.Size, System.Drawing">
+    <value>138, 16</value>
+  </data>
+  <data name="lProjectFiscalStatus.Text" xml:space="preserve">
+    <value>Фискальный статус</value>
+  </data>
+  <data name="gBProjectAddress.Text" xml:space="preserve">
+    <value>Адрес</value>
+  </data>
+  <data name="lProjectFinancialPlanType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 16</value>
+  </data>
+  <data name="lProjectFinancialPlanType.Text" xml:space="preserve">
+    <value>Тип</value>
+  </data>
+  <data name="lProjectFinancialPlanAmount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 16</value>
+  </data>
+  <data name="lProjectFinancialPlanAmount.Text" xml:space="preserve">
+    <value>Сумма</value>
+  </data>
+  <data name="lProjectFinancialPlanTotalAmount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 16</value>
+  </data>
+  <data name="lProjectFinancialPlanTotalAmount.Text" xml:space="preserve">
+    <value>Всего</value>
+  </data>
+  <data name="columnHeaderProjectYear.Text" xml:space="preserve">
+    <value>Год</value>
+  </data>
+  <data name="columnHeaderProjectJobs1.Text" xml:space="preserve">
+    <value>N° работ 1</value>
+  </data>
+  <data name="columnHeaderProjectJobs2.Text" xml:space="preserve">
+    <value>N° Работ 2</value>
+  </data>
+  <data name="columnHeaderprojectPersonalSituation.Text" xml:space="preserve">
+    <value>Личная ситуация</value>
+  </data>
+  <data name="columnHeaderProjectActivity.Text" xml:space="preserve">
+    <value>Вид деятельности</value>
+  </data>
+  <data name="columnHeaderProjectComment.Text" xml:space="preserve">
+    <value>Коментарии</value>
+  </data>
+  <data name="buttonProjectAddFollowUp.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonProjectAddFollowUp.Text" xml:space="preserve">
+    <value>Добавить план</value>
+  </data>
+  <data name="listViewGuarantors.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1097, 227</value>
+  </data>
+  <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>146, 227</value>
+  </data>
+  <data name="lblGuarantorsList.Text" xml:space="preserve">
+    <value>Поручители</value>
+  </data>
+  <data name="listViewCollaterals.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1097, 258</value>
+  </data>
+  <data name="pnlCollateralButtons.Size" type="System.Drawing.Size, System.Drawing">
+    <value>146, 258</value>
+  </data>
+  <data name="lblCollaterals.Text" xml:space="preserve">
+    <value>Заложенное имущество</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="splitContainer1.SplitterDistance" type="System.Int32, mscorlib">
+    <value>262</value>
+  </data>
+  <data name="columnHeaderName.Text" xml:space="preserve">
+    <value>Имя</value>
+  </data>
+  <data name="columnHeader17.Text" xml:space="preserve">
+    <value>Сумма</value>
+  </data>
+  <data name="columnHeaderPercentage.Text" xml:space="preserve">
+    <value>% от займа</value>
+  </data>
+  <data name="columnHeaderDesc.Text" xml:space="preserve">
+    <value>Описание</value>
+  </data>
+  <data name="btnPrintGuarantors.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAABGdBTUEAANbY1E9YMgAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAJDSURBVGhD7dRLSFRhHIbxN4iIoEXblm3btWrroggK
+        KggkugddBSPBMBgKQyxKEBGLTJIyMcwSEU00S8ZsytSGvF8mGXV0moujjjrORe3sZzH4LATj+/htn83L
+        /xytoydUrZssaTcziZkk9cdkrsRcibmS1AuYK0m9kfmXmCsxV5J6AXMlqTfSGnomS5rNTLJFJ1ldWwUE
+        GisxWdLaSqwmAMUTCeA/z+LxxIZZk2y4sZJNzmLxGKBoPAZscrYSiwICjZXQLBJbAQQaK9FyNAJoaSUC
+        bI0sHFkCBBor0cLyIrDJ2fxSGFBoMQzQbDY8DygYngNoFlgIAfLPhwCa+eaCgP6GAoBmQgGAZtOzfkCe
+        oA/QVMALaMLvBaxsBpDb5wE07vMAcnknAY3NTAA0G5l2Axr2jAManPoDaGDSBajPPQqo1z0CyDk+BKjH
+        NQCo29UPqGusD1DnaC8gx7AT0LchJ6D2wR5A9v4uQF96OwG1/v4OqMXpANT0qwNQY087oIZuO6D6n22A
+        an+0Anrv+AToXUczoLdfPwKqtDcAqmirB1T+uQ5QWcsHQKXNNYCeNVUDKm6sAlRY/wZQQd1rQA9rywHl
+        1ZQByq0uBWSregrobmUxoDsVRYCyXhUCynz5BNDNF48AXXmeD+hiyQNAZ4vvA0ovsgE6UZAD6NjjbECH
+        828DSsu7BehgbgagA/euA9pvuwpoX84lQHuzzwPak3UG0O7MdEC7Mk4B2nnjJKAd144D2n75KKBtF44A
+        0rlDhE6nAf8Axq4XWrmp0xAAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="btnPrintGuarantors.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 196</value>
+  </data>
+  <data name="btnPrintGuarantors.Text" xml:space="preserve">
+    <value>Печать</value>
+  </data>
+  <data name="pnlGuarantorButtons.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 221</value>
+  </data>
+  <data name="buttonSelectAGarantors.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonSelectAGarantors.Text" xml:space="preserve">
+    <value>Добавить</value>
+  </data>
+  <data name="buttonModifyAGarantors.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonModifyAGarantors.Text" xml:space="preserve">
+    <value>Изменить</value>
+  </data>
+  <data name="buttonViewAGarantors.Text" xml:space="preserve">
+    <value>Просмотреть</value>
+  </data>
+  <data name="buttonDelete.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonDelete.Text" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="lblCreditCurrency.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 16</value>
+  </data>
+  <data name="lblCreditCurrency.Text" xml:space="preserve">
+    <value>Валюта: ......</value>
+  </data>
+  <data name="columnHeader19.Text" xml:space="preserve">
+    <value>Название</value>
+  </data>
+  <data name="columnHeader20.Text" xml:space="preserve">
+    <value>Сумма</value>
+  </data>
+  <data name="columnHeader25.Text" xml:space="preserve">
+    <value>% от займа</value>
+  </data>
+  <data name="columnHeaderColDesc.Text" xml:space="preserve">
+    <value>Описание</value>
+  </data>
+  <data name="buttonAddCollateral.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonAddCollateral.Text" xml:space="preserve">
+    <value>Добавить</value>
+  </data>
+  <data name="buttonModifyCollateral.Text" xml:space="preserve">
+    <value>Изменить</value>
+  </data>
+  <data name="buttonViewCollateral.Text" xml:space="preserve">
+    <value>Просмотреть</value>
+  </data>
+  <data name="buttonDelCollateral.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonDelCollateral.Text" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="panelLoansContracts.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1249, 200</value>
+  </data>
+  <data name="labelLoansContracts.Text" xml:space="preserve">
+    <value>Кредиты</value>
+  </data>
+  <data name="panelSavingsContracts.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1249, 291</value>
+  </data>
+  <data name="labelSavingsContracts.Text" xml:space="preserve">
+    <value>Накопления</value>
+  </data>
+  <data name="splitContainerContracts.SplitterDistance" type="System.Int32, mscorlib">
+    <value>235</value>
+  </data>
+  <data name="tabPageDetails.Text" xml:space="preserve">
+    <value>Детали</value>
+  </data>
+  <data name="tabPageProject.Text" xml:space="preserve">
+    <value>Проект</value>
+  </data>
+  <data name="tabPageLoansDetails.Text" xml:space="preserve">
+    <value>Детали кредита</value>
+  </data>
+  <data name="tabPageAdvancedSettings.Text" xml:space="preserve">
+    <value>Дополнительные параметры</value>
+  </data>
+  <data name="tabPageCreditCommitee.Text" xml:space="preserve">
+    <value>Кредитный комитет</value>
+  </data>
+  <data name="tabPageLoanRepayment.Text" xml:space="preserve">
+    <value>Выплаты</value>
+  </data>
+  <data name="tabPageLoanGuarantees.Text" xml:space="preserve">
+    <value>Поручители</value>
+  </data>
+  <data name="tabPageSavingDetails.Text" xml:space="preserve">
+    <value>Детали депозита</value>
+  </data>
+  <data name="tabPageContracts.Text" xml:space="preserve">
+    <value>Контракты</value>
+  </data>
+  <data name="imageListTab.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAAS
+        HQAAAk1TRnQBSQFMAgEBBQEAAXgBDAF4AQwBIAEAASABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        AwABgAMAAUADAAEBAQABCAYAASAYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
+        AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
+        AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
+        AWYDAAGZAwABzAIAATMDAAIzAgABMwFmAgABMwGZAgABMwHMAgABMwH/AgABZgMAAWYBMwIAAmYCAAFm
+        AZkCAAFmAcwCAAFmAf8CAAGZAwABmQEzAgABmQFmAgACmQIAAZkBzAIAAZkB/wIAAcwDAAHMATMCAAHM
+        AWYCAAHMAZkCAALMAgABzAH/AgAB/wFmAgAB/wGZAgAB/wHMAQABMwH/AgAB/wEAATMBAAEzAQABZgEA
+        ATMBAAGZAQABMwEAAcwBAAEzAQAB/wEAAf8BMwIAAzMBAAIzAWYBAAIzAZkBAAIzAcwBAAIzAf8BAAEz
+        AWYCAAEzAWYBMwEAATMCZgEAATMBZgGZAQABMwFmAcwBAAEzAWYB/wEAATMBmQIAATMBmQEzAQABMwGZ
+        AWYBAAEzApkBAAEzAZkBzAEAATMBmQH/AQABMwHMAgABMwHMATMBAAEzAcwBZgEAATMBzAGZAQABMwLM
+        AQABMwHMAf8BAAEzAf8BMwEAATMB/wFmAQABMwH/AZkBAAEzAf8BzAEAATMC/wEAAWYDAAFmAQABMwEA
+        AWYBAAFmAQABZgEAAZkBAAFmAQABzAEAAWYBAAH/AQABZgEzAgABZgIzAQABZgEzAWYBAAFmATMBmQEA
+        AWYBMwHMAQABZgEzAf8BAAJmAgACZgEzAQADZgEAAmYBmQEAAmYBzAEAAWYBmQIAAWYBmQEzAQABZgGZ
+        AWYBAAFmApkBAAFmAZkBzAEAAWYBmQH/AQABZgHMAgABZgHMATMBAAFmAcwBmQEAAWYCzAEAAWYBzAH/
+        AQABZgH/AgABZgH/ATMBAAFmAf8BmQEAAWYB/wHMAQABzAEAAf8BAAH/AQABzAEAApkCAAGZATMBmQEA
+        AZkBAAGZAQABmQEAAcwBAAGZAwABmQIzAQABmQEAAWYBAAGZATMBzAEAAZkBAAH/AQABmQFmAgABmQFm
+        ATMBAAGZATMBZgEAAZkBZgGZAQABmQFmAcwBAAGZATMB/wEAApkBMwEAApkBZgEAA5kBAAKZAcwBAAKZ
+        Af8BAAGZAcwCAAGZAcwBMwEAAWYBzAFmAQABmQHMAZkBAAGZAswBAAGZAcwB/wEAAZkB/wIAAZkB/wEz
+        AQABmQHMAWYBAAGZAf8BmQEAAZkB/wHMAQABmQL/AQABzAMAAZkBAAEzAQABzAEAAWYBAAHMAQABmQEA
+        AcwBAAHMAQABmQEzAgABzAIzAQABzAEzAWYBAAHMATMBmQEAAcwBMwHMAQABzAEzAf8BAAHMAWYCAAHM
+        AWYBMwEAAZkCZgEAAcwBZgGZAQABzAFmAcwBAAGZAWYB/wEAAcwBmQIAAcwBmQEzAQABzAGZAWYBAAHM
+        ApkBAAHMAZkBzAEAAcwBmQH/AQACzAIAAswBMwEAAswBZgEAAswBmQEAA8wBAALMAf8BAAHMAf8CAAHM
+        Af8BMwEAAZkB/wFmAQABzAH/AZkBAAHMAf8BzAEAAcwC/wEAAcwBAAEzAQAB/wEAAWYBAAH/AQABmQEA
+        AcwBMwIAAf8CMwEAAf8BMwFmAQAB/wEzAZkBAAH/ATMBzAEAAf8BMwH/AQAB/wFmAgAB/wFmATMBAAHM
+        AmYBAAH/AWYBmQEAAf8BZgHMAQABzAFmAf8BAAH/AZkCAAH/AZkBMwEAAf8BmQFmAQAB/wKZAQAB/wGZ
+        AcwBAAH/AZkB/wEAAf8BzAIAAf8BzAEzAQAB/wHMAWYBAAH/AcwBmQEAAf8CzAEAAf8BzAH/AQAC/wEz
+        AQABzAH/AWYBAAL/AZkBAAL/AcwBAAJmAf8BAAFmAf8BZgEAAWYC/wEAAf8CZgEAAf8BZgH/AQAC/wFm
+        AQABIQEAAaUBAANfAQADdwEAA4YBAAOWAQADywEAA7IBAAPXAQAD3QEAA+MBAAPqAQAD8QEAA/gBAAHw
+        AfsB/wEAAaQCoAEAA4ADAAH/AgAB/wMAAv8BAAH/AwAB/wEAAf8BAAL/AgAD/wMAA/8W9AL/ZQAB/wG8
+        Fu8B9wHvAfAB9GIAAv8CvA4HBu8D9wHsAesBvAH/YQAB/wLzDf8C9APzAvIE8QHwAe0B9wH0YQAB/wHy
+        AfQM/wP0AvMB8gEHAbwF8QHvAZIB9GEAAf8B8gH0DP8F9AHvAesB7wHyBPEB7wGSAfRhAAH/AfIB9Az/
+        A/QB8wHyAWwBFAH3AQcB8ALxAfIB7wGSAfRhAAH/AfIB9AT/AfAB7wHzBv8B9AHyAe8B9wFsARMD7AEH
+        AfEB8gEHAZIB9GEAAf8B8gH0A/8BvAHqAewBkgHzBf8B8wHsARUDDQEQAUMBbQHsAe8B8wEHAZIB9GEA
+        Af8B8gH0Av8B8QFsAQ4BFQHsAZIB8wT/AZECDQFxAXIBbAGRAUkBDgFtAewB8AEHAZIB9GEAAf8B8gH0
+        Af8B8AFsAQ0BSAENARUB7AH3AfMC/wEIAUgBDQFyAfQBkQHqAfABCAFsAQ8B7AIHAZIB9GEAAf8B8gH/
+        AfMBbARIAQ0BQwGSAfEC/wGRAQ0BFQHwAf8BkQFsAQcB9AH3AQ0BEgHvAQcBkgH0YQAB/wHyAfQBvAH3
+        Ae8B9wFIAWwBkgHrAfcD/wHvAUkB6wH0Af8BkQFsAQcB/wG7AQ0BFAIHAZIB9GEAAf8B8gH0A/8B8AEN
+        AesB8wX/AfQBBwHwAv8BkQFsAQcB/wH3AQ0BFAG8AQcBkgH0YQAB/wHyAfQD/wEIAQ0BbQHwCv8BkQES
+        Ae8BBwFsAQ0BbQHzAbwBkgH0YQAB/wHyAfQD/wEIAQ0BbQHwCP8B9AHzAXIBEgHsAUkCDQEHAf8BvAGS
+        AfRhAAH/AfIB9AP/AQgBDQFtAfAH/wHzAe8B7AFJBA0B7QL/AbwB9wH0YQAB/wHyAfQD/wEIAQ0BbQHw
+        Bv8B8wHsAUMCDQFIAWwBkQEHA/8B8AH3AfRhAAH/AfIB9AP/AQgBDQFtAfAG/wHsAg0BkQFxAWwBvAX/
+        AfAB9wH0YQAB/wHyAfQD/wEIAQ0BbQHwBf8B8AFIAQ0BkQH0AZEBEgG8Bf8B8AH3AfRhAAH/AfIB9AP/
+        AQgBDQFtAfAF/wG7AUgBFQG8Af8BkQFsAbwB/wHzAQcBvAH/AfAB9wH0YQAB/wHyAfQD/wEIAQ0BbQHw
+        Bf8BBwFIARQB7wH0AZEBbAG8AfMB7AFtAe0B8wHwAfcB9GEAAf8B8gH0A/8BCAENAW0B8AX/AfABbAER
+        Ae0BBwGRARIBvAHvAQ0BDgH3Af8B8AH3AfRhAAH/AfIB9AP/AQgBDQFtAfAF/wH0AZEBDQESAfcBbAES
+        Ae8BbAENARQB8gH/AfAB9wH0YQAB/wHyAfQD/wG8AQ0B6wHyBv8B8gFyAQ0BFQENAUMBFQINAQcC/wHw
+        AfcB9GEAAf8B8gH0A/8B8gFyAfcI/wHyAfcBcgFsAQ0BbAFyAQgD/wHwAfcB9GEAAf8B8gH0EP8B9AH3
+        AXEB8QX/AfABkgH0YQAB/wHyAfQR/wHzAfIG/wHwAfcB9GEAAf8C8xn/AfEBvAH/YQAB/wH0AfIB8xf0
+        AfIB8AL/YgAB/wH0GPMB9AH/ZQAa/4YAGv8GAAP/FvQC/wUAA/8W9AL/BAAC/wHzF/IB8wH/BAAB/wHy
+        AbwXBwHyAf8FAAH/AbwW7wH3Ae8B8AH0BAAB/wG8Fu8B9wHvAfAB9AMAAf8BBwGSDO0L7AHtAfAB/wIA
+        Af8B8QLvDPcEkgbtAuwB8QH/AgAC/wK8DgcG7wP3AewB6wG8Af8BAAL/ArwIBwG8BgcI7wHsAesBvAH/
+        AQAB/wHxDPMD8gLxA/AEvAEHAuwB8wH/AQAB9AHxCv8D9APzAvID8QPwAQcB7AH3AfQCAAH/AvMN/wL0
+        A/MC8gTxAfAB7QH3AfQBAAH/AvMI/wHzAvED8AO8BgcBvAHwAe0B9wH0AQAB9AHyAv8B9AfzA/ID8QLw
+        BLwBBwG8AfEBBwHsAfEB/wEAAfIG/wHwBLwHBwTvAQcB8ALxAe8BkgH0AgAB/wHyAfQM/wP0A/MC8gXx
+        Ae8BkgH0AQAB/wHyAfQH/wHzAe8N7AHrAZIB8QHvAZIB9AEAAfQB8gH/AfMB7w3tCOwBvAHwAewB8QH/
+        AQAB8gH0BP8BBwHrD20B7AG8AvEB7wGSAfQCAAH/AfIB9AL/AfQJ/wP0AvMD8gXxAe8BkgH0AQAB/wHy
+        AfQH/wH3AQ0BEAwNARUBkgHxAQcBkgH0AQAB9AHyAf8BkRRDAREB7ALwAewB8QH/AQAB8gH0BP8BkQ7r
+        AW0BQwHsAfAC8gHvAZIB9AIAAf8B8gH0Af8B8wIHAfEB9Ab/A/QD8wPyA/EB8gHvAZIB9AEAAf8B8gH0
+        B/8B7wFyDLwB7AERAfcB8QEHAZIB9AEAAfQB8gH/AbsBSBQNAfcB8QHwAewB8QH/AQAB8gH0A/8B9AG7
+        D/8B6gHsAfAC8gEHAZIB9AIAAf8B8gL/Ae0B6wLsAfcB7wHwAfMD/wT0AvMH8gEHAZIB9AEAAf8B8gH0
+        B/8BuwGSDP8B9wERAfcB8QEHAZIB9AEAAfQB8gH/AfEBbBJIAQ0BFQEHAfIB8AHsAfEB/wEAAfIB9AP/
+        AfQBBw//AeoB7AHwAvIBBwGSAfQCAAH/AfIB9AH/AQgBSQFDARQBEgFtAewBkgG8A/8E9APzBPIB8wEH
+        AZIB9AEAAf8B8gH0B/8BuwGSAfIBbAHwAXIB7wH3AewB8AFsAfIBbAEHAfcBEQHvAfIBBwGSAfQBAAH0
+        AfIB/wH0AZEBSAENEEgBDQFtAfAB8wHxAewB8QH/AQAB8gH0A/8B9AEHAf8BkQxsAfABbQHsAfAC8wEH
+        AZIB9AIAAf8B8gH0Av8DBwHsARIBFQFtAewB7wHzAv8D9AXzAvIB8wEHAZIB9AEAAf8B8gH0B/8BuwGR
+        Af8BBwH0AbwC8gG8AfQBBwH0AQgB8wH3AREB7wHyAQcBkgH0AQAB9AHyAv8BBwFsAQ0QSAENAfcC8wHx
+        AewB8QH/AQAB8gH0A/8B9AEHAf8B8AEHCbsCBwHzAeoB7AHxAvMBBwGSAfQCAAH/AfIB9AL/AfQBvAL/
+        AfQB9wERARMB7AH3AfEC/wP0B/MBBwGSAfQBAAH/AfIB9Af/AbsBkgH0AZIB8wHvArwB7wHyAZIB9AH3
+        AfEB9wERAe8B8wEHAZIB9AEAAfQB8gL/AfMBkQFIAQ0OSAENARIB8QHzAfQB8gHsAfEB/wEAAfIB9AP/
+        AfQBBwH/AfQL8gHzAfQB6gHsAfEB9AHzAQcBkgH0AgAB/wHyAfQD/wHxAfAC/wGRAWwB6wEUAesB7QG8
+        AfQB/wX0A/MB9AEHAZIB9AEAAf8B8gH0B/8BuwGSAfMB7AHyAZECBwGSAfEBkQHzAewB8AH3AREB7wHz
+        AQcBkgH0AQAB9AHyA/8BvAFsAUgCDQhIAg0BSAINAQcD9AHyAe0B8QH/AQAB8gH0A/8B9AEHAf8BkQFJ
+        CWwBSQFsAfABbQHtAfIC9AEHAZIB9AIAAf8B8gH0BP8BvAHzAZEBbAGSAZEB7AEUAW0B7AHvAfMB/wj0
+        AQcBkgH0AQAB/wHyAfQH/wG7AZEB/wHyAf8B8wL0AfMB/wHyAf8B8gH/AfcBQwHvAfMBvAGSAfQBAAH0
+        AfIE/wEHAXEMSAINAe8B/wP0AfIB7QHxAf8BAAHyAfQD/wH0AQcB/wH0C/MC9AHqAe0B8gL0AbwBkgH0
+        AgAB/wHyAfQE/wH0AQgCkQGSAbsBkQHtARIBEwHsAfcB8QL/BvQBvAGSAfQBAAH/AfIB9Af/AbsBkgHz
+        AWwB8AFxAZgB9wFyAfABbAHyAWwBBwH3AUMB7wH0AbwBkgH0AQAB9AHyBf8B8AH3ApEBSQRIAQ0BSAFx
+        AXIBkQG8Af8E9AHzAe0B8QH/AQAB8gH0A/8B9AEHAf8BvAH3C+8B8wHqAe0B8wL/AbwBkgH0AgAB/wHy
+        AfQF/wH0AfAB8QHvAZEBBwGRAe0BbQEUAesB7QG8AfQB/wT0Af8BvAGSAfQBAAH/AfIB9AT/AfAB9AH/
+        AbsBkQH/AfAB9AHxAvMB8QH0AfAB9AHwAf8B9wFDAe8B9AG8AZIB9AEAAfQB8gf/AfIBkQVIAQ0BQwHt
+        Ae8B8AP/AvQB/wHzAe0B8QH/AQAB8gH0A/8B9AEHAf8BkgxsAfABbQHtAfMC/wG8AZIB9AIAAf8B8gH0
+        B/8B8QHwAQgBkQHvAZIBkQHsARUBbQHsAQcB9AX/AbwBkgH0AQAB/wHyAfQD/wHvAewBBwH/AQcNbAFJ
+        AUMB7wH0AbwBkgH0AQAB9AHyBv8B8wFsAQ0GSAENAQ8BbQHtAfIF/wHzAe0B8QH/AQAB8gH0A/8B9AEH
+        Dv8B9AHqAe0B8wL/AbwB9wH0AgAB/wHyAfQI/wHzAbwB8AGRAZIB7wGRAe0BEwESAewB9wHyBP8BvAH3
+        AfQBAAH/AfIB9AH/AfQBvAEUAeoB7QHvAQcBbA0NARUB7wH/AfAB9wH0AQAB9AHyBv8BkQINB0gBDQEQ
+        AewBBwX/AfQB7QHxAf8BAAHyAfQD/wH0AQcB/wH3BHIBvAf/AfQB6gHtAfMC/wHwAfcB9AIAAf8B8gH0
+        Cf8B9AG8AfEB9wGRAbsBkQGSAW0BFAHsAe0B8AP/AfAB9wH0AQAB/wHyAfQB/wH3AUMCDQEVAe0B9wFs
+        AQ0LSAENARUBvAH/AfAB9wH0AQAB9AHyBf8B8gFJCkgBDQETAe8B9AT/AfQB7QHxAf8BAAHyAfQD/wH0
+        AQcB/wEHAewCkQHsAbwH/wH0AeoB7QH0Av8B8AH3AfQCAAH/AfIB9Av/AfEB8AEHAZEB7wKRARQBEQHr
+        AewBBwH0Af8B8AH3AfQBAAH/AfIB/wHyAUgBSQFxAZEBbAETAe8BkgJsCZEBbAFJAW0B9AH/AfAB9wH0
+        AQAB9AHyBf8BuwtIAQ0BEQH3AfME/wH0Ae0B8QH/AQAB8gH0A/8B9AEHB/8G9AH/AfQB6gHtAfQC/wHw
+        AfcB9AIAAf8B8gH0DP8B8wK8AZEB9wGRAUgBDQEPARIB7AHvAfMB8AH3AfQBAAH/AfIB/wHyAZEBBwGR
+        Ae8B9wENAe8B9AGRAZIJ9AFxAe8B9AL/AfAB9wH0AQAB9AHyBf8B7wFIAQ0JSAINAZIB8wT/AfQB7QHx
+        Af8BAAHyAfQD/wH0AQcB/wGRAUkLbAHwAW0B7QH0Av8B8AH3AfQCAAH/AfIB9A3/AfQBvAHxAZEBSAIN
+        Ae0BEgEVAewB9wEHAfcB9AEAAf8B8gH0A/8C6wFsAQ0BBwH/AQcB8An/AQcB8wP/AfAB9wH0AQAB9AHy
+        Bf8B7wFJAQ0JSAINAfcB9AT/AfQB7QHxAf8BAAHyAfQD/wH0AQcB/wHyAQgIvAIHAbwB8wHqAe0B8wL/
+        AfAB9wH0AgAB/wHyAfQP/wHxAfcBSQENAWwB/wH0AesBFQHsAQcB9wH0AQAB/wHyAfQB/wHyAewBSAIN
+        AesB9BH/AfAB9wH0AQAB9AHyBf8BvAFsAQ0JSAINAQcF/wH0Ae0B8QH/AQAB8gH0A/8B9AEHAf8B8wjw
+        AfEE/wHqAfcB9AL/AfAB9wH0AgAB/wHyAfQQ/wH0AfcBkQHzA/8BEwHtAbwB9wH0AQAB/wHyAfQB/wFy
+        AQ0BSAFsAfcB9BL/AfAB9wH0AQAB9AHyBf8B8wGRAUgBDQhIAQ0BEgHzBf8B9AHtAfEB/wEAAfIB9AP/
+        AfQBBwH/AZEBSAZsAUkBbAH0AfcCkQESAfED/wHwAfcB9AIAAf8B8gH0Ev8B8AHxAv8B8AFsAfEB8AH3
+        AfQBAAH/AfIB/wHxAUgBbAFyAe0B8AEHAbwR/wHwAfcB9AEAAfQB8gb/AQcBbAENB0gCDQHvBv8B9AHt
+        AfEB/wEAAfIB9AP/AfQBBwL/CvQBbAINAbwE/wHwAfcB9AIAAf8B8gH0E/8B8AK8AWwB9wH/AfAB9wH0
+        AQAB/wHyAf8B8gFJAewB6wHsAW0B6gEHEf8B8AH3AfQBAAH0AfIG/wH0AZgBbAUNAUgCDQHsB/8B9AHt
+        AfEB/wEAAfIB9AP/AfQBBwz/AWwBDQEHBf8B8AH3AfQCAAH/AfIB9BT/AfIB9wG8Av8B8AH3AfQBAAH/
+        AfIB9AH/Ae0BSQEVAUkBDgFtAfQR/wHwAfcB9AEAAfQB8gf/AfQBuwFxAUkFSAHtCP8B9AHtAfEB/wEA
+        AfIB9AP/AfQBBwHzCvQB8QFsAe8G/wHwAfcB9AIAAf8B8gH0Gf8B8AGSAfQBAAH/AfIB9AH/AfQB7wFs
+        AUkBkQH0Ev8B8AGSAfQBAAH0AfIJ/wHxAe8DkQHtAfAJ/wH0Ae0B8QH/AQAB8gH0BP8B8gu8AQcBvAf/
+        AfAB9wH0AgAB/wHyAfQZ/wHwAfcB9AEAAf8B8gH0A/8BvAHwFP8B8AH3AfQBAAH0AfIM/wH0Df8B9wHz
+        Af8BAAHzAfQZ/wHyAQcB/wIAAf8C8xn/AfEBvAH/AQAB/wLzGf8B8QG8Af8BAAH0AfIZ/wH0AQcC/wEA
+        AfQB8gH0F/8B9AEHAfQB/wIAAf8B9AHyAfMX9AHyAfAC/wEAAf8B9AHyAfMX9AHyAfAC/wEAAf8B9Bjy
+        AfEB8gL/AgAB/wH0AfMY8gH/BQAB/wH0GPMB9AH/BAAB/wH0GPMB9AH/BAAC/xf0Av8FABv/BgAa/wYA
+        Gv8EAAFCAU0BPgcAAT4DAAEoAwABgAMAAUADAAEBAQABAQYAAQQWAAP/AQABwAIAAQcMAAHAAgABAw8A
+        AQEPAAEBDwABAQ8AAQEPAAEBDwABAQ8AAQEPAAEBDwABAQ8AAQEPAAEBDwABAQ8AAQEPAAEBDwABAQ8A
+        AQEPAAEBDwABAQ8AAQEPAAEBDwABAQ8AAQEPAAEBDwABAQ8AAQEPAAEBDwABAQ8AAQEMAAGAAgABBwwA
+        AcACAAEPDAAE/wHAAgABDwHAAgABBwHAAgABBwGAAgABBwGAAgABBwHAAgABAwHAAgABAwGAAgABAwMA
+        AQMDAAEBAwABAQMAAQEDAAEDAwABAQMAAQEDAAEBAwABAwMAAQEDAAEBAwABAQMAAQMDAAEBAwABAQMA
+        AQEDAAEDAwABAQMAAQEDAAEBAwABAwMAAQEDAAEBAwABAQMAAQMDAAEBAwABAQMAAQEDAAEDAwABAQMA
+        AQEDAAEBAwABAwMAAQEDAAEBAwABAQMAAQMDAAEBAwABAQMAAQEDAAEDAwABAQMAAQEDAAEBAwABAwMA
+        AQEDAAEBAwABAQMAAQMDAAEBAwABAQMAAQEDAAEDAwABAQMAAQEDAAEBAwABAwMAAQEDAAEBAwABAQMA
+        AQMDAAEBAwABAQMAAQEDAAEDAwABAQMAAQEDAAEBAwABAwMAAQEDAAEBAwABAQMAAQMDAAEBAwABAQMA
+        AQEDAAEDAwABAQMAAQEDAAEBAwABAwMAAQEDAAEBAwABAQMAAQMDAAEBAwABAQMAAQEDAAEDAwABAQMA
+        AQEDAAEBAwABAwMAAQEDAAEBAwABAQMAAQMDAAEBAwABAQMAAQEDAAEDAwABAQMAAQEDAAEBAwABAwMA
+        AQEDAAEBAwABAQMAAQMDAAEBAwABAQMAAQMDAAEPAYACAAEHAYACAAEHAYACAAEPAYACAAEPAcACAAEP
+        AcACAAEPCw==
+</value>
+  </data>
+  <data name="labelProjectDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 16</value>
+  </data>
+  <data name="labelProjectDate.Text" xml:space="preserve">
+    <value>Дата:</value>
+  </data>
+  <data name="buttonProjectSelectPurpose.Text" xml:space="preserve">
+    <value>Выбор</value>
+  </data>
+  <data name="labelProjectPurpose.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 16</value>
+  </data>
+  <data name="labelProjectPurpose.Text" xml:space="preserve">
+    <value>Тип:</value>
+  </data>
+  <data name="labelProjectName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 16</value>
+  </data>
+  <data name="labelProjectName.Text" xml:space="preserve">
+    <value>Имя:</value>
+  </data>
+  <data name="labelProjectCode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 16</value>
+  </data>
+  <data name="labelProjectCode.Text" xml:space="preserve">
+    <value>Код:</value>
+  </data>
+  <data name="labelFirstProjectName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 16</value>
+  </data>
+  <data name="labelFirstProjectName.Text" xml:space="preserve">
+    <value>Цель:</value>
+  </data>
+  <data name="buttonProjectSave.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonProjectSave.Text" xml:space="preserve">
+    <value>Сохранить</value>
+  </data>
+  <data name="tabPageProjectLoans.Text" xml:space="preserve">
+    <value>Контракты</value>
+  </data>
+  <data name="columnProductType.Text" xml:space="preserve">
+    <value>Тип</value>
+  </data>
+  <data name="columnHeaderId.Text" xml:space="preserve">
+    <value>Код</value>
+  </data>
+  <data name="columnHeaderStatus.Text" xml:space="preserve">
+    <value>Статус</value>
+  </data>
+  <data name="columnHeaderAmount.Text" xml:space="preserve">
+    <value>Сумма</value>
+  </data>
+  <data name="columnHeaderOLB.Text" xml:space="preserve">
+    <value>КП</value>
+  </data>
+  <data name="columnHeaderCurrency.Text" xml:space="preserve">
+    <value>Валюта</value>
+  </data>
+  <data name="columnHeaderInterestRate.Text" xml:space="preserve">
+    <value>Процент</value>
+  </data>
+  <data name="columnHeaderInstallmentType.Text" xml:space="preserve">
+    <value>Тип погашения</value>
+  </data>
+  <data name="columnHeaderNbOfInstallments.Text" xml:space="preserve">
+    <value>Кол. погашений</value>
+  </data>
+  <data name="columnHeaderCreationDate.Text" xml:space="preserve">
+    <value>Дата создания</value>
+  </data>
+  <data name="columnHeaderStartDate.Text" xml:space="preserve">
+    <value>Дата начала</value>
+  </data>
+  <data name="columnHeaderCloseDate.Text" xml:space="preserve">
+    <value>Дата закрытия</value>
+  </data>
+  <data name="buttonProjectAddContract.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonProjectAddContract.Text" xml:space="preserve">
+    <value>Добавить кредит</value>
+  </data>
+  <data name="buttonProjectViewContract.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonProjectViewContract.Text" xml:space="preserve">
+    <value>Просмотр контракта</value>
+  </data>
+  <data name="tabPageProjectAnalyses.Text" xml:space="preserve">
+    <value>Анализ</value>
+  </data>
+  <data name="labelProjectConcurrence.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 16</value>
+  </data>
+  <data name="labelProjectConcurrence.Text" xml:space="preserve">
+    <value>Конкуренция</value>
+  </data>
+  <data name="labelProjectMarket.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 16</value>
+  </data>
+  <data name="labelProjectMarket.Text" xml:space="preserve">
+    <value>Рынок</value>
+  </data>
+  <data name="labelProjectExperience.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 16</value>
+  </data>
+  <data name="labelProjectExperience.Text" xml:space="preserve">
+    <value>Опыт</value>
+  </data>
+  <data name="labelProjectAbilities.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 16</value>
+  </data>
+  <data name="labelProjectAbilities.Text" xml:space="preserve">
+    <value>Возможности</value>
+  </data>
+  <data name="tabPageCorporate.Text" xml:space="preserve">
+    <value>Объединение</value>
+  </data>
+  <data name="tabPageFollowUp.Text" xml:space="preserve">
+    <value>Мониторинг</value>
+  </data>
+  <data name="tclLoanDetails.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 276</value>
+  </data>
+  <data name="tclLoanDetails.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1243, 286</value>
+  </data>
+  <data name="tabPageInstallments.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1235, 257</value>
+  </data>
+  <data name="tabPageInstallments.Text" xml:space="preserve">
+    <value>Инсталяции</value>
+  </data>
+  <data name="columnHeaderLoanN.Text" xml:space="preserve">
+    <value>№</value>
+  </data>
+  <data name="columnHeaderLoanDate.Text" xml:space="preserve">
+    <value>Дата</value>
+  </data>
+  <data name="columnHeaderLoanIP.Text" xml:space="preserve">
+    <value>Процент</value>
+  </data>
+  <data name="columnHeaderLoanPR.Text" xml:space="preserve">
+    <value>Основная сумма</value>
+  </data>
+  <data name="columnHeaderLoanInstallmentTotal.Text" xml:space="preserve">
+    <value>Общая сумма</value>
+  </data>
+  <data name="columnHeaderLoanOLB.Text" xml:space="preserve">
+    <value>КП</value>
+  </data>
+  <data name="listViewLoanInstallments.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1229, 251</value>
+  </data>
+  <data name="tabPageLoanCustomizableFields.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1235, 262</value>
+  </data>
+  <data name="tabPageLoanCustomizableFields.Text" xml:space="preserve">
+    <value>Настраиваемые поля</value>
+  </data>
+  <data name="flowLayoutPanel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 242</value>
+  </data>
+  <data name="btnSaveLoan.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btnSaveLoan.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAa1JREFUOE+tk6GS
+        o0AQhrfuMe4BVqw4mUeIQKxAIBCIiBEIxIgIxIqIiBURESsiRiAQCAQCgUAgEAhEBCJixQoEAhGBQOS/
+        7jmTOXar7upuqv6aqamar/vv7nl4+B9rGAZcr1eM44i0LrFPFF6TyFQaYR8r1OcWaZrCiHu73cCa5hnO
+        IcSpzJAQKK4KxDWJ9oj0vJPYbCUuXWcCpnnCx9Cjee/wvN+i6lq0dG4vv/Te9zrAWxbDDQTapjUB5bmB
+        8xpiGx3hHl5g7yUcArH4/ChsjGSRAZ70l4CozHHMEx3lM1m7QGf4JSAuC7zl6eLxie4u/YfO4q8BoTrA
+        I1vTNFHx/iCDewtFW2O9FborbOneAhexqRuziGyBW1d3Z2pXriNy9fnxfJs1YJyuUGSJAXVVLQH88FSk
+        +Lb6jgMNzX0x16GARRn9cC24vkBZlJ8DOBpX+vdOWMEGtudC0hAppZDnuQngNm6OO+RNBfbP43yvJ2cN
+        FSkMNFA9aQE4k19beFh7zlKuDYuUZZn+K/xvkiQxMwh8Hy9hCBkEhvieJYSAT7uUUmu1WpmAf/nRPwHV
+        0icF5LGzogAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btnSaveLoan.Text" xml:space="preserve">
+    <value>Сохранить</value>
+  </data>
+  <data name="buttonLoanPreview.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonLoanPreview.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAf1JREFUOE+llCGQ
+        qlAUhnc2vLDxBcMLBgPBYDAQDAYDgWAgEAgGAoFgIBAIBILBYDAQDC8QDAYDgWAwGAwvEAiEDQQCgUAw
+        GAz+e+51wF3XTc+ZMyPec7/z//+9+PLyv5+iKHC5XL7U9XrFY9U97PeqqtDMZYDH5tP5jDNBD0nMwez5
+        sUdV1Rskz/NmsTqdEGcpJksPk4ULwVAgexbMhdfAapCiKN8B4b8j/ugy+tYE8swikAvJM9ExFbzJfexp
+        /UdAkr9DnTswV3NM/84xsHUOk2dT2OslDFLV0UZIs3cOaRTUGWgkeXPcYRGtuYJXqYff6hCvco9UTLFP
+        Y9irBUaGxgFNBiWF6Edb7jkvC5g0/Zcy4M8FpS0YY7RJib/boDhVaI0HCHcRJpp2y6AsS5j+DGMKq6jo
+        O1lgAI3sZATkAOMTQBLhuO7dAlPANnZoyva45xZE+2bhTRG5BZZDbUEYijjsD3dAfYz+do2WMoSxmsEK
+        lhg6Bp88nltwNj50stTqC/A8D2zo02NcbQK0SGJbk/hUdelAcg3uuy324Ng20iThN1GW5e/3gKWbpgmm
+        ro3eeITOSERfGkLXdQRBQGsp2Kkx1Q2Ahfjs7jOZcRwjiRO+gfWxzVmWfQVEUcQl/VT1poSkMyCrMAwh
+        CML9hWLH2e128axY42N9/gf4AGBJgNssD1MTAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="buttonLoanPreview.Text" xml:space="preserve">
+    <value>Просмотр</value>
+  </data>
+  <data name="buttonLoanDisbursment.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonLoanDisbursment.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAiVJREFUOE+dUyGX
+        qmAQ3d/xfoTBaDBsMGwwGAgGAsFgIBAIBAKBQDAYCAaDYQPBQCAQCAQCgUAwGAgGAoFgIBC8b2ZcZK3L
+        OffAGe53Z+bOfB8f9DRNg5Zwv9/RdZ2gbVtBRzF+C4e+meP7PvicPHVdC6GnQ4/HA/2jR9uNQj3FOP7o
+        e/QM+h8EARRFeYrcbjc5XLcNgiLFLjhhfzpIxuutgvt9QJAlIipChDRJYBjGKMDqJZHnto5/yxn8w15E
+        WcDaOVhbOoyDh1tTi0BCArqu/xKgYEhZPrUVJsoC9pEESJTJ7E1e5NA8C8bexZ0qybIM2+32VwtETrIU
+        398nIauuCfOwQ/cjwkLF9YK1beCcRCiI82qhqipxl50fjLxUVyzNDUzPecVYzD36sKkK9sCyrPcK0jKH
+        TwayeZyxvJTwdh54SsN09vRfd0yE5/O7ABPOaSweZHn2clvG9tPGnSrkigzbRBxFME3zWQG3wKSKHF7o
+        KrauJS0NIxveYZpgrnzhdDoiTdPRxOp6le0aqpisPrGhMrOykLHxKE9hgBnFtY2Kpm4QxzE0TRs94NEM
+        maIkxkJdYb5eQtE3WG7WmH3NKaOGS1k+E5EHLwE2aehzEGEjg3MAb+9hR4iiUPaBeXw3eJVVVR3vQ0Sm
+        8HIw8ixHSZm4Nc5YFIWAty8koTAMZQsnk8kowGbyXB3Hge3YAtd1BRzjf7w4DD48nU7fD7+u5h8+/gPk
+        V8LyVXLwiQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonLoanDisbursment.Text" xml:space="preserve">
+    <value>Выдать</value>
+  </data>
+  <data name="btnPrintLoanDetails.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAABGdBTUEAANbY1E9YMgAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAJDSURBVGhD7dRLSFRhHIbxN4iIoEXblm3btWrroggK
+        KggkugddBSPBMBgKQyxKEBGLTJIyMcwSEU00S8ZsytSGvF8mGXV0moujjjrORe3sZzH4LATj+/htn83L
+        /xytoydUrZssaTcziZkk9cdkrsRcibmS1AuYK0m9kfmXmCsxV5J6AXMlqTfSGnomS5rNTLJFJ1ldWwUE
+        GisxWdLaSqwmAMUTCeA/z+LxxIZZk2y4sZJNzmLxGKBoPAZscrYSiwICjZXQLBJbAQQaK9FyNAJoaSUC
+        bI0sHFkCBBor0cLyIrDJ2fxSGFBoMQzQbDY8DygYngNoFlgIAfLPhwCa+eaCgP6GAoBmQgGAZtOzfkCe
+        oA/QVMALaMLvBaxsBpDb5wE07vMAcnknAY3NTAA0G5l2Axr2jAManPoDaGDSBajPPQqo1z0CyDk+BKjH
+        NQCo29UPqGusD1DnaC8gx7AT0LchJ6D2wR5A9v4uQF96OwG1/v4OqMXpANT0qwNQY087oIZuO6D6n22A
+        an+0Anrv+AToXUczoLdfPwKqtDcAqmirB1T+uQ5QWcsHQKXNNYCeNVUDKm6sAlRY/wZQQd1rQA9rywHl
+        1ZQByq0uBWSregrobmUxoDsVRYCyXhUCynz5BNDNF48AXXmeD+hiyQNAZ4vvA0ovsgE6UZAD6NjjbECH
+        828DSsu7BehgbgagA/euA9pvuwpoX84lQHuzzwPak3UG0O7MdEC7Mk4B2nnjJKAd144D2n75KKBtF44A
+        0rlDhE6nAf8Axq4XWrmp0xAAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="btnPrintLoanDetails.Text" xml:space="preserve">
+    <value>Печать</value>
+  </data>
+  <data name="btnLoanShares.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btnLoanShares.Text" xml:space="preserve">
+    <value>Доли кредита</value>
+  </data>
+  <data name="btnEditSchedule.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btnEditSchedule.Text" xml:space="preserve">
+    <value>Изменить график</value>
+  </data>
+  <data name="gbxLoanDetails.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1243, 239</value>
+  </data>
+  <data name="tableLayoutPanel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1237, 218</value>
+  </data>
+  <data name="lblEconomicActivity.Location" type="System.Drawing.Point, System.Drawing">
+    <value>397, 88</value>
+  </data>
+  <data name="lblEconomicActivity.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 29</value>
+  </data>
+  <data name="lblEconomicActivity.Text" xml:space="preserve">
+    <value>Вид деятельности*:</value>
+  </data>
+  <data name="labelDateOffirstInstallment.Location" type="System.Drawing.Point, System.Drawing">
+    <value>397, 28</value>
+  </data>
+  <data name="labelDateOffirstInstallment.Size" type="System.Drawing.Size, System.Drawing">
+    <value>175, 32</value>
+  </data>
+  <data name="labelDateOffirstInstallment.Text" xml:space="preserve">
+    <value>Дата первого погашения:</value>
+  </data>
+  <data name="labelLoanAmountMinMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>340, 28</value>
+  </data>
+  <data name="labelLoanNbOfInstallmentsMinMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>340, 117</value>
+  </data>
+  <data name="dtpDateOfFirstInstallment.Location" type="System.Drawing.Point, System.Drawing">
+    <value>578, 31</value>
+  </data>
+  <data name="labelLoanGracePeriodMinMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>340, 88</value>
+  </data>
+  <data name="labelLoanContractCode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 28</value>
+  </data>
+  <data name="labelLoanContractCode.Text" xml:space="preserve">
+    <value>Код контракта:</value>
+  </data>
+  <data name="textBoxLoanContractCode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>174, 3</value>
+  </data>
+  <data name="labelLoanAmount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 32</value>
+  </data>
+  <data name="labelLoanAmount.Text" xml:space="preserve">
+    <value>Сумма:</value>
+  </data>
+  <data name="labelLoanInterestRate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>139, 28</value>
+  </data>
+  <data name="labelLoanInterestRate.Text" xml:space="preserve">
+    <value>Процентная ставка:</value>
+  </data>
+  <data name="dateLoanStart.Location" type="System.Drawing.Point, System.Drawing">
+    <value>578, 3</value>
+  </data>
+  <data name="labelLoanNbOfInstallments.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 117</value>
+  </data>
+  <data name="labelLoanNbOfInstallments.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 28</value>
+  </data>
+  <data name="labelLoanNbOfInstallments.Text" xml:space="preserve">
+    <value>Кол-во погашений:</value>
+  </data>
+  <data name="labelLoanStartDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>397, 0</value>
+  </data>
+  <data name="labelLoanStartDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>139, 28</value>
+  </data>
+  <data name="labelLoanStartDate.Text" xml:space="preserve">
+    <value>Дата выдачи денег:</value>
+  </data>
+  <data name="lbLoanInterestRateMinMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>340, 60</value>
+  </data>
+  <data name="lbLoanInterestRateMinMax.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 28</value>
+  </data>
+  <data name="labelLoanGracePeriod.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 88</value>
+  </data>
+  <data name="labelLoanGracePeriod.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 29</value>
+  </data>
+  <data name="labelLoanGracePeriod.Text" xml:space="preserve">
+    <value>Льготный период:</value>
+  </data>
+  <data name="numericUpDownLoanGracePeriod.Location" type="System.Drawing.Point, System.Drawing">
+    <value>174, 91</value>
+  </data>
+  <data name="nudLoanNbOfInstallments.Location" type="System.Drawing.Point, System.Drawing">
+    <value>174, 120</value>
+  </data>
+  <data name="lblDay.Location" type="System.Drawing.Point, System.Drawing">
+    <value>683, 28</value>
+  </data>
+  <data name="cmbLoanOfficer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>174, 175</value>
+  </data>
+  <data name="labelLoanLoanOfficer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 172</value>
+  </data>
+  <data name="labelLoanLoanOfficer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>165, 46</value>
+  </data>
+  <data name="labelLoanLoanOfficer.Text" xml:space="preserve">
+    <value>Кредитный специалист:</value>
+  </data>
+  <data name="labelLoanInstallmentType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 145</value>
+  </data>
+  <data name="labelLoanInstallmentType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 27</value>
+  </data>
+  <data name="labelLoanInstallmentType.Text" xml:space="preserve">
+    <value>Тип погашений:</value>
+  </data>
+  <data name="comboBoxLoanInstallmentType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>174, 148</value>
+  </data>
+  <data name="labelLoanFundingLine.Location" type="System.Drawing.Point, System.Drawing">
+    <value>397, 60</value>
+  </data>
+  <data name="labelLoanFundingLine.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 28</value>
+  </data>
+  <data name="labelLoanFundingLine.Text" xml:space="preserve">
+    <value>Фондовая линия:</value>
+  </data>
+  <data name="comboBoxLoanFundingLine.Location" type="System.Drawing.Point, System.Drawing">
+    <value>578, 63</value>
+  </data>
+  <data name="labelLoanPurpose.Location" type="System.Drawing.Point, System.Drawing">
+    <value>397, 117</value>
+  </data>
+  <data name="labelLoanPurpose.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 28</value>
+  </data>
+  <data name="labelLoanPurpose.Text" xml:space="preserve">
+    <value>Цель кредита:</value>
+  </data>
+  <data name="textBoxLoanPurpose.Location" type="System.Drawing.Point, System.Drawing">
+    <value>578, 120</value>
+  </data>
+  <data name="nudLoanAmount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>174, 31</value>
+  </data>
+  <data name="nudInterestRate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>174, 63</value>
+  </data>
+  <data name="eacLoan.Location" type="System.Drawing.Point, System.Drawing">
+    <value>578, 91</value>
+  </data>
+  <data name="flowLayoutPanel5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>764, 93</value>
+  </data>
+  <data name="groupBoxAnticipatedRepaymentPenalties.Text" xml:space="preserve">
+    <value>Пеня за досрочное погашение</value>
+  </data>
+  <data name="lblEarlyPartialRepaimentBase.Location" type="System.Drawing.Point, System.Drawing">
+    <value>162, 28</value>
+  </data>
+  <data name="lblEarlyTotalRepaimentBase.Location" type="System.Drawing.Point, System.Drawing">
+    <value>162, 0</value>
+  </data>
+  <data name="lblLoanAnticipatedPartialFeesMinMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 28</value>
+  </data>
+  <data name="lbATR.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 28</value>
+  </data>
+  <data name="lbATR.Text" xml:space="preserve">
+    <value>ДПП :</value>
+  </data>
+  <data name="tbLoanAnticipatedPartialFees.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 31</value>
+  </data>
+  <data name="textBoxLoanAnticipatedTotalFees.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 3</value>
+  </data>
+  <data name="lbAPR.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 28</value>
+  </data>
+  <data name="lbAPR.Text" xml:space="preserve">
+    <value>ДЧП :</value>
+  </data>
+  <data name="labelLoanAnticipatedTotalFeesMinMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 0</value>
+  </data>
+  <data name="groupBoxLoanLateFees.Size" type="System.Drawing.Size, System.Drawing">
+    <value>502, 77</value>
+  </data>
+  <data name="groupBoxLoanLateFees.Text" xml:space="preserve">
+    <value>Пеня</value>
+  </data>
+  <data name="tableLayoutPanel8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>496, 56</value>
+  </data>
+  <data name="labelLoanLateFeesOnOverduePrincipalMinMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>198, 28</value>
+  </data>
+  <data name="labelLoanLateFeesOnAmountMinMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>198, 0</value>
+  </data>
+  <data name="labelLoanLateFeesOnAmount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 28</value>
+  </data>
+  <data name="labelLoanLateFeesOnAmount.Text" xml:space="preserve">
+    <value>Сумма кредита</value>
+  </data>
+  <data name="textBoxLoanLateFeesOnAmount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>149, 3</value>
+  </data>
+  <data name="textBoxLoanLateFeesOnOverduePrincipal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>149, 31</value>
+  </data>
+  <data name="labelLoanLateFeesOnOverduePrincipal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 28</value>
+  </data>
+  <data name="labelLoanLateFeesOnOverduePrincipal.Text" xml:space="preserve">
+    <value>Просроченая сумма</value>
+  </data>
+  <data name="labelLoanLateFeesOnOLB.Location" type="System.Drawing.Point, System.Drawing">
+    <value>256, 0</value>
+  </data>
+  <data name="labelLoanLateFeesOnOLB.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 28</value>
+  </data>
+  <data name="labelLoanLateFeesOnOLB.Text" xml:space="preserve">
+    <value>КП</value>
+  </data>
+  <data name="textBoxLoanLateFeesOnOLB.Location" type="System.Drawing.Point, System.Drawing">
+    <value>419, 3</value>
+  </data>
+  <data name="labelLoanLateFeesOnOLBMinMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>468, 0</value>
+  </data>
+  <data name="labelLoanLateFeesOnOverdueInterest.Location" type="System.Drawing.Point, System.Drawing">
+    <value>256, 28</value>
+  </data>
+  <data name="labelLoanLateFeesOnOverdueInterest.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 28</value>
+  </data>
+  <data name="labelLoanLateFeesOnOverdueInterest.Text" xml:space="preserve">
+    <value>Просроченый процент</value>
+  </data>
+  <data name="textBoxLoanLateFeesOnOverdueInterest.Location" type="System.Drawing.Point, System.Drawing">
+    <value>419, 31</value>
+  </data>
+  <data name="labelLoanLateFeesOnOverdueInterestMinMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>468, 28</value>
+  </data>
+  <data name="groupBoxEntryFees.Text" xml:space="preserve">
+    <value>Административные взносы</value>
+  </data>
+  <data name="colName.Text" xml:space="preserve">
+    <value>Наименование</value>
+  </data>
+  <data name="colValue.Text" xml:space="preserve">
+    <value>Значение</value>
+  </data>
+  <data name="colAmount.Text" xml:space="preserve">
+    <value>Сумма</value>
+  </data>
+  <data name="btnUpdateSettings.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btnUpdateSettings.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAa1JREFUOE+tk6GS
+        o0AQhrfuMe4BVqw4mUeIQKxAIBCIiBEIxIgIxIqIiBURESsiRiAQCAQCgUAgEAhEBCJixQoEAhGBQOS/
+        7jmTOXar7upuqv6aqamar/vv7nl4+B9rGAZcr1eM44i0LrFPFF6TyFQaYR8r1OcWaZrCiHu73cCa5hnO
+        IcSpzJAQKK4KxDWJ9oj0vJPYbCUuXWcCpnnCx9Cjee/wvN+i6lq0dG4vv/Te9zrAWxbDDQTapjUB5bmB
+        8xpiGx3hHl5g7yUcArH4/ChsjGSRAZ70l4CozHHMEx3lM1m7QGf4JSAuC7zl6eLxie4u/YfO4q8BoTrA
+        I1vTNFHx/iCDewtFW2O9FborbOneAhexqRuziGyBW1d3Z2pXriNy9fnxfJs1YJyuUGSJAXVVLQH88FSk
+        +Lb6jgMNzX0x16GARRn9cC24vkBZlJ8DOBpX+vdOWMEGtudC0hAppZDnuQngNm6OO+RNBfbP43yvJ2cN
+        FSkMNFA9aQE4k19beFh7zlKuDYuUZZn+K/xvkiQxMwh8Hy9hCBkEhvieJYSAT7uUUmu1WpmAf/nRPwHV
+        0icF5LGzogAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btnUpdateSettings.Text" xml:space="preserve">
+    <value>Сохранить</value>
+  </data>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>Обязательне накопления</value>
+  </data>
+  <data name="lbCompulsorySavingsAmount.Text" xml:space="preserve">
+    <value>Сумма</value>
+  </data>
+  <data name="lbCompulsorySavings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>274, 33</value>
+  </data>
+  <data name="lbCompulsorySavings.Text" xml:space="preserve">
+    <value>Привязать к депозитному счету</value>
+  </data>
+  <data name="linkCompulsorySavings.Text" xml:space="preserve">
+    <value>детали</value>
+  </data>
+  <data name="labelComments.Size" type="System.Drawing.Size, System.Drawing">
+    <value>141, 90</value>
+  </data>
+  <data name="labelComments.Text" xml:space="preserve">
+    <value>Комментарии</value>
+  </data>
+  <data name="textBoxComments.Location" type="System.Drawing.Point, System.Drawing">
+    <value>150, 360</value>
+  </data>
+  <data name="labelLocAmount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 32</value>
+  </data>
+  <data name="labelLocAmount.Text" xml:space="preserve">
+    <value>Сумма КЛ:</value>
+  </data>
+  <data name="tbLocAmount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>84, 3</value>
+  </data>
+  <data name="labelLocMin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>211, 0</value>
+  </data>
+  <data name="labelLocMin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 13</value>
+  </data>
+  <data name="labelLocMin.Text" xml:space="preserve">
+    <value>Мин:</value>
+  </data>
+  <data name="labelLocMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>211, 13</value>
+  </data>
+  <data name="labelLocMax.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 19</value>
+  </data>
+  <data name="labelLocMax.Text" xml:space="preserve">
+    <value>Макс:</value>
+  </data>
+  <data name="labelLocMinAmount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>253, 0</value>
+  </data>
+  <data name="labelLocMaxAmount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>253, 13</value>
+  </data>
+  <data name="lblInsuranceMin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>638, 0</value>
+  </data>
+  <data name="lblInsuranceMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>638, 13</value>
+  </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>602, 13</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>602, 0</value>
+  </data>
+  <data name="tbInsurance.Location" type="System.Drawing.Point, System.Drawing">
+    <value>510, 3</value>
+  </data>
+  <data name="lblCreditInsurance.Location" type="System.Drawing.Point, System.Drawing">
+    <value>348, 0</value>
+  </data>
+  <data name="lblCreditInsurance.Size" type="System.Drawing.Size, System.Drawing">
+    <value>156, 32</value>
+  </data>
+  <data name="lblCreditInsurance.Text" xml:space="preserve">
+    <value>Страхование кредита:</value>
+  </data>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>657, 0</value>
+  </data>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>657, 13</value>
+  </data>
+  <data name="lblLocCurrencyMin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>272, 0</value>
+  </data>
+  <data name="lblLocCurrencyMin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 13</value>
+  </data>
+  <data name="lblLocCurrencyMin.Text" xml:space="preserve">
+    <value>Валюта</value>
+  </data>
+  <data name="lblLocCurrencyMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>272, 13</value>
+  </data>
+  <data name="lblLocCurrencyMax.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 19</value>
+  </data>
+  <data name="lblLocCurrencyMax.Text" xml:space="preserve">
+    <value>Валюта</value>
+  </data>
+  <data name="btnPrintCreditCommittee.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAABGdBTUEAANbY1E9YMgAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAJDSURBVGhD7dRLSFRhHIbxN4iIoEXblm3btWrroggK
+        KggkugddBSPBMBgKQyxKEBGLTJIyMcwSEU00S8ZsytSGvF8mGXV0moujjjrORe3sZzH4LATj+/htn83L
+        /xytoydUrZssaTcziZkk9cdkrsRcibmS1AuYK0m9kfmXmCsxV5J6AXMlqTfSGnomS5rNTLJFJ1ldWwUE
+        GisxWdLaSqwmAMUTCeA/z+LxxIZZk2y4sZJNzmLxGKBoPAZscrYSiwICjZXQLBJbAQQaK9FyNAJoaSUC
+        bI0sHFkCBBor0cLyIrDJ2fxSGFBoMQzQbDY8DygYngNoFlgIAfLPhwCa+eaCgP6GAoBmQgGAZtOzfkCe
+        oA/QVMALaMLvBaxsBpDb5wE07vMAcnknAY3NTAA0G5l2Axr2jAManPoDaGDSBajPPQqo1z0CyDk+BKjH
+        NQCo29UPqGusD1DnaC8gx7AT0LchJ6D2wR5A9v4uQF96OwG1/v4OqMXpANT0qwNQY087oIZuO6D6n22A
+        an+0Anrv+AToXUczoLdfPwKqtDcAqmirB1T+uQ5QWcsHQKXNNYCeNVUDKm6sAlRY/wZQQd1rQA9rywHl
+        1ZQByq0uBWSregrobmUxoDsVRYCyXhUCynz5BNDNF48AXXmeD+hiyQNAZ4vvA0ovsgE6UZAD6NjjbECH
+        828DSsu7BehgbgagA/euA9pvuwpoX84lQHuzzwPak3UG0O7MdEC7Mk4B2nnjJKAd144D2n75KKBtF44A
+        0rlDhE6nAf8Axq4XWrmp0xAAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="btnPrintCreditCommittee.Text" xml:space="preserve">
+    <value>Печать</value>
+  </data>
+  <data name="buttonCreditCommiteeSaveDecision.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonCreditCommiteeSaveDecision.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAa1JREFUOE+tk6GS
+        o0AQhrfuMe4BVqw4mUeIQKxAIBCIiBEIxIgIxIqIiBURESsiRiAQCAQCgUAgEAhEBCJixQoEAhGBQOS/
+        7jmTOXar7upuqv6aqamar/vv7nl4+B9rGAZcr1eM44i0LrFPFF6TyFQaYR8r1OcWaZrCiHu73cCa5hnO
+        IcSpzJAQKK4KxDWJ9oj0vJPYbCUuXWcCpnnCx9Cjee/wvN+i6lq0dG4vv/Te9zrAWxbDDQTapjUB5bmB
+        8xpiGx3hHl5g7yUcArH4/ChsjGSRAZ70l4CozHHMEx3lM1m7QGf4JSAuC7zl6eLxie4u/YfO4q8BoTrA
+        I1vTNFHx/iCDewtFW2O9FborbOneAhexqRuziGyBW1d3Z2pXriNy9fnxfJs1YJyuUGSJAXVVLQH88FSk
+        +Lb6jgMNzX0x16GARRn9cC24vkBZlJ8DOBpX+vdOWMEGtudC0hAppZDnuQngNm6OO+RNBfbP43yvJ2cN
+        FSkMNFA9aQE4k19beFh7zlKuDYuUZZn+K/xvkiQxMwh8Hy9hCBkEhvieJYSAT7uUUmu1WpmAf/nRPwHV
+        0icF5LGzogAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonCreditCommiteeSaveDecision.Text" xml:space="preserve">
+    <value>Сохранить</value>
+  </data>
+  <data name="lblCCStatus.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 36</value>
+  </data>
+  <data name="lblCCStatus.Text" xml:space="preserve">
+    <value>Статус</value>
+  </data>
+  <data name="pnlCCStatus.Location" type="System.Drawing.Point, System.Drawing">
+    <value>105, 3</value>
+  </data>
+  <data name="labelCreditCommiteeDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 16</value>
+  </data>
+  <data name="labelCreditCommiteeDate.Text" xml:space="preserve">
+    <value>Дата</value>
+  </data>
+  <data name="dateTimePickerCreditCommitee.Location" type="System.Drawing.Point, System.Drawing">
+    <value>105, 39</value>
+  </data>
+  <data name="labelCreditCommiteeComment.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 16</value>
+  </data>
+  <data name="labelCreditCommiteeComment.Text" xml:space="preserve">
+    <value>Комментарий</value>
+  </data>
+  <data name="labelCreditCommiteeCode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 16</value>
+  </data>
+  <data name="labelCreditCommiteeCode.Text" xml:space="preserve">
+    <value>Код</value>
+  </data>
+  <data name="textBoxCreditCommiteeComment.Location" type="System.Drawing.Point, System.Drawing">
+    <value>105, 95</value>
+  </data>
+  <data name="textBoxCreditCommiteeComment.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1135, 194</value>
+  </data>
+  <data name="tBCreditCommitteeCode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>105, 67</value>
+  </data>
+  <data name="tabPageRepayments.Text" xml:space="preserve">
+    <value>График погашения</value>
+  </data>
+  <data name="tabPageEvents.Text" xml:space="preserve">
+    <value>События</value>
+  </data>
+  <data name="columnHeader1.Text" xml:space="preserve">
+    <value>№</value>
+  </data>
+  <data name="columnHeader2.Text" xml:space="preserve">
+    <value>Дата</value>
+  </data>
+  <data name="columnHeader3.Text" xml:space="preserve">
+    <value>Начисленные проценты</value>
+  </data>
+  <data name="columnHeader4.Text" xml:space="preserve">
+    <value>Основная сумма к погашению</value>
+  </data>
+  <data name="columnHeader5.Text" xml:space="preserve">
+    <value>Всего к погашению</value>
+  </data>
+  <data name="columnHeader6.Text" xml:space="preserve">
+    <value>Кредитный портфель</value>
+  </data>
+  <data name="columnHeader7.Text" xml:space="preserve">
+    <value>Оплаченные проценты</value>
+  </data>
+  <data name="columnHeader8.Text" xml:space="preserve">
+    <value>Оплаченая основная сумма</value>
+  </data>
+  <data name="columnHeader9.Text" xml:space="preserve">
+    <value>Дата оплаты</value>
+  </data>
+  <data name="columnHeaderLateDays.Text" xml:space="preserve">
+    <value>Просроч. Дни</value>
+  </data>
+  <data name="columnHeaderComment.Text" xml:space="preserve">
+    <value>Комментарий</value>
+  </data>
+  <data name="buttonLoanRepaymentRepay.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonLoanRepaymentRepay.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAfdJREFUOE+NkxGY
+        40AUx/c7PFg4KB4eBA4ChUAgEAgEAguFwEFhoRAoBAKBQCBQCBQOAoWFhUChsFAIBAKBhUAgEBgILBQK
+        /e+86SXXtIWd73tfJjPzfvP+7715ePg36rrGV633Ed+2aXA8HnE6nQaj/94u1/s57TmOAwFoOKDfYB/d
+        CNSvF02FZbJCWVfDfhRGY0DNWpjOHJdAAvhJjN8zAxNTxcRSEWzWAhIGwRhQtQ2mMxNlWQ637MockqEi
+        Xq/x7LsI1iv8UCRUVYUouoqgYg0U28L7BSB83Yjbay5zzgGUrzRNz4BrCfcAeVXi0ZjCjjw8eQ5qHmWf
+        l+BGwp0I6PD2bQflj4XvpgLJNrBKNwJyA2g6BpVLqHl416UjCU/OMxZcxqMuI8vzsQRK4LbMoCxsJDuu
+        kTcVQXZFjpe3LbrDB2buQuRAX87hhcH/CFjLsM33mMw0fDNk/FRlJJtEADxesgkPvajesQh98aVKhbwC
+        vu+Py/g3fcEv7kzaGGMC0HJZU65fsk1MeXRUJc00sN/v4XvebSeWRTE493mgsIM4gmRqcN2lKCNdQPPz
+        W2jbu+1LgP49dF2HVRyjyAvQeZLtuu4ZkGXZcPDyEdH8cDiAnOnGpm5EA5FRt1qWdQbQUBQFuq6PTNM0
+        9KaqKsjoHJksy4PzJ+th6YFfF1wUAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="buttonLoanRepaymentRepay.Text" xml:space="preserve">
+    <value>Оплатить</value>
+  </data>
+  <data name="buttonLoanReschedule.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonLoanReschedule.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAbxJREFUOE+tk62X
+        gkAUxT0b9w/YaNi4wWAkGAwEgoFgIBAIBAOBaCAQDAaCYQOBQDBsMBgMBoOBYDAQDAaDwUAwEAgE7743
+        CH6e44blnHsGHm9+8+7Mm1rt/Ox2O9xrT7F7cU45R4z7/R55nuPEOp0q5accGcUuyug9E/8537btAsSA
+        cuJys4Y3CcX3NFqg3dMgWzrJgERjfzSscj3PuwB4tdkqQt3o4E2qw/E9MDgIA/i+j3EYwhq6UPQusjQV
+        kMFgcAGkWQZ35EEyu2ioMjRDx3q9vrE0oYo6pob0GUBYIF/BbIJuz8AxSarE0t54OX8BIEiwmEIlwP2G
+        MuRvgHkByMnS9Yn8G0AxNByPx8dNLFcLXlQgAIdEAFzXfewDATD1GwsZ2eHGEadA/cDHyzHHcZ4DNMt8
+        8O+G32jaGj40GTJVsVgunwP8+QRfugLvJxRyxz5COtp4sxHx98YnLMtCHMfo9/tFBYfDoVpxtYmhUwVs
+        o2sa6OgaeraFhPqCG4u7L4oi8V0BOHB9mdgfd1tKu80NxZ5ZvNB2uxXiClRVvdxKSZIgyzLa7bYYZUUp
+        xnOs1WqBc0o1m81q8i/hPfSBDrYSYwAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonLoanReschedule.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 28</value>
+  </data>
+  <data name="buttonLoanReschedule.Text" xml:space="preserve">
+    <value>Изменить график</value>
+  </data>
+  <data name="buttonAddTranche.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonAddTranche.Location" type="System.Drawing.Point, System.Drawing">
+    <value>315, 3</value>
+  </data>
+  <data name="buttonAddTranche.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 28</value>
+  </data>
+  <data name="buttonAddTranche.Text" xml:space="preserve">
+    <value>Добавить транш</value>
+  </data>
+  <data name="btnWriteOff.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btnWriteOff.Location" type="System.Drawing.Point, System.Drawing">
+    <value>481, 3</value>
+  </data>
+  <data name="btnWriteOff.Text" xml:space="preserve">
+    <value>Списать</value>
+  </data>
+  <data name="btnPrintLoanRepayment.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAABGdBTUEAANbY1E9YMgAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAJDSURBVGhD7dRLSFRhHIbxN4iIoEXblm3btWrroggK
+        KggkugddBSPBMBgKQyxKEBGLTJIyMcwSEU00S8ZsytSGvF8mGXV0moujjjrORe3sZzH4LATj+/htn83L
+        /xytoydUrZssaTcziZkk9cdkrsRcibmS1AuYK0m9kfmXmCsxV5J6AXMlqTfSGnomS5rNTLJFJ1ldWwUE
+        GisxWdLaSqwmAMUTCeA/z+LxxIZZk2y4sZJNzmLxGKBoPAZscrYSiwICjZXQLBJbAQQaK9FyNAJoaSUC
+        bI0sHFkCBBor0cLyIrDJ2fxSGFBoMQzQbDY8DygYngNoFlgIAfLPhwCa+eaCgP6GAoBmQgGAZtOzfkCe
+        oA/QVMALaMLvBaxsBpDb5wE07vMAcnknAY3NTAA0G5l2Axr2jAManPoDaGDSBajPPQqo1z0CyDk+BKjH
+        NQCo29UPqGusD1DnaC8gx7AT0LchJ6D2wR5A9v4uQF96OwG1/v4OqMXpANT0qwNQY087oIZuO6D6n22A
+        an+0Anrv+AToXUczoLdfPwKqtDcAqmirB1T+uQ5QWcsHQKXNNYCeNVUDKm6sAlRY/wZQQd1rQA9rywHl
+        1ZQByq0uBWSregrobmUxoDsVRYCyXhUCynz5BNDNF48AXXmeD+hiyQNAZ4vvA0ovsgE6UZAD6NjjbECH
+        828DSsu7BehgbgagA/euA9pvuwpoX84lQHuzzwPak3UG0O7MdEC7Mk4B2nnjJKAd144D2n75KKBtF44A
+        0rlDhE6nAf8Axq4XWrmp0xAAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="btnPrintLoanRepayment.Location" type="System.Drawing.Point, System.Drawing">
+    <value>627, 3</value>
+  </data>
+  <data name="btnPrintLoanRepayment.Text" xml:space="preserve">
+    <value>Печать</value>
+  </data>
+  <data name="columnHeader11.Text" xml:space="preserve">
+    <value>Дата</value>
+  </data>
+  <data name="EntryDate.Text" xml:space="preserve">
+    <value>Дата ввода</value>
+  </data>
+  <data name="columnHeader12.Text" xml:space="preserve">
+    <value>Тип</value>
+  </data>
+  <data name="columnHeader13.Text" xml:space="preserve">
+    <value>Основная сумма</value>
+  </data>
+  <data name="columnHeader13.Width" type="System.Int32, mscorlib">
+    <value>124</value>
+  </data>
+  <data name="columnHeader14.Text" xml:space="preserve">
+    <value>Процент</value>
+  </data>
+  <data name="colCommissions.Text" xml:space="preserve">
+    <value>Комиссия</value>
+  </data>
+  <data name="colCommissions.Width" type="System.Int32, mscorlib">
+    <value>78</value>
+  </data>
+  <data name="colPenalties.Text" xml:space="preserve">
+    <value>Пеня</value>
+  </data>
+  <data name="colOverduePrincipal.Text" xml:space="preserve">
+    <value>Просроченная основная сумма</value>
+  </data>
+  <data name="colOverdueDays.Text" xml:space="preserve">
+    <value>Дни просрочки</value>
+  </data>
+  <data name="columnHeader16.Text" xml:space="preserve">
+    <value>Отменяемый</value>
+  </data>
+  <data name="columnHeader18.Text" xml:space="preserve">
+    <value>Пользователь</value>
+  </data>
+  <data name="ExportedDate.Text" xml:space="preserve">
+    <value>Дата экспорта</value>
+  </data>
+  <data name="colNumber.Text" xml:space="preserve">
+    <value>Номер погашения</value>
+  </data>
+  <data name="columnHeader30.Text" xml:space="preserve">
+    <value>Комментарий</value>
+  </data>
+  <data name="colPaymentMethod.Text" xml:space="preserve">
+    <value>Метод оплаты</value>
+  </data>
+  <data name="colCancelDate1.Text" xml:space="preserve">
+    <value>Дата отмены</value>
+  </data>
+  <data name="colIsDeleted.Text" xml:space="preserve">
+    <value>Удалено</value>
+  </data>
+  <data name="btnPrintLoanEvents.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAABGdBTUEAANbY1E9YMgAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAJDSURBVGhD7dRLSFRhHIbxN4iIoEXblm3btWrroggK
+        KggkugddBSPBMBgKQyxKEBGLTJIyMcwSEU00S8ZsytSGvF8mGXV0moujjjrORe3sZzH4LATj+/htn83L
+        /xytoydUrZssaTcziZkk9cdkrsRcibmS1AuYK0m9kfmXmCsxV5J6AXMlqTfSGnomS5rNTLJFJ1ldWwUE
+        GisxWdLaSqwmAMUTCeA/z+LxxIZZk2y4sZJNzmLxGKBoPAZscrYSiwICjZXQLBJbAQQaK9FyNAJoaSUC
+        bI0sHFkCBBor0cLyIrDJ2fxSGFBoMQzQbDY8DygYngNoFlgIAfLPhwCa+eaCgP6GAoBmQgGAZtOzfkCe
+        oA/QVMALaMLvBaxsBpDb5wE07vMAcnknAY3NTAA0G5l2Axr2jAManPoDaGDSBajPPQqo1z0CyDk+BKjH
+        NQCo29UPqGusD1DnaC8gx7AT0LchJ6D2wR5A9v4uQF96OwG1/v4OqMXpANT0qwNQY087oIZuO6D6n22A
+        an+0Anrv+AToXUczoLdfPwKqtDcAqmirB1T+uQ5QWcsHQKXNNYCeNVUDKm6sAlRY/wZQQd1rQA9rywHl
+        1ZQByq0uBWSregrobmUxoDsVRYCyXhUCynz5BNDNF48AXXmeD+hiyQNAZ4vvA0ovsgE6UZAD6NjjbECH
+        828DSsu7BehgbgagA/euA9pvuwpoX84lQHuzzwPak3UG0O7MdEC7Mk4B2nnjJKAd144D2n75KKBtF44A
+        0rlDhE6nAf8Axq4XWrmp0xAAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="btnPrintLoanEvents.Text" xml:space="preserve">
+    <value>Печать</value>
+  </data>
+  <data name="btnWaiveFee.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btnWaiveFee.Text" xml:space="preserve">
+    <value>Аннулировать пеню просрочки</value>
+  </data>
+  <data name="btnWaiveFee.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="btnDeleteEvent.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btnDeleteEvent.Text" xml:space="preserve">
+    <value>Удалить предыдущее событие</value>
+  </data>
+  <data name="btnDeleteEvent.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="richTextBoxStatus.Text" xml:space="preserve">
+    <value>Статус:</value>
+  </data>
+  <data name="lblLoanStatus.Text" xml:space="preserve">
+    <value>Статус оплаты контракта</value>
+  </data>
+  <data name="tabPageSavingsAmountsAndFees.Text" xml:space="preserve">
+    <value>Пеня и ограничения</value>
+  </data>
+  <data name="groupBoxSavingBalance.Text" xml:space="preserve">
+    <value>Баланс</value>
+  </data>
+  <data name="lbBalanceMaxValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>99, 22</value>
+  </data>
+  <data name="lbBalanceMaxValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 16</value>
+  </data>
+  <data name="lbBalanceMaxValue.Text" xml:space="preserve">
+    <value>Значение</value>
+  </data>
+  <data name="lbBalanceMinValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>99, 3</value>
+  </data>
+  <data name="lbBalanceMinValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 16</value>
+  </data>
+  <data name="lbBalanceMinValue.Text" xml:space="preserve">
+    <value>Значение</value>
+  </data>
+  <data name="groupBoxSavingDeposit.Text" xml:space="preserve">
+    <value>Сумма депозита</value>
+  </data>
+  <data name="lbDepositMaxValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>99, 22</value>
+  </data>
+  <data name="lbDepositMaxValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 16</value>
+  </data>
+  <data name="lbDepositMaxValue.Text" xml:space="preserve">
+    <value>Значение</value>
+  </data>
+  <data name="lbDepositMinValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>99, 3</value>
+  </data>
+  <data name="lbDepositMinValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 16</value>
+  </data>
+  <data name="lbDepositMinValue.Text" xml:space="preserve">
+    <value>Значение</value>
+  </data>
+  <data name="groupBoxSavingWithdraw.Text" xml:space="preserve">
+    <value>Сумма снятия</value>
+  </data>
+  <data name="lbWithdrawMaxValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>99, 22</value>
+  </data>
+  <data name="lbWithdrawMaxValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 16</value>
+  </data>
+  <data name="lbWithdrawMaxValue.Text" xml:space="preserve">
+    <value>Значение</value>
+  </data>
+  <data name="lbWithdrawMinValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>99, 3</value>
+  </data>
+  <data name="lbWithdrawMinValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 16</value>
+  </data>
+  <data name="lbWithdrawMinValue.Text" xml:space="preserve">
+    <value>Значение</value>
+  </data>
+  <data name="groupBoxSavingTransfer.Text" xml:space="preserve">
+    <value>Трансфер</value>
+  </data>
+  <data name="labelSavingTransferMaxValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>99, 22</value>
+  </data>
+  <data name="labelSavingTransferMaxValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 16</value>
+  </data>
+  <data name="labelSavingTransferMaxValue.Text" xml:space="preserve">
+    <value>Значение</value>
+  </data>
+  <data name="labelSavingTransferMinValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>99, 0</value>
+  </data>
+  <data name="labelSavingTransferMinValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 19</value>
+  </data>
+  <data name="labelSavingTransferMinValue.Text" xml:space="preserve">
+    <value>Значение</value>
+  </data>
+  <data name="gbInterest.Text" xml:space="preserve">
+    <value>Процент</value>
+  </data>
+  <data name="lbInterestBasedOnValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>93, 41</value>
+  </data>
+  <data name="lbInterestBasedOnValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 16</value>
+  </data>
+  <data name="lbInterestBasedOnValue.Text" xml:space="preserve">
+    <value>Значение</value>
+  </data>
+  <data name="lbInterestAccrual.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 16</value>
+  </data>
+  <data name="lbInterestAccrual.Text" xml:space="preserve">
+    <value>Начислено:</value>
+  </data>
+  <data name="lbInterestPostingValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>93, 22</value>
+  </data>
+  <data name="lbInterestPostingValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 16</value>
+  </data>
+  <data name="lbInterestPostingValue.Text" xml:space="preserve">
+    <value>Значение</value>
+  </data>
+  <data name="lbInterestBasedOn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 16</value>
+  </data>
+  <data name="lbInterestBasedOn.Text" xml:space="preserve">
+    <value>На основе:</value>
+  </data>
+  <data name="lbInterestAccrualValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>93, 3</value>
+  </data>
+  <data name="lbInterestAccrualValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 16</value>
+  </data>
+  <data name="lbInterestAccrualValue.Text" xml:space="preserve">
+    <value>Значение</value>
+  </data>
+  <data name="lbInterestPosting.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 16</value>
+  </data>
+  <data name="lbInterestPosting.Text" xml:space="preserve">
+    <value>Постинг:</value>
+  </data>
+  <data name="gbDepositInterest.Size" type="System.Drawing.Size, System.Drawing">
+    <value>204, 62</value>
+  </data>
+  <data name="gbDepositInterest.Text" xml:space="preserve">
+    <value>Процент</value>
+  </data>
+  <data name="tableLayoutPanel17.Size" type="System.Drawing.Size, System.Drawing">
+    <value>198, 41</value>
+  </data>
+  <data name="lbPeriodicityValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>123, 22</value>
+  </data>
+  <data name="lbPeriodicityValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 16</value>
+  </data>
+  <data name="lbPeriodicityValue.Text" xml:space="preserve">
+    <value>Значение</value>
+  </data>
+  <data name="lbAccrualDeposit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 16</value>
+  </data>
+  <data name="lbAccrualDeposit.Text" xml:space="preserve">
+    <value>Начислено:</value>
+  </data>
+  <data name="lbAccrualDepositValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>123, 3</value>
+  </data>
+  <data name="lbAccrualDepositValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 16</value>
+  </data>
+  <data name="lbAccrualDepositValue.Text" xml:space="preserve">
+    <value>Значение</value>
+  </data>
+  <data name="lbPeriodicity.Size" type="System.Drawing.Size, System.Drawing">
+    <value>114, 16</value>
+  </data>
+  <data name="lbPeriodicity.Text" xml:space="preserve">
+    <value>Периодичность:</value>
+  </data>
+  <data name="lbTransferFees.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 16</value>
+  </data>
+  <data name="lbTransferFees.Text" xml:space="preserve">
+    <value>Комиссия за перевод</value>
+  </data>
+  <data name="nudIbtFee.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 22</value>
+  </data>
+  <data name="lbDepositFees.Size" type="System.Drawing.Size, System.Drawing">
+    <value>211, 16</value>
+  </data>
+  <data name="lbDepositFees.Text" xml:space="preserve">
+    <value>Комиссия за взнос (наличные)</value>
+  </data>
+  <data name="nudTransferFees.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 22</value>
+  </data>
+  <data name="nudReopenFees.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 22</value>
+  </data>
+  <data name="lbReopenFees.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbReopenFees.Size" type="System.Drawing.Size, System.Drawing">
+    <value>205, 16</value>
+  </data>
+  <data name="lbReopenFees.Text" xml:space="preserve">
+    <value>Взнос за переоткрытие счета</value>
+  </data>
+  <data name="lbChequeDepositFees.Size" type="System.Drawing.Size, System.Drawing">
+    <value>221, 32</value>
+  </data>
+  <data name="lbChequeDepositFees.Text" xml:space="preserve">
+    <value>Комиссия за взнос (банковский чек)</value>
+  </data>
+  <data name="nudAgioFees.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 22</value>
+  </data>
+  <data name="nudChequeDepositFees.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 22</value>
+  </data>
+  <data name="lbAgioFees.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 16</value>
+  </data>
+  <data name="lbAgioFees.Text" xml:space="preserve">
+    <value>Ажио</value>
+  </data>
+  <data name="lbCloseFees.Size" type="System.Drawing.Size, System.Drawing">
+    <value>142, 16</value>
+  </data>
+  <data name="lbCloseFees.Text" xml:space="preserve">
+    <value>Взнос при закрытии</value>
+  </data>
+  <data name="nudOverdraftFees.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 22</value>
+  </data>
+  <data name="nudCloseFees.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 22</value>
+  </data>
+  <data name="lbOverdraftFees.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 16</value>
+  </data>
+  <data name="lbOverdraftFees.Text" xml:space="preserve">
+    <value>Взнос за овердрафт</value>
+  </data>
+  <data name="lbManagementFees.Size" type="System.Drawing.Size, System.Drawing">
+    <value>166, 16</value>
+  </data>
+  <data name="lbManagementFees.Text" xml:space="preserve">
+    <value>Взнос за обслуживание</value>
+  </data>
+  <data name="nudManagementFees.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 22</value>
+  </data>
+  <data name="nudDepositFees.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 22</value>
+  </data>
+  <data name="lblInterBranchTransfer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 16</value>
+  </data>
+  <data name="lblInterBranchTransfer.Text" xml:space="preserve">
+    <value>Комиссия за перевод</value>
+  </data>
+  <data name="tabPageSavingsEvents.Text" xml:space="preserve">
+    <value>События</value>
+  </data>
+  <data name="columnHeader21.Text" xml:space="preserve">
+    <value>Дата</value>
+  </data>
+  <data name="columnHeader26.Text" xml:space="preserve">
+    <value>Штрафы</value>
+  </data>
+  <data name="columnHeader22.Text" xml:space="preserve">
+    <value>Дебит</value>
+  </data>
+  <data name="columnHeader23.Text" xml:space="preserve">
+    <value>Кредит</value>
+  </data>
+  <data name="columnHeader27.Text" xml:space="preserve">
+    <value>Перевод</value>
+  </data>
+  <data name="columnHeader15.Text" xml:space="preserve">
+    <value>Код</value>
+  </data>
+  <data name="columnHeader28.Text" xml:space="preserve">
+    <value>Метод сбережения</value>
+  </data>
+  <data name="columnHeader29.Text" xml:space="preserve">
+    <value>Пользователь</value>
+  </data>
+  <data name="columnHeader24.Text" xml:space="preserve">
+    <value>Описание</value>
+  </data>
+  <data name="colCancelDate.Text" xml:space="preserve">
+    <value>Дата отмены</value>
+  </data>
+  <data name="tabPageLoans.Text" xml:space="preserve">
+    <value>Кредиты</value>
+  </data>
+  <data name="olvColumnContractCode.Text" xml:space="preserve">
+    <value>Код</value>
+  </data>
+  <data name="olvColumnStatus.Text" xml:space="preserve">
+    <value>Статус</value>
+  </data>
+  <data name="olvColumnAmount.Text" xml:space="preserve">
+    <value>Сумма</value>
+  </data>
+  <data name="olvColumnOLB.Text" xml:space="preserve">
+    <value>Портфель</value>
+  </data>
+  <data name="olvColumnCreationDate.Text" xml:space="preserve">
+    <value>Дата создания</value>
+  </data>
+  <data name="olvColumnStratDate.Text" xml:space="preserve">
+    <value>Дата начала</value>
+  </data>
+  <data name="olvColumnCloseDate.Text" xml:space="preserve">
+    <value>Дата закрытия</value>
+  </data>
+  <data name="tabPageSavingsCustomizableFields.Text" xml:space="preserve">
+    <value>Настраиваемые поля</value>
+  </data>
+  <data name="tpTermDeposit.Text" xml:space="preserve">
+    <value>Срочный депозит</value>
+  </data>
+  <data name="lblNumberOfPeriods.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 28</value>
+  </data>
+  <data name="lblNumberOfPeriods.Text" xml:space="preserve">
+    <value>Число периодов</value>
+  </data>
+  <data name="nudNumberOfPeriods.Location" type="System.Drawing.Point, System.Drawing">
+    <value>137, 3</value>
+  </data>
+  <data name="lblLimitOfTermDepositPeriod.Location" type="System.Drawing.Point, System.Drawing">
+    <value>332, 0</value>
+  </data>
+  <data name="lblLimitOfTermDepositPeriod.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 12</value>
+  </data>
+  <data name="lblLimitOfTermDepositPeriod.Text" xml:space="preserve">
+    <value>Ограничение периода</value>
+  </data>
+  <data name="tbTargetAccount2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>137, 58</value>
+  </data>
+  <data name="cmbRollover2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>137, 31</value>
+  </data>
+  <data name="lbRollover2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 16</value>
+  </data>
+  <data name="lbRollover2.Text" xml:space="preserve">
+    <value>Ролловер</value>
+  </data>
+  <data name="btSearchContract2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>332, 58</value>
+  </data>
+  <data name="btSearchContract2.Text" xml:space="preserve">
+    <value>Поиск</value>
+  </data>
+  <data name="lblTermTransferToAccount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 55</value>
+  </data>
+  <data name="lblTermTransferToAccount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 16</value>
+  </data>
+  <data name="lblTermTransferToAccount.Text" xml:space="preserve">
+    <value>Трансфер на счет</value>
+  </data>
+  <data name="btSavingsUpdate.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btSavingsUpdate.Text" xml:space="preserve">
+    <value>Обновить</value>
+  </data>
+  <data name="buttonSaveSaving.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonSaveSaving.Size" type="System.Drawing.Size, System.Drawing">
+    <value>123, 28</value>
+  </data>
+  <data name="buttonSaveSaving.Text" xml:space="preserve">
+    <value>Сохранить</value>
+  </data>
+  <data name="buttonFirstDeposit.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonFirstDeposit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>256, 13</value>
+  </data>
+  <data name="buttonFirstDeposit.Text" xml:space="preserve">
+    <value>Первый взнос</value>
+  </data>
+  <data name="buttonCloseSaving.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonCloseSaving.Location" type="System.Drawing.Point, System.Drawing">
+    <value>402, 13</value>
+  </data>
+  <data name="buttonCloseSaving.Text" xml:space="preserve">
+    <value>Закрыть</value>
+  </data>
+  <data name="buttonReopenSaving.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonReopenSaving.Location" type="System.Drawing.Point, System.Drawing">
+    <value>548, 13</value>
+  </data>
+  <data name="buttonReopenSaving.Text" xml:space="preserve">
+    <value>Переоткрыть</value>
+  </data>
+  <data name="pnlSavingsButtons.Location" type="System.Drawing.Point, System.Drawing">
+    <value>691, 10</value>
+  </data>
+  <data name="pnlSavingsButtons.Size" type="System.Drawing.Size, System.Drawing">
+    <value>406, 34</value>
+  </data>
+  <data name="menuBtnAddSavingOperation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 92</value>
+  </data>
+  <data name="buttonSavingsOperations.Text" xml:space="preserve">
+    <value>Операции</value>
+  </data>
+  <data name="savingDepositToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>154, 22</value>
+  </data>
+  <data name="savingDepositToolStripMenuItem.Text" xml:space="preserve">
+    <value>Депозит</value>
+  </data>
+  <data name="savingWithdrawToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>154, 22</value>
+  </data>
+  <data name="savingWithdrawToolStripMenuItem.Text" xml:space="preserve">
+    <value>Снятие</value>
+  </data>
+  <data name="savingTransferToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>154, 22</value>
+  </data>
+  <data name="savingTransferToolStripMenuItem.Text" xml:space="preserve">
+    <value>Перевод</value>
+  </data>
+  <data name="specialOperationToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>154, 22</value>
+  </data>
+  <data name="specialOperationToolStripMenuItem.Text" xml:space="preserve">
+    <value>Спец. операция</value>
+  </data>
+  <data name="btCancelLastSavingEvent.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btCancelLastSavingEvent.Size" type="System.Drawing.Size, System.Drawing">
+    <value>254, 28</value>
+  </data>
+  <data name="btCancelLastSavingEvent.Text" xml:space="preserve">
+    <value>Отменить последнюю операцию</value>
+  </data>
+  <data name="btnPrintSavings.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAABGdBTUEAANbY1E9YMgAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAJDSURBVGhD7dRLSFRhHIbxN4iIoEXblm3btWrroggK
+        KggkugddBSPBMBgKQyxKEBGLTJIyMcwSEU00S8ZsytSGvF8mGXV0moujjjrORe3sZzH4LATj+/htn83L
+        /xytoydUrZssaTcziZkk9cdkrsRcibmS1AuYK0m9kfmXmCsxV5J6AXMlqTfSGnomS5rNTLJFJ1ldWwUE
+        GisxWdLaSqwmAMUTCeA/z+LxxIZZk2y4sZJNzmLxGKBoPAZscrYSiwICjZXQLBJbAQQaK9FyNAJoaSUC
+        bI0sHFkCBBor0cLyIrDJ2fxSGFBoMQzQbDY8DygYngNoFlgIAfLPhwCa+eaCgP6GAoBmQgGAZtOzfkCe
+        oA/QVMALaMLvBaxsBpDb5wE07vMAcnknAY3NTAA0G5l2Axr2jAManPoDaGDSBajPPQqo1z0CyDk+BKjH
+        NQCo29UPqGusD1DnaC8gx7AT0LchJ6D2wR5A9v4uQF96OwG1/v4OqMXpANT0qwNQY087oIZuO6D6n22A
+        an+0Anrv+AToXUczoLdfPwKqtDcAqmirB1T+uQ5QWcsHQKXNNYCeNVUDKm6sAlRY/wZQQd1rQA9rywHl
+        1ZQByq0uBWSregrobmUxoDsVRYCyXhUCynz5BNDNF48AXXmeD+hiyQNAZ4vvA0ovsgE6UZAD6NjjbECH
+        828DSsu7BehgbgagA/euA9pvuwpoX84lQHuzzwPak3UG0O7MdEC7Mk4B2nnjJKAd144D2n75KKBtF44A
+        0rlDhE6nAf8Axq4XWrmp0xAAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="btnPrintSavings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1100, 13</value>
+  </data>
+  <data name="btnPrintSavings.Text" xml:space="preserve">
+    <value>Печать</value>
+  </data>
+  <data name="groupBoxSaving.Text" xml:space="preserve">
+    <value>Депозиты</value>
+  </data>
+  <data name="lbSavingAvBalanceValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>807, 42</value>
+  </data>
+  <data name="lBSavingAvBalance.Location" type="System.Drawing.Point, System.Drawing">
+    <value>641, 42</value>
+  </data>
+  <data name="lbEntryFeesMinMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>313, 74</value>
+  </data>
+  <data name="lbInitialAmountMinMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>313, 42</value>
+  </data>
+  <data name="lbEntryFees.Size" type="System.Drawing.Size, System.Drawing">
+    <value>178, 32</value>
+  </data>
+  <data name="lbEntryFees.Text" xml:space="preserve">
+    <value>Административный взнос</value>
+  </data>
+  <data name="labelInitialAmount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 32</value>
+  </data>
+  <data name="labelInitialAmount.Text" xml:space="preserve">
+    <value>Начальная сумма</value>
+  </data>
+  <data name="nudEntryFees.Location" type="System.Drawing.Point, System.Drawing">
+    <value>187, 77</value>
+  </data>
+  <data name="nudDownInitialAmount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>187, 45</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 32</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Депозитный офицер</value>
+  </data>
+  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 32</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>Код</value>
+  </data>
+  <data name="lbSavingBalanceValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>807, 10</value>
+  </data>
+  <data name="lBSavingBalance.Location" type="System.Drawing.Point, System.Drawing">
+    <value>641, 10</value>
+  </data>
+  <data name="lBSavingBalance.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 24</value>
+  </data>
+  <data name="lBSavingBalance.Text" xml:space="preserve">
+    <value>Баланс</value>
+  </data>
+  <data name="tBSavingCode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>187, 13</value>
+  </data>
+  <data name="cmbSavingsOfficer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>187, 109</value>
+  </data>
+  <data name="labelInterestRate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>500, 74</value>
+  </data>
+  <data name="labelInterestRate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 32</value>
+  </data>
+  <data name="labelInterestRate.Text" xml:space="preserve">
+    <value>Процентная ставка</value>
+  </data>
+  <data name="nudDownInterestRate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>641, 77</value>
+  </data>
+  <data name="lbWithdrawFees.Location" type="System.Drawing.Point, System.Drawing">
+    <value>500, 106</value>
+  </data>
+  <data name="lbWithdrawFees.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 32</value>
+  </data>
+  <data name="lbWithdrawFees.Text" xml:space="preserve">
+    <value>Штраф за снятие</value>
+  </data>
+  <data name="nudWithdrawFees.Location" type="System.Drawing.Point, System.Drawing">
+    <value>641, 109</value>
+  </data>
+  <data name="lbInterestRateMinMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>807, 74</value>
+  </data>
+  <data name="lbWithdrawFeesMinMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>807, 106</value>
+  </data>
+  <data name="olvColumnSACExportedBalance.Text" xml:space="preserve">
+    <value>Экспортированный баланс</value>
+  </data>
+  <data name="olvColumnLACExportedBalance.Text" xml:space="preserve">
+    <value>Экспортированный баланс</value>
+  </data>
+  <data name="labelTitleRepayment.Text" xml:space="preserve">
+    <value>Статус погашений</value>
+  </data>
+  <data name="buttonPrintSchedule.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonPrintSchedule.Text" xml:space="preserve">
+    <value>Печать графика погашений</value>
+  </data>
+  <data name="buttonReschedule.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonReschedule.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAbxJREFUOE+tk62X
+        gkAUxT0b9w/YaNi4wWAkGAwEgoFgIBAIBAOBaCAQDAaCYQOBQDBsMBgMBoOBYDAQDAaDwUAwEAgE7743
+        CH6e44blnHsGHm9+8+7Mm1rt/Ox2O9xrT7F7cU45R4z7/R55nuPEOp0q5accGcUuyug9E/8537btAsSA
+        cuJys4Y3CcX3NFqg3dMgWzrJgERjfzSscj3PuwB4tdkqQt3o4E2qw/E9MDgIA/i+j3EYwhq6UPQusjQV
+        kMFgcAGkWQZ35EEyu2ioMjRDx3q9vrE0oYo6pob0GUBYIF/BbIJuz8AxSarE0t54OX8BIEiwmEIlwP2G
+        MuRvgHkByMnS9Yn8G0AxNByPx8dNLFcLXlQgAIdEAFzXfewDATD1GwsZ2eHGEadA/cDHyzHHcZ4DNMt8
+        8O+G32jaGj40GTJVsVgunwP8+QRfugLvJxRyxz5COtp4sxHx98YnLMtCHMfo9/tFBYfDoVpxtYmhUwVs
+        o2sa6OgaeraFhPqCG4u7L4oi8V0BOHB9mdgfd1tKu80NxZ5ZvNB2uxXiClRVvdxKSZIgyzLa7bYYZUUp
+        xnOs1WqBc0o1m81q8i/hPfSBDrYSYwAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonReschedule.Text" xml:space="preserve">
+    <value>Реструктуризация</value>
+  </data>
+  <data name="buttonRepay.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonRepay.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAfdJREFUOE+NkxGY
+        40AUx/c7PFg4KB4eBA4ChUAgEAgEAguFwEFhoRAoBAKBQCBQCBQOAoWFhUChsFAIBAKBhUAgEBgILBQK
+        /e+86SXXtIWd73tfJjPzfvP+7715ePg36rrGV633Ed+2aXA8HnE6nQaj/94u1/s57TmOAwFoOKDfYB/d
+        CNSvF02FZbJCWVfDfhRGY0DNWpjOHJdAAvhJjN8zAxNTxcRSEWzWAhIGwRhQtQ2mMxNlWQ637MockqEi
+        Xq/x7LsI1iv8UCRUVYUouoqgYg0U28L7BSB83Yjbay5zzgGUrzRNz4BrCfcAeVXi0ZjCjjw8eQ5qHmWf
+        l+BGwp0I6PD2bQflj4XvpgLJNrBKNwJyA2g6BpVLqHl416UjCU/OMxZcxqMuI8vzsQRK4LbMoCxsJDuu
+        kTcVQXZFjpe3LbrDB2buQuRAX87hhcH/CFjLsM33mMw0fDNk/FRlJJtEADxesgkPvajesQh98aVKhbwC
+        vu+Py/g3fcEv7kzaGGMC0HJZU65fsk1MeXRUJc00sN/v4XvebSeWRTE493mgsIM4gmRqcN2lKCNdQPPz
+        W2jbu+1LgP49dF2HVRyjyAvQeZLtuu4ZkGXZcPDyEdH8cDiAnOnGpm5EA5FRt1qWdQbQUBQFuq6PTNM0
+        9KaqKsjoHJksy4PzJ+th6YFfF1wUAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="buttonRepay.Text" xml:space="preserve">
+    <value>Подверждение платежа</value>
+  </data>
+  <data name="columnHeaderDate.Text" xml:space="preserve">
+    <value>Дата</value>
+  </data>
+  <data name="columnHeaderType.Text" xml:space="preserve">
+    <value>Тип</value>
+  </data>
+  <data name="columnHeaderPrincipal.Text" xml:space="preserve">
+    <value>ОС</value>
+  </data>
+  <data name="columnHeaderInterest.Text" xml:space="preserve">
+    <value>Процент</value>
+  </data>
+  <data name="columnHeaderFees.Text" xml:space="preserve">
+    <value>Штрафы</value>
+  </data>
+  <data name="columnHeader10.Text" xml:space="preserve">
+    <value>Отменяемый</value>
+  </data>
+  <data name="labelExchangeRate.Text" xml:space="preserve">
+    <value>Обменный курс</value>
+  </data>
+  <data name="toolStripMenuItemEditComment.Text" xml:space="preserve">
+    <value>Редактировать</value>
+  </data>
+  <data name="toolStripMenuItemCancelPending.Text" xml:space="preserve">
+    <value>Отменить ожидаемый платеж</value>
+  </data>
+  <data name="toolStripMenuItemConfirmPending.Text" xml:space="preserve">
+    <value>Подтвердить ожидаемый платеж</value>
+  </data>
+  <data name="menuPendingSavingEvents.Size" type="System.Drawing.Size, System.Drawing">
+    <value>190, 48</value>
+  </data>
+  <data name="menuItemConfirmPendingSavingEvent.Size" type="System.Drawing.Size, System.Drawing">
+    <value>189, 22</value>
+  </data>
+  <data name="menuItemConfirmPendingSavingEvent.Text" xml:space="preserve">
+    <value>Подтвердить событие</value>
+  </data>
+  <data name="menuItemCancelPendingSavingEvent.Size" type="System.Drawing.Size, System.Drawing">
+    <value>189, 22</value>
+  </data>
+  <data name="menuItemCancelPendingSavingEvent.Text" xml:space="preserve">
+    <value>Отменить событие</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAB+fn8AkYyKAJKOjgCVk5MAlpaWAKWmpQCwr68AsrOyALS2tQC2trYAuru7ALu8vAC/vbwAvb29AMG/
+        vgDBwcAAwcLCAMXDwwDHxsUAxcbHAMbIxwDMyMcAyMnIAMrKygDKyssAy8vLAMzMywDNzcwAz87OANLQ
+        0ADP0tEA0NPSANLT0gDU1NIA1NXUANjV1QDW1tUA19fVANjX1QDX2NcA2tnYANnZ2QDb2dkA29zcANzc
+        3ADd3t0A397eAN3f3gDf394A4d/fAN3g3wDf4N8A3uDgAN/h4ADh4eAA3+HhAOHh4QDg4uEA4uLhAOPi
+        4QDi4uIA4+LiAOTj4wDi5OMA5OTkAOLl5ADm5eQA5ubmAOTn5gDl5+YA5OjnAOXo5wDm6OcA6OjnAObp
+        6ADp6egA6unpAObq6QDn6uoA6urpAOvq6QDp6uoA6urqAOvr6ADn6+oA6uvpAOnr6gDq7OsA6uzsAOzs
+        7ADq7esA7O3sAO3t7ADs7uwA7u7uAOzv7QDu7+0A7e/uAO3v7wDu7+8A7+/vAO/w7gDx8fAA7/HxAO/y
+        8QDx8vEA8PPyAPHz8gDy9PQA9PT0APP19QD09fUA9Pb2APX29gD19/YA9ff3APb4+AD4+PgA9vn4APf5
+        +AD4+/oA+fv6APr8/AD6/fwA+/38APz9/AD7/v0A/P79APv+/gD8/v4A+//9APz//QD9//0A+//+APz/
+        /gD9//8A/v//AP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAR4aGiRtCHXOGhoaGhoaGR0eGf1dAhYQkhoaGgH6HiEREgXqJMIZxX4aGhX5vOSMySDM2Yldm
+        S2qJiH5ua4GJCzRViD5oZV5kGCJ4cIZ7JzVHWCB1Y1sqFQkNdoY8VolERH6JWEOJAgADiTlhiH5+R0eG
+        hn6HGgZZZAVRfoaGhkdHhoaGiBYseYgHiX5+hoZHR4Z+iFGJAQQPUSlxhoaDR0SISTqGKCYMDlJ5bEly
+        h0cvK313Lk8iITsZcGCHXDFBEIl8OCVpQF0RF4dsTIKJE009NzMthm1TiYmGflpQbwpHhn45HH1FP36G
+        hoZ+dGdOH0dHShQSCFRHR0dHREdGHgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Клиент</value>
+  </data>
+</root>

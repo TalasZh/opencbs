@@ -1,0 +1,2882 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="lProjectNbOfNewJobs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 16</value>
+  </data>
+  <data name="lProjectCA.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 16</value>
+  </data>
+  <data name="lProjectCorporateSIRET.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 16</value>
+  </data>
+  <data name="lProjectJuridicStatus.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 16</value>
+  </data>
+  <data name="lProjectAffiliation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 16</value>
+  </data>
+  <data name="lProjectFiscalStatus.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 16</value>
+  </data>
+  <data name="lProjectFinancialPlanType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 16</value>
+  </data>
+  <data name="lProjectFinancialPlanAmount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 16</value>
+  </data>
+  <data name="listViewProjectFollowUp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1223, 220</value>
+  </data>
+  <data name="gBProjectFollowUp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1223, 25</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="splitContainer11.SplitterDistance" type="System.Int32, mscorlib">
+    <value>220</value>
+  </data>
+  <data name="buttonProjectAddFollowUp.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="listViewGuarantors.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 16</value>
+  </data>
+  <data name="listViewGuarantors.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1097, 274</value>
+  </data>
+  <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1097, 16</value>
+  </data>
+  <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>146, 274</value>
+  </data>
+  <data name="lblGuarantorsList.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1243, 16</value>
+  </data>
+  <data name="listViewCollaterals.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 16</value>
+  </data>
+  <data name="listViewCollaterals.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1097, 249</value>
+  </data>
+  <data name="pnlCollateralButtons.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1097, 16</value>
+  </data>
+  <data name="pnlCollateralButtons.Size" type="System.Drawing.Size, System.Drawing">
+    <value>146, 249</value>
+  </data>
+  <data name="lblCollaterals.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1243, 16</value>
+  </data>
+  <data name="splitContainer1.SplitterDistance" type="System.Int32, mscorlib">
+    <value>290</value>
+  </data>
+  <data name="btnPrintGuarantors.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 243</value>
+  </data>
+  <data name="pnlGuarantorButtons.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 268</value>
+  </data>
+  <data name="buttonSelectAGarantors.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonModifyAGarantors.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonDelete.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="lblCreditCurrency.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 16</value>
+  </data>
+  <data name="buttonAddCollateral.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonDelCollateral.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="groupBoxGuarantee.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1249, 536</value>
+  </data>
+  <data name="groupBox6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1249, 25</value>
+  </data>
+  <data name="splitContainer8.SplitterDistance" type="System.Int32, mscorlib">
+    <value>536</value>
+  </data>
+  <data name="labelFundingLine.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 16</value>
+  </data>
+  <data name="labelLoanOfficer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 16</value>
+  </data>
+  <data name="buttonPrintGuaranteeForm.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonActivateGuarantee.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonDeleteGuarantee.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonSaveGuarantee.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonSaveGuarantee.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAa1JREFUOE+tk6GS
+        o0AQhrfuMe4BVqw4mUeIQKxAIBCIiBEIxIgIxIqIiBURESsiRiAQCAQCgUAgEAhEBCJixQoEAhGBQOS/
+        7jmTOXar7upuqv6aqamar/vv7nl4+B9rGAZcr1eM44i0LrFPFF6TyFQaYR8r1OcWaZrCiHu73cCa5hnO
+        IcSpzJAQKK4KxDWJ9oj0vJPYbCUuXWcCpnnCx9Cjee/wvN+i6lq0dG4vv/Te9zrAWxbDDQTapjUB5bmB
+        8xpiGx3hHl5g7yUcArH4/ChsjGSRAZ70l4CozHHMEx3lM1m7QGf4JSAuC7zl6eLxie4u/YfO4q8BoTrA
+        I1vTNFHx/iCDewtFW2O9FborbOneAhexqRuziGyBW1d3Z2pXriNy9fnxfJs1YJyuUGSJAXVVLQH88FSk
+        +Lb6jgMNzX0x16GARRn9cC24vkBZlJ8DOBpX+vdOWMEGtudC0hAppZDnuQngNm6OO+RNBfbP43yvJ2cN
+        FSkMNFA9aQE4k19beFh7zlKuDYuUZZn+K/xvkiQxMwh8Hy9hCBkEhvieJYSAT7uUUmu1WpmAf/nRPwHV
+        0icF5LGzogAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="panelLoansContracts.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1249, 224</value>
+  </data>
+  <data name="panelSavingsContracts.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1249, 267</value>
+  </data>
+  <data name="splitContainerContracts.SplitterDistance" type="System.Int32, mscorlib">
+    <value>259</value>
+  </data>
+  <data name="imageListTab.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAAS
+        HQAAAk1TRnQBSQFMAgEBBQEAAbQBAAG0AQABIAEAASABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        AwABgAMAAUADAAEBAQABCAYAASAYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
+        AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
+        AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
+        AWYDAAGZAwABzAIAATMDAAIzAgABMwFmAgABMwGZAgABMwHMAgABMwH/AgABZgMAAWYBMwIAAmYCAAFm
+        AZkCAAFmAcwCAAFmAf8CAAGZAwABmQEzAgABmQFmAgACmQIAAZkBzAIAAZkB/wIAAcwDAAHMATMCAAHM
+        AWYCAAHMAZkCAALMAgABzAH/AgAB/wFmAgAB/wGZAgAB/wHMAQABMwH/AgAB/wEAATMBAAEzAQABZgEA
+        ATMBAAGZAQABMwEAAcwBAAEzAQAB/wEAAf8BMwIAAzMBAAIzAWYBAAIzAZkBAAIzAcwBAAIzAf8BAAEz
+        AWYCAAEzAWYBMwEAATMCZgEAATMBZgGZAQABMwFmAcwBAAEzAWYB/wEAATMBmQIAATMBmQEzAQABMwGZ
+        AWYBAAEzApkBAAEzAZkBzAEAATMBmQH/AQABMwHMAgABMwHMATMBAAEzAcwBZgEAATMBzAGZAQABMwLM
+        AQABMwHMAf8BAAEzAf8BMwEAATMB/wFmAQABMwH/AZkBAAEzAf8BzAEAATMC/wEAAWYDAAFmAQABMwEA
+        AWYBAAFmAQABZgEAAZkBAAFmAQABzAEAAWYBAAH/AQABZgEzAgABZgIzAQABZgEzAWYBAAFmATMBmQEA
+        AWYBMwHMAQABZgEzAf8BAAJmAgACZgEzAQADZgEAAmYBmQEAAmYBzAEAAWYBmQIAAWYBmQEzAQABZgGZ
+        AWYBAAFmApkBAAFmAZkBzAEAAWYBmQH/AQABZgHMAgABZgHMATMBAAFmAcwBmQEAAWYCzAEAAWYBzAH/
+        AQABZgH/AgABZgH/ATMBAAFmAf8BmQEAAWYB/wHMAQABzAEAAf8BAAH/AQABzAEAApkCAAGZATMBmQEA
+        AZkBAAGZAQABmQEAAcwBAAGZAwABmQIzAQABmQEAAWYBAAGZATMBzAEAAZkBAAH/AQABmQFmAgABmQFm
+        ATMBAAGZATMBZgEAAZkBZgGZAQABmQFmAcwBAAGZATMB/wEAApkBMwEAApkBZgEAA5kBAAKZAcwBAAKZ
+        Af8BAAGZAcwCAAGZAcwBMwEAAWYBzAFmAQABmQHMAZkBAAGZAswBAAGZAcwB/wEAAZkB/wIAAZkB/wEz
+        AQABmQHMAWYBAAGZAf8BmQEAAZkB/wHMAQABmQL/AQABzAMAAZkBAAEzAQABzAEAAWYBAAHMAQABmQEA
+        AcwBAAHMAQABmQEzAgABzAIzAQABzAEzAWYBAAHMATMBmQEAAcwBMwHMAQABzAEzAf8BAAHMAWYCAAHM
+        AWYBMwEAAZkCZgEAAcwBZgGZAQABzAFmAcwBAAGZAWYB/wEAAcwBmQIAAcwBmQEzAQABzAGZAWYBAAHM
+        ApkBAAHMAZkBzAEAAcwBmQH/AQACzAIAAswBMwEAAswBZgEAAswBmQEAA8wBAALMAf8BAAHMAf8CAAHM
+        Af8BMwEAAZkB/wFmAQABzAH/AZkBAAHMAf8BzAEAAcwC/wEAAcwBAAEzAQAB/wEAAWYBAAH/AQABmQEA
+        AcwBMwIAAf8CMwEAAf8BMwFmAQAB/wEzAZkBAAH/ATMBzAEAAf8BMwH/AQAB/wFmAgAB/wFmATMBAAHM
+        AmYBAAH/AWYBmQEAAf8BZgHMAQABzAFmAf8BAAH/AZkCAAH/AZkBMwEAAf8BmQFmAQAB/wKZAQAB/wGZ
+        AcwBAAH/AZkB/wEAAf8BzAIAAf8BzAEzAQAB/wHMAWYBAAH/AcwBmQEAAf8CzAEAAf8BzAH/AQAC/wEz
+        AQABzAH/AWYBAAL/AZkBAAL/AcwBAAJmAf8BAAFmAf8BZgEAAWYC/wEAAf8CZgEAAf8BZgH/AQAC/wFm
+        AQABIQEAAaUBAANfAQADdwEAA4YBAAOWAQADywEAA7IBAAPXAQAD3QEAA+MBAAPqAQAD8QEAA/gBAAHw
+        AfsB/wEAAaQCoAEAA4ADAAH/AgAB/wMAAv8BAAH/AwAB/wEAAf8BAAL/AgAD/wMAA/8W9AL/ZQAB/wG8
+        Fu8B9wHvAfAB9GIAAv8CvA4HBu8D9wHsAesBvAH/YQAB/wLzDf8C9APzAvIE8QHwAe0B9wH0YQAB/wHy
+        AfQM/wP0AvMB8gEHAbwF8QHvAZIB9GEAAf8B8gH0DP8F9AHvAesB7wHyBPEB7wGSAfRhAAH/AfIB9Az/
+        A/QB8wHyAWwBFAH3AQcB8ALxAfIB7wGSAfRhAAH/AfIB9AT/AfAB7wHzBv8B9AHyAe8B9wFsARMD7AEH
+        AfEB8gEHAZIB9GEAAf8B8gH0A/8BvAHqAewBkgHzBf8B8wHsARUDDQEQAUMBbQHsAe8B8wEHAZIB9GEA
+        Af8B8gH0Av8B8QFsAQ4BFQHsAZIB8wT/AZECDQFxAXIBbAGRAUkBDgFtAewB8AEHAZIB9GEAAf8B8gH0
+        Af8B8AFsAQ0BSAENARUB7AH3AfMC/wEIAUgBDQFyAfQBkQHqAfABCAFsAQ8B7AIHAZIB9GEAAf8B8gH/
+        AfMBbARIAQ0BQwGSAfEC/wGRAQ0BFQHwAf8BkQFsAQcB9AH3AQ0BEgHvAQcBkgH0YQAB/wHyAfQBvAH3
+        Ae8B9wFIAWwBkgHrAfcD/wHvAUkB6wH0Af8BkQFsAQcB/wG7AQ0BFAIHAZIB9GEAAf8B8gH0A/8B8AEN
+        AesB8wX/AfQBBwHwAv8BkQFsAQcB/wH3AQ0BFAG8AQcBkgH0YQAB/wHyAfQD/wEIAQ0BbQHwCv8BkQES
+        Ae8BBwFsAQ0BbQHzAbwBkgH0YQAB/wHyAfQD/wEIAQ0BbQHwCP8B9AHzAXIBEgHsAUkCDQEHAf8BvAGS
+        AfRhAAH/AfIB9AP/AQgBDQFtAfAH/wHzAe8B7AFJBA0B7QL/AbwB9wH0YQAB/wHyAfQD/wEIAQ0BbQHw
+        Bv8B8wHsAUMCDQFIAWwBkQEHA/8B8AH3AfRhAAH/AfIB9AP/AQgBDQFtAfAG/wHsAg0BkQFxAWwBvAX/
+        AfAB9wH0YQAB/wHyAfQD/wEIAQ0BbQHwBf8B8AFIAQ0BkQH0AZEBEgG8Bf8B8AH3AfRhAAH/AfIB9AP/
+        AQgBDQFtAfAF/wG7AUgBFQG8Af8BkQFsAbwB/wHzAQcBvAH/AfAB9wH0YQAB/wHyAfQD/wEIAQ0BbQHw
+        Bf8BBwFIARQB7wH0AZEBbAG8AfMB7AFtAe0B8wHwAfcB9GEAAf8B8gH0A/8BCAENAW0B8AX/AfABbAER
+        Ae0BBwGRARIBvAHvAQ0BDgH3Af8B8AH3AfRhAAH/AfIB9AP/AQgBDQFtAfAF/wH0AZEBDQESAfcBbAES
+        Ae8BbAENARQB8gH/AfAB9wH0YQAB/wHyAfQD/wG8AQ0B6wHyBv8B8gFyAQ0BFQENAUMBFQINAQcC/wHw
+        AfcB9GEAAf8B8gH0A/8B8gFyAfcI/wHyAfcBcgFsAQ0BbAFyAQgD/wHwAfcB9GEAAf8B8gH0EP8B9AH3
+        AXEB8QX/AfABkgH0YQAB/wHyAfQR/wHzAfIG/wHwAfcB9GEAAf8C8xn/AfEBvAH/YQAB/wH0AfIB8xf0
+        AfIB8AL/YgAB/wH0GPMB9AH/ZQAa/4YAGv8GAAP/FvQC/wUAA/8W9AL/BAAC/wHzF/IB8wH/BAAB/wHy
+        AbwXBwHyAf8FAAH/AbwW7wH3Ae8B8AH0BAAB/wG8Fu8B9wHvAfAB9AMAAf8BBwGSDO0L7AHtAfAB/wIA
+        Af8B8QLvDPcEkgbtAuwB8QH/AgAC/wK8DgcG7wP3AewB6wG8Af8BAAL/ArwIBwG8BgcI7wHsAesBvAH/
+        AQAB/wHxDPMD8gLxA/AEvAEHAuwB8wH/AQAB9AHxCv8D9APzAvID8QPwAQcB7AH3AfQCAAH/AvMN/wL0
+        A/MC8gTxAfAB7QH3AfQBAAH/AvMI/wHzAvED8AO8BgcBvAHwAe0B9wH0AQAB9AHyAv8B9AfzA/ID8QLw
+        BLwBBwG8AfEBBwHsAfEB/wEAAfIG/wHwBLwHBwTvAQcB8ALxAe8BkgH0AgAB/wHyAfQM/wP0A/MC8gXx
+        Ae8BkgH0AQAB/wHyAfQH/wHzAe8N7AHrAZIB8QHvAZIB9AEAAfQB8gH/AfMB7w3tCOwBvAHwAewB8QH/
+        AQAB8gH0BP8BBwHrD20B7AG8AvEB7wGSAfQCAAH/AfIB9AL/AfQJ/wP0AvMD8gXxAe8BkgH0AQAB/wHy
+        AfQH/wH3AQ0BEAwNARUBkgHxAQcBkgH0AQAB9AHyAf8BkRRDAREB7ALwAewB8QH/AQAB8gH0BP8BkQ7r
+        AW0BQwHsAfAC8gHvAZIB9AIAAf8B8gH0Af8B8wIHAfEB9Ab/A/QD8wPyA/EB8gHvAZIB9AEAAf8B8gH0
+        B/8B7wFyDLwB7AERAfcB8QEHAZIB9AEAAfQB8gH/AbsBSBQNAfcB8QHwAewB8QH/AQAB8gH0A/8B9AG7
+        D/8B6gHsAfAC8gEHAZIB9AIAAf8B8gL/Ae0B6wLsAfcB7wHwAfMD/wT0AvMH8gEHAZIB9AEAAf8B8gH0
+        B/8BuwGSDP8B9wERAfcB8QEHAZIB9AEAAfQB8gH/AfEBbBJIAQ0BFQEHAfIB8AHsAfEB/wEAAfIB9AP/
+        AfQBBw//AeoB7AHwAvIBBwGSAfQCAAH/AfIB9AH/AQgBSQFDARQBEgFtAewBkgG8A/8E9APzBPIB8wEH
+        AZIB9AEAAf8B8gH0B/8BuwGSAfIBbAHwAXIB7wH3AewB8AFsAfIBbAEHAfcBEQHvAfIBBwGSAfQBAAH0
+        AfIB/wH0AZEBSAENEEgBDQFtAfAB8wHxAewB8QH/AQAB8gH0A/8B9AEHAf8BkQxsAfABbQHsAfAC8wEH
+        AZIB9AIAAf8B8gH0Av8DBwHsARIBFQFtAewB7wHzAv8D9AXzAvIB8wEHAZIB9AEAAf8B8gH0B/8BuwGR
+        Af8BBwH0AbwC8gG8AfQBBwH0AQgB8wH3AREB7wHyAQcBkgH0AQAB9AHyAv8BBwFsAQ0QSAENAfcC8wHx
+        AewB8QH/AQAB8gH0A/8B9AEHAf8B8AEHCbsCBwHzAeoB7AHxAvMBBwGSAfQCAAH/AfIB9AL/AfQBvAL/
+        AfQB9wERARMB7AH3AfEC/wP0B/MBBwGSAfQBAAH/AfIB9Af/AbsBkgH0AZIB8wHvArwB7wHyAZIB9AH3
+        AfEB9wERAe8B8wEHAZIB9AEAAfQB8gL/AfMBkQFIAQ0OSAENARIB8QHzAfQB8gHsAfEB/wEAAfIB9AP/
+        AfQBBwH/AfQL8gHzAfQB6gHsAfEB9AHzAQcBkgH0AgAB/wHyAfQD/wHxAfAC/wGRAWwB6wEUAesB7QG8
+        AfQB/wX0A/MB9AEHAZIB9AEAAf8B8gH0B/8BuwGSAfMB7AHyAZECBwGSAfEBkQHzAewB8AH3AREB7wHz
+        AQcBkgH0AQAB9AHyA/8BvAFsAUgCDQhIAg0BSAINAQcD9AHyAe0B8QH/AQAB8gH0A/8B9AEHAf8BkQFJ
+        CWwBSQFsAfABbQHtAfIC9AEHAZIB9AIAAf8B8gH0BP8BvAHzAZEBbAGSAZEB7AEUAW0B7AHvAfMB/wj0
+        AQcBkgH0AQAB/wHyAfQH/wG7AZEB/wHyAf8B8wL0AfMB/wHyAf8B8gH/AfcBQwHvAfMBvAGSAfQBAAH0
+        AfIE/wEHAXEMSAINAe8B/wP0AfIB7QHxAf8BAAHyAfQD/wH0AQcB/wH0C/MC9AHqAe0B8gL0AbwBkgH0
+        AgAB/wHyAfQE/wH0AQgCkQGSAbsBkQHtARIBEwHsAfcB8QL/BvQBvAGSAfQBAAH/AfIB9Af/AbsBkgHz
+        AWwB8AFxAZgB9wFyAfABbAHyAWwBBwH3AUMB7wH0AbwBkgH0AQAB9AHyBf8B8AH3ApEBSQRIAQ0BSAFx
+        AXIBkQG8Af8E9AHzAe0B8QH/AQAB8gH0A/8B9AEHAf8BvAH3C+8B8wHqAe0B8wL/AbwBkgH0AgAB/wHy
+        AfQF/wH0AfAB8QHvAZEBBwGRAe0BbQEUAesB7QG8AfQB/wT0Af8BvAGSAfQBAAH/AfIB9AT/AfAB9AH/
+        AbsBkQH/AfAB9AHxAvMB8QH0AfAB9AHwAf8B9wFDAe8B9AG8AZIB9AEAAfQB8gf/AfIBkQVIAQ0BQwHt
+        Ae8B8AP/AvQB/wHzAe0B8QH/AQAB8gH0A/8B9AEHAf8BkgxsAfABbQHtAfMC/wG8AZIB9AIAAf8B8gH0
+        B/8B8QHwAQgBkQHvAZIBkQHsARUBbQHsAQcB9AX/AbwBkgH0AQAB/wHyAfQD/wHvAewBBwH/AQcNbAFJ
+        AUMB7wH0AbwBkgH0AQAB9AHyBv8B8wFsAQ0GSAENAQ8BbQHtAfIF/wHzAe0B8QH/AQAB8gH0A/8B9AEH
+        Dv8B9AHqAe0B8wL/AbwB9wH0AgAB/wHyAfQI/wHzAbwB8AGRAZIB7wGRAe0BEwESAewB9wHyBP8BvAH3
+        AfQBAAH/AfIB9AH/AfQBvAEUAeoB7QHvAQcBbA0NARUB7wH/AfAB9wH0AQAB9AHyBv8BkQINB0gBDQEQ
+        AewBBwX/AfQB7QHxAf8BAAHyAfQD/wH0AQcB/wH3BHIBvAf/AfQB6gHtAfMC/wHwAfcB9AIAAf8B8gH0
+        Cf8B9AG8AfEB9wGRAbsBkQGSAW0BFAHsAe0B8AP/AfAB9wH0AQAB/wHyAfQB/wH3AUMCDQEVAe0B9wFs
+        AQ0LSAENARUBvAH/AfAB9wH0AQAB9AHyBf8B8gFJCkgBDQETAe8B9AT/AfQB7QHxAf8BAAHyAfQD/wH0
+        AQcB/wEHAewCkQHsAbwH/wH0AeoB7QH0Av8B8AH3AfQCAAH/AfIB9Av/AfEB8AEHAZEB7wKRARQBEQHr
+        AewBBwH0Af8B8AH3AfQBAAH/AfIB/wHyAUgBSQFxAZEBbAETAe8BkgJsCZEBbAFJAW0B9AH/AfAB9wH0
+        AQAB9AHyBf8BuwtIAQ0BEQH3AfME/wH0Ae0B8QH/AQAB8gH0A/8B9AEHB/8G9AH/AfQB6gHtAfQC/wHw
+        AfcB9AIAAf8B8gH0DP8B8wK8AZEB9wGRAUgBDQEPARIB7AHvAfMB8AH3AfQBAAH/AfIB/wHyAZEBBwGR
+        Ae8B9wENAe8B9AGRAZIJ9AFxAe8B9AL/AfAB9wH0AQAB9AHyBf8B7wFIAQ0JSAINAZIB8wT/AfQB7QHx
+        Af8BAAHyAfQD/wH0AQcB/wGRAUkLbAHwAW0B7QH0Av8B8AH3AfQCAAH/AfIB9A3/AfQBvAHxAZEBSAIN
+        Ae0BEgEVAewB9wEHAfcB9AEAAf8B8gH0A/8C6wFsAQ0BBwH/AQcB8An/AQcB8wP/AfAB9wH0AQAB9AHy
+        Bf8B7wFJAQ0JSAINAfcB9AT/AfQB7QHxAf8BAAHyAfQD/wH0AQcB/wHyAQgIvAIHAbwB8wHqAe0B8wL/
+        AfAB9wH0AgAB/wHyAfQP/wHxAfcBSQENAWwB/wH0AesBFQHsAQcB9wH0AQAB/wHyAfQB/wHyAewBSAIN
+        AesB9BH/AfAB9wH0AQAB9AHyBf8BvAFsAQ0JSAINAQcF/wH0Ae0B8QH/AQAB8gH0A/8B9AEHAf8B8wjw
+        AfEE/wHqAfcB9AL/AfAB9wH0AgAB/wHyAfQQ/wH0AfcBkQHzA/8BEwHtAbwB9wH0AQAB/wHyAfQB/wFy
+        AQ0BSAFsAfcB9BL/AfAB9wH0AQAB9AHyBf8B8wGRAUgBDQhIAQ0BEgHzBf8B9AHtAfEB/wEAAfIB9AP/
+        AfQBBwH/AZEBSAZsAUkBbAH0AfcCkQESAfED/wHwAfcB9AIAAf8B8gH0Ev8B8AHxAv8B8AFsAfEB8AH3
+        AfQBAAH/AfIB/wHxAUgBbAFyAe0B8AEHAbwR/wHwAfcB9AEAAfQB8gb/AQcBbAENB0gCDQHvBv8B9AHt
+        AfEB/wEAAfIB9AP/AfQBBwL/CvQBbAINAbwE/wHwAfcB9AIAAf8B8gH0E/8B8AK8AWwB9wH/AfAB9wH0
+        AQAB/wHyAf8B8gFJAewB6wHsAW0B6gEHEf8B8AH3AfQBAAH0AfIG/wH0AZgBbAUNAUgCDQHsB/8B9AHt
+        AfEB/wEAAfIB9AP/AfQBBwz/AWwBDQEHBf8B8AH3AfQCAAH/AfIB9BT/AfIB9wG8Av8B8AH3AfQBAAH/
+        AfIB9AH/Ae0BSQEVAUkBDgFtAfQR/wHwAfcB9AEAAfQB8gf/AfQBuwFxAUkFSAHtCP8B9AHtAfEB/wEA
+        AfIB9AP/AfQBBwHzCvQB8QFsAe8G/wHwAfcB9AIAAf8B8gH0Gf8B8AGSAfQBAAH/AfIB9AH/AfQB7wFs
+        AUkBkQH0Ev8B8AGSAfQBAAH0AfIJ/wHxAe8DkQHtAfAJ/wH0Ae0B8QH/AQAB8gH0BP8B8gu8AQcBvAf/
+        AfAB9wH0AgAB/wHyAfQZ/wHwAfcB9AEAAf8B8gH0A/8BvAHwFP8B8AH3AfQBAAH0AfIM/wH0Df8B9wHz
+        Af8BAAHzAfQZ/wHyAQcB/wIAAf8C8xn/AfEBvAH/AQAB/wLzGf8B8QG8Af8BAAH0AfIZ/wH0AQcC/wEA
+        AfQB8gH0F/8B9AEHAfQB/wIAAf8B9AHyAfMX9AHyAfAC/wEAAf8B9AHyAfMX9AHyAfAC/wEAAf8B9Bjy
+        AfEB8gL/AgAB/wH0AfMY8gH/BQAB/wH0GPMB9AH/BAAB/wH0GPMB9AH/BAAC/xf0Av8FABv/BgAa/wYA
+        Gv8EAAFCAU0BPgcAAT4DAAEoAwABgAMAAUADAAEBAQABAQYAAQQWAAP/AQABwAIAAQcMAAHAAgABAw8A
+        AQEPAAEBDwABAQ8AAQEPAAEBDwABAQ8AAQEPAAEBDwABAQ8AAQEPAAEBDwABAQ8AAQEPAAEBDwABAQ8A
+        AQEPAAEBDwABAQ8AAQEPAAEBDwABAQ8AAQEPAAEBDwABAQ8AAQEPAAEBDwABAQ8AAQEMAAGAAgABBwwA
+        AcACAAEPDAAE/wHAAgABDwHAAgABBwHAAgABBwGAAgABBwGAAgABBwHAAgABAwHAAgABAwGAAgABAwMA
+        AQMDAAEBAwABAQMAAQEDAAEDAwABAQMAAQEDAAEBAwABAwMAAQEDAAEBAwABAQMAAQMDAAEBAwABAQMA
+        AQEDAAEDAwABAQMAAQEDAAEBAwABAwMAAQEDAAEBAwABAQMAAQMDAAEBAwABAQMAAQEDAAEDAwABAQMA
+        AQEDAAEBAwABAwMAAQEDAAEBAwABAQMAAQMDAAEBAwABAQMAAQEDAAEDAwABAQMAAQEDAAEBAwABAwMA
+        AQEDAAEBAwABAQMAAQMDAAEBAwABAQMAAQEDAAEDAwABAQMAAQEDAAEBAwABAwMAAQEDAAEBAwABAQMA
+        AQMDAAEBAwABAQMAAQEDAAEDAwABAQMAAQEDAAEBAwABAwMAAQEDAAEBAwABAQMAAQMDAAEBAwABAQMA
+        AQEDAAEDAwABAQMAAQEDAAEBAwABAwMAAQEDAAEBAwABAQMAAQMDAAEBAwABAQMAAQEDAAEDAwABAQMA
+        AQEDAAEBAwABAwMAAQEDAAEBAwABAQMAAQMDAAEBAwABAQMAAQEDAAEDAwABAQMAAQEDAAEBAwABAwMA
+        AQEDAAEBAwABAQMAAQMDAAEBAwABAQMAAQMDAAEPAYACAAEHAYACAAEHAYACAAEPAYACAAEPAcACAAEP
+        AcACAAEPCw==
+</value>
+  </data>
+  <data name="labelProjectPurpose.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 16</value>
+  </data>
+  <data name="labelProjectCode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 16</value>
+  </data>
+  <data name="labelFirstProjectName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 16</value>
+  </data>
+  <data name="buttonProjectSave.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonProjectAddContract.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonProjectAddGuarantee.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonProjectViewContract.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="labelProjectConcurrence.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 16</value>
+  </data>
+  <data name="labelProjectMarket.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 16</value>
+  </data>
+  <data name="labelProjectExperience.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 16</value>
+  </data>
+  <data name="labelProjectAbilities.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 16</value>
+  </data>
+  <data name="tclLoanDetails.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 258</value>
+  </data>
+  <data name="tclLoanDetails.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1243, 304</value>
+  </data>
+  <data name="tabPageInstallments.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1235, 275</value>
+  </data>
+  <data name="listViewLoanInstallments.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1229, 269</value>
+  </data>
+  <data name="tabPageLoanCustomizableFields.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 25</value>
+  </data>
+  <data name="tabPageLoanCustomizableFields.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1235, 275</value>
+  </data>
+  <data name="tabPageCreditScoring.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 25</value>
+  </data>
+  <data name="tabPageCreditScoring.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1235, 275</value>
+  </data>
+  <data name="flowLayoutPanel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 224</value>
+  </data>
+  <data name="btnSaveLoan.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btnSaveLoan.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAa1JREFUOE+tk6GS
+        o0AQhrfuMe4BVqw4mUeIQKxAIBCIiBEIxIgIxIqIiBURESsiRiAQCAQCgUAgEAhEBCJixQoEAhGBQOS/
+        7jmTOXar7upuqv6aqamar/vv7nl4+B9rGAZcr1eM44i0LrFPFF6TyFQaYR8r1OcWaZrCiHu73cCa5hnO
+        IcSpzJAQKK4KxDWJ9oj0vJPYbCUuXWcCpnnCx9Cjee/wvN+i6lq0dG4vv/Te9zrAWxbDDQTapjUB5bmB
+        8xpiGx3hHl5g7yUcArH4/ChsjGSRAZ70l4CozHHMEx3lM1m7QGf4JSAuC7zl6eLxie4u/YfO4q8BoTrA
+        I1vTNFHx/iCDewtFW2O9FborbOneAhexqRuziGyBW1d3Z2pXriNy9fnxfJs1YJyuUGSJAXVVLQH88FSk
+        +Lb6jgMNzX0x16GARRn9cC24vkBZlJ8DOBpX+vdOWMEGtudC0hAppZDnuQngNm6OO+RNBfbP43yvJ2cN
+        FSkMNFA9aQE4k19beFh7zlKuDYuUZZn+K/xvkiQxMwh8Hy9hCBkEhvieJYSAT7uUUmu1WpmAf/nRPwHV
+        0icF5LGzogAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonLoanPreview.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonLoanPreview.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAf1JREFUOE+llCGQ
+        qlAUhnc2vLDxBcMLBgPBYDAQDAYDgWAgEAgGAoFgIBAIBILBYDAQDC8QDAYDgWAwGAwvEAiEDQQCgUAw
+        GAz+e+51wF3XTc+ZMyPec7/z//+9+PLyv5+iKHC5XL7U9XrFY9U97PeqqtDMZYDH5tP5jDNBD0nMwez5
+        sUdV1Rskz/NmsTqdEGcpJksPk4ULwVAgexbMhdfAapCiKN8B4b8j/ugy+tYE8swikAvJM9ExFbzJfexp
+        /UdAkr9DnTswV3NM/84xsHUOk2dT2OslDFLV0UZIs3cOaRTUGWgkeXPcYRGtuYJXqYff6hCvco9UTLFP
+        Y9irBUaGxgFNBiWF6Edb7jkvC5g0/Zcy4M8FpS0YY7RJib/boDhVaI0HCHcRJpp2y6AsS5j+DGMKq6jo
+        O1lgAI3sZATkAOMTQBLhuO7dAlPANnZoyva45xZE+2bhTRG5BZZDbUEYijjsD3dAfYz+do2WMoSxmsEK
+        lhg6Bp88nltwNj50stTqC/A8D2zo02NcbQK0SGJbk/hUdelAcg3uuy324Ng20iThN1GW5e/3gKWbpgmm
+        ro3eeITOSERfGkLXdQRBQGsp2Kkx1Q2Ahfjs7jOZcRwjiRO+gfWxzVmWfQVEUcQl/VT1poSkMyCrMAwh
+        CML9hWLH2e128axY42N9/gf4AGBJgNssD1MTAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="buttonLoanDisbursment.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonLoanDisbursment.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAiVJREFUOE+dUyGX
+        qmAQ3d/xfoTBaDBsMGwwGAgGAsFgIBAIBAKBQDAYCAaDYQPBQCAQCAQCgUAwGAgGAoFgIBC8b2ZcZK3L
+        OffAGe53Z+bOfB8f9DRNg5Zwv9/RdZ2gbVtBRzF+C4e+meP7PvicPHVdC6GnQ4/HA/2jR9uNQj3FOP7o
+        e/QM+h8EARRFeYrcbjc5XLcNgiLFLjhhfzpIxuutgvt9QJAlIipChDRJYBjGKMDqJZHnto5/yxn8w15E
+        WcDaOVhbOoyDh1tTi0BCArqu/xKgYEhZPrUVJsoC9pEESJTJ7E1e5NA8C8bexZ0qybIM2+32VwtETrIU
+        398nIauuCfOwQ/cjwkLF9YK1beCcRCiI82qhqipxl50fjLxUVyzNDUzPecVYzD36sKkK9sCyrPcK0jKH
+        TwayeZyxvJTwdh54SsN09vRfd0yE5/O7ABPOaSweZHn2clvG9tPGnSrkigzbRBxFME3zWQG3wKSKHF7o
+        KrauJS0NIxveYZpgrnzhdDoiTdPRxOp6le0aqpisPrGhMrOykLHxKE9hgBnFtY2Kpm4QxzE0TRs94NEM
+        maIkxkJdYb5eQtE3WG7WmH3NKaOGS1k+E5EHLwE2aehzEGEjg3MAb+9hR4iiUPaBeXw3eJVVVR3vQ0Sm
+        8HIw8ixHSZm4Nc5YFIWAty8koTAMZQsnk8kowGbyXB3Hge3YAtd1BRzjf7w4DD48nU7fD7+u5h8+/gPk
+        V8LyVXLwiQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btnLoanShares.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btnEditSchedule.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="gbxLoanDetails.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1243, 221</value>
+  </data>
+  <data name="tableLayoutPanel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1237, 200</value>
+  </data>
+  <data name="labelDateOffirstInstallment.Location" type="System.Drawing.Point, System.Drawing">
+    <value>371, 28</value>
+  </data>
+  <data name="labelDateOffirstInstallment.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 28</value>
+  </data>
+  <data name="labelLoanAmountMinMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>314, 28</value>
+  </data>
+  <data name="labelLoanNbOfInstallmentsMinMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>314, 112</value>
+  </data>
+  <data name="dateOfFirstInstallment.Location" type="System.Drawing.Point, System.Drawing">
+    <value>538, 31</value>
+  </data>
+  <data name="labelLoanGracePeriodMinMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>314, 84</value>
+  </data>
+  <data name="labelLoanContractCode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 28</value>
+  </data>
+  <data name="textBoxLoanContractCode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>148, 3</value>
+  </data>
+  <data name="labelLoanAmount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 28</value>
+  </data>
+  <data name="labelLoanInterestRate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 28</value>
+  </data>
+  <data name="dateLoanStart.Location" type="System.Drawing.Point, System.Drawing">
+    <value>538, 3</value>
+  </data>
+  <data name="labelLoanNbOfInstallments.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 112</value>
+  </data>
+  <data name="labelLoanNbOfInstallments.Size" type="System.Drawing.Size, System.Drawing">
+    <value>139, 28</value>
+  </data>
+  <data name="labelLoanStartDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>371, 0</value>
+  </data>
+  <data name="labelLoanStartDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>123, 28</value>
+  </data>
+  <data name="lbLoanInterestRateMinMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>314, 56</value>
+  </data>
+  <data name="lbLoanInterestRateMinMax.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 28</value>
+  </data>
+  <data name="labelLoanGracePeriod.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 84</value>
+  </data>
+  <data name="labelLoanGracePeriod.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 28</value>
+  </data>
+  <data name="numericUpDownLoanGracePeriod.Location" type="System.Drawing.Point, System.Drawing">
+    <value>148, 87</value>
+  </data>
+  <data name="nudLoanNbOfInstallments.Location" type="System.Drawing.Point, System.Drawing">
+    <value>148, 115</value>
+  </data>
+  <data name="lblDay.Location" type="System.Drawing.Point, System.Drawing">
+    <value>643, 28</value>
+  </data>
+  <data name="cmbLoanOfficer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>148, 170</value>
+  </data>
+  <data name="labelLoanLoanOfficer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 167</value>
+  </data>
+  <data name="labelLoanLoanOfficer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 33</value>
+  </data>
+  <data name="labelLoanInstallmentType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 140</value>
+  </data>
+  <data name="labelLoanInstallmentType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 27</value>
+  </data>
+  <data name="comboBoxLoanInstallmentType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>148, 143</value>
+  </data>
+  <data name="labelLoanFundingLine.Location" type="System.Drawing.Point, System.Drawing">
+    <value>371, 56</value>
+  </data>
+  <data name="labelLoanFundingLine.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 28</value>
+  </data>
+  <data name="comboBoxLoanFundingLine.Location" type="System.Drawing.Point, System.Drawing">
+    <value>538, 59</value>
+  </data>
+  <data name="labelLoanPurpose.Location" type="System.Drawing.Point, System.Drawing">
+    <value>371, 84</value>
+  </data>
+  <data name="labelLoanPurpose.Size" type="System.Drawing.Size, System.Drawing">
+    <value>161, 28</value>
+  </data>
+  <data name="textBoxLoanPurpose.Location" type="System.Drawing.Point, System.Drawing">
+    <value>538, 87</value>
+  </data>
+  <data name="nudLoanAmount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>148, 31</value>
+  </data>
+  <data name="nudInterestRate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>148, 59</value>
+  </data>
+  <data name="tableLayoutPanel6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 31</value>
+  </data>
+  <data name="lblEarlyPartialRepaimentBase.Location" type="System.Drawing.Point, System.Drawing">
+    <value>144, 28</value>
+  </data>
+  <data name="lblEarlyTotalRepaimentBase.Location" type="System.Drawing.Point, System.Drawing">
+    <value>144, 0</value>
+  </data>
+  <data name="lblLoanAnticipatedPartialFeesMinMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>113, 28</value>
+  </data>
+  <data name="lbATR.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 28</value>
+  </data>
+  <data name="tbLoanAnticipatedPartialFees.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 31</value>
+  </data>
+  <data name="textBoxLoanAnticipatedTotalFees.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 3</value>
+  </data>
+  <data name="lbAPR.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 28</value>
+  </data>
+  <data name="labelLoanAnticipatedTotalFeesMinMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>113, 0</value>
+  </data>
+  <data name="groupBoxLoanLateFees.Size" type="System.Drawing.Size, System.Drawing">
+    <value>416, 77</value>
+  </data>
+  <data name="tableLayoutPanel8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>410, 56</value>
+  </data>
+  <data name="labelLoanLateFeesOnAmount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 28</value>
+  </data>
+  <data name="labelLoanLateFeesOnOverduePrincipal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 28</value>
+  </data>
+  <data name="labelLoanLateFeesOnOLB.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 28</value>
+  </data>
+  <data name="textBoxLoanLateFeesOnOLB.Location" type="System.Drawing.Point, System.Drawing">
+    <value>333, 3</value>
+  </data>
+  <data name="labelLoanLateFeesOnOLBMinMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>382, 0</value>
+  </data>
+  <data name="labelLoanLateFeesOnOverdueInterest.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 28</value>
+  </data>
+  <data name="textBoxLoanLateFeesOnOverdueInterest.Location" type="System.Drawing.Point, System.Drawing">
+    <value>333, 31</value>
+  </data>
+  <data name="labelLoanLateFeesOnOverdueInterestMinMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>382, 28</value>
+  </data>
+  <data name="btnUpdateSettings.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btnUpdateSettings.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAa1JREFUOE+tk6GS
+        o0AQhrfuMe4BVqw4mUeIQKxAIBCIiBEIxIgIxIqIiBURESsiRiAQCAQCgUAgEAhEBCJixQoEAhGBQOS/
+        7jmTOXar7upuqv6aqamar/vv7nl4+B9rGAZcr1eM44i0LrFPFF6TyFQaYR8r1OcWaZrCiHu73cCa5hnO
+        IcSpzJAQKK4KxDWJ9oj0vJPYbCUuXWcCpnnCx9Cjee/wvN+i6lq0dG4vv/Te9zrAWxbDDQTapjUB5bmB
+        8xpiGx3hHl5g7yUcArH4/ChsjGSRAZ70l4CozHHMEx3lM1m7QGf4JSAuC7zl6eLxie4u/YfO4q8BoTrA
+        I1vTNFHx/iCDewtFW2O9FborbOneAhexqRuziGyBW1d3Z2pXriNy9fnxfJs1YJyuUGSJAXVVLQH88FSk
+        +Lb6jgMNzX0x16GARRn9cC24vkBZlJ8DOBpX+vdOWMEGtudC0hAppZDnuQngNm6OO+RNBfbP43yvJ2cN
+        FSkMNFA9aQE4k19beFh7zlKuDYuUZZn+K/xvkiQxMwh8Hy9hCBkEhvieJYSAT7uUUmu1WpmAf/nRPwHV
+        0icF5LGzogAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btnSearchCompulsorySavings.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="linkCompulsorySavings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 33</value>
+  </data>
+  <data name="btnRemoveCompulsorySavings.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="tableLayoutPanel9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1243, 28</value>
+  </data>
+  <data name="labelLocAmount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 28</value>
+  </data>
+  <data name="textBoxLocAmount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>76, 3</value>
+  </data>
+  <data name="labelLocMin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>203, 0</value>
+  </data>
+  <data name="labelLocMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>203, 12</value>
+  </data>
+  <data name="labelLocMax.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 16</value>
+  </data>
+  <data name="labelLocMinAmount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>234, 0</value>
+  </data>
+  <data name="labelLocMaxAmount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>234, 12</value>
+  </data>
+  <data name="labelLocMaxAmount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>10, 16</value>
+  </data>
+  <data name="lblInsuranceMin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>561, 0</value>
+  </data>
+  <data name="lblInsuranceMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>561, 12</value>
+  </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>530, 12</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>530, 0</value>
+  </data>
+  <data name="tbInsurance.Location" type="System.Drawing.Point, System.Drawing">
+    <value>438, 3</value>
+  </data>
+  <data name="lblCreditInsurance.Location" type="System.Drawing.Point, System.Drawing">
+    <value>326, 0</value>
+  </data>
+  <data name="lblCreditInsurance.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 28</value>
+  </data>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>577, 0</value>
+  </data>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>577, 12</value>
+  </data>
+  <data name="lblLocCurrencyMin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>250, 0</value>
+  </data>
+  <data name="lblLocCurrencyMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>250, 12</value>
+  </data>
+  <data name="lblLocCurrencyMax.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 16</value>
+  </data>
+  <data name="buttonCreditCommiteeSaveDecision.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonCreditCommiteeSaveDecision.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAa1JREFUOE+tk6GS
+        o0AQhrfuMe4BVqw4mUeIQKxAIBCIiBEIxIgIxIqIiBURESsiRiAQCAQCgUAgEAhEBCJixQoEAhGBQOS/
+        7jmTOXar7upuqv6aqamar/vv7nl4+B9rGAZcr1eM44i0LrFPFF6TyFQaYR8r1OcWaZrCiHu73cCa5hnO
+        IcSpzJAQKK4KxDWJ9oj0vJPYbCUuXWcCpnnCx9Cjee/wvN+i6lq0dG4vv/Te9zrAWxbDDQTapjUB5bmB
+        8xpiGx3hHl5g7yUcArH4/ChsjGSRAZ70l4CozHHMEx3lM1m7QGf4JSAuC7zl6eLxie4u/YfO4q8BoTrA
+        I1vTNFHx/iCDewtFW2O9FborbOneAhexqRuziGyBW1d3Z2pXriNy9fnxfJs1YJyuUGSJAXVVLQH88FSk
+        +Lb6jgMNzX0x16GARRn9cC24vkBZlJ8DOBpX+vdOWMEGtudC0hAppZDnuQngNm6OO+RNBfbP43yvJ2cN
+        FSkMNFA9aQE4k19beFh7zlKuDYuUZZn+K/xvkiQxMwh8Hy9hCBkEhvieJYSAT7uUUmu1WpmAf/nRPwHV
+        0icF5LGzogAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="lblCCStatus.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 32</value>
+  </data>
+  <data name="pnlCCStatus.Location" type="System.Drawing.Point, System.Drawing">
+    <value>87, 3</value>
+  </data>
+  <data name="pnlCCStatus.Size" type="System.Drawing.Size, System.Drawing">
+    <value>417, 26</value>
+  </data>
+  <data name="flowLayoutPanel6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>417, 26</value>
+  </data>
+  <data name="radioButtonCreditCommiteePending.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 20</value>
+  </data>
+  <data name="radioButtonCreditCommiteeValidated.Location" type="System.Drawing.Point, System.Drawing">
+    <value>107, 3</value>
+  </data>
+  <data name="radioButtonCreditCommiteeRefused.Location" type="System.Drawing.Point, System.Drawing">
+    <value>209, 3</value>
+  </data>
+  <data name="radioButtonCreditCommiteeRefused.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 20</value>
+  </data>
+  <data name="radioButtonCreditCommiteeAbandoned.Location" type="System.Drawing.Point, System.Drawing">
+    <value>316, 3</value>
+  </data>
+  <data name="radioButtonCreditCommiteeAbandoned.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 20</value>
+  </data>
+  <data name="labelCreditCommiteeDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 16</value>
+  </data>
+  <data name="dateTimePickerCreditCommitee.Location" type="System.Drawing.Point, System.Drawing">
+    <value>87, 35</value>
+  </data>
+  <data name="labelCreditCommiteeComment.Size" type="System.Drawing.Size, System.Drawing">
+    <value>78, 16</value>
+  </data>
+  <data name="labelCreditCommiteeCode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 16</value>
+  </data>
+  <data name="textBoxCreditCommiteeComment.Location" type="System.Drawing.Point, System.Drawing">
+    <value>87, 91</value>
+  </data>
+  <data name="textBoxCreditCommiteeComment.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1153, 194</value>
+  </data>
+  <data name="tBCreditCommitteeCode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>87, 63</value>
+  </data>
+  <data name="tabPageLAC1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1012, 336</value>
+  </data>
+  <data name="buttonLoanRepaymentRepay.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonLoanRepaymentRepay.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAfdJREFUOE+NkxGY
+        40AUx/c7PFg4KB4eBA4ChUAgEAgEAguFwEFhoRAoBAKBQCBQCBQOAoWFhUChsFAIBAKBhUAgEBgILBQK
+        /e+86SXXtIWd73tfJjPzfvP+7715ePg36rrGV633Ed+2aXA8HnE6nQaj/94u1/s57TmOAwFoOKDfYB/d
+        CNSvF02FZbJCWVfDfhRGY0DNWpjOHJdAAvhJjN8zAxNTxcRSEWzWAhIGwRhQtQ2mMxNlWQ637MockqEi
+        Xq/x7LsI1iv8UCRUVYUouoqgYg0U28L7BSB83Yjbay5zzgGUrzRNz4BrCfcAeVXi0ZjCjjw8eQ5qHmWf
+        l+BGwp0I6PD2bQflj4XvpgLJNrBKNwJyA2g6BpVLqHl416UjCU/OMxZcxqMuI8vzsQRK4LbMoCxsJDuu
+        kTcVQXZFjpe3LbrDB2buQuRAX87hhcH/CFjLsM33mMw0fDNk/FRlJJtEADxesgkPvajesQh98aVKhbwC
+        vu+Py/g3fcEv7kzaGGMC0HJZU65fsk1MeXRUJc00sN/v4XvebSeWRTE493mgsIM4gmRqcN2lKCNdQPPz
+        W2jbu+1LgP49dF2HVRyjyAvQeZLtuu4ZkGXZcPDyEdH8cDiAnOnGpm5EA5FRt1qWdQbQUBQFuq6PTNM0
+        9KaqKsjoHJksy4PzJ+th6YFfF1wUAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="buttonLoanReschedule.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonLoanReschedule.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAbxJREFUOE+tk62X
+        gkAUxT0b9w/YaNi4wWAkGAwEgoFgIBAIBAOBaCAQDAaCYQOBQDBsMBgMBoOBYDAQDAaDwUAwEAgE7743
+        CH6e44blnHsGHm9+8+7Mm1rt/Ox2O9xrT7F7cU45R4z7/R55nuPEOp0q5accGcUuyug9E/8537btAsSA
+        cuJys4Y3CcX3NFqg3dMgWzrJgERjfzSscj3PuwB4tdkqQt3o4E2qw/E9MDgIA/i+j3EYwhq6UPQusjQV
+        kMFgcAGkWQZ35EEyu2ioMjRDx3q9vrE0oYo6pob0GUBYIF/BbIJuz8AxSarE0t54OX8BIEiwmEIlwP2G
+        MuRvgHkByMnS9Yn8G0AxNByPx8dNLFcLXlQgAIdEAFzXfewDATD1GwsZ2eHGEadA/cDHyzHHcZ4DNMt8
+        8O+G32jaGj40GTJVsVgunwP8+QRfugLvJxRyxz5COtp4sxHx98YnLMtCHMfo9/tFBYfDoVpxtYmhUwVs
+        o2sa6OgaeraFhPqCG4u7L4oi8V0BOHB9mdgfd1tKu80NxZ5ZvNB2uxXiClRVvdxKSZIgyzLa7bYYZUUp
+        xnOs1WqBc0o1m81q8i/hPfSBDrYSYwAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonAddTranche.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btnWriteOff.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btnWaiveFee.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btnDeleteEvent.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="olvBalances.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1006, 254</value>
+  </data>
+  <data name="pnlAccountin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 296</value>
+  </data>
+  <data name="pnlAccountin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1006, 37</value>
+  </data>
+  <data name="btnRefresh.Location" type="System.Drawing.Point, System.Drawing">
+    <value>852, 3</value>
+  </data>
+  <data name="groupBox4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1006, 39</value>
+  </data>
+  <data name="tabControlSavingsDettails.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 211</value>
+  </data>
+  <data name="tabControlSavingsDettails.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1243, 351</value>
+  </data>
+  <data name="tabPageSavingsAmountsAndFees.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1235, 318</value>
+  </data>
+  <data name="flowLayoutPanel10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>721, 312</value>
+  </data>
+  <data name="lbBalanceMaxValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>137, 22</value>
+  </data>
+  <data name="lbBalanceMaxValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 16</value>
+  </data>
+  <data name="lbBalanceMinValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>137, 3</value>
+  </data>
+  <data name="lbBalanceMinValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 16</value>
+  </data>
+  <data name="lbBalanceMax.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 16</value>
+  </data>
+  <data name="lbDepositMaxValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>137, 22</value>
+  </data>
+  <data name="lbDepositMaxValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 16</value>
+  </data>
+  <data name="lbDepositMinValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>137, 3</value>
+  </data>
+  <data name="lbDepositMinValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 16</value>
+  </data>
+  <data name="lbDepositmax.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 16</value>
+  </data>
+  <data name="lbWithdrawMaxValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>137, 22</value>
+  </data>
+  <data name="lbWithdrawMaxValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 16</value>
+  </data>
+  <data name="lbWithdrawMinValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>137, 3</value>
+  </data>
+  <data name="lbWithdrawMinValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 16</value>
+  </data>
+  <data name="lbWithdrawMax.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 16</value>
+  </data>
+  <data name="labelSavingTransferMaxValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>137, 22</value>
+  </data>
+  <data name="labelSavingTransferMaxValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 16</value>
+  </data>
+  <data name="labelSavingTransferMinValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>137, 0</value>
+  </data>
+  <data name="labelSavingTransferMinValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 19</value>
+  </data>
+  <data name="lbInterestBasedOnValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>98, 41</value>
+  </data>
+  <data name="lbInterestBasedOnValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 16</value>
+  </data>
+  <data name="lbInterestAccrual.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 16</value>
+  </data>
+  <data name="lbInterestPostingValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>98, 22</value>
+  </data>
+  <data name="lbInterestPostingValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 16</value>
+  </data>
+  <data name="lbInterestBasedOn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 16</value>
+  </data>
+  <data name="lbInterestAccrualValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>98, 3</value>
+  </data>
+  <data name="lbInterestAccrualValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 16</value>
+  </data>
+  <data name="lbInterestPosting.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 16</value>
+  </data>
+  <data name="lbPeriodicityValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>137, 22</value>
+  </data>
+  <data name="lbPeriodicityValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 16</value>
+  </data>
+  <data name="lbAccrualDeposit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 16</value>
+  </data>
+  <data name="lbAccrualDepositValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>137, 3</value>
+  </data>
+  <data name="lbAccrualDepositValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 16</value>
+  </data>
+  <data name="lbPeriodicity.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 16</value>
+  </data>
+  <data name="tabControlSavingsProductsComponents.Size" type="System.Drawing.Size, System.Drawing">
+    <value>508, 312</value>
+  </data>
+  <data name="tabPageSavingsBook.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 283</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>263, 16</value>
+  </data>
+  <data name="lbOverdraftFees.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 16</value>
+  </data>
+  <data name="lbManagementFees.Size" type="System.Drawing.Size, System.Drawing">
+    <value>159, 16</value>
+  </data>
+  <data name="lbChequeDepositFees.Size" type="System.Drawing.Size, System.Drawing">
+    <value>188, 16</value>
+  </data>
+  <data name="lbDepositFees.Size" type="System.Drawing.Size, System.Drawing">
+    <value>187, 16</value>
+  </data>
+  <data name="lbTransferFees.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 16</value>
+  </data>
+  <data name="lbCloseFees.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 16</value>
+  </data>
+  <data name="tabPageTermDeposit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 25</value>
+  </data>
+  <data name="btSearchContract.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="lbTargetSavings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 16</value>
+  </data>
+  <data name="tabPageSavingsEvents.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1235, 318</value>
+  </data>
+  <data name="lvSavingEvent.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1229, 312</value>
+  </data>
+  <data name="tabPageLoans.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1235, 318</value>
+  </data>
+  <data name="olvLoans.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1235, 318</value>
+  </data>
+  <data name="tabPageSavingsAccounting.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1235, 318</value>
+  </data>
+  <data name="treeListViewSAC.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1229, 312</value>
+  </data>
+  <data name="tabPageSavingsCustomizableFields.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1235, 318</value>
+  </data>
+  <data name="tpTermDeposit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1235, 318</value>
+  </data>
+  <data name="lblNumberOfPeriods.Size" type="System.Drawing.Size, System.Drawing">
+    <value>166, 28</value>
+  </data>
+  <data name="nudNumberOfPeriods.Location" type="System.Drawing.Point, System.Drawing">
+    <value>175, 3</value>
+  </data>
+  <data name="lblLimitOfTermDepositPeriod.Location" type="System.Drawing.Point, System.Drawing">
+    <value>370, 0</value>
+  </data>
+  <data name="tbTargetAccount2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>175, 61</value>
+  </data>
+  <data name="cmbRollover2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>175, 31</value>
+  </data>
+  <data name="btSearchContract2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>370, 61</value>
+  </data>
+  <data name="btSearchContract2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>114, 28</value>
+  </data>
+  <data name="lblTermTransferToAccount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>166, 16</value>
+  </data>
+  <data name="flowLayoutPanel9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 157</value>
+  </data>
+  <data name="btSavingsUpdate.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btSavingsUpdate.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAa1JREFUOE+tk6GS
+        o0AQhrfuMe4BVqw4mUeIQKxAIBCIiBEIxIgIxIqIiBURESsiRiAQCAQCgUAgEAhEBCJixQoEAhGBQOS/
+        7jmTOXar7upuqv6aqamar/vv7nl4+B9rGAZcr1eM44i0LrFPFF6TyFQaYR8r1OcWaZrCiHu73cCa5hnO
+        IcSpzJAQKK4KxDWJ9oj0vJPYbCUuXWcCpnnCx9Cjee/wvN+i6lq0dG4vv/Te9zrAWxbDDQTapjUB5bmB
+        8xpiGx3hHl5g7yUcArH4/ChsjGSRAZ70l4CozHHMEx3lM1m7QGf4JSAuC7zl6eLxie4u/YfO4q8BoTrA
+        I1vTNFHx/iCDewtFW2O9FborbOneAhexqRuziGyBW1d3Z2pXriNy9fnxfJs1YJyuUGSJAXVVLQH88FSk
+        +Lb6jgMNzX0x16GARRn9cC24vkBZlJ8DOBpX+vdOWMEGtudC0hAppZDnuQngNm6OO+RNBfbP43yvJ2cN
+        FSkMNFA9aQE4k19beFh7zlKuDYuUZZn+K/xvkiQxMwh8Hy9hCBkEhvieJYSAT7uUUmu1WpmAf/nRPwHV
+        0icF5LGzogAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonSaveSaving.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonSaveSaving.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAa1JREFUOE+tk6GS
+        o0AQhrfuMe4BVqw4mUeIQKxAIBCIiBEIxIgIxIqIiBURESsiRiAQCAQCgUAgEAhEBCJixQoEAhGBQOS/
+        7jmTOXar7upuqv6aqamar/vv7nl4+B9rGAZcr1eM44i0LrFPFF6TyFQaYR8r1OcWaZrCiHu73cCa5hnO
+        IcSpzJAQKK4KxDWJ9oj0vJPYbCUuXWcCpnnCx9Cjee/wvN+i6lq0dG4vv/Te9zrAWxbDDQTapjUB5bmB
+        8xpiGx3hHl5g7yUcArH4/ChsjGSRAZ70l4CozHHMEx3lM1m7QGf4JSAuC7zl6eLxie4u/YfO4q8BoTrA
+        I1vTNFHx/iCDewtFW2O9FborbOneAhexqRuziGyBW1d3Z2pXriNy9fnxfJs1YJyuUGSJAXVVLQH88FSk
+        +Lb6jgMNzX0x16GARRn9cC24vkBZlJ8DOBpX+vdOWMEGtudC0hAppZDnuQngNm6OO+RNBfbP43yvJ2cN
+        FSkMNFA9aQE4k19beFh7zlKuDYuUZZn+K/xvkiQxMwh8Hy9hCBkEhvieJYSAT7uUUmu1WpmAf/nRPwHV
+        0icF5LGzogAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonFirstDeposit.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonCloseSaving.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonCloseSaving.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAa1JREFUOE+tk6GS
+        o0AQhrfuMe4BVqw4mUeIQKxAIBCIiBEIxIgIxIqIiBURESsiRiAQCAQCgUAgEAhEBCJixQoEAhGBQOS/
+        7jmTOXar7upuqv6aqamar/vv7nl4+B9rGAZcr1eM44i0LrFPFF6TyFQaYR8r1OcWaZrCiHu73cCa5hnO
+        IcSpzJAQKK4KxDWJ9oj0vJPYbCUuXWcCpnnCx9Cjee/wvN+i6lq0dG4vv/Te9zrAWxbDDQTapjUB5bmB
+        8xpiGx3hHl5g7yUcArH4/ChsjGSRAZ70l4CozHHMEx3lM1m7QGf4JSAuC7zl6eLxie4u/YfO4q8BoTrA
+        I1vTNFHx/iCDewtFW2O9FborbOneAhexqRuziGyBW1d3Z2pXriNy9fnxfJs1YJyuUGSJAXVVLQH88FSk
+        +Lb6jgMNzX0x16GARRn9cC24vkBZlJ8DOBpX+vdOWMEGtudC0hAppZDnuQngNm6OO+RNBfbP43yvJ2cN
+        FSkMNFA9aQE4k19beFh7zlKuDYuUZZn+K/xvkiQxMwh8Hy9hCBkEhvieJYSAT7uUUmu1WpmAf/nRPwHV
+        0icF5LGzogAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonReopenSaving.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonReopenSaving.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAa1JREFUOE+tk6GS
+        o0AQhrfuMe4BVqw4mUeIQKxAIBCIiBEIxIgIxIqIiBURESsiRiAQCAQCgUAgEAhEBCJixQoEAhGBQOS/
+        7jmTOXar7upuqv6aqamar/vv7nl4+B9rGAZcr1eM44i0LrFPFF6TyFQaYR8r1OcWaZrCiHu73cCa5hnO
+        IcSpzJAQKK4KxDWJ9oj0vJPYbCUuXWcCpnnCx9Cjee/wvN+i6lq0dG4vv/Te9zrAWxbDDQTapjUB5bmB
+        8xpiGx3hHl5g7yUcArH4/ChsjGSRAZ70l4CozHHMEx3lM1m7QGf4JSAuC7zl6eLxie4u/YfO4q8BoTrA
+        I1vTNFHx/iCDewtFW2O9FborbOneAhexqRuziGyBW1d3Z2pXriNy9fnxfJs1YJyuUGSJAXVVLQH88FSk
+        +Lb6jgMNzX0x16GARRn9cC24vkBZlJ8DOBpX+vdOWMEGtudC0hAppZDnuQngNm6OO+RNBfbP43yvJ2cN
+        FSkMNFA9aQE4k19beFh7zlKuDYuUZZn+K/xvkiQxMwh8Hy9hCBkEhvieJYSAT7uUUmu1WpmAf/nRPwHV
+        0icF5LGzogAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="menuBtnAddSavingOperation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 92</value>
+  </data>
+  <data name="savingDepositToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 22</value>
+  </data>
+  <data name="savingWithdrawToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 22</value>
+  </data>
+  <data name="savingTransferToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 22</value>
+  </data>
+  <data name="specialOperationToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 22</value>
+  </data>
+  <data name="btCancelLastSavingEvent.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="groupBoxSaving.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1243, 154</value>
+  </data>
+  <data name="tableLayoutPanel5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1237, 133</value>
+  </data>
+  <data name="lbEntryFeesMinMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>209, 67</value>
+  </data>
+  <data name="lbInitialAmountMinMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>209, 38</value>
+  </data>
+  <data name="lbEntryFees.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 29</value>
+  </data>
+  <data name="labelInitialAmount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 29</value>
+  </data>
+  <data name="nudEntryFees.Location" type="System.Drawing.Point, System.Drawing">
+    <value>83, 70</value>
+  </data>
+  <data name="nudDownInitialAmount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>83, 41</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 27</value>
+  </data>
+  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 28</value>
+  </data>
+  <data name="lbSavingBalanceValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>701, 10</value>
+  </data>
+  <data name="lBSavingBalance.Location" type="System.Drawing.Point, System.Drawing">
+    <value>535, 10</value>
+  </data>
+  <data name="lBSavingBalance.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 24</value>
+  </data>
+  <data name="tBSavingCode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>83, 13</value>
+  </data>
+  <data name="cmbSavingsOfficer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>83, 99</value>
+  </data>
+  <data name="labelInterestRate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>396, 38</value>
+  </data>
+  <data name="labelInterestRate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 29</value>
+  </data>
+  <data name="nudDownInterestRate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>535, 41</value>
+  </data>
+  <data name="lbWithdrawFees.Location" type="System.Drawing.Point, System.Drawing">
+    <value>396, 67</value>
+  </data>
+  <data name="lbWithdrawFees.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 29</value>
+  </data>
+  <data name="nudWithdrawFees.Location" type="System.Drawing.Point, System.Drawing">
+    <value>535, 70</value>
+  </data>
+  <data name="lbInterestRateMinMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>701, 38</value>
+  </data>
+  <data name="lbWithdrawFeesMinMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>701, 67</value>
+  </data>
+  <data name="buttonPrintSchedule.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonReschedule.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonReschedule.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAbxJREFUOE+tk62X
+        gkAUxT0b9w/YaNi4wWAkGAwEgoFgIBAIBAOBaCAQDAaCYQOBQDBsMBgMBoOBYDAQDAaDwUAwEAgE7743
+        CH6e44blnHsGHm9+8+7Mm1rt/Ox2O9xrT7F7cU45R4z7/R55nuPEOp0q5accGcUuyug9E/8537btAsSA
+        cuJys4Y3CcX3NFqg3dMgWzrJgERjfzSscj3PuwB4tdkqQt3o4E2qw/E9MDgIA/i+j3EYwhq6UPQusjQV
+        kMFgcAGkWQZ35EEyu2ioMjRDx3q9vrE0oYo6pob0GUBYIF/BbIJuz8AxSarE0t54OX8BIEiwmEIlwP2G
+        MuRvgHkByMnS9Yn8G0AxNByPx8dNLFcLXlQgAIdEAFzXfewDATD1GwsZ2eHGEadA/cDHyzHHcZ4DNMt8
+        8O+G32jaGj40GTJVsVgunwP8+QRfugLvJxRyxz5COtp4sxHx98YnLMtCHMfo9/tFBYfDoVpxtYmhUwVs
+        o2sa6OgaeraFhPqCG4u7L4oi8V0BOHB9mdgfd1tKu80NxZ5ZvNB2uxXiClRVvdxKSZIgyzLa7bYYZUUp
+        xnOs1WqBc0o1m81q8i/hPfSBDrYSYwAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonRepay.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonRepay.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAfdJREFUOE+NkxGY
+        40AUx/c7PFg4KB4eBA4ChUAgEAgEAguFwEFhoRAoBAKBQCBQCBQOAoWFhUChsFAIBAKBhUAgEBgILBQK
+        /e+86SXXtIWd73tfJjPzfvP+7715ePg36rrGV633Ed+2aXA8HnE6nQaj/94u1/s57TmOAwFoOKDfYB/d
+        CNSvF02FZbJCWVfDfhRGY0DNWpjOHJdAAvhJjN8zAxNTxcRSEWzWAhIGwRhQtQ2mMxNlWQ637MockqEi
+        Xq/x7LsI1iv8UCRUVYUouoqgYg0U28L7BSB83Yjbay5zzgGUrzRNz4BrCfcAeVXi0ZjCjjw8eQ5qHmWf
+        l+BGwp0I6PD2bQflj4XvpgLJNrBKNwJyA2g6BpVLqHl416UjCU/OMxZcxqMuI8vzsQRK4LbMoCxsJDuu
+        kTcVQXZFjpe3LbrDB2buQuRAX87hhcH/CFjLsM33mMw0fDNk/FRlJJtEADxesgkPvajesQh98aVKhbwC
+        vu+Py/g3fcEv7kzaGGMC0HJZU65fsk1MeXRUJc00sN/v4XvebSeWRTE493mgsIM4gmRqcN2lKCNdQPPz
+        W2jbu+1LgP49dF2HVRyjyAvQeZLtuu4ZkGXZcPDyEdH8cDiAnOnGpm5EA5FRt1qWdQbQUBQFuq6PTNM0
+        9KaqKsjoHJksy4PzJ+th6YFfF1wUAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAB+fn8AkYyKAJKOjgCVk5MAlpaWAKWmpQCwr68AsrOyALS2tQC2trYAuru7ALu8vAC/vbwAvb29AMG/
+        vgDBwcAAwcLCAMXDwwDHxsUAxcbHAMbIxwDMyMcAyMnIAMrKygDKyssAy8vLAMzMywDNzcwAz87OANLQ
+        0ADP0tEA0NPSANLT0gDU1NIA1NXUANjV1QDW1tUA19fVANjX1QDX2NcA2tnYANnZ2QDb2dkA29zcANzc
+        3ADd3t0A397eAN3f3gDf394A4d/fAN3g3wDf4N8A3uDgAN/h4ADh4eAA3+HhAOHh4QDg4uEA4uLhAOPi
+        4QDi4uIA4+LiAOTj4wDi5OMA5OTkAOLl5ADm5eQA5ubmAOTn5gDl5+YA5OjnAOXo5wDm6OcA6OjnAObp
+        6ADp6egA6unpAObq6QDn6uoA6urpAOvq6QDp6uoA6urqAOvr6ADn6+oA6uvpAOnr6gDq7OsA6uzsAOzs
+        7ADq7esA7O3sAO3t7ADs7uwA7u7uAOzv7QDu7+0A7e/uAO3v7wDu7+8A7+/vAO/w7gDx8fAA7/HxAO/y
+        8QDx8vEA8PPyAPHz8gDy9PQA9PT0APP19QD09fUA9Pb2APX29gD19/YA9ff3APb4+AD4+PgA9vn4APf5
+        +AD4+/oA+fv6APr8/AD6/fwA+/38APz9/AD7/v0A/P79APv+/gD8/v4A+//9APz//QD9//0A+//+APz/
+        /gD9//8A/v//AP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAR4aGiRtCHXOGhoaGhoaGR0eGf1dAhYQkhoaGgH6HiEREgXqJMIZxX4aGhX5vOSMySDM2Yldm
+        S2qJiH5ua4GJCzRViD5oZV5kGCJ4cIZ7JzVHWCB1Y1sqFQkNdoY8VolERH6JWEOJAgADiTlhiH5+R0eG
+        hn6HGgZZZAVRfoaGhkdHhoaGiBYseYgHiX5+hoZHR4Z+iFGJAQQPUSlxhoaDR0SISTqGKCYMDlJ5bEly
+        h0cvK313Lk8iITsZcGCHXDFBEIl8OCVpQF0RF4dsTIKJE009NzMthm1TiYmGflpQbwpHhn45HH1FP36G
+        hoZ+dGdOH0dHShQSCFRHR0dHREdGHgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Individual</value>
+  </data>
+  <data name="btCancelLastSavingEvent.Text" xml:space="preserve">
+    <value>Cancele último movimento</value>
+  </data>
+  <data name="btnDeleteEvent.Text" xml:space="preserve">
+    <value>Apage o evento mais recente</value>
+  </data>
+  <data name="btnEditSchedule.Text" xml:space="preserve">
+    <value>Editar tabela</value>
+  </data>
+  <data name="btnLoanShares.Text" xml:space="preserve">
+    <value>Repartição</value>
+  </data>
+  <data name="btnPrintCreditCommittee.Text" xml:space="preserve">
+    <value>Imprimir</value>
+  </data>
+  <data name="btnPrintGuarantors.Text" xml:space="preserve">
+    <value>Imprimir</value>
+  </data>
+  <data name="btnPrintLoanDetails.Text" xml:space="preserve">
+    <value>Imprimir</value>
+  </data>
+  <data name="btnPrintLoanEvents.Text" xml:space="preserve">
+    <value>Imprimir os movimentos</value>
+  </data>
+  <data name="btnPrintLoanRepayment.Text" xml:space="preserve">
+    <value>Imprimir</value>
+  </data>
+  <data name="btnPrintSavings.Text" xml:space="preserve">
+    <value>Imprimir</value>
+  </data>
+  <data name="btnRefresh.Text" xml:space="preserve">
+    <value>Refrescar</value>
+  </data>
+  <data name="btnSaveLoan.Text" xml:space="preserve">
+    <value>Gravar</value>
+  </data>
+  <data name="btnUpdateSettings.Text" xml:space="preserve">
+    <value>Gravar</value>
+  </data>
+  <data name="btnWaiveFee.Text" xml:space="preserve">
+    <value>Exonerar as comissões atrasadas</value>
+  </data>
+  <data name="btnWriteOff.Text" xml:space="preserve">
+    <value>Abater</value>
+  </data>
+  <data name="btSavingsUpdate.Text" xml:space="preserve">
+    <value>Actualizar</value>
+  </data>
+  <data name="btSearchContract2.Text" xml:space="preserve">
+    <value>Buscar</value>
+  </data>
+  <data name="buttonActivateGuarantee.Text" xml:space="preserve">
+    <value>Activar garantia</value>
+  </data>
+  <data name="buttonAddCollateral.Text" xml:space="preserve">
+    <value>Adicionar</value>
+  </data>
+  <data name="buttonAddTranche.Text" xml:space="preserve">
+    <value>Adicionar prestação</value>
+  </data>
+  <data name="buttonCloseSaving.Text" xml:space="preserve">
+    <value>Fechar</value>
+  </data>
+  <data name="buttonCreditCommiteeSaveDecision.Text" xml:space="preserve">
+    <value>Gravar </value>
+  </data>
+  <data name="buttonDelCollateral.Text" xml:space="preserve">
+    <value>Apagar</value>
+  </data>
+  <data name="buttonDelete.Text" xml:space="preserve">
+    <value>Apagar</value>
+  </data>
+  <data name="buttonDeleteGuarantee.Text" xml:space="preserve">
+    <value>Desactivar garantia</value>
+  </data>
+  <data name="buttonFirstDeposit.Text" xml:space="preserve">
+    <value>Primeiro depósito</value>
+  </data>
+  <data name="buttonLoanDisbursment.Text" xml:space="preserve">
+    <value>Desembolsar</value>
+  </data>
+  <data name="buttonLoanPreview.Text" xml:space="preserve">
+    <value>Prever</value>
+  </data>
+  <data name="buttonLoanRepaymentRepay.Text" xml:space="preserve">
+    <value>Reembolsar</value>
+  </data>
+  <data name="buttonLoanReschedule.Text" xml:space="preserve">
+    <value>Reprogramar</value>
+  </data>
+  <data name="buttonModifyAGarantors.Text" xml:space="preserve">
+    <value>Modificar</value>
+  </data>
+  <data name="buttonModifyCollateral.Text" xml:space="preserve">
+    <value>Modificar</value>
+  </data>
+  <data name="buttonPrintGuaranteeForm.Text" xml:space="preserve">
+    <value>Imprimir formulário da garantia</value>
+  </data>
+  <data name="buttonPrintSchedule.Text" xml:space="preserve">
+    <value>Imprimir tabela de reembolso</value>
+  </data>
+  <data name="buttonProjectAddContract.Text" xml:space="preserve">
+    <value>Adicionar emprestimo</value>
+  </data>
+  <data name="buttonProjectAddFollowUp.Text" xml:space="preserve">
+    <value>Adicionar seguimento</value>
+  </data>
+  <data name="buttonProjectAddGuarantee.Text" xml:space="preserve">
+    <value>Adicionar garantia</value>
+  </data>
+  <data name="buttonProjectSave.Text" xml:space="preserve">
+    <value>Gravar projecto</value>
+  </data>
+  <data name="buttonProjectSelectPurpose.Text" xml:space="preserve">
+    <value>Selecione</value>
+  </data>
+  <data name="buttonProjectViewContract.Text" xml:space="preserve">
+    <value>Veja contracto</value>
+  </data>
+  <data name="buttonReopenSaving.Text" xml:space="preserve">
+    <value>Reabrir</value>
+  </data>
+  <data name="buttonRepay.Text" xml:space="preserve">
+    <value>Confirme reembolso</value>
+  </data>
+  <data name="buttonReschedule.Text" xml:space="preserve">
+    <value>Reprogramar</value>
+  </data>
+  <data name="buttonSaveGuarantee.Text" xml:space="preserve">
+    <value>Gravar garantia</value>
+  </data>
+  <data name="buttonSaveSaving.Text" xml:space="preserve">
+    <value>Gravar</value>
+  </data>
+  <data name="buttonSavingsOperations.Text" xml:space="preserve">
+    <value>Operações</value>
+  </data>
+  <data name="buttonSelectAGarantors.Text" xml:space="preserve">
+    <value>Adicionar</value>
+  </data>
+  <data name="buttonViewAGarantors.Text" xml:space="preserve">
+    <value>Veja</value>
+  </data>
+  <data name="buttonViewCollateral.Text" xml:space="preserve">
+    <value>Veja</value>
+  </data>
+  <data name="colAmount.Text" xml:space="preserve">
+    <value>Quantia</value>
+  </data>
+  <data name="colCancelDate.Text" xml:space="preserve">
+    <value>Cancelar data</value>
+  </data>
+  <data name="colCancelDate1.Text" xml:space="preserve">
+    <value>Cancelar data</value>
+  </data>
+  <data name="colCommissions.Text" xml:space="preserve">
+    <value>Comissões</value>
+  </data>
+  <data name="colId.Text" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="colName.Text" xml:space="preserve">
+    <value>Nome</value>
+  </data>
+  <data name="colNumber.Text" xml:space="preserve">
+    <value>Número de prestação</value>
+  </data>
+  <data name="colPaymentMethod.Text" xml:space="preserve">
+    <value>Método de pagamento</value>
+  </data>
+  <data name="colPenalties.Text" xml:space="preserve">
+    <value>Juros de moura</value>
+  </data>
+  <data name="columnHeader1.Text" xml:space="preserve">
+    <value>N°</value>
+  </data>
+  <data name="columnHeader10.Text" xml:space="preserve">
+    <value>Cancelavel</value>
+  </data>
+  <data name="columnHeader11.Text" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="columnHeader12.Text" xml:space="preserve">
+    <value>Tipo</value>
+  </data>
+  <data name="columnHeader13.Text" xml:space="preserve">
+    <value>Capital</value>
+  </data>
+  <data name="columnHeader14.Text" xml:space="preserve">
+    <value>Juros</value>
+  </data>
+  <data name="columnHeader15.Text" xml:space="preserve">
+    <value>Código</value>
+  </data>
+  <data name="columnHeader16.Text" xml:space="preserve">
+    <value>Cancelavel</value>
+  </data>
+  <data name="columnHeader17.Text" xml:space="preserve">
+    <value>Quantia</value>
+  </data>
+  <data name="columnHeader18.Text" xml:space="preserve">
+    <value>Utilizador</value>
+  </data>
+  <data name="columnHeader19.Text" xml:space="preserve">
+    <value>Nome</value>
+  </data>
+  <data name="columnHeader2.Text" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="columnHeader20.Text" xml:space="preserve">
+    <value>Quantia</value>
+  </data>
+  <data name="columnHeader21.Text" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="columnHeader22.Text" xml:space="preserve">
+    <value>Débito</value>
+  </data>
+  <data name="columnHeader23.Text" xml:space="preserve">
+    <value>Crédito</value>
+  </data>
+  <data name="columnHeader24.Text" xml:space="preserve">
+    <value>Descrição</value>
+  </data>
+  <data name="columnHeader25.Text" xml:space="preserve">
+    <value>% do emprestimo</value>
+  </data>
+  <data name="columnHeader26.Text" xml:space="preserve">
+    <value>Comissões</value>
+  </data>
+  <data name="columnHeader27.Text" xml:space="preserve">
+    <value>Transferência </value>
+  </data>
+  <data name="columnHeader28.Text" xml:space="preserve">
+    <value>Tipo de poupança</value>
+  </data>
+  <data name="columnHeader29.Text" xml:space="preserve">
+    <value>Utilizador</value>
+  </data>
+  <data name="columnHeader3.Text" xml:space="preserve">
+    <value>Juros anticipados</value>
+  </data>
+  <data name="columnHeader30.Text" xml:space="preserve">
+    <value>Comentário</value>
+  </data>
+  <data name="columnHeader4.Text" xml:space="preserve">
+    <value>Capital anticipado</value>
+  </data>
+  <data name="columnHeader5.Text" xml:space="preserve">
+    <value>Total da prestação</value>
+  </data>
+  <data name="columnHeader6.Text" xml:space="preserve">
+    <value>SEP</value>
+  </data>
+  <data name="columnHeader7.Text" xml:space="preserve">
+    <value>Juros pagos</value>
+  </data>
+  <data name="columnHeader8.Text" xml:space="preserve">
+    <value>Capital pago</value>
+  </data>
+  <data name="columnHeader9.Text" xml:space="preserve">
+    <value>Data paga</value>
+  </data>
+  <data name="columnHeaderAmount.Text" xml:space="preserve">
+    <value>Quantia</value>
+  </data>
+  <data name="columnHeaderCloseDate.Text" xml:space="preserve">
+    <value>Data do encerramento</value>
+  </data>
+  <data name="columnHeaderColDesc.Text" xml:space="preserve">
+    <value>Descrição</value>
+  </data>
+  <data name="columnHeaderComment.Text" xml:space="preserve">
+    <value>Comentário</value>
+  </data>
+  <data name="columnHeaderCreationDate.Text" xml:space="preserve">
+    <value>Data criada</value>
+  </data>
+  <data name="columnHeaderCurrency.Text" xml:space="preserve">
+    <value>Moeda</value>
+  </data>
+  <data name="columnHeaderDate.Text" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="columnHeaderDesc.Text" xml:space="preserve">
+    <value>Descrição</value>
+  </data>
+  <data name="columnHeaderFees.Text" xml:space="preserve">
+    <value>Comissões</value>
+  </data>
+  <data name="columnHeaderId.Text" xml:space="preserve">
+    <value>Código</value>
+  </data>
+  <data name="columnHeaderInstallmentType.Text" xml:space="preserve">
+    <value>Tipo de prestação</value>
+  </data>
+  <data name="columnHeaderInterest.Text" xml:space="preserve">
+    <value>Juros</value>
+  </data>
+  <data name="columnHeaderInterestRate.Text" xml:space="preserve">
+    <value>Taxa de juros</value>
+  </data>
+  <data name="columnHeaderLateDays.Text" xml:space="preserve">
+    <value>Dias em atraso</value>
+  </data>
+  <data name="columnHeaderLoanDate.Text" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="columnHeaderLoanInstallmentTotal.Text" xml:space="preserve">
+    <value>Total da prestação</value>
+  </data>
+  <data name="columnHeaderLoanIP.Text" xml:space="preserve">
+    <value>Pagamento de juros</value>
+  </data>
+  <data name="columnHeaderLoanN.Text" xml:space="preserve">
+    <value>N°</value>
+  </data>
+  <data name="columnHeaderLoanOLB.Text" xml:space="preserve">
+    <value>SEP</value>
+  </data>
+  <data name="columnHeaderLoanPR.Text" xml:space="preserve">
+    <value>Reembolso do capital</value>
+  </data>
+  <data name="columnHeaderName.Text" xml:space="preserve">
+    <value>Nome</value>
+  </data>
+  <data name="columnHeaderNbOfInstallments.Text" xml:space="preserve">
+    <value>Número de prestações</value>
+  </data>
+  <data name="columnHeaderOLB.Text" xml:space="preserve">
+    <value>SEP</value>
+  </data>
+  <data name="columnHeaderPercentage.Text" xml:space="preserve">
+    <value>% do capital</value>
+  </data>
+  <data name="columnHeaderPrincipal.Text" xml:space="preserve">
+    <value>Capital</value>
+  </data>
+  <data name="columnHeaderProjectActivity.Text" xml:space="preserve">
+    <value>Actividade</value>
+  </data>
+  <data name="columnHeaderProjectCA.Text" xml:space="preserve">
+    <value>CA</value>
+  </data>
+  <data name="columnHeaderProjectComment.Text" xml:space="preserve">
+    <value>Comentário</value>
+  </data>
+  <data name="columnHeaderProjectJobs1.Text" xml:space="preserve">
+    <value>N° das tarefas 1</value>
+  </data>
+  <data name="columnHeaderProjectJobs2.Text" xml:space="preserve">
+    <value>N° das tarefas 2</value>
+  </data>
+  <data name="columnHeaderprojectPersonalSituation.Text" xml:space="preserve">
+    <value>Situáção pessoal</value>
+  </data>
+  <data name="columnHeaderProjectYear.Text" xml:space="preserve">
+    <value>Ano</value>
+  </data>
+  <data name="columnHeaderStartDate.Text" xml:space="preserve">
+    <value>Data inícial</value>
+  </data>
+  <data name="columnHeaderStatus.Text" xml:space="preserve">
+    <value>Situação</value>
+  </data>
+  <data name="columnHeaderType.Text" xml:space="preserve">
+    <value>Tipo</value>
+  </data>
+  <data name="columnProductType.Text" xml:space="preserve">
+    <value>Tipo</value>
+  </data>
+  <data name="colValue.Text" xml:space="preserve">
+    <value>Quantia</value>
+  </data>
+  <data name="EntryDate.Text" xml:space="preserve">
+    <value>Data de entrada</value>
+  </data>
+  <data name="ExportedDate.Text" xml:space="preserve">
+    <value>Data exportada</value>
+  </data>
+  <data name="gbDepositInterest.Text" xml:space="preserve">
+    <value>Juros</value>
+  </data>
+  <data name="gbInterest.Text" xml:space="preserve">
+    <value>Juros</value>
+  </data>
+  <data name="gBProjectAddress.Text" xml:space="preserve">
+    <value>Endereço</value>
+  </data>
+  <data name="gBProjectFinancialPlan.Text" xml:space="preserve">
+    <value>Plano financeiro</value>
+  </data>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>Poupança compulsória</value>
+  </data>
+  <data name="groupBoxActivatedMsg.Text" xml:space="preserve">
+    <value>Activo?</value>
+  </data>
+  <data name="groupBoxAnticipatedRepaymentPenalties.Text" xml:space="preserve">
+    <value>Comissões sobre pagamentos prematuros</value>
+  </data>
+  <data name="groupBoxEntryFees.Text" xml:space="preserve">
+    <value>Jóias</value>
+  </data>
+  <data name="groupBoxGuarantee.Text" xml:space="preserve">
+    <value>Contrato</value>
+  </data>
+  <data name="groupBoxLoanLateFees.Text" xml:space="preserve">
+    <value>Juros de moura</value>
+  </data>
+  <data name="groupBoxSaving.Text" xml:space="preserve">
+    <value>Administração</value>
+  </data>
+  <data name="groupBoxSavingBalance.Text" xml:space="preserve">
+    <value>Saldo</value>
+  </data>
+  <data name="groupBoxSavingDeposit.Text" xml:space="preserve">
+    <value>Depósito</value>
+  </data>
+  <data name="groupBoxSavingTransfer.Text" xml:space="preserve">
+    <value>Transferencia</value>
+  </data>
+  <data name="groupBoxSavingWithdraw.Text" xml:space="preserve">
+    <value>Levantar</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Oficial da promoção das poupanças</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Min:</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Max:</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>%</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>%</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>Código</value>
+  </data>
+  <data name="labelAuditTrailExchangeRate.Text" xml:space="preserve">
+    <value>Taxa de câmbio:</value>
+  </data>
+  <data name="labelComments.Text" xml:space="preserve">
+    <value>Comentários</value>
+  </data>
+  <data name="labelCreditCommiteeCode.Text" xml:space="preserve">
+    <value>Código</value>
+  </data>
+  <data name="labelCreditCommiteeComment.Text" xml:space="preserve">
+    <value>Comentário:</value>
+  </data>
+  <data name="labelCreditCommiteeDate.Text" xml:space="preserve">
+    <value>Data:</value>
+  </data>
+  <data name="labelDateOffirstInstallment.Text" xml:space="preserve">
+    <value>Dia preferido da primeira prestação:</value>
+  </data>
+  <data name="labelExchangeRate.Text" xml:space="preserve">
+    <value>Taxa de câmbio:</value>
+  </data>
+  <data name="labelFirstProjectName.Text" xml:space="preserve">
+    <value>Objectivo</value>
+  </data>
+  <data name="labelFundingLine.Text" xml:space="preserve">
+    <value>Linha de finanças</value>
+  </data>
+  <data name="labelGuaranteeAmountMinMax.Text" xml:space="preserve">
+    <value>???</value>
+  </data>
+  <data name="labelGuaranteeFeesMinMax.Text" xml:space="preserve">
+    <value>???</value>
+  </data>
+  <data name="labelGuaranteeIsActive.Text" xml:space="preserve">
+    <value>A garantia não esta activa</value>
+  </data>
+  <data name="labelInitialAmount.Text" xml:space="preserve">
+    <value>Quantia inicial</value>
+  </data>
+  <data name="labelInterestRate.Text" xml:space="preserve">
+    <value>Taxa de juros</value>
+  </data>
+  <data name="labelLoanAmount.Text" xml:space="preserve">
+    <value>Quantia:</value>
+  </data>
+  <data name="labelLoanAmountMinMax.Text" xml:space="preserve">
+    <value>???</value>
+  </data>
+  <data name="labelLoanAnticipatedTotalFeesMinMax.Text" xml:space="preserve">
+    <value>???</value>
+  </data>
+  <data name="labelLoanContractCode.Text" xml:space="preserve">
+    <value>Código do contrato:</value>
+  </data>
+  <data name="labelLoanFundingLine.Text" xml:space="preserve">
+    <value>Linha de finanças</value>
+  </data>
+  <data name="labelLoanGracePeriod.Text" xml:space="preserve">
+    <value>Período de carencia:</value>
+  </data>
+  <data name="labelLoanGracePeriodMinMax.Text" xml:space="preserve">
+    <value>???</value>
+  </data>
+  <data name="labelLoanInstallmentType.Text" xml:space="preserve">
+    <value>Tipo de prestação:</value>
+  </data>
+  <data name="labelLoanInterestRate.Text" xml:space="preserve">
+    <value>Taxa de juros por período:</value>
+  </data>
+  <data name="labelLoanLateFeesOnAmount.Text" xml:space="preserve">
+    <value>Quantia total do empréstimo</value>
+  </data>
+  <data name="labelLoanLateFeesOnAmountMinMax.Text" xml:space="preserve">
+    <value>???</value>
+  </data>
+  <data name="labelLoanLateFeesOnOLB.Text" xml:space="preserve">
+    <value>SEP</value>
+  </data>
+  <data name="labelLoanLateFeesOnOLBMinMax.Text" xml:space="preserve">
+    <value>???</value>
+  </data>
+  <data name="labelLoanLateFeesOnOverdueInterest.Text" xml:space="preserve">
+    <value>Juros em atraso</value>
+  </data>
+  <data name="labelLoanLateFeesOnOverdueInterestMinMax.Text" xml:space="preserve">
+    <value>???</value>
+  </data>
+  <data name="labelLoanLateFeesOnOverduePrincipal.Text" xml:space="preserve">
+    <value>Capital em atraso</value>
+  </data>
+  <data name="labelLoanLateFeesOnOverduePrincipalMinMax.Text" xml:space="preserve">
+    <value>???</value>
+  </data>
+  <data name="labelLoanLoanOfficer.Text" xml:space="preserve">
+    <value>Oficial de Crédito:</value>
+  </data>
+  <data name="labelLoanNbOfInstallments.Text" xml:space="preserve">
+    <value>Número de prestações</value>
+  </data>
+  <data name="labelLoanNbOfInstallmentsMinMax.Text" xml:space="preserve">
+    <value>???</value>
+  </data>
+  <data name="labelLoanOfficer.Text" xml:space="preserve">
+    <value>Oficial de Crédito:</value>
+  </data>
+  <data name="labelLoanPurpose.Text" xml:space="preserve">
+    <value>Objectivo do empréstimo:</value>
+  </data>
+  <data name="labelLoansContracts.Text" xml:space="preserve">
+    <value>Empréstimos</value>
+  </data>
+  <data name="labelLoanStartDate.Text" xml:space="preserve">
+    <value>Dia de desembolso:</value>
+  </data>
+  <data name="labelLocAmount.Text" xml:space="preserve">
+    <value>Quantia de LOC</value>
+  </data>
+  <data name="labelLocMax.Text" xml:space="preserve">
+    <value>Max:</value>
+  </data>
+  <data name="labelLocMaxAmount.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="labelLocMin.Text" xml:space="preserve">
+    <value>Min:</value>
+  </data>
+  <data name="labelLocMinAmount.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="labelProjectAbilities.Text" xml:space="preserve">
+    <value>Competencias:</value>
+  </data>
+  <data name="labelProjectCode.Text" xml:space="preserve">
+    <value>Código:</value>
+  </data>
+  <data name="labelProjectConcurrence.Text" xml:space="preserve">
+    <value>Concorencia:</value>
+  </data>
+  <data name="labelProjectDate.Text" xml:space="preserve">
+    <value>Data:</value>
+  </data>
+  <data name="labelProjectExperience.Text" xml:space="preserve">
+    <value>Experiência:</value>
+  </data>
+  <data name="labelProjectMarket.Text" xml:space="preserve">
+    <value>Mercado:</value>
+  </data>
+  <data name="labelProjectName.Text" xml:space="preserve">
+    <value>Nome:</value>
+  </data>
+  <data name="labelProjectPurpose.Text" xml:space="preserve">
+    <value>Tipo:</value>
+  </data>
+  <data name="labelSavingsContracts.Text" xml:space="preserve">
+    <value>Poupança</value>
+  </data>
+  <data name="labelSavingTransferMax.Text" xml:space="preserve">
+    <value>Max:</value>
+  </data>
+  <data name="labelSavingTransferMaxValue.Text" xml:space="preserve">
+    <value>Quantia</value>
+  </data>
+  <data name="labelSavingTransferMin.Text" xml:space="preserve">
+    <value>Min:</value>
+  </data>
+  <data name="labelSavingTransferMinValue.Text" xml:space="preserve">
+    <value>Quantia</value>
+  </data>
+  <data name="labelTitleRepayment.Text" xml:space="preserve">
+    <value>Situação do reembolso</value>
+  </data>
+  <data name="lbAccrualDeposit.Text" xml:space="preserve">
+    <value>Acumulado:</value>
+  </data>
+  <data name="lbAccrualDepositValue.Text" xml:space="preserve">
+    <value>quantia</value>
+  </data>
+  <data name="lbAgioFees.Text" xml:space="preserve">
+    <value>Ágio</value>
+  </data>
+  <data name="lbAgioFeesMinMax.Text" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="lbAPR.Text" xml:space="preserve">
+    <value>PA</value>
+  </data>
+  <data name="lbATR.Text" xml:space="preserve">
+    <value>TA</value>
+  </data>
+  <data name="lbBalanceMax.Text" xml:space="preserve">
+    <value>Máx :</value>
+  </data>
+  <data name="lbBalanceMaxValue.Text" xml:space="preserve">
+    <value>quantia</value>
+  </data>
+  <data name="lbBalanceMin.Text" xml:space="preserve">
+    <value>Min:</value>
+  </data>
+  <data name="lbBalanceMinValue.Text" xml:space="preserve">
+    <value>quantia</value>
+  </data>
+  <data name="lbChequeDepositFees.Text" xml:space="preserve">
+    <value>Comissões  de deposito de cheque</value>
+  </data>
+  <data name="lbCloseFees.Text" xml:space="preserve">
+    <value>Comissões de fecho</value>
+  </data>
+  <data name="lbCloseFeesMinMax.Text" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="lbCompAmountPercentMinMax.Text" xml:space="preserve">
+    <value>???</value>
+  </data>
+  <data name="lbCompulsorySavings.Text" xml:space="preserve">
+    <value>Poupança obrigatória</value>
+  </data>
+  <data name="lbCompulsorySavingsAmount.Text" xml:space="preserve">
+    <value>Quantia</value>
+  </data>
+  <data name="lbDepositFees.Text" xml:space="preserve">
+    <value>Comissões de depósito numerário</value>
+  </data>
+  <data name="lbDepositFeesMinMax.Text" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="lbDepositmax.Text" xml:space="preserve">
+    <value>Máx :</value>
+  </data>
+  <data name="lbDepositMaxValue.Text" xml:space="preserve">
+    <value>quantia</value>
+  </data>
+  <data name="lbDepositMin.Text" xml:space="preserve">
+    <value>Min:</value>
+  </data>
+  <data name="lbDepositMinValue.Text" xml:space="preserve">
+    <value>quantia</value>
+  </data>
+  <data name="lbEntryFees.Text" xml:space="preserve">
+    <value>Jóias</value>
+  </data>
+  <data name="lbInterestAccrual.Text" xml:space="preserve">
+    <value>Acumulado :</value>
+  </data>
+  <data name="lbInterestAccrualValue.Text" xml:space="preserve">
+    <value>Quantia</value>
+  </data>
+  <data name="lbInterestBasedOn.Text" xml:space="preserve">
+    <value>Baseado em :</value>
+  </data>
+  <data name="lbInterestBasedOnValue.Text" xml:space="preserve">
+    <value>quantia</value>
+  </data>
+  <data name="lbInterestPosting.Text" xml:space="preserve">
+    <value>Lançamento</value>
+  </data>
+  <data name="lbInterestPostingValue.Text" xml:space="preserve">
+    <value>quantia</value>
+  </data>
+  <data name="lblAmountToBeGuarantee.Text" xml:space="preserve">
+    <value>Quantia a ser garantido (Empréstimo) :</value>
+  </data>
+  <data name="lblCCStatus.Text" xml:space="preserve">
+    <value>Situação</value>
+  </data>
+  <data name="lblChequeDepositFeesMinMax.Text" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="lblCollaterals.Text" xml:space="preserve">
+    <value>Lista de garantias</value>
+  </data>
+  <data name="lblCreditCurrency.Text" xml:space="preserve">
+    <value>Moeda: ......</value>
+  </data>
+  <data name="lblCreditInsurance.Text" xml:space="preserve">
+    <value>Seguro de crédito:</value>
+  </data>
+  <data name="lblDay.Text" xml:space="preserve">
+    <value>???</value>
+  </data>
+  <data name="lblEarlyPartialRepaimentBase.Text" xml:space="preserve">
+    <value>???</value>
+  </data>
+  <data name="lblEarlyTotalRepaimentBase.Text" xml:space="preserve">
+    <value>???</value>
+  </data>
+  <data name="lblGuaranteeAmount.Text" xml:space="preserve">
+    <value>Quantia da garantia :</value>
+  </data>
+  <data name="lblGuaranteeFees.Text" xml:space="preserve">
+    <value>Comissões:</value>
+  </data>
+  <data name="lblGuaranteeName.Text" xml:space="preserve">
+    <value>Nome do Fiador :</value>
+  </data>
+  <data name="lblGuaranteePercentage.Text" xml:space="preserve">
+    <value>Percentagem garantida :</value>
+  </data>
+  <data name="lblGuarantorsList.Text" xml:space="preserve">
+    <value>Lista de Fiadors</value>
+  </data>
+  <data name="lblIbtFeeMinMax.Text" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="lblInsuranceMax.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblInsuranceMin.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblInterBranchTransfer.Text" xml:space="preserve">
+    <value>Comissões  das transferencias intra-sucursal</value>
+  </data>
+  <data name="lblLimitOfTermDepositPeriod.Text" xml:space="preserve">
+    <value>Limite do período</value>
+  </data>
+  <data name="lblLoanAnticipatedPartialFeesMinMax.Text" xml:space="preserve">
+    <value>???</value>
+  </data>
+  <data name="lblLoanStatus.Text" xml:space="preserve">
+    <value>Situação do reembolso</value>
+  </data>
+  <data name="lblLocCurrencyMax.Text" xml:space="preserve">
+    <value>Moeda</value>
+  </data>
+  <data name="lblLocCurrencyMin.Text" xml:space="preserve">
+    <value>Moeda</value>
+  </data>
+  <data name="lblMinMaxEntryFees.Text" xml:space="preserve">
+    <value>Min:
+Max:
+</value>
+  </data>
+  <data name="lblNumberOfPeriods.Text" xml:space="preserve">
+    <value>Número de períodos</value>
+  </data>
+  <data name="lbLoanInterestRateMinMax.Text" xml:space="preserve">
+    <value>???</value>
+  </data>
+  <data name="lblTermTransferToAccount.Text" xml:space="preserve">
+    <value>Transferência para conta</value>
+  </data>
+  <data name="lbManagementFees.Text" xml:space="preserve">
+    <value>Comissões de administração</value>
+  </data>
+  <data name="lbManagementFeesMinMax.Text" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="lbOverdraftFees.Text" xml:space="preserve">
+    <value>Comissões a descoberta</value>
+  </data>
+  <data name="lbOverdraftFeesMinMax.Text" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="lbPeriodicity.Text" xml:space="preserve">
+    <value>Periodicidade:</value>
+  </data>
+  <data name="lbPeriodicityValue.Text" xml:space="preserve">
+    <value>quantia</value>
+  </data>
+  <data name="lbReopenFees.Text" xml:space="preserve">
+    <value>Comissões de reabertura</value>
+  </data>
+  <data name="lbReopenFeesMinMax.Text" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="lbRollover2.Text" xml:space="preserve">
+    <value>Renovação</value>
+  </data>
+  <data name="lBSavingBalance.Text" xml:space="preserve">
+    <value>Saldo</value>
+  </data>
+  <data name="lbTransferFees.Text" xml:space="preserve">
+    <value>Comissões de tranferencia</value>
+  </data>
+  <data name="lbTransferFeesMinMax.Text" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="lbWithdrawFees.Text" xml:space="preserve">
+    <value>Comissões de levantamento</value>
+  </data>
+  <data name="lbWithdrawMax.Text" xml:space="preserve">
+    <value>Máx :</value>
+  </data>
+  <data name="lbWithdrawMaxValue.Text" xml:space="preserve">
+    <value>quantia</value>
+  </data>
+  <data name="lbWithdrawMin.Text" xml:space="preserve">
+    <value>quantia</value>
+  </data>
+  <data name="lbWithdrawMinValue.Text" xml:space="preserve">
+    <value>quantia</value>
+  </data>
+  <data name="linkCompulsorySavings.Text" xml:space="preserve">
+    <value>Detalhes</value>
+  </data>
+  <data name="lProjectAffiliation.Text" xml:space="preserve">
+    <value>Afiliação:</value>
+  </data>
+  <data name="lProjectCA.Text" xml:space="preserve">
+    <value>Transformação:</value>
+  </data>
+  <data name="lProjectCorporateName.Text" xml:space="preserve">
+    <value>Nome:</value>
+  </data>
+  <data name="lProjectCorporateSIRET.Text" xml:space="preserve">
+    <value>Nº de registro:</value>
+  </data>
+  <data name="lProjectFinancialPlanAmount.Text" xml:space="preserve">
+    <value>Quantia</value>
+  </data>
+  <data name="lProjectFinancialPlanTotalAmount.Text" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="lProjectFinancialPlanType.Text" xml:space="preserve">
+    <value>Tipo</value>
+  </data>
+  <data name="lProjectFiscalStatus.Text" xml:space="preserve">
+    <value>Situação fiscal:</value>
+  </data>
+  <data name="lProjectJuridicStatus.Text" xml:space="preserve">
+    <value>Situação jurídica:</value>
+  </data>
+  <data name="lProjectNbOfNewJobs.Text" xml:space="preserve">
+    <value>N° de novos empregos</value>
+  </data>
+  <data name="menuItemCancelPendingSavingEvent.Text" xml:space="preserve">
+    <value>Cancele movimento pendente</value>
+  </data>
+  <data name="menuItemConfirmPendingSavingEvent.Text" xml:space="preserve">
+    <value>Confirme movimento pendente</value>
+  </data>
+  <data name="olvColumnAmount.Text" xml:space="preserve">
+    <value>Quantia</value>
+  </data>
+  <data name="olvColumnCloseDate.Text" xml:space="preserve">
+    <value>Data de encerramento</value>
+  </data>
+  <data name="olvColumnContractCode.Text" xml:space="preserve">
+    <value>Código</value>
+  </data>
+  <data name="olvColumnCreationDate.Text" xml:space="preserve">
+    <value>Data de criação</value>
+  </data>
+  <data name="olvColumnLACBalance.Text" xml:space="preserve">
+    <value>Saldo</value>
+  </data>
+  <data name="olvColumnLACExportedBalance.Text" xml:space="preserve">
+    <value>Saldo exportado</value>
+  </data>
+  <data name="olvColumnLACLabel.Text" xml:space="preserve">
+    <value>Etiqueta</value>
+  </data>
+  <data name="olvColumnLACNumber.Text" xml:space="preserve">
+    <value>Número</value>
+  </data>
+  <data name="olvColumnLACSabInternalCurrency.Text" xml:space="preserve">
+    <value>Moeda</value>
+  </data>
+  <data name="olvColumnOLB.Text" xml:space="preserve">
+    <value>SEP</value>
+  </data>
+  <data name="olvColumnSACBalance.Text" xml:space="preserve">
+    <value>Saldo</value>
+  </data>
+  <data name="olvColumnSACExportedBalance.Text" xml:space="preserve">
+    <value>Saldo exportado</value>
+  </data>
+  <data name="olvColumnSACLabel.Text" xml:space="preserve">
+    <value>Etiqueta</value>
+  </data>
+  <data name="olvColumnSACNumber.Text" xml:space="preserve">
+    <value>Número</value>
+  </data>
+  <data name="olvColumnStatus.Text" xml:space="preserve">
+    <value>Situação</value>
+  </data>
+  <data name="olvColumnStratDate.Text" xml:space="preserve">
+    <value>Data inicial</value>
+  </data>
+  <data name="richTextBoxStatus.Text" xml:space="preserve">
+    <value>Situação:</value>
+  </data>
+  <data name="savingDepositToolStripMenuItem.Text" xml:space="preserve">
+    <value>Depósito</value>
+  </data>
+  <data name="savingTransferToolStripMenuItem.Text" xml:space="preserve">
+    <value>Transferencia</value>
+  </data>
+  <data name="savingWithdrawToolStripMenuItem.Text" xml:space="preserve">
+    <value>Levantamento</value>
+  </data>
+  <data name="specialOperationToolStripMenuItem.Text" xml:space="preserve">
+    <value>Operação Especial</value>
+  </data>
+  <data name="tabLoanDocuments.Text" xml:space="preserve">
+    <value>Documentos</value>
+  </data>
+  <data name="tabPageAdvancedSettings.Text" xml:space="preserve">
+    <value>Configurações avançadas</value>
+  </data>
+  <data name="tabPageContracts.Text" xml:space="preserve">
+    <value>Contratos</value>
+  </data>
+  <data name="tabPageCorporate.Text" xml:space="preserve">
+    <value>Empresa criada</value>
+  </data>
+  <data name="tabPageCreditCommitee.Text" xml:space="preserve">
+    <value>Comité de crédito</value>
+  </data>
+  <data name="tabPageCreditScoring.Text" xml:space="preserve">
+    <value>A pontuação de crédito</value>
+  </data>
+  <data name="tabPageDetails.Text" xml:space="preserve">
+    <value>Detalhes</value>
+  </data>
+  <data name="tabPageEvents.Text" xml:space="preserve">
+    <value>Movimentos</value>
+  </data>
+  <data name="tabPageFollowUp.Text" xml:space="preserve">
+    <value>Seguimento</value>
+  </data>
+  <data name="tabPageGuaranteeDetails.Text" xml:space="preserve">
+    <value>Garantias</value>
+  </data>
+  <data name="tabPageInstallments.Text" xml:space="preserve">
+    <value>Prestações</value>
+  </data>
+  <data name="tabPageLAC1.Text" xml:space="preserve">
+    <value>Contabilidade</value>
+  </data>
+  <data name="tabPageLoanCustomizableFields.Text" xml:space="preserve">
+    <value>Campos desenhados pelo utilizador</value>
+  </data>
+  <data name="tabPageLoanGuarantees.Text" xml:space="preserve">
+    <value>Fiadors e garantias</value>
+  </data>
+  <data name="tabPageLoanRepayment.Text" xml:space="preserve">
+    <value>Reembolso do empréstimo</value>
+  </data>
+  <data name="tabPageLoans.Text" xml:space="preserve">
+    <value>Empréstimos</value>
+  </data>
+  <data name="tabPageLoansDetails.Text" xml:space="preserve">
+    <value>Detalhes do empréstimo</value>
+  </data>
+  <data name="tabPageProject.Text" xml:space="preserve">
+    <value>Projecto</value>
+  </data>
+  <data name="tabPageProjectAnalyses.Text" xml:space="preserve">
+    <value>Análizes</value>
+  </data>
+  <data name="tabPageProjectLoans.Text" xml:space="preserve">
+    <value>Contratos</value>
+  </data>
+  <data name="tabPageRepayments.Text" xml:space="preserve">
+    <value>Tabela de Reembolsos</value>
+  </data>
+  <data name="tabPageSavingDetails.Text" xml:space="preserve">
+    <value>Detalhes da Poupança</value>
+  </data>
+  <data name="tabPageSavingsAccounting.Text" xml:space="preserve">
+    <value>Contabilidade</value>
+  </data>
+  <data name="tabPageSavingsAmountsAndFees.Text" xml:space="preserve">
+    <value>Comissões e limites</value>
+  </data>
+  <data name="tabPageSavingsCustomizableFields.Text" xml:space="preserve">
+    <value>Campos desenhados pelo utilizador</value>
+  </data>
+  <data name="tabPageSavingsEvents.Text" xml:space="preserve">
+    <value>Movimentos</value>
+  </data>
+  <data name="tabSavingDocuments.Text" xml:space="preserve">
+    <value>Documentos</value>
+  </data>
+  <data name="toolStripMenuItemCancelPending.Text" xml:space="preserve">
+    <value>Cancele prestação pendente</value>
+  </data>
+  <data name="toolStripMenuItemConfirmPending.Text" xml:space="preserve">
+    <value>Confirme prestção pendente</value>
+  </data>
+  <data name="toolStripMenuItemEditComment.Text" xml:space="preserve">
+    <value>Edite comentário</value>
+  </data>
+  <data name="tpTermDeposit.Text" xml:space="preserve">
+    <value>Depósito a prazo</value>
+  </data>
+  <data name="tabPageDetails.ImageKey" xml:space="preserve">
+    <value>client_bouton.ico</value>
+  </data>
+  <data name="tabPageLoanRepayment.ImageKey" xml:space="preserve">
+    <value>repayments.ico</value>
+  </data>
+</root>

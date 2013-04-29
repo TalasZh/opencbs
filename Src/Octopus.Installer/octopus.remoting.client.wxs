@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi" xmlns:netfx="http://schemas.microsoft.com/wix/NetFxExtension">
+  <!--Remember: you need to change ProductVersion and ProductCode-->
+
+  <?define ProductName="OMFS Remoting Client" ?>
+  <?define PreviousVersion="2.8.7" ?>
+  <?define ProductVersion="2.8.8" ?>
+  <?define UpgradeCode="97053E14-742E-44c9-BD83-91F2C796FB1A"?>
+  <?define ProductCode="DB9B0F26-051D-4419-8A5A-A0FFC9C0B26B"?>
+
+  <Product Id="$(var.ProductCode)" Name="OMFS Remoting Client $(var.ProductVersion)" Language="1033"
+           Version="$(var.ProductVersion)" Manufacturer="Octopus MicroFinance" UpgradeCode="$(var.UpgradeCode)">
+
+    <Package Comments="OMFS Remoting Client" Compressed="yes" InstallerVersion="200"
+             Keywords="OMFS Remoting Client" Languages="1033" Manufacturer="Octopus MicroFinance"/>
+
+    <Media Id="1" Cabinet="media1.cab" EmbedCab="yes" CompressionLevel="high"/>
+
+    <PropertyRef Id="NETFRAMEWORK35"/>
+    <Condition Message="This application requires .NET Framework 3.5. Please install the .NET Framework then run this installer again.">
+      <![CDATA[Installed OR NETFRAMEWORK35]]>
+    </Condition>
+
+    <Upgrade Id="$(var.UpgradeCode)">
+      <UpgradeVersion Minimum="$(var.ProductVersion)" IncludeMinimum="no" OnlyDetect="yes" Language="1033" Property="NEWERPRODUCTFOUND" />
+      <UpgradeVersion Minimum="$(var.PreviousVersion)" IncludeMinimum="yes" Maximum="$(var.ProductVersion)" IncludeMaximum="no"
+                      Language="1033" Property="UPGRADEFOUND" />
+    </Upgrade>
+
+    <Directory Id="TARGETDIR" Name="SourceDir">
+      <Directory Id="DesktopFolder" SourceName="User's Desktop">
+        <Component Id="dir_desktop" Guid="50A50703-8A75-4604-9961-E8CEFF9BC13C">
+          <CreateFolder Directory="DesktopFolder" />
+          <RegistryValue Id="dir_desktop" Root="HKCU" Key="Software\[Manufacturer]\[ProductName]\[Version]\{50A50703-8A75-4604-9961-E8CEFF9BC13C}" Name="DesktopFolder" Value="[DesktopFolder]" Type="string" KeyPath="yes" />
+          <RemoveFolder Id="dir_desktop" Directory="DesktopFolder" On="uninstall" />
+        </Component>
+      </Directory>
+
+      <Directory Id="StartMenuFolder">
+        <Directory Id="StartMenuOMFS" Name="Octopus Microfinace Suite">
+          <Component Id="StartMenuFolder" Guid="3319810F-A45E-4306-B4C2-48FFA625C069">
+            <CreateFolder Directory="StartMenuOMFS" />
+            <RegistryValue Id="StartMenuFolder" Root="HKCU" Key="Software\[Manufacturer]\[ProductName]\{50A50703-8A75-4604-9961-E8CEFF9BC13C}" Name="StartMenuFolder" Value="[StartMenuFolder]" Type="string" KeyPath="yes" />
+            <RemoveFolder Id="StartMenuFolder" Directory="StartMenuOMFS" On="uninstall" />
+          </Component>
+        </Directory>
+      </Directory>
+
+      <Component Id="RegistryConfig" Guid="FB3B13CF-E9C3-4e6a-8946-6E143CC5DB2B">
+        <RegistryKey Id="RemotingClient" Root="HKLM" Key="Software\[Manufacturer]\$(var.ProductName)\$(var.ProductVersion)" Action="createAndRemoveOnUninstall">
+          <RegistryValue Id="Server" Name="REMOTING_SERVER" Type="string" Value="server_name" Action="write" />
+          <RegistryValue Id="ServerPort" Name="REMOTING_SERVER_PORT" Type="string" Value="1069" Action="write" />
+          <Permission GenericWrite="yes" User="Everyone" />
+        </RegistryKey> 
+      </Component>
+
+      <Directory Id="ProgramFilesFolder" SourceName="User's Programs Menu">
+        <Directory Id="DIR_ROOT" Name="OctopusMicroFinanceSuite">
+          <Directory Id="DIR_ROOT_REMOTING_CLIENT" Name="OMFS Remoting Client">
+
+            <!--<Component Id="CrystalReports.Lib" Guid="FF537F9B-9F48-4eec-ABCC-9D8A45B5DE89">
+              <File Id="CrystalDecisions.CrystalReports.Engine.dll" Source="SourceDir\CrystalDecisions.CrystalReports.Engine.dll" />
+              <File Id="CrystalDecisions.Shared.dll" Source="SourceDir\CrystalDecisions.Shared.dll" />
+              <File Id="CrystalDecisions.Windows.Forms.dll" Source="SourceDir\CrystalDecisions.Windows.Forms.dll" />
+            </Component>-->
+
+            <!--<Component Id="DateDescription.Lib" Guid="42623CFA-B060-4baa-9CD8-6B815601A643">
+              <File Id="DateDescriptionLib.dll" Source="SourceDir\DateDescriptionLib.dll" />
+            </Component>-->
+
+            <Component Id ="ZedGraph.Lib" Guid="658DB641-6919-4f69-9E21-C7322448E77C">
+              <File Id="ZedGraph.dll" Source="SourceDir\ZedGraph.dll" />
+            </Component>
+
+            <Component Id="SharpZip.Lib" Guid="C592E1DE-B21E-4795-BC04-7ABE1DCB6328">
+              <File Id="ICSharpCode.SharpZipLib.dll" Source="SourceDir\ICSharpCode.SharpZipLib.dll" />
+            </Component>
+
+            <Component Id="ObjectListView.Lib" Guid="75AD7231-A7C1-496e-8F61-B8161A71E7ED">
+              <File Id="ObjectListView.dll" Source="SourceDir\ObjectListView.dll" />
+            </Component>
+
+            <Component Id="Octopus.Lib" Guid="5725BD03-544E-4de9-BA1A-82DD3DEF6E22">
+              <File Id="Octopus.CoreDomain.dll" Source="SourceDir\Octopus.CoreDomain.dll" />
+              <File Id="Octopus.Shared.dll" Source="SourceDir\Octopus.Shared.dll" />
+              <File Id="Octopus.Manager.dll" Source="SourceDir\Octopus.Manager.dll" />
+              <File Id="Octopus.Services.dll" Source="SourceDir\Octopus.Services.dll" />
+              <File Id="Octopus.DatabaseConnection.dll" Source="SourceDir\Octopus.DatabaseConnection.dll" />
+              <File Id="Octopus.Enums.dll" Source="SourceDir\Octopus.Enums.dll" />
+              <File Id="Octopus.MultiLanguageRessources.dll" Source="SourceDir\Octopus.MultiLanguageRessources.dll" />
+              <File Id="Octopus.ExceptionsHandler.dll" Source="SourceDir\Octopus.ExceptionsHandler.dll" />
+              <File Id="Octopus.MFISynchronize.dll" Source="SourceDir\Octopus.MFISynchronize.dll" />
+            </Component>
+
+            <Component Id="Octopus.GUI.Restarter" Guid="F2D2C214-2225-4fb8-85B4-E2A373EFAFBA">
+              <File Id="Octopus.GUI.Restarter.exe" Source="SourceDir\Octopus.GUI.Restarter.exe" />
+            </Component>
+
+            <Component Id="Octopus.GUI" Guid="CB26138B-9031-2360-D666-DD5F20038ED8">
+              <File Id="Octopus.GUI.exe" Source="SourceDir\Octopus.GUI.exe" />
+              <Shortcut Id="DesktopShortcut" Directory="DesktopFolder" Name="OMFS Remoting Client" Icon="App.ico" WorkingDirectory="DIR_ROOT" Advertise="yes" Arguments="-online"/>
+              <Shortcut Id="StartMenuShortcut" Directory="StartMenuOMFS" Name="OMFS Remoting Client" Icon="App.ico" WorkingDirectory="DIR_ROOT" Advertise="yes" Arguments="-online"/>
+            </Component>
+
+            <Component Id="ConfigFiles" Guid="74DC66EE-843B-4d81-B568-F765EE37AA20">
+              <File Id="Octopus.GUI.exe.config" Source="SourceDir\Octopus.GUI.exe.config" />
+            </Component>
+
+            <Directory Id="DIR_TEMPLATE" Name="Template">
+              <Directory Id="TemplateReport" Name="Reports">
+                <Component Id="TemplateReport" Guid="A983FDBB-6C60-5B96-3436-A85638338092">
+                  <File Id="page.tpl.html" Source="SourceDir\Template\Reports\page.tpl.html" />
+                  <File Id="pageForDownload.tpl.html" Source="SourceDir\Template\Reports\pageForDownload.tpl.html" />
+                  <File Id="report.tpl.html" Source="SourceDir\Template\Reports\report.tpl.html" />
+                  <File Id="style.css" Source="SourceDir\Template\Reports\style.css" />
+                  <File Id="loading.gif" Source="SourceDir\Template\Reports\loading.gif" />
+                </Component>
+              </Directory>
+
+              <Component Id="template" Guid="A983FDBB-6C60-5B96-3436-A85638338091">
+                <File Id="package_delete.png" Source="SourceDir\Template\package_delete.png" />
+                <File Id="cover.js" Source="SourceDir\Template\cover.js" />
+                <File Id="package.png" Source="SourceDir\Template\package.png" />
+                <File Id="cover.css" Source="SourceDir\Template\cover.css" />
+              </Component>
+            </Directory>
+
+            <Directory Id="DIR_RESSOURCES_FR" Name="fr">
+              <Component Id="fr" Guid="F0AA0279-AA60-E9A6-F4D2-F52EC785FB19">
+                <File Id="Octopus.GUI.resources.dll" Source="SourceDir\fr\Octopus.GUI.resources.dll" />
+                <File Id="Octopus.MultiLanguageRessources.resources.dll" Source="SourceDir\fr\Octopus.MultiLanguageRessources.resources.dll" />
+              </Component>
+            </Directory>
+
+            <Directory Id="DIR_RESSOURCES_RU" Name="ru-RU">
+              <Component Id="ru" Guid="E8B3DF4C-BA07-CBDB-78FA-953EB05C7993">
+                <File Id="Octopus.GUI.resources_1" Name="Octopus.GUI.resources.dll" Source="SourceDir\ru-RU\Octopus.GUI.resources.dll" />
+                <File Id="Octopus.MultiLanguageRessources.resources_1" Name="Octopus.MultiLanguageRessources.resources.dll" Source="SourceDir\ru-RU\Octopus.MultiLanguageRessources.resources.dll" />
+              </Component>
+            </Directory>
+
+            <Directory Id="DIR_RESSOURCES_KG" Name="ky-KG">
+              <Component Id="kg" Guid="F822CC12-2754-33BE-7611-0D3A29AAA978">
+                <File Id="Octopus.GUI.resources_2" Name="Octopus.GUI.resources.dll" Source="SourceDir\ky-KG\Octopus.GUI.resources.dll" />
+                <File Id="Octopus.MultiLanguageRessources.resources_2" Name="Octopus.MultiLanguageRessources.resources.dll" Source="SourceDir\ky-KG\Octopus.MultiLanguageRessources.resources.dll" />
+              </Component>
+            </Directory>
+
+            <Directory Id="DIR_RESSOURCES_ES" Name="es-ES">
+              <Component Id="es" Guid="F0AA0279-AA60-E9A6-F4D2-F52EC785F220">
+                <File Id="Octopus.GUI.resources.dll_3" Source="SourceDir\es-ES\Octopus.GUI.resources.dll" />
+                <File Id="Octopus.MultiLanguageRessources.resources.dll_3" Source="SourceDir\es-ES\Octopus.MultiLanguageRessources.resources.dll" />
+              </Component>
+            </Directory>
+          </Directory>
+        </Directory>
+      </Directory>
+    </Directory>
+
+    <Feature Id="ProductFeature" Title="Octopus" Level="1">
+      <!--<ComponentRef Id="CrystalReports.Lib" />-->
+      <!--<ComponentRef Id="DateDescription.Lib" />-->
+      <ComponentRef Id="ZedGraph.Lib" />
+      <ComponentRef Id="RegistryConfig" />
+      <ComponentRef Id="SharpZip.Lib" />
+      <ComponentRef Id="ObjectListView.Lib" />
+      <ComponentRef Id="Octopus.Lib" />
+      <ComponentRef Id="Octopus.GUI.Restarter" />
+      <ComponentRef Id="Octopus.GUI" />
+      <ComponentRef Id="ConfigFiles" />
+      <ComponentRef Id="kg" />
+      <ComponentRef Id="ru" />
+      <ComponentRef Id="fr" />
+      <ComponentRef Id="es" />
+      <ComponentRef Id="template" />
+      <ComponentRef Id="TemplateReport" />
+      <ComponentRef Id="dir_desktop" />
+      <ComponentRef Id="StartMenuFolder" />
+    </Feature>
+
+    <CustomAction Id="PreventDowngrading" Error="Newer version already installed." />
+
+    <Icon Id="App.ico" SourceFile="C:\dev_factory\Src\Octopus.Installer\Bitmaps\App_Remoting.ico"/>
+
+    <InstallExecuteSequence>
+      <Custom Action="PreventDowngrading" After="FindRelatedProducts">NEWERPRODUCTFOUND</Custom>
+      <RemoveExistingProducts Before="InstallInitialize" />
+    </InstallExecuteSequence>
+
+    <InstallUISequence>
+      <Custom Action="PreventDowngrading" After="FindRelatedProducts">NEWERPRODUCTFOUND</Custom>
+    </InstallUISequence>
+ 
+    
+    <WixVariable Id="Wix" Value="C:\dev_factory\Src\Octopus.Installer\License\LGPL3.rtf"/>
+    <WixVariable Id="WixUILicenseRtf" Value="C:\dev_factory\Src\Octopus.Installer\License\LGPL3.rtf"/>
+    <WixVariable Id="WixUIDialogBmp" Value="C:\dev_factory\Src\Octopus.Installer\Bitmaps\background.bmp"/>
+    <WixVariable Id="WixUIBannerBmp" Value="C:\dev_factory\Src\Octopus.Installer\Bitmaps\banner.bmp"/>
+    <Property Id="WIXUI_INSTALLDIR" Value="DIR_ROOT" ></Property>
+    <UIRef Id="WixUI_InstallDir"/>
+  </Product>
+</Wix>

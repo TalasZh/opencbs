@@ -1,0 +1,50 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>3.0</ProductVersion>
+    <ProjectGuid>d04f4864-edc7-43a0-9b2f-9daaedcb24e1</ProjectGuid>
+    <SchemaVersion>2.0</SchemaVersion>
+    <OutputName>Octopus.Installer</OutputName>
+    <OutputType>Package</OutputType>
+    <WixTargetsPath Condition=" '$(WixTargetsPath)' == '' ">$(MSBuildExtensionsPath)\Microsoft\WiX\v3.x\Wix.targets</WixTargetsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <OutputPath>bin\$(Configuration)\</OutputPath>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+    <DefineConstants>Debug</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\$(Configuration)\</OutputPath>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+  </PropertyGroup>
+  <Import Project="$(WixTargetsPath)" />
+  <!--
+	To modify your build process, add your task inside one of the targets below and uncomment it.
+	Other similar extension points exist, see Wix.targets.
+	<Target Name="BeforeBuild">
+	</Target>
+	<Target Name="AfterBuild">
+	</Target>
+	-->
+  <ItemGroup>
+    <Compile Include="octopus.remoting.client.wxs" />
+    <Compile Include="octopus.remoting.server.wxs" />
+    <Compile Include="octopus.wxs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Bitmaps\" />
+    <Folder Include="License\" />
+    <Folder Include="Shortcuts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Bitmaps\App_Remoting.ico" />
+    <Content Include="Bitmaps\App.ico" />
+    <Content Include="Bitmaps\background.bmp" />
+    <Content Include="Bitmaps\banner.bmp" />
+    <Content Include="License\LGPL3.rtf" />
+    <Content Include="Shortcuts\Available downloads.url" />
+    <Content Include="Shortcuts\Installation Guide.url" />
+    <Content Include="Shortcuts\OCTOPUS Microfinance Suite Web Site.url" />
+  </ItemGroup>
+</Project>

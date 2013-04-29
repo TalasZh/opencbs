@@ -1,0 +1,1 @@
+Octopus.GUI.exe -setup

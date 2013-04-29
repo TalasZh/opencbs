@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi" xmlns:netfx="http://schemas.microsoft.com/wix/NetFxExtension">
+  <!--Remember: you need to change ProductVersion and ProductCode-->
+
+  <?define PreviousVersion="4.6.0" ?>
+  <?define ProductVersion="4.7.0" ?>
+  <?define UpgradeCode="efd6c441-40ae-43b6-b789-3f4b6d2e7989"?>
+  <?define ProductCode="057C7F84-0D7D-416a-955F-A82F8157A378"?>
+
+  <Product Id="$(var.ProductCode)" Name="Octopus MicroFinance Suite $(var.ProductVersion)" Language="1033"
+           Version="$(var.ProductVersion)" Manufacturer="Octopus MicroFinance" UpgradeCode="$(var.UpgradeCode)">
+    <Package Comments="Octopus Micro Finance Suite" Compressed="yes" InstallerVersion="200"
+             Keywords="Octopus Micro Finance Suite" Languages="1033" Manufacturer="Octopus MicroFinance"/>
+
+    <Media Id="1" Cabinet="media1.cab" EmbedCab="yes" CompressionLevel="high"/>
+
+    <PropertyRef Id="NETFRAMEWORK35"/>
+    <Condition Message="This application requires .NET Framework 3.5. Please install the .NET Framework then run this installer again.">
+      <![CDATA[Installed OR NETFRAMEWORK35]]>
+    </Condition>
+
+    <Upgrade Id="$(var.UpgradeCode)">
+      <UpgradeVersion Minimum="$(var.ProductVersion)" IncludeMinimum="no" OnlyDetect="yes" Language="1033" Property="NEWERPRODUCTFOUND" />
+      <UpgradeVersion Minimum="$(var.PreviousVersion)" IncludeMinimum="yes" Maximum="$(var.ProductVersion)" IncludeMaximum="no"
+                      Language="1033" Property="UPGRADEFOUND" />
+    </Upgrade>
+
+    <Directory Id="TARGETDIR" Name="SourceDir">
+
+      <Directory Id="ProgramMenuFolder">
+        <Directory Id="ApplicationProgramsFolder" Name="Octopus Micro Finance Suite"/>
+      </Directory>
+
+      <Directory Id="DesktopFolder" SourceName="User's Desktop">
+        <Component Id="dir_desktop" Guid="6A36DFA4-83F5-FC67-DDB2-0AD22AB03E71">
+          <CreateFolder Directory="DesktopFolder" />
+          <RegistryValue Id="dir_desktop" Root="HKCU" Key="Software\[Manufacturer]\[ProductName]\{6A36DFA4-83F5-FC67-DDB2-0AD22AB03E71}" Name="DesktopFolder" Value="[DesktopFolder]" Type="string" KeyPath="yes" />
+          <RemoveFolder Id="dir_desktop" Directory="DesktopFolder" On="uninstall" />
+        </Component>
+      </Directory>
+
+      <Directory Id="ProgramFilesFolder" SourceName="User's Programs Menu">
+        <Directory Id="DIR_ROOT" Name="OctopusMicroFinanceSuite" >
+          <Directory Id="DIR_ROOT_VERSION" Name="$(var.ProductVersion)">
+            <Component Id="ProductComponent" Guid="81c7391d-3b04-48ee-8602-445292fa5756">
+              <File Id="ZedGraph.dll" Source="SourceDir\ZedGraph.dll" />
+              <File Id="ObjectListView.dll" Source="SourceDir\ObjectListView.dll" />
+              <File Id="CrystalDecisions.CrystalReports.Engine.dll" Source="SourceDir\CrystalDecisions.CrystalReports.Engine.dll" />
+              <File Id="CrystalDecisions.Shared.dll" Source="SourceDir\CrystalDecisions.Shared.dll" />
+              <File Id="CrystalDecisions.Windows.Forms.dll" Source="SourceDir\CrystalDecisions.Windows.Forms.dll" />
+              <File Id="Octopus.CoreDomain.dll" Source="SourceDir\Octopus.CoreDomain.dll" />
+              <File Id="Octopus.Extensions.dll" Source="SourceDir\Octopus.Extensions.dll" />
+              <File Id="Octopus.Shared.dll" Source="SourceDir\Octopus.Shared.dll" />
+              <File Id="Octopus.Manager.dll" Source="SourceDir\Octopus.Manager.dll" />
+              <File Id="ICSharpCode.SharpZipLib.dll" Source="SourceDir\ICSharpCode.SharpZipLib.dll" />
+              <File Id="Ionic.Zip.dll" Source="SourceDir\Ionic.Zip.dll" />
+              <File Id="System.ComponentModel.Composition.dll" Source="SourceDir\System.ComponentModel.Composition.dll" />
+              <File Id="Octopus.Services.dll" Source="SourceDir\Octopus.Services.dll" />
+              <File Id="Octopus.DatabaseConnection.dll" Source="SourceDir\Octopus.DatabaseConnection.dll" />
+              <File Id="Octopus.Enums.dll" Source="SourceDir\Octopus.Enums.dll" />
+              <File Id="Octopus.Remoting.Server.dll" Source="SourceDir\Octopus.Remoting.Server.dll" />
+              <File Id="DateDescriptionLib.dll" Source="SourceDir\DateDescriptionLib.dll" />
+              <File Id="Octopus.Stringifier.dll" Source="SourceDir\Octopus.Stringifier.dll" />
+              <File Id="Octopus.MultiLanguageRessources.dll" Source="SourceDir\Octopus.MultiLanguageRessources.dll" />
+              <File Id="Octopus.ExceptionsHandler.dll" Source="SourceDir\Octopus.ExceptionsHandler.dll" />
+              <File Id="Octopus.GUI.Restarter.exe" Source="SourceDir\Octopus.GUI.Restarter.exe" />
+              <File Id="Octopus.GUI.exe.config" Source="SourceDir\Octopus.GUI.exe.config" />
+              <File Id="Octopus.MFISynchronize.dll" Source="SourceDir\Octopus.MFISynchronize.dll" />
+              <File Id="Octopus.Reports.dll" Source="SourceDir\Octopus.Reports.dll" />
+              <File Id="setup.bat" Source="SourceDir\setup.bat" />
+              <File Id="dump.bat" Source="SourceDir\dump.bat" />
+			  <File Id="dumpObjects.bat" Source="SourceDir\dumpObjects.bat" />
+            </Component>
+            <Component Id="BuildLabel.txt" Guid="67E3FC7F-3C61-42db-B7EC-B14FDF99E328">
+              <File Id="BuildLabel.txt" Source="SourceDir\BuildLabel.txt" />
+            </Component>
+            <Component Id="Octopus.GUI" Guid="CB26138B-9031-2360-D666-DD5F20038ED8">
+              <File Id="Octopus.GUI.exe" Source="SourceDir\Octopus.GUI.exe" />
+              <Shortcut Id="DesktopShortcut" Directory="DesktopFolder" Name="Octopus Micro Finance Suite" Icon="App.ico" WorkingDirectory="DIR_ROOT_VERSION" Advertise="yes"/>
+            </Component>
+			<Component Id="Registry" Guid="674968e0-7c4a-4164-aaec-5ddf6922a2dc" Permanent="yes">
+			  <RegistryKey Id="OctopusKey" Root="HKCU" Key="SOFTWARE\OctopusMicroFinanceSuite\Octopus $(var.ProductVersion)" Action="create">
+                <RegistryValue Id="DATABASE_LOGIN_NAME" Type="string" Name="DATABASE_LOGIN_NAME" Value="sa"/>
+                <RegistryValue Id="DATABASE_NAME" Type="string" Name="DATABASE_NAME" Value="octopus"/>
+                <RegistryValue Id="DATABASE_SERVER_NAME" Type="string" Name="DATABASE_SERVER_NAME" Value="(local)"/>
+                <RegistryValue Id="DATABASE_PASSWORD" Type="string" Name="DATABASE_PASSWORD" Value="octopus"/>
+                <RegistryValue Id="DATABASE_TIMEOUT" Type="string" Name="DATABASE_TIMEOUT" Value="10"/>
+              </RegistryKey>
+			</Component>
+            <Directory Id="DIR_TEMPLATE" Name="Template">
+              <Directory Id="TemplateReport" Name="Reports">
+                <Component Id="TemplateReport" Guid="A983FDBB-6C60-5B96-3436-A85638338092">
+                  <File Id="page.tpl.html" Source="SourceDir\Template\Reports\page.tpl.html" />
+                  <File Id="page.ru.tpl.html" Source="SourceDir\Template\Reports\page.ru.tpl.html" />
+                  <File Id="page.fr.tpl.html" Source="SourceDir\Template\Reports\page.fr.tpl.html" />
+                  <File Id="pageForDownload.tpl.html" Source="SourceDir\Template\Reports\pageForDownload.tpl.html" />
+                  <File Id="report.tpl.html" Source="SourceDir\Template\Reports\report.tpl.html" />
+				  <File Id="tag.tpl.html" Source="SourceDir\Template\Reports\tag.tpl.html" />
+                  <File Id="style.css" Source="SourceDir\Template\Reports\style.css" />
+                  <File Id="loading.gif" Source="SourceDir\Template\Reports\loading.gif" />
+                  <File Id="star_on.png" Source="SourceDir\Template\Reports\star_on.png" />
+                  <File Id="star_off.png" Source="SourceDir\Template\Reports\star_off.png" />
+                </Component>
+              </Directory>
+              <Component Id="template" Guid="A983FDBB-6C60-5B96-3436-A85638338091">
+                <File Id="package_delete.png" Source="SourceDir\Template\package_delete.png" />
+                <File Id="cover.js" Source="SourceDir\Template\cover.js" />
+                <File Id="package.png" Source="SourceDir\Template\package.png" />
+                <File Id="cover.css" Source="SourceDir\Template\cover.css" />
+              </Component>
+            </Directory>
+            <Directory Id="DIR_BACKUP" Name="Backup">
+              <Component Id="backup" Guid="F0AA0279-AA60-E9A6-F4D2-F52EC785FB20">
+                <CreateFolder/>
+              </Component>
+            </Directory>
+            <Directory Id="DIR_TEMPOR" Name="Temp">
+              <Component Id="temp" Guid="502D913E-4F68-4e2e-9D39-7AC8506A319E">
+                <CreateFolder Directory="DIR_TEMPOR">
+                  <Permission User="Everyone" GenericAll="yes" />
+                </CreateFolder>
+              </Component>
+            </Directory>
+
+            <Directory Id="DIR_EXTENSION" Name="Extensions">
+              <Component Id="extensions" Guid="c62c9922-3e1c-4ae6-b56e-5fbb5a51f722">
+                <CreateFolder Directory="DIR_EXTENSION">
+                  <Permission User="Everyone" GenericAll="yes" />
+                </CreateFolder>
+              </Component>              
+            </Directory>
+            
+            <Directory Id="DIR_EXPORT" Name="Export">
+              <Component Id="export" Guid="F0AA0279-AA60-E9A6-F4D2-F52EC785FB43">
+                <CreateFolder/>
+              </Component>
+            </Directory>
+            <Directory Id="DIR_RESSOURCES_FR" Name="fr">
+              <Component Id="fr" Guid="a75ee299-2357-45fa-bef2-7ad60a136661">
+                <File Id="Octopus.GUI.resources.dll" Source="SourceDir\fr\Octopus.GUI.resources.dll" />
+                <File Id="Octopus.MultiLanguageRessources.resources.dll" Source="SourceDir\fr\Octopus.MultiLanguageRessources.resources.dll" />
+				<File Id="Octopus.Reports.resources.dll" Source="SourceDir\fr\Octopus.Reports.resources.dll" />
+              </Component>
+            </Directory>
+            <Directory Id="DIR_RESSOURCES_EN" Name="en">
+              <Component Id="en" Guid="F0AA0279-AA60-E9A6-F4D2-F52EC785FB19">
+                <File Id="Octopus.GUI.resources.dll_0" Source="SourceDir\en\Octopus.GUI.resources.dll" />
+              </Component>
+            </Directory>
+            <Directory Id="DIR_RESSOURCES_RU" Name="ru-RU">
+              <Component Id="ru" Guid="E8B3DF4C-BA07-CBDB-78FA-953EB05C7993">
+                <File Id="Octopus.GUI.resources_1" Name="Octopus.GUI.resources.dll" Source="SourceDir\ru-RU\Octopus.GUI.resources.dll" />
+                <File Id="Octopus.MultiLanguageRessources.resources_1" Name="Octopus.MultiLanguageRessources.resources.dll" Source="SourceDir\ru-RU\Octopus.MultiLanguageRessources.resources.dll" />
+				<File Id="Octopus.Reports.resources_1" Name="Octopus.Reports.resources.dll" Source="SourceDir\ru-RU\Octopus.Reports.resources.dll" />
+              </Component>
+            </Directory>
+            <Directory Id="DIR_RESSOURCES_KG" Name="ky-KG">
+              <Component Id="kg" Guid="F822CC12-2754-33BE-7611-0D3A29AAA978">
+                <File Id="Octopus.GUI.resources_2" Name="Octopus.GUI.resources.dll" Source="SourceDir\ky-KG\Octopus.GUI.resources.dll" />
+                <File Id="Octopus.MultiLanguageRessources.resources_2" Name="Octopus.MultiLanguageRessources.resources.dll" Source="SourceDir\ky-KG\Octopus.MultiLanguageRessources.resources.dll" />
+              </Component>
+            </Directory>
+            <Directory Id="DIR_RESSOURCES_ES" Name="es-ES">
+              <Component Id="es" Guid="F0AA0279-AA60-E9A6-F4D2-F52EC785F220">
+                <File Id="Octopus.GUI.resources.dll_3" Source="SourceDir\es-ES\Octopus.GUI.resources.dll" />
+                <File Id="Octopus.MultiLanguageRessources.resources.dll_3" Source="SourceDir\es-ES\Octopus.MultiLanguageRessources.resources.dll" />
+              </Component>
+            </Directory>
+            <Directory Id="DIR_RESSOURCES_PT" Name="pt">
+              <Component Id="pt" Guid="a0740dd0-6697-11e0-ae3e-0800200c9a66">
+                <File Id="Octopus.GUI.resources.dll_4" Source="SourceDir\pt\Octopus.GUI.resources.dll" />
+                <File Id="Octopus.MultiLanguageRessources.resources.dll_4" Source="SourceDir\pt\Octopus.MultiLanguageRessources.resources.dll" />
+              </Component>
+            </Directory>
+            <Directory Id="DIR_UPDATE" Name="Update">
+              <Component Id="sql_divers" Guid="B4B47D80-2F95-431D-AFA3-8CA334CB5999">
+                <File Id="Add_all_missing_Events.sql" Source="SourceDir\Update\Add_all_missing_Events.sql" />
+                <File Id="InitialData.sql" Source="SourceDir\Update\InitialData.sql" />
+                <File Id="AccountingRules.sql" Source="SourceDir\Update\AccountingRules.sql" />
+                <File Id="DropAndCreateUDF.sql" Source="SourceDir\Update\DropAndCreateUDF.sql" />
+              </Component>
+              <Component Id="sql_create_database" Guid="6A36DFA4-83F5-FC67-DDB2-0AD22AB03E72">
+                <File Id="CreateDatabase_v1.1.0.sql" Source="SourceDir\Update\CreateDatabase_v1.1.0.sql" />
+                <File Id="CreateDatabase_v1.1.1.sql" Source="SourceDir\Update\CreateDatabase_v1.1.1.sql" />
+                <File Id="CreateDatabase_v1.1.2.sql" Source="SourceDir\Update\CreateDatabase_v1.1.2.sql" />
+                <File Id="CreateDatabase_v1.1.3.sql" Source="SourceDir\Update\CreateDatabase_v1.1.3.sql" />
+                <File Id="CreateDatabase_v1.1.4.sql" Source="SourceDir\Update\CreateDatabase_v1.1.4.sql" />
+                <File Id="CreateDatabase_v1.1.5.sql" Source="SourceDir\Update\CreateDatabase_v1.1.5.sql" />
+                <File Id="CreateDatabase_v1.1.6.sql" Source="SourceDir\Update\CreateDatabase_v1.1.6.sql" />
+                <File Id="CreateDatabase_v1.1.7.sql" Source="SourceDir\Update\CreateDatabase_v1.1.7.sql" />
+                <File Id="CreateDatabase_v1.1.8.sql" Source="SourceDir\Update\CreateDatabase_v1.1.8.sql" />
+                <File Id="CreateDatabase_v1.1.9.sql" Source="SourceDir\Update\CreateDatabase_v1.1.9.sql" />
+                <File Id="CreateDatabase_v1.1.10.sql" Source="SourceDir\Update\CreateDatabase_v1.1.10.sql" />
+                <File Id="CreateDatabase_v1.2.0.sql" Source="SourceDir\Update\CreateDatabase_v1.2.0.sql" />
+                <File Id="CreateDatabase_v1.2.1.sql" Source="SourceDir\Update\CreateDatabase_v1.2.1.sql" />
+                <File Id="CreateDatabase_v1.2.2.sql" Source="SourceDir\Update\CreateDatabase_v1.2.2.sql" />
+                <File Id="CreateDatabase_v2.0.0.sql" Source="SourceDir\Update\CreateDatabase_v2.0.0.sql" />
+                <File Id="CreateDatabase_v2.0.1.sql" Source="SourceDir\Update\CreateDatabase_v2.0.1.sql" />
+                <File Id="CreateDatabase_v2.1.0.sql" Source="SourceDir\Update\CreateDatabase_v2.1.0.sql" />
+                <File Id="CreateDatabase_v2.5.0.sql" Source="SourceDir\Update\CreateDatabase_v2.5.0.sql" />
+                <File Id="CreateDatabase_v2.5.1.sql" Source="SourceDir\Update\CreateDatabase_v2.5.1.sql" />
+                <File Id="CreateDatabase_v2.5.2.sql" Source="SourceDir\Update\CreateDatabase_v2.5.2.sql" />
+                <File Id="CreateDatabase_v2.5.3.sql" Source="SourceDir\Update\CreateDatabase_v2.5.3.sql" />
+                <File Id="CreateDatabase_v2.5.4.sql" Source="SourceDir\Update\CreateDatabase_v2.5.4.sql" />
+                <File Id="CreateDatabase_v2.5.5.sql" Source="SourceDir\Update\CreateDatabase_v2.5.5.sql" />
+                <File Id="CreateDatabase_v2.5.6.sql" Source="SourceDir\Update\CreateDatabase_v2.5.6.sql" />
+                <File Id="CreateDatabase_v2.5.7.sql" Source="SourceDir\Update\CreateDatabase_v2.5.7.sql" />
+                <File Id="CreateDatabase_v2.5.8.sql" Source="SourceDir\Update\CreateDatabase_v2.5.8.sql" />
+                <File Id="CreateDatabase_v2.5.9.sql" Source="SourceDir\Update\CreateDatabase_v2.5.9.sql" />
+                <File Id="CreateDatabase_v2.6.0.sql" Source="SourceDir\Update\CreateDatabase_v2.6.0.sql" />
+                <File Id="CreateDatabase_v2.7.0.sql" Source="SourceDir\Update\CreateDatabase_v2.7.0.sql" />
+                <File Id="CreateDatabase_v2.8.0.sql" Source="SourceDir\Update\CreateDatabase_v2.8.0.sql" />
+                <File Id="CreateDatabase_v2.8.1.sql" Source="SourceDir\Update\CreateDatabase_v2.8.1.sql" />
+                <File Id="CreateDatabase_v2.8.2.sql" Source="SourceDir\Update\CreateDatabase_v2.8.2.sql" />
+                <File Id="CreateDatabase_v2.8.3.sql" Source="SourceDir\Update\CreateDatabase_v2.8.3.sql" />
+                <File Id="CreateDatabase_v2.8.4.sql" Source="SourceDir\Update\CreateDatabase_v2.8.4.sql" />
+                <File Id="CreateDatabase_v2.8.5.sql" Source="SourceDir\Update\CreateDatabase_v2.8.5.sql" />
+                <File Id="CreateDatabase_v2.8.6.sql" Source="SourceDir\Update\CreateDatabase_v2.8.6.sql" />
+                <File Id="CreateDatabase_v2.8.7.sql" Source="SourceDir\Update\CreateDatabase_v2.8.7.sql" />
+                <File Id="CreateDatabase_v2.8.8.sql" Source="SourceDir\Update\CreateDatabase_v2.8.8.sql" />
+                <File Id="CreateDatabase_v2.8.9.sql" Source="SourceDir\Update\CreateDatabase_v2.8.9.sql" />
+                <File Id="CreateDatabase_v2.8.10.sql" Source="SourceDir\Update\CreateDatabase_v2.8.10.sql" />
+                <File Id="CreateDatabase_v2.8.11.sql" Source="SourceDir\Update\CreateDatabase_v2.8.11.sql" />
+                <File Id="CreateDatabase_v2.8.12.sql" Source="SourceDir\Update\CreateDatabase_v2.8.12.sql" />
+                <File Id="CreateDatabase_v2.8.13.sql" Source="SourceDir\Update\CreateDatabase_v2.8.13.sql" />
+                <File Id="CreateDatabase_v2.8.14.sql" Source="SourceDir\Update\CreateDatabase_v2.8.14.sql" />
+                <File Id="CreateDatabase_v2.8.15.sql" Source="SourceDir\Update\CreateDatabase_v2.8.15.sql" />
+                <File Id="CreateDatabase_v3.0.0.sql" Source="SourceDir\Update\CreateDatabase_v3.0.0.sql" />
+                <File Id="CreateDatabase_v3.1.0.sql" Source="SourceDir\Update\CreateDatabase_v3.1.0.sql" />
+                <File Id="CreateDatabase_v3.2.0.sql" Source="SourceDir\Update\CreateDatabase_v3.2.0.sql" />
+                <File Id="CreateDatabase_v3.3.0.sql" Source="SourceDir\Update\CreateDatabase_v3.3.0.sql" />
+                <File Id="CreateDatabase_v3.4.0.sql" Source="SourceDir\Update\CreateDatabase_v3.4.0.sql" />
+               	<File Id="CreateDatabase_v3.5.0.sql" Source="SourceDir\Update\CreateDatabase_v3.5.0.sql" />
+                <File Id="CreateDatabase_v3.6.0.sql" Source="SourceDir\Update\CreateDatabase_v3.6.0.sql" />
+                <File Id="CreateDatabase_v3.7.0.sql" Source="SourceDir\Update\CreateDatabase_v3.7.0.sql" />
+				<File Id="CreateDatabase_v3.8.0.sql" Source="SourceDir\Update\CreateDatabase_v3.8.0.sql" />
+				<File Id="CreateDatabase_v3.9.0.sql" Source="SourceDir\Update\CreateDatabase_v3.9.0.sql" />
+				<File Id="CreateDatabase_v4.0.0.sql" Source="SourceDir\Update\CreateDatabase_v4.0.0.sql" />
+				<File Id="CreateDatabase_v4.1.0.sql" Source="SourceDir\Update\CreateDatabase_v4.1.0.sql" />
+				<File Id="CreateDatabase_v4.2.0.sql" Source="SourceDir\Update\CreateDatabase_v4.2.0.sql" />
+				<File Id="CreateDatabase_v4.3.0.sql" Source="SourceDir\Update\CreateDatabase_v4.3.0.sql" />
+				<File Id="CreateDatabase_v4.4.0.sql" Source="SourceDir\Update\CreateDatabase_v4.4.0.sql" />
+				<File Id="CreateDatabase_v4.5.0.sql" Source="SourceDir\Update\CreateDatabase_v4.5.0.sql" />
+				<File Id="CreateDatabase_v4.6.0.sql" Source="SourceDir\Update\CreateDatabase_v4.6.0.sql" />
+				<File Id="CreateDatabase_v4.7.0.sql" Source="SourceDir\Update\CreateDatabase_v4.7.0.sql" />
+              </Component>
+              <Component Id="sql_update_database" Guid="BDBEE7A0-23E5-2E7D-BD1B-E58C5CFA0E65">
+                <File Id="Database_Update_v1.1.0_to_v1.1.1.sql" Source="SourceDir\Update\Database_Update_v1.1.0_to_v1.1.1.sql" />
+                <File Id="Database_Update_v1.1.1_to_v1.1.2.sql" Source="SourceDir\Update\Database_Update_v1.1.1_to_v1.1.2.sql" />
+                <File Id="Database_Update_v1.1.2_to_v1.1.3.sql" Source="SourceDir\Update\Database_Update_v1.1.2_to_v1.1.3.sql" />
+                <File Id="Database_Update_v1.1.3_to_v1.1.4.sql" Source="SourceDir\Update\Database_Update_v1.1.3_to_v1.1.4.sql" />
+                <File Id="Database_Update_v1.1.4_to_v1.1.5.sql" Source="SourceDir\Update\Database_Update_v1.1.4_to_v1.1.5.sql" />
+                <File Id="Database_Update_v1.1.5_to_v1.1.6.sql" Source="SourceDir\Update\Database_Update_v1.1.5_to_v1.1.6.sql" />
+                <File Id="Database_Update_v1.1.6_to_v1.1.7.sql" Source="SourceDir\Update\Database_Update_v1.1.6_to_v1.1.7.sql" />
+                <File Id="Database_Update_v1.1.7_to_v1.1.8.sql" Source="SourceDir\Update\Database_Update_v1.1.7_to_v1.1.8.sql" />
+                <File Id="Database_Update_v1.1.8_to_v1.1.9.sql" Source="SourceDir\Update\Database_Update_v1.1.8_to_v1.1.9.sql" />
+                <File Id="Database_Update_v1.1.9_to_v1.1.10.sql" Source="SourceDir\Update\Database_Update_v1.1.9_to_v1.1.10.sql" />
+                <File Id="Database_Update_v1.1.10_to_v1.2.0.sql" Source="SourceDir\Update\Database_Update_v1.1.10_to_v1.2.0.sql" />
+                <File Id="Database_Update_v1.2.0_to_v1.2.1.sql" Source="SourceDir\Update\Database_Update_v1.2.0_to_v1.2.1.sql" />
+                <File Id="Database_Update_v1.2.1_to_v1.2.2.sql" Source="SourceDir\Update\Database_Update_v1.2.1_to_v1.2.2.sql" />
+                <File Id="Database_Update_v1.2.2_to_v2.0.0.sql" Source="SourceDir\Update\Database_Update_v1.2.2_to_v2.0.0.sql" />
+                <File Id="Database_Update_v2.0.0_to_v2.0.1.sql" Source="SourceDir\Update\Database_Update_v2.0.0_to_v2.0.1.sql" />
+                <File Id="Database_Update_v2.0.1_to_v2.1.0.sql" Source="SourceDir\Update\Database_Update_v2.0.1_to_v2.1.0.sql" />
+                <File Id="Database_Update_v2.1.0_to_v2.5.0.sql" Source="SourceDir\Update\Database_Update_v2.1.0_to_v2.5.0.sql" />
+                <File Id="Database_Update_v2.5.0_to_v2.5.1.sql" Source="SourceDir\Update\Database_Update_v2.5.0_to_v2.5.1.sql" />
+                <File Id="Database_Update_v2.5.1_to_v2.5.2.sql" Source="SourceDir\Update\Database_Update_v2.5.1_to_v2.5.2.sql" />
+                <File Id="Database_Update_v2.5.2_to_v2.5.3.sql" Source="SourceDir\Update\Database_Update_v2.5.2_to_v2.5.3.sql" />
+                <File Id="Database_Update_v2.5.3_to_v2.5.4.sql" Source="SourceDir\Update\Database_Update_v2.5.3_to_v2.5.4.sql" />
+                <File Id="Database_Update_v2.5.4_to_v2.5.5.sql" Source="SourceDir\Update\Database_Update_v2.5.4_to_v2.5.5.sql" />
+                <File Id="Database_Update_v2.5.5_to_v2.5.6.sql" Source="SourceDir\Update\Database_Update_v2.5.5_to_v2.5.6.sql" />
+                <File Id="Database_Update_v2.5.6_to_v2.5.7.sql" Source="SourceDir\Update\Database_Update_v2.5.6_to_v2.5.7.sql" />
+                <File Id="Database_Update_v2.5.7_to_v2.5.8.sql" Source="SourceDir\Update\Database_Update_v2.5.7_to_v2.5.8.sql" />
+                <File Id="Database_Update_v2.5.8_to_v2.5.9.sql" Source="SourceDir\Update\Database_Update_v2.5.8_to_v2.5.9.sql" />
+                <File Id="Database_Update_v2.5.9_to_v2.6.0.sql" Source="SourceDir\Update\Database_Update_v2.5.9_to_v2.6.0.sql" />
+                <File Id="Database_Update_v2.6.0_to_v2.7.0.sql" Source="SourceDir\Update\Database_Update_v2.6.0_to_v2.7.0.sql" />
+                <File Id="Database_Update_v2.7.0_to_v2.8.0.sql" Source="SourceDir\Update\Database_Update_v2.7.0_to_v2.8.0.sql" />
+                <File Id="Database_Update_v2.8.0_to_v2.8.1.sql" Source="SourceDir\Update\Database_Update_v2.8.0_to_v2.8.1.sql" />
+                <File Id="Database_Update_v2.8.1_to_v2.8.2.sql" Source="SourceDir\Update\Database_Update_v2.8.1_to_v2.8.2.sql" />
+                <File Id="Database_Update_v2.8.2_to_v2.8.3.sql" Source="SourceDir\Update\Database_Update_v2.8.2_to_v2.8.3.sql" />
+                <File Id="Database_Update_v2.8.3_to_v2.8.4.sql" Source="SourceDir\Update\Database_Update_v2.8.3_to_v2.8.4.sql" />
+                <File Id="Database_Update_v2.8.4_to_v2.8.5.sql" Source="SourceDir\Update\Database_Update_v2.8.4_to_v2.8.5.sql" />
+                <File Id="Database_Update_v2.8.5_to_v2.8.6.sql" Source="SourceDir\Update\Database_Update_v2.8.5_to_v2.8.6.sql" />
+                <File Id="Database_Update_v2.8.6_to_v2.8.7.sql" Source="SourceDir\Update\Database_Update_v2.8.6_to_v2.8.7.sql" />
+                <File Id="Database_Update_v2.8.7_to_v2.8.8.sql" Source="SourceDir\Update\Database_Update_v2.8.7_to_v2.8.8.sql" />
+                <File Id="Database_Update_v2.8.8_to_v2.8.9.sql" Source="SourceDir\Update\Database_Update_v2.8.8_to_v2.8.9.sql" />
+                <File Id="Database_Update_v2.8.9_to_v2.8.10.sql" Source="SourceDir\Update\Database_Update_v2.8.9_to_v2.8.10.sql" />
+                <File Id="Database_Update_v2.8.10_to_v2.8.11.sql" Source="SourceDir\Update\Database_Update_v2.8.10_to_v2.8.11.sql" />
+                <File Id="Database_Update_v2.8.11_to_v2.8.12.sql" Source="SourceDir\Update\Database_Update_v2.8.11_to_v2.8.12.sql" />
+                <File Id="Database_Update_v2.8.12_to_v2.8.13.sql" Source="SourceDir\Update\Database_Update_v2.8.12_to_v2.8.13.sql" />
+                <File Id="Database_Update_v2.8.13_to_v2.8.14.sql" Source="SourceDir\Update\Database_Update_v2.8.13_to_v2.8.14.sql" />
+                <File Id="Database_Update_v2.8.14_to_v2.8.15.sql" Source="SourceDir\Update\Database_Update_v2.8.14_to_v2.8.15.sql" />
+                <File Id="Database_Update_v2.8.15_to_v3.0.0.sql" Source="SourceDir\Update\Database_Update_v2.8.15_to_v3.0.0.sql" />
+                <File Id="Database_Update_v3.0.0_to_v3.1.0.sql" Source="SourceDir\Update\Database_Update_v3.0.0_to_v3.1.0.sql" />
+                <File Id="Database_Update_v3.1.0_to_v3.2.0.sql" Source="SourceDir\Update\Database_Update_v3.1.0_to_v3.2.0.sql" />
+                <File Id="Database_Update_v3.2.0_to_v3.3.0.sql" Source="SourceDir\Update\Database_Update_v3.2.0_to_v3.3.0.sql" />
+                <File Id="Database_Update_v3.3.0_to_v3.4.0.sql" Source="SourceDir\Update\Database_Update_v3.3.0_to_v3.4.0.sql" />
+				<File Id="Database_Update_v3.4.0_to_v3.5.0.sql" Source="SourceDir\Update\Database_Update_v3.4.0_to_v3.5.0.sql" />
+              </Component>
+              <Component Id="xml_data_schema" Guid="CB26138B-9031-2360-D666-DD5F20038ED9">
+                <File Id="OCTOPUS_Data_Schema_v1.1.0.xml" Name="OCTOPUS_Data_Schema_(v1.1.0).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v1.1.0).xml" />
+                <File Id="OCTOPUS_Data_Schema_v1.1.1.xml" Name="OCTOPUS_Data_Schema_(v1.1.1).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v1.1.1).xml" />
+                <File Id="OCTOPUS_Data_Schema_v1.1.2.xml" Name="OCTOPUS_Data_Schema_(v1.1.2).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v1.1.2).xml" />
+                <File Id="OCTOPUS_Data_Schema_v1.1.3.xml" Name="OCTOPUS_Data_Schema_(v1.1.3).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v1.1.3).xml" />
+                <File Id="OCTOPUS_Data_Schema_v1.1.4.xml" Name="OCTOPUS_Data_Schema_(v1.1.4).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v1.1.4).xml" />
+                <File Id="OCTOPUS_Data_Schema_v1.1.5.xml" Name="OCTOPUS_Data_Schema_(v1.1.5).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v1.1.5).xml" />
+                <File Id="OCTOPUS_Data_Schema_v1.1.6.xml" Name="OCTOPUS_Data_Schema_(v1.1.6).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v1.1.6).xml" />
+                <File Id="OCTOPUS_Data_Schema_v1.1.7.xml" Name="OCTOPUS_Data_Schema_(v1.1.7).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v1.1.7).xml" />
+                <File Id="OCTOPUS_Data_Schema_v1.1.8.xml" Name="OCTOPUS_Data_Schema_(v1.1.8).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v1.1.8).xml" />
+                <File Id="OCTOPUS_Data_Schema_v1.1.9.xml" Name="OCTOPUS_Data_Schema_(v1.1.9).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v1.1.9).xml" />
+                <File Id="OCTOPUS_Data_Schema_v1.1.10.xml" Name="OCTOPUS_Data_Schema_(v1.1.10).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v1.1.10).xml" />
+                <File Id="OCTOPUS_Data_Schema_v1.2.0.xml" Name="OCTOPUS_Data_Schema_(v1.2.0).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v1.2.0).xml" />
+                <File Id="OCTOPUS_Data_Schema_v1.2.1.xml" Name="OCTOPUS_Data_Schema_(v1.2.1).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v1.2.1).xml" />
+                <File Id="OCTOPUS_Data_Schema_v1.2.2.xml" Name="OCTOPUS_Data_Schema_(v1.2.2).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v1.2.2).xml" />
+                <File Id="OCTOPUS_Data_Schema_v2.0.0.xml" Name="OCTOPUS_Data_Schema_(v2.2.0).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v2.0.0).xml" />
+                <File Id="OCTOPUS_Data_Schema_v2.0.1.xml" Name="OCTOPUS_Data_Schema_(v2.0.0).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v2.0.1).xml" />
+                <File Id="OCTOPUS_Data_Schema_v2.1.0.xml" Name="OCTOPUS_Data_Schema_(v2.1.0).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v2.1.0).xml" />
+                <File Id="OCTOPUS_Data_Schema_v2.5.0.xml" Name="OCTOPUS_Data_Schema_(v2.5.0).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v2.5.0).xml" />
+                <File Id="OCTOPUS_Data_Schema_v2.5.1.xml" Name="OCTOPUS_Data_Schema_(v2.5.1).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v2.5.1).xml" />
+                <File Id="OCTOPUS_Data_Schema_v2.5.2.xml" Name="OCTOPUS_Data_Schema_(v2.5.2).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v2.5.2).xml" />
+                <File Id="OCTOPUS_Data_Schema_v2.5.3.xml" Name="OCTOPUS_Data_Schema_(v2.5.3).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v2.5.3).xml" />
+                <File Id="OCTOPUS_Data_Schema_v2.5.4.xml" Name="OCTOPUS_Data_Schema_(v2.5.4).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v2.5.4).xml" />
+                <File Id="OCTOPUS_Data_Schema_v2.5.5.xml" Name="OCTOPUS_Data_Schema_(v2.5.5).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v2.5.5).xml" />
+                <File Id="OCTOPUS_Data_Schema_v2.5.6.xml" Name="OCTOPUS_Data_Schema_(v2.5.6).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v2.5.6).xml" />
+                <File Id="OCTOPUS_Data_Schema_v2.5.7.xml" Name="OCTOPUS_Data_Schema_(v2.5.7).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v2.5.7).xml" />
+                <File Id="OCTOPUS_Data_Schema_v2.5.8.xml" Name="OCTOPUS_Data_Schema_(v2.5.8).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v2.5.8).xml" />
+                <File Id="OCTOPUS_Data_Schema_v2.5.9.xml" Name="OCTOPUS_Data_Schema_(v2.5.9).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v2.5.9).xml" />
+                <File Id="OCTOPUS_Data_Schema_v2.6.0.xml" Name="OCTOPUS_Data_Schema_(v2.6.0).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v2.6.0).xml" />
+                <File Id="OCTOPUS_Data_Schema_v2.7.0.xml" Name="OCTOPUS_Data_Schema_(v2.7.0).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v2.7.0).xml" />
+                <File Id="OCTOPUS_Data_Schema_v2.8.0.xml" Name="OCTOPUS_Data_Schema_(v2.8.0).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v2.8.0).xml" />
+                <File Id="OCTOPUS_Data_Schema_v2.8.1.xml" Name="OCTOPUS_Data_Schema_(v2.8.1).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v2.8.1).xml" />
+                <File Id="OCTOPUS_Data_Schema_v2.8.2.xml" Name="OCTOPUS_Data_Schema_(v2.8.2).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v2.8.2).xml" />
+                <File Id="OCTOPUS_Data_Schema_v2.8.3.xml" Name="OCTOPUS_Data_Schema_(v2.8.3).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v2.8.3).xml" />
+                <File Id="OCTOPUS_Data_Schema_v2.8.4.xml" Name="OCTOPUS_Data_Schema_(v2.8.4).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v2.8.4).xml" />
+                <File Id="OCTOPUS_Data_Schema_v2.8.5.xml" Name="OCTOPUS_Data_Schema_(v2.8.5).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v2.8.5).xml" />
+                <File Id="OCTOPUS_Data_Schema_v2.8.6.xml" Name="OCTOPUS_Data_Schema_(v2.8.6).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v2.8.6).xml" />
+                <File Id="OCTOPUS_Data_Schema_v2.8.7.xml" Name="OCTOPUS_Data_Schema_(v2.8.7).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v2.8.7).xml" />
+                <File Id="OCTOPUS_Data_Schema_v2.8.8.xml" Name="OCTOPUS_Data_Schema_(v2.8.8).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v2.8.8).xml" />
+                <File Id="OCTOPUS_Data_Schema_v2.8.9.xml" Name="OCTOPUS_Data_Schema_(v2.8.9).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v2.8.9).xml" />
+                <File Id="OCTOPUS_Data_Schema_v2.8.10.xml" Name="OCTOPUS_Data_Schema_(v2.8.10).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v2.8.10).xml" />
+                <File Id="OCTOPUS_Data_Schema_v2.8.11.xml" Name="OCTOPUS_Data_Schema_(v2.8.11).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v2.8.11).xml" />
+                <File Id="OCTOPUS_Data_Schema_v2.8.12.xml" Name="OCTOPUS_Data_Schema_(v2.8.12).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v2.8.12).xml" />
+                <File Id="OCTOPUS_Data_Schema_v2.8.13.xml" Name="OCTOPUS_Data_Schema_(v2.8.13).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v2.8.13).xml" />
+                <File Id="OCTOPUS_Data_Schema_v2.8.14.xml" Name="OCTOPUS_Data_Schema_(v2.8.14).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v2.8.14).xml" />
+                <File Id="OCTOPUS_Data_Schema_v2.8.15.xml" Name="OCTOPUS_Data_Schema_(v2.8.15).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v2.8.15).xml" />
+                <File Id="OCTOPUS_Data_Schema_v3.0.0.xml" Name="OCTOPUS_Data_Schema_(v3.0.0).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v3.0.0).xml" />
+                <File Id="OCTOPUS_Data_Schema_v3.1.0.xml" Name="OCTOPUS_Data_Schema_(v3.1.0).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v3.1.0).xml" />
+                <File Id="OCTOPUS_Data_Schema_v3.2.0.xml" Name="OCTOPUS_Data_Schema_(v3.2.0).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v3.2.0).xml" />
+                <File Id="OCTOPUS_Data_Schema_v3.3.0.xml" Name="OCTOPUS_Data_Schema_(v3.3.0).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v3.3.0).xml" />
+                <File Id="OCTOPUS_Data_Schema_v3.4.0.xml" Name="OCTOPUS_Data_Schema_(v3.4.0).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v3.4.0).xml" />
+				<File Id="OCTOPUS_Data_Schema_v3.5.0.xml" Name="OCTOPUS_Data_Schema_(v3.5.0).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v3.5.0).xml" />
+				<File Id="OCTOPUS_Data_Schema_v3.6.0.xml" Name="OCTOPUS_Data_Schema_(v3.6.0).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v3.6.0).xml" />
+				<File Id="OCTOPUS_Data_Schema_v3.7.0.xml" Name="OCTOPUS_Data_Schema_(v3.7.0).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v3.7.0).xml" />
+				<File Id="OCTOPUS_Data_Schema_v3.8.0.xml" Name="OCTOPUS_Data_Schema_(v3.8.0).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v3.8.0).xml" />
+				<File Id="OCTOPUS_Data_Schema_v3.9.0.xml" Name="OCTOPUS_Data_Schema_(v3.9.0).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v3.9.0).xml" />
+				<File Id="OCTOPUS_Data_Schema_v4.0.0.xml" Name="OCTOPUS_Data_Schema_(v4.0.0).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v4.0.0).xml" />
+				<File Id="OCTOPUS_Data_Schema_v4.1.0.xml" Name="OCTOPUS_Data_Schema_(v4.1.0).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v4.1.0).xml" />
+				<File Id="OCTOPUS_Data_Schema_v4.2.0.xml" Name="OCTOPUS_Data_Schema_(v4.2.0).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v4.2.0).xml" />
+				<File Id="OCTOPUS_Data_Schema_v4.3.0.xml" Name="OCTOPUS_Data_Schema_(v4.3.0).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v4.3.0).xml" />
+				<File Id="OCTOPUS_Data_Schema_v4.4.0.xml" Name="OCTOPUS_Data_Schema_(v4.4.0).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v4.4.0).xml" />
+				<File Id="OCTOPUS_Data_Schema_v4.5.0.xml" Name="OCTOPUS_Data_Schema_(v4.5.0).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v4.5.0).xml" />
+				<File Id="OCTOPUS_Data_Schema_v4.6.0.xml" Name="OCTOPUS_Data_Schema_(v4.6.0).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v4.6.0).xml" />
+				<File Id="OCTOPUS_Data_Schema_v4.7.0.xml" Name="OCTOPUS_Data_Schema_(v4.7.0).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v4.7.0).xml" />
+                <File Id="OCTOPUS_Upgrade_Schema.xml" Source="SourceDir\Update\OCTOPUS_Upgrade_Schema.xml" />
+                <File Id="Objects.xml" Source="SourceDir\Update\Objects.xml" />
+              </Component>
+            </Directory>
+            <Directory Id="DIR_REPORTS" Name="Reports">
+              <Directory Id="dir_standard" Name="Standard">
+                <Component Id="dir_standard" Guid="625E4E02-68E0-45F2-8198-10CE3FD140BF" KeyPath="yes">
+                  <File Id="Active_Loans" Name = "Active_Loans.zip" Source="SourceDir\Reports\Standard\Active_Loans.zip" />
+                  <File Id="Active_Savings" Name="Active_Savings.zip" Source="SourceDir\Reports\Standard\Active_Savings.zip" />
+                  <File Id="Client_ShareOfWomen" Name="Client_ShareOfWomen.zip" Source="SourceDir\Reports\Standard\Client_ShareOfWomen.zip" />
+                  <File Id="Clients_Loan_Statistics" Name="Clients_Loan_Statistics.zip" Source="SourceDir\Reports\Standard\Clients_Loan_Statistics.zip" />
+                  <File Id="Closed_Contracts" Name="Closed_Contracts.zip" Source="SourceDir\Reports\Standard\Closed_Contracts.zip" />
+                  <File Id="Data_Quality_Report" Name="Data_Quality_Report.zip" Source="SourceDir\Reports\Standard\Data_Quality_Report.zip" />
+                  <File Id="Delinquent_Loans" Name="Delinquent_Loans.zip" Source="SourceDir\Reports\Standard\Delinquent_Loans.zip" />
+                  <File Id="Disbursements_Per_Activity" Name="Disbursements_Per_Activity.zip" Source="SourceDir\Reports\Standard\Disbursements_Per_Activity.zip" />
+                  <File Id="Disbursments" Name="Disbursments.zip" Source="SourceDir\Reports\Standard\Disbursments.zip" />
+                  <File Id="Disbursements_And_Reimbursements" Name = "Disbursements_And_Reimbursements.zip" Source="SourceDir\Reports\Standard\Disbursements_And_Reimbursements.zip" />
+                  <File Id="Written_off_penalties" Name="Written_off_penalties.zip" Source="SourceDir\Reports\Standard\Written_off_penalties.zip" />
+                  <File Id="OLB_and_LLP" Name="OLB_and_LLP.zip" Source="SourceDir\Reports\Standard\OLB_and_LLP.zip" />
+                  <File Id="PAR_Analysis" Name="PAR_Analysis.zip" Source="SourceDir\Reports\Standard\PAR_Analysis.zip" />
+                  <File Id="Repayments" Name="Repayments.zip" Source="SourceDir\Reports\Standard\Repayments.zip" />
+                  <File Id="Residual_Maturity" Name="Residual_Maturity.zip" Source="SourceDir\Reports\Standard\Residual_Maturity.zip" />
+                  <File Id="Written_Off_Loans" Name="Written_Off_Loans.zip" Source="SourceDir\Reports\Standard\Written_Off_Loans.zip" />
+                  <File Id="OLB_per_Client" Name="OLB_per_Client.zip" Source="SourceDir\Reports\Standard\OLB_per_Client.zip" />
+                  <File Id="Rescheduled_Loans" Name="Rescheduled_Loans.zip" Source="SourceDir\Reports\Standard\Rescheduled_Loans.zip" />
+                  <File Id="Reassigned_Loans" Name="Reassigned_Loans.zip" Source="SourceDir\Reports\Standard\Reassigned_Loans.zip" />
+                  <File Id="Anticipated_Totally_Repaid_Loans" Name="Anticipated_Totally_Repaid_Loans.zip" Source="SourceDir\Reports\Standard\Anticipated_Totally_Repaid_Loans.zip" />
+                  <File Id="Client_Information" Name="Client_Information.zip" Source="SourceDir\Reports\Standard\Client_Information.zip" />
+                  <File Id="Exchange_Rate_GainLoss" Name="Exchange_Rate_GainLoss.zip" Source="SourceDir\Reports\Standard\Exchange_Rate_GainLoss.zip" />
+                  <File Id="Portfolio_Transfer" Name="Portfolio_Transfer.zip" Source="SourceDir\Reports\Standard\Portfolio_Transfer.zip" />
+                  <File Id="Loan_Renewal_Help" Name="Loan_Renewal_Help.zip" Source="SourceDir\Reports\Standard\Loan_Renewal_Help.zip" />
+                  <File Id="Cash_Book" Name="Cash_Book.zip" Source="SourceDir\Reports\Standard\Cash_Book.zip" />
+                  <File Id="TrialBalance" Name="TrialBalance.zip" Source="SourceDir\Reports\Standard\TrialBalance.zip" />
+                  <File Id="Saving_Contracts" Name="Savings_Contracts.zip" Source="SourceDir\Reports\Standard\Savings_Contracts.zip" />
+                  <File Id="Collection_Sheet_Standard" Name="Collection_Sheet.zip" Source="SourceDir\Reports\Standard\Collection_Sheet.zip" />
+				          <File Id="Guarantors" Name="Guarantors.zip" Source="SourceDir\Reports\Standard\Guarantors.zip" />
+				          <File Id="Booking_List" Name="Booking_List.zip" Source="SourceDir\Reports\Standard\Booking_List.zip" />
+                  <File Id="NBT" Name="NBT.zip" Source="SourceDir\Reports\Standard\NBT.zip" />
+				          <File Id="Accrued_Interest" Name="Accrued_Interest.zip" Source="SourceDir\Reports\Standard\Accrued_Interest.zip" />
+				          <File Id="Tranches" Name="Tranches.zip" Source="SourceDir\Reports\Standard\Tranches.zip" />
+				          <File Id="Compulsary_Savings_Accounts" Name="Compulsory_Savings_Accounts.zip" Source="SourceDir\Reports\Standard\Compulsory_Savings_Accounts.zip" />
+				          <File Id="Statistics_per_gender" Name = "Statistics_per_gender.zip" Source="SourceDir\Reports\Standard\Statistics_per_gender.zip" />
+				          <File Id="Loan_Loss_Provision" Name = "LoanLossProvision.zip" Source="SourceDir\Reports\Standard\LoanLossProvision.zip" />
+				          <File Id="Credit_Life_Insurance" Name = "CreditLifeInsurance.zip" Source="SourceDir\Reports\Standard\CreditLifeInsurance.zip" />
+						  <File Id="Collateral_Report" Name = "Collateral_Report.zip" Source="SourceDir\Reports\Standard\Collateral_Report.zip" />
+				</Component>
+              </Directory>
+              <Directory Id="dir_consolidated" Name="Consolidated">
+                  <Component Id="dir_consolidated" Guid="d1f2afed-0816-4248-b8b0-7c0194bbf35e" KeyPath="yes">
+                      <File Id="evolution_Clients" Name="evolution_Clients.zip" Source="SourceDir\Reports\Consolidated\evolution_Clients.zip" />
+                      <File Id="evolution_Contracts" Name="evolution_Contracts.zip" Source="SourceDir\Reports\Consolidated\evolution_Contracts.zip" />
+                      <File Id="evolution_Disbursements" Name="evolution_Disbursements.zip" Source="SourceDir\Reports\Consolidated\evolution_Disbursements.zip" />
+                      <File Id="evolution_OLB" Name="evolution_OLB.zip" Source="SourceDir\Reports\Consolidated\evolution_OLB.zip" />
+                      <File Id="evolution_PAR" Name="evolution_PAR.zip" Source="SourceDir\Reports\Consolidated\evolution_PAR.zip" />
+                      <File Id="evolution_Repayments" Name="evolution_Repayments.zip" Source="SourceDir\Reports\Consolidated\evolution_Repayments.zip" />
+                  </Component>
+              </Directory>
+              <Directory Id="dir_internal" Name="Internal">
+                <Component Id="dir_internal" Guid="625E4E02-68E0-45F2-8198-10DA3FD140BF" KeyPath="yes">
+                  <File Id="SavingsCompulsory_Contract_Status" Name = "SavingsCompulsory_Contract_Status.zip" Source="SourceDir\Reports\Internal\SavingsCompulsory_Contract_Status.zip" />
+                  <File Id="SavingsCompulsory_Cash_Receipt" Name = "SavingsCompulsory_Cash_Receipt.zip" Source="SourceDir\Reports\Internal\SavingsCompulsory_Cash_Receipt.zip" />
+                  <File Id="SavingsCompulsory_Agreement" Name = "SavingsCompulsory_Agreement.zip" Source="SourceDir\Reports\Internal\SavingsCompulsory_Agreement.zip" />
+                  <File Id="SavingsDeposit_Contract_Status" Name = "SavingsDeposit_Contract_Status.zip" Source="SourceDir\Reports\Internal\SavingsDeposit_Contract_Status.zip" />
+                  <File Id="SavingsDeposit_Cash_Receipt" Name = "SavingsDeposit_Cash_Receipt.zip" Source="SourceDir\Reports\Internal\SavingsDeposit_Cash_Receipt.zip" />
+                  <File Id="SavingsDeposit_Agreement" Name = "SavingsDeposit_Agreement.zip" Source="SourceDir\Reports\Internal\SavingsDeposit_Agreement.zip" />
+                  <File Id="SavingsBook_Contract_Status" Name = "SavingsBook_Contract_Status.zip" Source="SourceDir\Reports\Internal\SavingsBook_Contract_Status.zip" />
+                  <File Id="SavingsBook_Agreement" Name = "SavingsBook_Agreement.zip" Source="SourceDir\Reports\Internal\SavingsBook_Agreement.zip" />
+                  <File Id="SavingsBook_Cash_Receipt" Name = "SavingsBook_Cash_Receipt.zip" Source="SourceDir\Reports\Internal\SavingsBook_Cash_Receipt.zip" />
+                  <File Id="Loan_Events" Name = "Loan_Events.zip" Source="SourceDir\Reports\Internal\Loan_Events.zip" />
+                  <File Id="Collection_Sheet" Name = "Collection_Sheet.zip" Source="SourceDir\Reports\Internal\Collection_Sheet.zip" />
+                  <File Id="Committee_Appraisal" Name = "Committee_Appraisal.zip" Source="SourceDir\Reports\Internal\Committee_Appraisal.zip" />
+                  <File Id="Contract_History" Name = "Contract_History.zip" Source="SourceDir\Reports\Internal\Contract_History.zip" />
+                  <File Id="Corporate_Loan_Agreement" Name = "Corporate_Loan_Agreement.zip" Source="SourceDir\Reports\Internal\Corporate_Loan_Agreement.zip" />
+                  <File Id="Disbursement_Cash_Receipt" Name = "Disbursement_Cash_Receipt.zip" Source="SourceDir\Reports\Internal\Disbursement_Cash_Receipt.zip" />
+                  <File Id="Group_Loan_Agreement" Name = "Group_Loan_Agreement.zip" Source="SourceDir\Reports\Internal\Group_Loan_Agreement.zip" />
+                  <File Id="Individual_Loan_Agreement" Name = "Individual_Loan_Agreement.zip" Source="SourceDir\Reports\Internal\Individual_Loan_Agreement.zip" />
+                  <File Id="Repayment_Cash_Receipt" Name = "Repayment_Cash_Receipt.zip" Source="SourceDir\Reports\Internal\Repayment_Cash_Receipt.zip" />
+                  <File Id="Repayment_Schedule" Name = "Repayment_Schedule.zip" Source="SourceDir\Reports\Internal\Repayment_Schedule.zip" />
+                  <File Id="Guarantee_Status" Name = "Guarantee_Status.zip" Source="SourceDir\Reports\Internal\Guarantee_Status.zip" />
+                  <File Id="Guarantee_Committee_Appraisal" Name = "Guarantee_Committee_Appraisal.zip" Source="SourceDir\Reports\Internal\Guarantee_Committee_Appraisal.zip" />
+                  <File Id="Client_Personal_Information" Name = "Client_Personal_Information.zip" Source="SourceDir\Reports\Internal\Client_Personal_Information.zip" />
+                  <File Id="Audit_Trail" Name = "Audit_Trail.zip" Source="SourceDir\Reports\Internal\Audit_Trail.zip" />
+				  <File Id="Village_Disbursement_Cash_Receipt" Name = "Village_Disbursement_Cash_Receipt.zip" Source="SourceDir\Reports\Internal\Village_Disbursement_Cash_Receipt.zip" />
+				  <File Id="Village_Collection_Sheet" Name = "Village_Collection_Sheet.zip" Source="SourceDir\Reports\Internal\Village_Collection_Sheet.zip" />
+				  <File Id="Village_Disbursement_Sheet" Name = "Village_Disbursement_Sheet.zip" Source="SourceDir\Reports\Internal\Village_Disbursement_Sheet.zip" />				  				          
+				  <File Id="Village_Individual_Loan_Agreement" Name = "Village_Individual_Loan_Agreement.zip" Source="SourceDir\Reports\Internal\Village_Individual_Loan_Agreement.zip" />
+				  <File Id="Village_Repayment_Schedule" Name = "Village_Repayment_Schedule.zip" Source="SourceDir\Reports\Internal\Village_Repayment_Schedule.zip" />				  
+                </Component>
+              </Directory>
+            </Directory>
+          </Directory>
+        </Directory>
+      </Directory>
+    </Directory>
+
+    <DirectoryRef Id="ApplicationProgramsFolder">
+      <Component Id="ApplicationShortcut" Guid="E59F96B0-DB4B-4891-818A-18D80523650F">
+        <Shortcut Id="ApplicationStartMenuShortcut" Name="Octopus Micro Finance Suite" Description="Octopus Micro Finance Suite"
+                  Target="[DIR_ROOT_VERSION]Octopus.GUI.exe" WorkingDirectory="DIR_ROOT_VERSION"/>
+        <Shortcut Id="UninstallProduct" Name="Uninstall Application" Description="Uninstall Application"
+                  Target="[System64Folder]msiexec.exe" Arguments="/x [ProductCode]"/>
+        <RemoveFolder Id="ApplicationProgramsFolder" On="uninstall"/>
+        <RegistryValue Root="HKCU" Key="Software\Microsoft\OctopusMicroFinanceSuite\$(var.ProductVersion)" Name="installed" Type="integer" Value="1" KeyPath="yes"/>
+      </Component>
+    </DirectoryRef>
+
+    <Feature Id="ProductFeature" Title="Octopus" Level="1">
+      <ComponentRef Id="dir_standard" />
+      <ComponentRef Id="dir_internal" />
+      <ComponentRef Id="dir_consolidated" />
+      <ComponentRef Id="xml_data_schema" />
+      <ComponentRef Id="sql_update_database" />
+      <ComponentRef Id="sql_create_database" />
+      <ComponentRef Id="sql_divers" />
+      <ComponentRef Id="kg" />
+      <ComponentRef Id="en" />
+      <ComponentRef Id="ru" />
+      <ComponentRef Id="fr" />
+      <ComponentRef Id="es" />
+      <ComponentRef Id="pt" />
+      <ComponentRef Id="export" />
+      <ComponentRef Id="backup" />
+      <ComponentRef Id="temp" />
+      <ComponentRef Id="template" />
+      <ComponentRef Id="TemplateReport" />
+      <ComponentRef Id="ProductComponent" />
+      <ComponentRef Id="Octopus.GUI" />
+      <ComponentRef Id="Registry" />
+      <ComponentRef Id="dir_desktop" />
+      <ComponentRef Id="BuildLabel.txt" />
+      <ComponentRef Id="ApplicationShortcut" />
+      <ComponentRef Id="extensions" />      
+    </Feature>
+
+    <CustomAction Id="PreventDowngrading" Error="Newer version already installed." />
+
+    <Icon Id="App.ico" SourceFile="c:\bamboo-home\xml-data\build-dir\OMFS-DP-DJ\Src\Octopus.Installer\Bitmaps\App.ico"/>
+
+    <InstallExecuteSequence>
+      <Custom Action="PreventDowngrading" After="FindRelatedProducts">NEWERPRODUCTFOUND</Custom>
+      <RemoveExistingProducts Before="InstallInitialize" />
+    </InstallExecuteSequence>
+
+    <InstallUISequence>
+      <Custom Action="PreventDowngrading" After="FindRelatedProducts">NEWERPRODUCTFOUND</Custom>
+    </InstallUISequence>
+
+    <WixVariable Id="Wix" Value="c:\bamboo-home\xml-data\build-dir\OMFS-DP-DJ\Src\Octopus.Installer\License\LGPL3.rtf"/>
+    <WixVariable Id="WixUILicenseRtf" Value="c:\bamboo-home\xml-data\build-dir\OMFS-DP-DJ\Src\Octopus.Installer\License\LGPL3.rtf"/>
+    <WixVariable Id="WixUIDialogBmp" Value="c:\bamboo-home\xml-data\build-dir\OMFS-DP-DJ\Src\Octopus.Installer\Bitmaps\background.bmp"/>
+    <WixVariable Id="WixUIBannerBmp" Value="c:\bamboo-home\xml-data\build-dir\OMFS-DP-DJ\Src\Octopus.Installer\Bitmaps\banner.bmp"/>
+    <Property Id="WIXUI_INSTALLDIR" Value="DIR_ROOT_VERSION" ></Property>
+    <UIRef Id="WixUI_InstallDir"/>
+  </Product>
+</Wix>

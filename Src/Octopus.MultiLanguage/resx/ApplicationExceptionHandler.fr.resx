@@ -1,0 +1,1297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="errorTitle.Text" xml:space="preserve">
+    <value>Erreur dans l'application, veuillez contacter votre administrateur</value>
+  </data>
+  <data name="sqlError.Text" xml:space="preserve">
+    <value>Erreur pendant la lecture ou l'écriture dans la base de données, veuillez contacter votre administreur</value>
+  </data>
+  <data name="AccountExceptionAccountIsNull.Text" xml:space="preserve">
+    <value>Sélectionner un compte</value>
+  </data>
+  <data name="AccountExceptionLabelIsNull.Text" xml:space="preserve">
+    <value>Le nouveau label n'est pas renseigné</value>
+  </data>
+  <data name="AccountExceptionLocalNumberIsNull.Text" xml:space="preserve">
+    <value>Le numéro de compte local n'est pas renseigné</value>
+  </data>
+  <data name="AccountExceptionNumberIsNull.Text" xml:space="preserve">
+    <value>Le numéro n'est pas renseigné</value>
+  </data>
+  <data name="AccountExceptionIncorrectAmountFormat.Text" xml:space="preserve">
+    <value>Vous devez saisir un montant positif</value>
+  </data>
+  <data name="AccountExceptionMovementSetUnbalanced.Text" xml:space="preserve">
+    <value>L'opération comptable n'est pas équilibrée</value>
+  </data>
+  <data name="ContractExceptionContractIsNull.Text" xml:space="preserve">
+    <value>Selectionnez un contrat</value>
+  </data>
+  <data name="ContractExceptionAmountIsNull.Text" xml:space="preserve">
+    <value>Le montant du prêt n'est pas renseigné</value>
+  </data>
+  <data name="ContractExceptionEntryFeesIsNull.Text" xml:space="preserve">
+    <value>Les frais de dossier ne sont pas renseignés</value>
+  </data>
+  <data name="ContractExceptionAnticipatedRepaymentPenaltiesIsNull.Text" xml:space="preserve">
+    <value>Les pénalités pour paiement anticipé ne sont pas renseignées</value>
+  </data>
+  <data name="ContractExceptionNonRepaymentPenaltiesIsNull.Text" xml:space="preserve">
+    <value>Les pénalités de retard ne sont pas renseignées ou mal renseignées</value>
+  </data>
+  <data name="ContractExceptionNumberOfInstallmentsIsNull.Text" xml:space="preserve">
+    <value>Le nombre d'échéances n'est pas renseigné. Le nombre d'échéances ne peut pas être nul</value>
+  </data>
+  <data name="ContractExceptionGracePeriodIsNull.Text" xml:space="preserve">
+    <value>La période de grâce n'est pas renseignée, ou mal renseignée.</value>
+  </data>
+  <data name="ContractExceptionInterestRateIsNull.Text" xml:space="preserve">
+    <value>Le taux d'intéret n'est pas renseigné ou mal renseigné. 
+Vous devez remplir soit "min" et "max", soit "valeur". Le taux ne peut pas être nul (Paramètres généraux)</value>
+  </data>
+  <data name="ContractExceptionInstallmentTypeIsNull.Text" xml:space="preserve">
+    <value>Le type d'échéance pour ce produit de crédit n'est pas renseigné</value>
+  </data>
+  <data name="ContractExceptionFundingLineIsNull.Text" xml:space="preserve">
+    <value>La ligne de financement du contrat n'est pas renseignée</value>
+  </data>
+  <data name="ContractExceptionLoanOfficerIsNull.Text" xml:space="preserve">
+    <value>L'agent de crédit n'est pas sélectionné</value>
+  </data>
+  <data name="ContractExceptionBeneficiaryIsNull.Text" xml:space="preserve">
+    <value>Le bénéficiaire du prêt n'est pas renseigné</value>
+  </data>
+  <data name="ContractExceptionBeneficiaryIsActive.Text" xml:space="preserve">
+    <value>Ce client est déjà actif</value>
+  </data>
+  <data name="ContractExceptionBeneficiaryIsAllowOneLoans.Text" xml:space="preserve">
+    <value>Ce client ne peut pas avoir plus d'un crédit actif</value>
+  </data>
+  <data name="InstallmentExceptionInstallmentIsNull.Text" xml:space="preserve">
+    <value>Sélectionnez une échéance</value>
+  </data>
+  <data name="InstallmentExceptionInstallmentAlreadyRepaid.Text" xml:space="preserve">
+    <value>Cette échéance est déjà payée</value>
+  </data>
+  <data name="RepayExceptionNegativeAmount.Text" xml:space="preserve">
+    <value>Le montant ne peut être négatif</value>
+  </data>
+  <data name="RepayExceptionAmountGreaterThanTotalRemainingAmount.Text" xml:space="preserve">
+    <value>Ce montant dépasse le montant restant a payer sur ce prêt</value>
+  </data>
+  <data name="RepayExceptionAmountIsNull.Text" xml:space="preserve">
+    <value>Le montant doit être un nombre</value>
+  </data>
+  <data name="DOAExceptionHasChildrens.Text" xml:space="preserve">
+    <value>Pour supprimer cette activité, vous devez supprimer les sous-catégories</value>
+  </data>
+  <data name="DOAExceptionNameIsNull.Text" xml:space="preserve">
+    <value>Le nom n'est pas renseigné</value>
+  </data>
+  <data name="DOAExceptionCastInvalid.Text" xml:space="preserve">
+    <value>Impossible de modifier ou supprimer</value>
+  </data>
+  <data name="DOAExceptionAlreadyExist.Text" xml:space="preserve">
+    <value>Cette activité existe déjà</value>
+  </data>
+  <data name="DOAExceptionNewNameIsNull.Text" xml:space="preserve">
+    <value>Le nouveau nom n'est pas renseigné</value>
+  </data>
+  <data name="DOAExceptionNoSelect.Text" xml:space="preserve">
+    <value>Vous devez choisir un type d'activité</value>
+  </data>
+  <data name="ExchangeRateExceptionExchangeRateIsNull.Text" xml:space="preserve">
+    <value>Pour cette date, le taux de change n'est pas renseigné</value>
+  </data>
+  <data name="ExchangeRateExceptionDateIsNull.Text" xml:space="preserve">
+    <value>Sélectionnez une date</value>
+  </data>
+  <data name="ExchangeRateExceptionRateIsEmpty.Text" xml:space="preserve">
+    <value>Le taux de change n'est pas renseigné</value>
+  </data>
+  <data name="PackageExceptionPackageIsNull.Text" xml:space="preserve">
+    <value>Selectionnez un produit</value>
+  </data>
+  <data name="PackageExceptionAlreadyDeleted.Text" xml:space="preserve">
+    <value>Ce produit est déjà supprimé</value>
+  </data>
+  <data name="PackageExceptionNameIsNull.Text" xml:space="preserve">
+    <value>Le nom du produit de crédit n'est pas renseigné (Paramètres généraux)</value>
+  </data>
+  <data name="PackageExceptionInstallmentTypeIsNull.Text" xml:space="preserve">
+    <value>Le type d'échéance pour ce produit de crédit n'est pas renseigné (Paramètres généraux)</value>
+  </data>
+  <data name="PackageExceptionInstallmentTypeIsBad.Text" xml:space="preserve">
+    <value>Le type d'échéance pour ce produit de crédit n'est pas renseigné (Paramètres généraux)</value>
+  </data>
+  <data name="PackageExceptionInterestRateGroupBadlyInformed.Text" xml:space="preserve">
+    <value>Le taux d'intéret n'est pas renseigné ou mal renseigné. 
+Vous devez remplir soit "min" et "max", soit "valeur". Le taux ne peut pas être nul (Paramètres généraux)</value>
+  </data>
+  <data name="PackageExceptionGracePeriodGroupBadlyInformed.Text" xml:space="preserve">
+    <value>La période de grâce n'est pas renseignée, ou mal renseignée. 
+Vous devez remplir soit "min" et "max", soit "valeur".  Si vous ne l'utilisez pas, mettez "valeur" à "0" (Paramètres Généraux)</value>
+  </data>
+  <data name="PackageExceptionNonRepaymentPenaltiesBadlyInformed.Text" xml:space="preserve">
+    <value>Les pénalités de retard ne sont pas renseignées ou mal renseignées. 
+Vous devez remplir soit "min" et "max", soit "valeur". Si vous ne les utilisez pas, mettez "valeur" à "0" (Frais et Pénalités)</value>
+  </data>
+  <data name="PackageExceptionAnticipatedTotalRepaymentPenaltiesBadlyInformed.Text" xml:space="preserve">
+    <value>Les pénalités de paiement anticipées ne sont pas renseignées ou mal renseignées. Vous devez remplir soit "min" et "max", soit "valeur". Si vous ne les utilisez pas, mettez "valeur" à "0"; (onglet Frais et Pénalités)</value>
+  </data>
+  <data name="PackageExceptionEntryFeesBadlyInformed.Text" xml:space="preserve">
+    <value>Les frais de dossier ne sont pas renseignés, ou mal renseignés. 
+Vous devez remplir soit "min" et "max", soit "valeur".  Si vous n'utilisez pas les frais de dossier, supprimez la ligne.
+(Si vous ne les utilisez pas, mettez "0")</value>
+  </data>
+  <data name="PackageExceptionNumberOfInstallmentBadlyInformed.Text" xml:space="preserve">
+    <value>Le nombre d'échéances n'est pas renseigné ou mal renseigné. 
+Vous devez remplir soit "min" et "max", soit "valeur". Le nombre d'échéances ne peut pas être nul (Paramètres Généraux)</value>
+  </data>
+  <data name="PackageExceptionAmountBadlyInformed.Text" xml:space="preserve">
+    <value>Le montant du crédit n'est pas renseigné, ou mal renseigné. 
+Vous devez remplir soit "min" et "max", soit "valeur". Le montant ne peut pas être nul (Paramètres généraux)</value>
+  </data>
+  <data name="PackageExceptionExoticProductIsNull.Text" xml:space="preserve">
+    <value>Le produit exotique n'est pas renseigné</value>
+  </data>
+  <data name="PackageExceptionExoticInstallmentIsNull.Text" xml:space="preserve">
+    <value>Ni le principal, ni les intérêts n'ont été renseignés</value>
+  </data>
+  <data name="PackageExceptionExoticInstallmentIsBad.Text" xml:space="preserve">
+    <value>Vous devez choisir une échéance avant d'effacer</value>
+  </data>
+  <data name="PackageExceptionExoticProductContainsNoInstallment.Text" xml:space="preserve">
+    <value>Les échances dans ce produit exotique ne sont pas renseignés ou mal renseignés</value>
+  </data>
+  <data name="PackageExceptionExoticProductNameIsNull.Text" xml:space="preserve">
+    <value>Le nom du produit exotique n'est pas renseigné</value>
+  </data>
+  <data name="OTE1.Text" xml:space="preserve">
+    <value>Sélectionnez un client</value>
+  </data>
+  <data name="OTE2.Text" xml:space="preserve">
+    <value>L'activité économique n'est pas renseignée</value>
+  </data>
+  <data name="OTE3.Text" xml:space="preserve">
+    <value>La région ou le département ne sont pas renseignés</value>
+  </data>
+  <data name="OTE4.Text" xml:space="preserve">
+    <value>Le prénom n'est pas renseigné</value>
+  </data>
+  <data name="OTE5.Text" xml:space="preserve">
+    <value>Le genre n'est pas renseigné</value>
+  </data>
+  <data name="OTE6.Text" xml:space="preserve">
+    <value>Le numéro de passeport n'est pas renseigné</value>
+  </data>
+  <data name="OTE7.Text" xml:space="preserve">
+    <value>Le nom n'est pas renseigné</value>
+  </data>
+  <data name="OTE8.Text" xml:space="preserve">
+    <value>La ville n'est pas renseignée</value>
+  </data>
+  <data name="OTE9.Text" xml:space="preserve">
+    <value>Le cycle de crédit n'est pas renseigné</value>
+  </data>
+  <data name="OTE10.Text" xml:space="preserve">
+    <value>Le département doit être rensigné si vous entrez une adresse secondaire</value>
+  </data>
+  <data name="OTE11.Text" xml:space="preserve">
+    <value>Si vous utilisez une deuxième adresse, la ville doit être renseignée</value>
+  </data>
+  <data name="OTE12.Text" xml:space="preserve">
+    <value>Si vous utilisez une deuxième adresse, la première doit être renseignée</value>
+  </data>
+  <data name="OTE13.Text" xml:space="preserve">
+    <value>Sélectionnez un district valide</value>
+  </data>
+  <data name="OTE14.Text" xml:space="preserve">
+    <value>Sélectionnez un département valide</value>
+  </data>
+  <data name="OTE15.Text" xml:space="preserve">
+    <value>Sélectionnez une personne</value>
+  </data>
+  <data name="OTE16.Text" xml:space="preserve">
+    <value>Cette personne est déjà dans un groupe</value>
+  </data>
+  <data name="OTE17.Text" xml:space="preserve">
+    <value>Cette personne a déjà un contrat en cours</value>
+  </data>
+  <data name="OTE18.Text" xml:space="preserve">
+    <value>Cette personne est le leader d'un groupe</value>
+  </data>
+  <data name="OTE19.Text" xml:space="preserve">
+    <value>Le nom n'est pas renseigné</value>
+  </data>
+  <data name="OTE20.Text" xml:space="preserve">
+    <value>Sélectionnez un leader</value>
+  </data>
+  <data name="OTE21.Text" xml:space="preserve">
+    <value>Le nombre de personnes à charges doit être un nombre</value>
+  </data>
+  <data name="OTE22.Text" xml:space="preserve">
+    <value>Le nombre d'enfants doit étre un nombre</value>
+  </data>
+  <data name="OTE23.Text" xml:space="preserve">
+    <value>Le nombre d'enfants avec une éducation primaire doit être un nombre</value>
+  </data>
+  <data name="OTE24.Text" xml:space="preserve">
+    <value>Les années d'expérience doivent être un nombre</value>
+  </data>
+  <data name="OTE25.Text" xml:space="preserve">
+    <value>Le nombre de personnes travaillant dans cette activité doit être un nombre</value>
+  </data>
+  <data name="OTE26.Text" xml:space="preserve">
+    <value>Le montant prêté par une autre IMF doit étre un nombre</value>
+  </data>
+  <data name="OTE27.Text" xml:space="preserve">
+    <value>Le montant des dettes auprès des autres organismes doit être un nombre</value>
+  </data>
+  <data name="OTE28.Text" xml:space="preserve">
+    <value>La taille de l'habitation doit être un nombre</value>
+  </data>
+  <data name="OTE29.Text" xml:space="preserve">
+    <value>La durée d'habitation doit être un chiffre</value>
+  </data>
+  <data name="OTE30.Text" xml:space="preserve">
+    <value>La taille de la parcelle doit être un nombre</value>
+  </data>
+  <data name="OTE31.Text" xml:space="preserve">
+    <value>Le nombre de têtes de bétail doit etre un nombre</value>
+  </data>
+  <data name="OTE32.Text" xml:space="preserve">
+    <value>Le revenu mensuel doit être un nombre (onglet Budget et Dettes)</value>
+  </data>
+  <data name="OTE33.Text" xml:space="preserve">
+    <value>Les dépenses mensuelles doivent être un nombre</value>
+  </data>
+  <data name="RepayExceptionMaxPastDueDaysReached.Text" xml:space="preserve">
+    <value>Vous ne pouvez pas rembourser un prêt qui a plus de 180 jours d'arriérés</value>
+  </data>
+  <data name="OTE34.Text" xml:space="preserve">
+    <value>{0} personnes au moins sont nécéssaires pour former un groupe</value>
+  </data>
+  <data name="ReportsExceptionsNoResult.Text" xml:space="preserve">
+    <value>Aucun résultat</value>
+  </data>
+  <data name="ProvisioningRateNbOfDaysMaxEmpty.Text" xml:space="preserve">
+    <value>Le nombre de jours maximum n'est pas renseigné</value>
+  </data>
+  <data name="ProvisioningRateNbOfDaysMinEmpty.Text" xml:space="preserve">
+    <value>Le nombre de jours minimum n'est pas renseigné</value>
+  </data>
+  <data name="ProvisioningRateRateEmpty.Text" xml:space="preserve">
+    <value>Le taux n'est pas renseigné</value>
+  </data>
+  <data name="ContractExceptionDisburseDate.Text" xml:space="preserve">
+    <value>La date de déboursement doit étre comprise entre la date de création et la date de la première échéance</value>
+  </data>
+  <data name="DisburseExceptionDateWrong.Text" xml:space="preserve">
+    <value>La date de déboursement doit être comprise entre la date de création et la date de la première échéance</value>
+  </data>
+  <data name="InstallmentExceptionNotFirstInstallmentToRepay.Text" xml:space="preserve">
+    <value>Une échéance précédente n'a pas encore été repayée</value>
+  </data>
+  <data name="OUE1.Text" xml:space="preserve">
+    <value>Choisisez d'abord un utilisateur</value>
+  </data>
+  <data name="OUE2.Text" xml:space="preserve">
+    <value>L'administrateur ne peut être supprimé</value>
+  </data>
+  <data name="OUE3.Text" xml:space="preserve">
+    <value>Le nom n'est pas renseigné</value>
+  </data>
+  <data name="OUE4.Text" xml:space="preserve">
+    <value>Le mot de passe n'est pas renseigné</value>
+  </data>
+  <data name="OUE5.Text" xml:space="preserve">
+    <value>Le rôle n'est pas renseigné</value>
+  </data>
+  <data name="OUE6.Text" xml:space="preserve">
+    <value>Ce login existe déjà. Vous devez en choisir un autre</value>
+  </data>
+  <data name="OUE7.Text" xml:space="preserve">
+    <value>Le prénom n'est pas renseigné</value>
+  </data>
+  <data name="OUE8.Text" xml:space="preserve">
+    <value>Le nom n'est pas renseigné</value>
+  </data>
+  <data name="PackageExceptionNameAlreadyExist.Text" xml:space="preserve">
+    <value>Le nom du produit de crédit existe déjà (Paramètres généraux)</value>
+  </data>
+  <data name="InstallmentExceptionNotFirstInstallmentToCancelRepay.Text" xml:space="preserve">
+    <value>Vous ne pouvez pas annuler ce versement car les versements suivants ne sont pas encore annulés</value>
+  </data>
+  <data name="OTE35.Text" xml:space="preserve">
+    <value>Ce numéro d'identifiant existe déjà</value>
+  </data>
+  <data name="OTE36.Text" xml:space="preserve">
+    <value>Ce nom existe déjà dans cette région</value>
+  </data>
+  <data name="CantRepayInTheFutur.Text" xml:space="preserve">
+    <value>Vous devez choisir une date postérieure à aujourd'hui</value>
+  </data>
+  <data name="OTE37.Text" xml:space="preserve">
+    <value>Ce client est un client douteux, pourquoi ?</value>
+  </data>
+  <data name="DecimalAmount.Text" xml:space="preserve">
+    <value>Vous utilisez une monnaie sans centimes</value>
+  </data>
+  <data name="ContractExceptionBeneficiaryIsBad.Text" xml:space="preserve">
+    <value>Vous ne pouvez pas créer de prêt pour un mauvais client</value>
+  </data>
+  <data name="ContractExceptionEventNotCancelable.Text" xml:space="preserve">
+    <value>Cet évènement ne peut pas être annulé</value>
+  </data>
+  <data name="AllInstallmentRepaid.Text" xml:space="preserve">
+    <value>Ce prêt a été entièrement remboursé</value>
+  </data>
+  <data name="CollateralExceptionAlreadyExist.Text" xml:space="preserve">
+    <value>Ce nom existe déjà</value>
+  </data>
+  <data name="CollateralExceptionNoSelect.Text" xml:space="preserve">
+    <value>Vous devez choisir un gage</value>
+  </data>
+  <data name="CollateralExceptionNewNameIsNull.Text" xml:space="preserve">
+    <value>Le nouveau nom n'est pas renseigné</value>
+  </data>
+  <data name="CollateralExceptionHasChildrens.Text" xml:space="preserve">
+    <value>Ce gage à des fils, il ne peut pas être supprimé</value>
+  </data>
+  <data name="CollateralExceptionCastInvalid.Text" xml:space="preserve">
+    <value>Impossible de modier ou supprimer</value>
+  </data>
+  <data name="PackageExceptionAmountCycleStockNameAlreadyExist.Text" xml:space="preserve">
+    <value>Ce nom exite déjà</value>
+  </data>
+  <data name="CollateralExceptionNameIsNull.Text" xml:space="preserve">
+    <value>Le nom n'est pas renseigné</value>
+  </data>
+  <data name="PackageExceptionAmountCycleStockIsNull.Text" xml:space="preserve">
+    <value>Sélectionner un cycle de crédit avant de sauvegarder</value>
+  </data>
+  <data name="PackageExceptionAmountCycleStockIsBad.Text" xml:space="preserve">
+    <value>Le cycle de crédit n'est pas renseigné</value>
+  </data>
+  <data name="OTE39.Text" xml:space="preserve">
+    <value>Un champ personnalisable obligatoire n'est pas renseigné</value>
+  </data>
+  <data name="OTE40.Text" xml:space="preserve">
+    <value>Le numéro de passport ne peut contenir que des caractères alphanumériques en majuscules</value>
+  </data>
+  <data name="OctopusCorporateEventExceptionAmountIsEmpty.Text" xml:space="preserve">
+    <value>Le montant est vide</value>
+  </data>
+  <data name="OctopusCorporateEventExceptionAmountIsLessZero.Text" xml:space="preserve">
+    <value>le montant est inférieur a 0</value>
+  </data>
+  <data name="OctopusCorporateEventExceptionCodeIsEmpty.Text" xml:space="preserve">
+    <value>Le code n'est pas renseigné</value>
+  </data>
+  <data name="OctopusCorporateEventExceptionNameIsEmpty.Text" xml:space="preserve">
+    <value>Le nom n'est pas renseigné</value>
+  </data>
+  <data name="OctopusCorporateExceptionCityIsEmpty.Text" xml:space="preserve">
+    <value>La ville n'est pas renseignée</value>
+  </data>
+  <data name="OctopusCorporateExceptionCodeIsEmpty.Text" xml:space="preserve">
+    <value>Le code n'est pas renseigné</value>
+  </data>
+  <data name="OctopusCorporateExceptionDistricIsEmpty.Text" xml:space="preserve">
+    <value>Le district n'est pas renseigné</value>
+  </data>
+  <data name="OctopusCorporateExceptionNameIsEmpty.Text" xml:space="preserve">
+    <value>Le nom n'est pas renseigné</value>
+  </data>
+  <data name="OctopusCorporateExceptionProvinceIsEmpty.Text" xml:space="preserve">
+    <value>La région ou le département ne sont pas renseignés</value>
+  </data>
+  <data name="OctopusFundingLineExceptionBeginDateGreaterEndDate.Text" xml:space="preserve">
+    <value>La date de debut est superieur a la date de fin</value>
+  </data>
+  <data name="OctopusFundingLineExceptionCodeIsEmpty.Text" xml:space="preserve">
+    <value>Le code n'est pas renseigné</value>
+  </data>
+  <data name="OctopusFundingLineExceptionNameIsEmpty.Text" xml:space="preserve">
+    <value>Le nom n'est pas renseigné</value>
+  </data>
+  <data name="OctopusCorporateEventExceptionCommitmentFinancialIsNotEnough.Text" xml:space="preserve">
+    <value>La capacité d'engagement de la ligne de financement est insuffisante</value>
+  </data>
+  <data name="ProjectExceptionCAIsBad.Text" xml:space="preserve">
+    <value>Le CA prévisionel doit etre un nombre</value>
+  </data>
+  <data name="ProjectExceptionFinancialPlanAmountIsBad.Text" xml:space="preserve">
+    <value>Le montant du plan financier doit etre un nombre</value>
+  </data>
+  <data name="ProjectExceptionFinancialTotalPlanAmountIsBad.Text" xml:space="preserve">
+    <value>Le montant total du plan financier doit etre un nombre</value>
+  </data>
+  <data name="ProjectExceptionCACannotBeNullInFollowUp.Text" xml:space="preserve">
+    <value>Le CA n'est pas renseigné dans le Suivi</value>
+  </data>
+  <data name="OctopusFundingLineEventExceptionCommitmentFinancialIsNotEnough.Text" xml:space="preserve">
+    <value>La ligne de financement n'est pas suffisamment créditée</value>
+  </data>
+  <data name="CustomExportFileExtensionIsIncorrect.Text" xml:space="preserve">
+    <value>L'extension du fichier n'est pas valide</value>
+  </data>
+  <data name="CustomExportFileNameIsEmpty.Text" xml:space="preserve">
+    <value>Le nom du fichier n'est pas renseigné</value>
+  </data>
+  <data name="CustomExportSomeRequiredFieldsAreMissing.Text" xml:space="preserve">
+    <value>Cetains champs personnalisables obligatoires  ne sont pas renseignés</value>
+  </data>
+  <data name="OTE41.Text" xml:space="preserve">
+    <value>Vous devez sélectionner un agent de crédit</value>
+  </data>
+  <data name="OTE42.Text" xml:space="preserve">
+    <value>Le champ personnalisable n'est pas unique. Veuillez vérifier vos données.</value>
+  </data>
+  <data name="OctopusFundingLineEventExceptionAmountIsEmpty.Text" xml:space="preserve">
+    <value>Le montant est vide</value>
+  </data>
+  <data name="LoanScaleTableMax.Text" xml:space="preserve">
+    <value>Entrer le montant maximum pour cette échelle de prêt</value>
+  </data>
+  <data name="LoanScaleTableMin.Text" xml:space="preserve">
+    <value>Entrer le montant minimum pour cette échelle de prêt</value>
+  </data>
+  <data name="SavingBalanceIsInvalid.Text" xml:space="preserve">
+    <value>Le solde n'est pas valide</value>
+  </data>
+  <data name="SavingContractAmountOnCompulsorySavingsIsInvalid.Text" xml:space="preserve">
+    <value>Le solde de l'épargne obligatoire n'est pas valide</value>
+  </data>
+  <data name="SavingContractCompulsorySavingsLinkedToLoan.Text" xml:space="preserve">
+    <value>Ce contrat d'épargne est déjà lié à un prêt en cours</value>
+  </data>
+  <data name="SavingContractForTransferIdenticals.Text" xml:space="preserve">
+    <value>Les deux comptes pour le transfert sont identiques</value>
+  </data>
+  <data name="SavingContractForTransferNotSameCurrncy.Text" xml:space="preserve">
+    <value>Le compte sélectionné n'est pas dans la même devise</value>
+  </data>
+  <data name="SavingContractIsNull.Text" xml:space="preserve">
+    <value>Le contrat est nul</value>
+  </data>
+  <data name="SavingContractLoanDoesNotAcceptSavings.Text" xml:space="preserve">
+    <value>Le crédit sélectionné n'accepte pas de compte d'épargne obligatoire</value>
+  </data>
+  <data name="SavingContractLoanHasNotSameClient.Text" xml:space="preserve">
+    <value>Le client du crédit sélectionné n'est pas le même que le client du compte d'épargne</value>
+  </data>
+  <data name="SavingContractLoanHasNotSameCurrency.Text" xml:space="preserve">
+    <value>La devise du crédit n'est pas la même que la devise du compte d'épargne</value>
+  </data>
+  <data name="SavingContractLoanIsClosed.Text" xml:space="preserve">
+    <value>Le crédit a été fermé</value>
+  </data>
+  <data name="SavingContractLoanIsInvalid.Text" xml:space="preserve">
+    <value>Le crédit n'est pas valide</value>
+  </data>
+  <data name="SavingContractNoCompulsorySavings.Text" xml:space="preserve">
+    <value>L'épargne obligatoire n'est pas active pour ce crédit</value>
+  </data>
+  <data name="SavingContractNotAtMaturity.Text" xml:space="preserve">
+    <value>Le compte d'épargne n'est pas à maturité</value>
+  </data>
+  <data name="SavingContractRolloverTransferAccountHasNotSameClient.Text" xml:space="preserve">
+    <value>Le compte d'épargne sélectionné pour le transfert n'a pas le même client</value>
+  </data>
+  <data name="SavingContractRolloverTransferAccountIsClosed.Text" xml:space="preserve">
+    <value>Le compte d'épargne sélectionné pour le transfert est fermé</value>
+  </data>
+  <data name="SavingContractRolloverTransferAccountIsInvalid.Text" xml:space="preserve">
+    <value>Le compte d'épargne sélectionné pour le transfert n'est pas valide</value>
+  </data>
+  <data name="SavingContractRolloverTransferAccountIsSavingDepositOrCompulsorySavings.Text" xml:space="preserve">
+    <value>Le compte d'épargne sélectionné pour le transfert est de type compte à terme ou épargne obligatoire</value>
+  </data>
+  <data name="SavingContractTransferFeesIsInvalid.Text" xml:space="preserve">
+    <value>Les frais de transfer ne sont pas valides</value>
+  </data>
+  <data name="SavingCreditTransferAccountInvalid.Text" xml:space="preserve">
+    <value>Le compte d'épargne sélectionné pour le transfert n'accepte pas de transfert</value>
+  </data>
+  <data name="SavingDepositAmountIsInvalid.Text" xml:space="preserve">
+    <value>Le montant du dépôt n'est pas valide</value>
+  </data>
+  <data name="SavingDepositDateIsInvalid.Text" xml:space="preserve">
+    <value>La date du dépôt n'est pas valide</value>
+  </data>
+  <data name="SavingEntryFeesIsInvalid.Text" xml:space="preserve">
+    <value>Les frais de création ne sont pas valides</value>
+  </data>
+  <data name="SavingInitialAmountIsInvalid.Text" xml:space="preserve">
+    <value>Le montant initial n'est pas valide</value>
+  </data>
+  <data name="SavingInterestRateIsInvalid.Text" xml:space="preserve">
+    <value>Le taux d'intérêt n'est pas valide</value>
+  </data>
+  <data name="SavingProductBalanceIsInvalid.Text" xml:space="preserve">
+    <value>Le solde n'est pas renseigné ou mal renseigné. 
+Vous devez remplir "min" et "max" (Paramètres Généraux)</value>
+  </data>
+  <data name="SavingProductCalculAmountBaseIsNull.Text" xml:space="preserve">
+    <value>La base de calcul n'est pas valide</value>
+  </data>
+  <data name="SavingProductCodeIsEmpty.Text" xml:space="preserve">
+    <value>Le code du produit d'épargne n'est pas renseigné (Paramètres généraux)</value>
+  </data>
+  <data name="SavingProductDepositAmountIsInvalid.Text" xml:space="preserve">
+    <value>Le montant pour le dépôt en espèces (cash) n'est pas renseigné ou mal renseigné. Vous devez remplir "Min" et Max" (onglet Transactions)</value>
+  </data>
+  <data name="SavingProductDepositMinAmountIsInvalid.Text" xml:space="preserve">
+    <value>Le montant pour le dépôt en espèces (cash) n'est pas renseigné ou mal renseigné. Vous devez remplir "Min" et Max" (onglet Transactions)</value>
+  </data>
+  <data name="SavingProductDuplicateProductName.Text" xml:space="preserve">
+    <value>Un produit d'épargne avec ce nom existe déjà (Paramètres généraux)</value>
+  </data>
+  <data name="SavingProductEntryFeesIsInvalid.Text" xml:space="preserve">
+    <value>Les frais de création ne sont pas renseignés ou mal renseignés. 
+Vous devez remplir soit "min" et "max", soit "valeur". Si vous ne souhaitez pas utiliser de frais de création, mettez "valeur" à "0" (onglet gestion)</value>
+  </data>
+  <data name="SavingProductEntryFeesMinMaxIsInvalid.Text" xml:space="preserve">
+    <value>Les frais de création ne sont pas renseignés ou mal renseignés.
+Vous devez remplir soit "min" et "max", soit "valeur". Si vous ne souhaitez pas utiliser de frais de création, mettez "valeur" à "0" (onglet gestion)</value>
+  </data>
+  <data name="SavingProductFlatTransferFeesIsInvalid.Text" xml:space="preserve">
+    <value>Les frais de transfert intra-branche ne sont pas renseignés ou mal renseignés. 
+Vous devez remplir soit "min" et "max", soit "valeur". Si vous ne souhaitez pas utiliser de frais de transfert, mettez "valeur" à "0" (onglet Transactions)</value>
+  </data>
+  <data name="SavingProductFlatTransferFeesMinIsInvalid.Text" xml:space="preserve">
+    <value>Les frais de transfert intra-branche ne sont pas renseignés ou mal renseignés. 
+Vous devez remplir soit "min" et "max", soit "valeur". Si vous ne souhaitez pas utiliser de frais de transfert, mettez "valeur" à "0" (onglet Transactions)</value>
+  </data>
+  <data name="SavingProductFlatTransferFeesMinMaxIsInvalid.Text" xml:space="preserve">
+    <value>Les frais de transfert intra-branche ne sont pas renseignés ou mal renseignés. 
+Vous devez remplir soit "min" et "max", soit "valeur". Si vous ne souhaitez pas utiliser de frais de transfert, mettez "valeur" à "0" (onglet Transactions)</value>
+  </data>
+  <data name="SavingProductFlatWithdrawFeesIsInvalid.Text" xml:space="preserve">
+    <value>Les frais de retrait ne sont pas renseignés ou mal renseignés. 
+Vous devez remplir soit "min" et "max", soit "valeur". Si vous ne souhaitez pas utiliser de frais de retrait, mettez "valeur" à "0" (onglet Transactions)</value>
+  </data>
+  <data name="SavingProductFlatWithdrawFeesMinIsInvalid.Text" xml:space="preserve">
+    <value>Les frais de retrait ne sont pas renseignés ou mal renseignés. 
+Vous devez remplir soit "min" et "max", soit "valeur". Si vous ne souhaitez pas utiliser de frais de retrait, mettez "valeur" à "0" (onglet Transactions)</value>
+  </data>
+  <data name="SavingProductFlatWithdrawFeesMinMaxIsInvalid.Text" xml:space="preserve">
+    <value>Les frais de retrait ne sont pas renseignés ou mal renseignés. 
+Vous devez remplir soit "min" et "max", soit "valeur". Si vous ne souhaitez pas utiliser de frais de retrait, mettez "valeur" à "0" (onglet Transactions)</value>
+  </data>
+  <data name="SavingProductInitialAmountIsInvalid.Text" xml:space="preserve">
+    <value>Le montant initial n'est pas renseigné ou mal renseigné. 
+Vous devez remplir "min" et "max" (Paramètres Généraux)</value>
+  </data>
+  <data name="SavingProductInitialAmountMaxNotInBalance.Text" xml:space="preserve">
+    <value>Le montant initial max doit être inférieur ou égal au solde max (Paramètres Généraux)</value>
+  </data>
+  <data name="SavingProductInitialAmountMinIsInvalid.Text" xml:space="preserve">
+    <value>Le montant initial doit être positif</value>
+  </data>
+  <data name="SavingProductInitialAmountMinMaxIsInvalid.Text" xml:space="preserve">
+    <value>Le montant initial min ou max n'est pas valide (Paramètres Généraux)</value>
+  </data>
+  <data name="SavingProductInitialAmountMinNotInBalance.Text" xml:space="preserve">
+    <value>Le montant initial min doit être supérieur ou égal au solde min (Paramètres Généraux)</value>
+  </data>
+  <data name="SavingProductInterestBaseIncompatibleFrequency.Text" xml:space="preserve">
+    <value>La base d'intérêt n'est pas compatible avec la fréquence sélectionnée</value>
+  </data>
+  <data name="SavingProductInterestRateIsInvalid.Text" xml:space="preserve">
+    <value>Le taux d'intéret n'est pas renseigné ou mal renseigné.
+Vous devez remplir soit "min" et "max", soit "valeur". Si vous ne souhaitez pas utiliser de taux d'intérêt, mettez "valeur" à "0" (Paramètres Généraux)</value>
+  </data>
+  <data name="SavingProductInterestRateMinMaxIsInvalid.Text" xml:space="preserve">
+    <value>Le taux d'intéret n'est pas renseigné ou mal renseigné.
+Vous devez remplir soit "min" et "max", soit "valeur". Si vous ne souhaitez pas utiliser de taux d'intérêt, mettez "valeur" à "0" (Paramètres Généraux)</value>
+  </data>
+  <data name="SavingProductInterestsBaseIsInvalid.Text" xml:space="preserve">
+    <value>La base d'intérêt n'est pas valide</value>
+  </data>
+  <data name="SavingProductInterestsFrequencyIsInvalid.Text" xml:space="preserve">
+    <value>La fréquence d'intérêt n'est pas valide</value>
+  </data>
+  <data name="SavingProductIsInvalid.Text" xml:space="preserve">
+    <value>Le produit n'est pas valide</value>
+  </data>
+  <data name="SavingProductNameIsEmpty.Text" xml:space="preserve">
+    <value>Le nom du produit d'épargne n'est pas renseigné (Paramètres généraux)</value>
+  </data>
+  <data name="SavingProductNumberPeriodIsInvalid.Text" xml:space="preserve">
+    <value>Le nombre de période n'est pas valide</value>
+  </data>
+  <data name="SavingProductNumberPeriodMinIsInvalid.Text" xml:space="preserve">
+    <value>Le nombre de période min n'est pas valide</value>
+  </data>
+  <data name="SavingProductNumberPeriodMinMaxIsInvalid.Text" xml:space="preserve">
+    <value>Le nombre de période min ou max n'est pas valide</value>
+  </data>
+  <data name="SavingProductRateTransferFeesIsInvalid.Text" xml:space="preserve">
+    <value>Les frais de transfert intra-branche ne sont pas renseignés ou mal renseignés. 
+Vous devez remplir soit "min" et "max", soit "valeur". Si vous ne souhaitez pas utiliser de frais de transfert, mettez "valeur" à "0" (onglet Transactions)</value>
+  </data>
+  <data name="SavingProductRateTransferFeesMinIsInvalid.Text" xml:space="preserve">
+    <value>Les frais de transfert intra-branche ne sont pas renseignés ou mal renseignés. 
+Vous devez remplir soit "min" et "max", soit "valeur". Si vous ne souhaitez pas utiliser de frais de transfert, mettez "valeur" à "0" (onglet Transactions)</value>
+  </data>
+  <data name="SavingProductRateTransferFeesMinMaxIsInvalid.Text" xml:space="preserve">
+    <value>Les frais de transfert ne sont pas renseignés ou mal renseignés. 
+Vous devez remplir soit "min" et "max", soit "valeur". Si vous ne souhaitez pas utiliser de frais de transfert, mettez "valeur" à "0" (onglet Transactions)</value>
+  </data>
+  <data name="SavingProductRateWithdrawFeesIsInvalid.Text" xml:space="preserve">
+    <value>Les frais de retrait ne sont pas renseignés ou mal renseignés. 
+Vous devez remplir soit "min" et "max", soit "valeur". Si vous ne souhaitez pas utiliser de frais de retrait, mettez "valeur" à "0" (onglet Transactions)</value>
+  </data>
+  <data name="SavingProductRateWithdrawFeesMinIsInvalid.Text" xml:space="preserve">
+    <value>Les frais de retrait ne sont pas renseignés ou mal renseignés. 
+Vous devez remplir soit "min" et "max", soit "valeur". Si vous ne souhaitez pas utiliser de frais de retrait, mettez "valeur" à "0" (onglet Transactions)</value>
+  </data>
+  <data name="SavingProductRateWithdrawFeesMinMaxIsInvalid.Text" xml:space="preserve">
+    <value>Les frais de retrait ne sont pas renseignés ou mal renseignés. 
+Vous devez remplir soit "min" et "max", soit "valeur". Si vous ne souhaitez pas utiliser de frais de retrait, mettez "valeur" à "0" (onglet Transactions)</value>
+  </data>
+  <data name="SavingProductTransferAmountIsInvalid.Text" xml:space="preserve">
+    <value>Le montant pour le transfert n'est pas renseigné ou mal renseigné. 
+Vous devez remplir "Min" et Max" (onglet Transactions)</value>
+  </data>
+  <data name="SavingProductTransferAmountMinIsInvalid.Text" xml:space="preserve">
+    <value>Le montant de transfert minimum doit être positif</value>
+  </data>
+  <data name="SavingProductTransferFeesTypeEmpty.Text" xml:space="preserve">
+    <value>Le type de frais de transfer n'est pas valide</value>
+  </data>
+  <data name="SavingProductWithdrawalFeesIsInvalid.Text" xml:space="preserve">
+    <value>Les frais de retrait et de transfer ne sont pas valides</value>
+  </data>
+  <data name="SavingProductWithdrawalFeesMinIsInvalid.Text" xml:space="preserve">
+    <value>Les frais de retrait et de transfer ne sont pas valides</value>
+  </data>
+  <data name="SavingProductWithdrawalFeesMinMaxIsInvalid.Text" xml:space="preserve">
+    <value>Les frais de retrait et de transfer ne sont pas valides</value>
+  </data>
+  <data name="SavingProductWithdrawAmountIsInvalid.Text" xml:space="preserve">
+    <value>Le montant pour le retrait n'est pas renseigné ou mal renseigné. 
+Vous devez remplir "Min" et Max" (onglet Transactions)</value>
+  </data>
+  <data name="SavingProductWithdrawFeesTypeEmpty.Text" xml:space="preserve">
+    <value>Le type de frais de retrait n'est pas valide</value>
+  </data>
+  <data name="SavingProductWithdrawMinAmountIsInvalid.Text" xml:space="preserve">
+    <value>Le montant pour le retrait n'est pas renseigné ou mal renseigné. 
+Vous devez remplir "Min" et Max" (onglet Transactions)</value>
+  </data>
+  <data name="SavingTransferAmountIsInvalid.Text" xml:space="preserve">
+    <value>Le montant pour le transfert n'est pas renseigné ou mal renseigné. 
+Vous devez remplir "Min" et Max" (onglet Transactions)</value>
+  </data>
+  <data name="SavingWithdrawalDateIsInvalid.Text" xml:space="preserve">
+    <value>La date de retrait n'est pas valide</value>
+  </data>
+  <data name="SavingWithdrawAmountIsInvalid.Text" xml:space="preserve">
+    <value>Le montant du retrait n'est pas valide</value>
+  </data>
+  <data name="SavingWithdrawFeesIsInvalid.Text" xml:space="preserve">
+    <value>Les frais de retrait ne sont pas valides</value>
+  </data>
+  <data name="ClientTypeIsEmpty.Text" xml:space="preserve">
+    <value>Le type de clients qui bénéficient de ce produit n'est pas renseigné (Paramètres généraux)</value>
+  </data>
+  <data name="SavingProductPeriodicityIsEmpty.Text" xml:space="preserve">
+    <value>Sélectionnez une périodicité pour ce produit</value>
+  </data>
+  <data name="OverdraftFeesIsInvalid.Text" xml:space="preserve">
+    <value>Les frais de découvert ne sont pas renseignés ou mal renseignés.
+Vous devez remplir soit "min" et "max", soit "valeur". Si vous ne souhaitez pas utiliser de frais de découvert, mettez "valeur" à "0" (onglet Découvert)</value>
+  </data>
+  <data name="AgioFeesIsInvalid.Text" xml:space="preserve">
+    <value>Les agios ne sont pas renseignés ou mal renseignés. 
+Vous devez remplir soit "min" et "max", soit "valeur". Si vous ne souhaitez pas utiliser d'agios, mettez "valeur" à "0" (onglet Découvert)</value>
+  </data>
+  <data name="ChequeDepositFeesIsInvalid" xml:space="preserve">
+    <value>Les frais de dépôt par chèque ne sont pas renseignés ou mal renseignés. 
+Vous devez remplir soit "min" et "max", soit "valeur". Si vous ne souhaitez pas utiliser de frais de dépôt, mettez "valeur" à "0" (onglet Transaction)</value>
+  </data>
+  <data name="ChequeDepositIsInvalid" xml:space="preserve">
+    <value>Le montant pour les dépôts par chèque n'est pas renseigné ou mal renseigné. 
+Vous devez remplir "min" et "max" (onglet Transaction)</value>
+  </data>
+  <data name="ReopenFeesIsInvalid" xml:space="preserve">
+    <value>Les frais de ré-ouverture de compte ne sont pas renseignés ou mal renseignés. 
+Vous devez remplir soit "min" et "max", soit "valeur". Si vous ne souhaitez pas utiliser de frais de réouverture, mettez "valeur" à "0" (onglet Gestion)</value>
+  </data>
+  <data name="ReopenFeesMinIsInvalid" xml:space="preserve">
+    <value>Les frais de ré-ouverture de compte ne sont pas renseignés ou mal renseignés. 
+Vous devez remplir soit "min" et "max", soit "valeur". Si vous ne souhaitez pas utiliser de frais de réouverture, mettez "valeur" à "0" (onglet Gestion)</value>
+  </data>
+  <data name="AccountExceptionCannotBeDeleted.Text" xml:space="preserve">
+    <value>Ce compte ne peut pas être supprimé</value>
+  </data>
+  <data name="AccountExceptionCurrencyIsNull.Text" xml:space="preserve">
+    <value>Précisez la devise </value>
+  </data>
+  <data name="AccountExceptionDescriptionIsEmpty.Text" xml:space="preserve">
+    <value>La description du compte n'est pas valide</value>
+  </data>
+  <data name="AccountExceptionParentAccountDoesntExists.Text" xml:space="preserve">
+    <value>Le compte parent n'est pas valide ou n'existe pas</value>
+  </data>
+  <data name="AccountExceptionParentAccountIsInvalid.Text" xml:space="preserve">
+    <value>Le compte parent n'est pas valide ou n'existe pas</value>
+  </data>
+  <data name="AccountingRuleClientTypeIsInvalid.Text" xml:space="preserve">
+    <value>Le type de client n'est pas valide</value>
+  </data>
+  <data name="AccountingRuleGenericAccountIsInvalid.Text" xml:space="preserve">
+    <value>Le compte générique n'est pas valide</value>
+  </data>
+  <data name="AccountingRuleGenericAndSpecificAccountsAreIdentical.Text" xml:space="preserve">
+    <value>Les comptes génériques et spécifiques ne sont pas valides</value>
+  </data>
+  <data name="AccountingRuleProductTypeIsInvalid.Text" xml:space="preserve">
+    <value>Le type de produit n'est pas valide</value>
+  </data>
+  <data name="AccountingRuleSpecificAccountIsInvalid.Text" xml:space="preserve">
+    <value>Le compte spécifié n'est pas valide</value>
+  </data>
+  <data name="ActionProhibitedForUser.Text" xml:space="preserve">
+    <value>Vous n'avez pas les droits pour effectuer cette {0}  opération</value>
+  </data>
+  <data name="BadFundingLineID.Text" xml:space="preserve">
+    <value>L'identifiant de la ligne de financement n'est pas valide</value>
+  </data>
+  <data name="BirthDateIsWrong.Text" xml:space="preserve">
+    <value>L'âge du client n'est pas valide</value>
+  </data>
+  <data name="BusinessBankBicCodeIsWrong.Text" xml:space="preserve">
+    <value>Le numéro BIC n'est pas correct</value>
+  </data>
+  <data name="BusinessBankIbanIsWrong.Text" xml:space="preserve">
+    <value>Le n° IBAN n'est pas correct (onglet Banques)</value>
+  </data>
+  <data name="CannotGetDataSource.Text" xml:space="preserve">
+    <value>Un problème est survenu pendant l'exécution de la procédure, veuillez contacter votre administrateur</value>
+  </data>
+  <data name="CannotLoadParameters.Text" xml:space="preserve">
+    <value>Erreur de chargement des paramètres pour ce rapport: veuillez contacter votre administrateur</value>
+  </data>
+  <data name="CannotLoadReport.Text" xml:space="preserve">
+    <value>Erreur de chargement du rapport: veuillez contacter votre administrateur</value>
+  </data>
+  <data name="ContractExceptionCorporateIsNull.Text" xml:space="preserve">
+    <value>Les contrats ne sont pas renseignés</value>
+  </data>
+  <data name="ContractExceptionCreditCommiteeCommentNotModified.Text" xml:space="preserve">
+    <value>le commentaire n'est pas renseigné</value>
+  </data>
+  <data name="ContractExceptionProjectIsNull.Text" xml:space="preserve">
+    <value>Sauvegardez le projet avant d'effectuer cette opération</value>
+  </data>
+  <data name="ContractExceptionStatusNotModified.Text" xml:space="preserve">
+    <value>Le statut doit être modifié</value>
+  </data>
+  <data name="CurrencyAlreadyExists.Text" xml:space="preserve">
+    <value>Cette devise existe déjà</value>
+  </data>
+  <data name="CurrencyIsEmpty.Text" xml:space="preserve">
+    <value>La devise du produit de crédit n'est pas renseignée (Paramètres généraux)</value>
+  </data>
+  <data name="CurrencyMisMatch.Text" xml:space="preserve">
+    <value>La devise de la ligne de financement ne correspond pas à la devise de déboursement du prêt</value>
+  </data>
+  <data name="ExchangeRateExceptionCurrencyIsEmpty.Text" xml:space="preserve">
+    <value>La devise n'est pas renseignée</value>
+  </data>
+  <data name="ExchangeRateExceptionThisCurrencyIsPivot.Text" xml:space="preserve">
+    <value>Cette devise est la devise pivot et ne peux pas avoir de taux de change</value>
+  </data>
+  <data name="LoanShareAmountIsEmpty.Text" xml:space="preserve">
+    <value>Le montant de la répoartition des parts n'est pas valide</value>
+  </data>
+  <data name="LoanWasValidatedLaterThanDisbursed.Text" xml:space="preserve">
+    <value>La date de validation par le comité de crédit est postérieure à la date de déboursement prévue. Vous devez modifier l'une de ces dates</value>
+  </data>
+  <data name="ManualEntrySameAccount.Text" xml:space="preserve">
+    <value>Les comptes sont identiques</value>
+  </data>
+  <data name="MaximumCurrencyLimitReached.Text" xml:space="preserve">
+    <value>Ocotpus supporte uniquement 2 devises</value>
+  </data>
+  <data name="OctopusBookingExceptionDebitAndCreditAccountAreIdentical.Text" xml:space="preserve">
+    <value>Les comptes de débit et de crédit sont identiques</value>
+  </data>
+  <data name="OctopusBookingExceptionsCreditAccountIsEmpty.Text" xml:space="preserve">
+    <value>Le compte de crédit n'est pas renseigné</value>
+  </data>
+  <data name="OctopusBookingExceptionsDebitAccountIsEmpty.Text" xml:space="preserve">
+    <value>Le compte de débit n'est pas renseigné</value>
+  </data>
+  <data name="OctopusBookingExceptionsNameIsEmpty.Text" xml:space="preserve">
+    <value>Le nom n'est pas renseigné</value>
+  </data>
+  <data name="OctopusCorporateEventExceptionAmountIsBigger.Text" xml:space="preserve">
+    <value>Le montant est trop élevé</value>
+  </data>
+  <data name="OctopusCorporateEventExceptionAmountIsNonCompliant.Text" xml:space="preserve">
+    <value>Le montant n'est pas conforme</value>
+  </data>
+  <data name="OctopusCorporateEventExceptionAmountIsTaller.Text" xml:space="preserve">
+    <value>La ligne de financement sélectionnée n'est pas suffisamment créditée</value>
+  </data>
+  <data name="OctopusCorporateEventExceptionDirectionIsEmpty.Text" xml:space="preserve">
+    <value>le debit ou le credit n'est pas renseigné</value>
+  </data>
+  <data name="OctopusCorporateExceptionDistrictIsEmpty.Text" xml:space="preserve">
+    <value>Le district n'est pas renseigné</value>
+  </data>
+  <data name="OctopusCorporateExceptionEmployeeIsFalseFormat.Text" xml:space="preserve">
+    <value>L'employé n'est pas un nombre</value>
+  </data>
+  <data name="OctopusCorporateExceptionVolunteerIsEmpty.Text" xml:space="preserve">
+    <value>Le champ "volontaires" est vide</value>
+  </data>
+  <data name="OctopusCorporateExceptionVolunteerIsFalseFormat.Text" xml:space="preserve">
+    <value>Le champ "volontaires" n'est pas un nombre</value>
+  </data>
+  <data name="OctopusFundingLineEventExceptionAmountIsBigger.Text" xml:space="preserve">
+    <value>Le montant ne doit pas dépasser 999999999999999</value>
+  </data>
+  <data name="OctopusFundingLineEventExceptionAmountIsLessZero.Text" xml:space="preserve">
+    <value>Le montant est négatif</value>
+  </data>
+  <data name="OctopusFundingLineEventExceptionAmountIsNonCompliant.Text" xml:space="preserve">
+    <value>Le montant n'est pas conforme</value>
+  </data>
+  <data name="OctopusFundingLineEventExceptionAmountIsTaller.Text" xml:space="preserve">
+    <value>la ligne de financement sélectionée n'est pas suffisamment créditée pour ce prêt</value>
+  </data>
+  <data name="OctopusFundingLineEventExceptionCodeIsEmpty.Text" xml:space="preserve">
+    <value>le code de la ligne de financement n'est pas renseigné</value>
+  </data>
+  <data name="OctopusFundingLineEventExceptionDirectionIsEmpty.Text" xml:space="preserve">
+    <value>Le débit ou crédit n'est pas renseigné</value>
+  </data>
+  <data name="OctopusFundingLineEventExceptionNameIsEmpty.Text" xml:space="preserve">
+    <value>Le nom de la ligne de financement n'est pas renseigné</value>
+  </data>
+  <data name="OctopusFundingLineExceptionFundingLineNameExists.Text" xml:space="preserve">
+    <value>Une ligne de financement avec ce nom existe déjà</value>
+  </data>
+  <data name="OME1.Text" xml:space="preserve">
+    <value>Le nom n'est pas renseigné</value>
+  </data>
+  <data name="OME2.Text" xml:space="preserve">
+    <value>Le login n'est pas renseigné</value>
+  </data>
+  <data name="OME3.Text" xml:space="preserve">
+    <value>Le mot de passe n'est pas renseigné</value>
+  </data>
+  <data name="OME4.Text" xml:space="preserve">
+    <value>Les mots de passe sont différents</value>
+  </data>
+  <data name="onlyChars.Text" xml:space="preserve">
+    <value>Caractères autorisés : a-z, A-Z,0-9 et _ (underscore)</value>
+  </data>
+  <data name="onlyInts.Text" xml:space="preserve">
+    <value>Caractères autorisés:  0-9</value>
+  </data>
+  <data name="onlyIntsAndUnderscore.Text" xml:space="preserve">
+    <value>Caractères autorisés:  0-9 et - </value>
+  </data>
+  <data name="OTE38.Text" xml:space="preserve">
+    <value>Le cycle de crédit n'est pas renseigné</value>
+  </data>
+  <data name="OUE9.Text" xml:space="preserve">
+    <value>L'utilisateur a déjà des contrats, merci de réassigner</value>
+  </data>
+  <data name="PackageExceptionExoticProductInIncorrect.Text" xml:space="preserve">
+    <value>Le coefficient "intérêts + principal" doit être égal à 100</value>
+  </data>
+  <data name="PackageExceptionExoticProductNameAlreadyExist" xml:space="preserve">
+    <value>Le nom du produit exotique existe déjà</value>
+  </data>
+  <data name="PackageExceptionGuarantedAmountBadlyInformed.Text" xml:space="preserve">
+    <value>Le montant de la garantie n'est pas renseigné</value>
+  </data>
+  <data name="PackageExceptionGuarantedFeesBadlyInformed.Text" xml:space="preserve">
+    <value>Les frais de la garantie ne sont pas renseignés</value>
+  </data>
+  <data name="PackageExceptionInstallmentTypeNameAlreadyExist.Text" xml:space="preserve">
+    <value>Ce nom existe déjà</value>
+  </data>
+  <data name="PackageExceptionInstallmentTypeValuesAlreadyExist.Text" xml:space="preserve">
+    <value>Une échéance avec les mêmes paramètres existe déjà</value>
+  </data>
+  <data name="PackageExceptionProductCodeIsEmpty.Text" xml:space="preserve">
+    <value>Le code du produit de crédit n'est pas renseigné (Paramètres généraux)</value>
+  </data>
+  <data name="ParentAccountNotSameDescription" xml:space="preserve">
+    <value>Le compte parent n'est pas du même type</value>
+  </data>
+  <data name="PersonalBankBicCodeIsWrong.Text" xml:space="preserve">
+    <value>Le code BICn'est pas correct (onglet Banques)</value>
+  </data>
+  <data name="PersonalBankIbanIsWrong.Text" xml:space="preserve">
+    <value>Le code IBAN n'est pas correct (onglet Banques)</value>
+  </data>
+  <data name="PersonIsInTheGroup.Text" xml:space="preserve">
+    <value>La personne est déjà membre d'un groupe</value>
+  </data>
+  <data name="ProjectExceptionAimIsNull.Text" xml:space="preserve">
+    <value>L'objectif du projet n'est pas renseigné</value>
+  </data>
+  <data name="ProjectExceptionClientIsNull.Text" xml:space="preserve">
+    <value>Enregistrer le client avant cette opération</value>
+  </data>
+  <data name="ProjectExceptionCodeIsNull.Text" xml:space="preserve">
+    <value>Le code du projet n'est pas renseigné</value>
+  </data>
+  <data name="ProjectExceptionNameIsNull.Text" xml:space="preserve">
+    <value>Le nom du projet n'est pas renseigné</value>
+  </data>
+  <data name="RepaymentBeforeDisburse.Text" xml:space="preserve">
+    <value>Vous ne pouvez pas repayer avant la date de déboursement</value>
+  </data>
+  <data name="ReportProcedureSourceEmpty.Text" xml:space="preserve">
+    <value>La source SQL pour le rapport n'est pas définie. Contactez votre administrateur</value>
+  </data>
+  <data name="RoleHasUsers.Text" xml:space="preserve">
+    <value>Vous ne pouvez pas supprier un rôle qui a des utilisateurs rattachés</value>
+  </data>
+  <data name="RoleIsNull.Text" xml:space="preserve">
+    <value>Sélectionnez le rôle à supprimer</value>
+  </data>
+  <data name="SavingProductCloseFeesIsInvalid.Text" xml:space="preserve">
+    <value>Les frais de clôture ne sont pas renseignés ou mal renseignés. 
+Vous devez remplir soit "min" et "max", soit "valeur". Si vous ne souhaitez pas utiliser de frais de clôture, mettez "valeur" à "0" (onglet gestion)</value>
+  </data>
+  <data name="SavingProductCloseFeesMinIsInvalid.Text" xml:space="preserve">
+    <value>Les frais de clôture ne sont pas renseignés ou mal renseignés. 
+Vous devez remplir soit "min" et "max", soit "valeur". Si vous ne souhaitez pas utiliser de frais de clôture, mettez "valeur" à "0" (onglet gestion)</value>
+  </data>
+  <data name="SavingProductDepositFeesIsInvalid.Text" xml:space="preserve">
+    <value>Les frais de dépôt ne sont pas renseignés ou mal renseignés. 
+Vous devez remplir soit "min" et "max", soit "valeur". Si vous ne souhaitez pas utiliser de frais de dépôt, mettez "valeur" à "0" (onglet Transaction)</value>
+  </data>
+  <data name="SavingProductDepositFeesMinIsInvalid.Text" xml:space="preserve">
+    <value>Les frais de dépôt ne sont pas renseignés ou mal renseignés. 
+Vous devez remplir soit "min" et "max", soit "valeur". Si vous ne souhaitez pas utiliser de frais de dépôt, mettez "valeur" à "0" (onglet Transaction)</value>
+  </data>
+  <data name="SavingProductManagementFeesIsInvalid.Text" xml:space="preserve">
+    <value>Les frais de gestion ne sont pas renseignés ou mal renseignés. 
+Vous devez remplir soit "min" et "max", soit "valeur". Si vous ne souhaitez pas utiliser de frais de gestion, mettez "valeur" à "0" (onglet gestion)</value>
+  </data>
+  <data name="SavingProductManagementFeesMinIsInvalid.Text" xml:space="preserve">
+    <value>Les frais de gestion ne sont pas renseignés ou mal renseignés. 
+Vous devez remplir soit "min" et "max", soit "valeur". Si vous ne souhaitez pas utiliser de frais de gestion, mettez "valeur" à "0" (onglet gestion)</value>
+  </data>
+  <data name="TrancheAmountError.Text" xml:space="preserve">
+    <value>Vous ne pouvez pas ajouter une tranche avec ce montant</value>
+  </data>
+  <data name="TrancheDateError.Text" xml:space="preserve">
+    <value>Vérifier la date de la tranche</value>
+  </data>
+  <data name="WrongIDPattern.Text" xml:space="preserve">
+    <value>Le n° d'ID que vous avez entré ne correspond pas au standard défini dans  la configuration d'Octopus</value>
+  </data>
+  <data name="LoanHasNoCompulsorySavingsError.Text" xml:space="preserve">
+    <value>Un compte d'épargne obligatoire est nécessaire pour décaisser ce prêt</value>
+  </data>
+  <data name="CompulsorySavingSettingsEmpty.Text" xml:space="preserve">
+    <value>Les paramètres d'épargne obligatoire ne sont pas renseignés  ou mal renseignés. Vous devez remplir soit "min" et "max", soit "valeur". Si vous ne les utilisez pas, mettez valeur à "0" (onglet Garanties)</value>
+  </data>
+  <data name="SavingsEventCannotBeCanceled.Text" xml:space="preserve">
+    <value>Cet événement ne peut pas être annulé</value>
+  </data>
+  <data name="BalanceOnCurrentSavingAccount" xml:space="preserve">
+    <value>Le solde du compte est de {0}, il couvre {2} pret(s) à hauteur de {1}. Le maximum que vous pouvez retirer est {3}.</value>
+  </data>
+  <data name="BalanceOnCurrentSavingAccountForTransfer" xml:space="preserve">
+    <value>Le solde du compte est de {0}, il couvre {2} pret(s) à hauteur de {1}. Le maximum que vous pouvez transférer est {3}.</value>
+  </data>
+  <data name="PackageExceptionInstallmentTypeValuesAreUsed.Text" xml:space="preserve">
+    <value>Ce type d'échéance ne peut pas être supprimé: des produits actifs utilisent ce type d'échéance.</value>
+  </data>
+  <data name="SavingsEventCommentIsEmpty.Text" xml:space="preserve">
+    <value>Le commentaire n'est pas renseigné</value>
+  </data>
+  <data name="ContractExceptionEventCommentIsEmpty.Text" xml:space="preserve">
+    <value>Le commentaire n'est pas renseigné</value>
+  </data>
+  <data name="CycleParametersAreNotFilled.Text" xml:space="preserve">
+    <value>Vous devez renseigner au moins un paramètre pour chaque cycle.</value>
+  </data>
+  <data name="CycleParametersAreWrong.Text" xml:space="preserve">
+    <value>Certains cycles n'ont pas été renseignés en entier</value>
+  </data>
+  <data name="BranchIsEmpty" xml:space="preserve">
+    <value>Vous devez choisir une branche pour le client</value>
+  </data>
+  <data name="PicturesNotAllowed" xml:space="preserve">
+    <value>Les photos ne sont pas disponibles dans cette base de données</value>
+  </data>
+  <data name="AmountCanNotBeZero.Text" xml:space="preserve">
+    <value>La valeur du montant ne peut pas être 0</value>
+  </data>
+  <data name="BookingIsEmpty.Text" xml:space="preserve">
+    <value>La transaction n'est pas renseignée</value>
+  </data>
+  <data name="MaturityCanNotBeZero.Text" xml:space="preserve">
+    <value>Le nombre d'échéance ne peut pas être nul</value>
+  </data>
+  <data name="SavingProductInterBranchFlatTransferFeesIsInvalid" xml:space="preserve">
+    <value>Les frais de transfert inter-branches ne sont pas renseignés ou mal renseignés. 
+Vous devez remplir soit "min" et "max", soit "valeur". Si vous ne souhaitez pas utiliser de frais de transfert, mettez "valeur" à "0" (onglet Transactions)</value>
+  </data>
+  <data name="SavingProductInterBranchFlatTransferFeesMinIsInvalid" xml:space="preserve">
+    <value>Les frais de transfert inter-branches ne sont pas renseignés ou mal renseignés. 
+Vous devez remplir soit "min" et "max", soit "valeur". Si vous ne souhaitez pas utiliser de frais de transfert, mettez "valeur" à "0" (onglet Transactions)</value>
+  </data>
+  <data name="SavingProductInterBranchFlatTransferFeesMinMaxIsInvalid" xml:space="preserve">
+    <value>Les frais de transfert inter-branches ne sont pas renseignés ou mal renseignés. 
+Vous devez remplir soit "min" et "max", soit "valeur". Si vous ne souhaitez pas utiliser de frais de transfert, mettez "valeur" à "0" (onglet Transactions)</value>
+  </data>
+  <data name="SavingProductInterBranchRateTransferFeesIsInvalid" xml:space="preserve">
+    <value>Les frais de transfert inter-branches ne sont pas renseignés ou mal renseignés. 
+Vous devez remplir soit "min" et "max", soit "valeur". Si vous ne souhaitez pas utiliser de frais de transfert, mettez "valeur" à "0" (onglet Transactions)</value>
+  </data>
+  <data name="SavingProductInterBranchRateTransferFeesMinIsInvalid" xml:space="preserve">
+    <value>Les frais de transfert inter-branches ne sont pas renseignés ou mal renseignés. 
+Vous devez remplir soit "min" et "max", soit "valeur". Si vous ne souhaitez pas utiliser de frais de transfert, mettez "valeur" à "0" (onglet Transactions)</value>
+  </data>
+  <data name="SavingProductInterBranchRateTransferFeesMinMaxIsInvalid" xml:space="preserve">
+    <value>Les frais de transfert inter-branches ne sont pas renseignés ou mal renseignés. 
+Vous devez remplir soit "min" et "max", soit "valeur". Si vous ne souhaitez pas utiliser de frais de transfert, mettez "valeur" à "0" (onglet Transactions)</value>
+  </data>
+  <data name="BranchSameCodeException" xml:space="preserve">
+    <value>Une branche avec ce code existe déjà</value>
+  </data>
+  <data name="BranchSameNameException" xml:space="preserve">
+    <value>Une branche de ce nom existe déjà</value>
+  </data>
+  <data name="TooMuchPersonsInThisGroup.Text" xml:space="preserve">
+    <value>Ce groupe non solidaire a trop de personnes</value>
+  </data>
+  <data name="InsuranceBadlyFilled.Text" xml:space="preserve">
+    <value>Les valeurs de l'assurance crédit ne sont pas valides</value>
+  </data>
+  <data name="AccountExceptionIsUsed.Text" xml:space="preserve">
+    <value>Vous ne pouvez pas effacer un compte qui a des transactions</value>
+  </data>
+  <data name="FieldEmpty.Text" xml:space="preserve">
+    <value>Certains champs personnalisables obligatoires ne sont pas renseignés</value>
+  </data>
+  <data name="FieldIsMandatory.Text" xml:space="preserve">
+    <value>Un champ personnalisables est nécessaire avant d'enregistrer</value>
+  </data>
+  <data name="FieldIsNotUnique.Text" xml:space="preserve">
+    <value>Certains champs personnalisables ne sont pas uniques alors qu'ils devraient l'être</value>
+  </data>
+  <data name="NumberFieldIsNotANumber.Text" xml:space="preserve">
+    <value>Le champ personnalisable de type "nombre" contient des symboles invalides. Format attendu 0,0.</value>
+  </data>
+  <data name="CompulsorySavingsContractIsNotActive.Text" xml:space="preserve">
+    <value>Le contrat d'épargne obligatoire n'est pas actif</value>
+  </data>
+  <data name="AgeIsNotInRange.Text" xml:space="preserve">
+    <value>L'âge du client doit être entre {0} et {1} ans</value>
+  </data>
+  <data name="GuarantorMaxLoansCoveredExceed.Text" xml:space="preserve">
+    <value>Un garant ne peut pas couvrir plus de {0} prêts</value>
+  </data>
+  <data name="ZeroFee.Text" xml:space="preserve">
+    <value>Les pénalités sont nulles, vous ne pouvez pas les annuler</value>
+  </data>
+  <data name="BranchAddressIsEmpty.Text" xml:space="preserve">
+    <value>L'adresse de la branche n'est pas renseignée</value>
+  </data>
+  <data name="BranchCodeIsEmpty.Text" xml:space="preserve">
+    <value>Le code de la branche n'est pas renseigné</value>
+  </data>
+  <data name="BranchNameIsEmpty.Text" xml:space="preserve">
+    <value>Le nom de la branche n'est pas renseigné</value>
+  </data>
+  <data name="LOCAmountHaveBeenFilledIncorrectly.Text" xml:space="preserve">
+    <value>Le montant de la ligne de crédit n'est pas renseigné, ou mal renseignés. Vous devez remplir soit "min" et "max", soit "valeur" (onglet Ligne de Crédit)</value>
+  </data>
+  <data name="LOCFieldsAreNotFilled.Text" xml:space="preserve">
+    <value>Le montant ou la durée de la ligne de crédit ne sont pas renseignés, ou mal renseignés. Vous devez remplir soit "min" et "max", soit "valeur". (onglet Ligne de Crédit)</value>
+  </data>
+  <data name="LOCMaturityHaveBeenFilledIncorrectly.Text" xml:space="preserve">
+    <value>La durée mavimum de la ligne de crédit n'est pas renseigné, ou mal renseignés. Vous devez remplir soit "min" et "max", soit "valeur". (onglet Ligne de Crédit)</value>
+  </data>
+  <data name="AddEntryFeeCycleError.Text" xml:space="preserve">
+    <value>Le cycle de crédit ajouté pour les frais d'entrée existe déjà (onglet frais)</value>
+  </data>
+  <data name="SavingProductDuplicateProductCode.Text" xml:space="preserve">
+    <value>Un produit d'épargne avec le même code existe déjà (onglet Paramètres Généraux)</value>
+  </data>
+  <data name="GracePeriodOfLateFeesIsNotFilled.Text" xml:space="preserve">
+    <value>"La période de grâce pour les pénalités de retard n'est pas renseignée</value>
+  </data>
+  <data name="PostingFrequencyIsInvalid.Text" xml:space="preserve">
+    <value>Le nombre d'échéances n'est pas correct.</value>
+  </data>
+  <data name="RepaymentBeforeLastEventDate.Text" xml:space="preserve">
+    <value>La date doit être postérieure à la date du dernier repaiement</value>
+  </data>
+  <data name="PeriodicityIsNotSet.Text" xml:space="preserve">
+    <value>La fréquence de journalisation des intérêts n'est pas définie pour le dépôt à terme.</value>
+  </data>
+  <data name="CurrencyIsEmptyForSavingProduct.Text" xml:space="preserve">
+    <value>La devise du produit d'épargne à terme n'est pas renseignée</value>
+  </data>
+  <data name="LoadExtensionError.Text" xml:space="preserve">
+    <value>Erreur lors du chargement des extensions. S'il vous plaît essayez de supprimer les extensions problématiques.</value>
+  </data>
+  <data name="SelectBeforeConf.Text" xml:space="preserve">
+    <value>Vous devez sélectionnez une transaction avant de valider l'opération</value>
+  </data>
+  <data name="FieldNameCanNotContainComma.Text" xml:space="preserve">
+    <value>Vous ne pouvez pas utiliser de virgule dans les éléments d'une liste</value>
+  </data>
+  <data name="FieldLimited.Text" xml:space="preserve">
+    <value>Ce champ personnalisable n'accepte pas plus de 300 caractères. Le texte va être tronqué.</value>
+  </data>
+  <data name="AccountImportIdExist.Text" xml:space="preserve">
+    <value>Certains d'identifiants de compte du fichier d'importation existe déjà.</value>
+  </data>
+  <data name="AccountImportNumbersExist.Text" xml:space="preserve">
+    <value>Certains des numéros de compte du fichier d'importation existe déjà.</value>
+  </data>
+  <data name="LoanAlreadyDisbursed.Text" xml:space="preserve">
+    <value>Prêt ont déjà été décaissées.</value>
+  </data>
+  <data name="DuplicatedAccount.Text" xml:space="preserve">
+    <value>Modifiez le numéro de compte que vous venez d'entrer.
+Il ne peut y avoir deux comptes possédant le même numéro.</value>
+  </data>
+  <data name="OctopusEmptyLocationException.Text" xml:space="preserve">
+    <value>Emplacement ne peut pas être vide</value>
+  </data>
+  <data name="OctopusCityUsedException.Text" xml:space="preserve">
+    <value>Ville est utilisée par un ou plusieurs clients.</value>
+  </data>
+  <data name="OctopusDistrictUsedException.Text" xml:space="preserve">
+    <value>District est utilisée par un ou plusieurs clients.</value>
+  </data>
+</root>

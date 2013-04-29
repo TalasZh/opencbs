@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="All.Text" xml:space="preserve">
+    <value>Todos</value>
+  </data>
+  <data name="alreadyAnEventForThisDate.Text" xml:space="preserve">
+    <value>O último reembolso foi também para esta data! 
+Pode confirmar este reembolso?</value>
+  </data>
+  <data name="AlreadyAnLodeEventForThisDate.Text" xml:space="preserve">
+    <value>Este desembolso foi também para esta data. Confirma este reembolso?</value>
+  </data>
+  <data name="AlreadyAnRoleEventForThisDate.Text" xml:space="preserve">
+    <value>O último reembolso foi também para esta data! Confirma este reembolso?</value>
+  </data>
+  <data name="amount.Text" xml:space="preserve">
+    <value>a quantia</value>
+  </data>
+  <data name="amountToGoNormal.Text" xml:space="preserve">
+    <value>A quantia para voltar a normalizar,</value>
+  </data>
+  <data name="Cash.Text" xml:space="preserve">
+    <value>O numerário</value>
+  </data>
+  <data name="Cheque.Text" xml:space="preserve">
+    <value>O cheque</value>
+  </data>
+  <data name="DebitCard.Text" xml:space="preserve">
+    <value>A cartão de débito</value>
+  </data>
+  <data name="DirectDebit.Text" xml:space="preserve">
+    <value>O débito directo</value>
+  </data>
+  <data name="InitialAmount.Text" xml:space="preserve">
+    <value>A quantia total do empréstimo</value>
+  </data>
+  <data name="Latedays.Text" xml:space="preserve">
+    <value>os dias de atraso</value>
+  </data>
+  <data name="max.Text" xml:space="preserve">
+    <value>Max:</value>
+  </data>
+  <data name="min.Text" xml:space="preserve">
+    <value>Min:</value>
+  </data>
+  <data name="OverDueInterest.Text" xml:space="preserve">
+    <value>Os juros vencidos</value>
+  </data>
+  <data name="OverDuePrincipall.Text" xml:space="preserve">
+    <value>O capital vencido</value>
+  </data>
+  <data name="PastDueDegradationNeedful.Text" xml:space="preserve">
+    <value>Atenção, este empréstimo está atrasado.  O Octopus precisa de actualizar o razão geral antes de prosseguir. Quer continuar?</value>
+  </data>
+  <data name="Penalty.Text" xml:space="preserve">
+    <value>Os juros de moura</value>
+  </data>
+  <data name="Voucher.Text" xml:space="preserve">
+    <value>O comprovante</value>
+  </data>
+  <data name="WireTransfer.Text" xml:space="preserve">
+    <value>A transferência telegrafica</value>
+  </data>
+  <data name="Withdrawal.Text" xml:space="preserve">
+    <value>O levantamento</value>
+  </data>
+  <data name="WriteOffDegradationNeedful.Text" xml:space="preserve">
+    <value>Atenção, este empréstimo está atrasado (deveria 
+ser abatido). O Octopus precisa de actualizar o razão geral antes de prosseguir. Quer continuar?</value>
+  </data>
+</root>

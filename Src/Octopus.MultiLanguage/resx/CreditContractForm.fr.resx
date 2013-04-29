@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="all.Text" xml:space="preserve">
+    <value>Tous...</value>
+  </data>
+  <data name="select.Text" xml:space="preserve">
+    <value>Sélectionner…</value>
+  </data>
+  <data name="selectInstallmentType.Text" xml:space="preserve">
+    <value>Sélectionner un type d'échéancier...</value>
+  </data>
+  <data name="statusRescheduled.Text" xml:space="preserve">
+    <value>Prêt rééchelonné</value>
+  </data>
+  <data name="fullyRepaid.Text" xml:space="preserve">
+    <value>Prêt entièrement remboursé</value>
+  </data>
+  <data name="statusBadLoan.Text" xml:space="preserve">
+    <value>Créance douteuse</value>
+  </data>
+  <data name="statusWriteOff.Text" xml:space="preserve">
+    <value>Crédit passé en perte</value>
+  </data>
+  <data name="contract.Text" xml:space="preserve">
+    <value>Contrat</value>
+  </data>
+  <data name="contractCode.Text" xml:space="preserve">
+    <value>Code du contrat</value>
+  </data>
+  <data name="LoanType.Text" xml:space="preserve">
+    <value>Type de prêt:</value>
+  </data>
+  <data name="min.Text" xml:space="preserve">
+    <value>Min: </value>
+  </data>
+  <data name="max.Text" xml:space="preserve">
+    <value>Max: </value>
+  </data>
+  <data name="selectAClient.Text" xml:space="preserve">
+    <value>Selectionner d'abord un client</value>
+  </data>
+  <data name="dueCapital.Text" xml:space="preserve">
+    <value>Capital dû :</value>
+  </data>
+  <data name="dueInterest.Text" xml:space="preserve">
+    <value>Intérêts dûs:</value>
+  </data>
+  <data name="disbuseDone.Text" xml:space="preserve">
+    <value>Décaissement effectué</value>
+  </data>
+  <data name="disbuseCancel.Text" xml:space="preserve">
+    <value>Déboursement Annulé</value>
+  </data>
+  <data name="confirmValidation.Text" xml:space="preserve">
+    <value>Voulez vous vraiment effectuer cette opération ?</value>
+  </data>
+  <data name="addButton.Text" xml:space="preserve">
+    <value>Ajoutez un nouveau mouvement élémentaire (maximum 15)</value>
+  </data>
+  <data name="deleteButton.Text" xml:space="preserve">
+    <value>Effacer le mouvement comptable selectionné</value>
+  </data>
+  <data name="confirmMvtButton.Text" xml:space="preserve">
+    <value>Validez la totalté de la transaction comptable</value>
+  </data>
+  <data name="exitManualEntry.Text" xml:space="preserve">
+    <value>Fermer le formulaire de contrat</value>
+  </data>
+  <data name="manualEntryInvalidAmount.Text" xml:space="preserve">
+    <value>Vous devez spécifier un montant valide pour chaque mouvement</value>
+  </data>
+  <data name="manualEntryInvalidOperation.Text" xml:space="preserve">
+    <value>Vous devez spécifier une opération pour chaque mouvement</value>
+  </data>
+  <data name="manualEntryInvalidAccount.Text" xml:space="preserve">
+    <value>Vous devez spécifier un compte pour chaque mouvement</value>
+  </data>
+  <data name="noMinimumElemMvt.Text" xml:space="preserve">
+    <value>Vous devez selectionner au moins deux mouvements comptables</value>
+  </data>
+  <data name="commentsOfEnd.Text" xml:space="preserve">
+    <value>Commentaire de fin:</value>
+  </data>
+  <data name="repayInstallment.Text" xml:space="preserve">
+    <value>Sélectionnez une échéance!</value>
+  </data>
+  <data name="deleteEvent.Text" xml:space="preserve">
+    <value>Vous devez préciser l'évènement à supprimer</value>
+  </data>
+  <data name="cantCancelDisbursment.Text" xml:space="preserve">
+    <value>Tous les remboursements doivent être annulés avant l'annulation du déboursement</value>
+  </data>
+  <data name="saveContract.Text" xml:space="preserve">
+    <value>Enregistrer le contrat</value>
+  </data>
+  <data name="updateContract.Text" xml:space="preserve">
+    <value>Mise à jour du contrat</value>
+  </data>
+  <data name="EffectiveContribution.Text" xml:space="preserve">
+    <value>Contribution réelle ({0})</value>
+  </data>
+  <data name="ExchangeRate.Text" xml:space="preserve">
+    <value>Taux de change: {0}</value>
+  </data>
+  <data name="ExpectedContribution.Text" xml:space="preserve">
+    <value>Contribution attendue ({0})</value>
+  </data>
+  <data name="saveDecision.Text" xml:space="preserve">
+    <value>Enregistrer Décision</value>
+  </data>
+  <data name="updateDecision.Text" xml:space="preserve">
+    <value>Mettre à jour Décision</value>
+  </data>
+  <data name="annual.Text" xml:space="preserve">
+    <value>Annuel</value>
+  </data>
+</root>

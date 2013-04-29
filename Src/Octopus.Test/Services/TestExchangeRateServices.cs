@@ -1,0 +1,53 @@
+﻿
+using NUnit.Framework;
+using Octopus.CoreDomain;
+using Octopus.CoreDomain.Accounting;
+using Octopus.ExceptionsHandler;
+using Octopus.Manager.Accounting;
+using Octopus.Services.Accounting;
+using Octopus.Test.Manager;
+
+namespace Octopus.Test.Services
+{
+    [TestFixture]
+    public class TestExchangeRateServices : BaseManagerTest
+    {
+        [Test]
+        [ExpectedException(typeof(OctopusAccountException))]
+        public void AddExistingCurrency()
+        {
+            ExchangeRateServices exchangeRateServices = new ExchangeRateServices(new User{Id = 5});
+
+            Currency newCurrency = new Currency
+                                       {
+                                           Code = "US Dollar",
+                                           Id = 1,
+                                           IsPivot = false,
+                                           Name = "USD"
+                                       };
+
+            exchangeRateServices.AddNewCurrency(newCurrency);
+            int id = exchangeRateServices.SelectCurrency(newCurrency);
+            Assert.IsTrue(id > 0);
+            exchangeRateServices.AddNewCurrency(newCurrency);
+
+        }
+        [Test]
+        [ExpectedException(typeof(OctopusAccountException))]
+        public void AddMoreThanTenCurrencies()
+        {
+            ExchangeRateServices exchangeRateServices = new ExchangeRateServices(new User { Id = 5 });
+            for (int i = 0; i < 11; i++)
+            {
+                Currency newCurrency = new Currency
+                                           {
+                                               Code = i.ToString(),
+                                               Id = i,
+                                               IsPivot = false,
+                                               Name = i.ToString()
+                                           };
+                exchangeRateServices.AddNewCurrency(newCurrency);
+            }
+        }
+    }
+}

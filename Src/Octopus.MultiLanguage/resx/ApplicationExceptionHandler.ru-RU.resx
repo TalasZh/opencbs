@@ -1,0 +1,1051 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="PackageExceptionExoticProductNameAlreadyExist" xml:space="preserve">
+    <value>Имя не типичного продукта уже существует</value>
+  </data>
+  <data name="OctopusFundingLineEventExceptionAmountIsBigger.Text" xml:space="preserve">
+    <value>Слишком большая сумма (должно быть менее 1 квадриллиона 10^15)</value>
+  </data>
+  <data name="OctopusFundingLineEventExceptionAmountIsEmpty.Text" xml:space="preserve">
+    <value>Отсутствует сумма в фондовой линии</value>
+  </data>
+  <data name="OctopusFundingLineEventExceptionAmountIsLessZero.Text" xml:space="preserve">
+    <value>Сумма отрицательна</value>
+  </data>
+  <data name="OctopusFundingLineEventExceptionAmountIsNonCompliant.Text" xml:space="preserve">
+    <value>Сумма не корректна</value>
+  </data>
+  <data name="OctopusFundingLineEventExceptionAmountIsTaller.Text" xml:space="preserve">
+    <value>Указанная фондовая линия не имеет достаточных средств для этого кредита</value>
+  </data>
+  <data name="OctopusFundingLineEventExceptionCodeIsEmpty.Text" xml:space="preserve">
+    <value>Отсутствует код фондовой линии</value>
+  </data>
+  <data name="OctopusFundingLineEventExceptionCommitmentFinancialIsNotEnough.Text" xml:space="preserve">
+    <value>Не хватает средств в фондовой линии</value>
+  </data>
+  <data name="OctopusFundingLineEventExceptionNameIsEmpty.Text" xml:space="preserve">
+    <value>Отсутствует имя фондовой линии</value>
+  </data>
+  <data name="OctopusFundingLineExceptionFundingLineNameExists.Text" xml:space="preserve">
+    <value>Фондовая лини с таким именем уже существует.</value>
+  </data>
+  <data name="OTE41.Text" xml:space="preserve">
+    <value>Укажите кредитного специалиста</value>
+  </data>
+  <data name="PackageExceptionProductCodeIsEmpty.Text" xml:space="preserve">
+    <value>Код отсутствует</value>
+  </data>
+  <data name="ReportProcedureSourceEmpty.Text" xml:space="preserve">
+    <value>Источник SQL для отчета не указан</value>
+  </data>
+  <data name="SavingProductBalanceIsInvalid.Text" xml:space="preserve">
+    <value>Баланс не верен</value>
+  </data>
+  <data name="SavingProductDepositAmountIsInvalid.Text" xml:space="preserve">
+    <value>Сумма депозита не верна</value>
+  </data>
+  <data name="SavingProductDepositMinAmountIsInvalid.Text" xml:space="preserve">
+    <value>Сумма депозита должна быть положительна</value>
+  </data>
+  <data name="SavingProductDuplicateProductName.Text" xml:space="preserve">
+    <value>Это имя уже существует</value>
+  </data>
+  <data name="SavingProductInitialAmountIsInvalid.Text" xml:space="preserve">
+    <value>Сумма не верна</value>
+  </data>
+  <data name="SavingProductInitialAmountMaxNotInBalance.Text" xml:space="preserve">
+    <value>Сумма максимума должна быть в балансе</value>
+  </data>
+  <data name="SavingProductInitialAmountMinIsInvalid.Text" xml:space="preserve">
+    <value>Сумма должна быть положительна</value>
+  </data>
+  <data name="SavingProductInitialAmountMinNotInBalance.Text" xml:space="preserve">
+    <value>Сумма минимума должна быть в балансе</value>
+  </data>
+  <data name="SavingProductInterestRateIsInvalid.Text" xml:space="preserve">
+    <value>Процентная ставка задана не верно.</value>
+  </data>
+  <data name="SavingProductInterestRateMinMaxIsInvalid.Text" xml:space="preserve">
+    <value>Процентная ставка не верна</value>
+  </data>
+  <data name="SavingProductNameIsEmpty.Text" xml:space="preserve">
+    <value>Имя не может быть пустым</value>
+  </data>
+  <data name="SavingProductWithdrawAmountIsInvalid.Text" xml:space="preserve">
+    <value>Сумма снятия не верна</value>
+  </data>
+  <data name="SavingProductWithdrawMinAmountIsInvalid.Text" xml:space="preserve">
+    <value>Сумма снятия должна быть положительна</value>
+  </data>
+  <data name="AccountExceptionAccountIsNull.Text" xml:space="preserve">
+    <value>Выберите счет</value>
+  </data>
+  <data name="AccountExceptionIncorrectAmountFormat.Text" xml:space="preserve">
+    <value>Вы должны выбрать положительное десятичное значение</value>
+  </data>
+  <data name="AccountExceptionLabelIsNull.Text" xml:space="preserve">
+    <value>Новое наименование пусто</value>
+  </data>
+  <data name="AccountExceptionLocalNumberIsNull.Text" xml:space="preserve">
+    <value>Отсутствует номер счета</value>
+  </data>
+  <data name="AccountExceptionMovementSetUnbalanced.Text" xml:space="preserve">
+    <value>Бухгалтерская проводка должна быть корректной</value>
+  </data>
+  <data name="AccountExceptionNumberIsNull.Text" xml:space="preserve">
+    <value>Номер отсутствует</value>
+  </data>
+  <data name="AllInstallmentRepaid.Text" xml:space="preserve">
+    <value>Контракт полностью оплачен</value>
+  </data>
+  <data name="CantRepayInTheFutur.Text" xml:space="preserve">
+    <value>Вы не можете выбрать дату позже сегодняшней</value>
+  </data>
+  <data name="CollateralExceptionAlreadyExist.Text" xml:space="preserve">
+    <value>Имя уже существует</value>
+  </data>
+  <data name="CollateralExceptionCastInvalid.Text" xml:space="preserve">
+    <value>Не возможно изменить или удалить</value>
+  </data>
+  <data name="CollateralExceptionHasChildrens.Text" xml:space="preserve">
+    <value>Залог имеет подтип, удалить  не возможно</value>
+  </data>
+  <data name="CollateralExceptionNameIsNull.Text" xml:space="preserve">
+    <value>Имя отсутствует</value>
+  </data>
+  <data name="CollateralExceptionNewNameIsNull.Text" xml:space="preserve">
+    <value>Новое имя отсутствует</value>
+  </data>
+  <data name="CollateralExceptionNoSelect.Text" xml:space="preserve">
+    <value>Сначало вы должны выбрать залог</value>
+  </data>
+  <data name="ContractExceptionAmountIsNull.Text" xml:space="preserve">
+    <value>Сумма контракта не указана</value>
+  </data>
+  <data name="ContractExceptionAnticipatedRepaymentPenaltiesIsNull.Text" xml:space="preserve">
+    <value>Штраф за досрочное погашение не указан</value>
+  </data>
+  <data name="ContractExceptionBeneficiaryIsActive.Text" xml:space="preserve">
+    <value>Этот клиент уже иммеет контракт</value>
+  </data>
+  <data name="ContractExceptionBeneficiaryIsAllowOneLoans.Text" xml:space="preserve">
+    <value>Клиенту позволено иметь только один контракт</value>
+  </data>
+  <data name="ContractExceptionBeneficiaryIsBad.Text" xml:space="preserve">
+    <value>Это плохой клиент. Вы не можите создать на него контракт</value>
+  </data>
+  <data name="ContractExceptionBeneficiaryIsNull.Text" xml:space="preserve">
+    <value>У контракта отсутствует клиент</value>
+  </data>
+  <data name="ContractExceptionContractIsNull.Text" xml:space="preserve">
+    <value>Выберите контракт</value>
+  </data>
+  <data name="ContractExceptionCorporateIsNull.Text" xml:space="preserve">
+    <value>У кооперативного контракта не указан клиент</value>
+  </data>
+  <data name="ContractExceptionCreditCommiteeCommentNotModified.Text" xml:space="preserve">
+    <value>Комментарий отсутствует</value>
+  </data>
+  <data name="ContractExceptionDisburseDate.Text" xml:space="preserve">
+    <value>Дата выдачи должна быть между датой создания и датой первого погашения</value>
+  </data>
+  <data name="ContractExceptionEntryFeesIsNull.Text" xml:space="preserve">
+    <value>Значение административного взноса отсутствует</value>
+  </data>
+  <data name="ContractExceptionEventNotCancelable.Text" xml:space="preserve">
+    <value>Это событие не возможно удалить</value>
+  </data>
+  <data name="ContractExceptionFundingLineIsNull.Text" xml:space="preserve">
+    <value>Фондовая линия контракта отсутствует</value>
+  </data>
+  <data name="ContractExceptionGracePeriodIsNull.Text" xml:space="preserve">
+    <value>Значение льготного периода не указано</value>
+  </data>
+  <data name="ContractExceptionInstallmentTypeIsNull.Text" xml:space="preserve">
+    <value>Тип погашений не указан</value>
+  </data>
+  <data name="ContractExceptionInterestRateIsNull.Text" xml:space="preserve">
+    <value>Процентная ставка не указана</value>
+  </data>
+  <data name="ContractExceptionLoanOfficerIsNull.Text" xml:space="preserve">
+    <value>Не выбран кредитный специалист</value>
+  </data>
+  <data name="ContractExceptionNonRepaymentPenaltiesIsNull.Text" xml:space="preserve">
+    <value>Пеня за просрочку не указана</value>
+  </data>
+  <data name="ContractExceptionNumberOfInstallmentsIsNull.Text" xml:space="preserve">
+    <value>Колличество погашений не указано</value>
+  </data>
+  <data name="ContractExceptionProjectIsNull.Text" xml:space="preserve">
+    <value>Сначала сохраните проект</value>
+  </data>
+  <data name="ContractExceptionStatusNotModified.Text" xml:space="preserve">
+    <value>Статус должен быть изменен</value>
+  </data>
+  <data name="DecimalAmount.Text" xml:space="preserve">
+    <value>Вы используете валюту без копеек, значение не может содержать копейки</value>
+  </data>
+  <data name="DisburseExceptionDateWrong.Text" xml:space="preserve">
+    <value>Дата выдачи должна быть между датой создания и датой первого погашения</value>
+  </data>
+  <data name="DOAExceptionAlreadyExist.Text" xml:space="preserve">
+    <value>Такой род деятельности уже существует, выберите другое имя</value>
+  </data>
+  <data name="DOAExceptionCastInvalid.Text" xml:space="preserve">
+    <value>Не возможно изменить или удалить</value>
+  </data>
+  <data name="DOAExceptionHasChildrens.Text" xml:space="preserve">
+    <value>Удаление не возможно, род деятельности имеет подтипы</value>
+  </data>
+  <data name="DOAExceptionNameIsNull.Text" xml:space="preserve">
+    <value>Имя пустое</value>
+  </data>
+  <data name="DOAExceptionNewNameIsNull.Text" xml:space="preserve">
+    <value>Новое имя пустое</value>
+  </data>
+  <data name="DOAExceptionNoSelect.Text" xml:space="preserve">
+    <value>Сначало вам необходимо выбрать род деятельности</value>
+  </data>
+  <data name="errorTitle.Text" xml:space="preserve">
+    <value>Ошибка приложения</value>
+  </data>
+  <data name="ExchangeRateExceptionDateIsNull.Text" xml:space="preserve">
+    <value>Выберите дату</value>
+  </data>
+  <data name="ExchangeRateExceptionExchangeRateIsNull.Text" xml:space="preserve">
+    <value>Отсутствует обменный курс на эту дату</value>
+  </data>
+  <data name="ExchangeRateExceptionRateIsEmpty.Text" xml:space="preserve">
+    <value>Обменный курс не указан</value>
+  </data>
+  <data name="InstallmentExceptionInstallmentAlreadyRepaid.Text" xml:space="preserve">
+    <value>Это погашение уже оплачено</value>
+  </data>
+  <data name="InstallmentExceptionInstallmentIsNull.Text" xml:space="preserve">
+    <value>Сначало вы дожны выбрать погашения!!!</value>
+  </data>
+  <data name="InstallmentExceptionNotFirstInstallmentToCancelRepay.Text" xml:space="preserve">
+    <value>Вы не можете удалить это погашение, есть более поздние погашения</value>
+  </data>
+  <data name="InstallmentExceptionNotFirstInstallmentToRepay.Text" xml:space="preserve">
+    <value>Нет предыдущих погашений !!</value>
+  </data>
+  <data name="OctopusCorporateEventExceptionAmountIsEmpty.Text" xml:space="preserve">
+    <value>Значение не указано</value>
+  </data>
+  <data name="OctopusCorporateEventExceptionAmountIsLessZero.Text" xml:space="preserve">
+    <value>Значение менее нуля</value>
+  </data>
+  <data name="OctopusCorporateEventExceptionAmountIsNonCompliant.Text" xml:space="preserve">
+    <value>Значение не подходящие</value>
+  </data>
+  <data name="OctopusCorporateEventExceptionAmountIsTaller.Text" xml:space="preserve">
+    <value>Выбраная фондовая линия не имеет достаточно денег для этого контракта</value>
+  </data>
+  <data name="OctopusCorporateEventExceptionCodeIsEmpty.Text" xml:space="preserve">
+    <value>Код не указан</value>
+  </data>
+  <data name="OctopusCorporateEventExceptionCommitmentFinancialIsNotEnough.Text" xml:space="preserve">
+    <value>Финансовое подтверждение не достаточно</value>
+  </data>
+  <data name="OctopusCorporateEventExceptionDirectionIsEmpty.Text" xml:space="preserve">
+    <value>Не указан дебет и кредит</value>
+  </data>
+  <data name="OctopusCorporateEventExceptionNameIsEmpty.Text" xml:space="preserve">
+    <value>Имя не указано</value>
+  </data>
+  <data name="OctopusCorporateExceptionCityIsEmpty.Text" xml:space="preserve">
+    <value>Город не указан</value>
+  </data>
+  <data name="OctopusCorporateExceptionCodeIsEmpty.Text" xml:space="preserve">
+    <value>Код не указан</value>
+  </data>
+  <data name="OctopusCorporateExceptionDistrictIsEmpty.Text" xml:space="preserve">
+    <value>Район не указан</value>
+  </data>
+  <data name="OctopusCorporateExceptionEmployeeIsFalseFormat.Text" xml:space="preserve">
+    <value>Сотрудник не число</value>
+  </data>
+  <data name="OctopusCorporateExceptionNameIsEmpty.Text" xml:space="preserve">
+    <value>Имя не указано</value>
+  </data>
+  <data name="OctopusCorporateExceptionProvinceIsEmpty.Text" xml:space="preserve">
+    <value>Область не казана</value>
+  </data>
+  <data name="OctopusCorporateExceptionVolunteerIsEmpty.Text" xml:space="preserve">
+    <value>Доброволец не указан</value>
+  </data>
+  <data name="OctopusCorporateExceptionVolunteerIsFalseFormat.Text" xml:space="preserve">
+    <value>Волонтер это не число</value>
+  </data>
+  <data name="OctopusFundingLineExceptionBeginDateGreaterEndDate.Text" xml:space="preserve">
+    <value>Начальная дата позже конечной</value>
+  </data>
+  <data name="OctopusFundingLineExceptionCodeIsEmpty.Text" xml:space="preserve">
+    <value>Код не указан</value>
+  </data>
+  <data name="OctopusFundingLineExceptionNameIsEmpty.Text" xml:space="preserve">
+    <value>Имя не указано</value>
+  </data>
+  <data name="OME1.Text" xml:space="preserve">
+    <value>Имя не указано</value>
+  </data>
+  <data name="OME2.Text" xml:space="preserve">
+    <value>Пользователь не указан</value>
+  </data>
+  <data name="OME3.Text" xml:space="preserve">
+    <value>Пароль не указан</value>
+  </data>
+  <data name="OME4.Text" xml:space="preserve">
+    <value>Пароль не верен</value>
+  </data>
+  <data name="onlyChars.Text" xml:space="preserve">
+    <value>Допустимые символы : a-z, A-Z,0-9 и _</value>
+  </data>
+  <data name="onlyInts.Text" xml:space="preserve">
+    <value>Допустимые символы : 0-9</value>
+  </data>
+  <data name="onlyIntsAndUnderscore.Text" xml:space="preserve">
+    <value>Допустимые символы : 0-9 и -</value>
+  </data>
+  <data name="OTE1.Text" xml:space="preserve">
+    <value>Сначало вы должны выбрать клиента</value>
+  </data>
+  <data name="OTE10.Text" xml:space="preserve">
+    <value>Для использования вторичного адреса, район должен быть указан</value>
+  </data>
+  <data name="OTE11.Text" xml:space="preserve">
+    <value>Для использования вторичного адреса, город должен быть указан</value>
+  </data>
+  <data name="OTE12.Text" xml:space="preserve">
+    <value>Для использования вторичного адреса, первичный должен быть указан</value>
+  </data>
+  <data name="OTE13.Text" xml:space="preserve">
+    <value>Выберите район</value>
+  </data>
+  <data name="OTE14.Text" xml:space="preserve">
+    <value>Выберите вторичный район</value>
+  </data>
+  <data name="OTE15.Text" xml:space="preserve">
+    <value>Укажите клиента</value>
+  </data>
+  <data name="OTE16.Text" xml:space="preserve">
+    <value>Клиент уже в группе</value>
+  </data>
+  <data name="OTE17.Text" xml:space="preserve">
+    <value>Клиент уже имеет открытый контракт</value>
+  </data>
+  <data name="OTE18.Text" xml:space="preserve">
+    <value>Клиент лидер в группе</value>
+  </data>
+  <data name="OTE19.Text" xml:space="preserve">
+    <value>Имя не указано</value>
+  </data>
+  <data name="OTE2.Text" xml:space="preserve">
+    <value>Род деятельности не указан</value>
+  </data>
+  <data name="OTE20.Text" xml:space="preserve">
+    <value>Выберите лидера группы</value>
+  </data>
+  <data name="OTE21.Text" xml:space="preserve">
+    <value>Колличество иждевенцов должно быть числом</value>
+  </data>
+  <data name="OTE22.Text" xml:space="preserve">
+    <value>Колличество детей должно быть числом</value>
+  </data>
+  <data name="OTE23.Text" xml:space="preserve">
+    <value>Колличество детей с начальным образованием должно быть числом</value>
+  </data>
+  <data name="OTE24.Text" xml:space="preserve">
+    <value>Колличество лет друдовой деятельности должно быть числом</value>
+  </data>
+  <data name="OTE25.Text" xml:space="preserve">
+    <value>Колличество сотрудников должно быть числом</value>
+  </data>
+  <data name="OTE26.Text" xml:space="preserve">
+    <value>Сумма полученная от организации должна быть числом</value>
+  </data>
+  <data name="OTE27.Text" xml:space="preserve">
+    <value>Задолжность перед другой организацией должна быть числом</value>
+  </data>
+  <data name="OTE28.Text" xml:space="preserve">
+    <value>Размер дома должен быть числом</value>
+  </data>
+  <data name="OTE29.Text" xml:space="preserve">
+    <value>Время проживания в доме должно быть числом</value>
+  </data>
+  <data name="OTE3.Text" xml:space="preserve">
+    <value>Первичный адрес отсутствует</value>
+  </data>
+  <data name="OTE30.Text" xml:space="preserve">
+    <value>Размер земельного участка должне быть числом</value>
+  </data>
+  <data name="OTE31.Text" xml:space="preserve">
+    <value>Количество животных должно быть числом</value>
+  </data>
+  <data name="OTE32.Text" xml:space="preserve">
+    <value>Месячный доход должен быть числом</value>
+  </data>
+  <data name="OTE33.Text" xml:space="preserve">
+    <value>Месячный расход должне быть числом</value>
+  </data>
+  <data name="OTE34.Text" xml:space="preserve">
+    <value>В группе должно быть как минимум {0} человек</value>
+  </data>
+  <data name="OTE35.Text" xml:space="preserve">
+    <value>Этот номер паспорта уже используется</value>
+  </data>
+  <data name="OTE36.Text" xml:space="preserve">
+    <value>Имя уже используется в этом районе</value>
+  </data>
+  <data name="OTE37.Text" xml:space="preserve">
+    <value>Это плохой клиент вы должны объяснить почему</value>
+  </data>
+  <data name="OTE38.Text" xml:space="preserve">
+    <value>Цикл не введен</value>
+  </data>
+  <data name="OTE39.Text" xml:space="preserve">
+    <value>Значение изменяемых полей не указано</value>
+  </data>
+  <data name="OTE4.Text" xml:space="preserve">
+    <value>Имя не указано</value>
+  </data>
+  <data name="OTE40.Text" xml:space="preserve">
+    <value>Номер паспорта может содержать только числа  (0-9) и прописные буквы</value>
+  </data>
+  <data name="OTE5.Text" xml:space="preserve">
+    <value>Пол не указан</value>
+  </data>
+  <data name="OTE6.Text" xml:space="preserve">
+    <value>Номер паспорта не указан</value>
+  </data>
+  <data name="OTE7.Text" xml:space="preserve">
+    <value>Фамилия не указана</value>
+  </data>
+  <data name="OTE8.Text" xml:space="preserve">
+    <value>Город не указан</value>
+  </data>
+  <data name="OTE9.Text" xml:space="preserve">
+    <value>Сумма не указана</value>
+  </data>
+  <data name="OUE1.Text" xml:space="preserve">
+    <value>Сначала выберите пользователя.</value>
+  </data>
+  <data name="OUE2.Text" xml:space="preserve">
+    <value>Администратор не может быть удален</value>
+  </data>
+  <data name="OUE3.Text" xml:space="preserve">
+    <value>Имя не указано</value>
+  </data>
+  <data name="OUE4.Text" xml:space="preserve">
+    <value>Пароль не указан</value>
+  </data>
+  <data name="OUE5.Text" xml:space="preserve">
+    <value>Статус не указан</value>
+  </data>
+  <data name="OUE6.Text" xml:space="preserve">
+    <value>Такой пользователь уже существует, вы должны указать другое имя</value>
+  </data>
+  <data name="OUE7.Text" xml:space="preserve">
+    <value>Имя не указано</value>
+  </data>
+  <data name="OUE8.Text" xml:space="preserve">
+    <value>Фамилия не указана</value>
+  </data>
+  <data name="OUE9.Text" xml:space="preserve">
+    <value>Пользователь имеет контракт, переназначте</value>
+  </data>
+  <data name="PackageExceptionAlreadyDeleted.Text" xml:space="preserve">
+    <value>Этот продукт уже удален</value>
+  </data>
+  <data name="PackageExceptionAmountBadlyInformed.Text" xml:space="preserve">
+    <value>Вы должны указать min и max или фиксированое значение</value>
+  </data>
+  <data name="PackageExceptionAmountCycleStockIsBad.Text" xml:space="preserve">
+    <value>Цикл суммы не указан</value>
+  </data>
+  <data name="PackageExceptionAmountCycleStockIsNull.Text" xml:space="preserve">
+    <value>Укажите цикл суммы перед сохранением</value>
+  </data>
+  <data name="PackageExceptionAmountCycleStockNameAlreadyExist.Text" xml:space="preserve">
+    <value>Имя уже существует</value>
+  </data>
+  <data name="PackageExceptionAnticipatedTotalRepaymentPenaltiesBadlyInformed.Text" xml:space="preserve">
+    <value>Вы должны указать min и max или фиксированое значение для штрафа за досрочное погашение</value>
+  </data>
+  <data name="PackageExceptionEntryFeesBadlyInformed.Text" xml:space="preserve">
+    <value>Вы должны указать min и max или фиксированое значение для административного взноса</value>
+  </data>
+  <data name="PackageExceptionExoticInstallmentIsBad.Text" xml:space="preserve">
+    <value>Перед удалением вы должны указать платеж</value>
+  </data>
+  <data name="PackageExceptionExoticInstallmentIsNull.Text" xml:space="preserve">
+    <value>Основная сумма, процент и коммисия - нулевые</value>
+  </data>
+  <data name="PackageExceptionExoticProductContainsNoInstallment.Text" xml:space="preserve">
+    <value>Нет погашений в этом не типичном графике вы не можите его сохратить</value>
+  </data>
+  <data name="PackageExceptionExoticProductInIncorrect.Text" xml:space="preserve">
+    <value>В не типичном графике коэфициент по ОС и процентам должено быть равным 100</value>
+  </data>
+  <data name="PackageExceptionExoticProductIsNull.Text" xml:space="preserve">
+    <value>Не типичный продукт нулевой</value>
+  </data>
+  <data name="PackageExceptionGracePeriodGroupBadlyInformed.Text" xml:space="preserve">
+    <value>Вы должны указать min и max или фиксированое значение для льготного периода</value>
+  </data>
+  <data name="PackageExceptionGuarantedAmountBadlyInformed.Text" xml:space="preserve">
+    <value>Вы должны указать min и max или фиксированое значение для гарантированой суммы</value>
+  </data>
+  <data name="PackageExceptionGuarantedFeesBadlyInformed.Text" xml:space="preserve">
+    <value>Вы должны указать min и max или фиксированое значение для гарантированых штрафов</value>
+  </data>
+  <data name="PackageExceptionInstallmentTypeIsBad.Text" xml:space="preserve">
+    <value>Тип погашений не указан</value>
+  </data>
+  <data name="PackageExceptionInstallmentTypeIsNull.Text" xml:space="preserve">
+    <value>Тип погашений не указан</value>
+  </data>
+  <data name="PackageExceptionInstallmentTypeNameAlreadyExist.Text" xml:space="preserve">
+    <value>Имя уже существует</value>
+  </data>
+  <data name="PackageExceptionInstallmentTypeValuesAlreadyExist.Text" xml:space="preserve">
+    <value>Другой тип погашгения с идентичным значением уже существует</value>
+  </data>
+  <data name="PackageExceptionInterestRateGroupBadlyInformed.Text" xml:space="preserve">
+    <value>Вы должны указать min и max или фиксированое значение для процентной ставки</value>
+  </data>
+  <data name="PackageExceptionNameAlreadyExist.Text" xml:space="preserve">
+    <value>Имя уже существует</value>
+  </data>
+  <data name="PackageExceptionNameIsNull.Text" xml:space="preserve">
+    <value>Имя не указано</value>
+  </data>
+  <data name="PackageExceptionNonRepaymentPenaltiesBadlyInformed.Text" xml:space="preserve">
+    <value>Вы должны указать min и max или фиксированое значение для штрафа за просрочку</value>
+  </data>
+  <data name="PackageExceptionNumberOfInstallmentBadlyInformed.Text" xml:space="preserve">
+    <value>Вы должны указать min и max или фиксированое значение для колличества погашений</value>
+  </data>
+  <data name="PackageExceptionPackageIsNull.Text" xml:space="preserve">
+    <value>Укажите продукт</value>
+  </data>
+  <data name="ProjectExceptionAimIsNull.Text" xml:space="preserve">
+    <value>Цель проекта отсутствует</value>
+  </data>
+  <data name="ProjectExceptionClientIsNull.Text" xml:space="preserve">
+    <value>Сначало сохраните клиента</value>
+  </data>
+  <data name="ProjectExceptionCodeIsNull.Text" xml:space="preserve">
+    <value>Код проекта не указан</value>
+  </data>
+  <data name="ProjectExceptionNameIsNull.Text" xml:space="preserve">
+    <value>Имя проекта не указано</value>
+  </data>
+  <data name="ProvisioningRateNbOfDaysMaxEmpty.Text" xml:space="preserve">
+    <value>Максимальное колличество дней не указано</value>
+  </data>
+  <data name="ProvisioningRateNbOfDaysMinEmpty.Text" xml:space="preserve">
+    <value>Минимальное количество дней не указано</value>
+  </data>
+  <data name="ProvisioningRateRateEmpty.Text" xml:space="preserve">
+    <value>Обменый курс не указан</value>
+  </data>
+  <data name="RepayExceptionAmountGreaterThanTotalRemainingAmount.Text" xml:space="preserve">
+    <value>Оставшаяся сумма ниже указаной</value>
+  </data>
+  <data name="RepayExceptionAmountIsNull.Text" xml:space="preserve">
+    <value>Сумма должна быть числом</value>
+  </data>
+  <data name="RepayExceptionMaxPastDueDaysReached.Text" xml:space="preserve">
+    <value>Вы не можете произвести погашения по кредиту с просрочкой более 180 дней</value>
+  </data>
+  <data name="RepayExceptionNegativeAmount.Text" xml:space="preserve">
+    <value>Сумма не может быть отрицательной</value>
+  </data>
+  <data name="ReportsExceptionsNoResult.Text" xml:space="preserve">
+    <value>Нет результата</value>
+  </data>
+  <data name="sqlError.Text" xml:space="preserve">
+    <value>Ошибка при попытке записи или чтения базы данных. Обратитесь к вашему Системному Администратору.</value>
+  </data>
+  <data name="MaximumCurrencyLimitReached.Text" xml:space="preserve">
+    <value>Октопус разрешает добавлять не более 2 валют. </value>
+  </data>
+  <data name="WrongIDPattern.Text" xml:space="preserve">
+    <value>Идентификационный номер не соответствует шаблону, указанному в параметрах. Если есть вопросы о том, как прочитать шаблон, посетите http://www.amk.ca/python/howto/regex/</value>
+  </data>
+  <data name="BirthDateIsWrong.Text" xml:space="preserve">
+    <value>Проверьте дату рождения клиента. </value>
+  </data>
+  <data name="LoanWasValidatedLaterThanDisbursed.Text" xml:space="preserve">
+    <value>Дата выдачи кредита раньше, чем дата принятия решения кредитным коммитетом</value>
+  </data>
+  <data name="TrancheDateError.Text" xml:space="preserve">
+    <value>Проверте дату транша!</value>
+  </data>
+  <data name="TrancheAmountError.Text" xml:space="preserve">
+    <value>Невозможно добавить транш с данной суммой!</value>
+  </data>
+  <data name="LoanScaleTableMax.Text" xml:space="preserve">
+    <value>Пожалуйста,введите максимальное значение.</value>
+  </data>
+  <data name="LoanScaleTableMin.Text" xml:space="preserve">
+    <value>Пожалуйста, введите минимальное значение.</value>
+  </data>
+  <data name="SavingProductCloseFeesIsInvalid.Text" xml:space="preserve">
+    <value>Ошибка в значениях взноса при закрытии счета</value>
+  </data>
+  <data name="SavingProductCloseFeesMinIsInvalid.Text" xml:space="preserve">
+    <value>Значение взноса при закрытии счета должно быть положительным</value>
+  </data>
+  <data name="SavingProductDepositFeesIsInvalid.Text" xml:space="preserve">
+    <value>Ошибка в значениях взноса за депозит</value>
+  </data>
+  <data name="SavingProductDepositFeesMinIsInvalid.Text" xml:space="preserve">
+    <value>Значение взноса за депозит должно быть положительным</value>
+  </data>
+  <data name="ClientTypeIsEmpty.Text" xml:space="preserve">
+    <value>Пожалуйста, выберите тип потребителя для данного продукта.</value>
+  </data>
+  <data name="PersonIsInTheGroup.Text" xml:space="preserve">
+    <value>Данный клиент находиться уже в другой группе</value>
+  </data>
+  <data name="SavingProductPeriodicityIsEmpty.Text" xml:space="preserve">
+    <value>Выберите периодичность для данного продукта!</value>
+  </data>
+  <data name="AgioFeesIsInvalid.Text" xml:space="preserve">
+    <value>Пеня ажио введена неверно.</value>
+  </data>
+  <data name="OverdraftFeesIsInvalid.Text" xml:space="preserve">
+    <value>Пеня овердрафта введена неверно.</value>
+  </data>
+  <data name="ChequeDepositFeesIsInvalid" xml:space="preserve">
+    <value>Пеня чекового депозита неверна.</value>
+  </data>
+  <data name="ChequeDepositIsInvalid" xml:space="preserve">
+    <value>Значения чекового депозита неверны.</value>
+  </data>
+  <data name="ReopenFeesIsInvalid" xml:space="preserve">
+    <value>Reopen fees values are not correct.</value>
+  </data>
+  <data name="ReopenFeesMinIsInvalid" xml:space="preserve">
+    <value>Reopen fees min values are not correct.</value>
+  </data>
+  <data name="LoanHasNoCompulsorySavingsError.Text" xml:space="preserve">
+    <value>Для данного займа необходим обязательный депозит. Пожалуйста, установите его вручную.</value>
+  </data>
+  <data name="CompulsorySavingSettingsEmpty.Text" xml:space="preserve">
+    <value>Значение обязательного накомления не установлены</value>
+  </data>
+  <data name="SavingsEventCannotBeCanceled.Text" xml:space="preserve">
+    <value>Последнее событие не может быть отменено!</value>
+  </data>
+  <data name="PackageExceptionInstallmentTypeValuesAreUsed.Text" xml:space="preserve">
+    <value>Этот вид платежа не может быть удален, так как он используется в кредитном или депозитном продукте!</value>
+  </data>
+  <data name="SavingsEventCommentIsEmpty.Text" xml:space="preserve">
+    <value>Комментарий к событию не заполнен!</value>
+  </data>
+  <data name="ContractExceptionEventCommentIsEmpty.Text" xml:space="preserve">
+    <value>Event comment is empty!</value>
+  </data>
+  <data name="CycleParametersAreNotFilled.Text" xml:space="preserve">
+    <value>Необходимо ввести по крайней мере один параметр для каждого объекта цикла.</value>
+  </data>
+  <data name="CycleParametersAreWrong.Text" xml:space="preserve">
+    <value>Некоторые параметры цикла введены неверно.  Проверьте, что все значения Min и Max заполнены верно.</value>
+  </data>
+  <data name="BranchIsEmpty" xml:space="preserve">
+    <value>Необходимо выбрать филиал, чтобы сохранить клиента.</value>
+  </data>
+  <data name="PicturesNotAllowed" xml:space="preserve">
+    <value>Операции с фотографиями не позволены на текущей базе данных.</value>
+  </data>
+  <data name="BranchSameCodeException" xml:space="preserve">
+    <value>Филиал с таким кодом существует.</value>
+  </data>
+  <data name="BranchSameNameException" xml:space="preserve">
+    <value>Филиал с таким названием существует.</value>
+  </data>
+  <data name="TooMuchPersonsInThisGroup.Text" xml:space="preserve">
+    <value>Вы должны иметь максимум {0} клиентов в группе</value>
+  </data>
+  <data name="AccountExceptionIsUsed.Text" xml:space="preserve">
+    <value>Нельзя удалить счёт с транзакциями</value>
+  </data>
+  <data name="SavingContractAmountOnCompulsorySavingsIsInvalid.Text" xml:space="preserve">
+    <value>Баланс вынужденного сбережения недействительный</value>
+  </data>
+  <data name="SavingContractCompulsorySavingsLinkedToLoan.Text" xml:space="preserve">
+    <value>Сбережение уже привязан к кредиту</value>
+  </data>
+  <data name="SavingContractForTransferIdenticals.Text" xml:space="preserve">
+    <value>Нельзя перевести деньги на один и тот же счёт</value>
+  </data>
+  <data name="SavingContractForTransferNotSameCurrncy.Text" xml:space="preserve">
+    <value>Этот контракт используют другую валюту</value>
+  </data>
+  <data name="SavingContractIsNull.Text" xml:space="preserve">
+    <value>Контракт не задан</value>
+  </data>
+  <data name="SavingContractLoanDoesNotAcceptSavings.Text" xml:space="preserve">
+    <value>Контракт не использует вынужденные сбережения</value>
+  </data>
+  <data name="SavingContractLoanHasNotSameClient.Text" xml:space="preserve">
+    <value>The loan client isn't the same that compulsory savings client</value>
+  </data>
+  <data name="SavingContractLoanHasNotSameCurrency.Text" xml:space="preserve">
+    <value>The loan currency isn't the same that compulosry savings currency</value>
+  </data>
+  <data name="SavingContractLoanIsClosed.Text" xml:space="preserve">
+    <value>Займ закрыт</value>
+  </data>
+  <data name="SavingContractLoanIsInvalid.Text" xml:space="preserve">
+    <value>Займ недействителен</value>
+  </data>
+  <data name="SavingContractNoCompulsorySavings.Text" xml:space="preserve">
+    <value>Нет вынужденных сбережений для этого займа</value>
+  </data>
+  <data name="SavingContractNotAtMaturity.Text" xml:space="preserve">
+    <value>Сберегательный контракт не завершён</value>
+  </data>
+  <data name="SavingContractRolloverTransferAccountHasNotSameClient.Text" xml:space="preserve">
+    <value>The transfer account has not the same client</value>
+  </data>
+  <data name="SavingContractRolloverTransferAccountIsClosed.Text" xml:space="preserve">
+    <value>Трансферный счёт закрыт</value>
+  </data>
+  <data name="SavingContractRolloverTransferAccountIsInvalid.Text" xml:space="preserve">
+    <value>Трансферный счёт недействительный</value>
+  </data>
+  <data name="SavingContractRolloverTransferAccountIsSavingDepositOrCompulsorySavings.Text" xml:space="preserve">
+    <value>The transfer account is a Savings Deposit account or a Compulsory Savings account</value>
+  </data>
+  <data name="SavingContractTransferFeesIsInvalid.Text" xml:space="preserve">
+    <value>Комиссия за перевод недействителен</value>
+  </data>
+  <data name="SavingCreditTransferAccountInvalid.Text" xml:space="preserve">
+    <value>Нельзя перевести деньги на выбранный контракт</value>
+  </data>
+  <data name="FieldEmpty.Text" xml:space="preserve">
+    <value>Список полей пуст!</value>
+  </data>
+  <data name="FieldIsMandatory.Text" xml:space="preserve">
+    <value>Обязательные настраиваемые поля должны быть заполнены до сохранения</value>
+  </data>
+  <data name="FieldIsNotUnique.Text" xml:space="preserve">
+    <value>Некоторые поля уникальны и значение уже существует!</value>
+  </data>
+  <data name="NumberFieldIsNotANumber.Text" xml:space="preserve">
+    <value>Настраевоемое поле типа Число содержит некорректные символы. Ожидаемый формат 0,0.</value>
+  </data>
+  <data name="LOCAmountHaveBeenFilledIncorrectly.Text" xml:space="preserve">
+    <value>Максимальная сумма кредитной линии заполнен не правильно</value>
+  </data>
+  <data name="LOCFieldsAreNotFilled.Text" xml:space="preserve">
+    <value>Некоторые поля в кредитной линии не заполнены</value>
+  </data>
+  <data name="LOCMaturityHaveBeenFilledIncorrectly.Text" xml:space="preserve">
+    <value>Максимальная длительность кредитной линии заполнен не правильно</value>
+  </data>
+  <data name="CompulsorySavingsContractIsNotActive.Text" xml:space="preserve">
+    <value>Обязательный депозит не активен!</value>
+  </data>
+  <data name="AgeIsNotInRange.Text" xml:space="preserve">
+    <value>Возраст клиента должна быть не ниже {0} и не выше {1} лет</value>
+  </data>
+  <data name="GuarantorMaxLoansCoveredExceed.Text" xml:space="preserve">
+    <value>Поручитель может покрыть не более  {0} займов</value>
+  </data>
+  <data name="ZeroFee.Text" xml:space="preserve">
+    <value>Невозможно аннулировать пеню за просрочку, потому что пеня за просрочку отсутствует.</value>
+  </data>
+  <data name="BranchAddressIsEmpty.Text" xml:space="preserve">
+    <value>Адресс филила отсутсвует</value>
+  </data>
+  <data name="BranchCodeIsEmpty.Text" xml:space="preserve">
+    <value>Код филиала отсутсвует</value>
+  </data>
+  <data name="BranchNameIsEmpty.Text" xml:space="preserve">
+    <value>Имя филиала отсутсвует</value>
+  </data>
+  <data name="SavingProductDuplicateProductCode.Text" xml:space="preserve">
+    <value>Депозитный продукт с таким кодом уже существует (вкладка Основные параметры)</value>
+  </data>
+  <data name="GracePeriodOfLateFeesIsNotFilled.Text" xml:space="preserve">
+    <value>Льготный период на пеню не заполнен</value>
+  </data>
+  <data name="RepaymentBeforeLastEventDate.Text" xml:space="preserve">
+    <value>Невозможно сделать оплату раньше даты последней оплаты</value>
+  </data>
+  <data name="PeriodicityIsNotSet.Text" xml:space="preserve">
+    <value>Не установлен период оприходывания для срочного депозита.</value>
+  </data>
+  <data name="CurrencyIsEmpty.Text" xml:space="preserve">
+    <value>Не выбрана валюта для кредитного продукта, пожалуйста, выберите валюту.</value>
+  </data>
+  <data name="CurrencyIsEmptyForSavingProduct.Text" xml:space="preserve">
+    <value>Не выбрана валюта для депозитного продукта, пожалуйста, выберите валюту.</value>
+  </data>
+  <data name="TransferAccountHasWrongCurrency.Text" xml:space="preserve">
+    <value>Валюты контрактов не совпадают, пожалуйста выберите контракт с валютой как в текущем контракте.</value>
+  </data>
+  <data name="CurrencyAlreadyExists.Text" xml:space="preserve">
+    <value>Такая валюта уже существует.</value>
+  </data>
+  <data name="CurrencyMisMatch.Text" xml:space="preserve">
+    <value>У кредита и фондовой линии разные валюты.</value>
+  </data>
+  <data name="ExchangeRateExceptionCurrencyIsEmpty.Text" xml:space="preserve">
+    <value>Валюта не выбрана.</value>
+  </data>
+  <data name="ExchangeRateExceptionThisCurrencyIsPivot.Text" xml:space="preserve">
+    <value>У базовой валюты не может быть обменного курса.</value>
+  </data>
+  <data name="LoanShareAmountIsEmpty.Text" xml:space="preserve">
+    <value>Доля кредита не задана.</value>
+  </data>
+  <data name="SavingProductInterestsBaseIsInvalid.Text" xml:space="preserve">
+    <value>Неверная база для начисления процента.</value>
+  </data>
+  <data name="SavingProductInterestsFrequencyIsInvalid.Text" xml:space="preserve">
+    <value>Неверная частота начисления кредита.</value>
+  </data>
+  <data name="SavingBalanceIsInvalid.Text" xml:space="preserve">
+    <value>Неверный баланс</value>
+  </data>
+  <data name="AccountExceptionDescriptionIsEmpty.Text" xml:space="preserve">
+    <value>Неверное описание счета</value>
+  </data>
+  <data name="AccountExceptionCannotBeDeleted.Text" xml:space="preserve">
+    <value>Счет по-умолчанию не может быть удален</value>
+  </data>
+  <data name="AccountExceptionParentAccountDoesntExists.Text" xml:space="preserve">
+    <value>Родительский счет не существует</value>
+  </data>
+  <data name="ParentAccountNotSameDescription" xml:space="preserve">
+    <value>Родительский счет другого типа</value>
+  </data>
+  <data name="AccountExceptionParentAccountIsInvalid.Text" xml:space="preserve">
+    <value>Неверный родительский счет</value>
+  </data>
+  <data name="OctopusBookingExceptionDebitAndCreditAccountAreIdentical.Text" xml:space="preserve">
+    <value>Дебетовый и кредитовый счет должны быть разными</value>
+  </data>
+  <data name="OctopusBookingExceptionsCreditAccountIsEmpty.Text" xml:space="preserve">
+    <value>Пустой кредитовый счет</value>
+  </data>
+  <data name="OctopusBookingExceptionsDebitAccountIsEmpty.Text" xml:space="preserve">
+    <value>Пустой дебетовый счет</value>
+  </data>
+  <data name="OctopusBookingExceptionsNameIsEmpty.Text" xml:space="preserve">
+    <value>Название не введено</value>
+  </data>
+  <data name="RoleHasUsers.Text" xml:space="preserve">
+    <value>Не могу удалить роль, к которой присоединены пользователи.</value>
+  </data>
+  <data name="RoleIsNull.Text" xml:space="preserve">
+    <value>Роль не выбрана.</value>
+  </data>
+  <data name="ActionProhibitedForUser.Text" xml:space="preserve">
+    <value>Недостаточно прав на выполнение этой  {0} операции.</value>
+  </data>
+  <data name="CustomExportFileExtensionIsIncorrect.Text" xml:space="preserve">
+    <value>Неверное расширение файла.</value>
+  </data>
+  <data name="CustomExportFileNameIsEmpty.Text" xml:space="preserve">
+    <value>Имя файла не задано.</value>
+  </data>
+  <data name="CustomExportSomeRequiredFieldsAreMissing.Text" xml:space="preserve">
+    <value>Некоторые обязательные поля не заданы.</value>
+  </data>
+  <data name="LoadExtensionError.Text" xml:space="preserve">
+    <value>Ошибка при загрузке модулей. Пожалуйста попробуйте удалить проблемные модули.</value>
+  </data>
+  <data name="SelectBeforeConf.Text" xml:space="preserve">
+    <value>Выберите счёт для операции</value>
+  </data>
+  <data name="FieldNameCanNotContainComma.Text" xml:space="preserve">
+    <value>Имя поля или описание поля не могут содержать запятую. Пожалуйста уберите запятую, и попробуйте сохранить снова.</value>
+  </data>
+  <data name="FieldLimited.Text" xml:space="preserve">
+    <value>В настраиваемое поле можно ввести только 300 символов (включая пробелы). Текст должен быть уменьшен.</value>
+  </data>
+  <data name="AccountImportIdExist.Text" xml:space="preserve">
+    <value>Идентификатор счети из файла уже существует.</value>
+  </data>
+  <data name="AccountImportNumbersExist.Text" xml:space="preserve">
+    <value>Номер счети из файла уже существует.</value>
+  </data>
+  <data name="TellerAccountIsEmpty.Text" xml:space="preserve">
+    <value>Счёт не установлен. Создайте сначала счёт пожалуйста</value>
+  </data>
+  <data name="TellerAmountMinMaxIsInvalid.Text" xml:space="preserve">
+    <value>Максимальная и минимальная сумма должны быть правильно заполнены</value>
+  </data>
+  <data name="TellerBranchIsEmpty.Text" xml:space="preserve">
+    <value>Филиал не определён. Сначала создайте филиал</value>
+  </data>
+  <data name="TellerCurrencyIsEmpty.Text" xml:space="preserve">
+    <value>Валюта не определана. Сначала создайте валюту</value>
+  </data>
+  <data name="TellerNameIsEmpty.Text" xml:space="preserve">
+    <value>Заполните наименование кассы пожалуйста</value>
+  </data>
+  <data name="TellerUserIsEmpty.Text" xml:space="preserve">
+    <value>Пользователь не определён. Сначала создайте пользователя</value>
+  </data>
+  <data name="TellerNameIsExists.Text" xml:space="preserve">
+    <value>Касса с таким название уже существует, переименуйте пожалуйста</value>
+  </data>
+  <data name="OUE10.Text" xml:space="preserve">
+    <value>Пользователь имеет кассу. Пожалуйста удалите или переназначте кассу</value>
+  </data>
+  <data name="CurrentInstallmentIsNotFullyRepaid.Text" xml:space="preserve">
+    <value>Текущая инсталяция проплачена не полностью</value>
+  </data>
+  <data name="LoanIsFlatForTranche.Text" xml:space="preserve">
+    <value>Вы не можете выдавать транши для FLAT кредитов</value>
+  </data>
+  <data name="TrancheMaturityError.Text" xml:space="preserve">
+    <value>Невозможно добавить транш. Пожалуйста, проверьте кредитный продукт.</value>
+  </data>
+  <data name="LoanAlreadyDisbursed.Text" xml:space="preserve">
+    <value>Кредит уже выдан.</value>
+  </data>
+  <data name="DuplicatedAccount.Text" xml:space="preserve">
+    <value>Счет с таким номером уже существует. 
+Введите другой номер счета.</value>
+  </data>
+  <data name="OctopusEmptyLocationException.Text" xml:space="preserve">
+    <value>Местоположение не может быть пустым.</value>
+  </data>
+  <data name="OctopusCityUsedException.Text" xml:space="preserve">
+    <value>Город использован в клиентах.</value>
+  </data>
+  <data name="OctopusDistrictUsedException.Text" xml:space="preserve">
+    <value>Район использован в клиентах.</value>
+  </data>
+  <data name="TellerVaultExists.Text" xml:space="preserve">
+    <value>Хранилище для этого филиала уже существует</value>
+  </data>
+</root>

@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Octopus.DatabaseConnection" GeneratedClassName="Server">
+  <Profiles />
+  <Settings>
+    <Setting Name="SERVER" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">cortana</Value>
+    </Setting>
+    <Setting Name="TIMEOUT" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">5</Value>
+    </Setting>
+    <Setting Name="DEBUG_LEVEL" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+    <Setting Name="PASSWORD" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">shadow</Value>
+    </Setting>
+    <Setting Name="USERNAME" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">sa</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

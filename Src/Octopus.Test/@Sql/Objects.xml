@@ -1,0 +1,4035 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<database>
+  <object name="check_installment_paid" priority="1">
+    <create><![CDATA[CREATE function [dbo].[check_installment_paid]
+(@endDate datetime,@contractId int,@installmentId int)
+RETURNS bit
+AS
+BEGIN
+DECLARE @due real;
+DECLARE @paid real;
+DECLARE @result bit;
+SET @due = (select sum(capital_repayment + interest_repayment)
+			from installments 
+			where installments.contract_id = @contractId and installments.number <= @installmentId)
+SET @paid = (select sum(principal + interests) 
+			 from contractEvents inner join 
+				  repaymentEvents on contractEvents.id = repaymentEvents.id
+			 where is_deleted=0 and contractEvents.contract_id = @contractId and event_date <= @endDate)
+if(@paid>=@due) SET @result = 1 else SET @result =  0;
+return @result;
+END
+]]></create>
+    <drop><![CDATA[IF  EXISTS (
+                SELECT * 
+                FROM sys.objects 
+                WHERE object_id = OBJECT_ID(N'dbo.check_installment_paid') AND type = N'FN'
+            )
+            DROP FUNCTION [dbo].[check_installment_paid]]]></drop>
+  </object>
+  <object name="PenaltiesCalculation" priority="2">
+    <create><![CDATA[CREATE FUNCTION [dbo].[PenaltiesCalculation]
+( @contract_id INT, @installment_number INT, @endDate datetime)
+RETURNS MONEY
+AS 
+BEGIN
+  DECLARE @Penalties TABLE (
+   IDD INT IDENTITY(1, 1),
+   expected_date datetime,
+   capital_repayment money,
+   interest_repayment money,
+   contract_id int NOT NULL,
+   paid_capital money,
+   paid_date datetime,
+   number int,
+   Penalties_based_on_overdue_principal MONEY,
+   Penalties_based_on_overdue_interest MONEY,
+   Penalties_based_on_OLB MONEY,
+   Penalties_based_on_initial_amount MONEY
+  )
+ 
+  DECLARE @counter INT
+  DECLARE @LastInst INT
+  DECLARE @I INT
+  DECLARE @Date1 DATETIME
+  DECLARE @LATE_DAYS_AFTER_ACCRUAL_CEASES INT
+  DECLARE @Penalties_based_on_overdue_principal FLOAT
+  DECLARE @Penalties_based_on_overdue_interest FLOAT
+  DECLARE @Penalties_based_on_OLB FLOAT
+  DECLARE @Penalties_based_on_initial_amount FLOAT
+  DECLARE @TotalPenalties FLOAT
+  DECLARE @expected_principal FLOAT
+  DECLARE @expected_interests FLOAT
+  DECLARE @value_first_inst_principal FLOAT
+  DECLARE @value_first_inst_interest FLOAT
+  DECLARE @OLB FLOAT
+  DECLARE @Last_repayment_date DATETIME
+  DECLARE @days_late INT
+  SET @Last_repayment_date = (select max(event_date)
+			    		    from contractEvents inner join
+					             repaymentEvents on repaymentEvents.id = contractEvents.id
+					        where contractEvents.contract_id = @contract_id and is_deleted=0)
+  SET @days_late = CASE 
+						WHEN dbo.getLateDays(@endDate, @contract_Id,@installment_number) < DATEDIFF(d,@Last_repayment_date,@endDate)
+							THEN DATEDIFF(d,@Last_repayment_date,@endDate)
+						ELSE dbo.getLateDays(@endDate, @contract_Id,@installment_number) 
+				   END
+					
+  SELECT @LATE_DAYS_AFTER_ACCRUAL_CEASES = CONVERT(INT, value)
+  FROM GeneralParameters
+  WHERE [key] = 'LATE_DAYS_AFTER_ACCRUAL_CEASES'
+  
+  
+  SELECT @Penalties_based_on_overdue_principal = non_repayment_penalties_based_on_overdue_principal,
+		 @Penalties_based_on_overdue_interest = non_repayment_penalties_based_on_overdue_interest,
+		 @Penalties_based_on_OLB = non_repayment_penalties_based_on_OLB,
+		 @Penalties_based_on_initial_amount = non_repayment_penalties_based_on_initial_amount
+  FROM   dbo.Contracts INNER JOIN 
+		 Credit ON contracts.id = credit.id inner join
+		 projects on projects.id = contracts.project_id 
+  WHERE Contracts.id = @contract_id
+  INSERT INTO @Penalties ( expected_date, capital_repayment, interest_repayment, contract_id, paid_capital, paid_date, number )
+  SELECT
+     expected_date,
+     capital_repayment,
+	 interest_repayment,
+     contract_id,
+     paid_capital,
+     paid_date,	
+	 number
+  FROM dbo.Installments
+  WHERE contract_id = @contract_id
+	AND number >= @installment_number
+	AND expected_date <= @endDate
+  SET @counter = @installment_number;
+  SET @LastInst = (select max(number) from @Penalties);
+  
+  WHILE ( @counter <= @LastInst)
+    BEGIN             
+  
+	
+      SELECT @Date1 =  ISNULL(paid_date, expected_date), @expected_principal = capital_repayment, @expected_interests = interest_repayment
+      FROM   @Penalties
+      WHERE  number = @counter  
+     
+SET @value_first_inst_principal = 		( (isnull((select sum(capital_repayment)
+								 from installments
+								 where installments.contract_id = @contract_id and number <= @counter),0))
+								 - (isnull((select sum(principal)
+								  from contractEvents inner join
+									   repaymentEvents on repaymentEvents.id = contractEvents.id
+								   where contractEvents.contract_id = @contract_id and is_deleted=0  and event_date <= @endDate),0))
+								)
+SET @value_first_inst_interest = 	( (isnull((select sum(interest_repayment)
+								 from installments
+								 where installments.contract_id = @contract_id and number <= @counter),0))
+								 - (isnull((select sum(interests)
+								  from contractEvents inner join
+									   repaymentEvents on repaymentEvents.id = contractEvents.id
+								   where contractEvents.contract_id = @contract_id and is_deleted=0  and event_date <= @endDate),0))
+								)
+      UPDATE @Penalties
+      SET 
+      Penalties_based_on_overdue_interest = @Penalties_based_on_overdue_interest * 
+								(CASE WHEN (@counter = @installment_number) and (@value_first_inst_interest < @expected_interests)
+								 then 0
+								 else (@expected_interests) 
+								END)
+									 *
+                                               CASE 
+                                                 WHEN DATEDIFF(day, @Date1, @endDate) > @LATE_DAYS_AFTER_ACCRUAL_CEASES THEN @LATE_DAYS_AFTER_ACCRUAL_CEASES
+                                                 ELSE DATEDIFF(day, @Date1, @endDate)
+                                               END
+      WHERE number = @counter ;   
+      UPDATE @Penalties
+      SET 
+      Penalties_based_on_overdue_principal = @Penalties_based_on_overdue_principal * 
+								(CASE WHEN (@counter = @installment_number) and (@value_first_inst_principal < @expected_principal)
+								 then 0
+								 else (@expected_principal) 
+								END)
+									 *
+                                   CASE 
+                                     WHEN DATEDIFF(day, @Date1, @endDate) > @LATE_DAYS_AFTER_ACCRUAL_CEASES THEN @LATE_DAYS_AFTER_ACCRUAL_CEASES
+                                     ELSE DATEDIFF(day, @Date1, @endDate)
+                                   END
+      WHERE number = @counter ;     
+     
+      SET @counter = @counter + 1;
+    END  
+SET @OLB = 	ISNULL (
+			        (SELECT credit.amount
+					 FROM credit
+					 WHERE (credit.id = @contract_id))
+					-
+					(select sum(principal)
+					 from contractEvents inner join
+					      repaymentEvents on repaymentEvents.id = contractEvents.id
+					 where contractEvents.contract_id = @contract_id and is_deleted=0 and event_date <= @endDate)
+				  , 0)
+      UPDATE @Penalties
+      SET 
+      Penalties_based_on_OLB = @Penalties_based_on_OLB * @OLB * 
+							   CASE WHEN datediff(day,@Last_repayment_date,@endDate) < @days_late
+									then datediff(day,@Last_repayment_date,@endDate) 
+									else @days_late 
+							   end
+      WHERE number = @counter-1 ;             
+     
+      UPDATE @Penalties
+      SET 
+      Penalties_based_on_initial_amount = @Penalties_based_on_initial_amount * 	(select credit.amount from credit where credit.id = @contract_id) *
+							   CASE WHEN datediff(day,@Last_repayment_date,@endDate) < @days_late
+									then datediff(day,@Last_repayment_date,@endDate) 
+									else @days_late 
+							   end
+      WHERE number = @counter-1 ;   
+  SELECT @TotalPenalties = (isnull(SUM(Penalties_based_on_initial_amount),0)
+						  +isnull(sum(Penalties_based_on_OLB),0)
+                          +isnull(sum(Penalties_based_on_overdue_principal),0)
+                          +isnull(sum(Penalties_based_on_overdue_interest),0))
+  FROM  @Penalties 
+  RETURN round(@TotalPenalties,2)
+END
+]]></create>
+    <drop><![CDATA[IF  EXISTS (
+                SELECT * 
+                FROM sys.objects 
+                WHERE object_id = OBJECT_ID(N'dbo.PenaltiesCalculation') AND type = N'FN'
+            )
+            DROP FUNCTION [dbo].[PenaltiesCalculation]]]></drop>
+  </object>
+  <object name="GetOLB" priority="3">
+    <create><![CDATA[CREATE FUNCTION [dbo].[GetOLB]
+(@contractId int,@endDate datetime)
+RETURNS MONEY
+AS
+BEGIN
+	DECLARE @retval MONEY
+	DECLARE @amount MONEY
+	DECLARE @paid MONEY
+	SELECT @amount = ISNULL(SUM(principal), 0)
+	FROM dbo.InstallmentSnapshot(@endDate)
+	WHERE contract_id = @contractId
+	SELECT @paid = ISNULL(SUM(principal), 0)
+	FROM dbo.RepaymentEvents AS re
+	LEFT JOIN dbo.ContractEvents AS ce ON re.id = ce.id
+	WHERE ce.is_deleted = 0 AND event_date <= @endDate AND contract_id = @contractId
+	SET @retval = @amount - @paid
+	SET @retval = CASE WHEN @retval < 0 THEN 0 ELSE @retval END
+	
+	RETURN @retval	
+END
+]]></create>
+    <drop><![CDATA[IF  EXISTS (
+                SELECT * 
+                FROM sys.objects 
+                WHERE object_id = OBJECT_ID(N'dbo.GetOLB') AND type = N'FN'
+            )
+            DROP FUNCTION [dbo].[GetOLB]]]></drop>
+  </object>
+  <object name="getLateDays" priority="4">
+    <create><![CDATA[CREATE FUNCTION [dbo].[getLateDays]
+    (
+      @endDate datetime,
+      @contractId INT,
+      @installmentId int
+    )
+RETURNS INT
+AS BEGIN
+    DECLARE @result int ;
+    DECLARE @installment_date DATETIME ;
+    DECLARE @paid BIT ;
+    DECLARE @contractNbInstallment INT ;
+    DECLARE @counter INT ;
+    IF ( @installmentId = -1 ) 
+        BEGIN
+            SELECT @contractNbInstallment =  MAX(number)
+            FROM   installments
+            WHERE  contract_id = @contractId
+          
+		    SET @counter = (SELECT ISNULL(MAX([Installments].[number]),1)
+							FROM [Installments] 
+							WHERE [Installments].[contract_id] = @contractId 
+							  AND [Installments].[paid_interest]<>0)		
+            WHILE ( @installmentId = -1 )
+                AND ( @counter <= @contractNbInstallment )
+                BEGIN
+                    IF ( dbo.[check_installment_paid](@endDate, @contractId,
+                                                      @counter) = 0 ) 
+                        BEGIN 
+                            SET @installmentId = @counter ;
+                        END
+                    SET @counter = @counter + 1 ;
+                END	
+        END
+    SET @paid = ( dbo.check_installment_paid(@endDate, @contractId, @installmentId) ) ;
+    SELECT @installment_date = [expected_date]
+    FROM      [Installments]
+    WHERE     contract_id = @contractId AND number = @installmentId
+    SET @result = CASE WHEN @paid = 1 THEN 0
+                       ELSE CASE WHEN datediff(d, @installment_date, @endDate) < 0  THEN 0
+                                 ELSE datediff(d, @installment_date, @endDate)
+                            END
+                  END
+    return @result
+   END
+]]></create>
+    <drop><![CDATA[IF  EXISTS (
+                SELECT * 
+                FROM sys.objects 
+                WHERE object_id = OBJECT_ID(N'dbo.getLateDays') AND type = N'FN'
+            )
+            DROP FUNCTION [dbo].[getLateDays]]]></drop>
+  </object>
+  <object name="GetNbMembers" priority="5">
+    <create><![CDATA[CREATE FUNCTION [dbo].[GetNbMembers]
+(@groupId int,@beginDate datetime)
+RETURNS int
+AS
+BEGIN
+DECLARE @nb_members int;
+SET @nb_members = (select count(person_id) 
+				   from persongroupbelonging 
+				   where group_id = @groupId
+						and @begindate between joined_date and isnull(left_date,@begindate))
+return @nb_members;
+END
+]]></create>
+    <drop><![CDATA[IF  EXISTS (
+                SELECT * 
+                FROM sys.objects 
+                WHERE object_id = OBJECT_ID(N'dbo.GetNbMembers') AND type = N'FN'
+            )
+            DROP FUNCTION [dbo].[GetNbMembers]]]></drop>
+  </object>
+  <object name="GetDueInterest" priority="6">
+    <create><![CDATA[CREATE FUNCTION [dbo].[GetDueInterest]
+(@contractId int,@endDate datetime)
+RETURNS float
+AS
+BEGIN
+DECLARE @dueInterest real;
+DECLARE @due real;
+DECLARE @paid real;
+SET @due = (select ISNULL(sum(interest_repayment),0)
+			from installments 
+			where installments.contract_id = @contractId)
+SET @paid = (select ISNULL(sum(interests),0)
+			 from contractEvents inner join 
+				  repaymentEvents on contractEvents.id = repaymentEvents.id
+			 where is_deleted=0 and contractEvents.contract_id = @contractId and event_date <= @endDate)
+SET @dueInterest = @due - @paid;
+return @dueInterest;
+END
+]]></create>
+    <drop><![CDATA[IF  EXISTS (
+                SELECT * 
+                FROM sys.objects 
+                WHERE object_id = OBJECT_ID(N'dbo.GetDueInterest') AND type = N'FN'
+            )
+            DROP FUNCTION [dbo].[GetDueInterest]]]></drop>
+  </object>
+  <object name="GetClientID" priority="7">
+    <create><![CDATA[CREATE FUNCTION [dbo].[GetClientID]
+(@contractID int)
+RETURNS int
+AS
+BEGIN
+DECLARE @ClientID int
+SET @ClientID = (select tiers_id 
+				   from projects inner join
+					    contracts on contracts.project_id = projects.id
+				   where contracts.id = @contractID)
+return @ClientID
+END
+]]></create>
+    <drop><![CDATA[IF  EXISTS (
+                SELECT * 
+                FROM sys.objects 
+                WHERE object_id = OBJECT_ID(N'dbo.GetClientID') AND type = N'FN'
+            )
+            DROP FUNCTION [dbo].[GetClientID]]]></drop>
+  </object>
+  <object name="next_contractEvents" priority="8">
+    <create><![CDATA[CREATE function [dbo].[next_contractEvents]
+(@contractEvents int)
+RETURNS int
+AS
+BEGIN
+DECLARE @contractId int;
+DECLARE @event_date DATETIME;
+DECLARE @next_contractEvents INT;
+SET @contractId = (SELECT contract_id FROM [ContractEvents] WHERE id = @contractEvents);
+SET @event_date = (SELECT event_date FROM [ContractEvents] WHERE id = @contractEvents);
+SET @next_contractEvents = (SELECT TOP 1 id 
+							FROM [ContractEvents] 
+							WHERE contract_id = @contractId AND event_date > @event_date);
+return @next_contractEvents;
+END
+]]></create>
+    <drop><![CDATA[IF  EXISTS (
+                SELECT * 
+                FROM sys.objects 
+                WHERE object_id = OBJECT_ID(N'dbo.next_contractEvents') AND type = N'FN'
+            )
+            DROP FUNCTION [dbo].[next_contractEvents]]]></drop>
+  </object>
+  <object name="InstallmentSnapshot" priority="9">
+    <create><![CDATA[CREATE FUNCTION [dbo].[InstallmentSnapshot]
+(
+	@date DATETIME
+)
+RETURNS TABLE
+AS
+RETURN
+(
+	WITH _installments AS
+	(
+		-- Unite Installments and InstallmentHistory
+		SELECT h.event_id AS snapshot_id, e.event_date AS snapshot_date,
+		h.contract_id, h.number, h.expected_date, h.capital_repayment, h.interest_repayment
+		FROM dbo.InstallmentHistory AS h
+		LEFT JOIN dbo.ContractEvents AS e ON h.event_id = e.id
+		WHERE h.delete_date IS NULL OR h.delete_date < @date
+		UNION ALL
+		SELECT 0 AS snapshot_id
+		, '2050-01-01' AS snapshot_date -- date in very distant future
+		, contract_id, number, expected_date, capital_repayment, interest_repayment
+		FROM dbo.Installments
+	)
+	SELECT i.contract_id, i.number, i.expected_date,
+	capital_repayment AS principal, interest_repayment AS interest
+	FROM [_installments] AS i
+	RIGHT JOIN
+	(
+		-- Rank snapshots according to dates
+		SELECT *, ROW_NUMBER() OVER (PARTITION BY contract_id ORDER BY snapshot_date ASC) AS [rank]
+		FROM
+		(
+			-- Get relevant snapshots only
+			SELECT contract_id, snapshot_id, snapshot_date FROM [_installments]
+			WHERE snapshot_date > @date
+			GROUP BY contract_id, snapshot_id, snapshot_date
+		) AS t
+	) AS s ON s.contract_id = i.contract_id AND s.snapshot_id = i.snapshot_id
+	WHERE s.[rank] = 1
+)
+]]></create>
+    <drop><![CDATA[IF  EXISTS (
+                SELECT * 
+                FROM sys.objects 
+                WHERE object_id = OBJECT_ID(N'dbo.InstallmentSnapshot') AND type = N'IF'
+            )
+            DROP FUNCTION [dbo].[InstallmentSnapshot]]]></drop>
+  </object>
+  <object name="ActiveLoans" priority="10">
+    <create><![CDATA[-- Return a list of active loans along with their amounts, olb, and late days.
+--
+-- HISTORY
+--
+-- Apr 01, 2011 - v2.8.14 - Pasha BASTOV
+-- Make use of the InstallmentSnapshot() function instead of
+-- the Credit table to get the loan amount.
+--
+-- Apr 13, 2011 - v2.8.15 - Pasha BASTOV
+-- Add @branch_id as a parameter
+CREATE FUNCTION [dbo].[ActiveLoans]
+(	
+	@date DATETIME
+	, @branch_id INT
+)
+RETURNS TABLE 
+AS
+RETURN 
+(
+	-- The query below involves a bit of magic: it combines loans
+	-- with olb, interest due, and late days.
+	-- Please do not modify it until you absolutely understand what you
+	-- are doing.
+	-- Also, do not even try to refactor and simplify it by breaking
+	-- it into different functions like GetOLB(), GetLateDays(), etc.
+	-- since it is going to cripple your performance significantly.
+	-- After all, SQL is all about sets, not functions.
+	WITH _installments
+	AS
+	(
+		SELECT * FROM dbo.InstallmentSnapshot(@date)
+	)
+	SELECT retval.id, retval.principal AS amount, retval.principal - retval.paid_principal AS olb,
+	retval.interest - retval.paid_interest AS interest,
+	CASE WHEN retval.expected_date IS NULL THEN 0 ELSE DATEDIFF(dd, retval.expected_date, @date) END AS late_days
+	, expected_date, ISNULL(principal_due, 0) AS principal_due
+	, ISNULL(interest_due, 0) AS interest_due
+	FROM
+	(
+		SELECT loans.*, MIN(i.expected_date) AS expected_date
+		, MAX(i.running_total_principal) - loans.paid_principal AS principal_due
+		, MAX(i.running_total_interest) - loans.paid_interest AS interest_due
+		FROM
+		(
+			SELECT t1.id, t2.interest, t1.paid_interest, t2.principal, t1.paid_principal
+			FROM
+			(
+				-- Get contract id, total due principal, paid principal, and paid interest
+				SELECT c.id, 
+				SUM(ISNULL(re.principal, 0)) AS paid_principal,
+				SUM(ISNULL(re.interests, 0)) AS paid_interest,
+				SUM(CASE WHEN 'WROE' = ce.event_type THEN 1 ELSE 0 END) AS wroe,
+				SUM(CASE WHEN 'LODE' = ce.event_type THEN 1 ELSE 0 END) AS lode
+				FROM dbo.Credit AS c
+				LEFT JOIN dbo.ContractEvents AS ce ON ce.contract_id = c.id AND event_date <= @date AND ce.is_deleted = 0
+				LEFT JOIN dbo.RepaymentEvents AS re ON re.id = ce.id
+				GROUP BY c.id
+			) AS t1
+			LEFT JOIN
+			(
+				-- Get interest due
+				SELECT contract_id
+				, SUM(interest) AS interest
+				, SUM(principal) AS principal
+				FROM _installments
+				GROUP BY contract_id
+			) AS t2 ON t1.id = t2.contract_id
+			WHERE t1.wroe < 1 AND t1.lode > 0
+			AND (t2.principal - t1.paid_principal > 0.5 OR t2.interest - t1.paid_interest > 0.5)
+		) AS loans
+		-- Get installments that have not been repaid
+		-- (necessary to get late days)
+		LEFT JOIN
+		(
+			SELECT a.contract_id, a.number,
+			SUM(b.principal + b.interest) AS running_total, a.expected_date
+			, SUM(b.principal) AS running_total_principal
+			, SUM(b.interest) AS running_total_interest
+			FROM _installments AS a
+			LEFT JOIN _installments AS b ON a.contract_id = b.contract_id AND b.number <= a.number
+			GROUP BY a.contract_id, a.number, a.expected_date
+		) AS i ON i.contract_id = loans.id 
+		AND ROUND((loans.paid_principal + loans.paid_interest), 2) < ROUND(i.running_total, 2) - 0.5
+		AND i.expected_date <= @date
+		GROUP BY loans.id, loans.interest, loans.paid_interest, loans.principal, loans.paid_principal
+	) AS retval
+	LEFT JOIN dbo.Contracts AS c ON c.id = retval.id
+	WHERE c.branch_id = @branch_id
+)
+]]></create>
+    <drop><![CDATA[IF  EXISTS (
+                SELECT * 
+                FROM sys.objects 
+                WHERE object_id = OBJECT_ID(N'dbo.ActiveLoans') AND type = N'IF'
+            )
+            DROP FUNCTION [dbo].[ActiveLoans]]]></drop>
+  </object>
+  <object name="ActiveClients" priority="11">
+    <create><![CDATA[-- DO NOT FORGET TO UPDATE THE HEADER IF YOU HAPPEN TO PATCH THE FUNCTION
+-- The format is: VERSION, DATE, AUTHOR
+-- DESCRIPTION on the next line
+--
+-- HISTORY
+--
+-- Feb 17, 2011 - v2.8.13 - Pasha BASTOV
+-- The function used to share OLB and interest *evenly* across group members,
+-- which is, obviously, incorrect. The patch fixes this behavior: now they
+-- are distributed proportionally to loan shares.
+--
+-- Apr 13, 2011 - v2.8.15 - Pasha BASTOV
+-- Add @branch_id to the list of parameters
+CREATE FUNCTION [dbo].[ActiveClients] (@date DATETIME, @branch_id INT)
+RETURNS TABLE AS
+RETURN
+(
+	WITH loans
+	AS
+	(
+		SELECT al.id AS contract_id
+		, al.olb
+		, al.interest
+		, al.late_days
+		, t.client_type_code
+		, cr.amount
+		, t.id AS client_id
+		FROM dbo.ActiveLoans(@date, @branch_id) AS al
+		LEFT JOIN dbo.Credit AS cr ON cr.id = al.id
+		LEFT JOIN dbo.Contracts AS c ON c.id = cr.id
+		LEFT JOIN dbo.Projects AS j ON c.project_id = j.id
+		LEFT JOIN dbo.Tiers AS t ON j.tiers_id = t.id
+	)  
+	, lsa
+	AS
+	(  
+		SELECT lsa.person_id
+		, lsa.group_id
+		, lsa.contract_id
+		, lsa.amount AS share
+		, ROW_NUMBER() OVER (PARTITION BY lsa.contract_id ORDER BY person_id) AS number
+		, lsa2.total
+		, al.amount
+		, al.olb
+		, al.interest
+		, FLOOR(lsa.amount/al.amount*al.olb) AS olb_share
+		, FLOOR(lsa.amount/al.amount*al.interest) AS interest_share
+		, al.late_days
+		FROM dbo.LoanShareAmounts AS lsa
+		RIGHT JOIN loans AS al ON al.contract_id = lsa.contract_id
+		LEFT JOIN (
+			SELECT contract_id, COUNT(*) AS total
+			FROM dbo.LoanShareAmounts
+			GROUP BY contract_id
+		) AS lsa2 ON lsa2.contract_id = lsa.contract_id
+		WHERE al.client_type_code = 'G'
+	)
+	SELECT a.person_id AS id
+	, a.contract_id
+	, a.late_days
+	, a.share AS amount
+	, CASE
+		WHEN a.number < a.total THEN a.olb_share
+		ELSE a.olb - SUM(b.olb_share)
+	END olb
+	, CASE
+		WHEN a.number < a.total THEN a.interest_share
+		ELSE a.interest - SUM(b.interest_share) -- running total
+	END interest
+	FROM lsa AS a
+	LEFT JOIN lsa AS b ON a.contract_id = b.contract_id AND b.number < a.number
+	GROUP BY a.person_id
+	, a.contract_id
+	, a.late_days
+	, a.share
+	, a.number
+	, a.total
+	, a.amount
+	, a.interest
+	, a.interest_share
+	, a.olb
+	, a.olb_share
+	UNION ALL
+	SELECT loans.client_id AS id
+	, loans.contract_id
+	, loans.late_days
+	, loans.amount
+	, loans.olb
+	, loans.interest
+	FROM loans
+	WHERE loans.client_type_code IN ('I', 'C')
+)
+]]></create>
+    <drop><![CDATA[IF  EXISTS (
+                SELECT * 
+                FROM sys.objects 
+                WHERE object_id = OBJECT_ID(N'dbo.ActiveClients') AND type = N'IF'
+            )
+            DROP FUNCTION [dbo].[ActiveClients]]]></drop>
+  </object>
+  <object name="ExchangeRatesEx" priority="12">
+    <create><![CDATA[CREATE FUNCTION [dbo].[ExchangeRatesEx]
+(
+	@date DATETIME
+)
+RETURNS TABLE
+AS
+RETURN
+(
+	SELECT c.id, CASE WHEN 1 = c.is_pivot THEN 1 ELSE xr.exchange_rate END AS exchange_rate
+	FROM dbo.Currencies AS c
+	LEFT JOIN dbo.ExchangeRates AS xr ON c.id = xr.currency_id 
+	AND xr.exchange_date = DATEADD(dd, 0, DATEDIFF(dd, 0, GETDATE()))
+)
+]]></create>
+    <drop><![CDATA[IF  EXISTS (
+                SELECT * 
+                FROM sys.objects 
+                WHERE object_id = OBJECT_ID(N'dbo.ExchangeRatesEx') AND type = N'IF'
+            )
+            DROP FUNCTION [dbo].[ExchangeRatesEx]]]></drop>
+  </object>
+  <object name="GetListMembersGroupLoan" priority="13">
+    <create><![CDATA[CREATE FUNCTION [dbo].[GetListMembersGroupLoan]
+(   
+    @contract_id int
+)
+RETURNS TABLE 
+AS
+RETURN 
+(
+     SELECT first_name, last_name, joined_date,left_date, lsa.amount as [loan_share_amount], pgb.person_id
+	 FROM contracts INNER JOIN
+	 credit ON credit.id = contracts.id INNER JOIN
+	 projects ON projects.id = contracts.[project_id] INNER JOIN
+	 tiers ON tiers.id = projects.[tiers_id] INNER JOIN
+	 groups ON groups.id = tiers.id INNER JOIN
+	 [PersonGroupBelonging] AS pgb ON pgb.[group_id] = groups.id INNER JOIN
+	 [Persons] ON persons.id = pgb.[person_id]
+	LEFT JOIN dbo.LoanShareAmounts AS lsa ON pgb.group_id = lsa.group_id AND pgb.person_id = lsa.person_id AND lsa.contract_id = @contract_id
+	  WHERE contracts.id = @contract_id AND
+	  (([closed] =0 AND [currently_in] = 1) OR
+      ((closed = 1) AND (joined_date <= contracts.start_date) AND (ISNULL(left_date, GETDATE()) >= close_date))) 
+)
+]]></create>
+    <drop><![CDATA[IF  EXISTS (
+                SELECT * 
+                FROM sys.objects 
+                WHERE object_id = OBJECT_ID(N'dbo.GetListMembersGroupLoan') AND type = N'IF'
+            )
+            DROP FUNCTION [dbo].[GetListMembersGroupLoan]]]></drop>
+  </object>
+  <object name="GetTrueLoanCycle" priority="14">
+    <create><![CDATA[create FUNCTION [dbo].[GetTrueLoanCycle]
+(@clientId int)
+RETURNS int
+AS
+BEGIN
+DECLARE @loanCycleGL INT
+DECLARE @loanCycleIL INT
+SELECT @loanCycleIL = COUNT(tiers.id)
+FROM [Tiers] INNER JOIN
+	[Projects] ON projects.tiers_id = tiers.id inner join
+	contracts on contracts.project_id = projects.id inner join
+	credit on credit.id = contracts.id
+WHERE tiers.id = @clientId and disbursed=1
+SELECT @loanCycleGL = COUNT(tiers.id)
+FROM tiers INNER JOIN
+	 projects ON projects.[tiers_id] = tiers.id INNER JOIN
+	 contracts c1 ON projects.id = c1.[project_id] inner join
+	 credit on credit.id = c1.id
+WHERE disbursed=1 and @clientId IN (SELECT person_id
+				from [PersonGroupBelonging] pgb1
+				WHERE pgb1.[group_id] = tiers.id AND
+				      ((pgb1.joined_date <= c1.start_date) AND (ISNULL(pgb1.left_date,c1.close_date) >= c1.close_date))	  
+				)
+return @loanCycleGL+@loanCycleIL
+END
+]]></create>
+    <drop><![CDATA[IF  EXISTS (
+                SELECT * 
+                FROM sys.objects 
+                WHERE object_id = OBJECT_ID(N'dbo.GetTrueLoanCycle') AND type = N'FN'
+            )
+            DROP FUNCTION [dbo].[GetTrueLoanCycle]]]></drop>
+  </object>
+  <object name="GetXR" priority="15">
+    <create><![CDATA[-- Return exchange rate for a given date and a couple of currencies
+--
+-- HISTORY
+--
+-- Apr 04, 2010 - v2.8.14 - Pasha BASTOV - Adds a check that prevents from returning NULL values
+CREATE FUNCTION [dbo].[GetXR]
+(
+	@from INT
+	, @to INT
+	, @date DATETIME
+)
+RETURNS FLOAT
+AS BEGIN
+	IF @from = @to
+	BEGIN
+		RETURN 1
+	END
+	
+	-- Get pivot currency
+	DECLARE @pivot INT
+	SELECT @pivot = id
+	FROM dbo.Currencies
+	WHERE is_pivot = 1
+	
+	-- Get exchange rate
+	DECLARE @xr FLOAT
+	SELECT TOP 1 @xr = exchange_rate
+	FROM dbo.ExchangeRates
+	WHERE exchange_date <= @date AND currency_id IN (@from, @to)
+	ORDER BY exchange_date
+	SET @xr = CASE WHEN @from = @pivot THEN @xr ELSE 1/@xr END
+	RETURN @xr
+END
+]]></create>
+    <drop><![CDATA[IF  EXISTS (
+                SELECT * 
+                FROM sys.objects 
+                WHERE object_id = OBJECT_ID(N'dbo.GetXR') AND type = N'FN'
+            )
+            DROP FUNCTION [dbo].[GetXR]]]></drop>
+  </object>
+  <object name="CalculateLatePenalty" priority="16">
+    <create><![CDATA[CREATE PROCEDURE [dbo].[CalculateLatePenalty]
+@contract_id INT
+, @date DATETIME
+AS
+BEGIN
+	-- The formula for calculating late penalty (for one installment) is quite simple:
+	-- late_days_(1) * late_amount(2) * late_interest_rate_(3) - paid_penalty_(4)
+	-- (1) late_days = end_date - start_date, where end_date is given
+	-- so the goal is to find out the start_date, which is not that
+	-- complicated either: start_date is the date of the latest relevant
+	-- repayment (the one affecting the installment under investigation)
+	-- where principal or interest was repaid (*not* penalty)
+	-- (2) late_amount is sum(installments) - sum(repayments) with adjustments
+	-- for values that fall outside the legitimate range (more than zero and
+	-- less then or equal to the installment amount)
+	-- (3) late_interest_rate is stored in the Credit table for each contract
+	-- (4) paid_penalty = sum of paid penalties (with zero for principal and interest)
+	-- of all the repayment events between start_date (not including) and end_date (including).
+	-- Get late penalty rates
+	DECLARE @late_principal_penalty_rate FLOAT
+	DECLARE @late_interest_penalty_rate FLOAT
+	DECLARE @late_amount_penalty_rate FLOAT
+	DECLARE @late_olb_penalty_rate FLOAT
+	DECLARE @grace_period INT
+	SELECT @late_principal_penalty_rate = non_repayment_penalties_based_on_overdue_principal
+	, @late_interest_penalty_rate = non_repayment_penalties_based_on_overdue_interest
+	, @late_amount_penalty_rate = non_repayment_penalties_based_on_initial_amount
+	, @late_olb_penalty_rate = non_repayment_penalties_based_on_olb
+	, @grace_period = grace_period_of_latefees
+	FROM dbo.Credit
+	WHERE id = @contract_id
+	-- Select repayment events with running totals
+	DECLARE @RepaymentEvents TABLE
+	(
+		num INT
+		, installment_number INT
+		, interest MONEY
+		, principal MONEY
+		, penalty MONEY
+		, event_date DATETIME
+		, total MONEY
+		, rt_interest MONEY
+		, rt_principal MONEY
+		, rt_total MONEY
+	)
+	INSERT INTO @RepaymentEvents
+	SELECT re1.num, re1.installment_number, re1.interests, re1.principal, re1.penalties, re1.event_date, re1.total 
+	, SUM(re2.interests) AS rt_interest
+	, SUM(re2.principal) AS rt_principal
+	, SUM(re2.total) AS rt_total
+	FROM
+	(
+		SELECT re.interests, re.principal, re.penalties, ce.event_date
+		, ROW_NUMBER() OVER (ORDER BY event_date, re.id) AS num
+		, re.interests + re.principal AS total
+		, re.installment_number
+		FROM dbo.RepaymentEvents AS re
+		LEFT JOIN dbo.ContractEvents AS ce ON re.id = ce.id
+		WHERE ce.contract_id = @contract_id AND is_deleted = 0 AND event_date <= @date
+	) AS re1
+	LEFT JOIN
+	(
+		SELECT re.interests, re.principal, re.penalties, ce.event_date
+		, ROW_NUMBER() OVER (ORDER BY event_date, re.id) AS num
+		, re.interests + re.principal AS total
+		FROM dbo.RepaymentEvents AS re
+		LEFT JOIN dbo.ContractEvents AS ce ON re.id = ce.id
+		WHERE ce.contract_id = @contract_id AND is_deleted = 0 AND event_date <= @date
+	) AS re2 ON re2.num <= re1.num
+	GROUP BY re1.num, re1.installment_number, re1.event_date, re1.principal,re1.penalties, re1.interests, re1.total
+	-- Get number of late days
+	DECLARE @max_late_days INT
+	SELECT @max_late_days = [value]
+	FROM dbo.GeneralParameters
+	WHERE [key] = 'LATE_DAYS_AFTER_ACCRUAL_CEASES'
+	DECLARE @retval MONEY
+	SET @retval = 0
+	
+	DECLARE @number INT
+	DECLARE @principal MONEY
+	DECLARE @interest MONEY
+	DECLARE @expected_date DATETIME
+	DECLARE @preceding_principal_due MONEY
+	DECLARE @preceding_interest_due MONEY
+	DECLARE @start_re INT
+	DECLARE @start_date DATETIME
+	DECLARE @late_days INT
+	DECLARE @end_date DATETIME
+	DECLARE @principal_late MONEY
+	DECLARE @interest_late MONEY
+	
+	IF @late_interest_penalty_rate > 0 OR @late_principal_penalty_rate > 0
+	BEGIN
+		-- Traverse through installments
+		DECLARE i_cursor CURSOR FOR
+		SELECT number, expected_date, principal, interest
+		FROM #installments
+		WHERE contract_id = @contract_id AND expected_date < @date
+		
+		OPEN i_cursor
+		FETCH NEXT FROM i_cursor
+		INTO @number, @expected_date, @principal, @interest
+		WHILE 0 = @@FETCH_STATUS
+		BEGIN
+			SET @start_re = NULL
+			SET @start_date = NULL
+			-- Get due values for all the preceding installments
+			SELECT @preceding_principal_due = ISNULL(SUM(principal), 0)
+			, @preceding_interest_due = ISNULL(SUM(interest), 0)
+			FROM #installments
+			WHERE contract_id = @contract_id AND number < @number
+			-- Get start_date, i.e. the date of the latest event when principal or interest
+			-- (but *not* penalty) has been repaid
+			SELECT @start_re = ISNULL(MAX(num), 0)
+			FROM
+			(
+				SELECT * 
+				FROM @RepaymentEvents
+				WHERE num >= (SELECT MIN(num) FROM @RepaymentEvents WHERE rt_principal > @preceding_principal_due)
+				AND num <= ISNULL((SELECT MAX(num) FROM @RepaymentEvents WHERE rt_principal < @preceding_principal_due + @principal), 0) + 1
+				UNION ALL
+				SELECT * 
+				FROM @RepaymentEvents
+				WHERE num >= (SELECT MIN(num) FROM @RepaymentEvents WHERE rt_interest > @preceding_interest_due)
+				AND num <= ISNULL((SELECT MAX(num) FROM @RepaymentEvents WHERE rt_interest < @preceding_interest_due + @interest), 0) + 1
+			) AS _re
+			WHERE principal > 0 OR interest > 0
+			-- Get the first repayment event
+			SELECT @start_date = event_date
+			FROM @RepaymentEvents
+			WHERE num = @start_re
+			SET @start_date = ISNULL(@start_date, @expected_date)
+			-- Obviously, @start_date cannot come before @expected_date
+			SET @start_date = CASE WHEN @start_date < @expected_date THEN @expected_date ELSE @start_date END
+			SET @end_date = CASE
+				WHEN NOT @max_late_days IS NULL THEN DATEADD(dd, @max_late_days, @expected_date)
+				ELSE @date
+			END
+			SET @end_date = CASE WHEN @end_date > @date THEN @date ELSE @end_date END
+			SET @late_days = DATEDIFF(dd, @start_date, @end_date)
+			SET @late_days = CASE WHEN @late_days < 0 THEN 0 ELSE @late_days END
+			SET @late_days = CASE WHEN @late_days <= @grace_period THEN 0 ELSE @late_days END
+			-- Get late amounts
+			SELECT @principal_late = @preceding_principal_due + @principal - ISNULL(SUM(principal), 0)
+			, @interest_late = @preceding_interest_due + @interest - ISNULL(SUM(interest), 0)
+			FROM @RepaymentEvents
+			SET @principal_late = CASE
+				WHEN @principal_late < 0 THEN 0
+				WHEN @principal_late > @principal THEN @principal
+				ELSE @principal_late
+			END
+			SET @interest_late = CASE
+				WHEN @interest_late < 0 THEN 0
+				WHEN @interest_late > @interest THEN @interest
+				ELSE @interest_late
+			END
+			SET @retval = @retval + @principal_late * @late_principal_penalty_rate * @late_days
+			SET @retval = @retval + @interest_late * @late_interest_penalty_rate * @late_days
+			FETCH NEXT FROM i_cursor
+			INTO @number, @expected_date, @principal, @interest
+		END -- end of traversal
+		CLOSE i_cursor
+		DEALLOCATE i_cursor
+	END
+	IF @late_amount_penalty_rate > 0 OR @late_olb_penalty_rate > 0
+	BEGIN
+		-- Now calculate penalty on initial amount and / or OLB
+		
+		-- First, we have to get start date (which in turn will allow
+		-- to calculate number of late days).
+		-- To get the start date we have to figure out two things:
+		-- a) expected date of the first unpaid installment, and
+		-- b) date of the latest repayment event with principal > 0 or interest > 0
+		-- Take the most recent one as the start date.
+		-- If both are NULL then take @date.
+		-- Get total paid amounts
+		DECLARE @total_paid_principal MONEY
+		DECLARE @total_paid_interest MONEY
+		SELECT @total_paid_principal = ISNULL(SUM(principal), 0)
+		, @total_paid_interest = ISNULL(SUM(interest), 0)
+		FROM @RepaymentEvents
+		-- Get expected date of the first non-repaid installment
+		DECLARE @i_date DATETIME
+		SELECT @i_date = MIN(expected_date)
+		FROM
+		(
+			SELECT a.number, a.expected_date
+			, SUM(b.principal) AS rt_principal
+			, SUM(b.interest) AS rt_interest
+			FROM #installments AS a
+			LEFT JOIN #installments AS b ON a.contract_id = b.contract_id AND b.number <= a.number
+			WHERE a.contract_id = @contract_id AND a.expected_date < @date
+			GROUP BY a.number, a.expected_date
+		) AS i WHERE rt_principal > @total_paid_principal + 0.05 OR rt_interest > @total_paid_interest + 0.05
+		-- Get the latest repayment date
+		DECLARE @re_date DATETIME
+		SELECT @re_date = MAX(event_date)
+		FROM @RepaymentEvents
+		WHERE principal > 0 OR interest > 0
+		-- Get start date
+		IF @i_date IS NULL
+		BEGIN
+			SET @start_date = @re_date
+		END
+		ELSE
+		BEGIN
+			SET @start_date = CASE WHEN @i_date > @re_date OR @re_date IS NULL THEN @i_date ELSE @re_date END
+		END
+		SET @start_date = ISNULL(@start_date, @date)
+		-- Get end date
+		SET @end_date = CASE
+			WHEN NOT @max_late_days IS NULL THEN DATEADD(dd, @max_late_days, @start_date)
+			ELSE @date
+		END
+		SET @end_date = CASE WHEN @end_date > @date THEN @date ELSE @end_date END
+		-- Get late days
+		SET @late_days = DATEDIFF(dd, @start_date, @end_date)
+		SET @late_days = CASE WHEN @late_days < 0 THEN 0 ELSE @late_days END
+		SET @late_days = CASE WHEN @late_days <= @grace_period THEN 0 ELSE @late_days END
+		-- Get amount
+		DECLARE @amount MONEY
+		SELECT @amount = SUM(principal)
+		FROM #installments
+		WHERE contract_id = @contract_id
+		-- Get penalty on amount
+		SET @retval = @retval + @amount * @late_days * @late_amount_penalty_rate
+		
+		-- Get penalty on OLB
+		SET @retval = @retval + (@amount - @total_paid_principal) * @late_days * @late_olb_penalty_rate
+	END
+	-- Subtract paid penalty
+	SET @start_re = NULL
+	SELECT @start_re = MAX(num)
+	FROM @RepaymentEvents
+	WHERE principal > 0 OR interest > 0
+	SELECT @retval = @retval - ISNULL(SUM(penalty), 0)
+	FROM @RepaymentEvents
+	WHERE num > @start_re
+	SET @retval = CASE WHEN @retval < 0 THEN 0 ELSE @retval END
+	INSERT INTO #penalties VALUES (@contract_id, @retval)
+END
+]]></create>
+    <drop><![CDATA[IF  EXISTS (
+                SELECT * 
+                FROM sys.objects 
+                WHERE object_id = OBJECT_ID(N'dbo.CalculateLatePenalty') AND type = N'P'
+            )
+            DROP PROCEDURE [dbo].[CalculateLatePenalty]]]></drop>
+  </object>
+  <object name="GetDisbursementDate" priority="17">
+    <create><![CDATA[CREATE FUNCTION [dbo].[GetDisbursementDate] (@contract_id INT)
+RETURNS DATETIME
+AS
+BEGIN
+	DECLARE @retval DATETIME
+	SELECT @retval = event_date
+	FROM dbo.ContractEvents
+	WHERE event_type = 'LODE' AND contract_id = @contract_id AND is_deleted = 0
+	RETURN @retval
+END
+]]></create>
+    <drop><![CDATA[IF  EXISTS (
+                SELECT * 
+                FROM sys.objects 
+                WHERE object_id = OBJECT_ID(N'dbo.GetDisbursementDate') AND type = N'FN'
+            )
+            DROP FUNCTION [dbo].[GetDisbursementDate]]]></drop>
+  </object>
+  <object name="Disbursements" priority="18">
+    <create><![CDATA[CREATE FUNCTION [dbo].[Disbursements]
+(
+	@from DATETIME
+	, @to DATETIME
+	, @branch_id INT
+)
+RETURNS TABLE
+AS
+RETURN
+(
+	WITH _installments
+	AS
+	(
+		SELECT contract_id, SUM(capital_repayment) AS amount,
+		SUM(interest_repayment) AS interest
+		FROM dbo.installments
+		GROUP BY contract_id
+	)
+	, _lode
+	AS
+	(
+		SELECT ce.contract_id, lode.amount, lode.interest, ce.event_date
+		FROM dbo.LoanDisbursmentEvents AS lode
+		RIGHT JOIN dbo.ContractEvents AS ce ON ce.id = lode.id
+		WHERE ce.event_type = 'LODE' AND ce.is_deleted = 0
+		AND ce.event_date BETWEEN @from AND @to
+	),
+	_contracts
+	AS
+	(
+		SELECT c.id AS contract_id,
+		ISNULL(_lode.event_date, c.start_date) AS disbursement_date,
+		CASE WHEN _lode.event_date IS NULL THEN 0 ELSE 1 END AS disbursed,
+		CASE WHEN _lode.event_date IS NULL THEN i.amount ELSE _lode.amount END AS amount,
+		CASE WHEN _lode.event_date IS NULL THEN i.interest ELSE _lode.interest END AS interest
+		FROM dbo.Contracts AS c
+		LEFT JOIN _installments AS i ON i.contract_id = c.id
+		LEFT JOIN _lode ON _lode.contract_id = c.id
+		WHERE (c.start_date BETWEEN @from AND @to OR _lode.event_date IS NOT NULL)
+		AND c.branch_id = @branch_id
+	)
+	SELECT contract_id
+	, disbursement_date
+	, disbursed
+	, amount
+	, interest
+	, fees
+	, CAST(ROUND(fees/(1+vat_rate), 2) AS MONEY) AS fees_wo_vat
+	, fees - CAST(ROUND(fees/(1+vat_rate), 2) AS MONEY) AS fees_vat
+	FROM
+	(
+		SELECT c.*
+		, CASE 
+			WHEN 1 = cr.entry_fees_percentage THEN CAST(c.amount * cr.entry_fees AS MONEY)
+			ELSE CAST(cr.entry_fees AS MONEY) 
+		END AS fees
+		, CAST((SELECT value
+			FROM dbo.GeneralParameters
+			WHERE [key] = 'VAT_RATE'
+		) AS FLOAT)/100 AS vat_rate
+		FROM _contracts AS c
+		LEFT JOIN dbo.Credit AS cr ON cr.id = c.contract_id
+	) AS t
+)
+]]></create>
+    <drop><![CDATA[IF  EXISTS (
+                SELECT * 
+                FROM sys.objects 
+                WHERE object_id = OBJECT_ID(N'dbo.Disbursements') AND type = N'IF'
+            )
+            DROP FUNCTION [dbo].[Disbursements]]]></drop>
+  </object>
+  <object name="Disbursements_MC" priority="19">
+    <create><![CDATA[-- Return a list of disbursements withing a given period with exchange rates applied
+--
+-- HISTORY
+--
+-- 14 Apr 2011 - v2.8.15 - Pasha BASTOV
+-- Add @branch_id to the list of parameters
+CREATE FUNCTION [dbo].[Disbursements_MC]
+(
+	@from DATETIME
+	, @to DATETIME
+	, @disbursed_in INT
+	, @display_in INT
+	, @branch_id INT
+)
+RETURNS TABLE
+AS
+RETURN
+(
+	SELECT d.contract_id
+	, d.disbursement_date
+	, d.disbursed
+	, CAST(d.amount * dbo.GetXR(pkg.currency_id, @display_in, d.disbursement_date) AS MONEY) AS amount
+	, CAST(d.interest * dbo.GetXR(pkg.currency_id, @display_in, d.disbursement_date) AS MONEY) AS interest
+	, CAST(d.fees * dbo.GetXR(pkg.currency_id, @display_in, d.disbursement_date) AS MONEY) AS fees
+	, CAST(d.fees_wo_vat * dbo.GetXR(pkg.currency_id, @display_in, d.disbursement_date) AS MONEY) AS fees_wo_vat
+	, CAST(d.fees_vat * dbo.GetXR(pkg.currency_id, @display_in, d.disbursement_date) AS MONEY) AS fees_vat
+	FROM dbo.Disbursements(@from, @to, @branch_id) AS d
+	LEFT JOIN dbo.Credit AS cr ON cr.id = d.contract_id
+	LEFT JOIN dbo.Packages AS pkg ON pkg.id = cr.package_id
+	WHERE pkg.currency_id = @disbursed_in OR 0 = @disbursed_in
+)
+]]></create>
+    <drop><![CDATA[IF  EXISTS (
+                SELECT * 
+                FROM sys.objects 
+                WHERE object_id = OBJECT_ID(N'dbo.Disbursements_MC') AND type = N'IF'
+            )
+            DROP FUNCTION [dbo].[Disbursements_MC]]]></drop>
+  </object>
+  <object name="RepaymentsAll" priority="20">
+    <create><![CDATA[-- Return a list of repayments within a given perdid
+--
+-- HISTORY
+--
+-- 14 Apr, 2011 - v2.8.15 - Pasha BASTOV
+-- Add @branch_id as a parameter
+CREATE FUNCTION [dbo].[RepaymentsAll]
+(
+	@from DATETIME
+	, @to DATETIME
+	, @branch_id INT
+)
+RETURNS TABLE
+AS
+RETURN
+(
+	SELECT contract_id
+	, event_id
+	, event_type
+	, event_date
+	, principal
+	, interest
+	, CAST(ROUND(interest/(1+vat_rate), 2) AS MONEY) AS interest_wo_vat
+	, interest - CAST(ROUND(interest/(1+vat_rate), 2) AS MONEY) AS interest_vat
+	, commissions
+	, CAST(ROUND(commissions/(1+vat_rate), 2) AS MONEY) AS commissions_wo_vat
+	, commissions - CAST(ROUND(commissions/(1+vat_rate), 2) AS MONEY) AS commissions_vat
+	, penalties
+	, CAST(ROUND(penalties/(1+vat_rate), 2) AS MONEY) AS penalties_wo_vat
+	, penalties - CAST(ROUND(penalties/(1+vat_rate), 2) AS MONEY) AS penalties_vat
+	, written_off
+	FROM 
+	(
+		SELECT ce.contract_id
+		, ce.id AS event_id
+		, ce.event_type
+		, ce.event_date
+		, re.principal
+		, re.interests AS interest
+		, re.commissions
+		, re.penalties
+		, CAST((SELECT value 
+			FROM dbo.GeneralParameters
+			WHERE [key] = 'VAT_RATE'
+		) AS FLOAT)/100 AS vat_rate
+		, CASE
+			WHEN wroe.event_date IS NULL THEN 0
+			WHEN wroe.event_date <= ce.event_date THEN 1
+			ELSE 0
+		END AS written_off
+		FROM dbo.RepaymentEvents re
+		LEFT JOIN dbo.ContractEvents AS ce ON ce.id = re.id
+		LEFT JOIN
+		(
+			SELECT contract_id, MIN(event_date) AS event_date
+			FROM dbo.ContractEvents
+			WHERE event_type = 'WROE' AND event_date <= @to AND is_deleted = 0
+			GROUP BY contract_id
+		) AS wroe ON wroe.contract_id = ce.contract_id
+		LEFT JOIN dbo.Contracts AS c ON c.id = ce.contract_id
+		WHERE ce.is_deleted = 0
+		AND ((@from IS NULL AND @to IS NULL)
+			OR (@from IS NULL AND ce.event_date <= @to)
+			OR (@to IS NULL AND ce.event_date >= @from)
+			OR (ce.event_date >= @from AND ce.event_date <= @to))
+		AND c.branch_id = @branch_id
+	) AS t			 
+)
+]]></create>
+    <drop><![CDATA[IF  EXISTS (
+                SELECT * 
+                FROM sys.objects 
+                WHERE object_id = OBJECT_ID(N'dbo.RepaymentsAll') AND type = N'IF'
+            )
+            DROP FUNCTION [dbo].[RepaymentsAll]]]></drop>
+  </object>
+  <object name="RepaymentsAll_MC" priority="21">
+    <create><![CDATA[-- Return a list of repayments within a given period with exchange rates applied
+--
+-- HISTORY
+--
+-- 14 Apr 2011 - v2.8.15 - Pasha BASTOV
+-- Add @branch_id as a parameter
+CREATE FUNCTION [dbo].[RepaymentsAll_MC]
+(
+	@from DATETIME
+	, @to DATETIME
+	, @disbursed_in INT
+	, @display_in INT
+	, @branch_id INT
+)
+RETURNS TABLE
+AS
+RETURN
+(
+	SELECT re.contract_id
+	, re.event_id
+	, re.event_type
+	, re.event_date
+	, CAST(re.principal * dbo.GetXR(pkg.currency_id, @display_in, re.event_date) AS MONEY) AS principal
+	, CAST(re.interest * dbo.GetXR(pkg.currency_id, @display_in, re.event_date) AS MONEY) AS interest
+	, CAST(re.interest_wo_vat * dbo.GetXR(pkg.currency_id, @display_in, re.event_date) AS MONEY) AS interest_wo_vat
+	, CAST(re.interest_vat * dbo.GetXR(pkg.currency_id, @display_in, re.event_date) AS MONEY) AS interest_vat
+	, CAST(re.commissions * dbo.GetXR(pkg.currency_id, @display_in, re.event_date) AS MONEY) AS commissions
+	, CAST(re.commissions_wo_vat * dbo.GetXR(pkg.currency_id, @display_in, re.event_date) AS MONEY) AS commissions_wo_vat
+	, CAST(re.commissions_vat * dbo.GetXR(pkg.currency_id, @display_in, re.event_date) AS MONEY) AS commissions_vat
+	, CAST(re.penalties * dbo.GetXR(pkg.currency_id, @display_in, re.event_date) AS MONEY) AS penalties
+	, CAST(re.penalties_wo_vat * dbo.GetXR(pkg.currency_id, @display_in, re.event_date) AS MONEY) AS penalties_wo_vat
+	, CAST(re.penalties_vat * dbo.GetXR(pkg.currency_id, @display_in, re.event_date) AS MONEY) AS penalties_vat
+	, re.written_off
+	FROM dbo.RepaymentsAll(@from, @to, @branch_id) AS re
+	LEFT JOIN dbo.Credit AS cr ON cr.id = re.contract_id
+	LEFT JOIN dbo.Packages AS pkg ON pkg.id = cr.package_id
+	WHERE pkg.currency_id = @disbursed_in OR 0 = @disbursed_in	
+)
+]]></create>
+    <drop><![CDATA[IF  EXISTS (
+                SELECT * 
+                FROM sys.objects 
+                WHERE object_id = OBJECT_ID(N'dbo.RepaymentsAll_MC') AND type = N'IF'
+            )
+            DROP FUNCTION [dbo].[RepaymentsAll_MC]]]></drop>
+  </object>
+  <object name="Repayments" priority="22">
+    <create><![CDATA[CREATE FUNCTION [dbo].[Repayments]
+(
+	@from DATETIME
+	, @to DATETIME
+	, @branch_id INT
+)
+RETURNS TABLE
+AS
+RETURN
+(
+	SELECT contract_id
+	, event_id
+	, event_type
+	, event_date
+	, SUM(principal) AS principal
+	, SUM(interest) AS interest
+	, SUM(interest_wo_vat) AS interest_wo_vat
+	, SUM(interest_vat) AS interest_vat
+	, SUM(commissions) AS commissions
+	, SUM(commissions_wo_vat ) AS commissions_wo_vat
+	, SUM(commissions_vat) AS commissions_vat
+	, SUM(penalties) AS penalties
+	, SUM(penalties_wo_vat) AS penalties_wo_vat
+	, SUM(penalties_vat) AS penalties_vat
+	, written_off
+	FROM  RepaymentsAll(@from, @to, @branch_id) rea
+	GROUP BY event_id, contract_id, event_date, event_type, written_off
+)
+]]></create>
+    <drop><![CDATA[IF  EXISTS (
+                SELECT * 
+                FROM sys.objects 
+                WHERE object_id = OBJECT_ID(N'dbo.Repayments') AND type = N'IF'
+            )
+            DROP FUNCTION [dbo].[Repayments]]]></drop>
+  </object>
+  <object name="Repayments_MC" priority="23">
+    <create><![CDATA[CREATE FUNCTION [dbo].[Repayments_MC]
+(
+	@from DATETIME
+	, @to DATETIME
+	, @disbursed_in INT
+	, @display_in INT
+	, @branch_id INT
+)
+RETURNS TABLE
+AS
+RETURN
+(
+	SELECT re.contract_id
+	, re.event_id
+	, re.event_type
+	, re.event_date
+	, CAST(re.principal * dbo.GetXR(pkg.currency_id, @display_in, re.event_date) AS MONEY) AS principal
+	, CAST(re.interest * dbo.GetXR(pkg.currency_id, @display_in, re.event_date) AS MONEY) AS interest
+	, CAST(re.interest_wo_vat * dbo.GetXR(pkg.currency_id, @display_in, re.event_date) AS MONEY) AS interest_wo_vat
+	, CAST(re.interest_vat * dbo.GetXR(pkg.currency_id, @display_in, re.event_date) AS MONEY) AS interest_vat
+	, CAST(re.commissions * dbo.GetXR(pkg.currency_id, @display_in, re.event_date) AS MONEY) AS commissions
+	, CAST(re.commissions_wo_vat * dbo.GetXR(pkg.currency_id, @display_in, re.event_date) AS MONEY) AS commissions_wo_vat
+	, CAST(re.commissions_vat * dbo.GetXR(pkg.currency_id, @display_in, re.event_date) AS MONEY) AS commissions_vat
+	, CAST(re.penalties * dbo.GetXR(pkg.currency_id, @display_in, re.event_date) AS MONEY) AS penalties
+	, CAST(re.penalties_wo_vat * dbo.GetXR(pkg.currency_id, @display_in, re.event_date) AS MONEY) AS penalties_wo_vat
+	, CAST(re.penalties_vat * dbo.GetXR(pkg.currency_id, @display_in, re.event_date) AS MONEY) AS penalties_vat
+	, re.written_off
+	FROM dbo.Repayments(@from, @to, @branch_id) AS re
+	LEFT JOIN dbo.Credit AS cr ON cr.id = re.contract_id
+	LEFT JOIN dbo.Packages AS pkg ON pkg.id = cr.package_id
+	WHERE pkg.currency_id = @disbursed_in OR 0 = @disbursed_in	
+)
+]]></create>
+    <drop><![CDATA[IF  EXISTS (
+                SELECT * 
+                FROM sys.objects 
+                WHERE object_id = OBJECT_ID(N'dbo.Repayments_MC') AND type = N'IF'
+            )
+            DROP FUNCTION [dbo].[Repayments_MC]]]></drop>
+  </object>
+  <object name="Balances" priority="24">
+    <create><![CDATA[CREATE FUNCTION [dbo].[Balances]
+(
+	@date DATETIME
+	, @branch_id INT
+)
+RETURNS TABLE
+AS
+RETURN
+(
+	WITH _installments
+	AS
+	(
+		SELECT i.contract_id, SUM(principal) AS principal,
+		SUM(interest) AS interest
+		FROM dbo.InstallmentSnapshot(@date) AS i
+		WHERE i.expected_date <= @date
+		GROUP BY i.contract_id
+	)
+	, _repayments
+	AS
+	(
+		SELECT ce.contract_id, SUM(re.principal) AS principal,
+		SUM(re.interests) AS interest
+		FROM dbo.RepaymentEvents AS re
+		LEFT JOIN dbo.ContractEvents AS ce ON ce.id = re.id
+		WHERE ce.is_deleted = 0 AND ce.event_date <= @date
+		GROUP BY ce.contract_id
+	)
+	SELECT al.id AS contract_id, ISNULL(_r.principal, 0) - ISNULL(_i.principal, 0) AS principal,
+	ISNULL(_r.interest, 0) - ISNULL(_i.interest, 0) AS interest
+	FROM dbo.ActiveLoans(@date, @branch_id) AS al
+	LEFT JOIN _installments AS _i ON _i.contract_id = al.id
+	LEFT JOIN _repayments AS _r ON _r.contract_id = _i.contract_id
+)
+]]></create>
+    <drop><![CDATA[IF  EXISTS (
+                SELECT * 
+                FROM sys.objects 
+                WHERE object_id = OBJECT_ID(N'dbo.Balances') AND type = N'IF'
+            )
+            DROP FUNCTION [dbo].[Balances]]]></drop>
+  </object>
+  <object name="Balances_MC" priority="25">
+    <create><![CDATA[CREATE FUNCTION [dbo].[Balances_MC]
+(
+	@date DATETIME
+	, @disbursed_in INT
+	, @display_in INT
+	, @branch_id INT
+)
+RETURNS TABLE
+AS
+RETURN
+(
+	SELECT b.contract_id,
+	CAST(b.principal * dbo.GetXR(pkg.currency_id, @display_in, @date) AS MONEY) AS principal,
+	CAST(b.interest * dbo.GetXR(pkg.currency_id, @display_in, @date) AS MONEY) AS interest
+	FROM dbo.Balances(@date, @branch_id) AS b
+	LEFT JOIN dbo.Credit AS cr ON cr.id = b.contract_id
+	LEFT JOIN dbo.Packages AS pkg ON pkg.id = cr.package_id
+	WHERE pkg.currency_id = @disbursed_in OR 0 = @disbursed_in
+)
+]]></create>
+    <drop><![CDATA[IF  EXISTS (
+                SELECT * 
+                FROM sys.objects 
+                WHERE object_id = OBJECT_ID(N'dbo.Balances_MC') AND type = N'IF'
+            )
+            DROP FUNCTION [dbo].[Balances_MC]]]></drop>
+  </object>
+  <object name="ClosedContracts" priority="26">
+    <create><![CDATA[-- Return a list of contracts closed within a period
+--
+-- HISTORY
+--
+-- 13 Apr, 2011 - v2.8.15 - Pasha BASTOV
+-- Add the @branch_id parameter
+CREATE FUNCTION [dbo].[ClosedContracts]
+(	
+	@from DATETIME
+	, @to DATETIME
+	, @branch_id INT
+)
+RETURNS TABLE 
+AS
+RETURN
+( -- Function returns closed contracts, as it is obvious from it's name.
+  -- It treats groups also as one contract. 
+  -- On the contrary, ClosedLoans takes the result of ClosedContracts, and if client_id matches to groups,brakes down into individual loans.
+  -- DISTINCT below is used, because, somehow sometimes more than one entries are inserted in ContractEvents for a single disbursement event,
+  -- resulting in multiple result raws. 
+	SELECT DISTINCT Contracts.id AS contract_id,
+	ISNULL(ISNULL(persons.id,groups.id),corporates.id) AS client_id,
+	Tiers.client_type_code AS client_type_code,
+	ISNULL(ISNULL(Persons.first_name + ' ' + Persons.last_name, groups.name), corporates.name) AS client_name,
+	Users.first_name + SPACE(1) + Users.last_name AS loan_officer,
+	Credit.amount AS amount,
+	ContractEvents.event_date AS start_date,
+	Contracts.close_date AS close_date,
+	packages.currency_id AS currency_id,
+	Currencies.name AS currency,
+	packages.code AS code	
+	FROM
+	Persons RIGHT OUTER JOIN
+	Groups RIGHT OUTER JOIN
+	Corporates RIGHT OUTER JOIN	Currencies 
+	INNER JOIN Packages ON Packages.currency_id = Currencies.id
+	INNER JOIN Credit ON Credit.package_id = Packages.id
+	INNER JOIN Users ON Credit.loanofficer_id = Users.id
+	INNER JOIN Contracts ON Contracts.id = Credit.id
+	INNER JOIN ContractEvents ON ContractEvents.contract_id = Contracts.id AND ContractEvents.event_type = 'LODE' AND ContractEvents.is_deleted = 0
+	INNER JOIN Projects ON Contracts.project_id = Projects.id
+	INNER JOIN Tiers ON Projects.tiers_id = Tiers.id ON Tiers.id = corporates.id ON Tiers.id = groups.id ON Tiers.id = Persons.id
+	WHERE Contracts.close_date BETWEEN @from AND @to
+	AND Contracts.closed = 1
+	AND Contracts.branch_id = @branch_id
+)
+]]></create>
+    <drop><![CDATA[IF  EXISTS (
+                SELECT * 
+                FROM sys.objects 
+                WHERE object_id = OBJECT_ID(N'dbo.ClosedContracts') AND type = N'IF'
+            )
+            DROP FUNCTION [dbo].[ClosedContracts]]]></drop>
+  </object>
+  <object name="ClosedLoans" priority="27">
+    <create><![CDATA[-- Return a list of closed loans
+--
+-- HISTORY
+--
+-- 13 Apr, 2011 - v2.8.15 - Pasha BASTOV
+-- Add the @branch_id parameter
+CREATE FUNCTION [dbo].[ClosedLoans]
+(	
+	@from DATETIME
+	, @to DATETIME
+	, @branch_id INT
+)
+RETURNS TABLE 
+AS
+RETURN
+(--Function splits groups into individual loans.
+	SELECT cc.contract_id,
+	ISNULL(per.id,cc.client_id) AS client_id,
+	cc.client_type_code,
+	ISNULL(per.first_name + SPACE(1)+per.last_name,cc.client_name) AS client_name,
+	cc.loan_officer,
+	ISNULL(lsa.amount,cc.amount) AS amount,
+	cc.start_date,
+	cc.close_date,
+	cc.currency_id,
+	cc.currency,code	
+	FROM ClosedContracts(@from, @to, @branch_id) cc
+	LEFT OUTER JOIN LoanShareAmounts lsa ON cc.client_id = lsa.group_id AND lsa.contract_id = cc.contract_id
+	LEFT OUTER JOIN Persons per ON lsa.person_id = per.id	
+)
+]]></create>
+    <drop><![CDATA[IF  EXISTS (
+                SELECT * 
+                FROM sys.objects 
+                WHERE object_id = OBJECT_ID(N'dbo.ClosedLoans') AND type = N'IF'
+            )
+            DROP FUNCTION [dbo].[ClosedLoans]]]></drop>
+  </object>
+  <object name="ClosedLoans_MC" priority="28">
+    <create><![CDATA[-- Return a list of loans closed within a period with exchange rates applied
+--
+-- HISTORY
+--
+-- 13 Apr, 2011 - v2.8.15 - Pasha BASTOV
+-- Add the @branch_id parameter
+CREATE FUNCTION [dbo].[ClosedLoans_MC]
+(	
+	@from DATETIME
+	, @to DATETIME
+	, @disbursed_in INT
+	, @display_in INT
+	, @branch_id INT
+)
+RETURNS TABLE 
+AS
+RETURN
+(
+	SELECT
+	contract_id,
+	client_id,
+	client_type_code,
+	client_name,
+	loan_officer,
+	amount*dbo.GetXR(currency_id, @display_in, close_date) AS amount,
+	start_date,
+	close_date,
+	currency_id,
+	currency,code	
+	FROM ClosedLoans(@from, @to, @branch_id)
+	WHERE currency_id = @disbursed_in OR 0 = @disbursed_in
+)
+]]></create>
+    <drop><![CDATA[IF  EXISTS (
+                SELECT * 
+                FROM sys.objects 
+                WHERE object_id = OBJECT_ID(N'dbo.ClosedLoans_MC') AND type = N'IF'
+            )
+            DROP FUNCTION [dbo].[ClosedLoans_MC]]]></drop>
+  </object>
+  <object name="ClosedContracts_MC" priority="29">
+    <create><![CDATA[-- Return a list of contracts closed within a period with exchange rates applied
+--
+-- HISTORY
+--
+-- 13 Apr, 2011 - v2.8.15 - Pasha BASTOV
+-- Add the @branch_id parameter
+CREATE FUNCTION [dbo].[ClosedContracts_MC]
+(	
+@from DATETIME,
+@to DATETIME,
+@disbursed_in INT,
+@display_in INT,
+@branch_id INT
+)
+RETURNS TABLE 
+AS
+RETURN
+(   SELECT
+	contract_id,
+	client_id,
+	client_type_code,
+	client_name,
+	loan_officer,
+	amount*dbo.GetXR(currency_id, @display_in, close_date) AS amount,
+	start_date,
+	close_date,
+	currency_id,
+	currency,code	
+	FROM ClosedContracts(@from, @to, @branch_id)
+	WHERE currency_id = @disbursed_in OR 0 = @disbursed_in
+	
+)
+]]></create>
+    <drop><![CDATA[IF  EXISTS (
+                SELECT * 
+                FROM sys.objects 
+                WHERE object_id = OBJECT_ID(N'dbo.ClosedContracts_MC') AND type = N'IF'
+            )
+            DROP FUNCTION [dbo].[ClosedContracts_MC]]]></drop>
+  </object>
+  <object name="StringListToTable" priority="30">
+    <create><![CDATA[CREATE FUNCTION dbo.StringListToTable (@list nvarchar(MAX))
+RETURNS @tbl TABLE (string NVARCHAR(MAX) NOT NULL) AS
+BEGIN
+   DECLARE @pos        int,
+           @nextpos    int,
+           @valuelen   int
+   SELECT @pos = 0, @nextpos = 1
+   WHILE @nextpos > 0
+   BEGIN
+      SELECT @nextpos = charindex(',', @list, @pos + 1)
+      SELECT @valuelen = CASE WHEN @nextpos > 0
+                              THEN @nextpos
+                              ELSE len(@list) + 1
+                         END - @pos - 1
+      INSERT @tbl (string)
+      VALUES (rtrim(ltrim(substring(@list, @pos + 1, @valuelen))))
+      SELECT @pos = @nextpos
+   END
+  RETURN
+END
+]]></create>
+    <drop><![CDATA[IF  EXISTS (
+                SELECT * 
+                FROM sys.objects 
+                WHERE object_id = OBJECT_ID(N'dbo.StringListToTable') AND type = N'TF'
+            )
+            DROP FUNCTION [dbo].[StringListToTable]]]></drop>
+  </object>
+  <object name="AuditTrailEvents" priority="31">
+    <create><![CDATA[--CREATE FUNCTION dbo.AuditTrailEvents (@user INT, @list NVARCHAR(MAX), @from DATETIME, @to DATETIME)
+-- DROP FUNCTION dbo.AuditTrailEvents
+CREATE FUNCTION [dbo].[AuditTrailEvents] (@from DATETIME, @to DATETIME, @user_id INT, @list NVARCHAR(MAX), @include_deleted BIT)
+RETURNS @tbl TABLE (
+	event_type NVARCHAR(10) NOT NULL
+	, event_date DATETIME NOT NULL
+	, entry_date DATETIME NOT NULL
+	, user_name NVARCHAR(50) NULL
+	, user_role NVARCHAR(10) NULL
+	, [description] NVARCHAR(100) NULL
+	, deleted BIT NOT NULL
+)
+AS
+BEGIN
+	DECLARE @temp TABLE (
+		event_type NVARCHAR(10) NOT NULL
+		, event_date DATETIME NOT NULL
+		, entry_date DATETIME NOT NULL
+		, user_id INT NULL
+		, description NVARCHAR(MAX) NULL
+		, deleted BIT NOT NULL
+	)
+	
+	-- Loan events
+	INSERT INTO @temp
+	SELECT ce.event_type, ce.event_date, ce.entry_date, ce.user_id, c.contract_code, ce.is_deleted
+	FROM dbo.ContractEvents AS ce
+	LEFT JOIN dbo.Contracts AS c ON c.id = ce.contract_id
+	WHERE (ce.event_date >= @from OR @from IS NULL)
+	AND (ce.event_date <= @to OR @to IS NULL)
+	AND (ce.user_id = @user_id OR 0 = @user_id)
+	AND (ce.is_deleted = 0 OR 1 = @include_deleted)
+	
+	-- Saving events
+	INSERT INTO @temp
+	SELECT se.code, se.creation_date, se.creation_date, se.user_id, sc.code, se.deleted
+	FROM dbo.SavingEvents AS se
+	LEFT JOIN dbo.SavingContracts As sc ON sc.id = se.contract_id
+	WHERE (se.creation_date >= @from OR @from IS NULL)
+	AND (se.creation_date <= @to OR @to IS NULL)
+	AND (se.user_id = @user_id OR 0 = @user_id)	
+	AND (se.deleted = 0 OR 1 = @include_deleted)	
+	
+	-- Funding line events
+	INSERT INTO @temp
+	SELECT 'FLNE', fle.creation_date, fle.creation_date, user_id, fle.code, fle.deleted
+	FROM dbo.FundingLineEvents AS fle
+	WHERE (fle.creation_date >= @from OR @from IS NULL)
+	AND (fle.creation_date <= @to OR @to IS NULL)
+	AND (fle.deleted = 0 OR 1 = @include_deleted)
+	
+	-- User activity events
+	INSERT INTO @temp
+	SELECT tue.event_code, tue.event_date, tue.event_date, tue.user_id, tue.event_description, 0
+	FROM
+	(
+		SELECT event_code
+		, user_id
+		, event_description
+		, CAST(FLOOR(CAST(event_date AS FLOAT)) AS DATETIME) AS event_date
+		FROM dbo.TraceUserLogs
+	) AS tue
+	WHERE (tue.event_date >= @from OR @from IS NULL)
+	AND (tue.event_date <= @to OR @to IS NULL)
+	AND (tue.user_id = @user_id OR 0 = @user_id)
+	
+	INSERT INTO @tbl
+	SELECT t.event_type, t.event_date, t.entry_date, u.first_name + ' ' + u.last_name, r.code, t.description, t.deleted
+	FROM @temp AS t
+	LEFT JOIN dbo.Users AS u ON u.id = t.user_id
+	LEFT JOIN dbo.UserRole AS ur ON ur.user_id = u.id
+	LEFT JOIN dbo.Roles AS r ON r.id = ur.role_id
+	WHERE EXISTS (SELECT 1 FROM dbo.StringListToTable(@list) AS sl WHERE sl.string = t.event_type)
+	
+    RETURN
+END
+]]></create>
+    <drop><![CDATA[IF  EXISTS (
+                SELECT * 
+                FROM sys.objects 
+                WHERE object_id = OBJECT_ID(N'dbo.AuditTrailEvents') AND type = N'TF'
+            )
+            DROP FUNCTION [dbo].[AuditTrailEvents]]]></drop>
+  </object>
+  <object name="RunLoanAccountingClosure" priority="32">
+    <create><![CDATA[CREATE PROCEDURE [dbo].[RunLoanAccountingClosure](
+  @accounting_rule_id INT, 
+  @event_type NVARCHAR(4),
+  @event_id INT,
+  @debit_account_number_id NVARCHAR(50),
+  @credit_account_number_id NVARCHAR(50),
+  @event_attribute NVARCHAR(100),
+  @loan_product_id INT,
+  @client_type NVARCHAR(1),
+  @activity_id INT,
+  @currency_id INT,
+  @savings_product_id INT)
+AS
+BEGIN
+  SET NOCOUNT ON
+     CREATE TABLE #RACLoanAccountingMovements (
+	   [contract_id] [int] NULL,
+	   [debit_account_number_id] [int] NULL,
+	   [credit_account_number_id] [int] NULL,
+	   [amount] [money] NULL,
+	   [event_id] [int] NULL,
+	   [transaction_date] [datetime] NULL,
+	   [is_exported] [bit] NULL,
+	   [currency_id] [int] NULL,
+	   [exchange_rate] [float] NULL)
+	   
+	 -- Loan Disbursment Events  
+     INSERT INTO #RACLoanAccountingMovements (
+        [contract_id],
+	    [debit_account_number_id],
+	    [credit_account_number_id],
+	    [amount],
+	    [event_id],
+	    [transaction_date],
+	    [is_exported],
+	    [currency_id],
+	    [exchange_rate])
+     SELECT
+       ce.contract_id,
+       @debit_account_number_id AS debit,
+       @credit_account_number_id AS credit,
+       CASE          
+          WHEN @event_attribute = 'amount' THEN ld.amount
+          WHEN @event_attribute = 'fees' THEN ld.fees
+          WHEN @event_attribute = 'interest' THEN ld.interest
+          ELSE 0
+        END,
+        ce.id,        
+        ce.event_date,
+        0,
+        p.currency_id,
+        CASE 
+          WHEN 1 = curr.is_pivot THEN 1 
+          ELSE xr.exchange_rate 
+        END AS exchange_rate       
+      FROM ContractEvents ce 
+        INNER JOIN LoanDisbursmentEvents ld ON ld.id = ce.id
+        INNER JOIN Contracts con ON con.id = ce.contract_id
+        INNER JOIN Credit c ON c.id = ce.contract_id
+        INNER JOIN Projects pr ON pr.id = con.project_id
+        INNER JOIN Tiers t ON t.id = pr.tiers_id
+        INNER JOIN Packages p ON c.package_id = p.id
+        INNER JOIN EconomicActivityLoanHistory ealoan 
+          ON ealoan.contract_id = con.id 
+            AND ealoan.person_id = t.id
+        INNER JOIN Currencies curr ON curr.id = p.currency_id
+        LEFT JOIN dbo.ExchangeRates AS xr 
+          ON curr.id = xr.currency_id AND xr.exchange_date = DATEADD(dd, 0, DATEDIFF(dd, 0, ce.event_date))
+      WHERE event_type = @event_type 
+        AND ce.id = @event_id 
+        AND ce.is_exported = 0
+        AND ce.is_deleted = 0
+        AND (c.package_id = @loan_product_id OR @loan_product_id IS NULL)
+        AND (p.currency_id = @currency_id OR @currency_id IS NULL) 
+        AND (t.client_type_code = @client_type OR @client_type IS NULL)
+        AND (ealoan.economic_activity_id = @activity_id OR @activity_id IS NULL)
+      ORDER BY ce.event_date
+      
+     -- Loan Tranche Events  
+     INSERT INTO #RACLoanAccountingMovements (
+        [contract_id],
+	    [debit_account_number_id],
+	    [credit_account_number_id],
+	    [amount],
+	    [event_id],
+	    [transaction_date],
+	    [is_exported],
+	    [currency_id],
+	    [exchange_rate])
+     SELECT
+       ce.contract_id,
+       @debit_account_number_id AS debit,
+       @credit_account_number_id AS credit,
+       CASE          
+          WHEN @event_attribute = 'amount' THEN tr.amount
+          ELSE 0
+        END,
+        ce.id,        
+        ce.event_date,
+        0,
+        p.currency_id,
+        CASE 
+          WHEN 1 = curr.is_pivot THEN 1 
+          ELSE xr.exchange_rate 
+        END AS exchange_rate       
+      FROM ContractEvents ce 
+        INNER JOIN TrancheEvents tr ON tr.id = ce.id
+        INNER JOIN Contracts con ON con.id = ce.contract_id
+        INNER JOIN Credit c ON c.id = ce.contract_id
+        INNER JOIN Projects pr ON pr.id = con.project_id
+        INNER JOIN Tiers t ON t.id = pr.tiers_id
+        INNER JOIN Packages p ON c.package_id = p.id
+        INNER JOIN EconomicActivityLoanHistory ealoan 
+          ON ealoan.contract_id = con.id 
+            AND ealoan.person_id = t.id
+        INNER JOIN Currencies curr ON curr.id = p.currency_id
+        LEFT JOIN dbo.ExchangeRates AS xr 
+          ON curr.id = xr.currency_id AND xr.exchange_date = DATEADD(dd, 0, DATEDIFF(dd, 0, ce.event_date))
+      WHERE event_type = @event_type 
+        AND ce.id = @event_id 
+        AND ce.is_exported = 0
+        AND ce.is_deleted = 0
+        AND (c.package_id = @loan_product_id OR @loan_product_id IS NULL)
+        AND (p.currency_id = @currency_id OR @currency_id IS NULL) 
+        AND (t.client_type_code = @client_type OR @client_type IS NULL)
+        AND (ealoan.economic_activity_id = @activity_id OR @activity_id IS NULL)
+      ORDER BY ce.event_date
+      
+      -- Repayment Events
+      INSERT INTO #RACLoanAccountingMovements (
+        [contract_id],
+	    [debit_account_number_id],
+	    [credit_account_number_id],
+	    [amount],
+	    [event_id],
+	    [transaction_date],
+	    [is_exported],
+	    [currency_id],
+	    [exchange_rate])
+     SELECT
+       ce.contract_id,
+       @debit_account_number_id AS debit,
+       @credit_account_number_id AS credit,
+       CASE
+          WHEN @event_attribute = 'principal' THEN re.principal
+          WHEN @event_attribute = 'interests' THEN re.interests
+          WHEN @event_attribute = 'penalties' THEN re.penalties
+          WHEN @event_attribute = 'commissions' THEN re.commissions
+          ELSE 0
+        END,
+        ce.id,        
+        ce.event_date,
+        0,
+        p.currency_id,
+        CASE 
+          WHEN 1 = curr.is_pivot THEN 1 
+          ELSE xr.exchange_rate 
+        END AS exchange_rate  
+      FROM ContractEvents ce 
+        INNER JOIN RepaymentEvents re ON ce.id = re.id
+        INNER JOIN Contracts con ON con.id = ce.contract_id
+        INNER JOIN Credit c ON c.id = ce.contract_id
+        INNER JOIN Projects pr ON pr.id = con.project_id
+        INNER JOIN Tiers t ON t.id = pr.tiers_id
+        INNER JOIN Packages p ON c.package_id = p.id
+        INNER JOIN EconomicActivityLoanHistory ealoan 
+          ON ealoan.contract_id = con.id 
+            AND ealoan.person_id = t.id
+        INNER JOIN Currencies curr ON curr.id = p.currency_id
+        LEFT JOIN dbo.ExchangeRates AS xr 
+          ON curr.id = xr.currency_id AND xr.exchange_date = DATEADD(dd, 0, DATEDIFF(dd, 0, ce.event_date))
+      WHERE event_type = @event_type
+        AND ce.id = @event_id 
+        AND ce.is_exported = 0
+        AND ce.is_deleted = 0
+        AND (c.package_id = @loan_product_id OR @loan_product_id IS NULL) 
+        AND (p.currency_id = @currency_id OR @currency_id IS NULL)
+        AND (t.client_type_code = @client_type OR @client_type IS NULL)
+        AND (ealoan.economic_activity_id = @activity_id OR @activity_id IS NULL) 
+      ORDER BY ce.event_date
+      
+      -- Reschedule Events
+      INSERT INTO #RACLoanAccountingMovements (
+        [contract_id],
+	    [debit_account_number_id],
+	    [credit_account_number_id],
+	    [amount],
+	    [event_id],
+	    [transaction_date],
+	    [is_exported],
+	    [currency_id],
+	    [exchange_rate])
+     SELECT
+       ce.contract_id,
+       @debit_account_number_id AS debit,
+       @credit_account_number_id AS credit,
+       CASE
+          WHEN @event_attribute = 'amount' THEN re.amount
+          WHEN @event_attribute = 'interest' THEN re.interest
+          ELSE 0
+        END,
+        ce.id,        
+        ce.event_date,
+        0,
+        p.currency_id,
+        CASE 
+          WHEN 1 = curr.is_pivot THEN 1 
+          ELSE xr.exchange_rate 
+        END AS exchange_rate  
+      FROM ContractEvents ce 
+        INNER JOIN ReschedulingOfALoanEvents re ON ce.id = re.id
+        INNER JOIN Contracts con ON con.id = ce.contract_id
+        INNER JOIN Credit c ON c.id = ce.contract_id
+        INNER JOIN Projects pr ON pr.id = con.project_id
+        INNER JOIN Tiers t ON t.id = pr.tiers_id
+        INNER JOIN Packages p ON c.package_id = p.id
+        INNER JOIN EconomicActivityLoanHistory ealoan 
+          ON ealoan.contract_id = con.id 
+            AND ealoan.person_id = t.id
+        INNER JOIN Currencies curr ON curr.id = p.currency_id
+        LEFT JOIN dbo.ExchangeRates AS xr 
+          ON curr.id = xr.currency_id AND xr.exchange_date = DATEADD(dd, 0, DATEDIFF(dd, 0, ce.event_date))
+      WHERE event_type = @event_type
+        AND ce.id = @event_id 
+        AND ce.is_exported = 0
+        AND ce.is_deleted = 0
+        AND (c.package_id = @loan_product_id OR @loan_product_id IS NULL) 
+        AND (p.currency_id = @currency_id OR @currency_id IS NULL)
+        AND (t.client_type_code = @client_type OR @client_type IS NULL)
+        AND (ealoan.economic_activity_id = @activity_id OR @activity_id IS NULL) 
+      ORDER BY ce.event_date
+      
+      -- WhriteOff Events
+      INSERT INTO #RACLoanAccountingMovements (
+        [contract_id],
+	    [debit_account_number_id],
+	    [credit_account_number_id],
+	    [amount],
+	    [event_id],
+	    [transaction_date],
+	    [is_exported],
+	    [currency_id],
+	    [exchange_rate])
+     SELECT
+       ce.contract_id,
+       @debit_account_number_id AS debit,
+       @credit_account_number_id AS credit,
+       CASE
+          WHEN @event_attribute = 'olb' THEN wr.olb
+          WHEN @event_attribute = 'accrued_interests' THEN wr.accrued_interests
+          WHEN @event_attribute = 'accrued_penalties' THEN wr.accrued_penalties
+          WHEN @event_attribute = 'past_due_days' THEN wr.past_due_days
+          ELSE 0
+        END,
+        ce.id,        
+        ce.event_date,
+        0,
+        p.currency_id,
+        CASE 
+          WHEN 1 = curr.is_pivot THEN 1 
+          ELSE xr.exchange_rate 
+        END AS exchange_rate  
+      FROM ContractEvents ce 
+        INNER JOIN WriteOffEvents wr ON ce.id = wr.id
+        INNER JOIN Contracts con ON con.id = ce.contract_id
+        INNER JOIN Credit c ON c.id = ce.contract_id
+        INNER JOIN Projects pr ON pr.id = con.project_id
+        INNER JOIN Tiers t ON t.id = pr.tiers_id
+        INNER JOIN Packages p ON c.package_id = p.id
+        INNER JOIN EconomicActivityLoanHistory ealoan 
+          ON ealoan.contract_id = con.id 
+            AND ealoan.person_id = t.id
+        INNER JOIN Currencies curr ON curr.id = p.currency_id
+        LEFT JOIN dbo.ExchangeRates AS xr 
+          ON curr.id = xr.currency_id AND xr.exchange_date = DATEADD(dd, 0, DATEDIFF(dd, 0, ce.event_date))
+      WHERE event_type = @event_type
+        AND ce.id = @event_id 
+        AND ce.is_exported = 0
+        AND ce.is_deleted = 0
+        AND (c.package_id = @loan_product_id OR @loan_product_id IS NULL) 
+        AND (p.currency_id = @currency_id OR @currency_id IS NULL)
+        AND (t.client_type_code = @client_type OR @client_type IS NULL)
+        AND (ealoan.economic_activity_id = @activity_id OR @activity_id IS NULL) 
+      ORDER BY ce.event_date
+      
+      -- Overdue Events
+      INSERT INTO #RACLoanAccountingMovements (
+        [contract_id],
+	    [debit_account_number_id],
+	    [credit_account_number_id],
+	    [amount],
+	    [event_id],
+	    [transaction_date],
+	    [is_exported],
+	    [currency_id],
+	    [exchange_rate])
+     SELECT
+       ce.contract_id,
+       @debit_account_number_id AS debit,
+       @credit_account_number_id AS credit,
+       CASE
+          WHEN @event_attribute = 'olb' THEN ov.olb
+          ELSE 0
+        END,
+        ce.id,        
+        ce.event_date,
+        0,
+        p.currency_id,
+        CASE 
+          WHEN 1 = curr.is_pivot THEN 1 
+          ELSE xr.exchange_rate 
+        END AS exchange_rate  
+      FROM ContractEvents ce 
+        INNER JOIN OverdueEvents ov ON ce.id = ov.id
+        INNER JOIN Contracts con ON con.id = ce.contract_id
+        INNER JOIN Credit c ON c.id = ce.contract_id
+        INNER JOIN Projects pr ON pr.id = con.project_id
+        INNER JOIN Tiers t ON t.id = pr.tiers_id
+        INNER JOIN Packages p ON c.package_id = p.id
+        INNER JOIN EconomicActivityLoanHistory ealoan 
+          ON ealoan.contract_id = con.id 
+            AND ealoan.person_id = t.id
+        INNER JOIN Currencies curr ON curr.id = p.currency_id
+        LEFT JOIN dbo.ExchangeRates AS xr 
+          ON curr.id = xr.currency_id AND xr.exchange_date = DATEADD(dd, 0, DATEDIFF(dd, 0, ce.event_date))
+      WHERE event_type = @event_type
+        AND ce.id = @event_id 
+        AND ce.is_exported = 0
+        AND ce.is_deleted = 0
+        AND (c.package_id = @loan_product_id OR @loan_product_id IS NULL) 
+        AND (p.currency_id = @currency_id OR @currency_id IS NULL)
+        AND (t.client_type_code = @client_type OR @client_type IS NULL)
+        AND (ealoan.economic_activity_id = @activity_id OR @activity_id IS NULL) 
+      ORDER BY ce.event_date
+      
+      -- Accrued interest Events
+      INSERT INTO #RACLoanAccountingMovements (
+        [contract_id],
+	    [debit_account_number_id],
+	    [credit_account_number_id],
+	    [amount],
+	    [event_id],
+	    [transaction_date],
+	    [is_exported],
+	    [currency_id],
+	    [exchange_rate])
+     SELECT
+       ce.contract_id,
+       @debit_account_number_id AS debit,
+       @credit_account_number_id AS credit,
+       CASE
+          WHEN @event_attribute = 'accrued_interest' THEN lai.accrued_interest
+          ELSE 0
+        END,
+        ce.id,        
+        ce.event_date,
+        0,
+        p.currency_id,
+        CASE 
+          WHEN 1 = curr.is_pivot THEN 1 
+          ELSE xr.exchange_rate 
+        END AS exchange_rate  
+      FROM ContractEvents ce 
+        INNER JOIN LoanInterestAccruingEvents lai ON ce.id = lai.id
+        INNER JOIN Contracts con ON con.id = ce.contract_id
+        INNER JOIN Credit c ON c.id = ce.contract_id
+        INNER JOIN Projects pr ON pr.id = con.project_id
+        INNER JOIN Tiers t ON t.id = pr.tiers_id
+        INNER JOIN Packages p ON c.package_id = p.id
+        INNER JOIN EconomicActivityLoanHistory ealoan 
+          ON ealoan.contract_id = con.id 
+            AND ealoan.person_id = t.id
+        INNER JOIN Currencies curr ON curr.id = p.currency_id
+        LEFT JOIN dbo.ExchangeRates AS xr 
+          ON curr.id = xr.currency_id AND xr.exchange_date = DATEADD(dd, 0, DATEDIFF(dd, 0, ce.event_date))
+      WHERE event_type = @event_type
+        AND ce.id = @event_id 
+        AND ce.is_exported = 0
+        AND ce.is_deleted = 0
+        AND (c.package_id = @loan_product_id OR @loan_product_id IS NULL) 
+        AND (p.currency_id = @currency_id OR @currency_id IS NULL)
+        AND (t.client_type_code = @client_type OR @client_type IS NULL)
+        AND (ealoan.economic_activity_id = @activity_id OR @activity_id IS NULL) 
+      ORDER BY ce.event_date
+      
+      -- Provision Events
+      IF @event_type = 'LLPE'
+        BEGIN
+          DECLARE @pevent_id INT
+          
+          SELECT @pevent_id = MAX(ContractEvents.id)
+          FROM ContractEvents 
+		  INNER JOIN ProvisionEvents 
+		    ON ContractEvents.id = ProvisionEvents.id
+		  WHERE ContractEvents.is_exported = 1
+		    AND event_type = @event_type 
+		    AND ContractEvents.contract_id = (SELECT contract_id FROM ContractEvents WHERE id = @event_id) 
+                            
+          -- reverse privious Loan lost provision
+		  INSERT INTO #RACLoanAccountingMovements (
+			[contract_id],
+			[debit_account_number_id],
+			[credit_account_number_id],
+			[amount],
+			[event_id],
+			[transaction_date],
+			[is_exported],
+			[currency_id],
+			[exchange_rate])
+		 SELECT
+		   ce.contract_id,
+		   @credit_account_number_id AS debit,
+		   @debit_account_number_id AS credit,
+		   CASE
+			  WHEN @event_attribute = 'amount' THEN pe.amount
+			  ELSE 0
+			END,
+			ce.id,        
+			ce.event_date,
+			0,
+			p.currency_id,
+			CASE 
+			  WHEN 1 = curr.is_pivot THEN 1 
+			  ELSE xr.exchange_rate 
+			END AS exchange_rate  
+		  FROM ContractEvents ce 
+			INNER JOIN ProvisionEvents pe ON ce.id = pe.id
+			INNER JOIN Credit c ON c.id = ce.contract_id
+			INNER JOIN Packages p ON c.package_id = p.id
+			INNER JOIN Currencies curr ON curr.id = p.currency_id
+			LEFT JOIN dbo.ExchangeRates AS xr 
+			  ON curr.id = xr.currency_id AND xr.exchange_date = DATEADD(dd, 0, DATEDIFF(dd, 0, ce.event_date))
+		  WHERE event_type = @event_type		    
+			AND ce.is_exported = 1
+			AND ce.is_deleted = 0
+			AND ce.id = @pevent_id			 
+		  ORDER BY ce.event_date
+       
+		-- Provision Events
+		  INSERT INTO #RACLoanAccountingMovements (
+			[contract_id],
+			[debit_account_number_id],
+			[credit_account_number_id],
+			[amount],
+			[event_id],
+			[transaction_date],
+			[is_exported],
+			[currency_id],
+			[exchange_rate])
+		 SELECT
+		   ce.contract_id,
+		   @debit_account_number_id AS debit,
+		   @credit_account_number_id AS credit,
+		   CASE
+			  WHEN @event_attribute = 'amount' THEN pe.amount
+			  ELSE 0
+			END,
+			ce.id,        
+			ce.event_date,
+			0,
+			p.currency_id,
+			CASE 
+			  WHEN 1 = curr.is_pivot THEN 1 
+			  ELSE xr.exchange_rate 
+			END AS exchange_rate  
+		  FROM ContractEvents ce 
+			INNER JOIN ProvisionEvents pe ON ce.id = pe.id
+			INNER JOIN Contracts con ON con.id = ce.contract_id
+			INNER JOIN Credit c ON c.id = ce.contract_id
+			INNER JOIN Projects pr ON pr.id = con.project_id
+			INNER JOIN Tiers t ON t.id = pr.tiers_id
+			INNER JOIN Packages p ON c.package_id = p.id
+			INNER JOIN EconomicActivityLoanHistory ealoan 
+			  ON ealoan.contract_id = con.id 
+				AND ealoan.person_id = t.id
+			INNER JOIN Currencies curr ON curr.id = p.currency_id
+			LEFT JOIN dbo.ExchangeRates AS xr 
+			  ON curr.id = xr.currency_id AND xr.exchange_date = DATEADD(dd, 0, DATEDIFF(dd, 0, ce.event_date))
+		  WHERE event_type = @event_type
+			AND ce.id = @event_id 
+			AND ce.is_exported = 0
+			AND ce.is_deleted = 0
+			AND (c.package_id = @loan_product_id OR @loan_product_id IS NULL)
+			AND (p.currency_id = @currency_id OR @currency_id IS NULL) 
+			AND (t.client_type_code = @client_type OR @client_type IS NULL)
+			AND (ealoan.economic_activity_id = @activity_id OR @activity_id IS NULL) 
+		  ORDER BY ce.event_date
+       END
+       
+      INSERT INTO LoanAccountingMovements (
+        [contract_id],
+	    [debit_account_number_id],
+	    [credit_account_number_id],
+	    [amount],
+	    [event_id],
+	    [transaction_date],
+	    [is_exported],
+	    [currency_id],
+	    [exchange_rate],
+	    [rule_id])
+      SELECT 
+        [contract_id],
+	    [debit_account_number_id],
+	    [credit_account_number_id],
+	    [amount],
+	    [event_id],
+	    [transaction_date],
+	    [is_exported],
+	    [currency_id],
+	    ISNULL([exchange_rate], 1),
+	    @accounting_rule_id
+      FROM #RACLoanAccountingMovements
+      WHERE amount IS NOT NULL 
+        AND amount > 0
+      
+      -- if rule has been applied, set 1          
+      IF(SELECT COUNT(*) FROM #RACLoanAccountingMovements) > 0
+        SELECT 1 AS result
+      ELSE
+        SELECT 0 AS result
+      
+      DROP TABLE #RACLoanAccountingMovements
+END
+]]></create>
+    <drop><![CDATA[IF  EXISTS (
+                SELECT * 
+                FROM sys.objects 
+                WHERE object_id = OBJECT_ID(N'dbo.RunLoanAccountingClosure') AND type = N'P'
+            )
+            DROP PROCEDURE [dbo].[RunLoanAccountingClosure]]]></drop>
+  </object>
+  <object name="RunSavingAccountingClosure" priority="33">
+    <create><![CDATA[CREATE PROCEDURE [dbo].[RunSavingAccountingClosure](  
+  @accounting_rule_id INT, 
+  @event_type NVARCHAR(4),
+  @event_id INT,
+  @debit_account_number_id NVARCHAR(50),
+  @credit_account_number_id NVARCHAR(50),
+  @event_attribute NVARCHAR(100),
+  @loan_product_id INT,
+  @client_type NVARCHAR(1),
+  @activity_id INT,
+  @currency_id INT,
+  @savings_product_id INT)
+AS 
+  BEGIN  
+    CREATE TABLE #RACSavingAccountingMovements (
+	   [contract_id] [int] NULL,
+	   [debit_account_number_id] [int] NULL,
+	   [credit_account_number_id] [int] NULL,
+	   [amount] [money] NULL,
+	   [event_id] [int] NULL,
+	   [transaction_date] [datetime] NULL,
+	   [is_exported] [bit] NULL,
+	   [currency_id] [int] NULL,
+	   [exchange_rate] [float] NULL)
+	   
+	 -- Loan Disbursment Events  
+     INSERT INTO #RACSavingAccountingMovements (
+        [contract_id],
+	    [debit_account_number_id],
+	    [credit_account_number_id],
+	    [amount],
+	    [event_id],
+	    [transaction_date],
+	    [is_exported],
+	    [currency_id],
+	    [exchange_rate])
+    SELECT
+      se.contract_id,
+      @debit_account_number_id AS debit,
+      @credit_account_number_id AS credit,
+      CASE
+        WHEN @event_attribute = 'amount' THEN se.amount
+        WHEN @event_attribute = 'fees' THEN se.fees
+        ELSE 0
+      END,
+      se.id,   
+      se.creation_date,
+      0,
+      sp.currency_id,
+      CASE 
+        WHEN 1 = curr.is_pivot THEN 1 
+        ELSE xr.exchange_rate 
+      END AS exchange_rate  
+      FROM SavingEvents se
+      INNER JOIN SavingContracts sc ON sc.id = se.contract_id
+      INNER JOIN SavingProducts sp ON sc.product_id = sp.id
+      INNER JOIN Tiers t ON t.id = sc.tiers_id
+      INNER JOIN Currencies curr ON curr.id = sp.currency_id
+      LEFT JOIN dbo.ExchangeRates AS xr 
+        ON curr.id = xr.currency_id AND xr.exchange_date = DATEADD(dd, 0, DATEDIFF(dd, 0, se.creation_date))   
+      WHERE se.code = @event_type 
+        AND se.id = @event_id 
+        AND se.is_exported = 0
+        AND se.deleted = 0
+        AND (sc.product_id = @savings_product_id OR @savings_product_id IS NULL) 
+        AND (sp.currency_id = @currency_id OR @currency_id IS NULL)
+        AND (t.client_type_code = @client_type OR @client_type IS NULL)
+      ORDER BY se.creation_date
+      
+      INSERT INTO SavingsAccountingMovements (
+        [contract_id],
+	    [debit_account_number_id],
+	    [credit_account_number_id],
+	    [amount],
+	    [event_id],
+	    [transaction_date],
+	    [is_exported],
+	    [currency_id],
+	    [exchange_rate],
+	    [rule_id])
+      SELECT 
+        [contract_id],
+	    [debit_account_number_id],
+	    [credit_account_number_id],
+	    [amount],
+	    [event_id],
+	    [transaction_date],
+	    [is_exported],
+	    [currency_id],
+	    ISNULL([exchange_rate], 1),
+	    @accounting_rule_id
+      FROM #RACSavingAccountingMovements
+      WHERE amount IS NOT NULL 
+        AND amount > 0
+      -- if rule has been applied, set 1  
+      IF(SELECT COUNT(*) FROM #RACSavingAccountingMovements) > 0
+        SELECT 1 AS result
+      ELSE
+        SELECT 0 AS result
+        
+      DROP TABLE #RACSavingAccountingMovements
+  END
+]]></create>
+    <drop><![CDATA[IF  EXISTS (
+                SELECT * 
+                FROM sys.objects 
+                WHERE object_id = OBJECT_ID(N'dbo.RunSavingAccountingClosure') AND type = N'P'
+            )
+            DROP PROCEDURE [dbo].[RunSavingAccountingClosure]]]></drop>
+  </object>
+  <object name="ExportAcountingTransactions" priority="34">
+    <create><![CDATA[CREATE PROCEDURE [dbo].[ExportAcountingTransactions]
+AS 
+    BEGIN
+        SET NOCOUNT ON
+     
+        CREATE TABLE #ExportList(
+              date DATETIME,
+              elementary_id INT,
+              event_code NVARCHAR(4),
+              contract_code NVARCHAR(100),
+              amount MONEY,
+              fundingLine NVARCHAR(100),
+              currency_name NVARCHAR(50),
+              currency_id INT,
+              exchange_rate FLOAT,
+              debit_local_account_number NVARCHAR(100),
+              credit_local_account_number NVARCHAR(100),
+              name NVARCHAR(500))
+        
+        -- loan
+        INSERT  INTO #ExportList(
+                  date,
+                  elementary_id,
+                  event_code,
+                  contract_code,
+                  amount,
+                  fundingLine,
+                  currency_name,
+                  currency_id,
+                  exchange_rate,
+                  debit_local_account_number,
+                  credit_local_account_number,
+                  name)
+                SELECT  cab.transaction_date AS date,
+                        cab.id AS elementary_id,
+                        ce.event_type,
+                        Contracts.contract_code,
+                        cab.amount,
+                        ISNULL(FundingLines.name, '-') AS fundingLine,
+                        curr.name AS currency_name,
+                        cab.id AS currency_id,
+                        cab.exchange_rate,
+                        adeb.local_account_number AS debit_local_account_number,
+                        acred.local_account_number AS credit_local_account_number,
+                        ISNULL(ISNULL(l_group.name,
+                                      l_person.first_name + ' '
+                                      + l_person.last_name), '-') AS name
+                FROM    LoanAccountingMovements cab
+                        INNER JOIN ChartOfAccounts adeb ON adeb.id = cab.debit_account_number_id
+                        INNER JOIN ChartOfAccounts acred ON acred.id = cab.credit_account_number_id
+                        INNER JOIN Currencies curr ON cab.currency_id = curr.id
+                        LEFT JOIN ContractEvents ce ON cab.event_id = ce.id
+                        LEFT JOIN Contracts ON Contracts.id = ce.contract_id
+                        LEFT JOIN Credit ON Contracts.id = Credit.id
+                        LEFT JOIN FundingLines ON Credit.fundingLine_id = FundingLines.id
+                        LEFT JOIN Projects ON Projects.id = Contracts.project_id
+                        LEFT JOIN Tiers l_tiers ON Projects.tiers_id = l_tiers.id
+                        LEFT JOIN Groups l_group ON l_tiers.id = l_group.id
+                        LEFT JOIN Persons l_person ON l_tiers.id = l_person.id
+                WHERE   cab.is_exported = 0
+                ORDER BY cab.id,
+                        cab.transaction_date
+	    -- Savings
+        INSERT  INTO #ExportList(
+                  date,
+                  elementary_id,
+                  event_code,
+                  contract_code,
+                  amount,
+                  fundingLine,
+                  currency_name,
+                  currency_id,
+                  exchange_rate,
+                  debit_local_account_number,
+                  credit_local_account_number,
+                  name)
+                SELECT  sab.transaction_date AS date,
+                        sab.Id AS elementary_id,
+                        se.code AS event_code,
+                        sc.code AS contract_code,
+                        sab.amount,
+                        '-' AS fundingLine,
+                        curr.name AS currency_name,
+                        sab.id AS currency_id,
+                        sab.exchange_rate,
+                        adeb.local_account_number AS debit_local_account_number,
+                        acred.local_account_number AS credit_local_account_number,
+                        ISNULL(ISNULL(s_person.first_name + ' '
+                                      + s_person.last_name, s_group.name), ' ') AS Name
+                FROM    SavingsAccountingMovements sab
+                        INNER JOIN ChartOfAccounts adeb ON adeb.id = sab.debit_account_number_id
+                        INNER JOIN ChartOfAccounts acred ON acred.id = sab.credit_account_number_id
+                        INNER JOIN Currencies curr ON sab.currency_id = curr.id
+                        LEFT JOIN SavingEvents se ON se.id = sab.event_id
+                        LEFT JOIN SavingContracts sc ON sc.id = se.contract_id
+                        LEFT JOIN Tiers l_tiers ON sc.tiers_id = l_tiers.id
+                        LEFT JOIN Tiers s_tiers ON sc.tiers_id = s_tiers.id
+                        LEFT JOIN Groups s_group ON s_tiers.id = s_group.id
+                        LEFT JOIN Persons s_person ON s_tiers.id = s_person.id
+                WHERE   ( sab.is_exported = 0 )
+                ORDER BY sab.id,
+                        sab.transaction_date
+        -- manual transactions
+        INSERT  INTO #ExportList (
+                  date,
+                  elementary_id,
+                  event_code,
+                  contract_code,
+                  amount,
+                  fundingLine,
+                  currency_name,
+                  currency_id,
+                  exchange_rate,
+                  debit_local_account_number,
+                  credit_local_account_number,
+                  name)
+                SELECT  mab.transaction_date AS date,
+                        mab.Id AS elementary_id,
+                        '-' AS event_code,
+                        mab.description AS contract_code,
+                        mab.amount,
+                        '-' AS fundingLine,
+                        curr.name AS currency_name,
+                        mab.id AS currency_id,
+                        mab.exchange_rate,
+                        adeb.local_account_number AS debit_local_account_number,
+                        acred.local_account_number AS credit_local_account_number,
+                        '-' AS Name
+                FROM    dbo.ManualAccountingMovements mab
+                        INNER JOIN ChartOfAccounts adeb ON adeb.id = mab.debit_account_number_id
+                        INNER JOIN ChartOfAccounts acred ON acred.id = mab.credit_account_number_id
+                        INNER JOIN Currencies curr ON mab.currency_id = curr.id
+                WHERE   mab.is_exported = 0
+                ORDER BY mab.id, mab.transaction_date
+        
+        SELECT  date,
+                elementary_id,
+                event_code,
+                contract_code,
+                amount,
+                fundingLine,
+                currency_name,
+                currency_id,
+                exchange_rate,
+                debit_local_account_number,
+                credit_local_account_number,
+                name
+        FROM    #ExportList
+        
+        DROP TABLE #ExportList
+    END
+]]></create>
+    <drop><![CDATA[IF  EXISTS (
+                SELECT * 
+                FROM sys.objects 
+                WHERE object_id = OBJECT_ID(N'dbo.ExportAcountingTransactions') AND type = N'P'
+            )
+            DROP PROCEDURE [dbo].[ExportAcountingTransactions]]]></drop>
+  </object>
+  <object name="GetAccountBalance" priority="35">
+    <create><![CDATA[CREATE PROCEDURE [dbo].[GetAccountBalance](
+      @account_number_id INT ,
+      @currency_id INT ,
+      @contract_id INT ,
+      @mode BIT,
+      @to_sum_parent BIT = 0)
+AS 
+    BEGIN
+        DECLARE @balance MONEY
+        DECLARE @id INT
+        SET @balance = 0
+    
+        CREATE TABLE #Accounts(
+              account_number_id INT ,
+              is_parent BIT)
+    
+        IF(@to_sum_parent = 1)
+        BEGIN
+          DECLARE @account_id_check INT
+          DECLARE @account_id INT
+          SET @account_id = @account_number_id
+          SET @account_id_check = 0
+          -- populate table with accouts by parent id
+          WHILE ( @account_id != @account_id_check ) 
+              BEGIN         
+                  SET @account_id_check = @account_id
+                 
+                  INSERT  INTO #Accounts ( account_number_id, is_parent )
+                  SELECT @account_id_check, @to_sum_parent
+          
+                  SELECT  @account_id = id
+                  FROM    dbo.ChartOfAccounts
+                  WHERE   parent_account_id = @account_id
+              END
+        END
+        ELSE
+        BEGIN
+          INSERT  INTO #Accounts ( account_number_id, is_parent )
+          SELECT @account_number_id, @to_sum_parent
+        END
+    
+        IF @mode = 0 OR @mode IS NULL 
+            BEGIN
+                DECLARE @debit_loan MONEY
+                DECLARE @credit_loan MONEY
+                
+                DECLARE BalanceCursor CURSOR
+                FOR SELECT  account_number_id
+                FROM    #Accounts       
+  
+                OPEN BalanceCursor
+                FETCH NEXT FROM BalanceCursor INTO @id
+                WHILE @@FETCH_STATUS = 0 
+                    BEGIN
+                        SELECT  @debit_loan = CASE WHEN @currency_id = 0
+                                                   THEN SUM(ISNULL(amount, 0) / ISNULL(exchange_rate, 1))
+                                                   ELSE SUM(ISNULL(amount, 0))
+                                              END
+                        FROM    LoanAccountingMovements
+                        WHERE   debit_account_number_id = @id
+                                AND ( currency_id = @currency_id OR @currency_id = 0)
+                                AND ( contract_id = @contract_id OR @contract_id = 0) 
+		  
+                        SELECT  @credit_loan = CASE WHEN @currency_id = 0
+                                                    THEN SUM(ISNULL(amount, 0) / ISNULL(exchange_rate, 1))
+                                                    ELSE SUM(ISNULL(amount, 0))
+                                               END
+                        FROM    LoanAccountingMovements
+                        WHERE   credit_account_number_id = @id
+                                AND ( currency_id = @currency_id OR @currency_id = 0)
+                                AND ( contract_id = @contract_id OR @contract_id = 0) 
+		  
+                        SET @balance = @balance + ISNULL(@debit_loan, 0) - ISNULL(@credit_loan, 0)
+		
+                        FETCH NEXT FROM BalanceCursor INTO @id
+                    END
+                CLOSE BalanceCursor
+                DEALLOCATE BalanceCursor
+            END
+	
+        IF @mode = 1 OR @mode IS NULL 
+            BEGIN  
+                DECLARE @debit_saving MONEY
+                DECLARE @credit_saving MONEY
+	            
+                DECLARE BalanceCursor CURSOR
+                FOR SELECT  account_number_id
+                FROM    #Accounts       
+  
+                OPEN BalanceCursor
+                FETCH NEXT FROM BalanceCursor INTO @id
+                WHILE @@FETCH_STATUS = 0 
+                    BEGIN
+                        SELECT  @debit_saving = CASE WHEN @currency_id = 0
+                                                     THEN SUM(ISNULL(amount, 0) / ISNULL(exchange_rate, 1))
+                                                     ELSE SUM(ISNULL(amount, 0))
+                                                END
+    FROM  dbo.SavingsAccountingMovements
+                        WHERE   debit_account_number_id = @id
+                                AND ( currency_id = @currency_id OR @currency_id = 0)
+                                AND ( contract_id = @contract_id OR @contract_id = 0) 
+		  
+                        SELECT  @credit_saving = CASE WHEN @currency_id = 0
+                                                      THEN SUM(ISNULL(amount, 0) / ISNULL(exchange_rate, 1))
+                                                      ELSE SUM(ISNULL(amount, 0))
+                                                 END
+                        FROM    SavingsAccountingMovements
+                        WHERE   credit_account_number_id = @id
+                                AND ( currency_id = @currency_id OR @currency_id = 0)
+                                AND ( contract_id = @contract_id OR @contract_id = 0)
+		  
+                        SET @balance = ISNULL(@balance, 0) + ISNULL(@debit_saving, 0) - ISNULL(@credit_saving, 0)
+                    
+                        FETCH NEXT FROM BalanceCursor INTO @id
+                    END
+                CLOSE BalanceCursor
+                DEALLOCATE BalanceCursor
+            END
+	
+        IF @mode IS NULL 
+            BEGIN  
+                DECLARE @debit_manualmvt MONEY
+                DECLARE @credit_manualmvt MONEY
+                DECLARE BalanceCursor CURSOR
+                FOR SELECT  account_number_id
+                FROM    #Accounts       
+  
+                OPEN BalanceCursor
+                FETCH NEXT FROM BalanceCursor INTO @id
+                WHILE @@FETCH_STATUS = 0 
+                    BEGIN
+                        SELECT  @debit_manualmvt = CASE WHEN @currency_id = 0
+                                                        THEN SUM(ISNULL(amount, 0) / ISNULL(exchange_rate, 1))
+                                                        ELSE SUM(ISNULL(amount, 0))
+                                                   END
+                        FROM    dbo.ManualAccountingMovements
+                        WHERE   debit_account_number_id = @id
+                                AND ( currency_id = @currency_id OR @currency_id = 0)
+		  
+                        SELECT  @credit_manualmvt = CASE WHEN @currency_id = 0
+                                                         THEN SUM(ISNULL(amount, 0) / ISNULL(exchange_rate, 1))
+                                                         ELSE SUM(ISNULL(amount, 0))
+                                                    END
+                        FROM    dbo.ManualAccountingMovements
+                        WHERE   credit_account_number_id = @id
+                                AND ( currency_id = @currency_id OR @currency_id = 0)
+		  
+                        SET @balance = ISNULL(@balance, 0) + ISNULL(@debit_manualmvt, 0) - ISNULL(@credit_manualmvt, 0)
+                    
+                        FETCH NEXT FROM BalanceCursor INTO @id
+                    END
+                CLOSE BalanceCursor
+                DEALLOCATE BalanceCursor
+            END
+  
+        SELECT  ISNULL(@balance, 0) AS balance
+    END
+]]></create>
+    <drop><![CDATA[IF  EXISTS (
+                SELECT * 
+                FROM sys.objects 
+                WHERE object_id = OBJECT_ID(N'dbo.GetAccountBalance') AND type = N'P'
+            )
+            DROP PROCEDURE [dbo].[GetAccountBalance]]]></drop>
+  </object>
+  <object name="GetChartOfAccountsBalances" priority="36">
+    <create><![CDATA[CREATE PROCEDURE GetChartOfAccountsBalances(
+  @contract_id INT)
+AS
+BEGIN
+    -- EXEC GetChartOfAccountsBalances 0
+    CREATE TABLE #GAChart(
+      account_number_id INT,
+      account_number NVARCHAR(100),
+      debit money,
+      credit money,
+      label NVARCHAR(250),
+      currency_id int)
+    
+    INSERT INTO #GAChart(account_number_id, account_number, debit, label, currency_id)  
+	SELECT
+	  chart.id,
+	  chart.account_number,
+	  SUM(amount) AS debit,
+	  chart.label,
+	  cab.currency_id
+	FROM ChartOfAccounts chart
+	LEFT JOIN LoanAccountingMovements cab ON chart.id = cab.debit_account_number_id
+	WHERE (contract_id = @contract_id OR @contract_id = 0) 
+	GROUP BY chart.id, chart.account_number, chart.label, cab.currency_id
+	SELECT
+	  chart.id AS account_number_id,
+	  SUM(amount) AS credit,
+	  cab.currency_id
+	INTO #Credit
+	FROM ChartOfAccounts chart
+	LEFT JOIN LoanAccountingMovements cab ON chart.id = cab.credit_account_number_id
+	WHERE (contract_id = @contract_id OR @contract_id = 0)
+	GROUP BY chart.id, cab.currency_id
+	UPDATE #GAChart
+	SET #GAChart.credit = #Credit.credit
+	FROM #credit
+	WHERE #GAChart.account_number_id = #credit.account_number_id 
+	  AND #GAChart.currency_id = #credit.currency_id 
+	SELECT 
+	  account_number,                                     
+	  debit,                 
+	  credit,
+	  currency_id,                
+	  label
+	FROM #GAChart
+	ORDER BY account_number, currency_id
+	DROP TABLE #GAChart
+	DROP TABLE #Credit
+END
+]]></create>
+    <drop><![CDATA[IF  EXISTS (
+                SELECT * 
+                FROM sys.objects 
+                WHERE object_id = OBJECT_ID(N'dbo.GetChartOfAccountsBalances') AND type = N'P'
+            )
+            DROP PROCEDURE [dbo].[GetChartOfAccountsBalances]]]></drop>
+  </object>
+  <object name="IntListToTable" priority="37">
+    <create><![CDATA[CREATE FUNCTION [dbo].[IntListToTable] (@list nvarchar(MAX))
+RETURNS @tbl TABLE (number INT NOT NULL) AS
+BEGIN
+   DECLARE @pos        int,
+           @nextpos    int,
+           @valuelen   int
+   SELECT @pos = 0, @nextpos = 1
+   WHILE @nextpos > 0
+   BEGIN
+      SELECT @nextpos = charindex(',', @list, @pos + 1)
+      SELECT @valuelen = CASE WHEN @nextpos > 0
+                              THEN @nextpos
+                              ELSE len(@list) + 1
+                         END - @pos - 1
+      INSERT @tbl (number)
+      VALUES (CONVERT(INT, RTRIM(LTRIM(SUBSTRING(@list, @pos + 1, @valuelen)))))
+      SELECT @pos = @nextpos
+   END
+  RETURN
+END
+]]></create>
+    <drop><![CDATA[IF  EXISTS (
+                SELECT * 
+                FROM sys.objects 
+                WHERE object_id = OBJECT_ID(N'dbo.IntListToTable') AND type = N'TF'
+            )
+            DROP FUNCTION [dbo].[IntListToTable]]]></drop>
+  </object>
+  <object name="Clients" priority="38">
+    <create><![CDATA[CREATE VIEW dbo.Clients
+AS
+-- Persons
+SELECT id, 'I' AS code, first_name + ' ' + last_name AS name
+FROM dbo.Persons
+-- Groups
+UNION ALL
+SELECT id, 'G', name FROM dbo.Groups
+-- Corporates
+UNION ALL
+SELECT id, 'C', name FROM dbo.Corporates
+-- Villages
+UNION ALL
+SELECT id, 'V', name FROM dbo.Villages
+]]></create>
+    <drop><![CDATA[IF  EXISTS (
+                SELECT * 
+                FROM sys.objects 
+                WHERE object_id = OBJECT_ID(N'dbo.Clients') AND type = N'V'
+            )
+            DROP VIEW [dbo].[Clients]]]></drop>
+  </object>
+  <object name="Alerts" priority="39">
+    <create><![CDATA[-- Return a list of alerts, i.e. pending and late loans, 
+-- along with overdraft and pending savings
+--
+-- HISTORY
+--
+-- Apr 13, 2011 - v2.8.15 - Pasha BASTOV
+-- Add @branch_id to the list of parameters
+CREATE FUNCTION [dbo].[Alerts](@date DATETIME, @user_id INT, @branch_id INT)
+RETURNS @tbl TABLE (
+	id INT NOT NULL
+	, kind INT NOT NULL
+	, status INT NOT NULL
+	, date DATETIME NOT NULL
+	, late_days INT NOT NULL
+	, amount MONEY NOT NULL
+	, use_cents BIT NOT NULL
+	, contract_code NVARCHAR(100) NOT NULL
+	, client_name NVARCHAR(100) NOT NULL
+	, loan_officer_id INT NOT NULL
+	, city NVARCHAR(100) NOT NULL
+	, address NVARCHAR(100) NOT NULL
+	, phone NVARCHAR(100) NOT NULL
+) AS
+BEGIN
+	DECLARE @_date DATETIME
+	DECLARE @_user_id INT
+	DECLARE @_branch_id INT
+	
+	SET @_date = @date
+	SET @_user_id = @user_id
+	SET @_branch_id = @branch_id
+	
+	;WITH _contracts
+	AS (
+		-- Late and performing loans (due today)
+		SELECT id
+		, 5 AS status	
+		, expected_date AS date
+		, principal_due + interest_due AS amount
+		, late_days
+		FROM dbo.ActiveLoans(@_date, @_branch_id)
+		WHERE late_days > 0 OR (0 = late_days AND NOT expected_date IS NULL)
+		
+		UNION ALL
+		-- Pending and validated loans	
+		SELECT c.id
+		, c.status
+		, c.start_date AS date
+		, cr.amount
+		, 0 AS late_days
+		FROM dbo.Contracts AS c
+		LEFT JOIN dbo.Credit AS cr ON cr.id = c.id
+		WHERE c.status IN (1, 2) AND c.branch_id = @_branch_id
+	)
+	INSERT @tbl
+	SELECT _c.id
+	, 1 AS kind
+	, _c.status
+	, _c.date
+	, _c.late_days
+	, _c.amount
+	, cur.use_cents
+	, c.contract_code
+	, cl.name AS client_name
+	, cr.loanofficer_id
+	, ISNULL(t.city, '') AS city
+	, COALESCE(t.address, t.secondary_address, '') AS address
+	, COALESCE(t.home_phone, t.personal_phone, t.secondary_home_phone, t.secondary_personal_phone, '') AS phone
+	FROM _contracts AS _c
+	LEFT JOIN dbo.Contracts AS c ON c.id = _c.id
+	LEFT JOIN dbo.Credit AS cr ON cr.id = c.id
+	LEFT JOIN dbo.Projects AS j ON j.id = c.project_id
+	LEFT JOIN dbo.Packages AS pack ON pack.id = cr.package_id
+	LEFT JOIN dbo.Currencies AS cur ON cur.id = pack.currency_id
+	LEFT JOIN dbo.Tiers AS t ON t.id = j.tiers_id
+	LEFT JOIN dbo.Clients AS cl ON cl.id = t.id
+	WHERE cr.loanofficer_id = @_user_id OR cr.loanofficer_id IN (
+		SELECT subordinate_id 
+		FROM dbo.UsersSubordinates
+		WHERE user_id = @_user_id
+	)
+	-- Overdraft savings
+	INSERT @tbl
+	SELECT c.id
+	, 2 AS kind
+	-- Pasha BASTOV:
+	-- The status below is in fact 1, since 1 for Savings means Active.
+	-- But for the sake of consistency I intentionally change it to 5,
+	-- since 5 means Active for loans and somehow loans prevail because
+	-- they appeared first historically blah blah blah.
+	-- Since it does not seem to be used / affect any code outside the
+	-- Alerts window, I dare do so.
+	, 5 AS status
+	, c.creation_date AS date
+	, 0 AS late_days
+	, b.amount
+	, cur.use_cents
+	, c.code AS contract_code
+	, cl.name AS client_name
+	, c.savings_officer_id
+	, ISNULL(t.city, '') AS city 
+	, COALESCE(t.address, t.secondary_address, '') AS address
+	, COALESCE(t.home_phone, t.personal_phone, t.secondary_home_phone, t.secondary_personal_phone, '') AS phone
+	FROM SavingContracts AS c
+	INNER JOIN SavingProducts AS SaPr ON SaPr.id = c.product_id
+	INNER JOIN
+	(
+		SELECT sum_deposit - ISNULL(sum_withdraw, 0) AS amount, d.contract_id
+		FROM
+		(
+			SELECT SUM(amount) AS sum_deposit, contract_id
+			FROM SavingEvents
+			WHERE (code IN ('SVIE', 'SVDE', 'SIPE', 'SCTE')) 
+			AND deleted = 0 AND is_fired = 1 AND creation_date <= GETDATE()
+			GROUP BY contract_id
+		) AS d
+		LEFT JOIN
+		(
+			SELECT SUM(amount + ISNULL(fees, 0)) AS sum_withdraw, contract_id
+			FROM SavingEvents
+			WHERE (code IN ('SVWE', 'SDTE')) 
+			AND deleted = 0 AND is_fired = 1 AND creation_date <= GETDATE() 
+			GROUP BY contract_id
+		) AS w ON d.contract_id = w.contract_id
+	) AS b ON b.contract_id = c.id
+	INNER JOIN Tiers AS t ON t.id = c.tiers_id 
+	LEFT JOIN dbo.Clients AS cl ON cl.id = t.id
+	INNER JOIN dbo.Currencies AS cur ON cur.id = SaPr.currency_id
+	WHERE b.amount < 0 AND c.status = 1
+	AND c.savings_officer_id = @_user_id OR c.savings_officer_id IN
+	(
+		SELECT subordinate_id
+		FROM dbo.UsersSubordinates
+		WHERE user_id = @_user_id
+	)
+	
+	UNION ALL
+	
+	-- Pending savings
+	SELECT c.id
+	, 2 AS kind
+	, 1 AS status
+	, c.creation_date AS date
+	, 0 AS late_days
+	, b.amount
+	, cur.use_cents
+	, c.code AS contract_code
+	, cl.name AS client_name
+	, c.savings_officer_id
+	, ISNULL(t.city, '') AS city 
+	, COALESCE(t.address, t.secondary_address, '') AS address
+	, COALESCE(t.home_phone, t.personal_phone, t.secondary_home_phone, t.secondary_personal_phone, '') AS phone
+	FROM SavingContracts AS c
+	INNER JOIN SavingProducts AS SaPr ON SaPr.id = c.product_id
+	INNER JOIN
+	(
+		SELECT SUM(amount) AS amount, contract_id
+		FROM SavingEvents 
+		WHERE code = 'SPDE' AND deleted = 0 AND is_fired = 1 AND pending = 1 AND creation_date <= GETDATE()
+		GROUP BY contract_id
+	) AS b ON b.contract_id = c.id
+	INNER JOIN Tiers AS t ON t.id = c.tiers_id 
+	LEFT JOIN dbo.Clients AS cl ON cl.id = t.id
+	INNER JOIN dbo.Currencies AS cur ON cur.id = SaPr.currency_id
+	WHERE c.savings_officer_id = @_user_id OR c.savings_officer_id IN
+	(
+		SELECT subordinate_id
+		FROM dbo.UsersSubordinates
+		WHERE user_id = @_user_id
+	)
+	
+	RETURN
+END
+]]></create>
+    <drop><![CDATA[IF  EXISTS (
+                SELECT * 
+                FROM sys.objects 
+                WHERE object_id = OBJECT_ID(N'dbo.Alerts') AND type = N'TF'
+            )
+            DROP FUNCTION [dbo].[Alerts]]]></drop>
+  </object>
+  <object name="ActiveSavingContracts" priority="40">
+    <create><![CDATA[CREATE FUNCTION [dbo].[ActiveSavingContracts]
+(
+  @pDate DATETIME
+)
+RETURNS TABLE AS
+RETURN
+(
+WITH _tier_accounts AS (
+	SELECT SC.id AS "contract_id",
+		SP.product_type,
+		SP.currency_id, 
+		T.id AS tier_id ,
+		T.client_type_code,
+		ISNULL((SELECT SUM(amount) AS "sum_deposit"
+					FROM [dbo].[SavingEvents]	
+					WHERE (code IN ('SVIE', 'SVDE', 'SIPE', 'SCTE'))
+						AND deleted = 0 AND is_fired = 1
+						AND creation_date <= @pDate
+						AND contract_id = SC.ID), 0) -
+		ISNULL((SELECT SUM(amount + ISNULL(fees, 0)) AS "sum_withdraw"
+					FROM [dbo].[SavingEvents]	
+					WHERE (code IN ('SVWE','SDTE','SMFE','SOFE','SVAE'))
+						AND deleted = 0 AND is_fired = 1
+						AND creation_date <= @pDate
+						AND contract_id = SC.ID), 0) AS "balance"
+	FROM SavingContracts SC
+	INNER JOIN SavingProducts SP ON SC.product_id = SP.id
+	INNER JOIN Tiers T ON SC.tiers_id = T.id
+	LEFT JOIN SavingEvents SE ON SE.contract_id = SC.id AND SE.code = 'SVCE' 
+	WHERE 
+	SC.creation_date <= @pDate	AND (SE.creation_date IS NULL OR SE.creation_date>@pDate))
+				
+SELECT
+  ta.contract_id,
+  ta.product_type,
+  ta.currency_id,
+  ta.tier_id,
+  ta.client_type_code,
+  ta.balance
+FROM _tier_accounts ta
+)
+]]></create>
+    <drop><![CDATA[IF  EXISTS (
+                SELECT * 
+                FROM sys.objects 
+                WHERE object_id = OBJECT_ID(N'dbo.ActiveSavingContracts') AND type = N'IF'
+            )
+            DROP FUNCTION [dbo].[ActiveSavingContracts]]]></drop>
+  </object>
+  <object name="ActiveSavingContracts_MC" priority="41">
+    <create><![CDATA[CREATE FUNCTION [dbo].[ActiveSavingContracts_MC]
+(
+  @pDate DATETIME,
+  @pAccountCurrency INT,
+  @pDisplayCurrency INT
+)
+RETURNS TABLE
+AS 
+RETURN
+(
+SELECT 
+  sc.contract_id,
+  sc.product_type,
+  sc.client_type_code,
+  sc.tier_id AS client_id,
+  sc.balance * dbo.GetXR(sc.currency_id,@pDisplayCurrency,@pDate) AS balance
+FROM ActiveSavingContracts(@pDate) sc
+WHERE sc.currency_id = @pAccountCurrency OR 0 = @pAccountCurrency
+)
+]]></create>
+    <drop><![CDATA[IF  EXISTS (
+                SELECT * 
+                FROM sys.objects 
+                WHERE object_id = OBJECT_ID(N'dbo.ActiveSavingContracts_MC') AND type = N'IF'
+            )
+            DROP FUNCTION [dbo].[ActiveSavingContracts_MC]]]></drop>
+  </object>
+  <object name="ActiveSavingAccounts" priority="42">
+    <create><![CDATA[CREATE FUNCTION [dbo].[ActiveSavingAccounts]
+(
+  @pDate DATETIME
+)
+RETURNS TABLE AS
+RETURN
+(
+WITH _accounts AS (		
+SELECT SC.contract_id,
+  SC.currency_id,
+  SC.client_type_code,
+  SC.tier_id AS client_id,  
+  SC.balance balance
+FROM ActiveSavingContracts(@pDate) SC	
+),
+_share_accounts AS(
+SELECT ac.contract_id,
+  ac.currency_id,
+  ac.client_type_code,
+  PGB.person_id AS client_id,
+  ROW_NUMBER() OVER (PARTITION BY PGB.group_id ORDER BY person_id) AS number,
+  PGB2.total AS total,
+  ac.balance balance,
+  FLOOR(ac.balance/PGB2.total) AS share_balance
+FROM _accounts ac
+INNER JOIN PersonGroupBelonging PGB ON PGB.group_id = ac.client_id AND joined_date <= @pDate AND (@pDate <= left_date OR left_date IS NULL)
+INNER JOIN (
+  SELECT group_id,COUNT(*) AS total
+  FROM PersonGroupBelonging 
+  WHERE joined_date <= @pDate AND (@pDate <= left_date OR left_date IS NULL)
+  GROUP BY group_id
+) AS PGB2 ON ac.client_id = PGB2.group_id AND ac.client_type_code = 'G'
+)
+SELECT
+  SA.contract_id,
+  SA.currency_id,
+  SA.client_type_code,
+  SA.client_id,
+  CASE WHEN SA.number<SA.total THEN SA.share_balance
+	   ELSE SA.balance - SUM(SB.share_balance)
+  END AS balance
+FROM _share_accounts SA
+LEFT JOIN _share_accounts SB ON SA.contract_id = SB.contract_id AND SA.number > SB.number
+GROUP BY SA.contract_id,
+SA.currency_id,
+SA.client_type_code,
+SA.client_id,
+SA.number,
+SA.total,
+SA.balance,
+SA.share_balance
+UNION ALL
+SELECT ac.contract_id,
+  ac.currency_id,
+  ac.client_type_code,
+  ac.client_id,
+  ac.balance
+FROM _accounts ac
+WHERE ac.client_type_code IN ('I','C')
+)
+]]></create>
+    <drop><![CDATA[IF  EXISTS (
+                SELECT * 
+                FROM sys.objects 
+                WHERE object_id = OBJECT_ID(N'dbo.ActiveSavingAccounts') AND type = N'IF'
+            )
+            DROP FUNCTION [dbo].[ActiveSavingAccounts]]]></drop>
+  </object>
+  <object name="ActiveSavingAccounts_MC" priority="43">
+    <create><![CDATA[CREATE FUNCTION [dbo].[ActiveSavingAccounts_MC]
+(
+  @pDate DATETIME,
+  @pAccountCurrency INT,
+  @pDisplayCurrency INT
+)
+RETURNS TABLE
+AS 
+RETURN
+(
+SELECT 
+  acs.contract_id,
+  acs.client_type_code,
+  acs.client_id,
+  acs.balance * dbo.GetXR(acs.currency_id,@pDisplayCurrency,@pDate) AS balance
+FROM ActiveSavingAccounts(@pDate) acs
+WHERE acs.currency_id = @pAccountCurrency OR 0 = @pAccountCurrency
+)
+]]></create>
+    <drop><![CDATA[IF  EXISTS (
+                SELECT * 
+                FROM sys.objects 
+                WHERE object_id = OBJECT_ID(N'dbo.ActiveSavingAccounts_MC') AND type = N'IF'
+            )
+            DROP FUNCTION [dbo].[ActiveSavingAccounts_MC]]]></drop>
+  </object>
+  <object name="RepaymentSchedule" priority="44">
+    <create><![CDATA[CREATE FUNCTION dbo.RepaymentSchedule(@contract_id INT)
+RETURNS TABLE
+AS RETURN
+(
+	SELECT *
+	, CAST(ROUND(paid_interest/(1+vat_rate), 2) AS MONEY) AS paid_interest_wo_vat
+	, paid_interest - CAST(ROUND(paid_interest/(1+vat_rate), 2) AS MONEY) AS paid_interest_vat
+	FROM
+	(
+		SELECT i.number
+		, i.expected_date
+		, i.capital_repayment AS expected_principal
+		, i.interest_repayment AS expected_interest
+		, i.interest_repayment + i.capital_repayment AS total
+		, cr.amount - SUM(i2.capital_repayment) AS olb
+		, i.paid_capital AS paid_principal
+		, i.paid_interest
+		, CAST((SELECT value 
+			FROM dbo.GeneralParameters
+			WHERE [key] = 'VAT_RATE'
+		) AS FLOAT)/100 AS vat_rate
+		FROM dbo.Installments AS i
+		INNER JOIN dbo.Credit AS cr ON cr.id = i.contract_id
+		LEFT JOIN dbo.Installments AS i2 ON i2.contract_id = i.contract_id AND i2.number <= i.number
+		WHERE i.contract_id = @contract_id
+		GROUP BY cr.amount
+		, i.number
+		, i.expected_date
+		, i.contract_id
+		, i.capital_repayment
+		, i.interest_repayment
+		, i.paid_capital
+		, i.paid_interest
+	) AS i
+)
+]]></create>
+    <drop><![CDATA[IF  EXISTS (
+                SELECT * 
+                FROM sys.objects 
+                WHERE object_id = OBJECT_ID(N'dbo.RepaymentSchedule') AND type = N'IF'
+            )
+            DROP FUNCTION [dbo].[RepaymentSchedule]]]></drop>
+  </object>
+  <object name="SavingDeposits" priority="45">
+    <create><![CDATA[CREATE FUNCTION SavingDeposits
+(
+@pFrom DATETIME,
+@pTo DATETIME
+) RETURNS TABLE
+AS RETURN
+(
+ SELECT SC.id AS contract_id,
+  SE.id AS event_id,
+  SE.creation_date AS event_date,
+  SE.amount AS amount,
+  SE.savings_method AS method,
+  SP.product_type,
+  SP.currency_id
+FROM SavingEvents SE
+INNER JOIN SavingContracts SC ON SE.contract_id = SC.id 
+INNER JOIN SavingProducts SP ON SP.id = SC.product_id
+WHERE SE.code = 'SVDE'
+AND
+(
+ (@pFrom IS NULL AND SE.creation_date <= @pTo) OR
+ (@pTo IS NULL AND SE.creation_date >= @pFrom) OR
+ (SE.creation_date BETWEEN @pFrom AND @pTo) 
+)
+)
+]]></create>
+    <drop><![CDATA[IF  EXISTS (
+                SELECT * 
+                FROM sys.objects 
+                WHERE object_id = OBJECT_ID(N'dbo.SavingDeposits') AND type = N'IF'
+            )
+            DROP FUNCTION [dbo].[SavingDeposits]]]></drop>
+  </object>
+  <object name="SavingDeposits_MC" priority="46">
+    <create><![CDATA[CREATE FUNCTION SavingDeposits_MC
+(
+@pFrom DATETIME,
+@pTo DATETIME,
+@pWithdrawedIn INT,
+@pDisplayIn INT
+) RETURNS TABLE
+AS RETURN
+(
+ SELECT d.contract_id,
+  d.event_id,
+  d.event_date,
+  d.amount * dbo.GetXR(d.currency_id,@pDisplayIn,d.event_date) AS amount,
+  d.method,
+  d.product_type
+FROM SavingDeposits(@pFrom,@pTo) d
+WHERE d.currency_id = @pWithdrawedIn OR 0 = @pWithdrawedIn
+)
+]]></create>
+    <drop><![CDATA[IF  EXISTS (
+                SELECT * 
+                FROM sys.objects 
+                WHERE object_id = OBJECT_ID(N'dbo.SavingDeposits_MC') AND type = N'IF'
+            )
+            DROP FUNCTION [dbo].[SavingDeposits_MC]]]></drop>
+  </object>
+  <object name="SavingWithdrawals" priority="47">
+    <create><![CDATA[CREATE FUNCTION SavingWithdrawals
+(
+@pFrom DATETIME,
+@pTo DATETIME
+) RETURNS TABLE
+AS RETURN
+(
+ SELECT SC.id AS contract_id,
+  SE.id AS event_id,
+  SE.creation_date AS event_date,
+  SE.amount AS amount,
+  SP.product_type,
+  SP.currency_id
+FROM SavingEvents SE
+INNER JOIN SavingContracts SC ON SE.contract_id = SC.id 
+INNER JOIN SavingProducts SP ON SP.id = SC.product_id
+WHERE SE.code = 'SVWE' AND
+(
+ (@pFrom IS NULL AND SE.creation_date <= @pTo) OR
+ (@pTo IS NULL AND SE.creation_date >= @pFrom) OR
+ (SE.creation_date BETWEEN @pFrom AND @pTo) 
+)
+)
+]]></create>
+    <drop><![CDATA[IF  EXISTS (
+                SELECT * 
+                FROM sys.objects 
+                WHERE object_id = OBJECT_ID(N'dbo.SavingWithdrawals') AND type = N'IF'
+            )
+            DROP FUNCTION [dbo].[SavingWithdrawals]]]></drop>
+  </object>
+  <object name="SavingWithdrawals_MC" priority="48">
+    <create><![CDATA[CREATE FUNCTION SavingWithdrawals_MC
+(
+@pFrom DATETIME,
+@pTo DATETIME,
+@pWithdrawedIn INT,
+@pDisplayIn INT
+) RETURNS TABLE
+AS RETURN
+(
+ SELECT w.contract_id,
+  w.event_id,
+  w.event_date,
+  w.amount * dbo.GetXR(w.currency_id,@pDisplayIn,w.event_date) AS amount,
+  w.product_type
+FROM SavingWithdrawals(@pFrom,@pTo) w
+WHERE w.currency_id = @pWithdrawedIn OR 0 = @pWithdrawedIn
+)
+]]></create>
+    <drop><![CDATA[IF  EXISTS (
+                SELECT * 
+                FROM sys.objects 
+                WHERE object_id = OBJECT_ID(N'dbo.SavingWithdrawals_MC') AND type = N'IF'
+            )
+            DROP FUNCTION [dbo].[SavingWithdrawals_MC]]]></drop>
+  </object>
+  <object name="SavingTransfers" priority="49">
+    <create><![CDATA[CREATE FUNCTION SavingTransfers
+(
+@pFrom DATETIME,
+@pTo DATETIME
+) RETURNS TABLE
+AS RETURN
+(
+ SELECT SC.id AS from_contract_id,
+  SC2.id AS to_contract_id,
+  SE.id AS event_id,
+  SE.creation_date AS event_date,
+  SE.amount AS amount,
+  SP.product_type,
+  SP.currency_id
+FROM SavingEvents SE
+INNER JOIN SavingContracts SC ON SE.contract_id = SC.id 
+INNER JOIN SavingProducts SP ON SP.id = SC.product_id
+INNER JOIN SavingContracts SC2 ON SC2.code = SE.related_contract_code
+WHERE SE.code = 'SCTE' AND 
+(
+ (@pFrom IS NULL AND SE.creation_date <= @pTo) OR
+ (@pTo IS NULL AND SE.creation_date >= @pFrom) OR
+ (SE.creation_date BETWEEN @pFrom AND @pTo) 
+)
+)
+]]></create>
+    <drop><![CDATA[IF  EXISTS (
+                SELECT * 
+                FROM sys.objects 
+                WHERE object_id = OBJECT_ID(N'dbo.SavingTransfers') AND type = N'IF'
+            )
+            DROP FUNCTION [dbo].[SavingTransfers]]]></drop>
+  </object>
+  <object name="SavingTransfers_MC" priority="50">
+    <create><![CDATA[CREATE FUNCTION SavingTransfers_MC
+(
+@pFrom DATETIME,
+@pTo DATETIME,
+@pWithdrawedIn INT,
+@pDisplayIn INT
+) RETURNS TABLE
+AS RETURN
+(
+ SELECT t.from_contract_id,
+  t.to_contract_id,
+  t.event_id,
+  t.event_date,
+  t.amount * dbo.GetXR(t.currency_id,@pDisplayIn,t.event_date) AS amount,
+  t.product_type
+FROM SavingTransfers(@pFrom,@pTo) t
+WHERE t.currency_id = @pWithdrawedIn OR 0 = @pWithdrawedIn
+)
+]]></create>
+    <drop><![CDATA[IF  EXISTS (
+                SELECT * 
+                FROM sys.objects 
+                WHERE object_id = OBJECT_ID(N'dbo.SavingTransfers_MC') AND type = N'IF'
+            )
+            DROP FUNCTION [dbo].[SavingTransfers_MC]]]></drop>
+  </object>
+  <object name="SavingCommissions" priority="51">
+    <create><![CDATA[CREATE FUNCTION [dbo].[SavingCommissions]
+(@pFrom DATETIME, @pTo DATETIME) 
+RETURNS TABLE
+AS RETURN
+(
+	SELECT contract_id
+	, event_id
+	, event_date
+	, event_code
+	, amount
+	, CAST(ROUND(amount/(1+vat_rate), 2) AS MONEY) AS amount_wo_vat
+	, amount - CAST(ROUND(amount/(1+vat_rate), 2) AS MONEY) AS amount_vat
+	, product_type
+	, currency_id
+	FROM
+	(
+		SELECT SC.id AS contract_id
+		, SE.id AS event_id
+		, SE.creation_date AS event_date
+		, SE.code AS event_code
+		, SE.fees AS amount
+		, SP.product_type
+		, SP.currency_id
+		, CAST((SELECT value 
+			FROM dbo.GeneralParameters
+			WHERE [key] = 'VAT_RATE'
+		) AS FLOAT)/100 AS vat_rate
+		FROM SavingEvents AS SE
+		INNER JOIN SavingContracts SC ON SE.contract_id = SC.id
+		INNER JOIN SavingProducts SP ON SP.id = SC.product_id
+		WHERE SE.code NOT IN ('SOFE','SVAE') AND
+		(
+			(@pFrom IS NULL AND SE.creation_date <= @pTo) OR
+			(@pTo IS NULL AND SE.creation_date >= @pFrom) OR
+			(SE.creation_date BETWEEN @pFrom AND @pTo) 
+		)
+	) AS t
+)
+]]></create>
+    <drop><![CDATA[IF  EXISTS (
+                SELECT * 
+                FROM sys.objects 
+                WHERE object_id = OBJECT_ID(N'dbo.SavingCommissions') AND type = N'IF'
+            )
+            DROP FUNCTION [dbo].[SavingCommissions]]]></drop>
+  </object>
+  <object name="SavingCommissions_MC" priority="52">
+    <create><![CDATA[CREATE FUNCTION [dbo].[SavingCommissions_MC]
+(
+	@pFrom DATETIME,
+	@pTo DATETIME,
+	@pWithdrawedIn INT,
+	@pDisplayIn INT
+) RETURNS TABLE
+AS RETURN
+(
+	SELECT c.contract_id
+	, c.event_id
+	, c.event_date
+	, c.event_code
+	, c.amount * dbo.GetXR(c.currency_id,@pDisplayIn,c.event_date) AS amount
+	, c.amount_wo_vat * dbo.GetXR(c.currency_id,@pDisplayIn,c.event_date) AS amount_wo_vat
+	, c.amount_vat * dbo.GetXR(c.currency_id,@pDisplayIn,c.event_date) AS amount_vat
+	, c.product_type
+	FROM SavingCommissions(@pFrom,@pTo) c
+	WHERE c.currency_id = @pWithdrawedIn OR 0 = @pWithdrawedIn
+)
+]]></create>
+    <drop><![CDATA[IF  EXISTS (
+                SELECT * 
+                FROM sys.objects 
+                WHERE object_id = OBJECT_ID(N'dbo.SavingCommissions_MC') AND type = N'IF'
+            )
+            DROP FUNCTION [dbo].[SavingCommissions_MC]]]></drop>
+  </object>
+  <object name="SavingPenalties" priority="53">
+    <create><![CDATA[CREATE FUNCTION [dbo].[SavingPenalties]
+(
+	@pFrom DATETIME,
+	@pTo DATETIME
+) RETURNS TABLE
+AS RETURN
+(
+	SELECT contract_id
+	, event_id
+	, event_date
+	, event_code
+	, amount
+	, CAST(ROUND(amount/(1+vat_rate), 2) AS MONEY) AS amount_wo_vat
+	, amount - CAST(ROUND(amount/(1+vat_rate), 2) AS MONEY) AS amount_vat
+	, product_type
+	, currency_id
+	FROM
+	(
+		SELECT SC.id AS contract_id
+		, SE.id AS event_id
+		, SE.creation_date AS event_date
+		, SE.code AS event_code
+		, SE.fees AS amount
+		, SP.product_type
+		, SP.currency_id
+		, CAST((SELECT value 
+			FROM dbo.GeneralParameters
+			WHERE [key] = 'VAT_RATE'
+		) AS FLOAT)/100 AS vat_rate
+		FROM SavingEvents SE
+		INNER JOIN SavingContracts SC ON SE.contract_id = SC.id 
+		INNER JOIN SavingProducts SP ON SP.id = SC.product_id
+		WHERE SE.code IN ('SOFE','SVAE') AND
+		(
+			(@pFrom IS NULL AND SE.creation_date <= @pTo) OR
+			(@pTo IS NULL AND SE.creation_date >= @pFrom) OR
+			(SE.creation_date BETWEEN @pFrom AND @pTo) 
+		)
+	) AS t
+)
+]]></create>
+    <drop><![CDATA[IF  EXISTS (
+                SELECT * 
+                FROM sys.objects 
+                WHERE object_id = OBJECT_ID(N'dbo.SavingPenalties') AND type = N'IF'
+            )
+            DROP FUNCTION [dbo].[SavingPenalties]]]></drop>
+  </object>
+  <object name="SavingPenalties_MC" priority="54">
+    <create><![CDATA[CREATE FUNCTION [dbo].[SavingPenalties_MC]
+(
+	@pFrom DATETIME,
+	@pTo DATETIME,
+	@pWithdrawedIn INT,
+	@pDisplayIn INT
+) RETURNS TABLE
+AS RETURN
+(
+	SELECT p.contract_id
+	, p.event_id
+	, p.event_date
+	, p.event_code
+	, p.amount * dbo.GetXR(p.currency_id,@pDisplayIn,p.event_date) AS amount	
+	, p.amount_wo_vat * dbo.GetXR(p.currency_id,@pDisplayIn,p.event_date) AS amount_wo_vat
+	, p.amount_vat * dbo.GetXR(p.currency_id,@pDisplayIn,p.event_date) AS amount_vat
+	, p.product_type
+	FROM SavingPenalties(@pFrom,@pTo) p
+	WHERE p.currency_id = @pWithdrawedIn OR 0 = @pWithdrawedIn
+)
+]]></create>
+    <drop><![CDATA[IF  EXISTS (
+                SELECT * 
+                FROM sys.objects 
+                WHERE object_id = OBJECT_ID(N'dbo.SavingPenalties_MC') AND type = N'IF'
+            )
+            DROP FUNCTION [dbo].[SavingPenalties_MC]]]></drop>
+  </object>
+  <object name="GetAccountBookings" priority="55">
+    <create><![CDATA[CREATE PROCEDURE GetAccountBookings(
+      @beginDate DATETIME,
+      @endDate DATETIME,
+      @account_id INT,
+      @currency_id INT,
+      @is_exported BIT)
+AS 
+    BEGIN
+        SET NOCOUNT ON
+        CREATE TABLE #ListOfBookings(
+          date DATETIME,
+          amount MONEY,
+          is_exported BIT,
+          event_code NVARCHAR(4),
+          contract_code NVARCHAR(100),
+          debit_local_account_number  NVARCHAR(100),
+          credit_local_account_number NVARCHAR(100),
+          exchange_rate FLOAT)
+        -- Loan transactions  
+        INSERT INTO #ListOfBookings
+                ( date ,
+                  amount,
+                  is_exported,
+                  event_code ,
+                  contract_code ,
+                  debit_local_account_number ,
+                  credit_local_account_number ,
+                  exchange_rate
+                )         
+        SELECT  transaction_date AS date,
+                cab.amount,
+                cab.is_exported,
+                ce.event_type AS event_code,
+                c.contract_code AS contract_code,
+                chartDebit.account_number AS debit_local_account_number,
+                chartCredit.account_number AS credit_local_account_number,
+                cab.exchange_rate
+        FROM    LoanAccountingMovements cab
+                INNER JOIN ChartOfAccounts chartDebit ON chartDebit.id = cab.debit_account_number_id
+                INNER JOIN ChartOfAccounts chartCredit ON chartCredit.id = cab.credit_account_number_id
+                LEFT JOIN Contracts c ON cab.contract_id = c.id
+                LEFT JOIN ContractEvents ce ON cab.event_id = ce.id
+        WHERE   cab.transaction_date >= @beginDate
+                AND cab.transaction_date <= @endDate
+                AND ( debit_account_number_id = @account_id
+                      OR credit_account_number_id = @account_id
+                    )
+                AND ( cab.currency_id = @currency_id
+                      OR @currency_id = 0
+                    )
+                AND ( cab.is_exported = @is_exported
+                      OR @is_exported IS NULL
+                    )
+        ORDER BY cab.id
+        --Savings transactions
+        INSERT INTO #ListOfBookings
+                ( date ,
+                  amount ,
+                  is_exported,
+                  event_code ,
+                  contract_code ,
+                  debit_local_account_number ,
+                  credit_local_account_number ,
+                  exchange_rate
+                )         
+        SELECT  transaction_date AS date,
+                sab.amount,
+                sab.is_exported,
+                se.code AS event_code,
+                sc.code AS contract_code,
+                chartDebit.account_number AS debit_local_account_number,
+                chartCredit.account_number AS credit_local_account_number,
+                sab.exchange_rate
+        FROM    dbo.SavingsAccountingMovements sab
+                INNER JOIN ChartOfAccounts chartDebit ON chartDebit.id = sab.debit_account_number_id
+                INNER JOIN ChartOfAccounts chartCredit ON chartCredit.id = sab.credit_account_number_id
+                LEFT JOIN SavingContracts sc ON sc.id = sab.id
+                LEFT JOIN SavingEvents se ON se.id = sab.event_id
+        WHERE   sab.transaction_date >= @beginDate
+                AND sab.transaction_date <= @endDate
+                AND ( debit_account_number_id = @account_id
+                      OR credit_account_number_id = @account_id
+                    )
+                AND ( sab.currency_id = @currency_id
+                      OR @currency_id = 0
+                    )
+                AND ( sab.is_exported = @is_exported
+                      OR @is_exported IS NULL
+                    )
+        ORDER BY sab.id
+        
+        INSERT INTO #ListOfBookings
+                ( date ,
+                  amount ,
+   is_exported,
+                  event_code ,
+                  contract_code ,
+                  debit_local_account_number ,
+                  credit_local_account_number ,
+                  exchange_rate
+                )         
+        SELECT  transaction_date AS date,
+                mab.amount,
+                mab.is_exported,
+                '-' AS event_code,
+                mab.description AS contract_code,
+                chartDebit.account_number AS debit_local_account_number,
+                chartCredit.account_number AS credit_local_account_number,
+                mab.exchange_rate
+        FROM    dbo.ManualAccountingMovements mab
+                INNER JOIN ChartOfAccounts chartDebit ON chartDebit.id = mab.debit_account_number_id
+                INNER JOIN ChartOfAccounts chartCredit ON chartCredit.id = mab.credit_account_number_id                
+        WHERE   mab.transaction_date >= @beginDate
+                AND mab.transaction_date <= @endDate
+                AND ( debit_account_number_id = @account_id
+                      OR credit_account_number_id = @account_id
+                    )
+                AND ( mab.currency_id = @currency_id
+                      OR @currency_id = 0
+                    )
+                AND ( mab.is_exported = @is_exported
+                      OR @is_exported IS NULL
+                    )
+        ORDER BY mab.id
+        
+        SELECT  
+          date,
+          amount,
+          is_exported,
+          event_code,
+          contract_code,
+          debit_local_account_number ,
+          credit_local_account_number ,
+          exchange_rate
+        FROM #ListOfBookings
+        
+        DROP TABLE #ListOfBookings
+    END
+]]></create>
+    <drop><![CDATA[IF  EXISTS (
+                SELECT * 
+                FROM sys.objects 
+                WHERE object_id = OBJECT_ID(N'dbo.GetAccountBookings') AND type = N'P'
+            )
+            DROP PROCEDURE [dbo].[GetAccountBookings]]]></drop>
+  </object>
+  <object name="GetBalanceByAccountCategory" priority="56">
+    <create><![CDATA[CREATE PROCEDURE GetBalanceByAccountCategory(
+      @account_category_id INT,
+      @currency_id INT ,
+      @contract_id INT,
+      @mode BIT)
+AS 
+    BEGIN
+        CREATE TABLE #CategoriesBalance(
+              category_id INT ,
+              [name] NVARCHAR(100) ,
+              amount MONEY)
+              
+        IF(@mode = 0 OR @mode IS NULL)
+        BEGIN
+        INSERT  INTO #CategoriesBalance ( category_id , name , amount)
+                SELECT  AccountsCategory.id ,
+                        AccountsCategory.name ,
+                        CASE WHEN @currency_id = 0
+                             THEN SUM(lam.amount) / ISNULL(exchange_rate, 1)
+                             ELSE SUM(lam.amount)
+                        END
+                FROM    dbo.AccountsCategory
+                        INNER JOIN ChartOfAccounts ON dbo.AccountsCategory.id = dbo.ChartOfAccounts.account_category_id
+                        INNER JOIN dbo.LoanAccountingMovements lam ON dbo.ChartOfAccounts.id = lam.debit_account_number_id
+                WHERE   
+                  account_category_id = @account_category_id
+                  AND ( currency_id = @currency_id OR @currency_id = 0)
+                  AND ( contract_id = @contract_id OR @contract_id = 0)
+                GROUP BY AccountsCategory.id ,
+                        AccountsCategory.name, 
+                        exchange_rate
+  
+        INSERT  INTO #CategoriesBalance ( category_id , name , amount)
+                SELECT  AccountsCategory.id ,
+                        AccountsCategory.name ,
+                        CASE WHEN @currency_id = 0
+                             THEN -1 * SUM(lam.amount) / ISNULL(exchange_rate, 1)
+                             ELSE -1 * SUM(lam.amount)
+                        END
+                FROM    dbo.AccountsCategory
+                        INNER JOIN ChartOfAccounts ON dbo.AccountsCategory.id = dbo.ChartOfAccounts.account_category_id
+                        INNER JOIN dbo.LoanAccountingMovements lam ON dbo.ChartOfAccounts.id = lam.credit_account_number_id
+                WHERE   account_category_id = @account_category_id
+                        AND ( currency_id = @currency_id OR @currency_id = 0)
+                        AND ( contract_id = @contract_id OR @contract_id = 0 )
+                GROUP BY AccountsCategory.id ,
+                        AccountsCategory.name,
+                        exchange_rate
+                ORDER BY AccountsCategory.id
+        END
+        IF(@mode = 1 OR @mode IS NULL)
+        BEGIN
+        INSERT  INTO #CategoriesBalance( category_id , name ,amount)
+                SELECT  AccountsCategory.id ,
+                        AccountsCategory.name ,
+                        CASE WHEN @currency_id = 0
+                             THEN SUM(sam.amount) / ISNULL(exchange_rate, 1)
+                             ELSE SUM(sam.amount)
+                        END
+                FROM    dbo.AccountsCategory
+                        INNER JOIN ChartOfAccounts ON dbo.AccountsCategory.id = dbo.ChartOfAccounts.account_category_id
+                        INNER JOIN dbo.SavingsAccountingMovements sam ON dbo.ChartOfAccounts.id = sam.debit_account_number_id
+                WHERE   account_category_id = @account_category_id
+                        AND ( currency_id = @currency_id OR @currency_id = 0)
+                        AND ( contract_id = @contract_id OR @contract_id = 0)
+                GROUP BY AccountsCategory.id ,
+                        AccountsCategory.name,
+                        exchange_rate
+                        
+        INSERT  INTO #CategoriesBalance ( category_id , name , amount)
+                SELECT  AccountsCategory.id ,
+                        AccountsCategory.name ,
+                        CASE WHEN @currency_id = 0
+                             THEN -1 * SUM(sam.amount) / ISNULL(exchange_rate, 1)
+                             ELSE -1 * SUM(sam.amount)
+                   END
+                FROM    dbo.AccountsCategory
+           INNER JOIN ChartOfAccounts ON dbo.AccountsCategory.id = dbo.ChartOfAccounts.account_category_id
+                        INNER JOIN dbo.SavingsAccountingMovements sam ON dbo.ChartOfAccounts.id = sam.credit_account_number_id
+                WHERE   
+                  account_category_id = @account_category_id
+                  AND ( currency_id = @currency_id OR @currency_id = 0)
+                  AND ( contract_id = @contract_id OR @contract_id = 0)
+                GROUP BY AccountsCategory.id ,
+                        AccountsCategory.name,
+                        exchange_rate
+        END
+        
+        IF(@mode IS NULL)
+        BEGIN
+        INSERT  INTO #CategoriesBalance( category_id, name , amount)
+                SELECT  AccountsCategory.id ,
+                        AccountsCategory.name ,
+                        CASE WHEN @currency_id = 0
+                             THEN SUM(mam.amount) / ISNULL(exchange_rate, 1)
+                             ELSE SUM(mam.amount)
+                        END
+                FROM    dbo.AccountsCategory
+                        INNER JOIN ChartOfAccounts ON dbo.AccountsCategory.id = dbo.ChartOfAccounts.account_category_id
+                        INNER JOIN dbo.ManualAccountingMovements mam ON dbo.ChartOfAccounts.id = mam.debit_account_number_id
+                WHERE   account_category_id = @account_category_id
+                  AND ( currency_id = @currency_id OR @currency_id = 0)
+                GROUP BY AccountsCategory.id ,
+                        AccountsCategory.name,
+                        exchange_rate
+                ORDER BY AccountsCategory.id
+   
+        INSERT  INTO #CategoriesBalance (category_id, name, amount)
+                SELECT  AccountsCategory.id ,
+                        AccountsCategory.name ,
+                        CASE WHEN @currency_id = 0
+                             THEN -1 * SUM(mam.amount) / ISNULL(exchange_rate, 1)
+                             ELSE -1 * SUM(mam.amount)
+                        END
+                FROM    dbo.AccountsCategory
+                        INNER JOIN ChartOfAccounts ON dbo.AccountsCategory.id = dbo.ChartOfAccounts.account_category_id
+                        INNER JOIN dbo.ManualAccountingMovements mam ON dbo.ChartOfAccounts.id = mam.credit_account_number_id
+                WHERE   account_category_id = @account_category_id
+                  AND ( currency_id = @currency_id OR @currency_id = 0)
+                GROUP BY AccountsCategory.id ,
+                        AccountsCategory.name,
+                        exchange_rate
+                ORDER BY AccountsCategory.id
+        END
+         
+        SELECT  ISNULL(SUM(amount), 0) AS balance
+        FROM  #CategoriesBalance
+        
+        DROP TABLE #CategoriesBalance
+    END
+]]></create>
+    <drop><![CDATA[IF  EXISTS (
+                SELECT * 
+                FROM sys.objects 
+                WHERE object_id = OBJECT_ID(N'dbo.GetBalanceByAccountCategory') AND type = N'P'
+            )
+            DROP PROCEDURE [dbo].[GetBalanceByAccountCategory]]]></drop>
+  </object>
+  <object name="ExpectedInstallments" priority="57">
+    <create><![CDATA[-- Return a list of installments expected within a given range
+-- specified by the @from and @to parameters.
+-- Late installments are *not* included.
+--
+-- Mar 30, 2011 - v2.8.14 - Pasha BASTOV - Create the function
+--
+-- Apr 14, 2011 - v2.8.15 - Pasha BASTOV - Add @branch_id to the list of parameters
+CREATE FUNCTION [dbo].[ExpectedInstallments](@from DATETIME, @to DATETIME, @branch_id INT)
+RETURNS TABLE AS
+RETURN
+(
+	WITH _i AS (
+		SELECT *
+		FROM dbo.InstallmentSnapshot(@to)
+	)
+	SELECT i.contract_id
+	, i.number
+	, i.expected_date
+	, i.principal
+	, i.prepaid_principal
+	, i.interest
+	, i.prepaid_interest
+	FROM (
+		SELECT i.contract_id
+		, i.number
+		, i.expected_date
+		, i.principal
+		, i.interest
+		, i.running_total_principal
+		, i.running_total_interest
+		, ISNULL(re.paid_principal, 0) AS paid_principal
+		, ISNULL(re.paid_interest, 0) AS paid_interest
+		, CASE
+			WHEN i.running_total_principal - ISNULL(re.paid_principal, 0) <= 0 THEN i.principal
+			WHEN i.running_total_principal - ISNULL(re.paid_principal, 0) >= i.principal THEN 0
+			ELSE i.principal + ISNULL(re.paid_principal, 0) - i.running_total_principal
+		END AS prepaid_principal
+		, CASE
+			WHEN i.running_total_interest - ISNULL(re.paid_interest, 0) <= 0 THEN i.interest
+			WHEN i.running_total_interest - ISNULL(re.paid_interest, 0) >= i.interest THEN 0
+			ELSE i.interest + ISNULL(re.paid_interest, 0) - i.running_total_interest
+		END AS prepaid_interest
+		FROM (
+			-- Installments with running totals:
+			-- this is achieved by joining against itself
+			SELECT a.contract_id, a.number, a.expected_date, a.principal, a.interest
+			, SUM(b.principal) AS running_total_principal
+			, SUM(b.interest) AS running_total_interest
+			FROM _i AS a
+			LEFT JOIN _i AS b ON b.contract_id = a.contract_id AND b.number <= a.number
+			GROUP BY a.contract_id, a.number, a.expected_date, a.principal, a.interest
+		) AS i
+		LEFT JOIN (
+			-- Repayments up to the @from date
+			SELECT ce.contract_id, SUM(re.principal) AS paid_principal, SUM(re.interests) AS paid_interest
+			FROM dbo.RepaymentEvents AS re
+			LEFT JOIN ContractEvents AS ce ON ce.id = re.id
+			WHERE ce.is_deleted = 0 AND ce.event_date <= @from
+			GROUP BY ce.contract_id
+		) AS re ON re.contract_id = i.contract_id
+	) AS i
+	LEFT JOIN dbo.Contracts AS c ON c.id = i.contract_id
+	WHERE c.branch_id = @branch_id
+	AND (i.expected_date BETWEEN @from AND @to)
+	AND (i.prepaid_principal < i.principal OR i.prepaid_interest < i.interest)
+	AND NOT EXISTS (SELECT * FROM dbo.ContractEvents WHERE event_type = 'WROE' AND event_date <= @to AND contract_id = i.contract_id)
+	AND EXISTS (SELECT * FROM dbo.ContractEvents WHERE event_type = 'LODE' AND event_date <= @to AND contract_id = i.contract_id)
+)
+]]></create>
+    <drop><![CDATA[IF  EXISTS (
+                SELECT * 
+                FROM sys.objects 
+                WHERE object_id = OBJECT_ID(N'dbo.ExpectedInstallments') AND type = N'IF'
+            )
+            DROP FUNCTION [dbo].[ExpectedInstallments]]]></drop>
+  </object>
+  <object name="ExpectedInstallments_MC" priority="58">
+    <create><![CDATA[-- The multi-currency counterpart of ExpectedInstallments -
+-- see the comment to *that* function for details.
+--
+-- HISTORY
+--
+-- Mar 30, 2011 - v2.8.14 - Pasha BASTOV - Create the function
+--
+-- Apr 14, 2011 - v2.8.15 - Pasha BASTOV - Add @branch_id as a parameter
+CREATE FUNCTION [dbo].[ExpectedInstallments_MC]
+(
+	@from DATETIME
+	, @to DATETIME
+	, @disbursed_in INT
+	, @display_in INT
+	, @branch_id INT
+)
+RETURNS TABLE AS
+RETURN
+(
+	SELECT contract_id
+	, i.number
+	, i.expected_date
+	, i.principal * dbo.GetXR(p.currency_id, @display_in, i.expected_date) AS principal
+	, i.prepaid_principal * dbo.GetXR(p.currency_id, @display_in, i.expected_date) AS prepaid_principal
+	, i.interest * dbo.GetXR(p.currency_id, @display_in, i.expected_date) AS interest
+	, i.prepaid_interest * dbo.GetXR(p.currency_id, @display_in, i.expected_date) AS prepaid_interest
+	FROM dbo.ExpectedInstallments(@from, @to, @branch_id) AS i
+	LEFT JOIN dbo.Credit AS c ON c.id = i.contract_id
+	LEFT JOIN dbo.Packages AS p ON p.id = c.package_id
+	WHERE 0 = @disbursed_in OR p.currency_id = @disbursed_in
+)
+]]></create>
+    <drop><![CDATA[IF  EXISTS (
+                SELECT * 
+                FROM sys.objects 
+                WHERE object_id = OBJECT_ID(N'dbo.ExpectedInstallments_MC') AND type = N'IF'
+            )
+            DROP FUNCTION [dbo].[ExpectedInstallments_MC]]]></drop>
+  </object>
+  <object name="ActiveLoans_MC" priority="59">
+    <create><![CDATA[-- Return a list of active loans with exchange rates applied
+--
+-- HISTORY
+--
+-- Apr 13, 2011 - v2.8.15 - Pasha BASTOV
+-- Add @branch_id to the list of parameters
+CREATE FUNCTION [dbo].[ActiveLoans_MC](@date DATETIME, @disbursed_in INT, @display_in INT, @branch_id INT)
+RETURNS TABLE AS
+RETURN
+(
+	SELECT al.id
+	, al.amount * dbo.GetXR(p.currency_id, @display_in, @date) AS amount
+	, al.olb* dbo.GetXR(p.currency_id, @display_in, @date) AS olb
+	, al.interest * dbo.GetXR(p.currency_id, @display_in, @date) AS interest
+	, al.late_days
+	FROM dbo.ActiveLoans(@date, @branch_id) AS al
+	INNER JOIN dbo.Credit AS c ON c.id = al.id
+	LEFT JOIN dbo.Packages AS p ON p.id = c.package_id
+	WHERE 0 = @disbursed_in OR p.currency_id = @disbursed_in
+)
+]]></create>
+    <drop><![CDATA[IF  EXISTS (
+                SELECT * 
+                FROM sys.objects 
+                WHERE object_id = OBJECT_ID(N'dbo.ActiveLoans_MC') AND type = N'IF'
+            )
+            DROP FUNCTION [dbo].[ActiveLoans_MC]]]></drop>
+  </object>
+  <object name="LateAmounts" priority="60">
+    <create><![CDATA[CREATE FUNCTION [dbo].[LateAmounts] (@date DATETIME, @branch_id INT)
+RETURNS TABLE AS
+RETURN
+(
+	SELECT contract_id
+	, CASE WHEN principal < 0 THEN 0 ELSE principal END AS principal
+	, CASE WHEN interest < 0 THEN 0 ELSE interest END AS interest
+	FROM (
+		-- Difference between the amounts below
+		SELECT i.contract_id
+		, i.principal - ISNULL(re.principal, 0) AS principal
+		, i.interest - ISNULL(re.interest, 0) AS interest
+		FROM (
+			-- Expected amounts
+			SELECT contract_id, SUM(principal) AS principal, SUM(interest) AS interest
+			FROM dbo.InstallmentSnapshot(@date)
+			WHERE expected_date < @date
+			GROUP BY contract_id
+		) AS i
+		LEFT JOIN (
+			-- Paid amounts
+			SELECT ce.contract_id
+			, SUM(re.principal) AS principal
+			, SUM(re.interests) AS interest
+			FROM dbo.RepaymentEvents AS re
+			LEFT JOIN dbo.ContractEvents AS ce ON ce.id = re.id
+			WHERE ce.is_deleted = 0 AND ce.event_date <= @date
+			GROUP BY ce.contract_id
+		) AS re ON re.contract_id = i.contract_id
+	) AS t
+	WHERE t.contract_id IN (SELECT id FROM dbo.ActiveLoans(@date, @branch_id))
+)
+]]></create>
+    <drop><![CDATA[IF  EXISTS (
+                SELECT * 
+                FROM sys.objects 
+                WHERE object_id = OBJECT_ID(N'dbo.LateAmounts') AND type = N'IF'
+            )
+            DROP FUNCTION [dbo].[LateAmounts]]]></drop>
+  </object>
+  <object name="LateAmounts_MC" priority="61">
+    <create><![CDATA[CREATE FUNCTION [dbo].[LateAmounts_MC] (@date DATETIME, @disbursed_in INT, @display_in INT, @branch_id INT)
+RETURNS TABLE AS
+RETURN
+(
+	SELECT la.contract_id
+	, la.principal * dbo.GetXR(p.currency_id, @display_in, @date) AS principal
+	, la.interest * dbo.GetXR(p.currency_id, @display_in, @date) AS interest
+	FROM dbo.LateAmounts(@date, @branch_id) AS la
+	INNER JOIN dbo.Credit AS c ON c.id = la.contract_id
+	LEFT JOIN dbo.Packages AS p ON p.id = c.package_id
+	WHERE 0 = @disbursed_in OR p.currency_id = @disbursed_in
+)
+]]></create>
+    <drop><![CDATA[IF  EXISTS (
+                SELECT * 
+                FROM sys.objects 
+                WHERE object_id = OBJECT_ID(N'dbo.LateAmounts_MC') AND type = N'IF'
+            )
+            DROP FUNCTION [dbo].[LateAmounts_MC]]]></drop>
+  </object>
+  <object name="ActiveClients_MC" priority="62">
+    <create><![CDATA[-- Return a list of active clients with exchange rates applied
+--
+-- HISTORY
+--
+-- 13 Apr, 2011 - v2.8.15 - Pasha BASTOV
+-- Add @branch_id to the list of parameters
+CREATE FUNCTION [dbo].[ActiveClients_MC](@date DATETIME, @disbursed_in INT, @display_in INT, @branch_id INT)
+RETURNS TABLE AS
+RETURN
+(
+	SELECT ac.id
+	, ac.contract_id
+	, ac.amount * dbo.GetXR(p.currency_id, @display_in, @date) AS amount
+	, ac.olb* dbo.GetXR(p.currency_id, @display_in, @date) AS olb
+	, ac.interest * dbo.GetXR(p.currency_id, @display_in, @date) AS interest
+	, ac.late_days
+	FROM dbo.ActiveClients(@date, @branch_id) AS ac
+	INNER JOIN dbo.Credit AS c ON c.id = ac.contract_id
+	LEFT JOIN dbo.Packages AS p ON p.id = c.package_id
+	WHERE 0 = @disbursed_in OR p.currency_id = @disbursed_in
+)
+]]></create>
+    <drop><![CDATA[IF  EXISTS (
+                SELECT * 
+                FROM sys.objects 
+                WHERE object_id = OBJECT_ID(N'dbo.ActiveClients_MC') AND type = N'IF'
+            )
+            DROP FUNCTION [dbo].[ActiveClients_MC]]]></drop>
+  </object>
+</database>

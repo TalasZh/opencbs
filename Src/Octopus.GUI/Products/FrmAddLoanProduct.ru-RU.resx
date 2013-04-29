@@ -1,0 +1,1438 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="tabPageMainParameters.Text" xml:space="preserve">
+    <value>Основные параметры</value>
+  </data>
+  <data name="tabPageFees.Text" xml:space="preserve">
+    <value>Пеня</value>
+  </data>
+  <data name="tabPageOptionalParameters.Text" xml:space="preserve">
+    <value>Дополнительные параметры</value>
+  </data>
+  <data name="tabLOC.Text" xml:space="preserve">
+    <value>Кредитная линия</value>
+  </data>
+  <data name="tabGuarantorsCollaterals.Text" xml:space="preserve">
+    <value>Поручители и залоги</value>
+  </data>
+  <data name="tabPage1.Text" xml:space="preserve">
+    <value>Страхование</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="groupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="gbAdvancedParameters.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 279</value>
+  </data>
+  <data name="gbAdvancedParameters.Size" type="System.Drawing.Size, System.Drawing">
+    <value>765, 315</value>
+  </data>
+  <data name="gbAdvancedParameters.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="gbAdvancedParameters.Text" xml:space="preserve">
+    <value>Дополнительные параметры</value>
+  </data>
+  <data name="cbUseLoanCycle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>212, 20</value>
+  </data>
+  <data name="cbUseLoanCycle.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="cbUseLoanCycle.Text" xml:space="preserve">
+    <value>Использовать цикл кредита</value>
+  </data>
+  <data name="groupBoxNumberOfInstallments.Location" type="System.Drawing.Point, System.Drawing">
+    <value>386, 106</value>
+  </data>
+  <data name="groupBoxNumberOfInstallments.Size" type="System.Drawing.Size, System.Drawing">
+    <value>372, 85</value>
+  </data>
+  <data name="groupBoxNumberOfInstallments.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="groupBoxNumberOfInstallments.Text" xml:space="preserve">
+    <value>Количество выплат*</value>
+  </data>
+  <data name="labelNbIMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 57</value>
+  </data>
+  <data name="labelNbIMax.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="labelNbIMin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 25</value>
+  </data>
+  <data name="labelNbIMin.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="labelNbIOr.Location" type="System.Drawing.Point, System.Drawing">
+    <value>144, 41</value>
+  </data>
+  <data name="labelNbIOr.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 16</value>
+  </data>
+  <data name="labelNbIOr.Text" xml:space="preserve">
+    <value>или значение</value>
+  </data>
+  <data name="textBoxNbOfInstallmentMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>58, 54</value>
+  </data>
+  <data name="textBoxNbOfInstallmentMax.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 23</value>
+  </data>
+  <data name="textBoxNbOfInstallment.Location" type="System.Drawing.Point, System.Drawing">
+    <value>252, 38</value>
+  </data>
+  <data name="textBoxNbOfInstallmentMin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>58, 22</value>
+  </data>
+  <data name="textBoxNbOfInstallmentMin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 23</value>
+  </data>
+  <data name="groupBoxInterestRate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 106</value>
+  </data>
+  <data name="groupBoxInterestRate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>376, 85</value>
+  </data>
+  <data name="groupBoxInterestRate.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="groupBoxInterestRate.Text" xml:space="preserve">
+    <value>Ставка процента (% за период)*</value>
+  </data>
+  <data name="labelRateOr.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 16</value>
+  </data>
+  <data name="labelRateOr.Text" xml:space="preserve">
+    <value>или значение</value>
+  </data>
+  <data name="textBoxRate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>248, 38</value>
+  </data>
+  <data name="groupBoxAmount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>210, 26</value>
+  </data>
+  <data name="groupBoxAmount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>548, 80</value>
+  </data>
+  <data name="groupBoxAmount.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="groupBoxAmount.Text" xml:space="preserve">
+    <value>  Сумма*</value>
+  </data>
+  <data name="labelLoanCycle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>504, 35</value>
+  </data>
+  <data name="labelLoanCycleMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>222, 49</value>
+  </data>
+  <data name="labelLoanCycleMax.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="labelLoanCycleMin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>222, 20</value>
+  </data>
+  <data name="labelLoanCycleMin.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="labelAmountMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 48</value>
+  </data>
+  <data name="labelAmountMin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 16</value>
+  </data>
+  <data name="labelAmountOr.Location" type="System.Drawing.Point, System.Drawing">
+    <value>268, 35</value>
+  </data>
+  <data name="labelAmountOr.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 16</value>
+  </data>
+  <data name="labelAmountOr.Text" xml:space="preserve">
+    <value>или значение</value>
+  </data>
+  <data name="textBoxAmountMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>62, 46</value>
+  </data>
+  <data name="textBoxAmountMax.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="textBoxAmount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>362, 32</value>
+  </data>
+  <data name="textBoxAmount.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="textBoxAmountMin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>62, 14</value>
+  </data>
+  <data name="textBoxAmountMin.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="panelAmountCycles.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 74</value>
+  </data>
+  <data name="panelAmountCycles.Size" type="System.Drawing.Size, System.Drawing">
+    <value>745, 234</value>
+  </data>
+  <data name="panelAmountCycles.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="groupBoxAmountCycle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>284, 90</value>
+  </data>
+  <data name="groupBoxAmountCycle.Text" xml:space="preserve">
+    <value>Параметры цикла</value>
+  </data>
+  <data name="textBoxCycleMax.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="label30.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="textBoxCycleMin.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="colCycle.Text" xml:space="preserve">
+    <value>Цикл</value>
+  </data>
+  <data name="listViewLoanCycles.Size" type="System.Drawing.Size, System.Drawing">
+    <value>248, 199</value>
+  </data>
+  <data name="buttonRemoveAmountCycles.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonRemoveAmountCycles.Location" type="System.Drawing.Point, System.Drawing">
+    <value>595, 32</value>
+  </data>
+  <data name="buttonRemoveAmountCycles.Text" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="buttonAmountCyclesSave.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonAmountCyclesSave.Location" type="System.Drawing.Point, System.Drawing">
+    <value>445, 208</value>
+  </data>
+  <data name="buttonAmountCyclesSave.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="buttonAmountCyclesSave.Text" xml:space="preserve">
+    <value>Сохранить</value>
+  </data>
+  <data name="buttonCancelAmountCycles.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonCancelAmountCycles.Location" type="System.Drawing.Point, System.Drawing">
+    <value>641, 208</value>
+  </data>
+  <data name="buttonCancelAmountCycles.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="buttonCancelAmountCycles.Text" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="buttonAddAmountCycle.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonAddAmountCycle.Text" xml:space="preserve">
+    <value>Добавить</value>
+  </data>
+  <data name="lblCycleObjects.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 11</value>
+  </data>
+  <data name="lblCycleObjects.Size" type="System.Drawing.Size, System.Drawing">
+    <value>114, 16</value>
+  </data>
+  <data name="lblCycleObjects.Text" xml:space="preserve">
+    <value>Объекты цикла:</value>
+  </data>
+  <data name="groupBoxAmountCycles.Location" type="System.Drawing.Point, System.Drawing">
+    <value>210, 16</value>
+  </data>
+  <data name="groupBoxAmountCycles.Size" type="System.Drawing.Size, System.Drawing">
+    <value>545, 56</value>
+  </data>
+  <data name="groupBoxAmountCycles.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="groupBoxAmountCycles.Text" xml:space="preserve">
+    <value>Циклы кредита</value>
+  </data>
+  <data name="comboBoxLoanCyclesName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 24</value>
+  </data>
+  <data name="comboBoxLoanCyclesName.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="label31.Text" xml:space="preserve">
+    <value>Использовать:</value>
+  </data>
+  <data name="buttonNewAmountCycles.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonNewAmountCycles.Size" type="System.Drawing.Size, System.Drawing">
+    <value>129, 25</value>
+  </data>
+  <data name="buttonNewAmountCycles.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="buttonNewAmountCycles.Text" xml:space="preserve">
+    <value>Новый цикл</value>
+  </data>
+  <data name="groupBoxRoundingType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>635, 13</value>
+  </data>
+  <data name="groupBoxRoundingType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 86</value>
+  </data>
+  <data name="groupBoxRoundingType.Text" xml:space="preserve">
+    <value>Тип округления*</value>
+  </data>
+  <data name="comboBoxRoundingType.Items" xml:space="preserve">
+    <value>По факту</value>
+  </data>
+  <data name="comboBoxRoundingType.Items1" xml:space="preserve">
+    <value>Первое погашение</value>
+  </data>
+  <data name="comboBoxRoundingType.Items2" xml:space="preserve">
+    <value>Последнее погашение</value>
+  </data>
+  <data name="comboBoxRoundingType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 36</value>
+  </data>
+  <data name="comboBoxRoundingType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 24</value>
+  </data>
+  <data name="textBoxCode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>163, 50</value>
+  </data>
+  <data name="label32.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 16</value>
+  </data>
+  <data name="label32.Text" xml:space="preserve">
+    <value>Код *:</value>
+  </data>
+  <data name="groupBox10.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="groupBox10.Text" xml:space="preserve">
+    <value>Привязать продукт к фондовой линии и валюте*</value>
+  </data>
+  <data name="comboBoxCurrencies.Location" type="System.Drawing.Point, System.Drawing">
+    <value>227, 23</value>
+  </data>
+  <data name="comboBoxCurrencies.Size" type="System.Drawing.Size, System.Drawing">
+    <value>142, 24</value>
+  </data>
+  <data name="comboBoxFundingLine.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 23</value>
+  </data>
+  <data name="comboBoxFundingLine.Size" type="System.Drawing.Size, System.Drawing">
+    <value>207, 24</value>
+  </data>
+  <data name="groupBoxChargeInterestWithinGracePeriod.Location" type="System.Drawing.Point, System.Drawing">
+    <value>418, 13</value>
+  </data>
+  <data name="groupBoxChargeInterestWithinGracePeriod.Size" type="System.Drawing.Size, System.Drawing">
+    <value>211, 86</value>
+  </data>
+  <data name="groupBoxChargeInterestWithinGracePeriod.Text" xml:space="preserve">
+    <value>Начислять проценты в течении льготного периода*</value>
+  </data>
+  <data name="radioButtonChargeInterestNo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>146, 56</value>
+  </data>
+  <data name="radioButtonChargeInterestNo.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="radioButtonChargeInterestNo.Text" xml:space="preserve">
+    <value>Нет</value>
+  </data>
+  <data name="radioButtonChargeInterestYes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 56</value>
+  </data>
+  <data name="radioButtonChargeInterestYes.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="radioButtonChargeInterestYes.Text" xml:space="preserve">
+    <value>Да</value>
+  </data>
+  <data name="groupBoxType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 104</value>
+  </data>
+  <data name="groupBoxType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>383, 52</value>
+  </data>
+  <data name="groupBoxType.Text" xml:space="preserve">
+    <value>Тип потребителя*</value>
+  </data>
+  <data name="clientTypeIndivCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>137, 24</value>
+  </data>
+  <data name="clientTypeIndivCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 20</value>
+  </data>
+  <data name="clientTypeIndivCheckBox.Text" xml:space="preserve">
+    <value>Инд.</value>
+  </data>
+  <data name="clientTypeVillageCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>254, 24</value>
+  </data>
+  <data name="clientTypeVillageCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 20</value>
+  </data>
+  <data name="clientTypeVillageCheckBox.Text" xml:space="preserve">
+    <value>ГБСО</value>
+  </data>
+  <data name="clientTypeCorpCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>196, 24</value>
+  </data>
+  <data name="clientTypeCorpCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 20</value>
+  </data>
+  <data name="clientTypeCorpCheckBox.Text" xml:space="preserve">
+    <value>Орг.</value>
+  </data>
+  <data name="clientTypeGroupCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>80, 24</value>
+  </data>
+  <data name="clientTypeGroupCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 20</value>
+  </data>
+  <data name="clientTypeGroupCheckBox.Text" xml:space="preserve">
+    <value>ГСО</value>
+  </data>
+  <data name="clientTypeAllCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 24</value>
+  </data>
+  <data name="clientTypeAllCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 20</value>
+  </data>
+  <data name="clientTypeAllCheckBox.Text" xml:space="preserve">
+    <value>Все</value>
+  </data>
+  <data name="groupBoxInterestRateType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>383, 111</value>
+  </data>
+  <data name="groupBoxInterestRateType.Text" xml:space="preserve">
+    <value>Тип графика*</value>
+  </data>
+  <data name="rbDecliningFixedPrincipalRelaInterest.Size" type="System.Drawing.Size, System.Drawing">
+    <value>190, 20</value>
+  </data>
+  <data name="rbDecliningFixedPrincipalRelaInterest.Text" xml:space="preserve">
+    <value>Проценты на КП по дням</value>
+  </data>
+  <data name="rbDecliningFixedPrincipal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 20</value>
+  </data>
+  <data name="rbDecliningFixedPrincipal.Text" xml:space="preserve">
+    <value>Проценты на КП</value>
+  </data>
+  <data name="rbDecliningFixedInstallments.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 20</value>
+  </data>
+  <data name="rbDecliningFixedInstallments.Text" xml:space="preserve">
+    <value>Аннуитет</value>
+  </data>
+  <data name="rbFlat.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 20</value>
+  </data>
+  <data name="rbFlat.Text" xml:space="preserve">
+    <value>Фиксированный</value>
+  </data>
+  <data name="groupBoxGracePeriod.Location" type="System.Drawing.Point, System.Drawing">
+    <value>405, 162</value>
+  </data>
+  <data name="groupBoxGracePeriod.Size" type="System.Drawing.Size, System.Drawing">
+    <value>380, 111</value>
+  </data>
+  <data name="groupBoxGracePeriod.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="groupBoxGracePeriod.Text" xml:space="preserve">
+    <value>Льготный период (погашения)*</value>
+  </data>
+  <data name="labelGPMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 67</value>
+  </data>
+  <data name="labelGPMin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 37</value>
+  </data>
+  <data name="labelGPOr.Location" type="System.Drawing.Point, System.Drawing">
+    <value>168, 49</value>
+  </data>
+  <data name="labelGPOr.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 16</value>
+  </data>
+  <data name="labelGPOr.Text" xml:space="preserve">
+    <value>или значение</value>
+  </data>
+  <data name="textBoxGracePeriodMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>72, 64</value>
+  </data>
+  <data name="textBoxGracePeriod.Location" type="System.Drawing.Point, System.Drawing">
+    <value>265, 46</value>
+  </data>
+  <data name="textBoxGracePeriodMin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>72, 34</value>
+  </data>
+  <data name="comboBoxInstallmentType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>163, 75</value>
+  </data>
+  <data name="labelInstallmentType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 16</value>
+  </data>
+  <data name="labelInstallmentType.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="labelInstallmentType.Text" xml:space="preserve">
+    <value>Тип погашений *: </value>
+  </data>
+  <data name="textBoxName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>163, 24</value>
+  </data>
+  <data name="labelName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 16</value>
+  </data>
+  <data name="labelName.Text" xml:space="preserve">
+    <value>Название продукта *:</value>
+  </data>
+  <data name="gbAnticipatedRepayment.Text" xml:space="preserve">
+    <value>Штрафы за полное и частично досрочное погашение</value>
+  </data>
+  <data name="groupBoxAPR.Text" xml:space="preserve">
+    <value>Штраф за частичное досрочное погашение *:</value>
+  </data>
+  <data name="label43.Location" type="System.Drawing.Point, System.Drawing">
+    <value>166, 45</value>
+  </data>
+  <data name="label43.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 16</value>
+  </data>
+  <data name="label43.Text" xml:space="preserve">
+    <value>Значение:</value>
+  </data>
+  <data name="label42.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 16</value>
+  </data>
+  <data name="label42.Text" xml:space="preserve">
+    <value>или</value>
+  </data>
+  <data name="groupBoxPartialAnticipatedRepaymentBase.Text" xml:space="preserve">
+    <value>Штраф за частичное досрочное погашение *:</value>
+  </data>
+  <data name="rbPrepaidPrincipal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>197, 20</value>
+  </data>
+  <data name="rbPrepaidPrincipal.Text" xml:space="preserve">
+    <value>% на предоплаченную ОС</value>
+  </data>
+  <data name="rbPartialRemainingOLB.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 20</value>
+  </data>
+  <data name="rbPartialRemainingOLB.Text" xml:space="preserve">
+    <value>% на КП</value>
+  </data>
+  <data name="rbPartialRemainingInterest.Size" type="System.Drawing.Size, System.Drawing">
+    <value>196, 20</value>
+  </data>
+  <data name="rbPartialRemainingInterest.Text" xml:space="preserve">
+    <value>% на оставшийся процент</value>
+  </data>
+  <data name="groupBoxTotalAnticipatedRepaymentBase.Text" xml:space="preserve">
+    <value>Штраф за полное досрочное погашение *:</value>
+  </data>
+  <data name="rbRemainingOLB.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 20</value>
+  </data>
+  <data name="rbRemainingOLB.Text" xml:space="preserve">
+    <value>% на КП</value>
+  </data>
+  <data name="rbRemainingInterest.Size" type="System.Drawing.Size, System.Drawing">
+    <value>196, 20</value>
+  </data>
+  <data name="rbRemainingInterest.Text" xml:space="preserve">
+    <value>% на оставшийся процент</value>
+  </data>
+  <data name="groupBoxAnticipatedRepayment.Text" xml:space="preserve">
+    <value> Штрафы за дорочное погашение *:</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>166, 37</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 16</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Значение:</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 55</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 27</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 16</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>или</value>
+  </data>
+  <data name="textBoxAnticipatedRepaymentPenaltiesMax.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="textBoxAnticipatedRepaymentPenalties.Location" type="System.Drawing.Point, System.Drawing">
+    <value>248, 31</value>
+  </data>
+  <data name="textBoxAnticipatedRepaymentPenalties.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="textBoxAnticipatedRepaymentPenaltiesMin.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="groupBoxLateFees.Text" xml:space="preserve">
+    <value>Пеня на просрочку (% в день)</value>
+  </data>
+  <data name="labelLateFeeGracePeriod.Location" type="System.Drawing.Point, System.Drawing">
+    <value>227, 192</value>
+  </data>
+  <data name="labelLateFeeGracePeriod.Size" type="System.Drawing.Size, System.Drawing">
+    <value>172, 16</value>
+  </data>
+  <data name="labelLateFeeGracePeriod.Text" xml:space="preserve">
+    <value>Льготный период пени *:</value>
+  </data>
+  <data name="textBoxGracePeriodLateFee.Location" type="System.Drawing.Point, System.Drawing">
+    <value>395, 189</value>
+  </data>
+  <data name="groupBox8.Text" xml:space="preserve">
+    <value>От суммы кредита*</value>
+  </data>
+  <data name="label25.Location" type="System.Drawing.Point, System.Drawing">
+    <value>168, 39</value>
+  </data>
+  <data name="label25.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 16</value>
+  </data>
+  <data name="label25.Text" xml:space="preserve">
+    <value>Значение:</value>
+  </data>
+  <data name="label28.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 16</value>
+  </data>
+  <data name="label28.Text" xml:space="preserve">
+    <value>или</value>
+  </data>
+  <data name="tBInitialAmountMax.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tBInitialAmountValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>259, 33</value>
+  </data>
+  <data name="tBInitialAmountValue.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="tBInitialAmountMin.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="groupBox5.Text" xml:space="preserve">
+    <value>От просроченной суммы*</value>
+  </data>
+  <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>168, 39</value>
+  </data>
+  <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 16</value>
+  </data>
+  <data name="label13.Text" xml:space="preserve">
+    <value>Значение:</value>
+  </data>
+  <data name="label16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 16</value>
+  </data>
+  <data name="label16.Text" xml:space="preserve">
+    <value>или</value>
+  </data>
+  <data name="tBOverduePrincipalMax.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tBOverduePrincipalValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>259, 33</value>
+  </data>
+  <data name="tBOverduePrincipalValue.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="tBOverduePrincipalMin.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="groupBox7.Text" xml:space="preserve">
+    <value>От КП*</value>
+  </data>
+  <data name="label21.Location" type="System.Drawing.Point, System.Drawing">
+    <value>168, 39</value>
+  </data>
+  <data name="label21.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 16</value>
+  </data>
+  <data name="label21.Text" xml:space="preserve">
+    <value>Значение:</value>
+  </data>
+  <data name="label24.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 16</value>
+  </data>
+  <data name="label24.Text" xml:space="preserve">
+    <value>или</value>
+  </data>
+  <data name="tBOLBMax.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tBOLBValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>250, 33</value>
+  </data>
+  <data name="tBOLBValue.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="tBOLBMin.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="groupBox6.Text" xml:space="preserve">
+    <value>От просроченного процента*</value>
+  </data>
+  <data name="label17.Location" type="System.Drawing.Point, System.Drawing">
+    <value>168, 39</value>
+  </data>
+  <data name="label17.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 16</value>
+  </data>
+  <data name="label17.Text" xml:space="preserve">
+    <value>Значение:</value>
+  </data>
+  <data name="label20.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 16</value>
+  </data>
+  <data name="label20.Text" xml:space="preserve">
+    <value>или</value>
+  </data>
+  <data name="tBOverdueInterestMax.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tBOverdueInterestValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>250, 33</value>
+  </data>
+  <data name="tBOverdueInterestValue.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="tBOverdueInterestMin.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="groupBoxEntryFees.Text" xml:space="preserve">
+    <value>Вступительные взносы (до 10-ти записей)</value>
+  </data>
+  <data name="swbtnEntryFeesRemoveCycle.Text" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="swbtnEntryFeesAddCycle.Text" xml:space="preserve">
+    <value>Добавить</value>
+  </data>
+  <data name="chEntryFeeName.Text" xml:space="preserve">
+    <value>Название</value>
+  </data>
+  <data name="chEntryFeeValue.Text" xml:space="preserve">
+    <value>Значение</value>
+  </data>
+  <data name="chEntryFeeRate.Text" xml:space="preserve">
+    <value>Ставка</value>
+  </data>
+  <data name="chEntryFeeIsAdded.Text" xml:space="preserve">
+    <value>Добавлена</value>
+  </data>
+  <data name="chEntryFeeCycleId.Text" xml:space="preserve">
+    <value>Цикл</value>
+  </data>
+  <data name="chEntryFeeNewId.Text" xml:space="preserve">
+    <value>Новый Id</value>
+  </data>
+  <data name="chEntryFeeIndex.Text" xml:space="preserve">
+    <value>Индекс</value>
+  </data>
+  <data name="nudEntryFeescycleFrom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>434, 18</value>
+  </data>
+  <data name="lblEntryFeesFromCycle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 16</value>
+  </data>
+  <data name="lblEntryFeesFromCycle.Text" xml:space="preserve">
+    <value>Число</value>
+  </data>
+  <data name="cbEnableEntryFeesCycle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>138, 20</value>
+  </data>
+  <data name="cbEnableEntryFeesCycle.Text" xml:space="preserve">
+    <value>На основе цикла</value>
+  </data>
+  <data name="lblEntryFeesCycle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>146, 21</value>
+  </data>
+  <data name="lblEntryFeesCycle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>102, 16</value>
+  </data>
+  <data name="lblEntryFeesCycle.Text" xml:space="preserve">
+    <value>Цикл кредита:</value>
+  </data>
+  <data name="cmbEntryFeesCycles.Location" type="System.Drawing.Point, System.Drawing">
+    <value>254, 19</value>
+  </data>
+  <data name="groupBoxExoticProducts.Text" xml:space="preserve">
+    <value>Нетипичный продукт</value>
+  </data>
+  <data name="labelTotalExoticInstallments.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 16</value>
+  </data>
+  <data name="labelTotalExoticInstallments.Text" xml:space="preserve">
+    <value>Сумма:</value>
+  </data>
+  <data name="buttonCancelExoticProduct.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonCancelExoticProduct.Text" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="buttonSaveExoticProduct.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonSaveExoticProduct.Text" xml:space="preserve">
+    <value>Сохранить</value>
+  </data>
+  <data name="groupBoxExoticInstallmentProperties.Text" xml:space="preserve">
+    <value>Свойства нетипичных платежей</value>
+  </data>
+  <data name="panelExoticInstallment.Size" type="System.Drawing.Size, System.Drawing">
+    <value>259, 75</value>
+  </data>
+  <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>206, 44</value>
+  </data>
+  <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>206, 11</value>
+  </data>
+  <data name="textBoxExoticInstallmentInterest.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 38</value>
+  </data>
+  <data name="textBoxExoticInstallmentInterest.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="textBoxExoticInstallmentPrincipal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 6</value>
+  </data>
+  <data name="textBoxExoticInstallmentPrincipal.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 44</value>
+  </data>
+  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 16</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>Процент:</value>
+  </data>
+  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 13</value>
+  </data>
+  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 16</value>
+  </data>
+  <data name="label10.Text" xml:space="preserve">
+    <value>Основная сумма:</value>
+  </data>
+  <data name="buttonIncreaseExoticInstallment.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="buttonRemoveExoticInstallment.Text" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="buttonAddExoticInstallment.Text" xml:space="preserve">
+    <value>Добавить</value>
+  </data>
+  <data name="columnHeader4.Text" xml:space="preserve">
+    <value>№</value>
+  </data>
+  <data name="columnHeader5.Text" xml:space="preserve">
+    <value>Основная сумма (%)</value>
+  </data>
+  <data name="columnHeader6.Text" xml:space="preserve">
+    <value>Процент (%)</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>Использовать</value>
+  </data>
+  <data name="buttonNewExoticProduct.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonNewExoticProduct.Location" type="System.Drawing.Point, System.Drawing">
+    <value>396, 14</value>
+  </data>
+  <data name="buttonNewExoticProduct.Size" type="System.Drawing.Size, System.Drawing">
+    <value>205, 25</value>
+  </data>
+  <data name="buttonNewExoticProduct.Text" xml:space="preserve">
+    <value>Новый нетипичный продукт</value>
+  </data>
+  <data name="checkBoxUseExceptionalInstallmen.Text" xml:space="preserve">
+    <value>Использовать нетипичные продукты</value>
+  </data>
+  <data name="checkBoxFlexPackage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 16</value>
+  </data>
+  <data name="checkBoxFlexPackage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 78</value>
+  </data>
+  <data name="checkBoxFlexPackage.Text" xml:space="preserve">
+    <value>Разрешить изменение графика</value>
+  </data>
+  <data name="drawNumGroupBox.Text" xml:space="preserve">
+    <value>Количество траншей</value>
+  </data>
+  <data name="textBoxNumOfDrawings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>274, 22</value>
+  </data>
+  <data name="drawingNumberLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>278, 16</value>
+  </data>
+  <data name="drawingNumberLabel.Text" xml:space="preserve">
+    <value>Количество траншей в кредитной линии:</value>
+  </data>
+  <data name="useLOCCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>326, 24</value>
+  </data>
+  <data name="useLOCCheckBox.Text" xml:space="preserve">
+    <value>Использовать кредитную линию</value>
+  </data>
+  <data name="maxLOCMaturityGroupBox.Text" xml:space="preserve">
+    <value>Максимальная длительность кредитной линии</value>
+  </data>
+  <data name="label45.Location" type="System.Drawing.Point, System.Drawing">
+    <value>306, 44</value>
+  </data>
+  <data name="label45.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 16</value>
+  </data>
+  <data name="label45.Text" xml:space="preserve">
+    <value>Значение:</value>
+  </data>
+  <data name="label48.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 16</value>
+  </data>
+  <data name="label48.Text" xml:space="preserve">
+    <value>или</value>
+  </data>
+  <data name="textBoxLOCMaturity.Location" type="System.Drawing.Point, System.Drawing">
+    <value>381, 41</value>
+  </data>
+  <data name="maxLOCAmountGroupBox.Text" xml:space="preserve">
+    <value>Максимальная сумма кредитной линии</value>
+  </data>
+  <data name="labelLOCAmount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>524, 44</value>
+  </data>
+  <data name="label36.Location" type="System.Drawing.Point, System.Drawing">
+    <value>307, 44</value>
+  </data>
+  <data name="label36.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 16</value>
+  </data>
+  <data name="label36.Text" xml:space="preserve">
+    <value>Значение:</value>
+  </data>
+  <data name="label39.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 16</value>
+  </data>
+  <data name="label39.Text" xml:space="preserve">
+    <value>или</value>
+  </data>
+  <data name="textBoxAmountUnderLOC.Location" type="System.Drawing.Point, System.Drawing">
+    <value>382, 41</value>
+  </data>
+  <data name="cbUseCompulsorySavings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 293</value>
+  </data>
+  <data name="cbUseCompulsorySavings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>300, 20</value>
+  </data>
+  <data name="cbUseCompulsorySavings.Text" xml:space="preserve">
+    <value>Использовать обязательное накопление</value>
+  </data>
+  <data name="gbCSAmount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 319</value>
+  </data>
+  <data name="gbCSAmount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>747, 115</value>
+  </data>
+  <data name="gbCSAmount.Text" xml:space="preserve">
+    <value>Сумма обязательного накопления</value>
+  </data>
+  <data name="rbCompulsoryAmountRate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>160, 22</value>
+  </data>
+  <data name="rbCompulsoryAmountRate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 20</value>
+  </data>
+  <data name="rbCompulsoryAmountRate.Text" xml:space="preserve">
+    <value>Процент</value>
+  </data>
+  <data name="rbCompulsoryAmountFlat.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 20</value>
+  </data>
+  <data name="rbCompulsoryAmountFlat.Text" xml:space="preserve">
+    <value>Сумма</value>
+  </data>
+  <data name="lbCompulsoryAmountType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 16</value>
+  </data>
+  <data name="lbCompulsoryAmountType.Text" xml:space="preserve">
+    <value>Тип:</value>
+  </data>
+  <data name="lbCompulsoryAmountValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 16</value>
+  </data>
+  <data name="lbCompulsoryAmountValue.Text" xml:space="preserve">
+    <value>значение :</value>
+  </data>
+  <data name="lbCompulsoryAmountMax.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 16</value>
+  </data>
+  <data name="lbCompulsoryAmountMax.Text" xml:space="preserve">
+    <value>Макс:</value>
+  </data>
+  <data name="lbCompulsoryAmountMin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 16</value>
+  </data>
+  <data name="lbCompulsoryAmountMin.Text" xml:space="preserve">
+    <value>Мин:</value>
+  </data>
+  <data name="lbCompulsoryAmountOr.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 16</value>
+  </data>
+  <data name="lbCompulsoryAmountOr.Text" xml:space="preserve">
+    <value>или</value>
+  </data>
+  <data name="txbCompulsoryAmountValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>342, 65</value>
+  </data>
+  <data name="checkBoxSetSepCollGuar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>439, 20</value>
+  </data>
+  <data name="checkBoxSetSepCollGuar.Text" xml:space="preserve">
+    <value>Установить раздельные значения для поручителей и залогов</value>
+  </data>
+  <data name="groupBoxTotGuarColl.Text" xml:space="preserve">
+    <value>В сумме</value>
+  </data>
+  <data name="textBoxCollGuar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>339, 24</value>
+  </data>
+  <data name="label34.Location" type="System.Drawing.Point, System.Drawing">
+    <value>390, 27</value>
+  </data>
+  <data name="label34.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 16</value>
+  </data>
+  <data name="label34.Text" xml:space="preserve">
+    <value>% от суммы займа</value>
+  </data>
+  <data name="label33.Size" type="System.Drawing.Size, System.Drawing">
+    <value>331, 16</value>
+  </data>
+  <data name="label33.Text" xml:space="preserve">
+    <value>Минимальный процент поручительства + залоги</value>
+  </data>
+  <data name="groupBoxSepGuarColl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 163</value>
+  </data>
+  <data name="groupBoxSepGuarColl.Text" xml:space="preserve">
+    <value>Раздельно</value>
+  </data>
+  <data name="label49.Location" type="System.Drawing.Point, System.Drawing">
+    <value>108, 96</value>
+  </data>
+  <data name="label49.Size" type="System.Drawing.Size, System.Drawing">
+    <value>633, 16</value>
+  </data>
+  <data name="label49.Text" xml:space="preserve">
+    <value>Примечание: введите значение "0", если вы не хотите использовать поручителей или залоги</value>
+  </data>
+  <data name="label44.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 16</value>
+  </data>
+  <data name="label44.Text" xml:space="preserve">
+    <value>% от суммы займа</value>
+  </data>
+  <data name="label35.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 16</value>
+  </data>
+  <data name="label35.Text" xml:space="preserve">
+    <value>% от суммы займа</value>
+  </data>
+  <data name="labelMinPercColl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>249, 16</value>
+  </data>
+  <data name="labelMinPercColl.Text" xml:space="preserve">
+    <value>Минимальный процент для залогов:</value>
+  </data>
+  <data name="labelMinPercGuar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>282, 16</value>
+  </data>
+  <data name="labelMinPercGuar.Text" xml:space="preserve">
+    <value>Минимальный процент для поручителей:</value>
+  </data>
+  <data name="checkBoxGuarCollRequired.Size" type="System.Drawing.Size, System.Drawing">
+    <value>269, 20</value>
+  </data>
+  <data name="checkBoxGuarCollRequired.Text" xml:space="preserve">
+    <value>Использовать поручителей и залоги</value>
+  </data>
+  <data name="groupBox9.Text" xml:space="preserve">
+    <value>Страхование займов</value>
+  </data>
+  <data name="label53.Location" type="System.Drawing.Point, System.Drawing">
+    <value>144, 59</value>
+  </data>
+  <data name="label52.Location" type="System.Drawing.Point, System.Drawing">
+    <value>144, 24</value>
+  </data>
+  <data name="tbCreditInsuranceMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>57, 56</value>
+  </data>
+  <data name="tbCreditInsuranceMin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>57, 21</value>
+  </data>
+  <data name="label50.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 16</value>
+  </data>
+  <data name="label50.Text" xml:space="preserve">
+    <value>Макс:</value>
+  </data>
+  <data name="label51.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 16</value>
+  </data>
+  <data name="label51.Text" xml:space="preserve">
+    <value>Мин:</value>
+  </data>
+  <data name="radioButtonAmountCycle.Text" xml:space="preserve">
+    <value>Использовать сумму цикла</value>
+  </data>
+  <data name="radioButtonSpecifiedAmount.Text" xml:space="preserve">
+    <value>Указанная сумма</value>
+  </data>
+  <data name="columnHeader1.Text" xml:space="preserve">
+    <value>№</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 16</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 16</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Название платежа</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>Использование из существующих</value>
+  </data>
+  <data name="buttonCancel.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonCancel.Text" xml:space="preserve">
+    <value>Выход</value>
+  </data>
+  <data name="buttonSave.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
+        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
+        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
+        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
+        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
+        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
+        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
+        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
+        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
+        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
+        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonSave.Text" xml:space="preserve">
+    <value>Сохранить</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAB+fn8AkYyKAJKOjgCVk5MAlpaWAKWmpQCwr68AsrOyALS2tQC2trYAuru7ALu8vAC/vbwAvb29AMG/
+        vgDBwcAAwcLCAMXDwwDHxsUAxcbHAMbIxwDMyMcAyMnIAMrKygDKyssAy8vLAMzMywDNzcwAz87OANLQ
+        0ADP0tEA0NPSANLT0gDU1NIA1NXUANjV1QDW1tUA19fVANjX1QDX2NcA2tnYANnZ2QDb2dkA29zcANzc
+        3ADd3t0A397eAN3f3gDf394A4d/fAN3g3wDf4N8A3uDgAN/h4ADh4eAA3+HhAOHh4QDg4uEA4uLhAOPi
+        4QDi4uIA4+LiAOTj4wDi5OMA5OTkAOLl5ADm5eQA5ubmAOTn5gDl5+YA5OjnAOXo5wDm6OcA6OjnAObp
+        6ADp6egA6unpAObq6QDn6uoA6urpAOvq6QDp6uoA6urqAOvr6ADn6+oA6uvpAOnr6gDq7OsA6uzsAOzs
+        7ADq7esA7O3sAO3t7ADs7uwA7u7uAOzv7QDu7+0A7e/uAO3v7wDu7+8A7+/vAO/w7gDx8fAA7/HxAO/y
+        8QDx8vEA8PPyAPHz8gDy9PQA9PT0APP19QD09fUA9Pb2APX29gD19/YA9ff3APb4+AD4+PgA9vn4APf5
+        +AD4+/oA+fv6APr8/AD6/fwA+/38APz9/AD7/v0A/P79APv+/gD8/v4A+//9APz//QD9//0A+//+APz/
+        /gD9//8A/v//AP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAR4aGiRtCHXOGhoaGhoaGR0eGf1dAhYQkhoaGgH6HiEREgXqJMIZxX4aGhX5vOSMySDM2Yldm
+        S2qJiH5ua4GJCzRViD5oZV5kGCJ4cIZ7JzVHWCB1Y1sqFQkNdoY8VolERH6JWEOJAgADiTlhiH5+R0eG
+        hn6HGgZZZAVRfoaGhkdHhoaGiBYseYgHiX5+hoZHR4Z+iFGJAQQPUSlxhoaDR0SISTqGKCYMDlJ5bEly
+        h0cvK313Lk8iITsZcGCHXDFBEIl8OCVpQF0RF4dsTIKJE009NzMthm1TiYmGflpQbwpHhn45HH1FP36G
+        hoZ+dGdOH0dHShQSCFRHR0dHREdGHgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Добавить кредитный продукт</value>
+  </data>
+</root>

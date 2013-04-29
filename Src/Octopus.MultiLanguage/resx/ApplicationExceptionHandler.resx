@@ -1,0 +1,1358 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="PackageExceptionExoticProductNameAlreadyExist" xml:space="preserve">
+    <value>Exotic product name already exist!!</value>
+  </data>
+  <data name="errorTitle.Text" xml:space="preserve">
+    <value>Application error.</value>
+  </data>
+  <data name="sqlError.Text" xml:space="preserve">
+    <value>Error while trying to read or write into the database, please contact your IT administrator</value>
+  </data>
+  <data name="AccountExceptionAccountIsNull.Text" xml:space="preserve">
+    <value>Select an account</value>
+  </data>
+  <data name="AccountExceptionLabelIsNull.Text" xml:space="preserve">
+    <value>New label is empty</value>
+  </data>
+  <data name="AccountExceptionLocalNumberIsNull.Text" xml:space="preserve">
+    <value>Local account number is empty</value>
+  </data>
+  <data name="AccountExceptionNumberIsNull.Text" xml:space="preserve">
+    <value>The number is empty</value>
+  </data>
+  <data name="AccountExceptionIncorrectAmountFormat.Text" xml:space="preserve">
+    <value>You must enter a positive decimal amount value</value>
+  </data>
+  <data name="AccountExceptionMovementSetUnbalanced.Text" xml:space="preserve">
+    <value>The accountancy operation must be balanced</value>
+  </data>
+  <data name="ContractExceptionContractIsNull.Text" xml:space="preserve">
+    <value>Please select a contract</value>
+  </data>
+  <data name="ContractExceptionAmountIsNull.Text" xml:space="preserve">
+    <value>Contract's amount is empty</value>
+  </data>
+  <data name="ContractExceptionEntryFeesIsNull.Text" xml:space="preserve">
+    <value>Origination fee is empty</value>
+  </data>
+  <data name="ContractExceptionAnticipatedRepaymentPenaltiesIsNull.Text" xml:space="preserve">
+    <value>Anticipated repayment penalties is empty</value>
+  </data>
+  <data name="ContractExceptionNonRepaymentPenaltiesIsNull.Text" xml:space="preserve">
+    <value>Late fee is empty</value>
+  </data>
+  <data name="ContractExceptionNumberOfInstallmentsIsNull.Text" xml:space="preserve">
+    <value>Number of installments is empty</value>
+  </data>
+  <data name="ContractExceptionGracePeriodIsNull.Text" xml:space="preserve">
+    <value>Grace period is empty</value>
+  </data>
+  <data name="ContractExceptionInterestRateIsNull.Text" xml:space="preserve">
+    <value>Interest rate is empty or incorrect
+You must complete either "min" and "max" or "value". Interest rate cannot be null (Main Parameters)</value>
+  </data>
+  <data name="ContractExceptionInstallmentTypeIsNull.Text" xml:space="preserve">
+    <value>The installment type is empty</value>
+  </data>
+  <data name="ContractExceptionFundingLineIsNull.Text" xml:space="preserve">
+    <value>Contract's funding line is empty</value>
+  </data>
+  <data name="ContractExceptionCorporateIsNull.Text" xml:space="preserve">
+    <value>Contract's corporate is empty</value>
+  </data>
+  <data name="ContractExceptionLoanOfficerIsNull.Text" xml:space="preserve">
+    <value>The loan officer is not selected</value>
+  </data>
+  <data name="ContractExceptionBeneficiaryIsNull.Text" xml:space="preserve">
+    <value>Contract's beneficiary is empty</value>
+  </data>
+  <data name="ContractExceptionBeneficiaryIsActive.Text" xml:space="preserve">
+    <value>This client is already active</value>
+  </data>
+  <data name="ContractExceptionBeneficiaryIsAllowOneLoans.Text" xml:space="preserve">
+    <value>This client allowed for only one loans</value>
+  </data>
+  <data name="InstallmentExceptionInstallmentIsNull.Text" xml:space="preserve">
+    <value>You must select a installment before!!!</value>
+  </data>
+  <data name="InstallmentExceptionInstallmentAlreadyRepaid.Text" xml:space="preserve">
+    <value>This installment has already been repaid</value>
+  </data>
+  <data name="RepayExceptionNegativeAmount.Text" xml:space="preserve">
+    <value>Amount cannot be negative</value>
+  </data>
+  <data name="RepayExceptionAmountGreaterThanTotalRemainingAmount.Text" xml:space="preserve">
+    <value>The remaining amount is lower than the specified amount</value>
+  </data>
+  <data name="RepayExceptionAmountIsNull.Text" xml:space="preserve">
+    <value>Amount must be a number</value>
+  </data>
+  <data name="DOAExceptionHasChildrens.Text" xml:space="preserve">
+    <value>Delete impossible, there are children of this activity</value>
+  </data>
+  <data name="DOAExceptionNameIsNull.Text" xml:space="preserve">
+    <value>Name is empty</value>
+  </data>
+  <data name="DOAExceptionCastInvalid.Text" xml:space="preserve">
+    <value>Impossible to modify or suppress</value>
+  </data>
+  <data name="DOAExceptionAlreadyExist.Text" xml:space="preserve">
+    <value>This activity already exists, please choose another name</value>
+  </data>
+  <data name="DOAExceptionNewNameIsNull.Text" xml:space="preserve">
+    <value>New name is empty</value>
+  </data>
+  <data name="DOAExceptionNoSelect.Text" xml:space="preserve">
+    <value>You must choose the economic activity before</value>
+  </data>
+  <data name="ExchangeRateExceptionExchangeRateIsNull.Text" xml:space="preserve">
+    <value>For this date, exchange rate is empty.</value>
+  </data>
+  <data name="ExchangeRateExceptionDateIsNull.Text" xml:space="preserve">
+    <value>Please select a date.</value>
+  </data>
+  <data name="ExchangeRateExceptionRateIsEmpty.Text" xml:space="preserve">
+    <value>Rate is empty.</value>
+  </data>
+  <data name="PackageExceptionPackageIsNull.Text" xml:space="preserve">
+    <value>Please select a product</value>
+  </data>
+  <data name="PackageExceptionAlreadyDeleted.Text" xml:space="preserve">
+    <value>This Product has already been deleted</value>
+  </data>
+  <data name="PackageExceptionNameIsNull.Text" xml:space="preserve">
+    <value>Credit product name is empty (tab Main Parameters)</value>
+  </data>
+  <data name="PackageExceptionInstallmentTypeIsNull.Text" xml:space="preserve">
+    <value>Installment type is empty or incorrect (tab Main Parameters)</value>
+  </data>
+  <data name="PackageExceptionInstallmentTypeIsBad.Text" xml:space="preserve">
+    <value>Installment type is empty or incorrect (tab Main Parameters)</value>
+  </data>
+  <data name="PackageExceptionInterestRateGroupBadlyInformed.Text" xml:space="preserve">
+    <value>Interest Rate value is empty or incorrect.
+You must complete either "min" and "max" or "value". Interest rate cannot be null (tab Main Parameters)</value>
+  </data>
+  <data name="PackageExceptionGracePeriodGroupBadlyInformed.Text" xml:space="preserve">
+    <value>Grace period value is empty or incorrect.
+You must complete either "min" and "max" or "value". If you do not want to use grace period, set "value" to 0 (tab Main Parameters)</value>
+  </data>
+  <data name="PackageExceptionNonRepaymentPenaltiesBadlyInformed.Text" xml:space="preserve">
+    <value>Late repayment fees are empty or incorrect.
+You must complete either "min" and "max" or "value". If you do not want to use late fees, set all "value" fields to 0 (tab fees)</value>
+  </data>
+  <data name="PackageExceptionAnticipatedTotalRepaymentPenaltiesBadlyInformed.Text" xml:space="preserve">
+    <value>Anticpated repayment penalties value is empty or incorrect.
+You must complete either "min" and "max" or "value". If you do not want to use fees, set "value" to 0 (tab Fees)</value>
+  </data>
+  <data name="PackageExceptionEntryFeesBadlyInformed.Text" xml:space="preserve">
+    <value>Entry Fees value is empty or incorrect.
+You must complete either "min" and "max" or "value".  If you do not want to use entry fees, delete the line.</value>
+  </data>
+  <data name="PackageExceptionNumberOfInstallmentBadlyInformed.Text" xml:space="preserve">
+    <value>Number of installments is empty or incorrect.
+You must complete either "min" and "max" or "value". Number of installments cannot be null (tab Main Parameters)</value>
+  </data>
+  <data name="PackageExceptionAmountBadlyInformed.Text" xml:space="preserve">
+    <value>Amount value is empty or incorrect.
+You must complete either "min" and "max" or "value". Amount cannot be null (Main parameters)</value>
+  </data>
+  <data name="PackageExceptionExoticProductIsNull.Text" xml:space="preserve">
+    <value>Exotic product is null</value>
+  </data>
+  <data name="PackageExceptionExoticInstallmentIsNull.Text" xml:space="preserve">
+    <value>Principal, interest and commission are null</value>
+  </data>
+  <data name="PackageExceptionExoticInstallmentIsBad.Text" xml:space="preserve">
+    <value>You must select an installment before deleting</value>
+  </data>
+  <data name="PackageExceptionExoticProductContainsNoInstallment.Text" xml:space="preserve">
+    <value>They are no installments in this exotic schedule, you cannot save it</value>
+  </data>
+  <data name="OTE1.Text" xml:space="preserve">
+    <value>You should first select a client</value>
+  </data>
+  <data name="OTE2.Text" xml:space="preserve">
+    <value>Economic activity is empty</value>
+  </data>
+  <data name="OTE3.Text" xml:space="preserve">
+    <value>First address is empty</value>
+  </data>
+  <data name="OTE4.Text" xml:space="preserve">
+    <value>First name is empty</value>
+  </data>
+  <data name="OTE5.Text" xml:space="preserve">
+    <value>Sex is empty</value>
+  </data>
+  <data name="OTE6.Text" xml:space="preserve">
+    <value>Passport number is empty</value>
+  </data>
+  <data name="OTE7.Text" xml:space="preserve">
+    <value>Last name is empty</value>
+  </data>
+  <data name="OTE8.Text" xml:space="preserve">
+    <value>City is empty</value>
+  </data>
+  <data name="OTE9.Text" xml:space="preserve">
+    <value>Amount cycle is empty</value>
+  </data>
+  <data name="OTE10.Text" xml:space="preserve">
+    <value>If you want a secondary address, 'district' field must not be empty</value>
+  </data>
+  <data name="OTE11.Text" xml:space="preserve">
+    <value>If you want a secondary address, city mustn't be empty</value>
+  </data>
+  <data name="OTE12.Text" xml:space="preserve">
+    <value>If you want a secondary address, the first one must not be empty</value>
+  </data>
+  <data name="OTE13.Text" xml:space="preserve">
+    <value>Please select a valid district</value>
+  </data>
+  <data name="OTE14.Text" xml:space="preserve">
+    <value>Please select a correct secondary district</value>
+  </data>
+  <data name="OTE15.Text" xml:space="preserve">
+    <value>Please select a person</value>
+  </data>
+  <data name="OTE16.Text" xml:space="preserve">
+    <value>This person is already in a group</value>
+  </data>
+  <data name="OTE17.Text" xml:space="preserve">
+    <value>This person already has an open contract</value>
+  </data>
+  <data name="OTE18.Text" xml:space="preserve">
+    <value>This person is a leader in a group</value>
+  </data>
+  <data name="OTE19.Text" xml:space="preserve">
+    <value>Name is empty</value>
+  </data>
+  <data name="OTE20.Text" xml:space="preserve">
+    <value>Select a leader</value>
+  </data>
+  <data name="OTE21.Text" xml:space="preserve">
+    <value>Number of dependents must be a number</value>
+  </data>
+  <data name="OTE22.Text" xml:space="preserve">
+    <value>Number of children must be a number</value>
+  </data>
+  <data name="OTE23.Text" xml:space="preserve">
+    <value>Number of children with basic education must be a number</value>
+  </data>
+  <data name="OTE24.Text" xml:space="preserve">
+    <value>Years of experience in economic activity must be a number</value>
+  </data>
+  <data name="OTE25.Text" xml:space="preserve">
+    <value>Number of people working within this activity must be a number</value>
+  </data>
+  <data name="OTE26.Text" xml:space="preserve">
+    <value>Amount received from other organizations must be a number</value>
+  </data>
+  <data name="OTE27.Text" xml:space="preserve">
+    <value>Other organization debts must be a number</value>
+  </data>
+  <data name="OTE28.Text" xml:space="preserve">
+    <value>Home size must be a number</value>
+  </data>
+  <data name="OTE29.Text" xml:space="preserve">
+    <value>The time living in the house must be a number</value>
+  </data>
+  <data name="OTE30.Text" xml:space="preserve">
+    <value>Landplot size must be a number</value>
+  </data>
+  <data name="OTE31.Text" xml:space="preserve">
+    <value>Livestock number must be a number</value>
+  </data>
+  <data name="OTE32.Text" xml:space="preserve">
+    <value>Monthly income must be a number</value>
+  </data>
+  <data name="OTE33.Text" xml:space="preserve">
+    <value>Monthly expenditure must be a number</value>
+  </data>
+  <data name="RepayExceptionMaxPastDueDaysReached.Text" xml:space="preserve">
+    <value>You cannot make a repayment for a loan which more than 180 days late</value>
+  </data>
+  <data name="OTE34.Text" xml:space="preserve">
+    <value>You must have at least {0} persons in a group</value>
+  </data>
+  <data name="ReportsExceptionsNoResult.Text" xml:space="preserve">
+    <value>No result</value>
+  </data>
+  <data name="ProvisioningRateNbOfDaysMaxEmpty.Text" xml:space="preserve">
+    <value>number of days max is empty</value>
+  </data>
+  <data name="ProvisioningRateNbOfDaysMinEmpty.Text" xml:space="preserve">
+    <value>Number of days min is empty</value>
+  </data>
+  <data name="ProvisioningRateRateEmpty.Text" xml:space="preserve">
+    <value>Rate is empty</value>
+  </data>
+  <data name="ContractExceptionDisburseDate.Text" xml:space="preserve">
+    <value>Disbursement date must be between the creation date and first installment's date</value>
+  </data>
+  <data name="DisburseExceptionDateWrong.Text" xml:space="preserve">
+    <value>Disbursement date must be between creation date and first installment's date</value>
+  </data>
+  <data name="InstallmentExceptionNotFirstInstallmentToRepay.Text" xml:space="preserve">
+    <value>You are an none repayment installment before!!</value>
+  </data>
+  <data name="OUE1.Text" xml:space="preserve">
+    <value>You must first choose a user.</value>
+  </data>
+  <data name="OUE2.Text" xml:space="preserve">
+    <value>Administrator cannot be removed</value>
+  </data>
+  <data name="OUE3.Text" xml:space="preserve">
+    <value>Name is empty</value>
+  </data>
+  <data name="OUE4.Text" xml:space="preserve">
+    <value>Password is empty</value>
+  </data>
+  <data name="OUE5.Text" xml:space="preserve">
+    <value>Role is empty</value>
+  </data>
+  <data name="OUE6.Text" xml:space="preserve">
+    <value>This login already exist. You must choose another login</value>
+  </data>
+  <data name="OUE7.Text" xml:space="preserve">
+    <value>First name is empty</value>
+  </data>
+  <data name="OUE8.Text" xml:space="preserve">
+    <value>Last name is empty</value>
+  </data>
+  <data name="PackageExceptionNameAlreadyExist.Text" xml:space="preserve">
+    <value>This name already exists for another credit product (tab Main Parameters)</value>
+  </data>
+  <data name="InstallmentExceptionNotFirstInstallmentToCancelRepay.Text" xml:space="preserve">
+    <value>You cannot cancel this repayment as some posterior repayments have not been deleted yet</value>
+  </data>
+  <data name="OTE35.Text" xml:space="preserve">
+    <value>This passport id is already used</value>
+  </data>
+  <data name="OTE36.Text" xml:space="preserve">
+    <value>This name is already used in this district</value>
+  </data>
+  <data name="CantRepayInTheFutur.Text" xml:space="preserve">
+    <value>You must choose a date before today</value>
+  </data>
+  <data name="OTE37.Text" xml:space="preserve">
+    <value>This Client is a bad client. You need to explain why.</value>
+  </data>
+  <data name="DecimalAmount.Text" xml:space="preserve">
+    <value>You use a currency with no cents, the amount can't contain cents</value>
+  </data>
+  <data name="ContractExceptionBeneficiaryIsBad.Text" xml:space="preserve">
+    <value>It is a bad client. You cannot create a loan for a bad client</value>
+  </data>
+  <data name="ContractExceptionEventNotCancelable.Text" xml:space="preserve">
+    <value>It is not possible to delete this event</value>
+  </data>
+  <data name="AllInstallmentRepaid.Text" xml:space="preserve">
+    <value>This contract is fully repaid</value>
+  </data>
+  <data name="OTE38.Text" xml:space="preserve">
+    <value>LoanCycle is empty!!</value>
+  </data>
+  <data name="PackageExceptionAmountCycleStockNameAlreadyExist.Text" xml:space="preserve">
+    <value>This name already exist</value>
+  </data>
+  <data name="PackageExceptionAmountCycleStockIsBad.Text" xml:space="preserve">
+    <value>Amount Cycle is empty</value>
+  </data>
+  <data name="PackageExceptionAmountCycleStockIsNull.Text" xml:space="preserve">
+    <value>Please select an amount cycle before saving</value>
+  </data>
+  <data name="CollateralExceptionAlreadyExist.Text" xml:space="preserve">
+    <value>This name already exist</value>
+  </data>
+  <data name="CollateralExceptionCastInvalid.Text" xml:space="preserve">
+    <value>Impossible to modify or suppress</value>
+  </data>
+  <data name="CollateralExceptionHasChildrens.Text" xml:space="preserve">
+    <value>This collateral has children, delete impossible</value>
+  </data>
+  <data name="CollateralExceptionNameIsNull.Text" xml:space="preserve">
+    <value>Name is empty</value>
+  </data>
+  <data name="CollateralExceptionNewNameIsNull.Text" xml:space="preserve">
+    <value>New name is empty</value>
+  </data>
+  <data name="CollateralExceptionNoSelect.Text" xml:space="preserve">
+    <value>You must choose a collateral before</value>
+  </data>
+  <data name="OTE39.Text" xml:space="preserve">
+    <value>A mandatory customized field is empty!</value>
+  </data>
+  <data name="OTE40.Text" xml:space="preserve">
+    <value>Passport's number can only contains number (0-9) and upper case letter</value>
+  </data>
+  <data name="PackageExceptionInstallmentTypeNameAlreadyExist.Text" xml:space="preserve">
+    <value>This name already exist</value>
+  </data>
+  <data name="PackageExceptionInstallmentTypeValuesAlreadyExist.Text" xml:space="preserve">
+    <value>An other installment type with same values already exist</value>
+  </data>
+  <data name="ProjectExceptionAimIsNull.Text" xml:space="preserve">
+    <value>Project's aim is empty</value>
+  </data>
+  <data name="ProjectExceptionCodeIsNull.Text" xml:space="preserve">
+    <value>Project's code is empty</value>
+  </data>
+  <data name="ProjectExceptionNameIsNull.Text" xml:space="preserve">
+    <value>Project's name is empty</value>
+  </data>
+  <data name="ContractExceptionProjectIsNull.Text" xml:space="preserve">
+    <value>Please, save the project before!</value>
+  </data>
+  <data name="ProjectExceptionClientIsNull.Text" xml:space="preserve">
+    <value>Please, Save client before</value>
+  </data>
+  <data name="OctopusCorporateEventExceptionAmountIsEmpty.Text" xml:space="preserve">
+    <value>Amount is empty</value>
+  </data>
+  <data name="OctopusCorporateEventExceptionAmountIsLessZero.Text" xml:space="preserve">
+    <value>Amount is less zero</value>
+  </data>
+  <data name="OctopusCorporateEventExceptionCodeIsEmpty.Text" xml:space="preserve">
+    <value>Code is empty</value>
+  </data>
+  <data name="OctopusCorporateEventExceptionNameIsEmpty.Text" xml:space="preserve">
+    <value>Name is empty</value>
+  </data>
+  <data name="OctopusCorporateExceptionCityIsEmpty.Text" xml:space="preserve">
+    <value>City is empty</value>
+  </data>
+  <data name="OctopusCorporateExceptionCodeIsEmpty.Text" xml:space="preserve">
+    <value>Code is empty</value>
+  </data>
+  <data name="OctopusCorporateExceptionDistrictIsEmpty.Text" xml:space="preserve">
+    <value>District is empty</value>
+  </data>
+  <data name="OctopusCorporateExceptionNameIsEmpty.Text" xml:space="preserve">
+    <value>Name is empty</value>
+  </data>
+  <data name="OctopusCorporateExceptionProvinceIsEmpty.Text" xml:space="preserve">
+    <value>Province is empty</value>
+  </data>
+  <data name="OctopusFundingLineExceptionBeginDateGreaterEndDate.Text" xml:space="preserve">
+    <value>Begin date is greater than End date</value>
+  </data>
+  <data name="OctopusFundingLineExceptionCodeIsEmpty.Text" xml:space="preserve">
+    <value>Code is empty</value>
+  </data>
+  <data name="OctopusFundingLineExceptionNameIsEmpty.Text" xml:space="preserve">
+    <value>Name is empty</value>
+  </data>
+  <data name="OctopusCorporateEventExceptionDirectionIsEmpty.Text" xml:space="preserve">
+    <value>Forget debit credit </value>
+  </data>
+  <data name="onlyChars.Text" xml:space="preserve">
+    <value>Allowed caracters : a-z, A-Z,0-9 and _ (underscore)</value>
+  </data>
+  <data name="onlyInts.Text" xml:space="preserve">
+    <value>Allowed caracters : 0-9</value>
+  </data>
+  <data name="onlyIntsAndUnderscore.Text" xml:space="preserve">
+    <value>Allowed caracters : 0-9 and - (dash)</value>
+  </data>
+  <data name="OUE9.Text" xml:space="preserve">
+    <value>User has contracts, please reasign</value>
+  </data>
+  <data name="OctopusCorporateExceptionVolunteerIsEmpty.Text" xml:space="preserve">
+    <value>Volunteer is empty</value>
+  </data>
+  <data name="OctopusCorporateExceptionEmployeeIsFalseFormat.Text" xml:space="preserve">
+    <value>Employee is not number</value>
+  </data>
+  <data name="OctopusCorporateExceptionVolunteerIsFalseFormat.Text" xml:space="preserve">
+    <value>Volunteer is not number</value>
+  </data>
+  <data name="ContractExceptionCreditCommiteeCommentNotModified.Text" xml:space="preserve">
+    <value>Comment is empty</value>
+  </data>
+  <data name="ContractExceptionStatusNotModified.Text" xml:space="preserve">
+    <value>Status must be modified!</value>
+  </data>
+  <data name="OctopusCorporateEventExceptionCommitmentFinancialIsNotEnough.Text" xml:space="preserve">
+    <value> This loan's funding line does not have enough funds to perform this action. You have to credit it.</value>
+  </data>
+  <data name="OctopusCorporateEventExceptionAmountIsTaller.Text" xml:space="preserve">
+    <value>Selected funding line doesn't have enough money for this loan</value>
+  </data>
+  <data name="PackageExceptionExoticProductInIncorrect.Text" xml:space="preserve">
+    <value>In exotic installments, interest and principal coeff must be 100</value>
+  </data>
+  <data name="PackageExceptionGuarantedAmountBadlyInformed.Text" xml:space="preserve">
+    <value>You must enter min and max values OR a fixed value for guaranted amount</value>
+  </data>
+  <data name="PackageExceptionGuarantedFeesBadlyInformed.Text" xml:space="preserve">
+    <value>You must enter min and max values OR a fixed value for guaranted fees</value>
+  </data>
+  <data name="OctopusCorporateEventExceptionAmountIsNonCompliant.Text" xml:space="preserve">
+    <value>Amount is non-Compliant</value>
+  </data>
+  <data name="OME1.Text" xml:space="preserve">
+    <value>Name is empty</value>
+  </data>
+  <data name="OME2.Text" xml:space="preserve">
+    <value>Login is empty</value>
+  </data>
+  <data name="OME3.Text" xml:space="preserve">
+    <value>Password is empty</value>
+  </data>
+  <data name="OME4.Text" xml:space="preserve">
+    <value>The passwords are different</value>
+  </data>
+  <data name="OctopusCorporateEventExceptionAmountIsBigger.Text" xml:space="preserve">
+    <value>Amount is bigger (only lower than 100 millions)</value>
+  </data>
+  <data name="ProjectExceptionCAIsBad.Text" xml:space="preserve">
+    <value>CA is not a number!</value>
+  </data>
+  <data name="ProjectExceptionFinancialPlanAmountIsBad.Text" xml:space="preserve">
+    <value>Financial plan's amount is not a number!</value>
+  </data>
+  <data name="ProjectExceptionFinancialTotalPlanAmountIsBad.Text" xml:space="preserve">
+    <value>Financial plan's total amount is not a number!</value>
+  </data>
+  <data name="ProjectExceptionCACannotBeNullInFollowUp.Text" xml:space="preserve">
+    <value>CA is empty in follow up</value>
+  </data>
+  <data name="PackageExceptionProductCodeIsEmpty.Text" xml:space="preserve">
+    <value>Product code is empty (Main Parameters)</value>
+  </data>
+  <data name="SavingProductBalanceIsInvalid.Text" xml:space="preserve">
+    <value>Balance is invalid</value>
+  </data>
+  <data name="SavingProductDepositAmountIsInvalid.Text" xml:space="preserve">
+    <value>Cash deposit amount are empty or incorrect.
+You must complete "min" and "max". Deposit amount must be positive (tab Transactions)</value>
+  </data>
+  <data name="SavingProductDepositMinAmountIsInvalid.Text" xml:space="preserve">
+    <value>Cash deposit amount are empty or incorrect.
+You must complete "min" and "max". Deposit amount must be positive (tab Transactions)</value>
+  </data>
+  <data name="SavingProductDuplicateProductName.Text" xml:space="preserve">
+    <value>This name alrady exist (Main parameters)</value>
+  </data>
+  <data name="SavingProductInitialAmountIsInvalid.Text" xml:space="preserve">
+    <value>Initial amount value is empty or incorrect.
+You must complete "min" and "max". Initial amount cannot be null (Main Parameters)</value>
+  </data>
+  <data name="SavingProductInitialAmountMaxNotInBalance.Text" xml:space="preserve">
+    <value>Initial amount max must be in balance
+You must complete "min" and "max". Initial amount cannot be null (Main Parameters)</value>
+  </data>
+  <data name="SavingProductInitialAmountMinIsInvalid.Text" xml:space="preserve">
+    <value>Initial amount must be positive
+You must complete "min" and "max". Initial amount cannot be null (Main Parameters)</value>
+  </data>
+  <data name="SavingProductInitialAmountMinNotInBalance.Text" xml:space="preserve">
+    <value>Initial amount value is empty or incorrect.
+You must complete "min" and "max". Initial amount cannot be null (Main Parameters)</value>
+  </data>
+  <data name="SavingProductInterestRateIsInvalid.Text" xml:space="preserve">
+    <value>Interest rate value is empty or incorrect.
+You must complete either "min" and "max" or "value". If you do not want to use interest rate, set "value" to 0 (tab Main Parameters)</value>
+  </data>
+  <data name="SavingProductInterestRateMinMaxIsInvalid.Text" xml:space="preserve">
+    <value>Interest rate value is empty or incorrect.
+You must complete either "min" and "max" or "value". If you do not want to use interest rate, set "value" to 0 (tab Main Parameters)</value>
+  </data>
+  <data name="SavingProductNameIsEmpty.Text" xml:space="preserve">
+    <value>Product name can not be empty (Main Parameters)</value>
+  </data>
+  <data name="SavingProductWithdrawAmountIsInvalid.Text" xml:space="preserve">
+    <value>The withdrawal amount is empty or incorrect.
+You must complete "min" and "max". (tab Transactions)</value>
+  </data>
+  <data name="SavingProductWithdrawMinAmountIsInvalid.Text" xml:space="preserve">
+    <value>The withdrawal amount is empty or incorrect.
+You must complete "min" and "max". (tab Transactions)</value>
+  </data>
+  <data name="OTE41.Text" xml:space="preserve">
+    <value>Please select loan officer.</value>
+  </data>
+  <data name="BadFundingLineID.Text" xml:space="preserve">
+    <value>Funding line's ID is invalid.</value>
+  </data>
+  <data name="OctopusFundingLineEventExceptionAmountIsBigger.Text" xml:space="preserve">
+    <value>Entered amount should not be bigger than 99999999999999</value>
+  </data>
+  <data name="OctopusFundingLineEventExceptionAmountIsEmpty.Text" xml:space="preserve">
+    <value>Funding line's amount is empty</value>
+  </data>
+  <data name="OctopusFundingLineEventExceptionAmountIsLessZero.Text" xml:space="preserve">
+    <value>Amount is less zero</value>
+  </data>
+  <data name="OctopusFundingLineEventExceptionAmountIsNonCompliant.Text" xml:space="preserve">
+    <value>Amount is non-Compliant</value>
+  </data>
+  <data name="OctopusFundingLineEventExceptionAmountIsTaller.Text" xml:space="preserve">
+    <value>Selected funding line doesn't have enough money for this loan</value>
+  </data>
+  <data name="OctopusFundingLineEventExceptionCodeIsEmpty.Text" xml:space="preserve">
+    <value>Funding Line's Code is Empty</value>
+  </data>
+  <data name="OctopusFundingLineEventExceptionCommitmentFinancialIsNotEnough.Text" xml:space="preserve">
+    <value>Financial Commitment is not enough</value>
+  </data>
+  <data name="OctopusFundingLineEventExceptionDirectionIsEmpty.Text" xml:space="preserve">
+    <value>Forget debit credit</value>
+  </data>
+  <data name="OctopusFundingLineEventExceptionNameIsEmpty.Text" xml:space="preserve">
+    <value>Funding Line's Name is Empty</value>
+  </data>
+  <data name="OctopusFundingLineExceptionFundingLineNameExists.Text" xml:space="preserve">
+    <value>Funding line with this name and purpose already exists. 
+You can use existing funding line or add a funding line with different name/purpose.</value>
+  </data>
+  <data name="CannotLoadReport.Text" xml:space="preserve">
+    <value>Error while loading a report, please refer to your support</value>
+  </data>
+  <data name="ReportProcedureSourceEmpty.Text" xml:space="preserve">
+    <value>SQL source for report is not defined</value>
+  </data>
+  <data name="CannotGetDataSource.Text" xml:space="preserve">
+    <value>Problem with executing procedure text, please refer to your support</value>
+  </data>
+  <data name="CannotLoadParameters.Text" xml:space="preserve">
+    <value>Error parsing/loading parameters for report, please refer to your support</value>
+  </data>
+  <data name="CurrencyAlreadyExists.Text" xml:space="preserve">
+    <value>This currency already exists in the database</value>
+  </data>
+  <data name="MaximumCurrencyLimitReached.Text" xml:space="preserve">
+    <value>Octopus allows only up to 2 currencies. You cannot add more</value>
+  </data>
+  <data name="CurrencyIsEmpty.Text" xml:space="preserve">
+    <value>Please, choose currency for loan product.</value>
+  </data>
+  <data name="CurrencyMisMatch.Text" xml:space="preserve">
+    <value>Currency of funding line does not match currency of loan product</value>
+  </data>
+  <data name="ExchangeRateExceptionCurrencyIsEmpty.Text" xml:space="preserve">
+    <value>Currency is not selected.</value>
+  </data>
+  <data name="ExchangeRateExceptionThisCurrencyIsPivot.Text" xml:space="preserve">
+    <value>This currency is pivot and cannot have exchange rate</value>
+  </data>
+  <data name="AccountExceptionCurrencyIsNull.Text" xml:space="preserve">
+    <value>Please, supply currency ID for accounts table</value>
+  </data>
+  <data name="LoanShareAmountIsEmpty.Text" xml:space="preserve">
+    <value>Loan Share amount is empty!</value>
+  </data>
+  <data name="SavingProductInterestsBaseIsInvalid.Text" xml:space="preserve">
+    <value>Interest base is invalid</value>
+  </data>
+  <data name="SavingProductInterestsFrequencyIsInvalid.Text" xml:space="preserve">
+    <value>Interest frequency is invalid</value>
+  </data>
+  <data name="SavingBalanceIsInvalid.Text" xml:space="preserve">
+    <value>Balance is invalid</value>
+  </data>
+  <data name="SavingContractIsNull.Text" xml:space="preserve">
+    <value>Contract is null</value>
+  </data>
+  <data name="SavingDepositAmountIsInvalid.Text" xml:space="preserve">
+    <value>Deposit amount is invalid</value>
+  </data>
+  <data name="SavingDepositDateIsInvalid.Text" xml:space="preserve">
+    <value>Deposit date is invalid</value>
+  </data>
+  <data name="SavingInitialAmountIsInvalid.Text" xml:space="preserve">
+    <value>Initial amount is invalid</value>
+  </data>
+  <data name="SavingInterestRateIsInvalid.Text" xml:space="preserve">
+    <value>Interest rate is invalid</value>
+  </data>
+  <data name="SavingProductIsInvalid.Text" xml:space="preserve">
+    <value>Product is invalid </value>
+  </data>
+  <data name="SavingWithdrawalDateIsInvalid.Text" xml:space="preserve">
+    <value>Withdraw date is invalid</value>
+  </data>
+  <data name="SavingWithdrawAmountIsInvalid.Text" xml:space="preserve">
+    <value>Withdraw amount is invalid</value>
+  </data>
+  <data name="SavingProductCalculAmountBaseIsNull.Text" xml:space="preserve">
+    <value>The calcul amount base is null</value>
+  </data>
+  <data name="SavingProductInterestBaseIncompatibleFrequency.Text" xml:space="preserve">
+    <value>The interest base is incompatible with the interest frequency. </value>
+  </data>
+  <data name="SavingEntryFeesIsInvalid.Text" xml:space="preserve">
+    <value>Entry Fees is invalid</value>
+  </data>
+  <data name="SavingProductEntryFeesIsInvalid.Text" xml:space="preserve">
+    <value>Entry fees value are empty or incorrect.
+You must complete either "min" and "max" or "value". If you do not want to use entry fees, set "value" to 0 (tab Transactions)</value>
+  </data>
+  <data name="SavingProductEntryFeesMinMaxIsInvalid.Text" xml:space="preserve">
+    <value>Entry fees value are empty or incorrect.
+You must complete either "min" and "max" or "value". If you do not want to use entry fees, set "value" to 0 (tab Transactions)</value>
+  </data>
+  <data name="OTE42.Text" xml:space="preserve">
+    <value>The custom field is not unique. Please check your data.</value>
+  </data>
+  <data name="WrongIDPattern.Text" xml:space="preserve">
+    <value> ID number you entered does not match ID pattern in General Settings.</value>
+  </data>
+  <data name="SavingContractForTransferIdenticals.Text" xml:space="preserve">
+    <value>The two contracts of the transfer are identicals</value>
+  </data>
+  <data name="SavingContractNotAtMaturity.Text" xml:space="preserve">
+    <value>The savings contract is not at maturity</value>
+  </data>
+  <data name="SavingCreditTransferAccountInvalid.Text" xml:space="preserve">
+    <value>The savings contract selected for the transfer doesn't accepts entrance transfer</value>
+  </data>
+  <data name="SavingProductNumberPeriodIsInvalid.Text" xml:space="preserve">
+    <value>The numbers of periods is invalid</value>
+  </data>
+  <data name="SavingProductNumberPeriodMinIsInvalid.Text" xml:space="preserve">
+    <value>The numbers of periods min is invalid</value>
+  </data>
+  <data name="SavingProductNumberPeriodMinMaxIsInvalid.Text" xml:space="preserve">
+    <value>The numbers of periods min or max are invalid</value>
+  </data>
+  <data name="SavingProductTransferAmountIsInvalid.Text" xml:space="preserve">
+    <value>The transfer amount is empty or incorrect.
+You must complete "min" and "max". (tab Transactions)</value>
+  </data>
+  <data name="SavingProductTransferAmountMinIsInvalid.Text" xml:space="preserve">
+    <value>The transfer amount is empty or incorrect.
+You must complete "min" and "max". (tab Transactions)</value>
+  </data>
+  <data name="SavingTransferAmountIsInvalid.Text" xml:space="preserve">
+    <value>The transfer amount is empty or incorrect.
+You must complete "min" and "max". (tab Transactions)</value>
+  </data>
+  <data name="SavingProductFlatWithdrawFeesIsInvalid.Text" xml:space="preserve">
+    <value>Withdrawal fees value are empty or incorrect.
+You must complete either "min" and "max" or "value". If you do not want to use withdrawal fees, set "value" to 0 (tab Transactions)</value>
+  </data>
+  <data name="SavingProductFlatWithdrawFeesMinIsInvalid.Text" xml:space="preserve">
+    <value>Withdrawal fees value are empty or incorrect.
+You must complete either "min" and "max" or "value". If you do not want to use withdrawal fees, set "value" to 0 (tab Transactions)</value>
+  </data>
+  <data name="SavingProductFlatWithdrawFeesMinMaxIsInvalid.Text" xml:space="preserve">
+    <value>Withdrawal fees value are empty or incorrect.
+You must complete either "min" and "max" or "value". If you do not want to use withdrawal fees, set "value" to 0 (tab Transactions)</value>
+  </data>
+  <data name="SavingProductRateWithdrawFeesIsInvalid.Text" xml:space="preserve">
+    <value>Withdrawal fees value are empty or incorrect.
+You must complete either "min" and "max" or "value". If you do not want to use withdrawal fees, set "value" to 0 (tab Transactions)</value>
+  </data>
+  <data name="SavingProductRateWithdrawFeesMinIsInvalid.Text" xml:space="preserve">
+    <value>Withdrawal fees value are empty or incorrect.
+You must complete either "min" and "max" or "value". If you do not want to use withdrawal fees, set "value" to 0 (tab Transactions)</value>
+  </data>
+  <data name="SavingProductRateWithdrawFeesMinMaxIsInvalid.Text" xml:space="preserve">
+    <value>Withdrawal fees value are empty or incorrect.
+You must complete either "min" and "max" or "value". If you do not want to use withdrawal fees, set "value" to 0 (tab Transactions)</value>
+  </data>
+  <data name="SavingProductWithdrawFeesTypeEmpty.Text" xml:space="preserve">
+    <value>Withdrawal fees value are empty or incorrect.
+You must complete either "min" and "max" or "value". If you do not want to use withdrawal fees, set "value" to 0 (tab Transactions)</value>
+  </data>
+  <data name="SavingWithdrawFeesIsInvalid.Text" xml:space="preserve">
+    <value>Withdraw fees is invalid</value>
+  </data>
+  <data name="BirthDateIsWrong.Text" xml:space="preserve">
+    <value>Client's birth date is invalid</value>
+  </data>
+  <data name="SavingContractForTransferNotSameCurrncy.Text" xml:space="preserve">
+    <value>The savings contract don't have the same currency</value>
+  </data>
+  <data name="LoanWasValidatedLaterThanDisbursed.Text" xml:space="preserve">
+    <value>The date of the validation by the CC is after the expected disbursement date. Please change one of those two dates</value>
+  </data>
+  <data name="SavingProductCodeIsEmpty.Text" xml:space="preserve">
+    <value>Product code is empty (main Parameters)</value>
+  </data>
+  <data name="SavingProductInitialAmountMinMaxIsInvalid.Text" xml:space="preserve">
+    <value>Initial amount value is empty or incorrect.
+You must complete "min" and "max". Initial amount cannot be null (Main Parameters)</value>
+  </data>
+  <data name="SavingContractLoanIsClosed.Text" xml:space="preserve">
+    <value>Loan is closed</value>
+  </data>
+  <data name="SavingContractLoanIsInvalid.Text" xml:space="preserve">
+    <value>Loan is invalid</value>
+  </data>
+  <data name="SavingContractLoanHasNotSameClient.Text" xml:space="preserve">
+    <value>The loan client isn't the same that compulsory savings client</value>
+  </data>
+  <data name="SavingContractLoanHasNotSameCurrency.Text" xml:space="preserve">
+    <value>The loan currency isn't the same that compulosry savings currency</value>
+  </data>
+  <data name="SavingProductFlatTransferFeesIsInvalid.Text" xml:space="preserve">
+    <value>Intra-branch transfer fees value are empty or incorrect.
+You must complete either "min" and "max" or "value". If you do not want to use transfer fees, set "value" to 0 (tab Transactions)</value>
+  </data>
+  <data name="SavingProductFlatTransferFeesMinIsInvalid.Text" xml:space="preserve">
+    <value>Intra-branch transfer fees value are empty or incorrect.
+You must complete either "min" and "max" or "value". If you do not want to use transfer fees, set "value" to 0 (tab Transactions)</value>
+  </data>
+  <data name="SavingProductFlatTransferFeesMinMaxIsInvalid.Text" xml:space="preserve">
+    <value>Intra-branch transfer fees value are empty or incorrect.
+You must complete either "min" and "max" or "value". If you do not want to use transfer fees, set "value" to 0 (tab Transactions)</value>
+  </data>
+  <data name="SavingProductRateTransferFeesIsInvalid.Text" xml:space="preserve">
+    <value>Intra-branch transfer fees value are empty or incorrect.
+You must complete either "min" and "max" or "value". If you do not want to use transfer fees, set "value" to 0 (tab Transactions)</value>
+  </data>
+  <data name="SavingProductRateTransferFeesMinIsInvalid.Text" xml:space="preserve">
+    <value>Intra-branch transfer fees value are empty or incorrect.
+You must complete either "min" and "max" or "value". If you do not want to use transfer fees, set "value" to 0 (tab Transactions)</value>
+  </data>
+  <data name="SavingProductRateTransferFeesMinMaxIsInvalid.Text" xml:space="preserve">
+    <value>Intra-branch transfer fees value are empty or incorrect.
+You must complete either "min" and "max" or "value". If you do not want to use transfer fees, set "value" to 0 (tab Transactions)</value>
+  </data>
+  <data name="SavingProductTransferFeesTypeEmpty.Text" xml:space="preserve">
+    <value>The transfer fees type is empty</value>
+  </data>
+  <data name="SavingContractTransferFeesIsInvalid.Text" xml:space="preserve">
+    <value>Transfer fees is invalid</value>
+  </data>
+  <data name="SavingContractCompulsorySavingsLinkedToLoan.Text" xml:space="preserve">
+    <value>The compulsory savings contract is already linked to a loan</value>
+  </data>
+  <data name="SavingContractLoanDoesNotAcceptSavings.Text" xml:space="preserve">
+    <value>The loan contract doesn't accept compulsory savings</value>
+  </data>
+  <data name="SavingContractAmountOnCompulsorySavingsIsInvalid.Text" xml:space="preserve">
+    <value>Balance of the compulsory savings is invalid</value>
+  </data>
+  <data name="SavingContractNoCompulsorySavings.Text" xml:space="preserve">
+    <value>No compulsory savings for this Loan</value>
+  </data>
+  <data name="SavingContractRolloverTransferAccountHasNotSameClient.Text" xml:space="preserve">
+    <value>The transfer account has not the same client</value>
+  </data>
+  <data name="SavingContractRolloverTransferAccountIsClosed.Text" xml:space="preserve">
+    <value>The transfer account is closed</value>
+  </data>
+  <data name="SavingContractRolloverTransferAccountIsInvalid.Text" xml:space="preserve">
+    <value>The transfer account is invalid</value>
+  </data>
+  <data name="SavingContractRolloverTransferAccountIsSavingDepositOrCompulsorySavings.Text" xml:space="preserve">
+    <value>The transfer account is a Savings Deposit account or a Compulsory Savings account</value>
+  </data>
+  <data name="RepaymentBeforeDisburse.Text" xml:space="preserve">
+    <value>Can not make a repayment before disburse date</value>
+  </data>
+  <data name="SavingProductWithdrawalFeesIsInvalid.Text" xml:space="preserve">
+    <value>Close, Withdrawal and Transfer fees is invalid</value>
+  </data>
+  <data name="SavingProductWithdrawalFeesMinIsInvalid.Text" xml:space="preserve">
+    <value>Close, Withdrawal and Transfer fees min is invalid</value>
+  </data>
+  <data name="SavingProductWithdrawalFeesMinMaxIsInvalid.Text" xml:space="preserve">
+    <value>Close, Withdrawal and Transfer fees min or max are invalid</value>
+  </data>
+  <data name="AccountingRuleClientTypeIsInvalid.Text" xml:space="preserve">
+    <value>The client type is invalid</value>
+  </data>
+  <data name="AccountingRuleGenericAccountIsInvalid.Text" xml:space="preserve">
+    <value>The generic account is invalid</value>
+  </data>
+  <data name="AccountingRuleProductTypeIsInvalid.Text" xml:space="preserve">
+    <value>The product type is invalid</value>
+  </data>
+  <data name="AccountingRuleSpecificAccountIsInvalid.Text" xml:space="preserve">
+    <value>The specific account is invalid</value>
+  </data>
+  <data name="AccountingRuleGenericAndSpecificAccountsAreIdentical.Text" xml:space="preserve">
+    <value>The genreric account and the specific account are identical</value>
+  </data>
+  <data name="BusinessBankBicCodeIsWrong.Text" xml:space="preserve">
+    <value>The business bank BIC is wrong (tab Banks)</value>
+  </data>
+  <data name="PersonalBankBicCodeIsWrong.Text" xml:space="preserve">
+    <value>The personnal bank BIC is wrong (tab Banks)</value>
+  </data>
+  <data name="BusinessBankIbanIsWrong.Text" xml:space="preserve">
+    <value>Business Iban Bank is wrong (tab Banks)</value>
+  </data>
+  <data name="PersonalBankIbanIsWrong.Text" xml:space="preserve">
+    <value>Personal Iban Bank is wrong (tab Banks)</value>
+  </data>
+  <data name="AccountExceptionDescriptionIsEmpty.Text" xml:space="preserve">
+    <value>The account descript is invalid</value>
+  </data>
+  <data name="AccountExceptionCannotBeDeleted.Text" xml:space="preserve">
+    <value>This account can't be deleted, it's a default account</value>
+  </data>
+  <data name="AccountExceptionParentAccountDoesntExists.Text" xml:space="preserve">
+    <value>The parent account doesn't exists</value>
+  </data>
+  <data name="ParentAccountNotSameDescription" xml:space="preserve">
+    <value>The parent account doesn't has the same type</value>
+  </data>
+  <data name="AccountExceptionParentAccountIsInvalid.Text" xml:space="preserve">
+    <value>The parent account is invalid</value>
+  </data>
+  <data name="OctopusBookingExceptionDebitAndCreditAccountAreIdentical.Text" xml:space="preserve">
+    <value>Debit and Credit accounts can not refer to the same account</value>
+  </data>
+  <data name="OctopusBookingExceptionsCreditAccountIsEmpty.Text" xml:space="preserve">
+    <value>Credit Account is empty</value>
+  </data>
+  <data name="OctopusBookingExceptionsDebitAccountIsEmpty.Text" xml:space="preserve">
+    <value>Debit Account is empty</value>
+  </data>
+  <data name="OctopusBookingExceptionsNameIsEmpty.Text" xml:space="preserve">
+    <value>Name is empty</value>
+  </data>
+  <data name="TrancheDateError.Text" xml:space="preserve">
+    <value>Please check tranche date !</value>
+  </data>
+  <data name="TrancheAmountError.Text" xml:space="preserve">
+    <value>You can not add new tranche with such amount!</value>
+  </data>
+  <data name="RoleHasUsers.Text" xml:space="preserve">
+    <value>You cannot delete role, which has users attached to it. </value>
+  </data>
+  <data name="RoleIsNull.Text" xml:space="preserve">
+    <value>Role was not selected. Please, select Role to delete</value>
+  </data>
+  <data name="ActionProhibitedForUser.Text" xml:space="preserve">
+    <value>You do not have authorities to perform this {0} action</value>
+  </data>
+  <data name="CustomExportFileExtensionIsIncorrect.Text" xml:space="preserve">
+    <value>File Extension is Incorrect</value>
+  </data>
+  <data name="CustomExportFileNameIsEmpty.Text" xml:space="preserve">
+    <value>File Name is Empty</value>
+  </data>
+  <data name="CustomExportSomeRequiredFieldsAreMissing.Text" xml:space="preserve">
+    <value>Some required fields are missing</value>
+  </data>
+  <data name="LoanScaleTableMax.Text" xml:space="preserve">
+    <value>Please enter the maximum amount for the loan scale.</value>
+  </data>
+  <data name="LoanScaleTableMin.Text" xml:space="preserve">
+    <value>Please enter the minimum amount for the loan scale.</value>
+  </data>
+  <data name="SavingProductDepositFeesIsInvalid.Text" xml:space="preserve">
+    <value>Deposit fees value are empty or incorrect.
+You must complete either "min" and "max" or "value". If you do not want to use deposit fees, set "value" to 0 (tab Transactions)</value>
+  </data>
+  <data name="SavingProductDepositFeesMinIsInvalid.Text" xml:space="preserve">
+    <value>Deposit fees value are empty or incorrect.
+You must complete either "min" and "max" or "value". If you do not want to use deposit fees, set "value" to 0 (tab Transactions)</value>
+  </data>
+  <data name="SavingProductCloseFeesIsInvalid.Text" xml:space="preserve">
+    <value>Close fees value are empty or incorrect.
+You must complete either "min" and "max" or "value". If you do not want to use close fees, set "value" to 0 (tab Fees)</value>
+  </data>
+  <data name="SavingProductCloseFeesMinIsInvalid.Text" xml:space="preserve">
+    <value>Close fees value are empty or incorrect.
+You must complete either "min" and "max" or "value". If you do not want to use close fees, set "value" to 0 (tab Fees)</value>
+  </data>
+  <data name="SavingProductManagementFeesIsInvalid.Text" xml:space="preserve">
+    <value>Management fees value is empty or incorrect.
+You must complete either "min" and "max" or "value". If you do not want to use management fees, set "value" to 0 (tab fees)</value>
+  </data>
+  <data name="SavingProductManagementFeesMinIsInvalid.Text" xml:space="preserve">
+    <value>Management fees value is empty or incorrect.
+You must complete either "min" and "max" or "value". If you do not want to use management fees, set "value" to 0 (tab fees)</value>
+  </data>
+  <data name="ClientTypeIsEmpty.Text" xml:space="preserve">
+    <value>Please attach the product to a specific client type (Main Parameters)</value>
+  </data>
+  <data name="PersonIsInTheGroup.Text" xml:space="preserve">
+    <value>The person is already in another group</value>
+  </data>
+  <data name="SavingProductPeriodicityIsEmpty.Text" xml:space="preserve">
+    <value>Please, select proper periodicity for this product.</value>
+  </data>
+  <data name="AgioFeesIsInvalid.Text" xml:space="preserve">
+    <value>Agio fees value is empty or invalid.
+You must complete either "min" and "max" or "value". If you do not want to use Agios, set "value" to 0 (tab Overdraft)</value>
+  </data>
+  <data name="OverdraftFeesIsInvalid.Text" xml:space="preserve">
+    <value>Fixed overdraft fees value is empty or incorrect.
+You must complete either "min" and "max" or "value". If you do not want to use overdraft fees, set "value" to 0 (tab Overdraft)</value>
+  </data>
+  <data name="ChequeDepositFeesIsInvalid" xml:space="preserve">
+    <value>Cheque deposit fees are empty or incorrect. 
+You must complete either "min" and "max" or "value". If you do not want to use fees, set "value" to 0 (tab Transactions)</value>
+  </data>
+  <data name="ChequeDepositIsInvalid" xml:space="preserve">
+    <value>Cheque deposit values are empty or incorrect. 
+You must complete "min" and "max"</value>
+  </data>
+  <data name="ReopenFeesIsInvalid" xml:space="preserve">
+    <value>Reopen fees values are empty or incorrect.
+You must complete either "min" and "max" or "value". If you do not want to use reopen fees, set "value" to 0 (tab Fees)</value>
+  </data>
+  <data name="ReopenFeesMinIsInvalid" xml:space="preserve">
+    <value>Reopen fees min values are empty or incorrect.
+You must complete either "min" and "max" or "value". If you do not want to use reopen fees, set "value" to 0 (tab Fees)</value>
+  </data>
+  <data name="ManualEntrySameAccount.Text" xml:space="preserve">
+    <value>Accounts are equal</value>
+  </data>
+  <data name="LoanHasNoCompulsorySavingsError.Text" xml:space="preserve">
+    <value>A compulsory savings account is necessary for this loan, please set it manually.</value>
+  </data>
+  <data name="CompulsorySavingSettingsEmpty.Text" xml:space="preserve">
+    <value>Compulsory saving settings are empty or incorrect
+You must complete either "min" and "max" or "value". If you do not want to use compulsory savings, set "value" to 0 (tab Guarantees)</value>
+  </data>
+  <data name="SavingsEventCannotBeCanceled.Text" xml:space="preserve">
+    <value>This savings event cannot be canceled!</value>
+  </data>
+  <data name="BalanceOnCurrentSavingAccount" xml:space="preserve">
+    <value>The balance on current savings account of {0} covers the amounts of {1} for {2} loan(s). The maximum amount you can withdraw is {3}</value>
+  </data>
+  <data name="BalanceOnCurrentSavingAccountForTransfer" xml:space="preserve">
+    <value>The balance on current savings account of {0} covers the amounts of {1} for {2} loan(s). The maximum amount you can transfer is {3}</value>
+  </data>
+  <data name="BookingIsEmpty.Text" xml:space="preserve">
+    <value>Booking is empty</value>
+  </data>
+  <data name="PackageExceptionInstallmentTypeValuesAreUsed.Text" xml:space="preserve">
+    <value>This installment type cannot be deleted because it is used by loan or savings product!</value>
+  </data>
+  <data name="SavingsEventCommentIsEmpty.Text" xml:space="preserve">
+    <value>Event comment is empty!</value>
+  </data>
+  <data name="ContractExceptionEventCommentIsEmpty.Text" xml:space="preserve">
+    <value>Event comment is empty!</value>
+  </data>
+  <data name="CycleParametersAreNotFilled.Text" xml:space="preserve">
+    <value>You have to input at least one parameter for each cycle object.</value>
+  </data>
+  <data name="CycleParametersAreWrong.Text" xml:space="preserve">
+    <value>Some of cycle parameters have been filled incorrectly. Please check that Min and Max values have been filled correctly.</value>
+  </data>
+  <data name="AmountCanNotBeZero.Text" xml:space="preserve">
+    <value>Amount value can not be zero.</value>
+  </data>
+  <data name="MaturityCanNotBeZero.Text" xml:space="preserve">
+    <value>Number of installments can not be zero.</value>
+  </data>
+  <data name="BranchIsEmpty" xml:space="preserve">
+    <value>You have to select a branch for the client.</value>
+  </data>
+  <data name="SavingProductInterBranchFlatTransferFeesIsInvalid" xml:space="preserve">
+    <value>Interbranch transfer fees value are empty or incorrect.
+You must complete either "min" and "max" or "value". If you do not want to use transfer fees, set "value" to 0 (tab Transactions)</value>
+  </data>
+  <data name="SavingProductInterBranchFlatTransferFeesMinIsInvalid" xml:space="preserve">
+    <value>Interbranch transfer fees value are empty or incorrect.
+You must complete either "min" and "max" or "value". If you do not want to use transfer fees, set "value" to 0 (tab Transactions)</value>
+  </data>
+  <data name="SavingProductInterBranchFlatTransferFeesMinMaxIsInvalid" xml:space="preserve">
+    <value>Interbranch transfer fees value are empty or incorrect.
+You must complete either "min" and "max" or "value". If you do not want to use transfer fees, set "value" to 0 (tab Transactions)</value>
+  </data>
+  <data name="SavingProductInterBranchRateTransferFeesIsInvalid" xml:space="preserve">
+    <value>Interbranch transfer fees value are empty or incorrect.
+You must complete either "min" and "max" or "value". If you do not want to use transfer fees, set "value" to 0 (tab Transactions)</value>
+  </data>
+  <data name="SavingProductInterBranchRateTransferFeesMinIsInvalid" xml:space="preserve">
+    <value>Interbranch transfer fees value are empty or incorrect.
+You must complete either "min" and "max" or "value". If you do not want to use transfer fees, set "value" to 0 (tab Transactions)</value>
+  </data>
+  <data name="SavingProductInterBranchRateTransferFeesMinMaxIsInvalid" xml:space="preserve">
+    <value>Interbranch transfer fees value are empty or incorrect.
+You must complete either "min" and "max" or "value". If you do not want to use transfer fees, set "value" to 0 (tab Transactions)</value>
+  </data>
+  <data name="PicturesNotAllowed" xml:space="preserve">
+    <value>Picture manipulations are not allowed on this database</value>
+  </data>
+  <data name="BranchSameCodeException" xml:space="preserve">
+    <value>A branch with this code exists.</value>
+  </data>
+  <data name="BranchSameNameException" xml:space="preserve">
+    <value>A branch with this name exists.</value>
+  </data>
+  <data name="InsuranceBadlyFilled.Text" xml:space="preserve">
+    <value>The credit insurance values are wrong. Please check it and try again.</value>
+  </data>
+  <data name="TooMuchPersonsInThisGroup.Text" xml:space="preserve">
+    <value>You must have maximum {0} persons in the group</value>
+  </data>
+  <data name="FieldEmpty.Text" xml:space="preserve">
+    <value>List of fields is empty!</value>
+  </data>
+  <data name="FieldIsMandatory.Text" xml:space="preserve">
+    <value>A customizable field is mandatory before saving</value>
+  </data>
+  <data name="FieldIsNotUnique.Text" xml:space="preserve">
+    <value>Some fields are not unique and value already exists!</value>
+  </data>
+  <data name="AccountExceptionIsUsed.Text" xml:space="preserve">
+    <value>You cannot delete an account which has transactions</value>
+  </data>
+  <data name="NumberFieldIsNotANumber.Text" xml:space="preserve">
+    <value>Customizable field of Number type contains improper symbols. Expected format is 0,0.</value>
+  </data>
+  <data name="LOCAmountHaveBeenFilledIncorrectly.Text" xml:space="preserve">
+    <value>Amount under LOC are empty or incorrect.
+You must complete either "min" and "max" or "value". (tab Line of Credit)</value>
+  </data>
+  <data name="LOCFieldsAreNotFilled.Text" xml:space="preserve">
+    <value>Some fields in line of credit tab are empty or incorrect.
+You must complete either "min" and "max" or "value". (tab Line of Credit)</value>
+  </data>
+  <data name="LOCMaturityHaveBeenFilledIncorrectly.Text" xml:space="preserve">
+    <value>Tranche maturity is empty or incorrect.
+You must complete either "min" and "max" or "value". (tab Line of Credit)</value>
+  </data>
+  <data name="CompulsorySavingsContractIsNotActive.Text" xml:space="preserve">
+    <value>Compulsory savings account is not active!</value>
+  </data>
+  <data name="AddEntryFeeCycleError.Text" xml:space="preserve">
+    <value>The cycle you have input already exists.</value>
+  </data>
+  <data name="AgeIsNotInRange.Text" xml:space="preserve">
+    <value>Client's age should be between {0} and {1} years</value>
+  </data>
+  <data name="WrongEvent.Text" xml:space="preserve">
+    <value>It's wrong event</value>
+  </data>
+  <data name="ZeroFee.Text" xml:space="preserve">
+    <value>Fees are null, you cannot waive them.</value>
+  </data>
+  <data name="GuarantorMaxLoansCoveredExceed.Text" xml:space="preserve">
+    <value>A guarantor cannot cover more than {0} loans</value>
+  </data>
+  <data name="BranchAddressIsEmpty.Text" xml:space="preserve">
+    <value>Branch address is empty</value>
+  </data>
+  <data name="BranchCodeIsEmpty.Text" xml:space="preserve">
+    <value>Branch code is empty</value>
+  </data>
+  <data name="BranchNameIsEmpty.Text" xml:space="preserve">
+    <value>Branch name is empty</value>
+  </data>
+  <data name="SavingProductDuplicateProductCode.Text" xml:space="preserve">
+    <value>A savings product with same contract code already exists (tab Main parameters)</value>
+  </data>
+  <data name="GracePeriodOfLateFeesIsNotFilled.Text" xml:space="preserve">
+    <value>Grace period for late fees is empty</value>
+  </data>
+  <data name="PostingFrequencyIsInvalid.Text" xml:space="preserve">
+    <value>Number of instalments is not correct.</value>
+  </data>
+  <data name="ScoringQuestionNameException" xml:space="preserve">
+    <value>Name field of a question is empty!</value>
+  </data>
+  <data name="RepaymentBeforeLastEventDate.Text" xml:space="preserve">
+    <value>Cannot repay before the last repayment event date</value>
+  </data>
+  <data name="PeriodicityIsNotSet.Text" xml:space="preserve">
+    <value>Posting frequency for term deposit is not set.</value>
+  </data>
+  <data name="CurrencyIsEmptyForSavingProduct.Text" xml:space="preserve">
+    <value>Please, choose currency for saving product.</value>
+  </data>
+  <data name="TransferAccountHasWrongCurrency.Text" xml:space="preserve">
+    <value>The currency of the target account differs. Please select contract with the same currency as currency of current contract.</value>
+  </data>
+  <data name="LoadExtensionError.Text" xml:space="preserve">
+    <value>Error has occured while loading extensions. Please try to remove problematic extensions and start Octopus again.</value>
+  </data>
+  <data name="SelectBeforeConf.Text" xml:space="preserve">
+    <value>You must select a transaction before confirming operation</value>
+  </data>
+  <data name="OctopusNotDeletableClosure.Text" xml:space="preserve">
+    <value>You can not delete that closure because transactions were exported</value>
+  </data>
+  <data name="FieldNameCanNotContainComma.Text" xml:space="preserve">
+    <value>You can not input comma into field name or into field description. Please remove comma and try again.</value>
+  </data>
+  <data name="FieldLimited.Text" xml:space="preserve">
+    <value>This custom field is limited to 300 characters. Text will be truncated.</value>
+  </data>
+  <data name="AccountImportIdExist.Text" xml:space="preserve">
+    <value>Some of account ids from import file already exists.</value>
+  </data>
+  <data name="AccountImportNumbersExist.Text" xml:space="preserve">
+    <value>Some of account numbers from import file already exists.</value>
+  </data>
+  <data name="OperationOutsideCurrentFiscalYear.Text" xml:space="preserve">
+    <value>Operation is outside of the current fiscal year.</value>
+  </data>
+  <data name="TellerAccountIsEmpty.Text" xml:space="preserve">
+    <value>Account is not set. You should create new account in Chart of accounts first</value>
+  </data>
+  <data name="TellerNameIsExists.Text" xml:space="preserve">
+    <value>Teller's name already exists, please rename</value>
+  </data>
+  <data name="TellerAmountMinMaxIsInvalid.Text" xml:space="preserve">
+    <value>Maximal and minimal amounts should be correctly filled</value>
+  </data>
+  <data name="TellerBranchIsEmpty.Text" xml:space="preserve">
+    <value>Branch is not set. You should create new branch first</value>
+  </data>
+  <data name="TellerCurrencyIsEmpty.Text" xml:space="preserve">
+    <value>Currency is not set. You should create new currency first</value>
+  </data>
+  <data name="TellerNameIsEmpty.Text" xml:space="preserve">
+    <value>Teller's name is empty</value>
+  </data>
+  <data name="TellerUserIsEmpty.Text" xml:space="preserve">
+    <value>User is not set. You should create new user first</value>
+  </data>
+  <data name="OUE10.Text" xml:space="preserve">
+    <value>User has teller, please delete or reassign teller first</value>
+  </data>
+  <data name="EconomicActivityNotSet.Text" xml:space="preserve">
+    <value>Loan economic activity of not set.</value>
+  </data>
+  <data name="CurrentInstallmentIsNotFullyRepaid.Text" xml:space="preserve">
+    <value>Current installment is not fully repaid</value>
+  </data>
+  <data name="LoanIsFlatForTranche.Text" xml:space="preserve">
+    <value>You cannot add tranche for FLAT Loans</value>
+  </data>
+  <data name="TrancheMaturityError.Text" xml:space="preserve">
+    <value>You can not add more tranches, please update product !</value>
+  </data>
+  <data name="LoanAlreadyDisbursed.Text" xml:space="preserve">
+    <value>Loan is already disbursed.</value>
+  </data>
+  <data name="DuplicatedAccount.Text" xml:space="preserve">
+    <value>There cannot be two accounts with the same number. 
+Enter another account number.
+</value>
+  </data>
+  <data name="OctopusEmptyLocationException.Text" xml:space="preserve">
+    <value>Location name cannot be empty.</value>
+  </data>
+  <data name="OctopusCityUsedException.Text" xml:space="preserve">
+    <value>City is used by one or more clients.</value>
+  </data>
+  <data name="OctopusDistrictUsedException.Text" xml:space="preserve">
+    <value>District is used by one or more clients.</value>
+  </data>
+  <data name="TellerVaultExists.Text" xml:space="preserve">
+    <value>Vault for this branch is already exists</value>
+  </data>
+</root>

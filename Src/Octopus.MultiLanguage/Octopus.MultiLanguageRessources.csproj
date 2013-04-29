@@ -1,0 +1,1225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1644EDA1-7196-4197-B752-A4D14F384E31}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Octopus.MultiLanguageRessources</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Octopus.MultiLanguageRessources</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SignAssembly>false</SignAssembly>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'DebugWithTest|AnyCPU' ">
+    <OutputPath>C:\Documents and Settings\Administrateur\Bureau\output\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'FitNesse|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\OutputForFitNesse\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="MultiLanguageStrings.cs" />
+    <Compile Include="resx\AccountView.Designer.cs" />
+    <Compile Include="resx\ClientControl.ru-RU.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClientControl.ru-RU.resx</DependentUpon>
+    </Compile>
+    <Compile Include="resx\FrmFundingLineEvent.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FrmFundingLineEvent.resx</DependentUpon>
+    </Compile>
+    <Compile Include="resx\LoanSharesForm.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoanSharesForm.resx</DependentUpon>
+    </Compile>
+    <Compile Include="resx\MyInforamtionForm.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MyInforamtionForm.resx</DependentUpon>
+    </Compile>
+    <Compile Include="resx\ReassingContract.Designer.cs" />
+    <Compile Include="resx\ShowPictureForm.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ShowPictureForm.resx</DependentUpon>
+    </Compile>
+    <Compile Include="resx\stringRes.Designer.cs" />
+    <Compile Include="resx\VillageAddLoanForm.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VillageAddLoanForm.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="resx\AccountingJournals.es-ES.resx" />
+    <EmbeddedResource Include="resx\AccountingJournals.fr.resx" />
+    <EmbeddedResource Include="resx\AccountingJournals.pt.resx" />
+    <EmbeddedResource Include="resx\AccountingJournals.resx" />
+    <EmbeddedResource Include="resx\AccountingJournals.ru-RU.resx" />
+    <EmbeddedResource Include="resx\AccountingRule.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\AccountingRule.pt.resx" />
+    <EmbeddedResource Include="resx\AccountingRule.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\AccountingRule.ru-RU.resx" />
+    <EmbeddedResource Include="resx\AccountTrialBalance.pt.resx" />
+    <EmbeddedResource Include="resx\AccountTrialBalance.resx">
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\AccountTrialBalance.ru-RU.resx" />
+    <EmbeddedResource Include="resx\AccountView.es-ES.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\AccountView.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\AccountView.pt.resx" />
+    <EmbeddedResource Include="resx\AccountView.resx" />
+    <EmbeddedResource Include="resx\AccountView.ru-Ru.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\AddCustomizableFields.pt.resx" />
+    <EmbeddedResource Include="resx\AddBranchForm.es-ES.resx" />
+    <EmbeddedResource Include="resx\AddBranchForm.pt.resx" />
+    <EmbeddedResource Include="resx\AddBranchForm.ru-RU.resx" />
+    <EmbeddedResource Include="resx\AddBranchForm.fr.resx" />
+    <EmbeddedResource Include="resx\AddBranchForm.resx">
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\AddGuarantorForm.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\AddGuarantorForm.ky-KG.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\AddGuarantorForm.pt.resx" />
+    <EmbeddedResource Include="resx\AddGuarantorForm.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\AddGuarantorForm.ru-RU.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\AddPaymentMethodForm.fr.resx" />
+    <EmbeddedResource Include="resx\AddPaymentMethodForm.pt.resx" />
+    <EmbeddedResource Include="resx\AddPaymentMethodForm.resx" />
+    <EmbeddedResource Include="resx\AddPaymentMethodForm.ru-RU.resx" />
+    <EmbeddedResource Include="resx\AddressUserControl.pt.resx" />
+    <EmbeddedResource Include="resx\AddTellerForm.pt.resx" />
+    <EmbeddedResource Include="resx\AddTrancheForm.fr.resx" />
+    <EmbeddedResource Include="resx\AddTrancheForm.ky-KG.resx" />
+    <EmbeddedResource Include="resx\AddTrancheForm.pt.resx" />
+    <EmbeddedResource Include="resx\AddTrancheForm.resx" />
+    <EmbeddedResource Include="resx\AddTrancheForm.ru-RU.resx" />
+    <EmbeddedResource Include="resx\ClientControl.ru-RU.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ClientControl.ru-RU.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\ClientControl.resx">
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\CustomizableFieldsForm.pt.resx" />
+    <EmbeddedResource Include="resx\ApplicationExceptionHandler.pt.resx" />
+    <EmbeddedResource Include="resx\AuditTrailForm.pt.resx" />
+    <EmbeddedResource Include="resx\BadLoanRepaymentForm.pt.resx" />
+    <EmbeddedResource Include="resx\BranchesForm.pt.resx" />
+    <EmbeddedResource Include="resx\CashPrevisionForm.pt.resx" />
+    <EmbeddedResource Include="resx\CashReceiptForm.pt.resx" />
+    <EmbeddedResource Include="resx\ChartOfAccountsForm.pt.resx" />
+    <EmbeddedResource Include="resx\ClientForm.pt.resx" />
+    <EmbeddedResource Include="resx\Common.pt.resx" />
+    <EmbeddedResource Include="resx\ContractReschedulingForm.pt.resx" />
+    <EmbeddedResource Include="resx\CorporateUserControl.pt.resx" />
+    <EmbeddedResource Include="resx\CreditContractDisbursmentForm.pt.resx" />
+    <EmbeddedResource Include="resx\CreditContractForm.pt.resx" />
+    <EmbeddedResource Include="resx\CreditContractRepayForm.pt.resx" />
+    <EmbeddedResource Include="resx\CustomizableExport.pt.resx" />
+    <EmbeddedResource Include="resx\DatabaseMaitenance.pt.resx" />
+    <EmbeddedResource Include="resx\DateTimeUserControl.pt.resx" />
+    <EmbeddedResource Include="resx\ElemMvtUserControl.pt.resx" />
+    <EmbeddedResource Include="resx\EventAttributes.pt.resx" />
+    <EmbeddedResource Include="resx\EventCancelConfirmationForm.pt.resx" />
+    <EmbeddedResource Include="resx\EventTypes.pt.resx" />
+    <EmbeddedResource Include="resx\EventTypes.ru-Ru.resx" />
+    <EmbeddedResource Include="resx\ExchangeRateForm.pt.resx" />
+    <EmbeddedResource Include="resx\ExportBookingsForm.pt.resx" />
+    <EmbeddedResource Include="resx\ExtensionManagerForm.fr.resx" />
+    <EmbeddedResource Include="resx\ExtensionManagerForm.resx" />
+    <EmbeddedResource Include="resx\ExtensionManagerForm.ru-RU.resx" />
+    <EmbeddedResource Include="resx\FastChoiceForm.pt.resx" />
+    <EmbeddedResource Include="resx\FastDepositForm.pt.resx" />
+    <EmbeddedResource Include="resx\frmActivity.pt.resx" />
+    <EmbeddedResource Include="resx\FrmAddCollateralProduct.pt.resx" />
+    <EmbeddedResource Include="resx\FrmAddLoanProduct.es-ES.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmAddLoanProduct.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmAddLoanProduct.ky-KG.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmAddLoanProduct.pt.resx" />
+    <EmbeddedResource Include="resx\FrmAddLoanProduct.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmAddLoanProduct.ru-RU.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\AddressUserControl.es-ES.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\AddressUserControl.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\AddressUserControl.ky-KG.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\AddressUserControl.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\AddressUserControl.ru-RU.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\ApplicationExceptionHandler.es-ES.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\ApplicationExceptionHandler.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\ApplicationExceptionHandler.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\ApplicationExceptionHandler.ru-RU.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\AuditTrailForm.fr.resx" />
+    <EmbeddedResource Include="resx\AuditTrailForm.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\AuditTrailForm.ru-Ru.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\BadLoanRepaymentForm.es-ES.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\BadLoanRepaymentForm.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\BadLoanRepaymentForm.ky-KG.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\BadLoanRepaymentForm.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\BadLoanRepaymentForm.ru-RU.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\BranchesForm.fr.resx" />
+    <EmbeddedResource Include="resx\BranchesForm.resx">
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\BranchesForm.ru-RU.resx" />
+    <EmbeddedResource Include="resx\CashPrevisionForm.es-ES.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\CashPrevisionForm.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\CashPrevisionForm.ky-KG.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\CashPrevisionForm.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\CashPrevisionForm.ru-RU.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\CashReceiptForm.es-ES.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\CashReceiptForm.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\CashReceiptForm.ky-KG.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\CashReceiptForm.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\CashReceiptForm.ru-RU.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\ChartOfAccountsForm.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\ChartOfAccountsForm.ky-KG.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\ChartOfAccountsForm.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\ChartOfAccountsForm.ru-RU.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\ClientForm.es-ES.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\Common.es-ES.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\Common.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\Common.ru-RU.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\ContractReschedulingForm.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\ContractReschedulingForm.ky-KG.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\ContractReschedulingForm.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\ContractReschedulingForm.ru-RU.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\Common.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\AccountTrialBalance.fr.resx" />
+    <EmbeddedResource Include="resx\AddTellerForm.fr.resx" />
+    <EmbeddedResource Include="resx\AddTellerForm.resx" />
+    <EmbeddedResource Include="resx\AddTellerForm.ru-RU.resx" />
+    <EmbeddedResource Include="resx\AddCustomizableFields.fr.resx" />
+    <EmbeddedResource Include="resx\AddCustomizableFields.resx" />
+    <EmbeddedResource Include="resx\AddCustomizableFields.ru-RU.resx" />
+    <EmbeddedResource Include="resx\CustomizableFieldsForm.fr.resx" />
+    <EmbeddedResource Include="resx\CustomizableFieldsForm.resx" />
+    <EmbeddedResource Include="resx\CustomizableFieldsForm.ru-RU.resx" />
+    <EmbeddedResource Include="resx\FrmAddSavingEvent.fr.resx" />
+    <EmbeddedResource Include="resx\FrmAddSavingEvent.pt.resx" />
+    <EmbeddedResource Include="resx\FrmAddSavingEvent.resx" />
+    <EmbeddedResource Include="resx\FrmAddSavingEvent.ru-RU.resx" />
+    <EmbeddedResource Include="resx\SavingsOperationForm.pt.resx" />
+    <EmbeddedResource Include="resx\FrmAddSavingProduct.pt.resx" />
+    <EmbeddedResource Include="resx\frmAdvancedSettings.pt.resx" />
+    <EmbeddedResource Include="resx\FrmApplicationSetup.pt.resx" />
+    <EmbeddedResource Include="resx\FrmAvailableSavingProducts.pt.resx" />
+    <EmbeddedResource Include="resx\FrmAvalaibleLoanProducts.pt.resx" />
+    <EmbeddedResource Include="resx\FrmBackup.pt.resx" />
+    <EmbeddedResource Include="resx\FrmContractBookings.pt.resx" />
+    <EmbeddedResource Include="resx\FrmCurrencyType.pt.resx" />
+    <EmbeddedResource Include="resx\FrmCustomReportWizard.pt.resx" />
+    <EmbeddedResource Include="resx\FrmDatabaseSettings.fr.resx" />
+    <EmbeddedResource Include="resx\FrmDatabaseSettings.pt.resx" />
+    <EmbeddedResource Include="resx\FrmEconomicActivity.pt.resx" />
+    <EmbeddedResource Include="resx\FrmExportSage.pt.resx" />
+    <EmbeddedResource Include="resx\FrmFundingLine.pt.resx" />
+    <EmbeddedResource Include="resx\FrmFundingLineEvent.pt.resx" />
+    <EmbeddedResource Include="resx\FrmLocations.pt.resx" />
+    <EmbeddedResource Include="resx\FrmOpenCloseTeller.pt.resx" />
+    <EmbeddedResource Include="resx\FrmReportBrowser.pt.resx" />
+    <EmbeddedResource Include="resx\FrmReportViewer.pt.resx" />
+    <EmbeddedResource Include="resx\FrmRestore.pt.resx" />
+    <EmbeddedResource Include="resx\FrmRoles.es-ES.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FastDepositForm.fr.resx" />
+    <EmbeddedResource Include="resx\FastDepositForm.resx" />
+    <EmbeddedResource Include="resx\FastDepositForm.ru-RU.resx" />
+    <EmbeddedResource Include="resx\FrmAvailableSavingProducts.fr.resx" />
+    <EmbeddedResource Include="resx\FrmAvailableSavingProducts.resx" />
+    <EmbeddedResource Include="resx\FrmAvailableSavingProducts.ru-RU.resx" />
+    <EmbeddedResource Include="resx\FrmAvalaibleLoanProducts.fr.resx" />
+    <EmbeddedResource Include="resx\FrmAvalaibleLoanProducts.resx" />
+    <EmbeddedResource Include="resx\FrmAvalaibleLoanProducts.ru-RU.resx" />
+    <EmbeddedResource Include="resx\FrmOpenCloseTeller.es-ES.resx" />
+    <EmbeddedResource Include="resx\FrmOpenCloseTeller.fr.resx" />
+    <EmbeddedResource Include="resx\FrmOpenCloseTeller.ru-RU.resx" />
+    <EmbeddedResource Include="resx\FrmOpenCloseTeller.resx" />
+    <EmbeddedResource Include="resx\FrmRoles.pt.resx" />
+    <EmbeddedResource Include="resx\FrmSaveSaving.pt.resx" />
+    <EmbeddedResource Include="resx\frmSettingsImportExport.es-ES.resx" />
+    <EmbeddedResource Include="resx\frmSettingsImportExport.fr.resx" />
+    <EmbeddedResource Include="resx\frmSettingsImportExport.ky-KG.resx" />
+    <EmbeddedResource Include="resx\frmSettingsImportExport.pt.resx" />
+    <EmbeddedResource Include="resx\frmSettingsImportExport.resx" />
+    <EmbeddedResource Include="resx\frmSettingsImportExport.ru-RU.resx" />
+    <EmbeddedResource Include="resx\FrmSplash.pt.resx" />
+    <EmbeddedResource Include="resx\GeneralSettings.pt.resx" />
+    <EmbeddedResource Include="resx\GroupForm.pt.resx" />
+    <EmbeddedResource Include="resx\GroupUserControl.pt.resx" />
+    <EmbeddedResource Include="resx\GuaranteeContractForm.pt.resx" />
+    <EmbeddedResource Include="resx\InternalReportsForm.pt.resx" />
+    <EmbeddedResource Include="resx\LoanSharesForm.pt.resx" />
+    <EmbeddedResource Include="resx\LotrasmicMainWindowForm.pt.resx" />
+    <EmbeddedResource Include="resx\ManualEntryForm.pt.resx" />
+    <EmbeddedResource Include="resx\MyInforamtionForm.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MyInforamtionForm.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\MyInformationForm.fr.resx" />
+    <EmbeddedResource Include="resx\MyInformationForm.ru-Ru.resx" />
+    <EmbeddedResource Include="resx\NonSolidaryGroupForm.fr.resx" />
+    <EmbeddedResource Include="resx\NonSolidaryGroupForm.pt.resx" />
+    <EmbeddedResource Include="resx\NonSolidaryGroupForm.resx" />
+    <EmbeddedResource Include="resx\NonSolidaryGroupForm.ru-RU.resx" />
+    <EmbeddedResource Include="resx\PackagesForm.pt.resx" />
+    <EmbeddedResource Include="resx\PasswordForm.pt.resx" />
+    <EmbeddedResource Include="resx\PasswordFormOnline.pt.resx" />
+    <EmbeddedResource Include="resx\PersonUserControl.pt.resx" />
+    <EmbeddedResource Include="resx\ReassingContract.pt.resx" />
+    <EmbeddedResource Include="resx\ReportBrowserForm.fr.resx" />
+    <EmbeddedResource Include="resx\ReportBrowserForm.pt.resx" />
+    <EmbeddedResource Include="resx\ReportBrowserForm.ru-RU.resx">
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\ReportBrowserForm.resx">
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\SavingClosureForm.fr.resx" />
+    <EmbeddedResource Include="resx\SavingClosureForm.pt.resx" />
+    <EmbeddedResource Include="resx\SavingClosureForm.resx" />
+    <EmbeddedResource Include="resx\SavingClosureForm.ru-RU.resx" />
+    <EmbeddedResource Include="resx\SearchClientForm.pt.resx" />
+    <EmbeddedResource Include="resx\SearchCreditContractForm.pt.resx" />
+    <EmbeddedResource Include="resx\ShowPictureForm.pt.resx" />
+    <EmbeddedResource Include="resx\StandardBooking.pt.resx" />
+    <EmbeddedResource Include="resx\stringRes.pt.resx" />
+    <EmbeddedResource Include="resx\SweetBaseForm.pt.resx" />
+    <EmbeddedResource Include="resx\TellersForm.fr.resx" />
+    <EmbeddedResource Include="resx\TellersForm.pt.resx" />
+    <EmbeddedResource Include="resx\TellersForm.resx" />
+    <EmbeddedResource Include="resx\TellersForm.ru-RU.resx" />
+    <EmbeddedResource Include="resx\EventCancelConfirmationForm.ru-RU.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\EventCancelConfirmationForm.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\EventCancelConfirmationForm.es-ES.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\EventCancelConfirmationForm.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmInstallmentTypes.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmInstallmentTypes.pt.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmInstallmentTypes.es-ES.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmInstallmentTypes.ru-RU.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmInstallmentTypes.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\EventAttributes.fr.resx" />
+    <EmbeddedResource Include="resx\EventAttributes.resx">
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\EventAttributes.ru-RU.resx" />
+    <EmbeddedResource Include="resx\EventTypes.fr.resx" />
+    <EmbeddedResource Include="resx\EventTypes.resx">
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmAddCollateralProduct.fr.resx" />
+    <EmbeddedResource Include="resx\FrmAddCollateralProduct.resx">
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmAddCollateralProduct.ru-RU.resx" />
+    <EmbeddedResource Include="resx\FrmRoles.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmRoles.ru-RU.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmCurrencyType.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmCurrencyType.resx" />
+    <EmbeddedResource Include="resx\FrmDatabaseSettings.resx" />
+    <EmbeddedResource Include="resx\FrmSaveSaving.ky-KG.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmSaveSaving.ru-RU.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmSaveSaving.es-ES.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmSaveSaving.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmSaveSaving.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\SavingsOperationForm.ru-RU.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmAddSavingProduct.ru-RU.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmLocations.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\CustomizableExport.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmSplash.fr.resx" />
+    <EmbeddedResource Include="resx\FrmSplash.resx" />
+    <EmbeddedResource Include="resx\LoanSharesForm.fr.resx" />
+    <EmbeddedResource Include="resx\LoanSharesForm.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>LoanSharesForm.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\LoanSharesForm.ru-RU.resx" />
+    <EmbeddedResource Include="resx\UserForm.pt.resx" />
+    <EmbeddedResource Include="resx\VillageAddLoanForm.fr.resx" />
+    <EmbeddedResource Include="resx\VillageAddLoanForm.pt.resx" />
+    <EmbeddedResource Include="resx\VillageAddLoanForm.ru-Ru.resx" />
+    <EmbeddedResource Include="resx\ReassingContract.fr.resx" />
+    <EmbeddedResource Include="resx\ShowPictureForm.es-ES.resx" />
+    <EmbeddedResource Include="resx\ShowPictureForm.fr.resx" />
+    <EmbeddedResource Include="resx\ShowPictureForm.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ShowPictureForm.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\ShowPictureForm.ru-RU.resx" />
+    <EmbeddedResource Include="resx\SweetBaseForm.es-ES.resx" />
+    <EmbeddedResource Include="resx\SweetBaseForm.fr.resx" />
+    <EmbeddedResource Include="resx\SweetBaseForm.resx">
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\SweetBaseForm.ru-RU.resx" />
+    <EmbeddedResource Include="resx\VillageAddLoanForm.es-ES.resx" />
+    <EmbeddedResource Include="resx\VillageAddLoanForm.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>VillageAddLoanForm.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\VillageAddSavingsForm.fr.resx" />
+    <EmbeddedResource Include="resx\VillageAddSavingsForm.pt.resx" />
+    <EmbeddedResource Include="resx\VillageAddSavingsForm.resx">
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\VillageAddSavingsForm.ru-RU.resx" />
+    <EmbeddedResource Include="resx\VillageDisburseLoanForm.fr.resx" />
+    <EmbeddedResource Include="resx\VillageDisburseLoanForm.pt.resx" />
+    <EmbeddedResource Include="resx\VillageDisburseLoanForm.resx" />
+    <EmbeddedResource Include="resx\VillageDisburseLoanForm.ru-RU.resx" />
+    <EmbeddedResource Include="resx\VillageForm.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\CustomizableExport.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmExportSage.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmCurrencyType.ru-RU.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\SavingsOperationForm.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\SavingsOperationForm.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmAddSavingProduct.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\CorporateUserControl.es-ES.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\CreditContractForm.es-ES.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\CreditContractRepayForm.es-ES.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmEconomicActivity.es-ES.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\ElemMvtUserControl.es-ES.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\ExchangeRateForm.es-ES.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\ExportBookingsForm.es-ES.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FastChoiceForm.es-ES.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\frmActivity.es-ES.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmAddSavingProduct.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\frmAdvancedSettings.es-ES.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmApplicationSetup.es-ES.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmBackup.es-ES.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmContractBookings.es-ES.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmCustomReportWizard.es-ES.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmDatabaseSettings.ru-RU.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmExportSage.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmFundingLine.ky-KG.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmFundingLine.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmFundingLine.ru-RU.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\CorporateUserControl.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\CorporateUserControl.ky-KG.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\CorporateUserControl.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\CorporateUserControl.ru-RU.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\DatabaseMaitenance.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmContractBookings.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmContractBookings.ru-RU.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmCustomReportWizard.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmCustomReportWizard.ky-KG.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmCustomReportWizard.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmCustomReportWizard.ru-RU.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmFundingLine.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmFundingLineEvent.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>FrmFundingLineEvent.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmFundingLineEvent.ru-Ru.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmLocations.es-ES.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmLocations.ru-RU.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmReportBrowser.es-ES.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmReportViewer.es-ES.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmRestore.es-ES.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmRoles.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmSplash.ru-Ru.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\GeneralSettings.es-ES.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\GroupUserControl.es-ES.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\GuaranteeContractForm.es-ES.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\GuaranteeContractForm.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\GuaranteeContractForm.ru-RU.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\InternalReportsForm.es-ES.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\LotrasmicMainWindowForm.es-ES.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\ManualEntryForm.es-ES.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\PackagesForm.es-ES.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\PasswordForm.es-ES.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\PasswordFormOnline.es-ES.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\PasswordFormOnline.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\PasswordFormOnline.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\CreditContractDisbursmentForm.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\CreditContractDisbursmentForm.ky-KG.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\CreditContractDisbursmentForm.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\CreditContractDisbursmentForm.ru-RU.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\CreditContractForm.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\CreditContractForm.ky-KG.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\CreditContractForm.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\CreditContractForm.ru-RU.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\CreditContractRepayForm.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\CreditContractRepayForm.ky-KG.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\CreditContractRepayForm.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\CreditContractRepayForm.ru-RU.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\DateTimeUserControl.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\DateTimeUserControl.ky-KG.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\DateTimeUserControl.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\DateTimeUserControl.ru-RU.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmEconomicActivity.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmEconomicActivity.ky-KG.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmEconomicActivity.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmEconomicActivity.ru-RU.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\ElemMvtUserControl.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\ElemMvtUserControl.ky-KG.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\ElemMvtUserControl.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\ElemMvtUserControl.ru-RU.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\ExchangeRateForm.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\ExchangeRateForm.ky-KG.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\ExchangeRateForm.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\ExchangeRateForm.ru-RU.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\ExportBookingsForm.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\ExportBookingsForm.ky-KG.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\ExportBookingsForm.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\ExportBookingsForm.ru-RU.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FastChoiceForm.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FastChoiceForm.ky-KG.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FastChoiceForm.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FastChoiceForm.ru-RU.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\frmActivity.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\frmActivity.ky-KG.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\frmActivity.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\frmActivity.ru-RU.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\frmAdvancedSettings.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\frmAdvancedSettings.ky-KG.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\frmAdvancedSettings.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\frmAdvancedSettings.ru-RU.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmApplicationSetup.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmApplicationSetup.ky-KG.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmApplicationSetup.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmApplicationSetup.ru-RU.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmBackup.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmBackup.ky-KG.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmBackup.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmBackup.ru-RU.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmLocations.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmReportBrowser.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmReportBrowser.ky-KG.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmReportBrowser.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmReportBrowser.ru-RU.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmReportViewer.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmReportViewer.ky-KG.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmReportViewer.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmReportViewer.ru-RU.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmRestore.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmRestore.ky-KG.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmRestore.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\FrmRestore.ru-RU.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\GeneralSettings.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\GeneralSettings.ky-KG.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\GeneralSettings.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\GeneralSettings.ru-RU.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\GroupForm.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\GroupForm.ky-KG.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\GroupForm.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\GroupForm.ru-RU.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\GroupUserControl.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\GroupUserControl.ky-KG.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\GroupUserControl.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\GroupUserControl.ru-RU.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\InternalReportsForm.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\InternalReportsForm.ky-KG.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\InternalReportsForm.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\InternalReportsForm.ru-RU.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\LotrasmicMainWindowForm.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\LotrasmicMainWindowForm.ky-KG.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\LotrasmicMainWindowForm.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\LotrasmicMainWindowForm.ru-RU.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\ManualEntryForm.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\ManualEntryForm.ky-KG.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\ManualEntryForm.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\ManualEntryForm.ru-RU.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\PackagesForm.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\PackagesForm.ky-KG.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\PackagesForm.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\PackagesForm.ru-RU.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\PasswordForm.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\PasswordForm.ky-KG.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\PasswordForm.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\PasswordForm.ru-RU.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\ClientForm.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\ClientForm.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\ClientForm.ru-RU.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\PasswordFormOnline.ru-RU.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\PersonUserControl.es-ES.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\PersonUserControl.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\PersonUserControl.ky-KG.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\PersonUserControl.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\PersonUserControl.ru-RU.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\ReassingContract.es-ES.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\ReassingContract.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\ReassingContract.ru-RU.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\SearchClientForm.es-ES.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\SearchClientForm.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\SearchClientForm.ky-KG.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\SearchClientForm.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\SearchClientForm.ru-RU.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\SearchCreditContractForm.es-ES.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\SearchCreditContractForm.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\SearchCreditContractForm.ky-KG.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\SearchCreditContractForm.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\SearchCreditContractForm.ru-RU.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\StandardBooking.es-ES.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\StandardBooking.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\StandardBooking.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\StandardBooking.ru-RU.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\stringRes.es-ES.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\stringRes.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\stringRes.ky-KG.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\stringRes.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\stringRes.ru-RU.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\UserForm.es-ES.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\UserForm.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\UserForm.ky-KG.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\UserForm.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\UserForm.ru-RU.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\VillageForm.es-ES.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\VillageForm.pt.resx" />
+    <EmbeddedResource Include="resx\VillageForm.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resx\VillageForm.ru-RU.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Octopus.Shared\Octopus.Shared.csproj">
+      <Project>{B3288E21-E5A9-4620-BEF3-AFB0B207655C}</Project>
+      <Name>Octopus.Shared</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties GreenPepperConfigRunnerArgs="" GreenPepperCustomSud="" GreenPepperCustomSudArgs="" GreenPepperConfigRunnerProgram="" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

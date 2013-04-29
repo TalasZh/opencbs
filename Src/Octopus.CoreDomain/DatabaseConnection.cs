@@ -1,0 +1,25 @@
+﻿using System.Data.SqlClient;
+using Octopus.Shared.Settings;
+
+namespace Octopus.CoreDomain
+{
+    public class DatabaseConnection
+    {
+        public static bool IsProductionDatabase = true;
+
+        public static SqlConnection GetConnection()
+        {
+            SqlConnectionStringBuilder csb = new SqlConnectionStringBuilder();
+            csb.UserID = TechnicalSettings.DatabaseLoginName;
+            csb.Password = TechnicalSettings.DatabasePassword;
+            csb.DataSource = TechnicalSettings.DatabaseServerName;
+            csb.PersistSecurityInfo = false;
+            csb.InitialCatalog = IsProductionDatabase ? TechnicalSettings.DatabaseName : "Octopus_test";
+            csb.ConnectTimeout = TechnicalSettings.DatabaseTimeout;
+
+            SqlConnection conn = new SqlConnection(csb.ConnectionString);
+            conn.Open();
+            return conn;
+        }
+    }
+}
