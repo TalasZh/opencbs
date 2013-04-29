@@ -117,7 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="radioButtonSavingContract.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -126,6 +125,7 @@
   <data name="radioButtonSavingContract.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 9.75pt</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="radioButtonSavingContract.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -133,7 +133,7 @@
     <value>236, 22</value>
   </data>
   <data name="radioButtonSavingContract.Size" type="System.Drawing.Size, System.Drawing">
-    <value>137, 20</value>
+    <value>129, 20</value>
   </data>
   <data name="radioButtonSavingContract.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -163,7 +163,7 @@
     <value>7, 22</value>
   </data>
   <data name="radioButtonCreditContract.Size" type="System.Drawing.Size, System.Drawing">
-    <value>127, 20</value>
+    <value>120, 20</value>
   </data>
   <data name="radioButtonCreditContract.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -256,7 +256,7 @@
     <value>buttonSearch</value>
   </data>
   <data name="&gt;&gt;buttonSearch.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.23424, Culture=neutral, PublicKeyToken=null</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;buttonSearch.Parent" xml:space="preserve">
     <value>groupBoxSearchParameters</value>
@@ -313,7 +313,7 @@
     <value>buttonCancel</value>
   </data>
   <data name="&gt;&gt;buttonCancel.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.23424, Culture=neutral, PublicKeyToken=null</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;buttonCancel.Parent" xml:space="preserve">
     <value>groupBoxButtonBottom</value>
@@ -412,7 +412,7 @@
     <value>buttonPreview</value>
   </data>
   <data name="&gt;&gt;buttonPreview.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.23424, Culture=neutral, PublicKeyToken=null</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;buttonPreview.Parent" xml:space="preserve">
     <value>groupBoxButtonBottom</value>
@@ -448,7 +448,7 @@
     <value>buttonNext</value>
   </data>
   <data name="&gt;&gt;buttonNext.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.23424, Culture=neutral, PublicKeyToken=null</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;buttonNext.Parent" xml:space="preserve">
     <value>groupBoxButtonBottom</value>
@@ -563,7 +563,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAAS
-        CQAAAk1TRnQBSQFMAgEBBAEAAQgBAQEIAQEBEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        CQAAAk1TRnQBSQFMAgEBBAEAARABAQEQAQEBEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
         AwABQAMAASADAAEBAQABCAYAAQgYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
         AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
         AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
@@ -657,7 +657,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAACE
-        CQAAAk1TRnQBSQFMAgEBAgEAATABAQEwAQEBEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        CQAAAk1TRnQBSQFMAgEBAgEAATgBAQE4AQEBEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
         AwABQAMAARADAAEBAQABCAYAAQQYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
         AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
         AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
@@ -785,6 +785,6 @@
     <value>SearchCreditContractForm</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetBaseForm, Octopus.GUI, Version=1.1.1.23424, Culture=neutral, PublicKeyToken=null</value>
+    <value>Octopus.GUI.UserControl.SweetBaseForm, Octopus.GUI, Version=1.1.1.34377, Culture=neutral, PublicKeyToken=null</value>
   </data>
 </root>

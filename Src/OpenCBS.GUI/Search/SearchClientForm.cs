@@ -39,9 +39,6 @@ namespace Octopus.GUI
     using Octopus.CoreDomain;
     using Octopus.CoreDomain.Contracts.Loans;
 
-    /// <summary>
-    /// Description r�sum�e de SearchClientForm.
-    /// </summary>
     public class SearchClientForm : SweetBaseForm
     {
         private GroupBox groupBoxSearchParameters;
@@ -339,14 +336,14 @@ namespace Octopus.GUI
             this.buttonNext = new System.Windows.Forms.Button();
             this.buttonCancel = new System.Windows.Forms.Button();
             this.listViewClient = new System.Windows.Forms.ListView();
-            this.columnHeader1 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeaderName = new System.Windows.Forms.ColumnHeader();
-            this.columnHeaderActive = new System.Windows.Forms.ColumnHeader();
-            this.columnHeaderPassportNumber = new System.Windows.Forms.ColumnHeader();
-            this.columnHeaderLoanCycle = new System.Windows.Forms.ColumnHeader();
-            this.columnHeaderDistrict = new System.Windows.Forms.ColumnHeader();
-            this.columnHeaderCity = new System.Windows.Forms.ColumnHeader();
-            this.columnHeaderMemberOf = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderActive = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderPassportNumber = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderLoanCycle = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderDistrict = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderCity = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderMemberOf = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.imageListSort = new System.Windows.Forms.ImageList(this.components);
             this.tableLayoutPanel1.SuspendLayout();
             this.groupBoxSearchParameters.SuspendLayout();
@@ -357,54 +354,41 @@ namespace Octopus.GUI
             // 
             // labelTitleResult
             // 
-            this.labelTitleResult.AccessibleDescription = null;
-            this.labelTitleResult.AccessibleName = null;
+            this.labelTitleResult.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(81)))), ((int)(((byte)(152)))));
             resources.ApplyResources(this.labelTitleResult, "labelTitleResult");
-            this.labelTitleResult.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
+            this.labelTitleResult.ForeColor = System.Drawing.Color.White;
             this.labelTitleResult.Name = "labelTitleResult";
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.AccessibleDescription = null;
-            this.tableLayoutPanel1.AccessibleName = null;
             resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
-            this.tableLayoutPanel1.BackgroundImage = null;
             this.tableLayoutPanel1.Controls.Add(this.groupBoxSearchParameters, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.groupBoxButtonBottom, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.labelTitleResult, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.listViewClient, 0, 2);
-            this.tableLayoutPanel1.Font = null;
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             // 
             // groupBoxSearchParameters
             // 
-            this.groupBoxSearchParameters.AccessibleDescription = null;
-            this.groupBoxSearchParameters.AccessibleName = null;
-            resources.ApplyResources(this.groupBoxSearchParameters, "groupBoxSearchParameters");
             this.groupBoxSearchParameters.Controls.Add(this.groupBoxActive);
             this.groupBoxSearchParameters.Controls.Add(this.groupBoxCorporates);
             this.groupBoxSearchParameters.Controls.Add(this.buttonPrintReport);
             this.groupBoxSearchParameters.Controls.Add(this.textBoxQuery);
             this.groupBoxSearchParameters.Controls.Add(this.buttonSearch);
-            this.groupBoxSearchParameters.Font = null;
+            resources.ApplyResources(this.groupBoxSearchParameters, "groupBoxSearchParameters");
             this.groupBoxSearchParameters.Name = "groupBoxSearchParameters";
             this.groupBoxSearchParameters.TabStop = false;
             // 
             // groupBoxActive
             // 
-            this.groupBoxActive.AccessibleDescription = null;
-            this.groupBoxActive.AccessibleName = null;
-            resources.ApplyResources(this.groupBoxActive, "groupBoxActive");
             this.groupBoxActive.Controls.Add(this.checkBoxNotactive);
             this.groupBoxActive.Controls.Add(this.checkBoxActive);
-            this.groupBoxActive.Font = null;
+            resources.ApplyResources(this.groupBoxActive, "groupBoxActive");
             this.groupBoxActive.Name = "groupBoxActive";
             this.groupBoxActive.TabStop = false;
             // 
             // checkBoxNotactive
             // 
-            this.checkBoxNotactive.AccessibleDescription = null;
-            this.checkBoxNotactive.AccessibleName = null;
             resources.ApplyResources(this.checkBoxNotactive, "checkBoxNotactive");
             this.checkBoxNotactive.Checked = true;
             this.checkBoxNotactive.CheckState = System.Windows.Forms.CheckState.Checked;
@@ -412,8 +396,6 @@ namespace Octopus.GUI
             // 
             // checkBoxActive
             // 
-            this.checkBoxActive.AccessibleDescription = null;
-            this.checkBoxActive.AccessibleName = null;
             resources.ApplyResources(this.checkBoxActive, "checkBoxActive");
             this.checkBoxActive.Checked = true;
             this.checkBoxActive.CheckState = System.Windows.Forms.CheckState.Checked;
@@ -421,22 +403,17 @@ namespace Octopus.GUI
             // 
             // groupBoxCorporates
             // 
-            this.groupBoxCorporates.AccessibleDescription = null;
-            this.groupBoxCorporates.AccessibleName = null;
-            resources.ApplyResources(this.groupBoxCorporates, "groupBoxCorporates");
             this.groupBoxCorporates.Controls.Add(this.checkBoxVillages);
             this.groupBoxCorporates.Controls.Add(this.checkBoxGroups);
             this.groupBoxCorporates.Controls.Add(this.checkBoxPersons);
             this.groupBoxCorporates.Controls.Add(this.radioButtonCorporate);
             this.groupBoxCorporates.Controls.Add(this.radioButtonPerson);
-            this.groupBoxCorporates.Font = null;
+            resources.ApplyResources(this.groupBoxCorporates, "groupBoxCorporates");
             this.groupBoxCorporates.Name = "groupBoxCorporates";
             this.groupBoxCorporates.TabStop = false;
             // 
             // checkBoxVillages
             // 
-            this.checkBoxVillages.AccessibleDescription = null;
-            this.checkBoxVillages.AccessibleName = null;
             resources.ApplyResources(this.checkBoxVillages, "checkBoxVillages");
             this.checkBoxVillages.Checked = true;
             this.checkBoxVillages.CheckState = System.Windows.Forms.CheckState.Checked;
@@ -444,8 +421,6 @@ namespace Octopus.GUI
             // 
             // checkBoxGroups
             // 
-            this.checkBoxGroups.AccessibleDescription = null;
-            this.checkBoxGroups.AccessibleName = null;
             resources.ApplyResources(this.checkBoxGroups, "checkBoxGroups");
             this.checkBoxGroups.Checked = true;
             this.checkBoxGroups.CheckState = System.Windows.Forms.CheckState.Checked;
@@ -453,8 +428,6 @@ namespace Octopus.GUI
             // 
             // checkBoxPersons
             // 
-            this.checkBoxPersons.AccessibleDescription = null;
-            this.checkBoxPersons.AccessibleName = null;
             resources.ApplyResources(this.checkBoxPersons, "checkBoxPersons");
             this.checkBoxPersons.Checked = true;
             this.checkBoxPersons.CheckState = System.Windows.Forms.CheckState.Checked;
@@ -462,16 +435,12 @@ namespace Octopus.GUI
             // 
             // radioButtonCorporate
             // 
-            this.radioButtonCorporate.AccessibleDescription = null;
-            this.radioButtonCorporate.AccessibleName = null;
             resources.ApplyResources(this.radioButtonCorporate, "radioButtonCorporate");
             this.radioButtonCorporate.Name = "radioButtonCorporate";
             this.radioButtonCorporate.CheckedChanged += new System.EventHandler(this.radioButtonCorporate_CheckedChanged);
             // 
             // radioButtonPerson
             // 
-            this.radioButtonPerson.AccessibleDescription = null;
-            this.radioButtonPerson.AccessibleName = null;
             resources.ApplyResources(this.radioButtonPerson, "radioButtonPerson");
             this.radioButtonPerson.Checked = true;
             this.radioButtonPerson.Name = "radioButtonPerson";
@@ -480,72 +449,53 @@ namespace Octopus.GUI
             // 
             // buttonPrintReport
             // 
-            this.buttonPrintReport.AccessibleDescription = null;
-            this.buttonPrintReport.AccessibleName = null;
             resources.ApplyResources(this.buttonPrintReport, "buttonPrintReport");
             this.buttonPrintReport.Name = "buttonPrintReport";
             this.buttonPrintReport.Click += new System.EventHandler(this.buttonPrintReport_Click);
             // 
             // textBoxQuery
             // 
-            this.textBoxQuery.AccessibleDescription = null;
-            this.textBoxQuery.AccessibleName = null;
             resources.ApplyResources(this.textBoxQuery, "textBoxQuery");
-            this.textBoxQuery.BackgroundImage = null;
             this.textBoxQuery.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.textBoxQuery.Name = "textBoxQuery";
             this.textBoxQuery.TextChanged += new System.EventHandler(this.textBoxQuery_TextChanged);
             // 
             // buttonSearch
             // 
-            this.buttonSearch.AccessibleDescription = null;
-            this.buttonSearch.AccessibleName = null;
             resources.ApplyResources(this.buttonSearch, "buttonSearch");
             this.buttonSearch.Name = "buttonSearch";
             this.buttonSearch.Click += new System.EventHandler(this.buttonSearch_Click);
             // 
             // groupBoxButtonBottom
             // 
-            this.groupBoxButtonBottom.AccessibleDescription = null;
-            this.groupBoxButtonBottom.AccessibleName = null;
-            resources.ApplyResources(this.groupBoxButtonBottom, "groupBoxButtonBottom");
             this.groupBoxButtonBottom.Controls.Add(this.textBoxCurrentlyPage);
             this.groupBoxButtonBottom.Controls.Add(this.buttonPreview);
             this.groupBoxButtonBottom.Controls.Add(this.buttonNext);
             this.groupBoxButtonBottom.Controls.Add(this.buttonCancel);
-            this.groupBoxButtonBottom.Font = null;
+            resources.ApplyResources(this.groupBoxButtonBottom, "groupBoxButtonBottom");
             this.groupBoxButtonBottom.Name = "groupBoxButtonBottom";
             this.groupBoxButtonBottom.TabStop = false;
             // 
             // textBoxCurrentlyPage
             // 
-            this.textBoxCurrentlyPage.AccessibleDescription = null;
-            this.textBoxCurrentlyPage.AccessibleName = null;
             resources.ApplyResources(this.textBoxCurrentlyPage, "textBoxCurrentlyPage");
-            this.textBoxCurrentlyPage.BackgroundImage = null;
-            this.textBoxCurrentlyPage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
+            this.textBoxCurrentlyPage.ForeColor = System.Drawing.SystemColors.ControlText;
             this.textBoxCurrentlyPage.Name = "textBoxCurrentlyPage";
             // 
             // buttonPreview
             // 
-            this.buttonPreview.AccessibleDescription = null;
-            this.buttonPreview.AccessibleName = null;
             resources.ApplyResources(this.buttonPreview, "buttonPreview");
             this.buttonPreview.Name = "buttonPreview";
             this.buttonPreview.Click += new System.EventHandler(this.buttonPreview_Click);
             // 
             // buttonNext
             // 
-            this.buttonNext.AccessibleDescription = null;
-            this.buttonNext.AccessibleName = null;
             resources.ApplyResources(this.buttonNext, "buttonNext");
             this.buttonNext.Name = "buttonNext";
             this.buttonNext.Click += new System.EventHandler(this.buttonNext_Click);
             // 
             // buttonCancel
             // 
-            this.buttonCancel.AccessibleDescription = null;
-            this.buttonCancel.AccessibleName = null;
             resources.ApplyResources(this.buttonCancel, "buttonCancel");
             this.buttonCancel.BackColor = System.Drawing.Color.Gainsboro;
             this.buttonCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
@@ -557,10 +507,6 @@ namespace Octopus.GUI
             // 
             // listViewClient
             // 
-            this.listViewClient.AccessibleDescription = null;
-            this.listViewClient.AccessibleName = null;
-            resources.ApplyResources(this.listViewClient, "listViewClient");
-            this.listViewClient.BackgroundImage = null;
             this.listViewClient.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeaderName,
@@ -570,15 +516,15 @@ namespace Octopus.GUI
             this.columnHeaderDistrict,
             this.columnHeaderCity,
             this.columnHeaderMemberOf});
-            this.listViewClient.Font = null;
+            resources.ApplyResources(this.listViewClient, "listViewClient");
             this.listViewClient.FullRowSelect = true;
             this.listViewClient.GridLines = true;
             this.listViewClient.Name = "listViewClient";
             this.listViewClient.SmallImageList = this.imageListSort;
             this.listViewClient.UseCompatibleStateImageBehavior = false;
             this.listViewClient.View = System.Windows.Forms.View.Details;
-            this.listViewClient.DoubleClick += new System.EventHandler(this.listViewClient_DoubleClick);
             this.listViewClient.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.listViewClient_ColumnClick);
+            this.listViewClient.DoubleClick += new System.EventHandler(this.listViewClient_DoubleClick);
             // 
             // columnHeader1
             // 
@@ -626,12 +572,9 @@ namespace Octopus.GUI
             // SearchClientForm
             // 
             this.AcceptButton = this.buttonSearch;
-            this.AccessibleDescription = null;
-            this.AccessibleName = null;
             resources.ApplyResources(this, "$this");
             this.Controls.Add(this.tableLayoutPanel1);
             this.Cursor = System.Windows.Forms.Cursors.Default;
-            this.Font = null;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;

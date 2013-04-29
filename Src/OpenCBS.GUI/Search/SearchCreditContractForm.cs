@@ -369,15 +369,15 @@ namespace Octopus.GUI
             this.buttonNext = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.listViewContracts = new System.Windows.Forms.ListView();
-            this.columnHeaderImage = new System.Windows.Forms.ColumnHeader();
-            this.columnHeaderContractCode = new System.Windows.Forms.ColumnHeader();
-            this.columnHeaderClientType = new System.Windows.Forms.ColumnHeader();
-            this.columnHeaderClientName = new System.Windows.Forms.ColumnHeader();
-            this.columnHeaderLoanOfficer = new System.Windows.Forms.ColumnHeader();
-            this.columnHeaderStartDate = new System.Windows.Forms.ColumnHeader();
-            this.columnHeaderCloseDate = new System.Windows.Forms.ColumnHeader();
-            this.columnHeaderStatus = new System.Windows.Forms.ColumnHeader();
-            this.columnHeaderContractType = new System.Windows.Forms.ColumnHeader();
+            this.columnHeaderImage = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderContractCode = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderClientType = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderClientName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderLoanOfficer = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderStartDate = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderCloseDate = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderStatus = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderContractType = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.imageListSort = new System.Windows.Forms.ImageList(this.components);
             this.imageListClient = new System.Windows.Forms.ImageList(this.components);
             this.groupBoxSearchParameters.SuspendLayout();
@@ -387,16 +387,16 @@ namespace Octopus.GUI
             this.SuspendLayout();
             // 
             // groupBoxSearchParameters
-            //
-            resources.ApplyResources(this.groupBoxSearchParameters, "groupBoxSearchParameters");
+            // 
             this.groupBoxSearchParameters.Controls.Add(this.groupBoxContractType);
             this.groupBoxSearchParameters.Controls.Add(this.textBoxQuery);
             this.groupBoxSearchParameters.Controls.Add(this.buttonSearch);
+            resources.ApplyResources(this.groupBoxSearchParameters, "groupBoxSearchParameters");
             this.groupBoxSearchParameters.Name = "groupBoxSearchParameters";
             this.groupBoxSearchParameters.TabStop = false;
             // 
             // groupBoxContractType
-            //
+            // 
             this.groupBoxContractType.Controls.Add(this.radioButtonSavingContract);
             this.groupBoxContractType.Controls.Add(this.radioButtonCreditContract);
             resources.ApplyResources(this.groupBoxContractType, "groupBoxContractType");
@@ -437,17 +437,18 @@ namespace Octopus.GUI
             // 
             // lblTitle
             // 
-            this.lblTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.lblTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(81)))), ((int)(((byte)(152)))));
             resources.ApplyResources(this.lblTitle, "lblTitle");
+            this.lblTitle.ForeColor = System.Drawing.Color.White;
             this.lblTitle.Name = "lblTitle";
             // 
             // groupBoxButtonBottom
-            //
-            resources.ApplyResources(this.groupBoxButtonBottom, "groupBoxButtonBottom");
+            // 
             this.groupBoxButtonBottom.Controls.Add(this.textBoxCurrentlyPage);
             this.groupBoxButtonBottom.Controls.Add(this.buttonPreview);
             this.groupBoxButtonBottom.Controls.Add(this.buttonCancel);
             this.groupBoxButtonBottom.Controls.Add(this.buttonNext);
+            resources.ApplyResources(this.groupBoxButtonBottom, "groupBoxButtonBottom");
             this.groupBoxButtonBottom.Name = "groupBoxButtonBottom";
             this.groupBoxButtonBottom.TabStop = false;
             // 
@@ -498,8 +499,8 @@ namespace Octopus.GUI
             this.listViewContracts.SmallImageList = this.imageListSort;
             this.listViewContracts.UseCompatibleStateImageBehavior = false;
             this.listViewContracts.View = System.Windows.Forms.View.Details;
-            this.listViewContracts.DoubleClick += new System.EventHandler(this.listViewContracts_DoubleClick);
             this.listViewContracts.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.listViewContracts_ColumnClick);
+            this.listViewContracts.DoubleClick += new System.EventHandler(this.listViewContracts_DoubleClick);
             // 
             // columnHeaderImage
             // 
