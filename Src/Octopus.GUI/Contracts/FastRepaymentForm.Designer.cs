@@ -1,4 +1,4 @@
-﻿using Octopus.GUI.UserControl;
+using Octopus.GUI.UserControl;
 
 namespace Octopus.GUI.Contracts
 {
@@ -34,8 +34,8 @@ namespace Octopus.GUI.Contracts
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FastRepaymentForm));
             this.tbTotal = new System.Windows.Forms.TextBox();
             this.pnlButton = new System.Windows.Forms.Panel();
-            this.btnOK = new Octopus.GUI.UserControl.SweetButton();
-            this.btnCancel = new Octopus.GUI.UserControl.SweetButton();
+            this.btnOK = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
             this.cbItem = new System.Windows.Forms.ComboBox();
             this.lvContracts = new Octopus.GUI.UserControl.ListViewEx();
             this.colName = new System.Windows.Forms.ColumnHeader();
@@ -68,27 +68,15 @@ namespace Octopus.GUI.Contracts
             // btnOK
             // 
             resources.ApplyResources(this.btnOK, "btnOK");
-            this.btnOK.BackColor = System.Drawing.Color.Gainsboro;
             this.btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnOK.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnOK.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Save;
-            this.btnOK.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_validity;
-            this.btnOK.Menu = null;
             this.btnOK.Name = "btnOK";
-            this.btnOK.UseVisualStyleBackColor = false;
             this.btnOK.Click += new System.EventHandler(this.BtnOkClick);
             // 
             // btnCancel
             // 
             resources.ApplyResources(this.btnCancel, "btnCancel");
-            this.btnCancel.BackColor = System.Drawing.Color.Gainsboro;
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnCancel.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Close;
-            this.btnCancel.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_close;
-            this.btnCancel.Menu = null;
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.UseVisualStyleBackColor = false;
             // 
             // cbItem
             // 
@@ -194,8 +182,8 @@ namespace Octopus.GUI.Contracts
 
         private System.Windows.Forms.Panel pnlButton;
         private ListViewEx lvContracts;
-        private SweetButton btnOK;
-        private SweetButton btnCancel;
+        private System.Windows.Forms.Button btnOK;
+        private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.ColumnHeader colName;
         private System.Windows.Forms.ColumnHeader colContract;
         private System.Windows.Forms.ColumnHeader colPrincipal;

@@ -39,8 +39,8 @@ namespace Octopus.GUI
             this.columnHeader7 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader8 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader9 = new System.Windows.Forms.ColumnHeader();
-            this.buttonCancel = new Octopus.GUI.UserControl.SweetButton();
-            this.buttonSave = new Octopus.GUI.UserControl.SweetButton();
+            this.buttonCancel = new System.Windows.Forms.Button();
+            this.buttonSave = new System.Windows.Forms.Button();
             this.lblComeBackToState = new System.Windows.Forms.Label();
             this.cbShowCurrentState = new System.Windows.Forms.CheckBox();
             this.lblConfirmEventDelete = new System.Windows.Forms.Label();
@@ -103,47 +103,32 @@ namespace Octopus.GUI
             resources.ApplyResources(this.columnHeader9, "columnHeader9");
             // 
             // buttonCancel
-            // 
-            this.buttonCancel.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.buttonCancel, "buttonCancel");
             this.buttonCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.buttonCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonCancel.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Close;
-            this.buttonCancel.Menu = null;
             this.buttonCancel.Name = "buttonCancel";
-            this.buttonCancel.UseVisualStyleBackColor = false;
             // 
             // buttonSave
-            // 
-            this.buttonSave.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.buttonSave, "buttonSave");
             this.buttonSave.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.buttonSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonSave.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Save;
-            this.buttonSave.Menu = null;
             this.buttonSave.Name = "buttonSave";
-            this.buttonSave.UseVisualStyleBackColor = false;
             this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
             // 
             // lblComeBackToState
             // 
             resources.ApplyResources(this.lblComeBackToState, "lblComeBackToState");
-            this.lblComeBackToState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblComeBackToState.Name = "lblComeBackToState";
             // 
             // cbShowCurrentState
             // 
             resources.ApplyResources(this.cbShowCurrentState, "cbShowCurrentState");
-            this.cbShowCurrentState.BackColor = System.Drawing.Color.Transparent;
-            this.cbShowCurrentState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.cbShowCurrentState.Name = "cbShowCurrentState";
-            this.cbShowCurrentState.UseVisualStyleBackColor = false;
             this.cbShowCurrentState.CheckedChanged += new System.EventHandler(this.cbShowCurrentState_CheckedChanged);
             // 
             // lblConfirmEventDelete
             // 
             resources.ApplyResources(this.lblConfirmEventDelete, "lblConfirmEventDelete");
-            this.lblConfirmEventDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblConfirmEventDelete.Name = "lblConfirmEventDelete";
             // 
             // listViewEvents
@@ -195,7 +180,6 @@ namespace Octopus.GUI
             // label1
             // 
             resources.ApplyResources(this.label1, "label1");
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.label1.Name = "label1";
             // 
             // EventCancelConfirmationForm
@@ -203,7 +187,6 @@ namespace Octopus.GUI
             this.AcceptButton = this.buttonSave;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Control;
             this.CancelButton = this.buttonCancel;
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxComments);
@@ -233,8 +216,8 @@ namespace Octopus.GUI
         private System.Windows.Forms.ColumnHeader columnHeader7;
         private System.Windows.Forms.ColumnHeader columnHeader8;
         private System.Windows.Forms.ColumnHeader columnHeader9;
-        private SweetButton buttonCancel;
-        private SweetButton buttonSave;
+        private System.Windows.Forms.Button buttonCancel;
+        private System.Windows.Forms.Button buttonSave;
         private System.Windows.Forms.Label lblComeBackToState;
         private System.Windows.Forms.CheckBox cbShowCurrentState;
         private System.Windows.Forms.Label lblConfirmEventDelete;

@@ -1,4 +1,4 @@
-﻿namespace Octopus.GUI.UserControl
+namespace Octopus.GUI.UserControl
 {
     partial class CustomizableFieldsControl
     {
@@ -32,7 +32,7 @@
             this.panelAdvancedFields = new System.Windows.Forms.FlowLayoutPanel();
             this.fieldGrid = new System.Windows.Forms.PropertyGrid();
             this.panelUpdate = new System.Windows.Forms.FlowLayoutPanel();
-            this.buttonUpdate = new Octopus.GUI.UserControl.SweetButton();
+            this.buttonUpdate = new System.Windows.Forms.Button();
             this.panelUpdate.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -71,11 +71,7 @@
             this.buttonUpdate.AccessibleDescription = null;
             this.buttonUpdate.AccessibleName = null;
             resources.ApplyResources(this.buttonUpdate, "buttonUpdate");
-            this.buttonUpdate.BackgroundImage = null;
-            this.buttonUpdate.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Save;
-            this.buttonUpdate.Menu = null;
             this.buttonUpdate.Name = "buttonUpdate";
-            this.buttonUpdate.UseVisualStyleBackColor = true;
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // CustomizableFieldsControl
@@ -84,7 +80,6 @@
             this.AccessibleName = null;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = null;
             this.Controls.Add(this.fieldGrid);
             this.Controls.Add(this.panelUpdate);
             this.Controls.Add(this.panelAdvancedFields);
@@ -102,6 +97,6 @@
         private System.Windows.Forms.FlowLayoutPanel panelAdvancedFields;
         private System.Windows.Forms.PropertyGrid fieldGrid;
         private System.Windows.Forms.FlowLayoutPanel panelUpdate;
-        private SweetButton buttonUpdate;
+        private System.Windows.Forms.Button buttonUpdate;
     }
 }

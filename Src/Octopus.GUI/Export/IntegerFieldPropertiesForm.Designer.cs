@@ -1,4 +1,4 @@
-﻿namespace Octopus.GUI.Export
+namespace Octopus.GUI.Export
 {
     partial class IntegerFieldPropertiesForm
     {
@@ -62,20 +62,16 @@
             this.checkBoxAlignRight.AccessibleDescription = null;
             this.checkBoxAlignRight.AccessibleName = null;
             resources.ApplyResources(this.checkBoxAlignRight, "checkBoxAlignRight");
-            this.checkBoxAlignRight.BackgroundImage = null;
             this.checkBoxAlignRight.Font = null;
             this.checkBoxAlignRight.Name = "checkBoxAlignRight";
-            this.checkBoxAlignRight.UseVisualStyleBackColor = true;
             // 
             // checkBoxDisplayZero
             // 
             this.checkBoxDisplayZero.AccessibleDescription = null;
             this.checkBoxDisplayZero.AccessibleName = null;
             resources.ApplyResources(this.checkBoxDisplayZero, "checkBoxDisplayZero");
-            this.checkBoxDisplayZero.BackgroundImage = null;
             this.checkBoxDisplayZero.Font = null;
             this.checkBoxDisplayZero.Name = "checkBoxDisplayZero";
-            this.checkBoxDisplayZero.UseVisualStyleBackColor = true;
             // 
             // IntegerFieldPropertiesForm
             // 
@@ -83,7 +79,6 @@
             this.AccessibleName = null;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = null;
             this.Controls.Add(this.buttonSave);
             this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.checkBoxDisplayZero);

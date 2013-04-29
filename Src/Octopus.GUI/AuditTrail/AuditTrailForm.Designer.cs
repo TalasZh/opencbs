@@ -36,8 +36,8 @@ namespace Octopus.GUI.AuditTrail
             this.columnHeader2 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader1 = new System.Windows.Forms.ColumnHeader();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnRefresh = new Octopus.GUI.UserControl.SweetButton();
-            this.btnPrint = new Octopus.GUI.UserControl.SweetButton();
+            this.btnRefresh = new System.Windows.Forms.Button();
+            this.btnPrint = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.tabPeriod = new System.Windows.Forms.TableLayoutPanel();
             this.dtFrom = new System.Windows.Forms.DateTimePicker();
@@ -50,10 +50,10 @@ namespace Octopus.GUI.AuditTrail
             this.lblUser = new System.Windows.Forms.Label();
             this.chkIncludeDeleted = new System.Windows.Forms.CheckBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnUncheckAll = new Octopus.GUI.UserControl.SweetButton();
-            this.btnCheckAll = new Octopus.GUI.UserControl.SweetButton();
+            this.btnUncheckAll = new System.Windows.Forms.Button();
+            this.btnCheckAll = new System.Windows.Forms.Button();
             this.panOptions = new System.Windows.Forms.Panel();
-            this.btnClose = new Octopus.GUI.UserControl.SweetButton();
+            this.btnClose = new System.Windows.Forms.Button();
             this.lblTitle = new System.Windows.Forms.Label();
             this.bwReport = new System.ComponentModel.BackgroundWorker();
             this.bwRefresh = new System.ComponentModel.BackgroundWorker();
@@ -122,19 +122,13 @@ namespace Octopus.GUI.AuditTrail
             // btnRefresh
             // 
             resources.ApplyResources(this.btnRefresh, "btnRefresh");
-            this.btnRefresh.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Refresh;
-            this.btnRefresh.Menu = null;
             this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.UseVisualStyleBackColor = true;
             this.btnRefresh.Click += new System.EventHandler(this.OnRefreshClick);
             // 
             // btnPrint
             // 
             resources.ApplyResources(this.btnPrint, "btnPrint");
-            this.btnPrint.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Print;
-            this.btnPrint.Menu = null;
             this.btnPrint.Name = "btnPrint";
-            this.btnPrint.UseVisualStyleBackColor = true;
             this.btnPrint.Click += new System.EventHandler(this.OnPrintClick);
             // 
             // panel3
@@ -207,9 +201,7 @@ namespace Octopus.GUI.AuditTrail
             // chkIncludeDeleted
             // 
             resources.ApplyResources(this.chkIncludeDeleted, "chkIncludeDeleted");
-            this.chkIncludeDeleted.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.chkIncludeDeleted.Name = "chkIncludeDeleted";
-            this.chkIncludeDeleted.UseVisualStyleBackColor = true;
             // 
             // panel2
             // 
@@ -221,19 +213,13 @@ namespace Octopus.GUI.AuditTrail
             // btnUncheckAll
             // 
             resources.ApplyResources(this.btnUncheckAll, "btnUncheckAll");
-            this.btnUncheckAll.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.None;
-            this.btnUncheckAll.Menu = null;
             this.btnUncheckAll.Name = "btnUncheckAll";
-            this.btnUncheckAll.UseVisualStyleBackColor = true;
             this.btnUncheckAll.Click += new System.EventHandler(this.OnUncheckAllClick);
             // 
             // btnCheckAll
             // 
             resources.ApplyResources(this.btnCheckAll, "btnCheckAll");
-            this.btnCheckAll.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.None;
-            this.btnCheckAll.Menu = null;
             this.btnCheckAll.Name = "btnCheckAll";
-            this.btnCheckAll.UseVisualStyleBackColor = true;
             this.btnCheckAll.Click += new System.EventHandler(this.OnCheckAllClick);
             // 
             // panOptions
@@ -246,18 +232,12 @@ namespace Octopus.GUI.AuditTrail
             // btnClose
             // 
             resources.ApplyResources(this.btnClose, "btnClose");
-            this.btnClose.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnClose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnClose.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Close;
-            this.btnClose.Menu = null;
             this.btnClose.Name = "btnClose";
-            this.btnClose.UseVisualStyleBackColor = false;
             // 
             // lblTitle
             // 
             resources.ApplyResources(this.lblTitle, "lblTitle");
             this.lblTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.lblTitle.ForeColor = System.Drawing.Color.White;
             this.lblTitle.Name = "lblTitle";
             // 
             // bwReport
@@ -333,7 +313,6 @@ namespace Octopus.GUI.AuditTrail
             // AuditTrailForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this, "$this");
             this.Controls.Add(this.olvEvents);
             this.Controls.Add(this.panOptions);
@@ -361,14 +340,14 @@ namespace Octopus.GUI.AuditTrail
         #endregion
 
         private System.Windows.Forms.Label lblTitle;
-        private SweetButton btnPrint;
+        private System.Windows.Forms.Button btnPrint;
         private System.Windows.Forms.DateTimePicker dtTo;
         private System.Windows.Forms.DateTimePicker dtFrom;
         private System.Windows.Forms.Label lblPeriod;
-        private SweetButton btnClose;
+        private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Label lblUser;
         private System.Windows.Forms.ComboBox cbUser;
-        private SweetButton btnRefresh;
+        private System.Windows.Forms.Button btnRefresh;
         private System.Windows.Forms.TableLayoutPanel tabPeriod;
         private System.Windows.Forms.Label lblMdash;
         private System.Windows.Forms.Panel panOptions;
@@ -377,8 +356,8 @@ namespace Octopus.GUI.AuditTrail
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.SplitContainer split2;
         private System.Windows.Forms.Panel panel2;
-        private SweetButton btnCheckAll;
-        private SweetButton btnUncheckAll;
+        private System.Windows.Forms.Button btnCheckAll;
+        private System.Windows.Forms.Button btnUncheckAll;
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.CheckBox chkIncludeDeleted;
         private System.Windows.Forms.Panel panel3;

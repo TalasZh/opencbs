@@ -1,4 +1,4 @@
-﻿using System.ComponentModel;
+using System.ComponentModel;
 using System.Windows.Forms;
 using Octopus.GUI.UserControl;
 
@@ -6,13 +6,13 @@ namespace Octopus.GUI.Products
 {
     public partial class FrmAvailableSavingProducts
     {
-        private SweetButton buttonDeleteProduct;
-        private SweetButton buttonAddProduct;
+        private System.Windows.Forms.Button buttonDeleteProduct;
+        private System.Windows.Forms.Button buttonAddProduct;
 
         private GroupBox groupBox1;
         private Panel pnlSavingsProducts;
         private CheckBox checkBoxShowDeletedProduct;
-        private SweetButton buttonEditProduct;
+        private System.Windows.Forms.Button buttonEditProduct;
         private WebBrowser webBrowserPackage;
 
         /// <summary>
@@ -40,10 +40,10 @@ namespace Octopus.GUI.Products
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAvailableSavingProducts));
             this.webBrowserPackage = new System.Windows.Forms.WebBrowser();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.buttonEditProduct = new Octopus.GUI.UserControl.SweetButton();
+            this.buttonEditProduct = new System.Windows.Forms.Button();
             this.checkBoxShowDeletedProduct = new System.Windows.Forms.CheckBox();
-            this.buttonAddProduct = new Octopus.GUI.UserControl.SweetButton();
-            this.buttonDeleteProduct = new Octopus.GUI.UserControl.SweetButton();
+            this.buttonAddProduct = new System.Windows.Forms.Button();
+            this.buttonDeleteProduct = new System.Windows.Forms.Button();
             this.pnlSavingsProducts = new System.Windows.Forms.Panel();
             this.menuBtnAddProduct = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.savingBookProductToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -60,8 +60,7 @@ namespace Octopus.GUI.Products
             this.webBrowserPackage.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webBrowserPackage_DocumentCompleted);
             // 
             // groupBox1
-            // 
-            this.groupBox1.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris_180;
+            //
             resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Controls.Add(this.buttonEditProduct);
             this.groupBox1.Controls.Add(this.checkBoxShowDeletedProduct);
@@ -73,45 +72,25 @@ namespace Octopus.GUI.Products
             // buttonEditProduct
             // 
             resources.ApplyResources(this.buttonEditProduct, "buttonEditProduct");
-            this.buttonEditProduct.BackColor = System.Drawing.Color.Gainsboro;
-            this.buttonEditProduct.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonEditProduct.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.None;
-            this.buttonEditProduct.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_validity;
-            this.buttonEditProduct.Menu = null;
             this.buttonEditProduct.Name = "buttonEditProduct";
-            this.buttonEditProduct.UseVisualStyleBackColor = false;
             this.buttonEditProduct.Click += new System.EventHandler(this.buttonEditProduct_Click);
             // 
             // checkBoxShowDeletedProduct
             // 
             resources.ApplyResources(this.checkBoxShowDeletedProduct, "checkBoxShowDeletedProduct");
-            this.checkBoxShowDeletedProduct.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.checkBoxShowDeletedProduct.Name = "checkBoxShowDeletedProduct";
-            this.checkBoxShowDeletedProduct.UseVisualStyleBackColor = true;
             this.checkBoxShowDeletedProduct.CheckedChanged += new System.EventHandler(this.checkBoxShowDeletedProduct_CheckedChanged);
             // 
             // buttonAddProduct
             // 
             resources.ApplyResources(this.buttonAddProduct, "buttonAddProduct");
-            this.buttonAddProduct.BackColor = System.Drawing.Color.Gainsboro;
-            this.buttonAddProduct.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonAddProduct.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.New;
-            this.buttonAddProduct.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_new;
-            this.buttonAddProduct.Menu = null;
             this.buttonAddProduct.Name = "buttonAddProduct";
-            this.buttonAddProduct.UseVisualStyleBackColor = false;
             this.buttonAddProduct.Click += new System.EventHandler(this.buttonAddPackage_Click);
             // 
             // buttonDeleteProduct
             // 
             resources.ApplyResources(this.buttonDeleteProduct, "buttonDeleteProduct");
-            this.buttonDeleteProduct.BackColor = System.Drawing.Color.Gainsboro;
-            this.buttonDeleteProduct.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonDeleteProduct.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Delete;
-            this.buttonDeleteProduct.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_delete;
-            this.buttonDeleteProduct.Menu = null;
             this.buttonDeleteProduct.Name = "buttonDeleteProduct";
-            this.buttonDeleteProduct.UseVisualStyleBackColor = false;
             this.buttonDeleteProduct.Click += new System.EventHandler(this.buttonDeletePackage_Click);
             // 
             // pnlSavingsProducts
@@ -136,8 +115,7 @@ namespace Octopus.GUI.Products
             this.savingBookProductToolStripMenuItem.Click += new System.EventHandler(this.savingBookProductToolStripMenuItem_Click);
             // 
             // FrmAvailableSavingProducts
-            // 
-            this.BackColor = System.Drawing.Color.White;
+            //
             resources.ApplyResources(this, "$this");
             this.Controls.Add(this.pnlSavingsProducts);
             this.Name = "FrmAvailableSavingProducts";

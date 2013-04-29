@@ -1,4 +1,4 @@
-﻿using System.ComponentModel;
+using System.ComponentModel;
 using System.Windows.Forms;
 using Octopus.GUI.UserControl;
 
@@ -64,10 +64,10 @@ namespace Octopus.GUI.Configuration
             this.colPhone = new System.Windows.Forms.ColumnHeader();
             this.tabButtons = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.btnNew = new Octopus.GUI.UserControl.SweetButton();
-            this.btnSave = new Octopus.GUI.UserControl.SweetButton();
-            this.btnSubordinates = new Octopus.GUI.UserControl.SweetButton();
-            this.btnDelete = new Octopus.GUI.UserControl.SweetButton();
+            this.btnNew = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.btnSubordinates = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
             this.gbAddUser = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.cmbRoles = new System.Windows.Forms.ComboBox();
@@ -165,48 +165,31 @@ namespace Octopus.GUI.Configuration
             // btnNew
             // 
             resources.ApplyResources(this.btnNew, "btnNew");
-            this.btnNew.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnNew.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.New;
-            this.btnNew.Menu = null;
             this.btnNew.Name = "btnNew";
-            this.btnNew.UseVisualStyleBackColor = false;
             this.btnNew.Click += new System.EventHandler(this.buttonNew_Click);
             // 
             // btnSave
             // 
             resources.ApplyResources(this.btnSave, "btnSave");
-            this.btnSave.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Save;
-            this.btnSave.Menu = null;
             this.btnSave.Name = "btnSave";
-            this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.buttonOK_Click);
             // 
             // btnSubordinates
             // 
             resources.ApplyResources(this.btnSubordinates, "btnSubordinates");
-            this.btnSubordinates.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnSubordinates.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.None;
-            this.btnSubordinates.Menu = null;
             this.btnSubordinates.Name = "btnSubordinates";
-            this.btnSubordinates.UseVisualStyleBackColor = false;
             this.btnSubordinates.Click += new System.EventHandler(this.OnSubordinatesClicked);
             // 
             // btnDelete
             // 
             resources.ApplyResources(this.btnDelete, "btnDelete");
-            this.btnDelete.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnDelete.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Delete;
-            this.btnDelete.Menu = null;
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.UseVisualStyleBackColor = false;
             this.btnDelete.Click += new System.EventHandler(this.OnDeleteClick);
             // 
             // gbAddUser
-            // 
-            this.gbAddUser.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris;
+            //
             resources.ApplyResources(this.gbAddUser, "gbAddUser");
             this.gbAddUser.Controls.Add(this.tableLayoutPanel);
-            this.gbAddUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.gbAddUser.Name = "gbAddUser";
             this.gbAddUser.TabStop = false;
             // 
@@ -253,7 +236,6 @@ namespace Octopus.GUI.Configuration
             // 
             this.lblRole.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.lblRole, "lblRole");
-            this.lblRole.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblRole.Name = "lblRole";
             // 
             // txbConfirmPassword
@@ -268,10 +250,8 @@ namespace Octopus.GUI.Configuration
             this.txbUsername.TextChanged += new System.EventHandler(this.textBoxUsername_TextChanged);
             // 
             // lbComfirmPassword
-            // 
-            this.lbComfirmPassword.BackColor = System.Drawing.Color.Transparent;
+            //
             resources.ApplyResources(this.lbComfirmPassword, "lbComfirmPassword");
-            this.lbComfirmPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbComfirmPassword.Name = "lbComfirmPassword";
             // 
             // txbLastname
@@ -290,14 +270,12 @@ namespace Octopus.GUI.Configuration
             // 
             this.lblMail.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.lblMail, "lblMail");
-            this.lblMail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblMail.Name = "lblMail";
             // 
             // lblPassword
             // 
             this.lblPassword.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.lblPassword, "lblPassword");
-            this.lblPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblPassword.Name = "lblPassword";
             // 
             // txbPassword
@@ -311,28 +289,24 @@ namespace Octopus.GUI.Configuration
             // 
             this.lblFirstName.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.lblFirstName, "lblFirstName");
-            this.lblFirstName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblFirstName.Name = "lblFirstName";
             // 
             // lblLastName
             // 
             this.lblLastName.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.lblLastName, "lblLastName");
-            this.lblLastName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblLastName.Name = "lblLastName";
             // 
             // lblUsername
             // 
             this.lblUsername.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.lblUsername, "lblUsername");
-            this.lblUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblUsername.Name = "lblUsername";
             // 
             // lblSex
             // 
             this.lblSex.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.lblSex, "lblSex");
-            this.lblSex.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblSex.Name = "lblSex";
             // 
             // cmbSex
@@ -349,7 +323,6 @@ namespace Octopus.GUI.Configuration
             // 
             this.lblPhone.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.lblPhone, "lblPhone");
-            this.lblPhone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblPhone.Name = "lblPhone";
             // 
             // txbPhone
@@ -359,8 +332,7 @@ namespace Octopus.GUI.Configuration
             this.txbPhone.TextChanged += new System.EventHandler(this.txbPhone_TextChanged);
             // 
             // UserForm
-            // 
-            this.BackColor = System.Drawing.Color.White;
+            //
             resources.ApplyResources(this, "$this");
             this.Controls.Add(this.lvUsers);
             this.Controls.Add(this.flowLayoutPanel1);
@@ -387,10 +359,10 @@ namespace Octopus.GUI.Configuration
         private ColumnHeader colSubordinates;
         private TableLayoutPanel tabButtons;
         private FlowLayoutPanel flowLayoutPanel1;
-        private SweetButton btnNew;
-        private SweetButton btnSave;
-        private SweetButton btnSubordinates;
-        private SweetButton btnDelete;
+        private System.Windows.Forms.Button btnNew;
+        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Button btnSubordinates;
+        private System.Windows.Forms.Button btnDelete;
         private TableLayoutPanel tableLayoutPanel;
         private Label lblSex;
         private ComboBox cmbSex;

@@ -35,12 +35,12 @@ using ZedGraph;
 namespace Octopus.GUI
 {
     /// <summary>
-    /// Description résumée de CashPrevisionForm.
+    /// Description rï¿½sumï¿½e de CashPrevisionForm.
     /// </summary>
     public class CashPrevisionForm : Form
     {
         /// <summary>
-        /// Variable nécessaire au concepteur.
+        /// Variable nï¿½cessaire au concepteur.
         /// </summary>
         private Container components = null;
 
@@ -82,7 +82,7 @@ namespace Octopus.GUI
         }
 
         /// <summary>
-        /// Nettoyage des ressources utilisées.
+        /// Nettoyage des ressources utilisï¿½es.
         /// </summary>
         protected override void Dispose(bool disposing)
         {
@@ -96,11 +96,11 @@ namespace Octopus.GUI
             base.Dispose(disposing);
         }
 
-        #region Code génér?par le Concepteur Windows Form
+        #region Code gï¿½nï¿½r?par le Concepteur Windows Form
 
         /// <summary>
-        /// Méthode requise pour la prise en charge du concepteur - ne modifiez pas
-        /// le contenu de cette méthode avec l'éditeur de code.
+        /// Mï¿½thode requise pour la prise en charge du concepteur - ne modifiez pas
+        /// le contenu de cette mï¿½thode avec l'ï¿½diteur de code.
         /// </summary>
         private void InitializeComponent()
         {
@@ -182,7 +182,6 @@ namespace Octopus.GUI
             this.groupBoxButton.AccessibleDescription = null;
             this.groupBoxButton.AccessibleName = null;
             resources.ApplyResources(this.groupBoxButton, "groupBoxButton");
-            this.groupBoxButton.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris_180;
             this.groupBoxButton.Controls.Add(this.checkBoxIncludeLateLoans);
             this.groupBoxButton.Controls.Add(this.buttonRepaymentExit);
             this.groupBoxButton.Controls.Add(this.buttonPreview);
@@ -198,11 +197,7 @@ namespace Octopus.GUI
             this.checkBoxIncludeLateLoans.AccessibleDescription = null;
             this.checkBoxIncludeLateLoans.AccessibleName = null;
             resources.ApplyResources(this.checkBoxIncludeLateLoans, "checkBoxIncludeLateLoans");
-            this.checkBoxIncludeLateLoans.BackColor = System.Drawing.Color.Transparent;
-            this.checkBoxIncludeLateLoans.BackgroundImage = null;
-            this.checkBoxIncludeLateLoans.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.checkBoxIncludeLateLoans.Name = "checkBoxIncludeLateLoans";
-            this.checkBoxIncludeLateLoans.UseVisualStyleBackColor = false;
             this.checkBoxIncludeLateLoans.CheckedChanged += new System.EventHandler(this.checkBoxIncludeLateLoans_CheckedChanged);
             // 
             // buttonRepaymentExit
@@ -247,7 +242,6 @@ namespace Octopus.GUI
             this.labelPrevision.AccessibleName = null;
             resources.ApplyResources(this.labelPrevision, "labelPrevision");
             this.labelPrevision.BackColor = System.Drawing.Color.Transparent;
-            this.labelPrevision.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelPrevision.Name = "labelPrevision";
             // 
             // comboBoxForecastDays
@@ -272,8 +266,6 @@ namespace Octopus.GUI
             this.AccessibleDescription = null;
             this.AccessibleName = null;
             resources.ApplyResources(this, "$this");
-            this.BackColor = System.Drawing.Color.White;
-            this.BackgroundImage = null;
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.splitter1);
             this.Controls.Add(this.groupBoxButton);

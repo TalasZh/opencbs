@@ -1,4 +1,4 @@
-﻿namespace Octopus.GUI.Projets
+namespace Octopus.GUI.Projets
 {
     partial class SearchProjectForm
     {
@@ -69,8 +69,7 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             // 
             // groupBoxButtonBottom
-            // 
-            this.groupBoxButtonBottom.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris_180;
+            //
             resources.ApplyResources(this.groupBoxButtonBottom, "groupBoxButtonBottom");
             this.groupBoxButtonBottom.Controls.Add(this.textBoxCurrentlyPage);
             this.groupBoxButtonBottom.Controls.Add(this.buttonPreview);
@@ -168,9 +167,7 @@
             this.imageListSort.Images.SetKeyName(3, "theme1.1_bouton_up_small.png");
             // 
             // groupBoxSearchParameters
-            // 
-            this.groupBoxSearchParameters.BackColor = System.Drawing.Color.Transparent;
-            this.groupBoxSearchParameters.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris;
+            //
             this.groupBoxSearchParameters.Controls.Add(this.btnSearch);
             this.groupBoxSearchParameters.Controls.Add(this.buttonPrintReport);
             this.groupBoxSearchParameters.Controls.Add(this.textBoxQuery);
@@ -224,7 +221,6 @@
             // 
             this.labelTitleResult.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             resources.ApplyResources(this.labelTitleResult, "labelTitleResult");
-            this.labelTitleResult.ForeColor = System.Drawing.Color.White;
             this.labelTitleResult.Name = "labelTitleResult";
             // 
             // SearchProjectForm

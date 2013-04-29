@@ -1,4 +1,4 @@
-﻿namespace Octopus.GUI.Accounting
+namespace Octopus.GUI.Accounting
 {
     partial class ManualEntries
     {
@@ -44,10 +44,10 @@
             this.chBranch = new System.Windows.Forms.ColumnHeader();
             this.imageListSort = new System.Windows.Forms.ImageList(this.components);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnDeleteRule = new Octopus.GUI.UserControl.SweetButton();
-            this.btnAddRule = new Octopus.GUI.UserControl.SweetButton();
+            this.btnDeleteRule = new System.Windows.Forms.Button();
+            this.btnAddRule = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnClose = new Octopus.GUI.UserControl.SweetButton();
+            this.btnClose = new System.Windows.Forms.Button();
             this.lblTitle = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -163,7 +163,6 @@
             this.groupBox1.AccessibleDescription = null;
             this.groupBox1.AccessibleName = null;
             resources.ApplyResources(this.groupBox1, "groupBox1");
-            this.groupBox1.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris;
             this.groupBox1.Controls.Add(this.btnDeleteRule);
             this.groupBox1.Controls.Add(this.btnAddRule);
             this.groupBox1.Font = null;
@@ -175,28 +174,14 @@
             this.btnDeleteRule.AccessibleDescription = null;
             this.btnDeleteRule.AccessibleName = null;
             resources.ApplyResources(this.btnDeleteRule, "btnDeleteRule");
-            this.btnDeleteRule.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnDeleteRule.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_bouton;
-            this.btnDeleteRule.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnDeleteRule.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Delete;
-            this.btnDeleteRule.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_delete;
-            this.btnDeleteRule.Menu = null;
             this.btnDeleteRule.Name = "btnDeleteRule";
-            this.btnDeleteRule.UseVisualStyleBackColor = false;
             // 
             // btnAddRule
             // 
             this.btnAddRule.AccessibleDescription = null;
             this.btnAddRule.AccessibleName = null;
             resources.ApplyResources(this.btnAddRule, "btnAddRule");
-            this.btnAddRule.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnAddRule.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_bouton;
-            this.btnAddRule.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnAddRule.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.New;
-            this.btnAddRule.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_new;
-            this.btnAddRule.Menu = null;
             this.btnAddRule.Name = "btnAddRule";
-            this.btnAddRule.UseVisualStyleBackColor = false;
             this.btnAddRule.Click += new System.EventHandler(this.btnAddRule_Click);
             // 
             // panel1
@@ -215,14 +200,7 @@
             this.btnClose.AccessibleDescription = null;
             this.btnClose.AccessibleName = null;
             resources.ApplyResources(this.btnClose, "btnClose");
-            this.btnClose.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnClose.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_bouton;
-            this.btnClose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnClose.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Close;
-            this.btnClose.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_close;
-            this.btnClose.Menu = null;
             this.btnClose.Name = "btnClose";
-            this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // lblTitle
@@ -231,8 +209,6 @@
             this.lblTitle.AccessibleName = null;
             resources.ApplyResources(this.lblTitle, "lblTitle");
             this.lblTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Image = global::Octopus.GUI.Properties.Resources.theme1_1_pastille_contrat;
             this.lblTitle.Name = "lblTitle";
             // 
             // tableLayoutPanel1
@@ -252,7 +228,6 @@
             this.AccessibleName = null;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = null;
             this.Controls.Add(this.tableLayoutPanel1);
             this.Font = null;
             this.Name = "ManualEntries";
@@ -271,12 +246,12 @@
 
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.GroupBox groupBox1;
-        private Octopus.GUI.UserControl.SweetButton btnDeleteRule;
-        private Octopus.GUI.UserControl.SweetButton btnAddRule;
+        private System.Windows.Forms.Button btnDeleteRule;
+        private System.Windows.Forms.Button btnAddRule;
         private System.Windows.Forms.ImageList imageListSort;
         private System.Windows.Forms.ColumnHeader clhAmount;
         private System.Windows.Forms.Panel panel1;
-        private Octopus.GUI.UserControl.SweetButton btnClose;
+        private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.ColumnHeader clhExchangeRate;
         private System.Windows.Forms.ColumnHeader clhId;
         private System.Windows.Forms.ListView lvlMovements;

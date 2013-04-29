@@ -1,4 +1,4 @@
-﻿using Octopus.GUI.UserControl;
+using Octopus.GUI.UserControl;
 
 namespace Octopus.GUI.Accounting
 {
@@ -33,8 +33,8 @@ namespace Octopus.GUI.Accounting
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAddContractAccountingRule));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.gbxButtons = new System.Windows.Forms.GroupBox();
-            this.btnSaving = new Octopus.GUI.UserControl.SweetButton();
-            this.btnClose = new Octopus.GUI.UserControl.SweetButton();
+            this.btnSaving = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
             this.gbxDetails = new System.Windows.Forms.GroupBox();
             this.tbDescription = new System.Windows.Forms.TextBox();
             this.lblDescription = new System.Windows.Forms.Label();
@@ -87,26 +87,14 @@ namespace Octopus.GUI.Accounting
             // btnSaving
             // 
             resources.ApplyResources(this.btnSaving, "btnSaving");
-            this.btnSaving.BackColor = System.Drawing.Color.Transparent;
             this.btnSaving.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnSaving.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.btnSaving.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Save;
-            this.btnSaving.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_validity;
-            this.btnSaving.Menu = null;
             this.btnSaving.Name = "btnSaving";
-            this.btnSaving.UseVisualStyleBackColor = false;
             // 
             // btnClose
             // 
             resources.ApplyResources(this.btnClose, "btnClose");
-            this.btnClose.BackColor = System.Drawing.Color.Gainsboro;
             this.btnClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnClose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.btnClose.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Close;
-            this.btnClose.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_close;
-            this.btnClose.Menu = null;
             this.btnClose.Name = "btnClose";
-            this.btnClose.UseVisualStyleBackColor = false;
             // 
             // gbxDetails
             // 
@@ -137,7 +125,6 @@ namespace Octopus.GUI.Accounting
             // lblDescription
             // 
             resources.ApplyResources(this.lblDescription, "lblDescription");
-            this.lblDescription.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblDescription.Name = "lblDescription";
             // 
             // tbOrder
@@ -148,7 +135,6 @@ namespace Octopus.GUI.Accounting
             // lblOrder
             // 
             resources.ApplyResources(this.lblOrder, "lblOrder");
-            this.lblOrder.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblOrder.Name = "lblOrder";
             // 
             // cmbEventAttribute
@@ -161,7 +147,6 @@ namespace Octopus.GUI.Accounting
             // lbEventAttribute
             // 
             resources.ApplyResources(this.lbEventAttribute, "lbEventAttribute");
-            this.lbEventAttribute.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbEventAttribute.Name = "lbEventAttribute";
             // 
             // cmbEventCode
@@ -175,7 +160,6 @@ namespace Octopus.GUI.Accounting
             // lbEventType
             // 
             resources.ApplyResources(this.lbEventType, "lbEventType");
-            this.lbEventType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbEventType.Name = "lbEventType";
             // 
             // gbxCriterias
@@ -192,14 +176,12 @@ namespace Octopus.GUI.Accounting
             this.gbxCriterias.Controls.Add(this.cmbProduct);
             this.gbxCriterias.Controls.Add(this.lbProductType);
             this.gbxCriterias.Controls.Add(this.cmbProductType);
-            this.gbxCriterias.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.gbxCriterias.Name = "gbxCriterias";
             this.gbxCriterias.TabStop = false;
             // 
             // lbCurrency
             // 
             resources.ApplyResources(this.lbCurrency, "lbCurrency");
-            this.lbCurrency.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbCurrency.Name = "lbCurrency";
             // 
             // cmbCurrency
@@ -212,19 +194,16 @@ namespace Octopus.GUI.Accounting
             // lbProductDescription
             // 
             resources.ApplyResources(this.lbProductDescription, "lbProductDescription");
-            this.lbProductDescription.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbProductDescription.Name = "lbProductDescription";
             // 
             // lbEconomicActivity
             // 
             resources.ApplyResources(this.lbEconomicActivity, "lbEconomicActivity");
-            this.lbEconomicActivity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbEconomicActivity.Name = "lbEconomicActivity";
             // 
             // lbClientType
             // 
             resources.ApplyResources(this.lbClientType, "lbClientType");
-            this.lbClientType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbClientType.Name = "lbClientType";
             // 
             // cmbEconomicActivity
@@ -237,7 +216,6 @@ namespace Octopus.GUI.Accounting
             // lbProduct
             // 
             resources.ApplyResources(this.lbProduct, "lbProduct");
-            this.lbProduct.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbProduct.Name = "lbProduct";
             // 
             // cmbClientType
@@ -258,7 +236,6 @@ namespace Octopus.GUI.Accounting
             // lbProductType
             // 
             resources.ApplyResources(this.lbProductType, "lbProductType");
-            this.lbProductType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbProductType.Name = "lbProductType";
             // 
             // cmbProductType
@@ -293,19 +270,16 @@ namespace Octopus.GUI.Accounting
             // lbEntryDirection
             // 
             resources.ApplyResources(this.lbEntryDirection, "lbEntryDirection");
-            this.lbEntryDirection.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbEntryDirection.Name = "lbEntryDirection";
             // 
             // lbCreditAccount
             // 
             resources.ApplyResources(this.lbCreditAccount, "lbCreditAccount");
-            this.lbCreditAccount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbCreditAccount.Name = "lbCreditAccount";
             // 
             // lbDebitAccount
             // 
             resources.ApplyResources(this.lbDebitAccount, "lbDebitAccount");
-            this.lbDebitAccount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbDebitAccount.Name = "lbDebitAccount";
             // 
             // FrmAddContractAccountingRule
@@ -313,8 +287,6 @@ namespace Octopus.GUI.Accounting
             this.AcceptButton = this.btnSaving;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris;
             this.CancelButton = this.btnClose;
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
@@ -347,8 +319,8 @@ namespace Octopus.GUI.Accounting
         private System.Windows.Forms.ComboBox cmbProduct;
         private System.Windows.Forms.Label lbEconomicActivity;
         private System.Windows.Forms.ComboBox cmbEconomicActivity;
-        private SweetButton btnSaving;
-        private SweetButton btnClose;
+        private System.Windows.Forms.Button btnSaving;
+        private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Label lbProductDescription;
         private System.Windows.Forms.ComboBox cbmEntryDirection;
         private System.Windows.Forms.Label lbEntryDirection;

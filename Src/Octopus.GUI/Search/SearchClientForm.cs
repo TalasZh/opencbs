@@ -40,24 +40,24 @@ namespace Octopus.GUI
     using Octopus.CoreDomain.Contracts.Loans;
 
     /// <summary>
-    /// Description résumée de SearchClientForm.
+    /// Description rï¿½sumï¿½e de SearchClientForm.
     /// </summary>
     public class SearchClientForm : SweetBaseForm
     {
         private GroupBox groupBoxSearchParameters;
         private Button buttonCancel;
-        private SweetButton buttonSearch;
+        private System.Windows.Forms.Button buttonSearch;
         private Label labelTitleResult;
         private System.ComponentModel.IContainer components;
         private GroupBox groupBoxButtonBottom;
-        private SweetButton buttonPreview;
-        private SweetButton buttonNext;
+        private System.Windows.Forms.Button buttonPreview;
+        private System.Windows.Forms.Button buttonNext;
         private TextBox textBoxCurrentlyPage;
         private TextBox textBoxQuery;
         private int _currentPageNumber;
         private int _numbersTotalPage;
         private int _numberOfRecords;
-        private SweetButton buttonPrintReport;
+        private System.Windows.Forms.Button buttonPrintReport;
         private Control _mdiForm;
         private bool _closeAfterSelect;
         private string _query;
@@ -293,7 +293,7 @@ namespace Octopus.GUI
         }
 
         /// <summary>
-        /// Nettoyage des ressources utilisées.
+        /// Nettoyage des ressources utilisï¿½es.
         /// </summary>
         protected override void Dispose(bool disposing)
         {
@@ -309,10 +309,10 @@ namespace Octopus.GUI
             if (test == 1) _theUniqueInstance1 = null;
         }
 
-        #region Code génér?par le Concepteur Windows Form
+        #region Code gï¿½nï¿½r?par le Concepteur Windows Form
         /// <summary>
-        /// Méthode requise pour la prise en charge du concepteur - ne modifiez pas
-        /// le contenu de cette méthode avec l'éditeur de code.
+        /// Mï¿½thode requise pour la prise en charge du concepteur - ne modifiez pas
+        /// le contenu de cette mï¿½thode avec l'ï¿½diteur de code.
         /// </summary>
         private void InitializeComponent()
         {
@@ -330,13 +330,13 @@ namespace Octopus.GUI
             this.checkBoxPersons = new System.Windows.Forms.CheckBox();
             this.radioButtonCorporate = new System.Windows.Forms.RadioButton();
             this.radioButtonPerson = new System.Windows.Forms.RadioButton();
-            this.buttonPrintReport = new Octopus.GUI.UserControl.SweetButton();
+            this.buttonPrintReport = new System.Windows.Forms.Button();
             this.textBoxQuery = new System.Windows.Forms.TextBox();
-            this.buttonSearch = new Octopus.GUI.UserControl.SweetButton();
+            this.buttonSearch = new System.Windows.Forms.Button();
             this.groupBoxButtonBottom = new System.Windows.Forms.GroupBox();
             this.textBoxCurrentlyPage = new System.Windows.Forms.TextBox();
-            this.buttonPreview = new Octopus.GUI.UserControl.SweetButton();
-            this.buttonNext = new Octopus.GUI.UserControl.SweetButton();
+            this.buttonPreview = new System.Windows.Forms.Button();
+            this.buttonNext = new System.Windows.Forms.Button();
             this.buttonCancel = new System.Windows.Forms.Button();
             this.listViewClient = new System.Windows.Forms.ListView();
             this.columnHeader1 = new System.Windows.Forms.ColumnHeader();
@@ -361,7 +361,6 @@ namespace Octopus.GUI
             this.labelTitleResult.AccessibleName = null;
             resources.ApplyResources(this.labelTitleResult, "labelTitleResult");
             this.labelTitleResult.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.labelTitleResult.ForeColor = System.Drawing.Color.White;
             this.labelTitleResult.Name = "labelTitleResult";
             // 
             // tableLayoutPanel1
@@ -382,8 +381,6 @@ namespace Octopus.GUI
             this.groupBoxSearchParameters.AccessibleDescription = null;
             this.groupBoxSearchParameters.AccessibleName = null;
             resources.ApplyResources(this.groupBoxSearchParameters, "groupBoxSearchParameters");
-            this.groupBoxSearchParameters.BackColor = System.Drawing.Color.Transparent;
-            this.groupBoxSearchParameters.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris;
             this.groupBoxSearchParameters.Controls.Add(this.groupBoxActive);
             this.groupBoxSearchParameters.Controls.Add(this.groupBoxCorporates);
             this.groupBoxSearchParameters.Controls.Add(this.buttonPrintReport);
@@ -398,7 +395,6 @@ namespace Octopus.GUI
             this.groupBoxActive.AccessibleDescription = null;
             this.groupBoxActive.AccessibleName = null;
             resources.ApplyResources(this.groupBoxActive, "groupBoxActive");
-            this.groupBoxActive.BackgroundImage = null;
             this.groupBoxActive.Controls.Add(this.checkBoxNotactive);
             this.groupBoxActive.Controls.Add(this.checkBoxActive);
             this.groupBoxActive.Font = null;
@@ -410,31 +406,24 @@ namespace Octopus.GUI
             this.checkBoxNotactive.AccessibleDescription = null;
             this.checkBoxNotactive.AccessibleName = null;
             resources.ApplyResources(this.checkBoxNotactive, "checkBoxNotactive");
-            this.checkBoxNotactive.BackgroundImage = null;
             this.checkBoxNotactive.Checked = true;
             this.checkBoxNotactive.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBoxNotactive.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.checkBoxNotactive.Name = "checkBoxNotactive";
-            this.checkBoxNotactive.UseVisualStyleBackColor = true;
             // 
             // checkBoxActive
             // 
             this.checkBoxActive.AccessibleDescription = null;
             this.checkBoxActive.AccessibleName = null;
             resources.ApplyResources(this.checkBoxActive, "checkBoxActive");
-            this.checkBoxActive.BackgroundImage = null;
             this.checkBoxActive.Checked = true;
             this.checkBoxActive.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBoxActive.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.checkBoxActive.Name = "checkBoxActive";
-            this.checkBoxActive.UseVisualStyleBackColor = true;
             // 
             // groupBoxCorporates
             // 
             this.groupBoxCorporates.AccessibleDescription = null;
             this.groupBoxCorporates.AccessibleName = null;
             resources.ApplyResources(this.groupBoxCorporates, "groupBoxCorporates");
-            this.groupBoxCorporates.BackgroundImage = null;
             this.groupBoxCorporates.Controls.Add(this.checkBoxVillages);
             this.groupBoxCorporates.Controls.Add(this.checkBoxGroups);
             this.groupBoxCorporates.Controls.Add(this.checkBoxPersons);
@@ -449,46 +438,34 @@ namespace Octopus.GUI
             this.checkBoxVillages.AccessibleDescription = null;
             this.checkBoxVillages.AccessibleName = null;
             resources.ApplyResources(this.checkBoxVillages, "checkBoxVillages");
-            this.checkBoxVillages.BackgroundImage = null;
             this.checkBoxVillages.Checked = true;
             this.checkBoxVillages.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBoxVillages.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.checkBoxVillages.Name = "checkBoxVillages";
-            this.checkBoxVillages.UseVisualStyleBackColor = true;
             // 
             // checkBoxGroups
             // 
             this.checkBoxGroups.AccessibleDescription = null;
             this.checkBoxGroups.AccessibleName = null;
             resources.ApplyResources(this.checkBoxGroups, "checkBoxGroups");
-            this.checkBoxGroups.BackgroundImage = null;
             this.checkBoxGroups.Checked = true;
             this.checkBoxGroups.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBoxGroups.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.checkBoxGroups.Name = "checkBoxGroups";
-            this.checkBoxGroups.UseVisualStyleBackColor = true;
             // 
             // checkBoxPersons
             // 
             this.checkBoxPersons.AccessibleDescription = null;
             this.checkBoxPersons.AccessibleName = null;
             resources.ApplyResources(this.checkBoxPersons, "checkBoxPersons");
-            this.checkBoxPersons.BackgroundImage = null;
             this.checkBoxPersons.Checked = true;
             this.checkBoxPersons.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBoxPersons.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.checkBoxPersons.Name = "checkBoxPersons";
-            this.checkBoxPersons.UseVisualStyleBackColor = true;
             // 
             // radioButtonCorporate
             // 
             this.radioButtonCorporate.AccessibleDescription = null;
             this.radioButtonCorporate.AccessibleName = null;
             resources.ApplyResources(this.radioButtonCorporate, "radioButtonCorporate");
-            this.radioButtonCorporate.BackgroundImage = null;
-            this.radioButtonCorporate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.radioButtonCorporate.Name = "radioButtonCorporate";
-            this.radioButtonCorporate.UseVisualStyleBackColor = true;
             this.radioButtonCorporate.CheckedChanged += new System.EventHandler(this.radioButtonCorporate_CheckedChanged);
             // 
             // radioButtonPerson
@@ -496,13 +473,9 @@ namespace Octopus.GUI
             this.radioButtonPerson.AccessibleDescription = null;
             this.radioButtonPerson.AccessibleName = null;
             resources.ApplyResources(this.radioButtonPerson, "radioButtonPerson");
-            this.radioButtonPerson.BackColor = System.Drawing.Color.Transparent;
-            this.radioButtonPerson.BackgroundImage = null;
             this.radioButtonPerson.Checked = true;
-            this.radioButtonPerson.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.radioButtonPerson.Name = "radioButtonPerson";
             this.radioButtonPerson.TabStop = true;
-            this.radioButtonPerson.UseVisualStyleBackColor = false;
             this.radioButtonPerson.CheckedChanged += new System.EventHandler(this.radioButtonPerson_CheckedChanged);
             // 
             // buttonPrintReport
@@ -510,13 +483,7 @@ namespace Octopus.GUI
             this.buttonPrintReport.AccessibleDescription = null;
             this.buttonPrintReport.AccessibleName = null;
             resources.ApplyResources(this.buttonPrintReport, "buttonPrintReport");
-            this.buttonPrintReport.BackColor = System.Drawing.Color.Gainsboro;
-            this.buttonPrintReport.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonPrintReport.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Print;
-            this.buttonPrintReport.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_print;
-            this.buttonPrintReport.Menu = null;
             this.buttonPrintReport.Name = "buttonPrintReport";
-            this.buttonPrintReport.UseVisualStyleBackColor = false;
             this.buttonPrintReport.Click += new System.EventHandler(this.buttonPrintReport_Click);
             // 
             // textBoxQuery
@@ -534,13 +501,7 @@ namespace Octopus.GUI
             this.buttonSearch.AccessibleDescription = null;
             this.buttonSearch.AccessibleName = null;
             resources.ApplyResources(this.buttonSearch, "buttonSearch");
-            this.buttonSearch.BackColor = System.Drawing.Color.Gainsboro;
-            this.buttonSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonSearch.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Search;
-            this.buttonSearch.Image = global::Octopus.GUI.Properties.Resources.theme1_1_search;
-            this.buttonSearch.Menu = null;
             this.buttonSearch.Name = "buttonSearch";
-            this.buttonSearch.UseVisualStyleBackColor = false;
             this.buttonSearch.Click += new System.EventHandler(this.buttonSearch_Click);
             // 
             // groupBoxButtonBottom
@@ -548,7 +509,6 @@ namespace Octopus.GUI
             this.groupBoxButtonBottom.AccessibleDescription = null;
             this.groupBoxButtonBottom.AccessibleName = null;
             resources.ApplyResources(this.groupBoxButtonBottom, "groupBoxButtonBottom");
-            this.groupBoxButtonBottom.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris_180;
             this.groupBoxButtonBottom.Controls.Add(this.textBoxCurrentlyPage);
             this.groupBoxButtonBottom.Controls.Add(this.buttonPreview);
             this.groupBoxButtonBottom.Controls.Add(this.buttonNext);
@@ -571,13 +531,7 @@ namespace Octopus.GUI
             this.buttonPreview.AccessibleDescription = null;
             this.buttonPreview.AccessibleName = null;
             resources.ApplyResources(this.buttonPreview, "buttonPreview");
-            this.buttonPreview.BackColor = System.Drawing.Color.Gainsboro;
-            this.buttonPreview.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonPreview.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Previous;
-            this.buttonPreview.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_previous;
-            this.buttonPreview.Menu = null;
             this.buttonPreview.Name = "buttonPreview";
-            this.buttonPreview.UseVisualStyleBackColor = false;
             this.buttonPreview.Click += new System.EventHandler(this.buttonPreview_Click);
             // 
             // buttonNext
@@ -585,13 +539,7 @@ namespace Octopus.GUI
             this.buttonNext.AccessibleDescription = null;
             this.buttonNext.AccessibleName = null;
             resources.ApplyResources(this.buttonNext, "buttonNext");
-            this.buttonNext.BackColor = System.Drawing.Color.Gainsboro;
-            this.buttonNext.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonNext.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Next;
-            this.buttonNext.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_next;
-            this.buttonNext.Menu = null;
             this.buttonNext.Name = "buttonNext";
-            this.buttonNext.UseVisualStyleBackColor = false;
             this.buttonNext.Click += new System.EventHandler(this.buttonNext_Click);
             // 
             // buttonCancel
@@ -681,8 +629,6 @@ namespace Octopus.GUI
             this.AccessibleDescription = null;
             this.AccessibleName = null;
             resources.ApplyResources(this, "$this");
-            this.BackColor = System.Drawing.Color.White;
-            this.BackgroundImage = null;
             this.Controls.Add(this.tableLayoutPanel1);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.Font = null;

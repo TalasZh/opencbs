@@ -54,7 +54,6 @@ namespace Octopus.GUI.Tools
             this.lblTitle.AccessibleName = null;
             resources.ApplyResources(this.lblTitle, "lblTitle");
             this.lblTitle.BackColor = System.Drawing.Color.Transparent;
-            this.lblTitle.ForeColor = System.Drawing.Color.Black;
             this.lblTitle.Name = "lblTitle";
             // 
             // backgroundWorker

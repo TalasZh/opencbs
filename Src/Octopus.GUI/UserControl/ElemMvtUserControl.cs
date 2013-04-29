@@ -1,4 +1,4 @@
-﻿//Octopus MFS is an integrated suite for managing a Micro Finance Institution: clients, contracts, accounting, reporting and risk
+//Octopus MFS is an integrated suite for managing a Micro Finance Institution: clients, contracts, accounting, reporting and risk
 //Copyright © 2006,2007 OCTO Technology & OXUS Development Network
 //
 //This program is free software; you can redistribute it and/or modify
@@ -159,8 +159,7 @@ namespace Octopus.GUI.UserControl
             this.cbAccountDebit.Name = "cbAccountDebit";
             // 
             // groupBoxMvts
-            // 
-            this.groupBoxMvts.BackColor = System.Drawing.Color.White;
+            //
             this.groupBoxMvts.Controls.Add(this._txbAmount);
             this.groupBoxMvts.Controls.Add(this.cbCurrencies);
             this.groupBoxMvts.Controls.Add(this.blbBranch);
@@ -194,15 +193,12 @@ namespace Octopus.GUI.UserControl
             // blbBranch
             // 
             resources.ApplyResources(this.blbBranch, "blbBranch");
-            this.blbBranch.BackColor = System.Drawing.Color.Transparent;
-            this.blbBranch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.blbBranch.Name = "blbBranch";
             // 
             // lblDescription
             // 
             resources.ApplyResources(this.lblDescription, "lblDescription");
             this.lblDescription.BackColor = System.Drawing.Color.Transparent;
-            this.lblDescription.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblDescription.Name = "lblDescription";
             // 
             // txbDescription
@@ -230,13 +226,11 @@ namespace Octopus.GUI.UserControl
             // lblCurrency
             // 
             resources.ApplyResources(this.lblCurrency, "lblCurrency");
-            this.lblCurrency.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblCurrency.Name = "lblCurrency";
             // 
             // ElemMvtUserControl
             // 
             this.Controls.Add(this.groupBoxMvts);
-            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.Name = "ElemMvtUserControl";
             resources.ApplyResources(this, "$this");
             this.groupBoxMvts.ResumeLayout(false);

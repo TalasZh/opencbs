@@ -1,4 +1,4 @@
-﻿
+
 using System.Windows.Forms;
 using Octopus.GUI.UserControl;
 using Octopus.Enums;
@@ -1461,7 +1461,6 @@ namespace Octopus.GUI
             this.lblTitle.AccessibleName = null;
             resources.ApplyResources(this.lblTitle, "lblTitle");
             this.lblTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.lblTitle.ForeColor = System.Drawing.Color.White;
             this.lblTitle.Name = "lblTitle";
             // 
             // tabFilter
@@ -1486,13 +1485,11 @@ namespace Octopus.GUI
             this.chkPostponedLoans.AccessibleDescription = null;
             this.chkPostponedLoans.AccessibleName = null;
             resources.ApplyResources(this.chkPostponedLoans, "chkPostponedLoans");
-            this.chkPostponedLoans.BackgroundImage = null;
             this.chkPostponedLoans.Checked = true;
             this.chkPostponedLoans.CheckState = System.Windows.Forms.CheckState.Checked;
             this.tabFilter.SetColumnSpan(this.chkPostponedLoans, 2);
             this.chkPostponedLoans.Font = null;
             this.chkPostponedLoans.Name = "chkPostponedLoans";
-            this.chkPostponedLoans.UseVisualStyleBackColor = true;
             this.chkPostponedLoans.CheckedChanged += new System.EventHandler(this.OnAlertCheckChanged);
             // 
             // tbFilter
@@ -1519,13 +1516,11 @@ namespace Octopus.GUI
             this.chkLateLoans.AccessibleDescription = null;
             this.chkLateLoans.AccessibleName = null;
             resources.ApplyResources(this.chkLateLoans, "chkLateLoans");
-            this.chkLateLoans.BackgroundImage = null;
             this.chkLateLoans.Checked = true;
             this.chkLateLoans.CheckState = System.Windows.Forms.CheckState.Checked;
             this.tabFilter.SetColumnSpan(this.chkLateLoans, 2);
             this.chkLateLoans.Font = null;
             this.chkLateLoans.Name = "chkLateLoans";
-            this.chkLateLoans.UseVisualStyleBackColor = true;
             this.chkLateLoans.CheckedChanged += new System.EventHandler(this.OnAlertCheckChanged);
             // 
             // chkPendingLoans
@@ -1533,13 +1528,11 @@ namespace Octopus.GUI
             this.chkPendingLoans.AccessibleDescription = null;
             this.chkPendingLoans.AccessibleName = null;
             resources.ApplyResources(this.chkPendingLoans, "chkPendingLoans");
-            this.chkPendingLoans.BackgroundImage = null;
             this.chkPendingLoans.Checked = true;
             this.chkPendingLoans.CheckState = System.Windows.Forms.CheckState.Checked;
             this.tabFilter.SetColumnSpan(this.chkPendingLoans, 2);
             this.chkPendingLoans.Font = null;
             this.chkPendingLoans.Name = "chkPendingLoans";
-            this.chkPendingLoans.UseVisualStyleBackColor = true;
             this.chkPendingLoans.CheckedChanged += new System.EventHandler(this.OnAlertCheckChanged);
             // 
             // chkPendingSavings
@@ -1547,13 +1540,11 @@ namespace Octopus.GUI
             this.chkPendingSavings.AccessibleDescription = null;
             this.chkPendingSavings.AccessibleName = null;
             resources.ApplyResources(this.chkPendingSavings, "chkPendingSavings");
-            this.chkPendingSavings.BackgroundImage = null;
             this.chkPendingSavings.Checked = true;
             this.chkPendingSavings.CheckState = System.Windows.Forms.CheckState.Checked;
             this.tabFilter.SetColumnSpan(this.chkPendingSavings, 2);
             this.chkPendingSavings.Font = null;
             this.chkPendingSavings.Name = "chkPendingSavings";
-            this.chkPendingSavings.UseVisualStyleBackColor = true;
             this.chkPendingSavings.CheckedChanged += new System.EventHandler(this.OnAlertCheckChanged);
             // 
             // chkOverdraftSavings
@@ -1561,13 +1552,11 @@ namespace Octopus.GUI
             this.chkOverdraftSavings.AccessibleDescription = null;
             this.chkOverdraftSavings.AccessibleName = null;
             resources.ApplyResources(this.chkOverdraftSavings, "chkOverdraftSavings");
-            this.chkOverdraftSavings.BackgroundImage = null;
             this.chkOverdraftSavings.Checked = true;
             this.chkOverdraftSavings.CheckState = System.Windows.Forms.CheckState.Checked;
             this.tabFilter.SetColumnSpan(this.chkOverdraftSavings, 2);
             this.chkOverdraftSavings.Font = null;
             this.chkOverdraftSavings.Name = "chkOverdraftSavings";
-            this.chkOverdraftSavings.UseVisualStyleBackColor = true;
             this.chkOverdraftSavings.CheckedChanged += new System.EventHandler(this.OnAlertCheckChanged);
             // 
             // chkValidatedLoan
@@ -1575,13 +1564,11 @@ namespace Octopus.GUI
             this.chkValidatedLoan.AccessibleDescription = null;
             this.chkValidatedLoan.AccessibleName = null;
             resources.ApplyResources(this.chkValidatedLoan, "chkValidatedLoan");
-            this.chkValidatedLoan.BackgroundImage = null;
             this.chkValidatedLoan.Checked = true;
             this.chkValidatedLoan.CheckState = System.Windows.Forms.CheckState.Checked;
             this.tabFilter.SetColumnSpan(this.chkValidatedLoan, 2);
             this.chkValidatedLoan.Font = null;
             this.chkValidatedLoan.Name = "chkValidatedLoan";
-            this.chkValidatedLoan.UseVisualStyleBackColor = true;
             this.chkValidatedLoan.CheckedChanged += new System.EventHandler(this.OnAlertCheckChanged);
             // 
             // alertBindingSource
@@ -1593,8 +1580,6 @@ namespace Octopus.GUI
             this.AccessibleDescription = null;
             this.AccessibleName = null;
             resources.ApplyResources(this, "$this");
-            this.BackColor = System.Drawing.Color.White;
-            this.BackgroundImage = null;
             this.Controls.Add(this.splitter6);
             this.Controls.Add(this.panelLeft);
             this.Controls.Add(this.mainStatusBar);

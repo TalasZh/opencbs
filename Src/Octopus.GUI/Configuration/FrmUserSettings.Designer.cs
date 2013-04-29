@@ -1,4 +1,4 @@
-﻿using System.Windows.Forms;
+using System.Windows.Forms;
 using Octopus.GUI.UserControl;
 
 namespace Octopus.GUI.Configuration
@@ -10,7 +10,7 @@ namespace Octopus.GUI.Configuration
         private TextBox txtBackupPath;
         private TextBox txtExportConsoPath;
         private Label label2;
-        private SweetButton btnClose;
+        private System.Windows.Forms.Button btnClose;
         private SaveFileDialog saveDiag;
         private GroupBox groupBox4;
 
@@ -18,7 +18,7 @@ namespace Octopus.GUI.Configuration
         /// Variable nécessaire au concepteur.
         /// </summary>
         private System.ComponentModel.Container components = null;
-        private SweetButton buttonSave;
+        private System.Windows.Forms.Button buttonSave;
         private LinkLabel llHelp;
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
@@ -32,8 +32,8 @@ namespace Octopus.GUI.Configuration
         private RadioButton rbTadjik;
         private PictureBox pictureBox5;
         private FolderBrowserDialog fBDPath;
-        private SweetButton buttonFindBackupPath;
-        private SweetButton buttonFindExportPath;
+        private System.Windows.Forms.Button buttonFindBackupPath;
+        private System.Windows.Forms.Button buttonFindExportPath;
         private RadioButton rbSpanish;
         private PictureBox pictureBox6;
 
@@ -61,8 +61,8 @@ namespace Octopus.GUI.Configuration
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmUserSettings));
             this.groupBoxFolders = new System.Windows.Forms.GroupBox();
-            this.buttonFindExportPath = new Octopus.GUI.UserControl.SweetButton();
-            this.buttonFindBackupPath = new Octopus.GUI.UserControl.SweetButton();
+            this.buttonFindExportPath = new System.Windows.Forms.Button();
+            this.buttonFindBackupPath = new System.Windows.Forms.Button();
             this.txtExportConsoPath = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtBackupPath = new System.Windows.Forms.TextBox();
@@ -83,8 +83,8 @@ namespace Octopus.GUI.Configuration
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.llHelp = new System.Windows.Forms.LinkLabel();
             this.cbAutoUpdate = new System.Windows.Forms.CheckBox();
-            this.buttonSave = new Octopus.GUI.UserControl.SweetButton();
-            this.btnClose = new Octopus.GUI.UserControl.SweetButton();
+            this.buttonSave = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
             this.fBDPath = new System.Windows.Forms.FolderBrowserDialog();
             this.groupBoxFolders.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -97,8 +97,7 @@ namespace Octopus.GUI.Configuration
             this.SuspendLayout();
             // 
             // groupBoxFolders
-            // 
-            this.groupBoxFolders.BackColor = System.Drawing.Color.Transparent;
+            //
             this.groupBoxFolders.Controls.Add(this.buttonFindExportPath);
             this.groupBoxFolders.Controls.Add(this.buttonFindBackupPath);
             this.groupBoxFolders.Controls.Add(this.txtExportConsoPath);
@@ -106,26 +105,19 @@ namespace Octopus.GUI.Configuration
             this.groupBoxFolders.Controls.Add(this.txtBackupPath);
             this.groupBoxFolders.Controls.Add(this.label1);
             resources.ApplyResources(this.groupBoxFolders, "groupBoxFolders");
-            this.groupBoxFolders.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.groupBoxFolders.Name = "groupBoxFolders";
             this.groupBoxFolders.TabStop = false;
             // 
             // buttonFindExportPath
-            // 
-            this.buttonFindExportPath.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.None;
+            //
             resources.ApplyResources(this.buttonFindExportPath, "buttonFindExportPath");
-            this.buttonFindExportPath.Menu = null;
             this.buttonFindExportPath.Name = "buttonFindExportPath";
-            this.buttonFindExportPath.UseVisualStyleBackColor = true;
             this.buttonFindExportPath.Click += new System.EventHandler(this.buttonFindExportPath_Click);
             // 
             // buttonFindBackupPath
-            // 
-            this.buttonFindBackupPath.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.None;
+            //
             resources.ApplyResources(this.buttonFindBackupPath, "buttonFindBackupPath");
-            this.buttonFindBackupPath.Menu = null;
             this.buttonFindBackupPath.Name = "buttonFindBackupPath";
-            this.buttonFindBackupPath.UseVisualStyleBackColor = true;
             this.buttonFindBackupPath.Click += new System.EventHandler(this.buttonFindBackupPath_Click);
             // 
             // txtExportConsoPath
@@ -136,7 +128,6 @@ namespace Octopus.GUI.Configuration
             // label2
             // 
             resources.ApplyResources(this.label2, "label2");
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.label2.Name = "label2";
             // 
             // txtBackupPath
@@ -147,7 +138,6 @@ namespace Octopus.GUI.Configuration
             // label1
             // 
             resources.ApplyResources(this.label1, "label1");
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.label1.Name = "label1";
             // 
             // saveDiag
@@ -157,8 +147,7 @@ namespace Octopus.GUI.Configuration
             resources.ApplyResources(this.saveDiag, "saveDiag");
             // 
             // groupBox4
-            // 
-            this.groupBox4.BackColor = System.Drawing.Color.Transparent;
+            //
             this.groupBox4.Controls.Add(this.rbTadjik);
             this.groupBox4.Controls.Add(this.pictureBox5);
             this.groupBox4.Controls.Add(this.rbKyrgyz);
@@ -172,14 +161,12 @@ namespace Octopus.GUI.Configuration
             this.groupBox4.Controls.Add(this.pictureBox2);
             this.groupBox4.Controls.Add(this.pictureBox1);
             resources.ApplyResources(this.groupBox4, "groupBox4");
-            this.groupBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.TabStop = false;
             // 
             // rbTadjik
             // 
             resources.ApplyResources(this.rbTadjik, "rbTadjik");
-            this.rbTadjik.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.rbTadjik.Name = "rbTadjik";
             this.rbTadjik.Tag = "tg-Cyrl-TJ";
             // 
@@ -192,7 +179,6 @@ namespace Octopus.GUI.Configuration
             // rbKyrgyz
             // 
             resources.ApplyResources(this.rbKyrgyz, "rbKyrgyz");
-            this.rbKyrgyz.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.rbKyrgyz.Name = "rbKyrgyz";
             this.rbKyrgyz.Tag = "ky-KG";
             // 
@@ -205,21 +191,18 @@ namespace Octopus.GUI.Configuration
             // rdbFrench
             // 
             resources.ApplyResources(this.rdbFrench, "rdbFrench");
-            this.rdbFrench.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.rdbFrench.Name = "rdbFrench";
             this.rdbFrench.Tag = "fr";
             // 
             // rdbRussian
             // 
             resources.ApplyResources(this.rdbRussian, "rdbRussian");
-            this.rdbRussian.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.rdbRussian.Name = "rdbRussian";
             this.rdbRussian.Tag = "ru-RU";
             // 
             // rbSpanish
             // 
             resources.ApplyResources(this.rbSpanish, "rbSpanish");
-            this.rbSpanish.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.rbSpanish.Name = "rbSpanish";
             this.rbSpanish.Tag = "es-ES";
             // 
@@ -227,7 +210,6 @@ namespace Octopus.GUI.Configuration
             // 
             this.rdbEnglish.Checked = true;
             resources.ApplyResources(this.rdbEnglish, "rdbEnglish");
-            this.rdbEnglish.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.rdbEnglish.Name = "rdbEnglish";
             this.rdbEnglish.TabStop = true;
             this.rdbEnglish.Tag = "en-US";
@@ -270,40 +252,25 @@ namespace Octopus.GUI.Configuration
             this.llHelp.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llHelp_LinkClicked);
             // 
             // cbAutoUpdate
-            // 
-            this.cbAutoUpdate.BackColor = System.Drawing.Color.Transparent;
+            //
             resources.ApplyResources(this.cbAutoUpdate, "cbAutoUpdate");
-            this.cbAutoUpdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.cbAutoUpdate.Name = "cbAutoUpdate";
-            this.cbAutoUpdate.UseVisualStyleBackColor = false;
             // 
             // buttonSave
-            // 
-            this.buttonSave.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.buttonSave, "buttonSave");
-            this.buttonSave.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Save;
-            this.buttonSave.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_save;
-            this.buttonSave.Menu = null;
             this.buttonSave.Name = "buttonSave";
-            this.buttonSave.UseVisualStyleBackColor = false;
             this.buttonSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnClose
-            // 
-            this.btnClose.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.btnClose, "btnClose");
-            this.btnClose.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Close;
-            this.btnClose.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_close;
-            this.btnClose.Menu = null;
             this.btnClose.Name = "btnClose";
-            this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // FrmUserSettings
             // 
             resources.ApplyResources(this, "$this");
-            this.BackColor = System.Drawing.Color.White;
-            this.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris;
             this.Controls.Add(this.cbAutoUpdate);
             this.Controls.Add(this.llHelp);
             this.Controls.Add(this.buttonSave);

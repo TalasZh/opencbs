@@ -1,4 +1,4 @@
-﻿using Octopus.GUI.UserControl;
+using Octopus.GUI.UserControl;
 
 namespace Octopus.GUI.Contracts
 {
@@ -48,8 +48,8 @@ namespace Octopus.GUI.Contracts
             this.columnHeader5 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader6 = new System.Windows.Forms.ColumnHeader();
             this.pnlButtons = new System.Windows.Forms.Panel();
-            this.btnCancel = new Octopus.GUI.UserControl.SweetButton();
-            this.btnOK = new Octopus.GUI.UserControl.SweetButton();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.btnOK = new System.Windows.Forms.Button();
             this.splitContainer.Panel1.SuspendLayout();
             this.splitContainer.Panel2.SuspendLayout();
             this.splitContainer.SuspendLayout();
@@ -85,17 +85,13 @@ namespace Octopus.GUI.Contracts
             // chxAutomaticCalculation
             // 
             resources.ApplyResources(this.chxAutomaticCalculation, "chxAutomaticCalculation");
-            this.chxAutomaticCalculation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.chxAutomaticCalculation.Name = "chxAutomaticCalculation";
-            this.chxAutomaticCalculation.UseVisualStyleBackColor = true;
             this.chxAutomaticCalculation.CheckedChanged += new System.EventHandler(this.cbxAutomaticCalculation_CheckedChanged);
             // 
             // rbtnRoundTo10
             // 
             resources.ApplyResources(this.rbtnRoundTo10, "rbtnRoundTo10");
-            this.rbtnRoundTo10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.rbtnRoundTo10.Name = "rbtnRoundTo10";
-            this.rbtnRoundTo10.UseVisualStyleBackColor = true;
             this.rbtnRoundTo10.CheckedChanged += new System.EventHandler(this.rbtnRoundTo10_CheckedChanged);
             // 
             // rbtnInitialSchedule
@@ -104,15 +100,12 @@ namespace Octopus.GUI.Contracts
             this.rbtnInitialSchedule.Checked = true;
             this.rbtnInitialSchedule.Name = "rbtnInitialSchedule";
             this.rbtnInitialSchedule.TabStop = true;
-            this.rbtnInitialSchedule.UseVisualStyleBackColor = true;
             this.rbtnInitialSchedule.CheckedChanged += new System.EventHandler(this.rbtnInitialSchedule_CheckedChanged);
             // 
             // rbtnRoundTo5
             // 
             resources.ApplyResources(this.rbtnRoundTo5, "rbtnRoundTo5");
-            this.rbtnRoundTo5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.rbtnRoundTo5.Name = "rbtnRoundTo5";
-            this.rbtnRoundTo5.UseVisualStyleBackColor = true;
             this.rbtnRoundTo5.CheckedChanged += new System.EventHandler(this.rbtnRoundTo5_CheckedChanged);
             // 
             // textBox
@@ -180,25 +173,15 @@ namespace Octopus.GUI.Contracts
             // btnCancel
             // 
             resources.ApplyResources(this.btnCancel, "btnCancel");
-            this.btnCancel.BackColor = System.Drawing.Color.Gainsboro;
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(56)))));
-            this.btnCancel.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Close;
-            this.btnCancel.Menu = null;
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnOK
             // 
             resources.ApplyResources(this.btnOK, "btnOK");
-            this.btnOK.BackColor = System.Drawing.Color.Gainsboro;
             this.btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnOK.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnOK.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Save;
-            this.btnOK.Menu = null;
             this.btnOK.Name = "btnOK";
-            this.btnOK.UseVisualStyleBackColor = false;
             this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // EditContractSchedule
@@ -232,8 +215,8 @@ namespace Octopus.GUI.Contracts
         private System.Windows.Forms.ColumnHeader columnHeader5;
         private System.Windows.Forms.ColumnHeader columnHeader6;
         private System.Windows.Forms.Panel pnlButtons;
-        private SweetButton btnCancel;
-        private SweetButton btnOK;
+        private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Button btnOK;
         private System.Windows.Forms.Panel pnlRounding;
         private System.Windows.Forms.RadioButton rbtnRoundTo10;
         private System.Windows.Forms.RadioButton rbtnRoundTo5;

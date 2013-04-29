@@ -44,11 +44,11 @@ namespace Octopus.GUI
         private GroupBox groupBoxName;
         private Label labelNameOfLeader;
         private TextBox textBoxName;
-        private SweetButton buttonAddMembres;
-        private SweetButton buttonSelectAMember;
+        private System.Windows.Forms.Button buttonAddMembres;
+        private System.Windows.Forms.Button buttonSelectAMember;
         private Label labelAmount;
-        private SweetButton buttonCancel;
-        private SweetButton buttonSave;
+        private System.Windows.Forms.Button buttonCancel;
+        private System.Windows.Forms.Button buttonSave;
         private Guarantor _guarantor;
         private readonly Form _mdiParent;
         private TextBox textBoxDesc;
@@ -137,18 +137,17 @@ namespace Octopus.GUI
             this.groupBoxName = new System.Windows.Forms.GroupBox();
             this.labelNameOfLeader = new System.Windows.Forms.Label();
             this.textBoxName = new System.Windows.Forms.TextBox();
-            this.buttonAddMembres = new Octopus.GUI.UserControl.SweetButton();
-            this.buttonSelectAMember = new Octopus.GUI.UserControl.SweetButton();
-            this.buttonCancel = new Octopus.GUI.UserControl.SweetButton();
-            this.buttonSave = new Octopus.GUI.UserControl.SweetButton();
+            this.buttonAddMembres = new System.Windows.Forms.Button();
+            this.buttonSelectAMember = new System.Windows.Forms.Button();
+            this.buttonCancel = new System.Windows.Forms.Button();
+            this.buttonSave = new System.Windows.Forms.Button();
             this.groupBoxAmount.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudAmount)).BeginInit();
             this.groupBoxName.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBoxAmount
-            // 
-            this.groupBoxAmount.BackColor = System.Drawing.Color.Transparent;
+            //
             this.groupBoxAmount.Controls.Add(this.nudAmount);
             this.groupBoxAmount.Controls.Add(this.textBoxDesc);
             this.groupBoxAmount.Controls.Add(this.labelAmount);
@@ -172,19 +171,16 @@ namespace Octopus.GUI
             // 
             resources.ApplyResources(this.labelAmount, "labelAmount");
             this.labelAmount.BackColor = System.Drawing.Color.Transparent;
-            this.labelAmount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelAmount.Name = "labelAmount";
             // 
             // labelDesc
             // 
             resources.ApplyResources(this.labelDesc, "labelDesc");
             this.labelDesc.BackColor = System.Drawing.Color.Transparent;
-            this.labelDesc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelDesc.Name = "labelDesc";
             // 
             // groupBoxName
-            // 
-            this.groupBoxName.BackColor = System.Drawing.Color.Transparent;
+            //
             this.groupBoxName.Controls.Add(this.labelNameOfLeader);
             this.groupBoxName.Controls.Add(this.textBoxName);
             this.groupBoxName.Controls.Add(this.buttonAddMembres);
@@ -196,7 +192,6 @@ namespace Octopus.GUI
             // labelNameOfLeader
             // 
             resources.ApplyResources(this.labelNameOfLeader, "labelNameOfLeader");
-            this.labelNameOfLeader.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelNameOfLeader.Name = "labelNameOfLeader";
             // 
             // textBoxName
@@ -206,58 +201,36 @@ namespace Octopus.GUI
             this.textBoxName.ReadOnly = true;
             // 
             // buttonAddMembres
-            // 
-            this.buttonAddMembres.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.buttonAddMembres, "buttonAddMembres");
-            this.buttonAddMembres.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonAddMembres.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.New;
-            this.buttonAddMembres.Menu = null;
             this.buttonAddMembres.Name = "buttonAddMembres";
-            this.buttonAddMembres.UseVisualStyleBackColor = false;
             this.buttonAddMembres.Click += new System.EventHandler(this.buttonAddMembres_Click);
             // 
             // buttonSelectAMember
-            // 
-            this.buttonSelectAMember.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.buttonSelectAMember, "buttonSelectAMember");
-            this.buttonSelectAMember.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonSelectAMember.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Search;
-            this.buttonSelectAMember.Menu = null;
             this.buttonSelectAMember.Name = "buttonSelectAMember";
-            this.buttonSelectAMember.UseVisualStyleBackColor = false;
             this.buttonSelectAMember.Click += new System.EventHandler(this.buttonSelectAMember_Click);
             // 
             // buttonCancel
-            // 
-            this.buttonCancel.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.buttonCancel, "buttonCancel");
-            this.buttonCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonCancel.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Close;
-            this.buttonCancel.Menu = null;
             this.buttonCancel.Name = "buttonCancel";
-            this.buttonCancel.UseVisualStyleBackColor = false;
             this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
             // buttonSave
-            // 
-            this.buttonSave.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.buttonSave, "buttonSave");
-            this.buttonSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonSave.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Save;
-            this.buttonSave.Menu = null;
             this.buttonSave.Name = "buttonSave";
-            this.buttonSave.UseVisualStyleBackColor = false;
             this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
             // 
             // AddGuarantorForm
             // 
             resources.ApplyResources(this, "$this");
-            this.BackColor = System.Drawing.SystemColors.Control;
             this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.groupBoxAmount);
             this.Controls.Add(this.buttonSave);
             this.Controls.Add(this.groupBoxName);
-            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;

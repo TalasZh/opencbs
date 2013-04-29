@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
@@ -45,9 +45,9 @@ namespace Octopus.GUI.UserControl
             this.columnHeaderName = new System.Windows.Forms.ColumnHeader();
             this.columnHeaderPhone = new System.Windows.Forms.ColumnHeader();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.btnAddContact = new Octopus.GUI.UserControl.SweetButton();
-            this.btnSelectContact = new Octopus.GUI.UserControl.SweetButton();
-            this.buttonDelete = new Octopus.GUI.UserControl.SweetButton();
+            this.btnAddContact = new System.Windows.Forms.Button();
+            this.btnSelectContact = new System.Windows.Forms.Button();
+            this.buttonDelete = new System.Windows.Forms.Button();
             this.tabControlCorporate = new System.Windows.Forms.TabControl();
             this.tabPageAddress = new System.Windows.Forms.TabPage();
             this.groupBoxAddress = new System.Windows.Forms.GroupBox();
@@ -77,8 +77,8 @@ namespace Octopus.GUI.UserControl
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.buttonCancel = new Octopus.GUI.UserControl.SweetButton();
-            this.buttonSave = new Octopus.GUI.UserControl.SweetButton();
+            this.buttonCancel = new System.Windows.Forms.Button();
+            this.buttonSave = new System.Windows.Forms.Button();
             this.btnPrint = new Octopus.GUI.UserControl.PrintButton();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -131,8 +131,7 @@ namespace Octopus.GUI.UserControl
             resources.ApplyResources(this.columnHeaderPhone, "columnHeaderPhone");
             // 
             // groupBox3
-            // 
-            this.groupBox3.BackColor = System.Drawing.Color.White;
+            //
             this.groupBox3.Controls.Add(this.btnAddContact);
             this.groupBox3.Controls.Add(this.btnSelectContact);
             this.groupBox3.Controls.Add(this.buttonDelete);
@@ -143,37 +142,19 @@ namespace Octopus.GUI.UserControl
             // btnAddContact
             // 
             resources.ApplyResources(this.btnAddContact, "btnAddContact");
-            this.btnAddContact.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnAddContact.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnAddContact.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.New;
-            this.btnAddContact.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_new;
-            this.btnAddContact.Menu = null;
             this.btnAddContact.Name = "btnAddContact";
-            this.btnAddContact.UseVisualStyleBackColor = false;
             this.btnAddContact.Click += new System.EventHandler(this.BtnAddContactClick);
             // 
             // btnSelectContact
             // 
             resources.ApplyResources(this.btnSelectContact, "btnSelectContact");
-            this.btnSelectContact.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnSelectContact.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnSelectContact.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Search;
-            this.btnSelectContact.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_validity;
-            this.btnSelectContact.Menu = null;
             this.btnSelectContact.Name = "btnSelectContact";
-            this.btnSelectContact.UseVisualStyleBackColor = false;
             this.btnSelectContact.Click += new System.EventHandler(this.BtnSelectContactClick);
             // 
             // buttonDelete
             // 
             resources.ApplyResources(this.buttonDelete, "buttonDelete");
-            this.buttonDelete.BackColor = System.Drawing.Color.Gainsboro;
-            this.buttonDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonDelete.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Delete;
-            this.buttonDelete.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_delete;
-            this.buttonDelete.Menu = null;
             this.buttonDelete.Name = "buttonDelete";
-            this.buttonDelete.UseVisualStyleBackColor = false;
             this.buttonDelete.Click += new System.EventHandler(this.ButtonDeleteClick1);
             // 
             // tabControlCorporate
@@ -190,14 +171,11 @@ namespace Octopus.GUI.UserControl
             // tabPageAddress
             // 
             resources.ApplyResources(this.tabPageAddress, "tabPageAddress");
-            this.tabPageAddress.BackColor = System.Drawing.Color.White;
             this.tabPageAddress.Controls.Add(this.groupBoxAddress);
             this.tabPageAddress.Name = "tabPageAddress";
-            this.tabPageAddress.UseVisualStyleBackColor = true;
             // 
             // groupBoxAddress
-            // 
-            this.groupBoxAddress.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris_180;
+            //
             resources.ApplyResources(this.groupBoxAddress, "groupBoxAddress");
             this.groupBoxAddress.Name = "groupBoxAddress";
             this.groupBoxAddress.TabStop = false;
@@ -205,10 +183,8 @@ namespace Octopus.GUI.UserControl
             // tabPageContacts
             // 
             resources.ApplyResources(this.tabPageContacts, "tabPageContacts");
-            this.tabPageContacts.BackColor = System.Drawing.Color.White;
             this.tabPageContacts.Controls.Add(this.tableLayoutPanel3);
             this.tabPageContacts.Name = "tabPageContacts";
-            this.tabPageContacts.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel3
             // 
@@ -222,7 +198,6 @@ namespace Octopus.GUI.UserControl
             resources.ApplyResources(this.tabPageSavings, "tabPageSavings");
             this.tabPageSavings.Controls.Add(this.savingsListUserControl1);
             this.tabPageSavings.Name = "tabPageSavings";
-            this.tabPageSavings.UseVisualStyleBackColor = true;
             // 
             // savingsListUserControl1
             // 
@@ -237,7 +212,6 @@ namespace Octopus.GUI.UserControl
             // 
             resources.ApplyResources(this.tabPageCustomizableFields, "tabPageCustomizableFields");
             this.tabPageCustomizableFields.Name = "tabPageCustomizableFields";
-            this.tabPageCustomizableFields.UseVisualStyleBackColor = true;
             // 
             // cbBranch
             // 
@@ -254,7 +228,6 @@ namespace Octopus.GUI.UserControl
             this.groupBoxCorporate.Controls.Add(this.pictureBox2);
             this.groupBoxCorporate.Controls.Add(this.pictureBox1);
             resources.ApplyResources(this.groupBoxCorporate, "groupBoxCorporate");
-            this.groupBoxCorporate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(56)))));
             this.groupBoxCorporate.Name = "groupBoxCorporate";
             this.groupBoxCorporate.TabStop = false;
             // 
@@ -281,7 +254,6 @@ namespace Octopus.GUI.UserControl
             // 
             resources.ApplyResources(this.labelLastname, "labelLastname");
             this.labelLastname.BackColor = System.Drawing.Color.Transparent;
-            this.labelLastname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelLastname.Name = "labelLastname";
             // 
             // eacCorporate
@@ -295,21 +267,18 @@ namespace Octopus.GUI.UserControl
             // 
             resources.ApplyResources(this.lblEconomicActivity, "lblEconomicActivity");
             this.lblEconomicActivity.BackColor = System.Drawing.Color.Transparent;
-            this.lblEconomicActivity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblEconomicActivity.Name = "lblEconomicActivity";
             // 
             // labelDateCrate
             // 
             resources.ApplyResources(this.labelDateCrate, "labelDateCrate");
             this.labelDateCrate.BackColor = System.Drawing.Color.Transparent;
-            this.labelDateCrate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelDateCrate.Name = "labelDateCrate";
             // 
             // labelSigle
             // 
             resources.ApplyResources(this.labelSigle, "labelSigle");
             this.labelSigle.BackColor = System.Drawing.Color.Transparent;
-            this.labelSigle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelSigle.Name = "labelSigle";
             // 
             // labelCorpCycle
@@ -322,7 +291,6 @@ namespace Octopus.GUI.UserControl
             // 
             resources.ApplyResources(this.label3, "label3");
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.label3.Name = "label3";
             // 
             // textBoxCorpLoanCycle
@@ -358,7 +326,6 @@ namespace Octopus.GUI.UserControl
             // 
             resources.ApplyResources(this.labelSmallNameCorporate, "labelSmallNameCorporate");
             this.labelSmallNameCorporate.BackColor = System.Drawing.Color.Transparent;
-            this.labelSmallNameCorporate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelSmallNameCorporate.Name = "labelSmallNameCorporate";
             // 
             // linkLabelChangePhoto2
@@ -405,23 +372,13 @@ namespace Octopus.GUI.UserControl
             // buttonCancel
             // 
             resources.ApplyResources(this.buttonCancel, "buttonCancel");
-            this.buttonCancel.BackColor = System.Drawing.Color.Gainsboro;
-            this.buttonCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonCancel.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Close;
-            this.buttonCancel.Menu = null;
             this.buttonCancel.Name = "buttonCancel";
-            this.buttonCancel.UseVisualStyleBackColor = false;
             this.buttonCancel.Click += new System.EventHandler(this.ButtonCancelClick);
             // 
             // buttonSave
             // 
             resources.ApplyResources(this.buttonSave, "buttonSave");
-            this.buttonSave.BackColor = System.Drawing.Color.Gainsboro;
-            this.buttonSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonSave.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Save;
-            this.buttonSave.Menu = null;
             this.buttonSave.Name = "buttonSave";
-            this.buttonSave.UseVisualStyleBackColor = false;
             this.buttonSave.Click += new System.EventHandler(this.SaveCorporate);
             // 
             // btnPrint
@@ -485,7 +442,7 @@ namespace Octopus.GUI.UserControl
         private System.Windows.Forms.ListView lvContacts;
         private System.Windows.Forms.ColumnHeader columnHeaderName;
         private System.Windows.Forms.GroupBox groupBox3;
-        private SweetButton buttonDelete;
+        private System.Windows.Forms.Button buttonDelete;
         private System.Windows.Forms.GroupBox groupBoxAddress;
         private System.Windows.Forms.TabPage tabPageSavings;
         private SavingsListUserControl savingsListUserControl1;
@@ -497,16 +454,16 @@ namespace Octopus.GUI.UserControl
         private System.Windows.Forms.ComboBox cbBranch;
         private System.Windows.Forms.Label label3;
         private TabPage tabPageCustomizableFields;
-        private SweetButton buttonSave;
-        private SweetButton buttonCancel;
+        private System.Windows.Forms.Button buttonSave;
+        private System.Windows.Forms.Button buttonCancel;
         private Label labelCorpCycle;
         private TextBox textBoxCorpLoanCycle;
         private PrintButton btnPrint;
         private TableLayoutPanel tableLayoutPanel1;
         private Label lblEconomicActivity;
         private EconomicActivityControl eacCorporate;
-        private SweetButton btnAddContact;
-        private SweetButton btnSelectContact;
+        private System.Windows.Forms.Button btnAddContact;
+        private System.Windows.Forms.Button btnSelectContact;
         private ColumnHeader columnHeaderPhone;
 
     }

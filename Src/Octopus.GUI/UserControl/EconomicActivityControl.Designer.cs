@@ -1,4 +1,4 @@
-﻿namespace Octopus.GUI.UserControl
+namespace Octopus.GUI.UserControl
 {
     partial class EconomicActivityControl
     {
@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EconomicActivityControl));
             this.txbActivity = new System.Windows.Forms.TextBox();
-            this.btnSelect = new Octopus.GUI.UserControl.SweetButton();
+            this.btnSelect = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txbActivity
@@ -41,14 +41,9 @@
             this.txbActivity.Click += new System.EventHandler(this.BtnSelectClick);
             // 
             // btnSelect
-            // 
-            this.btnSelect.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_bouton;
+            //
             resources.ApplyResources(this.btnSelect, "btnSelect");
-            this.btnSelect.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.View;
-            this.btnSelect.Image = global::Octopus.GUI.Properties.Resources.theme1_1_view;
-            this.btnSelect.Menu = null;
             this.btnSelect.Name = "btnSelect";
-            this.btnSelect.UseVisualStyleBackColor = true;
             this.btnSelect.Click += new System.EventHandler(this.BtnSelectClick);
             // 
             // EconomicActivityControl
@@ -67,7 +62,7 @@
         #endregion
 
         private System.Windows.Forms.TextBox txbActivity;
-        private SweetButton btnSelect;
+        private System.Windows.Forms.Button btnSelect;
 
     }
 }

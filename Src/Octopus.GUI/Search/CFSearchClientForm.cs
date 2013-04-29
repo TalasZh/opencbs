@@ -1,4 +1,4 @@
-﻿using Octopus.CoreDomain.SearchResult;
+using Octopus.CoreDomain.SearchResult;
 using Octopus.Enums;
 using Octopus.GUI.UserControl;
 using Octopus.Services;

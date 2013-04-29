@@ -39,7 +39,7 @@ using Octopus.GUI.UserControl;
 namespace Octopus.GUI.Products
 {
     /// <summary>
-    /// Description résumée de PackagesForm.
+    /// Description rï¿½sumï¿½e de PackagesForm.
     /// </summary>
     [PermissionSet(SecurityAction.Demand, Name = "FullTrust")]
     [System.Runtime.InteropServices.ComVisibleAttribute(true)]

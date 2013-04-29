@@ -46,8 +46,8 @@ namespace Octopus.GUI.Accounting
             this.cbBranches = new System.Windows.Forms.ComboBox();
             this.cbBookings = new System.Windows.Forms.ComboBox();
             this.gbPanel = new System.Windows.Forms.GroupBox();
-            this.btnClose = new Octopus.GUI.UserControl.SweetButton();
-            this.btnSave = new Octopus.GUI.UserControl.SweetButton();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
@@ -102,18 +102,14 @@ namespace Octopus.GUI.Accounting
             this.tabPageEntry.AccessibleDescription = null;
             this.tabPageEntry.AccessibleName = null;
             resources.ApplyResources(this.tabPageEntry, "tabPageEntry");
-            this.tabPageEntry.BackgroundImage = null;
             this.tabPageEntry.Font = null;
-            this.tabPageEntry.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.tabPageEntry.Name = "tabPageEntry";
-            this.tabPageEntry.UseVisualStyleBackColor = true;
             // 
             // tabPageStandardBooking
             // 
             this.tabPageStandardBooking.AccessibleDescription = null;
             this.tabPageStandardBooking.AccessibleName = null;
             resources.ApplyResources(this.tabPageStandardBooking, "tabPageStandardBooking");
-            this.tabPageStandardBooking.BackgroundImage = null;
             this.tabPageStandardBooking.Controls.Add(this.cbCurrencies);
             this.tabPageStandardBooking.Controls.Add(this.lblBranch);
             this.tabPageStandardBooking.Controls.Add(this.lblDescription);
@@ -125,9 +121,7 @@ namespace Octopus.GUI.Accounting
             this.tabPageStandardBooking.Controls.Add(this.cbBranches);
             this.tabPageStandardBooking.Controls.Add(this.cbBookings);
             this.tabPageStandardBooking.Font = null;
-            this.tabPageStandardBooking.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.tabPageStandardBooking.Name = "tabPageStandardBooking";
-            this.tabPageStandardBooking.UseVisualStyleBackColor = true;
             // 
             // cbCurrencies
             // 
@@ -145,7 +139,6 @@ namespace Octopus.GUI.Accounting
             this.lblBranch.AccessibleName = null;
             resources.ApplyResources(this.lblBranch, "lblBranch");
             this.lblBranch.BackColor = System.Drawing.Color.Transparent;
-            this.lblBranch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblBranch.Name = "lblBranch";
             // 
             // lblDescription
@@ -154,7 +147,6 @@ namespace Octopus.GUI.Accounting
             this.lblDescription.AccessibleName = null;
             resources.ApplyResources(this.lblDescription, "lblDescription");
             this.lblDescription.BackColor = System.Drawing.Color.Transparent;
-            this.lblDescription.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblDescription.Name = "lblDescription";
             // 
             // textBoxDescription
@@ -172,7 +164,6 @@ namespace Octopus.GUI.Accounting
             this.lblCurrency.AccessibleName = null;
             resources.ApplyResources(this.lblCurrency, "lblCurrency");
             this.lblCurrency.BackColor = System.Drawing.Color.Transparent;
-            this.lblCurrency.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblCurrency.Name = "lblCurrency";
             // 
             // lblAmmount
@@ -181,7 +172,6 @@ namespace Octopus.GUI.Accounting
             this.lblAmmount.AccessibleName = null;
             resources.ApplyResources(this.lblAmmount, "lblAmmount");
             this.lblAmmount.BackColor = System.Drawing.Color.Transparent;
-            this.lblAmmount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblAmmount.Name = "lblAmmount";
             // 
             // lblBooking
@@ -190,7 +180,6 @@ namespace Octopus.GUI.Accounting
             this.lblBooking.AccessibleName = null;
             resources.ApplyResources(this.lblBooking, "lblBooking");
             this.lblBooking.BackColor = System.Drawing.Color.Transparent;
-            this.lblBooking.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblBooking.Name = "lblBooking";
             // 
             // textBoxAmount
@@ -231,7 +220,6 @@ namespace Octopus.GUI.Accounting
             this.gbPanel.AccessibleDescription = null;
             this.gbPanel.AccessibleName = null;
             resources.ApplyResources(this.gbPanel, "gbPanel");
-            this.gbPanel.BackgroundImage = null;
             this.gbPanel.Controls.Add(this.btnClose);
             this.gbPanel.Controls.Add(this.btnSave);
             this.gbPanel.Font = null;
@@ -243,12 +231,7 @@ namespace Octopus.GUI.Accounting
             this.btnClose.AccessibleDescription = null;
             this.btnClose.AccessibleName = null;
             resources.ApplyResources(this.btnClose, "btnClose");
-            this.btnClose.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_bouton;
-            this.btnClose.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Close;
-            this.btnClose.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_close;
-            this.btnClose.Menu = null;
             this.btnClose.Name = "btnClose";
-            this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnSave
@@ -256,12 +239,7 @@ namespace Octopus.GUI.Accounting
             this.btnSave.AccessibleDescription = null;
             this.btnSave.AccessibleName = null;
             resources.ApplyResources(this.btnSave, "btnSave");
-            this.btnSave.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_bouton;
-            this.btnSave.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Save;
-            this.btnSave.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_save;
-            this.btnSave.Menu = null;
             this.btnSave.Name = "btnSave";
-            this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.buttonSave_Click);
             // 
             // AddBooking
@@ -270,7 +248,6 @@ namespace Octopus.GUI.Accounting
             this.AccessibleName = null;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = null;
             this.Controls.Add(this.splitContainer1);
             this.Font = null;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
@@ -292,7 +269,7 @@ namespace Octopus.GUI.Accounting
 
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.GroupBox gbPanel;
-        private SweetButton btnClose;
+        private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.TabControl tabControl;
         private System.Windows.Forms.TabPage tabPageEntry;
         private System.Windows.Forms.TabPage tabPageStandardBooking;
@@ -300,7 +277,7 @@ namespace Octopus.GUI.Accounting
         private System.Windows.Forms.TextBox textBoxAmount;
         private System.Windows.Forms.Label lblBooking;
         private System.Windows.Forms.Label lblAmmount;
-        private SweetButton btnSave;
+        private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Label lblCurrency;
         private System.Windows.Forms.Label lblDescription;
         private System.Windows.Forms.TextBox textBoxDescription;

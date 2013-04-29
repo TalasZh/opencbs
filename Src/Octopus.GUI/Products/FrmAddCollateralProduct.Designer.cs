@@ -1,4 +1,4 @@
-﻿using Octopus.GUI.UserControl;
+using Octopus.GUI.UserControl;
 
 namespace Octopus.GUI.Products
 {
@@ -37,23 +37,23 @@ namespace Octopus.GUI.Products
             this.labelProductDesc = new System.Windows.Forms.Label();
             this.textBoxProductName = new System.Windows.Forms.TextBox();
             this.groupBoxPropertyDetails = new System.Windows.Forms.GroupBox();
-            this.buttonAddProperty = new Octopus.GUI.UserControl.SweetButton();
+            this.buttonAddProperty = new System.Windows.Forms.Button();
             this.comboBoxPropertyTypes = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxPropertyDesc = new System.Windows.Forms.TextBox();
             this.labelPropertyDesc = new System.Windows.Forms.Label();
             this.textBoxPropertyName = new System.Windows.Forms.TextBox();
             this.labelPropertyName = new System.Windows.Forms.Label();
-            this.buttonDeleteProperty = new Octopus.GUI.UserControl.SweetButton();
+            this.buttonDeleteProperty = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.listBox = new System.Windows.Forms.ListBox();
             this.groupBoxCollectionDetails = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.buttonDeleteListItem = new Octopus.GUI.UserControl.SweetButton();
-            this.buttonAddListItem = new Octopus.GUI.UserControl.SweetButton();
+            this.buttonDeleteListItem = new System.Windows.Forms.Button();
+            this.buttonAddListItem = new System.Windows.Forms.Button();
             this.textBoxListItem = new System.Windows.Forms.TextBox();
-            this.buttonCancel = new Octopus.GUI.UserControl.SweetButton();
-            this.buttonSave = new Octopus.GUI.UserControl.SweetButton();
+            this.buttonCancel = new System.Windows.Forms.Button();
+            this.buttonSave = new System.Windows.Forms.Button();
             this.groupBoxPropertyDetails.SuspendLayout();
             this.groupBoxCollectionDetails.SuspendLayout();
             this.SuspendLayout();
@@ -69,7 +69,6 @@ namespace Octopus.GUI.Products
             // 
             resources.ApplyResources(this.labelProductName, "labelProductName");
             this.labelProductName.BackColor = System.Drawing.Color.Transparent;
-            this.labelProductName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelProductName.Name = "labelProductName";
             // 
             // textBoxProductDesc
@@ -81,7 +80,6 @@ namespace Octopus.GUI.Products
             // 
             resources.ApplyResources(this.labelProductDesc, "labelProductDesc");
             this.labelProductDesc.BackColor = System.Drawing.Color.Transparent;
-            this.labelProductDesc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelProductDesc.Name = "labelProductDesc";
             // 
             // textBoxProductName
@@ -90,8 +88,7 @@ namespace Octopus.GUI.Products
             this.textBoxProductName.Name = "textBoxProductName";
             // 
             // groupBoxPropertyDetails
-            // 
-            this.groupBoxPropertyDetails.BackColor = System.Drawing.Color.Transparent;
+            //
             this.groupBoxPropertyDetails.Controls.Add(this.buttonAddProperty);
             this.groupBoxPropertyDetails.Controls.Add(this.comboBoxPropertyTypes);
             this.groupBoxPropertyDetails.Controls.Add(this.label1);
@@ -101,19 +98,13 @@ namespace Octopus.GUI.Products
             this.groupBoxPropertyDetails.Controls.Add(this.labelPropertyName);
             this.groupBoxPropertyDetails.Controls.Add(this.buttonDeleteProperty);
             resources.ApplyResources(this.groupBoxPropertyDetails, "groupBoxPropertyDetails");
-            this.groupBoxPropertyDetails.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.groupBoxPropertyDetails.Name = "groupBoxPropertyDetails";
             this.groupBoxPropertyDetails.TabStop = false;
             // 
             // buttonAddProperty
-            // 
-            this.buttonAddProperty.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.buttonAddProperty, "buttonAddProperty");
-            this.buttonAddProperty.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(56)))));
-            this.buttonAddProperty.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.New;
-            this.buttonAddProperty.Menu = null;
             this.buttonAddProperty.Name = "buttonAddProperty";
-            this.buttonAddProperty.UseVisualStyleBackColor = false;
             this.buttonAddProperty.Click += new System.EventHandler(this.buttonAddProperty_Click);
             // 
             // comboBoxPropertyTypes
@@ -128,7 +119,6 @@ namespace Octopus.GUI.Products
             // 
             resources.ApplyResources(this.label1, "label1");
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.label1.Name = "label1";
             // 
             // textBoxPropertyDesc
@@ -140,7 +130,6 @@ namespace Octopus.GUI.Products
             // 
             resources.ApplyResources(this.labelPropertyDesc, "labelPropertyDesc");
             this.labelPropertyDesc.BackColor = System.Drawing.Color.Transparent;
-            this.labelPropertyDesc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelPropertyDesc.Name = "labelPropertyDesc";
             // 
             // textBoxPropertyName
@@ -153,25 +142,18 @@ namespace Octopus.GUI.Products
             // 
             resources.ApplyResources(this.labelPropertyName, "labelPropertyName");
             this.labelPropertyName.BackColor = System.Drawing.Color.Transparent;
-            this.labelPropertyName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelPropertyName.Name = "labelPropertyName";
             // 
             // buttonDeleteProperty
-            // 
-            this.buttonDeleteProperty.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.buttonDeleteProperty, "buttonDeleteProperty");
-            this.buttonDeleteProperty.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(56)))));
-            this.buttonDeleteProperty.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Delete;
-            this.buttonDeleteProperty.Menu = null;
             this.buttonDeleteProperty.Name = "buttonDeleteProperty";
-            this.buttonDeleteProperty.UseVisualStyleBackColor = false;
             this.buttonDeleteProperty.Click += new System.EventHandler(this.buttonDeleteProperty_Click);
             // 
             // label2
             // 
             resources.ApplyResources(this.label2, "label2");
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.label2.Name = "label2";
             // 
             // listBox
@@ -189,7 +171,6 @@ namespace Octopus.GUI.Products
             this.groupBoxCollectionDetails.Controls.Add(this.listBox);
             this.groupBoxCollectionDetails.Controls.Add(this.label2);
             resources.ApplyResources(this.groupBoxCollectionDetails, "groupBoxCollectionDetails");
-            this.groupBoxCollectionDetails.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.groupBoxCollectionDetails.Name = "groupBoxCollectionDetails";
             this.groupBoxCollectionDetails.TabStop = false;
             // 
@@ -197,29 +178,18 @@ namespace Octopus.GUI.Products
             // 
             resources.ApplyResources(this.label3, "label3");
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.label3.Name = "label3";
             // 
             // buttonDeleteListItem
-            // 
-            this.buttonDeleteListItem.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.buttonDeleteListItem, "buttonDeleteListItem");
-            this.buttonDeleteListItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(56)))));
-            this.buttonDeleteListItem.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Delete;
-            this.buttonDeleteListItem.Menu = null;
             this.buttonDeleteListItem.Name = "buttonDeleteListItem";
-            this.buttonDeleteListItem.UseVisualStyleBackColor = false;
             this.buttonDeleteListItem.Click += new System.EventHandler(this.buttonDeleteListItem_Click);
             // 
             // buttonAddListItem
-            // 
-            this.buttonAddListItem.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.buttonAddListItem, "buttonAddListItem");
-            this.buttonAddListItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(56)))));
-            this.buttonAddListItem.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.New;
-            this.buttonAddListItem.Menu = null;
             this.buttonAddListItem.Name = "buttonAddListItem";
-            this.buttonAddListItem.UseVisualStyleBackColor = false;
             this.buttonAddListItem.Click += new System.EventHandler(this.buttonAddListItem_Click);
             // 
             // textBoxListItem
@@ -229,25 +199,15 @@ namespace Octopus.GUI.Products
             this.textBoxListItem.TextChanged += new System.EventHandler(this.textBoxListItem_TextChanged);
             // 
             // buttonCancel
-            // 
-            this.buttonCancel.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.buttonCancel, "buttonCancel");
-            this.buttonCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(56)))));
-            this.buttonCancel.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Close;
-            this.buttonCancel.Menu = null;
             this.buttonCancel.Name = "buttonCancel";
-            this.buttonCancel.UseVisualStyleBackColor = false;
             this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
             // buttonSave
-            // 
-            this.buttonSave.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.buttonSave, "buttonSave");
-            this.buttonSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(56)))));
-            this.buttonSave.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Save;
-            this.buttonSave.Menu = null;
             this.buttonSave.Name = "buttonSave";
-            this.buttonSave.UseVisualStyleBackColor = false;
             this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
             // 
             // FrmAddCollateralProduct
@@ -279,27 +239,27 @@ namespace Octopus.GUI.Products
         #endregion
 
         private System.Windows.Forms.PropertyGrid propertyGrid;
-        private SweetButton buttonCancel;
-        private SweetButton buttonSave;
+        private System.Windows.Forms.Button buttonCancel;
+        private System.Windows.Forms.Button buttonSave;
         private System.Windows.Forms.Label labelProductName;
         private System.Windows.Forms.TextBox textBoxProductName;
         private System.Windows.Forms.GroupBox groupBoxPropertyDetails;
         private System.Windows.Forms.TextBox textBoxProductDesc;
         private System.Windows.Forms.Label labelProductDesc;
-        private SweetButton buttonDeleteProperty;
+        private System.Windows.Forms.Button buttonDeleteProperty;
         private System.Windows.Forms.TextBox textBoxPropertyName;
         private System.Windows.Forms.Label labelPropertyName;
         private System.Windows.Forms.Label labelPropertyDesc;
         private System.Windows.Forms.TextBox textBoxPropertyDesc;
         private System.Windows.Forms.ComboBox comboBoxPropertyTypes;
         private System.Windows.Forms.Label label1;
-        private SweetButton buttonAddProperty;
+        private System.Windows.Forms.Button buttonAddProperty;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ListBox listBox;
         private System.Windows.Forms.GroupBox groupBoxCollectionDetails;
-        private SweetButton buttonAddListItem;
+        private System.Windows.Forms.Button buttonAddListItem;
         private System.Windows.Forms.TextBox textBoxListItem;
-        private SweetButton buttonDeleteListItem;
+        private System.Windows.Forms.Button buttonDeleteListItem;
         private System.Windows.Forms.Label label3;
     }
 }

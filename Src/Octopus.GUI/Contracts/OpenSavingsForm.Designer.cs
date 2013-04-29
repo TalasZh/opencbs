@@ -1,4 +1,4 @@
-﻿using Octopus.GUI.UserControl;
+using Octopus.GUI.UserControl;
 
 namespace Octopus.GUI.Contracts
 {
@@ -33,8 +33,8 @@ namespace Octopus.GUI.Contracts
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OpenSavingsForm));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.bCancel = new Octopus.GUI.UserControl.SweetButton();
-            this.bSave = new Octopus.GUI.UserControl.SweetButton();
+            this.bCancel = new System.Windows.Forms.Button();
+            this.bSave = new System.Windows.Forms.Button();
             this.gbModifyInitialAmountEntryFees = new System.Windows.Forms.GroupBox();
             this.nudInitialAmount = new System.Windows.Forms.NumericUpDown();
             this.udEntryFees = new System.Windows.Forms.NumericUpDown();
@@ -76,24 +76,14 @@ namespace Octopus.GUI.Contracts
             // bCancel
             // 
             resources.ApplyResources(this.bCancel, "bCancel");
-            this.bCancel.BackColor = System.Drawing.Color.Gainsboro;
             this.bCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.bCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.bCancel.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Close;
-            this.bCancel.Menu = null;
             this.bCancel.Name = "bCancel";
-            this.bCancel.UseVisualStyleBackColor = false;
             // 
             // bSave
             // 
             resources.ApplyResources(this.bSave, "bSave");
-            this.bSave.BackColor = System.Drawing.Color.Gainsboro;
             this.bSave.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.bSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.bSave.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Save;
-            this.bSave.Menu = null;
             this.bSave.Name = "bSave";
-            this.bSave.UseVisualStyleBackColor = false;
             this.bSave.Click += new System.EventHandler(this.bSave_Click);
             // 
             // gbModifyInitialAmountEntryFees
@@ -105,7 +95,6 @@ namespace Octopus.GUI.Contracts
             this.gbModifyInitialAmountEntryFees.Controls.Add(this.lbEntryFees);
             this.gbModifyInitialAmountEntryFees.Controls.Add(this.lbInitialAmount);
             resources.ApplyResources(this.gbModifyInitialAmountEntryFees, "gbModifyInitialAmountEntryFees");
-            this.gbModifyInitialAmountEntryFees.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.gbModifyInitialAmountEntryFees.Name = "gbModifyInitialAmountEntryFees";
             this.gbModifyInitialAmountEntryFees.TabStop = false;
             // 
@@ -122,29 +111,23 @@ namespace Octopus.GUI.Contracts
             this.udEntryFees.ValueChanged += new System.EventHandler(this.udEntryFees_ValueChanged);
             // 
             // lbInitialAmountMinMax
-            // 
-            this.lbInitialAmountMinMax.BackColor = System.Drawing.Color.Transparent;
+            //
             resources.ApplyResources(this.lbInitialAmountMinMax, "lbInitialAmountMinMax");
-            this.lbInitialAmountMinMax.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbInitialAmountMinMax.Name = "lbInitialAmountMinMax";
             // 
             // lbEntryFeesMinMax
-            // 
-            this.lbEntryFeesMinMax.BackColor = System.Drawing.Color.Transparent;
+            //
             resources.ApplyResources(this.lbEntryFeesMinMax, "lbEntryFeesMinMax");
-            this.lbEntryFeesMinMax.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbEntryFeesMinMax.Name = "lbEntryFeesMinMax";
             // 
             // lbEntryFees
             // 
             resources.ApplyResources(this.lbEntryFees, "lbEntryFees");
-            this.lbEntryFees.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbEntryFees.Name = "lbEntryFees";
             // 
             // lbInitialAmount
             // 
             resources.ApplyResources(this.lbInitialAmount, "lbInitialAmount");
-            this.lbInitialAmount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbInitialAmount.Name = "lbInitialAmount";
             // 
             // tableLayoutPanel2
@@ -164,37 +147,31 @@ namespace Octopus.GUI.Contracts
             // 
             resources.ApplyResources(this.lbConfirmationTotalAmount, "lbConfirmationTotalAmount");
             this.tableLayoutPanel2.SetColumnSpan(this.lbConfirmationTotalAmount, 2);
-            this.lbConfirmationTotalAmount.ForeColor = System.Drawing.Color.White;
             this.lbConfirmationTotalAmount.Name = "lbConfirmationTotalAmount";
             // 
             // lbInitialAmountConfirmation
             // 
             resources.ApplyResources(this.lbInitialAmountConfirmation, "lbInitialAmountConfirmation");
-            this.lbInitialAmountConfirmation.ForeColor = System.Drawing.Color.White;
             this.lbInitialAmountConfirmation.Name = "lbInitialAmountConfirmation";
             // 
             // lbEntryFeesConfirmation
             // 
             resources.ApplyResources(this.lbEntryFeesConfirmation, "lbEntryFeesConfirmation");
-            this.lbEntryFeesConfirmation.ForeColor = System.Drawing.Color.White;
             this.lbEntryFeesConfirmation.Name = "lbEntryFeesConfirmation";
             // 
             // lbTotalAmountValue
             // 
             resources.ApplyResources(this.lbTotalAmountValue, "lbTotalAmountValue");
-            this.lbTotalAmountValue.ForeColor = System.Drawing.Color.White;
             this.lbTotalAmountValue.Name = "lbTotalAmountValue";
             // 
             // lbInitialAmountValue
             // 
             resources.ApplyResources(this.lbInitialAmountValue, "lbInitialAmountValue");
-            this.lbInitialAmountValue.ForeColor = System.Drawing.Color.White;
             this.lbInitialAmountValue.Name = "lbInitialAmountValue";
             // 
             // lbEntryFeesValue
             // 
             resources.ApplyResources(this.lbEntryFeesValue, "lbEntryFeesValue");
-            this.lbEntryFeesValue.ForeColor = System.Drawing.Color.White;
             this.lbEntryFeesValue.Name = "lbEntryFeesValue";
             // 
             // OpenSavingsForm
@@ -224,8 +201,8 @@ namespace Octopus.GUI.Contracts
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private SweetButton bCancel;
-        private SweetButton bSave;
+        private System.Windows.Forms.Button bCancel;
+        private System.Windows.Forms.Button bSave;
         private System.Windows.Forms.GroupBox gbModifyInitialAmountEntryFees;
         private System.Windows.Forms.Label lbEntryFeesMinMax;
         private System.Windows.Forms.Label lbEntryFees;

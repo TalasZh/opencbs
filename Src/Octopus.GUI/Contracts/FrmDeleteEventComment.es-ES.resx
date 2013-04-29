@@ -118,34 +118,9 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="buttonCancel.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAk1JREFUaEPt1EtI
-        VGEchvFXiIigRduWbdu1auuiCAoqCCS6B10FI8EwkMIQixJExCKTpEwMs0QGTTRLNLNMbcj7ZZJRR6dx
-        dBxHHefiTKdtLsRnMVF9H7/tA4eXPycpHo8LPCsDT6D59YEm+30BM8mamzCTmEnW/1GYKzFXYq5k/QXM
-        lay/kfmXmCv5z68khp5QFTPZmt3MJH96ktXYKiDQWInJ1qyt6GoUUCQaBf7xLBKJbpg1yYYbK0lwFo6E
-        AYUiYSDB2Uo4BAg0VkKzYHgFEGisRMuhIKCllSDwd2SB4BIg0FiJFpYXgQRn/qUAIN9iAKDZXMAPaDYw
-        D9DMu+ADNOP3ATTzzM8C+uHzApr2eQGaTc3NAHLNegBNet2AxmfcgJVNA3J6XIDGPC5ADvcEoNHpcYBm
-        w1NOQEOuMUADk98B9U84APU6RwD1OIcB2ccGAXU7+gF1OfoAdY72AuoY6QHUPmQH9HHQDqh1oBtQS18n
-        oPc9HYCavn0C1GhvB1T/tQ1QXXcroNquFkC2L82Aqj83AXrV/hbQy7YGQC8+vAFU3lILqKzZBqj0XQ2g
-        ksbXgIobqgA9rK8EVFhXASjf9hxQXs0zQHeqSwHlVJUAyq4sBpRV8QDQjfJCQNfLCgClP80HlPbkPqAr
-        j+8COv8oF9CZotuAThTeApRSkAXocF4moIP3MgDty70GKDnnKqA92amAdt+8BGhX1gVAOzPPAtqRcQrQ
-        9vTjgLalpQDamnoU0JbLRwBtvngI0KZzBwAlnd4PSCf3EjqWDPwEBJzkfwZ3dsgAAAAASUVORK5CYII=
-</value>
-  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="buttonCancel.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="buttonCancel.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
   <data name="buttonCancel.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 9.75pt</value>
-  </data>
-  <data name="buttonCancel.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
   </data>
   <data name="buttonCancel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -172,33 +147,8 @@
   <data name="&gt;&gt;buttonCancel.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="buttonConfirm.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAk1JREFUaEPt1EtI
-        VGEchvFXiIigRduWbdu1auuiCAoqCCS6B10FI8EwkMIQixJExCKTpEwMs0QGTTRLNLNMbcj7ZZJRR6dx
-        dBxHHefiTKdtLsRnMVF9H7/tA4eXPycpHo8LPCsDT6D59YEm+30BM8mamzCTmEnW/1GYKzFXYq5k/QXM
-        lay/kfmXmCv5z68khp5QFTPZmt3MJH96ktXYKiDQWInJ1qyt6GoUUCQaBf7xLBKJbpg1yYYbK0lwFo6E
-        AYUiYSDB2Uo4BAg0VkKzYHgFEGisRMuhIKCllSDwd2SB4BIg0FiJFpYXgQRn/qUAIN9iAKDZXMAPaDYw
-        D9DMu+ADNOP3ATTzzM8C+uHzApr2eQGaTc3NAHLNegBNet2AxmfcgJVNA3J6XIDGPC5ADvcEoNHpcYBm
-        w1NOQEOuMUADk98B9U84APU6RwD1OIcB2ccGAXU7+gF1OfoAdY72AuoY6QHUPmQH9HHQDqh1oBtQS18n
-        oPc9HYCavn0C1GhvB1T/tQ1QXXcroNquFkC2L82Aqj83AXrV/hbQy7YGQC8+vAFU3lILqKzZBqj0XQ2g
-        ksbXgIobqgA9rK8EVFhXASjf9hxQXs0zQHeqSwHlVJUAyq4sBpRV8QDQjfJCQNfLCgClP80HlPbkPqAr
-        j+8COv8oF9CZotuAThTeApRSkAXocF4moIP3MgDty70GKDnnKqA92amAdt+8BGhX1gVAOzPPAtqRcQrQ
-        9vTjgLalpQDamnoU0JbLRwBtvngI0KZzBwAlnd4PSCf3EjqWDPwEBJzkfwZ3dsgAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="buttonConfirm.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="buttonConfirm.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
   <data name="buttonConfirm.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 9.75pt</value>
-  </data>
-  <data name="buttonConfirm.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
   </data>
   <data name="buttonConfirm.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -223,9 +173,6 @@
   </data>
   <data name="&gt;&gt;buttonConfirm.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="groupBox1.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
   </data>
   <data name="groupBox1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Bottom</value>

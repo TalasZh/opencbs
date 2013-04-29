@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Octopus.Shared;
 using Octopus.CoreDomain.Products;
 using Octopus.GUI.UserControl;

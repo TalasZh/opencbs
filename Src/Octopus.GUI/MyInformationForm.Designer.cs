@@ -1,4 +1,4 @@
-﻿using System.Drawing;
+using System.Drawing;
 using Octopus.Shared;
 
 namespace Octopus.GUI
@@ -262,7 +262,7 @@ namespace Octopus.GUI
             this.groupBoxOctopus = new System.Windows.Forms.GroupBox();
             this.textBoxMainMessage = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.buttonSave = new Octopus.GUI.UserControl.SweetButton();
+            this.buttonSave = new System.Windows.Forms.Button();
             this.chkCheckForUpdates = new System.Windows.Forms.CheckBox();
             this.linkLearnMore = new System.Windows.Forms.LinkLabel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -274,8 +274,7 @@ namespace Octopus.GUI
             this.SuspendLayout();
             // 
             // groupBoxInformation
-            // 
-            this.groupBoxInformation.BackColor = System.Drawing.Color.Transparent;
+            //
             this.groupBoxInformation.Controls.Add(this.textBoxGross);
             this.groupBoxInformation.Controls.Add(this.textBoxNumberOfClients);
             this.groupBoxInformation.Controls.Add(this.imageComboBoxCountry);
@@ -285,7 +284,6 @@ namespace Octopus.GUI
             this.groupBoxInformation.Controls.Add(this.labelCountry);
             this.groupBoxInformation.Controls.Add(this.labelName);
             resources.ApplyResources(this.groupBoxInformation, "groupBoxInformation");
-            this.groupBoxInformation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(56)))));
             this.groupBoxInformation.Name = "groupBoxInformation";
             this.groupBoxInformation.TabStop = false;
             // 
@@ -1727,40 +1725,34 @@ namespace Octopus.GUI
             // 
             resources.ApplyResources(this.labelNumberOfClients, "labelNumberOfClients");
             this.labelNumberOfClients.BackColor = System.Drawing.Color.Transparent;
-            this.labelNumberOfClients.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(56)))));
             this.labelNumberOfClients.Name = "labelNumberOfClients";
             // 
             // labelGrossPortfolio
             // 
             resources.ApplyResources(this.labelGrossPortfolio, "labelGrossPortfolio");
             this.labelGrossPortfolio.BackColor = System.Drawing.Color.Transparent;
-            this.labelGrossPortfolio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(56)))));
             this.labelGrossPortfolio.Name = "labelGrossPortfolio";
             // 
             // labelCountry
             // 
             resources.ApplyResources(this.labelCountry, "labelCountry");
             this.labelCountry.BackColor = System.Drawing.Color.Transparent;
-            this.labelCountry.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(56)))));
             this.labelCountry.Name = "labelCountry";
             // 
             // labelName
             // 
             resources.ApplyResources(this.labelName, "labelName");
             this.labelName.BackColor = System.Drawing.Color.Transparent;
-            this.labelName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(56)))));
             this.labelName.Name = "labelName";
             // 
             // lblRequieredFields
             // 
             resources.ApplyResources(this.lblRequieredFields, "lblRequieredFields");
             this.lblRequieredFields.BackColor = System.Drawing.Color.Transparent;
-            this.lblRequieredFields.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(56)))));
             this.lblRequieredFields.Name = "lblRequieredFields";
             // 
             // groupBox1
-            // 
-            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            //
             this.groupBox1.Controls.Add(this.comboBoxPurpose);
             this.groupBox1.Controls.Add(this.labelPurposeUsage);
             this.groupBox1.Controls.Add(this.textBoxPhone);
@@ -1774,7 +1766,6 @@ namespace Octopus.GUI
             this.groupBox1.Controls.Add(this.labelEmail);
             this.groupBox1.Controls.Add(this.textBoxEmail);
             resources.ApplyResources(this.groupBox1, "groupBox1");
-            this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(56)))));
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             // 
@@ -1793,7 +1784,6 @@ namespace Octopus.GUI
             // 
             resources.ApplyResources(this.labelPurposeUsage, "labelPurposeUsage");
             this.labelPurposeUsage.BackColor = System.Drawing.Color.Transparent;
-            this.labelPurposeUsage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(56)))));
             this.labelPurposeUsage.Name = "labelPurposeUsage";
             // 
             // textBoxPhone
@@ -1805,7 +1795,6 @@ namespace Octopus.GUI
             // 
             resources.ApplyResources(this.label3, "label3");
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(56)))));
             this.label3.Name = "label3";
             // 
             // textBoxSkype
@@ -1817,7 +1806,6 @@ namespace Octopus.GUI
             // 
             resources.ApplyResources(this.label1, "label1");
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(56)))));
             this.label1.Name = "label1";
             // 
             // textBoxPersonName
@@ -1834,21 +1822,18 @@ namespace Octopus.GUI
             // 
             resources.ApplyResources(this.labelPosition, "labelPosition");
             this.labelPosition.BackColor = System.Drawing.Color.Transparent;
-            this.labelPosition.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(56)))));
             this.labelPosition.Name = "labelPosition";
             // 
             // label2
             // 
             resources.ApplyResources(this.label2, "label2");
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(56)))));
             this.label2.Name = "label2";
             // 
             // labelEmail
             // 
             resources.ApplyResources(this.labelEmail, "labelEmail");
             this.labelEmail.BackColor = System.Drawing.Color.Transparent;
-            this.labelEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(56)))));
             this.labelEmail.Name = "labelEmail";
             // 
             // textBoxEmail
@@ -1858,12 +1843,10 @@ namespace Octopus.GUI
             this.textBoxEmail.TextChanged += new System.EventHandler(this.textBoxEmail_TextChanged);
             // 
             // groupBoxOctopus
-            // 
-            this.groupBoxOctopus.BackColor = System.Drawing.Color.Transparent;
+            //
             this.groupBoxOctopus.Controls.Add(this.textBoxMainMessage);
             this.groupBoxOctopus.Controls.Add(this.label10);
             resources.ApplyResources(this.groupBoxOctopus, "groupBoxOctopus");
-            this.groupBoxOctopus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(56)))));
             this.groupBoxOctopus.Name = "groupBoxOctopus";
             this.groupBoxOctopus.TabStop = false;
             // 
@@ -1876,27 +1859,18 @@ namespace Octopus.GUI
             // 
             resources.ApplyResources(this.label10, "label10");
             this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(56)))));
             this.label10.Name = "label10";
             // 
             // buttonSave
-            // 
-            this.buttonSave.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.buttonSave, "buttonSave");
-            this.buttonSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonSave.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.None;
-            this.buttonSave.Menu = null;
             this.buttonSave.Name = "buttonSave";
-            this.buttonSave.UseVisualStyleBackColor = false;
             this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
             // 
             // chkCheckForUpdates
             // 
             resources.ApplyResources(this.chkCheckForUpdates, "chkCheckForUpdates");
-            this.chkCheckForUpdates.BackColor = System.Drawing.Color.Transparent;
-            this.chkCheckForUpdates.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(56)))));
             this.chkCheckForUpdates.Name = "chkCheckForUpdates";
-            this.chkCheckForUpdates.UseVisualStyleBackColor = false;
             // 
             // linkLearnMore
             // 
@@ -1907,12 +1881,10 @@ namespace Octopus.GUI
             this.linkLearnMore.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLearnMore_LinkClicked);
             // 
             // groupBox2
-            // 
-            this.groupBox2.BackColor = System.Drawing.Color.Transparent;
+            //
             this.groupBox2.Controls.Add(this.chkCheckForUpdates);
             this.groupBox2.Controls.Add(this.linkLearnMore);
             resources.ApplyResources(this.groupBox2, "groupBox2");
-            this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(56)))));
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.TabStop = false;
             // 
@@ -1920,14 +1892,12 @@ namespace Octopus.GUI
             // 
             resources.ApplyResources(this.lblThanks, "lblThanks");
             this.lblThanks.BackColor = System.Drawing.Color.Transparent;
-            this.lblThanks.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(56)))));
             this.lblThanks.Name = "lblThanks";
             // 
             // MyInformationForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris;
             this.Controls.Add(this.lblThanks);
             this.Controls.Add(this.lblRequieredFields);
             this.Controls.Add(this.groupBox2);
@@ -1973,7 +1943,7 @@ namespace Octopus.GUI
         private System.Windows.Forms.GroupBox groupBoxOctopus;
         private System.Windows.Forms.TextBox textBoxMainMessage;
         private System.Windows.Forms.Label label10;
-        private SweetButton buttonSave;
+        private System.Windows.Forms.Button buttonSave;
         private System.Windows.Forms.CheckBox chkCheckForUpdates;
         private System.Windows.Forms.LinkLabel linkLearnMore;
         private System.Windows.Forms.Label label2;

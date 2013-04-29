@@ -1,4 +1,4 @@
-﻿using Octopus.GUI.UserControl;
+using Octopus.GUI.UserControl;
 
 namespace Octopus.GUI.Accounting
 {
@@ -46,7 +46,7 @@ namespace Octopus.GUI.Accounting
             this.cbBranches = new System.Windows.Forms.ComboBox();
             this.cbCurrencies = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnClose = new Octopus.GUI.UserControl.SweetButton();
+            this.btnClose = new System.Windows.Forms.Button();
             this.lblTitle = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -113,8 +113,7 @@ namespace Octopus.GUI.Accounting
             resources.ApplyResources(this.olvColumnLACCurrency, "olvColumnLACCurrency");
             // 
             // groupBox1
-            // 
-            this.groupBox1.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris;
+            //
             resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Controls.Add(this.cbContractCode);
             this.groupBox1.Controls.Add(this.labelLoanContractCode);
@@ -141,21 +140,18 @@ namespace Octopus.GUI.Accounting
             // 
             resources.ApplyResources(this.labelLoanContractCode, "labelLoanContractCode");
             this.labelLoanContractCode.BackColor = System.Drawing.Color.Transparent;
-            this.labelLoanContractCode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelLoanContractCode.Name = "labelLoanContractCode";
             // 
             // lblBranch
             // 
             resources.ApplyResources(this.lblBranch, "lblBranch");
             this.lblBranch.BackColor = System.Drawing.Color.Transparent;
-            this.lblBranch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblBranch.Name = "lblBranch";
             // 
             // lblCurrency
             // 
             resources.ApplyResources(this.lblCurrency, "lblCurrency");
             this.lblCurrency.BackColor = System.Drawing.Color.Transparent;
-            this.lblCurrency.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblCurrency.Name = "lblCurrency";
             // 
             // cbBranches
@@ -186,22 +182,13 @@ namespace Octopus.GUI.Accounting
             // btnClose
             // 
             resources.ApplyResources(this.btnClose, "btnClose");
-            this.btnClose.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnClose.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_bouton;
-            this.btnClose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnClose.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Close;
-            this.btnClose.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_close;
-            this.btnClose.Menu = null;
             this.btnClose.Name = "btnClose";
-            this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // lblTitle
             // 
             this.lblTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             resources.ApplyResources(this.lblTitle, "lblTitle");
-            this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Image = global::Octopus.GUI.Properties.Resources.theme1_1_pastille_contrat;
             this.lblTitle.Name = "lblTitle";
             // 
             // tableLayoutPanel1
@@ -245,7 +232,7 @@ namespace Octopus.GUI.Accounting
         private System.Windows.Forms.ComboBox cbCurrencies;
         private System.Windows.Forms.Label labelLoanContractCode;
         private System.Windows.Forms.ComboBox cbContractCode;
-        private SweetButton btnClose;
+        private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Label lblBranch;
         private System.Windows.Forms.ComboBox cbBranches;
     }

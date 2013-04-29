@@ -44,8 +44,8 @@ namespace Octopus.GUI
             this.columnHeaderEventAmount = new System.Windows.Forms.ColumnHeader();
             this.columnHeaderEventType = new System.Windows.Forms.ColumnHeader();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.buttonDeleteFundingLineEvent = new Octopus.GUI.UserControl.SweetButton();
-            this.buttonAddFundingLineEvent = new Octopus.GUI.UserControl.SweetButton();
+            this.buttonDeleteFundingLineEvent = new System.Windows.Forms.Button();
+            this.buttonAddFundingLineEvent = new System.Windows.Forms.Button();
             this.splitContainer3 = new System.Windows.Forms.SplitContainer();
             this.comboBoxCurrencies = new System.Windows.Forms.ComboBox();
             this.lblCurrency = new System.Windows.Forms.Label();
@@ -76,13 +76,13 @@ namespace Octopus.GUI
             this.columnFinancial = new System.Windows.Forms.ColumnHeader();
             this.colCurrency = new System.Windows.Forms.ColumnHeader();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.btnAdd = new Octopus.GUI.UserControl.SweetButton();
-            this.btnDelete = new Octopus.GUI.UserControl.SweetButton();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
             this.tabPageFundingLineDetails = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBoxFundingLines = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.btnSave = new Octopus.GUI.UserControl.SweetButton();
+            this.btnSave = new System.Windows.Forms.Button();
             this.columnHeaderBodyCorporateSecondaryHomePhone = new System.Windows.Forms.ColumnHeader();
             this.columnHeaderCorporateName = new System.Windows.Forms.ColumnHeader();
             this.columnHeaderCorporateAmount = new System.Windows.Forms.ColumnHeader();
@@ -169,8 +169,7 @@ namespace Octopus.GUI
             resources.ApplyResources(this.columnHeaderEventType, "columnHeaderEventType");
             // 
             // groupBox3
-            // 
-            this.groupBox3.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris_180;
+            //
             resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Controls.Add(this.buttonDeleteFundingLineEvent);
             this.groupBox3.Controls.Add(this.buttonAddFundingLineEvent);
@@ -180,23 +179,13 @@ namespace Octopus.GUI
             // buttonDeleteFundingLineEvent
             // 
             resources.ApplyResources(this.buttonDeleteFundingLineEvent, "buttonDeleteFundingLineEvent");
-            this.buttonDeleteFundingLineEvent.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonDeleteFundingLineEvent.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Delete;
-            this.buttonDeleteFundingLineEvent.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_delete;
-            this.buttonDeleteFundingLineEvent.Menu = null;
             this.buttonDeleteFundingLineEvent.Name = "buttonDeleteFundingLineEvent";
-            this.buttonDeleteFundingLineEvent.UseVisualStyleBackColor = true;
             this.buttonDeleteFundingLineEvent.Click += new System.EventHandler(this.buttonDeleteFundingLineEvent_Click);
             // 
             // buttonAddFundingLineEvent
             // 
             resources.ApplyResources(this.buttonAddFundingLineEvent, "buttonAddFundingLineEvent");
-            this.buttonAddFundingLineEvent.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonAddFundingLineEvent.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.New;
-            this.buttonAddFundingLineEvent.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_new;
-            this.buttonAddFundingLineEvent.Menu = null;
             this.buttonAddFundingLineEvent.Name = "buttonAddFundingLineEvent";
-            this.buttonAddFundingLineEvent.UseVisualStyleBackColor = true;
             this.buttonAddFundingLineEvent.Click += new System.EventHandler(this.buttonAddFundingLineEvent_Click);
             // 
             // columnHeaderName
@@ -244,13 +233,11 @@ namespace Octopus.GUI
             // lblCurrency
             // 
             resources.ApplyResources(this.lblCurrency, "lblCurrency");
-            this.lblCurrency.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblCurrency.Name = "lblCurrency";
             // 
             // labelCode
             // 
             resources.ApplyResources(this.labelCode, "labelCode");
-            this.labelCode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelCode.Name = "labelCode";
             // 
             // dateTimePickerFundingLineEndDate
@@ -262,25 +249,21 @@ namespace Octopus.GUI
             // labelAnticipatedRemainingAmount
             // 
             resources.ApplyResources(this.labelAnticipatedRemainingAmount, "labelAnticipatedRemainingAmount");
-            this.labelAnticipatedRemainingAmount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelAnticipatedRemainingAmount.Name = "labelAnticipatedRemainingAmount";
             // 
             // labelRealRemainingAmount
             // 
             resources.ApplyResources(this.labelRealRemainingAmount, "labelRealRemainingAmount");
-            this.labelRealRemainingAmount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelRealRemainingAmount.Name = "labelRealRemainingAmount";
             // 
             // labelInitialAmount
             // 
             resources.ApplyResources(this.labelInitialAmount, "labelInitialAmount");
-            this.labelInitialAmount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelInitialAmount.Name = "labelInitialAmount";
             // 
             // label1
             // 
             resources.ApplyResources(this.label1, "label1");
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.label1.Name = "label1";
             // 
             // dateTimePickerFundingLineBeginDate
@@ -297,7 +280,6 @@ namespace Octopus.GUI
             // label2
             // 
             resources.ApplyResources(this.label2, "label2");
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.label2.Name = "label2";
             // 
             // tbRealAmt
@@ -318,7 +300,6 @@ namespace Octopus.GUI
             // label3
             // 
             resources.ApplyResources(this.label3, "label3");
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.label3.Name = "label3";
             // 
             // textBoxFundingLineCode
@@ -379,9 +360,7 @@ namespace Octopus.GUI
             resources.ApplyResources(this.checkBoxIncludeLateLoans, "checkBoxIncludeLateLoans");
             this.checkBoxIncludeLateLoans.Checked = true;
             this.checkBoxIncludeLateLoans.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBoxIncludeLateLoans.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.checkBoxIncludeLateLoans.Name = "checkBoxIncludeLateLoans";
-            this.checkBoxIncludeLateLoans.UseVisualStyleBackColor = true;
             this.checkBoxIncludeLateLoans.CheckedChanged += new System.EventHandler(this.checkBoxIncludeLateLoans_CheckedChanged);
             // 
             // tabControlFundingLines
@@ -398,7 +377,6 @@ namespace Octopus.GUI
             this.tabPageFundingLines.Controls.Add(this.flowLayoutPanel1);
             resources.ApplyResources(this.tabPageFundingLines, "tabPageFundingLines");
             this.tabPageFundingLines.Name = "tabPageFundingLines";
-            this.tabPageFundingLines.UseVisualStyleBackColor = true;
             // 
             // listViewFundingLine
             // 
@@ -454,21 +432,13 @@ namespace Octopus.GUI
             // btnAdd
             // 
             resources.ApplyResources(this.btnAdd, "btnAdd");
-            this.btnAdd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnAdd.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.New;
-            this.btnAdd.Menu = null;
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // btnDelete
             // 
             resources.ApplyResources(this.btnDelete, "btnDelete");
-            this.btnDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnDelete.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Delete;
-            this.btnDelete.Menu = null;
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.UseVisualStyleBackColor = false;
             this.btnDelete.Click += new System.EventHandler(this.buttonDelete_Click);
             // 
             // tabPageFundingLineDetails
@@ -476,7 +446,6 @@ namespace Octopus.GUI
             this.tabPageFundingLineDetails.Controls.Add(this.tableLayoutPanel1);
             resources.ApplyResources(this.tabPageFundingLineDetails, "tabPageFundingLineDetails");
             this.tabPageFundingLineDetails.Name = "tabPageFundingLineDetails";
-            this.tabPageFundingLineDetails.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel1
             // 
@@ -487,11 +456,9 @@ namespace Octopus.GUI
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             // 
             // groupBoxFundingLines
-            // 
-            this.groupBoxFundingLines.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris;
+            //
             resources.ApplyResources(this.groupBoxFundingLines, "groupBoxFundingLines");
             this.groupBoxFundingLines.Controls.Add(this.splitContainer3);
-            this.groupBoxFundingLines.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.groupBoxFundingLines.Name = "groupBoxFundingLines";
             this.groupBoxFundingLines.TabStop = false;
             // 
@@ -505,14 +472,7 @@ namespace Octopus.GUI
             // btnSave
             // 
             resources.ApplyResources(this.btnSave, "btnSave");
-            this.btnSave.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnSave.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_bouton;
-            this.btnSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnSave.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Save;
-            this.btnSave.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_save;
-            this.btnSave.Menu = null;
             this.btnSave.Name = "btnSave";
-            this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.buttonSave_Click);
             // 
             // columnHeaderCorporateName
@@ -577,8 +537,8 @@ namespace Octopus.GUI
         private System.Windows.Forms.ColumnHeader columnHeaderAmount;
         private System.Windows.Forms.ColumnHeader columnHeaderResiduelAmount;
         private System.Windows.Forms.ColumnHeader columnFinancial;
-        private SweetButton btnDelete;
-        private SweetButton btnAdd;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.TabPage tabPageFundingLineDetails;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.GroupBox groupBoxFundingLines;
@@ -611,10 +571,10 @@ namespace Octopus.GUI
         private System.Windows.Forms.ColumnHeader columnHeaderCorporateResidualAMount;
         private System.Windows.Forms.ColumnHeader columnHeaderFinancial;
         private System.Windows.Forms.GroupBox groupBox3;
-        private SweetButton buttonDeleteFundingLineEvent;
-        private SweetButton buttonAddFundingLineEvent;
+        private System.Windows.Forms.Button buttonDeleteFundingLineEvent;
+        private System.Windows.Forms.Button buttonAddFundingLineEvent;
         private System.Windows.Forms.GroupBox groupBox4;
-        private SweetButton btnSave;
+        private System.Windows.Forms.Button btnSave;
         private CheckBox checkBoxIncludeLateLoans;
         private SplitContainer splitContainerGraph;
         private Label lblCurrency;

@@ -1,4 +1,4 @@
-﻿namespace Octopus.GUI.Tools
+namespace Octopus.GUI.Tools
 {
     partial class frmSQLTool
     {
@@ -114,7 +114,6 @@
             this.AccessibleName = null;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = null;
             this.Controls.Add(this.splitContainer);
             this.Controls.Add(this.toolStrip1);
             this.Font = null;

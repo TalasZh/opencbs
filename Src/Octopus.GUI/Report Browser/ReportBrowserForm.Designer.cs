@@ -1,4 +1,4 @@
-﻿namespace Octopus.GUI.Report_Browser
+namespace Octopus.GUI.Report_Browser
 {
     partial class ReportBrowserForm
     {
@@ -48,9 +48,7 @@
             this.AccessibleName = null;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = null;
             this.Controls.Add(this.rbReports);
-            this.Icon = null;
             this.Name = "ReportBrowserForm";
             this.Load += new System.EventHandler(this.ReportBrowserForm_Load);
             this.Controls.SetChildIndex(this.rbReports, 0);

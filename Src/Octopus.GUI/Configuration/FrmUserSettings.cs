@@ -31,7 +31,7 @@ using Octopus.Shared.Settings;
 namespace Octopus.GUI.Configuration
 {
     /// <summary>
-    /// Description résumée de FrmUserSettings.
+    /// Description rï¿½sumï¿½e de FrmUserSettings.
     /// </summary>
     public partial class FrmUserSettings : Form
     {

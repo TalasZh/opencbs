@@ -1,4 +1,4 @@
-﻿using Octopus.GUI.UserControl;
+using Octopus.GUI.UserControl;
 
 namespace Octopus.GUI.Contracts
 {
@@ -35,8 +35,8 @@ namespace Octopus.GUI.Contracts
             this.pnlButtons = new System.Windows.Forms.Panel();
             this.disburseLoansStatusBar = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.btnCancel = new Octopus.GUI.UserControl.SweetButton();
-            this.btnSave = new Octopus.GUI.UserControl.SweetButton();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
             this.dtDisbursement = new System.Windows.Forms.DateTimePicker();
             this.dtpRepayment = new System.Windows.Forms.DateTimePicker();
             this.lvMembers = new Octopus.GUI.UserControl.ListViewEx();
@@ -83,24 +83,14 @@ namespace Octopus.GUI.Contracts
             // btnCancel
             // 
             resources.ApplyResources(this.btnCancel, "btnCancel");
-            this.btnCancel.BackColor = System.Drawing.Color.Gainsboro;
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(56)))));
-            this.btnCancel.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Close;
-            this.btnCancel.Menu = null;
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.UseVisualStyleBackColor = false;
             // 
             // btnSave
             // 
             resources.ApplyResources(this.btnSave, "btnSave");
-            this.btnSave.BackColor = System.Drawing.Color.Gainsboro;
             this.btnSave.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnSave.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Save;
-            this.btnSave.Menu = null;
             this.btnSave.Name = "btnSave";
-            this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // dtDisbursement
@@ -230,8 +220,8 @@ namespace Octopus.GUI.Contracts
         #endregion
 
         private System.Windows.Forms.Panel pnlButtons;
-        private SweetButton btnCancel;
-        private SweetButton btnSave;
+        private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.ColumnHeader colName;
         private System.Windows.Forms.ColumnHeader colPassport;
         private System.Windows.Forms.ColumnHeader colDate;

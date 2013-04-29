@@ -132,14 +132,11 @@
   <data name="splitContainer1.Orientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
     <value>Horizontal</value>
   </data>
-  <data name="groupBox1.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
   <data name="lbCalculAmount.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="lbCalculAmount.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="lbCalculAmount.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -199,7 +196,7 @@
     <value>True</value>
   </data>
   <data name="lbPosting.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="lbPosting.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -232,7 +229,7 @@
     <value>True</value>
   </data>
   <data name="lbAccrual.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="lbAccrual.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -361,7 +358,7 @@
     <value>0</value>
   </data>
   <data name="groupBoxCurrency.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="groupBoxCurrency.Location" type="System.Drawing.Point, System.Drawing">
     <value>435, 42</value>
@@ -391,7 +388,7 @@
     <value>True</value>
   </data>
   <data name="lbCodeSavingProduct.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="lbCodeSavingProduct.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -424,7 +421,7 @@
     <value>True</value>
   </data>
   <data name="lbNameSavingProduct.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="lbNameSavingProduct.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -457,7 +454,7 @@
     <value>True</value>
   </data>
   <data name="clientTypeCorpCheckBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="clientTypeCorpCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -490,7 +487,7 @@
     <value>True</value>
   </data>
   <data name="clientTypeIndivCheckBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="clientTypeIndivCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -523,7 +520,7 @@
     <value>True</value>
   </data>
   <data name="clientTypeVillageCheckBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="clientTypeVillageCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -556,7 +553,7 @@
     <value>True</value>
   </data>
   <data name="clientTypeGroupCheckBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="clientTypeGroupCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -589,7 +586,7 @@
     <value>True</value>
   </data>
   <data name="clientTypeAllCheckBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="clientTypeAllCheckBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 32</value>
@@ -616,7 +613,7 @@
     <value>4</value>
   </data>
   <data name="gbClientType.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="gbClientType.Location" type="System.Drawing.Point, System.Drawing">
     <value>9, 42</value>
@@ -742,7 +739,7 @@
     <value>True</value>
   </data>
   <data name="lbInitialAmonutMax.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="lbInitialAmonutMax.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -775,7 +772,7 @@
     <value>True</value>
   </data>
   <data name="lbInitialAmountMin.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="lbInitialAmountMin.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -805,7 +802,7 @@
     <value>3</value>
   </data>
   <data name="gbInitialAmount.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="gbInitialAmount.Location" type="System.Drawing.Point, System.Drawing">
     <value>9, 123</value>
@@ -883,7 +880,7 @@
     <value>True</value>
   </data>
   <data name="lbBalanceMax.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="lbBalanceMax.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -916,7 +913,7 @@
     <value>True</value>
   </data>
   <data name="lbBalanceMin.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="lbBalanceMin.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -946,7 +943,7 @@
     <value>3</value>
   </data>
   <data name="gbBalance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="gbBalance.Location" type="System.Drawing.Point, System.Drawing">
     <value>215, 124</value>
@@ -976,7 +973,7 @@
     <value>True</value>
   </data>
   <data name="lbYearlyInterestRate.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="lbYearlyInterestRate.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1009,7 +1006,7 @@
     <value>True</value>
   </data>
   <data name="lbYearlyInterestRateMax.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="lbYearlyInterestRateMax.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1042,7 +1039,7 @@
     <value>True</value>
   </data>
   <data name="lbYearlyInterestRateMin.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="lbYearlyInterestRateMin.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1099,7 +1096,7 @@
     <value>True</value>
   </data>
   <data name="lbInterestRateValue.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="lbInterestRateValue.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1180,7 +1177,7 @@
     <value>True</value>
   </data>
   <data name="lbInterestRateMax.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="lbInterestRateMax.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1213,7 +1210,7 @@
     <value>True</value>
   </data>
   <data name="lbInterestRateMin.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="lbInterestRateMin.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1243,7 +1240,7 @@
     <value>8</value>
   </data>
   <data name="gbInterestRate.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="gbInterestRate.Location" type="System.Drawing.Point, System.Drawing">
     <value>9, 216</value>
@@ -1323,14 +1320,11 @@
   <data name="&gt;&gt;tabPageMainParameters.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="tabPageFees.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 26</value>
@@ -1432,7 +1426,7 @@
     <value>True</value>
   </data>
   <data name="lbDepositMax.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="lbDepositMax.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1465,7 +1459,7 @@
     <value>True</value>
   </data>
   <data name="lbDepositMin.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="lbDepositMin.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1495,7 +1489,7 @@
     <value>3</value>
   </data>
   <data name="gbDeposit.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="gbDeposit.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 52</value>
@@ -1528,7 +1522,7 @@
     <value>False</value>
   </data>
   <data name="rbRateDepositFees.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="rbRateDepositFees.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1564,7 +1558,7 @@
     <value>False</value>
   </data>
   <data name="rbFlatDepositFees.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="rbFlatDepositFees.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1597,7 +1591,7 @@
     <value>True</value>
   </data>
   <data name="lbDepositFeesType.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="lbDepositFeesType.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1654,7 +1648,7 @@
     <value>True</value>
   </data>
   <data name="lbDepositFees.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="lbDepositFees.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1735,7 +1729,7 @@
     <value>True</value>
   </data>
   <data name="lbDepositFeesMax.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="lbDepositFeesMax.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1768,7 +1762,7 @@
     <value>True</value>
   </data>
   <data name="lbDepositFeesMin.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="lbDepositFeesMin.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1798,7 +1792,7 @@
     <value>8</value>
   </data>
   <data name="gtDepositFees.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="gtDepositFees.Location" type="System.Drawing.Point, System.Drawing">
     <value>206, 52</value>
@@ -1825,7 +1819,7 @@
     <value>3</value>
   </data>
   <data name="groupBox3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="groupBox3.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 6</value>
@@ -1879,7 +1873,7 @@
     <value>True</value>
   </data>
   <data name="rbRateTransferFees.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="rbRateTransferFees.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1936,7 +1930,7 @@
     <value>True</value>
   </data>
   <data name="rbFlatTransferFees.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="rbFlatTransferFees.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1969,7 +1963,7 @@
     <value>True</value>
   </data>
   <data name="lbTransferFeesValue.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="lbTransferFeesValue.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2050,7 +2044,7 @@
     <value>True</value>
   </data>
   <data name="lbTransferFeesMax.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="lbTransferFeesMax.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2083,7 +2077,7 @@
     <value>True</value>
   </data>
   <data name="lbTransferFeesMin.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="lbTransferFeesMin.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2116,7 +2110,7 @@
     <value>True</value>
   </data>
   <data name="lbTransferFeesType.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="lbTransferFeesType.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2146,7 +2140,7 @@
     <value>9</value>
   </data>
   <data name="gbTransferFees.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="gbTransferFees.Location" type="System.Drawing.Point, System.Drawing">
     <value>214, 303</value>
@@ -2176,7 +2170,7 @@
     <value>True</value>
   </data>
   <data name="rbRateWithdrawFees.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="rbRateWithdrawFees.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2209,7 +2203,7 @@
     <value>True</value>
   </data>
   <data name="rbFlatWithdrawFees.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="rbFlatWithdrawFees.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2266,7 +2260,7 @@
     <value>True</value>
   </data>
   <data name="lbWithdrawFeesValue.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="lbWithdrawFeesValue.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2347,7 +2341,7 @@
     <value>True</value>
   </data>
   <data name="lbWithdrawFeesType.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="lbWithdrawFeesType.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2380,7 +2374,7 @@
     <value>True</value>
   </data>
   <data name="lbWithdrawFeesMax.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="lbWithdrawFeesMax.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2413,7 +2407,7 @@
     <value>True</value>
   </data>
   <data name="lbWithdrawFeesMin.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="lbWithdrawFeesMin.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2443,7 +2437,7 @@
     <value>8</value>
   </data>
   <data name="gbWithdrawFees.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="gbWithdrawFees.Location" type="System.Drawing.Point, System.Drawing">
     <value>214, 184</value>
@@ -2521,7 +2515,7 @@
     <value>True</value>
   </data>
   <data name="lbTransferMax.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="lbTransferMax.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2554,7 +2548,7 @@
     <value>True</value>
   </data>
   <data name="lbTransferMin.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="lbTransferMin.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2584,7 +2578,7 @@
     <value>3</value>
   </data>
   <data name="gbTransfer.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="gbTransfer.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 303</value>
@@ -2662,7 +2656,7 @@
     <value>True</value>
   </data>
   <data name="lbWithDrawingMax.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="lbWithDrawingMax.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2695,7 +2689,7 @@
     <value>True</value>
   </data>
   <data name="lbWithDrawingMin.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="lbWithDrawingMin.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2725,7 +2719,7 @@
     <value>3</value>
   </data>
   <data name="gbWithDrawing.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="gbWithDrawing.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 184</value>
@@ -2781,9 +2775,6 @@
   <data name="&gt;&gt;tabPageFees.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="tabPageManagement.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
   <data name="rbRateReopenFees.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -2791,7 +2782,7 @@
     <value>False</value>
   </data>
   <data name="rbRateReopenFees.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="rbRateReopenFees.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2827,7 +2818,7 @@
     <value>False</value>
   </data>
   <data name="rbFlatReopenFees.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="rbFlatReopenFees.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2860,7 +2851,7 @@
     <value>True</value>
   </data>
   <data name="lbReopenFeesType.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="lbReopenFeesType.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2917,7 +2908,7 @@
     <value>True</value>
   </data>
   <data name="lbReopenFeesValue.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="lbReopenFeesValue.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2998,7 +2989,7 @@
     <value>True</value>
   </data>
   <data name="lbReopenFeesMax.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="lbReopenFeesMax.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -3031,7 +3022,7 @@
     <value>True</value>
   </data>
   <data name="lbReopenFeesMin.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="lbReopenFeesMin.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -3061,7 +3052,7 @@
     <value>8</value>
   </data>
   <data name="gbReopenFees.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="gbReopenFees.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 127</value>
@@ -3124,7 +3115,7 @@
     <value>False</value>
   </data>
   <data name="rbRateManagementFees.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="rbRateManagementFees.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -3160,7 +3151,7 @@
     <value>False</value>
   </data>
   <data name="rbFlatManagementFees.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="rbFlatManagementFees.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -3193,7 +3184,7 @@
     <value>True</value>
   </data>
   <data name="lbManagementFeesType.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="lbManagementFeesType.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -3250,7 +3241,7 @@
     <value>True</value>
   </data>
   <data name="lbManagementFees.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="lbManagementFees.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -3331,7 +3322,7 @@
     <value>True</value>
   </data>
   <data name="lbManagementFeesMax.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="lbManagementFeesMax.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -3364,7 +3355,7 @@
     <value>True</value>
   </data>
   <data name="lbManagementFeesMin.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="lbManagementFeesMin.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -3394,7 +3385,7 @@
     <value>9</value>
   </data>
   <data name="gtManagementFees.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="gtManagementFees.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 370</value>
@@ -3427,7 +3418,7 @@
     <value>False</value>
   </data>
   <data name="rbRateCloseFees.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="rbRateCloseFees.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -3463,7 +3454,7 @@
     <value>False</value>
   </data>
   <data name="rbFlatCloseFees.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="rbFlatCloseFees.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -3496,7 +3487,7 @@
     <value>True</value>
   </data>
   <data name="lbCloseFeesType.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="lbCloseFeesType.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -3553,7 +3544,7 @@
     <value>True</value>
   </data>
   <data name="lbCloseFees.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="lbCloseFees.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -3634,7 +3625,7 @@
     <value>True</value>
   </data>
   <data name="lbCloseFeesMax.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="lbCloseFeesMax.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -3667,7 +3658,7 @@
     <value>True</value>
   </data>
   <data name="lbCloseFeesMin.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="lbCloseFeesMin.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -3697,7 +3688,7 @@
     <value>8</value>
   </data>
   <data name="gtCloseFees.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="gtCloseFees.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 248</value>
@@ -3730,7 +3721,7 @@
     <value>False</value>
   </data>
   <data name="rbRateEntryFees.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="rbRateEntryFees.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -3766,7 +3757,7 @@
     <value>False</value>
   </data>
   <data name="rbFlatEntryFees.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="rbFlatEntryFees.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -3799,7 +3790,7 @@
     <value>True</value>
   </data>
   <data name="lbEntryFeesType.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="lbEntryFeesType.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -3856,7 +3847,7 @@
     <value>True</value>
   </data>
   <data name="lbEntryFeesValue.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="lbEntryFeesValue.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -3937,7 +3928,7 @@
     <value>True</value>
   </data>
   <data name="lbEntryFeesMax.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="lbEntryFeesMax.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -3970,7 +3961,7 @@
     <value>True</value>
   </data>
   <data name="lbEntryFeesMin.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="lbEntryFeesMin.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -4000,7 +3991,7 @@
     <value>8</value>
   </data>
   <data name="gbEntryFees.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="gbEntryFees.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 6</value>
@@ -4053,9 +4044,6 @@
   <data name="&gt;&gt;tabPageManagement.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="tabPageOverdraft.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
   <data name="rbRateAgioFees.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -4063,7 +4051,7 @@
     <value>False</value>
   </data>
   <data name="rbRateAgioFees.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="rbRateAgioFees.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -4099,7 +4087,7 @@
     <value>False</value>
   </data>
   <data name="rbFlatAgioFees.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="rbFlatAgioFees.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -4132,7 +4120,7 @@
     <value>True</value>
   </data>
   <data name="lbAgioFeesType.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="lbAgioFeesType.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -4222,7 +4210,7 @@
     <value>True</value>
   </data>
   <data name="lbAgioFeesValue.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="lbAgioFeesValue.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -4303,7 +4291,7 @@
     <value>True</value>
   </data>
   <data name="lbAgioFeesMax.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="lbAgioFeesMax.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -4336,7 +4324,7 @@
     <value>True</value>
   </data>
   <data name="lbAgioFeesMin.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="lbAgioFeesMin.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -4366,7 +4354,7 @@
     <value>9</value>
   </data>
   <data name="gtAgioFees.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="gtAgioFees.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 128</value>
@@ -4399,7 +4387,7 @@
     <value>False</value>
   </data>
   <data name="rbRateOverdraftFees.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="rbRateOverdraftFees.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -4435,7 +4423,7 @@
     <value>False</value>
   </data>
   <data name="rbFlatOverdraftFees.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="rbFlatOverdraftFees.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -4468,7 +4456,7 @@
     <value>True</value>
   </data>
   <data name="lbOverdraftFeesType.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="lbOverdraftFeesType.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -4525,7 +4513,7 @@
     <value>True</value>
   </data>
   <data name="lbOverdraftFeesValue.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="lbOverdraftFeesValue.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -4606,7 +4594,7 @@
     <value>True</value>
   </data>
   <data name="lbOverdraftFeesMax.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="lbOverdraftFeesMax.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -4639,7 +4627,7 @@
     <value>True</value>
   </data>
   <data name="lbOverdraftFeesMin.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="lbOverdraftFeesMin.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -4669,7 +4657,7 @@
     <value>8</value>
   </data>
   <data name="gtOverdraftFees.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="gtOverdraftFees.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 6</value>
@@ -4722,9 +4710,6 @@
   <data name="&gt;&gt;tabPageOverdraft.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="tabPageTermDeposit.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
   <data name="cbxPostingfrequency.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt</value>
   </data>
@@ -4750,7 +4735,7 @@
     <value>0</value>
   </data>
   <data name="gpPostingFrequency.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="gpPostingFrequency.Location" type="System.Drawing.Point, System.Drawing">
     <value>223, 3</value>
@@ -4828,7 +4813,7 @@
     <value>True</value>
   </data>
   <data name="lblMaxOfTermDepositPeriods.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="lblMaxOfTermDepositPeriods.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -4861,7 +4846,7 @@
     <value>True</value>
   </data>
   <data name="lblMinOfTermDepositPeriods.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="lblMinOfTermDepositPeriods.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -4891,7 +4876,7 @@
     <value>3</value>
   </data>
   <data name="gbNumberOfPeriods.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="gbNumberOfPeriods.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 3</value>
@@ -4945,7 +4930,7 @@
     <value>True</value>
   </data>
   <data name="checkBoxUseTermDeposit.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="checkBoxUseTermDeposit.Location" type="System.Drawing.Point, System.Drawing">
     <value>20, 6</value>
@@ -5043,33 +5028,8 @@
   <data name="btSavingProduct.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
-  <data name="btSavingProduct.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
-        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
-        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
-        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
-        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
-        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
-        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
-        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
-        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
-        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
-        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="btSavingProduct.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btSavingProduct.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
   <data name="btSavingProduct.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 9.25pt</value>
-  </data>
-  <data name="btSavingProduct.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
   </data>
   <data name="btSavingProduct.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -5101,33 +5061,8 @@
   <data name="bClose.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
-  <data name="bClose.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
-        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
-        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
-        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
-        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
-        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
-        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
-        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
-        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
-        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
-        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="bClose.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="bClose.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
   <data name="bClose.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 9.25pt</value>
-  </data>
-  <data name="bClose.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
   </data>
   <data name="bClose.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -5219,39 +5154,8 @@
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
   </data>
-  <data name="$this.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>674, 600</value>
-  </data>
-  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAB+fn8AkYyKAJKOjgCVk5MAlpaWAKWmpQCwr68AsrOyALS2tQC2trYAuru7ALu8vAC/vbwAvb29AMG/
-        vgDBwcAAwcLCAMXDwwDHxsUAxcbHAMbIxwDMyMcAyMnIAMrKygDKyssAy8vLAMzMywDNzcwAz87OANLQ
-        0ADP0tEA0NPSANLT0gDU1NIA1NXUANjV1QDW1tUA19fVANjX1QDX2NcA2tnYANnZ2QDb2dkA29zcANzc
-        3ADd3t0A397eAN3f3gDf394A4d/fAN3g3wDf4N8A3uDgAN/h4ADh4eAA3+HhAOHh4QDg4uEA4uLhAOPi
-        4QDi4uIA4+LiAOTj4wDi5OMA5OTkAOLl5ADm5eQA5ubmAOTn5gDl5+YA5OjnAOXo5wDm6OcA6OjnAObp
-        6ADp6egA6unpAObq6QDn6uoA6urpAOvq6QDp6uoA6urqAOvr6ADn6+oA6uvpAOnr6gDq7OsA6uzsAOzs
-        7ADq7esA7O3sAO3t7ADs7uwA7u7uAOzv7QDu7+0A7e/uAO3v7wDu7+8A7+/vAO/w7gDx8fAA7/HxAO/y
-        8QDx8vEA8PPyAPHz8gDy9PQA9PT0APP19QD09fUA9Pb2APX29gD19/YA9ff3APb4+AD4+PgA9vn4APf5
-        +AD4+/oA+fv6APr8/AD6/fwA+/38APz9/AD7/v0A/P79APv+/gD8/v4A+//9APz//QD9//0A+//+APz/
-        /gD9//8A/v//AP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAR4aGiRtCHXOGhoaGhoaGR0eGf1dAhYQkhoaGgH6HiEREgXqJMIZxX4aGhX5vOSMySDM2Yldm
-        S2qJiH5ua4GJCzRViD5oZV5kGCJ4cIZ7JzVHWCB1Y1sqFQkNdoY8VolERH6JWEOJAgADiTlhiH5+R0eG
-        hn6HGgZZZAVRfoaGhkdHhoaGiBYseYgHiX5+hoZHR4Z+iFGJAQQPUSlxhoaDR0SISTqGKCYMDlJ5bEly
-        h0cvK313Lk8iITsZcGCHXDFBEIl8OCVpQF0RF4dsTIKJE009NzMthm1TiYmGflpQbwpHhn45HH1FP36G
-        hoZ+dGdOH0dHShQSCFRHR0dHREdGHgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
-</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>

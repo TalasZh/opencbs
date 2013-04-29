@@ -108,7 +108,6 @@ namespace Octopus.GUI.Tools
             // labelPersonName
             // 
             resources.ApplyResources(this.labelPersonName, "labelPersonName");
-            this.labelPersonName.ForeColor = System.Drawing.Color.White;
             this.labelPersonName.Name = "labelPersonName";
             // 
             // closeButton
@@ -142,7 +141,6 @@ namespace Octopus.GUI.Tools
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris_180;
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.tableLayoutPanel1);
             this.DoubleBuffered = true;

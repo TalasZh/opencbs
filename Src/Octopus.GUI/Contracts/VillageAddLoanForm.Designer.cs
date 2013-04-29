@@ -1,4 +1,4 @@
-﻿using Octopus.GUI.UserControl;
+using Octopus.GUI.UserControl;
 
 namespace Octopus.GUI.Contracts
 {
@@ -33,8 +33,8 @@ namespace Octopus.GUI.Contracts
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VillageAddLoanForm));
             this.pnlButtons = new System.Windows.Forms.Panel();
-            this.btnCancel = new Octopus.GUI.UserControl.SweetButton();
-            this.btnSave = new Octopus.GUI.UserControl.SweetButton();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
             this.tbAmount = new System.Windows.Forms.TextBox();
             this.tbInterest = new System.Windows.Forms.TextBox();
             this.udGracePeriod = new System.Windows.Forms.NumericUpDown();
@@ -82,14 +82,8 @@ namespace Octopus.GUI.Contracts
             this.btnCancel.AccessibleDescription = null;
             this.btnCancel.AccessibleName = null;
             resources.ApplyResources(this.btnCancel, "btnCancel");
-            this.btnCancel.BackColor = System.Drawing.Color.Gainsboro;
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(56)))));
-            this.btnCancel.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Close;
-            this.btnCancel.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_close;
-            this.btnCancel.Menu = null;
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnSave
@@ -97,12 +91,7 @@ namespace Octopus.GUI.Contracts
             this.btnSave.AccessibleDescription = null;
             this.btnSave.AccessibleName = null;
             resources.ApplyResources(this.btnSave, "btnSave");
-            this.btnSave.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnSave.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Save;
-            this.btnSave.Menu = null;
             this.btnSave.Name = "btnSave";
-            this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // tbAmount
@@ -301,7 +290,6 @@ namespace Octopus.GUI.Contracts
             this.AccessibleName = null;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = null;
             this.Controls.Add(this.dtCreationDate);
             this.Controls.Add(this.udCompulsoryPercentage);
             this.Controls.Add(this.cbCompulsorySavings);
@@ -343,8 +331,8 @@ namespace Octopus.GUI.Contracts
         private System.Windows.Forms.ColumnHeader chLoanOfficer;
         private System.Windows.Forms.ComboBox cbLoanOfficer;
         private System.Windows.Forms.TextBox tbEntryFee;
-        private SweetButton btnSave;
-        private SweetButton btnCancel;
+        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.ComboBox cbFundingLine;
         private System.Windows.Forms.ColumnHeader chFundingLine;
         private System.Windows.Forms.ComboBox cbDonor;

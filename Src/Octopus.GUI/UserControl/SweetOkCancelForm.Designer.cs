@@ -1,4 +1,4 @@
-﻿namespace Octopus.GUI.UserControl
+namespace Octopus.GUI.UserControl
 {
     partial class SweetOkCancelForm
     {
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SweetOkCancelForm));
-            this.btnCancel = new Octopus.GUI.UserControl.SweetButton();
+            this.btnCancel = new System.Windows.Forms.Button();
             this.btnOk = new Octopus.GUI.UserControl.SweetButton();
             this.tabButtons = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -41,10 +41,7 @@
             // 
             resources.ApplyResources(this.btnCancel, "btnCancel");
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.None;
-            this.btnCancel.Menu = null;
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.UseVisualStyleBackColor = true;
             // 
             // btnOk
             // 
@@ -84,7 +81,7 @@
 
         #endregion
 
-        private SweetButton btnCancel;
+        private System.Windows.Forms.Button btnCancel;
         protected SweetButton btnOk;
         private System.Windows.Forms.TableLayoutPanel tabButtons;
         private System.Windows.Forms.Panel panel1;

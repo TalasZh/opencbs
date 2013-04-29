@@ -1,4 +1,4 @@
-﻿namespace Octopus.GUI.UserControl
+namespace Octopus.GUI.UserControl
 {
     partial class PrintButton
     {
@@ -38,17 +38,10 @@
             this._menu.Size = new System.Drawing.Size(61, 4);
             // 
             // PrintButton
-            // 
-            this.BackColor = System.Drawing.Color.Gainsboro;
-            this.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_bouton;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            //
             this.ContextMenuStrip = this._menu;
             this.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Print;
             this.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Menu = this._menu;
-            this.UseVisualStyleBackColor = false;
             this.ResumeLayout(false);
 
         }

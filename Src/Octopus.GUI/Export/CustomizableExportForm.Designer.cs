@@ -1,4 +1,4 @@
-﻿namespace Octopus.GUI.Export
+namespace Octopus.GUI.Export
 {
     partial class CustomizableExportForm
     {
@@ -118,11 +118,9 @@
             this.tabPageInstallments.AccessibleDescription = null;
             this.tabPageInstallments.AccessibleName = null;
             resources.ApplyResources(this.tabPageInstallments, "tabPageInstallments");
-            this.tabPageInstallments.BackgroundImage = null;
             this.tabPageInstallments.Controls.Add(this.splitContainerAccountTiers);
             this.tabPageInstallments.Font = null;
             this.tabPageInstallments.Name = "tabPageInstallments";
-            this.tabPageInstallments.UseVisualStyleBackColor = true;
             // 
             // splitContainerAccountTiers
             // 
@@ -184,7 +182,6 @@
             this.labelBeginDateInstallments.AccessibleDescription = null;
             this.labelBeginDateInstallments.AccessibleName = null;
             resources.ApplyResources(this.labelBeginDateInstallments, "labelBeginDateInstallments");
-            this.labelBeginDateInstallments.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelBeginDateInstallments.Name = "labelBeginDateInstallments";
             // 
             // labelEndDateInstallments
@@ -192,7 +189,6 @@
             this.labelEndDateInstallments.AccessibleDescription = null;
             this.labelEndDateInstallments.AccessibleName = null;
             resources.ApplyResources(this.labelEndDateInstallments, "labelEndDateInstallments");
-            this.labelEndDateInstallments.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelEndDateInstallments.Name = "labelEndDateInstallments";
             // 
             // listViewFormatedInstallments
@@ -217,7 +213,6 @@
             this.groupBox1.AccessibleDescription = null;
             this.groupBox1.AccessibleName = null;
             resources.ApplyResources(this.groupBox1, "groupBox1");
-            this.groupBox1.BackgroundImage = null;
             this.groupBox1.Controls.Add(this.labelSlashInstallments);
             this.groupBox1.Controls.Add(this.labelSelectedInstallments);
             this.groupBox1.Controls.Add(this.btnSelectAllInstallments);
@@ -255,7 +250,6 @@
             this.groupBoxExportAccountsTiers.AccessibleDescription = null;
             this.groupBoxExportAccountsTiers.AccessibleName = null;
             resources.ApplyResources(this.groupBoxExportAccountsTiers, "groupBoxExportAccountsTiers");
-            this.groupBoxExportAccountsTiers.BackgroundImage = null;
             this.groupBoxExportAccountsTiers.Controls.Add(this.buttonExportAccountTiers);
             this.groupBoxExportAccountsTiers.Name = "groupBoxExportAccountsTiers";
             this.groupBoxExportAccountsTiers.TabStop = false;
@@ -354,9 +348,6 @@
             this._labelTitle.AccessibleDescription = null;
             this._labelTitle.AccessibleName = null;
             resources.ApplyResources(this._labelTitle, "_labelTitle");
-            this._labelTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this._labelTitle.ForeColor = System.Drawing.Color.White;
-            this._labelTitle.Image = global::Octopus.GUI.Properties.Resources.theme1_1_pastille_contrat;
             this._labelTitle.Name = "_labelTitle";
             // 
             // buttonRefreshInstallments
@@ -414,7 +405,6 @@
             this.AccessibleName = null;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = null;
             this.Controls.Add(this.splitContainerSage);
             this.Font = null;
             this.Name = "CustomizableExportForm";

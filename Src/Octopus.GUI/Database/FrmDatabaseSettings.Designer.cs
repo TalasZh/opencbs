@@ -1,4 +1,4 @@
-﻿using Octopus.GUI.UserControl;
+using Octopus.GUI.UserControl;
 
 namespace Octopus.GUI.Database
 {
@@ -32,8 +32,8 @@ namespace Octopus.GUI.Database
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmDatabaseSettings));
             this.groupBoxSQLServerConnection = new System.Windows.Forms.GroupBox();
-            this.btnDefault = new Octopus.GUI.UserControl.SweetButton();
-            this.btnGetServersList = new Octopus.GUI.UserControl.SweetButton();
+            this.btnDefault = new System.Windows.Forms.Button();
+            this.btnGetServersList = new System.Windows.Forms.Button();
             this.lblInstallInstructionSQLServer = new System.Windows.Forms.Label();
             this.lblHelpServerName = new System.Windows.Forms.Label();
             this.linkLabelSQLServerInstallInstruction = new System.Windows.Forms.LinkLabel();
@@ -45,15 +45,15 @@ namespace Octopus.GUI.Database
             this.lblServerName = new System.Windows.Forms.Label();
             this.lblFindDBInfo = new System.Windows.Forms.Label();
             this.groupBoxSQLSettings = new System.Windows.Forms.GroupBox();
-            this.btnSQLServerChangeSettings = new Octopus.GUI.UserControl.SweetButton();
+            this.btnSQLServerChangeSettings = new System.Windows.Forms.Button();
             this.lblSQLServerSettings = new System.Windows.Forms.Label();
             this.groupBoxDatabaseManagement = new System.Windows.Forms.GroupBox();
             this.lblDetectDatabasesInProgress = new System.Windows.Forms.Label();
-            this.btnSQLServerSettingsShowDetails = new Octopus.GUI.UserControl.SweetButton();
-            this.btnRestore = new Octopus.GUI.UserControl.SweetButton();
-            this.btnBackup = new Octopus.GUI.UserControl.SweetButton();
-            this.btnSetAsDefault = new Octopus.GUI.UserControl.SweetButton();
-            this.btnCreateNewDatabase = new Octopus.GUI.UserControl.SweetButton();
+            this.btnSQLServerSettingsShowDetails = new System.Windows.Forms.Button();
+            this.btnRestore = new System.Windows.Forms.Button();
+            this.btnBackup = new System.Windows.Forms.Button();
+            this.btnSetAsDefault = new System.Windows.Forms.Button();
+            this.btnCreateNewDatabase = new System.Windows.Forms.Button();
             this.lblDatabases = new System.Windows.Forms.Label();
             this.listViewDatabases = new System.Windows.Forms.ListView();
             this.columnHeaderName = new System.Windows.Forms.ColumnHeader();
@@ -61,10 +61,10 @@ namespace Octopus.GUI.Database
             this.columnHeaderVersion = new System.Windows.Forms.ColumnHeader();
             this.columnHeaderSize = new System.Windows.Forms.ColumnHeader();
             this.groupBoxSaveSettings = new System.Windows.Forms.GroupBox();
-            this.btnDatabaseConnection = new Octopus.GUI.UserControl.SweetButton();
-            this.btnExit = new Octopus.GUI.UserControl.SweetButton();
+            this.btnDatabaseConnection = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
             this.lblResultMessage = new System.Windows.Forms.Label();
-            this.btnSave = new Octopus.GUI.UserControl.SweetButton();
+            this.btnSave = new System.Windows.Forms.Button();
             this.tabControlDatabase = new System.Windows.Forms.TabControl();
             this.tabPageSQLServerConnection = new System.Windows.Forms.TabPage();
             this.tableLayoutPanelServerSettings = new System.Windows.Forms.TableLayoutPanel();
@@ -73,12 +73,12 @@ namespace Octopus.GUI.Database
             this.tabPageSqlDatabaseSettings = new System.Windows.Forms.TabPage();
             this.tableLayoutPanelDatabaseSettings = new System.Windows.Forms.TableLayoutPanel();
             this.groupBoxSQLDatabaseSettings = new System.Windows.Forms.GroupBox();
-            this.btnSQLDatabaseSettingsUpgrade = new Octopus.GUI.UserControl.SweetButton();
-            this.btnSQLDatabaseSettingsChangeName = new Octopus.GUI.UserControl.SweetButton();
+            this.btnSQLDatabaseSettingsUpgrade = new System.Windows.Forms.Button();
+            this.btnSQLDatabaseSettingsChangeName = new System.Windows.Forms.Button();
             this.lblSQLDatabaseSettingsVersion = new System.Windows.Forms.Label();
             this.lblSQLDatabaseSettingsName = new System.Windows.Forms.Label();
             this.groupBoxSQLDatabaseStructure = new System.Windows.Forms.GroupBox();
-            this.btnContinue = new Octopus.GUI.UserControl.SweetButton();
+            this.btnContinue = new System.Windows.Forms.Button();
             this.lblDatabaseSettingsMessage = new System.Windows.Forms.Label();
             this.tBDatabaseSettingsSchemaResult = new System.Windows.Forms.RichTextBox();
             this.bWDatabasesDetection = new System.ComponentModel.BackgroundWorker();
@@ -104,8 +104,7 @@ namespace Octopus.GUI.Database
             this.SuspendLayout();
             // 
             // groupBoxSQLServerConnection
-            // 
-            this.groupBoxSQLServerConnection.BackColor = System.Drawing.Color.Transparent;
+            //
             this.groupBoxSQLServerConnection.Controls.Add(this.btnDefault);
             this.groupBoxSQLServerConnection.Controls.Add(this.btnGetServersList);
             this.groupBoxSQLServerConnection.Controls.Add(this.lblInstallInstructionSQLServer);
@@ -123,37 +122,25 @@ namespace Octopus.GUI.Database
             this.groupBoxSQLServerConnection.TabStop = false;
             // 
             // btnDefault
-            // 
-            this.btnDefault.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.btnDefault, "btnDefault");
-            this.btnDefault.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnDefault.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.None;
-            this.btnDefault.Menu = null;
             this.btnDefault.Name = "btnDefault";
-            this.btnDefault.UseVisualStyleBackColor = false;
             this.btnDefault.Click += new System.EventHandler(this.buttonDefault_Click);
             // 
             // btnGetServersList
-            // 
-            this.btnGetServersList.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.btnGetServersList, "btnGetServersList");
-            this.btnGetServersList.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnGetServersList.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.None;
-            this.btnGetServersList.Menu = null;
             this.btnGetServersList.Name = "btnGetServersList";
-            this.btnGetServersList.UseVisualStyleBackColor = false;
             this.btnGetServersList.Click += new System.EventHandler(this.buttonGetServersList_Click);
             // 
             // lblInstallInstructionSQLServer
             // 
             resources.ApplyResources(this.lblInstallInstructionSQLServer, "lblInstallInstructionSQLServer");
-            this.lblInstallInstructionSQLServer.ForeColor = System.Drawing.Color.Red;
             this.lblInstallInstructionSQLServer.Name = "lblInstallInstructionSQLServer";
             // 
             // lblHelpServerName
             // 
             resources.ApplyResources(this.lblHelpServerName, "lblHelpServerName");
-            this.lblHelpServerName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblHelpServerName.Name = "lblHelpServerName";
             // 
             // linkLabelSQLServerInstallInstruction
@@ -179,7 +166,6 @@ namespace Octopus.GUI.Database
             // lblPassword
             // 
             resources.ApplyResources(this.lblPassword, "lblPassword");
-            this.lblPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblPassword.Name = "lblPassword";
             // 
             // txtLoginName
@@ -191,40 +177,30 @@ namespace Octopus.GUI.Database
             // lblLoginName
             // 
             resources.ApplyResources(this.lblLoginName, "lblLoginName");
-            this.lblLoginName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblLoginName.Name = "lblLoginName";
             // 
             // lblServerName
             // 
             resources.ApplyResources(this.lblServerName, "lblServerName");
-            this.lblServerName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblServerName.Name = "lblServerName";
             // 
             // lblFindDBInfo
             // 
             resources.ApplyResources(this.lblFindDBInfo, "lblFindDBInfo");
-            this.lblFindDBInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblFindDBInfo.Name = "lblFindDBInfo";
             // 
             // groupBoxSQLSettings
-            // 
-            this.groupBoxSQLSettings.BackColor = System.Drawing.Color.Transparent;
+            //
             this.groupBoxSQLSettings.Controls.Add(this.btnSQLServerChangeSettings);
             this.groupBoxSQLSettings.Controls.Add(this.lblSQLServerSettings);
             resources.ApplyResources(this.groupBoxSQLSettings, "groupBoxSQLSettings");
-            this.groupBoxSQLSettings.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.groupBoxSQLSettings.Name = "groupBoxSQLSettings";
             this.groupBoxSQLSettings.TabStop = false;
             // 
             // btnSQLServerChangeSettings
             // 
             resources.ApplyResources(this.btnSQLServerChangeSettings, "btnSQLServerChangeSettings");
-            this.btnSQLServerChangeSettings.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnSQLServerChangeSettings.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Database;
-            this.btnSQLServerChangeSettings.Image = global::Octopus.GUI.Properties.Resources.thame1_1_database;
-            this.btnSQLServerChangeSettings.Menu = null;
             this.btnSQLServerChangeSettings.Name = "btnSQLServerChangeSettings";
-            this.btnSQLServerChangeSettings.UseVisualStyleBackColor = false;
             this.btnSQLServerChangeSettings.Click += new System.EventHandler(this.buttonSQLServerChangeSettings_Click);
             // 
             // lblSQLServerSettings
@@ -233,8 +209,7 @@ namespace Octopus.GUI.Database
             this.lblSQLServerSettings.Name = "lblSQLServerSettings";
             // 
             // groupBoxDatabaseManagement
-            // 
-            this.groupBoxDatabaseManagement.BackColor = System.Drawing.Color.Transparent;
+            //
             this.groupBoxDatabaseManagement.Controls.Add(this.lblDetectDatabasesInProgress);
             this.groupBoxDatabaseManagement.Controls.Add(this.btnSQLServerSettingsShowDetails);
             this.groupBoxDatabaseManagement.Controls.Add(this.btnRestore);
@@ -244,7 +219,6 @@ namespace Octopus.GUI.Database
             this.groupBoxDatabaseManagement.Controls.Add(this.lblDatabases);
             this.groupBoxDatabaseManagement.Controls.Add(this.listViewDatabases);
             resources.ApplyResources(this.groupBoxDatabaseManagement, "groupBoxDatabaseManagement");
-            this.groupBoxDatabaseManagement.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.groupBoxDatabaseManagement.Name = "groupBoxDatabaseManagement";
             this.groupBoxDatabaseManagement.TabStop = false;
             // 
@@ -257,56 +231,31 @@ namespace Octopus.GUI.Database
             // btnSQLServerSettingsShowDetails
             // 
             resources.ApplyResources(this.btnSQLServerSettingsShowDetails, "btnSQLServerSettingsShowDetails");
-            this.btnSQLServerSettingsShowDetails.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnSQLServerSettingsShowDetails.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Database;
-            this.btnSQLServerSettingsShowDetails.Image = global::Octopus.GUI.Properties.Resources.thame1_1_database;
-            this.btnSQLServerSettingsShowDetails.Menu = null;
             this.btnSQLServerSettingsShowDetails.Name = "btnSQLServerSettingsShowDetails";
-            this.btnSQLServerSettingsShowDetails.UseVisualStyleBackColor = false;
             this.btnSQLServerSettingsShowDetails.Click += new System.EventHandler(this.buttonSQLServerSettingsShowDetails_Click);
             // 
             // btnRestore
             // 
             resources.ApplyResources(this.btnRestore, "btnRestore");
-            this.btnRestore.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnRestore.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Database;
-            this.btnRestore.Image = global::Octopus.GUI.Properties.Resources.thame1_1_database;
-            this.btnRestore.Menu = null;
             this.btnRestore.Name = "btnRestore";
-            this.btnRestore.UseVisualStyleBackColor = false;
             this.btnRestore.Click += new System.EventHandler(this.buttonRestore_Click);
             // 
             // btnBackup
             // 
             resources.ApplyResources(this.btnBackup, "btnBackup");
-            this.btnBackup.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnBackup.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Database;
-            this.btnBackup.Image = global::Octopus.GUI.Properties.Resources.thame1_1_database;
-            this.btnBackup.Menu = null;
             this.btnBackup.Name = "btnBackup";
-            this.btnBackup.UseVisualStyleBackColor = false;
             this.btnBackup.Click += new System.EventHandler(this.buttonBackup_Click);
             // 
             // btnSetAsDefault
             // 
             resources.ApplyResources(this.btnSetAsDefault, "btnSetAsDefault");
-            this.btnSetAsDefault.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnSetAsDefault.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Database;
-            this.btnSetAsDefault.Image = global::Octopus.GUI.Properties.Resources.thame1_1_database;
-            this.btnSetAsDefault.Menu = null;
             this.btnSetAsDefault.Name = "btnSetAsDefault";
-            this.btnSetAsDefault.UseVisualStyleBackColor = false;
             this.btnSetAsDefault.Click += new System.EventHandler(this.buttonSetAsDefault_Click);
             // 
             // btnCreateNewDatabase
             // 
             resources.ApplyResources(this.btnCreateNewDatabase, "btnCreateNewDatabase");
-            this.btnCreateNewDatabase.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnCreateNewDatabase.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Database;
-            this.btnCreateNewDatabase.Image = global::Octopus.GUI.Properties.Resources.thame1_1_database;
-            this.btnCreateNewDatabase.Menu = null;
             this.btnCreateNewDatabase.Name = "btnCreateNewDatabase";
-            this.btnCreateNewDatabase.UseVisualStyleBackColor = false;
             this.btnCreateNewDatabase.Click += new System.EventHandler(this.buttonCreateNewDatabase_Click);
             // 
             // lblDatabases
@@ -349,8 +298,7 @@ namespace Octopus.GUI.Database
             resources.ApplyResources(this.columnHeaderSize, "columnHeaderSize");
             // 
             // groupBoxSaveSettings
-            // 
-            this.groupBoxSaveSettings.BackColor = System.Drawing.Color.Transparent;
+            //
             this.groupBoxSaveSettings.Controls.Add(this.btnDatabaseConnection);
             this.groupBoxSaveSettings.Controls.Add(this.btnExit);
             this.groupBoxSaveSettings.Controls.Add(this.lblResultMessage);
@@ -362,24 +310,14 @@ namespace Octopus.GUI.Database
             // btnDatabaseConnection
             // 
             resources.ApplyResources(this.btnDatabaseConnection, "btnDatabaseConnection");
-            this.btnDatabaseConnection.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnDatabaseConnection.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Database;
-            this.btnDatabaseConnection.Image = global::Octopus.GUI.Properties.Resources.thame1_1_database;
-            this.btnDatabaseConnection.Menu = null;
             this.btnDatabaseConnection.Name = "btnDatabaseConnection";
-            this.btnDatabaseConnection.UseVisualStyleBackColor = false;
             this.btnDatabaseConnection.Click += new System.EventHandler(this.btnDatabaseConnection_Click);
             // 
             // btnExit
-            // 
-            this.btnExit.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.btnExit, "btnExit");
             this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnExit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnExit.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.None;
-            this.btnExit.Menu = null;
             this.btnExit.Name = "btnExit";
-            this.btnExit.UseVisualStyleBackColor = false;
             // 
             // lblResultMessage
             // 
@@ -389,12 +327,7 @@ namespace Octopus.GUI.Database
             // btnSave
             // 
             resources.ApplyResources(this.btnSave, "btnSave");
-            this.btnSave.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnSave.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Database;
-            this.btnSave.Image = global::Octopus.GUI.Properties.Resources.thame1_1_database;
-            this.btnSave.Menu = null;
             this.btnSave.Name = "btnSave";
-            this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.buttonSave_Click);
             // 
             // tabControlDatabase
@@ -407,12 +340,10 @@ namespace Octopus.GUI.Database
             this.tabControlDatabase.SelectedIndex = 0;
             // 
             // tabPageSQLServerConnection
-            // 
-            this.tabPageSQLServerConnection.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris_180;
+            //
             resources.ApplyResources(this.tabPageSQLServerConnection, "tabPageSQLServerConnection");
             this.tabPageSQLServerConnection.Controls.Add(this.tableLayoutPanelServerSettings);
             this.tabPageSQLServerConnection.Name = "tabPageSQLServerConnection";
-            this.tabPageSQLServerConnection.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanelServerSettings
             // 
@@ -421,12 +352,10 @@ namespace Octopus.GUI.Database
             this.tableLayoutPanelServerSettings.Name = "tableLayoutPanelServerSettings";
             // 
             // tabPageSQLServerSettings
-            // 
-            this.tabPageSQLServerSettings.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris_180;
+            //
             resources.ApplyResources(this.tabPageSQLServerSettings, "tabPageSQLServerSettings");
             this.tabPageSQLServerSettings.Controls.Add(this.tableLayoutPanelSQLSettings);
             this.tabPageSQLServerSettings.Name = "tabPageSQLServerSettings";
-            this.tabPageSQLServerSettings.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanelSQLSettings
             // 
@@ -441,7 +370,6 @@ namespace Octopus.GUI.Database
             this.tabPageSqlDatabaseSettings.Controls.Add(this.tableLayoutPanelDatabaseSettings);
             resources.ApplyResources(this.tabPageSqlDatabaseSettings, "tabPageSqlDatabaseSettings");
             this.tabPageSqlDatabaseSettings.Name = "tabPageSqlDatabaseSettings";
-            this.tabPageSqlDatabaseSettings.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanelDatabaseSettings
             // 
@@ -458,30 +386,19 @@ namespace Octopus.GUI.Database
             this.groupBoxSQLDatabaseSettings.Controls.Add(this.lblSQLDatabaseSettingsVersion);
             this.groupBoxSQLDatabaseSettings.Controls.Add(this.lblSQLDatabaseSettingsName);
             resources.ApplyResources(this.groupBoxSQLDatabaseSettings, "groupBoxSQLDatabaseSettings");
-            this.groupBoxSQLDatabaseSettings.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.groupBoxSQLDatabaseSettings.Name = "groupBoxSQLDatabaseSettings";
             this.groupBoxSQLDatabaseSettings.TabStop = false;
             // 
             // btnSQLDatabaseSettingsUpgrade
             // 
             resources.ApplyResources(this.btnSQLDatabaseSettingsUpgrade, "btnSQLDatabaseSettingsUpgrade");
-            this.btnSQLDatabaseSettingsUpgrade.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnSQLDatabaseSettingsUpgrade.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Database;
-            this.btnSQLDatabaseSettingsUpgrade.Image = global::Octopus.GUI.Properties.Resources.thame1_1_database;
-            this.btnSQLDatabaseSettingsUpgrade.Menu = null;
             this.btnSQLDatabaseSettingsUpgrade.Name = "btnSQLDatabaseSettingsUpgrade";
-            this.btnSQLDatabaseSettingsUpgrade.UseVisualStyleBackColor = false;
             this.btnSQLDatabaseSettingsUpgrade.Click += new System.EventHandler(this.buttonSQLDatabaseSettingsUpgrade_Click);
             // 
             // btnSQLDatabaseSettingsChangeName
             // 
             resources.ApplyResources(this.btnSQLDatabaseSettingsChangeName, "btnSQLDatabaseSettingsChangeName");
-            this.btnSQLDatabaseSettingsChangeName.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnSQLDatabaseSettingsChangeName.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Database;
-            this.btnSQLDatabaseSettingsChangeName.Image = global::Octopus.GUI.Properties.Resources.thame1_1_database;
-            this.btnSQLDatabaseSettingsChangeName.Menu = null;
             this.btnSQLDatabaseSettingsChangeName.Name = "btnSQLDatabaseSettingsChangeName";
-            this.btnSQLDatabaseSettingsChangeName.UseVisualStyleBackColor = false;
             this.btnSQLDatabaseSettingsChangeName.Click += new System.EventHandler(this.buttonSQLDatabaseSettingsChangeName_Click);
             // 
             // lblSQLDatabaseSettingsVersion
@@ -500,26 +417,18 @@ namespace Octopus.GUI.Database
             this.groupBoxSQLDatabaseStructure.Controls.Add(this.lblDatabaseSettingsMessage);
             this.groupBoxSQLDatabaseStructure.Controls.Add(this.tBDatabaseSettingsSchemaResult);
             resources.ApplyResources(this.groupBoxSQLDatabaseStructure, "groupBoxSQLDatabaseStructure");
-            this.groupBoxSQLDatabaseStructure.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.groupBoxSQLDatabaseStructure.Name = "groupBoxSQLDatabaseStructure";
             this.groupBoxSQLDatabaseStructure.TabStop = false;
             // 
             // btnContinue
             // 
             resources.ApplyResources(this.btnContinue, "btnContinue");
-            this.btnContinue.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnContinue.ForeColor = System.Drawing.Color.Red;
-            this.btnContinue.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Database;
-            this.btnContinue.Image = global::Octopus.GUI.Properties.Resources.thame1_1_database;
-            this.btnContinue.Menu = null;
             this.btnContinue.Name = "btnContinue";
-            this.btnContinue.UseVisualStyleBackColor = false;
             this.btnContinue.Click += new System.EventHandler(this.buttonContinue_Click);
             // 
             // lblDatabaseSettingsMessage
             // 
             resources.ApplyResources(this.lblDatabaseSettingsMessage, "lblDatabaseSettingsMessage");
-            this.lblDatabaseSettingsMessage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblDatabaseSettingsMessage.Name = "lblDatabaseSettingsMessage";
             // 
             // tBDatabaseSettingsSchemaResult
@@ -568,7 +477,6 @@ namespace Octopus.GUI.Database
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris_180;
             this.Controls.Add(this.tabControlDatabase);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
@@ -610,22 +518,22 @@ namespace Octopus.GUI.Database
         private System.Windows.Forms.Label lblServerName;
         private System.Windows.Forms.LinkLabel linkLabelSQLServerInstallInstruction;
         private System.Windows.Forms.GroupBox groupBoxSQLSettings;
-        private SweetButton btnSQLServerChangeSettings;
+        private System.Windows.Forms.Button btnSQLServerChangeSettings;
         private System.Windows.Forms.Label lblSQLServerSettings;
         private System.Windows.Forms.GroupBox groupBoxDatabaseManagement;
-        private SweetButton btnCreateNewDatabase;
+        private System.Windows.Forms.Button btnCreateNewDatabase;
         private System.Windows.Forms.Label lblDatabases;
         private System.Windows.Forms.ListView listViewDatabases;
-        private SweetButton btnSetAsDefault;
+        private System.Windows.Forms.Button btnSetAsDefault;
         private System.Windows.Forms.GroupBox groupBoxSaveSettings;
-        private SweetButton btnSave;
+        private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.TabControl tabControlDatabase;
         private System.Windows.Forms.TabPage tabPageSQLServerConnection;
         private System.Windows.Forms.TabPage tabPageSQLServerSettings;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanelSQLSettings;
         private System.Windows.Forms.ColumnHeader columnHeaderName;
-        private SweetButton btnRestore;
-        private SweetButton btnBackup;
+        private System.Windows.Forms.Button btnRestore;
+        private System.Windows.Forms.Button btnBackup;
         private System.Windows.Forms.Label lblResultMessage;
         private System.Windows.Forms.ColumnHeader columnHeaderVersion;
         private System.Windows.Forms.ColumnHeader columnHeaderSize;
@@ -638,9 +546,9 @@ namespace Octopus.GUI.Database
         private System.Windows.Forms.GroupBox groupBoxSQLDatabaseSettings;
         private System.Windows.Forms.Label lblSQLDatabaseSettingsVersion;
         private System.Windows.Forms.Label lblSQLDatabaseSettingsName;
-        private SweetButton btnSQLDatabaseSettingsUpgrade;
-        private SweetButton btnSQLDatabaseSettingsChangeName;
-        private SweetButton btnSQLServerSettingsShowDetails;
+        private System.Windows.Forms.Button btnSQLDatabaseSettingsUpgrade;
+        private System.Windows.Forms.Button btnSQLDatabaseSettingsChangeName;
+        private System.Windows.Forms.Button btnSQLServerSettingsShowDetails;
         private System.Windows.Forms.GroupBox groupBoxSQLDatabaseStructure;
         private System.Windows.Forms.Label lblDatabaseSettingsMessage;
         private System.ComponentModel.BackgroundWorker bWDatabaseCreation;
@@ -650,12 +558,12 @@ namespace Octopus.GUI.Database
         private System.Windows.Forms.RichTextBox tBDatabaseSettingsSchemaResult;
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanelServerSettings;
-        private SweetButton btnExit;
-        private SweetButton btnDatabaseConnection;
-        private SweetButton btnContinue;
+        private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Button btnDatabaseConnection;
+        private System.Windows.Forms.Button btnContinue;
         private System.Windows.Forms.Label lblHelpServerName;
         private System.Windows.Forms.Label lblInstallInstructionSQLServer;
-        private SweetButton btnGetServersList;
-        private SweetButton btnDefault;
+        private System.Windows.Forms.Button btnGetServersList;
+        private System.Windows.Forms.Button btnDefault;
     }
 }

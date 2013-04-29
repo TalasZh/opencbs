@@ -1,4 +1,4 @@
-﻿using System.Windows.Forms;
+using System.Windows.Forms;
 using System.Diagnostics;
 using Octopus.CoreDomain.Clients;
 using Octopus.CoreDomain.Products;

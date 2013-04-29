@@ -1,4 +1,4 @@
-﻿using Octopus.GUI.UserControl;
+using Octopus.GUI.UserControl;
 
 namespace Octopus.GUI.Configuration
 {
@@ -37,12 +37,12 @@ namespace Octopus.GUI.Configuration
             this.chRoleName = new System.Windows.Forms.ColumnHeader();
             this.chRoleDescription = new System.Windows.Forms.ColumnHeader();
             this.stateLabel = new System.Windows.Forms.Label();
-            this.btnNew = new Octopus.GUI.UserControl.SweetButton();
+            this.btnNew = new System.Windows.Forms.Button();
             this.txtDescription = new System.Windows.Forms.TextBox();
             this.lbRoleDescription = new System.Windows.Forms.Label();
-            this.btnDelete = new Octopus.GUI.UserControl.SweetButton();
+            this.btnDelete = new System.Windows.Forms.Button();
             this.lblRoleTitle = new System.Windows.Forms.Label();
-            this.btnAdd = new Octopus.GUI.UserControl.SweetButton();
+            this.btnAdd = new System.Windows.Forms.Button();
             this.txtTitle = new System.Windows.Forms.TextBox();
             this.tabControlActions = new System.Windows.Forms.TabControl();
             this.tabPageMenu = new System.Windows.Forms.TabPage();
@@ -53,9 +53,9 @@ namespace Octopus.GUI.Configuration
             this.trvOptions = new System.Windows.Forms.TreeView();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.labelRoles = new System.Windows.Forms.Label();
-            this.buttonAdd = new Octopus.GUI.UserControl.SweetButton();
+            this.buttonAdd = new System.Windows.Forms.Button();
             this.splitContainerMain = new System.Windows.Forms.SplitContainer();
-            this.btnCancel = new Octopus.GUI.UserControl.SweetButton();
+            this.btnCancel = new System.Windows.Forms.Button();
             this.lblRoles = new System.Windows.Forms.Label();
             this.splitContainer2.Panel1.SuspendLayout();
             this.splitContainer2.Panel2.SuspendLayout();
@@ -143,22 +143,14 @@ namespace Octopus.GUI.Configuration
             resources.ApplyResources(this.chRoleDescription, "chRoleDescription");
             // 
             // stateLabel
-            // 
-            this.stateLabel.BackColor = System.Drawing.Color.Transparent;
+            //
             resources.ApplyResources(this.stateLabel, "stateLabel");
-            this.stateLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.stateLabel.Name = "stateLabel";
             // 
             // btnNew
-            // 
-            this.btnNew.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnNew.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_bouton;
+            //
             resources.ApplyResources(this.btnNew, "btnNew");
-            this.btnNew.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnNew.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.New;
-            this.btnNew.Menu = null;
             this.btnNew.Name = "btnNew";
-            this.btnNew.UseVisualStyleBackColor = false;
             this.btnNew.Click += new System.EventHandler(this.BtnNewClick);
             // 
             // txtDescription
@@ -169,39 +161,24 @@ namespace Octopus.GUI.Configuration
             // lbRoleDescription
             // 
             resources.ApplyResources(this.lbRoleDescription, "lbRoleDescription");
-            this.lbRoleDescription.BackColor = System.Drawing.Color.Transparent;
-            this.lbRoleDescription.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbRoleDescription.Name = "lbRoleDescription";
             // 
             // btnDelete
-            // 
-            this.btnDelete.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnDelete.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_bouton;
+            //
             resources.ApplyResources(this.btnDelete, "btnDelete");
-            this.btnDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnDelete.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Delete;
-            this.btnDelete.Menu = null;
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.UseVisualStyleBackColor = false;
             this.btnDelete.Click += new System.EventHandler(this.BtnDeleteClick);
             // 
             // lblRoleTitle
             // 
             resources.ApplyResources(this.lblRoleTitle, "lblRoleTitle");
             this.lblRoleTitle.BackColor = System.Drawing.Color.Transparent;
-            this.lblRoleTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblRoleTitle.Name = "lblRoleTitle";
             // 
             // btnAdd
-            // 
-            this.btnAdd.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnAdd.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_bouton;
+            //
             resources.ApplyResources(this.btnAdd, "btnAdd");
-            this.btnAdd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnAdd.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Save;
-            this.btnAdd.Menu = null;
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.BtnAddClick);
             // 
             // txtTitle
@@ -223,7 +200,6 @@ namespace Octopus.GUI.Configuration
             this.tabPageMenu.Controls.Add(this.trvMenuItems);
             resources.ApplyResources(this.tabPageMenu, "tabPageMenu");
             this.tabPageMenu.Name = "tabPageMenu";
-            this.tabPageMenu.UseVisualStyleBackColor = true;
             // 
             // trvMenuItems
             // 
@@ -237,7 +213,6 @@ namespace Octopus.GUI.Configuration
             this.tabPageGUIActions.Controls.Add(this.trwActionItems);
             resources.ApplyResources(this.tabPageGUIActions, "tabPageGUIActions");
             this.tabPageGUIActions.Name = "tabPageGUIActions";
-            this.tabPageGUIActions.UseVisualStyleBackColor = true;
             // 
             // trwActionItems
             // 
@@ -251,7 +226,6 @@ namespace Octopus.GUI.Configuration
             this.tabPageOptions.Controls.Add(this.trvOptions);
             resources.ApplyResources(this.tabPageOptions, "tabPageOptions");
             this.tabPageOptions.Name = "tabPageOptions";
-            this.tabPageOptions.UseVisualStyleBackColor = true;
             // 
             // trvOptions
             // 
@@ -277,17 +251,12 @@ namespace Octopus.GUI.Configuration
             // 
             this.labelRoles.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             resources.ApplyResources(this.labelRoles, "labelRoles");
-            this.labelRoles.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labelRoles.Image = global::Octopus.GUI.Properties.Resources.pastille_groupe;
             this.labelRoles.Name = "labelRoles";
             // 
             // buttonAdd
-            // 
-            this.buttonAdd.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.None;
+            //
             resources.ApplyResources(this.buttonAdd, "buttonAdd");
-            this.buttonAdd.Menu = null;
             this.buttonAdd.Name = "buttonAdd";
-            this.buttonAdd.UseVisualStyleBackColor = true;
             // 
             // splitContainerMain
             // 
@@ -307,22 +276,14 @@ namespace Octopus.GUI.Configuration
             // btnCancel
             // 
             resources.ApplyResources(this.btnCancel, "btnCancel");
-            this.btnCancel.BackColor = System.Drawing.Color.Gainsboro;
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnCancel.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Close;
-            this.btnCancel.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_close;
-            this.btnCancel.Menu = null;
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.ButtonCancelClick);
             // 
             // lblRoles
             // 
             this.lblRoles.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             resources.ApplyResources(this.lblRoles, "lblRoles");
-            this.lblRoles.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblRoles.Image = global::Octopus.GUI.Properties.Resources.pastille_groupe;
             this.lblRoles.Name = "lblRoles";
             // 
             // FrmRoles
@@ -355,14 +316,14 @@ namespace Octopus.GUI.Configuration
 
         private System.Windows.Forms.Label labelRoles;
         private System.Windows.Forms.SplitContainer splitContainer1;
-        private SweetButton buttonAdd;
+        private System.Windows.Forms.Button buttonAdd;
         private System.Windows.Forms.SplitContainer splitContainer2;
         private System.Windows.Forms.Label lblRoleTitle;
         private System.Windows.Forms.ListView listViewRoles;
         private System.Windows.Forms.ColumnHeader chRoleName;
-        private SweetButton btnDelete;
+        private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.TextBox txtTitle;
-        private SweetButton btnAdd;
+        private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Label lblRoles;
         private System.Windows.Forms.SplitContainer splitContainerMain;
         private System.Windows.Forms.TreeView trvMenuItems;
@@ -374,8 +335,8 @@ namespace Octopus.GUI.Configuration
         private System.Windows.Forms.ColumnHeader chRoleDescription;
         private System.Windows.Forms.Label lbRoleDescription;
         private System.Windows.Forms.TextBox txtDescription;
-        private SweetButton btnCancel;
-        private SweetButton btnNew;
+        private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Button btnNew;
         private System.Windows.Forms.TabPage tabPageOptions;
         private System.Windows.Forms.TreeView trvOptions;
         private System.Windows.Forms.Label stateLabel;

@@ -1,4 +1,4 @@
-﻿namespace Octopus.GUI.Accounting
+namespace Octopus.GUI.Accounting
 {
     partial class TrialBalancePreview
     {
@@ -115,7 +115,6 @@
             this.AccessibleName = null;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = null;
             this.Controls.Add(this.tlvBalances);
             this.Font = null;
             this.Name = "TrialBalancePreview";

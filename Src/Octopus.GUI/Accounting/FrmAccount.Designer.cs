@@ -1,4 +1,4 @@
-﻿using Octopus.GUI.UserControl;
+using Octopus.GUI.UserControl;
 
 namespace Octopus.GUI.Accounting
 {
@@ -48,8 +48,8 @@ namespace Octopus.GUI.Accounting
             this.tbAccountCategory = new System.Windows.Forms.TextBox();
             this.lbaccountCategoryName = new System.Windows.Forms.Label();
             this.groupBoxAction = new System.Windows.Forms.GroupBox();
-            this.btnSaving = new Octopus.GUI.UserControl.SweetButton();
-            this.btnClose = new Octopus.GUI.UserControl.SweetButton();
+            this.btnSaving = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.groupBoxData.SuspendLayout();
             this.tabControlData.SuspendLayout();
@@ -93,26 +93,20 @@ namespace Octopus.GUI.Accounting
             this.tabPageAccount.Controls.Add(this.labelAccountNumber);
             this.tabPageAccount.Controls.Add(this.labelParentValue);
             this.tabPageAccount.Controls.Add(this.labelAccountType);
-            this.tabPageAccount.ForeColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.tabPageAccount, "tabPageAccount");
             this.tabPageAccount.Name = "tabPageAccount";
-            this.tabPageAccount.UseVisualStyleBackColor = true;
             // 
             // rbDebit
             // 
             resources.ApplyResources(this.rbDebit, "rbDebit");
-            this.rbDebit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.rbDebit.Name = "rbDebit";
-            this.rbDebit.UseVisualStyleBackColor = true;
             // 
             // rbCredit
             // 
             resources.ApplyResources(this.rbCredit, "rbCredit");
             this.rbCredit.Checked = true;
-            this.rbCredit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.rbCredit.Name = "rbCredit";
             this.rbCredit.TabStop = true;
-            this.rbCredit.UseVisualStyleBackColor = true;
             // 
             // treeViewAccounts
             // 
@@ -135,26 +129,22 @@ namespace Octopus.GUI.Accounting
             // labelLabel
             // 
             resources.ApplyResources(this.labelLabel, "labelLabel");
-            this.labelLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelLabel.Name = "labelLabel";
             // 
             // labelAccountNumber
             // 
             resources.ApplyResources(this.labelAccountNumber, "labelAccountNumber");
-            this.labelAccountNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelAccountNumber.Name = "labelAccountNumber";
             // 
             // labelParentValue
             // 
             this.labelParentValue.AutoEllipsis = true;
             resources.ApplyResources(this.labelParentValue, "labelParentValue");
-            this.labelParentValue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelParentValue.Name = "labelParentValue";
             // 
             // labelAccountType
             // 
             resources.ApplyResources(this.labelAccountType, "labelAccountType");
-            this.labelAccountType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelAccountType.Name = "labelAccountType";
             // 
             // tabPageCategory
@@ -163,7 +153,6 @@ namespace Octopus.GUI.Accounting
             this.tabPageCategory.Controls.Add(this.lbaccountCategoryName);
             resources.ApplyResources(this.tabPageCategory, "tabPageCategory");
             this.tabPageCategory.Name = "tabPageCategory";
-            this.tabPageCategory.UseVisualStyleBackColor = true;
             // 
             // tbAccountCategory
             // 
@@ -173,7 +162,6 @@ namespace Octopus.GUI.Accounting
             // lbaccountCategoryName
             // 
             resources.ApplyResources(this.lbaccountCategoryName, "lbaccountCategoryName");
-            this.lbaccountCategoryName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbaccountCategoryName.Name = "lbaccountCategoryName";
             // 
             // groupBoxAction
@@ -187,26 +175,14 @@ namespace Octopus.GUI.Accounting
             // btnSaving
             // 
             resources.ApplyResources(this.btnSaving, "btnSaving");
-            this.btnSaving.BackColor = System.Drawing.Color.Transparent;
             this.btnSaving.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnSaving.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.btnSaving.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Save;
-            this.btnSaving.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_validity;
-            this.btnSaving.Menu = null;
             this.btnSaving.Name = "btnSaving";
-            this.btnSaving.UseVisualStyleBackColor = false;
             // 
             // btnClose
             // 
             resources.ApplyResources(this.btnClose, "btnClose");
-            this.btnClose.BackColor = System.Drawing.Color.Gainsboro;
             this.btnClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnClose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.btnClose.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Close;
-            this.btnClose.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_close;
-            this.btnClose.Menu = null;
             this.btnClose.Name = "btnClose";
-            this.btnClose.UseVisualStyleBackColor = false;
             // 
             // FrmAccount
             // 
@@ -233,8 +209,8 @@ namespace Octopus.GUI.Accounting
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.GroupBox groupBoxAction;
-        private SweetButton btnSaving;
-        private SweetButton btnClose;
+        private System.Windows.Forms.Button btnSaving;
+        private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.GroupBox groupBoxData;
         private System.Windows.Forms.TabControl tabControlData;
         private System.Windows.Forms.TabPage tabPageAccount;

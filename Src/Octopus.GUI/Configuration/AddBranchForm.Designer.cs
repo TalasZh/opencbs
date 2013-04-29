@@ -1,4 +1,4 @@
-﻿using Octopus.GUI.UserControl;
+using Octopus.GUI.UserControl;
 
 namespace Octopus.GUI.Configuration
 {
@@ -49,9 +49,9 @@ namespace Octopus.GUI.Configuration
             this.columnHeaderAccount = new System.Windows.Forms.ColumnHeader();
             this.columnHeaderDate = new System.Windows.Forms.ColumnHeader();
             this.panelPaymentMethods = new System.Windows.Forms.Panel();
-            this.btnDeletePaymentMethod = new Octopus.GUI.UserControl.SweetButton();
-            this.btnEditPaymentMethod = new Octopus.GUI.UserControl.SweetButton();
-            this.btnAddPaymentMethod = new Octopus.GUI.UserControl.SweetButton();
+            this.btnDeletePaymentMethod = new System.Windows.Forms.Button();
+            this.btnEditPaymentMethod = new System.Windows.Forms.Button();
+            this.btnAddPaymentMethod = new System.Windows.Forms.Button();
             this.tabControl.SuspendLayout();
             this.tabPageAddBranches.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -72,7 +72,6 @@ namespace Octopus.GUI.Configuration
             this.tabPageAddBranches.Controls.Add(this.tableLayoutPanel1);
             resources.ApplyResources(this.tabPageAddBranches, "tabPageAddBranches");
             this.tabPageAddBranches.Name = "tabPageAddBranches";
-            this.tabPageAddBranches.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel1
             // 
@@ -90,7 +89,6 @@ namespace Octopus.GUI.Configuration
             // lblName
             // 
             resources.ApplyResources(this.lblName, "lblName");
-            this.lblName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblName.Name = "lblName";
             // 
             // tbDescription
@@ -106,13 +104,11 @@ namespace Octopus.GUI.Configuration
             // label3
             // 
             resources.ApplyResources(this.label3, "label3");
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.label3.Name = "label3";
             // 
             // label1
             // 
             resources.ApplyResources(this.label1, "label1");
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.label1.Name = "label1";
             // 
             // tbAddress
@@ -123,7 +119,6 @@ namespace Octopus.GUI.Configuration
             // label2
             // 
             resources.ApplyResources(this.label2, "label2");
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.label2.Name = "label2";
             // 
             // tbCode
@@ -137,7 +132,6 @@ namespace Octopus.GUI.Configuration
             this.tabPageAddPaymentMethod.Controls.Add(this.panelPaymentMethods);
             resources.ApplyResources(this.tabPageAddPaymentMethod, "tabPageAddPaymentMethod");
             this.tabPageAddPaymentMethod.Name = "tabPageAddPaymentMethod";
-            this.tabPageAddPaymentMethod.UseVisualStyleBackColor = true;
             // 
             // lvPaymentMethods
             // 
@@ -182,28 +176,19 @@ namespace Octopus.GUI.Configuration
             // btnDeletePaymentMethod
             // 
             resources.ApplyResources(this.btnDeletePaymentMethod, "btnDeletePaymentMethod");
-            this.btnDeletePaymentMethod.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Delete;
-            this.btnDeletePaymentMethod.Menu = null;
             this.btnDeletePaymentMethod.Name = "btnDeletePaymentMethod";
-            this.btnDeletePaymentMethod.UseVisualStyleBackColor = true;
             this.btnDeletePaymentMethod.Click += new System.EventHandler(this.btnDeletePaymentMethod_Click);
             // 
             // btnEditPaymentMethod
             // 
             resources.ApplyResources(this.btnEditPaymentMethod, "btnEditPaymentMethod");
-            this.btnEditPaymentMethod.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Edit;
-            this.btnEditPaymentMethod.Menu = null;
             this.btnEditPaymentMethod.Name = "btnEditPaymentMethod";
-            this.btnEditPaymentMethod.UseVisualStyleBackColor = true;
             this.btnEditPaymentMethod.Click += new System.EventHandler(this.btnEditPaymentMethod_Click);
             // 
             // btnAddPaymentMethod
             // 
             resources.ApplyResources(this.btnAddPaymentMethod, "btnAddPaymentMethod");
-            this.btnAddPaymentMethod.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.New;
-            this.btnAddPaymentMethod.Menu = null;
             this.btnAddPaymentMethod.Name = "btnAddPaymentMethod";
-            this.btnAddPaymentMethod.UseVisualStyleBackColor = true;
             this.btnAddPaymentMethod.Click += new System.EventHandler(this.btnAddPaymentMethod_Click);
             // 
             // AddBranchForm
@@ -246,10 +231,10 @@ namespace Octopus.GUI.Configuration
         private System.Windows.Forms.ListView lvPaymentMethods;
         private System.Windows.Forms.ColumnHeader columnHeaderPaymentMethod;
         private System.Windows.Forms.ColumnHeader columnHeaderDate;
-        private SweetButton btnDeletePaymentMethod;
-        private SweetButton btnAddPaymentMethod;
+        private System.Windows.Forms.Button btnDeletePaymentMethod;
+        private System.Windows.Forms.Button btnAddPaymentMethod;
         private System.Windows.Forms.ColumnHeader columnHeaderId;
-        private SweetButton btnEditPaymentMethod;
+        private System.Windows.Forms.Button btnEditPaymentMethod;
         private System.Windows.Forms.ColumnHeader columnHeaderAccount;
     }
 }

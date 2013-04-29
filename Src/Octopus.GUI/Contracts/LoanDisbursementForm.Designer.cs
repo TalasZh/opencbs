@@ -1,4 +1,4 @@
-﻿using System.ComponentModel;
+using System.ComponentModel;
 using System.Windows.Forms;
 using Octopus.GUI.UserControl;
 
@@ -7,15 +7,15 @@ namespace Octopus.GUI.Contracts
     public partial class LoanDisbursementForm
     {
         private GroupBox groupBoxButton;
-        private SweetButton buttonCancel;
-        private SweetButton buttonSave;
+        private System.Windows.Forms.Button buttonCancel;
+        private System.Windows.Forms.Button buttonSave;
         private Label _lbLoanCode;
         private Label _lbAmount;
         private Label _lbFees;
         private Label lblPivotCurrency;
         private CheckBox checkBoxFees;
         private IContainer components;
-        private SweetButton buttonAddExchangeRate;
+        private System.Windows.Forms.Button buttonAddExchangeRate;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -61,9 +61,9 @@ namespace Octopus.GUI.Contracts
             this.tbEntryFee = new System.Windows.Forms.TextBox();
             this.groupBoxButton = new System.Windows.Forms.GroupBox();
             this.btnPrint = new Octopus.GUI.UserControl.PrintButton();
-            this.buttonAddExchangeRate = new Octopus.GUI.UserControl.SweetButton();
-            this.buttonCancel = new Octopus.GUI.UserControl.SweetButton();
-            this.buttonSave = new Octopus.GUI.UserControl.SweetButton();
+            this.buttonAddExchangeRate = new System.Windows.Forms.Button();
+            this.buttonCancel = new System.Windows.Forms.Button();
+            this.buttonSave = new System.Windows.Forms.Button();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
@@ -111,40 +111,33 @@ namespace Octopus.GUI.Contracts
             // _lbAmountValue
             // 
             resources.ApplyResources(this._lbAmountValue, "_lbAmountValue");
-            this._lbAmountValue.BackColor = System.Drawing.Color.Transparent;
-            this._lbAmountValue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this._lbAmountValue.Name = "_lbAmountValue";
             // 
             // lblPivotCurrency
             // 
             resources.ApplyResources(this.lblPivotCurrency, "lblPivotCurrency");
-            this.lblPivotCurrency.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblPivotCurrency.Name = "lblPivotCurrency";
             // 
             // _lbFundingLine
             // 
             resources.ApplyResources(this._lbFundingLine, "_lbFundingLine");
-            this._lbFundingLine.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this._lbFundingLine.Name = "_lbFundingLine";
             // 
             // _lbFundingLineValue
             // 
             resources.ApplyResources(this._lbFundingLineValue, "_lbFundingLineValue");
             this.tableLayoutPanel1.SetColumnSpan(this._lbFundingLineValue, 3);
-            this._lbFundingLineValue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this._lbFundingLineValue.Name = "_lbFundingLineValue";
             // 
             // _lbLoanCode
             // 
             resources.ApplyResources(this._lbLoanCode, "_lbLoanCode");
-            this._lbLoanCode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this._lbLoanCode.Name = "_lbLoanCode";
             // 
             // _lbLoanCodeValue
             // 
             resources.ApplyResources(this._lbLoanCodeValue, "_lbLoanCodeValue");
             this.tableLayoutPanel1.SetColumnSpan(this._lbLoanCodeValue, 3);
-            this._lbLoanCodeValue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this._lbLoanCodeValue.Name = "_lbLoanCodeValue";
             // 
             // cmbPaymentMethod
@@ -159,51 +152,39 @@ namespace Octopus.GUI.Contracts
             // _lbAmount
             // 
             resources.ApplyResources(this._lbAmount, "_lbAmount");
-            this._lbAmount.BackColor = System.Drawing.Color.Transparent;
-            this._lbAmount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this._lbAmount.Name = "_lbAmount";
             // 
             // _lbFees
             // 
             resources.ApplyResources(this._lbFees, "_lbFees");
-            this._lbFees.BackColor = System.Drawing.Color.Transparent;
-            this._lbFees.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this._lbFees.Name = "_lbFees";
             // 
             // lblFeesCurrencyPivot
             // 
             resources.ApplyResources(this.lblFeesCurrencyPivot, "lblFeesCurrencyPivot");
-            this.lblFeesCurrencyPivot.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblFeesCurrencyPivot.Name = "lblFeesCurrencyPivot";
             // 
             // checkBoxFees
-            // 
-            this.checkBoxFees.BackColor = System.Drawing.Color.Transparent;
+            //
             resources.ApplyResources(this.checkBoxFees, "checkBoxFees");
-            this.checkBoxFees.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.checkBoxFees.Name = "checkBoxFees";
-            this.checkBoxFees.UseVisualStyleBackColor = false;
             this.checkBoxFees.CheckedChanged += new System.EventHandler(this.CheckBoxFeesCheckedChanged);
             // 
             // _lbPaymentMethod
             // 
             resources.ApplyResources(this._lbPaymentMethod, "_lbPaymentMethod");
-            this._lbPaymentMethod.BackColor = System.Drawing.Color.Transparent;
-            this._lbPaymentMethod.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this._lbPaymentMethod.Name = "_lbPaymentMethod";
             // 
             // lblAmountCurrency
             // 
             resources.ApplyResources(this.lblAmountCurrency, "lblAmountCurrency");
             this.lblAmountCurrency.BackColor = System.Drawing.Color.Transparent;
-            this.lblAmountCurrency.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblAmountCurrency.Name = "lblAmountCurrency";
             // 
             // lblEntryFeeCurrency
             // 
             resources.ApplyResources(this.lblEntryFeeCurrency, "lblEntryFeeCurrency");
             this.lblEntryFeeCurrency.BackColor = System.Drawing.Color.Transparent;
-            this.lblEntryFeeCurrency.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblEntryFeeCurrency.Name = "lblEntryFeeCurrency";
             // 
             // tbEntryFee
@@ -214,8 +195,7 @@ namespace Octopus.GUI.Contracts
             this.tbEntryFee.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TbEntryFeeValueKeyPress);
             // 
             // groupBoxButton
-            // 
-            this.groupBoxButton.BackColor = System.Drawing.SystemColors.Window;
+            //
             resources.ApplyResources(this.groupBoxButton, "groupBoxButton");
             this.groupBoxButton.Controls.Add(this.btnPrint);
             this.groupBoxButton.Controls.Add(this.buttonAddExchangeRate);
@@ -236,41 +216,25 @@ namespace Octopus.GUI.Contracts
             this.btnPrint.UseVisualStyleBackColor = true;
             // 
             // buttonAddExchangeRate
-            // 
-            this.buttonAddExchangeRate.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.buttonAddExchangeRate, "buttonAddExchangeRate");
-            this.buttonAddExchangeRate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonAddExchangeRate.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.New;
-            this.buttonAddExchangeRate.Menu = null;
             this.buttonAddExchangeRate.Name = "buttonAddExchangeRate";
-            this.buttonAddExchangeRate.UseVisualStyleBackColor = false;
             this.buttonAddExchangeRate.Click += new System.EventHandler(this.ButtonAddExchangeRateClick);
             // 
             // buttonCancel
-            // 
-            this.buttonCancel.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.buttonCancel, "buttonCancel");
-            this.buttonCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonCancel.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Close;
-            this.buttonCancel.Menu = null;
             this.buttonCancel.Name = "buttonCancel";
-            this.buttonCancel.UseVisualStyleBackColor = false;
             this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
             // buttonSave
-            // 
-            this.buttonSave.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.buttonSave, "buttonSave");
-            this.buttonSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonSave.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Save;
-            this.buttonSave.Menu = null;
             this.buttonSave.Name = "buttonSave";
-            this.buttonSave.UseVisualStyleBackColor = false;
             this.buttonSave.Click += new System.EventHandler(this.ButtonSaveClick);
             // 
             // LoanDisbursementForm
-            // 
-            this.BackColor = System.Drawing.Color.White;
+            //
             resources.ApplyResources(this, "$this");
             this.Controls.Add(this.splitContainer1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;

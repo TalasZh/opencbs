@@ -150,7 +150,7 @@
     <value>True</value>
   </data>
   <data name="labelDistrict.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="labelDistrict.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
@@ -217,7 +217,7 @@
     <value>True</value>
   </data>
   <data name="labelComments.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="labelComments.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -280,7 +280,7 @@
     <value>True</value>
   </data>
   <data name="labelCity.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="labelCity.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -313,7 +313,7 @@
     <value>True</value>
   </data>
   <data name="labelProvince.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="labelProvince.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -369,17 +369,8 @@
   <data name="&gt;&gt;comboBoxProvince.ZOrder" xml:space="preserve">
     <value>17</value>
   </data>
-  <data name="buttonSave.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="buttonSave.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
   <data name="buttonSave.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 9.75pt</value>
-  </data>
-  <data name="buttonSave.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
   </data>
   <data name="buttonSave.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -418,7 +409,7 @@
     <value>True</value>
   </data>
   <data name="labelHomePhone.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="labelHomePhone.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 186</value>
@@ -448,7 +439,7 @@
     <value>True</value>
   </data>
   <data name="labelPersonalPhone.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="labelPersonalPhone.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 214</value>
@@ -559,7 +550,7 @@
     <value>True</value>
   </data>
   <data name="labelEMail.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="labelEMail.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -592,7 +583,7 @@
     <value>True</value>
   </data>
   <data name="labelZipCode.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="labelZipCode.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -652,7 +643,7 @@
     <value>True</value>
   </data>
   <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>

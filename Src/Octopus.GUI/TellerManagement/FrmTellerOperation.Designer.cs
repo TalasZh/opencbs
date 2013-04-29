@@ -1,4 +1,4 @@
-﻿namespace Octopus.GUI.TellerManagement
+namespace Octopus.GUI.TellerManagement
 {
     partial class FrmTellerOperation
     {
@@ -39,8 +39,8 @@
             this.lblDescription = new System.Windows.Forms.Label();
             this.tbxAmount = new System.Windows.Forms.TextBox();
             this.tbxDescription = new System.Windows.Forms.TextBox();
-            this.btnConfirm = new Octopus.GUI.UserControl.SweetButton();
-            this.btnCancel = new Octopus.GUI.UserControl.SweetButton();
+            this.btnConfirm = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblBranch
@@ -68,22 +68,18 @@
             this.rbtnCashIn.AccessibleDescription = null;
             this.rbtnCashIn.AccessibleName = null;
             resources.ApplyResources(this.rbtnCashIn, "rbtnCashIn");
-            this.rbtnCashIn.BackgroundImage = null;
             this.rbtnCashIn.Checked = true;
             this.rbtnCashIn.Font = null;
             this.rbtnCashIn.Name = "rbtnCashIn";
             this.rbtnCashIn.TabStop = true;
-            this.rbtnCashIn.UseVisualStyleBackColor = true;
             // 
             // rbtnCashOut
             // 
             this.rbtnCashOut.AccessibleDescription = null;
             this.rbtnCashOut.AccessibleName = null;
             resources.ApplyResources(this.rbtnCashOut, "rbtnCashOut");
-            this.rbtnCashOut.BackgroundImage = null;
             this.rbtnCashOut.Font = null;
             this.rbtnCashOut.Name = "rbtnCashOut";
-            this.rbtnCashOut.UseVisualStyleBackColor = true;
             // 
             // lblTeller
             // 
@@ -146,12 +142,8 @@
             this.btnConfirm.AccessibleDescription = null;
             this.btnConfirm.AccessibleName = null;
             resources.ApplyResources(this.btnConfirm, "btnConfirm");
-            this.btnConfirm.BackgroundImage = null;
             this.btnConfirm.Font = null;
-            this.btnConfirm.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Save;
-            this.btnConfirm.Menu = null;
             this.btnConfirm.Name = "btnConfirm";
-            this.btnConfirm.UseVisualStyleBackColor = true;
             this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
             // 
             // btnCancel
@@ -159,12 +151,8 @@
             this.btnCancel.AccessibleDescription = null;
             this.btnCancel.AccessibleName = null;
             resources.ApplyResources(this.btnCancel, "btnCancel");
-            this.btnCancel.BackgroundImage = null;
             this.btnCancel.Font = null;
-            this.btnCancel.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Close;
-            this.btnCancel.Menu = null;
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // FrmTellerOperation
@@ -174,7 +162,6 @@
             this.AccessibleName = null;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = null;
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnConfirm);
             this.Controls.Add(this.tbxDescription);
@@ -208,8 +195,8 @@
         private System.Windows.Forms.Label lblDescription;
         private System.Windows.Forms.TextBox tbxAmount;
         private System.Windows.Forms.TextBox tbxDescription;
-        private Octopus.GUI.UserControl.SweetButton button1;
-        private Octopus.GUI.UserControl.SweetButton btnConfirm;
-        private Octopus.GUI.UserControl.SweetButton btnCancel;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnConfirm;
+        private System.Windows.Forms.Button btnCancel;
     }
 }

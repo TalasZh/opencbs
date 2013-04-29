@@ -1,4 +1,4 @@
-﻿//Octopus MFS is an integrated suite for managing a Micro Finance Institution: clients, contracts, accounting, reporting and risk
+//Octopus MFS is an integrated suite for managing a Micro Finance Institution: clients, contracts, accounting, reporting and risk
 //Copyright ?2006,2007 OCTO Technology & OXUS Development Network
 //
 //This program is free software; you can redistribute it and/or modify
@@ -559,14 +559,14 @@ namespace Octopus.GUI.Accounting
         {
             try
             {
-                btnPreview.StartProgress();
+                //btnPreview.StartProgress();
                 if (_mode == 0)
                     GetBookings(_closureOptions);
                 
                 if(_mode == 1)
                     GenerateEvents(_closureOptions);
 
-                btnPreview.StopProgress();
+                //btnPreview.StopProgress();
                 
             }
             catch (Exception ex)
@@ -632,7 +632,7 @@ namespace Octopus.GUI.Accounting
         {
             try
             {
-                btnPost.StartProgress();
+                //btnPost.StartProgress();
                 UpdateStatus("", "Posting ..." + _eventStock.GetEvents().Count.ToString());
                 ServicesProvider.GetInstance().GetContractServices().PostEvents(_listLoan, _eventStock);
                 //savings
@@ -640,7 +640,7 @@ namespace Octopus.GUI.Accounting
                 UpdateStatus("", "Posting ..." + _eventStock.GetSavingEvents().Count.ToString());
                 ServicesProvider.GetInstance().GetSavingServices().PostEvents(_savings, _eventStock.GetSavingEvents());
 
-                btnPost.StopProgress();
+                //btnPost.StopProgress();
             }
             catch (Exception ex)
             {
@@ -652,10 +652,10 @@ namespace Octopus.GUI.Accounting
         {
             try
             {
-                btnPost.StartProgress();
+                //btnPost.StartProgress();
                 UpdateStatus("", "Posting ..." + _bookings.Count);
                 ServicesProvider.GetInstance().GetAccountingServices().DoMovements(_bookings);
-                btnPost.StopProgress();
+                //btnPost.StopProgress();
             }
             catch (Exception ex)
             {

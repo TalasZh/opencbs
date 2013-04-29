@@ -1,4 +1,4 @@
-﻿namespace Octopus.GUI
+namespace Octopus.GUI
 {
     partial class OctopusProgressBar
     {

@@ -1,5 +1,5 @@
 //Octopus MFS is an integrated suite for managing a Micro Finance Institution: clients, contracts, accounting, reporting and risk
-//Copyright © 2006,2007 OCTO Technology & OXUS Development Network
+//Copyright ï¿½ 2006,2007 OCTO Technology & OXUS Development Network
 //
 //This program is free software; you can redistribute it and/or modify
 //it under the terms of the GNU Lesser General Public License as published by
@@ -97,8 +97,6 @@ namespace Octopus.GUI
             // groupBox2
             // 
             resources.ApplyResources(this.groupBox2, "groupBox2");
-            this.groupBox2.BackColor = System.Drawing.Color.White;
-            this.groupBox2.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris;
             this.groupBox2.Controls.Add(this.mcalCurrentDate);
             this.groupBox2.Controls.Add(this.lblCurrentDateLabel);
             this.groupBox2.Controls.Add(this.lblCurentDate);
@@ -119,7 +117,6 @@ namespace Octopus.GUI
             // 
             this.lblCurrentDateLabel.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.lblCurrentDateLabel, "lblCurrentDateLabel");
-            this.lblCurrentDateLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblCurrentDateLabel.Name = "lblCurrentDateLabel";
             // 
             // lblCurentDate

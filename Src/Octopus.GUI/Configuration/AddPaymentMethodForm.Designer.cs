@@ -1,4 +1,4 @@
-﻿using Octopus.GUI.UserControl;
+using Octopus.GUI.UserControl;
 
 namespace Octopus.GUI.Configuration
 {
@@ -40,7 +40,6 @@ namespace Octopus.GUI.Configuration
             // lblAccount
             // 
             resources.ApplyResources(this.lblAccount, "lblAccount");
-            this.lblAccount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblAccount.Name = "lblAccount";
             // 
             // cmbAccount
@@ -53,7 +52,6 @@ namespace Octopus.GUI.Configuration
             // lblPaymentMethod
             // 
             resources.ApplyResources(this.lblPaymentMethod, "lblPaymentMethod");
-            this.lblPaymentMethod.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblPaymentMethod.Name = "lblPaymentMethod";
             // 
             // cmbPaymentMethod

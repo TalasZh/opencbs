@@ -1,4 +1,4 @@
-﻿
+
 
 namespace Octopus.GUI
 {
@@ -90,9 +90,7 @@ namespace Octopus.GUI
             this.SuspendLayout();
             // 
             // groupBox1
-            // 
-            this.groupBox1.BackColor = System.Drawing.Color.White;
-            this.groupBox1.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris;
+            //
             resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Controls.Add(this.linkLabelRoadMap);
             this.groupBox1.Controls.Add(this.pictureBox11);
@@ -169,7 +167,6 @@ namespace Octopus.GUI
             // 
             resources.ApplyResources(this.labelCashReceipt, "labelCashReceipt");
             this.labelCashReceipt.BackColor = System.Drawing.Color.Transparent;
-            this.labelCashReceipt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(56)))));
             this.labelCashReceipt.Name = "labelCashReceipt";
             // 
             // pictureBox9
@@ -180,9 +177,7 @@ namespace Octopus.GUI
             this.pictureBox9.TabStop = false;
             // 
             // groupBoxCreditContract
-            // 
-            this.groupBoxCreditContract.BackColor = System.Drawing.Color.White;
-            this.groupBoxCreditContract.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris;
+            //
             resources.ApplyResources(this.groupBoxCreditContract, "groupBoxCreditContract");
             this.groupBoxCreditContract.Controls.Add(this.linkLabelSearchProject);
             this.groupBoxCreditContract.Controls.Add(this.pictureBox7);
@@ -251,9 +246,7 @@ namespace Octopus.GUI
             this.linkLabelSearchClient.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelSearchClient_LinkClicked);
             // 
             // groupBoxClient
-            // 
-            this.groupBoxClient.BackColor = System.Drawing.Color.White;
-            this.groupBoxClient.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris;
+            //
             resources.ApplyResources(this.groupBoxClient, "groupBoxClient");
             this.groupBoxClient.Controls.Add(this.pnlNewClient);
             this.groupBoxClient.Controls.Add(this.labelNewClient);
@@ -372,7 +365,6 @@ namespace Octopus.GUI
             // FastChoiceForm
             // 
             resources.ApplyResources(this, "$this");
-            this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ControlBox = false;
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBoxCreditContract);

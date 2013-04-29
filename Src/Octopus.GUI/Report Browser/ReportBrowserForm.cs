@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Octopus.ExceptionsHandler;
 using Octopus.GUI.UserControl;
 using Octopus.Reports;

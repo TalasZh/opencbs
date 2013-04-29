@@ -36,8 +36,8 @@ namespace Octopus.GUI.Configuration
             this.imagesSettings = new System.Windows.Forms.ImageList(this.components);
             this.cbPackages = new System.Windows.Forms.CheckBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnOk = new Octopus.GUI.UserControl.SweetButton();
-            this.btnCancel = new Octopus.GUI.UserControl.SweetButton();
+            this.btnOk = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -62,14 +62,11 @@ namespace Octopus.GUI.Configuration
             // cbPackages
             // 
             resources.ApplyResources(this.cbPackages, "cbPackages");
-            this.cbPackages.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.cbPackages.Name = "cbPackages";
-            this.cbPackages.UseVisualStyleBackColor = true;
             this.cbPackages.CheckedChanged += new System.EventHandler(this.cbPackages_CheckedChanged);
             // 
             // groupBox1
-            // 
-            this.groupBox1.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris_180;
+            //
             resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Controls.Add(this.btnOk);
             this.groupBox1.Controls.Add(this.btnCancel);
@@ -79,26 +76,14 @@ namespace Octopus.GUI.Configuration
             // btnOk
             // 
             resources.ApplyResources(this.btnOk, "btnOk");
-            this.btnOk.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnOk.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnOk.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Save;
-            this.btnOk.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_validity;
-            this.btnOk.Menu = null;
             this.btnOk.Name = "btnOk";
-            this.btnOk.UseVisualStyleBackColor = false;
             this.btnOk.Click += new System.EventHandler(this.butOk_Click);
             // 
             // btnCancel
             // 
             resources.ApplyResources(this.btnCancel, "btnCancel");
-            this.btnCancel.BackColor = System.Drawing.Color.Gainsboro;
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnCancel.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Close;
-            this.btnCancel.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_close;
-            this.btnCancel.Menu = null;
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.UseVisualStyleBackColor = false;
             // 
             // FrmSettingsImportExport
             // 
@@ -121,7 +106,7 @@ namespace Octopus.GUI.Configuration
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.CheckBox cbPackages;
         private System.Windows.Forms.ImageList imagesSettings;
-        private SweetButton btnCancel;
-        private SweetButton btnOk;
+        private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Button btnOk;
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace Octopus.GUI.Export
+namespace Octopus.GUI.Export
 {
     partial class ComplexFieldPropertiesForm
     {

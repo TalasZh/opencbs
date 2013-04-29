@@ -189,9 +189,6 @@
   <metadata name="btnRefresh.Locked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="btnRefresh.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
   <data name="btnRefresh.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -225,9 +222,6 @@
   <metadata name="btnPrint.Locked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="btnPrint.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
   <data name="btnPrint.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -601,7 +595,7 @@
     <value>Top</value>
   </data>
   <data name="chkIncludeDeleted.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="chkIncludeDeleted.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -666,9 +660,6 @@
   <metadata name="btnUncheckAll.Locked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="btnUncheckAll.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
   <data name="btnUncheckAll.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -702,9 +693,6 @@
   <metadata name="btnCheckAll.Locked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="btnCheckAll.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
   <data name="btnCheckAll.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -834,9 +822,6 @@
   <data name="btnClose.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
-  <data name="btnClose.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
   <data name="btnClose.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 8.25pt</value>
   </data>
@@ -871,38 +856,7 @@
     <value>Fill</value>
   </data>
   <data name="lblTitle.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 15.75pt, style=Bold</value>
-  </data>
-  <data name="lblTitle.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-        TkSuQmCC
-</value>
-  </data>
-  <data name="lblTitle.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
+    <value>Arial, 15.75pt</value>
   </data>
   <data name="lblTitle.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1008,34 +962,6 @@
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 9.75pt</value>
-  </data>
-  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAB+fn8AkYyKAJKOjgCVk5MAlpaWAKWmpQCwr68AsrOyALS2tQC2trYAuru7ALu8vAC/vbwAvb29AMG/
-        vgDBwcAAwcLCAMXDwwDHxsUAxcbHAMbIxwDMyMcAyMnIAMrKygDKyssAy8vLAMzMywDNzcwAz87OANLQ
-        0ADP0tEA0NPSANLT0gDU1NIA1NXUANjV1QDW1tUA19fVANjX1QDX2NcA2tnYANnZ2QDb2dkA29zcANzc
-        3ADd3t0A397eAN3f3gDf394A4d/fAN3g3wDf4N8A3uDgAN/h4ADh4eAA3+HhAOHh4QDg4uEA4uLhAOPi
-        4QDi4uIA4+LiAOTj4wDi5OMA5OTkAOLl5ADm5eQA5ubmAOTn5gDl5+YA5OjnAOXo5wDm6OcA6OjnAObp
-        6ADp6egA6unpAObq6QDn6uoA6urpAOvq6QDp6uoA6urqAOvr6ADn6+oA6uvpAOnr6gDq7OsA6uzsAOzs
-        7ADq7esA7O3sAO3t7ADs7uwA7u7uAOzv7QDu7+0A7e/uAO3v7wDu7+8A7+/vAO/w7gDx8fAA7/HxAO/y
-        8QDx8vEA8PPyAPHz8gDy9PQA9PT0APP19QD09fUA9Pb2APX29gD19/YA9ff3APb4+AD4+PgA9vn4APf5
-        +AD4+/oA+fv6APr8/AD6/fwA+/38APz9/AD7/v0A/P79APv+/gD8/v4A+//9APz//QD9//0A+//+APz/
-        /gD9//8A/v//AP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAR4aGiRtCHXOGhoaGhoaGR0eGf1dAhYQkhoaGgH6HiEREgXqJMIZxX4aGhX5vOSMySDM2Yldm
-        S2qJiH5ua4GJCzRViD5oZV5kGCJ4cIZ7JzVHWCB1Y1sqFQkNdoY8VolERH6JWEOJAgADiTlhiH5+R0eG
-        hn6HGgZZZAVRfoaGhkdHhoaGiBYseYgHiX5+hoZHR4Z+iFGJAQQPUSlxhoaDR0SISTqGKCYMDlJ5bEly
-        h0cvK313Lk8iITsZcGCHXDFBEIl8OCVpQF0RF4dsTIKJE009NzMthm1TiYmGflpQbwpHhn45HH1FP36G
-        hoZ+dGdOH0dHShQSCFRHR0dHREdGHgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
-</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>

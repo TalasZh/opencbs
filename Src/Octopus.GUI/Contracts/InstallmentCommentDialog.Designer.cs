@@ -1,4 +1,4 @@
-﻿namespace Octopus.GUI.Contracts
+namespace Octopus.GUI.Contracts
 {
     partial class InstallmentCommentDialog
     {
@@ -76,7 +76,6 @@
             this.labelComment.AccessibleName = null;
             resources.ApplyResources(this.labelComment, "labelComment");
             this.labelComment.BackColor = System.Drawing.Color.Transparent;
-            this.labelComment.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelComment.Name = "labelComment";
             // 
             // InstallmentCommentDialog
@@ -86,7 +85,6 @@
             this.AccessibleName = null;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris;
             this.CancelButton = this.buttonCancel;
             this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.buttonOK);

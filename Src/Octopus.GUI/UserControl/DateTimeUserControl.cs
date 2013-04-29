@@ -111,13 +111,11 @@ namespace Octopus.GUI
             // checkBoxDate
             // 
             resources.ApplyResources(this.checkBoxDate, "checkBoxDate");
-            this.checkBoxDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.checkBoxDate.Name = "checkBoxDate";
             this.checkBoxDate.CheckedChanged += new System.EventHandler(this.checkBoxDate_CheckedChanged);
             // 
             // DateTimeUserControl
-            // 
-            this.BackColor = System.Drawing.Color.White;
+            //
             this.Controls.Add(this.dateTimePickerDate);
             this.Controls.Add(this.checkBoxDate);
             this.Name = "DateTimeUserControl";

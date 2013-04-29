@@ -1,4 +1,4 @@
-﻿namespace Octopus.GUI.Contracts
+namespace Octopus.GUI.Contracts
 {
     partial class AddTrancheForm
     {
@@ -121,9 +121,7 @@
             resources.ApplyResources(this.columnHeader9, "columnHeader9");
             // 
             // groupBoxParameters
-            // 
-            this.groupBoxParameters.BackColor = System.Drawing.Color.Transparent;
-            this.groupBoxParameters.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris_180;
+            //
             resources.ApplyResources(this.groupBoxParameters, "groupBoxParameters");
             this.groupBoxParameters.Controls.Add(this.cbApplynewInterestforOLB);
             this.groupBoxParameters.Controls.Add(this.lbNewInterest);
@@ -138,22 +136,18 @@
             this.groupBoxParameters.Controls.Add(this.labelMaturity);
             this.groupBoxParameters.Controls.Add(this.labelContractCode);
             this.groupBoxParameters.Controls.Add(this.labelTitleRescheduleContract);
-            this.groupBoxParameters.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.groupBoxParameters.Name = "groupBoxParameters";
             this.groupBoxParameters.TabStop = false;
             // 
             // cbApplynewInterestforOLB
             // 
             resources.ApplyResources(this.cbApplynewInterestforOLB, "cbApplynewInterestforOLB");
-            this.cbApplynewInterestforOLB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.cbApplynewInterestforOLB.Name = "cbApplynewInterestforOLB";
-            this.cbApplynewInterestforOLB.UseVisualStyleBackColor = true;
             this.cbApplynewInterestforOLB.CheckedChanged += new System.EventHandler(this.cbApplynewInterestforOLB_CheckedChanged);
             // 
             // lbNewInterest
             // 
             resources.ApplyResources(this.lbNewInterest, "lbNewInterest");
-            this.lbNewInterest.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbNewInterest.Name = "lbNewInterest";
             // 
             // dateTimePickerStartDate
@@ -166,13 +160,11 @@
             // labelStartDate
             // 
             resources.ApplyResources(this.labelStartDate, "labelStartDate");
-            this.labelStartDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelStartDate.Name = "labelStartDate";
             // 
             // labelShiftDateDays
             // 
             resources.ApplyResources(this.labelShiftDateDays, "labelShiftDateDays");
-            this.labelShiftDateDays.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelShiftDateDays.Name = "labelShiftDateDays";
             // 
             // tbDateOffset
@@ -186,13 +178,11 @@
             // labelShiftDate
             // 
             resources.ApplyResources(this.labelShiftDate, "labelShiftDate");
-            this.labelShiftDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelShiftDate.Name = "labelShiftDate";
             // 
             // labelMaturityUnity
             // 
             resources.ApplyResources(this.labelMaturityUnity, "labelMaturityUnity");
-            this.labelMaturityUnity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelMaturityUnity.Name = "labelMaturityUnity";
             // 
             // numericUpDownNewIR
@@ -216,25 +206,20 @@
             // labelMaturity
             // 
             resources.ApplyResources(this.labelMaturity, "labelMaturity");
-            this.labelMaturity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelMaturity.Name = "labelMaturity";
             // 
             // labelContractCode
             // 
             resources.ApplyResources(this.labelContractCode, "labelContractCode");
-            this.labelContractCode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelContractCode.Name = "labelContractCode";
             // 
             // labelTitleRescheduleContract
             // 
             resources.ApplyResources(this.labelTitleRescheduleContract, "labelTitleRescheduleContract");
-            this.labelTitleRescheduleContract.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelTitleRescheduleContract.Name = "labelTitleRescheduleContract";
             // 
             // groupBoxConfirm
-            // 
-            this.groupBoxConfirm.BackColor = System.Drawing.Color.Transparent;
-            this.groupBoxConfirm.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris_180;
+            //
             resources.ApplyResources(this.groupBoxConfirm, "groupBoxConfirm");
             this.groupBoxConfirm.Controls.Add(this.buttonCancel);
             this.groupBoxConfirm.Controls.Add(this.buttonConfirm);

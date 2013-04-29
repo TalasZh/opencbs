@@ -1,4 +1,4 @@
-﻿namespace Octopus.GUI.Database
+namespace Octopus.GUI.Database
 {
     partial class FrmDatabaseName
     {
@@ -38,8 +38,7 @@
             this.SuspendLayout();
             // 
             // groupBox1
-            // 
-            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            //
             this.groupBox1.Controls.Add(this.buttonCancel);
             this.groupBox1.Controls.Add(this.buttonSave);
             this.groupBox1.Controls.Add(this.textBoxDatabaseName);
@@ -78,14 +77,12 @@
             // label5
             // 
             resources.ApplyResources(this.label5, "label5");
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.label5.Name = "label5";
             // 
             // FrmDatabaseName
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris_180;
             this.CancelButton = this.buttonCancel;
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;

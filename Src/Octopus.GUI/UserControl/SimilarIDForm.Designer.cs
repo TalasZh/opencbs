@@ -1,4 +1,4 @@
-﻿namespace Octopus.GUI.UserControl
+namespace Octopus.GUI.UserControl
 {
     partial class SimilarIDForm
     {
@@ -62,7 +62,6 @@
             // 
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             resources.ApplyResources(this.label1, "label1");
-            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Name = "label1";
             // 
             // splitContainer2

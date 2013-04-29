@@ -1,4 +1,4 @@
-﻿namespace Octopus.GUI.Accounting
+namespace Octopus.GUI.Accounting
 {
     partial class FiscalYear
     {
@@ -39,13 +39,13 @@
             this.imageListSort = new System.Windows.Forms.ImageList(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.sweetButton1 = new Octopus.GUI.UserControl.SweetButton();
-            this.btnClose = new Octopus.GUI.UserControl.SweetButton();
+            this.sweetButton1 = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
             this.lblTitle = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.sweetButton3 = new Octopus.GUI.UserControl.SweetButton();
-            this.sweetButton2 = new Octopus.GUI.UserControl.SweetButton();
-            this.btnGenerateEvents = new Octopus.GUI.UserControl.SweetButton();
+            this.sweetButton3 = new System.Windows.Forms.Button();
+            this.sweetButton2 = new System.Windows.Forms.Button();
+            this.btnGenerateEvents = new System.Windows.Forms.Button();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
@@ -177,14 +177,7 @@
             this.sweetButton1.AccessibleDescription = null;
             this.sweetButton1.AccessibleName = null;
             resources.ApplyResources(this.sweetButton1, "sweetButton1");
-            this.sweetButton1.BackColor = System.Drawing.Color.Gainsboro;
-            this.sweetButton1.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_bouton;
-            this.sweetButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.sweetButton1.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Close;
-            this.sweetButton1.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_close;
-            this.sweetButton1.Menu = null;
             this.sweetButton1.Name = "sweetButton1";
-            this.sweetButton1.UseVisualStyleBackColor = false;
             this.sweetButton1.Click += new System.EventHandler(this.SweetButton1Click);
             // 
             // btnClose
@@ -192,14 +185,7 @@
             this.btnClose.AccessibleDescription = null;
             this.btnClose.AccessibleName = null;
             resources.ApplyResources(this.btnClose, "btnClose");
-            this.btnClose.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnClose.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_bouton;
-            this.btnClose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnClose.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Close;
-            this.btnClose.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_close;
-            this.btnClose.Menu = null;
             this.btnClose.Name = "btnClose";
-            this.btnClose.UseVisualStyleBackColor = false;
             // 
             // lblTitle
             // 
@@ -207,8 +193,6 @@
             this.lblTitle.AccessibleName = null;
             resources.ApplyResources(this.lblTitle, "lblTitle");
             this.lblTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Image = global::Octopus.GUI.Properties.Resources.theme1_1_pastille_contrat;
             this.lblTitle.Name = "lblTitle";
             // 
             // groupBox1
@@ -216,7 +200,6 @@
             this.groupBox1.AccessibleDescription = null;
             this.groupBox1.AccessibleName = null;
             resources.ApplyResources(this.groupBox1, "groupBox1");
-            this.groupBox1.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris;
             this.groupBox1.Controls.Add(this.sweetButton3);
             this.groupBox1.Controls.Add(this.sweetButton2);
             this.groupBox1.Controls.Add(this.btnGenerateEvents);
@@ -229,14 +212,7 @@
             this.sweetButton3.AccessibleDescription = null;
             this.sweetButton3.AccessibleName = null;
             resources.ApplyResources(this.sweetButton3, "sweetButton3");
-            this.sweetButton3.BackColor = System.Drawing.Color.Gainsboro;
-            this.sweetButton3.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_bouton;
-            this.sweetButton3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.sweetButton3.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Edit;
-            this.sweetButton3.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_new;
-            this.sweetButton3.Menu = null;
             this.sweetButton3.Name = "sweetButton3";
-            this.sweetButton3.UseVisualStyleBackColor = false;
             this.sweetButton3.Click += new System.EventHandler(this.SweetButton3Click);
             // 
             // sweetButton2
@@ -244,14 +220,7 @@
             this.sweetButton2.AccessibleDescription = null;
             this.sweetButton2.AccessibleName = null;
             resources.ApplyResources(this.sweetButton2, "sweetButton2");
-            this.sweetButton2.BackColor = System.Drawing.Color.Gainsboro;
-            this.sweetButton2.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_bouton;
-            this.sweetButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.sweetButton2.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Close;
-            this.sweetButton2.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_new;
-            this.sweetButton2.Menu = null;
             this.sweetButton2.Name = "sweetButton2";
-            this.sweetButton2.UseVisualStyleBackColor = false;
             this.sweetButton2.Click += new System.EventHandler(this.SweetButton2Click);
             // 
             // btnGenerateEvents
@@ -259,14 +228,7 @@
             this.btnGenerateEvents.AccessibleDescription = null;
             this.btnGenerateEvents.AccessibleName = null;
             resources.ApplyResources(this.btnGenerateEvents, "btnGenerateEvents");
-            this.btnGenerateEvents.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnGenerateEvents.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_bouton;
-            this.btnGenerateEvents.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnGenerateEvents.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.New;
-            this.btnGenerateEvents.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_new;
-            this.btnGenerateEvents.Menu = null;
             this.btnGenerateEvents.Name = "btnGenerateEvents";
-            this.btnGenerateEvents.UseVisualStyleBackColor = false;
             this.btnGenerateEvents.Click += new System.EventHandler(this.BtnGenerateEventsClick);
             // 
             // FiscalYear
@@ -275,7 +237,6 @@
             this.AccessibleName = null;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = null;
             this.Controls.Add(this.tableLayoutPanel1);
             this.Font = null;
             this.Name = "FiscalYear";
@@ -300,14 +261,14 @@
         private BrightIdeasSoftware.OLVColumn olvColumn_OpenDate;
         private BrightIdeasSoftware.OLVColumn olvColumn_EndDate;
         private System.Windows.Forms.Panel panel1;
-        private Octopus.GUI.UserControl.SweetButton sweetButton1;
-        private Octopus.GUI.UserControl.SweetButton btnClose;
+        private System.Windows.Forms.Button sweetButton1;
+        private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Label lblTitle;
-        private Octopus.GUI.UserControl.SweetButton btnGenerateEvents;
+        private System.Windows.Forms.Button btnGenerateEvents;
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private Octopus.GUI.UserControl.SweetButton sweetButton3;
-        private Octopus.GUI.UserControl.SweetButton sweetButton2;
+        private System.Windows.Forms.Button sweetButton3;
+        private System.Windows.Forms.Button sweetButton2;
     }
 }

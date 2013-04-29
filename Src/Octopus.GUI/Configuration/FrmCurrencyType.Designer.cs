@@ -1,4 +1,4 @@
-﻿using Octopus.GUI.UserControl;
+using Octopus.GUI.UserControl;
 
 namespace Octopus.GUI.Configuration
 {
@@ -51,9 +51,9 @@ namespace Octopus.GUI.Configuration
             this.textBoxName = new System.Windows.Forms.TextBox();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnAdd = new Octopus.GUI.UserControl.SweetButton();
-            this.buttonExit = new Octopus.GUI.UserControl.SweetButton();
-            this.btnUpdate = new Octopus.GUI.UserControl.SweetButton();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.buttonExit = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
             this.splitContainerVertical.Panel1.SuspendLayout();
             this.splitContainerVertical.Panel2.SuspendLayout();
             this.splitContainerVertical.SuspendLayout();
@@ -127,65 +127,47 @@ namespace Octopus.GUI.Configuration
             // chkUseCents
             // 
             resources.ApplyResources(this.chkUseCents, "chkUseCents");
-            this.chkUseCents.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.chkUseCents.Name = "chkUseCents";
-            this.chkUseCents.UseVisualStyleBackColor = true;
             // 
             // groupBoxSwapRate
-            // 
-            this.groupBoxSwapRate.BackColor = System.Drawing.Color.Transparent;
+            //
             this.groupBoxSwapRate.Controls.Add(this.radioButtonSwappedYes);
             this.groupBoxSwapRate.Controls.Add(this.radioButtonSwappedNo);
             resources.ApplyResources(this.groupBoxSwapRate, "groupBoxSwapRate");
-            this.groupBoxSwapRate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.groupBoxSwapRate.Name = "groupBoxSwapRate";
             this.groupBoxSwapRate.TabStop = false;
             // 
             // radioButtonSwappedYes
             // 
             resources.ApplyResources(this.radioButtonSwappedYes, "radioButtonSwappedYes");
-            this.radioButtonSwappedYes.BackColor = System.Drawing.Color.Transparent;
-            this.radioButtonSwappedYes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.radioButtonSwappedYes.Name = "radioButtonSwappedYes";
-            this.radioButtonSwappedYes.UseVisualStyleBackColor = false;
             // 
             // radioButtonSwappedNo
             // 
             resources.ApplyResources(this.radioButtonSwappedNo, "radioButtonSwappedNo");
-            this.radioButtonSwappedNo.BackColor = System.Drawing.Color.Transparent;
             this.radioButtonSwappedNo.Checked = true;
-            this.radioButtonSwappedNo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.radioButtonSwappedNo.Name = "radioButtonSwappedNo";
             this.radioButtonSwappedNo.TabStop = true;
-            this.radioButtonSwappedNo.UseVisualStyleBackColor = false;
             // 
             // groupBoxSetAsPivot
-            // 
-            this.groupBoxSetAsPivot.BackColor = System.Drawing.Color.Transparent;
+            //
             this.groupBoxSetAsPivot.Controls.Add(this.radioButtonYes);
             this.groupBoxSetAsPivot.Controls.Add(this.radioButtonNo);
             resources.ApplyResources(this.groupBoxSetAsPivot, "groupBoxSetAsPivot");
-            this.groupBoxSetAsPivot.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.groupBoxSetAsPivot.Name = "groupBoxSetAsPivot";
             this.groupBoxSetAsPivot.TabStop = false;
             // 
             // radioButtonYes
             // 
             resources.ApplyResources(this.radioButtonYes, "radioButtonYes");
-            this.radioButtonYes.BackColor = System.Drawing.Color.Transparent;
-            this.radioButtonYes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.radioButtonYes.Name = "radioButtonYes";
-            this.radioButtonYes.UseVisualStyleBackColor = false;
             // 
             // radioButtonNo
             // 
             resources.ApplyResources(this.radioButtonNo, "radioButtonNo");
-            this.radioButtonNo.BackColor = System.Drawing.Color.Transparent;
             this.radioButtonNo.Checked = true;
-            this.radioButtonNo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.radioButtonNo.Name = "radioButtonNo";
             this.radioButtonNo.TabStop = true;
-            this.radioButtonNo.UseVisualStyleBackColor = false;
             // 
             // textBoxCode
             // 
@@ -196,14 +178,12 @@ namespace Octopus.GUI.Configuration
             // 
             resources.ApplyResources(this.labelCode, "labelCode");
             this.labelCode.BackColor = System.Drawing.Color.Transparent;
-            this.labelCode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelCode.Name = "labelCode";
             // 
             // labelName
             // 
             resources.ApplyResources(this.labelName, "labelName");
             this.labelName.BackColor = System.Drawing.Color.Transparent;
-            this.labelName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelName.Name = "labelName";
             // 
             // textBoxName
@@ -226,9 +206,7 @@ namespace Octopus.GUI.Configuration
             this.splitContainer1.Panel2.Controls.Add(this.groupBox1);
             // 
             // groupBox1
-            // 
-            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris_180;
+            //
             resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Controls.Add(this.btnAdd);
             this.groupBox1.Controls.Add(this.buttonExit);
@@ -237,45 +215,28 @@ namespace Octopus.GUI.Configuration
             this.groupBox1.TabStop = false;
             // 
             // btnAdd
-            // 
-            this.btnAdd.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_bouton;
+            //
             resources.ApplyResources(this.btnAdd, "btnAdd");
-            this.btnAdd.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.New;
-            this.btnAdd.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_new;
-            this.btnAdd.Menu = null;
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.BtnAddClick);
             // 
             // buttonExit
             // 
             resources.ApplyResources(this.buttonExit, "buttonExit");
-            this.buttonExit.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_bouton;
-            this.buttonExit.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Close;
-            this.buttonExit.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_close;
-            this.buttonExit.Menu = null;
             this.buttonExit.Name = "buttonExit";
-            this.buttonExit.UseVisualStyleBackColor = true;
             this.buttonExit.Click += new System.EventHandler(this.ButtonExitClick);
             // 
             // btnUpdate
-            // 
-            this.btnUpdate.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_bouton;
+            //
             resources.ApplyResources(this.btnUpdate, "btnUpdate");
-            this.btnUpdate.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Edit;
-            this.btnUpdate.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_new;
-            this.btnUpdate.Menu = null;
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.UseVisualStyleBackColor = true;
             this.btnUpdate.Click += new System.EventHandler(this.ButtonAddClick);
             // 
             // FrmCurrencyType
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.splitContainer1);
-            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -307,8 +268,8 @@ namespace Octopus.GUI.Configuration
         private System.Windows.Forms.TextBox textBoxName;
         private System.Windows.Forms.RadioButton radioButtonNo;
         private System.Windows.Forms.RadioButton radioButtonYes;
-        private SweetButton buttonExit;
-        private SweetButton btnUpdate;
+        private System.Windows.Forms.Button buttonExit;
+        private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.ColumnHeader colCode;
         private System.Windows.Forms.TextBox textBoxCode;
         private System.Windows.Forms.Label labelCode;
@@ -321,6 +282,6 @@ namespace Octopus.GUI.Configuration
         private System.Windows.Forms.GroupBox groupBoxSwapRate;
         private System.Windows.Forms.CheckBox chkUseCents;
         private System.Windows.Forms.ColumnHeader colUseCents;
-        private SweetButton btnAdd;
+        private System.Windows.Forms.Button btnAdd;
     }
 }

@@ -1,5 +1,5 @@
 //Octopus MFS is an integrated suite for managing a Micro Finance Institution: clients, contracts, accounting, reporting and risk
-//Copyright © 2006,2007 OCTO Technology & OXUS Development Network
+//Copyright ï¿½ 2006,2007 OCTO Technology & OXUS Development Network
 //
 //This program is free software; you can redistribute it and/or modify
 //it under the terms of the GNU Lesser General Public License as published by
@@ -40,17 +40,17 @@ namespace Octopus.GUI
     using Octopus.CoreDomain.Contracts.Loans;
 
     /// <summary>
-    /// Description résumée de SearchClientForm.
+    /// Description rï¿½sumï¿½e de SearchClientForm.
     /// </summary>
     public class SearchCreditContractForm : SweetBaseForm
     {
         private GroupBox groupBoxButtonBottom;
         private TextBox textBoxCurrentlyPage;
-        private SweetButton buttonPreview;
-        private SweetButton buttonNext;
+        private System.Windows.Forms.Button buttonPreview;
+        private System.Windows.Forms.Button buttonNext;
         private Label lblTitle;
-        private SweetButton buttonCancel;
-        private SweetButton buttonSearch;
+        private System.Windows.Forms.Button buttonCancel;
+        private System.Windows.Forms.Button buttonSearch;
         private GroupBox groupBoxSearchParameters;
         private TextBox textBoxQuery;
         private IContainer components;
@@ -360,13 +360,13 @@ namespace Octopus.GUI
             this.radioButtonSavingContract = new System.Windows.Forms.RadioButton();
             this.radioButtonCreditContract = new System.Windows.Forms.RadioButton();
             this.textBoxQuery = new System.Windows.Forms.TextBox();
-            this.buttonSearch = new Octopus.GUI.UserControl.SweetButton();
-            this.buttonCancel = new Octopus.GUI.UserControl.SweetButton();
+            this.buttonSearch = new System.Windows.Forms.Button();
+            this.buttonCancel = new System.Windows.Forms.Button();
             this.lblTitle = new System.Windows.Forms.Label();
             this.groupBoxButtonBottom = new System.Windows.Forms.GroupBox();
             this.textBoxCurrentlyPage = new System.Windows.Forms.TextBox();
-            this.buttonPreview = new Octopus.GUI.UserControl.SweetButton();
-            this.buttonNext = new Octopus.GUI.UserControl.SweetButton();
+            this.buttonPreview = new System.Windows.Forms.Button();
+            this.buttonNext = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.listViewContracts = new System.Windows.Forms.ListView();
             this.columnHeaderImage = new System.Windows.Forms.ColumnHeader();
@@ -387,8 +387,7 @@ namespace Octopus.GUI
             this.SuspendLayout();
             // 
             // groupBoxSearchParameters
-            // 
-            this.groupBoxSearchParameters.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris;
+            //
             resources.ApplyResources(this.groupBoxSearchParameters, "groupBoxSearchParameters");
             this.groupBoxSearchParameters.Controls.Add(this.groupBoxContractType);
             this.groupBoxSearchParameters.Controls.Add(this.textBoxQuery);
@@ -397,8 +396,7 @@ namespace Octopus.GUI
             this.groupBoxSearchParameters.TabStop = false;
             // 
             // groupBoxContractType
-            // 
-            this.groupBoxContractType.BackColor = System.Drawing.Color.Transparent;
+            //
             this.groupBoxContractType.Controls.Add(this.radioButtonSavingContract);
             this.groupBoxContractType.Controls.Add(this.radioButtonCreditContract);
             resources.ApplyResources(this.groupBoxContractType, "groupBoxContractType");
@@ -408,18 +406,14 @@ namespace Octopus.GUI
             // radioButtonSavingContract
             // 
             resources.ApplyResources(this.radioButtonSavingContract, "radioButtonSavingContract");
-            this.radioButtonSavingContract.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.radioButtonSavingContract.Name = "radioButtonSavingContract";
-            this.radioButtonSavingContract.UseVisualStyleBackColor = true;
             // 
             // radioButtonCreditContract
             // 
             resources.ApplyResources(this.radioButtonCreditContract, "radioButtonCreditContract");
             this.radioButtonCreditContract.Checked = true;
-            this.radioButtonCreditContract.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.radioButtonCreditContract.Name = "radioButtonCreditContract";
             this.radioButtonCreditContract.TabStop = true;
-            this.radioButtonCreditContract.UseVisualStyleBackColor = true;
             // 
             // textBoxQuery
             // 
@@ -431,38 +425,24 @@ namespace Octopus.GUI
             // buttonSearch
             // 
             resources.ApplyResources(this.buttonSearch, "buttonSearch");
-            this.buttonSearch.BackColor = System.Drawing.Color.Gainsboro;
-            this.buttonSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonSearch.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Search;
-            this.buttonSearch.Image = global::Octopus.GUI.Properties.Resources.theme1_1_search;
-            this.buttonSearch.Menu = null;
             this.buttonSearch.Name = "buttonSearch";
-            this.buttonSearch.UseVisualStyleBackColor = false;
             this.buttonSearch.Click += new System.EventHandler(this.buttonSearch_Click);
             // 
             // buttonCancel
             // 
             resources.ApplyResources(this.buttonCancel, "buttonCancel");
-            this.buttonCancel.BackColor = System.Drawing.Color.Gainsboro;
             this.buttonCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.buttonCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonCancel.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Close;
-            this.buttonCancel.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_close;
-            this.buttonCancel.Menu = null;
             this.buttonCancel.Name = "buttonCancel";
-            this.buttonCancel.UseVisualStyleBackColor = false;
             this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
             // lblTitle
             // 
             this.lblTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             resources.ApplyResources(this.lblTitle, "lblTitle");
-            this.lblTitle.ForeColor = System.Drawing.Color.White;
             this.lblTitle.Name = "lblTitle";
             // 
             // groupBoxButtonBottom
-            // 
-            this.groupBoxButtonBottom.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris_180;
+            //
             resources.ApplyResources(this.groupBoxButtonBottom, "groupBoxButtonBottom");
             this.groupBoxButtonBottom.Controls.Add(this.textBoxCurrentlyPage);
             this.groupBoxButtonBottom.Controls.Add(this.buttonPreview);
@@ -480,25 +460,13 @@ namespace Octopus.GUI
             // buttonPreview
             // 
             resources.ApplyResources(this.buttonPreview, "buttonPreview");
-            this.buttonPreview.BackColor = System.Drawing.Color.Gainsboro;
-            this.buttonPreview.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonPreview.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Previous;
-            this.buttonPreview.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_previous;
-            this.buttonPreview.Menu = null;
             this.buttonPreview.Name = "buttonPreview";
-            this.buttonPreview.UseVisualStyleBackColor = false;
             this.buttonPreview.Click += new System.EventHandler(this.buttonPreview_Click);
             // 
             // buttonNext
             // 
             resources.ApplyResources(this.buttonNext, "buttonNext");
-            this.buttonNext.BackColor = System.Drawing.Color.Gainsboro;
-            this.buttonNext.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonNext.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Next;
-            this.buttonNext.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_next;
-            this.buttonNext.Menu = null;
             this.buttonNext.Name = "buttonNext";
-            this.buttonNext.UseVisualStyleBackColor = false;
             this.buttonNext.Click += new System.EventHandler(this.buttonNext_Click);
             // 
             // tableLayoutPanel1
@@ -588,7 +556,6 @@ namespace Octopus.GUI
             // SearchCreditContractForm
             // 
             this.AcceptButton = this.buttonSearch;
-            this.BackColor = System.Drawing.Color.White;
             this.CancelButton = this.buttonCancel;
             resources.ApplyResources(this, "$this");
             this.Controls.Add(this.tableLayoutPanel1);
@@ -605,7 +572,7 @@ namespace Octopus.GUI
 		}
 
         /// <summary>
-        /// Nettoyage des ressources utilisées.
+        /// Nettoyage des ressources utilisï¿½es.
         /// </summary>
         protected override void Dispose(bool disposing)
         {

@@ -1,4 +1,4 @@
-﻿namespace Octopus.GUI.Export
+namespace Octopus.GUI.Export
 {
     partial class RunPendingInstallmentForm
     {
@@ -60,7 +60,6 @@
             // 
             this.labelTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             resources.ApplyResources(this.labelTitle, "labelTitle");
-            this.labelTitle.ForeColor = System.Drawing.Color.White;
             this.labelTitle.Name = "labelTitle";
             // 
             // progressBar
@@ -73,8 +72,7 @@
             this.progressBar.Value = 0;
             // 
             // groupBox1
-            // 
-            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            //
             this.groupBox1.Controls.Add(this.buttonCancel);
             this.groupBox1.Controls.Add(this.buttonRun);
             resources.ApplyResources(this.groupBox1, "groupBox1");
@@ -103,7 +101,6 @@
             // labelDetails
             // 
             resources.ApplyResources(this.labelDetails, "labelDetails");
-            this.labelDetails.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelDetails.Name = "labelDetails";
             // 
             // RunPendingInstallmentForm

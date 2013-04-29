@@ -1,4 +1,4 @@
-﻿namespace Octopus.GUI.UserControl
+namespace Octopus.GUI.UserControl
 {
     partial class SavingsListUserControl
     {
@@ -42,8 +42,8 @@
             this.columnHeaderSavingCloseDate = new System.Windows.Forms.ColumnHeader();
             this.contextMenuStripSaving = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.buttonAddSaving = new Octopus.GUI.UserControl.SweetButton();
-            this.buttonViewSaving = new Octopus.GUI.UserControl.SweetButton();
+            this.buttonAddSaving = new System.Windows.Forms.Button();
+            this.buttonViewSaving = new System.Windows.Forms.Button();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -118,25 +118,13 @@
             // buttonAddSaving
             // 
             resources.ApplyResources(this.buttonAddSaving, "buttonAddSaving");
-            this.buttonAddSaving.BackColor = System.Drawing.Color.Gainsboro;
-            this.buttonAddSaving.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonAddSaving.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.New;
-            this.buttonAddSaving.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_new;
-            this.buttonAddSaving.Menu = null;
             this.buttonAddSaving.Name = "buttonAddSaving";
-            this.buttonAddSaving.UseVisualStyleBackColor = false;
             this.buttonAddSaving.Click += new System.EventHandler(this.buttonAddSaving_Click);
             // 
             // buttonViewSaving
             // 
             resources.ApplyResources(this.buttonViewSaving, "buttonViewSaving");
-            this.buttonViewSaving.BackColor = System.Drawing.Color.Gainsboro;
-            this.buttonViewSaving.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonViewSaving.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.View;
-            this.buttonViewSaving.Image = global::Octopus.GUI.Properties.Resources.theme1_1_view;
-            this.buttonViewSaving.Menu = null;
             this.buttonViewSaving.Name = "buttonViewSaving";
-            this.buttonViewSaving.UseVisualStyleBackColor = false;
             this.buttonViewSaving.Click += new System.EventHandler(this.buttonViewSaving_Click);
             // 
             // SavingsListUserControl
@@ -163,8 +151,8 @@
         private System.Windows.Forms.ColumnHeader columnHeaderSavingLastActionDate;
         private System.Windows.Forms.ColumnHeader columnHeaderSavingStatus;
         private System.Windows.Forms.ColumnHeader columnHeaderSavingCloseDate;
-        private Octopus.GUI.UserControl.SweetButton buttonAddSaving;
-        private Octopus.GUI.UserControl.SweetButton buttonViewSaving;
+        private System.Windows.Forms.Button buttonAddSaving;
+        private System.Windows.Forms.Button buttonViewSaving;
         private System.Windows.Forms.ContextMenuStrip contextMenuStripSaving;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.ColumnHeader columnHeaderCurrency;

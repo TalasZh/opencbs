@@ -1,4 +1,4 @@
-﻿using System.Globalization;
+using System.Globalization;
 using System.Windows.Forms;
 using Octopus.CoreDomain.FundingLines;
 using Octopus.GUI.UserControl;
@@ -19,9 +19,9 @@ namespace Octopus.GUI.Clients
         private Label labelFirstProjectName;
         private TextBox textBoxProjectAim;
         private Panel panel1;
-        private SweetButton buttonProjectSave;
-        private SweetButton buttonProjectViewContract;
-        private SweetButton buttonProjectAddContract;
+        private System.Windows.Forms.Button buttonProjectSave;
+        private System.Windows.Forms.Button buttonProjectViewContract;
+        private System.Windows.Forms.Button buttonProjectAddContract;
         private ListView lvContracts;
         private ColumnHeader columnHeaderId;
         private ColumnHeader columnHeaderAmount;
@@ -68,9 +68,9 @@ namespace Octopus.GUI.Clients
         private ComboBox comboBoxLoanInstallmentType;
         private Label labelLoanNbOfInstallments;
         private NumericUpDown nudLoanNbOfInstallments;
-        private SweetButton buttonLoanPreview;
-        private SweetButton btnSaveLoan;
-        private SweetButton buttonLoanDisbursment;
+        private System.Windows.Forms.Button buttonLoanPreview;
+        private System.Windows.Forms.Button btnSaveLoan;
+        private System.Windows.Forms.Button buttonLoanDisbursment;
         private ContextMenuStrip contextMenuStripPackage;
         private System.ComponentModel.IContainer components;
         private ListViewEx listViewLoanInstallments;
@@ -128,7 +128,7 @@ namespace Octopus.GUI.Clients
             this.columnHeaderProjectActivity = new System.Windows.Forms.ColumnHeader();
             this.columnHeaderProjectComment = new System.Windows.Forms.ColumnHeader();
             this.gBProjectFollowUp = new System.Windows.Forms.GroupBox();
-            this.buttonProjectAddFollowUp = new Octopus.GUI.UserControl.SweetButton();
+            this.buttonProjectAddFollowUp = new System.Windows.Forms.Button();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.listViewGuarantors = new System.Windows.Forms.ListView();
             this.columnHeaderName = new System.Windows.Forms.ColumnHeader();
@@ -138,10 +138,10 @@ namespace Octopus.GUI.Clients
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnPrintGuarantors = new Octopus.GUI.UserControl.PrintButton();
             this.pnlGuarantorButtons = new System.Windows.Forms.FlowLayoutPanel();
-            this.buttonSelectAGarantors = new Octopus.GUI.UserControl.SweetButton();
-            this.buttonModifyAGarantors = new Octopus.GUI.UserControl.SweetButton();
-            this.buttonViewAGarantors = new Octopus.GUI.UserControl.SweetButton();
-            this.buttonDelete = new Octopus.GUI.UserControl.SweetButton();
+            this.buttonSelectAGarantors = new System.Windows.Forms.Button();
+            this.buttonModifyAGarantors = new System.Windows.Forms.Button();
+            this.buttonViewAGarantors = new System.Windows.Forms.Button();
+            this.buttonDelete = new System.Windows.Forms.Button();
             this.lblCreditCurrency = new System.Windows.Forms.Label();
             this.lblGuarantorsList = new System.Windows.Forms.Label();
             this.listViewCollaterals = new System.Windows.Forms.ListView();
@@ -150,10 +150,10 @@ namespace Octopus.GUI.Clients
             this.columnHeader25 = new System.Windows.Forms.ColumnHeader();
             this.columnHeaderColDesc = new System.Windows.Forms.ColumnHeader();
             this.pnlCollateralButtons = new System.Windows.Forms.FlowLayoutPanel();
-            this.buttonAddCollateral = new Octopus.GUI.UserControl.SweetButton();
-            this.buttonModifyCollateral = new Octopus.GUI.UserControl.SweetButton();
-            this.buttonViewCollateral = new Octopus.GUI.UserControl.SweetButton();
-            this.buttonDelCollateral = new Octopus.GUI.UserControl.SweetButton();
+            this.buttonAddCollateral = new System.Windows.Forms.Button();
+            this.buttonModifyCollateral = new System.Windows.Forms.Button();
+            this.buttonViewCollateral = new System.Windows.Forms.Button();
+            this.buttonDelCollateral = new System.Windows.Forms.Button();
             this.lblCollaterals = new System.Windows.Forms.Label();
             this.splitContainerContracts = new System.Windows.Forms.SplitContainer();
             this.panelLoansContracts = new System.Windows.Forms.Panel();
@@ -171,7 +171,7 @@ namespace Octopus.GUI.Clients
             this.groupBoxProjectDetails = new System.Windows.Forms.GroupBox();
             this.dateTimePickerProjectBeginDate = new System.Windows.Forms.DateTimePicker();
             this.labelProjectDate = new System.Windows.Forms.Label();
-            this.buttonProjectSelectPurpose = new Octopus.GUI.UserControl.SweetButton();
+            this.buttonProjectSelectPurpose = new System.Windows.Forms.Button();
             this.textBoxProjectPurpose = new System.Windows.Forms.TextBox();
             this.labelProjectPurpose = new System.Windows.Forms.Label();
             this.labelProjectName = new System.Windows.Forms.Label();
@@ -181,7 +181,7 @@ namespace Octopus.GUI.Clients
             this.labelFirstProjectName = new System.Windows.Forms.Label();
             this.textBoxProjectAim = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.buttonProjectSave = new Octopus.GUI.UserControl.SweetButton();
+            this.buttonProjectSave = new System.Windows.Forms.Button();
             this.tabControlProject = new System.Windows.Forms.TabControl();
             this.tabPageProjectLoans = new System.Windows.Forms.TabPage();
             this.pnlLoans = new System.Windows.Forms.Panel();
@@ -199,8 +199,8 @@ namespace Octopus.GUI.Clients
             this.columnHeaderStartDate = new System.Windows.Forms.ColumnHeader();
             this.columnHeaderCloseDate = new System.Windows.Forms.ColumnHeader();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.buttonProjectAddContract = new Octopus.GUI.UserControl.SweetButton();
-            this.buttonProjectViewContract = new Octopus.GUI.UserControl.SweetButton();
+            this.buttonProjectAddContract = new System.Windows.Forms.Button();
+            this.buttonProjectViewContract = new System.Windows.Forms.Button();
             this.tabPageProjectAnalyses = new System.Windows.Forms.TabPage();
             this.textBoxProjectConcurrence = new System.Windows.Forms.TextBox();
             this.textBoxProjectMarket = new System.Windows.Forms.TextBox();
@@ -224,12 +224,12 @@ namespace Octopus.GUI.Clients
             this.columnHeaderLoanOLB = new System.Windows.Forms.ColumnHeader();
             this.tabPageLoanCustomizableFields = new System.Windows.Forms.TabPage();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.btnSaveLoan = new Octopus.GUI.UserControl.SweetButton();
-            this.buttonLoanPreview = new Octopus.GUI.UserControl.SweetButton();
-            this.buttonLoanDisbursment = new Octopus.GUI.UserControl.SweetButton();
+            this.btnSaveLoan = new System.Windows.Forms.Button();
+            this.buttonLoanPreview = new System.Windows.Forms.Button();
+            this.buttonLoanDisbursment = new System.Windows.Forms.Button();
             this.btnPrintLoanDetails = new Octopus.GUI.UserControl.PrintButton();
-            this.btnLoanShares = new Octopus.GUI.UserControl.SweetButton();
-            this.btnEditSchedule = new Octopus.GUI.UserControl.SweetButton();
+            this.btnLoanShares = new System.Windows.Forms.Button();
+            this.btnEditSchedule = new System.Windows.Forms.Button();
             this.gbxLoanDetails = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.lblEconomicActivity = new System.Windows.Forms.Label();
@@ -296,7 +296,7 @@ namespace Octopus.GUI.Clients
             this.colAmount = new System.Windows.Forms.ColumnHeader();
             this.lblMinMaxEntryFees = new System.Windows.Forms.Label();
             this.numEntryFees = new System.Windows.Forms.NumericUpDown();
-            this.btnUpdateSettings = new Octopus.GUI.UserControl.SweetButton();
+            this.btnUpdateSettings = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
             this.lbCompulsorySavingsAmount = new System.Windows.Forms.Label();
@@ -327,7 +327,7 @@ namespace Octopus.GUI.Clients
             this.tabPageCreditCommitee = new System.Windows.Forms.TabPage();
             this.flowLayoutPanel7 = new System.Windows.Forms.FlowLayoutPanel();
             this.btnPrintCreditCommittee = new Octopus.GUI.UserControl.PrintButton();
-            this.buttonCreditCommiteeSaveDecision = new Octopus.GUI.UserControl.SweetButton();
+            this.buttonCreditCommiteeSaveDecision = new System.Windows.Forms.Button();
             this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
             this.lblCCStatus = new System.Windows.Forms.Label();
             this.pnlCCStatus = new System.Windows.Forms.Panel();
@@ -355,10 +355,10 @@ namespace Octopus.GUI.Clients
             this.columnHeaderLateDays = new System.Windows.Forms.ColumnHeader();
             this.columnHeaderComment = new System.Windows.Forms.ColumnHeader();
             this.flowLayoutPanel8 = new System.Windows.Forms.FlowLayoutPanel();
-            this.buttonLoanRepaymentRepay = new Octopus.GUI.UserControl.SweetButton();
-            this.buttonLoanReschedule = new Octopus.GUI.UserControl.SweetButton();
-            this.buttonAddTranche = new Octopus.GUI.UserControl.SweetButton();
-            this.btnWriteOff = new Octopus.GUI.UserControl.SweetButton();
+            this.buttonLoanRepaymentRepay = new System.Windows.Forms.Button();
+            this.buttonLoanReschedule = new System.Windows.Forms.Button();
+            this.buttonAddTranche = new System.Windows.Forms.Button();
+            this.btnWriteOff = new System.Windows.Forms.Button();
             this.btnPrintLoanRepayment = new Octopus.GUI.UserControl.PrintButton();
             this.tabPageEvents = new System.Windows.Forms.TabPage();
             this.lvEvents = new Octopus.GUI.UserControl.ListViewEx();
@@ -382,8 +382,8 @@ namespace Octopus.GUI.Clients
             this.colIsDeleted = new System.Windows.Forms.ColumnHeader();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnPrintLoanEvents = new Octopus.GUI.UserControl.PrintButton();
-            this.btnWaiveFee = new Octopus.GUI.UserControl.SweetButton();
-            this.btnDeleteEvent = new Octopus.GUI.UserControl.SweetButton();
+            this.btnWaiveFee = new System.Windows.Forms.Button();
+            this.btnDeleteEvent = new System.Windows.Forms.Button();
             this.imageListTab = new System.Windows.Forms.ImageList(this.components);
             this.richTextBoxStatus = new System.Windows.Forms.RichTextBox();
             this.lblLoanStatus = new System.Windows.Forms.Label();
@@ -491,19 +491,19 @@ namespace Octopus.GUI.Clients
             this.btSearchContract2 = new System.Windows.Forms.Button();
             this.lblTermTransferToAccount = new System.Windows.Forms.Label();
             this.flowLayoutPanel9 = new System.Windows.Forms.FlowLayoutPanel();
-            this.btSavingsUpdate = new Octopus.GUI.UserControl.SweetButton();
-            this.buttonSaveSaving = new Octopus.GUI.UserControl.SweetButton();
-            this.buttonFirstDeposit = new Octopus.GUI.UserControl.SweetButton();
-            this.buttonCloseSaving = new Octopus.GUI.UserControl.SweetButton();
-            this.buttonReopenSaving = new Octopus.GUI.UserControl.SweetButton();
+            this.btSavingsUpdate = new System.Windows.Forms.Button();
+            this.buttonSaveSaving = new System.Windows.Forms.Button();
+            this.buttonFirstDeposit = new System.Windows.Forms.Button();
+            this.buttonCloseSaving = new System.Windows.Forms.Button();
+            this.buttonReopenSaving = new System.Windows.Forms.Button();
             this.pnlSavingsButtons = new System.Windows.Forms.FlowLayoutPanel();
-            this.buttonSavingsOperations = new Octopus.GUI.UserControl.SweetButton();
+            this.buttonSavingsOperations = new System.Windows.Forms.Button();
             this.menuBtnAddSavingOperation = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.savingDepositToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.savingWithdrawToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.savingTransferToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.specialOperationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.btCancelLastSavingEvent = new Octopus.GUI.UserControl.SweetButton();
+            this.btCancelLastSavingEvent = new System.Windows.Forms.Button();
             this.btnPrintSavings = new Octopus.GUI.UserControl.PrintButton();
             this.groupBoxSaving = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
@@ -717,15 +717,11 @@ namespace Octopus.GUI.Clients
             // lProjectFinancialPlanType
             // 
             resources.ApplyResources(this.lProjectFinancialPlanType, "lProjectFinancialPlanType");
-            this.lProjectFinancialPlanType.BackColor = System.Drawing.Color.Transparent;
-            this.lProjectFinancialPlanType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lProjectFinancialPlanType.Name = "lProjectFinancialPlanType";
             // 
             // lProjectFinancialPlanAmount
             // 
             resources.ApplyResources(this.lProjectFinancialPlanAmount, "lProjectFinancialPlanAmount");
-            this.lProjectFinancialPlanAmount.BackColor = System.Drawing.Color.Transparent;
-            this.lProjectFinancialPlanAmount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lProjectFinancialPlanAmount.Name = "lProjectFinancialPlanAmount";
             // 
             // tBProjectFinancialPlanTotal
@@ -750,15 +746,11 @@ namespace Octopus.GUI.Clients
             // lProjectFinancialPlanTotalAmount
             // 
             resources.ApplyResources(this.lProjectFinancialPlanTotalAmount, "lProjectFinancialPlanTotalAmount");
-            this.lProjectFinancialPlanTotalAmount.BackColor = System.Drawing.Color.Transparent;
-            this.lProjectFinancialPlanTotalAmount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lProjectFinancialPlanTotalAmount.Name = "lProjectFinancialPlanTotalAmount";
             // 
             // lProjectNbOfNewJobs
             // 
             resources.ApplyResources(this.lProjectNbOfNewJobs, "lProjectNbOfNewJobs");
-            this.lProjectNbOfNewJobs.BackColor = System.Drawing.Color.Transparent;
-            this.lProjectNbOfNewJobs.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lProjectNbOfNewJobs.Name = "lProjectNbOfNewJobs";
             // 
             // tBProjectCA
@@ -768,17 +760,13 @@ namespace Octopus.GUI.Clients
             this.tBProjectCA.Name = "tBProjectCA";
             // 
             // lProjectCA
-            // 
-            this.lProjectCA.BackColor = System.Drawing.Color.Transparent;
+            //
             resources.ApplyResources(this.lProjectCA, "lProjectCA");
-            this.lProjectCA.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lProjectCA.Name = "lProjectCA";
             // 
             // lProjectCorporateName
             // 
             resources.ApplyResources(this.lProjectCorporateName, "lProjectCorporateName");
-            this.lProjectCorporateName.BackColor = System.Drawing.Color.Transparent;
-            this.lProjectCorporateName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lProjectCorporateName.Name = "lProjectCorporateName";
             // 
             // cBProjectAffiliation
@@ -811,15 +799,11 @@ namespace Octopus.GUI.Clients
             // lProjectCorporateSIRET
             // 
             resources.ApplyResources(this.lProjectCorporateSIRET, "lProjectCorporateSIRET");
-            this.lProjectCorporateSIRET.BackColor = System.Drawing.Color.Transparent;
-            this.lProjectCorporateSIRET.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lProjectCorporateSIRET.Name = "lProjectCorporateSIRET";
             // 
             // lProjectJuridicStatus
             // 
             resources.ApplyResources(this.lProjectJuridicStatus, "lProjectJuridicStatus");
-            this.lProjectJuridicStatus.BackColor = System.Drawing.Color.Transparent;
-            this.lProjectJuridicStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lProjectJuridicStatus.Name = "lProjectJuridicStatus";
             // 
             // tBProjectCorporateSIRET
@@ -831,21 +815,16 @@ namespace Octopus.GUI.Clients
             // lProjectAffiliation
             // 
             resources.ApplyResources(this.lProjectAffiliation, "lProjectAffiliation");
-            this.lProjectAffiliation.BackColor = System.Drawing.Color.Transparent;
-            this.lProjectAffiliation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lProjectAffiliation.Name = "lProjectAffiliation";
             // 
             // lProjectFiscalStatus
             // 
             resources.ApplyResources(this.lProjectFiscalStatus, "lProjectFiscalStatus");
-            this.lProjectFiscalStatus.BackColor = System.Drawing.Color.Transparent;
-            this.lProjectFiscalStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lProjectFiscalStatus.Name = "lProjectFiscalStatus";
             // 
             // gBProjectAddress
             // 
             resources.ApplyResources(this.gBProjectAddress, "gBProjectAddress");
-            this.gBProjectAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.gBProjectAddress.Name = "gBProjectAddress";
             this.gBProjectAddress.TabStop = false;
             // 
@@ -919,13 +898,7 @@ namespace Octopus.GUI.Clients
             // buttonProjectAddFollowUp
             // 
             resources.ApplyResources(this.buttonProjectAddFollowUp, "buttonProjectAddFollowUp");
-            this.buttonProjectAddFollowUp.BackColor = System.Drawing.Color.Gainsboro;
-            this.buttonProjectAddFollowUp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonProjectAddFollowUp.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.New;
-            this.buttonProjectAddFollowUp.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_save;
-            this.buttonProjectAddFollowUp.Menu = null;
             this.buttonProjectAddFollowUp.Name = "buttonProjectAddFollowUp";
-            this.buttonProjectAddFollowUp.UseVisualStyleBackColor = false;
             this.buttonProjectAddFollowUp.Click += new System.EventHandler(this.buttonProjectAddFollowUp_Click);
             // 
             // splitContainer1
@@ -1006,65 +979,38 @@ namespace Octopus.GUI.Clients
             this.pnlGuarantorButtons.Name = "pnlGuarantorButtons";
             // 
             // buttonSelectAGarantors
-            // 
-            this.buttonSelectAGarantors.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.buttonSelectAGarantors, "buttonSelectAGarantors");
-            this.buttonSelectAGarantors.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonSelectAGarantors.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.New;
-            this.buttonSelectAGarantors.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_new;
-            this.buttonSelectAGarantors.Menu = null;
             this.buttonSelectAGarantors.Name = "buttonSelectAGarantors";
-            this.buttonSelectAGarantors.UseVisualStyleBackColor = false;
             this.buttonSelectAGarantors.Click += new System.EventHandler(this.buttonSelectAGarantors_Click);
             // 
             // buttonModifyAGarantors
-            // 
-            this.buttonModifyAGarantors.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.buttonModifyAGarantors, "buttonModifyAGarantors");
-            this.buttonModifyAGarantors.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonModifyAGarantors.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Validity;
-            this.buttonModifyAGarantors.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_validity;
-            this.buttonModifyAGarantors.Menu = null;
             this.buttonModifyAGarantors.Name = "buttonModifyAGarantors";
-            this.buttonModifyAGarantors.UseVisualStyleBackColor = false;
             this.buttonModifyAGarantors.Click += new System.EventHandler(this.buttonModifyAGarantors_Click);
             // 
             // buttonViewAGarantors
-            // 
-            this.buttonViewAGarantors.BackColor = System.Drawing.Color.Gainsboro;
-            this.buttonViewAGarantors.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_bouton;
+            //
             resources.ApplyResources(this.buttonViewAGarantors, "buttonViewAGarantors");
-            this.buttonViewAGarantors.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonViewAGarantors.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.View;
-            this.buttonViewAGarantors.Image = global::Octopus.GUI.Properties.Resources.theme1_1_view;
-            this.buttonViewAGarantors.Menu = null;
             this.buttonViewAGarantors.Name = "buttonViewAGarantors";
-            this.buttonViewAGarantors.UseVisualStyleBackColor = false;
             this.buttonViewAGarantors.Click += new System.EventHandler(this.buttonViewAGarantors_Click);
             // 
             // buttonDelete
-            // 
-            this.buttonDelete.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.buttonDelete, "buttonDelete");
-            this.buttonDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonDelete.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Delete;
-            this.buttonDelete.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_delete;
-            this.buttonDelete.Menu = null;
             this.buttonDelete.Name = "buttonDelete";
-            this.buttonDelete.UseVisualStyleBackColor = false;
             this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
             // 
             // lblCreditCurrency
             // 
             resources.ApplyResources(this.lblCreditCurrency, "lblCreditCurrency");
-            this.lblCreditCurrency.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblCreditCurrency.Name = "lblCreditCurrency";
             // 
             // lblGuarantorsList
             // 
             this.lblGuarantorsList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             resources.ApplyResources(this.lblGuarantorsList, "lblGuarantorsList");
-            this.lblGuarantorsList.ForeColor = System.Drawing.Color.White;
             this.lblGuarantorsList.Name = "lblGuarantorsList";
             // 
             // listViewCollaterals
@@ -1108,58 +1054,33 @@ namespace Octopus.GUI.Clients
             this.pnlCollateralButtons.Name = "pnlCollateralButtons";
             // 
             // buttonAddCollateral
-            // 
-            this.buttonAddCollateral.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.buttonAddCollateral, "buttonAddCollateral");
-            this.buttonAddCollateral.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonAddCollateral.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.New;
-            this.buttonAddCollateral.Menu = null;
             this.buttonAddCollateral.Name = "buttonAddCollateral";
-            this.buttonAddCollateral.UseVisualStyleBackColor = false;
             this.buttonAddCollateral.Click += new System.EventHandler(this.buttonAddCollateral_Click);
             // 
             // buttonModifyCollateral
-            // 
-            this.buttonModifyCollateral.BackColor = System.Drawing.Color.Gainsboro;
-            this.buttonModifyCollateral.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_bouton;
+            //
             resources.ApplyResources(this.buttonModifyCollateral, "buttonModifyCollateral");
-            this.buttonModifyCollateral.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonModifyCollateral.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Validity;
-            this.buttonModifyCollateral.Menu = null;
             this.buttonModifyCollateral.Name = "buttonModifyCollateral";
-            this.buttonModifyCollateral.UseVisualStyleBackColor = false;
             this.buttonModifyCollateral.Click += new System.EventHandler(this.buttonModifyCollateral_Click);
             // 
             // buttonViewCollateral
-            // 
-            this.buttonViewCollateral.BackColor = System.Drawing.Color.Gainsboro;
-            this.buttonViewCollateral.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_bouton;
+            //
             resources.ApplyResources(this.buttonViewCollateral, "buttonViewCollateral");
-            this.buttonViewCollateral.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonViewCollateral.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.View;
-            this.buttonViewCollateral.Image = global::Octopus.GUI.Properties.Resources.theme1_1_view;
-            this.buttonViewCollateral.Menu = null;
             this.buttonViewCollateral.Name = "buttonViewCollateral";
-            this.buttonViewCollateral.UseVisualStyleBackColor = false;
             this.buttonViewCollateral.Click += new System.EventHandler(this.buttonViewCollateral_Click);
             // 
             // buttonDelCollateral
-            // 
-            this.buttonDelCollateral.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.buttonDelCollateral, "buttonDelCollateral");
-            this.buttonDelCollateral.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonDelCollateral.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Delete;
-            this.buttonDelCollateral.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_delete;
-            this.buttonDelCollateral.Menu = null;
             this.buttonDelCollateral.Name = "buttonDelCollateral";
-            this.buttonDelCollateral.UseVisualStyleBackColor = false;
             this.buttonDelCollateral.Click += new System.EventHandler(this.buttonDelCollateral_Click);
             // 
             // lblCollaterals
             // 
             this.lblCollaterals.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             resources.ApplyResources(this.lblCollaterals, "lblCollaterals");
-            this.lblCollaterals.ForeColor = System.Drawing.Color.White;
             this.lblCollaterals.Name = "lblCollaterals";
             // 
             // splitContainerContracts
@@ -1186,7 +1107,6 @@ namespace Octopus.GUI.Clients
             // 
             this.labelLoansContracts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             resources.ApplyResources(this.labelLoansContracts, "labelLoansContracts");
-            this.labelLoansContracts.ForeColor = System.Drawing.Color.White;
             this.labelLoansContracts.Name = "labelLoansContracts";
             // 
             // panelSavingsContracts
@@ -1198,7 +1118,6 @@ namespace Octopus.GUI.Clients
             // 
             this.labelSavingsContracts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             resources.ApplyResources(this.labelSavingsContracts, "labelSavingsContracts");
-            this.labelSavingsContracts.ForeColor = System.Drawing.Color.White;
             this.labelSavingsContracts.Name = "labelSavingsContracts";
             // 
             // splitContainer3
@@ -1246,14 +1165,12 @@ namespace Octopus.GUI.Clients
             // 
             resources.ApplyResources(this.tabPageDetails, "tabPageDetails");
             this.tabPageDetails.Name = "tabPageDetails";
-            this.tabPageDetails.UseVisualStyleBackColor = true;
             // 
             // tabPageProject
             // 
             this.tabPageProject.Controls.Add(this.tableLayoutPanel1);
             resources.ApplyResources(this.tabPageProject, "tabPageProject");
             this.tabPageProject.Name = "tabPageProject";
-            this.tabPageProject.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel1
             // 
@@ -1264,8 +1181,7 @@ namespace Octopus.GUI.Clients
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             // 
             // groupBoxProjectDetails
-            // 
-            this.groupBoxProjectDetails.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris;
+            //
             resources.ApplyResources(this.groupBoxProjectDetails, "groupBoxProjectDetails");
             this.groupBoxProjectDetails.Controls.Add(this.dateTimePickerProjectBeginDate);
             this.groupBoxProjectDetails.Controls.Add(this.labelProjectDate);
@@ -1291,18 +1207,12 @@ namespace Octopus.GUI.Clients
             // 
             resources.ApplyResources(this.labelProjectDate, "labelProjectDate");
             this.labelProjectDate.BackColor = System.Drawing.Color.Transparent;
-            this.labelProjectDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelProjectDate.Name = "labelProjectDate";
             // 
             // buttonProjectSelectPurpose
-            // 
-            this.buttonProjectSelectPurpose.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_bouton;
+            //
             resources.ApplyResources(this.buttonProjectSelectPurpose, "buttonProjectSelectPurpose");
-            this.buttonProjectSelectPurpose.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.View;
-            this.buttonProjectSelectPurpose.Image = global::Octopus.GUI.Properties.Resources.theme1_1_view;
-            this.buttonProjectSelectPurpose.Menu = null;
             this.buttonProjectSelectPurpose.Name = "buttonProjectSelectPurpose";
-            this.buttonProjectSelectPurpose.UseVisualStyleBackColor = true;
             this.buttonProjectSelectPurpose.Click += new System.EventHandler(this.buttonProjectSelectPurpose_Click);
             // 
             // textBoxProjectPurpose
@@ -1316,14 +1226,12 @@ namespace Octopus.GUI.Clients
             // 
             resources.ApplyResources(this.labelProjectPurpose, "labelProjectPurpose");
             this.labelProjectPurpose.BackColor = System.Drawing.Color.Transparent;
-            this.labelProjectPurpose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelProjectPurpose.Name = "labelProjectPurpose";
             // 
             // labelProjectName
             // 
             resources.ApplyResources(this.labelProjectName, "labelProjectName");
             this.labelProjectName.BackColor = System.Drawing.Color.Transparent;
-            this.labelProjectName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelProjectName.Name = "labelProjectName";
             // 
             // textBoxProjectName
@@ -1336,7 +1244,6 @@ namespace Octopus.GUI.Clients
             // 
             resources.ApplyResources(this.labelProjectCode, "labelProjectCode");
             this.labelProjectCode.BackColor = System.Drawing.Color.Transparent;
-            this.labelProjectCode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelProjectCode.Name = "labelProjectCode";
             // 
             // textBoxProjectCode
@@ -1350,7 +1257,6 @@ namespace Octopus.GUI.Clients
             // 
             resources.ApplyResources(this.labelFirstProjectName, "labelFirstProjectName");
             this.labelFirstProjectName.BackColor = System.Drawing.Color.Transparent;
-            this.labelFirstProjectName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelFirstProjectName.Name = "labelFirstProjectName";
             // 
             // textBoxProjectAim
@@ -1368,13 +1274,7 @@ namespace Octopus.GUI.Clients
             // buttonProjectSave
             // 
             resources.ApplyResources(this.buttonProjectSave, "buttonProjectSave");
-            this.buttonProjectSave.BackColor = System.Drawing.Color.Gainsboro;
-            this.buttonProjectSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonProjectSave.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Save;
-            this.buttonProjectSave.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_save;
-            this.buttonProjectSave.Menu = null;
             this.buttonProjectSave.Name = "buttonProjectSave";
-            this.buttonProjectSave.UseVisualStyleBackColor = false;
             this.buttonProjectSave.Click += new System.EventHandler(this.buttonSaveProject_Click);
             // 
             // tabControlProject
@@ -1392,7 +1292,6 @@ namespace Octopus.GUI.Clients
             this.tabPageProjectLoans.Controls.Add(this.pnlLoans);
             resources.ApplyResources(this.tabPageProjectLoans, "tabPageProjectLoans");
             this.tabPageProjectLoans.Name = "tabPageProjectLoans";
-            this.tabPageProjectLoans.UseVisualStyleBackColor = true;
             // 
             // pnlLoans
             // 
@@ -1484,30 +1383,17 @@ namespace Octopus.GUI.Clients
             // buttonProjectAddContract
             // 
             resources.ApplyResources(this.buttonProjectAddContract, "buttonProjectAddContract");
-            this.buttonProjectAddContract.BackColor = System.Drawing.Color.Gainsboro;
-            this.buttonProjectAddContract.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonProjectAddContract.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.New;
-            this.buttonProjectAddContract.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_new;
-            this.buttonProjectAddContract.Menu = null;
             this.buttonProjectAddContract.Name = "buttonProjectAddContract";
-            this.buttonProjectAddContract.UseVisualStyleBackColor = false;
             this.buttonProjectAddContract.Click += new System.EventHandler(this.buttonAddContract_Click);
             // 
             // buttonProjectViewContract
             // 
             resources.ApplyResources(this.buttonProjectViewContract, "buttonProjectViewContract");
-            this.buttonProjectViewContract.BackColor = System.Drawing.Color.Gainsboro;
-            this.buttonProjectViewContract.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonProjectViewContract.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.View;
-            this.buttonProjectViewContract.Image = global::Octopus.GUI.Properties.Resources.theme1_1_view;
-            this.buttonProjectViewContract.Menu = null;
             this.buttonProjectViewContract.Name = "buttonProjectViewContract";
-            this.buttonProjectViewContract.UseVisualStyleBackColor = false;
             this.buttonProjectViewContract.Click += new System.EventHandler(this.buttonProjectViewContract_Click);
             // 
             // tabPageProjectAnalyses
-            // 
-            this.tabPageProjectAnalyses.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris_180;
+            //
             resources.ApplyResources(this.tabPageProjectAnalyses, "tabPageProjectAnalyses");
             this.tabPageProjectAnalyses.Controls.Add(this.textBoxProjectConcurrence);
             this.tabPageProjectAnalyses.Controls.Add(this.textBoxProjectMarket);
@@ -1518,7 +1404,6 @@ namespace Octopus.GUI.Clients
             this.tabPageProjectAnalyses.Controls.Add(this.labelProjectExperience);
             this.tabPageProjectAnalyses.Controls.Add(this.labelProjectAbilities);
             this.tabPageProjectAnalyses.Name = "tabPageProjectAnalyses";
-            this.tabPageProjectAnalyses.UseVisualStyleBackColor = true;
             // 
             // textBoxProjectConcurrence
             // 
@@ -1534,14 +1419,12 @@ namespace Octopus.GUI.Clients
             // 
             resources.ApplyResources(this.labelProjectConcurrence, "labelProjectConcurrence");
             this.labelProjectConcurrence.BackColor = System.Drawing.Color.Transparent;
-            this.labelProjectConcurrence.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelProjectConcurrence.Name = "labelProjectConcurrence";
             // 
             // labelProjectMarket
             // 
             resources.ApplyResources(this.labelProjectMarket, "labelProjectMarket");
             this.labelProjectMarket.BackColor = System.Drawing.Color.Transparent;
-            this.labelProjectMarket.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelProjectMarket.Name = "labelProjectMarket";
             // 
             // textBoxProjectAbilities
@@ -1558,30 +1441,25 @@ namespace Octopus.GUI.Clients
             // 
             resources.ApplyResources(this.labelProjectExperience, "labelProjectExperience");
             this.labelProjectExperience.BackColor = System.Drawing.Color.Transparent;
-            this.labelProjectExperience.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelProjectExperience.Name = "labelProjectExperience";
             // 
             // labelProjectAbilities
             // 
             resources.ApplyResources(this.labelProjectAbilities, "labelProjectAbilities");
             this.labelProjectAbilities.BackColor = System.Drawing.Color.Transparent;
-            this.labelProjectAbilities.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelProjectAbilities.Name = "labelProjectAbilities";
             // 
             // tabPageCorporate
-            // 
-            this.tabPageCorporate.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris_180;
+            //
             resources.ApplyResources(this.tabPageCorporate, "tabPageCorporate");
             this.tabPageCorporate.Controls.Add(this.splitContainer10);
             this.tabPageCorporate.Name = "tabPageCorporate";
-            this.tabPageCorporate.UseVisualStyleBackColor = true;
             // 
             // tabPageFollowUp
             // 
             this.tabPageFollowUp.Controls.Add(this.splitContainer11);
             resources.ApplyResources(this.tabPageFollowUp, "tabPageFollowUp");
             this.tabPageFollowUp.Name = "tabPageFollowUp";
-            this.tabPageFollowUp.UseVisualStyleBackColor = true;
             // 
             // tabPageLoansDetails
             // 
@@ -1590,7 +1468,6 @@ namespace Octopus.GUI.Clients
             this.tabPageLoansDetails.Controls.Add(this.gbxLoanDetails);
             resources.ApplyResources(this.tabPageLoansDetails, "tabPageLoansDetails");
             this.tabPageLoansDetails.Name = "tabPageLoansDetails";
-            this.tabPageLoansDetails.UseVisualStyleBackColor = true;
             // 
             // tclLoanDetails
             // 
@@ -1605,7 +1482,6 @@ namespace Octopus.GUI.Clients
             this.tabPageInstallments.Controls.Add(this.listViewLoanInstallments);
             resources.ApplyResources(this.tabPageInstallments, "tabPageInstallments");
             this.tabPageInstallments.Name = "tabPageInstallments";
-            this.tabPageInstallments.UseVisualStyleBackColor = true;
             // 
             // listViewLoanInstallments
             // 
@@ -1652,7 +1528,6 @@ namespace Octopus.GUI.Clients
             // 
             resources.ApplyResources(this.tabPageLoanCustomizableFields, "tabPageLoanCustomizableFields");
             this.tabPageLoanCustomizableFields.Name = "tabPageLoanCustomizableFields";
-            this.tabPageLoanCustomizableFields.UseVisualStyleBackColor = true;
             // 
             // flowLayoutPanel2
             // 
@@ -1666,37 +1541,22 @@ namespace Octopus.GUI.Clients
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             // 
             // btnSaveLoan
-            // 
-            this.btnSaveLoan.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.btnSaveLoan, "btnSaveLoan");
-            this.btnSaveLoan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnSaveLoan.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Save;
-            this.btnSaveLoan.Menu = null;
             this.btnSaveLoan.Name = "btnSaveLoan";
-            this.btnSaveLoan.UseVisualStyleBackColor = false;
             this.btnSaveLoan.Click += new System.EventHandler(this.buttonLoanSave_Click);
             // 
             // buttonLoanPreview
-            // 
-            this.buttonLoanPreview.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.buttonLoanPreview, "buttonLoanPreview");
-            this.buttonLoanPreview.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonLoanPreview.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.View;
-            this.buttonLoanPreview.Menu = null;
             this.buttonLoanPreview.Name = "buttonLoanPreview";
-            this.buttonLoanPreview.UseVisualStyleBackColor = false;
             this.buttonLoanPreview.Click += new System.EventHandler(this.buttonLoanPreview_Click);
             // 
             // buttonLoanDisbursment
-            // 
-            this.buttonLoanDisbursment.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.buttonLoanDisbursment, "buttonLoanDisbursment");
-            this.buttonLoanDisbursment.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonLoanDisbursment.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Export;
-            this.buttonLoanDisbursment.Menu = null;
             this.buttonLoanDisbursment.Name = "buttonLoanDisbursment";
             this.buttonLoanDisbursment.Tag = true;
-            this.buttonLoanDisbursment.UseVisualStyleBackColor = false;
             this.buttonLoanDisbursment.Click += new System.EventHandler(this.buttonLoanDisbursment_Click);
             // 
             // btnPrintLoanDetails
@@ -1711,32 +1571,21 @@ namespace Octopus.GUI.Clients
             this.btnPrintLoanDetails.UseVisualStyleBackColor = true;
             // 
             // btnLoanShares
-            // 
-            this.btnLoanShares.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.btnLoanShares, "btnLoanShares");
-            this.btnLoanShares.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnLoanShares.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.None;
-            this.btnLoanShares.Menu = null;
             this.btnLoanShares.Name = "btnLoanShares";
-            this.btnLoanShares.UseVisualStyleBackColor = false;
             this.btnLoanShares.Click += new System.EventHandler(this.btnLoanShares_Click);
             // 
             // btnEditSchedule
-            // 
-            this.btnEditSchedule.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.btnEditSchedule, "btnEditSchedule");
-            this.btnEditSchedule.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnEditSchedule.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Reschedule;
-            this.btnEditSchedule.Menu = null;
             this.btnEditSchedule.Name = "btnEditSchedule";
-            this.btnEditSchedule.UseVisualStyleBackColor = false;
             this.btnEditSchedule.Click += new System.EventHandler(this.btnEditSchedule_Click);
             // 
             // gbxLoanDetails
             // 
             resources.ApplyResources(this.gbxLoanDetails, "gbxLoanDetails");
             this.gbxLoanDetails.Controls.Add(this.tableLayoutPanel4);
-            this.gbxLoanDetails.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.gbxLoanDetails.Name = "gbxLoanDetails";
             this.gbxLoanDetails.TabStop = false;
             // 
@@ -1778,28 +1627,24 @@ namespace Octopus.GUI.Clients
             // 
             resources.ApplyResources(this.lblEconomicActivity, "lblEconomicActivity");
             this.lblEconomicActivity.BackColor = System.Drawing.Color.Transparent;
-            this.lblEconomicActivity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblEconomicActivity.Name = "lblEconomicActivity";
             // 
             // labelDateOffirstInstallment
             // 
             resources.ApplyResources(this.labelDateOffirstInstallment, "labelDateOffirstInstallment");
             this.labelDateOffirstInstallment.BackColor = System.Drawing.Color.Transparent;
-            this.labelDateOffirstInstallment.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelDateOffirstInstallment.Name = "labelDateOffirstInstallment";
             // 
             // labelLoanAmountMinMax
             // 
             resources.ApplyResources(this.labelLoanAmountMinMax, "labelLoanAmountMinMax");
             this.labelLoanAmountMinMax.BackColor = System.Drawing.Color.Transparent;
-            this.labelLoanAmountMinMax.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelLoanAmountMinMax.Name = "labelLoanAmountMinMax";
             // 
             // labelLoanNbOfInstallmentsMinMax
             // 
             resources.ApplyResources(this.labelLoanNbOfInstallmentsMinMax, "labelLoanNbOfInstallmentsMinMax");
             this.labelLoanNbOfInstallmentsMinMax.BackColor = System.Drawing.Color.Transparent;
-            this.labelLoanNbOfInstallmentsMinMax.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelLoanNbOfInstallmentsMinMax.Name = "labelLoanNbOfInstallmentsMinMax";
             // 
             // dtpDateOfFirstInstallment
@@ -1812,14 +1657,12 @@ namespace Octopus.GUI.Clients
             // 
             resources.ApplyResources(this.labelLoanGracePeriodMinMax, "labelLoanGracePeriodMinMax");
             this.labelLoanGracePeriodMinMax.BackColor = System.Drawing.Color.Transparent;
-            this.labelLoanGracePeriodMinMax.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelLoanGracePeriodMinMax.Name = "labelLoanGracePeriodMinMax";
             // 
             // labelLoanContractCode
             // 
             resources.ApplyResources(this.labelLoanContractCode, "labelLoanContractCode");
             this.labelLoanContractCode.BackColor = System.Drawing.Color.Transparent;
-            this.labelLoanContractCode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelLoanContractCode.Name = "labelLoanContractCode";
             // 
             // textBoxLoanContractCode
@@ -1833,14 +1676,12 @@ namespace Octopus.GUI.Clients
             // 
             resources.ApplyResources(this.labelLoanAmount, "labelLoanAmount");
             this.labelLoanAmount.BackColor = System.Drawing.Color.Transparent;
-            this.labelLoanAmount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelLoanAmount.Name = "labelLoanAmount";
             // 
             // labelLoanInterestRate
             // 
             resources.ApplyResources(this.labelLoanInterestRate, "labelLoanInterestRate");
             this.labelLoanInterestRate.BackColor = System.Drawing.Color.Transparent;
-            this.labelLoanInterestRate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelLoanInterestRate.Name = "labelLoanInterestRate";
             // 
             // dateLoanStart
@@ -1854,28 +1695,23 @@ namespace Octopus.GUI.Clients
             // 
             resources.ApplyResources(this.labelLoanNbOfInstallments, "labelLoanNbOfInstallments");
             this.labelLoanNbOfInstallments.BackColor = System.Drawing.Color.Transparent;
-            this.labelLoanNbOfInstallments.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelLoanNbOfInstallments.Name = "labelLoanNbOfInstallments";
             // 
             // labelLoanStartDate
             // 
             resources.ApplyResources(this.labelLoanStartDate, "labelLoanStartDate");
             this.labelLoanStartDate.BackColor = System.Drawing.Color.Transparent;
-            this.labelLoanStartDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelLoanStartDate.Name = "labelLoanStartDate";
             // 
             // lbLoanInterestRateMinMax
             // 
             resources.ApplyResources(this.lbLoanInterestRateMinMax, "lbLoanInterestRateMinMax");
-            this.lbLoanInterestRateMinMax.BackColor = System.Drawing.Color.Transparent;
-            this.lbLoanInterestRateMinMax.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbLoanInterestRateMinMax.Name = "lbLoanInterestRateMinMax";
             // 
             // labelLoanGracePeriod
             // 
             resources.ApplyResources(this.labelLoanGracePeriod, "labelLoanGracePeriod");
             this.labelLoanGracePeriod.BackColor = System.Drawing.Color.Transparent;
-            this.labelLoanGracePeriod.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelLoanGracePeriod.Name = "labelLoanGracePeriod";
             // 
             // numericUpDownLoanGracePeriod
@@ -1909,14 +1745,12 @@ namespace Octopus.GUI.Clients
             // 
             resources.ApplyResources(this.labelLoanLoanOfficer, "labelLoanLoanOfficer");
             this.labelLoanLoanOfficer.BackColor = System.Drawing.Color.Transparent;
-            this.labelLoanLoanOfficer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelLoanLoanOfficer.Name = "labelLoanLoanOfficer";
             // 
             // labelLoanInstallmentType
             // 
             resources.ApplyResources(this.labelLoanInstallmentType, "labelLoanInstallmentType");
             this.labelLoanInstallmentType.BackColor = System.Drawing.Color.Transparent;
-            this.labelLoanInstallmentType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelLoanInstallmentType.Name = "labelLoanInstallmentType";
             // 
             // comboBoxLoanInstallmentType
@@ -1932,7 +1766,6 @@ namespace Octopus.GUI.Clients
             // 
             resources.ApplyResources(this.labelLoanFundingLine, "labelLoanFundingLine");
             this.labelLoanFundingLine.BackColor = System.Drawing.Color.Transparent;
-            this.labelLoanFundingLine.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelLoanFundingLine.Name = "labelLoanFundingLine";
             // 
             // comboBoxLoanFundingLine
@@ -1948,7 +1781,6 @@ namespace Octopus.GUI.Clients
             // 
             resources.ApplyResources(this.labelLoanPurpose, "labelLoanPurpose");
             this.labelLoanPurpose.BackColor = System.Drawing.Color.Transparent;
-            this.labelLoanPurpose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelLoanPurpose.Name = "labelLoanPurpose";
             // 
             // textBoxLoanPurpose
@@ -1991,7 +1823,6 @@ namespace Octopus.GUI.Clients
             this.tabPageAdvancedSettings.Controls.Add(this.tableLayoutPanel9);
             resources.ApplyResources(this.tabPageAdvancedSettings, "tabPageAdvancedSettings");
             this.tabPageAdvancedSettings.Name = "tabPageAdvancedSettings";
-            this.tabPageAdvancedSettings.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel6
             // 
@@ -2016,7 +1847,6 @@ namespace Octopus.GUI.Clients
             // 
             resources.ApplyResources(this.groupBoxAnticipatedRepaymentPenalties, "groupBoxAnticipatedRepaymentPenalties");
             this.groupBoxAnticipatedRepaymentPenalties.Controls.Add(this.tableLayoutPanel7);
-            this.groupBoxAnticipatedRepaymentPenalties.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.groupBoxAnticipatedRepaymentPenalties.MinimumSize = new System.Drawing.Size(250, 0);
             this.groupBoxAnticipatedRepaymentPenalties.Name = "groupBoxAnticipatedRepaymentPenalties";
             this.groupBoxAnticipatedRepaymentPenalties.TabStop = false;
@@ -2038,28 +1868,23 @@ namespace Octopus.GUI.Clients
             // 
             resources.ApplyResources(this.lblEarlyPartialRepaimentBase, "lblEarlyPartialRepaimentBase");
             this.lblEarlyPartialRepaimentBase.BackColor = System.Drawing.Color.Transparent;
-            this.lblEarlyPartialRepaimentBase.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblEarlyPartialRepaimentBase.Name = "lblEarlyPartialRepaimentBase";
             // 
             // lblEarlyTotalRepaimentBase
             // 
             resources.ApplyResources(this.lblEarlyTotalRepaimentBase, "lblEarlyTotalRepaimentBase");
             this.lblEarlyTotalRepaimentBase.BackColor = System.Drawing.Color.Transparent;
-            this.lblEarlyTotalRepaimentBase.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblEarlyTotalRepaimentBase.Name = "lblEarlyTotalRepaimentBase";
             // 
             // lblLoanAnticipatedPartialFeesMinMax
             // 
             resources.ApplyResources(this.lblLoanAnticipatedPartialFeesMinMax, "lblLoanAnticipatedPartialFeesMinMax");
             this.lblLoanAnticipatedPartialFeesMinMax.BackColor = System.Drawing.Color.Transparent;
-            this.lblLoanAnticipatedPartialFeesMinMax.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblLoanAnticipatedPartialFeesMinMax.Name = "lblLoanAnticipatedPartialFeesMinMax";
             // 
             // lbATR
             // 
             resources.ApplyResources(this.lbATR, "lbATR");
-            this.lbATR.BackColor = System.Drawing.Color.Transparent;
-            this.lbATR.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbATR.Name = "lbATR";
             // 
             // tbLoanAnticipatedPartialFees
@@ -2083,23 +1908,18 @@ namespace Octopus.GUI.Clients
             // lbAPR
             // 
             resources.ApplyResources(this.lbAPR, "lbAPR");
-            this.lbAPR.BackColor = System.Drawing.Color.Transparent;
-            this.lbAPR.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbAPR.Name = "lbAPR";
             // 
             // labelLoanAnticipatedTotalFeesMinMax
             // 
             resources.ApplyResources(this.labelLoanAnticipatedTotalFeesMinMax, "labelLoanAnticipatedTotalFeesMinMax");
             this.labelLoanAnticipatedTotalFeesMinMax.BackColor = System.Drawing.Color.Transparent;
-            this.labelLoanAnticipatedTotalFeesMinMax.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelLoanAnticipatedTotalFeesMinMax.Name = "labelLoanAnticipatedTotalFeesMinMax";
             // 
             // groupBoxLoanLateFees
             // 
             resources.ApplyResources(this.groupBoxLoanLateFees, "groupBoxLoanLateFees");
-            this.groupBoxLoanLateFees.BackColor = System.Drawing.Color.Transparent;
             this.groupBoxLoanLateFees.Controls.Add(this.tableLayoutPanel8);
-            this.groupBoxLoanLateFees.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.groupBoxLoanLateFees.Name = "groupBoxLoanLateFees";
             this.groupBoxLoanLateFees.TabStop = false;
             // 
@@ -2124,21 +1944,18 @@ namespace Octopus.GUI.Clients
             // 
             resources.ApplyResources(this.labelLoanLateFeesOnOverduePrincipalMinMax, "labelLoanLateFeesOnOverduePrincipalMinMax");
             this.labelLoanLateFeesOnOverduePrincipalMinMax.BackColor = System.Drawing.Color.Transparent;
-            this.labelLoanLateFeesOnOverduePrincipalMinMax.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelLoanLateFeesOnOverduePrincipalMinMax.Name = "labelLoanLateFeesOnOverduePrincipalMinMax";
             // 
             // labelLoanLateFeesOnAmountMinMax
             // 
             resources.ApplyResources(this.labelLoanLateFeesOnAmountMinMax, "labelLoanLateFeesOnAmountMinMax");
             this.labelLoanLateFeesOnAmountMinMax.BackColor = System.Drawing.Color.Transparent;
-            this.labelLoanLateFeesOnAmountMinMax.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelLoanLateFeesOnAmountMinMax.Name = "labelLoanLateFeesOnAmountMinMax";
             // 
             // labelLoanLateFeesOnAmount
             // 
             resources.ApplyResources(this.labelLoanLateFeesOnAmount, "labelLoanLateFeesOnAmount");
             this.labelLoanLateFeesOnAmount.BackColor = System.Drawing.Color.Transparent;
-            this.labelLoanLateFeesOnAmount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelLoanLateFeesOnAmount.Name = "labelLoanLateFeesOnAmount";
             // 
             // textBoxLoanLateFeesOnAmount
@@ -2163,14 +1980,12 @@ namespace Octopus.GUI.Clients
             // 
             resources.ApplyResources(this.labelLoanLateFeesOnOverduePrincipal, "labelLoanLateFeesOnOverduePrincipal");
             this.labelLoanLateFeesOnOverduePrincipal.BackColor = System.Drawing.Color.Transparent;
-            this.labelLoanLateFeesOnOverduePrincipal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelLoanLateFeesOnOverduePrincipal.Name = "labelLoanLateFeesOnOverduePrincipal";
             // 
             // labelLoanLateFeesOnOLB
             // 
             resources.ApplyResources(this.labelLoanLateFeesOnOLB, "labelLoanLateFeesOnOLB");
             this.labelLoanLateFeesOnOLB.BackColor = System.Drawing.Color.Transparent;
-            this.labelLoanLateFeesOnOLB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelLoanLateFeesOnOLB.Name = "labelLoanLateFeesOnOLB";
             this.labelLoanLateFeesOnOLB.Tag = "";
             // 
@@ -2187,14 +2002,12 @@ namespace Octopus.GUI.Clients
             // 
             resources.ApplyResources(this.labelLoanLateFeesOnOLBMinMax, "labelLoanLateFeesOnOLBMinMax");
             this.labelLoanLateFeesOnOLBMinMax.BackColor = System.Drawing.Color.Transparent;
-            this.labelLoanLateFeesOnOLBMinMax.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelLoanLateFeesOnOLBMinMax.Name = "labelLoanLateFeesOnOLBMinMax";
             // 
             // labelLoanLateFeesOnOverdueInterest
             // 
             resources.ApplyResources(this.labelLoanLateFeesOnOverdueInterest, "labelLoanLateFeesOnOverdueInterest");
             this.labelLoanLateFeesOnOverdueInterest.BackColor = System.Drawing.Color.Transparent;
-            this.labelLoanLateFeesOnOverdueInterest.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelLoanLateFeesOnOverdueInterest.Name = "labelLoanLateFeesOnOverdueInterest";
             // 
             // textBoxLoanLateFeesOnOverdueInterest
@@ -2210,7 +2023,6 @@ namespace Octopus.GUI.Clients
             // 
             resources.ApplyResources(this.labelLoanLateFeesOnOverdueInterestMinMax, "labelLoanLateFeesOnOverdueInterestMinMax");
             this.labelLoanLateFeesOnOverdueInterestMinMax.BackColor = System.Drawing.Color.Transparent;
-            this.labelLoanLateFeesOnOverdueInterestMinMax.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelLoanLateFeesOnOverdueInterestMinMax.Name = "labelLoanLateFeesOnOverdueInterestMinMax";
             // 
             // groupBoxEntryFees
@@ -2220,7 +2032,6 @@ namespace Octopus.GUI.Clients
             this.groupBoxEntryFees.Controls.Add(this.lblMinMaxEntryFees);
             this.groupBoxEntryFees.Controls.Add(this.numEntryFees);
             resources.ApplyResources(this.groupBoxEntryFees, "groupBoxEntryFees");
-            this.groupBoxEntryFees.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.groupBoxEntryFees.Name = "groupBoxEntryFees";
             this.groupBoxEntryFees.TabStop = false;
             // 
@@ -2261,7 +2072,6 @@ namespace Octopus.GUI.Clients
             // lblMinMaxEntryFees
             // 
             resources.ApplyResources(this.lblMinMaxEntryFees, "lblMinMaxEntryFees");
-            this.lblMinMaxEntryFees.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblMinMaxEntryFees.Name = "lblMinMaxEntryFees";
             this.lblMinMaxEntryFees.TextChanged += new System.EventHandler(this.lbCompAmountPercentMinMax_TextChanged);
             // 
@@ -2271,14 +2081,9 @@ namespace Octopus.GUI.Clients
             this.numEntryFees.Name = "numEntryFees";
             // 
             // btnUpdateSettings
-            // 
-            this.btnUpdateSettings.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.btnUpdateSettings, "btnUpdateSettings");
-            this.btnUpdateSettings.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnUpdateSettings.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Save;
-            this.btnUpdateSettings.Menu = null;
             this.btnUpdateSettings.Name = "btnUpdateSettings";
-            this.btnUpdateSettings.UseVisualStyleBackColor = false;
             this.btnUpdateSettings.Click += new System.EventHandler(this.buttonLoanSave_Click);
             // 
             // groupBox2
@@ -2286,7 +2091,6 @@ namespace Octopus.GUI.Clients
             this.tableLayoutPanel6.SetColumnSpan(this.groupBox2, 5);
             this.groupBox2.Controls.Add(this.tableLayoutPanel10);
             resources.ApplyResources(this.groupBox2, "groupBox2");
-            this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.TabStop = false;
             // 
@@ -2302,17 +2106,13 @@ namespace Octopus.GUI.Clients
             this.tableLayoutPanel10.Name = "tableLayoutPanel10";
             // 
             // lbCompulsorySavingsAmount
-            // 
-            this.lbCompulsorySavingsAmount.BackColor = System.Drawing.Color.Transparent;
+            //
             resources.ApplyResources(this.lbCompulsorySavingsAmount, "lbCompulsorySavingsAmount");
-            this.lbCompulsorySavingsAmount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbCompulsorySavingsAmount.Name = "lbCompulsorySavingsAmount";
             // 
             // lbCompulsorySavings
-            // 
-            this.lbCompulsorySavings.BackColor = System.Drawing.Color.Transparent;
+            //
             resources.ApplyResources(this.lbCompulsorySavings, "lbCompulsorySavings");
-            this.lbCompulsorySavings.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbCompulsorySavings.Name = "lbCompulsorySavings";
             // 
             // numCompulsoryAmountPercent
@@ -2346,17 +2146,14 @@ namespace Octopus.GUI.Clients
             this.linkCompulsorySavings.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkCompulsorySavings_LinkClicked);
             // 
             // lbCompAmountPercentMinMax
-            // 
-            this.lbCompAmountPercentMinMax.BackColor = System.Drawing.Color.Transparent;
+            //
             resources.ApplyResources(this.lbCompAmountPercentMinMax, "lbCompAmountPercentMinMax");
-            this.lbCompAmountPercentMinMax.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbCompAmountPercentMinMax.Name = "lbCompAmountPercentMinMax";
             this.lbCompAmountPercentMinMax.TextChanged += new System.EventHandler(this.lbCompAmountPercentMinMax_TextChanged);
             // 
             // labelComments
             // 
             resources.ApplyResources(this.labelComments, "labelComments");
-            this.labelComments.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelComments.Name = "labelComments";
             // 
             // textBoxComments
@@ -2391,7 +2188,6 @@ namespace Octopus.GUI.Clients
             // 
             resources.ApplyResources(this.labelLocAmount, "labelLocAmount");
             this.labelLocAmount.BackColor = System.Drawing.Color.Transparent;
-            this.labelLocAmount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelLocAmount.Name = "labelLocAmount";
             this.tableLayoutPanel9.SetRowSpan(this.labelLocAmount, 2);
             // 
@@ -2409,52 +2205,44 @@ namespace Octopus.GUI.Clients
             // 
             resources.ApplyResources(this.labelLocMin, "labelLocMin");
             this.labelLocMin.BackColor = System.Drawing.Color.Transparent;
-            this.labelLocMin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelLocMin.Name = "labelLocMin";
             // 
             // labelLocMax
             // 
             resources.ApplyResources(this.labelLocMax, "labelLocMax");
             this.labelLocMax.BackColor = System.Drawing.Color.Transparent;
-            this.labelLocMax.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelLocMax.Name = "labelLocMax";
             // 
             // labelLocMinAmount
             // 
             resources.ApplyResources(this.labelLocMinAmount, "labelLocMinAmount");
             this.labelLocMinAmount.BackColor = System.Drawing.Color.Transparent;
-            this.labelLocMinAmount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelLocMinAmount.Name = "labelLocMinAmount";
             // 
             // labelLocMaxAmount
             // 
             resources.ApplyResources(this.labelLocMaxAmount, "labelLocMaxAmount");
             this.labelLocMaxAmount.BackColor = System.Drawing.Color.Transparent;
-            this.labelLocMaxAmount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelLocMaxAmount.Name = "labelLocMaxAmount";
             // 
             // lblInsuranceMin
             // 
             resources.ApplyResources(this.lblInsuranceMin, "lblInsuranceMin");
-            this.lblInsuranceMin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblInsuranceMin.Name = "lblInsuranceMin";
             // 
             // lblInsuranceMax
             // 
             resources.ApplyResources(this.lblInsuranceMax, "lblInsuranceMax");
-            this.lblInsuranceMax.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblInsuranceMax.Name = "lblInsuranceMax";
             // 
             // label5
             // 
             resources.ApplyResources(this.label5, "label5");
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.label5.Name = "label5";
             // 
             // label4
             // 
             resources.ApplyResources(this.label4, "label4");
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.label4.Name = "label4";
             // 
             // tbInsurance
@@ -2469,34 +2257,29 @@ namespace Octopus.GUI.Clients
             // lblCreditInsurance
             // 
             resources.ApplyResources(this.lblCreditInsurance, "lblCreditInsurance");
-            this.lblCreditInsurance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblCreditInsurance.Name = "lblCreditInsurance";
             this.tableLayoutPanel9.SetRowSpan(this.lblCreditInsurance, 2);
             // 
             // label6
             // 
             resources.ApplyResources(this.label6, "label6");
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.label6.Name = "label6";
             // 
             // label7
             // 
             resources.ApplyResources(this.label7, "label7");
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.label7.Name = "label7";
             // 
             // lblLocCurrencyMin
             // 
             resources.ApplyResources(this.lblLocCurrencyMin, "lblLocCurrencyMin");
             this.lblLocCurrencyMin.BackColor = System.Drawing.Color.Transparent;
-            this.lblLocCurrencyMin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblLocCurrencyMin.Name = "lblLocCurrencyMin";
             // 
             // lblLocCurrencyMax
             // 
             resources.ApplyResources(this.lblLocCurrencyMax, "lblLocCurrencyMax");
             this.lblLocCurrencyMax.BackColor = System.Drawing.Color.Transparent;
-            this.lblLocCurrencyMax.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblLocCurrencyMax.Name = "lblLocCurrencyMax";
             // 
             // tabPageCreditCommitee
@@ -2505,7 +2288,6 @@ namespace Octopus.GUI.Clients
             this.tabPageCreditCommitee.Controls.Add(this.tableLayoutPanel11);
             resources.ApplyResources(this.tabPageCreditCommitee, "tabPageCreditCommitee");
             this.tabPageCreditCommitee.Name = "tabPageCreditCommitee";
-            this.tabPageCreditCommitee.UseVisualStyleBackColor = true;
             // 
             // flowLayoutPanel7
             // 
@@ -2526,14 +2308,9 @@ namespace Octopus.GUI.Clients
             this.btnPrintCreditCommittee.UseVisualStyleBackColor = true;
             // 
             // buttonCreditCommiteeSaveDecision
-            // 
-            this.buttonCreditCommiteeSaveDecision.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.buttonCreditCommiteeSaveDecision, "buttonCreditCommiteeSaveDecision");
-            this.buttonCreditCommiteeSaveDecision.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonCreditCommiteeSaveDecision.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Save;
-            this.buttonCreditCommiteeSaveDecision.Menu = null;
             this.buttonCreditCommiteeSaveDecision.Name = "buttonCreditCommiteeSaveDecision";
-            this.buttonCreditCommiteeSaveDecision.UseVisualStyleBackColor = false;
             this.buttonCreditCommiteeSaveDecision.Click += new System.EventHandler(this.buttonCreditCommiteeSaveDecision_Click);
             // 
             // tableLayoutPanel11
@@ -2553,7 +2330,6 @@ namespace Octopus.GUI.Clients
             // 
             resources.ApplyResources(this.lblCCStatus, "lblCCStatus");
             this.lblCCStatus.BackColor = System.Drawing.Color.Transparent;
-            this.lblCCStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblCCStatus.Name = "lblCCStatus";
             // 
             // pnlCCStatus
@@ -2581,7 +2357,6 @@ namespace Octopus.GUI.Clients
             // 
             resources.ApplyResources(this.labelCreditCommiteeDate, "labelCreditCommiteeDate");
             this.labelCreditCommiteeDate.BackColor = System.Drawing.Color.Transparent;
-            this.labelCreditCommiteeDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelCreditCommiteeDate.Name = "labelCreditCommiteeDate";
             // 
             // dateTimePickerCreditCommitee
@@ -2594,14 +2369,12 @@ namespace Octopus.GUI.Clients
             // 
             resources.ApplyResources(this.labelCreditCommiteeComment, "labelCreditCommiteeComment");
             this.labelCreditCommiteeComment.BackColor = System.Drawing.Color.Transparent;
-            this.labelCreditCommiteeComment.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelCreditCommiteeComment.Name = "labelCreditCommiteeComment";
             // 
             // labelCreditCommiteeCode
             // 
             resources.ApplyResources(this.labelCreditCommiteeCode, "labelCreditCommiteeCode");
             this.labelCreditCommiteeCode.BackColor = System.Drawing.Color.Transparent;
-            this.labelCreditCommiteeCode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelCreditCommiteeCode.Name = "labelCreditCommiteeCode";
             // 
             // textBoxCreditCommiteeComment
@@ -2621,7 +2394,6 @@ namespace Octopus.GUI.Clients
             this.tabPageLoanRepayment.Controls.Add(this.lblLoanStatus);
             resources.ApplyResources(this.tabPageLoanRepayment, "tabPageLoanRepayment");
             this.tabPageLoanRepayment.Name = "tabPageLoanRepayment";
-            this.tabPageLoanRepayment.UseVisualStyleBackColor = true;
             // 
             // tabControlRepayments
             // 
@@ -2633,13 +2405,11 @@ namespace Octopus.GUI.Clients
             this.tabControlRepayments.SelectedIndex = 0;
             // 
             // tabPageRepayments
-            // 
-            this.tabPageRepayments.BackColor = System.Drawing.Color.White;
+            //
             this.tabPageRepayments.Controls.Add(this.lvLoansRepayments);
             this.tabPageRepayments.Controls.Add(this.flowLayoutPanel8);
             resources.ApplyResources(this.tabPageRepayments, "tabPageRepayments");
             this.tabPageRepayments.Name = "tabPageRepayments";
-            this.tabPageRepayments.UseVisualStyleBackColor = true;
             // 
             // lvLoansRepayments
             // 
@@ -2721,49 +2491,27 @@ namespace Octopus.GUI.Clients
             this.flowLayoutPanel8.Name = "flowLayoutPanel8";
             // 
             // buttonLoanRepaymentRepay
-            // 
-            this.buttonLoanRepaymentRepay.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.buttonLoanRepaymentRepay, "buttonLoanRepaymentRepay");
-            this.buttonLoanRepaymentRepay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonLoanRepaymentRepay.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Repayment;
-            this.buttonLoanRepaymentRepay.Menu = null;
             this.buttonLoanRepaymentRepay.Name = "buttonLoanRepaymentRepay";
-            this.buttonLoanRepaymentRepay.UseVisualStyleBackColor = false;
             this.buttonLoanRepaymentRepay.Click += new System.EventHandler(this.buttonLoanRepaymentRepay_Click);
             // 
             // buttonLoanReschedule
-            // 
-            this.buttonLoanReschedule.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.buttonLoanReschedule, "buttonLoanReschedule");
-            this.buttonLoanReschedule.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonLoanReschedule.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Reschedule;
-            this.buttonLoanReschedule.Menu = null;
             this.buttonLoanReschedule.Name = "buttonLoanReschedule";
-            this.buttonLoanReschedule.UseVisualStyleBackColor = false;
             this.buttonLoanReschedule.Click += new System.EventHandler(this.buttonLoanReschedule_Click);
             // 
             // buttonAddTranche
-            // 
-            this.buttonAddTranche.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.buttonAddTranche, "buttonAddTranche");
-            this.buttonAddTranche.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonAddTranche.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.New;
-            this.buttonAddTranche.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_new;
-            this.buttonAddTranche.Menu = null;
             this.buttonAddTranche.Name = "buttonAddTranche";
-            this.buttonAddTranche.UseVisualStyleBackColor = false;
             this.buttonAddTranche.Click += new System.EventHandler(this.buttonAddTranche_Click);
             // 
             // btnWriteOff
-            // 
-            this.btnWriteOff.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.btnWriteOff, "btnWriteOff");
-            this.btnWriteOff.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnWriteOff.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Delete;
-            this.btnWriteOff.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_delete;
-            this.btnWriteOff.Menu = null;
             this.btnWriteOff.Name = "btnWriteOff";
-            this.btnWriteOff.UseVisualStyleBackColor = false;
             this.btnWriteOff.Click += new System.EventHandler(this.btnWriteOff_Click);
             // 
             // btnPrintLoanRepayment
@@ -2777,13 +2525,11 @@ namespace Octopus.GUI.Clients
             this.btnPrintLoanRepayment.UseVisualStyleBackColor = true;
             // 
             // tabPageEvents
-            // 
-            this.tabPageEvents.BackColor = System.Drawing.Color.White;
+            //
             this.tabPageEvents.Controls.Add(this.lvEvents);
             this.tabPageEvents.Controls.Add(this.groupBox1);
             resources.ApplyResources(this.tabPageEvents, "tabPageEvents");
             this.tabPageEvents.Name = "tabPageEvents";
-            this.tabPageEvents.UseVisualStyleBackColor = true;
             // 
             // lvEvents
             // 
@@ -2887,8 +2633,7 @@ namespace Octopus.GUI.Clients
             resources.ApplyResources(this.colIsDeleted, "colIsDeleted");
             // 
             // groupBox1
-            // 
-            this.groupBox1.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris;
+            //
             resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Controls.Add(this.btnPrintLoanEvents);
             this.groupBox1.Controls.Add(this.btnWaiveFee);
@@ -2907,27 +2652,15 @@ namespace Octopus.GUI.Clients
             this.btnPrintLoanEvents.UseVisualStyleBackColor = true;
             // 
             // btnWaiveFee
-            // 
-            this.btnWaiveFee.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.btnWaiveFee, "btnWaiveFee");
-            this.btnWaiveFee.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnWaiveFee.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Edit;
-            this.btnWaiveFee.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_delete;
-            this.btnWaiveFee.Menu = null;
             this.btnWaiveFee.Name = "btnWaiveFee";
-            this.btnWaiveFee.UseVisualStyleBackColor = false;
             this.btnWaiveFee.Click += new System.EventHandler(this.btnWaiveFee_Click);
             // 
             // btnDeleteEvent
-            // 
-            this.btnDeleteEvent.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.btnDeleteEvent, "btnDeleteEvent");
-            this.btnDeleteEvent.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnDeleteEvent.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Delete;
-            this.btnDeleteEvent.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_delete;
-            this.btnDeleteEvent.Menu = null;
             this.btnDeleteEvent.Name = "btnDeleteEvent";
-            this.btnDeleteEvent.UseVisualStyleBackColor = false;
             this.btnDeleteEvent.Click += new System.EventHandler(this.buttonDeleteEvent_Click);
             // 
             // imageListTab
@@ -2950,7 +2683,6 @@ namespace Octopus.GUI.Clients
             // lblLoanStatus
             // 
             resources.ApplyResources(this.lblLoanStatus, "lblLoanStatus");
-            this.lblLoanStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblLoanStatus.Name = "lblLoanStatus";
             this.lblLoanStatus.Click += new System.EventHandler(this.lblLoanStatus_Click);
             // 
@@ -2959,7 +2691,6 @@ namespace Octopus.GUI.Clients
             this.tabPageLoanGuarantees.Controls.Add(this.splitContainer1);
             resources.ApplyResources(this.tabPageLoanGuarantees, "tabPageLoanGuarantees");
             this.tabPageLoanGuarantees.Name = "tabPageLoanGuarantees";
-            this.tabPageLoanGuarantees.UseVisualStyleBackColor = true;
             // 
             // tabPageSavingDetails
             // 
@@ -2968,7 +2699,6 @@ namespace Octopus.GUI.Clients
             this.tabPageSavingDetails.Controls.Add(this.groupBoxSaving);
             resources.ApplyResources(this.tabPageSavingDetails, "tabPageSavingDetails");
             this.tabPageSavingDetails.Name = "tabPageSavingDetails";
-            this.tabPageSavingDetails.UseVisualStyleBackColor = true;
             // 
             // tabControlSavingsDetails
             // 
@@ -2987,7 +2717,6 @@ namespace Octopus.GUI.Clients
             this.tabPageSavingsAmountsAndFees.Controls.Add(this.tlpSBDetails);
             resources.ApplyResources(this.tabPageSavingsAmountsAndFees, "tabPageSavingsAmountsAndFees");
             this.tabPageSavingsAmountsAndFees.Name = "tabPageSavingsAmountsAndFees";
-            this.tabPageSavingsAmountsAndFees.UseVisualStyleBackColor = true;
             // 
             // flowLayoutPanel10
             // 
@@ -3003,9 +2732,7 @@ namespace Octopus.GUI.Clients
             // groupBoxSavingBalance
             // 
             resources.ApplyResources(this.groupBoxSavingBalance, "groupBoxSavingBalance");
-            this.groupBoxSavingBalance.BackColor = System.Drawing.Color.Transparent;
             this.groupBoxSavingBalance.Controls.Add(this.tableLayoutPanel12);
-            this.groupBoxSavingBalance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.groupBoxSavingBalance.MinimumSize = new System.Drawing.Size(180, 0);
             this.groupBoxSavingBalance.Name = "groupBoxSavingBalance";
             this.groupBoxSavingBalance.TabStop = false;
@@ -3022,33 +2749,27 @@ namespace Octopus.GUI.Clients
             // lbBalanceMaxValue
             // 
             resources.ApplyResources(this.lbBalanceMaxValue, "lbBalanceMaxValue");
-            this.lbBalanceMaxValue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbBalanceMaxValue.Name = "lbBalanceMaxValue";
             // 
             // lbBalanceMin
             // 
             resources.ApplyResources(this.lbBalanceMin, "lbBalanceMin");
-            this.lbBalanceMin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbBalanceMin.Name = "lbBalanceMin";
             // 
             // lbBalanceMinValue
             // 
             resources.ApplyResources(this.lbBalanceMinValue, "lbBalanceMinValue");
-            this.lbBalanceMinValue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbBalanceMinValue.Name = "lbBalanceMinValue";
             // 
             // lbBalanceMax
             // 
             resources.ApplyResources(this.lbBalanceMax, "lbBalanceMax");
-            this.lbBalanceMax.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbBalanceMax.Name = "lbBalanceMax";
             // 
             // groupBoxSavingDeposit
             // 
             resources.ApplyResources(this.groupBoxSavingDeposit, "groupBoxSavingDeposit");
-            this.groupBoxSavingDeposit.BackColor = System.Drawing.Color.Transparent;
             this.groupBoxSavingDeposit.Controls.Add(this.tableLayoutPanel13);
-            this.groupBoxSavingDeposit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.groupBoxSavingDeposit.MinimumSize = new System.Drawing.Size(180, 0);
             this.groupBoxSavingDeposit.Name = "groupBoxSavingDeposit";
             this.groupBoxSavingDeposit.TabStop = false;
@@ -3065,33 +2786,27 @@ namespace Octopus.GUI.Clients
             // lbDepositMaxValue
             // 
             resources.ApplyResources(this.lbDepositMaxValue, "lbDepositMaxValue");
-            this.lbDepositMaxValue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbDepositMaxValue.Name = "lbDepositMaxValue";
             // 
             // lbDepositMin
             // 
             resources.ApplyResources(this.lbDepositMin, "lbDepositMin");
-            this.lbDepositMin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbDepositMin.Name = "lbDepositMin";
             // 
             // lbDepositMinValue
             // 
             resources.ApplyResources(this.lbDepositMinValue, "lbDepositMinValue");
-            this.lbDepositMinValue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbDepositMinValue.Name = "lbDepositMinValue";
             // 
             // lbDepositmax
             // 
             resources.ApplyResources(this.lbDepositmax, "lbDepositmax");
-            this.lbDepositmax.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbDepositmax.Name = "lbDepositmax";
             // 
             // groupBoxSavingWithdraw
             // 
             resources.ApplyResources(this.groupBoxSavingWithdraw, "groupBoxSavingWithdraw");
-            this.groupBoxSavingWithdraw.BackColor = System.Drawing.Color.Transparent;
             this.groupBoxSavingWithdraw.Controls.Add(this.tableLayoutPanel14);
-            this.groupBoxSavingWithdraw.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.groupBoxSavingWithdraw.MinimumSize = new System.Drawing.Size(180, 0);
             this.groupBoxSavingWithdraw.Name = "groupBoxSavingWithdraw";
             this.groupBoxSavingWithdraw.TabStop = false;
@@ -3108,33 +2823,27 @@ namespace Octopus.GUI.Clients
             // lbWithdrawMaxValue
             // 
             resources.ApplyResources(this.lbWithdrawMaxValue, "lbWithdrawMaxValue");
-            this.lbWithdrawMaxValue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbWithdrawMaxValue.Name = "lbWithdrawMaxValue";
             // 
             // lbWithdrawMin
             // 
             resources.ApplyResources(this.lbWithdrawMin, "lbWithdrawMin");
-            this.lbWithdrawMin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbWithdrawMin.Name = "lbWithdrawMin";
             // 
             // lbWithdrawMinValue
             // 
             resources.ApplyResources(this.lbWithdrawMinValue, "lbWithdrawMinValue");
-            this.lbWithdrawMinValue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbWithdrawMinValue.Name = "lbWithdrawMinValue";
             // 
             // lbWithdrawMax
             // 
             resources.ApplyResources(this.lbWithdrawMax, "lbWithdrawMax");
-            this.lbWithdrawMax.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbWithdrawMax.Name = "lbWithdrawMax";
             // 
             // groupBoxSavingTransfer
             // 
             resources.ApplyResources(this.groupBoxSavingTransfer, "groupBoxSavingTransfer");
-            this.groupBoxSavingTransfer.BackColor = System.Drawing.Color.Transparent;
             this.groupBoxSavingTransfer.Controls.Add(this.tableLayoutPanel15);
-            this.groupBoxSavingTransfer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.groupBoxSavingTransfer.MinimumSize = new System.Drawing.Size(180, 0);
             this.groupBoxSavingTransfer.Name = "groupBoxSavingTransfer";
             this.groupBoxSavingTransfer.TabStop = false;
@@ -3151,33 +2860,27 @@ namespace Octopus.GUI.Clients
             // labelSavingTransferMaxValue
             // 
             resources.ApplyResources(this.labelSavingTransferMaxValue, "labelSavingTransferMaxValue");
-            this.labelSavingTransferMaxValue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelSavingTransferMaxValue.Name = "labelSavingTransferMaxValue";
             // 
             // labelSavingTransferMin
             // 
             resources.ApplyResources(this.labelSavingTransferMin, "labelSavingTransferMin");
-            this.labelSavingTransferMin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelSavingTransferMin.Name = "labelSavingTransferMin";
             // 
             // labelSavingTransferMinValue
             // 
             resources.ApplyResources(this.labelSavingTransferMinValue, "labelSavingTransferMinValue");
-            this.labelSavingTransferMinValue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelSavingTransferMinValue.Name = "labelSavingTransferMinValue";
             // 
             // labelSavingTransferMax
             // 
             resources.ApplyResources(this.labelSavingTransferMax, "labelSavingTransferMax");
-            this.labelSavingTransferMax.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelSavingTransferMax.Name = "labelSavingTransferMax";
             // 
             // gbInterest
             // 
             resources.ApplyResources(this.gbInterest, "gbInterest");
-            this.gbInterest.BackColor = System.Drawing.Color.Transparent;
             this.gbInterest.Controls.Add(this.tableLayoutPanel16);
-            this.gbInterest.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.gbInterest.MinimumSize = new System.Drawing.Size(180, 0);
             this.gbInterest.Name = "gbInterest";
             this.gbInterest.TabStop = false;
@@ -3196,44 +2899,37 @@ namespace Octopus.GUI.Clients
             // lbInterestBasedOnValue
             // 
             resources.ApplyResources(this.lbInterestBasedOnValue, "lbInterestBasedOnValue");
-            this.lbInterestBasedOnValue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbInterestBasedOnValue.Name = "lbInterestBasedOnValue";
             // 
             // lbInterestAccrual
             // 
             resources.ApplyResources(this.lbInterestAccrual, "lbInterestAccrual");
-            this.lbInterestAccrual.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbInterestAccrual.Name = "lbInterestAccrual";
             // 
             // lbInterestPostingValue
             // 
             resources.ApplyResources(this.lbInterestPostingValue, "lbInterestPostingValue");
-            this.lbInterestPostingValue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbInterestPostingValue.Name = "lbInterestPostingValue";
             // 
             // lbInterestBasedOn
             // 
             resources.ApplyResources(this.lbInterestBasedOn, "lbInterestBasedOn");
-            this.lbInterestBasedOn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbInterestBasedOn.Name = "lbInterestBasedOn";
             // 
             // lbInterestAccrualValue
             // 
             resources.ApplyResources(this.lbInterestAccrualValue, "lbInterestAccrualValue");
-            this.lbInterestAccrualValue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbInterestAccrualValue.Name = "lbInterestAccrualValue";
             // 
             // lbInterestPosting
             // 
             resources.ApplyResources(this.lbInterestPosting, "lbInterestPosting");
-            this.lbInterestPosting.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbInterestPosting.Name = "lbInterestPosting";
             // 
             // gbDepositInterest
             // 
             resources.ApplyResources(this.gbDepositInterest, "gbDepositInterest");
             this.gbDepositInterest.Controls.Add(this.tableLayoutPanel17);
-            this.gbDepositInterest.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.gbDepositInterest.MinimumSize = new System.Drawing.Size(180, 0);
             this.gbDepositInterest.Name = "gbDepositInterest";
             this.gbDepositInterest.TabStop = false;
@@ -3250,25 +2946,21 @@ namespace Octopus.GUI.Clients
             // lbPeriodicityValue
             // 
             resources.ApplyResources(this.lbPeriodicityValue, "lbPeriodicityValue");
-            this.lbPeriodicityValue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbPeriodicityValue.Name = "lbPeriodicityValue";
             // 
             // lbAccrualDeposit
             // 
             resources.ApplyResources(this.lbAccrualDeposit, "lbAccrualDeposit");
-            this.lbAccrualDeposit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbAccrualDeposit.Name = "lbAccrualDeposit";
             // 
             // lbAccrualDepositValue
             // 
             resources.ApplyResources(this.lbAccrualDepositValue, "lbAccrualDepositValue");
-            this.lbAccrualDepositValue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbAccrualDepositValue.Name = "lbAccrualDepositValue";
             // 
             // lbPeriodicity
             // 
             resources.ApplyResources(this.lbPeriodicity, "lbPeriodicity");
-            this.lbPeriodicity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbPeriodicity.Name = "lbPeriodicity";
             // 
             // tlpSBDetails
@@ -3307,14 +2999,11 @@ namespace Octopus.GUI.Clients
             // 
             this.lblIbtFeeMinMax.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.lblIbtFeeMinMax, "lblIbtFeeMinMax");
-            this.lblIbtFeeMinMax.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblIbtFeeMinMax.Name = "lblIbtFeeMinMax";
             // 
             // lbTransferFees
             // 
             resources.ApplyResources(this.lbTransferFees, "lbTransferFees");
-            this.lbTransferFees.BackColor = System.Drawing.Color.Transparent;
-            this.lbTransferFees.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbTransferFees.Name = "lbTransferFees";
             // 
             // nudIbtFee
@@ -3330,8 +3019,6 @@ namespace Octopus.GUI.Clients
             // lbDepositFees
             // 
             resources.ApplyResources(this.lbDepositFees, "lbDepositFees");
-            this.lbDepositFees.BackColor = System.Drawing.Color.Transparent;
-            this.lbDepositFees.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbDepositFees.Name = "lbDepositFees";
             // 
             // nudTransferFees
@@ -3345,17 +3032,13 @@ namespace Octopus.GUI.Clients
             this.nudTransferFees.Name = "nudTransferFees";
             // 
             // lbReopenFeesMinMax
-            // 
-            this.lbReopenFeesMinMax.BackColor = System.Drawing.Color.Transparent;
+            //
             resources.ApplyResources(this.lbReopenFeesMinMax, "lbReopenFeesMinMax");
-            this.lbReopenFeesMinMax.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbReopenFeesMinMax.Name = "lbReopenFeesMinMax";
             // 
             // lbTransferFeesMinMax
-            // 
-            this.lbTransferFeesMinMax.BackColor = System.Drawing.Color.Transparent;
+            //
             resources.ApplyResources(this.lbTransferFeesMinMax, "lbTransferFeesMinMax");
-            this.lbTransferFeesMinMax.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbTransferFeesMinMax.Name = "lbTransferFeesMinMax";
             // 
             // nudReopenFees
@@ -3369,31 +3052,23 @@ namespace Octopus.GUI.Clients
             this.nudReopenFees.Name = "nudReopenFees";
             // 
             // lbReopenFees
-            // 
-            this.lbReopenFees.BackColor = System.Drawing.Color.Transparent;
+            //
             resources.ApplyResources(this.lbReopenFees, "lbReopenFees");
-            this.lbReopenFees.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbReopenFees.Name = "lbReopenFees";
             // 
             // lbDepositFeesMinMax
-            // 
-            this.lbDepositFeesMinMax.BackColor = System.Drawing.Color.Transparent;
+            //
             resources.ApplyResources(this.lbDepositFeesMinMax, "lbDepositFeesMinMax");
-            this.lbDepositFeesMinMax.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbDepositFeesMinMax.Name = "lbDepositFeesMinMax";
             // 
             // lbAgioFeesMinMax
-            // 
-            this.lbAgioFeesMinMax.BackColor = System.Drawing.Color.Transparent;
+            //
             resources.ApplyResources(this.lbAgioFeesMinMax, "lbAgioFeesMinMax");
-            this.lbAgioFeesMinMax.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbAgioFeesMinMax.Name = "lbAgioFeesMinMax";
             // 
             // lbChequeDepositFees
             // 
             resources.ApplyResources(this.lbChequeDepositFees, "lbChequeDepositFees");
-            this.lbChequeDepositFees.BackColor = System.Drawing.Color.Transparent;
-            this.lbChequeDepositFees.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbChequeDepositFees.Name = "lbChequeDepositFees";
             // 
             // nudAgioFees
@@ -3419,29 +3094,22 @@ namespace Octopus.GUI.Clients
             // lbAgioFees
             // 
             resources.ApplyResources(this.lbAgioFees, "lbAgioFees");
-            this.lbAgioFees.BackColor = System.Drawing.Color.Transparent;
-            this.lbAgioFees.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbAgioFees.Name = "lbAgioFees";
             // 
             // lbOverdraftFeesMinMax
-            // 
-            this.lbOverdraftFeesMinMax.BackColor = System.Drawing.Color.Transparent;
+            //
             resources.ApplyResources(this.lbOverdraftFeesMinMax, "lbOverdraftFeesMinMax");
-            this.lbOverdraftFeesMinMax.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbOverdraftFeesMinMax.Name = "lbOverdraftFeesMinMax";
             // 
             // lblChequeDepositFeesMinMax
             // 
             this.lblChequeDepositFeesMinMax.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.lblChequeDepositFeesMinMax, "lblChequeDepositFeesMinMax");
-            this.lblChequeDepositFeesMinMax.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblChequeDepositFeesMinMax.Name = "lblChequeDepositFeesMinMax";
             // 
             // lbCloseFees
             // 
             resources.ApplyResources(this.lbCloseFees, "lbCloseFees");
-            this.lbCloseFees.BackColor = System.Drawing.Color.Transparent;
-            this.lbCloseFees.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbCloseFees.Name = "lbCloseFees";
             // 
             // nudOverdraftFees
@@ -3467,29 +3135,21 @@ namespace Octopus.GUI.Clients
             // lbOverdraftFees
             // 
             resources.ApplyResources(this.lbOverdraftFees, "lbOverdraftFees");
-            this.lbOverdraftFees.BackColor = System.Drawing.Color.Transparent;
-            this.lbOverdraftFees.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbOverdraftFees.Name = "lbOverdraftFees";
             // 
             // lbCloseFeesMinMax
-            // 
-            this.lbCloseFeesMinMax.BackColor = System.Drawing.Color.Transparent;
+            //
             resources.ApplyResources(this.lbCloseFeesMinMax, "lbCloseFeesMinMax");
-            this.lbCloseFeesMinMax.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbCloseFeesMinMax.Name = "lbCloseFeesMinMax";
             // 
             // lbManagementFeesMinMax
-            // 
-            this.lbManagementFeesMinMax.BackColor = System.Drawing.Color.Transparent;
+            //
             resources.ApplyResources(this.lbManagementFeesMinMax, "lbManagementFeesMinMax");
-            this.lbManagementFeesMinMax.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbManagementFeesMinMax.Name = "lbManagementFeesMinMax";
             // 
             // lbManagementFees
             // 
             resources.ApplyResources(this.lbManagementFees, "lbManagementFees");
-            this.lbManagementFees.BackColor = System.Drawing.Color.Transparent;
-            this.lbManagementFees.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbManagementFees.Name = "lbManagementFees";
             // 
             // nudManagementFees
@@ -3516,7 +3176,6 @@ namespace Octopus.GUI.Clients
             // 
             resources.ApplyResources(this.lblInterBranchTransfer, "lblInterBranchTransfer");
             this.lblInterBranchTransfer.BackColor = System.Drawing.Color.Transparent;
-            this.lblInterBranchTransfer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblInterBranchTransfer.Name = "lblInterBranchTransfer";
             // 
             // tabPageSavingsEvents
@@ -3524,7 +3183,6 @@ namespace Octopus.GUI.Clients
             this.tabPageSavingsEvents.Controls.Add(this.lvSavingEvent);
             resources.ApplyResources(this.tabPageSavingsEvents, "tabPageSavingsEvents");
             this.tabPageSavingsEvents.Name = "tabPageSavingsEvents";
-            this.tabPageSavingsEvents.UseVisualStyleBackColor = true;
             // 
             // lvSavingEvent
             // 
@@ -3592,7 +3250,6 @@ namespace Octopus.GUI.Clients
             this.tabPageLoans.Controls.Add(this.olvLoans);
             resources.ApplyResources(this.tabPageLoans, "tabPageLoans");
             this.tabPageLoans.Name = "tabPageLoans";
-            this.tabPageLoans.UseVisualStyleBackColor = true;
             // 
             // olvLoans
             // 
@@ -3662,14 +3319,12 @@ namespace Octopus.GUI.Clients
             // 
             resources.ApplyResources(this.tabPageSavingsCustomizableFields, "tabPageSavingsCustomizableFields");
             this.tabPageSavingsCustomizableFields.Name = "tabPageSavingsCustomizableFields";
-            this.tabPageSavingsCustomizableFields.UseVisualStyleBackColor = true;
             // 
             // tpTermDeposit
             // 
             this.tpTermDeposit.Controls.Add(this.tlpTermDeposit);
             resources.ApplyResources(this.tpTermDeposit, "tpTermDeposit");
             this.tpTermDeposit.Name = "tpTermDeposit";
-            this.tpTermDeposit.UseVisualStyleBackColor = true;
             // 
             // tlpTermDeposit
             // 
@@ -3687,7 +3342,6 @@ namespace Octopus.GUI.Clients
             // lblNumberOfPeriods
             // 
             resources.ApplyResources(this.lblNumberOfPeriods, "lblNumberOfPeriods");
-            this.lblNumberOfPeriods.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblNumberOfPeriods.Name = "lblNumberOfPeriods";
             // 
             // nudNumberOfPeriods
@@ -3698,7 +3352,6 @@ namespace Octopus.GUI.Clients
             // lblLimitOfTermDepositPeriod
             // 
             resources.ApplyResources(this.lblLimitOfTermDepositPeriod, "lblLimitOfTermDepositPeriod");
-            this.lblLimitOfTermDepositPeriod.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblLimitOfTermDepositPeriod.Name = "lblLimitOfTermDepositPeriod";
             // 
             // tbTargetAccount2
@@ -3719,7 +3372,6 @@ namespace Octopus.GUI.Clients
             // lbRollover2
             // 
             resources.ApplyResources(this.lbRollover2, "lbRollover2");
-            this.lbRollover2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbRollover2.Name = "lbRollover2";
             // 
             // btSearchContract2
@@ -3735,7 +3387,6 @@ namespace Octopus.GUI.Clients
             // lblTermTransferToAccount
             // 
             resources.ApplyResources(this.lblTermTransferToAccount, "lblTermTransferToAccount");
-            this.lblTermTransferToAccount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblTermTransferToAccount.Name = "lblTermTransferToAccount";
             // 
             // flowLayoutPanel9
@@ -3751,58 +3402,33 @@ namespace Octopus.GUI.Clients
             this.flowLayoutPanel9.Name = "flowLayoutPanel9";
             // 
             // btSavingsUpdate
-            // 
-            this.btSavingsUpdate.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.btSavingsUpdate, "btSavingsUpdate");
-            this.btSavingsUpdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btSavingsUpdate.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Edit;
-            this.btSavingsUpdate.Menu = null;
             this.btSavingsUpdate.Name = "btSavingsUpdate";
-            this.btSavingsUpdate.UseVisualStyleBackColor = false;
             this.btSavingsUpdate.Click += new System.EventHandler(this.btSavingsUpdate_Click);
             // 
             // buttonSaveSaving
-            // 
-            this.buttonSaveSaving.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.buttonSaveSaving, "buttonSaveSaving");
-            this.buttonSaveSaving.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonSaveSaving.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Save;
-            this.buttonSaveSaving.Menu = null;
             this.buttonSaveSaving.Name = "buttonSaveSaving";
-            this.buttonSaveSaving.UseVisualStyleBackColor = false;
             this.buttonSaveSaving.Click += new System.EventHandler(this.buttonSaveSaving_Click);
             // 
             // buttonFirstDeposit
-            // 
-            this.buttonFirstDeposit.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.buttonFirstDeposit, "buttonFirstDeposit");
-            this.buttonFirstDeposit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonFirstDeposit.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.New;
-            this.buttonFirstDeposit.Menu = null;
             this.buttonFirstDeposit.Name = "buttonFirstDeposit";
-            this.buttonFirstDeposit.UseVisualStyleBackColor = false;
             this.buttonFirstDeposit.Click += new System.EventHandler(this.buttonFirstDeposit_Click);
             // 
             // buttonCloseSaving
-            // 
-            this.buttonCloseSaving.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.buttonCloseSaving, "buttonCloseSaving");
-            this.buttonCloseSaving.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonCloseSaving.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Close;
-            this.buttonCloseSaving.Menu = null;
             this.buttonCloseSaving.Name = "buttonCloseSaving";
-            this.buttonCloseSaving.UseVisualStyleBackColor = false;
             this.buttonCloseSaving.Click += new System.EventHandler(this.buttonCloseSaving_Click);
             // 
             // buttonReopenSaving
-            // 
-            this.buttonReopenSaving.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.buttonReopenSaving, "buttonReopenSaving");
-            this.buttonReopenSaving.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonReopenSaving.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Refresh;
-            this.buttonReopenSaving.Menu = null;
             this.buttonReopenSaving.Name = "buttonReopenSaving";
-            this.buttonReopenSaving.UseVisualStyleBackColor = false;
             this.buttonReopenSaving.Click += new System.EventHandler(this.buttonReopenSaving_Click);
             // 
             // pnlSavingsButtons
@@ -3813,15 +3439,10 @@ namespace Octopus.GUI.Clients
             this.pnlSavingsButtons.Name = "pnlSavingsButtons";
             // 
             // buttonSavingsOperations
-            // 
-            this.buttonSavingsOperations.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_bouton;
+            //
             resources.ApplyResources(this.buttonSavingsOperations, "buttonSavingsOperations");
             this.buttonSavingsOperations.ContextMenuStrip = this.menuBtnAddSavingOperation;
-            this.buttonSavingsOperations.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(55)))));
-            this.buttonSavingsOperations.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Database;
-            this.buttonSavingsOperations.Menu = this.menuBtnAddSavingOperation;
             this.buttonSavingsOperations.Name = "buttonSavingsOperations";
-            this.buttonSavingsOperations.UseVisualStyleBackColor = true;
             // 
             // menuBtnAddSavingOperation
             // 
@@ -3862,14 +3483,9 @@ namespace Octopus.GUI.Clients
             this.specialOperationToolStripMenuItem.Click += new System.EventHandler(this.specialOperationToolStripMenuItem_Click);
             // 
             // btCancelLastSavingEvent
-            // 
-            this.btCancelLastSavingEvent.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.btCancelLastSavingEvent, "btCancelLastSavingEvent");
-            this.btCancelLastSavingEvent.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btCancelLastSavingEvent.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Delete;
-            this.btCancelLastSavingEvent.Menu = null;
             this.btCancelLastSavingEvent.Name = "btCancelLastSavingEvent";
-            this.btCancelLastSavingEvent.UseVisualStyleBackColor = false;
             this.btCancelLastSavingEvent.Click += new System.EventHandler(this.btCancelLastSavingEvent_Click);
             // 
             // btnPrintSavings
@@ -3915,45 +3531,34 @@ namespace Octopus.GUI.Clients
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             // 
             // lbSavingAvBalanceValue
-            // 
-            this.lbSavingAvBalanceValue.BackColor = System.Drawing.Color.Transparent;
+            //
             resources.ApplyResources(this.lbSavingAvBalanceValue, "lbSavingAvBalanceValue");
-            this.lbSavingAvBalanceValue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbSavingAvBalanceValue.Name = "lbSavingAvBalanceValue";
             // 
             // lBSavingAvBalance
             // 
             resources.ApplyResources(this.lBSavingAvBalance, "lBSavingAvBalance");
-            this.lBSavingAvBalance.BackColor = System.Drawing.Color.Transparent;
-            this.lBSavingAvBalance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lBSavingAvBalance.Name = "lBSavingAvBalance";
             // 
             // lbEntryFeesMinMax
-            // 
-            this.lbEntryFeesMinMax.BackColor = System.Drawing.Color.Transparent;
+            //
             resources.ApplyResources(this.lbEntryFeesMinMax, "lbEntryFeesMinMax");
-            this.lbEntryFeesMinMax.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbEntryFeesMinMax.Name = "lbEntryFeesMinMax";
             // 
             // lbInitialAmountMinMax
-            // 
-            this.lbInitialAmountMinMax.BackColor = System.Drawing.Color.Transparent;
+            //
             resources.ApplyResources(this.lbInitialAmountMinMax, "lbInitialAmountMinMax");
-            this.lbInitialAmountMinMax.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbInitialAmountMinMax.Name = "lbInitialAmountMinMax";
             // 
             // lbEntryFees
             // 
             resources.ApplyResources(this.lbEntryFees, "lbEntryFees");
-            this.lbEntryFees.BackColor = System.Drawing.Color.Transparent;
-            this.lbEntryFees.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbEntryFees.Name = "lbEntryFees";
             // 
             // labelInitialAmount
             // 
             resources.ApplyResources(this.labelInitialAmount, "labelInitialAmount");
             this.labelInitialAmount.BackColor = System.Drawing.Color.Transparent;
-            this.labelInitialAmount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelInitialAmount.Name = "labelInitialAmount";
             // 
             // nudEntryFees
@@ -3980,28 +3585,22 @@ namespace Octopus.GUI.Clients
             // 
             resources.ApplyResources(this.label1, "label1");
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.label1.Name = "label1";
             // 
             // label9
             // 
             resources.ApplyResources(this.label9, "label9");
             this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.label9.Name = "label9";
             // 
             // lbSavingBalanceValue
-            // 
-            this.lbSavingBalanceValue.BackColor = System.Drawing.Color.Transparent;
+            //
             resources.ApplyResources(this.lbSavingBalanceValue, "lbSavingBalanceValue");
-            this.lbSavingBalanceValue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbSavingBalanceValue.Name = "lbSavingBalanceValue";
             // 
             // lBSavingBalance
             // 
             resources.ApplyResources(this.lBSavingBalance, "lBSavingBalance");
-            this.lBSavingBalance.BackColor = System.Drawing.Color.Transparent;
-            this.lBSavingBalance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lBSavingBalance.Name = "lBSavingBalance";
             // 
             // tBSavingCode
@@ -4023,7 +3622,6 @@ namespace Octopus.GUI.Clients
             // 
             resources.ApplyResources(this.labelInterestRate, "labelInterestRate");
             this.labelInterestRate.BackColor = System.Drawing.Color.Transparent;
-            this.labelInterestRate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelInterestRate.Name = "labelInterestRate";
             // 
             // nudDownInterestRate
@@ -4045,8 +3643,6 @@ namespace Octopus.GUI.Clients
             // lbWithdrawFees
             // 
             resources.ApplyResources(this.lbWithdrawFees, "lbWithdrawFees");
-            this.lbWithdrawFees.BackColor = System.Drawing.Color.Transparent;
-            this.lbWithdrawFees.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbWithdrawFees.Name = "lbWithdrawFees";
             // 
             // nudWithdrawFees
@@ -4060,17 +3656,13 @@ namespace Octopus.GUI.Clients
             this.nudWithdrawFees.Name = "nudWithdrawFees";
             // 
             // lbInterestRateMinMax
-            // 
-            this.lbInterestRateMinMax.BackColor = System.Drawing.Color.Transparent;
+            //
             resources.ApplyResources(this.lbInterestRateMinMax, "lbInterestRateMinMax");
-            this.lbInterestRateMinMax.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbInterestRateMinMax.Name = "lbInterestRateMinMax";
             // 
             // lbWithdrawFeesMinMax
-            // 
-            this.lbWithdrawFeesMinMax.BackColor = System.Drawing.Color.Transparent;
+            //
             resources.ApplyResources(this.lbWithdrawFeesMinMax, "lbWithdrawFeesMinMax");
-            this.lbWithdrawFeesMinMax.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbWithdrawFeesMinMax.Name = "lbWithdrawFeesMinMax";
             // 
             // tabPageContracts
@@ -4078,7 +3670,6 @@ namespace Octopus.GUI.Clients
             this.tabPageContracts.Controls.Add(this.splitContainerContracts);
             resources.ApplyResources(this.tabPageContracts, "tabPageContracts");
             this.tabPageContracts.Name = "tabPageContracts";
-            this.tabPageContracts.UseVisualStyleBackColor = true;
             // 
             // olvColumnSACExportedBalance
             // 
@@ -4106,7 +3697,6 @@ namespace Octopus.GUI.Clients
             // labelTitleRepayment
             // 
             resources.ApplyResources(this.labelTitleRepayment, "labelTitleRepayment");
-            this.labelTitleRepayment.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelTitleRepayment.Name = "labelTitleRepayment";
             // 
             // buttonPrintSchedule
@@ -4171,7 +3761,6 @@ namespace Octopus.GUI.Clients
             // labelExchangeRate
             // 
             resources.ApplyResources(this.labelExchangeRate, "labelExchangeRate");
-            this.labelExchangeRate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelExchangeRate.Name = "labelExchangeRate";
             // 
             // contextMenuStripPackage
@@ -4229,8 +3818,7 @@ namespace Octopus.GUI.Clients
             this.menuItemCancelPendingSavingEvent.Click += new System.EventHandler(this.menuItemCancelPendingSavingEvent_Click);
             // 
             // ClientForm
-            // 
-            this.BackColor = System.Drawing.SystemColors.Window;
+            //
             resources.ApplyResources(this, "$this");
             this.Controls.Add(this.tabControlPerson);
             this.Name = "ClientForm";
@@ -4443,7 +4031,7 @@ namespace Octopus.GUI.Clients
 
         private TextBox textBoxProjectPurpose;
         private Label labelProjectPurpose;
-        private SweetButton buttonProjectSelectPurpose;
+        private System.Windows.Forms.Button buttonProjectSelectPurpose;
         private TabControl tabControlProject;
         private TabPage tabPageProjectAnalyses;
         private TabPage tabPageProjectLoans;
@@ -4462,7 +4050,7 @@ namespace Octopus.GUI.Clients
         private Label labelCreditCommiteeComment;
         private TextBox textBoxCreditCommiteeComment;
         private Label labelCreditCommiteeDate;
-        private SweetButton buttonCreditCommiteeSaveDecision;
+        private System.Windows.Forms.Button buttonCreditCommiteeSaveDecision;
         private ColumnHeader columnHeaderStatus;
         private ColumnHeader columnProductType;
         private TextBox textBoxLoanContractCode;
@@ -4499,7 +4087,7 @@ namespace Octopus.GUI.Clients
         private ColumnHeader columnHeaderProjectActivity;
         private ColumnHeader columnHeaderProjectComment;
         private GroupBox gBProjectFollowUp;
-        private SweetButton buttonProjectAddFollowUp;
+        private System.Windows.Forms.Button buttonProjectAddFollowUp;
         private NumericUpDown numericUpDownProjectJobs;
         private TextBox tBCreditCommitteeCode;
         private Label labelCreditCommiteeCode;
@@ -4507,9 +4095,9 @@ namespace Octopus.GUI.Clients
         private TabPage tabPageLoanGuarantees;
         private SplitContainer splitContainer1;
         private Label lblGuarantorsList;
-        private SweetButton buttonDelete;
-        private SweetButton buttonSelectAGarantors;
-        private SweetButton buttonModifyAGarantors;
+        private System.Windows.Forms.Button buttonDelete;
+        private System.Windows.Forms.Button buttonSelectAGarantors;
+        private System.Windows.Forms.Button buttonModifyAGarantors;
         private ListView listViewGuarantors;
         private ColumnHeader columnHeaderName;
         private ColumnHeader columnHeader17;
@@ -4519,10 +4107,10 @@ namespace Octopus.GUI.Clients
         private ColumnHeader columnHeader20;
         private ColumnHeader columnHeader25;
         private Label lblCollaterals;
-        private SweetButton buttonModifyCollateral;
-        private SweetButton buttonDelCollateral;
-        private SweetButton buttonAddCollateral;
-        private SweetButton btnLoanShares;
+        private System.Windows.Forms.Button buttonModifyCollateral;
+        private System.Windows.Forms.Button buttonDelCollateral;
+        private System.Windows.Forms.Button buttonAddCollateral;
+        private System.Windows.Forms.Button btnLoanShares;
         private Label lblCreditCurrency;
         private Label labelDateOffirstInstallment;
         private DateTimePicker dtpDateOfFirstInstallment;
@@ -4557,9 +4145,9 @@ namespace Octopus.GUI.Clients
         private Label lbInterestAccrualValue;
         private Label lbInterestPosting;
         private Label lbInterestAccrual;
-        private SweetButton buttonCloseSaving;
-        private SweetButton btSavingsUpdate;
-        private SweetButton buttonSaveSaving;
+        private System.Windows.Forms.Button buttonCloseSaving;
+        private System.Windows.Forms.Button btSavingsUpdate;
+        private System.Windows.Forms.Button buttonSaveSaving;
         private Label lbInterestRateMinMax;
         private NumericUpDown nudDownInterestRate;
         private Label lBSavingBalance;
@@ -4585,8 +4173,8 @@ namespace Octopus.GUI.Clients
         private ColumnHeader columnHeader23;
         private ColumnHeader columnHeader27;
         private ColumnHeader columnHeader24;
-        private SweetButton buttonSavingsOperations;
-        private SweetButton btCancelLastSavingEvent;
+        private System.Windows.Forms.Button buttonSavingsOperations;
+        private System.Windows.Forms.Button btCancelLastSavingEvent;
         private GroupBox groupBoxSavingTransfer;
         private Label labelSavingTransferMaxValue;
         private Label labelSavingTransferMinValue;
@@ -4608,7 +4196,7 @@ namespace Octopus.GUI.Clients
         private Label lbSavingBalanceValue;
         private BrightIdeasSoftware.OLVColumn olvColumnLACExportedBalance;
         private BrightIdeasSoftware.OLVColumn olvColumnSACExportedBalance;
-        private SweetButton btnEditSchedule;
+        private System.Windows.Forms.Button btnEditSchedule;
         private ColumnHeader columnHeaderDesc;
         private ColumnHeader columnHeaderColDesc;
         private TabPage tabPageAdvancedSettings;
@@ -4690,7 +4278,7 @@ namespace Octopus.GUI.Clients
         private TableLayoutPanel tableLayoutPanel17;
         private Label label1;
         private ComboBox cmbSavingsOfficer;
-        private SweetButton buttonReopenSaving;
+        private System.Windows.Forms.Button buttonReopenSaving;
         private NumericUpDown nudChequeDepositFees;
         private Label lblChequeDepositFeesMinMax;
         private Label lbChequeDepositFees;
@@ -4718,13 +4306,13 @@ namespace Octopus.GUI.Clients
         private ColumnHeader colType;
         private ToolStripMenuItem specialOperationToolStripMenuItem;
         private ColumnHeader colAmount;
-        private SweetButton buttonViewCollateral;
-        private SweetButton buttonViewAGarantors;
+        private System.Windows.Forms.Button buttonViewCollateral;
+        private System.Windows.Forms.Button buttonViewAGarantors;
         private TextBox textBoxLoanPurpose;
         private Label labelLoanPurpose;
         private TextBox textBoxComments;
         private Label labelComments;
-        private SweetButton btnUpdateSettings;
+        private System.Windows.Forms.Button btnUpdateSettings;
         private GroupBox groupBox2;
         private TableLayoutPanel tableLayoutPanel10;
         private Label lbCompulsorySavingsAmount;
@@ -4732,7 +4320,7 @@ namespace Octopus.GUI.Clients
         private Label lbCompAmountPercentMinMax;
         private LinkLabel linkCompulsorySavings;
         private NumericUpDown numCompulsoryAmountPercent;
-        private SweetButton buttonFirstDeposit;
+        private System.Windows.Forms.Button buttonFirstDeposit;
         private NumericUpDown nudLoanAmount;
         private NumericUpDown nudInterestRate;
         private Label lblIbtFeeMinMax;
@@ -4800,10 +4388,10 @@ namespace Octopus.GUI.Clients
         private ColumnHeader columnHeaderLateDays;
         private ColumnHeader columnHeaderComment;
         private FlowLayoutPanel flowLayoutPanel8;
-        private SweetButton buttonLoanRepaymentRepay;
-        private SweetButton buttonLoanReschedule;
-        private SweetButton buttonAddTranche;
-        private SweetButton btnWriteOff;
+        private System.Windows.Forms.Button buttonLoanRepaymentRepay;
+        private System.Windows.Forms.Button buttonLoanReschedule;
+        private System.Windows.Forms.Button buttonAddTranche;
+        private System.Windows.Forms.Button btnWriteOff;
         private PrintButton btnPrintLoanRepayment;
         private TabPage tabPageEvents;
         private ListViewEx lvEvents;
@@ -4827,7 +4415,7 @@ namespace Octopus.GUI.Clients
         private ColumnHeader colIsDeleted;
         private GroupBox groupBox1;
         private PrintButton btnPrintLoanEvents;
-        private SweetButton btnWaiveFee;
-        private SweetButton btnDeleteEvent;
+        private System.Windows.Forms.Button btnWaiveFee;
+        private System.Windows.Forms.Button btnDeleteEvent;
     }
 }

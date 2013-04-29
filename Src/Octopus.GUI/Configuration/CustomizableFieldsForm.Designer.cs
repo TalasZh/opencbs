@@ -1,4 +1,4 @@
-﻿using Octopus.GUI.UserControl;
+using Octopus.GUI.UserControl;
 
 namespace Octopus.GUI.Configuration
 {
@@ -37,8 +37,8 @@ namespace Octopus.GUI.Configuration
             this.colFieldsNum = new BrightIdeasSoftware.OLVColumn();
             this.colFields = new BrightIdeasSoftware.OLVColumn();
             this.panelControls = new System.Windows.Forms.FlowLayoutPanel();
-            this.btnAdd = new Octopus.GUI.UserControl.SweetButton();
-            this.btnEdit = new Octopus.GUI.UserControl.SweetButton();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.btnEdit = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.olvFieldGroups)).BeginInit();
             this.panelControls.SuspendLayout();
@@ -123,12 +123,8 @@ namespace Octopus.GUI.Configuration
             this.btnAdd.AccessibleDescription = null;
             this.btnAdd.AccessibleName = null;
             resources.ApplyResources(this.btnAdd, "btnAdd");
-            this.btnAdd.BackgroundImage = null;
             this.btnAdd.Font = null;
-            this.btnAdd.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.New;
-            this.btnAdd.Menu = null;
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnEdit
@@ -136,12 +132,8 @@ namespace Octopus.GUI.Configuration
             this.btnEdit.AccessibleDescription = null;
             this.btnEdit.AccessibleName = null;
             resources.ApplyResources(this.btnEdit, "btnEdit");
-            this.btnEdit.BackgroundImage = null;
             this.btnEdit.Font = null;
-            this.btnEdit.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Edit;
-            this.btnEdit.Menu = null;
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.UseVisualStyleBackColor = true;
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // CustomizableFieldsForm
@@ -150,7 +142,6 @@ namespace Octopus.GUI.Configuration
             this.AccessibleName = null;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = null;
             this.Controls.Add(this.panel1);
             this.Name = "CustomizableFieldsForm";
             this.Load += new System.EventHandler(this.AdvCustomizableFieldsForm_Load);
@@ -168,8 +159,8 @@ namespace Octopus.GUI.Configuration
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.FlowLayoutPanel panelControls;
-        private SweetButton btnAdd;
-        private SweetButton btnEdit;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnEdit;
         private BrightIdeasSoftware.ObjectListView olvFieldGroups;
         private BrightIdeasSoftware.OLVColumn colEntityName;
         private BrightIdeasSoftware.OLVColumn colFieldsNum;

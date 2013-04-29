@@ -1,4 +1,4 @@
-﻿namespace Octopus.GUI.TellerManagement
+namespace Octopus.GUI.TellerManagement
 {
     partial class FrmOpenCloseTeller
     {
@@ -35,20 +35,18 @@
             this.label2 = new System.Windows.Forms.Label();
             this.tbAmount = new System.Windows.Forms.TextBox();
             this.labelCurrency = new System.Windows.Forms.Label();
-            this.btnClose = new Octopus.GUI.UserControl.SweetButton();
-            this.btnConfirm = new Octopus.GUI.UserControl.SweetButton();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.btnConfirm = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             resources.ApplyResources(this.label1, "label1");
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.label1.Name = "label1";
             // 
             // lblName
             // 
             resources.ApplyResources(this.lblName, "lblName");
-            this.lblName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblName.Name = "lblName";
             // 
             // cmbTellers
@@ -62,7 +60,6 @@
             // label2
             // 
             resources.ApplyResources(this.label2, "label2");
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.label2.Name = "label2";
             // 
             // tbAmount
@@ -75,27 +72,20 @@
             // labelCurrency
             // 
             resources.ApplyResources(this.labelCurrency, "labelCurrency");
-            this.labelCurrency.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelCurrency.Name = "labelCurrency";
             // 
             // btnClose
             // 
             this.btnClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnClose.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Close;
             resources.ApplyResources(this.btnClose, "btnClose");
-            this.btnClose.Menu = null;
             this.btnClose.Name = "btnClose";
-            this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnConfirm
             // 
             this.btnConfirm.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnConfirm.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Save;
             resources.ApplyResources(this.btnConfirm, "btnConfirm");
-            this.btnConfirm.Menu = null;
             this.btnConfirm.Name = "btnConfirm";
-            this.btnConfirm.UseVisualStyleBackColor = true;
             this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
             // 
             // FrmOpenCloseTeller
@@ -129,7 +119,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox tbAmount;
         private System.Windows.Forms.Label labelCurrency;
-        private Octopus.GUI.UserControl.SweetButton btnClose;
-        private Octopus.GUI.UserControl.SweetButton btnConfirm;
+        private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Button btnConfirm;
     }
 }

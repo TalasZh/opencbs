@@ -1,4 +1,4 @@
-﻿namespace Octopus.GUI.Configuration
+namespace Octopus.GUI.Configuration
 {
     partial class ExtensionManagerForm
     {
@@ -35,9 +35,9 @@
             this.olvcOctopusVersion = new BrightIdeasSoftware.OLVColumn();
             this.olvcVersion = new BrightIdeasSoftware.OLVColumn();
             this.olvcFileSize = new BrightIdeasSoftware.OLVColumn();
-            this.btnAdd = new Octopus.GUI.UserControl.SweetButton();
+            this.btnAdd = new System.Windows.Forms.Button();
             this.ofdExtension = new System.Windows.Forms.OpenFileDialog();
-            this.btnDelete = new Octopus.GUI.UserControl.SweetButton();
+            this.btnDelete = new System.Windows.Forms.Button();
             this.lblChangeEffectOnRestart = new System.Windows.Forms.Label();
             this.pnlRight = new System.Windows.Forms.Panel();
             this.pnlBottom = new System.Windows.Forms.Panel();
@@ -108,12 +108,9 @@
             resources.ApplyResources(this.olvcFileSize, "olvcFileSize");
             // 
             // btnAdd
-            // 
-            this.btnAdd.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.New;
+            //
             resources.ApplyResources(this.btnAdd, "btnAdd");
-            this.btnAdd.Menu = null;
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.BtnAddClick);
             // 
             // ofdExtension
@@ -121,18 +118,14 @@
             resources.ApplyResources(this.ofdExtension, "ofdExtension");
             // 
             // btnDelete
-            // 
-            this.btnDelete.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Delete;
+            //
             resources.ApplyResources(this.btnDelete, "btnDelete");
-            this.btnDelete.Menu = null;
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.UseVisualStyleBackColor = true;
             this.btnDelete.Click += new System.EventHandler(this.BtnDeleteClick);
             // 
             // lblChangeEffectOnRestart
             // 
             resources.ApplyResources(this.lblChangeEffectOnRestart, "lblChangeEffectOnRestart");
-            this.lblChangeEffectOnRestart.ForeColor = System.Drawing.Color.DarkRed;
             this.lblChangeEffectOnRestart.Name = "lblChangeEffectOnRestart";
             // 
             // pnlRight
@@ -172,10 +165,10 @@
 
         private BrightIdeasSoftware.ObjectListView olvExtensions;
         private BrightIdeasSoftware.OLVColumn olvcExtensionName;
-        private Octopus.GUI.UserControl.SweetButton btnAdd;
+        private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.OpenFileDialog ofdExtension;
         private BrightIdeasSoftware.OLVColumn olvcFileSize;
-        private Octopus.GUI.UserControl.SweetButton btnDelete;
+        private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Label lblChangeEffectOnRestart;
         private BrightIdeasSoftware.OLVColumn olvcOctopusVersion;
         private BrightIdeasSoftware.OLVColumn olvcVersion;

@@ -1,4 +1,4 @@
-﻿using Octopus.GUI.UserControl;
+using Octopus.GUI.UserControl;
 
 namespace Octopus.GUI.Clients
 {
@@ -51,8 +51,8 @@ namespace Octopus.GUI.Clients
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelNSGControls = new System.Windows.Forms.Panel();
             this.btnPrint = new Octopus.GUI.UserControl.PrintButton();
-            this.btnSave = new Octopus.GUI.UserControl.SweetButton();
-            this.btnCancel2 = new Octopus.GUI.UserControl.SweetButton();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.btnCancel2 = new System.Windows.Forms.Button();
             this.tabVillage = new System.Windows.Forms.TabControl();
             this.tpAddress = new System.Windows.Forms.TabPage();
             this.gbAddress = new System.Windows.Forms.GroupBox();
@@ -64,10 +64,10 @@ namespace Octopus.GUI.Clients
             this.colJoinDate = new System.Windows.Forms.ColumnHeader();
             this.colLeftDate = new System.Windows.Forms.ColumnHeader();
             this.panelMembersControls = new System.Windows.Forms.FlowLayoutPanel();
-            this.btnSearch = new Octopus.GUI.UserControl.SweetButton();
-            this.btnAdd = new Octopus.GUI.UserControl.SweetButton();
-            this.btnRemove = new Octopus.GUI.UserControl.SweetButton();
-            this.btnSetAsLeader = new Octopus.GUI.UserControl.SweetButton();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.btnRemove = new System.Windows.Forms.Button();
+            this.btnSetAsLeader = new System.Windows.Forms.Button();
             this.cbxShowRemovedMembers = new System.Windows.Forms.CheckBox();
             this.tabPageLoan = new System.Windows.Forms.TabPage();
             this.listViewLoans = new System.Windows.Forms.ListView();
@@ -87,10 +87,10 @@ namespace Octopus.GUI.Clients
             this.nextAmountToRepay = new System.Windows.Forms.ColumnHeader();
             this.closeDate = new System.Windows.Forms.ColumnHeader();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
-            this.btnAddLoan = new Octopus.GUI.UserControl.SweetButton();
-            this.btnValidateLoans = new Octopus.GUI.UserControl.SweetButton();
-            this.btnDisburse = new Octopus.GUI.UserControl.SweetButton();
-            this.btnRepay = new Octopus.GUI.UserControl.SweetButton();
+            this.btnAddLoan = new System.Windows.Forms.Button();
+            this.btnValidateLoans = new System.Windows.Forms.Button();
+            this.btnDisburse = new System.Windows.Forms.Button();
+            this.btnRepay = new System.Windows.Forms.Button();
             this.cbxDisplayAllLoans = new System.Windows.Forms.CheckBox();
             this.tabPageSavings = new System.Windows.Forms.TabPage();
             this.listViewSavings = new System.Windows.Forms.ListView();
@@ -105,9 +105,9 @@ namespace Octopus.GUI.Clients
             this.columnHeaderStatus = new System.Windows.Forms.ColumnHeader();
             this.columnHeaderCloseDate = new System.Windows.Forms.ColumnHeader();
             this.panelSavingsControls = new System.Windows.Forms.FlowLayoutPanel();
-            this.btnAddSavings = new Octopus.GUI.UserControl.SweetButton();
-            this.buttonViewSaving = new Octopus.GUI.UserControl.SweetButton();
-            this.buttonFastDeposit = new Octopus.GUI.UserControl.SweetButton();
+            this.btnAddSavings = new System.Windows.Forms.Button();
+            this.buttonViewSaving = new System.Windows.Forms.Button();
+            this.buttonFastDeposit = new System.Windows.Forms.Button();
             this.tabPageMeetings = new System.Windows.Forms.TabPage();
             this.olvAttendees = new BrightIdeasSoftware.ObjectListView();
             this.olvAttendeeIdColumn = new BrightIdeasSoftware.OLVColumn();
@@ -119,7 +119,7 @@ namespace Octopus.GUI.Clients
             this.panelAttendeesControls = new System.Windows.Forms.FlowLayoutPanel();
             this.labelMeetingDate = new System.Windows.Forms.Label();
             this.comboBoxMeetingDates = new System.Windows.Forms.ComboBox();
-            this.buttonUpdateAttendence = new Octopus.GUI.UserControl.SweetButton();
+            this.buttonUpdateAttendence = new System.Windows.Forms.Button();
             this.tabPageCustomizableFields = new System.Windows.Forms.TabPage();
             this.gbDetails.SuspendLayout();
             this.panelNSGDetails.SuspendLayout();
@@ -147,7 +147,6 @@ namespace Octopus.GUI.Clients
             this.gbDetails.Controls.Add(this.pictureBox2);
             this.gbDetails.Controls.Add(this.pictureBox1);
             resources.ApplyResources(this.gbDetails, "gbDetails");
-            this.gbDetails.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.gbDetails.Name = "gbDetails";
             this.gbDetails.TabStop = false;
             // 
@@ -240,7 +239,6 @@ namespace Octopus.GUI.Clients
             // 
             resources.ApplyResources(this.cbMeetingDay, "cbMeetingDay");
             this.cbMeetingDay.Name = "cbMeetingDay";
-            this.cbMeetingDay.UseVisualStyleBackColor = true;
             this.cbMeetingDay.CheckedChanged += new System.EventHandler(this.cbMeetingDay_CheckedChanged);
             // 
             // linkLabelChangePhoto2
@@ -298,23 +296,13 @@ namespace Octopus.GUI.Clients
             // btnSave
             // 
             resources.ApplyResources(this.btnSave, "btnSave");
-            this.btnSave.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnSave.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Save;
-            this.btnSave.Menu = null;
             this.btnSave.Name = "btnSave";
-            this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnCancel2
             // 
             resources.ApplyResources(this.btnCancel2, "btnCancel2");
-            this.btnCancel2.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnCancel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnCancel2.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Close;
-            this.btnCancel2.Menu = null;
             this.btnCancel2.Name = "btnCancel2";
-            this.btnCancel2.UseVisualStyleBackColor = false;
             this.btnCancel2.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // tabVillage
@@ -334,12 +322,10 @@ namespace Octopus.GUI.Clients
             resources.ApplyResources(this.tpAddress, "tpAddress");
             this.tpAddress.Controls.Add(this.gbAddress);
             this.tpAddress.Name = "tpAddress";
-            this.tpAddress.UseVisualStyleBackColor = true;
             // 
             // gbAddress
             // 
             resources.ApplyResources(this.gbAddress, "gbAddress");
-            this.gbAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.gbAddress.Name = "gbAddress";
             this.gbAddress.TabStop = false;
             // 
@@ -349,7 +335,6 @@ namespace Octopus.GUI.Clients
             this.tpMembers.Controls.Add(this.panelMembersControls);
             resources.ApplyResources(this.tpMembers, "tpMembers");
             this.tpMembers.Name = "tpMembers";
-            this.tpMembers.UseVisualStyleBackColor = true;
             // 
             // lvMembers
             // 
@@ -401,55 +386,33 @@ namespace Octopus.GUI.Clients
             this.panelMembersControls.Name = "panelMembersControls";
             // 
             // btnSearch
-            // 
-            this.btnSearch.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.btnSearch, "btnSearch");
-            this.btnSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnSearch.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Search;
-            this.btnSearch.Menu = null;
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.UseVisualStyleBackColor = false;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // btnAdd
-            // 
-            this.btnAdd.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.btnAdd, "btnAdd");
-            this.btnAdd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnAdd.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.New;
-            this.btnAdd.Menu = null;
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnRemove
-            // 
-            this.btnRemove.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.btnRemove, "btnRemove");
-            this.btnRemove.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnRemove.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Delete;
-            this.btnRemove.Menu = null;
             this.btnRemove.Name = "btnRemove";
-            this.btnRemove.UseVisualStyleBackColor = false;
             this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
             // btnSetAsLeader
-            // 
-            this.btnSetAsLeader.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.btnSetAsLeader, "btnSetAsLeader");
-            this.btnSetAsLeader.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnSetAsLeader.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.None;
-            this.btnSetAsLeader.Menu = null;
             this.btnSetAsLeader.Name = "btnSetAsLeader";
-            this.btnSetAsLeader.UseVisualStyleBackColor = false;
             this.btnSetAsLeader.Click += new System.EventHandler(this.btnSetAsLeader_Click);
             // 
             // cbxShowRemovedMembers
             // 
             resources.ApplyResources(this.cbxShowRemovedMembers, "cbxShowRemovedMembers");
-            this.cbxShowRemovedMembers.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.cbxShowRemovedMembers.Name = "cbxShowRemovedMembers";
-            this.cbxShowRemovedMembers.UseVisualStyleBackColor = true;
             this.cbxShowRemovedMembers.CheckedChanged += new System.EventHandler(this.cbxShowRemovedMembers_CheckedChanged);
             // 
             // tabPageLoan
@@ -458,7 +421,6 @@ namespace Octopus.GUI.Clients
             this.tabPageLoan.Controls.Add(this.flowLayoutPanel3);
             resources.ApplyResources(this.tabPageLoan, "tabPageLoan");
             this.tabPageLoan.Name = "tabPageLoan";
-            this.tabPageLoan.UseVisualStyleBackColor = true;
             // 
             // listViewLoans
             // 
@@ -557,57 +519,35 @@ namespace Octopus.GUI.Clients
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
             // 
             // btnAddLoan
-            // 
-            this.btnAddLoan.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.btnAddLoan, "btnAddLoan");
-            this.btnAddLoan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnAddLoan.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.New;
-            this.btnAddLoan.Menu = null;
             this.btnAddLoan.Name = "btnAddLoan";
-            this.btnAddLoan.UseVisualStyleBackColor = false;
             this.btnAddLoan.Click += new System.EventHandler(this.btnAddLoan_Click);
             // 
             // btnValidateLoans
-            // 
-            this.btnValidateLoans.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.btnValidateLoans, "btnValidateLoans");
-            this.btnValidateLoans.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnValidateLoans.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.None;
-            this.btnValidateLoans.Menu = null;
             this.btnValidateLoans.Name = "btnValidateLoans";
-            this.btnValidateLoans.UseVisualStyleBackColor = false;
             this.btnValidateLoans.Click += new System.EventHandler(this.btnValidateLoans_Click);
             // 
             // btnDisburse
-            // 
-            this.btnDisburse.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.btnDisburse, "btnDisburse");
-            this.btnDisburse.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnDisburse.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.None;
-            this.btnDisburse.Menu = null;
             this.btnDisburse.Name = "btnDisburse";
             this.btnDisburse.Tag = true;
-            this.btnDisburse.UseVisualStyleBackColor = false;
             this.btnDisburse.Click += new System.EventHandler(this.buttonLoanDisbursment_Click);
             // 
             // btnRepay
-            // 
-            this.btnRepay.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.btnRepay, "btnRepay");
-            this.btnRepay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnRepay.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.None;
-            this.btnRepay.Menu = null;
             this.btnRepay.Name = "btnRepay";
             this.btnRepay.Tag = true;
-            this.btnRepay.UseVisualStyleBackColor = false;
             this.btnRepay.Click += new System.EventHandler(this.btnRepay_Click);
             // 
             // cbxDisplayAllLoans
             // 
             resources.ApplyResources(this.cbxDisplayAllLoans, "cbxDisplayAllLoans");
-            this.cbxDisplayAllLoans.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.cbxDisplayAllLoans.Name = "cbxDisplayAllLoans";
-            this.cbxDisplayAllLoans.UseVisualStyleBackColor = true;
             this.cbxDisplayAllLoans.CheckedChanged += new System.EventHandler(this.cbxDisplayAllLoans_CheckedChanged);
             // 
             // tabPageSavings
@@ -616,7 +556,6 @@ namespace Octopus.GUI.Clients
             this.tabPageSavings.Controls.Add(this.panelSavingsControls);
             resources.ApplyResources(this.tabPageSavings, "tabPageSavings");
             this.tabPageSavings.Name = "tabPageSavings";
-            this.tabPageSavings.UseVisualStyleBackColor = true;
             // 
             // listViewSavings
             // 
@@ -689,36 +628,21 @@ namespace Octopus.GUI.Clients
             this.panelSavingsControls.Name = "panelSavingsControls";
             // 
             // btnAddSavings
-            // 
-            this.btnAddSavings.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.btnAddSavings, "btnAddSavings");
-            this.btnAddSavings.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnAddSavings.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.New;
-            this.btnAddSavings.Menu = null;
             this.btnAddSavings.Name = "btnAddSavings";
-            this.btnAddSavings.UseVisualStyleBackColor = false;
             this.btnAddSavings.Click += new System.EventHandler(this.btnAddSavings_Click);
             // 
             // buttonViewSaving
-            // 
-            this.buttonViewSaving.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.buttonViewSaving, "buttonViewSaving");
-            this.buttonViewSaving.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonViewSaving.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.View;
-            this.buttonViewSaving.Menu = null;
             this.buttonViewSaving.Name = "buttonViewSaving";
-            this.buttonViewSaving.UseVisualStyleBackColor = false;
             this.buttonViewSaving.Click += new System.EventHandler(this.buttonViewSaving_Click);
             // 
             // buttonFastDeposit
-            // 
-            this.buttonFastDeposit.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.buttonFastDeposit, "buttonFastDeposit");
-            this.buttonFastDeposit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonFastDeposit.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.None;
-            this.buttonFastDeposit.Menu = null;
             this.buttonFastDeposit.Name = "buttonFastDeposit";
-            this.buttonFastDeposit.UseVisualStyleBackColor = false;
             this.buttonFastDeposit.Click += new System.EventHandler(this.buttonFastDeposit_Click);
             // 
             // tabPageMeetings
@@ -727,7 +651,6 @@ namespace Octopus.GUI.Clients
             this.tabPageMeetings.Controls.Add(this.panelAttendeesControls);
             resources.ApplyResources(this.tabPageMeetings, "tabPageMeetings");
             this.tabPageMeetings.Name = "tabPageMeetings";
-            this.tabPageMeetings.UseVisualStyleBackColor = true;
             // 
             // olvAttendees
             // 
@@ -816,21 +739,15 @@ namespace Octopus.GUI.Clients
             this.comboBoxMeetingDates.SelectedValueChanged += new System.EventHandler(this.comboBoxMeetingDates_SelectedValueChanged);
             // 
             // buttonUpdateAttendence
-            // 
-            this.buttonUpdateAttendence.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.buttonUpdateAttendence, "buttonUpdateAttendence");
-            this.buttonUpdateAttendence.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonUpdateAttendence.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Save;
-            this.buttonUpdateAttendence.Menu = null;
             this.buttonUpdateAttendence.Name = "buttonUpdateAttendence";
-            this.buttonUpdateAttendence.UseVisualStyleBackColor = false;
             this.buttonUpdateAttendence.Click += new System.EventHandler(this.buttonUpdateAttendence_Click);
             // 
             // tabPageCustomizableFields
             // 
             resources.ApplyResources(this.tabPageCustomizableFields, "tabPageCustomizableFields");
             this.tabPageCustomizableFields.Name = "tabPageCustomizableFields";
-            this.tabPageCustomizableFields.UseVisualStyleBackColor = true;
             // 
             // NonSolidaryGroupForm
             // 
@@ -883,8 +800,8 @@ namespace Octopus.GUI.Clients
         private System.Windows.Forms.Label lblDate;
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Panel panelNSGControls;
-        private SweetButton btnCancel2;
-        private SweetButton btnSave;
+        private System.Windows.Forms.Button btnCancel2;
+        private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.TabControl tabVillage;
         private System.Windows.Forms.TabPage tpAddress;
         private System.Windows.Forms.TabPage tpMembers;
@@ -892,14 +809,14 @@ namespace Octopus.GUI.Clients
         private System.Windows.Forms.ListView lvMembers;
         private System.Windows.Forms.ColumnHeader colName;
         private System.Windows.Forms.ColumnHeader colPassport;
-        private SweetButton btnSearch;
-        private SweetButton btnRemove;
-        private SweetButton btnAdd;
+        private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.Button btnRemove;
+        private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.ComboBox cbLoanOfficers;
         private System.Windows.Forms.ColumnHeader colStatus;
         private System.Windows.Forms.TabPage tabPageSavings;
         private System.Windows.Forms.ListView listViewSavings;
-        private SweetButton btnAddSavings;
+        private System.Windows.Forms.Button btnAddSavings;
         private System.Windows.Forms.ColumnHeader columnHeaderCode;
         private System.Windows.Forms.ColumnHeader columnHeaderType;
         private System.Windows.Forms.ColumnHeader columnHeaderBalance;
@@ -908,16 +825,16 @@ namespace Octopus.GUI.Clients
         private System.Windows.Forms.ColumnHeader columnHeaderStatus;
         private System.Windows.Forms.ColumnHeader columnHeaderCloseDate;
         private System.Windows.Forms.ColumnHeader columnHeaderProduct;
-        private SweetButton buttonViewSaving;
-        private SweetButton buttonFastDeposit;
+        private System.Windows.Forms.Button buttonViewSaving;
+        private System.Windows.Forms.Button buttonFastDeposit;
         private System.Windows.Forms.LinkLabel linkLabelChangePhoto;
         public System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.LinkLabel linkLabelChangePhoto2;
         public System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.TabPage tabPageLoan;
-        private SweetButton btnAddLoan;
-        private SweetButton btnRepay;
-        private SweetButton btnDisburse;
+        private System.Windows.Forms.Button btnAddLoan;
+        private System.Windows.Forms.Button btnRepay;
+        private System.Windows.Forms.Button btnDisburse;
         private System.Windows.Forms.ListView listViewLoans;
         private System.Windows.Forms.ColumnHeader clientName;
         private System.Windows.Forms.ColumnHeader loanProduct;
@@ -946,12 +863,12 @@ namespace Octopus.GUI.Clients
         private System.Windows.Forms.ColumnHeader colJoinDate;
         private System.Windows.Forms.ColumnHeader colLeftDate;
         private System.Windows.Forms.CheckBox cbxShowRemovedMembers;
-        private SweetButton btnSetAsLeader;
+        private System.Windows.Forms.Button btnSetAsLeader;
         private System.Windows.Forms.CheckBox cbxDisplayAllLoans;
         private System.Windows.Forms.ColumnHeader closeDate;
         private System.Windows.Forms.TabPage tabPageMeetings;
         private System.Windows.Forms.FlowLayoutPanel panelAttendeesControls;
-        private SweetButton buttonUpdateAttendence;
+        private System.Windows.Forms.Button buttonUpdateAttendence;
         private BrightIdeasSoftware.ObjectListView olvAttendees;
         private BrightIdeasSoftware.OLVColumn olvAttendeeNameColumn;
         private BrightIdeasSoftware.OLVColumn olvAttendeeAttendedColumn;
@@ -962,7 +879,7 @@ namespace Octopus.GUI.Clients
         private BrightIdeasSoftware.OLVColumn olvAttendeeTiersIdColumn;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
         private System.Windows.Forms.FlowLayoutPanel panelMembersControls;
-        private SweetButton btnValidateLoans;
+        private System.Windows.Forms.Button btnValidateLoans;
         private System.Windows.Forms.TabPage tabPageCustomizableFields;
         private BrightIdeasSoftware.OLVColumn olvAttendeeLoanIdColumn;
         private PrintButton btnPrint;

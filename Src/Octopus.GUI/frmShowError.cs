@@ -1,5 +1,5 @@
 //Octopus MFS is an integrated suite for managing a Micro Finance Institution: clients, contracts, accounting, reporting and risk
-//Copyright © 2006,2007 OCTO Technology & OXUS Development Network
+//Copyright ï¿½ 2006,2007 OCTO Technology & OXUS Development Network
 //
 //This program is free software; you can redistribute it and/or modify
 //it under the terms of the GNU Lesser General Public License as published by
@@ -126,8 +126,7 @@ namespace Octopus.GUI
             this.buttonOK.Click += new System.EventHandler(this.buttonOK_Click);
             // 
             // groupBox1
-            // 
-            this.groupBox1.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris_180;
+            //
             resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Controls.Add(this.buttonShowDetail);
             this.groupBox1.Controls.Add(this.buttonOK);
@@ -146,7 +145,6 @@ namespace Octopus.GUI
             // frmShowError
             // 
             resources.ApplyResources(this, "$this");
-            this.BackColor = System.Drawing.Color.White;
             this.CancelButton = this.buttonOK;
             this.ControlBox = false;
             this.Controls.Add(this.richTextBoxExceptionDetail);

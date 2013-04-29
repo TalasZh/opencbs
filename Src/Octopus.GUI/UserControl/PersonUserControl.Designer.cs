@@ -1,4 +1,4 @@
-﻿using System.Windows.Forms;
+using System.Windows.Forms;
 using System;
 using System.ComponentModel;
 
@@ -120,8 +120,8 @@ namespace Octopus.GUI.UserControl
             this.columnHeaderNbOfCredits = new System.Windows.Forms.ColumnHeader();
             this.columnHeaderNbOfGuarantees = new System.Windows.Forms.ColumnHeader();
             this.groupBoxProjects = new System.Windows.Forms.GroupBox();
-            this.buttonViewProject = new Octopus.GUI.UserControl.SweetButton();
-            this.buttonAddProject = new Octopus.GUI.UserControl.SweetButton();
+            this.buttonViewProject = new System.Windows.Forms.Button();
+            this.buttonAddProject = new System.Windows.Forms.Button();
             this.panelBottom = new System.Windows.Forms.Panel();
             this.tabControlEconomicInfo = new System.Windows.Forms.TabControl();
             this.tabPageAddress = new System.Windows.Forms.TabPage();
@@ -157,8 +157,8 @@ namespace Octopus.GUI.UserControl
             this.imageListEconomicInfo = new System.Windows.Forms.ImageList(this.components);
             this.panelEconomicActivity = new System.Windows.Forms.Panel();
             this.btnPrint = new Octopus.GUI.UserControl.PrintButton();
-            this.buttonCancel = new Octopus.GUI.UserControl.SweetButton();
-            this.buttonSave = new Octopus.GUI.UserControl.SweetButton();
+            this.buttonCancel = new System.Windows.Forms.Button();
+            this.buttonSave = new System.Windows.Forms.Button();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBoxCivilities = new System.Windows.Forms.GroupBox();
             this.lblBranch = new System.Windows.Forms.Label();
@@ -335,8 +335,7 @@ namespace Octopus.GUI.UserControl
             resources.ApplyResources(this.columnHeaderCloseDate, "columnHeaderCloseDate");
             // 
             // groupBoxProjectButton
-            // 
-            this.groupBoxProjectButton.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris_180;
+            //
             resources.ApplyResources(this.groupBoxProjectButton, "groupBoxProjectButton");
             this.groupBoxProjectButton.Controls.Add(this.buttonProjectAddGuarantee);
             this.groupBoxProjectButton.Controls.Add(this.buttonProjectViewContract);
@@ -422,8 +421,7 @@ namespace Octopus.GUI.UserControl
             resources.ApplyResources(this.columnHeaderNbOfGuarantees, "columnHeaderNbOfGuarantees");
             // 
             // groupBoxProjects
-            // 
-            this.groupBoxProjects.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris_180;
+            //
             resources.ApplyResources(this.groupBoxProjects, "groupBoxProjects");
             this.groupBoxProjects.Controls.Add(this.buttonViewProject);
             this.groupBoxProjects.Controls.Add(this.buttonAddProject);
@@ -433,25 +431,13 @@ namespace Octopus.GUI.UserControl
             // buttonViewProject
             // 
             resources.ApplyResources(this.buttonViewProject, "buttonViewProject");
-            this.buttonViewProject.BackColor = System.Drawing.Color.Gainsboro;
-            this.buttonViewProject.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonViewProject.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.View;
-            this.buttonViewProject.Image = global::Octopus.GUI.Properties.Resources.theme1_1_view;
-            this.buttonViewProject.Menu = null;
             this.buttonViewProject.Name = "buttonViewProject";
-            this.buttonViewProject.UseVisualStyleBackColor = false;
             this.buttonViewProject.Click += new System.EventHandler(this.buttonViewProject_Click);
             // 
             // buttonAddProject
             // 
             resources.ApplyResources(this.buttonAddProject, "buttonAddProject");
-            this.buttonAddProject.BackColor = System.Drawing.Color.Gainsboro;
-            this.buttonAddProject.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonAddProject.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.New;
-            this.buttonAddProject.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_new;
-            this.buttonAddProject.Menu = null;
             this.buttonAddProject.Name = "buttonAddProject";
-            this.buttonAddProject.UseVisualStyleBackColor = false;
             this.buttonAddProject.Click += new System.EventHandler(this.buttonAddProject_Click);
             // 
             // panelBottom
@@ -475,12 +461,10 @@ namespace Octopus.GUI.UserControl
             this.tabControlEconomicInfo.SelectedIndexChanged += new System.EventHandler(this.tabControlEconomicInfo_SelectedIndexChanged);
             // 
             // tabPageAddress
-            // 
-            this.tabPageAddress.BackColor = System.Drawing.Color.White;
+            //
             this.tabPageAddress.Controls.Add(this.tableLayoutPanelAddress);
             resources.ApplyResources(this.tabPageAddress, "tabPageAddress");
             this.tabPageAddress.Name = "tabPageAddress";
-            this.tabPageAddress.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanelAddress
             // 
@@ -491,25 +475,20 @@ namespace Octopus.GUI.UserControl
             this.tableLayoutPanelAddress.Name = "tableLayoutPanelAddress";
             // 
             // groupBoxFirstAddress
-            // 
-            this.groupBoxFirstAddress.BackColor = System.Drawing.Color.Transparent;
+            //
             resources.ApplyResources(this.groupBoxFirstAddress, "groupBoxFirstAddress");
-            this.groupBoxFirstAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.groupBoxFirstAddress.Name = "groupBoxFirstAddress";
             this.groupBoxFirstAddress.TabStop = false;
             // 
             // groupBoxSecondaryAddress
-            // 
-            this.groupBoxSecondaryAddress.BackColor = System.Drawing.Color.Transparent;
+            //
             resources.ApplyResources(this.groupBoxSecondaryAddress, "groupBoxSecondaryAddress");
-            this.groupBoxSecondaryAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.groupBoxSecondaryAddress.Name = "groupBoxSecondaryAddress";
             this.groupBoxSecondaryAddress.TabStop = false;
             // 
             // tabPage1FollowUp
             // 
             this.tabPage1FollowUp.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.tabPage1FollowUp.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris_180;
             resources.ApplyResources(this.tabPage1FollowUp, "tabPage1FollowUp");
             this.tabPage1FollowUp.Controls.Add(this.lblAnd2);
             this.tabPage1FollowUp.Controls.Add(this.lblAnd1);
@@ -526,20 +505,17 @@ namespace Octopus.GUI.UserControl
             this.tabPage1FollowUp.Controls.Add(this.labelFirstContact);
             this.tabPage1FollowUp.Controls.Add(this.labelSponsor1);
             this.tabPage1FollowUp.Name = "tabPage1FollowUp";
-            this.tabPage1FollowUp.UseVisualStyleBackColor = true;
             // 
             // lblAnd2
             // 
             resources.ApplyResources(this.lblAnd2, "lblAnd2");
             this.lblAnd2.BackColor = System.Drawing.Color.Transparent;
-            this.lblAnd2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblAnd2.Name = "lblAnd2";
             // 
             // lblAnd1
             // 
             resources.ApplyResources(this.lblAnd1, "lblAnd1");
             this.lblAnd1.BackColor = System.Drawing.Color.Transparent;
-            this.lblAnd1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblAnd1.Name = "lblAnd1";
             // 
             // textBoxSponsor2
@@ -581,14 +557,12 @@ namespace Octopus.GUI.UserControl
             // 
             resources.ApplyResources(this.labelSponsor2, "labelSponsor2");
             this.labelSponsor2.BackColor = System.Drawing.Color.Transparent;
-            this.labelSponsor2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelSponsor2.Name = "labelSponsor2";
             // 
             // labelCommentsTypeActivity
             // 
             resources.ApplyResources(this.labelCommentsTypeActivity, "labelCommentsTypeActivity");
             this.labelCommentsTypeActivity.BackColor = System.Drawing.Color.Transparent;
-            this.labelCommentsTypeActivity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelCommentsTypeActivity.Name = "labelCommentsTypeActivity";
             // 
             // dateTimePickerFirstAppointment
@@ -607,42 +581,36 @@ namespace Octopus.GUI.UserControl
             // 
             resources.ApplyResources(this.labelFirstAppointment, "labelFirstAppointment");
             this.labelFirstAppointment.BackColor = System.Drawing.Color.Transparent;
-            this.labelFirstAppointment.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelFirstAppointment.Name = "labelFirstAppointment";
             // 
             // labelFirstContact
             // 
             resources.ApplyResources(this.labelFirstContact, "labelFirstContact");
             this.labelFirstContact.BackColor = System.Drawing.Color.Transparent;
-            this.labelFirstContact.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelFirstContact.Name = "labelFirstContact";
             // 
             // labelSponsor1
             // 
             resources.ApplyResources(this.labelSponsor1, "labelSponsor1");
             this.labelSponsor1.BackColor = System.Drawing.Color.Transparent;
-            this.labelSponsor1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelSponsor1.Name = "labelSponsor1";
             // 
             // tabPageCustomizableFields
             // 
             resources.ApplyResources(this.tabPageCustomizableFields, "tabPageCustomizableFields");
             this.tabPageCustomizableFields.Name = "tabPageCustomizableFields";
-            this.tabPageCustomizableFields.UseVisualStyleBackColor = true;
             // 
             // tabPageProjects
             // 
             this.tabPageProjects.Controls.Add(this.splitContainer1);
             resources.ApplyResources(this.tabPageProjects, "tabPageProjects");
             this.tabPageProjects.Name = "tabPageProjects";
-            this.tabPageProjects.UseVisualStyleBackColor = true;
             // 
             // tabPageSavings
             // 
             this.tabPageSavings.Controls.Add(this.clSavingList);
             resources.ApplyResources(this.tabPageSavings, "tabPageSavings");
             this.tabPageSavings.Name = "tabPageSavings";
-            this.tabPageSavings.UseVisualStyleBackColor = true;
             // 
             // clSavingList
             // 
@@ -654,12 +622,10 @@ namespace Octopus.GUI.UserControl
             this.clSavingList.ViewSelectedSaving += new System.EventHandler(this.savingsListUserControl_ViewSelectedSaving);
             // 
             // tabPageGroupMember
-            // 
-            this.tabPageGroupMember.BackColor = System.Drawing.Color.White;
+            //
             this.tabPageGroupMember.Controls.Add(this.listViewGroup);
             resources.ApplyResources(this.tabPageGroupMember, "tabPageGroupMember");
             this.tabPageGroupMember.Name = "tabPageGroupMember";
-            this.tabPageGroupMember.UseVisualStyleBackColor = true;
             // 
             // listViewGroup
             // 
@@ -733,23 +699,13 @@ namespace Octopus.GUI.UserControl
             // buttonCancel
             // 
             resources.ApplyResources(this.buttonCancel, "buttonCancel");
-            this.buttonCancel.BackColor = System.Drawing.Color.Gainsboro;
-            this.buttonCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonCancel.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Close;
-            this.buttonCancel.Menu = null;
             this.buttonCancel.Name = "buttonCancel";
-            this.buttonCancel.UseVisualStyleBackColor = false;
             this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
             // buttonSave
             // 
             resources.ApplyResources(this.buttonSave, "buttonSave");
-            this.buttonSave.BackColor = System.Drawing.Color.Gainsboro;
-            this.buttonSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonSave.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Save;
-            this.buttonSave.Menu = null;
             this.buttonSave.Name = "buttonSave";
-            this.buttonSave.UseVisualStyleBackColor = false;
             this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
             // 
             // tableLayoutPanel3
@@ -761,9 +717,7 @@ namespace Octopus.GUI.UserControl
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             // 
             // groupBoxCivilities
-            // 
-            this.groupBoxCivilities.BackColor = System.Drawing.Color.White;
-            this.groupBoxCivilities.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris;
+            //
             resources.ApplyResources(this.groupBoxCivilities, "groupBoxCivilities");
             this.groupBoxCivilities.Controls.Add(this.lblBranch);
             this.groupBoxCivilities.Controls.Add(this.lblEconomicActivity);
@@ -793,7 +747,6 @@ namespace Octopus.GUI.UserControl
             this.groupBoxCivilities.Controls.Add(this.labelSex);
             this.groupBoxCivilities.Controls.Add(this.labelFirstName);
             this.groupBoxCivilities.Controls.Add(this.textBoxFirstName);
-            this.groupBoxCivilities.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(56)))));
             this.groupBoxCivilities.Name = "groupBoxCivilities";
             this.groupBoxCivilities.TabStop = false;
             // 
@@ -801,14 +754,12 @@ namespace Octopus.GUI.UserControl
             // 
             this.lblBranch.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.lblBranch, "lblBranch");
-            this.lblBranch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblBranch.Name = "lblBranch";
             // 
             // lblEconomicActivity
             // 
             resources.ApplyResources(this.lblEconomicActivity, "lblEconomicActivity");
             this.lblEconomicActivity.BackColor = System.Drawing.Color.Transparent;
-            this.lblEconomicActivity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblEconomicActivity.Name = "lblEconomicActivity";
             // 
             // eacPerson
@@ -835,7 +786,6 @@ namespace Octopus.GUI.UserControl
             // 
             this.labelNationality.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.labelNationality, "labelNationality");
-            this.labelNationality.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelNationality.Name = "labelNationality";
             // 
             // textBoxLoanCycle
@@ -855,7 +805,6 @@ namespace Octopus.GUI.UserControl
             // 
             this.labelIN.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.labelIN, "labelIN");
-            this.labelIN.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelIN.Name = "labelIN";
             // 
             // labelLoanCycle
@@ -863,14 +812,12 @@ namespace Octopus.GUI.UserControl
             this.labelLoanCycle.AllowDrop = true;
             resources.ApplyResources(this.labelLoanCycle, "labelLoanCycle");
             this.labelLoanCycle.BackColor = System.Drawing.Color.Transparent;
-            this.labelLoanCycle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelLoanCycle.Name = "labelLoanCycle";
             // 
             // labelRangeOfAge
             // 
             resources.ApplyResources(this.labelRangeOfAge, "labelRangeOfAge");
             this.labelRangeOfAge.BackColor = System.Drawing.Color.Transparent;
-            this.labelRangeOfAge.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelRangeOfAge.Name = "labelRangeOfAge";
             // 
             // textBoxFatherName
@@ -884,7 +831,6 @@ namespace Octopus.GUI.UserControl
             // 
             this.labelFatherName.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.labelFatherName, "labelFatherName");
-            this.labelFatherName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelFatherName.Name = "labelFatherName";
             // 
             // changePhotoLinkLabel2
@@ -932,19 +878,15 @@ namespace Octopus.GUI.UserControl
             this.dateTimePickerDateOfBirth.ValueChanged += new System.EventHandler(this.dateTimePickerDateOfBirth_ValueChanged);
             // 
             // checkBoxHeadOfHousehold
-            // 
-            this.checkBoxHeadOfHousehold.BackColor = System.Drawing.Color.Transparent;
+            //
             resources.ApplyResources(this.checkBoxHeadOfHousehold, "checkBoxHeadOfHousehold");
-            this.checkBoxHeadOfHousehold.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.checkBoxHeadOfHousehold.Name = "checkBoxHeadOfHousehold";
-            this.checkBoxHeadOfHousehold.UseVisualStyleBackColor = false;
             this.checkBoxHeadOfHousehold.CheckedChanged += new System.EventHandler(this.checkBoxHeadOfHousehold_CheckedChanged);
             // 
             // labelDateOfBirth
             // 
             resources.ApplyResources(this.labelDateOfBirth, "labelDateOfBirth");
             this.labelDateOfBirth.BackColor = System.Drawing.Color.Transparent;
-            this.labelDateOfBirth.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelDateOfBirth.Name = "labelDateOfBirth";
             // 
             // textBoxLastname
@@ -958,7 +900,6 @@ namespace Octopus.GUI.UserControl
             // 
             resources.ApplyResources(this.labelLastname, "labelLastname");
             this.labelLastname.BackColor = System.Drawing.Color.Transparent;
-            this.labelLastname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelLastname.Name = "labelLastname";
             // 
             // textBoxIdentificationData
@@ -972,7 +913,6 @@ namespace Octopus.GUI.UserControl
             // 
             resources.ApplyResources(this.labelPassport, "labelPassport");
             this.labelPassport.BackColor = System.Drawing.Color.Transparent;
-            this.labelPassport.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelPassport.Name = "labelPassport";
             // 
             // comboBoxSex
@@ -989,14 +929,12 @@ namespace Octopus.GUI.UserControl
             // 
             resources.ApplyResources(this.labelSex, "labelSex");
             this.labelSex.BackColor = System.Drawing.Color.Transparent;
-            this.labelSex.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelSex.Name = "labelSex";
             // 
             // labelFirstName
             // 
             resources.ApplyResources(this.labelFirstName, "labelFirstName");
             this.labelFirstName.BackColor = System.Drawing.Color.Transparent;
-            this.labelFirstName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelFirstName.Name = "labelFirstName";
             // 
             // textBoxFirstName
@@ -1020,7 +958,6 @@ namespace Octopus.GUI.UserControl
             // 
             resources.ApplyResources(this.label9, "label9");
             this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.label9.Name = "label9";
             // 
             // comboBox2
@@ -1040,7 +977,6 @@ namespace Octopus.GUI.UserControl
             // 
             resources.ApplyResources(this.label10, "label10");
             this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.label10.Name = "label10";
             // 
             // dateTimePicker1
@@ -1053,14 +989,12 @@ namespace Octopus.GUI.UserControl
             // 
             resources.ApplyResources(this.label11, "label11");
             this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.label11.Name = "label11";
             // 
             // label12
             // 
             resources.ApplyResources(this.label12, "label12");
             this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.label12.Name = "label12";
             // 
             // textBox2
@@ -1073,7 +1007,6 @@ namespace Octopus.GUI.UserControl
             // 
             resources.ApplyResources(this.label13, "label13");
             this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.label13.Name = "label13";
             // 
             // textBox3
@@ -1086,7 +1019,6 @@ namespace Octopus.GUI.UserControl
             // 
             resources.ApplyResources(this.label14, "label14");
             this.label14.BackColor = System.Drawing.Color.Transparent;
-            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.label14.Name = "label14";
             // 
             // textBox4
@@ -1099,7 +1031,6 @@ namespace Octopus.GUI.UserControl
             // 
             resources.ApplyResources(this.label15, "label15");
             this.label15.BackColor = System.Drawing.Color.Transparent;
-            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.label15.Name = "label15";
             // 
             // comboBox3
@@ -1116,7 +1047,6 @@ namespace Octopus.GUI.UserControl
             // 
             resources.ApplyResources(this.label16, "label16");
             this.label16.BackColor = System.Drawing.Color.Transparent;
-            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.label16.Name = "label16";
             // 
             // comboBox4
@@ -1136,7 +1066,6 @@ namespace Octopus.GUI.UserControl
             // 
             resources.ApplyResources(this.label17, "label17");
             this.label17.BackColor = System.Drawing.Color.Transparent;
-            this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.label17.Name = "label17";
             // 
             // dateTimePicker2
@@ -1149,14 +1078,12 @@ namespace Octopus.GUI.UserControl
             // 
             resources.ApplyResources(this.label18, "label18");
             this.label18.BackColor = System.Drawing.Color.Transparent;
-            this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.label18.Name = "label18";
             // 
             // label19
             // 
             resources.ApplyResources(this.label19, "label19");
             this.label19.BackColor = System.Drawing.Color.Transparent;
-            this.label19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.label19.Name = "label19";
             // 
             // textBox6
@@ -1169,7 +1096,6 @@ namespace Octopus.GUI.UserControl
             // 
             resources.ApplyResources(this.label20, "label20");
             this.label20.BackColor = System.Drawing.Color.Transparent;
-            this.label20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.label20.Name = "label20";
             // 
             // textBox7
@@ -1182,7 +1108,6 @@ namespace Octopus.GUI.UserControl
             // 
             resources.ApplyResources(this.label21, "label21");
             this.label21.BackColor = System.Drawing.Color.Transparent;
-            this.label21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.label21.Name = "label21";
             // 
             // textBox8
@@ -1195,7 +1120,6 @@ namespace Octopus.GUI.UserControl
             // 
             resources.ApplyResources(this.label22, "label22");
             this.label22.BackColor = System.Drawing.Color.Transparent;
-            this.label22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.label22.Name = "label22";
             // 
             // columnHeader5
@@ -1343,9 +1267,7 @@ namespace Octopus.GUI.UserControl
             // PersonUserControl
             // 
             resources.ApplyResources(this, "$this");
-            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.tableLayoutPanel3);
-            this.ForeColor = System.Drawing.SystemColors.WindowText;
             this.Name = "PersonUserControl";
             this.Load += new System.EventHandler(this.PersonUserControl_Load);
             this.splitContainer3.Panel1.ResumeLayout(false);
@@ -1409,8 +1331,8 @@ namespace Octopus.GUI.UserControl
         public PictureBox pictureBox;
         public PictureBox pictureBox2;
         private ComboBox cbBranch;
-        private SweetButton buttonSave;
-        private SweetButton buttonCancel;
+        private System.Windows.Forms.Button buttonSave;
+        private System.Windows.Forms.Button buttonCancel;
         private PrintButton btnPrint;
         private TabControl tabControlEconomicInfo;
         private TabPage tabPageAddress;
@@ -1442,8 +1364,8 @@ namespace Octopus.GUI.UserControl
         private ColumnHeader columnHeaderNbOfCredits;
         private ColumnHeader columnHeaderNbOfGuarantees;
         private GroupBox groupBoxProjects;
-        private SweetButton buttonViewProject;
-        private SweetButton buttonAddProject;
+        private System.Windows.Forms.Button buttonViewProject;
+        private System.Windows.Forms.Button buttonAddProject;
         private TabPage tabPageSavings;
         private SavingsListUserControl clSavingList;
         private TabPage tabPageGroupMember;

@@ -78,8 +78,8 @@ namespace Octopus.GUI.Contracts
         private int _gracePeriod;
         private CheckBox cbChargeInterestDuringGracePeriod;
         private GroupBox groupBoxConfirm;
-        private SweetButton buttonCancel;
-        private SweetButton buttonConfirm;
+        private System.Windows.Forms.Button buttonCancel;
+        private System.Windows.Forms.Button buttonConfirm;
 
         public ContractReschedulingForm(Loan contract, IClient pClient)
         {
@@ -207,8 +207,8 @@ namespace Octopus.GUI.Contracts
             this.labelContractCode = new System.Windows.Forms.Label();
             this.labelTitleRescheduleContract = new System.Windows.Forms.Label();
             this.groupBoxConfirm = new System.Windows.Forms.GroupBox();
-            this.buttonCancel = new Octopus.GUI.UserControl.SweetButton();
-            this.buttonConfirm = new Octopus.GUI.UserControl.SweetButton();
+            this.buttonCancel = new System.Windows.Forms.Button();
+            this.buttonConfirm = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.groupBoxParameters.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudGracePeriod)).BeginInit();
@@ -282,9 +282,7 @@ namespace Octopus.GUI.Contracts
             resources.ApplyResources(this.columnHeader9, "columnHeader9");
             // 
             // groupBoxParameters
-            // 
-            this.groupBoxParameters.BackColor = System.Drawing.Color.Transparent;
-            this.groupBoxParameters.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris_180;
+            //
             resources.ApplyResources(this.groupBoxParameters, "groupBoxParameters");
             this.groupBoxParameters.Controls.Add(this.cbChargeInterestDuringGracePeriod);
             this.groupBoxParameters.Controls.Add(this.nudGracePeriod);
@@ -300,16 +298,13 @@ namespace Octopus.GUI.Contracts
             this.groupBoxParameters.Controls.Add(this.labelMaturity);
             this.groupBoxParameters.Controls.Add(this.labelContractCode);
             this.groupBoxParameters.Controls.Add(this.labelTitleRescheduleContract);
-            this.groupBoxParameters.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.groupBoxParameters.Name = "groupBoxParameters";
             this.groupBoxParameters.TabStop = false;
             // 
             // cbChargeInterestDuringGracePeriod
             // 
             resources.ApplyResources(this.cbChargeInterestDuringGracePeriod, "cbChargeInterestDuringGracePeriod");
-            this.cbChargeInterestDuringGracePeriod.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.cbChargeInterestDuringGracePeriod.Name = "cbChargeInterestDuringGracePeriod";
-            this.cbChargeInterestDuringGracePeriod.UseVisualStyleBackColor = true;
             this.cbChargeInterestDuringGracePeriod.CheckedChanged += new System.EventHandler(this.cbChargeInterestDuringGracePeriod_CheckedChanged);
             // 
             // nudGracePeriod
@@ -321,19 +316,16 @@ namespace Octopus.GUI.Contracts
             // lblGracePeriod
             // 
             resources.ApplyResources(this.lblGracePeriod, "lblGracePeriod");
-            this.lblGracePeriod.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblGracePeriod.Name = "lblGracePeriod";
             // 
             // lbNewInterest
             // 
             resources.ApplyResources(this.lbNewInterest, "lbNewInterest");
-            this.lbNewInterest.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbNewInterest.Name = "lbNewInterest";
             // 
             // labelShiftDateDays
             // 
             resources.ApplyResources(this.labelShiftDateDays, "labelShiftDateDays");
-            this.labelShiftDateDays.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelShiftDateDays.Name = "labelShiftDateDays";
             // 
             // tbDateOffset
@@ -348,13 +340,11 @@ namespace Octopus.GUI.Contracts
             // labelShiftDate
             // 
             resources.ApplyResources(this.labelShiftDate, "labelShiftDate");
-            this.labelShiftDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelShiftDate.Name = "labelShiftDate";
             // 
             // labelMaturityUnity
             // 
             resources.ApplyResources(this.labelMaturityUnity, "labelMaturityUnity");
-            this.labelMaturityUnity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelMaturityUnity.Name = "labelMaturityUnity";
             // 
             // numericUpDownNewIR
@@ -372,9 +362,7 @@ namespace Octopus.GUI.Contracts
             // checkBoxAccrue
             // 
             resources.ApplyResources(this.checkBoxAccrue, "checkBoxAccrue");
-            this.checkBoxAccrue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.checkBoxAccrue.Name = "checkBoxAccrue";
-            this.checkBoxAccrue.UseVisualStyleBackColor = true;
             this.checkBoxAccrue.CheckedChanged += new System.EventHandler(this.checkBoxAccrue_CheckedChanged);
             // 
             // numericUpDownMaturity
@@ -386,25 +374,20 @@ namespace Octopus.GUI.Contracts
             // labelMaturity
             // 
             resources.ApplyResources(this.labelMaturity, "labelMaturity");
-            this.labelMaturity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelMaturity.Name = "labelMaturity";
             // 
             // labelContractCode
             // 
             resources.ApplyResources(this.labelContractCode, "labelContractCode");
-            this.labelContractCode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelContractCode.Name = "labelContractCode";
             // 
             // labelTitleRescheduleContract
             // 
             resources.ApplyResources(this.labelTitleRescheduleContract, "labelTitleRescheduleContract");
-            this.labelTitleRescheduleContract.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelTitleRescheduleContract.Name = "labelTitleRescheduleContract";
             // 
             // groupBoxConfirm
-            // 
-            this.groupBoxConfirm.BackColor = System.Drawing.Color.Transparent;
-            this.groupBoxConfirm.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris_180;
+            //
             resources.ApplyResources(this.groupBoxConfirm, "groupBoxConfirm");
             this.groupBoxConfirm.Controls.Add(this.buttonCancel);
             this.groupBoxConfirm.Controls.Add(this.buttonConfirm);
@@ -414,32 +397,18 @@ namespace Octopus.GUI.Contracts
             // buttonCancel
             // 
             resources.ApplyResources(this.buttonCancel, "buttonCancel");
-            this.buttonCancel.BackColor = System.Drawing.Color.Gainsboro;
-            this.buttonCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonCancel.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.None;
-            this.buttonCancel.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_close;
-            this.buttonCancel.Menu = null;
             this.buttonCancel.Name = "buttonCancel";
-            this.buttonCancel.UseVisualStyleBackColor = false;
             this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
             // buttonConfirm
             // 
             resources.ApplyResources(this.buttonConfirm, "buttonConfirm");
-            this.buttonConfirm.BackColor = System.Drawing.Color.Gainsboro;
-            this.buttonConfirm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonConfirm.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.None;
-            this.buttonConfirm.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_validity;
-            this.buttonConfirm.Menu = null;
             this.buttonConfirm.Name = "buttonConfirm";
-            this.buttonConfirm.UseVisualStyleBackColor = false;
             this.buttonConfirm.Click += new System.EventHandler(this.buttonConfirm_Click);
             // 
             // ContractReschedulingForm
             // 
             resources.ApplyResources(this, "$this");
-            this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris_180;
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "ContractReschedulingForm";
             this.Load += new System.EventHandler(this.OnLoad);

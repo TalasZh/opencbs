@@ -1,5 +1,5 @@
 //Octopus MFS is an integrated suite for managing a Micro Finance Institution: clients, contracts, accounting, reporting and risk
-//Copyright © 2006,2007 OCTO Technology & OXUS Development Network
+//Copyright ï¿½ 2006,2007 OCTO Technology & OXUS Development Network
 //
 //This program is free software; you can redistribute it and/or modify
 //it under the terms of the GNU Lesser General Public License as published by
@@ -67,14 +67,12 @@ namespace Octopus.GUI
             // 
             this.label1.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.label1, "label1");
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.label1.Name = "label1";
             // 
             // labelConfigurationValue
             // 
             this.labelConfigurationValue.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.labelConfigurationValue, "labelConfigurationValue");
-            this.labelConfigurationValue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelConfigurationValue.Name = "labelConfigurationValue";
             // 
             // bWOneToSeven
@@ -121,8 +119,6 @@ namespace Octopus.GUI
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris_180;
             this.ControlBox = false;
             this.Controls.Add(this.pictureBoxAboutOctopus);
             this.Controls.Add(this.oPBMacroProgression);

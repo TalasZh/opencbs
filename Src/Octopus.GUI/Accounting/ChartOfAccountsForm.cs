@@ -50,13 +50,13 @@ using Octopus.Shared.CSV;
 namespace Octopus.GUI.Accounting
 {
     /// <summary>
-    /// Description résumée de AccountingSchemaAdminForm.
+    /// Description rï¿½sumï¿½e de AccountingSchemaAdminForm.
     /// </summary>
     public class ChartOfAccountsForm : SweetBaseForm
     {
         #region attributes
         /// <summary>
-        /// Variable nécessaire au concepteur.
+        /// Variable nï¿½cessaire au concepteur.
         /// </summary>
         private int sortColumn = -1;
         private IContainer components;
@@ -68,7 +68,7 @@ namespace Octopus.GUI.Accounting
 
         private int _CurrencyId;
         private Panel panel1;
-        private SweetButton btnClose;
+        private System.Windows.Forms.Button btnClose;
         private Label _labelTitle;
         private TableLayoutPanel _tableLayoutPanel1;
         private SplitContainer splitContainer1;
@@ -76,13 +76,13 @@ namespace Octopus.GUI.Accounting
         private OLVColumn olvColumnInternalAccountID;
         private OLVColumn olvColumnLabel;
         private GroupBox groupBoxActions;
-        private SweetButton btnDeleteAccount;
-        private SweetButton btnEditAccount;
-        private SweetButton btnAddAccount;
-        private SweetButton btnExport;
-        private SweetButton btnImportAccounts;
+        private System.Windows.Forms.Button btnDeleteAccount;
+        private System.Windows.Forms.Button btnEditAccount;
+        private System.Windows.Forms.Button btnAddAccount;
+        private System.Windows.Forms.Button btnExport;
+        private System.Windows.Forms.Button btnImportAccounts;
         private OpenFileDialog fileDialog;
-        private SweetButton btnExportAccounts;
+        private System.Windows.Forms.Button btnExportAccounts;
         private OLVColumn olvColumnExportedBalance;
 
         public ChartOfAccountsForm(int pCurrency)
@@ -251,11 +251,11 @@ namespace Octopus.GUI.Accounting
             }
         }
         
-        #region Code génér?par le Concepteur Windows Form
+        #region Code gï¿½nï¿½r?par le Concepteur Windows Form
 
         /// <summary>
-        /// Méthode requise pour la prise en charge du concepteur - ne modifiez pas
-        /// le contenu de cette méthode avec l'éditeur de code.
+        /// Mï¿½thode requise pour la prise en charge du concepteur - ne modifiez pas
+        /// le contenu de cette mï¿½thode avec l'ï¿½diteur de code.
         /// </summary>
         private void InitializeComponent()
         {
@@ -267,14 +267,14 @@ namespace Octopus.GUI.Accounting
             this.olvColumnLabel = new BrightIdeasSoftware.OLVColumn();
             this.olvColumnExportedBalance = new BrightIdeasSoftware.OLVColumn();
             this.groupBoxActions = new System.Windows.Forms.GroupBox();
-            this.btnExportAccounts = new Octopus.GUI.UserControl.SweetButton();
-            this.btnImportAccounts = new Octopus.GUI.UserControl.SweetButton();
-            this.btnDeleteAccount = new Octopus.GUI.UserControl.SweetButton();
-            this.btnEditAccount = new Octopus.GUI.UserControl.SweetButton();
-            this.btnAddAccount = new Octopus.GUI.UserControl.SweetButton();
-            this.btnExport = new Octopus.GUI.UserControl.SweetButton();
+            this.btnExportAccounts = new System.Windows.Forms.Button();
+            this.btnImportAccounts = new System.Windows.Forms.Button();
+            this.btnDeleteAccount = new System.Windows.Forms.Button();
+            this.btnEditAccount = new System.Windows.Forms.Button();
+            this.btnAddAccount = new System.Windows.Forms.Button();
+            this.btnExport = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnClose = new Octopus.GUI.UserControl.SweetButton();
+            this.btnClose = new System.Windows.Forms.Button();
             this._labelTitle = new System.Windows.Forms.Label();
             this._tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.fileDialog = new System.Windows.Forms.OpenFileDialog();
@@ -338,8 +338,7 @@ namespace Octopus.GUI.Accounting
             this.olvColumnExportedBalance.IsVisible = false;
             // 
             // groupBoxActions
-            // 
-            this.groupBoxActions.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris;
+            //
             resources.ApplyResources(this.groupBoxActions, "groupBoxActions");
             this.groupBoxActions.Controls.Add(this.btnExportAccounts);
             this.groupBoxActions.Controls.Add(this.btnImportAccounts);
@@ -354,79 +353,37 @@ namespace Octopus.GUI.Accounting
             // btnExportAccounts
             // 
             resources.ApplyResources(this.btnExportAccounts, "btnExportAccounts");
-            this.btnExportAccounts.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnExportAccounts.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_bouton;
-            this.btnExportAccounts.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnExportAccounts.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Export;
-            this.btnExportAccounts.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_delete;
-            this.btnExportAccounts.Menu = null;
             this.btnExportAccounts.Name = "btnExportAccounts";
-            this.btnExportAccounts.UseVisualStyleBackColor = false;
             this.btnExportAccounts.Click += new System.EventHandler(this.BtnExportAccountsClick);
             // 
             // btnImportAccounts
             // 
             resources.ApplyResources(this.btnImportAccounts, "btnImportAccounts");
-            this.btnImportAccounts.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnImportAccounts.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_bouton;
-            this.btnImportAccounts.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnImportAccounts.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Import;
-            this.btnImportAccounts.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_delete;
-            this.btnImportAccounts.Menu = null;
             this.btnImportAccounts.Name = "btnImportAccounts";
-            this.btnImportAccounts.UseVisualStyleBackColor = false;
             this.btnImportAccounts.Click += new System.EventHandler(this.BtnLoadClick);
             // 
             // btnDeleteAccount
             // 
             resources.ApplyResources(this.btnDeleteAccount, "btnDeleteAccount");
-            this.btnDeleteAccount.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnDeleteAccount.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_bouton;
-            this.btnDeleteAccount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnDeleteAccount.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Delete;
-            this.btnDeleteAccount.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_delete;
-            this.btnDeleteAccount.Menu = null;
             this.btnDeleteAccount.Name = "btnDeleteAccount";
-            this.btnDeleteAccount.UseVisualStyleBackColor = false;
             this.btnDeleteAccount.Click += new System.EventHandler(this.buttonDeleteRule_Click);
             // 
             // btnEditAccount
             // 
             resources.ApplyResources(this.btnEditAccount, "btnEditAccount");
-            this.btnEditAccount.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnEditAccount.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_bouton;
-            this.btnEditAccount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnEditAccount.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Edit;
-            this.btnEditAccount.Image = global::Octopus.GUI.Properties.Resources.theme1_1_view;
-            this.btnEditAccount.Menu = null;
             this.btnEditAccount.Name = "btnEditAccount";
-            this.btnEditAccount.UseVisualStyleBackColor = false;
             this.btnEditAccount.Click += new System.EventHandler(this.buttonEditRule_Click);
             // 
             // btnAddAccount
             // 
             resources.ApplyResources(this.btnAddAccount, "btnAddAccount");
-            this.btnAddAccount.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnAddAccount.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_bouton;
-            this.btnAddAccount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnAddAccount.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.New;
-            this.btnAddAccount.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_new;
-            this.btnAddAccount.Menu = null;
             this.btnAddAccount.Name = "btnAddAccount";
-            this.btnAddAccount.UseVisualStyleBackColor = false;
             this.btnAddAccount.Click += new System.EventHandler(this.buttonAddAccount_Click);
             // 
             // btnExport
             // 
             resources.ApplyResources(this.btnExport, "btnExport");
-            this.btnExport.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnExport.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_bouton;
-            this.btnExport.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnExport.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.None;
-            this.btnExport.Image = global::Octopus.GUI.Properties.Resources.theme1_1_export;
-            this.btnExport.Menu = null;
             this.btnExport.Name = "btnExport";
-            this.btnExport.UseVisualStyleBackColor = false;
             this.btnExport.Click += new System.EventHandler(this.butExport_Click);
             // 
             // panel1
@@ -439,22 +396,12 @@ namespace Octopus.GUI.Accounting
             // btnClose
             // 
             resources.ApplyResources(this.btnClose, "btnClose");
-            this.btnClose.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnClose.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_bouton;
-            this.btnClose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnClose.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Close;
-            this.btnClose.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_close;
-            this.btnClose.Menu = null;
             this.btnClose.Name = "btnClose";
-            this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.buttonExit_Click);
             // 
             // _labelTitle
-            // 
-            this._labelTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            //
             resources.ApplyResources(this._labelTitle, "_labelTitle");
-            this._labelTitle.ForeColor = System.Drawing.Color.White;
-            this._labelTitle.Image = global::Octopus.GUI.Properties.Resources.theme1_1_pastille_contrat;
             this._labelTitle.Name = "_labelTitle";
             // 
             // _tableLayoutPanel1
@@ -471,7 +418,6 @@ namespace Octopus.GUI.Accounting
             // ChartOfAccountsForm
             // 
             resources.ApplyResources(this, "$this");
-            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this._tableLayoutPanel1);
             this.Name = "ChartOfAccountsForm";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -489,7 +435,7 @@ namespace Octopus.GUI.Accounting
         #endregion
 
         /// <summary>
-        /// Nettoyage des ressources utilisées.
+        /// Nettoyage des ressources utilisï¿½es.
         /// </summary>
         protected override void Dispose(bool disposing)
         {

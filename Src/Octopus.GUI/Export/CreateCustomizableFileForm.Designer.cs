@@ -1,4 +1,4 @@
-﻿namespace Octopus.GUI.Export
+namespace Octopus.GUI.Export
 {
     partial class CreateCustomizableFileForm
     {
@@ -84,14 +84,12 @@
             this.AccessibleName = null;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = null;
             this.Controls.Add(this.comboBoxFile);
             this.Controls.Add(this.buttonOk);
             this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.labelText);
             this.Font = null;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Icon = null;
             this.Name = "CreateCustomizableFileForm";
             this.ResumeLayout(false);
 

@@ -119,7 +119,7 @@ namespace Octopus.GUI.AuditTrail
 
         private void OnPrintClick(object sender, EventArgs e)
         {
-            btnPrint.StartProgress();
+            //btnPrint.StartProgress();
 
             User u = cbUser.SelectedItem as User;
             Branch b = cbBranch.SelectedItem as Branch;
@@ -136,7 +136,7 @@ namespace Octopus.GUI.AuditTrail
 
         private void OnRefreshClick(object sender, EventArgs e)
         {
-            btnRefresh.StartProgress();
+            //btnRefresh.StartProgress();
 
             User u = cbUser.SelectedItem as User;
             Branch b = cbBranch.SelectedItem as Branch;
@@ -229,7 +229,7 @@ namespace Octopus.GUI.AuditTrail
             ReportViewerForm frm = new ReportViewerForm(r);
             frm.Show();
 
-            btnPrint.StopProgress();
+            //btnPrint.StopProgress();
         }
 
         private void OnRefreshDoWork(object sender, System.ComponentModel.DoWorkEventArgs e)
@@ -243,7 +243,7 @@ namespace Octopus.GUI.AuditTrail
 
         private void OnRefreshCompleted(object sender, System.ComponentModel.RunWorkerCompletedEventArgs e)
         {
-            btnRefresh.StopProgress();
+            //btnRefresh.StopProgress();
         }
     }
 }

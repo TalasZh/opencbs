@@ -33,17 +33,17 @@ namespace Octopus.GUI.Tools
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmSaveFile));
             this.tbPath = new System.Windows.Forms.TextBox();
-            this.btnCancel = new Octopus.GUI.UserControl.SweetButton();
-            this.btnSave = new Octopus.GUI.UserControl.SweetButton();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnBrowse = new Octopus.GUI.UserControl.SweetButton();
+            this.btnBrowse = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.tbFileName = new System.Windows.Forms.TextBox();
             this.lblTitle = new System.Windows.Forms.Label();
             this.timerInput = new System.Windows.Forms.Timer(this.components);
             this.folderBrowserDialog = new System.Windows.Forms.FolderBrowserDialog();
             this.lblWarning = new System.Windows.Forms.Label();
-            this.btnDefault = new Octopus.GUI.UserControl.SweetButton();
+            this.btnDefault = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // tbPath
@@ -53,53 +53,34 @@ namespace Octopus.GUI.Tools
             this.tbPath.TextChanged += new System.EventHandler(this.tbPath_TextChanged);
             // 
             // btnCancel
-            // 
-            this.btnCancel.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.btnCancel, "btnCancel");
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnCancel.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Close;
-            this.btnCancel.Menu = null;
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.UseVisualStyleBackColor = false;
             // 
             // btnSave
-            // 
-            this.btnSave.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.btnSave, "btnSave");
             this.btnSave.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnSave.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Save;
-            this.btnSave.Menu = null;
             this.btnSave.Name = "btnSave";
-            this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.butSave_Click);
             // 
             // label3
             // 
             resources.ApplyResources(this.label3, "label3");
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.label3.Name = "label3";
             // 
             // btnBrowse
-            // 
-            this.btnBrowse.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnBrowse.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_bouton;
+            //
             resources.ApplyResources(this.btnBrowse, "btnBrowse");
-            this.btnBrowse.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnBrowse.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.View;
-            this.btnBrowse.Image = global::Octopus.GUI.Properties.Resources.theme1_1_search;
-            this.btnBrowse.Menu = null;
             this.btnBrowse.Name = "btnBrowse";
-            this.btnBrowse.UseVisualStyleBackColor = false;
             this.btnBrowse.Click += new System.EventHandler(this.button2_Click);
             // 
             // label1
             // 
             resources.ApplyResources(this.label1, "label1");
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.label1.Name = "label1";
             // 
             // tbFileName
@@ -112,7 +93,6 @@ namespace Octopus.GUI.Tools
             // 
             this.lblTitle.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.lblTitle, "lblTitle");
-            this.lblTitle.ForeColor = System.Drawing.Color.Black;
             this.lblTitle.Name = "lblTitle";
             // 
             // timerInput
@@ -124,19 +104,12 @@ namespace Octopus.GUI.Tools
             // 
             resources.ApplyResources(this.lblWarning, "lblWarning");
             this.lblWarning.BackColor = System.Drawing.Color.Transparent;
-            this.lblWarning.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblWarning.Name = "lblWarning";
             // 
             // btnDefault
-            // 
-            this.btnDefault.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnDefault.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_bouton;
+            //
             resources.ApplyResources(this.btnDefault, "btnDefault");
-            this.btnDefault.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnDefault.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.None;
-            this.btnDefault.Menu = null;
             this.btnDefault.Name = "btnDefault";
-            this.btnDefault.UseVisualStyleBackColor = false;
             // 
             // FrmSaveFile
             // 
@@ -169,9 +142,9 @@ namespace Octopus.GUI.Tools
         private System.Windows.Forms.Timer timerInput;
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog;
         private System.Windows.Forms.Label lblWarning;
-        private SweetButton btnCancel;
-        private SweetButton btnSave;
-        private SweetButton btnBrowse;
-        private SweetButton btnDefault;
+        private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Button btnBrowse;
+        private System.Windows.Forms.Button btnDefault;
     }
 }

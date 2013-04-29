@@ -32,8 +32,8 @@ namespace Octopus.GUI
 {
     public class FrmDeleteEventComment : SweetBaseForm
     {
-        private SweetButton buttonConfirm;
-        private SweetButton buttonCancel;
+        private System.Windows.Forms.Button buttonConfirm;
+        private System.Windows.Forms.Button buttonCancel;
         private Container components = null;
 
         private GroupBox groupBox1;
@@ -73,8 +73,8 @@ namespace Octopus.GUI
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmDeleteEventComment));
-            this.buttonCancel = new Octopus.GUI.UserControl.SweetButton();
-            this.buttonConfirm = new Octopus.GUI.UserControl.SweetButton();
+            this.buttonCancel = new System.Windows.Forms.Button();
+            this.buttonConfirm = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.textBoxComments = new System.Windows.Forms.TextBox();
             this.lblConfirmEventDelete = new System.Windows.Forms.Label();
@@ -82,32 +82,21 @@ namespace Octopus.GUI
             this.SuspendLayout();
             // 
             // buttonCancel
-            // 
-            this.buttonCancel.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.buttonCancel, "buttonCancel");
             this.buttonCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.buttonCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonCancel.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Close;
-            this.buttonCancel.Menu = null;
             this.buttonCancel.Name = "buttonCancel";
-            this.buttonCancel.UseVisualStyleBackColor = false;
             this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
             // buttonConfirm
-            // 
-            this.buttonConfirm.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.buttonConfirm, "buttonConfirm");
             this.buttonConfirm.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.buttonConfirm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonConfirm.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Save;
-            this.buttonConfirm.Menu = null;
             this.buttonConfirm.Name = "buttonConfirm";
-            this.buttonConfirm.UseVisualStyleBackColor = false;
             this.buttonConfirm.Click += new System.EventHandler(this.buttonConfirm_Click);
             // 
             // groupBox1
-            // 
-            this.groupBox1.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris_180;
+            //
             resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Controls.Add(this.buttonCancel);
             this.groupBox1.Controls.Add(this.buttonConfirm);
@@ -122,13 +111,11 @@ namespace Octopus.GUI
             // lblConfirmEventDelete
             // 
             resources.ApplyResources(this.lblConfirmEventDelete, "lblConfirmEventDelete");
-            this.lblConfirmEventDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblConfirmEventDelete.Name = "lblConfirmEventDelete";
             // 
             // FrmDeleteEventComment
             // 
             resources.ApplyResources(this, "$this");
-            this.BackColor = System.Drawing.SystemColors.Control;
             this.Controls.Add(this.lblConfirmEventDelete);
             this.Controls.Add(this.textBoxComments);
             this.Controls.Add(this.groupBox1);

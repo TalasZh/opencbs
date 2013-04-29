@@ -44,7 +44,7 @@ using Octopus.Shared.Settings;
 namespace Octopus.GUI.Products
 {
 	/// <summary>
-	/// Description résumée de AddPackage.
+	/// Description rï¿½sumï¿½e de AddPackage.
 	/// </summary>
 	public partial class FrmAddLoanProduct :SweetBaseForm
 	{

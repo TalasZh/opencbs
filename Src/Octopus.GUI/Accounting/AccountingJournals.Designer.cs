@@ -1,4 +1,4 @@
-﻿using Octopus.GUI.UserControl;
+using Octopus.GUI.UserControl;
 
 namespace Octopus.GUI.Accounting
 {
@@ -33,8 +33,8 @@ namespace Octopus.GUI.Accounting
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AccountingJournals));
             this.pnlRight = new System.Windows.Forms.Panel();
-            this.btnView = new Octopus.GUI.UserControl.SweetButton();
-            this.btnPost = new Octopus.GUI.UserControl.SweetButton();
+            this.btnView = new System.Windows.Forms.Button();
+            this.btnPost = new System.Windows.Forms.Button();
             this.clbxFields = new System.Windows.Forms.CheckedListBox();
             this.cmbBranches = new System.Windows.Forms.ComboBox();
             this.lblBranch = new System.Windows.Forms.Label();
@@ -42,7 +42,7 @@ namespace Octopus.GUI.Accounting
             this.dateTimePickerEndDate = new System.Windows.Forms.DateTimePicker();
             this.lblBeginDate = new System.Windows.Forms.Label();
             this.lblEndDate = new System.Windows.Forms.Label();
-            this.btnPreview = new Octopus.GUI.UserControl.SweetButton();
+            this.btnPreview = new System.Windows.Forms.Button();
             this.bwRun = new System.ComponentModel.BackgroundWorker();
             this.tbcMain = new System.Windows.Forms.TabControl();
             this.tbpMovements = new System.Windows.Forms.TabPage();
@@ -102,12 +102,8 @@ namespace Octopus.GUI.Accounting
             this.btnView.AccessibleDescription = null;
             this.btnView.AccessibleName = null;
             resources.ApplyResources(this.btnView, "btnView");
-            this.btnView.BackgroundImage = null;
             this.btnView.Font = null;
-            this.btnView.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.View;
-            this.btnView.Menu = null;
             this.btnView.Name = "btnView";
-            this.btnView.UseVisualStyleBackColor = true;
             this.btnView.Click += new System.EventHandler(this.BtnViewClick);
             // 
             // btnPost
@@ -115,12 +111,8 @@ namespace Octopus.GUI.Accounting
             this.btnPost.AccessibleDescription = null;
             this.btnPost.AccessibleName = null;
             resources.ApplyResources(this.btnPost, "btnPost");
-            this.btnPost.BackgroundImage = null;
             this.btnPost.Font = null;
-            this.btnPost.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Refresh;
-            this.btnPost.Menu = null;
             this.btnPost.Name = "btnPost";
-            this.btnPost.UseVisualStyleBackColor = true;
             this.btnPost.Click += new System.EventHandler(this.BtnPostClick);
             // 
             // clbxFields
@@ -151,7 +143,6 @@ namespace Octopus.GUI.Accounting
             this.lblBranch.AccessibleDescription = null;
             this.lblBranch.AccessibleName = null;
             resources.ApplyResources(this.lblBranch, "lblBranch");
-            this.lblBranch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblBranch.Name = "lblBranch";
             // 
             // dateTimePickerBeginDate
@@ -183,7 +174,6 @@ namespace Octopus.GUI.Accounting
             this.lblBeginDate.AccessibleDescription = null;
             this.lblBeginDate.AccessibleName = null;
             resources.ApplyResources(this.lblBeginDate, "lblBeginDate");
-            this.lblBeginDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblBeginDate.Name = "lblBeginDate";
             // 
             // lblEndDate
@@ -191,7 +181,6 @@ namespace Octopus.GUI.Accounting
             this.lblEndDate.AccessibleDescription = null;
             this.lblEndDate.AccessibleName = null;
             resources.ApplyResources(this.lblEndDate, "lblEndDate");
-            this.lblEndDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblEndDate.Name = "lblEndDate";
             // 
             // btnPreview
@@ -199,12 +188,8 @@ namespace Octopus.GUI.Accounting
             this.btnPreview.AccessibleDescription = null;
             this.btnPreview.AccessibleName = null;
             resources.ApplyResources(this.btnPreview, "btnPreview");
-            this.btnPreview.BackgroundImage = null;
             this.btnPreview.Font = null;
-            this.btnPreview.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Refresh;
-            this.btnPreview.Menu = null;
             this.btnPreview.Name = "btnPreview";
-            this.btnPreview.UseVisualStyleBackColor = true;
             this.btnPreview.Click += new System.EventHandler(this.BtnRunClick);
             // 
             // bwRun
@@ -229,12 +214,10 @@ namespace Octopus.GUI.Accounting
             this.tbpMovements.AccessibleDescription = null;
             this.tbpMovements.AccessibleName = null;
             resources.ApplyResources(this.tbpMovements, "tbpMovements");
-            this.tbpMovements.BackgroundImage = null;
             this.tbpMovements.Controls.Add(this.olvBookings);
             this.tbpMovements.Controls.Add(this.cbxAllBookings);
             this.tbpMovements.Font = null;
             this.tbpMovements.Name = "tbpMovements";
-            this.tbpMovements.UseVisualStyleBackColor = true;
             // 
             // olvBookings
             // 
@@ -329,10 +312,8 @@ namespace Octopus.GUI.Accounting
             this.cbxAllBookings.AccessibleDescription = null;
             this.cbxAllBookings.AccessibleName = null;
             resources.ApplyResources(this.cbxAllBookings, "cbxAllBookings");
-            this.cbxAllBookings.BackgroundImage = null;
             this.cbxAllBookings.Font = null;
             this.cbxAllBookings.Name = "cbxAllBookings";
-            this.cbxAllBookings.UseVisualStyleBackColor = true;
             this.cbxAllBookings.CheckedChanged += new System.EventHandler(this.CbxAllBookingsCheckedChanged);
             // 
             // tbpEvents
@@ -340,12 +321,10 @@ namespace Octopus.GUI.Accounting
             this.tbpEvents.AccessibleDescription = null;
             this.tbpEvents.AccessibleName = null;
             resources.ApplyResources(this.tbpEvents, "tbpEvents");
-            this.tbpEvents.BackgroundImage = null;
             this.tbpEvents.Controls.Add(this.olvEvents);
             this.tbpEvents.Controls.Add(this.cbAllEvents);
             this.tbpEvents.Font = null;
             this.tbpEvents.Name = "tbpEvents";
-            this.tbpEvents.UseVisualStyleBackColor = true;
             // 
             // olvEvents
             // 
@@ -479,10 +458,8 @@ namespace Octopus.GUI.Accounting
             this.cbAllEvents.AccessibleDescription = null;
             this.cbAllEvents.AccessibleName = null;
             resources.ApplyResources(this.cbAllEvents, "cbAllEvents");
-            this.cbAllEvents.BackgroundImage = null;
             this.cbAllEvents.Font = null;
             this.cbAllEvents.Name = "cbAllEvents";
-            this.cbAllEvents.UseVisualStyleBackColor = true;
             this.cbAllEvents.CheckedChanged += new System.EventHandler(this.CbAllEventsCheckedChanged);
             // 
             // timerClosure
@@ -506,7 +483,6 @@ namespace Octopus.GUI.Accounting
             this.AccessibleName = null;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = null;
             this.Controls.Add(this.tbcMain);
             this.Controls.Add(this.pnlRight);
             this.Font = null;
@@ -528,7 +504,7 @@ namespace Octopus.GUI.Accounting
         #endregion
 
         private System.Windows.Forms.Panel pnlRight;
-        private SweetButton btnPreview;
+        private System.Windows.Forms.Button btnPreview;
         private System.Windows.Forms.ComboBox cmbBranches;
         private System.Windows.Forms.Label lblBranch;
         private System.Windows.Forms.DateTimePicker dateTimePickerBeginDate;
@@ -559,10 +535,10 @@ namespace Octopus.GUI.Accounting
         private BrightIdeasSoftware.OLVColumn olvColumn_Description;
         private System.Windows.Forms.CheckBox cbxAllBookings;
         private System.Windows.Forms.CheckBox cbAllEvents;
-        private SweetButton btnPost;
+        private System.Windows.Forms.Button btnPost;
         private BrightIdeasSoftware.OLVColumn olvColumn_Fee;
         private System.Windows.Forms.Timer timerClosure;
-        private SweetButton btnView;
+        private System.Windows.Forms.Button btnView;
         private System.ComponentModel.BackgroundWorker bwPostEvents;
         private System.ComponentModel.BackgroundWorker bwPostBookings;
 

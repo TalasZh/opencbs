@@ -1,4 +1,4 @@
-﻿using Octopus.GUI.UserControl;
+using Octopus.GUI.UserControl;
 
 namespace Octopus.GUI.Configuration
 {
@@ -83,7 +83,6 @@ namespace Octopus.GUI.Configuration
             this.tabBasicTeller.AccessibleDescription = null;
             this.tabBasicTeller.AccessibleName = null;
             resources.ApplyResources(this.tabBasicTeller, "tabBasicTeller");
-            this.tabBasicTeller.BackgroundImage = null;
             this.tabBasicTeller.Controls.Add(this.chxIsVault);
             this.tabBasicTeller.Controls.Add(this.cmbBranch);
             this.tabBasicTeller.Controls.Add(this.cmbUser);
@@ -99,17 +98,14 @@ namespace Octopus.GUI.Configuration
             this.tabBasicTeller.Controls.Add(this.tbName);
             this.tabBasicTeller.Font = null;
             this.tabBasicTeller.Name = "tabBasicTeller";
-            this.tabBasicTeller.UseVisualStyleBackColor = true;
             // 
             // chxIsVault
             // 
             this.chxIsVault.AccessibleDescription = null;
             this.chxIsVault.AccessibleName = null;
             resources.ApplyResources(this.chxIsVault, "chxIsVault");
-            this.chxIsVault.BackgroundImage = null;
             this.chxIsVault.Font = null;
             this.chxIsVault.Name = "chxIsVault";
-            this.chxIsVault.UseVisualStyleBackColor = true;
             this.chxIsVault.CheckedChanged += new System.EventHandler(this.chxIsVault_CheckedChanged);
             // 
             // cmbBranch
@@ -150,7 +146,6 @@ namespace Octopus.GUI.Configuration
             this.lblBranch.AccessibleDescription = null;
             this.lblBranch.AccessibleName = null;
             resources.ApplyResources(this.lblBranch, "lblBranch");
-            this.lblBranch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblBranch.Name = "lblBranch";
             // 
             // cmbAccount
@@ -169,7 +164,6 @@ namespace Octopus.GUI.Configuration
             this.lblUser.AccessibleDescription = null;
             this.lblUser.AccessibleName = null;
             resources.ApplyResources(this.lblUser, "lblUser");
-            this.lblUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblUser.Name = "lblUser";
             // 
             // lblCurrency
@@ -177,7 +171,6 @@ namespace Octopus.GUI.Configuration
             this.lblCurrency.AccessibleDescription = null;
             this.lblCurrency.AccessibleName = null;
             resources.ApplyResources(this.lblCurrency, "lblCurrency");
-            this.lblCurrency.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblCurrency.Name = "lblCurrency";
             // 
             // lblAccount
@@ -185,7 +178,6 @@ namespace Octopus.GUI.Configuration
             this.lblAccount.AccessibleDescription = null;
             this.lblAccount.AccessibleName = null;
             resources.ApplyResources(this.lblAccount, "lblAccount");
-            this.lblAccount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblAccount.Name = "lblAccount";
             // 
             // lblDescription
@@ -193,7 +185,6 @@ namespace Octopus.GUI.Configuration
             this.lblDescription.AccessibleDescription = null;
             this.lblDescription.AccessibleName = null;
             resources.ApplyResources(this.lblDescription, "lblDescription");
-            this.lblDescription.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblDescription.Name = "lblDescription";
             // 
             // tbDesc
@@ -210,7 +201,6 @@ namespace Octopus.GUI.Configuration
             this.lblName.AccessibleDescription = null;
             this.lblName.AccessibleName = null;
             resources.ApplyResources(this.lblName, "lblName");
-            this.lblName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblName.Name = "lblName";
             // 
             // tbName
@@ -227,7 +217,6 @@ namespace Octopus.GUI.Configuration
             this.tabAdvancedTeller.AccessibleDescription = null;
             this.tabAdvancedTeller.AccessibleName = null;
             resources.ApplyResources(this.tabAdvancedTeller, "tabAdvancedTeller");
-            this.tabAdvancedTeller.BackgroundImage = null;
             this.tabAdvancedTeller.Controls.Add(this.lblMaxAmountWithdrawal);
             this.tabAdvancedTeller.Controls.Add(this.lblMinAmountWithdrawal);
             this.tabAdvancedTeller.Controls.Add(this.label1);
@@ -242,16 +231,13 @@ namespace Octopus.GUI.Configuration
             this.tabAdvancedTeller.Controls.Add(this.lblMinAmountTeller);
             this.tabAdvancedTeller.Controls.Add(this.tbMaxAmountTeller);
             this.tabAdvancedTeller.Controls.Add(this.tbMinAmountTeller);
-            this.tabAdvancedTeller.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.tabAdvancedTeller.Name = "tabAdvancedTeller";
-            this.tabAdvancedTeller.UseVisualStyleBackColor = true;
             // 
             // lblMaxAmountWithdrawal
             // 
             this.lblMaxAmountWithdrawal.AccessibleDescription = null;
             this.lblMaxAmountWithdrawal.AccessibleName = null;
             resources.ApplyResources(this.lblMaxAmountWithdrawal, "lblMaxAmountWithdrawal");
-            this.lblMaxAmountWithdrawal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblMaxAmountWithdrawal.Name = "lblMaxAmountWithdrawal";
             // 
             // lblMinAmountWithdrawal
@@ -259,7 +245,6 @@ namespace Octopus.GUI.Configuration
             this.lblMinAmountWithdrawal.AccessibleDescription = null;
             this.lblMinAmountWithdrawal.AccessibleName = null;
             resources.ApplyResources(this.lblMinAmountWithdrawal, "lblMinAmountWithdrawal");
-            this.lblMinAmountWithdrawal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblMinAmountWithdrawal.Name = "lblMinAmountWithdrawal";
             // 
             // label1
@@ -268,7 +253,6 @@ namespace Octopus.GUI.Configuration
             this.label1.AccessibleName = null;
             resources.ApplyResources(this.label1, "label1");
             this.label1.Font = null;
-            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label1.Name = "label1";
             // 
             // lblMaxAmountDeposit
@@ -276,7 +260,6 @@ namespace Octopus.GUI.Configuration
             this.lblMaxAmountDeposit.AccessibleDescription = null;
             this.lblMaxAmountDeposit.AccessibleName = null;
             resources.ApplyResources(this.lblMaxAmountDeposit, "lblMaxAmountDeposit");
-            this.lblMaxAmountDeposit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblMaxAmountDeposit.Name = "lblMaxAmountDeposit";
             // 
             // tbMaxAmountWithdrawal
@@ -294,7 +277,6 @@ namespace Octopus.GUI.Configuration
             this.lblMinAmountDeposit.AccessibleDescription = null;
             this.lblMinAmountDeposit.AccessibleName = null;
             resources.ApplyResources(this.lblMinAmountDeposit, "lblMinAmountDeposit");
-            this.lblMinAmountDeposit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblMinAmountDeposit.Name = "lblMinAmountDeposit";
             // 
             // tbMinAmountWithdrawal
@@ -332,7 +314,6 @@ namespace Octopus.GUI.Configuration
             this.lblMaxAmountTeller.AccessibleDescription = null;
             this.lblMaxAmountTeller.AccessibleName = null;
             resources.ApplyResources(this.lblMaxAmountTeller, "lblMaxAmountTeller");
-            this.lblMaxAmountTeller.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblMaxAmountTeller.Name = "lblMaxAmountTeller";
             // 
             // tbMinAmountDeposit
@@ -350,7 +331,6 @@ namespace Octopus.GUI.Configuration
             this.lblMinAmountTeller.AccessibleDescription = null;
             this.lblMinAmountTeller.AccessibleName = null;
             resources.ApplyResources(this.lblMinAmountTeller, "lblMinAmountTeller");
-            this.lblMinAmountTeller.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblMinAmountTeller.Name = "lblMinAmountTeller";
             // 
             // tbMaxAmountTeller
@@ -379,7 +359,6 @@ namespace Octopus.GUI.Configuration
             this.AccessibleName = null;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = null;
             this.Controls.Add(this.tabctrlAddTeller);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;

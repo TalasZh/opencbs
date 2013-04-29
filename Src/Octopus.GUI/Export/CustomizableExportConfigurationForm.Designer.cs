@@ -1,4 +1,4 @@
-﻿namespace Octopus.GUI.Export
+namespace Octopus.GUI.Export
 {
     partial class CustomizableExportConfigurationForm
     {
@@ -73,7 +73,6 @@
             this.tabPageDescription.Controls.Add(this.fieldListUserControl1);
             resources.ApplyResources(this.tabPageDescription, "tabPageDescription");
             this.tabPageDescription.Name = "tabPageDescription";
-            this.tabPageDescription.UseVisualStyleBackColor = true;
             // 
             // textBoxName
             // 
@@ -104,7 +103,6 @@
             this.tabPageFormat.Controls.Add(this.checkBoxHasDelimiter);
             resources.ApplyResources(this.tabPageFormat, "tabPageFormat");
             this.tabPageFormat.Name = "tabPageFormat";
-            this.tabPageFormat.UseVisualStyleBackColor = true;
             // 
             // textBoxExtension
             // 
@@ -140,14 +138,12 @@
             // 
             resources.ApplyResources(this.checkBoxEncloseChar, "checkBoxEncloseChar");
             this.checkBoxEncloseChar.Name = "checkBoxEncloseChar";
-            this.checkBoxEncloseChar.UseVisualStyleBackColor = true;
             this.checkBoxEncloseChar.CheckedChanged += new System.EventHandler(this.checkBoxEncloseChar_CheckedChanged);
             // 
             // checkBoxDisplayHeader
             // 
             resources.ApplyResources(this.checkBoxDisplayHeader, "checkBoxDisplayHeader");
             this.checkBoxDisplayHeader.Name = "checkBoxDisplayHeader";
-            this.checkBoxDisplayHeader.UseVisualStyleBackColor = true;
             // 
             // checkBoxSpecificLength
             // 
@@ -155,14 +151,12 @@
             this.checkBoxSpecificLength.Checked = true;
             this.checkBoxSpecificLength.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBoxSpecificLength.Name = "checkBoxSpecificLength";
-            this.checkBoxSpecificLength.UseVisualStyleBackColor = true;
             this.checkBoxSpecificLength.CheckedChanged += new System.EventHandler(this.checkBoxSpecificLength_CheckedChanged);
             // 
             // checkBoxHasDelimiter
             // 
             resources.ApplyResources(this.checkBoxHasDelimiter, "checkBoxHasDelimiter");
             this.checkBoxHasDelimiter.Name = "checkBoxHasDelimiter";
-            this.checkBoxHasDelimiter.UseVisualStyleBackColor = true;
             this.checkBoxHasDelimiter.CheckedChanged += new System.EventHandler(this.checkBoxHasDelimiter_CheckedChanged);
             // 
             // tabPageSpecific
@@ -170,7 +164,6 @@
             this.tabPageSpecific.Controls.Add(this.panelInstallmentExportFile);
             resources.ApplyResources(this.tabPageSpecific, "tabPageSpecific");
             this.tabPageSpecific.Name = "tabPageSpecific";
-            this.tabPageSpecific.UseVisualStyleBackColor = true;
             // 
             // panelInstallmentExportFile
             // 
@@ -183,7 +176,6 @@
             // 
             resources.ApplyResources(this.checkBoxTagAsPending, "checkBoxTagAsPending");
             this.checkBoxTagAsPending.Name = "checkBoxTagAsPending";
-            this.checkBoxTagAsPending.UseVisualStyleBackColor = true;
             this.checkBoxTagAsPending.CheckedChanged += new System.EventHandler(this.checkBoxTagAsPending_CheckedChanged);
             // 
             // comboBoxPaymentMethods

@@ -112,7 +112,6 @@ namespace Octopus.GUI
             this.label1.AllowDrop = true;
             resources.ApplyResources(this.label1, "label1");
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(56)))));
             this.label1.Name = "label1";
             // 
             // linkLabel1
@@ -129,14 +128,12 @@ namespace Octopus.GUI
             // 
             resources.ApplyResources(this.lblAssembliesInfo, "lblAssembliesInfo");
             this.lblAssembliesInfo.BackColor = System.Drawing.Color.Transparent;
-            this.lblAssembliesInfo.ForeColor = System.Drawing.Color.White;
             this.lblAssembliesInfo.Name = "lblAssembliesInfo";
             // 
             // label2
             // 
             resources.ApplyResources(this.label2, "label2");
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Name = "label2";
             // 
             // timerThanks
@@ -148,7 +145,6 @@ namespace Octopus.GUI
             // lblThanks
             // 
             this.lblThanks.BackColor = System.Drawing.Color.Transparent;
-            this.lblThanks.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(0)))));
             resources.ApplyResources(this.lblThanks, "lblThanks");
             this.lblThanks.Name = "lblThanks";
             this.lblThanks.UseMnemonic = false;
@@ -163,8 +159,6 @@ namespace Octopus.GUI
             // AboutOctopus
             // 
             resources.ApplyResources(this, "$this");
-            this.BackColor = System.Drawing.Color.White;
-            this.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_vert;
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBoxAboutOctopus);
             this.Controls.Add(this.lblThanks);

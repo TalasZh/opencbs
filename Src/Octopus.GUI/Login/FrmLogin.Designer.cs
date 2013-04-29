@@ -1,4 +1,4 @@
-﻿
+
 using System.Windows.Forms;
 using Octopus.GUI.UserControl;
 
@@ -9,12 +9,12 @@ namespace Octopus.GUI.Login
         private Label label1;
         private Button btnExtend;
         private Label labelVersion;
-        private SweetButton buttonOK;
+        private System.Windows.Forms.Button buttonOK;
         private TextBox textBoxUserName;
         private TextBox textBoxPassword;
         private Label labelUserName;
         private Label labelPassword;
-        private SweetButton buttonExit;
+        private System.Windows.Forms.Button buttonExit;
         private LinkLabel llOctopusWeb;
         private PictureBox pictureBox;
         private Label lbDatabase;
@@ -50,12 +50,12 @@ namespace Octopus.GUI.Login
             this.label1 = new System.Windows.Forms.Label();
             this.btnExtend = new System.Windows.Forms.Button();
             this.labelVersion = new System.Windows.Forms.Label();
-            this.buttonOK = new Octopus.GUI.UserControl.SweetButton();
+            this.buttonOK = new System.Windows.Forms.Button();
             this.textBoxUserName = new System.Windows.Forms.TextBox();
             this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.labelUserName = new System.Windows.Forms.Label();
             this.labelPassword = new System.Windows.Forms.Label();
-            this.buttonExit = new Octopus.GUI.UserControl.SweetButton();
+            this.buttonExit = new System.Windows.Forms.Button();
             this.llOctopusWeb = new System.Windows.Forms.LinkLabel();
             this.pictureBox = new System.Windows.Forms.PictureBox();
             this.lbDatabase = new System.Windows.Forms.Label();
@@ -71,7 +71,6 @@ namespace Octopus.GUI.Login
             // 
             this.label1.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.label1, "label1");
-            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Name = "label1";
             // 
             // btnExtend
@@ -90,18 +89,12 @@ namespace Octopus.GUI.Login
             this.labelVersion.BackColor = System.Drawing.SystemColors.Control;
             this.labelVersion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.labelVersion, "labelVersion");
-            this.labelVersion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.labelVersion.Name = "labelVersion";
             // 
             // buttonOK
-            // 
-            this.buttonOK.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.buttonOK, "buttonOK");
-            this.buttonOK.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonOK.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.None;
-            this.buttonOK.Menu = null;
             this.buttonOK.Name = "buttonOK";
-            this.buttonOK.UseVisualStyleBackColor = false;
             this.buttonOK.Click += new System.EventHandler(this.buttonOK_Click);
             // 
             // textBoxUserName
@@ -118,24 +111,19 @@ namespace Octopus.GUI.Login
             // 
             this.labelUserName.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.labelUserName, "labelUserName");
-            this.labelUserName.ForeColor = System.Drawing.Color.Black;
             this.labelUserName.Name = "labelUserName";
             // 
             // labelPassword
             // 
             this.labelPassword.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.labelPassword, "labelPassword");
-            this.labelPassword.ForeColor = System.Drawing.Color.Black;
             this.labelPassword.Name = "labelPassword";
             // 
             // buttonExit
-            // 
-            this.buttonExit.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.buttonExit, "buttonExit");
             this.buttonExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.buttonExit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.buttonExit.Name = "buttonExit";
-            this.buttonExit.UseVisualStyleBackColor = false;
             this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
             // 
             // llOctopusWeb
@@ -155,10 +143,8 @@ namespace Octopus.GUI.Login
             this.pictureBox.TabStop = false;
             // 
             // lbDatabase
-            // 
-            this.lbDatabase.BackColor = System.Drawing.Color.Transparent;
+            //
             resources.ApplyResources(this.lbDatabase, "lbDatabase");
-            this.lbDatabase.ForeColor = System.Drawing.Color.Black;
             this.lbDatabase.Name = "lbDatabase";
             // 
             // cbDatabase
@@ -192,7 +178,6 @@ namespace Octopus.GUI.Login
             // 
             this.AcceptButton = this.buttonOK;
             resources.ApplyResources(this, "$this");
-            this.BackColor = System.Drawing.Color.White;
             this.CancelButton = this.buttonExit;
             this.ControlBox = false;
             this.Controls.Add(this.labelDetectDatabasesInProgress);

@@ -1,4 +1,4 @@
-﻿namespace Octopus.GUI.MFI
+namespace Octopus.GUI.MFI
 {
     partial class frmMFI
     {
@@ -35,8 +35,8 @@
             this.labelName = new System.Windows.Forms.Label();
             this.labelLogin = new System.Windows.Forms.Label();
             this.labelPassword = new System.Windows.Forms.Label();
-            this.buttonValidate = new Octopus.GUI.UserControl.SweetButton();
-            this.buttonCancel = new Octopus.GUI.UserControl.SweetButton();
+            this.buttonValidate = new System.Windows.Forms.Button();
+            this.buttonCancel = new System.Windows.Forms.Button();
             this.labelConfirmPassword = new System.Windows.Forms.Label();
             this.textBoxConfirmPassword = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
@@ -60,52 +60,36 @@
             // 
             resources.ApplyResources(this.labelName, "labelName");
             this.labelName.BackColor = System.Drawing.Color.Transparent;
-            this.labelName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelName.Name = "labelName";
             // 
             // labelLogin
             // 
             resources.ApplyResources(this.labelLogin, "labelLogin");
             this.labelLogin.BackColor = System.Drawing.Color.Transparent;
-            this.labelLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelLogin.Name = "labelLogin";
             // 
             // labelPassword
             // 
             resources.ApplyResources(this.labelPassword, "labelPassword");
             this.labelPassword.BackColor = System.Drawing.Color.Transparent;
-            this.labelPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelPassword.Name = "labelPassword";
             // 
             // buttonValidate
-            // 
-            this.buttonValidate.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_vert;
+            //
             resources.ApplyResources(this.buttonValidate, "buttonValidate");
-            this.buttonValidate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonValidate.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Validity;
-            this.buttonValidate.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_validity;
-            this.buttonValidate.Menu = null;
             this.buttonValidate.Name = "buttonValidate";
-            this.buttonValidate.UseVisualStyleBackColor = true;
             this.buttonValidate.Click += new System.EventHandler(this.buttonValidate_Click);
             // 
             // buttonCancel
-            // 
-            this.buttonCancel.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_vert;
+            //
             resources.ApplyResources(this.buttonCancel, "buttonCancel");
-            this.buttonCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonCancel.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Close;
-            this.buttonCancel.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_close;
-            this.buttonCancel.Menu = null;
             this.buttonCancel.Name = "buttonCancel";
-            this.buttonCancel.UseVisualStyleBackColor = true;
             this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
             // labelConfirmPassword
             // 
             resources.ApplyResources(this.labelConfirmPassword, "labelConfirmPassword");
             this.labelConfirmPassword.BackColor = System.Drawing.Color.Transparent;
-            this.labelConfirmPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelConfirmPassword.Name = "labelConfirmPassword";
             // 
             // textBoxConfirmPassword
@@ -117,7 +101,6 @@
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris;
             this.Controls.Add(this.labelConfirmPassword);
             this.Controls.Add(this.textBoxConfirmPassword);
             this.Controls.Add(this.buttonCancel);
@@ -142,8 +125,8 @@
         private System.Windows.Forms.Label labelName;
         private System.Windows.Forms.Label labelLogin;
         private System.Windows.Forms.Label labelPassword;
-        private Octopus.GUI.UserControl.SweetButton buttonValidate;
-        private Octopus.GUI.UserControl.SweetButton buttonCancel;
+        private System.Windows.Forms.Button buttonValidate;
+        private System.Windows.Forms.Button buttonCancel;
         private System.Windows.Forms.Label labelConfirmPassword;
         private System.Windows.Forms.TextBox textBoxConfirmPassword;
     }

@@ -1,4 +1,4 @@
-﻿using System.ComponentModel;
+using System.ComponentModel;
 using System.Windows.Forms;
 using Octopus.GUI.UserControl;
 
@@ -7,8 +7,8 @@ namespace Octopus.GUI.Contracts
     public partial class CreditContractRepayForm
     {
         private GroupBox groupBoxButton;
-        private SweetButton buttonCancel;
-        private SweetButton buttonSave;
+        private System.Windows.Forms.Button buttonCancel;
+        private System.Windows.Forms.Button buttonSave;
         private GroupBox groupBoxDetails;
         private CheckBox checkBoxFees;
         private Label _lbDate;
@@ -48,7 +48,7 @@ namespace Octopus.GUI.Contracts
         private GroupBox groupBox2;
         private Label _lbClientName;
         private Label _lbClientNameValue;
-        private SweetButton _btAddExchangeRate;
+        private System.Windows.Forms.Button _btAddExchangeRate;
         private GroupBox groupBoxAmount;
         private Label _lbECName;
         private Label _lbICName;
@@ -98,9 +98,9 @@ namespace Octopus.GUI.Contracts
             this.columnHeader9 = new System.Windows.Forms.ColumnHeader();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBoxButton = new System.Windows.Forms.GroupBox();
-            this._btAddExchangeRate = new Octopus.GUI.UserControl.SweetButton();
-            this.buttonCancel = new Octopus.GUI.UserControl.SweetButton();
-            this.buttonSave = new Octopus.GUI.UserControl.SweetButton();
+            this._btAddExchangeRate = new System.Windows.Forms.Button();
+            this.buttonCancel = new System.Windows.Forms.Button();
+            this.buttonSave = new System.Windows.Forms.Button();
             this.groupBoxDetails = new System.Windows.Forms.GroupBox();
             this.buttonSelectAGroupPerson = new System.Windows.Forms.Button();
             this.textBoxComment = new System.Windows.Forms.TextBox();
@@ -241,7 +241,6 @@ namespace Octopus.GUI.Contracts
             this.groupBoxButton.AccessibleDescription = null;
             this.groupBoxButton.AccessibleName = null;
             resources.ApplyResources(this.groupBoxButton, "groupBoxButton");
-            this.groupBoxButton.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris_180;
             this.groupBoxButton.Controls.Add(this._btAddExchangeRate);
             this.groupBoxButton.Controls.Add(this.buttonCancel);
             this.groupBoxButton.Controls.Add(this.buttonSave);
@@ -254,12 +253,7 @@ namespace Octopus.GUI.Contracts
             this._btAddExchangeRate.AccessibleDescription = null;
             this._btAddExchangeRate.AccessibleName = null;
             resources.ApplyResources(this._btAddExchangeRate, "_btAddExchangeRate");
-            this._btAddExchangeRate.BackColor = System.Drawing.Color.Gainsboro;
-            this._btAddExchangeRate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this._btAddExchangeRate.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.New;
-            this._btAddExchangeRate.Menu = null;
             this._btAddExchangeRate.Name = "_btAddExchangeRate";
-            this._btAddExchangeRate.UseVisualStyleBackColor = false;
             this._btAddExchangeRate.Click += new System.EventHandler(this._btAddExchangeRate_Click);
             // 
             // buttonCancel
@@ -267,12 +261,7 @@ namespace Octopus.GUI.Contracts
             this.buttonCancel.AccessibleDescription = null;
             this.buttonCancel.AccessibleName = null;
             resources.ApplyResources(this.buttonCancel, "buttonCancel");
-            this.buttonCancel.BackColor = System.Drawing.Color.Gainsboro;
-            this.buttonCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonCancel.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Close;
-            this.buttonCancel.Menu = null;
             this.buttonCancel.Name = "buttonCancel";
-            this.buttonCancel.UseVisualStyleBackColor = false;
             this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
             // buttonSave
@@ -280,12 +269,7 @@ namespace Octopus.GUI.Contracts
             this.buttonSave.AccessibleDescription = null;
             this.buttonSave.AccessibleName = null;
             resources.ApplyResources(this.buttonSave, "buttonSave");
-            this.buttonSave.BackColor = System.Drawing.Color.Gainsboro;
-            this.buttonSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonSave.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Save;
-            this.buttonSave.Menu = null;
             this.buttonSave.Name = "buttonSave";
-            this.buttonSave.UseVisualStyleBackColor = false;
             this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
             // 
             // groupBoxDetails
@@ -293,7 +277,6 @@ namespace Octopus.GUI.Contracts
             this.groupBoxDetails.AccessibleDescription = null;
             this.groupBoxDetails.AccessibleName = null;
             resources.ApplyResources(this.groupBoxDetails, "groupBoxDetails");
-            this.groupBoxDetails.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris;
             this.groupBoxDetails.Controls.Add(this.buttonSelectAGroupPerson);
             this.groupBoxDetails.Controls.Add(this.textBoxComment);
             this.groupBoxDetails.Controls.Add(this.cmbPaymentMethod);
@@ -356,13 +339,10 @@ namespace Octopus.GUI.Contracts
             this.checkBoxPending.AccessibleDescription = null;
             this.checkBoxPending.AccessibleName = null;
             resources.ApplyResources(this.checkBoxPending, "checkBoxPending");
-            this.checkBoxPending.BackColor = System.Drawing.Color.Transparent;
-            this.checkBoxPending.BackgroundImage = null;
             this.checkBoxPending.Checked = true;
             this.checkBoxPending.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBoxPending.Font = null;
             this.checkBoxPending.Name = "checkBoxPending";
-            this.checkBoxPending.UseVisualStyleBackColor = false;
             this.checkBoxPending.CheckedChanged += new System.EventHandler(this.checkBoxPending_CheckedChanged);
             // 
             // checkBoxTotalAmount
@@ -370,11 +350,8 @@ namespace Octopus.GUI.Contracts
             this.checkBoxTotalAmount.AccessibleDescription = null;
             this.checkBoxTotalAmount.AccessibleName = null;
             resources.ApplyResources(this.checkBoxTotalAmount, "checkBoxTotalAmount");
-            this.checkBoxTotalAmount.BackColor = System.Drawing.Color.Transparent;
-            this.checkBoxTotalAmount.BackgroundImage = null;
             this.checkBoxTotalAmount.Font = null;
             this.checkBoxTotalAmount.Name = "checkBoxTotalAmount";
-            this.checkBoxTotalAmount.UseVisualStyleBackColor = false;
             this.checkBoxTotalAmount.CheckedChanged += new System.EventHandler(this.checkBoxTotalAmount_CheckedChanged);
             // 
             // groupBoxAmount
@@ -382,8 +359,6 @@ namespace Octopus.GUI.Contracts
             this.groupBoxAmount.AccessibleDescription = null;
             this.groupBoxAmount.AccessibleName = null;
             resources.ApplyResources(this.groupBoxAmount, "groupBoxAmount");
-            this.groupBoxAmount.BackColor = System.Drawing.Color.Transparent;
-            this.groupBoxAmount.BackgroundImage = null;
             this.groupBoxAmount.Controls.Add(this.nudICAmount);
             this.groupBoxAmount.Controls.Add(this.panelEC);
             this.groupBoxAmount.Controls.Add(this._lbICName);
@@ -429,7 +404,6 @@ namespace Octopus.GUI.Contracts
             this._lbECAmountToGoBackNormal.AccessibleDescription = null;
             this._lbECAmountToGoBackNormal.AccessibleName = null;
             resources.ApplyResources(this._lbECAmountToGoBackNormal, "_lbECAmountToGoBackNormal");
-            this._lbECAmountToGoBackNormal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this._lbECAmountToGoBackNormal.Name = "_lbECAmountToGoBackNormal";
             // 
             // _lbECAmountMinMax
@@ -437,7 +411,6 @@ namespace Octopus.GUI.Contracts
             this._lbECAmountMinMax.AccessibleDescription = null;
             this._lbECAmountMinMax.AccessibleName = null;
             resources.ApplyResources(this._lbECAmountMinMax, "_lbECAmountMinMax");
-            this._lbECAmountMinMax.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this._lbECAmountMinMax.Name = "_lbECAmountMinMax";
             // 
             // _lbECName
@@ -445,7 +418,6 @@ namespace Octopus.GUI.Contracts
             this._lbECName.AccessibleDescription = null;
             this._lbECName.AccessibleName = null;
             resources.ApplyResources(this._lbECName, "_lbECName");
-            this._lbECName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this._lbECName.Name = "_lbECName";
             // 
             // _lbICName
@@ -453,7 +425,6 @@ namespace Octopus.GUI.Contracts
             this._lbICName.AccessibleDescription = null;
             this._lbICName.AccessibleName = null;
             resources.ApplyResources(this._lbICName, "_lbICName");
-            this._lbICName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this._lbICName.Name = "_lbICName";
             // 
             // _lbICAmountMinMax
@@ -461,7 +432,6 @@ namespace Octopus.GUI.Contracts
             this._lbICAmountMinMax.AccessibleDescription = null;
             this._lbICAmountMinMax.AccessibleName = null;
             resources.ApplyResources(this._lbICAmountMinMax, "_lbICAmountMinMax");
-            this._lbICAmountMinMax.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this._lbICAmountMinMax.Name = "_lbICAmountMinMax";
             // 
             // lblAmountToGoBackNormal
@@ -469,7 +439,6 @@ namespace Octopus.GUI.Contracts
             this.lblAmountToGoBackNormal.AccessibleDescription = null;
             this.lblAmountToGoBackNormal.AccessibleName = null;
             resources.ApplyResources(this.lblAmountToGoBackNormal, "lblAmountToGoBackNormal");
-            this.lblAmountToGoBackNormal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblAmountToGoBackNormal.Name = "lblAmountToGoBackNormal";
             this.lblAmountToGoBackNormal.MouseLeave += new System.EventHandler(this._lbICAmountToGoBackNormal_MouseLeave);
             this.lblAmountToGoBackNormal.DoubleClick += new System.EventHandler(this._lbICAmountToGoBackNormal_DoubleClick);
@@ -480,7 +449,6 @@ namespace Octopus.GUI.Contracts
             this._lbClientNameValue.AccessibleDescription = null;
             this._lbClientNameValue.AccessibleName = null;
             resources.ApplyResources(this._lbClientNameValue, "_lbClientNameValue");
-            this._lbClientNameValue.BackColor = System.Drawing.Color.Transparent;
             this._lbClientNameValue.Font = null;
             this._lbClientNameValue.Name = "_lbClientNameValue";
             // 
@@ -489,8 +457,6 @@ namespace Octopus.GUI.Contracts
             this._lbClientName.AccessibleDescription = null;
             this._lbClientName.AccessibleName = null;
             resources.ApplyResources(this._lbClientName, "_lbClientName");
-            this._lbClientName.BackColor = System.Drawing.Color.Transparent;
-            this._lbClientName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this._lbClientName.Name = "_lbClientName";
             // 
             // gbTypeOfRepayment
@@ -498,7 +464,6 @@ namespace Octopus.GUI.Contracts
             this.gbTypeOfRepayment.AccessibleDescription = null;
             this.gbTypeOfRepayment.AccessibleName = null;
             resources.ApplyResources(this.gbTypeOfRepayment, "gbTypeOfRepayment");
-            this.gbTypeOfRepayment.BackgroundImage = null;
             this.gbTypeOfRepayment.Controls.Add(this.rbProportionPayment);
             this.gbTypeOfRepayment.Controls.Add(this._rbKeepNotInitialSchedule);
             this.gbTypeOfRepayment.Controls.Add(this._rbKeepInitialSchedule);
@@ -510,7 +475,6 @@ namespace Octopus.GUI.Contracts
             this.rbProportionPayment.AccessibleDescription = null;
             this.rbProportionPayment.AccessibleName = null;
             resources.ApplyResources(this.rbProportionPayment, "rbProportionPayment");
-            this.rbProportionPayment.BackgroundImage = null;
             this.rbProportionPayment.Name = "rbProportionPayment";
             this.rbProportionPayment.Click += new System.EventHandler(this.rbProportionPayment_Click);
             // 
@@ -519,7 +483,6 @@ namespace Octopus.GUI.Contracts
             this._rbKeepNotInitialSchedule.AccessibleDescription = null;
             this._rbKeepNotInitialSchedule.AccessibleName = null;
             resources.ApplyResources(this._rbKeepNotInitialSchedule, "_rbKeepNotInitialSchedule");
-            this._rbKeepNotInitialSchedule.BackgroundImage = null;
             this._rbKeepNotInitialSchedule.Name = "_rbKeepNotInitialSchedule";
             this._rbKeepNotInitialSchedule.Click += new System.EventHandler(this._rbKeepNotInitialSchedule_Click);
             // 
@@ -528,7 +491,6 @@ namespace Octopus.GUI.Contracts
             this._rbKeepInitialSchedule.AccessibleDescription = null;
             this._rbKeepInitialSchedule.AccessibleName = null;
             resources.ApplyResources(this._rbKeepInitialSchedule, "_rbKeepInitialSchedule");
-            this._rbKeepInitialSchedule.BackgroundImage = null;
             this._rbKeepInitialSchedule.Checked = true;
             this._rbKeepInitialSchedule.Name = "_rbKeepInitialSchedule";
             this._rbKeepInitialSchedule.TabStop = true;
@@ -553,8 +515,6 @@ namespace Octopus.GUI.Contracts
             this.groupBoxRepayDetails.AccessibleDescription = null;
             this.groupBoxRepayDetails.AccessibleName = null;
             resources.ApplyResources(this.groupBoxRepayDetails, "groupBoxRepayDetails");
-            this.groupBoxRepayDetails.BackColor = System.Drawing.Color.Transparent;
-            this.groupBoxRepayDetails.BackgroundImage = null;
             this.groupBoxRepayDetails.Controls.Add(this._lbECPrincipal);
             this.groupBoxRepayDetails.Controls.Add(this._lbICPrincipal);
             this.groupBoxRepayDetails.Controls.Add(this.labelRepayPrincipal);
@@ -570,7 +530,6 @@ namespace Octopus.GUI.Contracts
             this._lbECPrincipal.AccessibleName = null;
             resources.ApplyResources(this._lbECPrincipal, "_lbECPrincipal");
             this._lbECPrincipal.Font = null;
-            this._lbECPrincipal.ForeColor = System.Drawing.Color.Black;
             this._lbECPrincipal.Name = "_lbECPrincipal";
             // 
             // _lbICPrincipal
@@ -579,7 +538,6 @@ namespace Octopus.GUI.Contracts
             this._lbICPrincipal.AccessibleName = null;
             resources.ApplyResources(this._lbICPrincipal, "_lbICPrincipal");
             this._lbICPrincipal.Font = null;
-            this._lbICPrincipal.ForeColor = System.Drawing.Color.Black;
             this._lbICPrincipal.Name = "_lbICPrincipal";
             // 
             // labelRepayPrincipal
@@ -595,8 +553,6 @@ namespace Octopus.GUI.Contracts
             this.groupBox1.AccessibleDescription = null;
             this.groupBox1.AccessibleName = null;
             resources.ApplyResources(this.groupBox1, "groupBox1");
-            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.BackgroundImage = null;
             this.groupBox1.Controls.Add(this.lbCInterest);
             this.groupBox1.Controls.Add(this.textBoxInterest);
             this.groupBox1.Controls.Add(this.lbInterest);
@@ -612,7 +568,6 @@ namespace Octopus.GUI.Contracts
             this.lbCInterest.AccessibleName = null;
             resources.ApplyResources(this.lbCInterest, "lbCInterest");
             this.lbCInterest.Font = null;
-            this.lbCInterest.ForeColor = System.Drawing.Color.Black;
             this.lbCInterest.Name = "lbCInterest";
             // 
             // textBoxInterest
@@ -632,7 +587,6 @@ namespace Octopus.GUI.Contracts
             this.lbInterest.AccessibleName = null;
             resources.ApplyResources(this.lbInterest, "lbInterest");
             this.lbInterest.Font = null;
-            this.lbInterest.ForeColor = System.Drawing.Color.Black;
             this.lbInterest.Name = "lbInterest";
             // 
             // labelRepayInterest
@@ -648,7 +602,6 @@ namespace Octopus.GUI.Contracts
             this.checkBoxInterests.AccessibleDescription = null;
             this.checkBoxInterests.AccessibleName = null;
             resources.ApplyResources(this.checkBoxInterests, "checkBoxInterests");
-            this.checkBoxInterests.BackgroundImage = null;
             this.checkBoxInterests.Font = null;
             this.checkBoxInterests.Name = "checkBoxInterests";
             this.checkBoxInterests.CheckedChanged += new System.EventHandler(this.checkBoxInterests_CheckedChanged);
@@ -658,8 +611,6 @@ namespace Octopus.GUI.Contracts
             this.groupBox2.AccessibleDescription = null;
             this.groupBox2.AccessibleName = null;
             resources.ApplyResources(this.groupBox2, "groupBox2");
-            this.groupBox2.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox2.BackgroundImage = null;
             this.groupBox2.Controls.Add(this._lbECCommissions);
             this.groupBox2.Controls.Add(this._lbICCommisions);
             this.groupBox2.Controls.Add(this.textBoxCommission);
@@ -679,7 +630,6 @@ namespace Octopus.GUI.Contracts
             this._lbECCommissions.AccessibleName = null;
             resources.ApplyResources(this._lbECCommissions, "_lbECCommissions");
             this._lbECCommissions.Font = null;
-            this._lbECCommissions.ForeColor = System.Drawing.Color.Black;
             this._lbECCommissions.Name = "_lbECCommissions";
             // 
             // _lbICCommisions
@@ -688,7 +638,6 @@ namespace Octopus.GUI.Contracts
             this._lbICCommisions.AccessibleName = null;
             resources.ApplyResources(this._lbICCommisions, "_lbICCommisions");
             this._lbICCommisions.Font = null;
-            this._lbICCommisions.ForeColor = System.Drawing.Color.Black;
             this._lbICCommisions.Name = "_lbICCommisions";
             // 
             // textBoxCommission
@@ -708,7 +657,6 @@ namespace Octopus.GUI.Contracts
             this._lbECFees.AccessibleName = null;
             resources.ApplyResources(this._lbECFees, "_lbECFees");
             this._lbECFees.Font = null;
-            this._lbECFees.ForeColor = System.Drawing.Color.Black;
             this._lbECFees.Name = "_lbECFees";
             // 
             // _lbICFees
@@ -717,7 +665,6 @@ namespace Octopus.GUI.Contracts
             this._lbICFees.AccessibleName = null;
             resources.ApplyResources(this._lbICFees, "_lbICFees");
             this._lbICFees.Font = null;
-            this._lbICFees.ForeColor = System.Drawing.Color.Black;
             this._lbICFees.Name = "_lbICFees";
             // 
             // textBoxPenalties
@@ -744,7 +691,6 @@ namespace Octopus.GUI.Contracts
             this.checkBoxFees.AccessibleDescription = null;
             this.checkBoxFees.AccessibleName = null;
             resources.ApplyResources(this.checkBoxFees, "checkBoxFees");
-            this.checkBoxFees.BackgroundImage = null;
             this.checkBoxFees.Font = null;
             this.checkBoxFees.Name = "checkBoxFees";
             this.checkBoxFees.CheckedChanged += new System.EventHandler(this.checkBoxFees_CheckedChanged);
@@ -762,7 +708,6 @@ namespace Octopus.GUI.Contracts
             this._lbInstalmentNbValue.AccessibleDescription = null;
             this._lbInstalmentNbValue.AccessibleName = null;
             resources.ApplyResources(this._lbInstalmentNbValue, "_lbInstalmentNbValue");
-            this._lbInstalmentNbValue.BackColor = System.Drawing.Color.Transparent;
             this._lbInstalmentNbValue.Font = null;
             this._lbInstalmentNbValue.Name = "_lbInstalmentNbValue";
             // 
@@ -771,7 +716,6 @@ namespace Octopus.GUI.Contracts
             this._lbLoanCodeValue.AccessibleDescription = null;
             this._lbLoanCodeValue.AccessibleName = null;
             resources.ApplyResources(this._lbLoanCodeValue, "_lbLoanCodeValue");
-            this._lbLoanCodeValue.BackColor = System.Drawing.Color.Transparent;
             this._lbLoanCodeValue.Font = null;
             this._lbLoanCodeValue.Name = "_lbLoanCodeValue";
             // 
@@ -780,8 +724,6 @@ namespace Octopus.GUI.Contracts
             this._lbInstalmentNb.AccessibleDescription = null;
             this._lbInstalmentNb.AccessibleName = null;
             resources.ApplyResources(this._lbInstalmentNb, "_lbInstalmentNb");
-            this._lbInstalmentNb.BackColor = System.Drawing.Color.Transparent;
-            this._lbInstalmentNb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this._lbInstalmentNb.Name = "_lbInstalmentNb";
             // 
             // labelPaymentMethod
@@ -790,7 +732,6 @@ namespace Octopus.GUI.Contracts
             this.labelPaymentMethod.AccessibleName = null;
             resources.ApplyResources(this.labelPaymentMethod, "labelPaymentMethod");
             this.labelPaymentMethod.BackColor = System.Drawing.Color.Transparent;
-            this.labelPaymentMethod.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelPaymentMethod.Name = "labelPaymentMethod";
             // 
             // _lbDate
@@ -798,8 +739,6 @@ namespace Octopus.GUI.Contracts
             this._lbDate.AccessibleDescription = null;
             this._lbDate.AccessibleName = null;
             resources.ApplyResources(this._lbDate, "_lbDate");
-            this._lbDate.BackColor = System.Drawing.Color.Transparent;
-            this._lbDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this._lbDate.Name = "_lbDate";
             // 
             // labelCommentOptional
@@ -808,7 +747,6 @@ namespace Octopus.GUI.Contracts
             this.labelCommentOptional.AccessibleName = null;
             resources.ApplyResources(this.labelCommentOptional, "labelCommentOptional");
             this.labelCommentOptional.BackColor = System.Drawing.Color.Transparent;
-            this.labelCommentOptional.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelCommentOptional.Name = "labelCommentOptional";
             // 
             // labelComment
@@ -817,7 +755,6 @@ namespace Octopus.GUI.Contracts
             this.labelComment.AccessibleName = null;
             resources.ApplyResources(this.labelComment, "labelComment");
             this.labelComment.BackColor = System.Drawing.Color.Transparent;
-            this.labelComment.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelComment.Name = "labelComment";
             // 
             // _lbLoanCode
@@ -825,8 +762,6 @@ namespace Octopus.GUI.Contracts
             this._lbLoanCode.AccessibleDescription = null;
             this._lbLoanCode.AccessibleName = null;
             resources.ApplyResources(this._lbLoanCode, "_lbLoanCode");
-            this._lbLoanCode.BackColor = System.Drawing.Color.Transparent;
-            this._lbLoanCode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this._lbLoanCode.Name = "_lbLoanCode";
             // 
             // CreditContractRepayForm
@@ -834,10 +769,7 @@ namespace Octopus.GUI.Contracts
             this.AccessibleDescription = null;
             this.AccessibleName = null;
             resources.ApplyResources(this, "$this");
-            this.BackColor = System.Drawing.Color.White;
-            this.BackgroundImage = null;
             this.Controls.Add(this.tableLayoutPanel1);
-            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;

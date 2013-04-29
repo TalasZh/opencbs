@@ -1,4 +1,4 @@
-﻿
+
 
 namespace Octopus.GUI
 {
@@ -13,7 +13,7 @@ namespace Octopus.GUI
         private System.Windows.Forms.Label labelProvince;
 
         private System.Windows.Forms.ComboBox comboBoxProvince;
-        private Octopus.GUI.UserControl.SweetButton buttonSave;
+        private System.Windows.Forms.Button buttonSave;
         private System.Windows.Forms.Label labelHomePhone;
         private System.Windows.Forms.Label labelPersonalPhone;
         private Octopus.GUI.UserControl.TextBoxLimit textBoxHomePhone;
@@ -55,7 +55,7 @@ namespace Octopus.GUI
             this.labelCity = new System.Windows.Forms.Label();
             this.labelProvince = new System.Windows.Forms.Label();
             this.comboBoxProvince = new System.Windows.Forms.ComboBox();
-            this.buttonSave = new Octopus.GUI.UserControl.SweetButton();
+            this.buttonSave = new System.Windows.Forms.Button();
             this.labelHomePhone = new System.Windows.Forms.Label();
             this.labelPersonalPhone = new System.Windows.Forms.Label();
             this.textBoxHomePhone = new Octopus.GUI.UserControl.TextBoxLimit();
@@ -80,7 +80,6 @@ namespace Octopus.GUI
             // 
             resources.ApplyResources(this.labelDistrict, "labelDistrict");
             this.labelDistrict.BackColor = System.Drawing.Color.Transparent;
-            this.labelDistrict.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelDistrict.Name = "labelDistrict";
             // 
             // tbAddress
@@ -94,7 +93,6 @@ namespace Octopus.GUI
             // 
             resources.ApplyResources(this.labelComments, "labelComments");
             this.labelComments.BackColor = System.Drawing.Color.Transparent;
-            this.labelComments.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelComments.Name = "labelComments";
             // 
             // textBoxCity
@@ -107,14 +105,12 @@ namespace Octopus.GUI
             // 
             resources.ApplyResources(this.labelCity, "labelCity");
             this.labelCity.BackColor = System.Drawing.Color.Transparent;
-            this.labelCity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelCity.Name = "labelCity";
             // 
             // labelProvince
             // 
             resources.ApplyResources(this.labelProvince, "labelProvince");
             this.labelProvince.BackColor = System.Drawing.Color.Transparent;
-            this.labelProvince.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelProvince.Name = "labelProvince";
             // 
             // comboBoxProvince
@@ -127,28 +123,19 @@ namespace Octopus.GUI
             this.comboBoxProvince.SelectionChangeCommitted += new System.EventHandler(this.comboBoxProvince_SelectionChangeCommitted);
             // 
             // buttonSave
-            // 
-            this.buttonSave.BackColor = System.Drawing.Color.Gainsboro;
-            this.buttonSave.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_bouton;
+            //
             resources.ApplyResources(this.buttonSave, "buttonSave");
-            this.buttonSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonSave.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.View;
-            this.buttonSave.Image = global::Octopus.GUI.Properties.Resources.theme1_1_view;
-            this.buttonSave.Menu = null;
             this.buttonSave.Name = "buttonSave";
-            this.buttonSave.UseVisualStyleBackColor = false;
             this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
             // 
             // labelHomePhone
             // 
             resources.ApplyResources(this.labelHomePhone, "labelHomePhone");
-            this.labelHomePhone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelHomePhone.Name = "labelHomePhone";
             // 
             // labelPersonalPhone
             // 
             resources.ApplyResources(this.labelPersonalPhone, "labelPersonalPhone");
-            this.labelPersonalPhone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelPersonalPhone.Name = "labelPersonalPhone";
             // 
             // textBoxHomePhone
@@ -172,13 +159,11 @@ namespace Octopus.GUI
             // labelEMail
             // 
             resources.ApplyResources(this.labelEMail, "labelEMail");
-            this.labelEMail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelEMail.Name = "labelEMail";
             // 
             // labelZipCode
             // 
             resources.ApplyResources(this.labelZipCode, "labelZipCode");
-            this.labelZipCode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelZipCode.Name = "labelZipCode";
             // 
             // tbZipCode
@@ -190,7 +175,6 @@ namespace Octopus.GUI
             // label1
             // 
             resources.ApplyResources(this.label1, "label1");
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.label1.Name = "label1";
             // 
             // comboBoxHomeType
@@ -204,7 +188,6 @@ namespace Octopus.GUI
             // AddressUserControl
             // 
             resources.ApplyResources(this, "$this");
-            this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.comboBoxHomeType);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tbZipCode);

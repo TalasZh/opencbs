@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows.Forms;
@@ -9,8 +9,8 @@ namespace Octopus.GUI.Accounting
 {
     public partial class ExchangeRateForm
     {
-        private SweetButton buttonOK;
-        private SweetButton buttonCancel;
+        private System.Windows.Forms.Button buttonOK;
+        private System.Windows.Forms.Button buttonCancel;
         private GroupBox groupBox2;
         private Label labelInternalCurrency;
         private TextDecimalNumericUserControl textBoxRateValue;
@@ -48,8 +48,8 @@ namespace Octopus.GUI.Accounting
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ExchangeRateForm));
-            this.buttonOK = new Octopus.GUI.UserControl.SweetButton();
-            this.buttonCancel = new Octopus.GUI.UserControl.SweetButton();
+            this.buttonOK = new System.Windows.Forms.Button();
+            this.buttonCancel = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.labelSwapped = new System.Windows.Forms.Label();
             this.comboBoxCurrencies = new System.Windows.Forms.ComboBox();
@@ -68,30 +68,17 @@ namespace Octopus.GUI.Accounting
             // buttonOK
             // 
             resources.ApplyResources(this.buttonOK, "buttonOK");
-            this.buttonOK.BackColor = System.Drawing.Color.Gainsboro;
-            this.buttonOK.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonOK.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Validity;
-            this.buttonOK.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_validity;
-            this.buttonOK.Menu = null;
             this.buttonOK.Name = "buttonOK";
-            this.buttonOK.UseVisualStyleBackColor = false;
             this.buttonOK.Click += new System.EventHandler(this.buttonOK_Click);
             // 
             // buttonCancel
-            // 
-            this.buttonCancel.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.buttonCancel, "buttonCancel");
-            this.buttonCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonCancel.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Close;
-            this.buttonCancel.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_close;
-            this.buttonCancel.Menu = null;
             this.buttonCancel.Name = "buttonCancel";
-            this.buttonCancel.UseVisualStyleBackColor = false;
             this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
             // groupBox2
-            // 
-            this.groupBox2.BackColor = System.Drawing.Color.Transparent;
+            //
             this.groupBox2.Controls.Add(this.labelSwapped);
             this.groupBox2.Controls.Add(this.comboBoxCurrencies);
             this.groupBox2.Controls.Add(this.labelExternalCurrency);
@@ -100,14 +87,12 @@ namespace Octopus.GUI.Accounting
             this.groupBox2.Controls.Add(this.buttonOK);
             this.groupBox2.Controls.Add(this.labelInternalCurrency);
             resources.ApplyResources(this.groupBox2, "groupBox2");
-            this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.TabStop = false;
             // 
             // labelSwapped
             // 
             resources.ApplyResources(this.labelSwapped, "labelSwapped");
-            this.labelSwapped.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelSwapped.Name = "labelSwapped";
             // 
             // comboBoxCurrencies
@@ -144,7 +129,6 @@ namespace Octopus.GUI.Accounting
             // lbRateDetails
             // 
             resources.ApplyResources(this.lbRateDetails, "lbRateDetails");
-            this.lbRateDetails.BackColor = System.Drawing.Color.Transparent;
             this.lbRateDetails.Name = "lbRateDetails";
             // 
             // lvExchangeRate
@@ -200,14 +184,11 @@ namespace Octopus.GUI.Accounting
             // lbRateEvolution
             // 
             resources.ApplyResources(this.lbRateEvolution, "lbRateEvolution");
-            this.lbRateEvolution.BackColor = System.Drawing.Color.Transparent;
             this.lbRateEvolution.Name = "lbRateEvolution";
             // 
             // ExchangeRateForm
             // 
             resources.ApplyResources(this, "$this");
-            this.BackColor = System.Drawing.Color.White;
-            this.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris_180;
             this.Controls.Add(this.lbRateEvolution);
             this.Controls.Add(this.zedGraphControlExchangeRateEvolution);
             this.Controls.Add(this.lvExchangeRate);

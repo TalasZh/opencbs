@@ -1,4 +1,4 @@
-﻿namespace Octopus.GUI.Configuration
+namespace Octopus.GUI.Configuration
 {
     partial class EditUserForm
     {
@@ -63,13 +63,11 @@
             this.pageBranches.Controls.Add(this.chkSelectAllBranches);
             resources.ApplyResources(this.pageBranches, "pageBranches");
             this.pageBranches.Name = "pageBranches";
-            this.pageBranches.UseVisualStyleBackColor = true;
             // 
             // chkSelectAllBranches
             // 
             resources.ApplyResources(this.chkSelectAllBranches, "chkSelectAllBranches");
             this.chkSelectAllBranches.Name = "chkSelectAllBranches";
-            this.chkSelectAllBranches.UseVisualStyleBackColor = true;
             this.chkSelectAllBranches.Click += new System.EventHandler(this.OnSelectAllClick);
             // 
             // olvBranches
@@ -99,14 +97,12 @@
             this.pageSubordinates.Controls.Add(this.chkSelectAll);
             resources.ApplyResources(this.pageSubordinates, "pageSubordinates");
             this.pageSubordinates.Name = "pageSubordinates";
-            this.pageSubordinates.UseVisualStyleBackColor = true;
             // 
             // chkSelectAll
             // 
             resources.ApplyResources(this.chkSelectAll, "chkSelectAll");
             this.chkSelectAll.Name = "chkSelectAll";
             this.chkSelectAll.ThreeState = true;
-            this.chkSelectAll.UseVisualStyleBackColor = true;
             this.chkSelectAll.Click += new System.EventHandler(this.OnSelectAllClick);
             // 
             // olvUsers

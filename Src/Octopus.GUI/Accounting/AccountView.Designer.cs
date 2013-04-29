@@ -32,7 +32,7 @@ namespace Octopus.GUI.Accounting
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AccountView));
             this.splitContainer4 = new System.Windows.Forms.SplitContainer();
-            this.btnClose = new Octopus.GUI.UserControl.SweetButton();
+            this.btnClose = new System.Windows.Forms.Button();
             this.lblTitle = new System.Windows.Forms.Label();
             this.spconDesk = new System.Windows.Forms.SplitContainer();
             this.lvBooking = new System.Windows.Forms.ListView();
@@ -44,7 +44,7 @@ namespace Octopus.GUI.Accounting
             this.columnHeaderPurpose = new System.Windows.Forms.ColumnHeader();
             this.gbBalance = new System.Windows.Forms.GroupBox();
             this.lblAccountBalance = new System.Windows.Forms.Label();
-            this.btnRefrech = new Octopus.GUI.UserControl.SweetButton();
+            this.btnRefrech = new System.Windows.Forms.Button();
             this.cbAccounts = new System.Windows.Forms.ComboBox();
             this.cmbCurrencies = new System.Windows.Forms.ComboBox();
             this.lblCurrency = new System.Windows.Forms.Label();
@@ -84,22 +84,13 @@ namespace Octopus.GUI.Accounting
             // btnClose
             // 
             resources.ApplyResources(this.btnClose, "btnClose");
-            this.btnClose.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnClose.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_bouton;
-            this.btnClose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnClose.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Close;
-            this.btnClose.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_close;
-            this.btnClose.Menu = null;
             this.btnClose.Name = "btnClose";
-            this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this._buttonExit_Click);
             // 
             // lblTitle
             // 
             this.lblTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             resources.ApplyResources(this.lblTitle, "lblTitle");
-            this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Image = global::Octopus.GUI.Properties.Resources.theme1_1_pastille_contrat;
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Click += new System.EventHandler(this.lblTitle_Click);
             // 
@@ -170,8 +161,7 @@ namespace Octopus.GUI.Accounting
             resources.ApplyResources(this.columnHeaderPurpose, "columnHeaderPurpose");
             // 
             // gbBalance
-            // 
-            this.gbBalance.BackColor = System.Drawing.Color.Transparent;
+            //
             this.gbBalance.Controls.Add(this.lblAccountBalance);
             resources.ApplyResources(this.gbBalance, "gbBalance");
             this.gbBalance.Name = "gbBalance";
@@ -180,18 +170,12 @@ namespace Octopus.GUI.Accounting
             // lblAccountBalance
             // 
             resources.ApplyResources(this.lblAccountBalance, "lblAccountBalance");
-            this.lblAccountBalance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblAccountBalance.Name = "lblAccountBalance";
             // 
             // btnRefrech
-            // 
-            this.btnRefrech.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_bouton;
+            //
             resources.ApplyResources(this.btnRefrech, "btnRefrech");
-            this.btnRefrech.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Refresh;
-            this.btnRefrech.Image = global::Octopus.GUI.Properties.Resources.theme1_1_export;
-            this.btnRefrech.Menu = null;
             this.btnRefrech.Name = "btnRefrech";
-            this.btnRefrech.UseVisualStyleBackColor = true;
             this.btnRefrech.Click += new System.EventHandler(this.buttonRefrech_Click);
             // 
             // cbAccounts
@@ -214,13 +198,11 @@ namespace Octopus.GUI.Accounting
             // lblCurrency
             // 
             resources.ApplyResources(this.lblCurrency, "lblCurrency");
-            this.lblCurrency.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblCurrency.Name = "lblCurrency";
             // 
             // lblAccount
             // 
             resources.ApplyResources(this.lblAccount, "lblAccount");
-            this.lblAccount.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblAccount.Name = "lblAccount";
             // 
             // cmbBranches
@@ -242,7 +224,6 @@ namespace Octopus.GUI.Accounting
             // lblBranch
             // 
             resources.ApplyResources(this.lblBranch, "lblBranch");
-            this.lblBranch.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblBranch.Name = "lblBranch";
             // 
             // dateTimePickerBeginDate
@@ -255,7 +236,6 @@ namespace Octopus.GUI.Accounting
             // lblDisplay
             // 
             resources.ApplyResources(this.lblDisplay, "lblDisplay");
-            this.lblDisplay.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblDisplay.Name = "lblDisplay";
             // 
             // dateTimePickerEndDate
@@ -268,20 +248,17 @@ namespace Octopus.GUI.Accounting
             // lblBeginDate
             // 
             resources.ApplyResources(this.lblBeginDate, "lblBeginDate");
-            this.lblBeginDate.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblBeginDate.Name = "lblBeginDate";
             // 
             // lblEndDate
             // 
             resources.ApplyResources(this.lblEndDate, "lblEndDate");
-            this.lblEndDate.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblEndDate.Name = "lblEndDate";
             // 
             // AccountView
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.splitContainer4);
             this.Name = "AccountView";
             this.Load += new System.EventHandler(this.AccountView_Load);
@@ -302,11 +279,11 @@ namespace Octopus.GUI.Accounting
 
         private System.Windows.Forms.SplitContainer splitContainer4;
         private System.Windows.Forms.Label lblTitle;
-        private SweetButton btnClose;
+        private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.SplitContainer spconDesk;
         private System.Windows.Forms.GroupBox gbBalance;
         private System.Windows.Forms.Label lblAccountBalance;
-        private SweetButton btnRefrech;
+        private System.Windows.Forms.Button btnRefrech;
         private System.Windows.Forms.ComboBox cbAccounts;
         private System.Windows.Forms.ComboBox cmbCurrencies;
         private System.Windows.Forms.Label lblCurrency;

@@ -1,4 +1,4 @@
-﻿using Octopus.GUI.UserControl;
+using Octopus.GUI.UserControl;
 
 namespace Octopus.GUI.Clients
 {
@@ -39,8 +39,8 @@ namespace Octopus.GUI.Clients
             this.colLoanShare = new System.Windows.Forms.ColumnHeader();
             this.pnlButtons = new System.Windows.Forms.Panel();
             this.lblDescription = new System.Windows.Forms.Label();
-            this.btnCancel = new Octopus.GUI.UserControl.SweetButton();
-            this.btnOK = new Octopus.GUI.UserControl.SweetButton();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.btnOK = new System.Windows.Forms.Button();
             this.spcBox.Panel1.SuspendLayout();
             this.spcBox.Panel2.SuspendLayout();
             this.spcBox.SuspendLayout();
@@ -100,30 +100,19 @@ namespace Octopus.GUI.Clients
             // lblDescription
             // 
             resources.ApplyResources(this.lblDescription, "lblDescription");
-            this.lblDescription.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblDescription.Name = "lblDescription";
             // 
             // btnCancel
             // 
             resources.ApplyResources(this.btnCancel, "btnCancel");
-            this.btnCancel.BackColor = System.Drawing.Color.Gainsboro;
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(56)))));
-            this.btnCancel.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Close;
-            this.btnCancel.Menu = null;
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.UseVisualStyleBackColor = false;
             // 
             // btnOK
             // 
             resources.ApplyResources(this.btnOK, "btnOK");
-            this.btnOK.BackColor = System.Drawing.Color.Gainsboro;
             this.btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnOK.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnOK.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Save;
-            this.btnOK.Menu = null;
             this.btnOK.Name = "btnOK";
-            this.btnOK.UseVisualStyleBackColor = false;
             this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // LoanSharesForm
@@ -155,7 +144,7 @@ namespace Octopus.GUI.Clients
         private System.Windows.Forms.ColumnHeader colLoanShare;
         private System.Windows.Forms.Panel pnlButtons;
         private System.Windows.Forms.Label lblDescription;
-        private Octopus.GUI.UserControl.SweetButton btnCancel;
-        private Octopus.GUI.UserControl.SweetButton btnOK;
+        private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Button btnOK;
     }
 }

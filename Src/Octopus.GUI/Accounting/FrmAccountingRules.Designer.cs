@@ -1,4 +1,4 @@
-﻿using Octopus.GUI.UserControl;
+using Octopus.GUI.UserControl;
 
 namespace Octopus.GUI.Accounting
 {
@@ -52,14 +52,14 @@ namespace Octopus.GUI.Accounting
             this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.imageListSort = new System.Windows.Forms.ImageList(this.components);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.sweetButton1 = new Octopus.GUI.UserControl.SweetButton();
-            this.sbtnExport = new Octopus.GUI.UserControl.SweetButton();
+            this.sweetButton1 = new System.Windows.Forms.Button();
+            this.sbtnExport = new System.Windows.Forms.Button();
             this.cbEventTypes = new System.Windows.Forms.ComboBox();
-            this.btnDeleteRule = new Octopus.GUI.UserControl.SweetButton();
-            this.btnEditRule = new Octopus.GUI.UserControl.SweetButton();
-            this.btnAddRule = new Octopus.GUI.UserControl.SweetButton();
+            this.btnDeleteRule = new System.Windows.Forms.Button();
+            this.btnEditRule = new System.Windows.Forms.Button();
+            this.btnAddRule = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnClose = new Octopus.GUI.UserControl.SweetButton();
+            this.btnClose = new System.Windows.Forms.Button();
             this.lblTitle = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.fileDialog = new System.Windows.Forms.OpenFileDialog();
@@ -195,8 +195,7 @@ namespace Octopus.GUI.Accounting
             this.imageListSort.Images.SetKeyName(1, "theme1.1_bouton_up_small.png");
             // 
             // groupBox1
-            // 
-            this.groupBox1.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris;
+            //
             resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Controls.Add(this.sweetButton1);
             this.groupBox1.Controls.Add(this.sbtnExport);
@@ -210,25 +209,13 @@ namespace Octopus.GUI.Accounting
             // sweetButton1
             // 
             resources.ApplyResources(this.sweetButton1, "sweetButton1");
-            this.sweetButton1.BackColor = System.Drawing.Color.Gainsboro;
-            this.sweetButton1.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_bouton;
-            this.sweetButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.sweetButton1.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Import;
-            this.sweetButton1.Menu = null;
             this.sweetButton1.Name = "sweetButton1";
-            this.sweetButton1.UseVisualStyleBackColor = false;
             this.sweetButton1.Click += new System.EventHandler(this.SweetButton1Click);
             // 
             // sbtnExport
             // 
             resources.ApplyResources(this.sbtnExport, "sbtnExport");
-            this.sbtnExport.BackColor = System.Drawing.Color.Gainsboro;
-            this.sbtnExport.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_bouton;
-            this.sbtnExport.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.sbtnExport.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Export;
-            this.sbtnExport.Menu = null;
             this.sbtnExport.Name = "sbtnExport";
-            this.sbtnExport.UseVisualStyleBackColor = false;
             this.sbtnExport.Click += new System.EventHandler(this.SbtnExportClick);
             // 
             // cbEventTypes
@@ -242,39 +229,19 @@ namespace Octopus.GUI.Accounting
             // btnDeleteRule
             // 
             resources.ApplyResources(this.btnDeleteRule, "btnDeleteRule");
-            this.btnDeleteRule.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnDeleteRule.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_bouton;
-            this.btnDeleteRule.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnDeleteRule.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Delete;
-            this.btnDeleteRule.Menu = null;
             this.btnDeleteRule.Name = "btnDeleteRule";
-            this.btnDeleteRule.UseVisualStyleBackColor = false;
             this.btnDeleteRule.Click += new System.EventHandler(this.ButtonDeleteRuleClick);
             // 
             // btnEditRule
             // 
             resources.ApplyResources(this.btnEditRule, "btnEditRule");
-            this.btnEditRule.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnEditRule.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_bouton;
-            this.btnEditRule.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnEditRule.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Edit;
-            this.btnEditRule.Image = global::Octopus.GUI.Properties.Resources.theme1_1_view;
-            this.btnEditRule.Menu = null;
             this.btnEditRule.Name = "btnEditRule";
-            this.btnEditRule.UseVisualStyleBackColor = false;
             this.btnEditRule.Click += new System.EventHandler(this.ButtonEditRuleClick);
             // 
             // btnAddRule
             // 
             resources.ApplyResources(this.btnAddRule, "btnAddRule");
-            this.btnAddRule.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnAddRule.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_bouton;
-            this.btnAddRule.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnAddRule.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.New;
-            this.btnAddRule.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_new;
-            this.btnAddRule.Menu = null;
             this.btnAddRule.Name = "btnAddRule";
-            this.btnAddRule.UseVisualStyleBackColor = false;
             this.btnAddRule.Click += new System.EventHandler(this.ButtonAddRuleClick);
             // 
             // panel1
@@ -287,22 +254,13 @@ namespace Octopus.GUI.Accounting
             // btnClose
             // 
             resources.ApplyResources(this.btnClose, "btnClose");
-            this.btnClose.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnClose.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_bouton;
-            this.btnClose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnClose.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Close;
-            this.btnClose.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_close;
-            this.btnClose.Menu = null;
             this.btnClose.Name = "btnClose";
-            this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.ButtonExitClick);
             // 
             // lblTitle
             // 
             this.lblTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             resources.ApplyResources(this.lblTitle, "lblTitle");
-            this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Image = global::Octopus.GUI.Properties.Resources.theme1_1_pastille_contrat;
             this.lblTitle.Name = "lblTitle";
             // 
             // tableLayoutPanel1
@@ -337,13 +295,13 @@ namespace Octopus.GUI.Accounting
 
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.Panel panel1;
-        private SweetButton btnClose;
+        private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private SweetButton btnAddRule;
-        private SweetButton btnDeleteRule;
-        private SweetButton btnEditRule;
+        private System.Windows.Forms.Button btnAddRule;
+        private System.Windows.Forms.Button btnDeleteRule;
+        private System.Windows.Forms.Button btnEditRule;
         private System.Windows.Forms.ListView listViewContractsRules;
         private System.Windows.Forms.ColumnHeader clhEventType;
         private System.Windows.Forms.ColumnHeader clhEventAttribute;
@@ -362,8 +320,8 @@ namespace Octopus.GUI.Accounting
         private System.Windows.Forms.ToolStripMenuItem copyStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem pasetToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
-        private SweetButton sbtnExport;
-        private SweetButton sweetButton1;
+        private System.Windows.Forms.Button sbtnExport;
+        private System.Windows.Forms.Button sweetButton1;
         private System.Windows.Forms.OpenFileDialog fileDialog;
         private System.Windows.Forms.ColumnHeader clhPaymentMethod;
 

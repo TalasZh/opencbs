@@ -1,4 +1,4 @@
-﻿namespace Octopus.GUI.Contracts
+namespace Octopus.GUI.Contracts
 {
     using Octopus.GUI.UserControl;
 
@@ -31,8 +31,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SavingsOperationForm));
-            this.btnSave = new Octopus.GUI.UserControl.SweetButton();
-            this.btnCancel = new Octopus.GUI.UserControl.SweetButton();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
             this.gbxMainWindow = new System.Windows.Forms.GroupBox();
             this.nudTotalAmount = new System.Windows.Forms.NumericUpDown();
             this.nudAmount = new System.Windows.Forms.NumericUpDown();
@@ -55,7 +55,7 @@
             this.plTransfer = new System.Windows.Forms.Panel();
             this.lblInterBranch = new System.Windows.Forms.Label();
             this.tbTargetAccount = new System.Windows.Forms.TextBox();
-            this.btnSearchContract = new Octopus.GUI.UserControl.SweetButton();
+            this.btnSearchContract = new System.Windows.Forms.Button();
             this.lbTargetSavings = new System.Windows.Forms.Label();
             this.lblClientName = new System.Windows.Forms.Label();
             this.cbBookings = new System.Windows.Forms.ComboBox();
@@ -72,33 +72,20 @@
             this.SuspendLayout();
             // 
             // btnSave
-            // 
-            this.btnSave.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.btnSave, "btnSave");
-            this.btnSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnSave.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Save;
-            this.btnSave.Menu = null;
             this.btnSave.Name = "btnSave";
-            this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.BSaveClick);
             // 
             // btnCancel
-            // 
-            this.btnCancel.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.btnCancel, "btnCancel");
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnCancel.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Close;
-            this.btnCancel.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_close;
-            this.btnCancel.Menu = null;
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.bCancel_Click);
             // 
             // gbxMainWindow
-            // 
-            this.gbxMainWindow.BackColor = System.Drawing.Color.Transparent;
-            this.gbxMainWindow.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris;
+            //
             resources.ApplyResources(this.gbxMainWindow, "gbxMainWindow");
             this.gbxMainWindow.Controls.Add(this.nudTotalAmount);
             this.gbxMainWindow.Controls.Add(this.nudAmount);
@@ -145,26 +132,19 @@
             // rbxCredit
             // 
             resources.ApplyResources(this.rbxCredit, "rbxCredit");
-            this.rbxCredit.BackColor = System.Drawing.Color.Transparent;
-            this.rbxCredit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.rbxCredit.Name = "rbxCredit";
-            this.rbxCredit.UseVisualStyleBackColor = false;
             // 
             // rbxDebit
             // 
             resources.ApplyResources(this.rbxDebit, "rbxDebit");
-            this.rbxDebit.BackColor = System.Drawing.Color.Transparent;
             this.rbxDebit.Checked = true;
-            this.rbxDebit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.rbxDebit.Name = "rbxDebit";
             this.rbxDebit.TabStop = true;
-            this.rbxDebit.UseVisualStyleBackColor = false;
             // 
             // lblAmountFeesMinMax
             // 
             this.lblAmountFeesMinMax.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.lblAmountFeesMinMax, "lblAmountFeesMinMax");
-            this.lblAmountFeesMinMax.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblAmountFeesMinMax.Name = "lblAmountFeesMinMax";
             // 
             // updAmountFees
@@ -177,49 +157,40 @@
             // 
             resources.ApplyResources(this.lblTotalSavingCurrency, "lblTotalSavingCurrency");
             this.lblTotalSavingCurrency.BackColor = System.Drawing.Color.Transparent;
-            this.lblTotalSavingCurrency.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblTotalSavingCurrency.Name = "lblTotalSavingCurrency";
             // 
             // lblTotalAmount
             // 
             resources.ApplyResources(this.lblTotalAmount, "lblTotalAmount");
             this.lblTotalAmount.BackColor = System.Drawing.Color.Transparent;
-            this.lblTotalAmount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblTotalAmount.Name = "lblTotalAmount";
             // 
             // lblFees
             // 
             resources.ApplyResources(this.lblFees, "lblFees");
             this.lblFees.BackColor = System.Drawing.Color.Transparent;
-            this.lblFees.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblFees.Name = "lblFees";
             // 
             // lblSavingCurrencyFees
             // 
             resources.ApplyResources(this.lblSavingCurrencyFees, "lblSavingCurrencyFees");
             this.lblSavingCurrencyFees.BackColor = System.Drawing.Color.Transparent;
-            this.lblSavingCurrencyFees.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblSavingCurrencyFees.Name = "lblSavingCurrencyFees";
             // 
             // lbAmountMinMaxCurrencyPivot
-            // 
-            this.lbAmountMinMaxCurrencyPivot.BackColor = System.Drawing.Color.Transparent;
+            //
             resources.ApplyResources(this.lbAmountMinMaxCurrencyPivot, "lbAmountMinMaxCurrencyPivot");
-            this.lbAmountMinMaxCurrencyPivot.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbAmountMinMaxCurrencyPivot.Name = "lbAmountMinMaxCurrencyPivot";
             // 
             // lblSavingCurrency
             // 
             resources.ApplyResources(this.lblSavingCurrency, "lblSavingCurrency");
             this.lblSavingCurrency.BackColor = System.Drawing.Color.Transparent;
-            this.lblSavingCurrency.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblSavingCurrency.Name = "lblSavingCurrency";
             // 
             // lbAmountMinMax
-            // 
-            this.lbAmountMinMax.BackColor = System.Drawing.Color.Transparent;
+            //
             resources.ApplyResources(this.lbAmountMinMax, "lbAmountMinMax");
-            this.lbAmountMinMax.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbAmountMinMax.Name = "lbAmountMinMax";
             // 
             // dtpDate
@@ -232,14 +203,12 @@
             // 
             resources.ApplyResources(this.lblDate, "lblDate");
             this.lblDate.BackColor = System.Drawing.Color.Transparent;
-            this.lblDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblDate.Name = "lblDate";
             // 
             // lblAmount
             // 
             resources.ApplyResources(this.lblAmount, "lblAmount");
             this.lblAmount.BackColor = System.Drawing.Color.Transparent;
-            this.lblAmount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblAmount.Name = "lblAmount";
             // 
             // tbxSavingCode
@@ -252,7 +221,6 @@
             // 
             resources.ApplyResources(this.lblDescription, "lblDescription");
             this.lblDescription.BackColor = System.Drawing.Color.Transparent;
-            this.lblDescription.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblDescription.Name = "lblDescription";
             // 
             // plTransfer
@@ -269,7 +237,6 @@
             // lblInterBranch
             // 
             resources.ApplyResources(this.lblInterBranch, "lblInterBranch");
-            this.lblInterBranch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.lblInterBranch.Name = "lblInterBranch";
             // 
             // tbTargetAccount
@@ -279,29 +246,20 @@
             this.tbTargetAccount.TextChanged += new System.EventHandler(this.TbSavingCodeTextChanged);
             // 
             // btnSearchContract
-            // 
-            this.btnSearchContract.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.btnSearchContract, "btnSearchContract");
-            this.btnSearchContract.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnSearchContract.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Search;
-            this.btnSearchContract.Image = global::Octopus.GUI.Properties.Resources.theme1_1_search;
-            this.btnSearchContract.Menu = null;
             this.btnSearchContract.Name = "btnSearchContract";
-            this.btnSearchContract.UseVisualStyleBackColor = false;
             this.btnSearchContract.Click += new System.EventHandler(this.btSearchContract_Click);
             // 
             // lbTargetSavings
             // 
             resources.ApplyResources(this.lbTargetSavings, "lbTargetSavings");
-            this.lbTargetSavings.BackColor = System.Drawing.Color.Transparent;
-            this.lbTargetSavings.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbTargetSavings.Name = "lbTargetSavings";
             // 
             // lblClientName
             // 
             this.lblClientName.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.lblClientName, "lblClientName");
-            this.lblClientName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblClientName.Name = "lblClientName";
             // 
             // cbBookings
@@ -332,18 +290,14 @@
             // cbxPending
             // 
             resources.ApplyResources(this.cbxPending, "cbxPending");
-            this.cbxPending.BackColor = System.Drawing.Color.Transparent;
             this.cbxPending.Checked = true;
             this.cbxPending.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cbxPending.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.cbxPending.Name = "cbxPending";
-            this.cbxPending.UseVisualStyleBackColor = false;
             // 
             // lblPaymentMethod
             // 
             resources.ApplyResources(this.lblPaymentMethod, "lblPaymentMethod");
             this.lblPaymentMethod.BackColor = System.Drawing.Color.Transparent;
-            this.lblPaymentMethod.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblPaymentMethod.Name = "lblPaymentMethod";
             // 
             // SavingsOperationForm
@@ -351,7 +305,6 @@
             this.AcceptButton = this.btnSave;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
             this.CancelButton = this.btnCancel;
             this.Controls.Add(this.gbxMainWindow);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -377,8 +330,8 @@
         private System.Windows.Forms.Label lblAmount;
         private System.Windows.Forms.TextBox tbxSavingCode;
         private System.Windows.Forms.Label lblDescription;
-        private SweetButton btnCancel;
-        private SweetButton btnSave;
+        private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.DateTimePicker dtpDate;
         private System.Windows.Forms.Label lblDate;
         private System.Windows.Forms.Label lbAmountMinMax;
@@ -387,7 +340,7 @@
         private System.Windows.Forms.Label lblClientName;
         private System.Windows.Forms.TextBox tbTargetAccount;
         private System.Windows.Forms.Label lbTargetSavings;
-        private SweetButton btnSearchContract;
+        private System.Windows.Forms.Button btnSearchContract;
         private System.Windows.Forms.Panel plTransfer;
         private System.Windows.Forms.Label lblSavingCurrencyFees;
         private System.Windows.Forms.Label lblFees;

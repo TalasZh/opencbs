@@ -41,11 +41,11 @@ namespace Octopus.GUI
             this.labelNbMonths = new System.Windows.Forms.Label();
             this.numericUpDownMonths = new System.Windows.Forms.NumericUpDown();
             this.numericUpDownDays = new System.Windows.Forms.NumericUpDown();
-            this.buttonAdd = new Octopus.GUI.UserControl.SweetButton();
+            this.buttonAdd = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.buttonDelete = new Octopus.GUI.UserControl.SweetButton();
-            this.buttonEdit = new Octopus.GUI.UserControl.SweetButton();
-            this.buttonExit = new Octopus.GUI.UserControl.SweetButton();
+            this.buttonDelete = new System.Windows.Forms.Button();
+            this.buttonEdit = new System.Windows.Forms.Button();
+            this.buttonExit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMonths)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDays)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -87,21 +87,18 @@ namespace Octopus.GUI
             // 
             resources.ApplyResources(this.labelName, "labelName");
             this.labelName.BackColor = System.Drawing.Color.Transparent;
-            this.labelName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelName.Name = "labelName";
             // 
             // labelNbDays
             // 
             resources.ApplyResources(this.labelNbDays, "labelNbDays");
             this.labelNbDays.BackColor = System.Drawing.Color.Transparent;
-            this.labelNbDays.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelNbDays.Name = "labelNbDays";
             // 
             // labelNbMonths
             // 
             resources.ApplyResources(this.labelNbMonths, "labelNbMonths");
             this.labelNbMonths.BackColor = System.Drawing.Color.Transparent;
-            this.labelNbMonths.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelNbMonths.Name = "labelNbMonths";
             // 
             // numericUpDownMonths
@@ -117,14 +114,9 @@ namespace Octopus.GUI
             this.numericUpDownDays.ValueChanged += new System.EventHandler(this.numericUpDownDays_ValueChanged);
             // 
             // buttonAdd
-            // 
-            this.buttonAdd.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.buttonAdd, "buttonAdd");
-            this.buttonAdd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonAdd.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.New;
-            this.buttonAdd.Menu = null;
             this.buttonAdd.Name = "buttonAdd";
-            this.buttonAdd.UseVisualStyleBackColor = false;
             this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // groupBox1
@@ -138,42 +130,26 @@ namespace Octopus.GUI
             this.groupBox1.Controls.Add(this.textBoxName);
             this.groupBox1.Controls.Add(this.numericUpDownMonths);
             this.groupBox1.Controls.Add(this.labelNbMonths);
-            this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(56)))));
             resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             // 
             // buttonDelete
-            // 
-            this.buttonDelete.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.buttonDelete, "buttonDelete");
-            this.buttonDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonDelete.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Delete;
-            this.buttonDelete.Menu = null;
             this.buttonDelete.Name = "buttonDelete";
-            this.buttonDelete.UseVisualStyleBackColor = false;
             this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
             // 
             // buttonEdit
-            // 
-            this.buttonEdit.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.buttonEdit, "buttonEdit");
-            this.buttonEdit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonEdit.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Edit;
-            this.buttonEdit.Menu = null;
             this.buttonEdit.Name = "buttonEdit";
-            this.buttonEdit.UseVisualStyleBackColor = false;
             this.buttonEdit.Click += new System.EventHandler(this.buttonEdit_Click);
             // 
             // buttonExit
-            // 
-            this.buttonExit.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.buttonExit, "buttonExit");
-            this.buttonExit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonExit.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Close;
-            this.buttonExit.Menu = null;
             this.buttonExit.Name = "buttonExit";
-            this.buttonExit.UseVisualStyleBackColor = false;
             this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
             // 
             // FrmInstallmentTypes
@@ -198,7 +174,7 @@ namespace Octopus.GUI
 
         #endregion
 
-        private SweetButton buttonAdd;
+        private System.Windows.Forms.Button buttonAdd;
         private System.Windows.Forms.ListView listViewInstallmentTypes;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
@@ -210,8 +186,8 @@ namespace Octopus.GUI
         private System.Windows.Forms.TextBox textBoxName;
         private System.Windows.Forms.Label labelName;
         private System.Windows.Forms.GroupBox groupBox1;
-        private SweetButton buttonDelete;
-        private SweetButton buttonEdit;
-        private SweetButton buttonExit;
+        private System.Windows.Forms.Button buttonDelete;
+        private System.Windows.Forms.Button buttonEdit;
+        private System.Windows.Forms.Button buttonExit;
     }
 }

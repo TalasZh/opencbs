@@ -1,4 +1,4 @@
-﻿namespace Octopus.GUI.Export
+namespace Octopus.GUI.Export
 {
     partial class DecimalFieldPropertiesForm
     {
@@ -123,10 +123,8 @@
             this.checkBoxAlignRight.AccessibleDescription = null;
             this.checkBoxAlignRight.AccessibleName = null;
             resources.ApplyResources(this.checkBoxAlignRight, "checkBoxAlignRight");
-            this.checkBoxAlignRight.BackgroundImage = null;
             this.checkBoxAlignRight.Font = null;
             this.checkBoxAlignRight.Name = "checkBoxAlignRight";
-            this.checkBoxAlignRight.UseVisualStyleBackColor = true;
             // 
             // labelSampleValue
             // 
@@ -148,7 +146,6 @@
             this.AccessibleName = null;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = null;
             this.Controls.Add(this.labelSampleValue);
             this.Controls.Add(this.labelSampleLabel);
             this.Controls.Add(this.buttonSave);

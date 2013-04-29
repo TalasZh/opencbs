@@ -1,4 +1,4 @@
-﻿using Octopus.GUI.UserControl;
+using Octopus.GUI.UserControl;
 
 namespace Octopus.GUI.Accounting
 {
@@ -40,8 +40,8 @@ namespace Octopus.GUI.Accounting
             this.labelDebit = new System.Windows.Forms.Label();
             this.labelName = new System.Windows.Forms.Label();
             this.groupBoxAction = new System.Windows.Forms.GroupBox();
-            this.btSaving = new Octopus.GUI.UserControl.SweetButton();
-            this.bClose = new Octopus.GUI.UserControl.SweetButton();
+            this.btSaving = new System.Windows.Forms.Button();
+            this.bClose = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.groupBoxData.SuspendLayout();
             this.groupBoxAction.SuspendLayout();
@@ -89,19 +89,16 @@ namespace Octopus.GUI.Accounting
             // labelCredit
             // 
             resources.ApplyResources(this.labelCredit, "labelCredit");
-            this.labelCredit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelCredit.Name = "labelCredit";
             // 
             // labelDebit
             // 
             resources.ApplyResources(this.labelDebit, "labelDebit");
-            this.labelDebit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelDebit.Name = "labelDebit";
             // 
             // labelName
             // 
             resources.ApplyResources(this.labelName, "labelName");
-            this.labelName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelName.Name = "labelName";
             // 
             // groupBoxAction
@@ -115,26 +112,14 @@ namespace Octopus.GUI.Accounting
             // btSaving
             // 
             resources.ApplyResources(this.btSaving, "btSaving");
-            this.btSaving.BackColor = System.Drawing.Color.Transparent;
             this.btSaving.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btSaving.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.btSaving.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Save;
-            this.btSaving.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_validity;
-            this.btSaving.Menu = null;
             this.btSaving.Name = "btSaving";
-            this.btSaving.UseVisualStyleBackColor = false;
             // 
             // bClose
             // 
             resources.ApplyResources(this.bClose, "bClose");
-            this.bClose.BackColor = System.Drawing.Color.Gainsboro;
             this.bClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.bClose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.bClose.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Close;
-            this.bClose.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_close;
-            this.bClose.Menu = null;
             this.bClose.Name = "bClose";
-            this.bClose.UseVisualStyleBackColor = false;
             // 
             // AddStandardBooking
             // 
@@ -160,8 +145,8 @@ namespace Octopus.GUI.Accounting
         private System.Windows.Forms.TextBox textBoxName;
         private System.Windows.Forms.Label labelName;
         private System.Windows.Forms.GroupBox groupBoxAction;
-        private SweetButton btSaving;
-        private SweetButton bClose;
+        private System.Windows.Forms.Button btSaving;
+        private System.Windows.Forms.Button bClose;
         private System.Windows.Forms.ComboBox comboBoxCredit;
         private System.Windows.Forms.ComboBox comboBoxDebit;
         private System.Windows.Forms.Label labelCredit;

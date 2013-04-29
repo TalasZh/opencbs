@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Octopus.Shared;
 
 namespace Octopus.GUI

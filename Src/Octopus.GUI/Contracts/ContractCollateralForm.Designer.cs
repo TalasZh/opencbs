@@ -1,4 +1,4 @@
-﻿using Octopus.GUI.UserControl;
+using Octopus.GUI.UserControl;
 
 namespace Octopus.GUI.Contracts
 {
@@ -33,11 +33,11 @@ namespace Octopus.GUI.Contracts
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ContractCollateralForm));
             this.propertyGrid = new System.Windows.Forms.PropertyGrid();
             this.groupBoxOwnerDetails = new System.Windows.Forms.GroupBox();
-            this.buttonClearOwner = new Octopus.GUI.UserControl.SweetButton();
-            this.buttonSelectOwner = new Octopus.GUI.UserControl.SweetButton();
-            this.buttonAddOwner = new Octopus.GUI.UserControl.SweetButton();
-            this.buttonCancel = new Octopus.GUI.UserControl.SweetButton();
-            this.buttonSave = new Octopus.GUI.UserControl.SweetButton();
+            this.buttonClearOwner = new System.Windows.Forms.Button();
+            this.buttonSelectOwner = new System.Windows.Forms.Button();
+            this.buttonAddOwner = new System.Windows.Forms.Button();
+            this.buttonCancel = new System.Windows.Forms.Button();
+            this.buttonSave = new System.Windows.Forms.Button();
             this.groupBoxOwnerDetails.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,63 +55,37 @@ namespace Octopus.GUI.Contracts
             this.groupBoxOwnerDetails.Controls.Add(this.buttonSelectOwner);
             this.groupBoxOwnerDetails.Controls.Add(this.buttonAddOwner);
             resources.ApplyResources(this.groupBoxOwnerDetails, "groupBoxOwnerDetails");
-            this.groupBoxOwnerDetails.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.groupBoxOwnerDetails.Name = "groupBoxOwnerDetails";
             this.groupBoxOwnerDetails.TabStop = false;
             // 
             // buttonClearOwner
-            // 
-            this.buttonClearOwner.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.buttonClearOwner, "buttonClearOwner");
-            this.buttonClearOwner.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(56)))));
-            this.buttonClearOwner.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Delete;
-            this.buttonClearOwner.Menu = null;
             this.buttonClearOwner.Name = "buttonClearOwner";
-            this.buttonClearOwner.UseVisualStyleBackColor = false;
             this.buttonClearOwner.Click += new System.EventHandler(this.buttonClearOwner_Click);
             // 
             // buttonSelectOwner
-            // 
-            this.buttonSelectOwner.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.buttonSelectOwner, "buttonSelectOwner");
-            this.buttonSelectOwner.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(56)))));
-            this.buttonSelectOwner.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Search;
-            this.buttonSelectOwner.Menu = null;
             this.buttonSelectOwner.Name = "buttonSelectOwner";
-            this.buttonSelectOwner.UseVisualStyleBackColor = false;
             this.buttonSelectOwner.Click += new System.EventHandler(this.buttonSelectOwner_Click);
             // 
             // buttonAddOwner
-            // 
-            this.buttonAddOwner.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.buttonAddOwner, "buttonAddOwner");
-            this.buttonAddOwner.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(56)))));
-            this.buttonAddOwner.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.New;
-            this.buttonAddOwner.Menu = null;
             this.buttonAddOwner.Name = "buttonAddOwner";
-            this.buttonAddOwner.UseVisualStyleBackColor = false;
             this.buttonAddOwner.Click += new System.EventHandler(this.buttonAddOwner_Click);
             // 
             // buttonCancel
-            // 
-            this.buttonCancel.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.buttonCancel, "buttonCancel");
-            this.buttonCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(56)))));
-            this.buttonCancel.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Close;
-            this.buttonCancel.Menu = null;
             this.buttonCancel.Name = "buttonCancel";
-            this.buttonCancel.UseVisualStyleBackColor = false;
             this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
             // buttonSave
-            // 
-            this.buttonSave.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.buttonSave, "buttonSave");
-            this.buttonSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(56)))));
-            this.buttonSave.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Save;
-            this.buttonSave.Menu = null;
             this.buttonSave.Name = "buttonSave";
-            this.buttonSave.UseVisualStyleBackColor = false;
             this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
             // 
             // ContractCollateralForm
@@ -135,11 +109,11 @@ namespace Octopus.GUI.Contracts
         #endregion
 
         private System.Windows.Forms.PropertyGrid propertyGrid;
-        private SweetButton buttonCancel;
-        private SweetButton buttonSave;
+        private System.Windows.Forms.Button buttonCancel;
+        private System.Windows.Forms.Button buttonSave;
         private System.Windows.Forms.GroupBox groupBoxOwnerDetails;
-        private SweetButton buttonSelectOwner;
-        private SweetButton buttonAddOwner;
-        private SweetButton buttonClearOwner;
+        private System.Windows.Forms.Button buttonSelectOwner;
+        private System.Windows.Forms.Button buttonAddOwner;
+        private System.Windows.Forms.Button buttonClearOwner;
     }
 }

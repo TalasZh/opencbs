@@ -1,4 +1,4 @@
-﻿namespace Octopus.GUI.Configuration
+namespace Octopus.GUI.Configuration
 {
    partial class FrmFundingLineEvent
    {
@@ -41,9 +41,9 @@
           this.textBoxCode = new System.Windows.Forms.TextBox();
           this.labelCode = new System.Windows.Forms.Label();
           this.groupBoxButtonArea = new System.Windows.Forms.GroupBox();
-          this.buttonAddRate = new Octopus.GUI.UserControl.SweetButton();
-          this.buttonCancel = new Octopus.GUI.UserControl.SweetButton();
-          this.buttonSave = new Octopus.GUI.UserControl.SweetButton();
+          this.buttonAddRate = new System.Windows.Forms.Button();
+          this.buttonCancel = new System.Windows.Forms.Button();
+          this.buttonSave = new System.Windows.Forms.Button();
           this.splitContainer1.Panel1.SuspendLayout();
           this.splitContainer1.Panel2.SuspendLayout();
           this.splitContainer1.SuspendLayout();
@@ -67,8 +67,7 @@
           this.splitContainer1.Panel2.Controls.Add(this.groupBoxButtonArea);
           // 
           // groupBoxData
-          // 
-          this.groupBoxData.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris;
+          //
           resources.ApplyResources(this.groupBoxData, "groupBoxData");
           this.groupBoxData.Controls.Add(this.dateTimePickerEvent);
           this.groupBoxData.Controls.Add(this.comboBoxDirection);
@@ -104,14 +103,12 @@
           // 
           resources.ApplyResources(this.labelFLEventDate, "labelFLEventDate");
           this.labelFLEventDate.BackColor = System.Drawing.Color.Transparent;
-          this.labelFLEventDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
           this.labelFLEventDate.Name = "labelFLEventDate";
           // 
           // labelAmount
           // 
           resources.ApplyResources(this.labelAmount, "labelAmount");
           this.labelAmount.BackColor = System.Drawing.Color.Transparent;
-          this.labelAmount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
           this.labelAmount.Name = "labelAmount";
           // 
           // textBoxAmount
@@ -124,7 +121,6 @@
           // 
           resources.ApplyResources(this.labelDirection, "labelDirection");
           this.labelDirection.BackColor = System.Drawing.Color.Transparent;
-          this.labelDirection.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
           this.labelDirection.Name = "labelDirection";
           // 
           // textBoxCode
@@ -136,12 +132,10 @@
           // 
           resources.ApplyResources(this.labelCode, "labelCode");
           this.labelCode.BackColor = System.Drawing.Color.Transparent;
-          this.labelCode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
           this.labelCode.Name = "labelCode";
           // 
           // groupBoxButtonArea
-          // 
-          this.groupBoxButtonArea.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris_180;
+          //
           resources.ApplyResources(this.groupBoxButtonArea, "groupBoxButtonArea");
           this.groupBoxButtonArea.Controls.Add(this.buttonAddRate);
           this.groupBoxButtonArea.Controls.Add(this.buttonCancel);
@@ -150,46 +144,26 @@
           this.groupBoxButtonArea.TabStop = false;
           // 
           // buttonAddRate
-          // 
-          this.buttonAddRate.BackColor = System.Drawing.Color.Gainsboro;
-          this.buttonAddRate.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_bouton;
+          //
           resources.ApplyResources(this.buttonAddRate, "buttonAddRate");
-          this.buttonAddRate.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.New;
-          this.buttonAddRate.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_new;
-          this.buttonAddRate.Menu = null;
           this.buttonAddRate.Name = "buttonAddRate";
-          this.buttonAddRate.UseVisualStyleBackColor = false;
           this.buttonAddRate.Click += new System.EventHandler(this.buttonAddRate_Click);
           // 
           // buttonCancel
           // 
           resources.ApplyResources(this.buttonCancel, "buttonCancel");
-          this.buttonCancel.BackColor = System.Drawing.Color.Gainsboro;
           this.buttonCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-          this.buttonCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-          this.buttonCancel.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Close;
-          this.buttonCancel.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_close;
-          this.buttonCancel.Menu = null;
           this.buttonCancel.Name = "buttonCancel";
-          this.buttonCancel.UseVisualStyleBackColor = false;
           this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
           // 
           // buttonSave
           // 
           resources.ApplyResources(this.buttonSave, "buttonSave");
-          this.buttonSave.BackColor = System.Drawing.Color.Gainsboro;
-          this.buttonSave.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_bouton;
-          this.buttonSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-          this.buttonSave.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Save;
-          this.buttonSave.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_save;
-          this.buttonSave.Menu = null;
           this.buttonSave.Name = "buttonSave";
-          this.buttonSave.UseVisualStyleBackColor = false;
           this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
           // 
           // FrmFundingLineEvent
-          // 
-          this.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris;
+          //
           resources.ApplyResources(this, "$this");
           this.Controls.Add(this.splitContainer1);
           this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
@@ -218,10 +192,10 @@
       private System.Windows.Forms.ComboBox comboBoxDirection;
       private System.Windows.Forms.GroupBox groupBoxButtonArea;
       private System.Windows.Forms.SplitContainer splitContainer1;
-      private Octopus.GUI.UserControl.SweetButton buttonSave;
-      private Octopus.GUI.UserControl.SweetButton buttonCancel;
+      private System.Windows.Forms.Button buttonSave;
+      private System.Windows.Forms.Button buttonCancel;
       private System.Windows.Forms.Label labelFLEventDate;
       private System.Windows.Forms.DateTimePicker dateTimePickerEvent;
-      private Octopus.GUI.UserControl.SweetButton buttonAddRate;
+      private System.Windows.Forms.Button buttonAddRate;
    }
 }

@@ -1,4 +1,4 @@
-﻿namespace Octopus.GUI.Tools
+namespace Octopus.GUI.Tools
 {
     partial class PasswordForm
     {
@@ -47,25 +47,21 @@
             // labelUserName
             // 
             resources.ApplyResources(this.labelUserName, "labelUserName");
-            this.labelUserName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelUserName.Name = "labelUserName";
             // 
             // labelOldPswd
             // 
             resources.ApplyResources(this.labelOldPswd, "labelOldPswd");
-            this.labelOldPswd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelOldPswd.Name = "labelOldPswd";
             // 
             // labelNewPswd
             // 
             resources.ApplyResources(this.labelNewPswd, "labelNewPswd");
-            this.labelNewPswd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelNewPswd.Name = "labelNewPswd";
             // 
             // labelConfirmNewPswd
             // 
             resources.ApplyResources(this.labelConfirmNewPswd, "labelConfirmNewPswd");
-            this.labelConfirmNewPswd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelConfirmNewPswd.Name = "labelConfirmNewPswd";
             // 
             // textBoxOldPswd

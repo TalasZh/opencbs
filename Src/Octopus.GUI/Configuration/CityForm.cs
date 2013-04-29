@@ -115,7 +115,6 @@ namespace Octopus.GUI
             // CityForm
             // 
             resources.ApplyResources(this, "$this");
-            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.listViewCity);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "CityForm";

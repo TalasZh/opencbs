@@ -1,5 +1,5 @@
 //Octopus MFS is an integrated suite for managing a Micro Finance Institution: clients, contracts, accounting, reporting and risk
-//Copyright © 2006,2007 OCTO Technology & OXUS Development Network
+//Copyright ï¿½ 2006,2007 OCTO Technology & OXUS Development Network
 //
 //This program is free software; you can redistribute it and/or modify
 //it under the terms of the GNU Lesser General Public License as published by
@@ -33,14 +33,14 @@ using Octopus.Shared.Settings;
 namespace Octopus.GUI
 {
 	/// <summary>
-	/// Description résumée de PasswordForm.
+	/// Description rï¿½sumï¿½e de PasswordForm.
 	/// </summary>
 	public class PasswordFormOnline : Form
 	{
 		private string _userName;
 	    private string _password;
 		/// <summary>
-		/// Variable nécessaire au concepteur.
+		/// Variable nï¿½cessaire au concepteur.
 		/// </summary>
         private System.ComponentModel.Container components = null;
 		private System.Windows.Forms.Panel panel3;
@@ -73,7 +73,7 @@ namespace Octopus.GUI
 		}
 
 		/// <summary>
-		/// Nettoyage des ressources utilisées.
+		/// Nettoyage des ressources utilisï¿½es.
 		/// </summary>
 		protected override void Dispose( bool disposing )
 		{
@@ -87,10 +87,10 @@ namespace Octopus.GUI
 			base.Dispose( disposing );
 		}
 
-		#region Code généré par le Concepteur Windows Form
+		#region Code gï¿½nï¿½rï¿½ par le Concepteur Windows Form
 		/// <summary>
-		/// Méthode requise pour la prise en charge du concepteur - ne modifiez pas
-		/// le contenu de cette méthode avec l'éditeur de code.
+		/// Mï¿½thode requise pour la prise en charge du concepteur - ne modifiez pas
+		/// le contenu de cette mï¿½thode avec l'ï¿½diteur de code.
 		/// </summary>
 		private void InitializeComponent()
 		{
@@ -167,13 +167,11 @@ namespace Octopus.GUI
             // labelServerPort
             // 
             resources.ApplyResources(this.labelServerPort, "labelServerPort");
-            this.labelServerPort.ForeColor = System.Drawing.Color.Black;
             this.labelServerPort.Name = "labelServerPort";
             // 
             // labelServerName
             // 
             resources.ApplyResources(this.labelServerName, "labelServerName");
-            this.labelServerName.ForeColor = System.Drawing.Color.Black;
             this.labelServerName.Name = "labelServerName";
             // 
             // textBoxServerName
@@ -207,21 +205,18 @@ namespace Octopus.GUI
             // labelAccountName
             // 
             resources.ApplyResources(this.labelAccountName, "labelAccountName");
-            this.labelAccountName.ForeColor = System.Drawing.Color.Black;
             this.labelAccountName.Name = "labelAccountName";
             // 
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.label1, "label1");
-            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Name = "label1";
             // 
             // labelVersion
             // 
             this.labelVersion.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             resources.ApplyResources(this.labelVersion, "labelVersion");
-            this.labelVersion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.labelVersion.Name = "labelVersion";
             // 
             // buttonOK
@@ -246,13 +241,11 @@ namespace Octopus.GUI
             // labelUserName
             // 
             resources.ApplyResources(this.labelUserName, "labelUserName");
-            this.labelUserName.ForeColor = System.Drawing.Color.Black;
             this.labelUserName.Name = "labelUserName";
             // 
             // labelPassword
             // 
             resources.ApplyResources(this.labelPassword, "labelPassword");
-            this.labelPassword.ForeColor = System.Drawing.Color.Black;
             this.labelPassword.Name = "labelPassword";
             // 
             // buttonExit
@@ -293,7 +286,6 @@ namespace Octopus.GUI
             // 
             this.AcceptButton = this.buttonOK;
             resources.ApplyResources(this, "$this");
-            this.BackColor = System.Drawing.Color.White;
             this.CancelButton = this.buttonExit;
             this.ControlBox = false;
             this.Controls.Add(this.panel3);

@@ -1,4 +1,4 @@
-﻿namespace Octopus.GUI.Report_Browser
+namespace Octopus.GUI.Report_Browser
 {
     partial class ReportParamsForm
     {
@@ -67,7 +67,6 @@
             this.AcceptButton = this.btnOK;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris;
             this.Controls.Add(this.pnlButtons);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;

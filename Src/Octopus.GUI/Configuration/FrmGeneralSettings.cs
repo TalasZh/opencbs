@@ -1,4 +1,4 @@
-﻿//Octopus MFS is an integrated suite for managing a Micro Finance Institution: clients, contracts, accounting, reporting and risk
+//Octopus MFS is an integrated suite for managing a Micro Finance Institution: clients, contracts, accounting, reporting and risk
 //Copyright © 2006,2007 OCTO Technology & OXUS Development Network
 //
 //This program is free software; you can redistribute it and/or modify
@@ -48,15 +48,15 @@ namespace Octopus.GUI.Configuration
     {
         #region Controls
 
-        private SweetButton buttonCancel;
+        private System.Windows.Forms.Button buttonCancel;
         private ProvisioningRate pR;
         private LoanScaleRate lR;
         private DictionaryEntry entry;
         private IContainer components;
         private GroupBox groupBox1;
         private SplitContainer splitContainer1;
-        private SweetButton butImport;
-        private SweetButton butExport;
+        private System.Windows.Forms.Button butImport;
+        private System.Windows.Forms.Button butExport;
         private TabControl tabControlGeneralSettings;
         private TabPage tabPage1;
         private ListView lvGeneralParameters;
@@ -69,7 +69,7 @@ namespace Octopus.GUI.Configuration
         private TextBox textBoxGeneralParameterName;
         private Label label9;
         private Label label10;
-        private SweetButton buttonUpdate;
+        private System.Windows.Forms.Button buttonUpdate;
         private GroupBox groupBoxValue;
         private ComboBox comboBoxSavings;
         private RadioButton radioButtonNo;
@@ -82,7 +82,7 @@ namespace Octopus.GUI.Configuration
         private ColumnHeader columnHeader4;
         private GroupBox groupBoxAddUser;
         private Label label4;
-        private SweetButton buttonOK;
+        private System.Windows.Forms.Button buttonOK;
         private Label label3;
         private Label label2;
         private Label label1;
@@ -98,17 +98,17 @@ namespace Octopus.GUI.Configuration
         private ColumnHeader columnHeader7;
         private ColumnHeader columnHeader8;
         private GroupBox groupBox5;
-        private SweetButton buttonPublicHolidayDelete;
+        private System.Windows.Forms.Button buttonPublicHolidayDelete;
         private GroupBox groupBox4;
         private DateTimePicker dateTimePickerPublicHoliday;
         private TextBox textBoxPublicHolidayDescription;
         private Label label5;
         private Label label6;
-        private SweetButton buttonPublicHolidaysSave;
+        private System.Windows.Forms.Button buttonPublicHolidaysSave;
         private TabPage tabPageLoanScale;
         private GroupBox groupBox2;
-        private SweetButton buttonDeleteScale;
-        private SweetButton buttonSaveScale;
+        private System.Windows.Forms.Button buttonDeleteScale;
+        private System.Windows.Forms.Button buttonSaveScale;
         private TextBox textBoxMaxScale;
         private TextBox textBoxMinScale;
         private Label labelMaxExter;
@@ -293,7 +293,7 @@ namespace Octopus.GUI.Configuration
             this.textBoxGeneralParameterName = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.buttonUpdate = new Octopus.GUI.UserControl.SweetButton();
+            this.buttonUpdate = new System.Windows.Forms.Button();
             this.groupBoxValue = new System.Windows.Forms.GroupBox();
             this.comboBoxSavings = new System.Windows.Forms.ComboBox();
             this.radioButtonNo = new System.Windows.Forms.RadioButton();
@@ -306,7 +306,7 @@ namespace Octopus.GUI.Configuration
             this.columnHeader4 = new System.Windows.Forms.ColumnHeader();
             this.groupBoxAddUser = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.buttonOK = new Octopus.GUI.UserControl.SweetButton();
+            this.buttonOK = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -322,17 +322,17 @@ namespace Octopus.GUI.Configuration
             this.columnHeader7 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader8 = new System.Windows.Forms.ColumnHeader();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.buttonPublicHolidayDelete = new Octopus.GUI.UserControl.SweetButton();
+            this.buttonPublicHolidayDelete = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.dateTimePickerPublicHoliday = new System.Windows.Forms.DateTimePicker();
             this.textBoxPublicHolidayDescription = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.buttonPublicHolidaysSave = new Octopus.GUI.UserControl.SweetButton();
+            this.buttonPublicHolidaysSave = new System.Windows.Forms.Button();
             this.tabPageLoanScale = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.buttonDeleteScale = new Octopus.GUI.UserControl.SweetButton();
-            this.buttonSaveScale = new Octopus.GUI.UserControl.SweetButton();
+            this.buttonDeleteScale = new System.Windows.Forms.Button();
+            this.buttonSaveScale = new System.Windows.Forms.Button();
             this.textBoxMaxScale = new System.Windows.Forms.TextBox();
             this.textBoxMinScale = new System.Windows.Forms.TextBox();
             this.labelMaxExter = new System.Windows.Forms.Label();
@@ -344,9 +344,9 @@ namespace Octopus.GUI.Configuration
             this.columnHeader10 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader11 = new System.Windows.Forms.ColumnHeader();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.butImport = new Octopus.GUI.UserControl.SweetButton();
-            this.butExport = new Octopus.GUI.UserControl.SweetButton();
-            this.buttonCancel = new Octopus.GUI.UserControl.SweetButton();
+            this.butImport = new System.Windows.Forms.Button();
+            this.butExport = new System.Windows.Forms.Button();
+            this.buttonCancel = new System.Windows.Forms.Button();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -397,13 +397,11 @@ namespace Octopus.GUI.Configuration
             this.tabControlGeneralSettings.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             // 
             // tabPage1
-            // 
-            this.tabPage1.BackColor = System.Drawing.Color.White;
+            //
             this.tabPage1.Controls.Add(this.lvGeneralParameters);
             this.tabPage1.Controls.Add(this.groupBox3);
             resources.ApplyResources(this.tabPage1, "tabPage1");
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // lvGeneralParameters
             // 
@@ -428,8 +426,7 @@ namespace Octopus.GUI.Configuration
             resources.ApplyResources(this.columnHeader6, "columnHeader6");
             // 
             // groupBox3
-            // 
-            this.groupBox3.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris;
+            //
             this.groupBox3.Controls.Add(this.textBoxGeneralParameterName);
             this.groupBox3.Controls.Add(this.label9);
             this.groupBox3.Controls.Add(this.label10);
@@ -439,7 +436,6 @@ namespace Octopus.GUI.Configuration
             this.groupBox3.Controls.Add(this.cbxValue);
             this.groupBox3.Controls.Add(this.textBoxGeneralParameterValue);
             resources.ApplyResources(this.groupBox3, "groupBox3");
-            this.groupBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.TabStop = false;
             this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
@@ -480,32 +476,22 @@ namespace Octopus.GUI.Configuration
             // 
             resources.ApplyResources(this.label9, "label9");
             this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.label9.Name = "label9";
             // 
             // label10
             // 
             resources.ApplyResources(this.label10, "label10");
             this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.label10.Name = "label10";
             // 
             // buttonUpdate
             // 
             resources.ApplyResources(this.buttonUpdate, "buttonUpdate");
-            this.buttonUpdate.BackColor = System.Drawing.Color.Gainsboro;
-            this.buttonUpdate.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_bouton;
-            this.buttonUpdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonUpdate.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Save;
-            this.buttonUpdate.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_save;
-            this.buttonUpdate.Menu = null;
             this.buttonUpdate.Name = "buttonUpdate";
-            this.buttonUpdate.UseVisualStyleBackColor = false;
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // groupBoxValue
-            // 
-            this.groupBoxValue.BackColor = System.Drawing.Color.Transparent;
+            //
             this.groupBoxValue.Controls.Add(this.radioButtonNo);
             this.groupBoxValue.Controls.Add(this.radioButtonYes);
             this.groupBoxValue.Controls.Add(this.comboBoxSavings);
@@ -538,13 +524,11 @@ namespace Octopus.GUI.Configuration
             this.radioButtonYes.TabStop = true;
             // 
             // tabPageProvioningRules
-            // 
-            this.tabPageProvioningRules.BackColor = System.Drawing.Color.White;
+            //
             this.tabPageProvioningRules.Controls.Add(this.listViewProvisioningRules);
             this.tabPageProvioningRules.Controls.Add(this.groupBoxAddUser);
             resources.ApplyResources(this.tabPageProvioningRules, "tabPageProvioningRules");
             this.tabPageProvioningRules.Name = "tabPageProvioningRules";
-            this.tabPageProvioningRules.UseVisualStyleBackColor = true;
             // 
             // listViewProvisioningRules
             // 
@@ -578,8 +562,7 @@ namespace Octopus.GUI.Configuration
             resources.ApplyResources(this.columnHeader4, "columnHeader4");
             // 
             // groupBoxAddUser
-            // 
-            this.groupBoxAddUser.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris;
+            //
             resources.ApplyResources(this.groupBoxAddUser, "groupBoxAddUser");
             this.groupBoxAddUser.Controls.Add(this.label4);
             this.groupBoxAddUser.Controls.Add(this.buttonOK);
@@ -591,7 +574,6 @@ namespace Octopus.GUI.Configuration
             this.groupBoxAddUser.Controls.Add(this.textBoxNbOfDaysMin);
             this.groupBoxAddUser.Controls.Add(this.labelPassword);
             this.groupBoxAddUser.Controls.Add(this.labelUsername);
-            this.groupBoxAddUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.groupBoxAddUser.Name = "groupBoxAddUser";
             this.groupBoxAddUser.TabStop = false;
             // 
@@ -599,40 +581,30 @@ namespace Octopus.GUI.Configuration
             // 
             resources.ApplyResources(this.label4, "label4");
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.label4.Name = "label4";
             // 
             // buttonOK
             // 
             resources.ApplyResources(this.buttonOK, "buttonOK");
-            this.buttonOK.BackColor = System.Drawing.Color.Gainsboro;
-            this.buttonOK.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonOK.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Save;
-            this.buttonOK.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_save;
-            this.buttonOK.Menu = null;
             this.buttonOK.Name = "buttonOK";
-            this.buttonOK.UseVisualStyleBackColor = false;
             this.buttonOK.Click += new System.EventHandler(this.buttonOK_Click);
             // 
             // label3
             // 
             resources.ApplyResources(this.label3, "label3");
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.label3.Name = "label3";
             // 
             // label2
             // 
             resources.ApplyResources(this.label2, "label2");
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.label2.Name = "label2";
             // 
             // label1
             // 
             resources.ApplyResources(this.label1, "label1");
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.label1.Name = "label1";
             // 
             // textBoxProvisioning
@@ -660,23 +632,19 @@ namespace Octopus.GUI.Configuration
             // 
             resources.ApplyResources(this.labelPassword, "labelPassword");
             this.labelPassword.BackColor = System.Drawing.Color.Transparent;
-            this.labelPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelPassword.Name = "labelPassword";
             // 
             // labelUsername
             // 
             resources.ApplyResources(this.labelUsername, "labelUsername");
             this.labelUsername.BackColor = System.Drawing.Color.Transparent;
-            this.labelUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelUsername.Name = "labelUsername";
             // 
             // tabPage2
-            // 
-            this.tabPage2.BackColor = System.Drawing.Color.White;
+            //
             this.tabPage2.Controls.Add(this.splitContainer2);
             resources.ApplyResources(this.tabPage2, "tabPage2");
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // splitContainer2
             // 
@@ -729,8 +697,7 @@ namespace Octopus.GUI.Configuration
             resources.ApplyResources(this.columnHeader8, "columnHeader8");
             // 
             // groupBox5
-            // 
-            this.groupBox5.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris_180;
+            //
             resources.ApplyResources(this.groupBox5, "groupBox5");
             this.groupBox5.Controls.Add(this.buttonPublicHolidayDelete);
             this.groupBox5.Name = "groupBox5";
@@ -739,25 +706,17 @@ namespace Octopus.GUI.Configuration
             // buttonPublicHolidayDelete
             // 
             resources.ApplyResources(this.buttonPublicHolidayDelete, "buttonPublicHolidayDelete");
-            this.buttonPublicHolidayDelete.BackColor = System.Drawing.Color.Gainsboro;
-            this.buttonPublicHolidayDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonPublicHolidayDelete.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Delete;
-            this.buttonPublicHolidayDelete.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_delete;
-            this.buttonPublicHolidayDelete.Menu = null;
             this.buttonPublicHolidayDelete.Name = "buttonPublicHolidayDelete";
-            this.buttonPublicHolidayDelete.UseVisualStyleBackColor = false;
             this.buttonPublicHolidayDelete.Click += new System.EventHandler(this.buttonPublicHolidayDelete_Click);
             // 
             // groupBox4
-            // 
-            this.groupBox4.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris;
+            //
             this.groupBox4.Controls.Add(this.dateTimePickerPublicHoliday);
             this.groupBox4.Controls.Add(this.textBoxPublicHolidayDescription);
             this.groupBox4.Controls.Add(this.label5);
             this.groupBox4.Controls.Add(this.label6);
             this.groupBox4.Controls.Add(this.buttonPublicHolidaysSave);
             resources.ApplyResources(this.groupBox4, "groupBox4");
-            this.groupBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.TabStop = false;
             // 
@@ -779,26 +738,18 @@ namespace Octopus.GUI.Configuration
             // 
             resources.ApplyResources(this.label5, "label5");
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.label5.Name = "label5";
             // 
             // label6
             // 
             resources.ApplyResources(this.label6, "label6");
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.label6.Name = "label6";
             // 
             // buttonPublicHolidaysSave
             // 
             resources.ApplyResources(this.buttonPublicHolidaysSave, "buttonPublicHolidaysSave");
-            this.buttonPublicHolidaysSave.BackColor = System.Drawing.Color.Gainsboro;
-            this.buttonPublicHolidaysSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonPublicHolidaysSave.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Save;
-            this.buttonPublicHolidaysSave.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_save;
-            this.buttonPublicHolidaysSave.Menu = null;
             this.buttonPublicHolidaysSave.Name = "buttonPublicHolidaysSave";
-            this.buttonPublicHolidaysSave.UseVisualStyleBackColor = false;
             this.buttonPublicHolidaysSave.Click += new System.EventHandler(this.buttonPublicHolidaysSave_Click);
             // 
             // tabPageLoanScale
@@ -807,12 +758,9 @@ namespace Octopus.GUI.Configuration
             this.tabPageLoanScale.Controls.Add(this.listViewLoanScale);
             resources.ApplyResources(this.tabPageLoanScale, "tabPageLoanScale");
             this.tabPageLoanScale.Name = "tabPageLoanScale";
-            this.tabPageLoanScale.UseVisualStyleBackColor = true;
             // 
             // groupBox2
-            // 
-            this.groupBox2.BackColor = System.Drawing.Color.White;
-            this.groupBox2.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris;
+            //
             this.groupBox2.Controls.Add(this.buttonDeleteScale);
             this.groupBox2.Controls.Add(this.buttonSaveScale);
             this.groupBox2.Controls.Add(this.textBoxMaxScale);
@@ -822,32 +770,19 @@ namespace Octopus.GUI.Configuration
             this.groupBox2.Controls.Add(this.labelScaleMax);
             this.groupBox2.Controls.Add(this.labelScaleMin);
             resources.ApplyResources(this.groupBox2, "groupBox2");
-            this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.TabStop = false;
             // 
             // buttonDeleteScale
-            // 
-            this.buttonDeleteScale.BackColor = System.Drawing.Color.Gainsboro;
-            this.buttonDeleteScale.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_bouton;
+            //
             resources.ApplyResources(this.buttonDeleteScale, "buttonDeleteScale");
-            this.buttonDeleteScale.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Delete;
-            this.buttonDeleteScale.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_delete;
-            this.buttonDeleteScale.Menu = null;
             this.buttonDeleteScale.Name = "buttonDeleteScale";
-            this.buttonDeleteScale.UseVisualStyleBackColor = false;
             this.buttonDeleteScale.Click += new System.EventHandler(this.buttonDeleteScale_Click);
             // 
             // buttonSaveScale
-            // 
-            this.buttonSaveScale.BackColor = System.Drawing.Color.Gainsboro;
-            this.buttonSaveScale.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_bouton;
+            //
             resources.ApplyResources(this.buttonSaveScale, "buttonSaveScale");
-            this.buttonSaveScale.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Save;
-            this.buttonSaveScale.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_save;
-            this.buttonSaveScale.Menu = null;
             this.buttonSaveScale.Name = "buttonSaveScale";
-            this.buttonSaveScale.UseVisualStyleBackColor = false;
             this.buttonSaveScale.Click += new System.EventHandler(this.buttonSaveScale_Click);
             // 
             // textBoxMaxScale
@@ -878,14 +813,12 @@ namespace Octopus.GUI.Configuration
             // 
             resources.ApplyResources(this.labelScaleMax, "labelScaleMax");
             this.labelScaleMax.BackColor = System.Drawing.Color.Transparent;
-            this.labelScaleMax.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelScaleMax.Name = "labelScaleMax";
             // 
             // labelScaleMin
             // 
             resources.ApplyResources(this.labelScaleMin, "labelScaleMin");
             this.labelScaleMin.BackColor = System.Drawing.Color.Transparent;
-            this.labelScaleMin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelScaleMin.Name = "labelScaleMin";
             // 
             // listViewLoanScale
@@ -916,8 +849,7 @@ namespace Octopus.GUI.Configuration
             resources.ApplyResources(this.columnHeader11, "columnHeader11");
             // 
             // groupBox1
-            // 
-            this.groupBox1.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris_180;
+            //
             resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Controls.Add(this.butImport);
             this.groupBox1.Controls.Add(this.butExport);
@@ -928,40 +860,20 @@ namespace Octopus.GUI.Configuration
             // butImport
             // 
             resources.ApplyResources(this.butImport, "butImport");
-            this.butImport.BackColor = System.Drawing.Color.Gainsboro;
-            this.butImport.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_bouton;
-            this.butImport.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.butImport.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Import;
-            this.butImport.Image = global::Octopus.GUI.Properties.Resources.theme1_1_import;
-            this.butImport.Menu = null;
             this.butImport.Name = "butImport";
-            this.butImport.UseVisualStyleBackColor = false;
             this.butImport.Click += new System.EventHandler(this.butImport_Click);
             // 
             // butExport
             // 
             resources.ApplyResources(this.butExport, "butExport");
-            this.butExport.BackColor = System.Drawing.Color.Gainsboro;
-            this.butExport.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_bouton;
-            this.butExport.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.butExport.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Export;
-            this.butExport.Image = global::Octopus.GUI.Properties.Resources.theme1_1_export;
-            this.butExport.Menu = null;
             this.butExport.Name = "butExport";
-            this.butExport.UseVisualStyleBackColor = false;
             this.butExport.Click += new System.EventHandler(this.butExport_Click);
             // 
             // buttonCancel
             // 
             resources.ApplyResources(this.buttonCancel, "buttonCancel");
-            this.buttonCancel.BackColor = System.Drawing.Color.Gainsboro;
             this.buttonCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.buttonCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonCancel.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Close;
-            this.buttonCancel.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_close;
-            this.buttonCancel.Menu = null;
             this.buttonCancel.Name = "buttonCancel";
-            this.buttonCancel.UseVisualStyleBackColor = false;
             this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
             // openFileDialog
@@ -971,9 +883,7 @@ namespace Octopus.GUI.Configuration
             // FrmGeneralSettings
             // 
             resources.ApplyResources(this, "$this");
-            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.splitContainer1);
-            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FrmGeneralSettings";
             this.Load += new System.EventHandler(this.FrmGeneralSettings_Load);

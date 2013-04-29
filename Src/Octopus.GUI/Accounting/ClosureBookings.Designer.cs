@@ -1,4 +1,4 @@
-﻿namespace Octopus.GUI.Accounting
+namespace Octopus.GUI.Accounting
 {
     partial class ClosureBookings
     {
@@ -154,7 +154,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(879, 300);
             this.Controls.Add(this.olvBookings);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ClosureBookings";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Bookings";

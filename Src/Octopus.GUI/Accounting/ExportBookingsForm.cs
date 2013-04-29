@@ -1,4 +1,4 @@
-﻿//Octopus MFS is an integrated suite for managing a Micro Finance Institution: clients, contracts, accounting, reporting and risk
+//Octopus MFS is an integrated suite for managing a Micro Finance Institution: clients, contracts, accounting, reporting and risk
 //Copyright © 2006,2007 OCTO Technology & OXUS Development Network
 //
 //This program is free software; you can redistribute it and/or modify
@@ -46,14 +46,14 @@ namespace Octopus.GUI.Accounting
 	/// </summary>
     public class ExportBookingsForm : SweetForm
     {
-        private SweetButton btnExport;
+        private System.Windows.Forms.Button btnExport;
         private ListView listViewTransactionsList;
 	    private BackgroundWorker _bwExportWorker;
 	    private BackgroundWorker _bwExportToFile;
         private BackgroundWorker _bwSelect;
         private ProgressBar progressBarExport;
-        private SweetButton btnSelectAll;
-        private SweetButton btnDeselectAll;
+        private System.Windows.Forms.Button btnSelectAll;
+        private System.Windows.Forms.Button btnDeselectAll;
         private Label lbSlash;
         private Label labelSelected;
         private Label labelTotal;
@@ -67,7 +67,7 @@ namespace Octopus.GUI.Accounting
         private CheckBox cbQuoteNonnumeric;
         private ComboBox cmbEncoding;
         private ComboBox cbProcNames;
-        private SweetButton btnPrepareExport;
+        private System.Windows.Forms.Button btnPrepareExport;
         private Panel panel1;
         private Panel panel2;
         private FlowLayoutPanel flowLayoutPanel1;
@@ -187,16 +187,16 @@ namespace Octopus.GUI.Accounting
             this.lbSlash = new System.Windows.Forms.Label();
             this.labelTotal = new System.Windows.Forms.Label();
             this.labelSelected = new System.Windows.Forms.Label();
-            this.btnPrepareExport = new Octopus.GUI.UserControl.SweetButton();
+            this.btnPrepareExport = new System.Windows.Forms.Button();
             this.cbProcNames = new System.Windows.Forms.ComboBox();
             this.lbSeparator = new System.Windows.Forms.Label();
             this.tbSeparator = new System.Windows.Forms.TextBox();
             this.cmbEncoding = new System.Windows.Forms.ComboBox();
             this.cbQuoteNonnumeric = new System.Windows.Forms.CheckBox();
-            this.btnDeselectAll = new Octopus.GUI.UserControl.SweetButton();
-            this.btnSelectAll = new Octopus.GUI.UserControl.SweetButton();
+            this.btnDeselectAll = new System.Windows.Forms.Button();
+            this.btnSelectAll = new System.Windows.Forms.Button();
             this.progressBarExport = new System.Windows.Forms.ProgressBar();
-            this.btnExport = new Octopus.GUI.UserControl.SweetButton();
+            this.btnExport = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.lbProcedure = new System.Windows.Forms.Label();
@@ -234,34 +234,24 @@ namespace Octopus.GUI.Accounting
             // lbSlash
             // 
             resources.ApplyResources(this.lbSlash, "lbSlash");
-            this.lbSlash.BackColor = System.Drawing.Color.Transparent;
-            this.lbSlash.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbSlash.Name = "lbSlash";
             // 
             // labelTotal
             // 
             resources.ApplyResources(this.labelTotal, "labelTotal");
             this.labelTotal.BackColor = System.Drawing.Color.Transparent;
-            this.labelTotal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelTotal.Name = "labelTotal";
             // 
             // labelSelected
             // 
             resources.ApplyResources(this.labelSelected, "labelSelected");
             this.labelSelected.BackColor = System.Drawing.Color.Transparent;
-            this.labelSelected.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.labelSelected.Name = "labelSelected";
             // 
             // btnPrepareExport
             // 
             resources.ApplyResources(this.btnPrepareExport, "btnPrepareExport");
-            this.btnPrepareExport.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnPrepareExport.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnPrepareExport.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.None;
-            this.btnPrepareExport.Image = global::Octopus.GUI.Properties.Resources.theme1_1_export;
-            this.btnPrepareExport.Menu = null;
             this.btnPrepareExport.Name = "btnPrepareExport";
-            this.btnPrepareExport.UseVisualStyleBackColor = false;
             this.btnPrepareExport.Click += new System.EventHandler(this.buttonPrepareExport_Click);
             // 
             // cbProcNames
@@ -275,8 +265,6 @@ namespace Octopus.GUI.Accounting
             // lbSeparator
             // 
             resources.ApplyResources(this.lbSeparator, "lbSeparator");
-            this.lbSeparator.BackColor = System.Drawing.Color.Transparent;
-            this.lbSeparator.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbSeparator.Name = "lbSeparator";
             // 
             // tbSeparator
@@ -299,31 +287,18 @@ namespace Octopus.GUI.Accounting
             // cbQuoteNonnumeric
             // 
             resources.ApplyResources(this.cbQuoteNonnumeric, "cbQuoteNonnumeric");
-            this.cbQuoteNonnumeric.BackColor = System.Drawing.Color.Transparent;
-            this.cbQuoteNonnumeric.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.cbQuoteNonnumeric.Name = "cbQuoteNonnumeric";
-            this.cbQuoteNonnumeric.UseVisualStyleBackColor = false;
             // 
             // btnDeselectAll
             // 
             resources.ApplyResources(this.btnDeselectAll, "btnDeselectAll");
-            this.btnDeselectAll.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_bouton;
-            this.btnDeselectAll.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnDeselectAll.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.None;
-            this.btnDeselectAll.Menu = null;
             this.btnDeselectAll.Name = "btnDeselectAll";
-            this.btnDeselectAll.UseVisualStyleBackColor = true;
             this.btnDeselectAll.Click += new System.EventHandler(this.btnDeselectAll_Click);
             // 
             // btnSelectAll
             // 
             resources.ApplyResources(this.btnSelectAll, "btnSelectAll");
-            this.btnSelectAll.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_bouton;
-            this.btnSelectAll.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnSelectAll.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.None;
-            this.btnSelectAll.Menu = null;
             this.btnSelectAll.Name = "btnSelectAll";
-            this.btnSelectAll.UseVisualStyleBackColor = true;
             this.btnSelectAll.Click += new System.EventHandler(this.btnSelectAll_Click);
             // 
             // progressBarExport
@@ -334,13 +309,7 @@ namespace Octopus.GUI.Accounting
             // btnExport
             // 
             resources.ApplyResources(this.btnExport, "btnExport");
-            this.btnExport.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnExport.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnExport.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.None;
-            this.btnExport.Image = global::Octopus.GUI.Properties.Resources.theme1_1_export;
-            this.btnExport.Menu = null;
             this.btnExport.Name = "btnExport";
-            this.btnExport.UseVisualStyleBackColor = false;
             this.btnExport.Click += new System.EventHandler(this.buttonExport_Click);
             // 
             // panel2
@@ -373,13 +342,11 @@ namespace Octopus.GUI.Accounting
             // lbProcedure
             // 
             resources.ApplyResources(this.lbProcedure, "lbProcedure");
-            this.lbProcedure.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbProcedure.Name = "lbProcedure";
             // 
             // lbOptions
             // 
             resources.ApplyResources(this.lbOptions, "lbOptions");
-            this.lbOptions.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbOptions.Name = "lbOptions";
             // 
             // panel3
@@ -393,7 +360,6 @@ namespace Octopus.GUI.Accounting
             // label3
             // 
             resources.ApplyResources(this.label3, "label3");
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.label3.Name = "label3";
             // 
             // clbxFields
@@ -406,8 +372,7 @@ namespace Octopus.GUI.Accounting
             this.clbxFields.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.clbxFields_ItemCheck);
             // 
             // ExportBookingsForm
-            // 
-            this.BackColor = System.Drawing.Color.White;
+            //
             resources.ApplyResources(this, "$this");
             this.Controls.Add(this.panel2);
             this.Name = "ExportBookingsForm";

@@ -1,4 +1,4 @@
-﻿using System.ComponentModel;
+using System.ComponentModel;
 using System.Windows.Forms;
 using Octopus.GUI.UserControl;
 
@@ -6,9 +6,9 @@ namespace Octopus.GUI.Products
 {
     public partial class FrmAvalaibleCollateralProducts
     {
-        private SweetButton buttonDeletePackage;
-        private SweetButton buttonAddProduct;
-        private SweetButton buttonEditProduct;
+        private System.Windows.Forms.Button buttonDeletePackage;
+        private System.Windows.Forms.Button buttonAddProduct;
+        private System.Windows.Forms.Button buttonEditProduct;
 
         /// <summary>
         /// Variable nécessaire au concepteur.
@@ -45,10 +45,10 @@ namespace Octopus.GUI.Products
             this.webBrowserPackage = new System.Windows.Forms.WebBrowser();
             this.pnlCollateralProducts = new System.Windows.Forms.Panel();
             this.groupBox = new System.Windows.Forms.GroupBox();
-            this.buttonEditProduct = new Octopus.GUI.UserControl.SweetButton();
+            this.buttonEditProduct = new System.Windows.Forms.Button();
             this.checkBoxShowDeletedProduct = new System.Windows.Forms.CheckBox();
-            this.buttonAddProduct = new Octopus.GUI.UserControl.SweetButton();
-            this.buttonDeletePackage = new Octopus.GUI.UserControl.SweetButton();
+            this.buttonAddProduct = new System.Windows.Forms.Button();
+            this.buttonDeletePackage = new System.Windows.Forms.Button();
             this.pnlCollateralProducts.SuspendLayout();
             this.groupBox.SuspendLayout();
             this.SuspendLayout();
@@ -68,8 +68,7 @@ namespace Octopus.GUI.Products
             this.pnlCollateralProducts.Name = "pnlCollateralProducts";
             // 
             // groupBox
-            // 
-            this.groupBox.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris_180;
+            //
             resources.ApplyResources(this.groupBox, "groupBox");
             this.groupBox.Controls.Add(this.buttonEditProduct);
             this.groupBox.Controls.Add(this.checkBoxShowDeletedProduct);
@@ -81,50 +80,29 @@ namespace Octopus.GUI.Products
             // buttonEditProduct
             // 
             resources.ApplyResources(this.buttonEditProduct, "buttonEditProduct");
-            this.buttonEditProduct.BackColor = System.Drawing.Color.Gainsboro;
-            this.buttonEditProduct.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonEditProduct.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.None;
-            this.buttonEditProduct.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_validity;
-            this.buttonEditProduct.Menu = null;
             this.buttonEditProduct.Name = "buttonEditProduct";
-            this.buttonEditProduct.UseVisualStyleBackColor = false;
             this.buttonEditProduct.Click += new System.EventHandler(this.buttonEditProduct_Click);
             // 
             // checkBoxShowDeletedProduct
             // 
             resources.ApplyResources(this.checkBoxShowDeletedProduct, "checkBoxShowDeletedProduct");
-            this.checkBoxShowDeletedProduct.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.checkBoxShowDeletedProduct.Name = "checkBoxShowDeletedProduct";
-            this.checkBoxShowDeletedProduct.UseVisualStyleBackColor = true;
             this.checkBoxShowDeletedProduct.CheckedChanged += new System.EventHandler(this.checkBoxShowDeletedProduct_CheckedChanged);
             // 
             // buttonAddProduct
             // 
             resources.ApplyResources(this.buttonAddProduct, "buttonAddProduct");
-            this.buttonAddProduct.BackColor = System.Drawing.Color.Gainsboro;
-            this.buttonAddProduct.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonAddProduct.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.New;
-            this.buttonAddProduct.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_new;
-            this.buttonAddProduct.Menu = null;
             this.buttonAddProduct.Name = "buttonAddProduct";
-            this.buttonAddProduct.UseVisualStyleBackColor = false;
             this.buttonAddProduct.Click += new System.EventHandler(this.buttonAddProduct_Click);
             // 
             // buttonDeletePackage
             // 
             resources.ApplyResources(this.buttonDeletePackage, "buttonDeletePackage");
-            this.buttonDeletePackage.BackColor = System.Drawing.Color.Gainsboro;
-            this.buttonDeletePackage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonDeletePackage.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Delete;
-            this.buttonDeletePackage.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_delete;
-            this.buttonDeletePackage.Menu = null;
             this.buttonDeletePackage.Name = "buttonDeletePackage";
-            this.buttonDeletePackage.UseVisualStyleBackColor = false;
             this.buttonDeletePackage.Click += new System.EventHandler(this.buttonDeletePackage_Click);
             // 
             // FrmAvalaibleCollateralProducts
-            // 
-            this.BackColor = System.Drawing.Color.White;
+            //
             resources.ApplyResources(this, "$this");
             this.Controls.Add(this.pnlCollateralProducts);
             this.Name = "FrmAvalaibleCollateralProducts";

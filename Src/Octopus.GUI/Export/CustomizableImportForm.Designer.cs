@@ -1,4 +1,4 @@
-﻿namespace Octopus.GUI.Export
+namespace Octopus.GUI.Export
 {
     partial class CustomizableImportForm
     {
@@ -108,9 +108,6 @@
             this._labelTitle.AccessibleDescription = null;
             this._labelTitle.AccessibleName = null;
             resources.ApplyResources(this._labelTitle, "_labelTitle");
-            this._labelTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this._labelTitle.ForeColor = System.Drawing.Color.White;
-            this._labelTitle.Image = global::Octopus.GUI.Properties.Resources.theme1_1_pastille_contrat;
             this._labelTitle.Name = "_labelTitle";
             // 
             // tabControlExportations
@@ -129,11 +126,9 @@
             this.tabPageInstallments.AccessibleDescription = null;
             this.tabPageInstallments.AccessibleName = null;
             resources.ApplyResources(this.tabPageInstallments, "tabPageInstallments");
-            this.tabPageInstallments.BackgroundImage = null;
             this.tabPageInstallments.Controls.Add(this.splitContainerAccountTiers);
             this.tabPageInstallments.Font = null;
             this.tabPageInstallments.Name = "tabPageInstallments";
-            this.tabPageInstallments.UseVisualStyleBackColor = true;
             // 
             // splitContainerAccountTiers
             // 
@@ -181,7 +176,6 @@
             this.groupBox1.AccessibleDescription = null;
             this.groupBox1.AccessibleName = null;
             resources.ApplyResources(this.groupBox1, "groupBox1");
-            this.groupBox1.BackgroundImage = null;
             this.groupBox1.Controls.Add(this.labelSlashInstallments);
             this.groupBox1.Controls.Add(this.buttonExportAccountTiers);
             this.groupBox1.Controls.Add(this.labelSelectedInstallments);
@@ -302,7 +296,6 @@
             this.AccessibleName = null;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = null;
             this.Controls.Add(this.splitContainerSage);
             this.Font = null;
             this.Name = "CustomizableImportForm";

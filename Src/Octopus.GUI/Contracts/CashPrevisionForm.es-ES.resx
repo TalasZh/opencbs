@@ -334,9 +334,6 @@
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="groupBoxButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
   <data name="buttonRepaymentExit.Location" type="System.Drawing.Point, System.Drawing">
     <value>659, 16</value>
   </data>
@@ -475,7 +472,7 @@
     <value>$this</value>
   </data>
   <data name="labelPrevision.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt, style=Bold</value>
+    <value>Arial, 9.75pt</value>
   </data>
   <data name="$this.Localizable" type="System.Boolean, mscorlib">
     <value>True</value>

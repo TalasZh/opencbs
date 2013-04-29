@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -95,8 +95,6 @@ namespace Octopus.GUI.Configuration
             // PublicHolidaysWaitingForm
             // 
             resources.ApplyResources(this, "$this");
-            this.BackColor = System.Drawing.Color.White;
-            this.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris;
             this.ControlBox = false;
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.splitter1);

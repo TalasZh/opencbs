@@ -1,4 +1,4 @@
-﻿using Octopus.GUI.UserControl;
+using Octopus.GUI.UserControl;
 
 namespace Octopus.GUI.Configuration
 {
@@ -199,8 +199,8 @@ namespace Octopus.GUI.Configuration
             this.lblMinOfTermDepositPeriods = new System.Windows.Forms.Label();
             this.checkBoxUseTermDeposit = new System.Windows.Forms.CheckBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btSavingProduct = new Octopus.GUI.UserControl.SweetButton();
-            this.bClose = new Octopus.GUI.UserControl.SweetButton();
+            this.btSavingProduct = new System.Windows.Forms.Button();
+            this.bClose = new System.Windows.Forms.Button();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
@@ -267,12 +267,9 @@ namespace Octopus.GUI.Configuration
             this.tabPageMainParameters.Controls.Add(this.groupBox1);
             resources.ApplyResources(this.tabPageMainParameters, "tabPageMainParameters");
             this.tabPageMainParameters.Name = "tabPageMainParameters";
-            this.tabPageMainParameters.UseVisualStyleBackColor = true;
             // 
             // groupBox1
-            // 
-            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris;
+            //
             resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Controls.Add(this.gbFrequency);
             this.groupBox1.Controls.Add(this.groupBoxCurrency);
@@ -296,7 +293,6 @@ namespace Octopus.GUI.Configuration
             this.gbFrequency.Controls.Add(this.cbPosting);
             this.gbFrequency.Controls.Add(this.cbAccrual);
             resources.ApplyResources(this.gbFrequency, "gbFrequency");
-            this.gbFrequency.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.gbFrequency.Name = "gbFrequency";
             this.gbFrequency.TabStop = false;
             // 
@@ -342,7 +338,6 @@ namespace Octopus.GUI.Configuration
             // 
             this.groupBoxCurrency.Controls.Add(this.cbCurrency);
             resources.ApplyResources(this.groupBoxCurrency, "groupBoxCurrency");
-            this.groupBoxCurrency.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.groupBoxCurrency.Name = "groupBoxCurrency";
             this.groupBoxCurrency.TabStop = false;
             // 
@@ -357,27 +352,21 @@ namespace Octopus.GUI.Configuration
             // lbCodeSavingProduct
             // 
             resources.ApplyResources(this.lbCodeSavingProduct, "lbCodeSavingProduct");
-            this.lbCodeSavingProduct.BackColor = System.Drawing.Color.Transparent;
-            this.lbCodeSavingProduct.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbCodeSavingProduct.Name = "lbCodeSavingProduct";
             // 
             // lbNameSavingProduct
             // 
             resources.ApplyResources(this.lbNameSavingProduct, "lbNameSavingProduct");
-            this.lbNameSavingProduct.BackColor = System.Drawing.Color.Transparent;
-            this.lbNameSavingProduct.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbNameSavingProduct.Name = "lbNameSavingProduct";
             // 
             // gbClientType
-            // 
-            this.gbClientType.BackColor = System.Drawing.Color.Transparent;
+            //
             this.gbClientType.Controls.Add(this.clientTypeCorpCheckBox);
             this.gbClientType.Controls.Add(this.clientTypeIndivCheckBox);
             this.gbClientType.Controls.Add(this.clientTypeVillageCheckBox);
             this.gbClientType.Controls.Add(this.clientTypeGroupCheckBox);
             this.gbClientType.Controls.Add(this.clientTypeAllCheckBox);
             resources.ApplyResources(this.gbClientType, "gbClientType");
-            this.gbClientType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.gbClientType.Name = "gbClientType";
             this.gbClientType.TabStop = false;
             // 
@@ -385,35 +374,30 @@ namespace Octopus.GUI.Configuration
             // 
             resources.ApplyResources(this.clientTypeCorpCheckBox, "clientTypeCorpCheckBox");
             this.clientTypeCorpCheckBox.Name = "clientTypeCorpCheckBox";
-            this.clientTypeCorpCheckBox.UseVisualStyleBackColor = true;
             this.clientTypeCorpCheckBox.CheckedChanged += new System.EventHandler(this.clientTypeGroupCheckBox_CheckedChanged);
             // 
             // clientTypeIndivCheckBox
             // 
             resources.ApplyResources(this.clientTypeIndivCheckBox, "clientTypeIndivCheckBox");
             this.clientTypeIndivCheckBox.Name = "clientTypeIndivCheckBox";
-            this.clientTypeIndivCheckBox.UseVisualStyleBackColor = true;
             this.clientTypeIndivCheckBox.CheckedChanged += new System.EventHandler(this.clientTypeGroupCheckBox_CheckedChanged);
             // 
             // clientTypeVillageCheckBox
             // 
             resources.ApplyResources(this.clientTypeVillageCheckBox, "clientTypeVillageCheckBox");
             this.clientTypeVillageCheckBox.Name = "clientTypeVillageCheckBox";
-            this.clientTypeVillageCheckBox.UseVisualStyleBackColor = true;
             this.clientTypeVillageCheckBox.CheckedChanged += new System.EventHandler(this.clientTypeGroupCheckBox_CheckedChanged);
             // 
             // clientTypeGroupCheckBox
             // 
             resources.ApplyResources(this.clientTypeGroupCheckBox, "clientTypeGroupCheckBox");
             this.clientTypeGroupCheckBox.Name = "clientTypeGroupCheckBox";
-            this.clientTypeGroupCheckBox.UseVisualStyleBackColor = true;
             this.clientTypeGroupCheckBox.CheckedChanged += new System.EventHandler(this.clientTypeGroupCheckBox_CheckedChanged);
             // 
             // clientTypeAllCheckBox
             // 
             resources.ApplyResources(this.clientTypeAllCheckBox, "clientTypeAllCheckBox");
             this.clientTypeAllCheckBox.Name = "clientTypeAllCheckBox";
-            this.clientTypeAllCheckBox.UseVisualStyleBackColor = true;
             this.clientTypeAllCheckBox.Click += new System.EventHandler(this.clientTypeAllCheckBox_Click);
             this.clientTypeAllCheckBox.CheckedChanged += new System.EventHandler(this.clientTypeAllCheckBox_CheckedChanged);
             // 
@@ -428,14 +412,12 @@ namespace Octopus.GUI.Configuration
             this.tbName.Name = "tbName";
             // 
             // gbInitialAmount
-            // 
-            this.gbInitialAmount.BackColor = System.Drawing.Color.Transparent;
+            //
             this.gbInitialAmount.Controls.Add(this.tbInitialAmountMax);
             this.gbInitialAmount.Controls.Add(this.tbInitialAmountMin);
             this.gbInitialAmount.Controls.Add(this.lbInitialAmonutMax);
             this.gbInitialAmount.Controls.Add(this.lbInitialAmountMin);
             resources.ApplyResources(this.gbInitialAmount, "gbInitialAmount");
-            this.gbInitialAmount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.gbInitialAmount.Name = "gbInitialAmount";
             this.gbInitialAmount.TabStop = false;
             // 
@@ -454,24 +436,20 @@ namespace Octopus.GUI.Configuration
             // lbInitialAmonutMax
             // 
             resources.ApplyResources(this.lbInitialAmonutMax, "lbInitialAmonutMax");
-            this.lbInitialAmonutMax.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbInitialAmonutMax.Name = "lbInitialAmonutMax";
             // 
             // lbInitialAmountMin
             // 
             resources.ApplyResources(this.lbInitialAmountMin, "lbInitialAmountMin");
-            this.lbInitialAmountMin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbInitialAmountMin.Name = "lbInitialAmountMin";
             // 
             // gbBalance
-            // 
-            this.gbBalance.BackColor = System.Drawing.Color.Transparent;
+            //
             this.gbBalance.Controls.Add(this.tbBalanceMax);
             this.gbBalance.Controls.Add(this.tbBalanceMin);
             this.gbBalance.Controls.Add(this.lbBalanceMax);
             this.gbBalance.Controls.Add(this.lbBalanceMin);
             resources.ApplyResources(this.gbBalance, "gbBalance");
-            this.gbBalance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.gbBalance.Name = "gbBalance";
             this.gbBalance.TabStop = false;
             // 
@@ -490,18 +468,15 @@ namespace Octopus.GUI.Configuration
             // lbBalanceMax
             // 
             resources.ApplyResources(this.lbBalanceMax, "lbBalanceMax");
-            this.lbBalanceMax.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbBalanceMax.Name = "lbBalanceMax";
             // 
             // lbBalanceMin
             // 
             resources.ApplyResources(this.lbBalanceMin, "lbBalanceMin");
-            this.lbBalanceMin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbBalanceMin.Name = "lbBalanceMin";
             // 
             // gbInterestRate
-            // 
-            this.gbInterestRate.BackColor = System.Drawing.Color.Transparent;
+            //
             this.gbInterestRate.Controls.Add(this.lbYearlyInterestRate);
             this.gbInterestRate.Controls.Add(this.lbYearlyInterestRateMax);
             this.gbInterestRate.Controls.Add(this.lbYearlyInterestRateMin);
@@ -512,26 +487,22 @@ namespace Octopus.GUI.Configuration
             this.gbInterestRate.Controls.Add(this.lbInterestRateMax);
             this.gbInterestRate.Controls.Add(this.lbInterestRateMin);
             resources.ApplyResources(this.gbInterestRate, "gbInterestRate");
-            this.gbInterestRate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.gbInterestRate.Name = "gbInterestRate";
             this.gbInterestRate.TabStop = false;
             // 
             // lbYearlyInterestRate
             // 
             resources.ApplyResources(this.lbYearlyInterestRate, "lbYearlyInterestRate");
-            this.lbYearlyInterestRate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbYearlyInterestRate.Name = "lbYearlyInterestRate";
             // 
             // lbYearlyInterestRateMax
             // 
             resources.ApplyResources(this.lbYearlyInterestRateMax, "lbYearlyInterestRateMax");
-            this.lbYearlyInterestRateMax.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbYearlyInterestRateMax.Name = "lbYearlyInterestRateMax";
             // 
             // lbYearlyInterestRateMin
             // 
             resources.ApplyResources(this.lbYearlyInterestRateMin, "lbYearlyInterestRateMin");
-            this.lbYearlyInterestRateMin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbYearlyInterestRateMin.Name = "lbYearlyInterestRateMin";
             // 
             // tbInterestRateValue
@@ -543,7 +514,6 @@ namespace Octopus.GUI.Configuration
             // lbInterestRateValue
             // 
             resources.ApplyResources(this.lbInterestRateValue, "lbInterestRateValue");
-            this.lbInterestRateValue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbInterestRateValue.Name = "lbInterestRateValue";
             // 
             // tbInterestRateMax
@@ -561,18 +531,15 @@ namespace Octopus.GUI.Configuration
             // lbInterestRateMax
             // 
             resources.ApplyResources(this.lbInterestRateMax, "lbInterestRateMax");
-            this.lbInterestRateMax.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbInterestRateMax.Name = "lbInterestRateMax";
             // 
             // lbInterestRateMin
             // 
             resources.ApplyResources(this.lbInterestRateMin, "lbInterestRateMin");
-            this.lbInterestRateMin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbInterestRateMin.Name = "lbInterestRateMin";
             // 
             // tabPageFees
-            // 
-            this.tabPageFees.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris;
+            //
             resources.ApplyResources(this.tabPageFees, "tabPageFees");
             this.tabPageFees.Controls.Add(this.groupBox3);
             this.tabPageFees.Controls.Add(this.gbTransferFees);
@@ -580,7 +547,6 @@ namespace Octopus.GUI.Configuration
             this.tabPageFees.Controls.Add(this.gbTransfer);
             this.tabPageFees.Controls.Add(this.gbWithDrawing);
             this.tabPageFees.Name = "tabPageFees";
-            this.tabPageFees.UseVisualStyleBackColor = true;
             // 
             // groupBox3
             // 
@@ -589,7 +555,6 @@ namespace Octopus.GUI.Configuration
             this.groupBox3.Controls.Add(this.gbDeposit);
             this.groupBox3.Controls.Add(this.gtDepositFees);
             resources.ApplyResources(this.groupBox3, "groupBox3");
-            this.groupBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.TabStop = false;
             // 
@@ -607,14 +572,12 @@ namespace Octopus.GUI.Configuration
             this.cbTransactionIn.SelectedIndexChanged += new System.EventHandler(this.cbTransactionIn_SelectedIndexChanged);
             // 
             // gbDeposit
-            // 
-            this.gbDeposit.BackColor = System.Drawing.Color.Transparent;
+            //
             this.gbDeposit.Controls.Add(this.tbDepositMax);
             this.gbDeposit.Controls.Add(this.tbDepositMin);
             this.gbDeposit.Controls.Add(this.lbDepositMax);
             this.gbDeposit.Controls.Add(this.lbDepositMin);
             resources.ApplyResources(this.gbDeposit, "gbDeposit");
-            this.gbDeposit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.gbDeposit.Name = "gbDeposit";
             this.gbDeposit.TabStop = false;
             // 
@@ -633,18 +596,15 @@ namespace Octopus.GUI.Configuration
             // lbDepositMax
             // 
             resources.ApplyResources(this.lbDepositMax, "lbDepositMax");
-            this.lbDepositMax.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbDepositMax.Name = "lbDepositMax";
             // 
             // lbDepositMin
             // 
             resources.ApplyResources(this.lbDepositMin, "lbDepositMin");
-            this.lbDepositMin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbDepositMin.Name = "lbDepositMin";
             // 
             // gtDepositFees
-            // 
-            this.gtDepositFees.BackColor = System.Drawing.Color.Transparent;
+            //
             this.gtDepositFees.Controls.Add(this.rbRateDepositFees);
             this.gtDepositFees.Controls.Add(this.rbFlatDepositFees);
             this.gtDepositFees.Controls.Add(this.lbDepositFeesType);
@@ -655,7 +615,6 @@ namespace Octopus.GUI.Configuration
             this.gtDepositFees.Controls.Add(this.lbDepositFeesMax);
             this.gtDepositFees.Controls.Add(this.lbDepositFeesMin);
             resources.ApplyResources(this.gtDepositFees, "gtDepositFees");
-            this.gtDepositFees.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.gtDepositFees.Name = "gtDepositFees";
             this.gtDepositFees.TabStop = false;
             // 
@@ -663,7 +622,6 @@ namespace Octopus.GUI.Configuration
             // 
             resources.ApplyResources(this.rbRateDepositFees, "rbRateDepositFees");
             this.rbRateDepositFees.Name = "rbRateDepositFees";
-            this.rbRateDepositFees.UseVisualStyleBackColor = true;
             // 
             // rbFlatDepositFees
             // 
@@ -671,12 +629,10 @@ namespace Octopus.GUI.Configuration
             this.rbFlatDepositFees.Checked = true;
             this.rbFlatDepositFees.Name = "rbFlatDepositFees";
             this.rbFlatDepositFees.TabStop = true;
-            this.rbFlatDepositFees.UseVisualStyleBackColor = true;
             // 
             // lbDepositFeesType
             // 
             resources.ApplyResources(this.lbDepositFeesType, "lbDepositFeesType");
-            this.lbDepositFeesType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbDepositFeesType.Name = "lbDepositFeesType";
             // 
             // tbDepositFees
@@ -688,7 +644,6 @@ namespace Octopus.GUI.Configuration
             // lbDepositFees
             // 
             resources.ApplyResources(this.lbDepositFees, "lbDepositFees");
-            this.lbDepositFees.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbDepositFees.Name = "lbDepositFees";
             // 
             // tbDepositFeesMax
@@ -706,18 +661,15 @@ namespace Octopus.GUI.Configuration
             // lbDepositFeesMax
             // 
             resources.ApplyResources(this.lbDepositFeesMax, "lbDepositFeesMax");
-            this.lbDepositFeesMax.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbDepositFeesMax.Name = "lbDepositFeesMax";
             // 
             // lbDepositFeesMin
             // 
             resources.ApplyResources(this.lbDepositFeesMin, "lbDepositFeesMin");
-            this.lbDepositFeesMin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbDepositFeesMin.Name = "lbDepositFeesMin";
             // 
             // gbTransferFees
-            // 
-            this.gbTransferFees.BackColor = System.Drawing.Color.Transparent;
+            //
             this.gbTransferFees.Controls.Add(this.cbTransferType);
             this.gbTransferFees.Controls.Add(this.rbRateTransferFees);
             this.gbTransferFees.Controls.Add(this.tbTransferFees);
@@ -729,7 +681,6 @@ namespace Octopus.GUI.Configuration
             this.gbTransferFees.Controls.Add(this.lbTransferFeesMin);
             this.gbTransferFees.Controls.Add(this.lbTransferFeesType);
             resources.ApplyResources(this.gbTransferFees, "gbTransferFees");
-            this.gbTransferFees.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.gbTransferFees.Name = "gbTransferFees";
             this.gbTransferFees.TabStop = false;
             // 
@@ -745,7 +696,6 @@ namespace Octopus.GUI.Configuration
             // 
             resources.ApplyResources(this.rbRateTransferFees, "rbRateTransferFees");
             this.rbRateTransferFees.Name = "rbRateTransferFees";
-            this.rbRateTransferFees.UseVisualStyleBackColor = true;
             this.rbRateTransferFees.CheckedChanged += new System.EventHandler(this.rbRateTransferFees_CheckedChanged);
             // 
             // tbTransferFees
@@ -760,13 +710,11 @@ namespace Octopus.GUI.Configuration
             this.rbFlatTransferFees.Checked = true;
             this.rbFlatTransferFees.Name = "rbFlatTransferFees";
             this.rbFlatTransferFees.TabStop = true;
-            this.rbFlatTransferFees.UseVisualStyleBackColor = true;
             this.rbFlatTransferFees.CheckedChanged += new System.EventHandler(this.rbFlatTransferFees_CheckedChanged);
             // 
             // lbTransferFeesValue
             // 
             resources.ApplyResources(this.lbTransferFeesValue, "lbTransferFeesValue");
-            this.lbTransferFeesValue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbTransferFeesValue.Name = "lbTransferFeesValue";
             // 
             // tbTransferFeesMax
@@ -784,24 +732,20 @@ namespace Octopus.GUI.Configuration
             // lbTransferFeesMax
             // 
             resources.ApplyResources(this.lbTransferFeesMax, "lbTransferFeesMax");
-            this.lbTransferFeesMax.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbTransferFeesMax.Name = "lbTransferFeesMax";
             // 
             // lbTransferFeesMin
             // 
             resources.ApplyResources(this.lbTransferFeesMin, "lbTransferFeesMin");
-            this.lbTransferFeesMin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbTransferFeesMin.Name = "lbTransferFeesMin";
             // 
             // lbTransferFeesType
             // 
             resources.ApplyResources(this.lbTransferFeesType, "lbTransferFeesType");
-            this.lbTransferFeesType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbTransferFeesType.Name = "lbTransferFeesType";
             // 
             // gbWithdrawFees
-            // 
-            this.gbWithdrawFees.BackColor = System.Drawing.Color.Transparent;
+            //
             this.gbWithdrawFees.Controls.Add(this.rbRateWithdrawFees);
             this.gbWithdrawFees.Controls.Add(this.rbFlatWithdrawFees);
             this.gbWithdrawFees.Controls.Add(this.tbWithdrawFees);
@@ -812,7 +756,6 @@ namespace Octopus.GUI.Configuration
             this.gbWithdrawFees.Controls.Add(this.lbWithdrawFeesMax);
             this.gbWithdrawFees.Controls.Add(this.lbWithdrawFeesMin);
             resources.ApplyResources(this.gbWithdrawFees, "gbWithdrawFees");
-            this.gbWithdrawFees.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.gbWithdrawFees.Name = "gbWithdrawFees";
             this.gbWithdrawFees.TabStop = false;
             // 
@@ -820,7 +763,6 @@ namespace Octopus.GUI.Configuration
             // 
             resources.ApplyResources(this.rbRateWithdrawFees, "rbRateWithdrawFees");
             this.rbRateWithdrawFees.Name = "rbRateWithdrawFees";
-            this.rbRateWithdrawFees.UseVisualStyleBackColor = true;
             this.rbRateWithdrawFees.CheckedChanged += new System.EventHandler(this.rbRateWithdrawFees_CheckedChanged);
             // 
             // rbFlatWithdrawFees
@@ -829,7 +771,6 @@ namespace Octopus.GUI.Configuration
             this.rbFlatWithdrawFees.Checked = true;
             this.rbFlatWithdrawFees.Name = "rbFlatWithdrawFees";
             this.rbFlatWithdrawFees.TabStop = true;
-            this.rbFlatWithdrawFees.UseVisualStyleBackColor = true;
             this.rbFlatWithdrawFees.CheckedChanged += new System.EventHandler(this.rbFlatWithdrawFees_CheckedChanged);
             // 
             // tbWithdrawFees
@@ -841,7 +782,6 @@ namespace Octopus.GUI.Configuration
             // lbWithdrawFeesValue
             // 
             resources.ApplyResources(this.lbWithdrawFeesValue, "lbWithdrawFeesValue");
-            this.lbWithdrawFeesValue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbWithdrawFeesValue.Name = "lbWithdrawFeesValue";
             // 
             // tbWithdrawFeesMax
@@ -859,30 +799,25 @@ namespace Octopus.GUI.Configuration
             // lbWithdrawFeesType
             // 
             resources.ApplyResources(this.lbWithdrawFeesType, "lbWithdrawFeesType");
-            this.lbWithdrawFeesType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbWithdrawFeesType.Name = "lbWithdrawFeesType";
             // 
             // lbWithdrawFeesMax
             // 
             resources.ApplyResources(this.lbWithdrawFeesMax, "lbWithdrawFeesMax");
-            this.lbWithdrawFeesMax.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbWithdrawFeesMax.Name = "lbWithdrawFeesMax";
             // 
             // lbWithdrawFeesMin
             // 
             resources.ApplyResources(this.lbWithdrawFeesMin, "lbWithdrawFeesMin");
-            this.lbWithdrawFeesMin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbWithdrawFeesMin.Name = "lbWithdrawFeesMin";
             // 
             // gbTransfer
-            // 
-            this.gbTransfer.BackColor = System.Drawing.Color.Transparent;
+            //
             this.gbTransfer.Controls.Add(this.tbTransferMax);
             this.gbTransfer.Controls.Add(this.tbTransferMin);
             this.gbTransfer.Controls.Add(this.lbTransferMax);
             this.gbTransfer.Controls.Add(this.lbTransferMin);
             resources.ApplyResources(this.gbTransfer, "gbTransfer");
-            this.gbTransfer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.gbTransfer.Name = "gbTransfer";
             this.gbTransfer.TabStop = false;
             // 
@@ -901,24 +836,20 @@ namespace Octopus.GUI.Configuration
             // lbTransferMax
             // 
             resources.ApplyResources(this.lbTransferMax, "lbTransferMax");
-            this.lbTransferMax.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbTransferMax.Name = "lbTransferMax";
             // 
             // lbTransferMin
             // 
             resources.ApplyResources(this.lbTransferMin, "lbTransferMin");
-            this.lbTransferMin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbTransferMin.Name = "lbTransferMin";
             // 
             // gbWithDrawing
-            // 
-            this.gbWithDrawing.BackColor = System.Drawing.Color.Transparent;
+            //
             this.gbWithDrawing.Controls.Add(this.tbDrawingMax);
             this.gbWithDrawing.Controls.Add(this.tbWithDrawingMin);
             this.gbWithDrawing.Controls.Add(this.lbWithDrawingMax);
             this.gbWithDrawing.Controls.Add(this.lbWithDrawingMin);
             resources.ApplyResources(this.gbWithDrawing, "gbWithDrawing");
-            this.gbWithDrawing.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.gbWithDrawing.Name = "gbWithDrawing";
             this.gbWithDrawing.TabStop = false;
             // 
@@ -937,29 +868,24 @@ namespace Octopus.GUI.Configuration
             // lbWithDrawingMax
             // 
             resources.ApplyResources(this.lbWithDrawingMax, "lbWithDrawingMax");
-            this.lbWithDrawingMax.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbWithDrawingMax.Name = "lbWithDrawingMax";
             // 
             // lbWithDrawingMin
             // 
             resources.ApplyResources(this.lbWithDrawingMin, "lbWithDrawingMin");
-            this.lbWithDrawingMin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbWithDrawingMin.Name = "lbWithDrawingMin";
             // 
             // tabPageManagement
-            // 
-            this.tabPageManagement.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris;
+            //
             resources.ApplyResources(this.tabPageManagement, "tabPageManagement");
             this.tabPageManagement.Controls.Add(this.gbReopenFees);
             this.tabPageManagement.Controls.Add(this.gtManagementFees);
             this.tabPageManagement.Controls.Add(this.gtCloseFees);
             this.tabPageManagement.Controls.Add(this.gbEntryFees);
             this.tabPageManagement.Name = "tabPageManagement";
-            this.tabPageManagement.UseVisualStyleBackColor = true;
             // 
             // gbReopenFees
-            // 
-            this.gbReopenFees.BackColor = System.Drawing.Color.Transparent;
+            //
             this.gbReopenFees.Controls.Add(this.rbRateReopenFees);
             this.gbReopenFees.Controls.Add(this.rbFlatReopenFees);
             this.gbReopenFees.Controls.Add(this.lbReopenFeesType);
@@ -970,7 +896,6 @@ namespace Octopus.GUI.Configuration
             this.gbReopenFees.Controls.Add(this.lbReopenFeesMax);
             this.gbReopenFees.Controls.Add(this.lbReopenFeesMin);
             resources.ApplyResources(this.gbReopenFees, "gbReopenFees");
-            this.gbReopenFees.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.gbReopenFees.Name = "gbReopenFees";
             this.gbReopenFees.TabStop = false;
             // 
@@ -978,7 +903,6 @@ namespace Octopus.GUI.Configuration
             // 
             resources.ApplyResources(this.rbRateReopenFees, "rbRateReopenFees");
             this.rbRateReopenFees.Name = "rbRateReopenFees";
-            this.rbRateReopenFees.UseVisualStyleBackColor = true;
             // 
             // rbFlatReopenFees
             // 
@@ -986,12 +910,10 @@ namespace Octopus.GUI.Configuration
             this.rbFlatReopenFees.Checked = true;
             this.rbFlatReopenFees.Name = "rbFlatReopenFees";
             this.rbFlatReopenFees.TabStop = true;
-            this.rbFlatReopenFees.UseVisualStyleBackColor = true;
             // 
             // lbReopenFeesType
             // 
             resources.ApplyResources(this.lbReopenFeesType, "lbReopenFeesType");
-            this.lbReopenFeesType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbReopenFeesType.Name = "lbReopenFeesType";
             // 
             // tbReopenFeesValue
@@ -1003,7 +925,6 @@ namespace Octopus.GUI.Configuration
             // lbReopenFeesValue
             // 
             resources.ApplyResources(this.lbReopenFeesValue, "lbReopenFeesValue");
-            this.lbReopenFeesValue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbReopenFeesValue.Name = "lbReopenFeesValue";
             // 
             // tbReopenFeesMax
@@ -1021,18 +942,15 @@ namespace Octopus.GUI.Configuration
             // lbReopenFeesMax
             // 
             resources.ApplyResources(this.lbReopenFeesMax, "lbReopenFeesMax");
-            this.lbReopenFeesMax.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbReopenFeesMax.Name = "lbReopenFeesMax";
             // 
             // lbReopenFeesMin
             // 
             resources.ApplyResources(this.lbReopenFeesMin, "lbReopenFeesMin");
-            this.lbReopenFeesMin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbReopenFeesMin.Name = "lbReopenFeesMin";
             // 
             // gtManagementFees
-            // 
-            this.gtManagementFees.BackColor = System.Drawing.Color.Transparent;
+            //
             this.gtManagementFees.Controls.Add(this.cbManagementFeeFreq);
             this.gtManagementFees.Controls.Add(this.rbRateManagementFees);
             this.gtManagementFees.Controls.Add(this.rbFlatManagementFees);
@@ -1044,7 +962,6 @@ namespace Octopus.GUI.Configuration
             this.gtManagementFees.Controls.Add(this.lbManagementFeesMax);
             this.gtManagementFees.Controls.Add(this.lbManagementFeesMin);
             resources.ApplyResources(this.gtManagementFees, "gtManagementFees");
-            this.gtManagementFees.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.gtManagementFees.Name = "gtManagementFees";
             this.gtManagementFees.TabStop = false;
             // 
@@ -1059,7 +976,6 @@ namespace Octopus.GUI.Configuration
             // 
             resources.ApplyResources(this.rbRateManagementFees, "rbRateManagementFees");
             this.rbRateManagementFees.Name = "rbRateManagementFees";
-            this.rbRateManagementFees.UseVisualStyleBackColor = true;
             // 
             // rbFlatManagementFees
             // 
@@ -1067,12 +983,10 @@ namespace Octopus.GUI.Configuration
             this.rbFlatManagementFees.Checked = true;
             this.rbFlatManagementFees.Name = "rbFlatManagementFees";
             this.rbFlatManagementFees.TabStop = true;
-            this.rbFlatManagementFees.UseVisualStyleBackColor = true;
             // 
             // lbManagementFeesType
             // 
             resources.ApplyResources(this.lbManagementFeesType, "lbManagementFeesType");
-            this.lbManagementFeesType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbManagementFeesType.Name = "lbManagementFeesType";
             // 
             // tbManagementFees
@@ -1084,7 +998,6 @@ namespace Octopus.GUI.Configuration
             // lbManagementFees
             // 
             resources.ApplyResources(this.lbManagementFees, "lbManagementFees");
-            this.lbManagementFees.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbManagementFees.Name = "lbManagementFees";
             // 
             // tbManagementFeesMax
@@ -1102,18 +1015,15 @@ namespace Octopus.GUI.Configuration
             // lbManagementFeesMax
             // 
             resources.ApplyResources(this.lbManagementFeesMax, "lbManagementFeesMax");
-            this.lbManagementFeesMax.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbManagementFeesMax.Name = "lbManagementFeesMax";
             // 
             // lbManagementFeesMin
             // 
             resources.ApplyResources(this.lbManagementFeesMin, "lbManagementFeesMin");
-            this.lbManagementFeesMin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbManagementFeesMin.Name = "lbManagementFeesMin";
             // 
             // gtCloseFees
-            // 
-            this.gtCloseFees.BackColor = System.Drawing.Color.Transparent;
+            //
             this.gtCloseFees.Controls.Add(this.rbRateCloseFees);
             this.gtCloseFees.Controls.Add(this.rbFlatCloseFees);
             this.gtCloseFees.Controls.Add(this.lbCloseFeesType);
@@ -1124,7 +1034,6 @@ namespace Octopus.GUI.Configuration
             this.gtCloseFees.Controls.Add(this.lbCloseFeesMax);
             this.gtCloseFees.Controls.Add(this.lbCloseFeesMin);
             resources.ApplyResources(this.gtCloseFees, "gtCloseFees");
-            this.gtCloseFees.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.gtCloseFees.Name = "gtCloseFees";
             this.gtCloseFees.TabStop = false;
             // 
@@ -1132,7 +1041,6 @@ namespace Octopus.GUI.Configuration
             // 
             resources.ApplyResources(this.rbRateCloseFees, "rbRateCloseFees");
             this.rbRateCloseFees.Name = "rbRateCloseFees";
-            this.rbRateCloseFees.UseVisualStyleBackColor = true;
             // 
             // rbFlatCloseFees
             // 
@@ -1140,12 +1048,10 @@ namespace Octopus.GUI.Configuration
             this.rbFlatCloseFees.Checked = true;
             this.rbFlatCloseFees.Name = "rbFlatCloseFees";
             this.rbFlatCloseFees.TabStop = true;
-            this.rbFlatCloseFees.UseVisualStyleBackColor = true;
             // 
             // lbCloseFeesType
             // 
             resources.ApplyResources(this.lbCloseFeesType, "lbCloseFeesType");
-            this.lbCloseFeesType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbCloseFeesType.Name = "lbCloseFeesType";
             // 
             // tbCloseFees
@@ -1157,7 +1063,6 @@ namespace Octopus.GUI.Configuration
             // lbCloseFees
             // 
             resources.ApplyResources(this.lbCloseFees, "lbCloseFees");
-            this.lbCloseFees.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbCloseFees.Name = "lbCloseFees";
             // 
             // tbCloseFeesMax
@@ -1175,18 +1080,15 @@ namespace Octopus.GUI.Configuration
             // lbCloseFeesMax
             // 
             resources.ApplyResources(this.lbCloseFeesMax, "lbCloseFeesMax");
-            this.lbCloseFeesMax.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbCloseFeesMax.Name = "lbCloseFeesMax";
             // 
             // lbCloseFeesMin
             // 
             resources.ApplyResources(this.lbCloseFeesMin, "lbCloseFeesMin");
-            this.lbCloseFeesMin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbCloseFeesMin.Name = "lbCloseFeesMin";
             // 
             // gbEntryFees
-            // 
-            this.gbEntryFees.BackColor = System.Drawing.Color.Transparent;
+            //
             this.gbEntryFees.Controls.Add(this.rbRateEntryFees);
             this.gbEntryFees.Controls.Add(this.rbFlatEntryFees);
             this.gbEntryFees.Controls.Add(this.lbEntryFeesType);
@@ -1197,7 +1099,6 @@ namespace Octopus.GUI.Configuration
             this.gbEntryFees.Controls.Add(this.lbEntryFeesMax);
             this.gbEntryFees.Controls.Add(this.lbEntryFeesMin);
             resources.ApplyResources(this.gbEntryFees, "gbEntryFees");
-            this.gbEntryFees.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.gbEntryFees.Name = "gbEntryFees";
             this.gbEntryFees.TabStop = false;
             // 
@@ -1205,7 +1106,6 @@ namespace Octopus.GUI.Configuration
             // 
             resources.ApplyResources(this.rbRateEntryFees, "rbRateEntryFees");
             this.rbRateEntryFees.Name = "rbRateEntryFees";
-            this.rbRateEntryFees.UseVisualStyleBackColor = true;
             // 
             // rbFlatEntryFees
             // 
@@ -1213,12 +1113,10 @@ namespace Octopus.GUI.Configuration
             this.rbFlatEntryFees.Checked = true;
             this.rbFlatEntryFees.Name = "rbFlatEntryFees";
             this.rbFlatEntryFees.TabStop = true;
-            this.rbFlatEntryFees.UseVisualStyleBackColor = true;
             // 
             // lbEntryFeesType
             // 
             resources.ApplyResources(this.lbEntryFeesType, "lbEntryFeesType");
-            this.lbEntryFeesType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbEntryFeesType.Name = "lbEntryFeesType";
             // 
             // tbEntryFeesValue
@@ -1230,7 +1128,6 @@ namespace Octopus.GUI.Configuration
             // lbEntryFeesValue
             // 
             resources.ApplyResources(this.lbEntryFeesValue, "lbEntryFeesValue");
-            this.lbEntryFeesValue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbEntryFeesValue.Name = "lbEntryFeesValue";
             // 
             // tbEntryFeesMax
@@ -1248,27 +1145,22 @@ namespace Octopus.GUI.Configuration
             // lbEntryFeesMax
             // 
             resources.ApplyResources(this.lbEntryFeesMax, "lbEntryFeesMax");
-            this.lbEntryFeesMax.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbEntryFeesMax.Name = "lbEntryFeesMax";
             // 
             // lbEntryFeesMin
             // 
             resources.ApplyResources(this.lbEntryFeesMin, "lbEntryFeesMin");
-            this.lbEntryFeesMin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbEntryFeesMin.Name = "lbEntryFeesMin";
             // 
             // tabPageOverdraft
-            // 
-            this.tabPageOverdraft.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris;
+            //
             resources.ApplyResources(this.tabPageOverdraft, "tabPageOverdraft");
             this.tabPageOverdraft.Controls.Add(this.gtAgioFees);
             this.tabPageOverdraft.Controls.Add(this.gtOverdraftFees);
             this.tabPageOverdraft.Name = "tabPageOverdraft";
-            this.tabPageOverdraft.UseVisualStyleBackColor = true;
             // 
             // gtAgioFees
-            // 
-            this.gtAgioFees.BackColor = System.Drawing.Color.Transparent;
+            //
             this.gtAgioFees.Controls.Add(this.rbRateAgioFees);
             this.gtAgioFees.Controls.Add(this.rbFlatAgioFees);
             this.gtAgioFees.Controls.Add(this.lbAgioFeesType);
@@ -1280,7 +1172,6 @@ namespace Octopus.GUI.Configuration
             this.gtAgioFees.Controls.Add(this.lbAgioFeesMax);
             this.gtAgioFees.Controls.Add(this.lbAgioFeesMin);
             resources.ApplyResources(this.gtAgioFees, "gtAgioFees");
-            this.gtAgioFees.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.gtAgioFees.Name = "gtAgioFees";
             this.gtAgioFees.TabStop = false;
             // 
@@ -1290,18 +1181,15 @@ namespace Octopus.GUI.Configuration
             this.rbRateAgioFees.Checked = true;
             this.rbRateAgioFees.Name = "rbRateAgioFees";
             this.rbRateAgioFees.TabStop = true;
-            this.rbRateAgioFees.UseVisualStyleBackColor = true;
             // 
             // rbFlatAgioFees
             // 
             resources.ApplyResources(this.rbFlatAgioFees, "rbFlatAgioFees");
             this.rbFlatAgioFees.Name = "rbFlatAgioFees";
-            this.rbFlatAgioFees.UseVisualStyleBackColor = true;
             // 
             // lbAgioFeesType
             // 
             resources.ApplyResources(this.lbAgioFeesType, "lbAgioFeesType");
-            this.lbAgioFeesType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbAgioFeesType.Name = "lbAgioFeesType";
             // 
             // cbAgioFeesFreq
@@ -1322,7 +1210,6 @@ namespace Octopus.GUI.Configuration
             // lbAgioFeesValue
             // 
             resources.ApplyResources(this.lbAgioFeesValue, "lbAgioFeesValue");
-            this.lbAgioFeesValue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbAgioFeesValue.Name = "lbAgioFeesValue";
             // 
             // tbAgioFeesMax
@@ -1340,18 +1227,15 @@ namespace Octopus.GUI.Configuration
             // lbAgioFeesMax
             // 
             resources.ApplyResources(this.lbAgioFeesMax, "lbAgioFeesMax");
-            this.lbAgioFeesMax.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbAgioFeesMax.Name = "lbAgioFeesMax";
             // 
             // lbAgioFeesMin
             // 
             resources.ApplyResources(this.lbAgioFeesMin, "lbAgioFeesMin");
-            this.lbAgioFeesMin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbAgioFeesMin.Name = "lbAgioFeesMin";
             // 
             // gtOverdraftFees
-            // 
-            this.gtOverdraftFees.BackColor = System.Drawing.Color.Transparent;
+            //
             this.gtOverdraftFees.Controls.Add(this.rbRateOverdraftFees);
             this.gtOverdraftFees.Controls.Add(this.rbFlatOverdraftFees);
             this.gtOverdraftFees.Controls.Add(this.lbOverdraftFeesType);
@@ -1362,7 +1246,6 @@ namespace Octopus.GUI.Configuration
             this.gtOverdraftFees.Controls.Add(this.lbOverdraftFeesMax);
             this.gtOverdraftFees.Controls.Add(this.lbOverdraftFeesMin);
             resources.ApplyResources(this.gtOverdraftFees, "gtOverdraftFees");
-            this.gtOverdraftFees.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.gtOverdraftFees.Name = "gtOverdraftFees";
             this.gtOverdraftFees.TabStop = false;
             // 
@@ -1370,7 +1253,6 @@ namespace Octopus.GUI.Configuration
             // 
             resources.ApplyResources(this.rbRateOverdraftFees, "rbRateOverdraftFees");
             this.rbRateOverdraftFees.Name = "rbRateOverdraftFees";
-            this.rbRateOverdraftFees.UseVisualStyleBackColor = true;
             // 
             // rbFlatOverdraftFees
             // 
@@ -1378,12 +1260,10 @@ namespace Octopus.GUI.Configuration
             this.rbFlatOverdraftFees.Checked = true;
             this.rbFlatOverdraftFees.Name = "rbFlatOverdraftFees";
             this.rbFlatOverdraftFees.TabStop = true;
-            this.rbFlatOverdraftFees.UseVisualStyleBackColor = true;
             // 
             // lbOverdraftFeesType
             // 
             resources.ApplyResources(this.lbOverdraftFeesType, "lbOverdraftFeesType");
-            this.lbOverdraftFeesType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbOverdraftFeesType.Name = "lbOverdraftFeesType";
             // 
             // tbOverdraftFees
@@ -1395,7 +1275,6 @@ namespace Octopus.GUI.Configuration
             // lbOverdraftFeesValue
             // 
             resources.ApplyResources(this.lbOverdraftFeesValue, "lbOverdraftFeesValue");
-            this.lbOverdraftFeesValue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbOverdraftFeesValue.Name = "lbOverdraftFeesValue";
             // 
             // tbOverdraftFeesMax
@@ -1413,23 +1292,19 @@ namespace Octopus.GUI.Configuration
             // lbOverdraftFeesMax
             // 
             resources.ApplyResources(this.lbOverdraftFeesMax, "lbOverdraftFeesMax");
-            this.lbOverdraftFeesMax.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbOverdraftFeesMax.Name = "lbOverdraftFeesMax";
             // 
             // lbOverdraftFeesMin
             // 
             resources.ApplyResources(this.lbOverdraftFeesMin, "lbOverdraftFeesMin");
-            this.lbOverdraftFeesMin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbOverdraftFeesMin.Name = "lbOverdraftFeesMin";
             // 
             // tabPageTermDeposit
-            // 
-            this.tabPageTermDeposit.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris;
+            //
             resources.ApplyResources(this.tabPageTermDeposit, "tabPageTermDeposit");
             this.tabPageTermDeposit.Controls.Add(this.termDepositPanel);
             this.tabPageTermDeposit.Controls.Add(this.checkBoxUseTermDeposit);
             this.tabPageTermDeposit.Name = "tabPageTermDeposit";
-            this.tabPageTermDeposit.UseVisualStyleBackColor = true;
             // 
             // termDepositPanel
             // 
@@ -1442,7 +1317,6 @@ namespace Octopus.GUI.Configuration
             // 
             this.gpPostingFrequency.Controls.Add(this.cbxPostingfrequency);
             resources.ApplyResources(this.gpPostingFrequency, "gpPostingFrequency");
-            this.gpPostingFrequency.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.gpPostingFrequency.Name = "gpPostingFrequency";
             this.gpPostingFrequency.TabStop = false;
             // 
@@ -1463,7 +1337,6 @@ namespace Octopus.GUI.Configuration
             this.gbNumberOfPeriods.Controls.Add(this.lblMaxOfTermDepositPeriods);
             this.gbNumberOfPeriods.Controls.Add(this.lblMinOfTermDepositPeriods);
             resources.ApplyResources(this.gbNumberOfPeriods, "gbNumberOfPeriods");
-            this.gbNumberOfPeriods.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.gbNumberOfPeriods.Name = "gbNumberOfPeriods";
             this.gbNumberOfPeriods.TabStop = false;
             // 
@@ -1492,14 +1365,11 @@ namespace Octopus.GUI.Configuration
             // checkBoxUseTermDeposit
             // 
             resources.ApplyResources(this.checkBoxUseTermDeposit, "checkBoxUseTermDeposit");
-            this.checkBoxUseTermDeposit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.checkBoxUseTermDeposit.Name = "checkBoxUseTermDeposit";
-            this.checkBoxUseTermDeposit.UseVisualStyleBackColor = true;
             this.checkBoxUseTermDeposit.CheckedChanged += new System.EventHandler(this.checkBoxUseTermDeposit_CheckedChanged);
             // 
             // groupBox2
-            // 
-            this.groupBox2.BackColor = System.Drawing.Color.Transparent;
+            //
             this.groupBox2.Controls.Add(this.btSavingProduct);
             this.groupBox2.Controls.Add(this.bClose);
             resources.ApplyResources(this.groupBox2, "groupBox2");
@@ -1509,26 +1379,14 @@ namespace Octopus.GUI.Configuration
             // btSavingProduct
             // 
             resources.ApplyResources(this.btSavingProduct, "btSavingProduct");
-            this.btSavingProduct.BackColor = System.Drawing.Color.Transparent;
-            this.btSavingProduct.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.btSavingProduct.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Save;
-            this.btSavingProduct.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_validity;
-            this.btSavingProduct.Menu = null;
             this.btSavingProduct.Name = "btSavingProduct";
-            this.btSavingProduct.UseVisualStyleBackColor = false;
             this.btSavingProduct.Click += new System.EventHandler(this.btSavingProduct_Click);
             // 
             // bClose
             // 
             resources.ApplyResources(this.bClose, "bClose");
-            this.bClose.BackColor = System.Drawing.Color.Gainsboro;
             this.bClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.bClose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.bClose.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Close;
-            this.bClose.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_close;
-            this.bClose.Menu = null;
             this.bClose.Name = "bClose";
-            this.bClose.UseVisualStyleBackColor = false;
             this.bClose.Click += new System.EventHandler(this.bClose_Click);
             // 
             // FrmAddSavingBookProduct
@@ -1536,7 +1394,6 @@ namespace Octopus.GUI.Configuration
             this.AcceptButton = this.btSavingProduct;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
             this.CancelButton = this.bClose;
             this.Controls.Add(this.splitContainer1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -1624,8 +1481,8 @@ namespace Octopus.GUI.Configuration
         private System.Windows.Forms.Label lbInterestRateMin;
         private System.Windows.Forms.TextBox tbInterestRateValue;
         private System.Windows.Forms.Label lbInterestRateValue;
-        private SweetButton btSavingProduct;
-        private SweetButton bClose;
+        private System.Windows.Forms.Button btSavingProduct;
+        private System.Windows.Forms.Button bClose;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.GroupBox groupBox1;

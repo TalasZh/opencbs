@@ -1,4 +1,4 @@
-﻿using Octopus.GUI.UserControl;
+using Octopus.GUI.UserControl;
 
 namespace Octopus.GUI.Accounting
 {
@@ -36,11 +36,11 @@ namespace Octopus.GUI.Accounting
             this.columnDebit = new System.Windows.Forms.ColumnHeader();
             this.columnCredit = new System.Windows.Forms.ColumnHeader();
             this.gbBooking = new System.Windows.Forms.GroupBox();
-            this.btnDelete = new Octopus.GUI.UserControl.SweetButton();
-            this.btnEdit = new Octopus.GUI.UserControl.SweetButton();
-            this.btnCreate = new Octopus.GUI.UserControl.SweetButton();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnEdit = new System.Windows.Forms.Button();
+            this.btnCreate = new System.Windows.Forms.Button();
             this.lblCaption = new System.Windows.Forms.Label();
-            this.buttonClose = new Octopus.GUI.UserControl.SweetButton();
+            this.buttonClose = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.gbBooking.SuspendLayout();
@@ -85,7 +85,6 @@ namespace Octopus.GUI.Accounting
             this.gbBooking.AccessibleDescription = null;
             this.gbBooking.AccessibleName = null;
             resources.ApplyResources(this.gbBooking, "gbBooking");
-            this.gbBooking.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris_180;
             this.gbBooking.Controls.Add(this.btnDelete);
             this.gbBooking.Controls.Add(this.btnEdit);
             this.gbBooking.Controls.Add(this.btnCreate);
@@ -98,13 +97,7 @@ namespace Octopus.GUI.Accounting
             this.btnDelete.AccessibleDescription = null;
             this.btnDelete.AccessibleName = null;
             resources.ApplyResources(this.btnDelete, "btnDelete");
-            this.btnDelete.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnDelete.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Delete;
-            this.btnDelete.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_delete;
-            this.btnDelete.Menu = null;
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.UseVisualStyleBackColor = false;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnEdit
@@ -112,13 +105,7 @@ namespace Octopus.GUI.Accounting
             this.btnEdit.AccessibleDescription = null;
             this.btnEdit.AccessibleName = null;
             resources.ApplyResources(this.btnEdit, "btnEdit");
-            this.btnEdit.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnEdit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnEdit.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.None;
-            this.btnEdit.Image = global::Octopus.GUI.Properties.Resources.theme1_1_view;
-            this.btnEdit.Menu = null;
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.UseVisualStyleBackColor = false;
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // btnCreate
@@ -126,13 +113,7 @@ namespace Octopus.GUI.Accounting
             this.btnCreate.AccessibleDescription = null;
             this.btnCreate.AccessibleName = null;
             resources.ApplyResources(this.btnCreate, "btnCreate");
-            this.btnCreate.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnCreate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnCreate.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.New;
-            this.btnCreate.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_new;
-            this.btnCreate.Menu = null;
             this.btnCreate.Name = "btnCreate";
-            this.btnCreate.UseVisualStyleBackColor = false;
             this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
             // 
             // lblCaption
@@ -141,7 +122,6 @@ namespace Octopus.GUI.Accounting
             this.lblCaption.AccessibleName = null;
             resources.ApplyResources(this.lblCaption, "lblCaption");
             this.lblCaption.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.lblCaption.ForeColor = System.Drawing.Color.White;
             this.lblCaption.Name = "lblCaption";
             // 
             // buttonClose
@@ -149,13 +129,7 @@ namespace Octopus.GUI.Accounting
             this.buttonClose.AccessibleDescription = null;
             this.buttonClose.AccessibleName = null;
             resources.ApplyResources(this.buttonClose, "buttonClose");
-            this.buttonClose.BackColor = System.Drawing.Color.Gainsboro;
-            this.buttonClose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonClose.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Close;
-            this.buttonClose.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_close;
-            this.buttonClose.Menu = null;
             this.buttonClose.Name = "buttonClose";
-            this.buttonClose.UseVisualStyleBackColor = false;
             this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
             // tableLayoutPanel1
@@ -187,7 +161,6 @@ namespace Octopus.GUI.Accounting
             this.AccessibleName = null;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = null;
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Font = null;
@@ -202,15 +175,15 @@ namespace Octopus.GUI.Accounting
         #endregion
 
         private System.Windows.Forms.Label lblCaption;
-        private SweetButton buttonClose;
+        private System.Windows.Forms.Button buttonClose;
         private System.Windows.Forms.ListView listBookings;
         private System.Windows.Forms.GroupBox gbBooking;
-        private SweetButton btnCreate;
+        private System.Windows.Forms.Button btnCreate;
         private System.Windows.Forms.ColumnHeader columnName;
         private System.Windows.Forms.ColumnHeader columnDebit;
         private System.Windows.Forms.ColumnHeader columnCredit;
-        private SweetButton btnDelete;
-        private SweetButton btnEdit;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
     }

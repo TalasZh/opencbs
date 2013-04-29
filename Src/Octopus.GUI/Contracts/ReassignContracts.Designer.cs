@@ -1,4 +1,4 @@
-﻿using Octopus.GUI.UserControl;
+using Octopus.GUI.UserControl;
 
 namespace Octopus.GUI.Contracts
 {
@@ -58,8 +58,8 @@ namespace Octopus.GUI.Contracts
             this.cbLoanOfficerFrom = new System.Windows.Forms.ComboBox();
             this.lblCaption = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.btnAssing = new Octopus.GUI.UserControl.SweetButton();
-            this.buttonClose = new Octopus.GUI.UserControl.SweetButton();
+            this.btnAssing = new System.Windows.Forms.Button();
+            this.buttonClose = new System.Windows.Forms.Button();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
@@ -182,8 +182,7 @@ namespace Octopus.GUI.Contracts
             resources.ApplyResources(this.toolStripStatusLabelTotal, "toolStripStatusLabelTotal");
             // 
             // gbLoanOffficers
-            // 
-            this.gbLoanOffficers.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris_180;
+            //
             resources.ApplyResources(this.gbLoanOffficers, "gbLoanOffficers");
             this.gbLoanOffficers.Controls.Add(this.chkBox_only_active);
             this.gbLoanOffficers.Controls.Add(this.checkBoxAll);
@@ -192,38 +191,31 @@ namespace Octopus.GUI.Contracts
             this.gbLoanOffficers.Controls.Add(this.lblFrom);
             this.gbLoanOffficers.Controls.Add(this.cbLoanOfficerTo);
             this.gbLoanOffficers.Controls.Add(this.cbLoanOfficerFrom);
-            this.gbLoanOffficers.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.gbLoanOffficers.Name = "gbLoanOffficers";
             this.gbLoanOffficers.TabStop = false;
             // 
             // chkBox_only_active
             // 
             resources.ApplyResources(this.chkBox_only_active, "chkBox_only_active");
-            this.chkBox_only_active.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.chkBox_only_active.Name = "chkBox_only_active";
-            this.chkBox_only_active.UseVisualStyleBackColor = true;
             this.chkBox_only_active.CheckedChanged += new System.EventHandler(this.chkBox_only_active_CheckedChanged);
             // 
             // checkBoxAll
             // 
             resources.ApplyResources(this.checkBoxAll, "checkBoxAll");
-            this.checkBoxAll.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.checkBoxAll.Name = "checkBoxAll";
-            this.checkBoxAll.UseVisualStyleBackColor = true;
             this.checkBoxAll.CheckedChanged += new System.EventHandler(this.checkBoxAll_CheckedChanged);
             // 
             // lblTo
             // 
             resources.ApplyResources(this.lblTo, "lblTo");
             this.lblTo.BackColor = System.Drawing.Color.White;
-            this.lblTo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblTo.Name = "lblTo";
             // 
             // lblFrom
             // 
             resources.ApplyResources(this.lblFrom, "lblFrom");
             this.lblFrom.BackColor = System.Drawing.Color.White;
-            this.lblFrom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lblFrom.Name = "lblFrom";
             // 
             // cbLoanOfficerTo
@@ -247,7 +239,6 @@ namespace Octopus.GUI.Contracts
             // 
             this.lblCaption.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             resources.ApplyResources(this.lblCaption, "lblCaption");
-            this.lblCaption.ForeColor = System.Drawing.Color.White;
             this.lblCaption.Name = "lblCaption";
             // 
             // tableLayoutPanel1
@@ -259,34 +250,21 @@ namespace Octopus.GUI.Contracts
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             // 
             // btnAssing
-            // 
-            this.btnAssing.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.btnAssing, "btnAssing");
-            this.btnAssing.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnAssing.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Save;
-            this.btnAssing.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_validity;
-            this.btnAssing.Menu = null;
             this.btnAssing.Name = "btnAssing";
-            this.btnAssing.UseVisualStyleBackColor = false;
             this.btnAssing.Click += new System.EventHandler(this.buttonAssing_Click);
             // 
             // buttonClose
             // 
             resources.ApplyResources(this.buttonClose, "buttonClose");
-            this.buttonClose.BackColor = System.Drawing.Color.Gainsboro;
-            this.buttonClose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonClose.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Close;
-            this.buttonClose.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_close;
-            this.buttonClose.Menu = null;
             this.buttonClose.Name = "buttonClose";
-            this.buttonClose.UseVisualStyleBackColor = false;
             this.buttonClose.Click += new System.EventHandler(this.button1_Click);
             // 
             // ReassignContractsForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "ReassignContractsForm";
@@ -306,10 +284,10 @@ namespace Octopus.GUI.Contracts
         #endregion
 
         private System.Windows.Forms.Label lblCaption;
-        private SweetButton buttonClose;
+        private System.Windows.Forms.Button buttonClose;
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.GroupBox gbLoanOffficers;
-        private SweetButton btnAssing;
+        private System.Windows.Forms.Button btnAssing;
         private System.Windows.Forms.Label lblTo;
         private System.Windows.Forms.Label lblFrom;
         private System.Windows.Forms.ComboBox cbLoanOfficerTo;

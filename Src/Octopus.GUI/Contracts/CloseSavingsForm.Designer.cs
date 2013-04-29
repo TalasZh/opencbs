@@ -1,4 +1,4 @@
-﻿namespace Octopus.GUI.Contracts
+namespace Octopus.GUI.Contracts
 {
     using Octopus.GUI.UserControl;
 
@@ -33,12 +33,12 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CloseSavingsForm));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.bCancel = new Octopus.GUI.UserControl.SweetButton();
-            this.bSave = new Octopus.GUI.UserControl.SweetButton();
+            this.bCancel = new System.Windows.Forms.Button();
+            this.bSave = new System.Windows.Forms.Button();
             this.gbActionWithAmount = new System.Windows.Forms.GroupBox();
             this.plTransfer = new System.Windows.Forms.Panel();
             this.tbTargetAccount = new System.Windows.Forms.TextBox();
-            this.btSearchContract = new Octopus.GUI.UserControl.SweetButton();
+            this.btSearchContract = new System.Windows.Forms.Button();
             this.lbTargetSavings = new System.Windows.Forms.Label();
             this.lbClientName = new System.Windows.Forms.Label();
             this.rbTransfer = new System.Windows.Forms.RadioButton();
@@ -81,24 +81,14 @@
             // bCancel
             // 
             resources.ApplyResources(this.bCancel, "bCancel");
-            this.bCancel.BackColor = System.Drawing.Color.Gainsboro;
             this.bCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.bCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.bCancel.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Close;
-            this.bCancel.Menu = null;
             this.bCancel.Name = "bCancel";
-            this.bCancel.UseVisualStyleBackColor = false;
             // 
             // bSave
             // 
             resources.ApplyResources(this.bSave, "bSave");
-            this.bSave.BackColor = System.Drawing.Color.Gainsboro;
             this.bSave.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.bSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.bSave.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Save;
-            this.bSave.Menu = null;
             this.bSave.Name = "bSave";
-            this.bSave.UseVisualStyleBackColor = false;
             this.bSave.Click += new System.EventHandler(this.bSave_Click);
             // 
             // gbActionWithAmount
@@ -107,7 +97,6 @@
             this.gbActionWithAmount.Controls.Add(this.rbTransfer);
             this.gbActionWithAmount.Controls.Add(this.rbWithdraw);
             resources.ApplyResources(this.gbActionWithAmount, "gbActionWithAmount");
-            this.gbActionWithAmount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.gbActionWithAmount.Name = "gbActionWithAmount";
             this.gbActionWithAmount.TabStop = false;
             // 
@@ -126,46 +115,33 @@
             this.tbTargetAccount.Name = "tbTargetAccount";
             // 
             // btSearchContract
-            // 
-            this.btSearchContract.BackColor = System.Drawing.Color.Gainsboro;
+            //
             resources.ApplyResources(this.btSearchContract, "btSearchContract");
-            this.btSearchContract.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btSearchContract.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Search;
-            this.btSearchContract.Menu = null;
             this.btSearchContract.Name = "btSearchContract";
-            this.btSearchContract.UseVisualStyleBackColor = false;
             this.btSearchContract.Click += new System.EventHandler(this.btSearchContract_Click);
             // 
             // lbTargetSavings
-            // 
-            this.lbTargetSavings.BackColor = System.Drawing.Color.Transparent;
+            //
             resources.ApplyResources(this.lbTargetSavings, "lbTargetSavings");
-            this.lbTargetSavings.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbTargetSavings.Name = "lbTargetSavings";
             // 
             // lbClientName
-            // 
-            this.lbClientName.BackColor = System.Drawing.Color.Transparent;
+            //
             resources.ApplyResources(this.lbClientName, "lbClientName");
-            this.lbClientName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbClientName.Name = "lbClientName";
             // 
             // rbTransfer
             // 
             resources.ApplyResources(this.rbTransfer, "rbTransfer");
-            this.rbTransfer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.rbTransfer.Name = "rbTransfer";
-            this.rbTransfer.UseVisualStyleBackColor = true;
             this.rbTransfer.CheckedChanged += new System.EventHandler(this.rbTransfer_CheckedChanged);
             // 
             // rbWithdraw
             // 
             resources.ApplyResources(this.rbWithdraw, "rbWithdraw");
             this.rbWithdraw.Checked = true;
-            this.rbWithdraw.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.rbWithdraw.Name = "rbWithdraw";
             this.rbWithdraw.TabStop = true;
-            this.rbWithdraw.UseVisualStyleBackColor = true;
             // 
             // tableLayoutAmount
             // 
@@ -180,25 +156,21 @@
             // labelCloseFees
             // 
             resources.ApplyResources(this.labelCloseFees, "labelCloseFees");
-            this.labelCloseFees.ForeColor = System.Drawing.Color.White;
             this.labelCloseFees.Name = "labelCloseFees";
             // 
             // labelCloseFeesValue
             // 
             resources.ApplyResources(this.labelCloseFeesValue, "labelCloseFeesValue");
-            this.labelCloseFeesValue.ForeColor = System.Drawing.Color.White;
             this.labelCloseFeesValue.Name = "labelCloseFeesValue";
             // 
             // lbTotalAmountValue
             // 
             resources.ApplyResources(this.lbTotalAmountValue, "lbTotalAmountValue");
-            this.lbTotalAmountValue.ForeColor = System.Drawing.Color.White;
             this.lbTotalAmountValue.Name = "lbTotalAmountValue";
             // 
             // labelAmountOnAccount
             // 
             resources.ApplyResources(this.labelAmountOnAccount, "labelAmountOnAccount");
-            this.labelAmountOnAccount.ForeColor = System.Drawing.Color.White;
             this.labelAmountOnAccount.Name = "labelAmountOnAccount";
             // 
             // gbCloseFees
@@ -207,15 +179,12 @@
             this.gbCloseFees.Controls.Add(this.udCloseFees);
             this.gbCloseFees.Controls.Add(this.checkBoxDesactivateFees);
             resources.ApplyResources(this.gbCloseFees, "gbCloseFees");
-            this.gbCloseFees.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.gbCloseFees.Name = "gbCloseFees";
             this.gbCloseFees.TabStop = false;
             // 
             // lbCloseFeesMinMax
-            // 
-            this.lbCloseFeesMinMax.BackColor = System.Drawing.Color.Transparent;
+            //
             resources.ApplyResources(this.lbCloseFeesMinMax, "lbCloseFeesMinMax");
-            this.lbCloseFeesMinMax.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.lbCloseFeesMinMax.Name = "lbCloseFeesMinMax";
             // 
             // udCloseFees
@@ -227,9 +196,7 @@
             // checkBoxDesactivateFees
             // 
             resources.ApplyResources(this.checkBoxDesactivateFees, "checkBoxDesactivateFees");
-            this.checkBoxDesactivateFees.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.checkBoxDesactivateFees.Name = "checkBoxDesactivateFees";
-            this.checkBoxDesactivateFees.UseVisualStyleBackColor = true;
             this.checkBoxDesactivateFees.CheckedChanged += new System.EventHandler(this.checkBoxDesactivateFees_CheckedChanged);
             // 
             // CloseSavingsForm
@@ -262,8 +229,8 @@
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private SweetButton bCancel;
-        private SweetButton bSave;
+        private System.Windows.Forms.Button bCancel;
+        private System.Windows.Forms.Button bSave;
         private System.Windows.Forms.GroupBox gbActionWithAmount;
         private System.Windows.Forms.TableLayoutPanel tableLayoutAmount;
         private System.Windows.Forms.Label labelAmountOnAccount;
@@ -277,7 +244,7 @@
         private System.Windows.Forms.Label labelCloseFees;
         private System.Windows.Forms.Label labelCloseFeesValue;
         private System.Windows.Forms.CheckBox checkBoxDesactivateFees;
-        private SweetButton btSearchContract;
+        private System.Windows.Forms.Button btSearchContract;
         private System.Windows.Forms.GroupBox gbCloseFees;
         private System.Windows.Forms.NumericUpDown udCloseFees;
         private System.Windows.Forms.Label lbCloseFeesMinMax;

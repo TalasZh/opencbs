@@ -1,4 +1,4 @@
-﻿namespace Octopus.GUI.Export
+namespace Octopus.GUI.Export
 {
     partial class FieldListUserControl
     {
@@ -215,8 +215,6 @@
             this.AccessibleName = null;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Transparent;
-            this.BackgroundImage = null;
             this.Controls.Add(this.olvSelectedFields);
             this.Controls.Add(this.textBoxHeader);
             this.Controls.Add(this.textNumericUserControl1);
