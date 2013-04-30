@@ -58,11 +58,11 @@ namespace Octopus.GUI.Clients
             this.gbAddress = new System.Windows.Forms.GroupBox();
             this.tpMembers = new System.Windows.Forms.TabPage();
             this.lvMembers = new System.Windows.Forms.ListView();
-            this.colName = new System.Windows.Forms.ColumnHeader();
-            this.colPassport = new System.Windows.Forms.ColumnHeader();
-            this.colStatus = new System.Windows.Forms.ColumnHeader();
-            this.colJoinDate = new System.Windows.Forms.ColumnHeader();
-            this.colLeftDate = new System.Windows.Forms.ColumnHeader();
+            this.colName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colPassport = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colStatus = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colJoinDate = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colLeftDate = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panelMembersControls = new System.Windows.Forms.FlowLayoutPanel();
             this.btnSearch = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
@@ -71,21 +71,21 @@ namespace Octopus.GUI.Clients
             this.cbxShowRemovedMembers = new System.Windows.Forms.CheckBox();
             this.tabPageLoan = new System.Windows.Forms.TabPage();
             this.listViewLoans = new System.Windows.Forms.ListView();
-            this.clientName = new System.Windows.Forms.ColumnHeader();
-            this.loanProduct = new System.Windows.Forms.ColumnHeader();
-            this.contractCode = new System.Windows.Forms.ColumnHeader();
-            this.status = new System.Windows.Forms.ColumnHeader();
-            this.amount = new System.Windows.Forms.ColumnHeader();
-            this.olb = new System.Windows.Forms.ColumnHeader();
-            this.currency = new System.Windows.Forms.ColumnHeader();
-            this.interestRate = new System.Windows.Forms.ColumnHeader();
-            this.installmentType = new System.Windows.Forms.ColumnHeader();
-            this.numbOfInstallments = new System.Windows.Forms.ColumnHeader();
-            this.disbursedDate = new System.Windows.Forms.ColumnHeader();
-            this.lastEventDate = new System.Windows.Forms.ColumnHeader();
-            this.nextEventDate = new System.Windows.Forms.ColumnHeader();
-            this.nextAmountToRepay = new System.Windows.Forms.ColumnHeader();
-            this.closeDate = new System.Windows.Forms.ColumnHeader();
+            this.clientName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.loanProduct = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.contractCode = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.status = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.amount = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.olb = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.currency = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.interestRate = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.installmentType = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.numbOfInstallments = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.disbursedDate = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.lastEventDate = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.nextEventDate = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.nextAmountToRepay = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.closeDate = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.btnAddLoan = new System.Windows.Forms.Button();
             this.btnValidateLoans = new System.Windows.Forms.Button();
@@ -94,28 +94,28 @@ namespace Octopus.GUI.Clients
             this.cbxDisplayAllLoans = new System.Windows.Forms.CheckBox();
             this.tabPageSavings = new System.Windows.Forms.TabPage();
             this.listViewSavings = new System.Windows.Forms.ListView();
-            this.columnHeaderClientName = new System.Windows.Forms.ColumnHeader();
-            this.columnHeaderCode = new System.Windows.Forms.ColumnHeader();
-            this.columnHeaderType = new System.Windows.Forms.ColumnHeader();
-            this.columnHeaderProduct = new System.Windows.Forms.ColumnHeader();
-            this.columnHeaderBalance = new System.Windows.Forms.ColumnHeader();
-            this.columnHeaderCurrency = new System.Windows.Forms.ColumnHeader();
-            this.columnHeaderCreationDate = new System.Windows.Forms.ColumnHeader();
-            this.columnHeaderLastEventDate = new System.Windows.Forms.ColumnHeader();
-            this.columnHeaderStatus = new System.Windows.Forms.ColumnHeader();
-            this.columnHeaderCloseDate = new System.Windows.Forms.ColumnHeader();
+            this.columnHeaderClientName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderCode = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderType = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderProduct = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderBalance = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderCurrency = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderCreationDate = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderLastEventDate = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderStatus = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderCloseDate = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panelSavingsControls = new System.Windows.Forms.FlowLayoutPanel();
             this.btnAddSavings = new System.Windows.Forms.Button();
             this.buttonViewSaving = new System.Windows.Forms.Button();
             this.buttonFastDeposit = new System.Windows.Forms.Button();
             this.tabPageMeetings = new System.Windows.Forms.TabPage();
             this.olvAttendees = new BrightIdeasSoftware.ObjectListView();
-            this.olvAttendeeIdColumn = new BrightIdeasSoftware.OLVColumn();
-            this.olvAttendeeTiersIdColumn = new BrightIdeasSoftware.OLVColumn();
-            this.olvAttendeeNameColumn = new BrightIdeasSoftware.OLVColumn();
-            this.olvAttendeeAttendedColumn = new BrightIdeasSoftware.OLVColumn();
-            this.olvAttendeeCommentColumn = new BrightIdeasSoftware.OLVColumn();
-            this.olvAttendeeLoanIdColumn = new BrightIdeasSoftware.OLVColumn();
+            this.olvAttendeeIdColumn = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
+            this.olvAttendeeTiersIdColumn = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
+            this.olvAttendeeNameColumn = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
+            this.olvAttendeeAttendedColumn = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
+            this.olvAttendeeCommentColumn = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
+            this.olvAttendeeLoanIdColumn = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
             this.panelAttendeesControls = new System.Windows.Forms.FlowLayoutPanel();
             this.labelMeetingDate = new System.Windows.Forms.Label();
             this.comboBoxMeetingDates = new System.Windows.Forms.ComboBox();
@@ -285,8 +285,6 @@ namespace Octopus.GUI.Clients
             // 
             resources.ApplyResources(this.btnPrint, "btnPrint");
             this.btnPrint.AttachmentPoint = Octopus.Reports.AttachmentPoint.VillageDetails;
-            this.btnPrint.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnPrint.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.btnPrint.Name = "btnPrint";
             this.btnPrint.ReportInitializer = null;
             this.btnPrint.UseVisualStyleBackColor = true;
@@ -318,8 +316,8 @@ namespace Octopus.GUI.Clients
             // 
             // tpAddress
             // 
-            resources.ApplyResources(this.tpAddress, "tpAddress");
             this.tpAddress.Controls.Add(this.gbAddress);
+            resources.ApplyResources(this.tpAddress, "tpAddress");
             this.tpAddress.Name = "tpAddress";
             // 
             // gbAddress
@@ -351,8 +349,8 @@ namespace Octopus.GUI.Clients
             this.lvMembers.Name = "lvMembers";
             this.lvMembers.UseCompatibleStateImageBehavior = false;
             this.lvMembers.View = System.Windows.Forms.View.Details;
-            this.lvMembers.DoubleClick += new System.EventHandler(this.lvMembers_DoubleClick);
             this.lvMembers.ItemSelectionChanged += new System.Windows.Forms.ListViewItemSelectionChangedEventHandler(this.lvMembers_ItemSelectionChanged);
+            this.lvMembers.DoubleClick += new System.EventHandler(this.lvMembers_DoubleClick);
             // 
             // colName
             // 
@@ -385,25 +383,25 @@ namespace Octopus.GUI.Clients
             this.panelMembersControls.Name = "panelMembersControls";
             // 
             // btnSearch
-            //
+            // 
             resources.ApplyResources(this.btnSearch, "btnSearch");
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // btnAdd
-            //
+            // 
             resources.ApplyResources(this.btnAdd, "btnAdd");
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnRemove
-            //
+            // 
             resources.ApplyResources(this.btnRemove, "btnRemove");
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
             // btnSetAsLeader
-            //
+            // 
             resources.ApplyResources(this.btnSetAsLeader, "btnSetAsLeader");
             this.btnSetAsLeader.Name = "btnSetAsLeader";
             this.btnSetAsLeader.Click += new System.EventHandler(this.btnSetAsLeader_Click);
@@ -518,26 +516,26 @@ namespace Octopus.GUI.Clients
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
             // 
             // btnAddLoan
-            //
+            // 
             resources.ApplyResources(this.btnAddLoan, "btnAddLoan");
             this.btnAddLoan.Name = "btnAddLoan";
             this.btnAddLoan.Click += new System.EventHandler(this.btnAddLoan_Click);
             // 
             // btnValidateLoans
-            //
+            // 
             resources.ApplyResources(this.btnValidateLoans, "btnValidateLoans");
             this.btnValidateLoans.Name = "btnValidateLoans";
             this.btnValidateLoans.Click += new System.EventHandler(this.btnValidateLoans_Click);
             // 
             // btnDisburse
-            //
+            // 
             resources.ApplyResources(this.btnDisburse, "btnDisburse");
             this.btnDisburse.Name = "btnDisburse";
             this.btnDisburse.Tag = true;
             this.btnDisburse.Click += new System.EventHandler(this.buttonLoanDisbursment_Click);
             // 
             // btnRepay
-            //
+            // 
             resources.ApplyResources(this.btnRepay, "btnRepay");
             this.btnRepay.Name = "btnRepay";
             this.btnRepay.Tag = true;
@@ -627,19 +625,19 @@ namespace Octopus.GUI.Clients
             this.panelSavingsControls.Name = "panelSavingsControls";
             // 
             // btnAddSavings
-            //
+            // 
             resources.ApplyResources(this.btnAddSavings, "btnAddSavings");
             this.btnAddSavings.Name = "btnAddSavings";
             this.btnAddSavings.Click += new System.EventHandler(this.btnAddSavings_Click);
             // 
             // buttonViewSaving
-            //
+            // 
             resources.ApplyResources(this.buttonViewSaving, "buttonViewSaving");
             this.buttonViewSaving.Name = "buttonViewSaving";
             this.buttonViewSaving.Click += new System.EventHandler(this.buttonViewSaving_Click);
             // 
             // buttonFastDeposit
-            //
+            // 
             resources.ApplyResources(this.buttonFastDeposit, "buttonFastDeposit");
             this.buttonFastDeposit.Name = "buttonFastDeposit";
             this.buttonFastDeposit.Click += new System.EventHandler(this.buttonFastDeposit_Click);
@@ -738,7 +736,7 @@ namespace Octopus.GUI.Clients
             this.comboBoxMeetingDates.SelectedValueChanged += new System.EventHandler(this.comboBoxMeetingDates_SelectedValueChanged);
             // 
             // buttonUpdateAttendence
-            //
+            // 
             resources.ApplyResources(this.buttonUpdateAttendence, "buttonUpdateAttendence");
             this.buttonUpdateAttendence.Name = "buttonUpdateAttendence";
             this.buttonUpdateAttendence.Click += new System.EventHandler(this.buttonUpdateAttendence_Click);
@@ -756,8 +754,8 @@ namespace Octopus.GUI.Clients
             this.Controls.Add(this.panelNSGControls);
             this.Controls.Add(this.gbDetails);
             this.Name = "NonSolidaryGroupForm";
-            this.Load += new System.EventHandler(this.NonSolidaryGroupForm_Load);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.NonSolidaryGroupForm_FormClosed);
+            this.Load += new System.EventHandler(this.NonSolidaryGroupForm_Load);
             this.Controls.SetChildIndex(this.gbDetails, 0);
             this.Controls.SetChildIndex(this.panelNSGControls, 0);
             this.Controls.SetChildIndex(this.tabVillage, 0);

@@ -118,78 +118,47 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="panelNSGDetails.Size" type="System.Drawing.Size, System.Drawing">
-    <value>581, 163</value>
-  </data>
-  <data name="linkLabelChangePhoto2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 17</value>
-  </data>
-  <data name="linkLabelChangePhoto2.Text" xml:space="preserve">
-    <value>Changer la photo...</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="linkLabelChangePhoto.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="linkLabelChangePhoto.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 17</value>
-  </data>
-  <data name="linkLabelChangePhoto.Text" xml:space="preserve">
-    <value>Changer la photo...</value>
-  </data>
-  <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="gbDetails.Text" xml:space="preserve">
-    <value>Détails</value>
-  </data>
   <data name="cbBranch.Location" type="System.Drawing.Point, System.Drawing">
-    <value>149, 133</value>
-  </data>
-  <data name="lblBranch.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 130</value>
+    <value>112, 119</value>
   </data>
   <data name="lblBranch.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 33</value>
+    <value>56, 30</value>
   </data>
   <data name="lblBranch.Text" xml:space="preserve">
     <value>Branche</value>
   </data>
-  <data name="lblWeekDay.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 97</value>
-  </data>
   <data name="lblWeekDay.Size" type="System.Drawing.Size, System.Drawing">
-    <value>134, 33</value>
+    <value>96, 30</value>
   </data>
   <data name="lblWeekDay.Text" xml:space="preserve">
     <value>Jour de réunion</value>
   </data>
   <data name="lblName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 32</value>
+    <value>35, 28</value>
   </data>
   <data name="lblName.Text" xml:space="preserve">
     <value>Nom</value>
   </data>
   <data name="tbName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>149, 3</value>
+    <value>112, 3</value>
   </data>
   <data name="lblDate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>138, 32</value>
+    <value>103, 28</value>
   </data>
   <data name="lblDate.Text" xml:space="preserve">
     <value>Date de création</value>
   </data>
   <data name="dtDate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>149, 35</value>
+    <value>112, 31</value>
   </data>
   <data name="lblLoanOfficer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>140, 33</value>
+    <value>103, 30</value>
   </data>
   <data name="lblLoanOfficer.Text" xml:space="preserve">
     <value>Agent de groupe</value>
   </data>
   <data name="cbLoanOfficers.Location" type="System.Drawing.Point, System.Drawing">
-    <value>149, 67</value>
+    <value>112, 59</value>
   </data>
   <data name="cmbWeekDay.Items" xml:space="preserve">
     <value>Dimanche</value>
@@ -213,35 +182,44 @@
     <value>Samedi</value>
   </data>
   <data name="cmbWeekDay.Location" type="System.Drawing.Point, System.Drawing">
-    <value>149, 100</value>
+    <value>112, 89</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="cbMeetingDay.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="cbMeetingDay.Location" type="System.Drawing.Point, System.Drawing">
-    <value>313, 100</value>
+    <value>276, 89</value>
   </data>
   <data name="cbMeetingDay.Size" type="System.Drawing.Size, System.Drawing">
-    <value>265, 27</value>
+    <value>199, 24</value>
   </data>
   <data name="cbMeetingDay.Text" xml:space="preserve">
     <value>Définir comme jour de réunion</value>
   </data>
-  <data name="btnPrint.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        /9j/4AAQSkZJRgABAgEAAAAAAAD/7gAOQWRvYmUAZAAAAAAB/+wAEUR1Y2t5AAEABAAAADwAAP/bAEMA
-        BgQEBAUEBgUFBgkGBQYJCwgGBggLDAoKCwoKDBAMDAwMDAwQDA4PEA8ODBMTFBQTExwbGxscHx8fHx8f
-        Hx8fH//bAEMBBwcHDQwNGBAQGBoVERUaHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8f
-        Hx8fHx8fHx8fHx8fH//CABEIAMQAEgMBEQACEQEDEQH/xAAaAAEAAgMBAAAAAAAAAAAAAAAAAQQCAwUH
-        /8QAGxABAQEBAAMBAAAAAAAAAAAAABESEyBgIVD/xAAYAQEBAQEBAAAAAAAAAAAAAAAAAQIDBP/EABQR
-        AQAAAAAAAAAAAAAAAAAAAGD/xAAUEgEAAAAAAAAAAAAAAAAAAABg/8QAHxMBAQACAQQDAAAAAAAAAAAA
-        ABEgcVFQASFhMEBg/9oADAMBAAIQAxAAAAH1QAAAAAAAAAAAAAgAhAIAMQDAAwQDXIBqQCugFdAKrIFJ
-        kDnsAc28gOTrzgUwD//aAAgBAQABBQL82qqqqqqqrTTTbbbbbbo6Ojo6Oj6+vr//2gAIAQIAAQUC9L//
-        2gAIAQMAAQUC9Cqr5//aAAgBAgIGPwIX/9oACAEDAgY/Ahf/2gAIAQEBBj8CF//aAAgBAQMBPyHolVVV
-        VVfsgf8AH9KVgP/aAAgBAgMBPyH8X//aAAgBAwMBPyHrlVVVcBVXD//aAAwDAQACEQMRAAAQkkkkkkkk
-        kkgAAEktpJkkktv/AG3/ANJEkAbYk/8AJP8A/9oACAEBAwE/EPt3svZe2FVWzZtn/s2bYeEIbt26OUco
-        5bt26OUco5bNmz3ve9+H/9oACAECAwE/EPwURERMP//aAAgBAwMBPxDptVcKqqqqq/EALWt4eHh//9k=
-</value>
+  <data name="panelNSGDetails.Size" type="System.Drawing.Size, System.Drawing">
+    <value>478, 146</value>
+  </data>
+  <data name="linkLabelChangePhoto2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 13</value>
+  </data>
+  <data name="linkLabelChangePhoto2.Text" xml:space="preserve">
+    <value>Changer la photo...</value>
+  </data>
+  <data name="linkLabelChangePhoto.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="linkLabelChangePhoto.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 13</value>
+  </data>
+  <data name="linkLabelChangePhoto.Text" xml:space="preserve">
+    <value>Changer la photo...</value>
+  </data>
+  <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="gbDetails.Text" xml:space="preserve">
+    <value>Détails</value>
   </data>
   <data name="btnPrint.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -264,17 +242,11 @@
   <data name="btnCancel2.Text" xml:space="preserve">
     <value>Quitter</value>
   </data>
-  <data name="tpAddress.Text" xml:space="preserve">
-    <value>Adresse</value>
-  </data>
   <data name="gbAddress.Text" xml:space="preserve">
     <value>Adresse</value>
   </data>
-  <data name="tpMembers.Text" xml:space="preserve">
-    <value>Membres</value>
-  </data>
-  <data name="lvMembers.Size" type="System.Drawing.Size, System.Drawing">
-    <value>787, 292</value>
+  <data name="tpAddress.Text" xml:space="preserve">
+    <value>Adresse</value>
   </data>
   <data name="colName.Text" xml:space="preserve">
     <value>Nom</value>
@@ -298,12 +270,6 @@
   <data name="colLeftDate.Width" type="System.Int32, mscorlib">
     <value>120</value>
   </data>
-  <data name="panelMembersControls.Location" type="System.Drawing.Point, System.Drawing">
-    <value>790, 3</value>
-  </data>
-  <data name="panelMembersControls.Size" type="System.Drawing.Size, System.Drawing">
-    <value>163, 292</value>
-  </data>
   <data name="btnSearch.Text" xml:space="preserve">
     <value>Rechercher</value>
   </data>
@@ -317,17 +283,14 @@
     <value>Leader du groupe</value>
   </data>
   <data name="cbxShowRemovedMembers.Size" type="System.Drawing.Size, System.Drawing">
-    <value>157, 42</value>
+    <value>130, 36</value>
   </data>
   <data name="cbxShowRemovedMembers.Text" xml:space="preserve">
     <value>Afficher les 
 anciens membres</value>
   </data>
-  <data name="tabPageLoan.Text" xml:space="preserve">
-    <value>Prêts</value>
-  </data>
-  <data name="listViewLoans.Size" type="System.Drawing.Size, System.Drawing">
-    <value>804, 292</value>
+  <data name="tpMembers.Text" xml:space="preserve">
+    <value>Membres</value>
   </data>
   <data name="clientName.Text" xml:space="preserve">
     <value>Nom du client</value>
@@ -371,12 +334,6 @@ anciens membres</value>
   <data name="closeDate.Text" xml:space="preserve">
     <value>Date fin</value>
   </data>
-  <data name="flowLayoutPanel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>807, 3</value>
-  </data>
-  <data name="flowLayoutPanel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>146, 292</value>
-  </data>
   <data name="btnAddLoan.Text" xml:space="preserve">
     <value>Ajouter des prêts</value>
   </data>
@@ -390,14 +347,14 @@ anciens membres</value>
     <value>Rembourser des prêts</value>
   </data>
   <data name="cbxDisplayAllLoans.Size" type="System.Drawing.Size, System.Drawing">
-    <value>126, 42</value>
+    <value>103, 36</value>
   </data>
   <data name="cbxDisplayAllLoans.Text" xml:space="preserve">
     <value>Afficher tous 
 les prêts</value>
   </data>
-  <data name="tabPageSavings.Text" xml:space="preserve">
-    <value>Epargne</value>
+  <data name="tabPageLoan.Text" xml:space="preserve">
+    <value>Prêts</value>
   </data>
   <data name="columnHeaderClientName.Text" xml:space="preserve">
     <value>Nom du client</value>
@@ -435,11 +392,8 @@ les prêts</value>
   <data name="buttonFastDeposit.Text" xml:space="preserve">
     <value>Dépôt rapide</value>
   </data>
-  <data name="tabPageMeetings.Text" xml:space="preserve">
-    <value>Réunions</value>
-  </data>
-  <data name="olvAttendees.Size" type="System.Drawing.Size, System.Drawing">
-    <value>796, 292</value>
+  <data name="tabPageSavings.Text" xml:space="preserve">
+    <value>Epargne</value>
   </data>
   <data name="olvAttendeeNameColumn.Text" xml:space="preserve">
     <value>Nom du participant</value>
@@ -450,26 +404,23 @@ les prêts</value>
   <data name="olvAttendeeCommentColumn.Text" xml:space="preserve">
     <value>Commentaires</value>
   </data>
-  <data name="panelAttendeesControls.Location" type="System.Drawing.Point, System.Drawing">
-    <value>799, 3</value>
-  </data>
-  <data name="panelAttendeesControls.Size" type="System.Drawing.Size, System.Drawing">
-    <value>154, 292</value>
+  <data name="resource.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="labelMeetingDate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 19</value>
+    <value>117, 16</value>
   </data>
   <data name="labelMeetingDate.Text" xml:space="preserve">
     <value>Date de la réunion:</value>
   </data>
-  <data name="comboBoxMeetingDates.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 26</value>
-  </data>
   <data name="buttonUpdateAttendence.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 53</value>
+    <value>3, 46</value>
   </data>
   <data name="buttonUpdateAttendence.Text" xml:space="preserve">
     <value>Mettre à jour</value>
+  </data>
+  <data name="tabPageMeetings.Text" xml:space="preserve">
+    <value>Réunions</value>
   </data>
   <data name="tabPageCustomizableFields.Text" xml:space="preserve">
     <value>Champs personnalisables</value>

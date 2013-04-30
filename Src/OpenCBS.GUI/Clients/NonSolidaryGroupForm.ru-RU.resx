@@ -119,7 +119,7 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="panelNSGDetails.Size" type="System.Drawing.Size, System.Drawing">
-    <value>484, 146</value>
+    <value>454, 146</value>
   </data>
   <data name="linkLabelChangePhoto2.Size" type="System.Drawing.Size, System.Drawing">
     <value>86, 13</value>
@@ -137,40 +137,46 @@
     <value>Детали</value>
   </data>
   <data name="cbBranch.Location" type="System.Drawing.Point, System.Drawing">
-    <value>139, 119</value>
+    <value>125, 119</value>
+  </data>
+  <data name="lblBranch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 30</value>
+  </data>
+  <data name="lblBranch.Text" xml:space="preserve">
+    <value>Филиал</value>
   </data>
   <data name="lblWeekDay.Size" type="System.Drawing.Size, System.Drawing">
-    <value>98, 30</value>
+    <value>89, 30</value>
   </data>
   <data name="lblWeekDay.Text" xml:space="preserve">
     <value>День встречи</value>
   </data>
   <data name="lblName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>34, 28</value>
+    <value>33, 28</value>
   </data>
   <data name="lblName.Text" xml:space="preserve">
     <value>Имя</value>
   </data>
   <data name="tbName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>139, 3</value>
+    <value>125, 3</value>
   </data>
   <data name="lblDate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>130, 28</value>
+    <value>116, 28</value>
   </data>
   <data name="lblDate.Text" xml:space="preserve">
     <value>Дата образования</value>
   </data>
   <data name="dtDate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>139, 31</value>
+    <value>125, 31</value>
   </data>
   <data name="lblLoanOfficer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>124, 30</value>
+    <value>114, 30</value>
   </data>
   <data name="lblLoanOfficer.Text" xml:space="preserve">
     <value>Кред. специалист</value>
   </data>
   <data name="cbLoanOfficers.Location" type="System.Drawing.Point, System.Drawing">
-    <value>139, 59</value>
+    <value>125, 59</value>
   </data>
   <data name="cmbWeekDay.Items" xml:space="preserve">
     <value>Воскресенье</value>
@@ -194,32 +200,16 @@
     <value>Суббота</value>
   </data>
   <data name="cmbWeekDay.Location" type="System.Drawing.Point, System.Drawing">
-    <value>139, 89</value>
+    <value>125, 89</value>
   </data>
   <data name="cbMeetingDay.Location" type="System.Drawing.Point, System.Drawing">
-    <value>303, 89</value>
+    <value>289, 89</value>
   </data>
   <data name="cbMeetingDay.Size" type="System.Drawing.Size, System.Drawing">
-    <value>178, 24</value>
+    <value>162, 24</value>
   </data>
   <data name="cbMeetingDay.Text" xml:space="preserve">
     <value>Выбрать день встречи</value>
-  </data>
-  <data name="btnPrint.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        /9j/4AAQSkZJRgABAgEAAAAAAAD/7gAOQWRvYmUAZAAAAAAB/+wAEUR1Y2t5AAEABAAAADwAAP/bAEMA
-        BgQEBAUEBgUFBgkGBQYJCwgGBggLDAoKCwoKDBAMDAwMDAwQDA4PEA8ODBMTFBQTExwbGxscHx8fHx8f
-        Hx8fH//bAEMBBwcHDQwNGBAQGBoVERUaHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8f
-        Hx8fHx8fHx8fHx8fH//CABEIAMQAEgMBEQACEQEDEQH/xAAaAAEAAgMBAAAAAAAAAAAAAAAAAQQCAwUH
-        /8QAGxABAQEBAAMBAAAAAAAAAAAAABESEyBgIVD/xAAYAQEBAQEBAAAAAAAAAAAAAAAAAQIDBP/EABQR
-        AQAAAAAAAAAAAAAAAAAAAGD/xAAUEgEAAAAAAAAAAAAAAAAAAABg/8QAHxMBAQACAQQDAAAAAAAAAAAA
-        ABEgcVFQASFhMEBg/9oADAMBAAIQAxAAAAH1QAAAAAAAAAAAAAgAhAIAMQDAAwQDXIBqQCugFdAKrIFJ
-        kDnsAc28gOTrzgUwD//aAAgBAQABBQL82qqqqqqqrTTTbbbbbbo6Ojo6Oj6+vr//2gAIAQIAAQUC9L//
-        2gAIAQMAAQUC9Cqr5//aAAgBAgIGPwIX/9oACAEDAgY/Ahf/2gAIAQEBBj8CF//aAAgBAQMBPyHolVVV
-        VVfsgf8AH9KVgP/aAAgBAgMBPyH8X//aAAgBAwMBPyHrlVVVcBVXD//aAAwDAQACEQMRAAAQkkkkkkkk
-        kkgAAEktpJkkktv/AG3/ANJEkAbYk/8AJP8A/9oACAEBAwE/EPt3svZe2FVWzZtn/s2bYeEIbt26OUco
-        5bt26OUco5bNmz3ve9+H/9oACAECAwE/EPwURERMP//aAAgBAwMBPxDptVcKqqqqq/EALWt4eHh//9k=
-</value>
   </data>
   <data name="btnPrint.Location" type="System.Drawing.Point, System.Drawing">
     <value>526, 6</value>
@@ -409,9 +399,6 @@
   <data name="labelMeetingDate.Text" xml:space="preserve">
     <value>Дата собрания:</value>
   </data>
-  <data name="buttonUpdateAttendence.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 49</value>
-  </data>
   <data name="buttonUpdateAttendence.Text" xml:space="preserve">
     <value>Обновить</value>
   </data>
@@ -420,8 +407,5 @@
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Группа без солидарной ответственности</value>
-  </data>
-  <data name="lblBranch.Text" xml:space="preserve">
-    <value>Филиал</value>
   </data>
 </root>

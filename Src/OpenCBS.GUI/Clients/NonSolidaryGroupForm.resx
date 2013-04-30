@@ -136,7 +136,7 @@
     <value>Arial, 9.75pt</value>
   </data>
   <data name="cbBranch.Location" type="System.Drawing.Point, System.Drawing">
-    <value>154, 119</value>
+    <value>143, 119</value>
   </data>
   <data name="cbBranch.Size" type="System.Drawing.Size, System.Drawing">
     <value>158, 24</value>
@@ -169,7 +169,7 @@
     <value>3, 116</value>
   </data>
   <data name="lblBranch.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 30</value>
+    <value>49, 30</value>
   </data>
   <data name="lblBranch.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -205,7 +205,7 @@
     <value>3, 86</value>
   </data>
   <data name="lblWeekDay.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 30</value>
+    <value>79, 30</value>
   </data>
   <data name="lblWeekDay.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -241,7 +241,7 @@
     <value>3, 0</value>
   </data>
   <data name="lblName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 28</value>
+    <value>42, 28</value>
   </data>
   <data name="lblName.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -268,7 +268,7 @@
     <value>Arial, 9.75pt</value>
   </data>
   <data name="tbName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>154, 3</value>
+    <value>143, 3</value>
   </data>
   <data name="tbName.MaxLength" type="System.Int32, mscorlib">
     <value>50</value>
@@ -304,7 +304,7 @@
     <value>3, 28</value>
   </data>
   <data name="lblDate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>145, 28</value>
+    <value>134, 28</value>
   </data>
   <data name="lblDate.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -331,7 +331,7 @@
     <value>Arial, 9.75pt</value>
   </data>
   <data name="dtDate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>154, 31</value>
+    <value>143, 31</value>
   </data>
   <data name="dtDate.Size" type="System.Drawing.Size, System.Drawing">
     <value>158, 22</value>
@@ -364,7 +364,7 @@
     <value>3, 56</value>
   </data>
   <data name="lblLoanOfficer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>91, 30</value>
+    <value>81, 30</value>
   </data>
   <data name="lblLoanOfficer.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -391,7 +391,7 @@
     <value>Arial, 9.75pt</value>
   </data>
   <data name="cbLoanOfficers.Location" type="System.Drawing.Point, System.Drawing">
-    <value>154, 59</value>
+    <value>143, 59</value>
   </data>
   <data name="cbLoanOfficers.Size" type="System.Drawing.Size, System.Drawing">
     <value>158, 24</value>
@@ -442,7 +442,7 @@
     <value>Saturday</value>
   </data>
   <data name="cmbWeekDay.Location" type="System.Drawing.Point, System.Drawing">
-    <value>154, 89</value>
+    <value>143, 89</value>
   </data>
   <data name="cmbWeekDay.Size" type="System.Drawing.Size, System.Drawing">
     <value>158, 24</value>
@@ -469,10 +469,10 @@
     <value>Left</value>
   </data>
   <data name="cbMeetingDay.Location" type="System.Drawing.Point, System.Drawing">
-    <value>318, 89</value>
+    <value>307, 89</value>
   </data>
   <data name="cbMeetingDay.Size" type="System.Drawing.Size, System.Drawing">
-    <value>131, 24</value>
+    <value>122, 24</value>
   </data>
   <data name="cbMeetingDay.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -502,7 +502,7 @@
     <value>5</value>
   </data>
   <data name="panelNSGDetails.Size" type="System.Drawing.Size, System.Drawing">
-    <value>452, 146</value>
+    <value>432, 146</value>
   </data>
   <data name="panelNSGDetails.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -675,27 +675,8 @@
   <data name="btnPrint.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
-  <data name="btnPrint.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAABGdBTUEAANbY1E9YMgAAABl0RVh0U29m
-        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAJDSURBVGhD7dRLSFRhHIbxN4iIoEXblm3btWrroggK
-        KggkugddBSPBMBgKQyxKEBGLTJIyMcwSEU00S8ZsytSGvF8mGXV0moujjjrORe3sZzH4LATj+/htn83L
-        /xytoydUrZssaTcziZkk9cdkrsRcibmS1AuYK0m9kfmXmCsxV5J6AXMlqTfSGnomS5rNTLJFJ1ldWwUE
-        GisxWdLaSqwmAMUTCeA/z+LxxIZZk2y4sZJNzmLxGKBoPAZscrYSiwICjZXQLBJbAQQaK9FyNAJoaSUC
-        bI0sHFkCBBor0cLyIrDJ2fxSGFBoMQzQbDY8DygYngNoFlgIAfLPhwCa+eaCgP6GAoBmQgGAZtOzfkCe
-        oA/QVMALaMLvBaxsBpDb5wE07vMAcnknAY3NTAA0G5l2Axr2jAManPoDaGDSBajPPQqo1z0CyDk+BKjH
-        NQCo29UPqGusD1DnaC8gx7AT0LchJ6D2wR5A9v4uQF96OwG1/v4OqMXpANT0qwNQY087oIZuO6D6n22A
-        an+0Anrv+AToXUczoLdfPwKqtDcAqmirB1T+uQ5QWcsHQKXNNYCeNVUDKm6sAlRY/wZQQd1rQA9rywHl
-        1ZQByq0uBWSregrobmUxoDsVRYCyXhUCynz5BNDNF48AXXmeD+hiyQNAZ4vvA0ovsgE6UZAD6NjjbECH
-        828DSsu7BehgbgagA/euA9pvuwpoX84lQHuzzwPak3UG0O7MdEC7Mk4B2nnjJKAd144D2n75KKBtF44A
-        0rlDhE6nAf8Axq4XWrmp0xAAAAAASUVORK5CYII=
-</value>
-  </data>
   <data name="btnPrint.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
-  </data>
-  <data name="btnPrint.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
   </data>
   <data name="btnPrint.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleRight</value>
@@ -716,7 +697,7 @@
     <value>btnPrint</value>
   </data>
   <data name="&gt;&gt;btnPrint.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.PrintButton, Octopus.GUI, Version=1.1.1.20797, Culture=neutral, PublicKeyToken=null</value>
+    <value>Octopus.GUI.UserControl.PrintButton, Octopus.GUI, Version=1.1.1.29177, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btnPrint.Parent" xml:space="preserve">
     <value>panelNSGControls</value>
@@ -749,7 +730,7 @@
     <value>btnSave</value>
   </data>
   <data name="&gt;&gt;btnSave.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.20797, Culture=neutral, PublicKeyToken=null</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnSave.Parent" xml:space="preserve">
     <value>panelNSGControls</value>
@@ -782,7 +763,7 @@
     <value>btnCancel2</value>
   </data>
   <data name="&gt;&gt;btnCancel2.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.20797, Culture=neutral, PublicKeyToken=null</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnCancel2.Parent" xml:space="preserve">
     <value>panelNSGControls</value>
@@ -953,7 +934,7 @@
     <value>btnSearch</value>
   </data>
   <data name="&gt;&gt;btnSearch.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.20797, Culture=neutral, PublicKeyToken=null</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnSearch.Parent" xml:space="preserve">
     <value>panelMembersControls</value>
@@ -983,7 +964,7 @@
     <value>btnAdd</value>
   </data>
   <data name="&gt;&gt;btnAdd.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.20797, Culture=neutral, PublicKeyToken=null</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnAdd.Parent" xml:space="preserve">
     <value>panelMembersControls</value>
@@ -1016,7 +997,7 @@
     <value>btnRemove</value>
   </data>
   <data name="&gt;&gt;btnRemove.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.20797, Culture=neutral, PublicKeyToken=null</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnRemove.Parent" xml:space="preserve">
     <value>panelMembersControls</value>
@@ -1049,7 +1030,7 @@
     <value>btnSetAsLeader</value>
   </data>
   <data name="&gt;&gt;btnSetAsLeader.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.20797, Culture=neutral, PublicKeyToken=null</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnSetAsLeader.Parent" xml:space="preserve">
     <value>panelMembersControls</value>
@@ -1067,7 +1048,7 @@
     <value>3, 131</value>
   </data>
   <data name="cbxShowRemovedMembers.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 36</value>
+    <value>114, 36</value>
   </data>
   <data name="cbxShowRemovedMembers.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -1284,7 +1265,7 @@ members</value>
     <value>btnAddLoan</value>
   </data>
   <data name="&gt;&gt;btnAddLoan.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.20797, Culture=neutral, PublicKeyToken=null</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnAddLoan.Parent" xml:space="preserve">
     <value>flowLayoutPanel3</value>
@@ -1314,7 +1295,7 @@ members</value>
     <value>btnValidateLoans</value>
   </data>
   <data name="&gt;&gt;btnValidateLoans.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.20797, Culture=neutral, PublicKeyToken=null</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnValidateLoans.Parent" xml:space="preserve">
     <value>flowLayoutPanel3</value>
@@ -1344,7 +1325,7 @@ members</value>
     <value>btnDisburse</value>
   </data>
   <data name="&gt;&gt;btnDisburse.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.20797, Culture=neutral, PublicKeyToken=null</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnDisburse.Parent" xml:space="preserve">
     <value>flowLayoutPanel3</value>
@@ -1374,7 +1355,7 @@ members</value>
     <value>btnRepay</value>
   </data>
   <data name="&gt;&gt;btnRepay.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.20797, Culture=neutral, PublicKeyToken=null</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnRepay.Parent" xml:space="preserve">
     <value>flowLayoutPanel3</value>
@@ -1395,7 +1376,7 @@ members</value>
     <value>3, 131</value>
   </data>
   <data name="cbxDisplayAllLoans.Size" type="System.Drawing.Size, System.Drawing">
-    <value>131, 20</value>
+    <value>122, 20</value>
   </data>
   <data name="cbxDisplayAllLoans.TabIndex" type="System.Int32, mscorlib">
     <value>41</value>
@@ -1584,7 +1565,7 @@ members</value>
     <value>btnAddSavings</value>
   </data>
   <data name="&gt;&gt;btnAddSavings.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.20797, Culture=neutral, PublicKeyToken=null</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnAddSavings.Parent" xml:space="preserve">
     <value>panelSavingsControls</value>
@@ -1614,7 +1595,7 @@ members</value>
     <value>buttonViewSaving</value>
   </data>
   <data name="&gt;&gt;buttonViewSaving.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.20797, Culture=neutral, PublicKeyToken=null</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;buttonViewSaving.Parent" xml:space="preserve">
     <value>panelSavingsControls</value>
@@ -1644,7 +1625,7 @@ members</value>
     <value>buttonFastDeposit</value>
   </data>
   <data name="&gt;&gt;buttonFastDeposit.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.20797, Culture=neutral, PublicKeyToken=null</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;buttonFastDeposit.Parent" xml:space="preserve">
     <value>panelSavingsControls</value>
@@ -1848,7 +1829,7 @@ members</value>
     <value>buttonUpdateAttendence</value>
   </data>
   <data name="&gt;&gt;buttonUpdateAttendence.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.20797, Culture=neutral, PublicKeyToken=null</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;buttonUpdateAttendence.Parent" xml:space="preserve">
     <value>panelAttendeesControls</value>
@@ -1977,7 +1958,7 @@ members</value>
     <value>Arial, 9.75pt</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Non solidarity group</value>
+    <value />
   </data>
   <data name="&gt;&gt;colName.Name" xml:space="preserve">
     <value>colName</value>
@@ -2199,6 +2180,6 @@ members</value>
     <value>NonSolidaryGroupForm</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetForm, Octopus.GUI, Version=1.1.1.20797, Culture=neutral, PublicKeyToken=null</value>
+    <value>Octopus.GUI.UserControl.SweetForm, Octopus.GUI, Version=1.1.1.29177, Culture=neutral, PublicKeyToken=null</value>
   </data>
 </root>
