@@ -475,7 +475,7 @@ namespace Octopus.GUI.Clients
                 }
                 else
                 {
-                    lblTitle.BackColor = Color.FromArgb(0, 64, 0);
+                    lblTitle.BackColor = Color.FromArgb(0, 81, 152);
                 }
             }
             else if (_group != null)
@@ -491,7 +491,7 @@ namespace Octopus.GUI.Clients
                 }
                 else
                 {
-                    lblTitle.BackColor = Color.FromArgb(0, 64, 0);
+                    lblTitle.BackColor = Color.FromArgb(0, 81, 152);
                 }
             }
             else
@@ -504,7 +504,7 @@ namespace Octopus.GUI.Clients
                 }
                 else
                 {
-                    lblTitle.BackColor = Color.FromArgb(0, 64, 0);
+                    lblTitle.BackColor = Color.FromArgb(0, 81, 152);
                 }
             }
             _title = Text;

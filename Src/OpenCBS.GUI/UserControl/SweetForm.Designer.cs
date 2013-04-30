@@ -38,7 +38,7 @@ namespace Octopus.GUI.UserControl
             // tabHeader
             // 
             resources.ApplyResources(this.tabHeader, "tabHeader");
-            this.tabHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.tabHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(81)))), ((int)(((byte)(152)))));
             this.tabHeader.Controls.Add(this.btnClose, 1, 0);
             this.tabHeader.Controls.Add(this.lblTitle, 0, 0);
             this.tabHeader.Name = "tabHeader";
@@ -46,14 +46,16 @@ namespace Octopus.GUI.UserControl
             // btnClose
             // 
             resources.ApplyResources(this.btnClose, "btnClose");
+            this.btnClose.BackColor = System.Drawing.SystemColors.Control;
             this.btnClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnClose.Name = "btnClose";
+            this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // lblTitle
             // 
             resources.ApplyResources(this.lblTitle, "lblTitle");
-            this.lblTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.lblTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(81)))), ((int)(((byte)(152)))));
             this.lblTitle.ForeColor = System.Drawing.Color.White;
             this.lblTitle.Name = "lblTitle";
             // 

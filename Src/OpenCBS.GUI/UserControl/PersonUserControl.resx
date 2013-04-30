@@ -562,7 +562,7 @@
     <value>buttonViewProject</value>
   </data>
   <data name="&gt;&gt;buttonViewProject.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.20818, Culture=neutral, PublicKeyToken=null</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;buttonViewProject.Parent" xml:space="preserve">
     <value>groupBoxProjects</value>
@@ -595,7 +595,7 @@
     <value>buttonAddProject</value>
   </data>
   <data name="&gt;&gt;buttonAddProject.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.20818, Culture=neutral, PublicKeyToken=null</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;buttonAddProject.Parent" xml:space="preserve">
     <value>groupBoxProjects</value>
@@ -793,7 +793,7 @@
     <value>615, 141</value>
   </data>
   <data name="lblAnd2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 16</value>
+    <value>29, 16</value>
   </data>
   <data name="lblAnd2.TabIndex" type="System.Int32, mscorlib">
     <value>84</value>
@@ -826,7 +826,7 @@
     <value>615, 99</value>
   </data>
   <data name="lblAnd1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 16</value>
+    <value>29, 16</value>
   </data>
   <data name="lblAnd1.TabIndex" type="System.Int32, mscorlib">
     <value>83</value>
@@ -967,7 +967,7 @@
     <value>22, 141</value>
   </data>
   <data name="labelSponsor2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>217, 16</value>
+    <value>200, 16</value>
   </data>
   <data name="labelSponsor2.TabIndex" type="System.Int32, mscorlib">
     <value>78</value>
@@ -1000,7 +1000,7 @@
     <value>22, 183</value>
   </data>
   <data name="labelCommentsTypeActivity.Size" type="System.Drawing.Size, System.Drawing">
-    <value>79, 16</value>
+    <value>75, 16</value>
   </data>
   <data name="labelCommentsTypeActivity.TabIndex" type="System.Int32, mscorlib">
     <value>76</value>
@@ -1075,7 +1075,7 @@
     <value>22, 53</value>
   </data>
   <data name="labelFirstAppointment.Size" type="System.Drawing.Size, System.Drawing">
-    <value>173, 16</value>
+    <value>159, 16</value>
   </data>
   <data name="labelFirstAppointment.TabIndex" type="System.Int32, mscorlib">
     <value>74</value>
@@ -1108,7 +1108,7 @@
     <value>22, 17</value>
   </data>
   <data name="labelFirstContact.Size" type="System.Drawing.Size, System.Drawing">
-    <value>140, 16</value>
+    <value>132, 16</value>
   </data>
   <data name="labelFirstContact.TabIndex" type="System.Int32, mscorlib">
     <value>74</value>
@@ -1141,7 +1141,7 @@
     <value>22, 99</value>
   </data>
   <data name="labelSponsor1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>294, 16</value>
+    <value>264, 16</value>
   </data>
   <data name="labelSponsor1.TabIndex" type="System.Int32, mscorlib">
     <value>71</value>
@@ -1255,7 +1255,7 @@
     <value>clSavingList</value>
   </data>
   <data name="&gt;&gt;clSavingList.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SavingsListUserControl, Octopus.GUI, Version=1.1.1.20818, Culture=neutral, PublicKeyToken=null</value>
+    <value>Octopus.GUI.UserControl.SavingsListUserControl, Octopus.GUI, Version=1.1.1.17697, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;clSavingList.Parent" xml:space="preserve">
     <value>tabPageSavings</value>
@@ -1382,7 +1382,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAACC
-        UQAAAk1TRnQBSQFMAgEBBwEAAQwBBwEMAQcBIAEAASABAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAGA
+        UQAAAk1TRnQBSQFMAgEBBwEAARwBBwEcAQcBIAEAASABAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAGA
         AwABQAMAAQEBAAEgBgABgP8AHgABAQMJAQwDFAEbAxYBHgMWAR4DFgEeAxYBHgMWAR4DFgEeAxYBHgMW
         AR4DFgEeAxYBHgMWAR4DFgEeAxYBHgMWAR4DFgEeAxYBHgMWAR4DFgEeAxYBHgMWAR4DFgEeAxYBHgMU
         ARsDBwEJnwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMA
@@ -1836,7 +1836,7 @@
     <value>btnPrint</value>
   </data>
   <data name="&gt;&gt;btnPrint.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.PrintButton, Octopus.GUI, Version=1.1.1.20818, Culture=neutral, PublicKeyToken=null</value>
+    <value>Octopus.GUI.UserControl.PrintButton, Octopus.GUI, Version=1.1.1.17697, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btnPrint.Parent" xml:space="preserve">
     <value>panelEconomicActivity</value>
@@ -1869,7 +1869,7 @@
     <value>buttonCancel</value>
   </data>
   <data name="&gt;&gt;buttonCancel.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.20818, Culture=neutral, PublicKeyToken=null</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;buttonCancel.Parent" xml:space="preserve">
     <value>panelEconomicActivity</value>
@@ -1902,7 +1902,7 @@
     <value>buttonSave</value>
   </data>
   <data name="&gt;&gt;buttonSave.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.20818, Culture=neutral, PublicKeyToken=null</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;buttonSave.Parent" xml:space="preserve">
     <value>panelEconomicActivity</value>
@@ -1983,7 +1983,7 @@
     <value>16, 142</value>
   </data>
   <data name="lblEconomicActivity.Size" type="System.Drawing.Size, System.Drawing">
-    <value>132, 16</value>
+    <value>123, 16</value>
   </data>
   <data name="lblEconomicActivity.TabIndex" type="System.Int32, mscorlib">
     <value>97</value>
@@ -2022,7 +2022,7 @@
     <value>eacPerson</value>
   </data>
   <data name="&gt;&gt;eacPerson.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.EconomicActivityControl, Octopus.GUI, Version=1.1.1.20818, Culture=neutral, PublicKeyToken=null</value>
+    <value>Octopus.GUI.UserControl.EconomicActivityControl, Octopus.GUI, Version=1.1.1.17697, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;eacPerson.Parent" xml:space="preserve">
     <value>groupBoxCivilities</value>
@@ -2067,7 +2067,7 @@
     <value>textBoxNationality</value>
   </data>
   <data name="&gt;&gt;textBoxNationality.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>Octopus.GUI.UserControl.TextBoxLimit, Octopus.GUI, Version=1.1.1.17697, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;textBoxNationality.Parent" xml:space="preserve">
     <value>groupBoxCivilities</value>
@@ -2148,7 +2148,7 @@
     <value>textBoxBirthPlace</value>
   </data>
   <data name="&gt;&gt;textBoxBirthPlace.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.TextBoxLimit, Octopus.GUI, Version=1.1.1.20818, Culture=neutral, PublicKeyToken=null</value>
+    <value>Octopus.GUI.UserControl.TextBoxLimit, Octopus.GUI, Version=1.1.1.17697, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;textBoxBirthPlace.Parent" xml:space="preserve">
     <value>groupBoxCivilities</value>
@@ -2199,7 +2199,7 @@
     <value>426, 16</value>
   </data>
   <data name="labelLoanCycle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>81, 16</value>
+    <value>75, 16</value>
   </data>
   <data name="labelLoanCycle.TabIndex" type="System.Int32, mscorlib">
     <value>95</value>
@@ -2265,7 +2265,7 @@
     <value>textBoxFatherName</value>
   </data>
   <data name="&gt;&gt;textBoxFatherName.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.TextBoxLimit, Octopus.GUI, Version=1.1.1.20818, Culture=neutral, PublicKeyToken=null</value>
+    <value>Octopus.GUI.UserControl.TextBoxLimit, Octopus.GUI, Version=1.1.1.17697, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;textBoxFatherName.Parent" xml:space="preserve">
     <value>groupBoxCivilities</value>
@@ -2493,7 +2493,7 @@
     <value>16, 66</value>
   </data>
   <data name="labelDateOfBirth.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 16</value>
+    <value>89, 16</value>
   </data>
   <data name="labelDateOfBirth.TabIndex" type="System.Int32, mscorlib">
     <value>51</value>
@@ -2529,7 +2529,7 @@
     <value>textBoxLastname</value>
   </data>
   <data name="&gt;&gt;textBoxLastname.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.TextBoxLimit, Octopus.GUI, Version=1.1.1.20818, Culture=neutral, PublicKeyToken=null</value>
+    <value>Octopus.GUI.UserControl.TextBoxLimit, Octopus.GUI, Version=1.1.1.17697, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;textBoxLastname.Parent" xml:space="preserve">
     <value>groupBoxCivilities</value>
@@ -2550,7 +2550,7 @@
     <value>16, 39</value>
   </data>
   <data name="labelLastname.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 16</value>
+    <value>80, 16</value>
   </data>
   <data name="labelLastname.TabIndex" type="System.Int32, mscorlib">
     <value>46</value>
@@ -2586,7 +2586,7 @@
     <value>textBoxIdentificationData</value>
   </data>
   <data name="&gt;&gt;textBoxIdentificationData.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.TextBoxLimit, Octopus.GUI, Version=1.1.1.20818, Culture=neutral, PublicKeyToken=null</value>
+    <value>Octopus.GUI.UserControl.TextBoxLimit, Octopus.GUI, Version=1.1.1.17697, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;textBoxIdentificationData.Parent" xml:space="preserve">
     <value>groupBoxCivilities</value>
@@ -2607,7 +2607,7 @@
     <value>16, 117</value>
   </data>
   <data name="labelPassport.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 16</value>
+    <value>76, 16</value>
   </data>
   <data name="labelPassport.TabIndex" type="System.Int32, mscorlib">
     <value>44</value>
@@ -2664,7 +2664,7 @@
     <value>16, 90</value>
   </data>
   <data name="labelSex.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 16</value>
+    <value>59, 16</value>
   </data>
   <data name="labelSex.TabIndex" type="System.Int32, mscorlib">
     <value>42</value>
@@ -2697,7 +2697,7 @@
     <value>16, 16</value>
   </data>
   <data name="labelFirstName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>85, 16</value>
+    <value>81, 16</value>
   </data>
   <data name="labelFirstName.TabIndex" type="System.Int32, mscorlib">
     <value>37</value>
@@ -2733,7 +2733,7 @@
     <value>textBoxFirstName</value>
   </data>
   <data name="&gt;&gt;textBoxFirstName.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.TextBoxLimit, Octopus.GUI, Version=1.1.1.20818, Culture=neutral, PublicKeyToken=null</value>
+    <value>Octopus.GUI.UserControl.TextBoxLimit, Octopus.GUI, Version=1.1.1.17697, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;textBoxFirstName.Parent" xml:space="preserve">
     <value>groupBoxCivilities</value>
@@ -4113,11 +4113,11 @@
   <data name="&gt;&gt;button13.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>54</value>
-  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>54</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
@@ -4132,7 +4132,7 @@
     <value>5, 5, 5, 5</value>
   </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>763, 319</value>
+    <value>910, 448</value>
   </data>
   <data name="&gt;&gt;columnProductType.Name" xml:space="preserve">
     <value>columnProductType</value>
@@ -4294,6 +4294,6 @@
     <value>PersonUserControl</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.ClientControl, Octopus.GUI, Version=1.1.1.20818, Culture=neutral, PublicKeyToken=null</value>
+    <value>Octopus.GUI.UserControl.ClientControl, Octopus.GUI, Version=1.1.1.17697, Culture=neutral, PublicKeyToken=null</value>
   </data>
 </root>
