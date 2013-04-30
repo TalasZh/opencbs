@@ -42,8 +42,8 @@ namespace Octopus.GUI.UserControl
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CorporateUserControl));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.lvContacts = new System.Windows.Forms.ListView();
-            this.columnHeaderName = new System.Windows.Forms.ColumnHeader();
-            this.columnHeaderPhone = new System.Windows.Forms.ColumnHeader();
+            this.columnHeaderName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderPhone = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.btnAddContact = new System.Windows.Forms.Button();
             this.btnSelectContact = new System.Windows.Forms.Button();
@@ -131,7 +131,7 @@ namespace Octopus.GUI.UserControl
             resources.ApplyResources(this.columnHeaderPhone, "columnHeaderPhone");
             // 
             // groupBox3
-            //
+            // 
             this.groupBox3.Controls.Add(this.btnAddContact);
             this.groupBox3.Controls.Add(this.btnSelectContact);
             this.groupBox3.Controls.Add(this.buttonDelete);
@@ -175,7 +175,7 @@ namespace Octopus.GUI.UserControl
             this.tabPageAddress.Name = "tabPageAddress";
             // 
             // groupBoxAddress
-            //
+            // 
             resources.ApplyResources(this.groupBoxAddress, "groupBoxAddress");
             this.groupBoxAddress.Name = "groupBoxAddress";
             this.groupBoxAddress.TabStop = false;
@@ -385,8 +385,6 @@ namespace Octopus.GUI.UserControl
             // 
             resources.ApplyResources(this.btnPrint, "btnPrint");
             this.btnPrint.AttachmentPoint = Octopus.Reports.AttachmentPoint.CorporateDetails;
-            this.btnPrint.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnPrint.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.btnPrint.Name = "btnPrint";
             this.btnPrint.ReportInitializer = null;
             this.btnPrint.UseVisualStyleBackColor = true;
