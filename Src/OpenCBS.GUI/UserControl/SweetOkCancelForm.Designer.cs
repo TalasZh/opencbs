@@ -30,7 +30,7 @@ namespace Octopus.GUI.UserControl
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SweetOkCancelForm));
             this.btnCancel = new System.Windows.Forms.Button();
-            this.btnOk = new Octopus.GUI.UserControl.SweetButton();
+            this.btnOk = new System.Windows.Forms.Button();
             this.tabButtons = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tabButtons.SuspendLayout();
@@ -47,8 +47,6 @@ namespace Octopus.GUI.UserControl
             // 
             resources.ApplyResources(this.btnOk, "btnOk");
             this.btnOk.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnOk.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.None;
-            this.btnOk.Menu = null;
             this.btnOk.Name = "btnOk";
             this.btnOk.UseVisualStyleBackColor = true;
             // 
@@ -82,7 +80,7 @@ namespace Octopus.GUI.UserControl
         #endregion
 
         private System.Windows.Forms.Button btnCancel;
-        protected SweetButton btnOk;
+        protected System.Windows.Forms.Button btnOk;
         private System.Windows.Forms.TableLayoutPanel tabButtons;
         private System.Windows.Forms.Panel panel1;
     }

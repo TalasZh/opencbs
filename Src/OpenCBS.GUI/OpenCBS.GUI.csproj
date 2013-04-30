@@ -723,9 +723,6 @@
     <Compile Include="UserControl\SweetBaseForm.Designer.cs">
       <DependentUpon>SweetBaseForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControl\SweetButton.cs">
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="OctopusProgressBar.cs">
       <SubType>Component</SubType>
     </Compile>
