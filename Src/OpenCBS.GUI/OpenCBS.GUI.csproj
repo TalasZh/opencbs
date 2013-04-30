@@ -3890,11 +3890,11 @@ if not exist "$(TargetDir)Extensions" md "$(TargetDir)Extensions"
 
 xcopy "$(SolutionDir)*.url" "$(TargetDir)ProgramFiles" /y
 xcopy "$(SolutionDir)*.ico" "$(TargetDir)" /y
-xcopy "$(SolutionDir)Octopus.GUI\Template\*.css" "$(TargetDir)Template" /s /y
-xcopy "$(SolutionDir)Octopus.GUI\Template\*.js" "$(TargetDir)Template" /s /y
-xcopy "$(SolutionDir)Octopus.GUI\Template\*.png" "$(TargetDir)Template" /s /y
-xcopy "$(SolutionDir)Octopus.GUI\Template\*.txt" "$(TargetDir)Template" /s /y
-xcopy "$(SolutionDir)Octopus.GUI\Template\*.bat" "$(TargetDir)Template" /s /y
+xcopy "$(SolutionDir)OpenCBS.GUI\Template\*.css" "$(TargetDir)Template" /s /y
+xcopy "$(SolutionDir)OpenCBS.GUI\Template\*.js" "$(TargetDir)Template" /s /y
+xcopy "$(SolutionDir)OpenCBS.GUI\Template\*.png" "$(TargetDir)Template" /s /y
+xcopy "$(SolutionDir)OpenCBS.GUI\Template\*.txt" "$(TargetDir)Template" /s /y
+xcopy "$(SolutionDir)OpenCBS.GUI\Template\*.bat" "$(TargetDir)Template" /s /y
 xcopy "$(SolutionDir)..\Sql\CreateDatabase_*.sql" "$(TargetDir)Update" /y
 xcopy "$(SolutionDir)..\Sql\CreateAttachmentsDatabase_*.sql" "$(TargetDir)Update" /y
 xcopy "$(SolutionDir)..\Sql\InitialData.sql" "$(TargetDir)Update" /y
@@ -3910,16 +3910,16 @@ xcopy "$(SolutionDir)..\Sql\DropAndCreateUDF.sql" "$(TargetDir)Update" /y
 xcopy "$(SolutionDir)..\Sql\AccountingRules.sql" "$(TargetDir)Update" /y
 xcopy "$(SolutionDir)..\Sql\Objects.xml" "$(TargetDir)Update" /y
 mkdir "C:\OctopusLibs"
-xcopy "$(TargetDir)Octopus.CoreDomain.dll" "C:\OctopusLibs" /s /y
-xcopy "$(TargetDir)Octopus.Enums.dll" "C:\OctopusLibs" /s /y
-xcopy "$(TargetDir)Octopus.GUI.exe" "C:\OctopusLibs" /s /y
-xcopy "$(TargetDir)Octopus.Services.dll" "C:\OctopusLibs" /s /y
-xcopy "$(TargetDir)Octopus.Shared.dll" "C:\OctopusLibs" /s /y
-xcopy "$(TargetDir)Octopus.Extensions.dll" "C:\OctopusLibs" /s /y
-xcopy "$(TargetDir)Octopus.ExceptionsHandler.dll" "C:\OctopusLibs" /s /y
-xcopy "$(TargetDir)Octopus.Manager.dll" "C:\OctopusLibs" /s /y
-xcopy "$(TargetDir)Octopus.DatabaseConnection.dll" "C:\OctopusLibs" /s /y
-xcopy "$(TargetDir)Octopus.MultiLanguageRessources.dll" "C:\OctopusLibs" /s /y
+xcopy "$(TargetDir)OpenCBS.CoreDomain.dll" "C:\OctopusLibs" /s /y
+xcopy "$(TargetDir)OpenCBS.Enums.dll" "C:\OctopusLibs" /s /y
+xcopy "$(TargetDir)OpenCBS.GUI.exe" "C:\OctopusLibs" /s /y
+xcopy "$(TargetDir)OpenCBS.Services.dll" "C:\OctopusLibs" /s /y
+xcopy "$(TargetDir)OpenCBS.Shared.dll" "C:\OctopusLibs" /s /y
+xcopy "$(TargetDir)OpenCBS.Extensions.dll" "C:\OctopusLibs" /s /y
+xcopy "$(TargetDir)OpenCBS.ExceptionsHandler.dll" "C:\OctopusLibs" /s /y
+xcopy "$(TargetDir)OpenCBS.Manager.dll" "C:\OctopusLibs" /s /y
+xcopy "$(TargetDir)OpenCBS.DatabaseConnection.dll" "C:\OctopusLibs" /s /y
+xcopy "$(TargetDir)OpenCBS.MultiLanguageRessources.dll" "C:\OctopusLibs" /s /y
 xcopy "$(ProjectDir)..\..\Lib\*.dll" "C:\OctopusLibs" /s /y</PostBuildEvent>
   </PropertyGroup>
   <ProjectExtensions>
