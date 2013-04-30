@@ -40,7 +40,7 @@ namespace Octopus.GUI.UserControl
             // PrintButton
             //
             this.ContextMenuStrip = this._menu;
-            this.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Menu = this._menu;
             this.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.ResumeLayout(false);
 

@@ -267,14 +267,17 @@ namespace Octopus.GUI.UserControl
             // 
             // splitContainer3.Panel1
             // 
+            resources.ApplyResources(this.splitContainer3.Panel1, "splitContainer3.Panel1");
             this.splitContainer3.Panel1.Controls.Add(this.listViewContracts);
             // 
             // splitContainer3.Panel2
             // 
+            resources.ApplyResources(this.splitContainer3.Panel2, "splitContainer3.Panel2");
             this.splitContainer3.Panel2.Controls.Add(this.groupBoxProjectButton);
             // 
             // listViewContracts
             // 
+            resources.ApplyResources(this.listViewContracts, "listViewContracts");
             this.listViewContracts.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnProductType,
             this.columnHeader13,
@@ -286,7 +289,6 @@ namespace Octopus.GUI.UserControl
             this.columnHeaderCreationDate,
             this.columnHeaderStartDate,
             this.columnHeaderCloseDate});
-            resources.ApplyResources(this.listViewContracts, "listViewContracts");
             this.listViewContracts.FullRowSelect = true;
             this.listViewContracts.GridLines = true;
             this.listViewContracts.MultiSelect = false;
@@ -336,10 +338,10 @@ namespace Octopus.GUI.UserControl
             // 
             // groupBoxProjectButton
             // 
+            resources.ApplyResources(this.groupBoxProjectButton, "groupBoxProjectButton");
             this.groupBoxProjectButton.Controls.Add(this.buttonProjectAddGuarantee);
             this.groupBoxProjectButton.Controls.Add(this.buttonProjectViewContract);
             this.groupBoxProjectButton.Controls.Add(this.buttonProjectAddContract);
-            resources.ApplyResources(this.groupBoxProjectButton, "groupBoxProjectButton");
             this.groupBoxProjectButton.Name = "groupBoxProjectButton";
             this.groupBoxProjectButton.TabStop = false;
             // 
@@ -378,21 +380,23 @@ namespace Octopus.GUI.UserControl
             // 
             // splitContainer1.Panel1
             // 
+            resources.ApplyResources(this.splitContainer1.Panel1, "splitContainer1.Panel1");
             this.splitContainer1.Panel1.Controls.Add(this.listViewProjects);
             // 
             // splitContainer1.Panel2
             // 
+            resources.ApplyResources(this.splitContainer1.Panel2, "splitContainer1.Panel2");
             this.splitContainer1.Panel2.Controls.Add(this.groupBoxProjects);
             // 
             // listViewProjects
             // 
+            resources.ApplyResources(this.listViewProjects, "listViewProjects");
             this.listViewProjects.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeaderId,
             this.columnHeaderCode,
             this.columnHeaderName,
             this.columnHeaderNbOfCredits,
             this.columnHeaderNbOfGuarantees});
-            resources.ApplyResources(this.listViewProjects, "listViewProjects");
             this.listViewProjects.FullRowSelect = true;
             this.listViewProjects.GridLines = true;
             this.listViewProjects.Name = "listViewProjects";
@@ -422,9 +426,9 @@ namespace Octopus.GUI.UserControl
             // 
             // groupBoxProjects
             // 
+            resources.ApplyResources(this.groupBoxProjects, "groupBoxProjects");
             this.groupBoxProjects.Controls.Add(this.buttonViewProject);
             this.groupBoxProjects.Controls.Add(this.buttonAddProject);
-            resources.ApplyResources(this.groupBoxProjects, "groupBoxProjects");
             this.groupBoxProjects.Name = "groupBoxProjects";
             this.groupBoxProjects.TabStop = false;
             // 
@@ -448,13 +452,13 @@ namespace Octopus.GUI.UserControl
             // 
             // tabControlEconomicInfo
             // 
+            resources.ApplyResources(this.tabControlEconomicInfo, "tabControlEconomicInfo");
             this.tabControlEconomicInfo.Controls.Add(this.tabPageAddress);
             this.tabControlEconomicInfo.Controls.Add(this.tabPage1FollowUp);
             this.tabControlEconomicInfo.Controls.Add(this.tabPageCustomizableFields);
             this.tabControlEconomicInfo.Controls.Add(this.tabPageProjects);
             this.tabControlEconomicInfo.Controls.Add(this.tabPageSavings);
             this.tabControlEconomicInfo.Controls.Add(this.tabPageGroupMember);
-            resources.ApplyResources(this.tabControlEconomicInfo, "tabControlEconomicInfo");
             this.tabControlEconomicInfo.ImageList = this.imageListEconomicInfo;
             this.tabControlEconomicInfo.Name = "tabControlEconomicInfo";
             this.tabControlEconomicInfo.SelectedIndex = 0;
@@ -462,8 +466,8 @@ namespace Octopus.GUI.UserControl
             // 
             // tabPageAddress
             // 
-            this.tabPageAddress.Controls.Add(this.tableLayoutPanelAddress);
             resources.ApplyResources(this.tabPageAddress, "tabPageAddress");
+            this.tabPageAddress.Controls.Add(this.tableLayoutPanelAddress);
             this.tabPageAddress.Name = "tabPageAddress";
             // 
             // tableLayoutPanelAddress
@@ -488,6 +492,7 @@ namespace Octopus.GUI.UserControl
             // 
             // tabPage1FollowUp
             // 
+            resources.ApplyResources(this.tabPage1FollowUp, "tabPage1FollowUp");
             this.tabPage1FollowUp.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.tabPage1FollowUp.Controls.Add(this.lblAnd2);
             this.tabPage1FollowUp.Controls.Add(this.lblAnd1);
@@ -503,7 +508,6 @@ namespace Octopus.GUI.UserControl
             this.tabPage1FollowUp.Controls.Add(this.labelFirstAppointment);
             this.tabPage1FollowUp.Controls.Add(this.labelFirstContact);
             this.tabPage1FollowUp.Controls.Add(this.labelSponsor1);
-            resources.ApplyResources(this.tabPage1FollowUp, "tabPage1FollowUp");
             this.tabPage1FollowUp.Name = "tabPage1FollowUp";
             // 
             // lblAnd2
@@ -520,15 +524,15 @@ namespace Octopus.GUI.UserControl
             // 
             // textBoxSponsor2
             // 
-            this.textBoxSponsor2.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.textBoxSponsor2, "textBoxSponsor2");
+            this.textBoxSponsor2.BackColor = System.Drawing.Color.White;
             this.textBoxSponsor2.Name = "textBoxSponsor2";
             this.textBoxSponsor2.TextChanged += new System.EventHandler(this.textBoxSponsor2_TextChanged);
             // 
             // textBoxSponsor1
             // 
-            this.textBoxSponsor1.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.textBoxSponsor1, "textBoxSponsor1");
+            this.textBoxSponsor1.BackColor = System.Drawing.Color.White;
             this.textBoxSponsor1.Name = "textBoxSponsor1";
             this.textBoxSponsor1.TextChanged += new System.EventHandler(this.textBoxSponsor1_TextChanged);
             // 
@@ -541,16 +545,16 @@ namespace Octopus.GUI.UserControl
             // 
             // comboBoxSponsor2
             // 
+            resources.ApplyResources(this.comboBoxSponsor2, "comboBoxSponsor2");
             this.comboBoxSponsor2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxSponsor2.FormattingEnabled = true;
-            resources.ApplyResources(this.comboBoxSponsor2, "comboBoxSponsor2");
             this.comboBoxSponsor2.Name = "comboBoxSponsor2";
             // 
             // comboBoxSponsor1
             // 
+            resources.ApplyResources(this.comboBoxSponsor1, "comboBoxSponsor1");
             this.comboBoxSponsor1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxSponsor1.FormattingEnabled = true;
-            resources.ApplyResources(this.comboBoxSponsor1, "comboBoxSponsor1");
             this.comboBoxSponsor1.Name = "comboBoxSponsor1";
             // 
             // labelSponsor2
@@ -567,14 +571,14 @@ namespace Octopus.GUI.UserControl
             // 
             // dateTimePickerFirstAppointment
             // 
-            this.dateTimePickerFirstAppointment.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             resources.ApplyResources(this.dateTimePickerFirstAppointment, "dateTimePickerFirstAppointment");
+            this.dateTimePickerFirstAppointment.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePickerFirstAppointment.Name = "dateTimePickerFirstAppointment";
             // 
             // dateTimePickerFirstContact
             // 
-            this.dateTimePickerFirstContact.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             resources.ApplyResources(this.dateTimePickerFirstContact, "dateTimePickerFirstContact");
+            this.dateTimePickerFirstContact.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePickerFirstContact.Name = "dateTimePickerFirstContact";
             // 
             // labelFirstAppointment
@@ -602,40 +606,40 @@ namespace Octopus.GUI.UserControl
             // 
             // tabPageProjects
             // 
-            this.tabPageProjects.Controls.Add(this.splitContainer1);
             resources.ApplyResources(this.tabPageProjects, "tabPageProjects");
+            this.tabPageProjects.Controls.Add(this.splitContainer1);
             this.tabPageProjects.Name = "tabPageProjects";
             // 
             // tabPageSavings
             // 
-            this.tabPageSavings.Controls.Add(this.clSavingList);
             resources.ApplyResources(this.tabPageSavings, "tabPageSavings");
+            this.tabPageSavings.Controls.Add(this.clSavingList);
             this.tabPageSavings.Name = "tabPageSavings";
             // 
             // clSavingList
             // 
+            resources.ApplyResources(this.clSavingList, "clSavingList");
             this.clSavingList.ButtonAddSavingsEnabled = true;
             this.clSavingList.ClientType = Octopus.Enums.OClientTypes.Person;
-            resources.ApplyResources(this.clSavingList, "clSavingList");
             this.clSavingList.Name = "clSavingList";
             this.clSavingList.AddSelectedSaving += new System.EventHandler(this.savingsListUserControl_AddSelectedSaving);
             this.clSavingList.ViewSelectedSaving += new System.EventHandler(this.savingsListUserControl_ViewSelectedSaving);
             // 
             // tabPageGroupMember
             // 
-            this.tabPageGroupMember.Controls.Add(this.listViewGroup);
             resources.ApplyResources(this.tabPageGroupMember, "tabPageGroupMember");
+            this.tabPageGroupMember.Controls.Add(this.listViewGroup);
             this.tabPageGroupMember.Name = "tabPageGroupMember";
             // 
             // listViewGroup
             // 
+            resources.ApplyResources(this.listViewGroup, "listViewGroup");
             this.listViewGroup.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader10,
             this.columnHeader2,
             this.columnHeader11,
             this.columnHeader12});
-            resources.ApplyResources(this.listViewGroup, "listViewGroup");
             this.listViewGroup.FullRowSelect = true;
             this.listViewGroup.GridLines = true;
             this.listViewGroup.Name = "listViewGroup";
@@ -677,20 +681,16 @@ namespace Octopus.GUI.UserControl
             // 
             // panelEconomicActivity
             // 
+            resources.ApplyResources(this.panelEconomicActivity, "panelEconomicActivity");
             this.panelEconomicActivity.Controls.Add(this.btnPrint);
             this.panelEconomicActivity.Controls.Add(this.buttonCancel);
             this.panelEconomicActivity.Controls.Add(this.buttonSave);
-            resources.ApplyResources(this.panelEconomicActivity, "panelEconomicActivity");
             this.panelEconomicActivity.Name = "panelEconomicActivity";
             // 
             // btnPrint
             // 
             resources.ApplyResources(this.btnPrint, "btnPrint");
             this.btnPrint.AttachmentPoint = Octopus.Reports.AttachmentPoint.PersonDetails;
-            this.btnPrint.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnPrint.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnPrint.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Print;
-            this.btnPrint.Menu = null;
             this.btnPrint.Name = "btnPrint";
             this.btnPrint.ReportInitializer = null;
             this.btnPrint.UseVisualStyleBackColor = true;
@@ -718,6 +718,7 @@ namespace Octopus.GUI.UserControl
             // 
             // groupBoxCivilities
             // 
+            resources.ApplyResources(this.groupBoxCivilities, "groupBoxCivilities");
             this.groupBoxCivilities.Controls.Add(this.lblBranch);
             this.groupBoxCivilities.Controls.Add(this.lblEconomicActivity);
             this.groupBoxCivilities.Controls.Add(this.eacPerson);
@@ -746,14 +747,13 @@ namespace Octopus.GUI.UserControl
             this.groupBoxCivilities.Controls.Add(this.labelSex);
             this.groupBoxCivilities.Controls.Add(this.labelFirstName);
             this.groupBoxCivilities.Controls.Add(this.textBoxFirstName);
-            resources.ApplyResources(this.groupBoxCivilities, "groupBoxCivilities");
             this.groupBoxCivilities.Name = "groupBoxCivilities";
             this.groupBoxCivilities.TabStop = false;
             // 
             // lblBranch
             // 
-            this.lblBranch.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.lblBranch, "lblBranch");
+            this.lblBranch.BackColor = System.Drawing.Color.Transparent;
             this.lblBranch.Name = "lblBranch";
             // 
             // lblEconomicActivity
@@ -764,28 +764,28 @@ namespace Octopus.GUI.UserControl
             // 
             // eacPerson
             // 
-            this.eacPerson.Activity = null;
             resources.ApplyResources(this.eacPerson, "eacPerson");
+            this.eacPerson.Activity = null;
             this.eacPerson.Name = "eacPerson";
             this.eacPerson.EconomicActivityChange += new System.EventHandler<Octopus.GUI.UserControl.EconomicActivtyEventArgs>(this.EacPersonActivityChange);
             // 
             // cbBranch
             // 
+            resources.ApplyResources(this.cbBranch, "cbBranch");
             this.cbBranch.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbBranch.FormattingEnabled = true;
-            resources.ApplyResources(this.cbBranch, "cbBranch");
             this.cbBranch.Name = "cbBranch";
             // 
             // textBoxNationality
             // 
-            this.textBoxNationality.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.textBoxNationality, "textBoxNationality");
+            this.textBoxNationality.BackColor = System.Drawing.Color.White;
             this.textBoxNationality.Name = "textBoxNationality";
             // 
             // labelNationality
             // 
-            this.labelNationality.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.labelNationality, "labelNationality");
+            this.labelNationality.BackColor = System.Drawing.Color.Transparent;
             this.labelNationality.Name = "labelNationality";
             // 
             // textBoxLoanCycle
@@ -796,21 +796,21 @@ namespace Octopus.GUI.UserControl
             // 
             // textBoxBirthPlace
             // 
-            this.textBoxBirthPlace.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.textBoxBirthPlace, "textBoxBirthPlace");
+            this.textBoxBirthPlace.BackColor = System.Drawing.Color.White;
             this.textBoxBirthPlace.Name = "textBoxBirthPlace";
             this.textBoxBirthPlace.TextChanged += new System.EventHandler(this.textBoxBirthPlace_TextChanged);
             // 
             // labelIN
             // 
-            this.labelIN.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.labelIN, "labelIN");
+            this.labelIN.BackColor = System.Drawing.Color.Transparent;
             this.labelIN.Name = "labelIN";
             // 
             // labelLoanCycle
             // 
-            this.labelLoanCycle.AllowDrop = true;
             resources.ApplyResources(this.labelLoanCycle, "labelLoanCycle");
+            this.labelLoanCycle.AllowDrop = true;
             this.labelLoanCycle.BackColor = System.Drawing.Color.Transparent;
             this.labelLoanCycle.Name = "labelLoanCycle";
             // 
@@ -822,15 +822,15 @@ namespace Octopus.GUI.UserControl
             // 
             // textBoxFatherName
             // 
-            this.textBoxFatherName.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.textBoxFatherName, "textBoxFatherName");
+            this.textBoxFatherName.BackColor = System.Drawing.Color.White;
             this.textBoxFatherName.Name = "textBoxFatherName";
             this.textBoxFatherName.TextChanged += new System.EventHandler(this.textBoxFatherName_TextChanged);
             // 
             // labelFatherName
             // 
-            this.labelFatherName.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.labelFatherName, "labelFatherName");
+            this.labelFatherName.BackColor = System.Drawing.Color.Transparent;
             this.labelFatherName.Name = "labelFatherName";
             // 
             // changePhotoLinkLabel2
@@ -891,8 +891,8 @@ namespace Octopus.GUI.UserControl
             // 
             // textBoxLastname
             // 
-            this.textBoxLastname.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.textBoxLastname, "textBoxLastname");
+            this.textBoxLastname.BackColor = System.Drawing.Color.White;
             this.textBoxLastname.Name = "textBoxLastname";
             this.textBoxLastname.TextChanged += new System.EventHandler(this.textBoxLastname_TextChanged);
             // 
@@ -904,8 +904,8 @@ namespace Octopus.GUI.UserControl
             // 
             // textBoxIdentificationData
             // 
-            this.textBoxIdentificationData.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.textBoxIdentificationData, "textBoxIdentificationData");
+            this.textBoxIdentificationData.BackColor = System.Drawing.Color.White;
             this.textBoxIdentificationData.Name = "textBoxIdentificationData";
             this.textBoxIdentificationData.Leave += new System.EventHandler(this.textBoxIdentificationData_Leave);
             // 
@@ -917,10 +917,10 @@ namespace Octopus.GUI.UserControl
             // 
             // comboBoxSex
             // 
+            resources.ApplyResources(this.comboBoxSex, "comboBoxSex");
             this.comboBoxSex.BackColor = System.Drawing.Color.White;
             this.comboBoxSex.DisplayMember = "Value";
             this.comboBoxSex.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.comboBoxSex, "comboBoxSex");
             this.comboBoxSex.Name = "comboBoxSex";
             this.comboBoxSex.ValueMember = "Key";
             this.comboBoxSex.SelectionChangeCommitted += new System.EventHandler(this.comboBoxSex_SelectionChangeCommitted);
@@ -939,19 +939,19 @@ namespace Octopus.GUI.UserControl
             // 
             // textBoxFirstName
             // 
-            this.textBoxFirstName.BackColor = System.Drawing.SystemColors.Window;
             resources.ApplyResources(this.textBoxFirstName, "textBoxFirstName");
+            this.textBoxFirstName.BackColor = System.Drawing.SystemColors.Window;
             this.textBoxFirstName.Name = "textBoxFirstName";
             this.textBoxFirstName.TextChanged += new System.EventHandler(this.textBoxFirstName_TextChanged);
             // 
             // comboBox1
             // 
+            resources.ApplyResources(this.comboBox1, "comboBox1");
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             resources.GetString("comboBox1.Items"),
             resources.GetString("comboBox1.Items1"),
             resources.GetString("comboBox1.Items2")});
-            resources.ApplyResources(this.comboBox1, "comboBox1");
             this.comboBox1.Name = "comboBox1";
             // 
             // label9
@@ -962,14 +962,14 @@ namespace Octopus.GUI.UserControl
             // 
             // comboBox2
             // 
-            this.comboBox2.FormattingEnabled = true;
             resources.ApplyResources(this.comboBox2, "comboBox2");
+            this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Name = "comboBox2";
             // 
             // textBox1
             // 
-            this.textBox1.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.textBox1, "textBox1");
+            this.textBox1.BackColor = System.Drawing.Color.White;
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
             // 
@@ -981,8 +981,8 @@ namespace Octopus.GUI.UserControl
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             resources.ApplyResources(this.dateTimePicker1, "dateTimePicker1");
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker1.Name = "dateTimePicker1";
             // 
             // label11
@@ -999,8 +999,8 @@ namespace Octopus.GUI.UserControl
             // 
             // textBox2
             // 
-            this.textBox2.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.textBox2, "textBox2");
+            this.textBox2.BackColor = System.Drawing.Color.White;
             this.textBox2.Name = "textBox2";
             // 
             // label13
@@ -1011,8 +1011,8 @@ namespace Octopus.GUI.UserControl
             // 
             // textBox3
             // 
-            this.textBox3.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.textBox3, "textBox3");
+            this.textBox3.BackColor = System.Drawing.Color.White;
             this.textBox3.Name = "textBox3";
             // 
             // label14
@@ -1023,8 +1023,8 @@ namespace Octopus.GUI.UserControl
             // 
             // textBox4
             // 
-            this.textBox4.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.textBox4, "textBox4");
+            this.textBox4.BackColor = System.Drawing.Color.White;
             this.textBox4.Name = "textBox4";
             // 
             // label15
@@ -1035,12 +1035,12 @@ namespace Octopus.GUI.UserControl
             // 
             // comboBox3
             // 
+            resources.ApplyResources(this.comboBox3, "comboBox3");
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Items.AddRange(new object[] {
             resources.GetString("comboBox3.Items"),
             resources.GetString("comboBox3.Items1"),
             resources.GetString("comboBox3.Items2")});
-            resources.ApplyResources(this.comboBox3, "comboBox3");
             this.comboBox3.Name = "comboBox3";
             // 
             // label16
@@ -1051,14 +1051,14 @@ namespace Octopus.GUI.UserControl
             // 
             // comboBox4
             // 
-            this.comboBox4.FormattingEnabled = true;
             resources.ApplyResources(this.comboBox4, "comboBox4");
+            this.comboBox4.FormattingEnabled = true;
             this.comboBox4.Name = "comboBox4";
             // 
             // textBox5
             // 
-            this.textBox5.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.textBox5, "textBox5");
+            this.textBox5.BackColor = System.Drawing.Color.White;
             this.textBox5.Name = "textBox5";
             this.textBox5.ReadOnly = true;
             // 
@@ -1070,8 +1070,8 @@ namespace Octopus.GUI.UserControl
             // 
             // dateTimePicker2
             // 
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             resources.ApplyResources(this.dateTimePicker2, "dateTimePicker2");
+            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker2.Name = "dateTimePicker2";
             // 
             // label18
@@ -1088,8 +1088,8 @@ namespace Octopus.GUI.UserControl
             // 
             // textBox6
             // 
-            this.textBox6.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.textBox6, "textBox6");
+            this.textBox6.BackColor = System.Drawing.Color.White;
             this.textBox6.Name = "textBox6";
             // 
             // label20
@@ -1100,8 +1100,8 @@ namespace Octopus.GUI.UserControl
             // 
             // textBox7
             // 
-            this.textBox7.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.textBox7, "textBox7");
+            this.textBox7.BackColor = System.Drawing.Color.White;
             this.textBox7.Name = "textBox7";
             // 
             // label21
@@ -1112,8 +1112,8 @@ namespace Octopus.GUI.UserControl
             // 
             // textBox8
             // 
-            this.textBox8.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.textBox8, "textBox8");
+            this.textBox8.BackColor = System.Drawing.Color.White;
             this.textBox8.Name = "textBox8";
             // 
             // label22
@@ -1144,13 +1144,13 @@ namespace Octopus.GUI.UserControl
             // 
             // contextMenuStripSaving
             // 
-            this.contextMenuStripSaving.Name = "contextMenuStripSaving";
             resources.ApplyResources(this.contextMenuStripSaving, "contextMenuStripSaving");
+            this.contextMenuStripSaving.Name = "contextMenuStripSaving";
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Gainsboro;
             resources.ApplyResources(this.button1, "button1");
+            this.button1.BackColor = System.Drawing.Color.Gainsboro;
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.button1.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_new;
             this.button1.Name = "button1";
@@ -1158,8 +1158,8 @@ namespace Octopus.GUI.UserControl
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.Gainsboro;
             resources.ApplyResources(this.button2, "button2");
+            this.button2.BackColor = System.Drawing.Color.Gainsboro;
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.button2.Image = global::Octopus.GUI.Properties.Resources.theme1_1_search;
             this.button2.Name = "button2";
@@ -1167,8 +1167,8 @@ namespace Octopus.GUI.UserControl
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.Gainsboro;
             resources.ApplyResources(this.button3, "button3");
+            this.button3.BackColor = System.Drawing.Color.Gainsboro;
             this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.button3.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_new;
             this.button3.Name = "button3";
@@ -1176,8 +1176,8 @@ namespace Octopus.GUI.UserControl
             // 
             // button4
             // 
-            this.button4.BackColor = System.Drawing.Color.Gainsboro;
             resources.ApplyResources(this.button4, "button4");
+            this.button4.BackColor = System.Drawing.Color.Gainsboro;
             this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.button4.Image = global::Octopus.GUI.Properties.Resources.theme1_1_search;
             this.button4.Name = "button4";

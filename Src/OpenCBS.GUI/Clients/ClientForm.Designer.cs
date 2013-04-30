@@ -960,11 +960,7 @@ namespace Octopus.GUI.Clients
             // 
             // btnPrintGuarantors
             // 
-            this.btnPrintGuarantors.BackColor = System.Drawing.Color.Gainsboro;
             resources.ApplyResources(this.btnPrintGuarantors, "btnPrintGuarantors");
-            this.btnPrintGuarantors.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnPrintGuarantors.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Print;
-            this.btnPrintGuarantors.Menu = null;
             this.btnPrintGuarantors.Name = "btnPrintGuarantors";
             this.btnPrintGuarantors.ReportInitializer = null;
             this.btnPrintGuarantors.UseVisualStyleBackColor = true;
@@ -1010,7 +1006,7 @@ namespace Octopus.GUI.Clients
             // 
             // lblGuarantorsList
             // 
-            this.lblGuarantorsList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.lblGuarantorsList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(81)))), ((int)(((byte)(152)))));
             resources.ApplyResources(this.lblGuarantorsList, "lblGuarantorsList");
             this.lblGuarantorsList.Name = "lblGuarantorsList";
             // 
@@ -1080,7 +1076,7 @@ namespace Octopus.GUI.Clients
             // 
             // lblCollaterals
             // 
-            this.lblCollaterals.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.lblCollaterals.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(81)))), ((int)(((byte)(152)))));
             resources.ApplyResources(this.lblCollaterals, "lblCollaterals");
             this.lblCollaterals.Name = "lblCollaterals";
             // 
@@ -1563,11 +1559,7 @@ namespace Octopus.GUI.Clients
             // btnPrintLoanDetails
             // 
             this.btnPrintLoanDetails.AttachmentPoint = Octopus.Reports.AttachmentPoint.LoanDetails;
-            this.btnPrintLoanDetails.BackColor = System.Drawing.Color.Gainsboro;
             resources.ApplyResources(this.btnPrintLoanDetails, "btnPrintLoanDetails");
-            this.btnPrintLoanDetails.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnPrintLoanDetails.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Print;
-            this.btnPrintLoanDetails.Menu = null;
             this.btnPrintLoanDetails.Name = "btnPrintLoanDetails";
             this.btnPrintLoanDetails.ReportInitializer = null;
             this.btnPrintLoanDetails.UseVisualStyleBackColor = true;
@@ -2300,11 +2292,7 @@ namespace Octopus.GUI.Clients
             // btnPrintCreditCommittee
             // 
             this.btnPrintCreditCommittee.AttachmentPoint = Octopus.Reports.AttachmentPoint.CreditCommittee;
-            this.btnPrintCreditCommittee.BackColor = System.Drawing.Color.Gainsboro;
             resources.ApplyResources(this.btnPrintCreditCommittee, "btnPrintCreditCommittee");
-            this.btnPrintCreditCommittee.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnPrintCreditCommittee.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Print;
-            this.btnPrintCreditCommittee.Menu = null;
             this.btnPrintCreditCommittee.Name = "btnPrintCreditCommittee";
             this.btnPrintCreditCommittee.ReportInitializer = null;
             this.btnPrintCreditCommittee.UseVisualStyleBackColor = true;
@@ -2518,11 +2506,7 @@ namespace Octopus.GUI.Clients
             // 
             // btnPrintLoanRepayment
             // 
-            this.btnPrintLoanRepayment.BackColor = System.Drawing.Color.Gainsboro;
             resources.ApplyResources(this.btnPrintLoanRepayment, "btnPrintLoanRepayment");
-            this.btnPrintLoanRepayment.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnPrintLoanRepayment.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Print;
-            this.btnPrintLoanRepayment.Menu = null;
             this.btnPrintLoanRepayment.Name = "btnPrintLoanRepayment";
             this.btnPrintLoanRepayment.ReportInitializer = null;
             this.btnPrintLoanRepayment.UseVisualStyleBackColor = true;
@@ -2646,14 +2630,11 @@ namespace Octopus.GUI.Clients
             // 
             // btnPrintLoanEvents
             // 
-            this.btnPrintLoanEvents.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnPrintLoanEvents.BackColor = System.Drawing.SystemColors.Control;
             resources.ApplyResources(this.btnPrintLoanEvents, "btnPrintLoanEvents");
-            this.btnPrintLoanEvents.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnPrintLoanEvents.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Print;
-            this.btnPrintLoanEvents.Menu = null;
             this.btnPrintLoanEvents.Name = "btnPrintLoanEvents";
             this.btnPrintLoanEvents.ReportInitializer = null;
-            this.btnPrintLoanEvents.UseVisualStyleBackColor = true;
+            this.btnPrintLoanEvents.UseVisualStyleBackColor = false;
             // 
             // btnWaiveFee
             // 
@@ -3488,11 +3469,7 @@ namespace Octopus.GUI.Clients
             // 
             // btnPrintSavings
             // 
-            this.btnPrintSavings.BackColor = System.Drawing.Color.Gainsboro;
             resources.ApplyResources(this.btnPrintSavings, "btnPrintSavings");
-            this.btnPrintSavings.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnPrintSavings.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Print;
-            this.btnPrintSavings.Menu = null;
             this.btnPrintSavings.Name = "btnPrintSavings";
             this.btnPrintSavings.ReportInitializer = null;
             this.btnPrintSavings.UseVisualStyleBackColor = true;

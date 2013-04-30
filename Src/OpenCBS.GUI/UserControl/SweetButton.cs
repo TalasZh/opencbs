@@ -241,19 +241,19 @@ namespace Octopus.GUI.UserControl
         protected override void OnPaint(PaintEventArgs e)
         {
             base.OnPaint(e);
-            Graphics g = e.Graphics;
+            //Graphics g = e.Graphics;
 
-            Color from = (_down && Enabled) ? _endColor : _startColor;
-            Color to = (_down && Enabled) ? _startColor : _endColor;
-            Brush brush = new LinearGradientBrush(ClientRectangle, from, to, LinearGradientMode.Vertical);
-            g.FillRectangle(brush, ClientRectangle);
+            //Color from = (_down && Enabled) ? _endColor : _startColor;
+            //Color to = (_down && Enabled) ? _startColor : _endColor;
+            //Brush brush = new LinearGradientBrush(ClientRectangle, from, to, LinearGradientMode.Vertical);
+            //g.FillRectangle(brush, ClientRectangle);
 
-            DrawBorder(g);
-            DrawText(g);
-            if (HasMenu) DrawArrow(g);
-            if (HasIcon && !_inProgress) DrawIcon(g);
-            if (_inProgress) DrawProgressIcon(g);
-            if (Focused && Enabled) DrawFocus(g);
+            //DrawBorder(g);
+            //DrawText(g);
+            //if (HasMenu) DrawArrow(g);
+            //if (HasIcon && !_inProgress) DrawIcon(g);
+            //if (_inProgress) DrawProgressIcon(g);
+            //if (Focused && Enabled) DrawFocus(g);
         }
 
         private void DrawIcon(Graphics g)

@@ -287,7 +287,6 @@ namespace Octopus.GUI.Clients
             this.btnPrint.AttachmentPoint = Octopus.Reports.AttachmentPoint.VillageDetails;
             this.btnPrint.BackColor = System.Drawing.Color.Gainsboro;
             this.btnPrint.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnPrint.Icon = Octopus.GUI.UserControl.SweetButton.ButtonIcon.Print;
             this.btnPrint.Name = "btnPrint";
             this.btnPrint.ReportInitializer = null;
             this.btnPrint.UseVisualStyleBackColor = true;

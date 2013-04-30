@@ -10,12 +10,15 @@ using Octopus.Reports.Forms;
 
 namespace Octopus.GUI.UserControl
 {
-    internal partial class PrintButton : SweetButton
+    internal partial class PrintButton : Button
     {
+        private ContextMenuStrip Menu;
+
         public PrintButton()
         {
             InitializeComponent();
             Init();
+            Menu = new ContextMenuStrip();
         }
 
         private void Init()
@@ -37,22 +40,21 @@ namespace Octopus.GUI.UserControl
 
         public void LoadReports()
         {
-            ToolStripItemCollection items = _menu.Items;
-            foreach (ToolStripMenuItem item in items)
+            foreach (ToolStripMenuItem item in Menu.Items)
                 item.Click -= PrintReportFromMenuItem;
 
-            items.Clear();
+            Menu.Items.Clear();
 
             ReportService rs = ReportService.GetInstance();
             foreach (Report report in rs.GetInternalReports(AttachmentPoint, Visibility))
             {
                 ToolStripMenuItem item = new ToolStripMenuItem(report.Title)
                 {
-                    ForeColor = Color.FromArgb(0, 0, 88, 56),
+                    ForeColor = Color.FromArgb(0, 81, 152),
                     Tag = report.Guid
                 };
                 item.Click += PrintReportFromMenuItem;
-                items.Add(item);
+                Menu.Items.Add(item);
             }
         }
 
@@ -62,6 +64,17 @@ namespace Octopus.GUI.UserControl
             PrintReport(guid);
         }
 
+        private void StartProgress()
+        {}
+
+        private void StopProgress()
+        {}
+
+        protected override void OnClick(EventArgs e)
+        {
+            base.OnClick(e);
+            Menu.Show(this, 0, Height);
+        }
         private void PrintReport(Guid guid)
         {
 
@@ -107,31 +120,5 @@ namespace Octopus.GUI.UserControl
 
         [Browsable(false)]
         public Action<Report> ReportInitializer { get; set; }
-
-        [Browsable(false)]
-        public override ContextMenuStrip Menu
-        {
-            get
-            {
-                return base.Menu;
-            }
-            set
-            {
-                base.Menu = value;
-            }
-        }
-
-        [Browsable(false)]
-        public override ButtonIcon Icon
-        {
-            get
-            {
-                return base.Icon;
-            }
-            set
-            {
-                base.Icon = value;
-            }
-        }
     }
 }

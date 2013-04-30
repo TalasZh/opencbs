@@ -226,8 +226,44 @@
   <data name="buttonAddProject.Text" xml:space="preserve">
     <value>Добавить проект</value>
   </data>
+  <data name="groupBoxFirstAddress.Text" xml:space="preserve">
+    <value>Домашний адрес*</value>
+  </data>
+  <data name="groupBoxSecondaryAddress.Text" xml:space="preserve">
+    <value>Деловой адрес</value>
+  </data>
   <data name="tabPageAddress.Text" xml:space="preserve">
     <value>Адрес</value>
+  </data>
+  <data name="labelSponsor2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 16</value>
+  </data>
+  <data name="labelSponsor2.Text" xml:space="preserve">
+    <value>Спонсирован</value>
+  </data>
+  <data name="labelCommentsTypeActivity.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 16</value>
+  </data>
+  <data name="labelCommentsTypeActivity.Text" xml:space="preserve">
+    <value>Комментарии:</value>
+  </data>
+  <data name="labelFirstAppointment.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 16</value>
+  </data>
+  <data name="labelFirstAppointment.Text" xml:space="preserve">
+    <value>Дата первой встречи</value>
+  </data>
+  <data name="labelFirstContact.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 16</value>
+  </data>
+  <data name="labelFirstContact.Text" xml:space="preserve">
+    <value>Дата первого контракта</value>
+  </data>
+  <data name="labelSponsor1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>206, 16</value>
+  </data>
+  <data name="labelSponsor1.Text" xml:space="preserve">
+    <value>Как человек узнал о программе?</value>
   </data>
   <data name="tabPage1FollowUp.Text" xml:space="preserve">
     <value>Последующая стратегия</value>
@@ -241,6 +277,21 @@
   <data name="tabPageSavings.Text" xml:space="preserve">
     <value>Депозиты</value>
   </data>
+  <data name="columnHeader1.Text" xml:space="preserve">
+    <value>Имя</value>
+  </data>
+  <data name="columnHeader10.Text" xml:space="preserve">
+    <value>Тип Группы</value>
+  </data>
+  <data name="columnHeader2.Text" xml:space="preserve">
+    <value>Дата регистрации</value>
+  </data>
+  <data name="columnHeader11.Text" xml:space="preserve">
+    <value>Дата вступления в гр. </value>
+  </data>
+  <data name="columnHeader12.Text" xml:space="preserve">
+    <value>Дата выхода из гр.</value>
+  </data>
   <data name="tabPageGroupMember.Text" xml:space="preserve">
     <value>Член группы</value>
   </data>
@@ -249,7 +300,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAACC
-        UQAAAk1TRnQBSQFMAgEBBwEAAUwBAwFMAQMBIAEAASABAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAGA
+        UQAAAk1TRnQBSQFMAgEBBwEAAVwBAwFcAQMBIAEAASABAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAGA
         AwABQAMAAQEBAAEgBgABgP8AHgABAQMJAQwDFAEbAxYBHgMWAR4DFgEeAxYBHgMWAR4DFgEeAxYBHgMW
         AR4DFgEeAxYBHgMWAR4DFgEeAxYBHgMWAR4DFgEeAxYBHgMWAR4DFgEeAxYBHgMWAR4DFgEeAxYBHgMU
         ARsDBwEJnwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMA
@@ -599,75 +650,8 @@
         AQcBgAIAAQMBwAIAAQ8BgAIAAQcBwAIAAQ8BwAIAAQcE/wHAAgABHwT/AcACAAEPEP8L
 </value>
   </data>
-  <data name="groupBoxFirstAddress.Text" xml:space="preserve">
-    <value>Домашний адрес*</value>
-  </data>
-  <data name="groupBoxSecondaryAddress.Text" xml:space="preserve">
-    <value>Деловой адрес</value>
-  </data>
-  <data name="labelSponsor2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 16</value>
-  </data>
-  <data name="labelSponsor2.Text" xml:space="preserve">
-    <value>Спонсирован</value>
-  </data>
-  <data name="labelCommentsTypeActivity.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 16</value>
-  </data>
-  <data name="labelCommentsTypeActivity.Text" xml:space="preserve">
-    <value>Комментарии:</value>
-  </data>
-  <data name="labelFirstAppointment.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 16</value>
-  </data>
-  <data name="labelFirstAppointment.Text" xml:space="preserve">
-    <value>Дата первой встречи</value>
-  </data>
-  <data name="labelFirstContact.Size" type="System.Drawing.Size, System.Drawing">
-    <value>166, 16</value>
-  </data>
-  <data name="labelFirstContact.Text" xml:space="preserve">
-    <value>Дата первого контракта</value>
-  </data>
-  <data name="labelSponsor1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>227, 16</value>
-  </data>
-  <data name="labelSponsor1.Text" xml:space="preserve">
-    <value>Как человек узнал о программе?</value>
-  </data>
-  <data name="columnHeader1.Text" xml:space="preserve">
-    <value>Имя</value>
-  </data>
-  <data name="columnHeader10.Text" xml:space="preserve">
-    <value>Тип Группы</value>
-  </data>
-  <data name="columnHeader2.Text" xml:space="preserve">
-    <value>Дата регистрации</value>
-  </data>
-  <data name="columnHeader11.Text" xml:space="preserve">
-    <value>Дата вступления в гр. </value>
-  </data>
-  <data name="columnHeader12.Text" xml:space="preserve">
-    <value>Дата выхода из гр.</value>
-  </data>
-  <data name="btnPrint.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        /9j/4AAQSkZJRgABAgEAAAAAAAD/7gAOQWRvYmUAZAAAAAAB/+wAEUR1Y2t5AAEABAAAADwAAP/bAEMA
-        BgQEBAUEBgUFBgkGBQYJCwgGBggLDAoKCwoKDBAMDAwMDAwQDA4PEA8ODBMTFBQTExwbGxscHx8fHx8f
-        Hx8fH//bAEMBBwcHDQwNGBAQGBoVERUaHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8f
-        Hx8fHx8fHx8fHx8fH//CABEIAMQAEgMBEQACEQEDEQH/xAAaAAEAAgMBAAAAAAAAAAAAAAAAAQQCAwUH
-        /8QAGxABAQEBAAMBAAAAAAAAAAAAABESEyBgIVD/xAAYAQEBAQEBAAAAAAAAAAAAAAAAAQIDBP/EABQR
-        AQAAAAAAAAAAAAAAAAAAAGD/xAAUEgEAAAAAAAAAAAAAAAAAAABg/8QAHxMBAQACAQQDAAAAAAAAAAAA
-        ABEgcVFQASFhMEBg/9oADAMBAAIQAxAAAAH1QAAAAAAAAAAAAAgAhAIAMQDAAwQDXIBqQCugFdAKrIFJ
-        kDnsAc28gOTrzgUwD//aAAgBAQABBQL82qqqqqqqrTTTbbbbbbo6Ojo6Oj6+vr//2gAIAQIAAQUC9L//
-        2gAIAQMAAQUC9Cqr5//aAAgBAgIGPwIX/9oACAEDAgY/Ahf/2gAIAQEBBj8CF//aAAgBAQMBPyHolVVV
-        VVfsgf8AH9KVgP/aAAgBAgMBPyH8X//aAAgBAwMBPyHrlVVVcBVXD//aAAwDAQACEQMRAAAQkkkkkkkk
-        kkgAAEktpJkkktv/AG3/ANJEkAbYk/8AJP8A/9oACAEBAwE/EPt3svZe2FVWzZtn/s2bYeEIbt26OUco
-        5bt26OUco5bNmz3ve9+H/9oACAECAwE/EPwURERMP//aAAgBAwMBPxDptVcKqqqqq/EALWt4eHh//9k=
-</value>
-  </data>
   <data name="btnPrint.Location" type="System.Drawing.Point, System.Drawing">
-    <value>526, 3</value>
+    <value>587, 3</value>
   </data>
   <data name="btnPrint.Size" type="System.Drawing.Size, System.Drawing">
     <value>105, 25</value>
@@ -681,9 +665,6 @@
   <data name="buttonSave.Text" xml:space="preserve">
     <value>Сохранить</value>
   </data>
-  <data name="groupBoxCivilities.Text" xml:space="preserve">
-    <value>Основное</value>
-  </data>
   <data name="lblBranch.Location" type="System.Drawing.Point, System.Drawing">
     <value>375, 144</value>
   </data>
@@ -694,7 +675,7 @@
     <value>Филиал:</value>
   </data>
   <data name="lblEconomicActivity.Size" type="System.Drawing.Size, System.Drawing">
-    <value>141, 16</value>
+    <value>130, 16</value>
   </data>
   <data name="lblEconomicActivity.Text" xml:space="preserve">
     <value>Вид деятельности:*:</value>
@@ -733,7 +714,7 @@
     <value>375, 13</value>
   </data>
   <data name="labelLoanCycle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>102, 16</value>
+    <value>93, 16</value>
   </data>
   <data name="labelLoanCycle.Text" xml:space="preserve">
     <value>Цикл кредита:</value>
@@ -763,13 +744,13 @@
     <value>Глава семьи</value>
   </data>
   <data name="labelDateOfBirth.Size" type="System.Drawing.Size, System.Drawing">
-    <value>118, 16</value>
+    <value>108, 16</value>
   </data>
   <data name="labelDateOfBirth.Text" xml:space="preserve">
     <value>Дата рождения*:</value>
   </data>
   <data name="labelLastname.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 16</value>
+    <value>72, 16</value>
   </data>
   <data name="labelLastname.Text" xml:space="preserve">
     <value>Фамилия*:</value>
@@ -778,22 +759,25 @@
     <value>200, 20</value>
   </data>
   <data name="labelPassport.Size" type="System.Drawing.Size, System.Drawing">
-    <value>89, 16</value>
+    <value>84, 16</value>
   </data>
   <data name="labelPassport.Text" xml:space="preserve">
     <value>Паспорт №*:</value>
   </data>
   <data name="labelSex.Size" type="System.Drawing.Size, System.Drawing">
-    <value>42, 16</value>
+    <value>40, 16</value>
   </data>
   <data name="labelSex.Text" xml:space="preserve">
     <value>Пол*:</value>
   </data>
   <data name="labelFirstName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>43, 16</value>
+    <value>42, 16</value>
   </data>
   <data name="labelFirstName.Text" xml:space="preserve">
     <value>Имя*:</value>
+  </data>
+  <data name="groupBoxCivilities.Text" xml:space="preserve">
+    <value>Основное</value>
   </data>
   <data name="comboBox1.Items" xml:space="preserve">
     <value>разведен</value>
@@ -1118,6 +1102,6 @@
     <value>Добавить кредит</value>
   </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>883, 429</value>
+    <value>851, 397</value>
   </data>
 </root>
