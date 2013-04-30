@@ -117,82 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 16</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Detalles</value>
-  </data>
-  <data name="buttonViewLeader.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
-        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
-        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
-        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
-        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
-        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
-        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
-        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
-        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
-        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
-        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="buttonViewLeader.Text" xml:space="preserve">
-    <value>Ver lider</value>
-  </data>
-  <data name="labelNameOfLeader.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 16</value>
-  </data>
-  <data name="labelNameOfLeader.Text" xml:space="preserve">
-    <value>Nombre</value>
-  </data>
-  <data name="checkBoxHeadOfHousehold.Text" xml:space="preserve">
-    <value>Jefe de familia</value>
-  </data>
-  <data name="groupBoxLeader.Text" xml:space="preserve">
-    <value>Características</value>
-  </data>
-  <data name="buttonSelectLeader.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
-        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
-        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
-        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
-        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
-        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
-        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
-        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
-        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
-        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
-        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="buttonSelectLeader.Text" xml:space="preserve">
-    <value>Buscar</value>
-  </data>
-  <data name="buttonAddLeader.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
-        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
-        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
-        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
-        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
-        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
-        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
-        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
-        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
-        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
-        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="buttonAddLeader.Text" xml:space="preserve">
-    <value>agregar</value>
-  </data>
   <data name="columnHeaderName.Text" xml:space="preserve">
     <value>Nombre</value>
   </data>
@@ -262,98 +186,6 @@
   <data name="tabPageMembers.Text" xml:space="preserve">
     <value>Miembros</value>
   </data>
-  <data name="labelCommentsTypeActivity.Size" type="System.Drawing.Size, System.Drawing">
-    <value>88, 16</value>
-  </data>
-  <data name="labelCommentsTypeActivity.Text" xml:space="preserve">
-    <value>Comentarios</value>
-  </data>
-  <data name="buttonAddGroupSponsor.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
-        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
-        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
-        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
-        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
-        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
-        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
-        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
-        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
-        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
-        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="buttonAddGroupSponsor.Text" xml:space="preserve">
-    <value>agregar</value>
-  </data>
-  <data name="buttonSelectGroupSponsor.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
-        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
-        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
-        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
-        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
-        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
-        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
-        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
-        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
-        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
-        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="buttonSelectGroupSponsor.Text" xml:space="preserve">
-    <value>Buscar</value>
-  </data>
-  <data name="labelGroupSponsor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>114, 16</value>
-  </data>
-  <data name="labelGroupSponsor.Text" xml:space="preserve">
-    <value>Patrocinado por </value>
-  </data>
-  <data name="tabPageFollowUp.Text" xml:space="preserve">
-    <value>Seguimiento</value>
-  </data>
-  <data name="tabPageLeader.Text" xml:space="preserve">
-    <value>Líder</value>
-  </data>
-  <data name="radioButtonBadClient.Text" xml:space="preserve">
-    <value>Cliente malo</value>
-  </data>
-  <data name="groupBoxAmountCycle.Text" xml:space="preserve">
-    <value>Ciclo del crédito</value>
-  </data>
-  <data name="groupBox9.Text" xml:space="preserve">
-    <value>Comentarios</value>
-  </data>
-  <data name="labelOtherOrganizationDebts.Size" type="System.Drawing.Size, System.Drawing">
-    <value>49, 16</value>
-  </data>
-  <data name="labelOtherOrganizationDebts.Text" xml:space="preserve">
-    <value>Deuda</value>
-  </data>
-  <data name="labelOtherOrganizationAmount.Size" type="System.Drawing.Size, System.Drawing">
-    <value>90, 16</value>
-  </data>
-  <data name="labelOtherOrganizationAmount.Text" xml:space="preserve">
-    <value>Monto inicial</value>
-  </data>
-  <data name="labelOtherOrganizationName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 16</value>
-  </data>
-  <data name="labelOtherOrganizationName.Text" xml:space="preserve">
-    <value>Nombre</value>
-  </data>
-  <data name="radioButtonExperienceWithOtherOrganization.Text" xml:space="preserve">
-    <value>Historial con otra(s) IMF(s)</value>
-  </data>
-  <data name="groupBoxOtherOrganization.Text" xml:space="preserve">
-    <value>Otras IMFS</value>
-  </data>
-  <data name="tabPageEconomicSituation.Text" xml:space="preserve">
-    <value>Situación económica</value>
-  </data>
   <data name="columnHeader1.Text" xml:space="preserve">
     <value>Nombre</value>
   </data>
@@ -392,7 +224,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAAQ
-        HAAAAk1TRnQBSQFMAgEBBQEAARQBAAEUAQABIAEAASABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        HAAAAk1TRnQBSQFMAgEBBQEAARwBAAEcAQABIAEAASABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
         AwABgAMAAUADAAEBAQABCAYAASAYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
         AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
         AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
@@ -514,6 +346,10 @@
         AgABBwHAAgABBwHAAgABBwHAAgABBwHAAgABDwHAAgABDwHAAgABDwHAAgABDyD/Cw==
 </value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="cbBranch.Location" type="System.Drawing.Point, System.Drawing">
+    <value>124, 117</value>
+  </data>
   <data name="buttonNext.Text" xml:space="preserve">
     <value>Siguiente</value>
   </data>
@@ -527,27 +363,42 @@
     <value>Grabar</value>
   </data>
   <data name="textBoxGroupLoanCycle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>540, 21</value>
+    <value>124, 89</value>
   </data>
   <data name="labelGroupCycle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>113, 16</value>
+    <value>102, 16</value>
   </data>
   <data name="labelGroupCycle.Text" xml:space="preserve">
     <value>Ciclo del grupo: </value>
   </data>
+  <data name="cmbWeekDay.Location" type="System.Drawing.Point, System.Drawing">
+    <value>124, 31</value>
+  </data>
+  <data name="dateTimePickerDateOfEstablishment.Location" type="System.Drawing.Point, System.Drawing">
+    <value>124, 61</value>
+  </data>
   <data name="labelDateOfEstablishment.Size" type="System.Drawing.Size, System.Drawing">
-    <value>126, 16</value>
+    <value>115, 16</value>
   </data>
   <data name="labelDateOfEstablishment.Text" xml:space="preserve">
     <value>Fecha de creación</value>
   </data>
+  <data name="cbMeetingDay.Location" type="System.Drawing.Point, System.Drawing">
+    <value>279, 31</value>
+  </data>
   <data name="labelName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 16</value>
+    <value>53, 16</value>
   </data>
   <data name="labelName.Text" xml:space="preserve">
     <value>Nombre</value>
   </data>
+  <data name="textBoxName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>124, 3</value>
+  </data>
   <data name="groupBoxCivilStatus.Text" xml:space="preserve">
     <value>Estado Civil</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>854, 589</value>
   </data>
 </root>

@@ -158,15 +158,15 @@ namespace Octopus.GUI.UserControl
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GroupUserControl));
             this.splitContainer3 = new System.Windows.Forms.SplitContainer();
             this.listViewOtherMembres = new System.Windows.Forms.ListView();
-            this.columnHeaderName = new System.Windows.Forms.ColumnHeader();
-            this.columnHeaderPassport = new System.Windows.Forms.ColumnHeader();
-            this.columnHeaderDateOfBirth = new System.Windows.Forms.ColumnHeader();
-            this.columnHeaderSex = new System.Windows.Forms.ColumnHeader();
-            this.columnHeaderHeadOfHousehold = new System.Windows.Forms.ColumnHeader();
-            this.columnHeaderLoanCycle = new System.Windows.Forms.ColumnHeader();
-            this.columnHeaderDependents = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader7 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader8 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeaderName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderPassport = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderDateOfBirth = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderSex = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderHeadOfHousehold = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderLoanCycle = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderDependents = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.buttonDeleteMembers = new System.Windows.Forms.Button();
             this.buttonSaveAsLeader = new System.Windows.Forms.Button();
@@ -175,10 +175,10 @@ namespace Octopus.GUI.UserControl
             this.buttonSelectAMember = new System.Windows.Forms.Button();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.listViewProjects = new System.Windows.Forms.ListView();
-            this.columnHeader11 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader12 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeaderCode = new System.Windows.Forms.ColumnHeader();
-            this.columnHeaderNbOfContracts = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader11 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader12 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderCode = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderNbOfContracts = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.groupBoxProjects = new System.Windows.Forms.GroupBox();
             this.buttonViewProject = new System.Windows.Forms.Button();
             this.buttonAddProject = new System.Windows.Forms.Button();
@@ -190,14 +190,14 @@ namespace Octopus.GUI.UserControl
             this.tabPageMembers = new System.Windows.Forms.TabPage();
             this.tabPageHistory = new System.Windows.Forms.TabPage();
             this.listViewHistoryMembers = new System.Windows.Forms.ListView();
-            this.columnHeader1 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader2 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader3 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader4 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader5 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader6 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader9 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader10 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabPageProjects = new System.Windows.Forms.TabPage();
             this.tabPageSaving = new System.Windows.Forms.TabPage();
             this.savingsListUserControl1 = new Octopus.GUI.UserControl.SavingsListUserControl();
@@ -325,13 +325,13 @@ namespace Octopus.GUI.UserControl
             resources.ApplyResources(this.columnHeader8, "columnHeader8");
             // 
             // groupBox3
-            //
-            resources.ApplyResources(this.groupBox3, "groupBox3");
+            // 
             this.groupBox3.Controls.Add(this.buttonDeleteMembers);
             this.groupBox3.Controls.Add(this.buttonSaveAsLeader);
             this.groupBox3.Controls.Add(this.buttonViewMember);
             this.groupBox3.Controls.Add(this.buttonAddMembres);
             this.groupBox3.Controls.Add(this.buttonSelectAMember);
+            resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.TabStop = false;
             // 
@@ -410,10 +410,10 @@ namespace Octopus.GUI.UserControl
             resources.ApplyResources(this.columnHeaderNbOfContracts, "columnHeaderNbOfContracts");
             // 
             // groupBoxProjects
-            //
-            resources.ApplyResources(this.groupBoxProjects, "groupBoxProjects");
+            // 
             this.groupBoxProjects.Controls.Add(this.buttonViewProject);
             this.groupBoxProjects.Controls.Add(this.buttonAddProject);
+            resources.ApplyResources(this.groupBoxProjects, "groupBoxProjects");
             this.groupBoxProjects.Name = "groupBoxProjects";
             this.groupBoxProjects.TabStop = false;
             // 
@@ -444,7 +444,7 @@ namespace Octopus.GUI.UserControl
             this.tabControlGroupInfo.SelectedIndexChanged += new System.EventHandler(this.tabControlGroupInfo_SelectedIndexChanged);
             // 
             // tabPageBusinessAddress
-            //
+            // 
             this.tabPageBusinessAddress.Controls.Add(this.tableLayoutPanel1);
             resources.ApplyResources(this.tabPageBusinessAddress, "tabPageBusinessAddress");
             this.tabPageBusinessAddress.Name = "tabPageBusinessAddress";
@@ -458,25 +458,25 @@ namespace Octopus.GUI.UserControl
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             // 
             // groupBoxFirstAddress
-            //
+            // 
             resources.ApplyResources(this.groupBoxFirstAddress, "groupBoxFirstAddress");
             this.groupBoxFirstAddress.Name = "groupBoxFirstAddress";
             this.groupBoxFirstAddress.TabStop = false;
             // 
             // groupBoxSecondaryAddress
-            //
+            // 
             resources.ApplyResources(this.groupBoxSecondaryAddress, "groupBoxSecondaryAddress");
             this.groupBoxSecondaryAddress.Name = "groupBoxSecondaryAddress";
             this.groupBoxSecondaryAddress.TabStop = false;
             // 
             // tabPageMembers
-            //
+            // 
             this.tabPageMembers.Controls.Add(this.splitContainer3);
             resources.ApplyResources(this.tabPageMembers, "tabPageMembers");
             this.tabPageMembers.Name = "tabPageMembers";
             // 
             // tabPageHistory
-            //
+            // 
             this.tabPageHistory.Controls.Add(this.listViewHistoryMembers);
             resources.ApplyResources(this.tabPageHistory, "tabPageHistory");
             this.tabPageHistory.Name = "tabPageHistory";
@@ -551,9 +551,9 @@ namespace Octopus.GUI.UserControl
             this.savingsListUserControl1.ClientType = Octopus.Enums.OClientTypes.Group;
             resources.ApplyResources(this.savingsListUserControl1, "savingsListUserControl1");
             this.savingsListUserControl1.Name = "savingsListUserControl1";
-            this.savingsListUserControl1.Load += new System.EventHandler(this.savingsListUserControl1_Load);
             this.savingsListUserControl1.AddSelectedSaving += new System.EventHandler(this.savingsListUserControl1_AddSelectedSaving);
             this.savingsListUserControl1.ViewSelectedSaving += new System.EventHandler(this.savingsListUserControl1_ViewSelectedSaving);
+            this.savingsListUserControl1.Load += new System.EventHandler(this.savingsListUserControl1_Load);
             // 
             // tabPageCustomizableFields
             // 
@@ -579,9 +579,9 @@ namespace Octopus.GUI.UserControl
             // 
             // groupBoxButtonBottom
             // 
-            resources.ApplyResources(this.groupBoxButtonBottom, "groupBoxButtonBottom");
             this.groupBoxButtonBottom.Controls.Add(this.buttonNext);
             this.groupBoxButtonBottom.Controls.Add(this.buttonPreview);
+            resources.ApplyResources(this.groupBoxButtonBottom, "groupBoxButtonBottom");
             this.groupBoxButtonBottom.Name = "groupBoxButtonBottom";
             this.groupBoxButtonBottom.TabStop = false;
             // 
@@ -592,7 +592,7 @@ namespace Octopus.GUI.UserControl
             this.buttonNext.Click += new System.EventHandler(this.buttonNext_Click);
             // 
             // buttonPreview
-            //
+            // 
             resources.ApplyResources(this.buttonPreview, "buttonPreview");
             this.buttonPreview.Name = "buttonPreview";
             this.buttonPreview.Click += new System.EventHandler(this.buttonPreview_Click);
@@ -615,8 +615,6 @@ namespace Octopus.GUI.UserControl
             // 
             resources.ApplyResources(this.btnPrint, "btnPrint");
             this.btnPrint.AttachmentPoint = Octopus.Reports.AttachmentPoint.GroupDetails;
-            this.btnPrint.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnPrint.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.btnPrint.Name = "btnPrint";
             this.btnPrint.ReportInitializer = null;
             this.btnPrint.UseVisualStyleBackColor = true;
@@ -644,13 +642,13 @@ namespace Octopus.GUI.UserControl
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             // 
             // groupBoxCivilStatus
-            //
-            resources.ApplyResources(this.groupBoxCivilStatus, "groupBoxCivilStatus");
+            // 
             this.groupBoxCivilStatus.Controls.Add(this.tlpGroupControls);
             this.groupBoxCivilStatus.Controls.Add(this.linkLabelChangePhoto2);
             this.groupBoxCivilStatus.Controls.Add(this.linkLabelChangePhoto);
             this.groupBoxCivilStatus.Controls.Add(this.pictureBox2);
             this.groupBoxCivilStatus.Controls.Add(this.pictureBox1);
+            resources.ApplyResources(this.groupBoxCivilStatus, "groupBoxCivilStatus");
             this.groupBoxCivilStatus.Name = "groupBoxCivilStatus";
             this.groupBoxCivilStatus.TabStop = false;
             // 

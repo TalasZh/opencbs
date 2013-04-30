@@ -232,77 +232,6 @@
   <data name="tabPageMembers.Text" xml:space="preserve">
     <value>Члены</value>
   </data>
-  <data name="labelCommentsTypeActivity.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 16</value>
-  </data>
-  <data name="labelCommentsTypeActivity.Text" xml:space="preserve">
-    <value>Комментарии:</value>
-  </data>
-  <data name="buttonAddGroupSponsor.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
-        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
-        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
-        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
-        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
-        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
-        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
-        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
-        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
-        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
-        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="buttonAddGroupSponsor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>630, 8</value>
-  </data>
-  <data name="buttonAddGroupSponsor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>107, 25</value>
-  </data>
-  <data name="buttonAddGroupSponsor.Text" xml:space="preserve">
-    <value>Добавить</value>
-  </data>
-  <data name="textBoxGroupSponsor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>124, 8</value>
-  </data>
-  <data name="textBoxGroupSponsor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>373, 22</value>
-  </data>
-  <data name="buttonSelectGroupSponsor.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
-        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
-        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
-        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
-        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
-        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
-        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
-        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
-        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
-        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
-        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="buttonSelectGroupSponsor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>517, 8</value>
-  </data>
-  <data name="buttonSelectGroupSponsor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>107, 25</value>
-  </data>
-  <data name="buttonSelectGroupSponsor.Text" xml:space="preserve">
-    <value>Поиск</value>
-  </data>
-  <data name="labelGroupSponsor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 16</value>
-  </data>
-  <data name="labelGroupSponsor.Text" xml:space="preserve">
-    <value>Спонсор </value>
-  </data>
-  <data name="tabPageFollowUp.Text" xml:space="preserve">
-    <value>Последующая стратегия</value>
-  </data>
   <data name="columnHeader1.Text" xml:space="preserve">
     <value>Имя</value>
   </data>
@@ -344,7 +273,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAAQ
-        HAAAAk1TRnQBSQFMAgEBBQEAAXwBAAF8AQABIAEAASABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        HAAAAk1TRnQBSQFMAgEBBQEAAYQBAAGEAQABIAEAASABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
         AwABgAMAAUADAAEBAQABCAYAASAYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
         AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
         AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
@@ -467,29 +396,13 @@
 </value>
   </data>
   <data name="cbBranch.Location" type="System.Drawing.Point, System.Drawing">
-    <value>143, 117</value>
+    <value>129, 117</value>
   </data>
   <data name="buttonNext.Text" xml:space="preserve">
     <value>Далее</value>
   </data>
   <data name="buttonPreview.Text" xml:space="preserve">
     <value>Назад</value>
-  </data>
-  <data name="btnPrint.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        /9j/4AAQSkZJRgABAgEAAAAAAAD/7gAOQWRvYmUAZAAAAAAB/+wAEUR1Y2t5AAEABAAAADwAAP/bAEMA
-        BgQEBAUEBgUFBgkGBQYJCwgGBggLDAoKCwoKDBAMDAwMDAwQDA4PEA8ODBMTFBQTExwbGxscHx8fHx8f
-        Hx8fH//bAEMBBwcHDQwNGBAQGBoVERUaHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8f
-        Hx8fHx8fHx8fHx8fH//CABEIAMQAEgMBEQACEQEDEQH/xAAaAAEAAgMBAAAAAAAAAAAAAAAAAQQCAwUH
-        /8QAGxABAQEBAAMBAAAAAAAAAAAAABESEyBgIVD/xAAYAQEBAQEBAAAAAAAAAAAAAAAAAQIDBP/EABQR
-        AQAAAAAAAAAAAAAAAAAAAGD/xAAUEgEAAAAAAAAAAAAAAAAAAABg/8QAHxMBAQACAQQDAAAAAAAAAAAA
-        ABEgcVFQASFhMEBg/9oADAMBAAIQAxAAAAH1QAAAAAAAAAAAAAgAhAIAMQDAAwQDXIBqQCugFdAKrIFJ
-        kDnsAc28gOTrzgUwD//aAAgBAQABBQL82qqqqqqqrTTTbbbbbbo6Ojo6Oj6+vr//2gAIAQIAAQUC9L//
-        2gAIAQMAAQUC9Cqr5//aAAgBAgIGPwIX/9oACAEDAgY/Ahf/2gAIAQEBBj8CF//aAAgBAQMBPyHolVVV
-        VVfsgf8AH9KVgP/aAAgBAgMBPyH8X//aAAgBAwMBPyHrlVVVcBVXD//aAAwDAQACEQMRAAAQkkkkkkkk
-        kkgAAEktpJkkktv/AG3/ANJEkAbYk/8AJP8A/9oACAEBAwE/EPt3svZe2FVWzZtn/s2bYeEIbt26OUco
-        5bt26OUco5bNmz3ve9+H/9oACAECAwE/EPwURERMP//aAAgBAwMBPxDptVcKqqqqq/EALWt4eHh//9k=
-</value>
   </data>
   <data name="btnPrint.Text" xml:space="preserve">
     <value>Печать</value>
@@ -501,22 +414,22 @@
     <value>Сохранить</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 16</value>
+    <value>58, 16</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
     <value>Филиал:</value>
   </data>
   <data name="textBoxGroupLoanCycle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>143, 89</value>
+    <value>129, 89</value>
   </data>
   <data name="labelGroupCycle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 16</value>
+    <value>88, 16</value>
   </data>
   <data name="labelGroupCycle.Text" xml:space="preserve">
     <value>Цикл группы:</value>
   </data>
   <data name="lblWeekDay.Size" type="System.Drawing.Size, System.Drawing">
-    <value>98, 30</value>
+    <value>89, 30</value>
   </data>
   <data name="lblWeekDay.Text" xml:space="preserve">
     <value>День встречи</value>
@@ -543,34 +456,34 @@
     <value>Суббота</value>
   </data>
   <data name="cmbWeekDay.Location" type="System.Drawing.Point, System.Drawing">
-    <value>143, 31</value>
+    <value>129, 31</value>
   </data>
   <data name="dateTimePickerDateOfEstablishment.Location" type="System.Drawing.Point, System.Drawing">
-    <value>143, 61</value>
+    <value>129, 61</value>
   </data>
   <data name="labelDateOfEstablishment.Size" type="System.Drawing.Size, System.Drawing">
-    <value>134, 16</value>
+    <value>120, 16</value>
   </data>
   <data name="labelDateOfEstablishment.Text" xml:space="preserve">
     <value>Дата образования:</value>
   </data>
   <data name="cbMeetingDay.Location" type="System.Drawing.Point, System.Drawing">
-    <value>298, 31</value>
+    <value>284, 31</value>
   </data>
   <data name="cbMeetingDay.Size" type="System.Drawing.Size, System.Drawing">
-    <value>178, 24</value>
+    <value>162, 24</value>
   </data>
   <data name="cbMeetingDay.Text" xml:space="preserve">
     <value>Выбрать день встречи</value>
   </data>
   <data name="labelName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>43, 16</value>
+    <value>42, 16</value>
   </data>
   <data name="labelName.Text" xml:space="preserve">
     <value>Имя*:</value>
   </data>
   <data name="textBoxName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>143, 3</value>
+    <value>129, 3</value>
   </data>
   <data name="textBoxName.Size" type="System.Drawing.Size, System.Drawing">
     <value>333, 22</value>
@@ -592,5 +505,8 @@
   </data>
   <data name="groupBoxCivilStatus.Text" xml:space="preserve">
     <value>Основное</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>854, 589</value>
   </data>
 </root>
