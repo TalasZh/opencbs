@@ -65,14 +65,14 @@ namespace OpenCBS.GUI
             // 
             // label1
             // 
-            this.label1.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.label1, "label1");
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Name = "label1";
             // 
             // labelConfigurationValue
             // 
-            this.labelConfigurationValue.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.labelConfigurationValue, "labelConfigurationValue");
+            this.labelConfigurationValue.BackColor = System.Drawing.Color.Transparent;
             this.labelConfigurationValue.Name = "labelConfigurationValue";
             // 
             // bWOneToSeven
@@ -99,18 +99,18 @@ namespace OpenCBS.GUI
             // 
             // oPBMacroProgression
             // 
+            resources.ApplyResources(this.oPBMacroProgression, "oPBMacroProgression");
             this.oPBMacroProgression.BackColor = System.Drawing.Color.Transparent;
             this.oPBMacroProgression.ForeColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.oPBMacroProgression, "oPBMacroProgression");
             this.oPBMacroProgression.Name = "oPBMacroProgression";
             this.oPBMacroProgression.Step = 13;
             this.oPBMacroProgression.Value = 0;
             // 
             // oPBarMicroProgression
             // 
+            resources.ApplyResources(this.oPBarMicroProgression, "oPBarMicroProgression");
             this.oPBarMicroProgression.BackColor = System.Drawing.Color.Transparent;
             this.oPBarMicroProgression.ForeColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.oPBarMicroProgression, "oPBarMicroProgression");
             this.oPBarMicroProgression.Name = "oPBarMicroProgression";
             this.oPBarMicroProgression.Step = 10;
             this.oPBarMicroProgression.Value = 0;

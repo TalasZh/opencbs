@@ -117,110 +117,62 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 263</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>183, 22</value>
-  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Checking configuration...</value>
-  </data>
-  <data name="label1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="labelConfigurationValue.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9pt</value>
-  </data>
-  <data name="labelConfigurationValue.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="labelConfigurationValue.Location" type="System.Drawing.Point, System.Drawing">
-    <value>226, 262</value>
-  </data>
-  <data name="labelConfigurationValue.Size" type="System.Drawing.Size, System.Drawing">
-    <value>359, 22</value>
-  </data>
-  <data name="labelConfigurationValue.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="labelConfigurationValue.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;labelConfigurationValue.Name" xml:space="preserve">
-    <value>labelConfigurationValue</value>
-  </data>
-  <data name="&gt;&gt;labelConfigurationValue.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelConfigurationValue.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;labelConfigurationValue.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <metadata name="bWOneToSeven.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="bWSeventToEight.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>156, 17</value>
-  </metadata>
-  <data name="pictureBoxAboutOctopus.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="pictureBoxAboutOctopus.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Center</value>
-  </data>
-  <data name="pictureBoxAboutOctopus.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="pictureBoxAboutOctopus.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="pictureBoxAboutOctopus.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 7</value>
-  </data>
-  <data name="pictureBoxAboutOctopus.Size" type="System.Drawing.Size, System.Drawing">
-    <value>573, 231</value>
-  </data>
-  <data name="pictureBoxAboutOctopus.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+  <data name="&gt;&gt;oPBarMicroProgression.Name" xml:space="preserve">
+    <value>oPBarMicroProgression</value>
   </data>
   <data name="&gt;&gt;pictureBoxAboutOctopus.Name" xml:space="preserve">
     <value>pictureBoxAboutOctopus</value>
   </data>
-  <data name="&gt;&gt;pictureBoxAboutOctopus.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="&gt;&gt;oPBMacroProgression.Type" xml:space="preserve">
+    <value>OpenCBS.GUI.OpenCBSProgressBar, OpenCBS.GUI, Version=1.1.1.27520, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;pictureBoxAboutOctopus.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;pictureBoxAboutOctopus.ZOrder" xml:space="preserve">
+  <data name="oPBMacroProgression.Text" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="label1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="pictureBoxAboutOctopus.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="pictureBoxAboutOctopus.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="pictureBoxAboutOctopus.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;bWSeventToEight.Name" xml:space="preserve">
+    <value>bWSeventToEight</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>OpenCBS.GUI.UserControl.SweetBaseForm, OpenCBS.GUI, Version=1.1.1.27520, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Checking configuration...</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>601, 331</value>
+  </data>
+  <data name="oPBarMicroProgression.Size" type="System.Drawing.Size, System.Drawing">
+    <value>359, 26</value>
+  </data>
+  <data name="&gt;&gt;bWOneToSeven.Type" xml:space="preserve">
+    <value>System.ComponentModel.BackgroundWorker, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="oPBarMicroProgression.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
   <data name="oPBMacroProgression.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -228,26 +180,107 @@
   <data name="oPBMacroProgression.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 288</value>
   </data>
-  <data name="oPBMacroProgression.Size" type="System.Drawing.Size, System.Drawing">
-    <value>183, 26</value>
+  <data name="&gt;&gt;oPBarMicroProgression.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
-  <data name="oPBMacroProgression.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 263</value>
   </data>
-  <data name="oPBMacroProgression.Text" xml:space="preserve">
-    <value>0</value>
+  <data name="pictureBoxAboutOctopus.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Center</value>
   </data>
-  <data name="oPBMacroProgression.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
+  <data name="&gt;&gt;oPBMacroProgression.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="&gt;&gt;bWSeventToEight.Type" xml:space="preserve">
+    <value>System.ComponentModel.BackgroundWorker, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pictureBoxAboutOctopus.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;oPBarMicroProgression.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="oPBarMicroProgression.Location" type="System.Drawing.Point, System.Drawing">
+    <value>226, 288</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="labelConfigurationValue.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxAboutOctopus.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelConfigurationValue.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FrmSplash</value>
   </data>
   <data name="&gt;&gt;oPBMacroProgression.Name" xml:space="preserve">
     <value>oPBMacroProgression</value>
   </data>
-  <data name="&gt;&gt;oPBMacroProgression.Type" xml:space="preserve">
-    <value>OpenCBS.GUI.OctopusProgressBar, OpenCBS.GUI, Version=1.1.1.21755, Culture=neutral, PublicKeyToken=null</value>
+  <data name="pictureBoxAboutOctopus.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 7</value>
   </data>
-  <data name="&gt;&gt;oPBMacroProgression.Parent" xml:space="preserve">
+  <data name="labelConfigurationValue.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxAboutOctopus.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="oPBMacroProgression.Size" type="System.Drawing.Size, System.Drawing">
+    <value>183, 26</value>
+  </data>
+  <data name="oPBMacroProgression.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="pictureBoxAboutOctopus.Size" type="System.Drawing.Size, System.Drawing">
+    <value>573, 231</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>183, 22</value>
+  </data>
+  <data name="&gt;&gt;labelConfigurationValue.Name" xml:space="preserve">
+    <value>labelConfigurationValue</value>
+  </data>
+  <data name="oPBarMicroProgression.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;labelConfigurationValue.Parent" xml:space="preserve">
     <value>$this</value>
+  </data>
+  <data name="&gt;&gt;labelConfigurationValue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelConfigurationValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>226, 262</value>
+  </data>
+  <data name="&gt;&gt;labelConfigurationValue.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;oPBarMicroProgression.Type" xml:space="preserve">
+    <value>OpenCBS.GUI.OpenCBSProgressBar, OpenCBS.GUI, Version=1.1.1.27520, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="labelConfigurationValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>359, 22</value>
+  </data>
+  <data name="labelConfigurationValue.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="&gt;&gt;oPBMacroProgression.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -255,41 +288,8 @@
   <data name="oPBarMicroProgression.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="oPBarMicroProgression.Location" type="System.Drawing.Point, System.Drawing">
-    <value>226, 288</value>
-  </data>
-  <data name="oPBarMicroProgression.Size" type="System.Drawing.Size, System.Drawing">
-    <value>359, 26</value>
-  </data>
-  <data name="oPBarMicroProgression.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="oPBarMicroProgression.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;oPBarMicroProgression.Name" xml:space="preserve">
-    <value>oPBarMicroProgression</value>
-  </data>
-  <data name="&gt;&gt;oPBarMicroProgression.Type" xml:space="preserve">
-    <value>OpenCBS.GUI.OctopusProgressBar, OpenCBS.GUI, Version=1.1.1.21755, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;oPBarMicroProgression.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;oPBarMicroProgression.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>601, 331</value>
-  </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Octopus upgrade</value>
@@ -297,19 +297,19 @@
   <data name="&gt;&gt;bWOneToSeven.Name" xml:space="preserve">
     <value>bWOneToSeven</value>
   </data>
-  <data name="&gt;&gt;bWOneToSeven.Type" xml:space="preserve">
-    <value>System.ComponentModel.BackgroundWorker, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="&gt;&gt;bWSeventToEight.Name" xml:space="preserve">
-    <value>bWSeventToEight</value>
+  <data name="oPBMacroProgression.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
   </data>
-  <data name="&gt;&gt;bWSeventToEight.Type" xml:space="preserve">
-    <value>System.ComponentModel.BackgroundWorker, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>FrmSplash</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>OpenCBS.GUI.UserControl.SweetBaseForm, OpenCBS.GUI, Version=1.1.1.21755, Culture=neutral, PublicKeyToken=null</value>
-  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="bWSeventToEight.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>156, 17</value>
+  </metadata>
+  <metadata name="bWOneToSeven.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>
