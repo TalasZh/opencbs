@@ -118,145 +118,131 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="mnuNewClient.Size" type="System.Drawing.Size, System.Drawing">
-    <value>185, 22</value>
-  </data>
-  <data name="mnuNewClient.Text" xml:space="preserve">
-    <value>Nuevo cliente</value>
-  </data>
-  <data name="mnuSearchClient.Size" type="System.Drawing.Size, System.Drawing">
-    <value>185, 22</value>
-  </data>
-  <data name="mnuSearchClient.Text" xml:space="preserve">
-    <value>Buscar cliente</value>
-  </data>
-  <data name="mnuClients.Size" type="System.Drawing.Size, System.Drawing">
-    <value>61, 20</value>
-  </data>
-  <data name="mnuClients.Text" xml:space="preserve">
-    <value>Clientes</value>
-  </data>
   <data name="mnuNewPerson.Size" type="System.Drawing.Size, System.Drawing">
-    <value>234, 22</value>
+    <value>215, 22</value>
   </data>
   <data name="mnuNewPerson.Text" xml:space="preserve">
     <value>Nueva persona</value>
   </data>
   <data name="mnuNewGroup.Size" type="System.Drawing.Size, System.Drawing">
-    <value>234, 22</value>
+    <value>215, 22</value>
   </data>
   <data name="mnuNewGroup.Text" xml:space="preserve">
     <value>Nuevo grupo</value>
   </data>
   <data name="mnuNewVillage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>234, 22</value>
+    <value>215, 22</value>
   </data>
   <data name="mnuNewVillage.Text" xml:space="preserve">
     <value>Nuevo Banco Comunal</value>
   </data>
   <data name="newCorporateToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>234, 22</value>
+    <value>215, 22</value>
   </data>
   <data name="newCorporateToolStripMenuItem.Text" xml:space="preserve">
     <value>Nueva empresa</value>
   </data>
-  <data name="mnuContracts.Size" type="System.Drawing.Size, System.Drawing">
-    <value>71, 20</value>
+  <data name="mnuNewClient.Size" type="System.Drawing.Size, System.Drawing">
+    <value>175, 22</value>
   </data>
-  <data name="mnuContracts.Text" xml:space="preserve">
-    <value>Contratos</value>
+  <data name="mnuNewClient.Text" xml:space="preserve">
+    <value>Nuevo cliente</value>
   </data>
-  <data name="mnuSearchContract.Size" type="System.Drawing.Size, System.Drawing">
-    <value>194, 22</value>
+  <data name="mnuSearchClient.Size" type="System.Drawing.Size, System.Drawing">
+    <value>175, 22</value>
+  </data>
+  <data name="mnuSearchClient.Text" xml:space="preserve">
+    <value>Buscar cliente</value>
+  </data>
+  <data name="mnuClients.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 20</value>
+  </data>
+  <data name="mnuClients.Text" xml:space="preserve">
+    <value>Clientes</value>
   </data>
   <data name="mnuSearchContract.Text" xml:space="preserve">
     <value>Buscar contrato</value>
   </data>
-  <data name="reasignToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>194, 22</value>
-  </data>
   <data name="reasignToolStripMenuItem.Text" xml:space="preserve">
     <value>Reasignar contratos</value>
   </data>
-  <data name="mnuAccounting.Size" type="System.Drawing.Size, System.Drawing">
-    <value>87, 20</value>
+  <data name="mnuContracts.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 20</value>
   </data>
-  <data name="mnuAccounting.Text" xml:space="preserve">
-    <value>Contabilidad</value>
+  <data name="mnuContracts.Text" xml:space="preserve">
+    <value>Contratos</value>
   </data>
   <data name="mnuChartOfAccounts.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 22</value>
+    <value>217, 22</value>
   </data>
   <data name="mnuChartOfAccounts.Text" xml:space="preserve">
     <value>Plan contable</value>
   </data>
   <data name="accountingRulesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 22</value>
+    <value>217, 22</value>
   </data>
   <data name="trialBalanceToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 22</value>
+    <value>217, 22</value>
   </data>
   <data name="toolStripMenuItemAccountView.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 22</value>
+    <value>217, 22</value>
   </data>
   <data name="toolStripMenuItemAccountView.Text" xml:space="preserve">
     <value>Ver cuenta</value>
   </data>
   <data name="manualEntriesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 22</value>
+    <value>217, 22</value>
   </data>
   <data name="standardToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 22</value>
+    <value>217, 22</value>
   </data>
   <data name="toolStripSeparator2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>227, 6</value>
+    <value>214, 6</value>
   </data>
   <data name="menuItemExportTransaction.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 22</value>
+    <value>217, 22</value>
   </data>
   <data name="menuItemExportTransaction.Text" xml:space="preserve">
     <value>Transacciones de exportación</value>
   </data>
-  <data name="mnuMonthlyClosure.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAPlJREFUOE9jYACB
-        QIt6INYHs4kFgRb+QD3xEOWBFu+hmDhDQBoDLf4D8XqYAfpEG4LQfB6ohx/hYJAXCLkEp2aYMaiG9AMN
-        vA91Ksg2EB/kbDSb0QMNYghI4X/9wtj/+XP7/8unBYD5UAORnI0txKEGxE9q+g8D7798+m9fkwkzhKAB
-        oCj9D9KEDNafOAAzwB5/TEPSxP/7L5+RbQA4DPzby+CuALkGFB7QWCLoBVgi+c8f7QL2O4iGBiIoweFJ
-        bKjxDDJoPRDvh9IgPp4Ui9AMUiSPNaBwJjZE3BNwIjjfYEmxhJIw9sQGsmw/LDPZ43Q2rkgHeRPoGgAb
-        PMYJ7J7DnAAAAABJRU5ErkJggg==
-</value>
+  <data name="mnuNewclosure.Size" type="System.Drawing.Size, System.Drawing">
+    <value>217, 22</value>
   </data>
-  <data name="mnuMonthlyClosure.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 22</value>
+  <data name="fiscalYearToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>217, 22</value>
   </data>
-  <data name="mnuMonthlyClosure.Text" xml:space="preserve">
-    <value>Cierre contable</value>
+  <data name="mnuAccounting.Size" type="System.Drawing.Size, System.Drawing">
+    <value>78, 20</value>
   </data>
-  <data name="exportImportCustomizableToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 22</value>
+  <data name="mnuAccounting.Text" xml:space="preserve">
+    <value>Contabilidad</value>
   </data>
-  <data name="mnuConfiguration.Size" type="System.Drawing.Size, System.Drawing">
-    <value>95, 20</value>
-  </data>
-  <data name="mnuConfiguration.Text" xml:space="preserve">
-    <value>Configuración</value>
-  </data>
-  <data name="menuItemAddUser.Text" xml:space="preserve">
-    <value>Usuarios</value>
+  <data name="rolesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>225, 22</value>
   </data>
   <data name="rolesToolStripMenuItem.Text" xml:space="preserve">
     <value>Normas</value>
   </data>
+  <data name="menuItemAddUser.Size" type="System.Drawing.Size, System.Drawing">
+    <value>225, 22</value>
+  </data>
+  <data name="menuItemAddUser.Text" xml:space="preserve">
+    <value>Usuarios</value>
+  </data>
+  <data name="tellersToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>225, 22</value>
+  </data>
   <data name="tellersToolStripMenuItem.Text" xml:space="preserve">
     <value>Cajeros</value>
+  </data>
+  <data name="branchesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>225, 22</value>
   </data>
   <data name="branchesToolStripMenuItem.Text" xml:space="preserve">
     <value>Ramas</value>
   </data>
-  <data name="languagesToolStripMenuItem.Text" xml:space="preserve">
-    <value>Idioma</value>
+  <data name="changePasswordToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>225, 22</value>
   </data>
   <data name="frenchToolStripMenuItem.Text" xml:space="preserve">
     <value>Francés</value>
@@ -267,110 +253,144 @@
   <data name="russianToolStripMenuItem.Text" xml:space="preserve">
     <value>Ruso</value>
   </data>
+  <data name="languagesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>225, 22</value>
+  </data>
+  <data name="languagesToolStripMenuItem.Text" xml:space="preserve">
+    <value>Idioma</value>
+  </data>
+  <data name="toolStripSeparatorConfig1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>222, 6</value>
+  </data>
+  <data name="mnuPackages.Size" type="System.Drawing.Size, System.Drawing">
+    <value>225, 22</value>
+  </data>
   <data name="mnuPackages.Text" xml:space="preserve">
     <value>Productos de crédito</value>
+  </data>
+  <data name="savingProductsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>225, 22</value>
   </data>
   <data name="savingProductsToolStripMenuItem.Text" xml:space="preserve">
     <value>Productos de ahorro</value>
   </data>
+  <data name="menuItemCollateralProducts.Size" type="System.Drawing.Size, System.Drawing">
+    <value>225, 22</value>
+  </data>
   <data name="menuItemCollateralProducts.Text" xml:space="preserve">
     <value>Productos de prenda</value>
   </data>
-  <data name="guaranteeProductsToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAALdJREFUOE9jYEAH
-        gRb6DIEW+4nE+qjaIZrfA/F/InE9wgAkzfP3bvmPC4Dk9AtjYRZADSBR8/svn5AMIEMzyHVQLwJdAAkw
-        sLPqV8zGivPn9oPlQTbDAIoBIMn9l8/ixP2bloMNRgYoBtjXZOIMNJAEyPDBZQB6LOwnxQsgzUjpIB8c
-        C8QagKb5PFAvP9EGwKISGvpQzaCETKQLkPIGkmaoAURmHFDqQ9MMMcAfiNcTkX3rIX5GBQCEnmWtcgsp
-        NAAAAABJRU5ErkJggg==
-</value>
+  <data name="toolStripSeparator3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>222, 6</value>
   </data>
-  <data name="guaranteeProductsToolStripMenuItem.Text" xml:space="preserve">
-    <value>Productos de garantía</value>
+  <data name="toolStripMenuItemFundingLines.Size" type="System.Drawing.Size, System.Drawing">
+    <value>225, 22</value>
   </data>
   <data name="toolStripMenuItemFundingLines.Text" xml:space="preserve">
     <value>Líneas de financiamiento</value>
   </data>
+  <data name="toolStripSeparatorConfig2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>222, 6</value>
+  </data>
+  <data name="mnuDomainOfApplication.Size" type="System.Drawing.Size, System.Drawing">
+    <value>225, 22</value>
+  </data>
   <data name="mnuDomainOfApplication.Text" xml:space="preserve">
     <value>Actividad económica</value>
+  </data>
+  <data name="menuItemLocations.Size" type="System.Drawing.Size, System.Drawing">
+    <value>225, 22</value>
   </data>
   <data name="menuItemLocations.Text" xml:space="preserve">
     <value>Provincias, localidad, ciudad</value>
   </data>
+  <data name="toolStripMenuItemInstallmentTypes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>225, 22</value>
+  </data>
   <data name="toolStripMenuItemInstallmentTypes.Text" xml:space="preserve">
     <value>Frencuencia de pago standard</value>
+  </data>
+  <data name="miContractCode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>225, 22</value>
+  </data>
+  <data name="toolStripSeparatorConfig3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>222, 6</value>
+  </data>
+  <data name="menuItemExchangeRate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>225, 22</value>
   </data>
   <data name="menuItemExchangeRate.Text" xml:space="preserve">
     <value>Tipo de cambio</value>
   </data>
+  <data name="currenciesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>225, 22</value>
+  </data>
+  <data name="toolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>222, 6</value>
+  </data>
+  <data name="menuItemApplicationDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>225, 22</value>
+  </data>
   <data name="menuItemApplicationDate.Text" xml:space="preserve">
     <value>Modificar fecha de aplicación</value>
+  </data>
+  <data name="menuItemSetting.Size" type="System.Drawing.Size, System.Drawing">
+    <value>225, 22</value>
   </data>
   <data name="menuItemSetting.Text" xml:space="preserve">
     <value>Parámetros generales</value>
   </data>
+  <data name="menuItemAdvancedSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>225, 22</value>
+  </data>
   <data name="menuItemAdvancedSettings.Text" xml:space="preserve">
     <value>Parámetros de conexión</value>
   </data>
-  <data name="customizableFieldsToolStripMenuItem.Text" xml:space="preserve">
+  <data name="CustomizableFieldsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>225, 22</value>
+  </data>
+  <data name="CustomizableFieldsToolStripMenuItem.Text" xml:space="preserve">
     <value>Campos personalizables</value>
   </data>
-  <data name="openExistingCustomizableFileToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAOCAYAAAAmL5yKAAAABGdBTUEAANbY1E9YMgAAABl0RVh0U29m
-        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAADLSURBVDhPjVJbEYQwEKsDJCCBX/6QwKAACScBCUhA
-        AlKQcBJOwrG5bKdlu4VjZofpI9kk3RC8b+q7MPWDVOOeV0CNADapr6lD1uM9ETt+FAiSWRUs8n/r/uqT
-        QCbBqKG4xPNVqqsRRNkl2CKYy3bdZuf9r7BIgIwyEm4sjnT4t5WHrCR1Avsadg3lbSgl3ZhJFgDWUOGf
-        OTwPDQkyMJolVgyMTxK7QbL7nBwceARJmjoCYnBl0Be3JIE8LzzYfLb4u0Si+Hyv+gSy/QmLh3X51+/4
-        LwAAAABJRU5ErkJggg==
-</value>
+  <data name="toolStripSeparator4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>222, 6</value>
+  </data>
+  <data name="mnuExtensionManager.Size" type="System.Drawing.Size, System.Drawing">
+    <value>225, 22</value>
+  </data>
+  <data name="mnuConfiguration.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 20</value>
+  </data>
+  <data name="mnuConfiguration.Text" xml:space="preserve">
+    <value>Configuración</value>
   </data>
   <data name="menuItemDatabaseControlPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>231, 22</value>
+    <value>215, 22</value>
   </data>
   <data name="menuItemDatabaseMaintenance.Size" type="System.Drawing.Size, System.Drawing">
-    <value>231, 22</value>
+    <value>215, 22</value>
   </data>
   <data name="menuItemDatabaseMaintenance.Text" xml:space="preserve">
     <value>Mantenimiento base de datos</value>
   </data>
   <data name="mnuWindow.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 20</value>
+    <value>59, 20</value>
   </data>
   <data name="mnuWindow.Text" xml:space="preserve">
     <value>Ventana</value>
   </data>
   <data name="menuItemAboutOctopus.Size" type="System.Drawing.Size, System.Drawing">
-    <value>174, 22</value>
+    <value>165, 22</value>
   </data>
   <data name="menuItemAboutOctopus.Text" xml:space="preserve">
     <value>Acerca de Octopus</value>
-  </data>
-  <data name="octopusForumToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>174, 22</value>
-  </data>
-  <data name="octopusForumToolStripMenuItem.Text" xml:space="preserve">
-    <value>Foro Octopus</value>
-  </data>
-  <data name="questionnaireToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>174, 22</value>
-  </data>
-  <data name="questionnaireToolStripMenuItem.Text" xml:space="preserve">
-    <value>Cuestionario</value>
-  </data>
-  <data name="userGuideToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>174, 22</value>
-  </data>
-  <data name="wIKIHelpToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>174, 22</value>
   </data>
   <data name="imageListAlert.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAAy
-        CgAAAk1TRnQBSQFMAgEBBQEAASwBAAEsAQABEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        CgAAAk1TRnQBSQFMAgEBBQEAATQBAAE0AQABEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
         AwABQAMAASADAAEBAQABCAYAAQgYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
         AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
         AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
@@ -416,210 +436,62 @@
         BAAB+AEfAf4BfwQAAfABHwL/BAAE/wQABP8EAAT/BAAE/ws=
 </value>
   </data>
+  <data name="closeTellerToolStripMenuItem.Text" xml:space="preserve">
+    <value>Cerrar el cajero</value>
+  </data>
   <data name="tellerManagementToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 20</value>
+    <value>56, 20</value>
   </data>
   <data name="tellerManagementToolStripMenuItem.Text" xml:space="preserve">
     <value>Cajeros</value>
   </data>
-  <data name="closeTellerToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>153, 22</value>
-  </data>
-  <data name="closeTellerToolStripMenuItem.Text" xml:space="preserve">
-    <value>Cerrar el cajero</value>
-  </data>
-  <data name="toolBarButNew.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANKSURBVFhHzVjfS1NRHN9jkGX/QOwxKtCHXoKg9cNeIlo9
-        RC1do4dGo9UaRhBZixSdVkgGNlJb+ZAmbavYQ1BrvmlGiP2AglCQqKRyadoqt327n8vO7e7e4713U7cO
-        fAbbOd9zPud8P+f7/Z6ZTHm0TCZjTafTwVQqNUycNjc3Nyb0R4RxDqG7PI+ptYdiMmFSXzKZTAyPviNP
-        VytZ6lxk2rtRhUqvnRxtFyky2C9SBGHB1rwgMtg5Fg/GomR27slZdJltCy2v2S4B3+XEyquryNfbQYmZ
-        acImCiKCXWDn8l2vPrKbqi64yX7NR4fb67nY2XCS1ntsEiGQj796gVOJG3YRBsLnOFLsBrtbe3w/nbvT
-        Ttcf9RlG470u2lB7SCKD08xqSV8rOAEYsKN1d1yixyMDBaO+r5PKbFvF+aAnXSLwHVzACDSFbtGb8fcL
-        RnjwKa04uE2cFxvEDeJqRCBQCRExAV6N9tKnyS+LhicjQyIJuHhs4iPEalURgXBwXBi4q6GWpmZnNOEK
-        NNOmM84c6Nn4w93i/BA7YkoOCZwC2DGmE9+/0a8/vzWx+exRVZzQs0F/hbdGtMONQVCTiECMuNPoPN9z
-        g1LplC54AcuIXWggLq5jbTotilQigYDEtDD5YwoMdcEjYcQOY9ha2UBmNsldgYmNNh4Jo7ZMe4hFokug
-        UvgHRwSXKBvYol8J5All/uCNg9aUDYuz9cSQjg+mB5Z45EaMIC9hGfmNtzEWi5DsxJghJ4EFlW0pSGAN
-        dlURGv4/EqV0h0NLmBAW/KqEsr5gQlOO47mYJ0wpWpbsiiJilTxYgUQxw3bs5XN+2C5mAmOJT5XAsqch
-        pfLqVh9N/5zVhCvQokrlejbNWqkcJJRFTVv0Ln1OfF00MDfgFiFicouaLJGc8s4fvk1vP4wuGA+e9dNK
-        I+Udy+uI5fJC19N1hfpfDxWMxlAwv0IXRFjJDyKs5F934gBdvt9NN2MRw8B4S92/6qv1YY9+pa0sOtnj
-        R56y17j3kdV/ipyBRjrW2cIF+iu81arHj26pP98TDQXHfM/AMsHHq+w7crDoz0BGTP4gRsxHVcQraEBg
-        SR7E8hPKknHATSjXi/rXgN5rWnCZxfBDd57J/gKEHRmflfq2agAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="toolBarButNew.Size" type="System.Drawing.Size, System.Drawing">
-    <value>91, 41</value>
-  </data>
-  <data name="toolBarButNew.Text" xml:space="preserve">
-    <value>Nuevo</value>
-  </data>
   <data name="toolBarButtonPerson.Size" type="System.Drawing.Size, System.Drawing">
-    <value>179, 42</value>
+    <value>152, 22</value>
   </data>
   <data name="toolBarButtonPerson.Text" xml:space="preserve">
     <value>Persona</value>
   </data>
   <data name="toolBarButtonNewGroup.Size" type="System.Drawing.Size, System.Drawing">
-    <value>179, 42</value>
+    <value>152, 22</value>
   </data>
   <data name="toolBarButtonNewGroup.Text" xml:space="preserve">
     <value>Grupo</value>
   </data>
   <data name="tbbtnNewVillage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>179, 42</value>
+    <value>152, 22</value>
   </data>
   <data name="tbbtnNewVillage.Text" xml:space="preserve">
     <value>Banco Comunal</value>
   </data>
   <data name="corporateToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>179, 42</value>
+    <value>152, 22</value>
   </data>
   <data name="corporateToolStripMenuItem.Text" xml:space="preserve">
     <value>Empresa</value>
   </data>
-  <data name="toolBarButtonSearchPerson.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-        AABJRU5ErkJggg==
-</value>
+  <data name="toolBarButNew.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 36</value>
+  </data>
+  <data name="toolBarButNew.Text" xml:space="preserve">
+    <value>Nuevo</value>
   </data>
   <data name="toolBarButtonSearchPerson.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 41</value>
+    <value>93, 36</value>
   </data>
   <data name="toolBarButtonSearchPerson.Text" xml:space="preserve">
     <value>Buscar cliente</value>
   </data>
-  <data name="toolBarButtonSearchContract.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-        AAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="toolBarButtonSearchContract.Size" type="System.Drawing.Size, System.Drawing">
-    <value>127, 41</value>
-  </data>
   <data name="toolBarButtonSearchContract.Text" xml:space="preserve">
     <value>Buscar contrato</value>
   </data>
-  <data name="toolBarButtonReports.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQMSURBVFhHxVhbSFRRFJ3f6OFHUJ9Df0mRHxUIQdNDAoUy
-        ITJHS4yQzHAqMXuIA1kNpWgPIipzwgkMQXz0+Mh8EAU9NDErSEJBSivDSScddR67s0733O7cuTPeGSe6
-        sBjm3PNYZ++199nnGgwRPH6/38iQ7fP5qhg6VLCzd1YGUwRT6u+Khb1eb4/z1wQ1vugk671bZCrJC4Dl
-        dhVVtdRRz8BHcrvdThAFaf2rhOiJXXk8nsGOvm5KtR0nQ1qiLhhzd3JCIA3rEFFcVGSwk8Fvw3y3YvFF
-        5s0UX5BOG0pyKemshZIvFMkwWQ/R2qJsMuamyv1BBpaDFRmZBN1EwBqDMDguM4lPuHTfNjJXniZbQ40u
-        nHBcpcTi/TKZ7CtnuIt0EREE7G0P5AmyLpVS86v2qGBrsNPynBQ+V8LRvTTiGp+bCHOBXRBYbN5CZfXV
-        9Gbgw7zw9H03rTy8mxOBriSLaAuWmSoVGhAuqG5tpqHRkQD8nHTxyFAColX3U/9/N/SJVhVkcCIYi9AO
-        0gfcAIZChMW112jMNR6EqZnpoOjApFp91W29g/1sg1v5eIQxwj6ACGuwQIjosOZIFrnZYlrweD2aJEL1
-        V7eXN93l47FZhH4ACTQIKzzpfU0er1cTzIyaJEL112pH2IIIXC9nV4QNGoSCfX4fhQLrq0ki3Bj1u5q2
-        +3wOZFgEArcGMhqyG17gFwuFgzprQhNzjVG+H3NNyBuWXQKlipQMwSgfZbYUytYiETBIxx8xr9Q1zgAS
-        qkZ5mn9FAq7AZhDeXBdYEWJBflA/0ZLA5GqLoU08cGEQCRE2/40EkhTyOohES0KdRZVnj7BIWEvEQhNa
-        Yg3nDmUgcE0gVpVCiSY6IiUhEhbWEnnCIsxnqa4MiHm9wtRLAvli4OsXOXWjbhEkjCjDMBEiRJnhYkmi
-        va+Lz13ANioSI6o3+fyALlD94GV1awvNejz87ICblAUtLKZ1lOtpgwW+jzv5RgGp/vxbV0Ac4vxAh+Gx
-        UZqacZN7lp2mKkxOuyla5N8sV9YUjUE1BawhBJpSdpR+TDhjitrOR7LLg6wg2OCOgBpQ5IxdF08yEX2O
-        CR52PaMl5j8FjZSqrSErb1Q7yhJv+7lCetn/dl6oaHIQ6lUQgKY0Szs1IxztOE1FLK84mEYVzQ6qf/44
-        Itxpb6Ed5wvlMwQEEJK6L0KwCPymDNF17GKTd8NGpXXXw6LYcZmSrPm0IH2jrAFxAdJNQKERE84V7EBY
-        BSZdmLGJjMw68ZY9tP7UAY7VxzL5/2U5yQGnJ8IemwnIB7qvYVJHMId7BBk991EQRt6AtuD/mN3SJTIW
-        yadc4eJ2jgVRFqINu0bJhvNI15UvUquI/hIhE3QjfY/ANwn+XSLaTwG/AVhUylgjnf4gAAAAAElFTkSu
-        QmCC
-</value>
-  </data>
   <data name="toolBarButtonReports.Size" type="System.Drawing.Size, System.Drawing">
-    <value>90, 41</value>
+    <value>71, 36</value>
   </data>
   <data name="toolBarButtonReports.Text" xml:space="preserve">
     <value>Reportes</value>
   </data>
-  <data name="toolStripButtonSearchProject.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-</value>
-  </data>
-  <data name="toolStripButtonSearchProject.Size" type="System.Drawing.Size, System.Drawing">
-    <value>128, 41</value>
-  </data>
-  <data name="toolStripButtonSearchProject.Text" xml:space="preserve">
-    <value>Buscar proyecto</value>
-  </data>
   <data name="mainStatusBarLblUpdateVersion.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1072, 20</value>
+    <value>1012, 20</value>
   </data>
   <data name="mainStatusBarLblUserName.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -637,7 +509,7 @@
 </value>
   </data>
   <data name="mainStatusBarLblUserName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 20</value>
+    <value>117, 20</value>
   </data>
   <data name="mainStatusBarLblUserName.Text" xml:space="preserve">
     <value>Nombre de usuario</value>
@@ -705,7 +577,8 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
 </value>
   </data>
-  <data name="CustomizableFieldsToolStripMenuItem.Text" xml:space="preserve">
-    <value>Campos personalizables</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="resource.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
 </root>

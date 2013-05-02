@@ -3278,6 +3278,7 @@
     <None Include="Resources\cog.png" />
     <None Include="Resources\calendar.png" />
     <None Include="Resources\book.png" />
+    <None Include="Resources\add.png" />
     <Content Include="Resources\crystalreport.jpg" />
     <None Include="Resources\financial_information_bouton files_16x16.png" />
     <None Include="Resources\database_gear.png" />
@@ -3303,6 +3304,7 @@
     <None Include="Resources\reschedule_16x16.png" />
     <None Include="Resources\ru.png" />
     <None Include="Resources\pt.png" />
+    <None Include="Resources\report.png" />
     <Content Include="Resources\Spanish Flag.png" />
     <None Include="Resources\SuperAdmin_Background.png" />
     <None Include="Resources\SuperAdmin_Background_180.png" />

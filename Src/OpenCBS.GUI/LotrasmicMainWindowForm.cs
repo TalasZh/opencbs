@@ -66,8 +66,6 @@ namespace OpenCBS.GUI
 
         private void DisplayWinFormDetails()
         {           
-            _DisplayProjects();
-
             _DisplayDetails();
             InitializeContractCurrencies();
             _CheckForUpdate();
@@ -327,10 +325,6 @@ namespace OpenCBS.GUI
         {
             MenuObject foundObject = _menuItems.Find(item => item == pText.Trim());
             return foundObject;
-        }
-        private void _DisplayProjects()
-        {
-            toolStripButtonSearchProject.Visible = ServicesProvider.GetInstance().GetGeneralSettings().UseProjects;
         }
 
         private  void DisplayUserInformationForm()
