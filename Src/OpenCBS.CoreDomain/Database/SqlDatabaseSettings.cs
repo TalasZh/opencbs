@@ -1,4 +1,4 @@
-
+﻿// LICENSE PLACEHOLDER
 
 using System;
 namespace OpenCBS.CoreDomain.Database

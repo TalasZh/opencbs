@@ -1,3 +1,5 @@
+﻿// LICENSE PLACEHOLDER
+
 using OpenCBS.CoreDomain.Events;
 using System.Data.SqlClient;
 

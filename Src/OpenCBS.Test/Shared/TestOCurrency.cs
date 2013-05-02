@@ -1,3 +1,4 @@
+﻿// LICENSE PLACEHOLDER
 
 using System.Globalization;
 using NUnit.Framework;

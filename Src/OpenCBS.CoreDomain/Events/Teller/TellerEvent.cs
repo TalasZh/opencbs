@@ -1,3 +1,5 @@
+﻿// LICENSE PLACEHOLDER
+
 using OpenCBS.CoreDomain.Events.Loan;
 using OpenCBS.Shared;
 

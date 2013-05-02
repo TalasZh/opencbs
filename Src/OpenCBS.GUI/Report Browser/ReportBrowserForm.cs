@@ -1,3 +1,5 @@
+﻿// LICENSE PLACEHOLDER
+
 using System;
 using OpenCBS.ExceptionsHandler;
 using OpenCBS.GUI.UserControl;

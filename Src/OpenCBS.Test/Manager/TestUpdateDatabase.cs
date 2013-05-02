@@ -1,3 +1,5 @@
+﻿// LICENSE PLACEHOLDER
+
 using OpenCBS.Shared.FilesSearch;
 using NUnit.Framework;
 using OpenCBS.Manager;

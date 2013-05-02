@@ -1,3 +1,5 @@
+﻿// LICENSE PLACEHOLDER
+
 using OpenCBS.Shared;
 
 namespace OpenCBS.CoreDomain.Events.Saving

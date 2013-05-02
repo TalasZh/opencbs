@@ -1,3 +1,5 @@
+﻿// LICENSE PLACEHOLDER
+
 using System;
 using OpenCBS.Enums;
 using OpenCBS.Shared;

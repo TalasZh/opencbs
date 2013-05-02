@@ -1,3 +1,5 @@
+﻿// LICENSE PLACEHOLDER
+
 using System.ComponentModel;
 
 namespace OpenCBS.CoreDomain.CustomFields

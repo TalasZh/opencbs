@@ -1,3 +1,5 @@
+﻿// LICENSE PLACEHOLDER
+
 using System.Collections.Generic;
 
 namespace OpenCBS.Shared.CSV

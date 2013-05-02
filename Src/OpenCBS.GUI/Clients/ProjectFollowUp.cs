@@ -1,3 +1,4 @@
+﻿// LICENSE PLACEHOLDER
 
 using System.Collections.Generic;
 using System.Windows.Forms;

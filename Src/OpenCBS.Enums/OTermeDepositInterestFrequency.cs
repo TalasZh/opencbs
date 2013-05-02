@@ -1,3 +1,4 @@
+﻿// LICENSE PLACEHOLDER
 
 namespace OpenCBS.Enums
 {

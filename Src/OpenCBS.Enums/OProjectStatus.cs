@@ -1,3 +1,5 @@
+﻿// LICENSE PLACEHOLDER
+
 namespace OpenCBS.Enums
 {
     public enum OProjectStatus

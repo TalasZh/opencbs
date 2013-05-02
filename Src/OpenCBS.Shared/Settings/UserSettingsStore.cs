@@ -1,3 +1,5 @@
+﻿// LICENSE PLACEHOLDER
+
 namespace OpenCBS.Shared.Settings
 {
     

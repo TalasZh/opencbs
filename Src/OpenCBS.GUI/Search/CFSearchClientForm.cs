@@ -1,3 +1,5 @@
+﻿// LICENSE PLACEHOLDER
+
 using OpenCBS.CoreDomain.SearchResult;
 using OpenCBS.Enums;
 using OpenCBS.GUI.UserControl;

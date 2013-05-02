@@ -1,4 +1,4 @@
-
+﻿// LICENSE PLACEHOLDER
 
 using NUnit.Framework;
 using OpenCBS.CoreDomain.Clients;

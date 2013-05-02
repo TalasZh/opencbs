@@ -1,3 +1,5 @@
+﻿// LICENSE PLACEHOLDER
+
 using OpenCBS.CoreDomain.Contracts.Loans.Installments;
 using OpenCBS.Enums;
 using OpenCBS.Shared;

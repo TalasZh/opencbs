@@ -1,3 +1,4 @@
+﻿// LICENSE PLACEHOLDER
 
 using OpenCBS.Shared.Settings;
 

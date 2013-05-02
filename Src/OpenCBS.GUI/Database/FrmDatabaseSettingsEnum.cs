@@ -1,4 +1,4 @@
-
+﻿// LICENSE PLACEHOLDER
 
 namespace OpenCBS.GUI.Database
 {

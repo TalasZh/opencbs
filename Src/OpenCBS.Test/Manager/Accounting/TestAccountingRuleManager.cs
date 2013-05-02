@@ -1,3 +1,5 @@
+﻿// LICENSE PLACEHOLDER
+
 using NUnit.Framework;
 using OpenCBS.CoreDomain.Accounting;
 using OpenCBS.CoreDomain.EconomicActivities;

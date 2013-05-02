@@ -1,3 +1,5 @@
+﻿// LICENSE PLACEHOLDER
+
 using System;
 using NUnit.Framework;
 using OpenCBS.CoreDomain.Products;

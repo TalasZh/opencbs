@@ -1,3 +1,5 @@
+﻿// LICENSE PLACEHOLDER
+
 using System.Data.SqlClient;
 using OpenCBS.Shared.Settings;
 

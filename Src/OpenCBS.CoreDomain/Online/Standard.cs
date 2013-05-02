@@ -1,3 +1,5 @@
+﻿// LICENSE PLACEHOLDER
+
 using OpenCBS.CoreDomain.Accounting;
 
 namespace OpenCBS.CoreDomain.Online

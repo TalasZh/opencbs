@@ -1,3 +1,5 @@
+﻿// LICENSE PLACEHOLDER
+
 using log4net;
 using log4net.Config;
 

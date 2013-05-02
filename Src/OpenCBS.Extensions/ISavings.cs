@@ -1,3 +1,5 @@
+﻿// LICENSE PLACEHOLDER
+
 using System.Data.SqlClient;
 using System.Windows.Forms;
 using OpenCBS.CoreDomain.Contracts.Savings;

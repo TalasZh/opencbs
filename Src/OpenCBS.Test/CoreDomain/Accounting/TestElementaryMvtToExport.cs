@@ -1,3 +1,5 @@
+﻿// LICENSE PLACEHOLDER
+
 /*
  * Created by SharpDevelop.
  * User: Nicolas

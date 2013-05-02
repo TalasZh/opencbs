@@ -1,3 +1,5 @@
+﻿// LICENSE PLACEHOLDER
+
 using System.Collections.Generic;
 using NUnit.Framework;
 using OpenCBS.CoreDomain.Accounting;

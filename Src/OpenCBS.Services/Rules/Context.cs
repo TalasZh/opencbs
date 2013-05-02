@@ -1,3 +1,5 @@
+﻿// LICENSE PLACEHOLDER
+
 using OpenCBS.CoreDomain.FundingLines;
 
 namespace OpenCBS.Services.Rules

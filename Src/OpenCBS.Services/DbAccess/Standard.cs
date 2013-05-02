@@ -1,3 +1,5 @@
+﻿// LICENSE PLACEHOLDER
+
 using System;
 using OpenCBS.Services.Accounting;
 using OpenCBS.Services.Currencies;

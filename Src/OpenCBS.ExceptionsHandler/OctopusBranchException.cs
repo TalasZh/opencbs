@@ -1,3 +1,5 @@
+﻿// LICENSE PLACEHOLDER
+
 namespace OpenCBS.ExceptionsHandler
 {
     public class OctopusBranchSameNameException : OctopusException

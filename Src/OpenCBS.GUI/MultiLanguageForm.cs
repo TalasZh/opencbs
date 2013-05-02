@@ -1,3 +1,5 @@
+﻿// LICENSE PLACEHOLDER
+
 using System.Windows.Forms;
 using OpenCBS.MultiLanguageRessources;
 

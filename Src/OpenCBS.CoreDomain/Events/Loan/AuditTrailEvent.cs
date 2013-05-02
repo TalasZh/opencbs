@@ -1,3 +1,5 @@
+﻿// LICENSE PLACEHOLDER
+
 using OpenCBS.CoreDomain.Events.Loan;
 
 namespace OpenCBS.CoreDomain.Events

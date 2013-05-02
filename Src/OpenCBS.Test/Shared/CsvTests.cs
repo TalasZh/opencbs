@@ -1,3 +1,5 @@
+﻿// LICENSE PLACEHOLDER
+
 using System.IO;
 using NUnit.Framework;
 using OpenCBS.Shared.CSV;

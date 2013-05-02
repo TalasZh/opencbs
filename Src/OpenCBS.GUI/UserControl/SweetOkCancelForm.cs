@@ -1,3 +1,5 @@
+﻿// LICENSE PLACEHOLDER
+
 using System.Drawing;
 
 namespace OpenCBS.GUI.UserControl

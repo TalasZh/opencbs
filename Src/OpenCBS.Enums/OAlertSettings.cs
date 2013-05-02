@@ -1,3 +1,5 @@
+﻿// LICENSE PLACEHOLDER
+
 namespace OpenCBS.Enums
 {
     public static class OAlertSettings

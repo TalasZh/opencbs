@@ -1,3 +1,5 @@
+﻿// LICENSE PLACEHOLDER
+
 using OpenCBS.CoreDomain.Contracts.Savings.CalculateInterests.Interfaces;
 using OpenCBS.Shared;
 using System;

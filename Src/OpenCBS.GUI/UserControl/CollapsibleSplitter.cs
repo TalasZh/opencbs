@@ -1,3 +1,5 @@
+﻿// LICENSE PLACEHOLDER
+
 /*
 
 	Windows Forms Collapsible Splitter Control for .Net
