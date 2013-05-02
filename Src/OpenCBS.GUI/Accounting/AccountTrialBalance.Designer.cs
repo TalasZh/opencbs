@@ -34,10 +34,10 @@ namespace OpenCBS.GUI.Accounting
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AccountTrialBalance));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.tlvBalances = new BrightIdeasSoftware.TreeListView();
-            this.olvColumnLACNumber = new BrightIdeasSoftware.OLVColumn();
-            this.olvColumnLACLabel = new BrightIdeasSoftware.OLVColumn();
-            this.olvColumnLACBalance = new BrightIdeasSoftware.OLVColumn();
-            this.olvColumnLACCurrency = new BrightIdeasSoftware.OLVColumn();
+            this.olvColumnLACNumber = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
+            this.olvColumnLACLabel = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
+            this.olvColumnLACBalance = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
+            this.olvColumnLACCurrency = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.cbContractCode = new System.Windows.Forms.ComboBox();
             this.labelLoanContractCode = new System.Windows.Forms.Label();
@@ -113,14 +113,14 @@ namespace OpenCBS.GUI.Accounting
             resources.ApplyResources(this.olvColumnLACCurrency, "olvColumnLACCurrency");
             // 
             // groupBox1
-            //
-            resources.ApplyResources(this.groupBox1, "groupBox1");
+            // 
             this.groupBox1.Controls.Add(this.cbContractCode);
             this.groupBox1.Controls.Add(this.labelLoanContractCode);
             this.groupBox1.Controls.Add(this.lblBranch);
             this.groupBox1.Controls.Add(this.lblCurrency);
             this.groupBox1.Controls.Add(this.cbBranches);
             this.groupBox1.Controls.Add(this.cbCurrencies);
+            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             // 
@@ -187,7 +187,7 @@ namespace OpenCBS.GUI.Accounting
             // 
             // lblTitle
             // 
-            this.lblTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.lblTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(81)))), ((int)(((byte)(152)))));
             resources.ApplyResources(this.lblTitle, "lblTitle");
             this.lblTitle.Name = "lblTitle";
             // 

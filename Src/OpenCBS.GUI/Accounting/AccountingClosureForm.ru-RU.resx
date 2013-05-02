@@ -117,12 +117,33 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="olvColumn_Date.Text" xml:space="preserve">
+    <value>Дата</value>
+  </data>
+  <data name="olvColumn_CountOfTransactions.Text" xml:space="preserve">
+    <value>Количество транзакций </value>
+  </data>
+  <data name="olvColumn_User.Text" xml:space="preserve">
+    <value>Пользователь</value>
+  </data>
+  <data name="btnView.Text" xml:space="preserve">
+    <value>Просмотр</value>
+  </data>
+  <data name="btnGenerateEvents.Text" xml:space="preserve">
+    <value>Генерация событий</value>
+  </data>
+  <data name="btnDeleteRule.Text" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="btnPostBookings.Text" xml:space="preserve">
+    <value>Генерация проводок</value>
+  </data>
   <data name="imageListSort.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAADM
-        BwAAAk1TRnQBSQFMAgEBAgEAAXgBAgF4AQIBEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        BwAAAk1TRnQBSQFMAgEBAgEAAYABAgGAAQIBEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
         AwABQAMAARADAAEBAQABCAYAAQQYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
         AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
         AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
@@ -163,32 +184,6 @@
   </data>
   <data name="lblTitle.Text" xml:space="preserve">
     <value>Закрытие</value>
-  </data>
-  <data name="olvColumn_Date.Text" xml:space="preserve">
-    <value>Дата</value>
-  </data>
-  <data name="olvColumn_CountOfTransactions.Text" xml:space="preserve">
-    <value>Количество транзакций </value>
-  </data>
-  <data name="olvColumn_User.Text" xml:space="preserve">
-    <value>Пользователь</value>
-  </data>
-  <data name="btnView.Text" xml:space="preserve">
-    <value>Просмотр</value>
-  </data>
-  <data name="btnGenerateEvents.Text" xml:space="preserve">
-    <value>Генерация событий</value>
-  </data>
-  <data name="btnDeleteRule.Text" xml:space="preserve">
-    <value>Удалить</value>
-  </data>
-  <data name="btnPostBookings.Text" xml:space="preserve">
-    <value>Генерация проводок</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Бухгалтерское закрытие</value>

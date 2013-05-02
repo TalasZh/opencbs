@@ -244,7 +244,7 @@
     <value>7, 103</value>
   </data>
   <data name="labelLoanContractCode.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 16</value>
+    <value>89, 16</value>
   </data>
   <data name="labelLoanContractCode.TabIndex" type="System.Int32, mscorlib">
     <value>65</value>
@@ -280,7 +280,7 @@
     <value>6, 64</value>
   </data>
   <data name="lblBranch.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 16</value>
+    <value>49, 16</value>
   </data>
   <data name="lblBranch.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -313,7 +313,7 @@
     <value>7, 24</value>
   </data>
   <data name="lblCurrency.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 16</value>
+    <value>60, 16</value>
   </data>
   <data name="lblCurrency.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -478,7 +478,7 @@
     <value>btnClose</value>
   </data>
   <data name="&gt;&gt;btnClose.Type" xml:space="preserve">
-    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnClose.Parent" xml:space="preserve">
     <value>panel1</value>
@@ -622,6 +622,6 @@
     <value>AccountTrialBalance</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>OpenCBS.GUI.UserControl.SweetBaseForm, OpenCBS.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetBaseForm, OpenCBS.GUI, Version=1.1.1.21366, Culture=neutral, PublicKeyToken=null</value>
   </data>
 </root>

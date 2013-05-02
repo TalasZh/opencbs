@@ -241,9 +241,9 @@ namespace OpenCBS.GUI.Accounting
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ChartOfAccountsForm));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.tlvAccounts = new BrightIdeasSoftware.TreeListView();
-            this.olvColumnInternalAccountID = new BrightIdeasSoftware.OLVColumn();
-            this.olvColumnLabel = new BrightIdeasSoftware.OLVColumn();
-            this.olvColumnExportedBalance = new BrightIdeasSoftware.OLVColumn();
+            this.olvColumnInternalAccountID = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
+            this.olvColumnLabel = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
+            this.olvColumnExportedBalance = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
             this.groupBoxActions = new System.Windows.Forms.GroupBox();
             this.btnExportAccounts = new System.Windows.Forms.Button();
             this.btnImportAccounts = new System.Windows.Forms.Button();
@@ -316,15 +316,14 @@ namespace OpenCBS.GUI.Accounting
             this.olvColumnExportedBalance.IsVisible = false;
             // 
             // groupBoxActions
-            //
-            resources.ApplyResources(this.groupBoxActions, "groupBoxActions");
+            // 
             this.groupBoxActions.Controls.Add(this.btnExportAccounts);
             this.groupBoxActions.Controls.Add(this.btnImportAccounts);
             this.groupBoxActions.Controls.Add(this.btnDeleteAccount);
             this.groupBoxActions.Controls.Add(this.btnEditAccount);
             this.groupBoxActions.Controls.Add(this.btnAddAccount);
             this.groupBoxActions.Controls.Add(this.btnExport);
-            this.groupBoxActions.MinimumSize = new System.Drawing.Size(190, 0);
+            resources.ApplyResources(this.groupBoxActions, "groupBoxActions");
             this.groupBoxActions.Name = "groupBoxActions";
             this.groupBoxActions.TabStop = false;
             // 
@@ -378,7 +377,8 @@ namespace OpenCBS.GUI.Accounting
             this.btnClose.Click += new System.EventHandler(this.buttonExit_Click);
             // 
             // _labelTitle
-            //
+            // 
+            this._labelTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(81)))), ((int)(((byte)(152)))));
             resources.ApplyResources(this._labelTitle, "_labelTitle");
             this._labelTitle.Name = "_labelTitle";
             // 

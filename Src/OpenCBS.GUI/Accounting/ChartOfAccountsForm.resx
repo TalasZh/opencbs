@@ -208,7 +208,7 @@
     <value>btnExportAccounts</value>
   </data>
   <data name="&gt;&gt;btnExportAccounts.Type" xml:space="preserve">
-    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.40212, Culture=neutral, PublicKeyToken=null</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnExportAccounts.Parent" xml:space="preserve">
     <value>groupBoxActions</value>
@@ -241,7 +241,7 @@
     <value>btnImportAccounts</value>
   </data>
   <data name="&gt;&gt;btnImportAccounts.Type" xml:space="preserve">
-    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.40212, Culture=neutral, PublicKeyToken=null</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnImportAccounts.Parent" xml:space="preserve">
     <value>groupBoxActions</value>
@@ -274,7 +274,7 @@
     <value>btnDeleteAccount</value>
   </data>
   <data name="&gt;&gt;btnDeleteAccount.Type" xml:space="preserve">
-    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.40212, Culture=neutral, PublicKeyToken=null</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnDeleteAccount.Parent" xml:space="preserve">
     <value>groupBoxActions</value>
@@ -307,7 +307,7 @@
     <value>btnEditAccount</value>
   </data>
   <data name="&gt;&gt;btnEditAccount.Type" xml:space="preserve">
-    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.40212, Culture=neutral, PublicKeyToken=null</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnEditAccount.Parent" xml:space="preserve">
     <value>groupBoxActions</value>
@@ -340,7 +340,7 @@
     <value>btnAddAccount</value>
   </data>
   <data name="&gt;&gt;btnAddAccount.Type" xml:space="preserve">
-    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.40212, Culture=neutral, PublicKeyToken=null</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnAddAccount.Parent" xml:space="preserve">
     <value>groupBoxActions</value>
@@ -376,7 +376,7 @@
     <value>btnExport</value>
   </data>
   <data name="&gt;&gt;btnExport.Type" xml:space="preserve">
-    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.40212, Culture=neutral, PublicKeyToken=null</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnExport.Parent" xml:space="preserve">
     <value>groupBoxActions</value>
@@ -389,6 +389,9 @@
   </data>
   <data name="groupBoxActions.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
+  </data>
+  <data name="groupBoxActions.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>190, 0</value>
   </data>
   <data name="groupBoxActions.Size" type="System.Drawing.Size, System.Drawing">
     <value>225, 624</value>
@@ -466,7 +469,7 @@
     <value>btnClose</value>
   </data>
   <data name="&gt;&gt;btnClose.Type" xml:space="preserve">
-    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.40212, Culture=neutral, PublicKeyToken=null</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnClose.Parent" xml:space="preserve">
     <value>panel1</value>
@@ -610,6 +613,6 @@
     <value>ChartOfAccountsForm</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>OpenCBS.GUI.UserControl.SweetBaseForm, OpenCBS.GUI, Version=1.1.1.21446, Culture=neutral, PublicKeyToken=null</value>
   </data>
 </root>

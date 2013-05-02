@@ -32,16 +32,16 @@ namespace OpenCBS.GUI.Accounting
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ManualEntries));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.lvlMovements = new System.Windows.Forms.ListView();
-            this.clhId = new System.Windows.Forms.ColumnHeader();
-            this.clhDebitAccount = new System.Windows.Forms.ColumnHeader();
-            this.clhCreditAccount = new System.Windows.Forms.ColumnHeader();
-            this.clhAmount = new System.Windows.Forms.ColumnHeader();
-            this.clhCurrency = new System.Windows.Forms.ColumnHeader();
-            this.clhDescription = new System.Windows.Forms.ColumnHeader();
-            this.clhDate = new System.Windows.Forms.ColumnHeader();
-            this.clhExchangeRate = new System.Windows.Forms.ColumnHeader();
-            this.clhUser = new System.Windows.Forms.ColumnHeader();
-            this.chBranch = new System.Windows.Forms.ColumnHeader();
+            this.clhId = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.clhDebitAccount = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.clhCreditAccount = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.clhAmount = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.clhCurrency = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.clhDescription = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.clhDate = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.clhExchangeRate = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.clhUser = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.chBranch = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.imageListSort = new System.Windows.Forms.ImageList(this.components);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnDeleteRule = new System.Windows.Forms.Button();
@@ -60,37 +60,19 @@ namespace OpenCBS.GUI.Accounting
             // 
             // splitContainer1
             // 
-            this.splitContainer1.AccessibleDescription = null;
-            this.splitContainer1.AccessibleName = null;
             resources.ApplyResources(this.splitContainer1, "splitContainer1");
-            this.splitContainer1.BackgroundImage = null;
-            this.splitContainer1.Font = null;
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
             // 
-            this.splitContainer1.Panel1.AccessibleDescription = null;
-            this.splitContainer1.Panel1.AccessibleName = null;
-            resources.ApplyResources(this.splitContainer1.Panel1, "splitContainer1.Panel1");
-            this.splitContainer1.Panel1.BackgroundImage = null;
             this.splitContainer1.Panel1.Controls.Add(this.lvlMovements);
-            this.splitContainer1.Panel1.Font = null;
             // 
             // splitContainer1.Panel2
             // 
-            this.splitContainer1.Panel2.AccessibleDescription = null;
-            this.splitContainer1.Panel2.AccessibleName = null;
-            resources.ApplyResources(this.splitContainer1.Panel2, "splitContainer1.Panel2");
-            this.splitContainer1.Panel2.BackgroundImage = null;
             this.splitContainer1.Panel2.Controls.Add(this.groupBox1);
-            this.splitContainer1.Panel2.Font = null;
             // 
             // lvlMovements
             // 
-            this.lvlMovements.AccessibleDescription = null;
-            this.lvlMovements.AccessibleName = null;
-            resources.ApplyResources(this.lvlMovements, "lvlMovements");
-            this.lvlMovements.BackgroundImage = null;
             this.lvlMovements.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.clhId,
             this.clhDebitAccount,
@@ -102,7 +84,7 @@ namespace OpenCBS.GUI.Accounting
             this.clhExchangeRate,
             this.clhUser,
             this.chBranch});
-            this.lvlMovements.Font = null;
+            resources.ApplyResources(this.lvlMovements, "lvlMovements");
             this.lvlMovements.FullRowSelect = true;
             this.lvlMovements.GridLines = true;
             this.lvlMovements.MultiSelect = false;
@@ -160,76 +142,54 @@ namespace OpenCBS.GUI.Accounting
             // 
             // groupBox1
             // 
-            this.groupBox1.AccessibleDescription = null;
-            this.groupBox1.AccessibleName = null;
-            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Controls.Add(this.btnDeleteRule);
             this.groupBox1.Controls.Add(this.btnAddRule);
-            this.groupBox1.Font = null;
+            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             // 
             // btnDeleteRule
             // 
-            this.btnDeleteRule.AccessibleDescription = null;
-            this.btnDeleteRule.AccessibleName = null;
             resources.ApplyResources(this.btnDeleteRule, "btnDeleteRule");
             this.btnDeleteRule.Name = "btnDeleteRule";
             // 
             // btnAddRule
             // 
-            this.btnAddRule.AccessibleDescription = null;
-            this.btnAddRule.AccessibleName = null;
             resources.ApplyResources(this.btnAddRule, "btnAddRule");
             this.btnAddRule.Name = "btnAddRule";
             this.btnAddRule.Click += new System.EventHandler(this.btnAddRule_Click);
             // 
             // panel1
             // 
-            this.panel1.AccessibleDescription = null;
-            this.panel1.AccessibleName = null;
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.BackgroundImage = null;
             this.panel1.Controls.Add(this.btnClose);
             this.panel1.Controls.Add(this.lblTitle);
-            this.panel1.Font = null;
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 
             // btnClose
             // 
-            this.btnClose.AccessibleDescription = null;
-            this.btnClose.AccessibleName = null;
             resources.ApplyResources(this.btnClose, "btnClose");
             this.btnClose.Name = "btnClose";
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // lblTitle
             // 
-            this.lblTitle.AccessibleDescription = null;
-            this.lblTitle.AccessibleName = null;
+            this.lblTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(81)))), ((int)(((byte)(152)))));
             resources.ApplyResources(this.lblTitle, "lblTitle");
-            this.lblTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.lblTitle.Name = "lblTitle";
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.AccessibleDescription = null;
-            this.tableLayoutPanel1.AccessibleName = null;
             resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
-            this.tableLayoutPanel1.BackgroundImage = null;
             this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.splitContainer1, 0, 1);
-            this.tableLayoutPanel1.Font = null;
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             // 
             // ManualEntries
             // 
-            this.AccessibleDescription = null;
-            this.AccessibleName = null;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Font = null;
             this.Name = "ManualEntries";
             this.Load += new System.EventHandler(this.ManualEntries_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);

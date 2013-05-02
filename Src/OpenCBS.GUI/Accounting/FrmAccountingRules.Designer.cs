@@ -34,18 +34,18 @@ namespace OpenCBS.GUI.Accounting
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAccountingRules));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.listViewContractsRules = new System.Windows.Forms.ListView();
-            this.clhEventType = new System.Windows.Forms.ColumnHeader();
-            this.clhEventAttribute = new System.Windows.Forms.ColumnHeader();
-            this.clhDebitAccount = new System.Windows.Forms.ColumnHeader();
-            this.clhCreditAccount = new System.Windows.Forms.ColumnHeader();
-            this.clhOrder = new System.Windows.Forms.ColumnHeader();
-            this.clhDescription = new System.Windows.Forms.ColumnHeader();
-            this.clhContractProductType = new System.Windows.Forms.ColumnHeader();
-            this.clhContractProduct = new System.Windows.Forms.ColumnHeader();
-            this.clhContractClientType = new System.Windows.Forms.ColumnHeader();
-            this.clhContractEconomicActivity = new System.Windows.Forms.ColumnHeader();
-            this.clhCurrency = new System.Windows.Forms.ColumnHeader();
-            this.clhPaymentMethod = new System.Windows.Forms.ColumnHeader();
+            this.clhEventType = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.clhEventAttribute = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.clhDebitAccount = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.clhCreditAccount = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.clhOrder = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.clhDescription = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.clhContractProductType = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.clhContractProduct = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.clhContractClientType = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.clhContractEconomicActivity = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.clhCurrency = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.clhPaymentMethod = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.cntmnuRules = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.copyStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.pasetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -109,8 +109,8 @@ namespace OpenCBS.GUI.Accounting
             this.listViewContractsRules.SmallImageList = this.imageListSort;
             this.listViewContractsRules.UseCompatibleStateImageBehavior = false;
             this.listViewContractsRules.View = System.Windows.Forms.View.Details;
-            this.listViewContractsRules.DoubleClick += new System.EventHandler(this.ListViewAccountingRulesDoubleClick);
             this.listViewContractsRules.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.ListViewContractsRulesColumnClick);
+            this.listViewContractsRules.DoubleClick += new System.EventHandler(this.ListViewAccountingRulesDoubleClick);
             // 
             // clhEventType
             // 
@@ -195,14 +195,14 @@ namespace OpenCBS.GUI.Accounting
             this.imageListSort.Images.SetKeyName(1, "theme1.1_bouton_up_small.png");
             // 
             // groupBox1
-            //
-            resources.ApplyResources(this.groupBox1, "groupBox1");
+            // 
             this.groupBox1.Controls.Add(this.sweetButton1);
             this.groupBox1.Controls.Add(this.sbtnExport);
             this.groupBox1.Controls.Add(this.cbEventTypes);
             this.groupBox1.Controls.Add(this.btnDeleteRule);
             this.groupBox1.Controls.Add(this.btnEditRule);
             this.groupBox1.Controls.Add(this.btnAddRule);
+            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             // 
@@ -259,7 +259,7 @@ namespace OpenCBS.GUI.Accounting
             // 
             // lblTitle
             // 
-            this.lblTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.lblTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(81)))), ((int)(((byte)(152)))));
             resources.ApplyResources(this.lblTitle, "lblTitle");
             this.lblTitle.Name = "lblTitle";
             // 

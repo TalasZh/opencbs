@@ -130,15 +130,6 @@
   <data name="listBookings.Size" type="System.Drawing.Size, System.Drawing">
     <value>524, 377</value>
   </data>
-  <data name="gbBooking.Location" type="System.Drawing.Point, System.Drawing">
-    <value>533, 3</value>
-  </data>
-  <data name="gbBooking.Size" type="System.Drawing.Size, System.Drawing">
-    <value>162, 377</value>
-  </data>
-  <data name="gbBooking.Text" xml:space="preserve">
-    <value>Transacción estándar</value>
-  </data>
   <data name="btnDelete.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 55</value>
   </data>
@@ -154,6 +145,15 @@
   </data>
   <data name="btnCreate.Text" xml:space="preserve">
     <value>Crear  / Actualizar</value>
+  </data>
+  <data name="gbBooking.Location" type="System.Drawing.Point, System.Drawing">
+    <value>533, 3</value>
+  </data>
+  <data name="gbBooking.Size" type="System.Drawing.Size, System.Drawing">
+    <value>162, 377</value>
+  </data>
+  <data name="gbBooking.Text" xml:space="preserve">
+    <value>Transacción estándar</value>
   </data>
   <data name="lblCaption.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
