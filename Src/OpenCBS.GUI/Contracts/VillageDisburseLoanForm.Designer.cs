@@ -1,6 +1,6 @@
-using Octopus.GUI.UserControl;
+using OpenCBS.GUI.UserControl;
 
-namespace Octopus.GUI.Contracts
+namespace OpenCBS.GUI.Contracts
 {
     partial class VillageDisburseLoanForm
     {
@@ -39,7 +39,7 @@ namespace Octopus.GUI.Contracts
             this.btnSave = new System.Windows.Forms.Button();
             this.dtDisbursement = new System.Windows.Forms.DateTimePicker();
             this.dtpRepayment = new System.Windows.Forms.DateTimePicker();
-            this.lvMembers = new Octopus.GUI.UserControl.ListViewEx();
+            this.lvMembers = new OpenCBS.GUI.UserControl.ListViewEx();
             this.colName = new System.Windows.Forms.ColumnHeader();
             this.colPassport = new System.Windows.Forms.ColumnHeader();
             this.colDate = new System.Windows.Forms.ColumnHeader();
@@ -135,7 +135,7 @@ namespace Octopus.GUI.Contracts
             this.lvMembers.ItemChecked += new System.Windows.Forms.ItemCheckedEventHandler(this.lvMembers_ItemChecked);
             this.lvMembers.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.lvMembers_ItemCheck);
             this.lvMembers.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lvMembers_MouseDown);
-            this.lvMembers.SubItemEndEditing += new Octopus.GUI.UserControl.SubItemEndEditingEventHandler(this.lvMembers_SubItemEndEditing);
+            this.lvMembers.SubItemEndEditing += new OpenCBS.GUI.UserControl.SubItemEndEditingEventHandler(this.lvMembers_SubItemEndEditing);
             // 
             // colName
             // 
@@ -226,7 +226,7 @@ namespace Octopus.GUI.Contracts
         private System.Windows.Forms.ColumnHeader colPassport;
         private System.Windows.Forms.ColumnHeader colDate;
         private System.Windows.Forms.DateTimePicker dtDisbursement;
-        private Octopus.GUI.UserControl.ListViewEx lvMembers;
+        private OpenCBS.GUI.UserControl.ListViewEx lvMembers;
         private System.Windows.Forms.ColumnHeader colAmount;
         private System.Windows.Forms.ColumnHeader colInterest;
         private System.Windows.Forms.ColumnHeader colGracePeriod;

@@ -1,4 +1,4 @@
-namespace Octopus.GUI.Export
+namespace OpenCBS.GUI.Export
 {
     partial class StringFieldPropertiesForm
     {
@@ -36,7 +36,7 @@ namespace Octopus.GUI.Export
             this.ColumnReplacementValue = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.buttonCancel = new System.Windows.Forms.Button();
             this.buttonSave = new System.Windows.Forms.Button();
-            this.tnStartPosition = new Octopus.GUI.UserControl.TextNumericUserControl();
+            this.tnStartPosition = new OpenCBS.GUI.UserControl.TextNumericUserControl();
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxEndPosition = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvReplacementList)).BeginInit();
@@ -154,7 +154,7 @@ namespace Octopus.GUI.Export
         #endregion
 
         private System.Windows.Forms.Label labelStartPosition;
-        private Octopus.GUI.UserControl.TextNumericUserControl tnStartPosition;
+        private OpenCBS.GUI.UserControl.TextNumericUserControl tnStartPosition;
         private System.Windows.Forms.CheckBox checkBoxAlignRight;
         private System.Windows.Forms.DataGridView dgvReplacementList;
         private System.Windows.Forms.Button buttonCancel;

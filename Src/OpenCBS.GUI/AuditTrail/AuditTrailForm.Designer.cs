@@ -1,6 +1,6 @@
-using Octopus.GUI.UserControl;
+using OpenCBS.GUI.UserControl;
 
-namespace Octopus.GUI.AuditTrail
+namespace OpenCBS.GUI.AuditTrail
 {
     partial class AuditTrailForm
     {

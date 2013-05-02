@@ -2,7 +2,7 @@ using System;
 using System.Runtime.InteropServices;
 using System.Text;
 
-namespace Octopus.GUI.Database
+namespace OpenCBS.GUI.Database
 {
 	/// <summary>
 	/// Summary description for SQLInfoEnumerator.

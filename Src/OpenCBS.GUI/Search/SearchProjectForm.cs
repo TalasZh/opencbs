@@ -1,16 +1,16 @@
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
-using Octopus.CoreDomain.Clients;
-using Octopus.GUI.UserControl;
-using Octopus.Services;
-using Octopus.CoreDomain.SearchResult;
-using Octopus.MultiLanguageRessources;
-using Octopus.ExceptionsHandler;
-using Octopus.CoreDomain;
-using Octopus.Enums;
+using OpenCBS.CoreDomain.Clients;
+using OpenCBS.GUI.UserControl;
+using OpenCBS.Services;
+using OpenCBS.CoreDomain.SearchResult;
+using OpenCBS.MultiLanguageRessources;
+using OpenCBS.ExceptionsHandler;
+using OpenCBS.CoreDomain;
+using OpenCBS.Enums;
 
-namespace Octopus.GUI.Projets
+namespace OpenCBS.GUI.Projets
 {
     public partial class SearchProjectForm : Form
     {

@@ -1,8 +1,8 @@
-﻿using System.Data.SqlClient;
+using System.Data.SqlClient;
 using System.Windows.Forms;
-using Octopus.CoreDomain.Contracts.Loans;
+using OpenCBS.CoreDomain.Contracts.Loans;
 
-namespace Octopus.Extensions
+namespace OpenCBS.Extensions
 {
     public interface ILoan
     {

@@ -1,6 +1,6 @@
-using Octopus.GUI.UserControl;
+using OpenCBS.GUI.UserControl;
 
-namespace Octopus.GUI.Tools
+namespace OpenCBS.GUI.Tools
 {
     partial class FrmSaveFile
     {

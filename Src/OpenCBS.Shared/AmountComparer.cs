@@ -24,7 +24,7 @@
 
 using System;
 
-namespace Octopus.Shared
+namespace OpenCBS.Shared
 {
 
 	public class AmountComparer

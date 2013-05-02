@@ -28,18 +28,18 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
-using Octopus.CoreDomain.Online;
-using Octopus.Enums;
-using Octopus.GUI.UserControl;
-using Octopus.Services.Accounting;
-using Octopus.ExceptionsHandler;
-using Octopus.Services;
-using Octopus.Shared;
-using Octopus.MultiLanguageRessources;
-using Octopus.CoreDomain.Accounting;
+using OpenCBS.CoreDomain.Online;
+using OpenCBS.Enums;
+using OpenCBS.GUI.UserControl;
+using OpenCBS.Services.Accounting;
+using OpenCBS.ExceptionsHandler;
+using OpenCBS.Services;
+using OpenCBS.Shared;
+using OpenCBS.MultiLanguageRessources;
+using OpenCBS.CoreDomain.Accounting;
 using System.Linq;
 
-namespace Octopus.GUI.Configuration
+namespace OpenCBS.GUI.Configuration
 {
     /// <summary>
     /// Summary description for GeneralSettings.

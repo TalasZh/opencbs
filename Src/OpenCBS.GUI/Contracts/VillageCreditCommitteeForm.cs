@@ -26,17 +26,17 @@ using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.Clients;
-using Octopus.CoreDomain.Contracts.Loans;
-using Octopus.Enums;
-using Octopus.ExceptionsHandler;
-using Octopus.GUI.UserControl;
-using Octopus.MultiLanguageRessources;
-using Octopus.Services;
-using Octopus.Shared;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.Clients;
+using OpenCBS.CoreDomain.Contracts.Loans;
+using OpenCBS.Enums;
+using OpenCBS.ExceptionsHandler;
+using OpenCBS.GUI.UserControl;
+using OpenCBS.MultiLanguageRessources;
+using OpenCBS.Services;
+using OpenCBS.Shared;
 
-namespace Octopus.GUI.Contracts
+namespace OpenCBS.GUI.Contracts
 {
     public partial class VillageCreditCommitteeForm : SweetBaseForm
     {

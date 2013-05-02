@@ -1,5 +1,5 @@
-﻿using System;
-namespace Octopus.CoreDomain.Accounting
+using System;
+namespace OpenCBS.CoreDomain.Accounting
 {
     [Serializable]
     public class LoanScaleRate

@@ -2,15 +2,15 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
-using Octopus.CoreDomain;
-using Octopus.ExceptionsHandler;
-using Octopus.Enums;
-using Octopus.ExceptionsHandler.Exceptions.CustomFieldExceptions;
-using Octopus.GUI.UserControl;
-using Octopus.Services;
-using Octopus.Shared;
+using OpenCBS.CoreDomain;
+using OpenCBS.ExceptionsHandler;
+using OpenCBS.Enums;
+using OpenCBS.ExceptionsHandler.Exceptions.CustomFieldExceptions;
+using OpenCBS.GUI.UserControl;
+using OpenCBS.Services;
+using OpenCBS.Shared;
 
-namespace Octopus.GUI.Configuration
+namespace OpenCBS.GUI.Configuration
 {
     public partial class AddCustomizableFields : SweetBaseForm
     {

@@ -24,10 +24,10 @@
 
 using System.Collections.Generic;
 using NUnit.Framework;
-using Octopus.CoreDomain.EconomicActivities;
-using Octopus.Manager;
+using OpenCBS.CoreDomain.EconomicActivities;
+using OpenCBS.Manager;
 
-namespace Octopus.Test.Manager
+namespace OpenCBS.Test.Manager
 {
 	/// <summary>
     /// Summary description for TestEconomicActivityManager.

@@ -24,11 +24,11 @@
 
 using System;
 using System.Windows.Forms;
-using Octopus.CoreDomain;
-using Octopus.MultiLanguageRessources;
-using Octopus.Services;
+using OpenCBS.CoreDomain;
+using OpenCBS.MultiLanguageRessources;
+using OpenCBS.Services;
 
-namespace Octopus.GUI.Login
+namespace OpenCBS.GUI.Login
 {
     public partial class FrmLogin : Form
     {

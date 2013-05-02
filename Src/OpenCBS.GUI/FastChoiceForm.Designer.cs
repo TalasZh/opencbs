@@ -1,6 +1,6 @@
 
 
-namespace Octopus.GUI
+namespace OpenCBS.GUI
 {
     partial class FastChoiceForm
     {

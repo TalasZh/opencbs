@@ -1,15 +1,15 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using NUnit.Framework;
-using Octopus.CoreDomain.Products;
-using Octopus.CoreDomain.Contracts.Savings;
-using Octopus.Shared.Settings;
-using Octopus.CoreDomain;
-using Octopus.Enums;
-using Octopus.CoreDomain.Events.Saving;
-using Octopus.CoreDomain.Accounting;
+using OpenCBS.CoreDomain.Products;
+using OpenCBS.CoreDomain.Contracts.Savings;
+using OpenCBS.Shared.Settings;
+using OpenCBS.CoreDomain;
+using OpenCBS.Enums;
+using OpenCBS.CoreDomain.Events.Saving;
+using OpenCBS.CoreDomain.Accounting;
 
-namespace Octopus.Test.CoreDomain.Contracts.Savings.CalculateInterests
+namespace OpenCBS.Test.CoreDomain.Contracts.Savings.CalculateInterests
 {
     [TestFixture]
     public class Daily

@@ -1,13 +1,13 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using Octopus.CoreDomain.Contracts.Savings;
-using Octopus.Enums;
-using Octopus.CoreDomain.Clients;
-using Octopus.CoreDomain.Contracts;
-using Octopus.CoreDomain.Contracts.Loans;
+using OpenCBS.CoreDomain.Contracts.Savings;
+using OpenCBS.Enums;
+using OpenCBS.CoreDomain.Clients;
+using OpenCBS.CoreDomain.Contracts;
+using OpenCBS.CoreDomain.Contracts.Loans;
 
-namespace Octopus.CoreDomain.Accounting
+namespace OpenCBS.CoreDomain.Accounting
 {
     [Serializable]
     public class AccountingRuleCollection : IList<IAccountingRule>

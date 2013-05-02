@@ -2,10 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Text;
-using Octopus.CoreDomain.Online;
-using Octopus.Shared;
+using OpenCBS.CoreDomain.Online;
+using OpenCBS.Shared;
 
-namespace Octopus.DatabaseConnection
+namespace OpenCBS.DatabaseConnection
 {
     public class UserRemotingContext
     {

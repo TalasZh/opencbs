@@ -1,9 +1,9 @@
-﻿using Octopus.CoreDomain.Accounting;
-using Octopus.CoreDomain.FundingLines;
-using Octopus.Enums;
-using Octopus.Shared;
+using OpenCBS.CoreDomain.Accounting;
+using OpenCBS.CoreDomain.FundingLines;
+using OpenCBS.Enums;
+using OpenCBS.Shared;
 
-namespace Octopus.CoreDomain.Products
+namespace OpenCBS.CoreDomain.Products
 {
     public interface IProduct
     {

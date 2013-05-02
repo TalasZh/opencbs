@@ -27,39 +27,39 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Globalization;
 using System.Linq;
-using Octopus.CoreDomain.Alerts;
-using Octopus.CoreDomain.Clients;
-using Octopus.CoreDomain.Contracts;
-using Octopus.CoreDomain.Contracts.Loans;
-using Octopus.CoreDomain.Contracts.Loans.Installments;
-using Octopus.CoreDomain.Contracts.Loans.Tranches;
-using Octopus.CoreDomain.Contracts.Rescheduling;
-using Octopus.CoreDomain.Contracts.Savings;
-using Octopus.CoreDomain.EconomicActivities;
-using Octopus.CoreDomain.Events.Loan;
-using Octopus.CoreDomain.Events.Saving;
-using Octopus.CoreDomain.FundingLines;
-using Octopus.Enums;
-using Octopus.ExceptionsHandler.Exceptions.SavingExceptions;
-using Octopus.Manager.Clients;
-using Octopus.Manager.Events;
-using Octopus.Shared;
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.Events;
-using Octopus.CoreDomain.SearchResult;
-using Octopus.Services.Accounting;
-using Octopus.Services.Events;
-using Octopus.Manager;
+using OpenCBS.CoreDomain.Alerts;
+using OpenCBS.CoreDomain.Clients;
+using OpenCBS.CoreDomain.Contracts;
+using OpenCBS.CoreDomain.Contracts.Loans;
+using OpenCBS.CoreDomain.Contracts.Loans.Installments;
+using OpenCBS.CoreDomain.Contracts.Loans.Tranches;
+using OpenCBS.CoreDomain.Contracts.Rescheduling;
+using OpenCBS.CoreDomain.Contracts.Savings;
+using OpenCBS.CoreDomain.EconomicActivities;
+using OpenCBS.CoreDomain.Events.Loan;
+using OpenCBS.CoreDomain.Events.Saving;
+using OpenCBS.CoreDomain.FundingLines;
+using OpenCBS.Enums;
+using OpenCBS.ExceptionsHandler.Exceptions.SavingExceptions;
+using OpenCBS.Manager.Clients;
+using OpenCBS.Manager.Events;
+using OpenCBS.Shared;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.Events;
+using OpenCBS.CoreDomain.SearchResult;
+using OpenCBS.Services.Accounting;
+using OpenCBS.Services.Events;
+using OpenCBS.Manager;
 using System.Data.SqlClient;
-using Octopus.ExceptionsHandler;
-using Octopus.CoreDomain.Accounting;
-using Octopus.Shared.Settings;
-using Octopus.Manager.Contracts;
+using OpenCBS.ExceptionsHandler;
+using OpenCBS.CoreDomain.Accounting;
+using OpenCBS.Shared.Settings;
+using OpenCBS.Manager.Contracts;
 
-namespace Octopus.Services
+namespace OpenCBS.Services
 {
     /// <summary>
-    /// Description résumée de ContractServices.
+    /// Description rï¿½sumï¿½e de ContractServices.
     /// </summary>
     public class LoanServices : Services
     {
@@ -2269,7 +2269,7 @@ namespace Octopus.Services
                 throw new OctopusContractSaveException(OctopusContractSaveExceptionEnum.ZeroFee);
 
             string fee = ((RepaymentEvent) foundEvent).Fees.GetFormatedValue(credit.UseCents);
-            String comment = "FEE WAIVED [" + fee.Replace(" ", string.Empty) + "]";
+            String comment = "FEE WAIVED [" + fee.Replace("ï¿½", string.Empty) + "]";
             //foundEvent.Comment = comment;
             ////EventProcessorServices eps = ServicesProvider.GetInstance().GetEventProcessorServices();
             ////eps.UpdateCommentForLoanEvent(foundEvent, null);
@@ -2291,7 +2291,7 @@ namespace Octopus.Services
             OCurrency amount = ((RepaymentEvent) foundEvent).Principal +
                                ((RepaymentEvent) foundEvent).Interests + ((RepaymentEvent) foundEvent).Fees;
 
-            comment = "ID[" + foundEvent.Id + "] FEE WAIVED [" + fee.Replace(" ", string.Empty) + "]";
+            comment = "ID[" + foundEvent.Id + "] FEE WAIVED [" + fee.Replace("ï¿½", string.Empty) + "]";
             Loan l = Repay(credit,
                   client,
                   foundEvent.InstallmentNumber,

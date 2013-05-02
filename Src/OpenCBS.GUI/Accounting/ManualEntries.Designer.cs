@@ -1,4 +1,4 @@
-namespace Octopus.GUI.Accounting
+namespace OpenCBS.GUI.Accounting
 {
     partial class ManualEntries
     {

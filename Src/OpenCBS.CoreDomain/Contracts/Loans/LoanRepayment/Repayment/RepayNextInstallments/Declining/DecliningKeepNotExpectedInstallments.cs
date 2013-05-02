@@ -1,4 +1,4 @@
-﻿//Octopus MFS is an integrated suite for managing a Micro Finance Institution: clients, contracts, accounting, reporting and risk
+//Octopus MFS is an integrated suite for managing a Micro Finance Institution: clients, contracts, accounting, reporting and risk
 //Copyright © 2006,2007 OCTO Technology & OXUS Development Network
 //
 //This program is free software; you can redistribute it and/or modify
@@ -24,13 +24,13 @@
 
 using System;
 using System.Collections.Generic;
-using Octopus.CoreDomain.Contracts.Loans.Installments;
-using Octopus.CoreDomain.Contracts.Loans.LoanRepayment.Interfaces;
-using Octopus.Enums;
-using Octopus.Shared;
-using Octopus.Shared.Settings;
+using OpenCBS.CoreDomain.Contracts.Loans.Installments;
+using OpenCBS.CoreDomain.Contracts.Loans.LoanRepayment.Interfaces;
+using OpenCBS.Enums;
+using OpenCBS.Shared;
+using OpenCBS.Shared.Settings;
 
-namespace Octopus.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayNextInstallments.Declining
+namespace OpenCBS.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayNextInstallments.Declining
 {
     /// <summary>
     /// Summary description for DecliningKeepNotExpectedInstallments.

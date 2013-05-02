@@ -1,18 +1,18 @@
 using System;
 using System.Collections;
 using System.Windows.Forms;
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.Accounting;
-using Octopus.Enums;
-using Octopus.ExceptionsHandler;
-using Octopus.ExceptionsHandler.Exceptions.FundingLineExceptions;
-using Octopus.GUI.Accounting;
-using Octopus.MultiLanguageRessources;
-using Octopus.Services;
-using Octopus.Shared;
-using Octopus.CoreDomain.FundingLines;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.Accounting;
+using OpenCBS.Enums;
+using OpenCBS.ExceptionsHandler;
+using OpenCBS.ExceptionsHandler.Exceptions.FundingLineExceptions;
+using OpenCBS.GUI.Accounting;
+using OpenCBS.MultiLanguageRessources;
+using OpenCBS.Services;
+using OpenCBS.Shared;
+using OpenCBS.CoreDomain.FundingLines;
 
-namespace Octopus.GUI.Configuration
+namespace OpenCBS.GUI.Configuration
 {
    public partial class FrmFundingLineEvent : Form
    {

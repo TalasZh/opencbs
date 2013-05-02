@@ -1,7 +1,7 @@
-﻿using System.Data.SqlClient;
-using Octopus.Shared.Settings;
+using System.Data.SqlClient;
+using OpenCBS.Shared.Settings;
 
-namespace Octopus.CoreDomain
+namespace OpenCBS.CoreDomain
 {
     public class DatabaseConnection
     {

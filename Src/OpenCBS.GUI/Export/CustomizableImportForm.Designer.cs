@@ -1,4 +1,4 @@
-namespace Octopus.GUI.Export
+namespace OpenCBS.GUI.Export
 {
     partial class CustomizableImportForm
     {
@@ -96,9 +96,9 @@ namespace Octopus.GUI.Export
             this._buttonExit.AccessibleName = null;
             resources.ApplyResources(this._buttonExit, "_buttonExit");
             this._buttonExit.BackColor = System.Drawing.Color.Gainsboro;
-            this._buttonExit.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_bouton;
+            this._buttonExit.BackgroundImage = global::OpenCBS.GUI.Properties.Resources.theme1_1_fond_bouton;
             this._buttonExit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this._buttonExit.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_close;
+            this._buttonExit.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_bouton_close;
             this._buttonExit.Name = "_buttonExit";
             this._buttonExit.UseVisualStyleBackColor = false;
             this._buttonExit.Click += new System.EventHandler(this._buttonExit_Click);
@@ -201,7 +201,7 @@ namespace Octopus.GUI.Export
             this.buttonExportAccountTiers.BackColor = System.Drawing.Color.Gainsboro;
             this.buttonExportAccountTiers.Font = null;
             this.buttonExportAccountTiers.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonExportAccountTiers.Image = global::Octopus.GUI.Properties.Resources.theme1_1_import;
+            this.buttonExportAccountTiers.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_import;
             this.buttonExportAccountTiers.Name = "buttonExportAccountTiers";
             this.buttonExportAccountTiers.UseVisualStyleBackColor = false;
             this.buttonExportAccountTiers.Click += new System.EventHandler(this.buttonExportAccountTiers_Click);
@@ -219,7 +219,7 @@ namespace Octopus.GUI.Export
             this.btnSelectAllInstallments.AccessibleDescription = null;
             this.btnSelectAllInstallments.AccessibleName = null;
             resources.ApplyResources(this.btnSelectAllInstallments, "btnSelectAllInstallments");
-            this.btnSelectAllInstallments.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_bouton;
+            this.btnSelectAllInstallments.BackgroundImage = global::OpenCBS.GUI.Properties.Resources.theme1_1_fond_bouton;
             this.btnSelectAllInstallments.Font = null;
             this.btnSelectAllInstallments.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.btnSelectAllInstallments.Name = "btnSelectAllInstallments";
@@ -239,7 +239,7 @@ namespace Octopus.GUI.Export
             this.btnDeselectAllInstallments.AccessibleDescription = null;
             this.btnDeselectAllInstallments.AccessibleName = null;
             resources.ApplyResources(this.btnDeselectAllInstallments, "btnDeselectAllInstallments");
-            this.btnDeselectAllInstallments.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_bouton;
+            this.btnDeselectAllInstallments.BackgroundImage = global::OpenCBS.GUI.Properties.Resources.theme1_1_fond_bouton;
             this.btnDeselectAllInstallments.Font = null;
             this.btnDeselectAllInstallments.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.btnDeselectAllInstallments.Name = "btnDeselectAllInstallments";

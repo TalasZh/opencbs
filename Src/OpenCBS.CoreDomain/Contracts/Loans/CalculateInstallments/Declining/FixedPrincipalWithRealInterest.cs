@@ -1,11 +1,11 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
-using Octopus.CoreDomain.Contracts.Loans.CalculateInstallments.Interfaces;
-using Octopus.CoreDomain.Contracts.Loans.Installments;
-using Octopus.Shared;
-using Octopus.Shared.Settings;
+using OpenCBS.CoreDomain.Contracts.Loans.CalculateInstallments.Interfaces;
+using OpenCBS.CoreDomain.Contracts.Loans.Installments;
+using OpenCBS.Shared;
+using OpenCBS.Shared.Settings;
 
-namespace Octopus.CoreDomain.Contracts.Loans.CalculateInstallments.Declining
+namespace OpenCBS.CoreDomain.Contracts.Loans.CalculateInstallments.Declining
 {
     class FixedPrincipalWithRealInterest : ICalculateInstallments
     {

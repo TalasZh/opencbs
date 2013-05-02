@@ -25,11 +25,11 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using Octopus.CoreDomain;
+using OpenCBS.CoreDomain;
 using System.Collections;
-using Octopus.Shared;
+using OpenCBS.Shared;
 
-namespace Octopus.Manager
+namespace OpenCBS.Manager
 {
 	/// <summary>
 	/// Summary description for InstallmentTypeManagement.

@@ -30,16 +30,16 @@ using System.Drawing;
 using System.IO;
 using System.Text;
 using System.Windows.Forms;
-using Octopus.GUI.Report_Browser;
-using Octopus.GUI.UserControl;
-using Octopus.MultiLanguageRessources;
-using Octopus.Reports;
-using Octopus.Reports.Forms;
-using Octopus.Services;
-using Octopus.Shared;
+using OpenCBS.GUI.Report_Browser;
+using OpenCBS.GUI.UserControl;
+using OpenCBS.MultiLanguageRessources;
+using OpenCBS.Reports;
+using OpenCBS.Reports.Forms;
+using OpenCBS.Services;
+using OpenCBS.Shared;
 using System.Collections;
 
-namespace Octopus.GUI.Accounting
+namespace OpenCBS.GUI.Accounting
 {
     /// <summary>
 	/// Summary description for ExportTransactions.

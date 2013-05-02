@@ -1,4 +1,4 @@
-namespace Octopus.GUI.UserControl
+namespace OpenCBS.GUI.UserControl
 {
     partial class SimilarIDForm
     {
@@ -103,8 +103,8 @@ namespace Octopus.GUI.UserControl
             // buttonExit
             // 
             resources.ApplyResources(this.buttonExit, "buttonExit");
-            this.buttonExit.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_bouton;
-            this.buttonExit.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_close;
+            this.buttonExit.BackgroundImage = global::OpenCBS.GUI.Properties.Resources.theme1_1_fond_bouton;
+            this.buttonExit.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_bouton_close;
             this.buttonExit.Name = "buttonExit";
             this.buttonExit.UseVisualStyleBackColor = true;
             this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);

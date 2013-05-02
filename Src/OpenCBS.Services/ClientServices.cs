@@ -26,26 +26,26 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.Clients;
-using Octopus.CoreDomain.Contracts.Loans;
-using Octopus.CoreDomain.Contracts.Loans.Installments;
-using Octopus.CoreDomain.FundingLines;
-using Octopus.CoreDomain.SearchResult;
-using Octopus.DatabaseConnection;
-using Octopus.Enums;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.Clients;
+using OpenCBS.CoreDomain.Contracts.Loans;
+using OpenCBS.CoreDomain.Contracts.Loans.Installments;
+using OpenCBS.CoreDomain.FundingLines;
+using OpenCBS.CoreDomain.SearchResult;
+using OpenCBS.DatabaseConnection;
+using OpenCBS.Enums;
 using System.Data.SqlClient;
-using Octopus.ExceptionsHandler;
-using Octopus.Manager.Clients;
-using Octopus.Shared;
-using Octopus.ExceptionsHandler.Exceptions.FundingLineExceptions;
-using Octopus.Shared.Settings;
-using Octopus.Services.Rules;
+using OpenCBS.ExceptionsHandler;
+using OpenCBS.Manager.Clients;
+using OpenCBS.Shared;
+using OpenCBS.ExceptionsHandler.Exceptions.FundingLineExceptions;
+using OpenCBS.Shared.Settings;
+using OpenCBS.Services.Rules;
 
-namespace Octopus.Services
+namespace OpenCBS.Services
 {
     /// <summary>
-    /// Description résumée de ClientServices.
+    /// Description rï¿½sumï¿½e de ClientServices.
     /// </summary>
     [Security()]
     public class ClientServices : ContextBoundObject

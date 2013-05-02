@@ -1,8 +1,8 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.IO;
 using System.Text;
 
-namespace Octopus.Shared.CSV
+namespace OpenCBS.Shared.CSV
 {
     public class CsvFileReader : StreamReader
     {

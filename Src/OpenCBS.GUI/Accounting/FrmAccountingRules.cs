@@ -4,20 +4,20 @@ using System.Data;
 using System.IO;
 using System.Text;
 using System.Windows.Forms;
-using Octopus.CoreDomain.Accounting;
-using Octopus.CoreDomain.EconomicActivities;
-using Octopus.CoreDomain.Events;
-using Octopus.CoreDomain.Products;
-using Octopus.GUI.UserControl;
-using Octopus.Services;
-using Octopus.ExceptionsHandler;
-using Octopus.MultiLanguageRessources;
-using Octopus.Enums;
-using Octopus.CoreDomain.Online;
-using Octopus.Services.Events;
-using Octopus.Shared;
+using OpenCBS.CoreDomain.Accounting;
+using OpenCBS.CoreDomain.EconomicActivities;
+using OpenCBS.CoreDomain.Events;
+using OpenCBS.CoreDomain.Products;
+using OpenCBS.GUI.UserControl;
+using OpenCBS.Services;
+using OpenCBS.ExceptionsHandler;
+using OpenCBS.MultiLanguageRessources;
+using OpenCBS.Enums;
+using OpenCBS.CoreDomain.Online;
+using OpenCBS.Services.Events;
+using OpenCBS.Shared;
 
-namespace Octopus.GUI.Accounting
+namespace OpenCBS.GUI.Accounting
 {
     public partial class FrmAccountingRules : SweetBaseForm
     {

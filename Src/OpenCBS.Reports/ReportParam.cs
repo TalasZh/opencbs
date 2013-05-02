@@ -1,12 +1,12 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Globalization;
 using System.Windows.Forms;
-using Octopus.CoreDomain;
-using Octopus.Shared.Settings;
+using OpenCBS.CoreDomain;
+using OpenCBS.Shared.Settings;
 
-namespace Octopus.Reports
+namespace OpenCBS.Reports
 {
     public abstract partial class ReportParamV2
     {

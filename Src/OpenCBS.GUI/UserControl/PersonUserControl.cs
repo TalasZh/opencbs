@@ -27,21 +27,21 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.Clients;
-using Octopus.Extensions;
-using Octopus.Enums;
-using Octopus.ExceptionsHandler;
-using Octopus.GUI.Clients;
-using Octopus.MultiLanguageRessources;
-using Octopus.Services;
-using Octopus.Services.Events;
-using Octopus.Shared;
-using Octopus.Shared.Settings;
-using Octopus.GUI.Tools;
-using Octopus.CoreDomain.Contracts.Savings;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.Clients;
+using OpenCBS.Extensions;
+using OpenCBS.Enums;
+using OpenCBS.ExceptionsHandler;
+using OpenCBS.GUI.Clients;
+using OpenCBS.MultiLanguageRessources;
+using OpenCBS.Services;
+using OpenCBS.Services.Events;
+using OpenCBS.Shared;
+using OpenCBS.Shared.Settings;
+using OpenCBS.GUI.Tools;
+using OpenCBS.CoreDomain.Contracts.Savings;
 
-namespace Octopus.GUI.UserControl
+namespace OpenCBS.GUI.UserControl
 {
 	public partial class PersonUserControl : ClientControl
 	{

@@ -1,6 +1,6 @@
-using Octopus.GUI.UserControl;
+using OpenCBS.GUI.UserControl;
 
-namespace Octopus.GUI.Accounting
+namespace OpenCBS.GUI.Accounting
 {
     partial class FrmAccount
     {
@@ -38,7 +38,7 @@ namespace Octopus.GUI.Accounting
             this.rbDebit = new System.Windows.Forms.RadioButton();
             this.rbCredit = new System.Windows.Forms.RadioButton();
             this.treeViewAccounts = new System.Windows.Forms.TreeView();
-            this.textNumericNumber = new Octopus.GUI.UserControl.TextNumericUserControl();
+            this.textNumericNumber = new OpenCBS.GUI.UserControl.TextNumericUserControl();
             this.textBoxLabel = new System.Windows.Forms.TextBox();
             this.labelLabel = new System.Windows.Forms.Label();
             this.labelAccountNumber = new System.Windows.Forms.Label();
@@ -215,7 +215,7 @@ namespace Octopus.GUI.Accounting
         private System.Windows.Forms.TabControl tabControlData;
         private System.Windows.Forms.TabPage tabPageAccount;
         private System.Windows.Forms.TreeView treeViewAccounts;
-        private Octopus.GUI.UserControl.TextNumericUserControl textNumericNumber;
+        private OpenCBS.GUI.UserControl.TextNumericUserControl textNumericNumber;
         private System.Windows.Forms.TextBox textBoxLabel;
         private System.Windows.Forms.Label labelLabel;
         private System.Windows.Forms.Label labelAccountNumber;

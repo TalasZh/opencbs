@@ -1,11 +1,11 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using NUnit.Framework;
 using System.IO;
 using System.Text.RegularExpressions;
 using System.Xml;
 
-namespace Octopus.Test.Shared
+namespace OpenCBS.Test.Shared
 {
     [TestFixture]
     public class TestValidateUpdateDataBase

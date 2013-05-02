@@ -26,7 +26,7 @@ using System;
 using System.Collections.Generic;
 using System.Runtime.Serialization;
 
-namespace Octopus.ExceptionsHandler.Exceptions.SavingExceptions
+namespace OpenCBS.ExceptionsHandler.Exceptions.SavingExceptions
 {
 	/// <summary>
 	/// Summary description for OctopusSavingException.

@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Octopus.CoreDomain
+namespace OpenCBS.CoreDomain
 {
     public class DistrictComparer : IComparer<District>
     {

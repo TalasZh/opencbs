@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
-using Octopus.Services;
-using Octopus.MultiLanguageRessources;
-using Octopus.CoreDomain;
-using Octopus.Enums;
+using OpenCBS.Services;
+using OpenCBS.MultiLanguageRessources;
+using OpenCBS.CoreDomain;
+using OpenCBS.Enums;
 
-namespace Octopus.GUI.Contracts
+namespace OpenCBS.GUI.Contracts
 {
     public partial class ReassignContractsForm : Form
     {

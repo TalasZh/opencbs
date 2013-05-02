@@ -2,9 +2,9 @@ using System;
 using System.Data;
 using System.Data.SqlClient;
 using System.Diagnostics;
-using Octopus.Shared.Settings;
+using OpenCBS.Shared.Settings;
 
-namespace Octopus.DatabaseConnection
+namespace OpenCBS.DatabaseConnection
 {
     [Serializable]
     public class Standard : IConnectionManager

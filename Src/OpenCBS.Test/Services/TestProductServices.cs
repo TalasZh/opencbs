@@ -31,33 +31,33 @@ using System.IO;
 using System.Reflection;
 using NUnit.Framework;
 using NUnit.Mocks;
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.Accounting;
-using Octopus.CoreDomain.Clients;
-using Octopus.CoreDomain.Contracts.Collaterals;
-using Octopus.CoreDomain.Contracts.Loans;
-using Octopus.CoreDomain.Contracts.Loans.Installments;
-using Octopus.CoreDomain.Contracts.Loans.LoanRepayment;
-using Octopus.CoreDomain.EconomicActivities;
-using Octopus.CoreDomain.Events;
-using Octopus.CoreDomain.FundingLines;
-using Octopus.CoreDomain.LoanCycles;
-using Octopus.CoreDomain.Online;
-using Octopus.CoreDomain.Products;
-using Octopus.DatabaseConnection;
-using Octopus.Enums;
-using Octopus.Manager;
-using Octopus.Manager.Clients;
-using Octopus.Manager.Products;
-using Octopus.Services;
-using Octopus.ExceptionsHandler;
-using Octopus.Shared;
-using Octopus.Shared.Settings;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.Accounting;
+using OpenCBS.CoreDomain.Clients;
+using OpenCBS.CoreDomain.Contracts.Collaterals;
+using OpenCBS.CoreDomain.Contracts.Loans;
+using OpenCBS.CoreDomain.Contracts.Loans.Installments;
+using OpenCBS.CoreDomain.Contracts.Loans.LoanRepayment;
+using OpenCBS.CoreDomain.EconomicActivities;
+using OpenCBS.CoreDomain.Events;
+using OpenCBS.CoreDomain.FundingLines;
+using OpenCBS.CoreDomain.LoanCycles;
+using OpenCBS.CoreDomain.Online;
+using OpenCBS.CoreDomain.Products;
+using OpenCBS.DatabaseConnection;
+using OpenCBS.Enums;
+using OpenCBS.Manager;
+using OpenCBS.Manager.Clients;
+using OpenCBS.Manager.Products;
+using OpenCBS.Services;
+using OpenCBS.ExceptionsHandler;
+using OpenCBS.Shared;
+using OpenCBS.Shared.Settings;
 
-namespace Octopus.Test.Services
+namespace OpenCBS.Test.Services
 {
 	/// <summary>
-	/// Description résumée de TestProductServices.
+	/// Description rï¿½sumï¿½e de TestProductServices.
 	/// </summary>
 	/// 
 	[TestFixture]
@@ -96,7 +96,7 @@ namespace Octopus.Test.Services
         private static void InitScript()
         {
             Assembly a = Assembly.GetExecutingAssembly();
-            Stream stream = a.GetManifestResourceStream("Octopus.Test._Sql.Init.sql");
+            Stream stream = a.GetManifestResourceStream("OpenCBS.Test._Sql.Init.sql");
 
             if (stream == null) return;
 

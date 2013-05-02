@@ -1,13 +1,13 @@
 using System;
 using System.Windows.Forms;
-using Octopus.Services;
-using Octopus.ExceptionsHandler;
+using OpenCBS.Services;
+using OpenCBS.ExceptionsHandler;
 
-namespace Octopus.GUI.MFI
+namespace OpenCBS.GUI.MFI
 {
     public partial class frmMFI : Form
     {
-        Octopus.CoreDomain.MFI _mfi;
+        OpenCBS.CoreDomain.MFI _mfi;
         bool _update;
         bool _synchro = false;
 

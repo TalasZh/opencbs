@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Octopus.CoreDomain.Online
+namespace OpenCBS.CoreDomain.Online
 {
     [Serializable]
     public class Token

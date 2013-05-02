@@ -1,6 +1,6 @@
-using Octopus.GUI.UserControl;
+using OpenCBS.GUI.UserControl;
 
-namespace Octopus.GUI.Configuration
+namespace OpenCBS.GUI.Configuration
 {
     partial class AddBranchForm
     {
@@ -166,7 +166,7 @@ namespace Octopus.GUI.Configuration
             // 
             // panelPaymentMethods
             // 
-            this.panelPaymentMethods.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris;
+            this.panelPaymentMethods.BackgroundImage = global::OpenCBS.GUI.Properties.Resources.theme1_1_fond_gris;
             resources.ApplyResources(this.panelPaymentMethods, "panelPaymentMethods");
             this.panelPaymentMethods.Controls.Add(this.btnDeletePaymentMethod);
             this.panelPaymentMethods.Controls.Add(this.btnEditPaymentMethod);

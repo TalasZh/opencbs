@@ -3,21 +3,21 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Windows.Forms;
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.Clients;
-using Octopus.CoreDomain.FundingLines;
-using Octopus.Enums;
-using Octopus.ExceptionsHandler;
-using Octopus.Extensions;
-using Octopus.GUI.Clients;
-using Octopus.GUI.Tools;
-using Octopus.MultiLanguageRessources;
-using Octopus.Services;
-using Octopus.Services.Events;
-using Octopus.Shared;
-using Octopus.CoreDomain.Contracts.Savings;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.Clients;
+using OpenCBS.CoreDomain.FundingLines;
+using OpenCBS.Enums;
+using OpenCBS.ExceptionsHandler;
+using OpenCBS.Extensions;
+using OpenCBS.GUI.Clients;
+using OpenCBS.GUI.Tools;
+using OpenCBS.MultiLanguageRessources;
+using OpenCBS.Services;
+using OpenCBS.Services.Events;
+using OpenCBS.Shared;
+using OpenCBS.CoreDomain.Contracts.Savings;
 
-namespace Octopus.GUI.UserControl
+namespace OpenCBS.GUI.UserControl
 {
     public partial class CorporateUserControl : ClientControl
     {

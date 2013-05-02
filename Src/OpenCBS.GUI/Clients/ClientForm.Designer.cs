@@ -1,9 +1,9 @@
 using System.Globalization;
 using System.Windows.Forms;
-using Octopus.CoreDomain.FundingLines;
-using Octopus.GUI.UserControl;
+using OpenCBS.CoreDomain.FundingLines;
+using OpenCBS.GUI.UserControl;
 
-namespace Octopus.GUI.Clients
+namespace OpenCBS.GUI.Clients
 {
     public partial class ClientForm
     {
@@ -136,7 +136,7 @@ namespace Octopus.GUI.Clients
             this.columnHeaderPercentage = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeaderDesc = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel3 = new System.Windows.Forms.Panel();
-            this.btnPrintGuarantors = new Octopus.GUI.UserControl.PrintButton();
+            this.btnPrintGuarantors = new OpenCBS.GUI.UserControl.PrintButton();
             this.pnlGuarantorButtons = new System.Windows.Forms.FlowLayoutPanel();
             this.buttonSelectAGarantors = new System.Windows.Forms.Button();
             this.buttonModifyAGarantors = new System.Windows.Forms.Button();
@@ -215,7 +215,7 @@ namespace Octopus.GUI.Clients
             this.tabPageLoansDetails = new System.Windows.Forms.TabPage();
             this.tclLoanDetails = new System.Windows.Forms.TabControl();
             this.tabPageInstallments = new System.Windows.Forms.TabPage();
-            this.listViewLoanInstallments = new Octopus.GUI.UserControl.ListViewEx();
+            this.listViewLoanInstallments = new OpenCBS.GUI.UserControl.ListViewEx();
             this.columnHeaderLoanN = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeaderLoanDate = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeaderLoanIP = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -227,7 +227,7 @@ namespace Octopus.GUI.Clients
             this.btnSaveLoan = new System.Windows.Forms.Button();
             this.buttonLoanPreview = new System.Windows.Forms.Button();
             this.buttonLoanDisbursment = new System.Windows.Forms.Button();
-            this.btnPrintLoanDetails = new Octopus.GUI.UserControl.PrintButton();
+            this.btnPrintLoanDetails = new OpenCBS.GUI.UserControl.PrintButton();
             this.btnLoanShares = new System.Windows.Forms.Button();
             this.btnEditSchedule = new System.Windows.Forms.Button();
             this.gbxLoanDetails = new System.Windows.Forms.GroupBox();
@@ -260,7 +260,7 @@ namespace Octopus.GUI.Clients
             this.textBoxLoanPurpose = new System.Windows.Forms.TextBox();
             this.nudLoanAmount = new System.Windows.Forms.NumericUpDown();
             this.nudInterestRate = new System.Windows.Forms.NumericUpDown();
-            this.eacLoan = new Octopus.GUI.UserControl.EconomicActivityControl();
+            this.eacLoan = new OpenCBS.GUI.UserControl.EconomicActivityControl();
             this.tabPageAdvancedSettings = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
@@ -289,7 +289,7 @@ namespace Octopus.GUI.Clients
             this.textBoxLoanLateFeesOnOverdueInterest = new System.Windows.Forms.TextBox();
             this.labelLoanLateFeesOnOverdueInterestMinMax = new System.Windows.Forms.Label();
             this.groupBoxEntryFees = new System.Windows.Forms.GroupBox();
-            this.lvEntryFees = new Octopus.GUI.UserControl.ListViewEx();
+            this.lvEntryFees = new OpenCBS.GUI.UserControl.ListViewEx();
             this.colName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colValue = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colType = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -326,7 +326,7 @@ namespace Octopus.GUI.Clients
             this.lblLocCurrencyMax = new System.Windows.Forms.Label();
             this.tabPageCreditCommitee = new System.Windows.Forms.TabPage();
             this.flowLayoutPanel7 = new System.Windows.Forms.FlowLayoutPanel();
-            this.btnPrintCreditCommittee = new Octopus.GUI.UserControl.PrintButton();
+            this.btnPrintCreditCommittee = new OpenCBS.GUI.UserControl.PrintButton();
             this.buttonCreditCommiteeSaveDecision = new System.Windows.Forms.Button();
             this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
             this.lblCCStatus = new System.Windows.Forms.Label();
@@ -342,7 +342,7 @@ namespace Octopus.GUI.Clients
             this.tabPageLoanRepayment = new System.Windows.Forms.TabPage();
             this.tabControlRepayments = new System.Windows.Forms.TabControl();
             this.tabPageRepayments = new System.Windows.Forms.TabPage();
-            this.lvLoansRepayments = new Octopus.GUI.UserControl.ListViewEx();
+            this.lvLoansRepayments = new OpenCBS.GUI.UserControl.ListViewEx();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -359,9 +359,9 @@ namespace Octopus.GUI.Clients
             this.buttonLoanReschedule = new System.Windows.Forms.Button();
             this.buttonAddTranche = new System.Windows.Forms.Button();
             this.btnWriteOff = new System.Windows.Forms.Button();
-            this.btnPrintLoanRepayment = new Octopus.GUI.UserControl.PrintButton();
+            this.btnPrintLoanRepayment = new OpenCBS.GUI.UserControl.PrintButton();
             this.tabPageEvents = new System.Windows.Forms.TabPage();
-            this.lvEvents = new Octopus.GUI.UserControl.ListViewEx();
+            this.lvEvents = new OpenCBS.GUI.UserControl.ListViewEx();
             this.columnHeader11 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.EntryDate = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader12 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -381,7 +381,7 @@ namespace Octopus.GUI.Clients
             this.colCancelDate1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colIsDeleted = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnPrintLoanEvents = new Octopus.GUI.UserControl.PrintButton();
+            this.btnPrintLoanEvents = new OpenCBS.GUI.UserControl.PrintButton();
             this.btnWaiveFee = new System.Windows.Forms.Button();
             this.btnDeleteEvent = new System.Windows.Forms.Button();
             this.imageListTab = new System.Windows.Forms.ImageList(this.components);
@@ -504,7 +504,7 @@ namespace Octopus.GUI.Clients
             this.savingTransferToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.specialOperationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btCancelLastSavingEvent = new System.Windows.Forms.Button();
-            this.btnPrintSavings = new Octopus.GUI.UserControl.PrintButton();
+            this.btnPrintSavings = new OpenCBS.GUI.UserControl.PrintButton();
             this.groupBoxSaving = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.lbSavingAvBalanceValue = new System.Windows.Forms.Label();
@@ -1558,7 +1558,7 @@ namespace Octopus.GUI.Clients
             // 
             // btnPrintLoanDetails
             // 
-            this.btnPrintLoanDetails.AttachmentPoint = Octopus.Reports.AttachmentPoint.LoanDetails;
+            this.btnPrintLoanDetails.AttachmentPoint = OpenCBS.Reports.AttachmentPoint.LoanDetails;
             resources.ApplyResources(this.btnPrintLoanDetails, "btnPrintLoanDetails");
             this.btnPrintLoanDetails.Name = "btnPrintLoanDetails";
             this.btnPrintLoanDetails.ReportInitializer = null;
@@ -2042,8 +2042,8 @@ namespace Octopus.GUI.Clients
             this.lvEntryFees.Name = "lvEntryFees";
             this.lvEntryFees.UseCompatibleStateImageBehavior = false;
             this.lvEntryFees.View = System.Windows.Forms.View.Details;
-            this.lvEntryFees.SubItemClicked += new Octopus.GUI.UserControl.SubItemEventHandler(this.lvEntryFees_SubItemClicked);
-            this.lvEntryFees.SubItemEndEditing += new Octopus.GUI.UserControl.SubItemEndEditingEventHandler(this.lvEntryFees_SubItemEndEditing);
+            this.lvEntryFees.SubItemClicked += new OpenCBS.GUI.UserControl.SubItemEventHandler(this.lvEntryFees_SubItemClicked);
+            this.lvEntryFees.SubItemEndEditing += new OpenCBS.GUI.UserControl.SubItemEndEditingEventHandler(this.lvEntryFees_SubItemEndEditing);
             this.lvEntryFees.Click += new System.EventHandler(this.lvEntryFees_Click);
             // 
             // colName
@@ -2291,7 +2291,7 @@ namespace Octopus.GUI.Clients
             // 
             // btnPrintCreditCommittee
             // 
-            this.btnPrintCreditCommittee.AttachmentPoint = Octopus.Reports.AttachmentPoint.CreditCommittee;
+            this.btnPrintCreditCommittee.AttachmentPoint = OpenCBS.Reports.AttachmentPoint.CreditCommittee;
             resources.ApplyResources(this.btnPrintCreditCommittee, "btnPrintCreditCommittee");
             this.btnPrintCreditCommittee.Name = "btnPrintCreditCommittee";
             this.btnPrintCreditCommittee.ReportInitializer = null;
@@ -3355,10 +3355,10 @@ namespace Octopus.GUI.Clients
             // 
             // btSearchContract2
             // 
-            this.btSearchContract2.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_bouton;
+            this.btSearchContract2.BackgroundImage = global::OpenCBS.GUI.Properties.Resources.theme1_1_fond_bouton;
             resources.ApplyResources(this.btSearchContract2, "btSearchContract2");
             this.btSearchContract2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btSearchContract2.Image = global::Octopus.GUI.Properties.Resources.theme1_1_search;
+            this.btSearchContract2.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_search;
             this.btSearchContract2.Name = "btSearchContract2";
             this.btSearchContract2.UseVisualStyleBackColor = true;
             this.btSearchContract2.Click += new System.EventHandler(this.btSearchContract_Click);
@@ -3680,7 +3680,7 @@ namespace Octopus.GUI.Clients
             this.buttonPrintSchedule.BackColor = System.Drawing.Color.Gainsboro;
             resources.ApplyResources(this.buttonPrintSchedule, "buttonPrintSchedule");
             this.buttonPrintSchedule.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonPrintSchedule.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_print;
+            this.buttonPrintSchedule.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_bouton_print;
             this.buttonPrintSchedule.Name = "buttonPrintSchedule";
             this.buttonPrintSchedule.UseVisualStyleBackColor = false;
             // 

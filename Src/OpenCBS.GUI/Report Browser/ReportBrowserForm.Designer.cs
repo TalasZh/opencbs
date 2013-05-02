@@ -1,4 +1,4 @@
-namespace Octopus.GUI.Report_Browser
+namespace OpenCBS.GUI.Report_Browser
 {
     partial class ReportBrowserForm
     {
@@ -29,7 +29,7 @@ namespace Octopus.GUI.Report_Browser
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ReportBrowserForm));
-            this.rbReports = new Octopus.Reports.Forms.ReportBrowserControl();
+            this.rbReports = new OpenCBS.Reports.Forms.ReportBrowserControl();
             this.SuspendLayout();
             // 
             // rbReports
@@ -59,7 +59,7 @@ namespace Octopus.GUI.Report_Browser
 
         #endregion
 
-        private Octopus.Reports.Forms.ReportBrowserControl rbReports;
+        private OpenCBS.Reports.Forms.ReportBrowserControl rbReports;
 
     }
 }

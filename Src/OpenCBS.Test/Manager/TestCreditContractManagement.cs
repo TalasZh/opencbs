@@ -1,4 +1,4 @@
-﻿//Octopus MFS is an integrated suite for managing a Micro Finance Institution: clients, contracts, accounting, reporting and risk
+//Octopus MFS is an integrated suite for managing a Micro Finance Institution: clients, contracts, accounting, reporting and risk
 //Copyright © 2006,2007 OCTO Technology & OXUS Development Network
 //
 //This program is free software; you can redistribute it and/or modify
@@ -24,27 +24,27 @@
 
 using System;
 using System.Collections.Generic;
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.Clients;
-using Octopus.CoreDomain.Contract;
-using Octopus.CoreDomain.Contracts.Loans;
-using Octopus.CoreDomain.Contracts.Loans.Installments;
-using Octopus.CoreDomain.FundingLines;
-using Octopus.CoreDomain.Products;
-using Octopus.CoreDomain.SearchResult;
-using Octopus.Enums;
-using Octopus.CoreDomain.Events;
-using Octopus.DatabaseConnection;
-using Octopus.Manager;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.Clients;
+using OpenCBS.CoreDomain.Contract;
+using OpenCBS.CoreDomain.Contracts.Loans;
+using OpenCBS.CoreDomain.Contracts.Loans.Installments;
+using OpenCBS.CoreDomain.FundingLines;
+using OpenCBS.CoreDomain.Products;
+using OpenCBS.CoreDomain.SearchResult;
+using OpenCBS.Enums;
+using OpenCBS.CoreDomain.Events;
+using OpenCBS.DatabaseConnection;
+using OpenCBS.Manager;
 using NUnit.Framework;
 using System.Collections;
-using Octopus.Manager.Clients;
-using Octopus.Manager.Products;
-using Octopus.Shared;
-using Octopus.CoreDomain.Accounting;
-using Octopus.Shared.Settings;
+using OpenCBS.Manager.Clients;
+using OpenCBS.Manager.Products;
+using OpenCBS.Shared;
+using OpenCBS.CoreDomain.Accounting;
+using OpenCBS.Shared.Settings;
 
-namespace Octopus.Test.Manager
+namespace OpenCBS.Test.Manager
 {
     /// <summary>
     /// Class containing tests ensuring the validity of ContractManagement methods.

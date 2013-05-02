@@ -1,14 +1,14 @@
 
 using NUnit.Framework;
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.Accounting;
-using Octopus.CoreDomain.Contracts.Loans;
-using Octopus.CoreDomain.Contracts.Loans.CalculateInstallments;
-using Octopus.Enums;
-using Octopus.Shared;
-using Octopus.Shared.Settings;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.Accounting;
+using OpenCBS.CoreDomain.Contracts.Loans;
+using OpenCBS.CoreDomain.Contracts.Loans.CalculateInstallments;
+using OpenCBS.Enums;
+using OpenCBS.Shared;
+using OpenCBS.Shared.Settings;
 
-namespace Octopus.Test.CoreDomain
+namespace OpenCBS.Test.CoreDomain
 {
 	/// <summary>
 	/// Description of TestCalculateInstallmentsOptions.

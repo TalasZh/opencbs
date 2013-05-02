@@ -28,9 +28,9 @@ using System.ComponentModel;
 using System.Drawing;
 using System.Data;
 using System.Windows.Forms;
-using Octopus.Shared;
+using OpenCBS.Shared;
 
-namespace Octopus.GUI
+namespace OpenCBS.GUI
 {
 	/// <summary>
 	/// Summary description for DateTimeUserControl.

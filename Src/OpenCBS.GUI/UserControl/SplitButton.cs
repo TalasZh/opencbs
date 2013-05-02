@@ -29,7 +29,7 @@ using System.Windows.Forms;
 using System.Drawing.Design;
 using System.Drawing.Drawing2D;
 
-namespace Octopus.GUI.UserControl
+namespace OpenCBS.GUI.UserControl
 {
     public partial class SplitButton : Button
     {

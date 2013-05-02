@@ -1,6 +1,6 @@
-using Octopus.GUI.UserControl;
+using OpenCBS.GUI.UserControl;
 
-namespace Octopus.GUI.Contracts
+namespace OpenCBS.GUI.Contracts
 {
     partial class ContractCollateralForm
     {

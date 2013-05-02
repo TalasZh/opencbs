@@ -1,6 +1,6 @@
-﻿using Octopus.CoreDomain.Events.Loan;
+using OpenCBS.CoreDomain.Events.Loan;
 
-namespace Octopus.CoreDomain.Events
+namespace OpenCBS.CoreDomain.Events
 {
     public class AuditTrailEvent : Event
     {

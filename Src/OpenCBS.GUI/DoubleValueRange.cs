@@ -1,6 +1,6 @@
 using System;
 
-namespace Octopus.GUI
+namespace OpenCBS.GUI
 {
     public class DoubleValueRange
     {

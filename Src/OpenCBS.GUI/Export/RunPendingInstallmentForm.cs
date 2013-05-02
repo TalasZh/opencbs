@@ -6,12 +6,12 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using Octopus.CoreDomain.Accounting;
-using Octopus.CoreDomain.Export.Files;
-using Octopus.Services;
-using Octopus.Enums;
+using OpenCBS.CoreDomain.Accounting;
+using OpenCBS.CoreDomain.Export.Files;
+using OpenCBS.Services;
+using OpenCBS.Enums;
 
-namespace Octopus.GUI.Export
+namespace OpenCBS.GUI.Export
 {
     public partial class RunPendingInstallmentForm : Form
     {

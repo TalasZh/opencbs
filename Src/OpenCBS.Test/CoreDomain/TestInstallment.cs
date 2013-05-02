@@ -24,9 +24,9 @@
 
 using System;
 using NUnit.Framework;
-using Octopus.CoreDomain.Contracts.Loans.Installments;
+using OpenCBS.CoreDomain.Contracts.Loans.Installments;
 
-namespace Octopus.Test.CoreDomain
+namespace OpenCBS.Test.CoreDomain
 {
 	/// <summary>
 	/// Installment unit testing.

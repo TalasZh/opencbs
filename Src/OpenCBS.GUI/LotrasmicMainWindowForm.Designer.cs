@@ -1,11 +1,11 @@
 
 using System.Windows.Forms;
-using Octopus.GUI.UserControl;
-using Octopus.Enums;
-using Octopus.Services;
-using Octopus.CoreDomain;
+using OpenCBS.GUI.UserControl;
+using OpenCBS.Enums;
+using OpenCBS.Services;
+using OpenCBS.CoreDomain;
 
-namespace Octopus.GUI
+namespace OpenCBS.GUI
 {
     partial class LotrasmicMainWindowForm
     {
@@ -194,7 +194,7 @@ namespace Octopus.GUI
             this.colAlerts_Address = new BrightIdeasSoftware.OLVColumn();
             this.colAlerts_City = new BrightIdeasSoftware.OLVColumn();
             this.colAlerts_Phone = new BrightIdeasSoftware.OLVColumn();
-            this.splitter6 = new Octopus.GUI.UserControl.CollapsibleSplitter();
+            this.splitter6 = new OpenCBS.GUI.UserControl.CollapsibleSplitter();
             this.panelLeft = new System.Windows.Forms.Panel();
             this.olvAlerts = new BrightIdeasSoftware.ObjectListView();
             this.colAlerts_ContractCode = new BrightIdeasSoftware.OLVColumn();
@@ -287,7 +287,7 @@ namespace Octopus.GUI
             this.newCorporateToolStripMenuItem.AccessibleName = null;
             resources.ApplyResources(this.newCorporateToolStripMenuItem, "newCorporateToolStripMenuItem");
             this.newCorporateToolStripMenuItem.BackgroundImage = null;
-            this.newCorporateToolStripMenuItem.Image = global::Octopus.GUI.Properties.Resources.theme1_1_import;
+            this.newCorporateToolStripMenuItem.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_import;
             this.newCorporateToolStripMenuItem.Name = "newCorporateToolStripMenuItem";
             this.newCorporateToolStripMenuItem.ShortcutKeyDisplayString = null;
             this.newCorporateToolStripMenuItem.Click += new System.EventHandler(this.newCorporateToolStripMenuItem_Click);
@@ -369,7 +369,7 @@ namespace Octopus.GUI
             this.accountingRulesToolStripMenuItem.AccessibleName = null;
             resources.ApplyResources(this.accountingRulesToolStripMenuItem, "accountingRulesToolStripMenuItem");
             this.accountingRulesToolStripMenuItem.BackgroundImage = null;
-            this.accountingRulesToolStripMenuItem.Image = global::Octopus.GUI.Properties.Resources.theme1_1_doc;
+            this.accountingRulesToolStripMenuItem.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_doc;
             this.accountingRulesToolStripMenuItem.Name = "accountingRulesToolStripMenuItem";
             this.accountingRulesToolStripMenuItem.ShortcutKeyDisplayString = null;
             this.accountingRulesToolStripMenuItem.Click += new System.EventHandler(this.accountingRulesToolStripMenuItem_Click);
@@ -380,7 +380,7 @@ namespace Octopus.GUI
             this.trialBalanceToolStripMenuItem.AccessibleName = null;
             resources.ApplyResources(this.trialBalanceToolStripMenuItem, "trialBalanceToolStripMenuItem");
             this.trialBalanceToolStripMenuItem.BackgroundImage = null;
-            this.trialBalanceToolStripMenuItem.Image = global::Octopus.GUI.Properties.Resources.financial_information_bouton_files_16x16;
+            this.trialBalanceToolStripMenuItem.Image = global::OpenCBS.GUI.Properties.Resources.financial_information_bouton_files_16x16;
             this.trialBalanceToolStripMenuItem.Name = "trialBalanceToolStripMenuItem";
             this.trialBalanceToolStripMenuItem.ShortcutKeyDisplayString = null;
             this.trialBalanceToolStripMenuItem.Click += new System.EventHandler(this.trialBalanceToolStripMenuItem_Click);
@@ -401,7 +401,7 @@ namespace Octopus.GUI
             this.manualEntriesToolStripMenuItem.AccessibleName = null;
             resources.ApplyResources(this.manualEntriesToolStripMenuItem, "manualEntriesToolStripMenuItem");
             this.manualEntriesToolStripMenuItem.BackgroundImage = null;
-            this.manualEntriesToolStripMenuItem.Image = global::Octopus.GUI.Properties.Resources.theme1_1_pastille_personne;
+            this.manualEntriesToolStripMenuItem.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_pastille_personne;
             this.manualEntriesToolStripMenuItem.Name = "manualEntriesToolStripMenuItem";
             this.manualEntriesToolStripMenuItem.ShortcutKeyDisplayString = null;
             this.manualEntriesToolStripMenuItem.Click += new System.EventHandler(this.manualEntriesToolStripMenuItem_Click);
@@ -516,7 +516,7 @@ namespace Octopus.GUI
             this.tellersToolStripMenuItem.AccessibleName = null;
             resources.ApplyResources(this.tellersToolStripMenuItem, "tellersToolStripMenuItem");
             this.tellersToolStripMenuItem.BackgroundImage = null;
-            this.tellersToolStripMenuItem.Image = global::Octopus.GUI.Properties.Resources.theme1_1_pastille_contrat;
+            this.tellersToolStripMenuItem.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_pastille_contrat;
             this.tellersToolStripMenuItem.Name = "tellersToolStripMenuItem";
             this.tellersToolStripMenuItem.ShortcutKeyDisplayString = null;
             this.tellersToolStripMenuItem.Click += new System.EventHandler(this.tellersToolStripMenuItem_Click);
@@ -537,7 +537,7 @@ namespace Octopus.GUI
             this.changePasswordToolStripMenuItem.AccessibleName = null;
             resources.ApplyResources(this.changePasswordToolStripMenuItem, "changePasswordToolStripMenuItem");
             this.changePasswordToolStripMenuItem.BackgroundImage = null;
-            this.changePasswordToolStripMenuItem.Image = global::Octopus.GUI.Properties.Resources.theme1_1_doc;
+            this.changePasswordToolStripMenuItem.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_doc;
             this.changePasswordToolStripMenuItem.Name = "changePasswordToolStripMenuItem";
             this.changePasswordToolStripMenuItem.ShortcutKeyDisplayString = null;
             this.changePasswordToolStripMenuItem.Click += new System.EventHandler(this.changePasswordToolStripMenuItem_Click);
@@ -576,7 +576,7 @@ namespace Octopus.GUI
             this.englishToolStripMenuItem.AccessibleName = null;
             resources.ApplyResources(this.englishToolStripMenuItem, "englishToolStripMenuItem");
             this.englishToolStripMenuItem.BackgroundImage = null;
-            this.englishToolStripMenuItem.Image = global::Octopus.GUI.Properties.Resources.en_small;
+            this.englishToolStripMenuItem.Image = global::OpenCBS.GUI.Properties.Resources.en_small;
             this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
             this.englishToolStripMenuItem.ShortcutKeyDisplayString = null;
             this.englishToolStripMenuItem.Tag = "en-US";
@@ -588,7 +588,7 @@ namespace Octopus.GUI
             this.russianToolStripMenuItem.AccessibleName = null;
             resources.ApplyResources(this.russianToolStripMenuItem, "russianToolStripMenuItem");
             this.russianToolStripMenuItem.BackgroundImage = null;
-            this.russianToolStripMenuItem.Image = global::Octopus.GUI.Properties.Resources.ru_small;
+            this.russianToolStripMenuItem.Image = global::OpenCBS.GUI.Properties.Resources.ru_small;
             this.russianToolStripMenuItem.Name = "russianToolStripMenuItem";
             this.russianToolStripMenuItem.ShortcutKeyDisplayString = null;
             this.russianToolStripMenuItem.Tag = "ru-RU";
@@ -611,7 +611,7 @@ namespace Octopus.GUI
             this.spanishToolStripMenuItem.AccessibleName = null;
             resources.ApplyResources(this.spanishToolStripMenuItem, "spanishToolStripMenuItem");
             this.spanishToolStripMenuItem.BackgroundImage = null;
-            this.spanishToolStripMenuItem.Image = global::Octopus.GUI.Properties.Resources.Spanish_Flag1;
+            this.spanishToolStripMenuItem.Image = global::OpenCBS.GUI.Properties.Resources.Spanish_Flag1;
             this.spanishToolStripMenuItem.Name = "spanishToolStripMenuItem";
             this.spanishToolStripMenuItem.ShortcutKeyDisplayString = null;
             this.spanishToolStripMenuItem.Tag = "es-ES";
@@ -677,7 +677,7 @@ namespace Octopus.GUI
             this.toolStripMenuItemFundingLines.AccessibleName = null;
             resources.ApplyResources(this.toolStripMenuItemFundingLines, "toolStripMenuItemFundingLines");
             this.toolStripMenuItemFundingLines.BackgroundImage = null;
-            this.toolStripMenuItemFundingLines.Image = global::Octopus.GUI.Properties.Resources.theme1_1_doc;
+            this.toolStripMenuItemFundingLines.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_doc;
             this.toolStripMenuItemFundingLines.Name = "toolStripMenuItemFundingLines";
             this.toolStripMenuItemFundingLines.ShortcutKeyDisplayString = null;
             this.toolStripMenuItemFundingLines.Click += new System.EventHandler(this.toolStripMenuItemFundingLines_Click);
@@ -715,7 +715,7 @@ namespace Octopus.GUI
             this.toolStripMenuItemInstallmentTypes.AccessibleName = null;
             resources.ApplyResources(this.toolStripMenuItemInstallmentTypes, "toolStripMenuItemInstallmentTypes");
             this.toolStripMenuItemInstallmentTypes.BackgroundImage = null;
-            this.toolStripMenuItemInstallmentTypes.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_validity;
+            this.toolStripMenuItemInstallmentTypes.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_bouton_validity;
             this.toolStripMenuItemInstallmentTypes.Name = "toolStripMenuItemInstallmentTypes";
             this.toolStripMenuItemInstallmentTypes.ShortcutKeyDisplayString = null;
             this.toolStripMenuItemInstallmentTypes.Click += new System.EventHandler(this.toolStripMenuItemInstallmentTypes_Click);
@@ -817,7 +817,7 @@ namespace Octopus.GUI
             this.mnuExtensionManager.AccessibleName = null;
             resources.ApplyResources(this.mnuExtensionManager, "mnuExtensionManager");
             this.mnuExtensionManager.BackgroundImage = null;
-            this.mnuExtensionManager.Image = global::Octopus.GUI.Properties.Resources.closure;
+            this.mnuExtensionManager.Image = global::OpenCBS.GUI.Properties.Resources.closure;
             this.mnuExtensionManager.Name = "mnuExtensionManager";
             this.mnuExtensionManager.ShortcutKeyDisplayString = null;
             this.mnuExtensionManager.Click += new System.EventHandler(this.MnuExtensionManagerClick);
@@ -840,7 +840,7 @@ namespace Octopus.GUI
             this.menuItemDatabaseControlPanel.AccessibleName = null;
             resources.ApplyResources(this.menuItemDatabaseControlPanel, "menuItemDatabaseControlPanel");
             this.menuItemDatabaseControlPanel.BackgroundImage = null;
-            this.menuItemDatabaseControlPanel.Image = global::Octopus.GUI.Properties.Resources.thame1_1_database;
+            this.menuItemDatabaseControlPanel.Image = global::OpenCBS.GUI.Properties.Resources.thame1_1_database;
             this.menuItemDatabaseControlPanel.Name = "menuItemDatabaseControlPanel";
             this.menuItemDatabaseControlPanel.ShortcutKeyDisplayString = null;
             this.menuItemDatabaseControlPanel.Click += new System.EventHandler(this.menuItemBackupData_Click);
@@ -895,7 +895,7 @@ namespace Octopus.GUI
             this.octopusForumToolStripMenuItem.AccessibleName = null;
             resources.ApplyResources(this.octopusForumToolStripMenuItem, "octopusForumToolStripMenuItem");
             this.octopusForumToolStripMenuItem.BackgroundImage = null;
-            this.octopusForumToolStripMenuItem.Image = global::Octopus.GUI.Properties.Resources.theme1_1_pastille_personne;
+            this.octopusForumToolStripMenuItem.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_pastille_personne;
             this.octopusForumToolStripMenuItem.Name = "octopusForumToolStripMenuItem";
             this.octopusForumToolStripMenuItem.ShortcutKeyDisplayString = null;
             this.octopusForumToolStripMenuItem.Click += new System.EventHandler(this.octopusForumToolStripMenuItem_Click);
@@ -906,7 +906,7 @@ namespace Octopus.GUI
             this.questionnaireToolStripMenuItem.AccessibleName = null;
             resources.ApplyResources(this.questionnaireToolStripMenuItem, "questionnaireToolStripMenuItem");
             this.questionnaireToolStripMenuItem.BackgroundImage = null;
-            this.questionnaireToolStripMenuItem.Image = global::Octopus.GUI.Properties.Resources.theme1_1_doc;
+            this.questionnaireToolStripMenuItem.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_doc;
             this.questionnaireToolStripMenuItem.Name = "questionnaireToolStripMenuItem";
             this.questionnaireToolStripMenuItem.ShortcutKeyDisplayString = null;
             this.questionnaireToolStripMenuItem.Click += new System.EventHandler(this.questionnaireToolStripMenuItem_Click);
@@ -917,7 +917,7 @@ namespace Octopus.GUI
             this.userGuideToolStripMenuItem.AccessibleName = null;
             resources.ApplyResources(this.userGuideToolStripMenuItem, "userGuideToolStripMenuItem");
             this.userGuideToolStripMenuItem.BackgroundImage = null;
-            this.userGuideToolStripMenuItem.Image = global::Octopus.GUI.Properties.Resources.theme1_1_doc;
+            this.userGuideToolStripMenuItem.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_doc;
             this.userGuideToolStripMenuItem.Name = "userGuideToolStripMenuItem";
             this.userGuideToolStripMenuItem.ShortcutKeyDisplayString = null;
             this.userGuideToolStripMenuItem.Click += new System.EventHandler(this.userGuideToolStripMenuItem_Click);
@@ -928,7 +928,7 @@ namespace Octopus.GUI
             this.wIKIHelpToolStripMenuItem.AccessibleName = null;
             resources.ApplyResources(this.wIKIHelpToolStripMenuItem, "wIKIHelpToolStripMenuItem");
             this.wIKIHelpToolStripMenuItem.BackgroundImage = null;
-            this.wIKIHelpToolStripMenuItem.Image = global::Octopus.GUI.Properties.Resources.languages;
+            this.wIKIHelpToolStripMenuItem.Image = global::OpenCBS.GUI.Properties.Resources.languages;
             this.wIKIHelpToolStripMenuItem.Name = "wIKIHelpToolStripMenuItem";
             this.wIKIHelpToolStripMenuItem.ShortcutKeyDisplayString = null;
             this.wIKIHelpToolStripMenuItem.Click += new System.EventHandler(this.wIKIHelpToolStripMenuItem_Click);
@@ -1271,7 +1271,7 @@ namespace Octopus.GUI
                         | System.Windows.Forms.ToolStripStatusLabelBorderSides.Right)
                         | System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom)));
             this.toolStripStatusLblDB.BorderStyle = System.Windows.Forms.Border3DStyle.SunkenOuter;
-            this.toolStripStatusLblDB.Image = global::Octopus.GUI.Properties.Resources.thame1_1_database;
+            this.toolStripStatusLblDB.Image = global::OpenCBS.GUI.Properties.Resources.thame1_1_database;
             this.toolStripStatusLblDB.Name = "toolStripStatusLblDB";
             // 
             // bwAlerts
@@ -1335,7 +1335,7 @@ namespace Octopus.GUI
             this.splitter6.Name = "splitter6";
             this.splitter6.TabStop = false;
             this.splitter6.UseAnimations = false;
-            this.splitter6.VisualStyle = Octopus.GUI.UserControl.VisualStyles.Mozilla;
+            this.splitter6.VisualStyle = OpenCBS.GUI.UserControl.VisualStyles.Mozilla;
             // 
             // panelLeft
             // 
@@ -1343,7 +1343,7 @@ namespace Octopus.GUI
             this.panelLeft.AccessibleName = null;
             resources.ApplyResources(this.panelLeft, "panelLeft");
             this.panelLeft.BackColor = System.Drawing.Color.Transparent;
-            this.panelLeft.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris;
+            this.panelLeft.BackgroundImage = global::OpenCBS.GUI.Properties.Resources.theme1_1_fond_gris;
             this.panelLeft.Controls.Add(this.olvAlerts);
             this.panelLeft.Controls.Add(this.lblTitle);
             this.panelLeft.Controls.Add(this.tabFilter);
@@ -1573,7 +1573,7 @@ namespace Octopus.GUI
             // 
             // alertBindingSource
             // 
-            this.alertBindingSource.DataSource = typeof(Octopus.CoreDomain.Alert);
+            this.alertBindingSource.DataSource = typeof(OpenCBS.CoreDomain.Alert);
             // 
             // LotrasmicMainWindowForm
             // 

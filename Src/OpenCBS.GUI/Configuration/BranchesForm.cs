@@ -25,12 +25,12 @@
 using System;
 using System.Diagnostics;
 using System.Windows.Forms;
-using Octopus.CoreDomain;
-using Octopus.ExceptionsHandler;
-using Octopus.GUI.UserControl;
-using Octopus.Services;
+using OpenCBS.CoreDomain;
+using OpenCBS.ExceptionsHandler;
+using OpenCBS.GUI.UserControl;
+using OpenCBS.Services;
 
-namespace Octopus.GUI.Configuration
+namespace OpenCBS.GUI.Configuration
 {
     public partial class BranchesForm : SweetForm
     {

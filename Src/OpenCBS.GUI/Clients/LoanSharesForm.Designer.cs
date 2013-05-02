@@ -1,6 +1,6 @@
-using Octopus.GUI.UserControl;
+using OpenCBS.GUI.UserControl;
 
-namespace Octopus.GUI.Clients
+namespace OpenCBS.GUI.Clients
 {
     partial class LoanSharesForm
     {
@@ -34,7 +34,7 @@ namespace Octopus.GUI.Clients
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoanSharesForm));
             this.spcBox = new System.Windows.Forms.SplitContainer();
             this.tbAmount = new System.Windows.Forms.TextBox();
-            this.lvLoanShares = new Octopus.GUI.UserControl.ListViewEx();
+            this.lvLoanShares = new OpenCBS.GUI.UserControl.ListViewEx();
             this.colMember = new System.Windows.Forms.ColumnHeader();
             this.colLoanShare = new System.Windows.Forms.ColumnHeader();
             this.pnlButtons = new System.Windows.Forms.Panel();
@@ -78,8 +78,8 @@ namespace Octopus.GUI.Clients
             this.lvLoanShares.Name = "lvLoanShares";
             this.lvLoanShares.UseCompatibleStateImageBehavior = false;
             this.lvLoanShares.View = System.Windows.Forms.View.Details;
-            this.lvLoanShares.SubItemClicked += new Octopus.GUI.UserControl.SubItemEventHandler(this.lvLoanShares_SubItemClicked);
-            this.lvLoanShares.SubItemEndEditing += new Octopus.GUI.UserControl.SubItemEndEditingEventHandler(this.lvLoanShares_SubItemEndEditing);
+            this.lvLoanShares.SubItemClicked += new OpenCBS.GUI.UserControl.SubItemEventHandler(this.lvLoanShares_SubItemClicked);
+            this.lvLoanShares.SubItemEndEditing += new OpenCBS.GUI.UserControl.SubItemEndEditingEventHandler(this.lvLoanShares_SubItemEndEditing);
             // 
             // colMember
             // 

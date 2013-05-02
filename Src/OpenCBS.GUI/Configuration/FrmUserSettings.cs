@@ -26,9 +26,9 @@ using System;
 using System.Drawing;
 using System.Windows.Forms;
 using System.IO;
-using Octopus.Shared.Settings;
+using OpenCBS.Shared.Settings;
 
-namespace Octopus.GUI.Configuration
+namespace OpenCBS.GUI.Configuration
 {
     /// <summary>
     /// Description r�sum�e de FrmUserSettings.

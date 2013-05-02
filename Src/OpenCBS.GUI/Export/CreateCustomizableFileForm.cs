@@ -6,11 +6,11 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using Octopus.CoreDomain.Export;
-using Octopus.CoreDomain.Export.Files;
-using Octopus.MultiLanguageRessources;
+using OpenCBS.CoreDomain.Export;
+using OpenCBS.CoreDomain.Export.Files;
+using OpenCBS.MultiLanguageRessources;
 
-namespace Octopus.GUI.Export
+namespace OpenCBS.GUI.Export
 {
     public partial class CreateCustomizableFileForm : Form
     {

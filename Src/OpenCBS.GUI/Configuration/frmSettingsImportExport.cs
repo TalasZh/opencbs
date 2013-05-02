@@ -3,12 +3,12 @@ using System.IO;
 using System.Text;
 using System.Windows.Forms;
 using System.Xml.Serialization;
-using Octopus.ExceptionsHandler;
-using Octopus.GUI.Tools;
-using Octopus.GUI.UserControl;
-using Octopus.Services;
+using OpenCBS.ExceptionsHandler;
+using OpenCBS.GUI.Tools;
+using OpenCBS.GUI.UserControl;
+using OpenCBS.Services;
 
-namespace Octopus.GUI.Configuration
+namespace OpenCBS.GUI.Configuration
 {
     /// <summary>
     /// This form displays settings and packages to import or export.

@@ -22,7 +22,7 @@
 // Business contact: business(at)octopusnetwork.org
 // Technical contact email : tech(at)octopusnetwork.org 
 
-namespace Octopus.GUI
+namespace OpenCBS.GUI
 {
     partial class FrmSplash
     {
@@ -58,8 +58,8 @@ namespace Octopus.GUI
             this.bWOneToSeven = new System.ComponentModel.BackgroundWorker();
             this.bWSeventToEight = new System.ComponentModel.BackgroundWorker();
             this.pictureBoxAboutOctopus = new System.Windows.Forms.PictureBox();
-            this.oPBMacroProgression = new Octopus.GUI.OctopusProgressBar();
-            this.oPBarMicroProgression = new Octopus.GUI.OctopusProgressBar();
+            this.oPBMacroProgression = new OpenCBS.GUI.OctopusProgressBar();
+            this.oPBarMicroProgression = new OpenCBS.GUI.OctopusProgressBar();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAboutOctopus)).BeginInit();
             this.SuspendLayout();
             // 

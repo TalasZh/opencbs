@@ -2,16 +2,16 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using NUnit.Framework;
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.Contracts.Loans;
-using Octopus.CoreDomain.Contracts.Loans.Installments;
-using Octopus.CoreDomain.Products;
-using Octopus.Enums;
-using Octopus.Shared;
-using Octopus.CoreDomain.Accounting;
-using Octopus.Shared.Settings;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.Contracts.Loans;
+using OpenCBS.CoreDomain.Contracts.Loans.Installments;
+using OpenCBS.CoreDomain.Products;
+using OpenCBS.Enums;
+using OpenCBS.Shared;
+using OpenCBS.CoreDomain.Accounting;
+using OpenCBS.Shared.Settings;
 
-namespace Octopus.Test.CoreDomain.Contracts.CalculateInstallments
+namespace OpenCBS.Test.CoreDomain.Contracts.CalculateInstallments
 {
     [TestFixture]
     public class FlatRateWithCents

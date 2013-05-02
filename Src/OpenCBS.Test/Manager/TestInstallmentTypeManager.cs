@@ -24,11 +24,11 @@
 
 using System.Collections.Generic;
 using NUnit.Framework;
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.Contracts.Loans.Installments;
-using Octopus.Manager;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.Contracts.Loans.Installments;
+using OpenCBS.Manager;
 
-namespace Octopus.Test.Manager
+namespace OpenCBS.Test.Manager
 {
 	[TestFixture]
 	public class TestInstallmentTypeManager : BaseManagerTest

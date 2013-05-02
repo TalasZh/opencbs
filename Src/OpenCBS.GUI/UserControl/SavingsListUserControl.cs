@@ -2,15 +2,15 @@ using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
-using Octopus.CoreDomain.Accounting;
-using Octopus.Services;
-using Octopus.CoreDomain.Products;
-using Octopus.Enums;
-using Octopus.CoreDomain.Contracts.Savings;
-using Octopus.MultiLanguageRessources;
-using Octopus.Shared;
+using OpenCBS.CoreDomain.Accounting;
+using OpenCBS.Services;
+using OpenCBS.CoreDomain.Products;
+using OpenCBS.Enums;
+using OpenCBS.CoreDomain.Contracts.Savings;
+using OpenCBS.MultiLanguageRessources;
+using OpenCBS.Shared;
 
-namespace Octopus.GUI.UserControl
+namespace OpenCBS.GUI.UserControl
 {
     public partial class SavingsListUserControl : System.Windows.Forms.UserControl
     {

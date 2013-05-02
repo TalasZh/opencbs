@@ -24,15 +24,15 @@
 
 using System;
 using System.Collections.Generic;
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.Accounting;
-using Octopus.CoreDomain.Contracts.Loans.Installments;
-using Octopus.CoreDomain.LoanCycles;
-using Octopus.CoreDomain.Products;
-using Octopus.Enums;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.Accounting;
+using OpenCBS.CoreDomain.Contracts.Loans.Installments;
+using OpenCBS.CoreDomain.LoanCycles;
+using OpenCBS.CoreDomain.Products;
+using OpenCBS.Enums;
 using System.Data.SqlClient;
 
-namespace Octopus.Manager.Products
+namespace OpenCBS.Manager.Products
 {
     /// <summary>
     /// This class provides all the methods required to manages Package datas in database

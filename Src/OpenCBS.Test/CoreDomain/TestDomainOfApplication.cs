@@ -23,9 +23,9 @@
 // Technical contact email : tech(at)octopusnetwork.org 
 
 using NUnit.Framework;
-using Octopus.CoreDomain.EconomicActivities;
+using OpenCBS.CoreDomain.EconomicActivities;
 
-namespace Octopus.Test.CoreDomain
+namespace OpenCBS.Test.CoreDomain
 {
 	/// <summary>
 	/// Summary description for TestDomainOfApplication.

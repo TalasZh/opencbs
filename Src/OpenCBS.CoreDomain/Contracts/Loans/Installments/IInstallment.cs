@@ -23,9 +23,9 @@
 // Technical contact email : tech(at)octopusnetwork.org 
 
 using System;
-using Octopus.Shared;
+using OpenCBS.Shared;
 
-namespace Octopus.CoreDomain.Contracts.Loans.Installments
+namespace OpenCBS.CoreDomain.Contracts.Loans.Installments
 {
     /// <summary>
     /// Summary description for IInstallment.

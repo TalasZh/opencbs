@@ -28,14 +28,14 @@ using System.IO;
 using System.Text;
 using System.Windows.Forms;
 using System.Security.Permissions;
-using Octopus.CoreDomain.Products.Collaterals;
-using Octopus.ExceptionsHandler;
-using Octopus.Services;
-using Octopus.MultiLanguageRessources;
-using Octopus.Shared.Settings;
-using Octopus.GUI.UserControl;
+using OpenCBS.CoreDomain.Products.Collaterals;
+using OpenCBS.ExceptionsHandler;
+using OpenCBS.Services;
+using OpenCBS.MultiLanguageRessources;
+using OpenCBS.Shared.Settings;
+using OpenCBS.GUI.UserControl;
 
-namespace Octopus.GUI.Products
+namespace OpenCBS.GUI.Products
 {
     [PermissionSet(SecurityAction.Demand, Name = "FullTrust")]
     [System.Runtime.InteropServices.ComVisibleAttribute(true)]

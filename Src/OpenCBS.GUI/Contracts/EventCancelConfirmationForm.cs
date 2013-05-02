@@ -2,13 +2,13 @@ using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
-using Octopus.CoreDomain.Contracts.Loans;
-using Octopus.CoreDomain.Contracts.Loans.Installments;
-using Octopus.CoreDomain.Events;
-using Octopus.CoreDomain.Events.Loan;
-using Octopus.GUI.UserControl;
+using OpenCBS.CoreDomain.Contracts.Loans;
+using OpenCBS.CoreDomain.Contracts.Loans.Installments;
+using OpenCBS.CoreDomain.Events;
+using OpenCBS.CoreDomain.Events.Loan;
+using OpenCBS.GUI.UserControl;
 
-namespace Octopus.GUI
+namespace OpenCBS.GUI
 {
     public partial class EventCancelConfirmationForm : SweetBaseForm
     {

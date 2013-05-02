@@ -25,11 +25,11 @@ using System;
 using System.ComponentModel;
 using System.Drawing.Design;
 using System.Globalization;
-using Octopus.CoreDomain.Clients;
-using Octopus.MultiLanguageRessources;
-using Octopus.Services;
+using OpenCBS.CoreDomain.Clients;
+using OpenCBS.MultiLanguageRessources;
+using OpenCBS.Services;
 
-namespace Octopus.GUI.UserControl
+namespace OpenCBS.GUI.UserControl
 {
     [Editor(typeof(CustomizableFieldClientEditor), typeof(UITypeEditor))]
     [TypeConverter(typeof(CustomClientFieldConverter))]

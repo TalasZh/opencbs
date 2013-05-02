@@ -6,17 +6,17 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using Octopus.CoreDomain.Export;
-using Octopus.MultiLanguageRessources;
+using OpenCBS.CoreDomain.Export;
+using OpenCBS.MultiLanguageRessources;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
-using Octopus.Services;
-using Octopus.ExceptionsHandler;
-using Octopus.CoreDomain.Export.Files;
-using Octopus.CoreDomain.Export.Fields;
-using Octopus.Enums;
+using OpenCBS.Services;
+using OpenCBS.ExceptionsHandler;
+using OpenCBS.CoreDomain.Export.Files;
+using OpenCBS.CoreDomain.Export.Fields;
+using OpenCBS.Enums;
 
-namespace Octopus.GUI.Export
+namespace OpenCBS.GUI.Export
 {
     public partial class CustomizableExportConfigurationForm : Form
     {

@@ -1,13 +1,13 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.ComponentModel.Composition;
 using System.ComponentModel.Composition.Hosting;
 using System.IO;
 using System.Reflection;
 using System.Windows.Forms;
-using Octopus.Enums;
-using Octopus.Extensions;
+using OpenCBS.Enums;
+using OpenCBS.Extensions;
 
-namespace Octopus.CoreDomain.Extensions
+namespace OpenCBS.CoreDomain.Extensions
 {
     public class Extension
     {

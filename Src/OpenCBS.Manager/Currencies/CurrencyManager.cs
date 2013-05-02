@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.Accounting;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.Accounting;
 
-namespace Octopus.Manager.Currencies
+namespace OpenCBS.Manager.Currencies
 {
     public class CurrencyManager : Manager
     {

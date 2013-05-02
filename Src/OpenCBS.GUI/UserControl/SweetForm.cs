@@ -1,6 +1,6 @@
 using System;
 
-namespace Octopus.GUI.UserControl
+namespace OpenCBS.GUI.UserControl
 {
     public partial class SweetForm : SweetBaseForm
     {

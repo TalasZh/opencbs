@@ -23,9 +23,9 @@
 // Technical contact email : tech(at)octopusnetwork.org 
 
 using System;
-using Octopus.Shared;
+using OpenCBS.Shared;
 
-namespace Octopus.CoreDomain.Clients
+namespace OpenCBS.CoreDomain.Clients
 {
 	/// <summary>
 	/// Summary description for Guarantor.

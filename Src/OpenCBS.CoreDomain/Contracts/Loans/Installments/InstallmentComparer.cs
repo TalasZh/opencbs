@@ -24,9 +24,9 @@
 
 using System;
 using System.Collections.Generic;
-using Octopus.CoreDomain.Contracts.Loans.Installments;
+using OpenCBS.CoreDomain.Contracts.Loans.Installments;
 
-namespace Octopus.CoreDomain
+namespace OpenCBS.CoreDomain
 {
 	/// <summary>
 	/// Summary description for InstallmentComparer.

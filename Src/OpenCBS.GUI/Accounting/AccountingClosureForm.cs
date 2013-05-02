@@ -26,10 +26,10 @@ using System;
 using System.Drawing;
 using System.Windows.Forms;
 using BrightIdeasSoftware;
-using Octopus.CoreDomain.Accounting;
-using Octopus.Services;
+using OpenCBS.CoreDomain.Accounting;
+using OpenCBS.Services;
 
-namespace Octopus.GUI.Accounting
+namespace OpenCBS.GUI.Accounting
 {
     public partial class AccountingClosureForm : Form
     {

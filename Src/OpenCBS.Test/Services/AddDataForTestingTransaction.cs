@@ -24,14 +24,14 @@
 
 using System.Data.SqlClient;
 using System.Data;
-using Octopus.CoreDomain.Clients;
-using Octopus.CoreDomain.EconomicActivities;
-using Octopus.DatabaseConnection;
-using Octopus.Manager.Clients;
-using Octopus.CoreDomain;
-using Octopus.Manager;
+using OpenCBS.CoreDomain.Clients;
+using OpenCBS.CoreDomain.EconomicActivities;
+using OpenCBS.DatabaseConnection;
+using OpenCBS.Manager.Clients;
+using OpenCBS.CoreDomain;
+using OpenCBS.Manager;
 
-namespace Octopus.Test.Services
+namespace OpenCBS.Test.Services
 {
 	/// <summary>
 	/// Summary description for AddDataForTestingTransaction.

@@ -1,9 +1,9 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
-using Octopus.CoreDomain.Clients;
-using Octopus.CoreDomain.FundingLines;
+using OpenCBS.CoreDomain.Clients;
+using OpenCBS.CoreDomain.FundingLines;
 
-namespace Octopus.CoreDomain
+namespace OpenCBS.CoreDomain
 {
     [Serializable]
     public class Criteres

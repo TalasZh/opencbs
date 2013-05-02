@@ -1,12 +1,12 @@
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
-using Octopus.CoreDomain.Accounting;
-using Octopus.ExceptionsHandler;
-using Octopus.MultiLanguageRessources;
-using Octopus.Services;
+using OpenCBS.CoreDomain.Accounting;
+using OpenCBS.ExceptionsHandler;
+using OpenCBS.MultiLanguageRessources;
+using OpenCBS.Services;
 
-namespace Octopus.GUI.Configuration
+namespace OpenCBS.GUI.Configuration
 {
     public partial class FrmCurrencyType : Form
     {

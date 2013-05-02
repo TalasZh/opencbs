@@ -1,24 +1,24 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using NUnit.Framework;
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.Contracts.Loans;
-using Octopus.CoreDomain.Contracts.Loans.Installments;
-using Octopus.CoreDomain.Contracts.Loans.LoanRepayment;
-using Octopus.CoreDomain.Contracts.Rescheduling;
-using Octopus.CoreDomain.Events;
-using Octopus.CoreDomain.Events.Loan;
-using Octopus.CoreDomain.Products;
-using Octopus.Services.Accounting;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.Contracts.Loans;
+using OpenCBS.CoreDomain.Contracts.Loans.Installments;
+using OpenCBS.CoreDomain.Contracts.Loans.LoanRepayment;
+using OpenCBS.CoreDomain.Contracts.Rescheduling;
+using OpenCBS.CoreDomain.Events;
+using OpenCBS.CoreDomain.Events.Loan;
+using OpenCBS.CoreDomain.Products;
+using OpenCBS.Services.Accounting;
 using NUnit.Mocks;
-using Octopus.Manager.Accounting;
-using Octopus.CoreDomain.Accounting;
-using Octopus.Enums;
-using Octopus.ExceptionsHandler.Exceptions.AccountExceptions;
-using Octopus.Shared;
-using Octopus.Shared.Settings;
+using OpenCBS.Manager.Accounting;
+using OpenCBS.CoreDomain.Accounting;
+using OpenCBS.Enums;
+using OpenCBS.ExceptionsHandler.Exceptions.AccountExceptions;
+using OpenCBS.Shared;
+using OpenCBS.Shared.Settings;
 
-namespace Octopus.Test.Services.Accounting
+namespace OpenCBS.Test.Services.Accounting
 {
     [TestFixture]
     public class TestAccountingRuleServices
@@ -195,7 +195,7 @@ namespace Octopus.Test.Services.Accounting
         public void Test_LateLoanProcessing()
         {
             Loan myContract = _SetContract(1000, 0.03m,  OLoanTypes.Flat, new NonRepaymentPenalties(0, 0, 0.003, 0), false, 1, new DateTime(2010, 6, 6), 6);
-            Octopus.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments rLI =
+            OpenCBS.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments rLI =
                 _SetRepaymentOptions(myContract, false);
 
             Assert.AreEqual(new DateTime(2010, 7, 6), myContract.GetInstallment(0).ExpectedDate);
@@ -223,7 +223,7 @@ namespace Octopus.Test.Services.Accounting
         public void Test_LateLoanProcessingDoCalculationTwoTimes()
         {
             Loan myContract = _SetContract(1000, 0.03m, OLoanTypes.Flat, new NonRepaymentPenalties(0, 0, 0.003, 0), false, 1, new DateTime(2010, 6, 6), 6);
-            Octopus.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments rLI =
+            OpenCBS.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments rLI =
                 _SetRepaymentOptions(myContract, false);
 
             Assert.AreEqual(new DateTime(2010, 7, 6), myContract.GetInstallment(0).ExpectedDate);
@@ -252,7 +252,7 @@ namespace Octopus.Test.Services.Accounting
         public void Test_RescheduleGoodLoanProcessing()
         {
             Loan myContract = _SetContract(1000, 0.03m, OLoanTypes.Flat, new NonRepaymentPenalties(0, 0, 0.003, 0), false, 1, new DateTime(2010, 6, 6), 6);
-            Octopus.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments rLI =
+            OpenCBS.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments rLI =
                 _SetRepaymentOptions(myContract, false);
 
             Assert.AreEqual(new DateTime(2010, 7, 6), myContract.GetInstallment(0).ExpectedDate);
@@ -292,7 +292,7 @@ namespace Octopus.Test.Services.Accounting
         public void Test_RescheduleLateLoanProcessing()
         {
             Loan myContract = _SetContract(1000, 0.03m, OLoanTypes.Flat, new NonRepaymentPenalties(0, 0, 0.003, 0), false, 1, new DateTime(2010, 6, 6), 6);
-            Octopus.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments rLI =
+            OpenCBS.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments rLI =
                 _SetRepaymentOptions(myContract, false);
 
             Assert.AreEqual(new DateTime(2010, 7, 6), myContract.GetInstallment(0).ExpectedDate);
@@ -333,7 +333,7 @@ namespace Octopus.Test.Services.Accounting
         public void Test_RescheduleBadLoanProcessing()
         {
             Loan myContract = _SetContract(1000, 0.03m, OLoanTypes.Flat, new NonRepaymentPenalties(0, 0, 0.003, 0), false, 1, new DateTime(2010, 6, 6), 6);
-            Octopus.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments rLI =
+            OpenCBS.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments rLI =
                 _SetRepaymentOptions(myContract, false);
 
             Assert.AreEqual(new DateTime(2010, 7, 6), myContract.GetInstallment(0).ExpectedDate);
@@ -373,7 +373,7 @@ namespace Octopus.Test.Services.Accounting
         public void Test_ProvisionLoanProcessing()
         {
             Loan myContract = _SetContract(1000, 0.03m, OLoanTypes.Flat, new NonRepaymentPenalties(0, 0, 0.003, 0), false, 1, new DateTime(2010, 6, 6), 6);
-            Octopus.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments rLI =
+            OpenCBS.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments rLI =
                 _SetRepaymentOptions(myContract, false);
 
             ProvisionTable provisionTable = ProvisionTable.GetInstance(new User());
@@ -400,7 +400,7 @@ namespace Octopus.Test.Services.Accounting
         public void Test_ProvisionRescheduledLoanProcessing()
         {
             Loan myContract = _SetContract(1000, 0.03m, OLoanTypes.Flat, new NonRepaymentPenalties(0, 0, 0.003, 0), false, 1, new DateTime(2010, 6, 6), 6);
-            Octopus.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments rLI =
+            OpenCBS.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments rLI =
                 _SetRepaymentOptions(myContract, false);
 
             ProvisionTable provisionTable = ProvisionTable.GetInstance(new User());
@@ -451,7 +451,7 @@ namespace Octopus.Test.Services.Accounting
             Loan myContract = _SetContract(6000, 0.0833m, OLoanTypes.Flat,
                                            new NonRepaymentPenalties(0, 0, 0, 0), false, 0,
                                            new DateTime(2010, 10, 15), 3);
-            Octopus.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments rLi =
+            OpenCBS.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments rLi =
                 _SetRepaymentOptions(myContract, false);
 
             Assert.AreEqual(new DateTime(2010, 11, 15), myContract.GetInstallment(0).ExpectedDate);
@@ -485,7 +485,7 @@ namespace Octopus.Test.Services.Accounting
                                            new NonRepaymentPenalties(0, 0, 0, 0), false, 0,
                                            new DateTime(2010, 10, 15), 3);
 
-            Octopus.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments rLi =
+            OpenCBS.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments rLi =
                 _SetRepaymentOptions(myContract, false);
 
             Assert.AreEqual(new DateTime(2010, 11, 15), myContract.GetInstallment(0).ExpectedDate);
@@ -508,7 +508,7 @@ namespace Octopus.Test.Services.Accounting
             Loan myContract = _SetContract(6000, 0.0833m, OLoanTypes.Flat,
                                            new NonRepaymentPenalties(0, 0, 0, 0), false, 0,
                                            new DateTime(2010, 10, 15), 3);
-            Octopus.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments rLI =
+            OpenCBS.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments rLI =
                 _SetRepaymentOptions(myContract, false);
 
             Assert.AreEqual(new DateTime(2010, 11, 15), myContract.GetInstallment(0).ExpectedDate);
@@ -525,12 +525,12 @@ namespace Octopus.Test.Services.Accounting
             //Assert.AreEqual(e, null);
         }
 
-        private static Octopus.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments _SetRepaymentOptions(Loan pContract, bool pCancelFees)
+        private static OpenCBS.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments _SetRepaymentOptions(Loan pContract, bool pCancelFees)
         {
             CreditContractOptions cCO = new CreditContractOptions(pContract.Product.LoanType, pContract.Product.KeepExpectedInstallment, pCancelFees, 0, 0, false, 0,
                                                                   pContract.Product.AnticipatedTotalRepaymentPenaltiesBase);
 
-            return new Octopus.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments(cCO, pContract, new User(), ApplicationSettings.GetInstance(""), NonWorkingDateSingleton.GetInstance(""));
+            return new OpenCBS.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments(cCO, pContract, new User(), ApplicationSettings.GetInstance(""), NonWorkingDateSingleton.GetInstance(""));
         }
 
         private static Loan _SetContract(OCurrency amount, decimal rate, OLoanTypes loansType, NonRepaymentPenalties nonRepaymentFees, bool keepExpectedInstallment, int numberOfGracePeriod, DateTime stratDate, int nbInstallment)

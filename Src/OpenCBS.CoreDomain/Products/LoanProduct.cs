@@ -24,18 +24,18 @@
 
 using System;
 using System.Collections.Generic;
-using Octopus.CoreDomain.Accounting;
-using Octopus.CoreDomain.Contracts.Loans.Installments;
-using Octopus.CoreDomain.Contracts.Loans.LoanRepayment;
-using Octopus.CoreDomain.FundingLines;
-using Octopus.CoreDomain.LoanCycles;
-using Octopus.Enums;
-using Octopus.Shared;
+using OpenCBS.CoreDomain.Accounting;
+using OpenCBS.CoreDomain.Contracts.Loans.Installments;
+using OpenCBS.CoreDomain.Contracts.Loans.LoanRepayment;
+using OpenCBS.CoreDomain.FundingLines;
+using OpenCBS.CoreDomain.LoanCycles;
+using OpenCBS.Enums;
+using OpenCBS.Shared;
 
-namespace Octopus.CoreDomain.Products
+namespace OpenCBS.CoreDomain.Products
 {
 	/// <summary>
-	/// Description résumée de Package.
+	/// Description rï¿½sumï¿½e de Package.
     /// </summary>
     [Serializable]
 	public class LoanProduct : IProduct

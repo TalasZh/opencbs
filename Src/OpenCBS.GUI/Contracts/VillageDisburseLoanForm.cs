@@ -26,21 +26,21 @@ using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.Accounting;
-using Octopus.CoreDomain.Clients;
-using Octopus.CoreDomain.Contracts.Loans;
-using Octopus.Enums;
-using Octopus.ExceptionsHandler;
-using Octopus.GUI.UserControl;
-using Octopus.MultiLanguageRessources;
-using Octopus.Services;
-using Octopus.Shared;
-using Octopus.Shared.Settings;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.Accounting;
+using OpenCBS.CoreDomain.Clients;
+using OpenCBS.CoreDomain.Contracts.Loans;
+using OpenCBS.Enums;
+using OpenCBS.ExceptionsHandler;
+using OpenCBS.GUI.UserControl;
+using OpenCBS.MultiLanguageRessources;
+using OpenCBS.Services;
+using OpenCBS.Shared;
+using OpenCBS.Shared.Settings;
 
-namespace Octopus.GUI.Contracts
+namespace OpenCBS.GUI.Contracts
 {
-    using Octopus.ExceptionsHandler.Exceptions.SavingExceptions;
+    using OpenCBS.ExceptionsHandler.Exceptions.SavingExceptions;
 
     public partial class VillageDisburseLoanForm : SweetBaseForm
     {

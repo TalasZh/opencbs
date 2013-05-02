@@ -1,7 +1,7 @@
-﻿using System;
-using Octopus.Enums;
+using System;
+using OpenCBS.Enums;
 
-namespace Octopus.CoreDomain.SearchResult
+namespace OpenCBS.CoreDomain.SearchResult
 {
     [Serializable]
     public class ProjetSearchResult

@@ -1,4 +1,4 @@
-﻿//Octopus MFS is an integrated suite for managing a Micro Finance Institution: clients, contracts, accounting, reporting and risk
+//Octopus MFS is an integrated suite for managing a Micro Finance Institution: clients, contracts, accounting, reporting and risk
 //Copyright © 2006,2007 OCTO Technology & OXUS Development Network
 //
 //This program is free software; you can redistribute it and/or modify
@@ -24,7 +24,7 @@
 
 using NUnit.Framework;
 
-namespace Octopus.Test.Services
+namespace OpenCBS.Test.Services
 {
     [TestFixture]
     public class TestServiceSynchronize : BaseServicesTest
@@ -33,7 +33,7 @@ namespace Octopus.Test.Services
         //public void TestAutenthifyMFI()
         //{
         //    MFISynchronize.MFISynchronize synchronizer = new MFISynchronize.MFISynchronize();
-        //    //Octopus.Services.MFIMLServices _mfimlservices = new Octopus.Services.MFIMLServices(User.CurrentUser, "octopus_test");           
+        //    //OpenCBS.Services.MFIMLServices _mfimlservices = new OpenCBS.Services.MFIMLServices(User.CurrentUser, "octopus_test");           
         //    Assert.IsTrue(synchronizer.IdentifyMFI());
         //}
 
@@ -41,7 +41,7 @@ namespace Octopus.Test.Services
         //public void TestGetSyncEvents()
         //{
         //    MFISynchronize.MFISynchronize synchronizer = new MFISynchronize.MFISynchronize();
-        //    Octopus.Services.MFIMLServices _mfimlservices = new Octopus.Services.MFIMLServices(User.CurrentUser, "octopus_test");
+        //    OpenCBS.Services.MFIMLServices _mfimlservices = new OpenCBS.Services.MFIMLServices(User.CurrentUser, "octopus_test");
         //    Assert.AreEqual(11,synchronizer.GetSyncEvents().Count);            
         //}
 

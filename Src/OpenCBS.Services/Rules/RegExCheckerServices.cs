@@ -1,9 +1,9 @@
-﻿using System;
+using System;
 using System.Text.RegularExpressions;
-using Octopus.CoreDomain;
-using Octopus.Shared.Settings;
+using OpenCBS.CoreDomain;
+using OpenCBS.Shared.Settings;
 
-namespace Octopus.Services.Rules
+namespace OpenCBS.Services.Rules
 {
     public class RegExCheckerServices : MarshalByRefObject
     {

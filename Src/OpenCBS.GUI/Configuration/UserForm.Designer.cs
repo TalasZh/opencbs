@@ -1,8 +1,8 @@
 using System.ComponentModel;
 using System.Windows.Forms;
-using Octopus.GUI.UserControl;
+using OpenCBS.GUI.UserControl;
 
-namespace Octopus.GUI.Configuration
+namespace OpenCBS.GUI.Configuration
 {
     public partial class UserForm
     {

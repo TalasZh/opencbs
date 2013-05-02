@@ -24,11 +24,11 @@
 
 using System;
 using System.Collections.Generic;
-using Octopus.CoreDomain.Events.Loan;
-using Octopus.Shared;
-using Octopus.CoreDomain.Accounting;
+using OpenCBS.CoreDomain.Events.Loan;
+using OpenCBS.Shared;
+using OpenCBS.CoreDomain.Accounting;
 
-namespace Octopus.CoreDomain.Events
+namespace OpenCBS.CoreDomain.Events
 {
     [Serializable]
 	public class LoanDisbursmentEvent : Event

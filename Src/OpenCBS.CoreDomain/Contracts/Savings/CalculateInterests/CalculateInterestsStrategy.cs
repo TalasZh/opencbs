@@ -1,9 +1,9 @@
-﻿using Octopus.CoreDomain.Contracts.Savings.CalculateInterests.Interfaces;
-using Octopus.Enums;
-using Octopus.CoreDomain.Events.Saving;
+using OpenCBS.CoreDomain.Contracts.Savings.CalculateInterests.Interfaces;
+using OpenCBS.Enums;
+using OpenCBS.CoreDomain.Events.Saving;
 using System.Collections.Generic;
 
-namespace Octopus.CoreDomain.Contracts.Savings.CalculateInterests
+namespace OpenCBS.CoreDomain.Contracts.Savings.CalculateInterests
 {
     public class CalculateInterestsStrategy : ICalculateInterests
     {

@@ -1,13 +1,13 @@
 using System;
 using System.Drawing;
 using System.Windows.Forms;
-using Octopus.CoreDomain.Clients;
-using Octopus.GUI.Clients;
-using Octopus.GUI.UserControl;
-using Octopus.MultiLanguageRessources;
-using Octopus.Services;
+using OpenCBS.CoreDomain.Clients;
+using OpenCBS.GUI.Clients;
+using OpenCBS.GUI.UserControl;
+using OpenCBS.MultiLanguageRessources;
+using OpenCBS.Services;
 
-namespace Octopus.GUI.Tools
+namespace OpenCBS.GUI.Tools
 {
     public partial class ShowPictureForm : Form
     {

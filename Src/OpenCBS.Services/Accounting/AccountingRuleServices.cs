@@ -1,12 +1,12 @@
-﻿using System;
+using System;
 using System.Data;
-using Octopus.Manager.Accounting;
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.Accounting;
-using Octopus.ExceptionsHandler.Exceptions.AccountExceptions;
-using Octopus.Enums;
+using OpenCBS.Manager.Accounting;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.Accounting;
+using OpenCBS.ExceptionsHandler.Exceptions.AccountExceptions;
+using OpenCBS.Enums;
 
-namespace Octopus.Services.Accounting
+namespace OpenCBS.Services.Accounting
 {
     public class AccountingRuleServices : BaseServices
     {

@@ -23,20 +23,20 @@
 // Technical contact email : tech(at)octopusnetwork.org 
 
 using NUnit.Framework;
-using Octopus.CoreDomain.Contracts.Loans.Installments;
-using Octopus.CoreDomain.Products;
-using Octopus.ExceptionsHandler;
-using Octopus.Manager.Products;
-using Octopus.Services;
+using OpenCBS.CoreDomain.Contracts.Loans.Installments;
+using OpenCBS.CoreDomain.Products;
+using OpenCBS.ExceptionsHandler;
+using OpenCBS.Manager.Products;
+using OpenCBS.Services;
 using NUnit.Mocks;
-using Octopus.CoreDomain.Accounting;
-using Octopus.Enums;
-using Octopus.CoreDomain;
+using OpenCBS.CoreDomain.Accounting;
+using OpenCBS.Enums;
+using OpenCBS.CoreDomain;
 
-namespace Octopus.Test.Services.Savings
+namespace OpenCBS.Test.Services.Savings
 {
     /// <summary>
-    /// Description résumée de TestSavingProductServices.
+    /// Description rï¿½sumï¿½e de TestSavingProductServices.
     /// </summary>
 
     [TestFixture]

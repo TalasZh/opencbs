@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
@@ -9,11 +9,11 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
-using Octopus.Enums;
-using Octopus.Shared.Settings;
+using OpenCBS.Enums;
+using OpenCBS.Shared.Settings;
 using Timer=System.Timers.Timer;
 
-namespace Octopus.Reports.Forms
+namespace OpenCBS.Reports.Forms
 {
     [ComVisible(true)]
     public partial class ReportBrowserControl : UserControl

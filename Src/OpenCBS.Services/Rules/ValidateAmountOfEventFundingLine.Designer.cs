@@ -1,4 +1,4 @@
-﻿namespace Octopus.Services.Rules
+namespace OpenCBS.Services.Rules
 {
    partial class ValidateAmountOfEventFundingLine
    {

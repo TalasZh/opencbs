@@ -1,4 +1,4 @@
-namespace Octopus.GUI
+namespace OpenCBS.GUI
 {
     partial class FrmProjectObjectsCUD
     {
@@ -82,7 +82,7 @@ namespace Octopus.GUI
             resources.ApplyResources(this.buttonAdd, "buttonAdd");
             this.buttonAdd.BackColor = System.Drawing.Color.Gainsboro;
             this.buttonAdd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonAdd.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_new;
+            this.buttonAdd.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_bouton_new;
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.UseVisualStyleBackColor = false;
             this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
@@ -99,7 +99,7 @@ namespace Octopus.GUI
             resources.ApplyResources(this.buttonExit, "buttonExit");
             this.buttonExit.BackColor = System.Drawing.Color.Gainsboro;
             this.buttonExit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonExit.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_close;
+            this.buttonExit.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_bouton_close;
             this.buttonExit.Name = "buttonExit";
             this.buttonExit.UseVisualStyleBackColor = false;
             this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);

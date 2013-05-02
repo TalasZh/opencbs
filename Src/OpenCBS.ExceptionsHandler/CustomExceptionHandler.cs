@@ -23,9 +23,9 @@
 // Technical contact email : tech(at)octopusnetwork.org 
 
 using System;
-using Octopus.MultiLanguageRessources;
+using OpenCBS.MultiLanguageRessources;
 
-namespace Octopus.ExceptionsHandler
+namespace OpenCBS.ExceptionsHandler
 {
 	public struct ExceptionStatus
 	{

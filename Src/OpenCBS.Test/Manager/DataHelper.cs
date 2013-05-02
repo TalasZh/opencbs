@@ -1,4 +1,4 @@
-﻿//Octopus MFS is an integrated suite for managing a Micro Finance Institution: clients, contracts, accounting, reporting and risk
+//Octopus MFS is an integrated suite for managing a Micro Finance Institution: clients, contracts, accounting, reporting and risk
 //Copyright © 2006,2007 OCTO Technology & OXUS Development Network
 //
 //This program is free software; you can redistribute it and/or modify
@@ -23,19 +23,19 @@
 // Technical contact email : tech(at)octopusnetwork.org 
 
 using System;
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.Accounting;
-using Octopus.CoreDomain.Contracts.Loans.Installments;
-using Octopus.CoreDomain.EconomicActivities;
-using Octopus.CoreDomain.FundingLines;
-using Octopus.DatabaseConnection;
-using Octopus.Enums;
-using Octopus.Manager;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.Accounting;
+using OpenCBS.CoreDomain.Contracts.Loans.Installments;
+using OpenCBS.CoreDomain.EconomicActivities;
+using OpenCBS.CoreDomain.FundingLines;
+using OpenCBS.DatabaseConnection;
+using OpenCBS.Enums;
+using OpenCBS.Manager;
 using System.Data.SqlClient;
-using Octopus.Manager.Accounting;
-using Octopus.Services;
+using OpenCBS.Manager.Accounting;
+using OpenCBS.Services;
 
-namespace Octopus.Test.Manager
+namespace OpenCBS.Test.Manager
 {
 	/// <summary>
 	/// This class provides methods to prepare referential table for testing

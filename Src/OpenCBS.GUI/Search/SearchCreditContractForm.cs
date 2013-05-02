@@ -26,18 +26,18 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Windows.Forms;
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.Clients;
-using Octopus.CoreDomain.SearchResult;
-using Octopus.ExceptionsHandler;
-using Octopus.GUI.UserControl;
-using Octopus.MultiLanguageRessources;
-using Octopus.Services;
-using Octopus.Enums;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.Clients;
+using OpenCBS.CoreDomain.SearchResult;
+using OpenCBS.ExceptionsHandler;
+using OpenCBS.GUI.UserControl;
+using OpenCBS.MultiLanguageRessources;
+using OpenCBS.Services;
+using OpenCBS.Enums;
 
-namespace Octopus.GUI
+namespace OpenCBS.GUI
 {
-    using Octopus.CoreDomain.Contracts.Loans;
+    using OpenCBS.CoreDomain.Contracts.Loans;
 
     /// <summary>
     /// Description r�sum�e de SearchClientForm.

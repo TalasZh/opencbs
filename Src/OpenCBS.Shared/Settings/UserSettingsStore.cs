@@ -1,4 +1,4 @@
-﻿namespace Octopus.Shared.Settings
+namespace OpenCBS.Shared.Settings
 {
     
     

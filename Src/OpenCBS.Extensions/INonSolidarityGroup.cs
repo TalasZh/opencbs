@@ -1,8 +1,8 @@
-﻿using System.Windows.Forms;
+using System.Windows.Forms;
 using System.Data.SqlClient;
-using Octopus.CoreDomain.Clients;
+using OpenCBS.CoreDomain.Clients;
 
-namespace Octopus.Extensions
+namespace OpenCBS.Extensions
 {
     public interface INonSolidarityGroup
     {

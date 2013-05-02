@@ -1,9 +1,9 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Octopus.CoreDomain.Products
+namespace OpenCBS.CoreDomain.Products
 {
     public class ProductClientType
     {

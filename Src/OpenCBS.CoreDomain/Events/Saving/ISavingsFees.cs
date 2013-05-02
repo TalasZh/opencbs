@@ -1,6 +1,6 @@
-﻿using Octopus.Shared;
+using OpenCBS.Shared;
 
-namespace Octopus.CoreDomain.Events.Saving
+namespace OpenCBS.CoreDomain.Events.Saving
 {
     public interface ISavingsFees
     {

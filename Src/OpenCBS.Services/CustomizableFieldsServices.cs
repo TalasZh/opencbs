@@ -1,14 +1,14 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
-using Octopus.CoreDomain;
-using Octopus.Enums;
-using Octopus.ExceptionsHandler;
-using Octopus.ExceptionsHandler.Exceptions.CustomFieldExceptions;
-using Octopus.Manager;
-using Octopus.Shared;
+using OpenCBS.CoreDomain;
+using OpenCBS.Enums;
+using OpenCBS.ExceptionsHandler;
+using OpenCBS.ExceptionsHandler.Exceptions.CustomFieldExceptions;
+using OpenCBS.Manager;
+using OpenCBS.Shared;
 
-namespace Octopus.Services
+namespace OpenCBS.Services
 {
     public class CustomizableFieldsServices : MarshalByRefObject
 	{

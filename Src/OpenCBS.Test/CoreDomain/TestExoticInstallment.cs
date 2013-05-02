@@ -24,10 +24,10 @@
 
 using System;
 using NUnit.Framework;
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.Contracts.Loans.Installments;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.Contracts.Loans.Installments;
 
-namespace Octopus.Test.CoreDomain
+namespace OpenCBS.Test.CoreDomain
 {
 	/// <summary>
 	/// Summary description for TestExoticInstallment.

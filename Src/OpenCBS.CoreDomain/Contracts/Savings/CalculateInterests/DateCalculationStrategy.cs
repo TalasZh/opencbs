@@ -1,7 +1,7 @@
-﻿using System;
-using Octopus.CoreDomain.Contracts.Loans.Installments;
+using System;
+using OpenCBS.CoreDomain.Contracts.Loans.Installments;
 
-namespace Octopus.CoreDomain.Contracts.Savings.CalculateInterests
+namespace OpenCBS.CoreDomain.Contracts.Savings.CalculateInterests
 {
     public class DateCalculationStrategy
     {

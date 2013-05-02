@@ -23,7 +23,7 @@
 // Technical contact email : tech(at)octopusnetwork.org 
 
 
-namespace Octopus.Test.Services
+namespace OpenCBS.Test.Services
 {
 	/// <summary>
 	/// Summary description for TestCashReceiptServices.

@@ -1,13 +1,13 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Octopus.CoreDomain;
+using OpenCBS.CoreDomain;
 using System.Data.SqlClient;
-using Octopus.CoreDomain.Export;
-using Octopus.CoreDomain.Export.Files;
+using OpenCBS.CoreDomain.Export;
+using OpenCBS.CoreDomain.Export.Files;
 
-namespace Octopus.Manager.Export
+namespace OpenCBS.Manager.Export
 {
     public class ExportManager : Manager
     {

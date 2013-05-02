@@ -2,7 +2,7 @@ using System;
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace Octopus.GUI.Database
+namespace OpenCBS.GUI.Database
 {
     public partial class FrmDatabaseName : Form
     {

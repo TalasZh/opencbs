@@ -1,12 +1,12 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Octopus.CoreDomain.Export.Fields;
-using Octopus.CoreDomain.Export.FieldType;
+using OpenCBS.CoreDomain.Export.Fields;
+using OpenCBS.CoreDomain.Export.FieldType;
 using System.IO;
 
-namespace Octopus.CoreDomain.Export.Files
+namespace OpenCBS.CoreDomain.Export.Files
 {
     [Serializable]
     public abstract class AImportFile<T> : IFile where T : new()

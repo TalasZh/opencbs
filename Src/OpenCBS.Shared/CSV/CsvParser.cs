@@ -1,6 +1,6 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 
-namespace Octopus.Shared.CSV
+namespace OpenCBS.Shared.CSV
 {
     public static class CsvParser
     {

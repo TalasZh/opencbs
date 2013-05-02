@@ -24,13 +24,13 @@
 
 using System;
 using System.Collections;
-using Octopus.CoreDomain;
-using Octopus.Enums;
-using Octopus.Manager.Database;
-using Octopus.Manager;
-using Octopus.Shared.Settings;
+using OpenCBS.CoreDomain;
+using OpenCBS.Enums;
+using OpenCBS.Manager.Database;
+using OpenCBS.Manager;
+using OpenCBS.Shared.Settings;
 
-namespace Octopus.Services
+namespace OpenCBS.Services
 {
 	/// <summary>
 	/// Summary description for DatabaseParametersServices.

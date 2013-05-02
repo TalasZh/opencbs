@@ -1,4 +1,4 @@
-namespace Octopus.GUI.Report_Browser
+namespace OpenCBS.GUI.Report_Browser
 {
     partial class RepaymentCollectionSheetForm
     {

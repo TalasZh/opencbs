@@ -24,7 +24,7 @@
 using System;
 using System.Drawing;
 
-namespace Octopus.Shared
+namespace OpenCBS.Shared
 {
 	public class ImageComboBoxItem : object
 	{

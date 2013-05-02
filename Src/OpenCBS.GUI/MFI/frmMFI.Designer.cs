@@ -1,4 +1,4 @@
-namespace Octopus.GUI.MFI
+namespace OpenCBS.GUI.MFI
 {
     partial class frmMFI
     {

@@ -1,9 +1,9 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Octopus.Enums
+namespace OpenCBS.Enums
 {
     public enum EnumCorporateEventType:int
     {

@@ -1,6 +1,6 @@
-using Octopus.GUI.UserControl;
+using OpenCBS.GUI.UserControl;
 
-namespace Octopus.GUI.Products
+namespace OpenCBS.GUI.Products
 {
     partial class FrmAddCollateralProduct
     {

@@ -1,11 +1,11 @@
 using System;
 using System.Windows.Forms;
-using Octopus.CoreDomain.Accounting;
-using Octopus.ExceptionsHandler;
-using Octopus.Services;
-using Octopus.Services.Accounting;
+using OpenCBS.CoreDomain.Accounting;
+using OpenCBS.ExceptionsHandler;
+using OpenCBS.Services;
+using OpenCBS.Services.Accounting;
 
-namespace Octopus.GUI.Accounting
+namespace OpenCBS.GUI.Accounting
 {
     public partial class StandardBooking : MultiLanguageForm
     {

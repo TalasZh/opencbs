@@ -1,10 +1,10 @@
-﻿using Octopus.CoreDomain.Contracts.Savings.CalculateInterests.Interfaces;
-using Octopus.Shared;
+using OpenCBS.CoreDomain.Contracts.Savings.CalculateInterests.Interfaces;
+using OpenCBS.Shared;
 using System;
-using Octopus.CoreDomain.Events.Saving;
+using OpenCBS.CoreDomain.Events.Saving;
 using System.Collections.Generic;
 
-namespace Octopus.CoreDomain.Contracts.Savings.CalculateInterests.Accrual.MinimalAmount
+namespace OpenCBS.CoreDomain.Contracts.Savings.CalculateInterests.Accrual.MinimalAmount
 {
     public class Weekly : ICalculateInterests
     {

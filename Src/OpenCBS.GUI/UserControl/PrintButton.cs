@@ -4,11 +4,11 @@ using System.ComponentModel;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
-using Octopus.ExceptionsHandler;
-using Octopus.Reports;
-using Octopus.Reports.Forms;
+using OpenCBS.ExceptionsHandler;
+using OpenCBS.Reports;
+using OpenCBS.Reports.Forms;
 
-namespace Octopus.GUI.UserControl
+namespace OpenCBS.GUI.UserControl
 {
     internal partial class PrintButton : Button
     {

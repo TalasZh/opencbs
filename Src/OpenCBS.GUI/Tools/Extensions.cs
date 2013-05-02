@@ -3,11 +3,11 @@ using System.Collections;
 using System.Diagnostics;
 using System.Linq;
 using System.Windows.Forms;
-using Octopus.Enums;
-using Octopus.MultiLanguageRessources;
-using Octopus.Shared;
+using OpenCBS.Enums;
+using OpenCBS.MultiLanguageRessources;
+using OpenCBS.Shared;
 
-namespace Octopus.GUI.Tools
+namespace OpenCBS.GUI.Tools
 {
     public static class Extensions
     {

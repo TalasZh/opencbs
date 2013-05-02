@@ -27,10 +27,10 @@ using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Windows.Forms;
-using Octopus.CoreDomain;
-using Octopus.Services;
+using OpenCBS.CoreDomain;
+using OpenCBS.Services;
 
-namespace Octopus.GUI
+namespace OpenCBS.GUI
 {
     /// <summary>
     /// Summary description for CityForm.

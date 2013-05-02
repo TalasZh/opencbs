@@ -25,14 +25,14 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Octopus.CoreDomain.EconomicActivities;
-using Octopus.Enums;
-using Octopus.Shared;
+using OpenCBS.CoreDomain.EconomicActivities;
+using OpenCBS.Enums;
+using OpenCBS.Shared;
 
-namespace Octopus.CoreDomain.Clients  
+namespace OpenCBS.CoreDomain.Clients  
 {
     /// <summary>
-    /// Description résumée de ClientsGroup.
+    /// Description rï¿½sumï¿½e de ClientsGroup.
     /// </summary>
     [Serializable]
     public class Group : Client, IDisposable

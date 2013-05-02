@@ -23,12 +23,12 @@
 // Technical contact email : tech(at)octopusnetwork.org 
 
 using System;
-using Octopus.Services;
+using OpenCBS.Services;
 using NUnit.Framework;
 using NUnit.Mocks;
-using Octopus.Shared;
+using OpenCBS.Shared;
 
-namespace Octopus.Test.Services
+namespace OpenCBS.Test.Services
 {
 	/// <summary>
 	/// Summary description for TestServicesHelper.

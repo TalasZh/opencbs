@@ -1,4 +1,4 @@
-namespace Octopus.GUI.Export
+namespace OpenCBS.GUI.Export
 {
     partial class IntegerFieldPropertiesForm
     {

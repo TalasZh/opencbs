@@ -2,7 +2,7 @@ using System.Windows.Forms;
 using System;
 using System.ComponentModel;
 
-namespace Octopus.GUI.UserControl
+namespace OpenCBS.GUI.UserControl
 {
     public partial class PersonUserControl
     {
@@ -146,7 +146,7 @@ namespace Octopus.GUI.UserControl
             this.tabPageCustomizableFields = new System.Windows.Forms.TabPage();
             this.tabPageProjects = new System.Windows.Forms.TabPage();
             this.tabPageSavings = new System.Windows.Forms.TabPage();
-            this.clSavingList = new Octopus.GUI.UserControl.SavingsListUserControl();
+            this.clSavingList = new OpenCBS.GUI.UserControl.SavingsListUserControl();
             this.tabPageGroupMember = new System.Windows.Forms.TabPage();
             this.listViewGroup = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -156,23 +156,23 @@ namespace Octopus.GUI.UserControl
             this.columnHeader12 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.imageListEconomicInfo = new System.Windows.Forms.ImageList(this.components);
             this.panelEconomicActivity = new System.Windows.Forms.Panel();
-            this.btnPrint = new Octopus.GUI.UserControl.PrintButton();
+            this.btnPrint = new OpenCBS.GUI.UserControl.PrintButton();
             this.buttonCancel = new System.Windows.Forms.Button();
             this.buttonSave = new System.Windows.Forms.Button();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBoxCivilities = new System.Windows.Forms.GroupBox();
             this.lblBranch = new System.Windows.Forms.Label();
             this.lblEconomicActivity = new System.Windows.Forms.Label();
-            this.eacPerson = new Octopus.GUI.UserControl.EconomicActivityControl();
+            this.eacPerson = new OpenCBS.GUI.UserControl.EconomicActivityControl();
             this.cbBranch = new System.Windows.Forms.ComboBox();
-            this.textBoxNationality = new Octopus.GUI.UserControl.TextBoxLimit();
+            this.textBoxNationality = new OpenCBS.GUI.UserControl.TextBoxLimit();
             this.labelNationality = new System.Windows.Forms.Label();
             this.textBoxLoanCycle = new System.Windows.Forms.TextBox();
-            this.textBoxBirthPlace = new Octopus.GUI.UserControl.TextBoxLimit();
+            this.textBoxBirthPlace = new OpenCBS.GUI.UserControl.TextBoxLimit();
             this.labelIN = new System.Windows.Forms.Label();
             this.labelLoanCycle = new System.Windows.Forms.Label();
             this.labelRangeOfAge = new System.Windows.Forms.Label();
-            this.textBoxFatherName = new Octopus.GUI.UserControl.TextBoxLimit();
+            this.textBoxFatherName = new OpenCBS.GUI.UserControl.TextBoxLimit();
             this.labelFatherName = new System.Windows.Forms.Label();
             this.changePhotoLinkLabel2 = new System.Windows.Forms.LinkLabel();
             this.changePhotoLinkLabel = new System.Windows.Forms.LinkLabel();
@@ -181,14 +181,14 @@ namespace Octopus.GUI.UserControl
             this.dateTimePickerDateOfBirth = new System.Windows.Forms.DateTimePicker();
             this.checkBoxHeadOfHousehold = new System.Windows.Forms.CheckBox();
             this.labelDateOfBirth = new System.Windows.Forms.Label();
-            this.textBoxLastname = new Octopus.GUI.UserControl.TextBoxLimit();
+            this.textBoxLastname = new OpenCBS.GUI.UserControl.TextBoxLimit();
             this.labelLastname = new System.Windows.Forms.Label();
-            this.textBoxIdentificationData = new Octopus.GUI.UserControl.TextBoxLimit();
+            this.textBoxIdentificationData = new OpenCBS.GUI.UserControl.TextBoxLimit();
             this.labelPassport = new System.Windows.Forms.Label();
             this.comboBoxSex = new System.Windows.Forms.ComboBox();
             this.labelSex = new System.Windows.Forms.Label();
             this.labelFirstName = new System.Windows.Forms.Label();
-            this.textBoxFirstName = new Octopus.GUI.UserControl.TextBoxLimit();
+            this.textBoxFirstName = new OpenCBS.GUI.UserControl.TextBoxLimit();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
@@ -350,7 +350,7 @@ namespace Octopus.GUI.UserControl
             resources.ApplyResources(this.buttonProjectAddGuarantee, "buttonProjectAddGuarantee");
             this.buttonProjectAddGuarantee.BackColor = System.Drawing.Color.Gainsboro;
             this.buttonProjectAddGuarantee.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonProjectAddGuarantee.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_new;
+            this.buttonProjectAddGuarantee.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_bouton_new;
             this.buttonProjectAddGuarantee.Name = "buttonProjectAddGuarantee";
             this.buttonProjectAddGuarantee.UseVisualStyleBackColor = false;
             // 
@@ -359,7 +359,7 @@ namespace Octopus.GUI.UserControl
             resources.ApplyResources(this.buttonProjectViewContract, "buttonProjectViewContract");
             this.buttonProjectViewContract.BackColor = System.Drawing.Color.Gainsboro;
             this.buttonProjectViewContract.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonProjectViewContract.Image = global::Octopus.GUI.Properties.Resources.theme1_1_view;
+            this.buttonProjectViewContract.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_view;
             this.buttonProjectViewContract.Name = "buttonProjectViewContract";
             this.buttonProjectViewContract.UseVisualStyleBackColor = false;
             // 
@@ -368,7 +368,7 @@ namespace Octopus.GUI.UserControl
             resources.ApplyResources(this.buttonProjectAddContract, "buttonProjectAddContract");
             this.buttonProjectAddContract.BackColor = System.Drawing.Color.Gainsboro;
             this.buttonProjectAddContract.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonProjectAddContract.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_new;
+            this.buttonProjectAddContract.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_bouton_new;
             this.buttonProjectAddContract.Name = "buttonProjectAddContract";
             this.buttonProjectAddContract.UseVisualStyleBackColor = false;
             // 
@@ -473,7 +473,7 @@ namespace Octopus.GUI.UserControl
             // tableLayoutPanelAddress
             // 
             resources.ApplyResources(this.tableLayoutPanelAddress, "tableLayoutPanelAddress");
-            this.tableLayoutPanelAddress.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris_180;
+            this.tableLayoutPanelAddress.BackgroundImage = global::OpenCBS.GUI.Properties.Resources.theme1_1_fond_gris_180;
             this.tableLayoutPanelAddress.Controls.Add(this.groupBoxFirstAddress, 0, 0);
             this.tableLayoutPanelAddress.Controls.Add(this.groupBoxSecondaryAddress, 1, 0);
             this.tableLayoutPanelAddress.Name = "tableLayoutPanelAddress";
@@ -620,7 +620,7 @@ namespace Octopus.GUI.UserControl
             // 
             resources.ApplyResources(this.clSavingList, "clSavingList");
             this.clSavingList.ButtonAddSavingsEnabled = true;
-            this.clSavingList.ClientType = Octopus.Enums.OClientTypes.Person;
+            this.clSavingList.ClientType = OpenCBS.Enums.OClientTypes.Person;
             this.clSavingList.Name = "clSavingList";
             this.clSavingList.AddSelectedSaving += new System.EventHandler(this.savingsListUserControl_AddSelectedSaving);
             this.clSavingList.ViewSelectedSaving += new System.EventHandler(this.savingsListUserControl_ViewSelectedSaving);
@@ -690,11 +690,11 @@ namespace Octopus.GUI.UserControl
             // btnPrint
             // 
             resources.ApplyResources(this.btnPrint, "btnPrint");
-            this.btnPrint.AttachmentPoint = Octopus.Reports.AttachmentPoint.PersonDetails;
+            this.btnPrint.AttachmentPoint = OpenCBS.Reports.AttachmentPoint.PersonDetails;
             this.btnPrint.Name = "btnPrint";
             this.btnPrint.ReportInitializer = null;
             this.btnPrint.UseVisualStyleBackColor = true;
-            this.btnPrint.Visibility = Octopus.Reports.Visibility.Individual;
+            this.btnPrint.Visibility = OpenCBS.Reports.Visibility.Individual;
             // 
             // buttonCancel
             // 
@@ -767,7 +767,7 @@ namespace Octopus.GUI.UserControl
             resources.ApplyResources(this.eacPerson, "eacPerson");
             this.eacPerson.Activity = null;
             this.eacPerson.Name = "eacPerson";
-            this.eacPerson.EconomicActivityChange += new System.EventHandler<Octopus.GUI.UserControl.EconomicActivtyEventArgs>(this.EacPersonActivityChange);
+            this.eacPerson.EconomicActivityChange += new System.EventHandler<OpenCBS.GUI.UserControl.EconomicActivtyEventArgs>(this.EacPersonActivityChange);
             // 
             // cbBranch
             // 
@@ -1152,7 +1152,7 @@ namespace Octopus.GUI.UserControl
             resources.ApplyResources(this.button1, "button1");
             this.button1.BackColor = System.Drawing.Color.Gainsboro;
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.button1.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_new;
+            this.button1.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_bouton_new;
             this.button1.Name = "button1";
             this.button1.UseVisualStyleBackColor = false;
             // 
@@ -1161,7 +1161,7 @@ namespace Octopus.GUI.UserControl
             resources.ApplyResources(this.button2, "button2");
             this.button2.BackColor = System.Drawing.Color.Gainsboro;
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.button2.Image = global::Octopus.GUI.Properties.Resources.theme1_1_search;
+            this.button2.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_search;
             this.button2.Name = "button2";
             this.button2.UseVisualStyleBackColor = false;
             // 
@@ -1170,7 +1170,7 @@ namespace Octopus.GUI.UserControl
             resources.ApplyResources(this.button3, "button3");
             this.button3.BackColor = System.Drawing.Color.Gainsboro;
             this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.button3.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_new;
+            this.button3.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_bouton_new;
             this.button3.Name = "button3";
             this.button3.UseVisualStyleBackColor = false;
             // 
@@ -1179,7 +1179,7 @@ namespace Octopus.GUI.UserControl
             resources.ApplyResources(this.button4, "button4");
             this.button4.BackColor = System.Drawing.Color.Gainsboro;
             this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.button4.Image = global::Octopus.GUI.Properties.Resources.theme1_1_search;
+            this.button4.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_search;
             this.button4.Name = "button4";
             this.button4.UseVisualStyleBackColor = false;
             // 
@@ -1188,7 +1188,7 @@ namespace Octopus.GUI.UserControl
             resources.ApplyResources(this.button5, "button5");
             this.button5.BackColor = System.Drawing.Color.Gainsboro;
             this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.button5.Image = global::Octopus.GUI.Properties.Resources.theme1_1_view;
+            this.button5.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_view;
             this.button5.Name = "button5";
             this.button5.UseVisualStyleBackColor = false;
             // 
@@ -1197,7 +1197,7 @@ namespace Octopus.GUI.UserControl
             resources.ApplyResources(this.button6, "button6");
             this.button6.BackColor = System.Drawing.Color.Gainsboro;
             this.button6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.button6.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_new;
+            this.button6.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_bouton_new;
             this.button6.Name = "button6";
             this.button6.UseVisualStyleBackColor = false;
             // 
@@ -1206,7 +1206,7 @@ namespace Octopus.GUI.UserControl
             resources.ApplyResources(this.button7, "button7");
             this.button7.BackColor = System.Drawing.Color.Gainsboro;
             this.button7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.button7.Image = global::Octopus.GUI.Properties.Resources.theme1_1_view;
+            this.button7.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_view;
             this.button7.Name = "button7";
             this.button7.UseVisualStyleBackColor = false;
             // 
@@ -1215,7 +1215,7 @@ namespace Octopus.GUI.UserControl
             resources.ApplyResources(this.button8, "button8");
             this.button8.BackColor = System.Drawing.Color.Gainsboro;
             this.button8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.button8.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_new;
+            this.button8.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_bouton_new;
             this.button8.Name = "button8";
             this.button8.UseVisualStyleBackColor = false;
             // 
@@ -1224,7 +1224,7 @@ namespace Octopus.GUI.UserControl
             resources.ApplyResources(this.button9, "button9");
             this.button9.BackColor = System.Drawing.Color.Gainsboro;
             this.button9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.button9.Image = global::Octopus.GUI.Properties.Resources.theme1_1_view;
+            this.button9.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_view;
             this.button9.Name = "button9";
             this.button9.UseVisualStyleBackColor = false;
             // 
@@ -1233,7 +1233,7 @@ namespace Octopus.GUI.UserControl
             resources.ApplyResources(this.button10, "button10");
             this.button10.BackColor = System.Drawing.Color.Gainsboro;
             this.button10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.button10.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_new;
+            this.button10.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_bouton_new;
             this.button10.Name = "button10";
             this.button10.UseVisualStyleBackColor = false;
             // 
@@ -1242,7 +1242,7 @@ namespace Octopus.GUI.UserControl
             resources.ApplyResources(this.button11, "button11");
             this.button11.BackColor = System.Drawing.Color.Gainsboro;
             this.button11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.button11.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_new;
+            this.button11.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_bouton_new;
             this.button11.Name = "button11";
             this.button11.UseVisualStyleBackColor = false;
             // 
@@ -1251,7 +1251,7 @@ namespace Octopus.GUI.UserControl
             resources.ApplyResources(this.button12, "button12");
             this.button12.BackColor = System.Drawing.Color.Gainsboro;
             this.button12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.button12.Image = global::Octopus.GUI.Properties.Resources.theme1_1_view;
+            this.button12.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_view;
             this.button12.Name = "button12";
             this.button12.UseVisualStyleBackColor = false;
             // 
@@ -1260,7 +1260,7 @@ namespace Octopus.GUI.UserControl
             resources.ApplyResources(this.button13, "button13");
             this.button13.BackColor = System.Drawing.Color.Gainsboro;
             this.button13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.button13.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_new;
+            this.button13.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_bouton_new;
             this.button13.Name = "button13";
             this.button13.UseVisualStyleBackColor = false;
             // 

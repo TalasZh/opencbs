@@ -23,10 +23,10 @@
 // Technical contact email : tech(at)octopusnetwork.org 
 
 using System;
-using Octopus.Shared;
+using OpenCBS.Shared;
 using NUnit.Framework;
 
-namespace Octopus.Test.Shared
+namespace OpenCBS.Test.Shared
 {
 	[TestFixture]
 	public class TestAmountComparer

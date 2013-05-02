@@ -25,12 +25,12 @@
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
-using Octopus.CoreDomain;
-using Octopus.ExceptionsHandler;
-using Octopus.MultiLanguageRessources;
-using Octopus.Services;
+using OpenCBS.CoreDomain;
+using OpenCBS.ExceptionsHandler;
+using OpenCBS.MultiLanguageRessources;
+using OpenCBS.Services;
 
-namespace Octopus.GUI
+namespace OpenCBS.GUI
 {
     public partial class FrmProjectPurposesR : Form
     {

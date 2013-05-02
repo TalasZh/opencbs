@@ -1,7 +1,7 @@
 using System.Windows.Forms;
-using Octopus.GUI.UserControl;
+using OpenCBS.GUI.UserControl;
 
-namespace Octopus.GUI
+namespace OpenCBS.GUI
 {
     partial class FrmFundingLine
     {
@@ -37,7 +37,7 @@ namespace Octopus.GUI
             System.Windows.Forms.ColumnHeader columnHeaderName;
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.groupBoxEvents = new System.Windows.Forms.GroupBox();
-            this.listViewFundingLineEvent = new Octopus.GUI.UserControl.ListViewEx();
+            this.listViewFundingLineEvent = new OpenCBS.GUI.UserControl.ListViewEx();
             this.columnHeaderCode = new System.Windows.Forms.ColumnHeader();
             this.columnHeaderEventCreationDate = new System.Windows.Forms.ColumnHeader();
             this.columnHeaderDirection = new System.Windows.Forms.ColumnHeader();

@@ -25,18 +25,18 @@
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Diagnostics;
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.Accounting;
-using Octopus.CoreDomain.Events;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.Accounting;
+using OpenCBS.CoreDomain.Events;
 using System;
-using Octopus.CoreDomain.Events.Loan;
-using Octopus.CoreDomain.Events.Teller;
-using Octopus.CoreDomain.Products;
-using Octopus.Enums;
-using Octopus.CoreDomain.Events.Saving;
-using Octopus.Shared;
+using OpenCBS.CoreDomain.Events.Loan;
+using OpenCBS.CoreDomain.Events.Teller;
+using OpenCBS.CoreDomain.Products;
+using OpenCBS.Enums;
+using OpenCBS.CoreDomain.Events.Saving;
+using OpenCBS.Shared;
 
-namespace Octopus.Manager.Events
+namespace OpenCBS.Manager.Events
 {
 	public class EventManager : Manager
 	{

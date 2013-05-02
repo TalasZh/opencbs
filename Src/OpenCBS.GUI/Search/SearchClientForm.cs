@@ -26,18 +26,18 @@ using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
-using Octopus.CoreDomain.Clients;
-using Octopus.CoreDomain.SearchResult;
-using Octopus.GUI.UserControl;
-using Octopus.Services;
-using Octopus.MultiLanguageRessources;
-using Octopus.ExceptionsHandler;
-using Octopus.Enums;
+using OpenCBS.CoreDomain.Clients;
+using OpenCBS.CoreDomain.SearchResult;
+using OpenCBS.GUI.UserControl;
+using OpenCBS.Services;
+using OpenCBS.MultiLanguageRessources;
+using OpenCBS.ExceptionsHandler;
+using OpenCBS.Enums;
 
-namespace Octopus.GUI
+namespace OpenCBS.GUI
 {
-    using Octopus.CoreDomain;
-    using Octopus.CoreDomain.Contracts.Loans;
+    using OpenCBS.CoreDomain;
+    using OpenCBS.CoreDomain.Contracts.Loans;
 
     public class SearchClientForm : SweetBaseForm
     {
@@ -500,7 +500,7 @@ namespace Octopus.GUI
             this.buttonCancel.BackColor = System.Drawing.Color.Gainsboro;
             this.buttonCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.buttonCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonCancel.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_close;
+            this.buttonCancel.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_bouton_close;
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.UseVisualStyleBackColor = false;
             this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);

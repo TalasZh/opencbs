@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +6,7 @@ using System.Xml;
 using System.IO;
 using System.Reflection;
 
-namespace Octopus.Shared.Settings.Remote
+namespace OpenCBS.Shared.Settings.Remote
 {
     public class XmlRemoteServerSettings : IRemoteServerSettings
     {

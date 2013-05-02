@@ -1,4 +1,4 @@
-namespace Octopus.GUI.Contracts
+namespace OpenCBS.GUI.Contracts
 {
     partial class AddTrancheForm
     {
@@ -232,7 +232,7 @@ namespace Octopus.GUI.Contracts
             this.buttonCancel.BackColor = System.Drawing.Color.Gainsboro;
             this.buttonCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.buttonCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonCancel.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_close;
+            this.buttonCancel.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_bouton_close;
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.UseVisualStyleBackColor = false;
             this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
@@ -242,7 +242,7 @@ namespace Octopus.GUI.Contracts
             resources.ApplyResources(this.buttonConfirm, "buttonConfirm");
             this.buttonConfirm.BackColor = System.Drawing.Color.Gainsboro;
             this.buttonConfirm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonConfirm.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_validity;
+            this.buttonConfirm.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_bouton_validity;
             this.buttonConfirm.Name = "buttonConfirm";
             this.buttonConfirm.UseVisualStyleBackColor = false;
             this.buttonConfirm.Click += new System.EventHandler(this.buttonConfirm_Click);

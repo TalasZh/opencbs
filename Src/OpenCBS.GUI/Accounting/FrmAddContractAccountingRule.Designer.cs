@@ -1,6 +1,6 @@
-using Octopus.GUI.UserControl;
+using OpenCBS.GUI.UserControl;
 
-namespace Octopus.GUI.Accounting
+namespace OpenCBS.GUI.Accounting
 {
     partial class FrmAddContractAccountingRule
     {
@@ -38,7 +38,7 @@ namespace Octopus.GUI.Accounting
             this.gbxDetails = new System.Windows.Forms.GroupBox();
             this.tbDescription = new System.Windows.Forms.TextBox();
             this.lblDescription = new System.Windows.Forms.Label();
-            this.tbOrder = new Octopus.GUI.UserControl.TextNumericUserControl();
+            this.tbOrder = new OpenCBS.GUI.UserControl.TextNumericUserControl();
             this.lblOrder = new System.Windows.Forms.Label();
             this.cmbEventAttribute = new System.Windows.Forms.ComboBox();
             this.lbEventAttribute = new System.Windows.Forms.Label();
@@ -328,7 +328,7 @@ namespace Octopus.GUI.Accounting
         private System.Windows.Forms.ComboBox cmbEventAttribute;
         private System.Windows.Forms.Label lbEventAttribute;
         private System.Windows.Forms.ComboBox cmbEventCode;
-        private Octopus.GUI.UserControl.TextNumericUserControl tbOrder;
+        private OpenCBS.GUI.UserControl.TextNumericUserControl tbOrder;
         private System.Windows.Forms.Label lblOrder;
         private System.Windows.Forms.TextBox tbDescription;
         private System.Windows.Forms.Label lblDescription;

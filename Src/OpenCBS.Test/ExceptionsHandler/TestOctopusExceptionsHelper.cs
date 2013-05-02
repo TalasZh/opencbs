@@ -24,7 +24,7 @@
 
 using System;
 
-namespace Octopus.Test.ExceptionsHandler
+namespace OpenCBS.Test.ExceptionsHandler
 {
 	/// <summary>
 	/// Summary description for Class1.

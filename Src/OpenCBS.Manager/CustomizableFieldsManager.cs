@@ -27,10 +27,10 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Data.SqlClient;
 using System.Linq;
-using Octopus.CoreDomain;
-using Octopus.Enums;
+using OpenCBS.CoreDomain;
+using OpenCBS.Enums;
 
-namespace Octopus.Manager
+namespace OpenCBS.Manager
 {
     public class CustomizableFieldsManager : Manager
     {

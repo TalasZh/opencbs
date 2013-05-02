@@ -1,6 +1,6 @@
-﻿using Octopus.CoreDomain.FundingLines;
+using OpenCBS.CoreDomain.FundingLines;
 
-namespace Octopus.Services.Rules
+namespace OpenCBS.Services.Rules
 {
    public interface IStrategyFundingLineEvent
    {

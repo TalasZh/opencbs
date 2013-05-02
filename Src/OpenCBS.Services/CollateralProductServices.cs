@@ -1,11 +1,11 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.Products.Collaterals;
-using Octopus.ExceptionsHandler;
-using Octopus.Manager;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.Products.Collaterals;
+using OpenCBS.ExceptionsHandler;
+using OpenCBS.Manager;
 
-namespace Octopus.Services
+namespace OpenCBS.Services
 {
     public class CollateralProductServices : MarshalByRefObject
 	{

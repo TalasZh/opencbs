@@ -9,9 +9,9 @@
 
 using System;
 using NUnit.Framework;
-using Octopus.CoreDomain.Accounting;
+using OpenCBS.CoreDomain.Accounting;
 
-namespace Octopus.Test.CoreDomain.Accounting
+namespace OpenCBS.Test.CoreDomain.Accounting
 {
 	/// <summary>
 	/// Description of TestElementaryMvtToExport.

@@ -30,24 +30,24 @@ using System.Drawing;
 using System.IO;
 using System.Text;
 using System.Windows.Forms;
-using Octopus.Enums;
-using Octopus.CoreDomain;
-using Octopus.ExceptionsHandler;
-using Octopus.GUI.Report_Browser;
-using Octopus.GUI.UserControl;
-using Octopus.MultiLanguageRessources;
-using Octopus.Reports;
-using Octopus.Reports.Forms;
-using Octopus.Services;
-using Octopus.CoreDomain.Accounting;
-using Octopus.Services.Accounting;
-using Octopus.Shared;
+using OpenCBS.Enums;
+using OpenCBS.CoreDomain;
+using OpenCBS.ExceptionsHandler;
+using OpenCBS.GUI.Report_Browser;
+using OpenCBS.GUI.UserControl;
+using OpenCBS.MultiLanguageRessources;
+using OpenCBS.Reports;
+using OpenCBS.Reports.Forms;
+using OpenCBS.Services;
+using OpenCBS.CoreDomain.Accounting;
+using OpenCBS.Services.Accounting;
+using OpenCBS.Shared;
 using BrightIdeasSoftware;
 using System.Drawing.Drawing2D;
 using System.Linq;
-using Octopus.Shared.CSV;
+using OpenCBS.Shared.CSV;
 
-namespace Octopus.GUI.Accounting
+namespace OpenCBS.GUI.Accounting
 {
     /// <summary>
     /// Description r�sum�e de AccountingSchemaAdminForm.

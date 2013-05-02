@@ -1,6 +1,6 @@
 
 
-namespace Octopus.GUI.Database
+namespace OpenCBS.GUI.Database
 {
     public enum FrmDatabaseSettingsEnum
     {

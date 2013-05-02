@@ -1,6 +1,6 @@
-namespace Octopus.GUI
+namespace OpenCBS.GUI
 {
-    using Octopus.GUI.UserControl;
+    using OpenCBS.GUI.UserControl;
 
     partial class FrmLocations
     {

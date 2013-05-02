@@ -26,13 +26,13 @@ using System;
 using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
-using Octopus.CoreDomain.FundingLines;
-using Octopus.MultiLanguageRessources;
-using Octopus.Services;
-using Octopus.Shared;
+using OpenCBS.CoreDomain.FundingLines;
+using OpenCBS.MultiLanguageRessources;
+using OpenCBS.Services;
+using OpenCBS.Shared;
 using ZedGraph;
 
-namespace Octopus.GUI
+namespace OpenCBS.GUI
 {
     /// <summary>
     /// Description r�sum�e de CashPrevisionForm.
@@ -207,7 +207,7 @@ namespace Octopus.GUI
             resources.ApplyResources(this.buttonRepaymentExit, "buttonRepaymentExit");
             this.buttonRepaymentExit.BackColor = System.Drawing.Color.Gainsboro;
             this.buttonRepaymentExit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonRepaymentExit.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_close;
+            this.buttonRepaymentExit.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_bouton_close;
             this.buttonRepaymentExit.Name = "buttonRepaymentExit";
             this.buttonRepaymentExit.UseVisualStyleBackColor = false;
             this.buttonRepaymentExit.Click += new System.EventHandler(this.buttonRepaymentExit_Click);
@@ -219,7 +219,7 @@ namespace Octopus.GUI
             resources.ApplyResources(this.buttonPreview, "buttonPreview");
             this.buttonPreview.BackColor = System.Drawing.Color.Gainsboro;
             this.buttonPreview.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonPreview.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_previous;
+            this.buttonPreview.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_bouton_previous;
             this.buttonPreview.Name = "buttonPreview";
             this.buttonPreview.UseVisualStyleBackColor = false;
             this.buttonPreview.Click += new System.EventHandler(this.buttonPreview_Click);
@@ -231,7 +231,7 @@ namespace Octopus.GUI
             resources.ApplyResources(this.buttonNext, "buttonNext");
             this.buttonNext.BackColor = System.Drawing.Color.Gainsboro;
             this.buttonNext.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonNext.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_next;
+            this.buttonNext.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_bouton_next;
             this.buttonNext.Name = "buttonNext";
             this.buttonNext.UseVisualStyleBackColor = false;
             this.buttonNext.Click += new System.EventHandler(this.buttonNext_Click);

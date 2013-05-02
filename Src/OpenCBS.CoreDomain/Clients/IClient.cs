@@ -24,12 +24,12 @@
 
 using System;
 using System.Collections.Generic;
-using Octopus.CoreDomain.Contracts.Loans;
-using Octopus.Enums;
-using Octopus.Shared;
-using Octopus.CoreDomain.Contracts.Savings;
+using OpenCBS.CoreDomain.Contracts.Loans;
+using OpenCBS.Enums;
+using OpenCBS.Shared;
+using OpenCBS.CoreDomain.Contracts.Savings;
 
-namespace Octopus.CoreDomain.Clients
+namespace OpenCBS.CoreDomain.Clients
 {
 	/// <summary>
 	/// Client is the beneficiary of a contract. Client can be a GroupsClient or a Person. 

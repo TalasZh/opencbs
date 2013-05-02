@@ -1,15 +1,15 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.IO;
-using Octopus.CoreDomain.Accounting;
-using Octopus.Shared;
-using Octopus.CoreDomain.Export.Fields;
-using Octopus.CoreDomain.Export.FieldType;
-using Octopus.Enums;
+using OpenCBS.CoreDomain.Accounting;
+using OpenCBS.Shared;
+using OpenCBS.CoreDomain.Export.Fields;
+using OpenCBS.CoreDomain.Export.FieldType;
+using OpenCBS.Enums;
 
-namespace Octopus.CoreDomain.Export.Files
+namespace OpenCBS.CoreDomain.Export.Files
 {
     [Serializable]
     public class InstallmentExportFile : AExportFile<Installment>

@@ -2,10 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
-using Octopus.CoreDomain.Accounting;
-using Octopus.Services;
+using OpenCBS.CoreDomain.Accounting;
+using OpenCBS.Services;
 
-namespace Octopus.GUI.Accounting
+namespace OpenCBS.GUI.Accounting
 {
     public partial class AddStandardBooking : Form
     {

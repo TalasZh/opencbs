@@ -1,9 +1,9 @@
 
 using System.ComponentModel;
 using System.Windows.Forms;
-using Octopus.GUI.UserControl;
+using OpenCBS.GUI.UserControl;
 
-namespace Octopus.GUI.Products
+namespace OpenCBS.GUI.Products
 {
     public partial class FrmAddLoanProduct
     {
@@ -196,7 +196,7 @@ namespace Octopus.GUI.Products
             this.label30 = new System.Windows.Forms.Label();
             this.textBoxCycleMin = new System.Windows.Forms.TextBox();
             this.cbxCycleObjects = new System.Windows.Forms.ComboBox();
-            this.listViewLoanCycles = new Octopus.GUI.UserControl.ListViewEx();
+            this.listViewLoanCycles = new OpenCBS.GUI.UserControl.ListViewEx();
             this.colCycle = new System.Windows.Forms.ColumnHeader();
             this.colMin = new System.Windows.Forms.ColumnHeader();
             this.colMax = new System.Windows.Forms.ColumnHeader();
@@ -307,7 +307,7 @@ namespace Octopus.GUI.Products
             this.cbRate = new System.Windows.Forms.ComboBox();
             this.cbxRate = new System.Windows.Forms.CheckBox();
             this.tbEntryFeesValues = new System.Windows.Forms.TextBox();
-            this.lvEntryFees = new Octopus.GUI.UserControl.ListViewEx();
+            this.lvEntryFees = new OpenCBS.GUI.UserControl.ListViewEx();
             this.chEntryFeeId = new System.Windows.Forms.ColumnHeader();
             this.chEntryFeeName = new System.Windows.Forms.ColumnHeader();
             this.chEntryFeeMin = new System.Windows.Forms.ColumnHeader();
@@ -1931,8 +1931,8 @@ namespace Octopus.GUI.Products
             this.lvEntryFees.Name = "lvEntryFees";
             this.lvEntryFees.UseCompatibleStateImageBehavior = false;
             this.lvEntryFees.View = System.Windows.Forms.View.Details;
-            this.lvEntryFees.SubItemClicked += new Octopus.GUI.UserControl.SubItemEventHandler(this.lvEntryFees_SubItemClicked);
-            this.lvEntryFees.SubItemEndEditing += new Octopus.GUI.UserControl.SubItemEndEditingEventHandler(this.lvEntryFees_SubItemEndEditing);
+            this.lvEntryFees.SubItemClicked += new OpenCBS.GUI.UserControl.SubItemEventHandler(this.lvEntryFees_SubItemClicked);
+            this.lvEntryFees.SubItemEndEditing += new OpenCBS.GUI.UserControl.SubItemEndEditingEventHandler(this.lvEntryFees_SubItemEndEditing);
             // 
             // chEntryFeeId
             // 
@@ -2892,7 +2892,7 @@ namespace Octopus.GUI.Products
             // 
             // entryFeeBindingSource
             // 
-            this.entryFeeBindingSource.DataSource = typeof(Octopus.CoreDomain.EntryFee);
+            this.entryFeeBindingSource.DataSource = typeof(OpenCBS.CoreDomain.EntryFee);
             // 
             // splitter2
             // 
@@ -3194,7 +3194,7 @@ namespace Octopus.GUI.Products
         private BindingSource entryFeeBindingSource;
         private GroupBox gbAdvancedParameters;
         private CheckBox cbUseLoanCycle;
-        private Octopus.GUI.UserControl.ListViewEx listViewLoanCycles;
+        private OpenCBS.GUI.UserControl.ListViewEx listViewLoanCycles;
         private ColumnHeader colCycle;
         private ColumnHeader colMin;
         private ColumnHeader colMax;
@@ -3216,7 +3216,7 @@ namespace Octopus.GUI.Products
         private Label lblEntryFeesFromCycle;
         private NumericUpDown nudEntryFeescycleFrom;
         private DataGridViewTextBoxColumn nameOfFee;
-        private Octopus.GUI.UserControl.ListViewEx lvEntryFees;
+        private OpenCBS.GUI.UserControl.ListViewEx lvEntryFees;
         private ColumnHeader chEntryFeeId;
         private ColumnHeader chEntryFeeName;
         private ColumnHeader chEntryFeeMin;

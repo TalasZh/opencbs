@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Octopus.DatabaseConnection
+namespace OpenCBS.DatabaseConnection
 {
     public static class ServerSettings
     {

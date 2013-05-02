@@ -1,7 +1,7 @@
-﻿
+
 
 using System;
-namespace Octopus.CoreDomain.Database
+namespace OpenCBS.CoreDomain.Database
 {
     [Serializable]
     public class SqlDatabaseSettings

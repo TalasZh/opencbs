@@ -27,13 +27,13 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Data.SqlTypes;
 using NUnit.Framework;
-using Octopus.Enums;
-using Octopus.Shared;
-using Octopus.Manager;
+using OpenCBS.Enums;
+using OpenCBS.Shared;
+using OpenCBS.Manager;
 using System.Collections;
-using Octopus.Shared.Settings;
+using OpenCBS.Shared.Settings;
 
-namespace Octopus.Test.Manager
+namespace OpenCBS.Test.Manager
 {
     [TestFixture]
     public class TestNonWorkingDateManagement

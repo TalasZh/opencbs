@@ -1,10 +1,10 @@
 using System;
 using System.Windows.Forms;
-using Octopus.Shared;
-using Octopus.CoreDomain.SearchResult;
-using Octopus.CoreDomain.Products;
+using OpenCBS.Shared;
+using OpenCBS.CoreDomain.SearchResult;
+using OpenCBS.CoreDomain.Products;
 
-namespace Octopus.GUI.Contracts
+namespace OpenCBS.GUI.Contracts
 {
     public partial class CloseSavingsForm : Form
     {

@@ -1,8 +1,8 @@
-﻿using System.Data.SqlClient;
+using System.Data.SqlClient;
 using System.Windows.Forms;
-using Octopus.CoreDomain.Clients;
+using OpenCBS.CoreDomain.Clients;
 
-namespace Octopus.Extensions
+namespace OpenCBS.Extensions
 {
     public interface ICorporate
     {

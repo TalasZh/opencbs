@@ -29,7 +29,7 @@ using System.Drawing;
 using System.Data;
 using System.Windows.Forms;
 
-namespace Octopus.GUI.UserControl
+namespace OpenCBS.GUI.UserControl
 {
 	/// <summary>
 	/// Summary description for TextCurrencyUserControl.

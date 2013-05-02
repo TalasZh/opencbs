@@ -25,7 +25,7 @@
 using System;
 using System.Runtime.Serialization;
 
-namespace Octopus.ExceptionsHandler.Exceptions.AccountExceptions
+namespace OpenCBS.ExceptionsHandler.Exceptions.AccountExceptions
 {
 	/// <summary>
 	/// Summary description for OctopusAccountException.

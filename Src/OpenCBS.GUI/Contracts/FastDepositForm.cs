@@ -25,19 +25,19 @@
 using System;
 using System.Drawing;
 using System.Windows.Forms;
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.Accounting;
-using Octopus.CoreDomain.Clients;
-using Octopus.GUI.UserControl;
-using Octopus.Services;
-using Octopus.Shared;
-using Octopus.Enums;
-using Octopus.MultiLanguageRessources;
-using Octopus.CoreDomain.Contracts.Savings;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.Accounting;
+using OpenCBS.CoreDomain.Clients;
+using OpenCBS.GUI.UserControl;
+using OpenCBS.Services;
+using OpenCBS.Shared;
+using OpenCBS.Enums;
+using OpenCBS.MultiLanguageRessources;
+using OpenCBS.CoreDomain.Contracts.Savings;
 using System.Linq;
 using System.Collections.Generic;
 
-namespace Octopus.GUI.Contracts
+namespace OpenCBS.GUI.Contracts
 {
     public partial class FastDepositForm : SweetBaseForm
     {

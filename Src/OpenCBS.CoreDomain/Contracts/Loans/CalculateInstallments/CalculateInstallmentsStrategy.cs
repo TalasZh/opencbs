@@ -24,15 +24,15 @@
 
 using System;
 using System.Collections.Generic;
-using Octopus.CoreDomain.Contracts.Loans.CalculateInstallments.Declining;
-using Octopus.CoreDomain.Contracts.Loans.CalculateInstallments.Flat;
-using Octopus.CoreDomain.Contracts.Loans.CalculateInstallments.Interfaces;
-using Octopus.CoreDomain.Contracts.Loans.Installments;
-using Octopus.Enums;
-using Octopus.Shared;
-using Octopus.Shared.Settings;
+using OpenCBS.CoreDomain.Contracts.Loans.CalculateInstallments.Declining;
+using OpenCBS.CoreDomain.Contracts.Loans.CalculateInstallments.Flat;
+using OpenCBS.CoreDomain.Contracts.Loans.CalculateInstallments.Interfaces;
+using OpenCBS.CoreDomain.Contracts.Loans.Installments;
+using OpenCBS.Enums;
+using OpenCBS.Shared;
+using OpenCBS.Shared.Settings;
 
-namespace Octopus.CoreDomain.Contracts.Loans.CalculateInstallments
+namespace OpenCBS.CoreDomain.Contracts.Loans.CalculateInstallments
 {
     /// <summary>
     /// Summary description for CalculateInstallmentsStrategy.

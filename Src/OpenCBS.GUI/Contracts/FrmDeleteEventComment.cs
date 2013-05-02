@@ -25,10 +25,10 @@
 using System;
 using System.ComponentModel;
 using System.Windows.Forms;
-using Octopus.ExceptionsHandler;
-using Octopus.GUI.UserControl;
+using OpenCBS.ExceptionsHandler;
+using OpenCBS.GUI.UserControl;
 
-namespace Octopus.GUI
+namespace OpenCBS.GUI
 {
     public class FrmDeleteEventComment : SweetBaseForm
     {

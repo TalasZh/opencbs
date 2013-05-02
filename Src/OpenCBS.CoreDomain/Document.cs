@@ -1,6 +1,6 @@
-﻿using System;
+using System;
 
-namespace Octopus.CoreDomain
+namespace OpenCBS.CoreDomain
 {
     public class Document
     {

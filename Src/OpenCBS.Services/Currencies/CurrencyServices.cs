@@ -1,5 +1,5 @@
 //Octopus MFS is an integrated suite for managing a Micro Finance Institution: clients, contracts, accounting, reporting and risk
-//Copyright © 2006,2007 OCTO Technology & OXUS Development Network
+//Copyright ï¿½ 2006,2007 OCTO Technology & OXUS Development Network
 //
 //This program is free software; you can redistribute it and/or modify
 //it under the terms of the GNU Lesser General Public License as published by
@@ -26,15 +26,15 @@
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.Accounting;
-using Octopus.DatabaseConnection;
-using Octopus.ExceptionsHandler;
-using Octopus.ExceptionsHandler.Exceptions.AccountExceptions;
-using Octopus.Manager.Currencies;
-using Octopus.Services.Accounting;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.Accounting;
+using OpenCBS.DatabaseConnection;
+using OpenCBS.ExceptionsHandler;
+using OpenCBS.ExceptionsHandler.Exceptions.AccountExceptions;
+using OpenCBS.Manager.Currencies;
+using OpenCBS.Services.Accounting;
 
-namespace Octopus.Services.Currencies
+namespace OpenCBS.Services.Currencies
 {
     public class CurrencyServices : Services //MarshalByRefObject
     {

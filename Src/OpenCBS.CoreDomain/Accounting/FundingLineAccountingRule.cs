@@ -1,9 +1,9 @@
-﻿using System;
-using Octopus.CoreDomain.Events;
-using Octopus.CoreDomain.FundingLines;
-using Octopus.Enums;
+using System;
+using OpenCBS.CoreDomain.Events;
+using OpenCBS.CoreDomain.FundingLines;
+using OpenCBS.Enums;
 
-namespace Octopus.CoreDomain.Accounting
+namespace OpenCBS.CoreDomain.Accounting
 {
     [Serializable]
     public class FundingLineAccountingRule : IAccountingRule

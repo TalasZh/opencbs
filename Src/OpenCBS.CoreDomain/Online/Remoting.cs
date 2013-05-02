@@ -1,8 +1,8 @@
 using System;
-using Octopus.CoreDomain.Accounting;
-using Octopus.Shared.Settings;
+using OpenCBS.CoreDomain.Accounting;
+using OpenCBS.Shared.Settings;
 
-namespace Octopus.CoreDomain.Online
+namespace OpenCBS.CoreDomain.Online
 {
     public class Remoting : ICoreDomain
     {

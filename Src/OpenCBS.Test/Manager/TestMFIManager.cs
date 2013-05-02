@@ -1,9 +1,9 @@
-﻿
-using NUnit.Framework;
-using Octopus.Manager;
-using Octopus.CoreDomain;
 
-namespace Octopus.Test.Manager
+using NUnit.Framework;
+using OpenCBS.Manager;
+using OpenCBS.CoreDomain;
+
+namespace OpenCBS.Test.Manager
 {
     [TestFixture]
     public class TestMFIManager

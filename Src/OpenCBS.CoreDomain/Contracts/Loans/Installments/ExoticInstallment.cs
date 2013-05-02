@@ -24,7 +24,7 @@
 
 using System;
 
-namespace Octopus.CoreDomain.Contracts.Loans.Installments
+namespace OpenCBS.CoreDomain.Contracts.Loans.Installments
 {
     /// <summary>
     /// Summary description for ExoticInstallment.

@@ -1,9 +1,9 @@
-﻿
-using NUnit.Framework;
-using Octopus.DatabaseConnection;
-using Octopus.Shared.Settings;
 
-namespace Octopus.Test.DatabaseConnection
+using NUnit.Framework;
+using OpenCBS.DatabaseConnection;
+using OpenCBS.Shared.Settings;
+
+namespace OpenCBS.Test.DatabaseConnection
 {
     [TestFixture]
     public class TestConnectionManager

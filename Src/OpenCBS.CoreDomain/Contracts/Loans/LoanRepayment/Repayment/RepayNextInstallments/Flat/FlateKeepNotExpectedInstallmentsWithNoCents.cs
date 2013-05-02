@@ -24,14 +24,14 @@
 
 using System;
 using System.Collections.Generic;
-using Octopus.CoreDomain.Contracts.Loans.Installments;
-using Octopus.CoreDomain.Contracts.Loans.LoanRepayment.Interfaces;
-using Octopus.Enums;
-using Octopus.Shared;
-using Octopus.Shared.Settings;
+using OpenCBS.CoreDomain.Contracts.Loans.Installments;
+using OpenCBS.CoreDomain.Contracts.Loans.LoanRepayment.Interfaces;
+using OpenCBS.Enums;
+using OpenCBS.Shared;
+using OpenCBS.Shared.Settings;
 
 
-namespace Octopus.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayNextInstallments.Flat
+namespace OpenCBS.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayNextInstallments.Flat
 {
     /// <summary>
     /// Summary description for FlateKeepNotExpectedInstallments.

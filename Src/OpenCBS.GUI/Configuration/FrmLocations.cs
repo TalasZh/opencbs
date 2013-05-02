@@ -1,12 +1,12 @@
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
-using Octopus.CoreDomain;
-using Octopus.ExceptionsHandler;
-using Octopus.Services;
-using Octopus.GUI.UserControl;
+using OpenCBS.CoreDomain;
+using OpenCBS.ExceptionsHandler;
+using OpenCBS.Services;
+using OpenCBS.GUI.UserControl;
 
-namespace Octopus.GUI
+namespace OpenCBS.GUI
 {
     public partial class FrmLocations : SweetBaseForm
     {

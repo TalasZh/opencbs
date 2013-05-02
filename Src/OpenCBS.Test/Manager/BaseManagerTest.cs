@@ -1,4 +1,4 @@
-﻿//Octopus MFS is an integrated suite for managing a Micro Finance Institution: clients, contracts, accounting, reporting and risk
+//Octopus MFS is an integrated suite for managing a Micro Finance Institution: clients, contracts, accounting, reporting and risk
 //Copyright © 2006,2007 OCTO Technology & OXUS Development Network
 //
 //This program is free software; you can redistribute it and/or modify
@@ -29,19 +29,19 @@ using System.Text;
 using System.Xml.XPath;
 using NUnit.Framework;
 using System.Collections;
-using Octopus.DatabaseConnection;
-using Octopus.Manager;
-using Octopus.Manager.Accounting;
-using Octopus.Manager.Clients;
-using Octopus.Manager.Contracts;
-using Octopus.Manager.Currencies;
-using Octopus.Manager.Events;
+using OpenCBS.DatabaseConnection;
+using OpenCBS.Manager;
+using OpenCBS.Manager.Accounting;
+using OpenCBS.Manager.Clients;
+using OpenCBS.Manager.Contracts;
+using OpenCBS.Manager.Currencies;
+using OpenCBS.Manager.Events;
 using System.IO;
-using Octopus.Manager.Products;
-using Octopus.Shared.Settings;
-using Octopus.Services;
+using OpenCBS.Manager.Products;
+using OpenCBS.Shared.Settings;
+using OpenCBS.Services;
 
-namespace Octopus.Test.Manager
+namespace OpenCBS.Test.Manager
 {
     [TestFixture]
     public abstract class BaseManagerTest
@@ -124,7 +124,7 @@ namespace Octopus.Test.Manager
         private static void _InitScript()
         {
             Assembly a = Assembly.GetExecutingAssembly();
-            Stream stream = a.GetManifestResourceStream("Octopus.Test._Sql.Init.sql");
+            Stream stream = a.GetManifestResourceStream("OpenCBS.Test._Sql.Init.sql");
             
             if (stream == null) return;
 
@@ -150,7 +150,7 @@ namespace Octopus.Test.Manager
         {
             Assembly a = Assembly.GetExecutingAssembly();
             string path = Path.Combine(a.Location, "Objects.xml");
-            Stream stream = a.GetManifestResourceStream("Octopus.Test._Sql.Objects.xml");
+            Stream stream = a.GetManifestResourceStream("OpenCBS.Test._Sql.Objects.xml");
             XPathDocument xmldoc = new XPathDocument(stream);
             XPathNavigator nav = xmldoc.CreateNavigator();
             XPathExpression expr = nav.Compile("/database/object");

@@ -32,33 +32,33 @@ using System.Net;
 using System.Reflection;
 using System.Windows.Forms;
 using BrightIdeasSoftware;
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.Alerts;
-using Octopus.CoreDomain.Clients;
-using Octopus.CoreDomain.Contracts.Loans;
-using Octopus.Extensions;
-using Octopus.Enums;
-using Octopus.ExceptionsHandler;
-using Octopus.GUI.Accounting;
-using Octopus.GUI.AuditTrail;
-using Octopus.GUI.Clients;
-using Octopus.GUI.Configuration;
-using Octopus.GUI.Database;
-using Octopus.GUI.Products;
-using Octopus.GUI.Projets;
-using Octopus.GUI.Report_Browser;
-using Octopus.GUI.Tools;
-using Octopus.GUI.Contracts;
-using Octopus.GUI.UserControl;
-using Octopus.Reports;
-using Octopus.Services;
-using Octopus.Shared;
-using Octopus.MultiLanguageRessources;
-using Octopus.Shared.Settings;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.Alerts;
+using OpenCBS.CoreDomain.Clients;
+using OpenCBS.CoreDomain.Contracts.Loans;
+using OpenCBS.Extensions;
+using OpenCBS.Enums;
+using OpenCBS.ExceptionsHandler;
+using OpenCBS.GUI.Accounting;
+using OpenCBS.GUI.AuditTrail;
+using OpenCBS.GUI.Clients;
+using OpenCBS.GUI.Configuration;
+using OpenCBS.GUI.Database;
+using OpenCBS.GUI.Products;
+using OpenCBS.GUI.Projets;
+using OpenCBS.GUI.Report_Browser;
+using OpenCBS.GUI.Tools;
+using OpenCBS.GUI.Contracts;
+using OpenCBS.GUI.UserControl;
+using OpenCBS.Reports;
+using OpenCBS.Services;
+using OpenCBS.Shared;
+using OpenCBS.MultiLanguageRessources;
+using OpenCBS.Shared.Settings;
 using Re = System.Text.RegularExpressions;
-using Octopus.GUI.TellerManagement;
+using OpenCBS.GUI.TellerManagement;
 
-namespace Octopus.GUI
+namespace OpenCBS.GUI
 {
     public partial class LotrasmicMainWindowForm : SweetBaseForm
     {

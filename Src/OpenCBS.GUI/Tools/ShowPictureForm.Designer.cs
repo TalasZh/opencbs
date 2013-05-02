@@ -1,4 +1,4 @@
-namespace Octopus.GUI.Tools
+namespace OpenCBS.GUI.Tools
 {
     partial class ShowPictureForm
     {
@@ -58,7 +58,7 @@ namespace Octopus.GUI.Tools
             // addPhotoButton
             // 
             resources.ApplyResources(this.addPhotoButton, "addPhotoButton");
-            this.addPhotoButton.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_bouton;
+            this.addPhotoButton.BackgroundImage = global::OpenCBS.GUI.Properties.Resources.theme1_1_fond_bouton;
             this.addPhotoButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(56)))));
             this.addPhotoButton.Name = "addPhotoButton";
             this.addPhotoButton.UseVisualStyleBackColor = true;
@@ -66,7 +66,7 @@ namespace Octopus.GUI.Tools
             // 
             // deletePhotoButton
             // 
-            this.deletePhotoButton.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_bouton;
+            this.deletePhotoButton.BackgroundImage = global::OpenCBS.GUI.Properties.Resources.theme1_1_fond_bouton;
             resources.ApplyResources(this.deletePhotoButton, "deletePhotoButton");
             this.deletePhotoButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(56)))));
             this.deletePhotoButton.Name = "deletePhotoButton";
@@ -91,7 +91,7 @@ namespace Octopus.GUI.Tools
             // changePhotoButton
             // 
             resources.ApplyResources(this.changePhotoButton, "changePhotoButton");
-            this.changePhotoButton.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_bouton;
+            this.changePhotoButton.BackgroundImage = global::OpenCBS.GUI.Properties.Resources.theme1_1_fond_bouton;
             this.changePhotoButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(56)))));
             this.changePhotoButton.Name = "changePhotoButton";
             this.changePhotoButton.UseVisualStyleBackColor = true;
@@ -100,7 +100,7 @@ namespace Octopus.GUI.Tools
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.panel1.BackgroundImage = global::Octopus.GUI.Properties.Resources.pastille_groupe;
+            this.panel1.BackgroundImage = global::OpenCBS.GUI.Properties.Resources.pastille_groupe;
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Controls.Add(this.labelPersonName);
             this.panel1.Name = "panel1";
@@ -113,7 +113,7 @@ namespace Octopus.GUI.Tools
             // closeButton
             // 
             resources.ApplyResources(this.closeButton, "closeButton");
-            this.closeButton.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_bouton;
+            this.closeButton.BackgroundImage = global::OpenCBS.GUI.Properties.Resources.theme1_1_fond_bouton;
             this.closeButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(56)))));
             this.closeButton.Name = "closeButton";
             this.closeButton.UseVisualStyleBackColor = true;

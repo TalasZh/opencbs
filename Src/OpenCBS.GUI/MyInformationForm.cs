@@ -5,13 +5,13 @@ using System.Data;
 using System.Drawing;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
-using Octopus.CoreDomain;
-using Octopus.MultiLanguageRessources;
-using Octopus.Services;
-using Octopus.Shared.Settings;
-using Octopus.GUI.UserControl;
+using OpenCBS.CoreDomain;
+using OpenCBS.MultiLanguageRessources;
+using OpenCBS.Services;
+using OpenCBS.Shared.Settings;
+using OpenCBS.GUI.UserControl;
 
-namespace Octopus.GUI
+namespace OpenCBS.GUI
 {
     public partial class MyInformationForm : SweetBaseForm
     {

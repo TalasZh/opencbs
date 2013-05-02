@@ -1,12 +1,12 @@
-using Octopus.Services.Accounting;
-using Octopus.Services.Currencies;
-using Octopus.Services.Events;
-using Octopus.Services.Rules;
-using Octopus.Shared;
-using Octopus.Shared.Settings;
-using Octopus.Services.Export;
+using OpenCBS.Services.Accounting;
+using OpenCBS.Services.Currencies;
+using OpenCBS.Services.Events;
+using OpenCBS.Services.Rules;
+using OpenCBS.Shared;
+using OpenCBS.Shared.Settings;
+using OpenCBS.Services.Export;
 
-namespace Octopus.Services
+namespace OpenCBS.Services
 {
     public interface IServices
     {

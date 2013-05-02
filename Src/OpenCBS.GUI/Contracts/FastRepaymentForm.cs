@@ -26,18 +26,18 @@ using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
-using Octopus.CoreDomain.Accounting;
-using Octopus.CoreDomain.Clients;
-using Octopus.CoreDomain.Contracts.Loans;
-using Octopus.CoreDomain.Contracts.Loans.Installments;
-using Octopus.CoreDomain.Events;
-using Octopus.ExceptionsHandler;
-using Octopus.MultiLanguageRessources;
-using Octopus.Services;
-using Octopus.Shared;
-using Octopus.Enums;
+using OpenCBS.CoreDomain.Accounting;
+using OpenCBS.CoreDomain.Clients;
+using OpenCBS.CoreDomain.Contracts.Loans;
+using OpenCBS.CoreDomain.Contracts.Loans.Installments;
+using OpenCBS.CoreDomain.Events;
+using OpenCBS.ExceptionsHandler;
+using OpenCBS.MultiLanguageRessources;
+using OpenCBS.Services;
+using OpenCBS.Shared;
+using OpenCBS.Enums;
 
-namespace Octopus.GUI.Contracts
+namespace OpenCBS.GUI.Contracts
 {
     public partial class FastRepaymentForm : Form
     {

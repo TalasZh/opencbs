@@ -28,15 +28,15 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Linq;
 using BrightIdeasSoftware;
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.Accounting;
-using Octopus.Enums;
-using Octopus.GUI.UserControl;
-using Octopus.MultiLanguageRessources;
-using Octopus.Services;
-using Octopus.Shared;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.Accounting;
+using OpenCBS.Enums;
+using OpenCBS.GUI.UserControl;
+using OpenCBS.MultiLanguageRessources;
+using OpenCBS.Services;
+using OpenCBS.Shared;
 
-namespace Octopus.GUI.Accounting
+namespace OpenCBS.GUI.Accounting
 {
     public partial class AccountTrialBalance : SweetBaseForm
     {

@@ -26,9 +26,9 @@ using System.ComponentModel;
 using System.Drawing.Design;
 using System.Windows.Forms;
 using System.Windows.Forms.Design;
-using Octopus.GUI.Search;
+using OpenCBS.GUI.Search;
 
-namespace Octopus.GUI.UserControl
+namespace OpenCBS.GUI.UserControl
 {
     public class CustomizableFieldClientEditor : UITypeEditor
     {

@@ -1,8 +1,8 @@
 using System.Windows.Forms;
-using Octopus.MultiLanguageRessources;
-using Octopus.Services;
+using OpenCBS.MultiLanguageRessources;
+using OpenCBS.Services;
 
-namespace Octopus.GUI.UserControl
+namespace OpenCBS.GUI.UserControl
 {
     using MBB = MessageBoxButtons;
     using MBI = MessageBoxIcon;

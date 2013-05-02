@@ -25,17 +25,17 @@
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.Accounting;
-using Octopus.MultiLanguageRessources;
-using Octopus.Shared;
-using Octopus.Services;
-using Octopus.Enums;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.Accounting;
+using OpenCBS.MultiLanguageRessources;
+using OpenCBS.Shared;
+using OpenCBS.Services;
+using OpenCBS.Enums;
 using System.Linq;
 using System.Drawing;
-using Octopus.GUI.Tools;
+using OpenCBS.GUI.Tools;
 
-namespace Octopus.GUI.Accounting
+namespace OpenCBS.GUI.Accounting
 {
     public partial class AccountView : Form
     {

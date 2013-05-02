@@ -27,17 +27,17 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
-using Octopus.CoreDomain.Contracts.Loans;
-using Octopus.Enums;
-using Octopus.ExceptionsHandler;
-using Octopus.GUI.Accounting;
-using Octopus.MultiLanguageRessources;
-using Octopus.Services;
-using Octopus.Shared;
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.Accounting;
+using OpenCBS.CoreDomain.Contracts.Loans;
+using OpenCBS.Enums;
+using OpenCBS.ExceptionsHandler;
+using OpenCBS.GUI.Accounting;
+using OpenCBS.MultiLanguageRessources;
+using OpenCBS.Services;
+using OpenCBS.Shared;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.Accounting;
 
-namespace Octopus.GUI.UserControl
+namespace OpenCBS.GUI.UserControl
 {
 	/// <summary>
 	/// Summary description for ElemMvtUserControl.

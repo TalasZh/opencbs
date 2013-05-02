@@ -25,12 +25,12 @@
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.EconomicActivities;
-using Octopus.Manager;
-using Octopus.ExceptionsHandler;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.EconomicActivities;
+using OpenCBS.Manager;
+using OpenCBS.ExceptionsHandler;
 
-namespace Octopus.Services
+namespace OpenCBS.Services
 {
 	/// <summary>
     /// Summary description for EconomicActivities.

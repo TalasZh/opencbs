@@ -1,8 +1,8 @@
-﻿using System;
+using System;
 using System.Runtime.Serialization;
 
 
-namespace Octopus.ExceptionsHandler
+namespace OpenCBS.ExceptionsHandler
 {
     [Serializable]
     public class OctopusProjectException : OctopusException

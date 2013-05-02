@@ -1,17 +1,17 @@
-﻿using System;
+using System;
 using NUnit.Framework;
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.Accounting;
-using Octopus.CoreDomain.Contracts.Loans.Installments;
-using Octopus.CoreDomain.Products;
-using Octopus.Enums;
-using Octopus.Manager.Products;
-using Octopus.Manager.Contracts;
-using Octopus.CoreDomain.Contracts.Savings;
-using Octopus.Shared.Settings;
-using Octopus.CoreDomain.Clients;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.Accounting;
+using OpenCBS.CoreDomain.Contracts.Loans.Installments;
+using OpenCBS.CoreDomain.Products;
+using OpenCBS.Enums;
+using OpenCBS.Manager.Products;
+using OpenCBS.Manager.Contracts;
+using OpenCBS.CoreDomain.Contracts.Savings;
+using OpenCBS.Shared.Settings;
+using OpenCBS.CoreDomain.Clients;
 
-namespace Octopus.Test.Manager.Products
+namespace OpenCBS.Test.Manager.Products
 {
     [TestFixture]
     public class TestSavingProductManager : BaseManagerTest
@@ -468,7 +468,7 @@ namespace Octopus.Test.Manager.Products
             {
                 Name = "Good savings account",
                 Code = "P123",
-                ClientType = Octopus.Enums.OClientTypes.All,
+                ClientType = OpenCBS.Enums.OClientTypes.All,
                 InitialAmountMin = 100,
                 InitialAmountMax = 200,
                 DepositMin = 250,

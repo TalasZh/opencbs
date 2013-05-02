@@ -2,17 +2,17 @@ using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
-using Octopus.CoreDomain.Accounting;
-using Octopus.CoreDomain.FundingLines;
-using Octopus.Enums;
-using Octopus.GUI.Configuration;
-using Octopus.GUI.UserControl;
-using Octopus.Services;
-using Octopus.Shared;
-using Octopus.ExceptionsHandler;
+using OpenCBS.CoreDomain.Accounting;
+using OpenCBS.CoreDomain.FundingLines;
+using OpenCBS.Enums;
+using OpenCBS.GUI.Configuration;
+using OpenCBS.GUI.UserControl;
+using OpenCBS.Services;
+using OpenCBS.Shared;
+using OpenCBS.ExceptionsHandler;
 using ZedGraph;
 
-namespace Octopus.GUI
+namespace OpenCBS.GUI
 {
     public partial class FrmFundingLine : SweetForm
     {

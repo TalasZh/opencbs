@@ -1,17 +1,17 @@
 using System;
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.Accounting;
-using Octopus.CoreDomain.Contracts.Loans;
-using Octopus.CoreDomain.Contracts.Loans.Installments;
-using Octopus.CoreDomain.Contracts.Loans.LoanRepayment;
-using Octopus.CoreDomain.Events;
-using Octopus.CoreDomain.Products;
-using Octopus.Enums;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.Accounting;
+using OpenCBS.CoreDomain.Contracts.Loans;
+using OpenCBS.CoreDomain.Contracts.Loans.Installments;
+using OpenCBS.CoreDomain.Contracts.Loans.LoanRepayment;
+using OpenCBS.CoreDomain.Events;
+using OpenCBS.CoreDomain.Products;
+using OpenCBS.Enums;
 using NUnit.Framework;
-using Octopus.Shared;
-using Octopus.Shared.Settings;
+using OpenCBS.Shared;
+using OpenCBS.Shared.Settings;
 
-namespace Octopus.Test.CoreDomain.Contracts.LoanRepayment.RepayLateInstallments
+namespace OpenCBS.Test.CoreDomain.Contracts.LoanRepayment.RepayLateInstallments
 {
     /// <summary>
     /// Summary description for TestRepayLateInstallments.
@@ -47,7 +47,7 @@ namespace Octopus.Test.CoreDomain.Contracts.LoanRepayment.RepayLateInstallments
             gp.UpdateParameter(OGeneralSettings.STOP_WRITEOFF_PENALTY, true);
             Loan myContract = _SetContract(OLoanTypes.Flat, new NonRepaymentPenalties(0.0026, 0, 0, 0), true, 1);
             myContract.WriteOff(new DateTime(2006, 2, 1));
-            Octopus.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments rLI = _SetRepaymentOptions(myContract, false);
+            OpenCBS.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments rLI = _SetRepaymentOptions(myContract, false);
 
             Assert.AreEqual(new DateTime(2006, 2, 1), myContract.GetInstallment(0).ExpectedDate);
             //8 days late
@@ -68,7 +68,7 @@ namespace Octopus.Test.CoreDomain.Contracts.LoanRepayment.RepayLateInstallments
             gp.UpdateParameter(OGeneralSettings.STOP_WRITEOFF_PENALTY, false);
             Loan myContract = _SetContract(OLoanTypes.Flat, new NonRepaymentPenalties(0.0026, 0, 0, 0), true, 1);
             myContract.WriteOff(new DateTime(2006, 2, 1));
-            Octopus.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments rLI = _SetRepaymentOptions(myContract, false);
+            OpenCBS.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments rLI = _SetRepaymentOptions(myContract, false);
 
             Assert.AreEqual(new DateTime(2006, 2, 1), myContract.GetInstallment(0).ExpectedDate);
             //8 days late
@@ -86,7 +86,7 @@ namespace Octopus.Test.CoreDomain.Contracts.LoanRepayment.RepayLateInstallments
         public void RepayInstallment_CancelFees_InitialAmount_8LateDays_EnoughMoneyToRepay()
         {
             Loan myContract = _SetContract(OLoanTypes.Flat, new NonRepaymentPenalties(0.003, 0, 0, 0), true, 1);
-            Octopus.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments rLI = _SetRepaymentOptions(myContract, true);
+            OpenCBS.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments rLI = _SetRepaymentOptions(myContract, true);
 
             OCurrency amountPaid = 30, interestEvent = 0, principalEvent = 0, feesEvent = 0;
             OCurrency commissionAmount = 0;
@@ -109,7 +109,7 @@ namespace Octopus.Test.CoreDomain.Contracts.LoanRepayment.RepayLateInstallments
         public void CalculateNewInstallmentsWithLateFees_DontCancelFees_InitialAmount_8LateDays()
         {
             Loan myContract = _SetContract(OLoanTypes.Flat, new NonRepaymentPenalties(0.0026, 0, 0, 0), true, 1);
-            Octopus.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments rLI = _SetRepaymentOptions(myContract, false);
+            OpenCBS.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments rLI = _SetRepaymentOptions(myContract, false);
 
             Assert.AreEqual(new DateTime(2006, 2, 1), myContract.GetInstallment(0).ExpectedDate);
             //8 days late
@@ -127,7 +127,7 @@ namespace Octopus.Test.CoreDomain.Contracts.LoanRepayment.RepayLateInstallments
         public void RepayInstallments_DontCancelFees_InitialAmount_8LateDays_EnoughMoneyToRepay()
         {
             Loan myContract = _SetContract(OLoanTypes.Flat, new NonRepaymentPenalties(0.003, 0, 0, 0), true, 1);
-            Octopus.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments rLI = _SetRepaymentOptions(myContract, false);
+            OpenCBS.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments rLI = _SetRepaymentOptions(myContract, false);
 
             Assert.AreEqual(new DateTime(2006, 2, 1), myContract.GetInstallment(0).ExpectedDate);
 
@@ -177,7 +177,7 @@ namespace Octopus.Test.CoreDomain.Contracts.LoanRepayment.RepayLateInstallments
         public void CalculateNewInstallmentsWithlateFees_DontCancelFees_InitialAmount_OLB_8LateDays()
         {
             Loan myContract = _SetContract(OLoanTypes.Flat, new NonRepaymentPenalties(0.0026, 0.0046, 0, 0), true, 1);
-            Octopus.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments rLI = _SetRepaymentOptions(myContract, false);
+            OpenCBS.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments rLI = _SetRepaymentOptions(myContract, false);
 
             Assert.AreEqual(new DateTime(2006, 2, 1), myContract.GetInstallment(0).ExpectedDate);
             rLI.CalculateNewInstallmentsWithLateFees(new DateTime(2006, 2, 9)); //8 days late
@@ -196,7 +196,7 @@ namespace Octopus.Test.CoreDomain.Contracts.LoanRepayment.RepayLateInstallments
             ApplicationSettings.GetInstance("").UpdateParameter("CALCULATION_LATE_FEES_DURING_PUBLIC_HOLIDAYS", true);
 
             Loan myContract = _SetContract(OLoanTypes.Flat, new NonRepaymentPenalties(0.003, 0.004, 0.003, 0.003), true, 1);
-            Octopus.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments rLI = _SetRepaymentOptions(myContract, false);
+            OpenCBS.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments rLI = _SetRepaymentOptions(myContract, false);
 
             Assert.AreEqual(new DateTime(2006, 2, 1), myContract.GetInstallment(0).ExpectedDate);
             Assert.AreEqual(new DateTime(2006, 3, 1), myContract.GetInstallment(1).ExpectedDate);
@@ -231,7 +231,7 @@ namespace Octopus.Test.CoreDomain.Contracts.LoanRepayment.RepayLateInstallments
         public void CalculateNewInstallmentsWithlateFees_CancelFees_InitialAmount_OLB_OverdueInterest_OverduePrincipal_36LateDays()
         {
             Loan myContract = _SetContract(OLoanTypes.Flat, new NonRepaymentPenalties(0.003, 0.004, 0.003, 0.003), true, 1);
-            Octopus.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments rLI = _SetRepaymentOptions(myContract, true);
+            OpenCBS.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments rLI = _SetRepaymentOptions(myContract, true);
 
             Assert.AreEqual(new DateTime(2006, 2, 1), myContract.GetInstallment(0).ExpectedDate);
             Assert.AreEqual(new DateTime(2006, 3, 1), myContract.GetInstallment(1).ExpectedDate);
@@ -249,7 +249,7 @@ namespace Octopus.Test.CoreDomain.Contracts.LoanRepayment.RepayLateInstallments
         public void RepayInstallment_DontCancelFees_InitialAmount_36daysLate_EnoughMoneyToRepay()
         {
             Loan myContract = _SetContract(OLoanTypes.Flat, new NonRepaymentPenalties(0.003, 0, 0, 0), true, 1);
-            Octopus.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments rLI = _SetRepaymentOptions(myContract, false);
+            OpenCBS.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments rLI = _SetRepaymentOptions(myContract, false);
 
             Assert.AreEqual(new DateTime(2006, 2, 1), myContract.GetInstallment(0).ExpectedDate);
             Assert.AreEqual(new DateTime(2006, 3, 1), myContract.GetInstallment(1).ExpectedDate);
@@ -274,7 +274,7 @@ namespace Octopus.Test.CoreDomain.Contracts.LoanRepayment.RepayLateInstallments
             ApplicationSettings.GetInstance("").UpdateParameter("CALCULATION_LATE_FEES_DURING_PUBLIC_HOLIDAYS", true);
             
             Loan myContract = _SetContract(OLoanTypes.Flat, new NonRepaymentPenalties(0, 0.003, 0, 0), true, 1);
-            Octopus.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments rLI = _SetRepaymentOptions(myContract, false);
+            OpenCBS.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments rLI = _SetRepaymentOptions(myContract, false);
 
             Assert.AreEqual(new DateTime(2006, 2, 1), myContract.GetInstallment(0).ExpectedDate);
 
@@ -298,7 +298,7 @@ namespace Octopus.Test.CoreDomain.Contracts.LoanRepayment.RepayLateInstallments
             ApplicationSettings.GetInstance("").UpdateParameter("CALCULATION_LATE_FEES_DURING_PUBLIC_HOLIDAYS", true);
             
             Loan myContract = _SetContract(OLoanTypes.Flat, new NonRepaymentPenalties(0, 0.003, 0, 0), true, 1);
-            Octopus.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments rLI = 
+            OpenCBS.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments rLI = 
                 _SetRepaymentOptions(myContract, false);
 
             Assert.AreEqual(new DateTime(2006, 2, 1), myContract.GetInstallment(0).ExpectedDate);
@@ -322,7 +322,7 @@ namespace Octopus.Test.CoreDomain.Contracts.LoanRepayment.RepayLateInstallments
         public void RepayInstallment_DontCancelFees_OverDuePrincipal_OverdueInterest_8DaysLate_EnoughMoneyToRepay()
         {
             Loan myContract = _SetContract(OLoanTypes.Flat, new NonRepaymentPenalties(0, 0, 0.003, 0.003), true, 1);
-            Octopus.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments rLI = _SetRepaymentOptions(myContract, false);
+            OpenCBS.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments rLI = _SetRepaymentOptions(myContract, false);
 
             Assert.AreEqual(new DateTime(2006, 2, 1), myContract.GetInstallment(0).ExpectedDate);
 
@@ -345,7 +345,7 @@ namespace Octopus.Test.CoreDomain.Contracts.LoanRepayment.RepayLateInstallments
         {
             ApplicationSettings.GetInstance("").UpdateParameter("CALCULATION_LATE_FEES_DURING_PUBLIC_HOLIDAYS", true);            
             Loan myContract = _SetContract(OLoanTypes.Flat, new NonRepaymentPenalties(0, 0, 0.003, 0.003), true, 1);
-            Octopus.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments rLI = _SetRepaymentOptions(myContract, false);
+            OpenCBS.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments rLI = _SetRepaymentOptions(myContract, false);
 
             Assert.AreEqual(new DateTime(2006, 2, 1), myContract.GetInstallment(0).ExpectedDate);
             Assert.AreEqual(new DateTime(2006, 3, 1), myContract.GetInstallment(1).ExpectedDate);
@@ -387,7 +387,7 @@ namespace Octopus.Test.CoreDomain.Contracts.LoanRepayment.RepayLateInstallments
         public void RepayInstallment_DontCancelFees_OverDuePrincipal_8DaysLate_EnoughMoneyToRepay()
         {
             Loan myContract = _SetContract(OLoanTypes.Flat, new NonRepaymentPenalties(0, 0, 0.003, 0), true, 1);
-            Octopus.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments rLI = _SetRepaymentOptions(myContract, false);
+            OpenCBS.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments rLI = _SetRepaymentOptions(myContract, false);
 
             Assert.AreEqual(new DateTime(2006, 2, 1), myContract.GetInstallment(0).ExpectedDate);
 
@@ -411,7 +411,7 @@ namespace Octopus.Test.CoreDomain.Contracts.LoanRepayment.RepayLateInstallments
             ApplicationSettings.GetInstance("").UpdateParameter("CALCULATION_LATE_FEES_DURING_PUBLIC_HOLIDAYS", true);
             
             Loan myContract = _SetContract(OLoanTypes.Flat, new NonRepaymentPenalties(0, 0, 0.003, 0), true, 1);
-            Octopus.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments rLI = _SetRepaymentOptions(myContract, false);
+            OpenCBS.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments rLI = _SetRepaymentOptions(myContract, false);
 
             Assert.AreEqual(new DateTime(2006, 2, 1), myContract.GetInstallment(0).ExpectedDate);
             Assert.AreEqual(new DateTime(2006, 3, 1), myContract.GetInstallment(1).ExpectedDate);
@@ -453,7 +453,7 @@ namespace Octopus.Test.CoreDomain.Contracts.LoanRepayment.RepayLateInstallments
         public void RepayInstallment_CancelFees_InitialAmount_8DaysLate_EnoughMoneyToRepay()
         {
             Loan myContract = _SetContract(OLoanTypes.Flat, new NonRepaymentPenalties(0.003, 0, 0, 0), true, 1);
-            Octopus.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments rLI = _SetRepaymentOptions(myContract, true);
+            OpenCBS.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments rLI = _SetRepaymentOptions(myContract, true);
 
             Assert.AreEqual(new DateTime(2006, 2, 1), myContract.GetInstallment(0).ExpectedDate);
 
@@ -475,7 +475,7 @@ namespace Octopus.Test.CoreDomain.Contracts.LoanRepayment.RepayLateInstallments
         public void RepayInstallment_DontCancelFees_KeepNotExpectedInstallment_InitialAmount_8daysLate()
         {
             Loan myContract = _SetContract(OLoanTypes.Flat, new NonRepaymentPenalties(0.003, 0, 0, 0), false, 1);
-            Octopus.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments rLI = _SetRepaymentOptions(myContract, false);
+            OpenCBS.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments rLI = _SetRepaymentOptions(myContract, false);
 
             Assert.AreEqual(new DateTime(2006, 2, 1), myContract.GetInstallment(0).ExpectedDate);
 
@@ -497,7 +497,7 @@ namespace Octopus.Test.CoreDomain.Contracts.LoanRepayment.RepayLateInstallments
         public void RepayInstallment_DontCancelFees_KeepNotExpectedInstallment_InitialAmount_36daysLate()
         {
             Loan myContract = _SetContract(OLoanTypes.Flat, new NonRepaymentPenalties(0.003, 0, 0, 0), false, 1);
-            Octopus.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments rLI = _SetRepaymentOptions(myContract, false);
+            OpenCBS.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments rLI = _SetRepaymentOptions(myContract, false);
 
             Assert.AreEqual(new DateTime(2006, 2, 1), myContract.GetInstallment(0).ExpectedDate);
             Assert.AreEqual(new DateTime(2006, 3, 1), myContract.GetInstallment(1).ExpectedDate);
@@ -521,7 +521,7 @@ namespace Octopus.Test.CoreDomain.Contracts.LoanRepayment.RepayLateInstallments
         {
             ApplicationSettings.GetInstance("").UpdateParameter("CALCULATION_LATE_FEES_DURING_PUBLIC_HOLIDAYS", true);
             Loan myContract = _SetContract(OLoanTypes.Flat, new NonRepaymentPenalties(0, 0.003, 0, 0), false, 1);
-            Octopus.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments rLI = 
+            OpenCBS.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments rLI = 
                 _SetRepaymentOptions(myContract, false);
 
             Assert.AreEqual(new DateTime(2006, 2, 1), myContract.GetInstallment(0).ExpectedDate);
@@ -546,7 +546,7 @@ namespace Octopus.Test.CoreDomain.Contracts.LoanRepayment.RepayLateInstallments
             ApplicationSettings.GetInstance("").UpdateParameter("CALCULATION_LATE_FEES_DURING_PUBLIC_HOLIDAYS", true);
 
             Loan myContract = _SetContract(OLoanTypes.Flat, new NonRepaymentPenalties(0, 0.003, 0, 0), false, 1);
-            Octopus.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments rLI = 
+            OpenCBS.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments rLI = 
                 _SetRepaymentOptions(myContract, false);
 
             Assert.AreEqual(new DateTime(2006, 2, 1), myContract.GetInstallment(0).ExpectedDate);
@@ -570,7 +570,7 @@ namespace Octopus.Test.CoreDomain.Contracts.LoanRepayment.RepayLateInstallments
         public void RepayInstallment_DontCancelFees_KeepNotExpectedInstallment_OverDuePrincipal_OverDueInterest_8DaysLate()
         {
             Loan myContract = _SetContract(OLoanTypes.Flat, new NonRepaymentPenalties(0, 0, 0.003, 0.003), false, 1);
-            Octopus.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments rLI = _SetRepaymentOptions(myContract, false);
+            OpenCBS.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments rLI = _SetRepaymentOptions(myContract, false);
 
             Assert.AreEqual(new DateTime(2006, 2, 1), myContract.GetInstallment(0).ExpectedDate);
 
@@ -592,7 +592,7 @@ namespace Octopus.Test.CoreDomain.Contracts.LoanRepayment.RepayLateInstallments
         public void RepayInstallment_DontCancelFees_KeepNotExpectedInstallment_OverDueInterest_OverduePrincipal_36DaysLate_NoEnoughMoneyToRepay()
         {
             Loan myContract = _SetContract(OLoanTypes.Flat, new NonRepaymentPenalties(0, 0, 0.003, 0.003), false, 1);
-            Octopus.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments rLI = _SetRepaymentOptions(myContract, false);
+            OpenCBS.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments rLI = _SetRepaymentOptions(myContract, false);
 
             Assert.AreEqual(new DateTime(2006, 2, 1), myContract.GetInstallment(0).ExpectedDate);
             Assert.AreEqual(new DateTime(2006, 3, 1), myContract.GetInstallment(1).ExpectedDate);
@@ -615,7 +615,7 @@ namespace Octopus.Test.CoreDomain.Contracts.LoanRepayment.RepayLateInstallments
         public void RepayInstallment_DontCancelFees_KeepNotExpectedInstallment_OverDuePrincipal_8DaysLate()
         {
             Loan myContract = _SetContract(OLoanTypes.Flat, new NonRepaymentPenalties(0, 0, 0.003, 0), false, 1);
-            Octopus.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments rLI = _SetRepaymentOptions(myContract, false);
+            OpenCBS.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments rLI = _SetRepaymentOptions(myContract, false);
 
             Assert.AreEqual(new DateTime(2006, 2, 1), myContract.GetInstallment(0).ExpectedDate);
 
@@ -639,7 +639,7 @@ namespace Octopus.Test.CoreDomain.Contracts.LoanRepayment.RepayLateInstallments
             ApplicationSettings.GetInstance("").UpdateParameter("CALCULATION_LATE_FEES_DURING_PUBLIC_HOLIDAYS", true);
             
             Loan myContract = _SetContract(OLoanTypes.Flat, new NonRepaymentPenalties(0, 0, 0.003, 0), false, 1);
-            Octopus.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments rLI = _SetRepaymentOptions(myContract, false);
+            OpenCBS.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments rLI = _SetRepaymentOptions(myContract, false);
 
             Assert.AreEqual(new DateTime(2006, 2, 1), myContract.GetInstallment(0).ExpectedDate);
             Assert.AreEqual(new DateTime(2006, 3, 1), myContract.GetInstallment(1).ExpectedDate);
@@ -687,12 +687,12 @@ namespace Octopus.Test.CoreDomain.Contracts.LoanRepayment.RepayLateInstallments
             Assert.AreEqual(pExpectedAmountPaid.Value, pActualAmountPaid.Value);
         }
 
-        private static Octopus.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments _SetRepaymentOptions(Loan pContract, bool pCancelFees)
+        private static OpenCBS.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments _SetRepaymentOptions(Loan pContract, bool pCancelFees)
         {
             CreditContractOptions cCO = new CreditContractOptions(pContract.Product.LoanType, pContract.Product.KeepExpectedInstallment, pCancelFees, 0, 0, false, 0,
                                                                   pContract.Product.AnticipatedTotalRepaymentPenaltiesBase);
 
-            return new Octopus.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments(cCO, pContract, new User(), ApplicationSettings.GetInstance(""), NonWorkingDateSingleton.GetInstance(""));
+            return new OpenCBS.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments.CalculateInstallments(cCO, pContract, new User(), ApplicationSettings.GetInstance(""), NonWorkingDateSingleton.GetInstance(""));
         }
 
         private static Loan _SetContract(OLoanTypes pLoansType, NonRepaymentPenalties pNonRepaymentFees, bool pKeepExpectedInstallment, int NumberOfGracePeriod)

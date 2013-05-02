@@ -26,11 +26,11 @@ using System;
 using System.Drawing;
 using System.ComponentModel;
 using System.Windows.Forms;
-using Octopus.ExceptionsHandler;
-using Octopus.Services;
-using Octopus.Shared;
+using OpenCBS.ExceptionsHandler;
+using OpenCBS.Services;
+using OpenCBS.Shared;
 
-namespace Octopus.GUI
+namespace OpenCBS.GUI
 {
 	/// <summary>
 	/// Summary description for frmShowError.
@@ -120,7 +120,7 @@ namespace Octopus.GUI
             this.buttonOK.BackColor = System.Drawing.Color.Gainsboro;
             resources.ApplyResources(this.buttonOK, "buttonOK");
             this.buttonOK.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.buttonOK.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_validity;
+            this.buttonOK.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_bouton_validity;
             this.buttonOK.Name = "buttonOK";
             this.buttonOK.UseVisualStyleBackColor = false;
             this.buttonOK.Click += new System.EventHandler(this.buttonOK_Click);
@@ -137,7 +137,7 @@ namespace Octopus.GUI
             // 
             this.buttonShowDetail.BackColor = System.Drawing.Color.Gainsboro;
             resources.ApplyResources(this.buttonShowDetail, "buttonShowDetail");
-            this.buttonShowDetail.Image = global::Octopus.GUI.Properties.Resources.theme1_1_view;
+            this.buttonShowDetail.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_view;
             this.buttonShowDetail.Name = "buttonShowDetail";
             this.buttonShowDetail.UseVisualStyleBackColor = false;
             this.buttonShowDetail.Click += new System.EventHandler(this.buttonShowDetail_Click);

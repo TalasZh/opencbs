@@ -1,7 +1,7 @@
 using System;
 using System.Windows.Forms;
 
-namespace Octopus.GUI.UserControl
+namespace OpenCBS.GUI.UserControl
 {
     public class ListViewSorter : System.Collections.IComparer
     {

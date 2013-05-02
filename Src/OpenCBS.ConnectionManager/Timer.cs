@@ -1,10 +1,10 @@
 using System;
 using System.Data;
-using Octopus.Shared.Settings;
-using Octopus.Shared;
+using OpenCBS.Shared.Settings;
+using OpenCBS.Shared;
 using System.IO;
 
-namespace Octopus.DatabaseConnection
+namespace OpenCBS.DatabaseConnection
 {
     public class Timer
     {

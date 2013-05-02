@@ -1,10 +1,10 @@
 
 using System;
 using NUnit.Framework;
-using Octopus.CoreDomain.Accounting;
-using Octopus.Enums;
+using OpenCBS.CoreDomain.Accounting;
+using OpenCBS.Enums;
 
-namespace Octopus.Test.CoreDomain.Accounting
+namespace OpenCBS.Test.CoreDomain.Accounting
 {
 	/// <summary>
 	/// Description of TestBookingToView.

@@ -1,9 +1,9 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Octopus.CoreDomain
+namespace OpenCBS.CoreDomain
 {
     [Serializable]
     public class ReportAvailableForDownload

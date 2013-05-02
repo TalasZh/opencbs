@@ -25,12 +25,12 @@
 using System.Collections.Generic;
 using System.Windows.Forms;
 using System.Linq;
-using Octopus.Services;
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.Accounting;
-using Octopus.GUI.UserControl;
+using OpenCBS.Services;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.Accounting;
+using OpenCBS.GUI.UserControl;
 
-namespace Octopus.GUI.Configuration
+namespace OpenCBS.GUI.Configuration
 {
     public partial class AddPaymentMethodForm : SweetOkCancelForm
     {

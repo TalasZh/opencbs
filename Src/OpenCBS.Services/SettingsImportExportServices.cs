@@ -1,15 +1,15 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.Products;
-using Octopus.Enums;
-using Octopus.Shared;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.Products;
+using OpenCBS.Enums;
+using OpenCBS.Shared;
 using System.Xml.Serialization;
-using Octopus.CoreDomain.Accounting;
-using Octopus.Shared.Settings;
+using OpenCBS.CoreDomain.Accounting;
+using OpenCBS.Shared.Settings;
 
-namespace Octopus.Services
+namespace OpenCBS.Services
 {
     #region DTOs
     [Serializable]

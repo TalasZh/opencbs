@@ -1,14 +1,14 @@
 
 
-namespace Octopus.GUI
+namespace OpenCBS.GUI
 {
     public partial class AddressUserControl
     {
         private System.Windows.Forms.ComboBox comboBoxDistrict;
         private System.Windows.Forms.Label labelDistrict;
-        private Octopus.GUI.UserControl.TextBoxLimit tbAddress;
+        private OpenCBS.GUI.UserControl.TextBoxLimit tbAddress;
         private System.Windows.Forms.Label labelComments;
-        private Octopus.GUI.UserControl.TextBoxLimit textBoxCity;
+        private OpenCBS.GUI.UserControl.TextBoxLimit textBoxCity;
         private System.Windows.Forms.Label labelCity;
         private System.Windows.Forms.Label labelProvince;
 
@@ -16,9 +16,9 @@ namespace Octopus.GUI
         private System.Windows.Forms.Button buttonSave;
         private System.Windows.Forms.Label labelHomePhone;
         private System.Windows.Forms.Label labelPersonalPhone;
-        private Octopus.GUI.UserControl.TextBoxLimit textBoxHomePhone;
-        private Octopus.GUI.UserControl.TextBoxLimit textBoxPersonalPhone;
-        private Octopus.GUI.UserControl.TextBoxLimit textBoxEMail;
+        private OpenCBS.GUI.UserControl.TextBoxLimit textBoxHomePhone;
+        private OpenCBS.GUI.UserControl.TextBoxLimit textBoxPersonalPhone;
+        private OpenCBS.GUI.UserControl.TextBoxLimit textBoxEMail;
         private System.Windows.Forms.Label labelEMail;
         /// <summary> 
         /// Required designer variable.
@@ -49,21 +49,21 @@ namespace Octopus.GUI
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddressUserControl));
             this.comboBoxDistrict = new System.Windows.Forms.ComboBox();
             this.labelDistrict = new System.Windows.Forms.Label();
-            this.tbAddress = new Octopus.GUI.UserControl.TextBoxLimit();
+            this.tbAddress = new OpenCBS.GUI.UserControl.TextBoxLimit();
             this.labelComments = new System.Windows.Forms.Label();
-            this.textBoxCity = new Octopus.GUI.UserControl.TextBoxLimit();
+            this.textBoxCity = new OpenCBS.GUI.UserControl.TextBoxLimit();
             this.labelCity = new System.Windows.Forms.Label();
             this.labelProvince = new System.Windows.Forms.Label();
             this.comboBoxProvince = new System.Windows.Forms.ComboBox();
             this.buttonSave = new System.Windows.Forms.Button();
             this.labelHomePhone = new System.Windows.Forms.Label();
             this.labelPersonalPhone = new System.Windows.Forms.Label();
-            this.textBoxHomePhone = new Octopus.GUI.UserControl.TextBoxLimit();
-            this.textBoxPersonalPhone = new Octopus.GUI.UserControl.TextBoxLimit();
-            this.textBoxEMail = new Octopus.GUI.UserControl.TextBoxLimit();
+            this.textBoxHomePhone = new OpenCBS.GUI.UserControl.TextBoxLimit();
+            this.textBoxPersonalPhone = new OpenCBS.GUI.UserControl.TextBoxLimit();
+            this.textBoxEMail = new OpenCBS.GUI.UserControl.TextBoxLimit();
             this.labelEMail = new System.Windows.Forms.Label();
             this.labelZipCode = new System.Windows.Forms.Label();
-            this.tbZipCode = new Octopus.GUI.UserControl.TextBoxLimit();
+            this.tbZipCode = new OpenCBS.GUI.UserControl.TextBoxLimit();
             this.label1 = new System.Windows.Forms.Label();
             this.comboBoxHomeType = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
@@ -214,7 +214,7 @@ namespace Octopus.GUI
         }
 
         private System.Windows.Forms.Label labelZipCode;
-        private Octopus.GUI.UserControl.TextBoxLimit tbZipCode;
+        private OpenCBS.GUI.UserControl.TextBoxLimit tbZipCode;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox comboBoxHomeType;
     }

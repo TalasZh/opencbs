@@ -24,10 +24,10 @@
 
 using System;
 using System.Globalization;
-using Octopus.ExceptionsHandler;
-using Octopus.Shared;
+using OpenCBS.ExceptionsHandler;
+using OpenCBS.Shared;
 
-namespace Octopus.Services
+namespace OpenCBS.Services
 {
     [Security()]
 

@@ -6,10 +6,10 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using Octopus.CoreDomain.Export;
-using Octopus.CoreDomain.Export.Fields;
+using OpenCBS.CoreDomain.Export;
+using OpenCBS.CoreDomain.Export.Fields;
 
-namespace Octopus.GUI.Export
+namespace OpenCBS.GUI.Export
 {
     public partial class CustomFieldPropertiesForm : Form
     {

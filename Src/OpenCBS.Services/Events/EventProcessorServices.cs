@@ -1,4 +1,4 @@
-﻿//Octopus MFS is an integrated suite for managing a Micro Finance Institution: clients, contracts, accounting, reporting and risk
+//Octopus MFS is an integrated suite for managing a Micro Finance Institution: clients, contracts, accounting, reporting and risk
 //Copyright © 2006,2007 OCTO Technology & OXUS Development Network
 //
 //This program is free software; you can redistribute it and/or modify
@@ -25,24 +25,24 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.Clients;
-using Octopus.CoreDomain.Contracts.Loans;
-using Octopus.CoreDomain.Events;
-using Octopus.CoreDomain.Events.Loan;
-using Octopus.CoreDomain.Events.Saving;
-using Octopus.CoreDomain.Events.Teller;
-using Octopus.CoreDomain.FundingLines;
-using Octopus.Manager.Accounting;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.Clients;
+using OpenCBS.CoreDomain.Contracts.Loans;
+using OpenCBS.CoreDomain.Events;
+using OpenCBS.CoreDomain.Events.Loan;
+using OpenCBS.CoreDomain.Events.Saving;
+using OpenCBS.CoreDomain.Events.Teller;
+using OpenCBS.CoreDomain.FundingLines;
+using OpenCBS.Manager.Accounting;
 using System.Data.SqlClient;
-using Octopus.Manager.Clients;
-using Octopus.Manager.Contracts;
-using Octopus.Manager.Events;
-using Octopus.Manager.Products;
-using Octopus.Shared;
-using Octopus.CoreDomain.Contracts.Savings;
+using OpenCBS.Manager.Clients;
+using OpenCBS.Manager.Contracts;
+using OpenCBS.Manager.Events;
+using OpenCBS.Manager.Products;
+using OpenCBS.Shared;
+using OpenCBS.CoreDomain.Contracts.Savings;
 
-namespace Octopus.Services.Events
+namespace OpenCBS.Services.Events
 {
     [Serializable]
 	public class EventProcessorServices

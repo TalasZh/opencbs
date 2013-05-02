@@ -1,4 +1,4 @@
-﻿namespace Octopus.Enums
+namespace OpenCBS.Enums
 {
     public enum OProjectStatus
     {

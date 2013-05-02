@@ -25,13 +25,13 @@
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
-using Octopus.CoreDomain;
-using Octopus.Enums;
-using Octopus.ExceptionsHandler;
-using Octopus.Services;
-using Octopus.Shared;
+using OpenCBS.CoreDomain;
+using OpenCBS.Enums;
+using OpenCBS.ExceptionsHandler;
+using OpenCBS.Services;
+using OpenCBS.Shared;
 
-namespace Octopus.GUI.UserControl
+namespace OpenCBS.GUI.UserControl
 {
     public partial class CustomizableFieldsControl : System.Windows.Forms.UserControl
     {

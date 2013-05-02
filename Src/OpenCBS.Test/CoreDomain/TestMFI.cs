@@ -1,8 +1,8 @@
-﻿
-using NUnit.Framework;
-using Octopus.CoreDomain;
 
-namespace Octopus.Test.CoreDomain
+using NUnit.Framework;
+using OpenCBS.CoreDomain;
+
+namespace OpenCBS.Test.CoreDomain
 {
     [TestFixture]
     public class TestMFI

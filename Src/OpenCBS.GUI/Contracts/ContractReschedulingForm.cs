@@ -26,15 +26,15 @@ using System;
 using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
-using Octopus.CoreDomain.Clients;
-using Octopus.CoreDomain.Contracts.Loans;
-using Octopus.CoreDomain.Contracts.Loans.Installments;
-using Octopus.ExceptionsHandler;
-using Octopus.Services;
-using Octopus.Shared;
-using Octopus.GUI.UserControl;
+using OpenCBS.CoreDomain.Clients;
+using OpenCBS.CoreDomain.Contracts.Loans;
+using OpenCBS.CoreDomain.Contracts.Loans.Installments;
+using OpenCBS.ExceptionsHandler;
+using OpenCBS.Services;
+using OpenCBS.Shared;
+using OpenCBS.GUI.UserControl;
 
-namespace Octopus.GUI.Contracts
+namespace OpenCBS.GUI.Contracts
 {
     /// <summary>
     /// Summary description for ContractReschedulingForm.

@@ -1,4 +1,4 @@
-namespace Octopus.GUI.Export
+namespace OpenCBS.GUI.Export
 {
     partial class FieldListUserControl
     {
@@ -43,7 +43,7 @@ namespace Octopus.GUI.Export
             this.olvColumnField = new BrightIdeasSoftware.OLVColumn();
             this.olvColumnHeader = new BrightIdeasSoftware.OLVColumn();
             this.olvColumnLength = new BrightIdeasSoftware.OLVColumn();
-            this.textNumericUserControl1 = new Octopus.GUI.UserControl.TextNumericUserControl();
+            this.textNumericUserControl1 = new OpenCBS.GUI.UserControl.TextNumericUserControl();
             this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.olvSelectedFields)).BeginInit();
             this.SuspendLayout();
@@ -243,7 +243,7 @@ namespace Octopus.GUI.Export
         private System.Windows.Forms.ComboBox comboBoxDefaultFields;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem regroupToolStripMenuItem;
-        private Octopus.GUI.UserControl.TextNumericUserControl textNumericUserControl1;
+        private OpenCBS.GUI.UserControl.TextNumericUserControl textNumericUserControl1;
         private System.Windows.Forms.TextBox textBoxHeader;
         private BrightIdeasSoftware.ObjectListView olvSelectedFields;
         private BrightIdeasSoftware.OLVColumn olvColumnField;

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace Octopus.GUI.Configuration
+namespace OpenCBS.GUI.Configuration
 {
     public partial class PublicHolidaysWaitingForm
     {
@@ -61,7 +61,7 @@ namespace Octopus.GUI.Configuration
             // 
             // panel1
             // 
-            this.panel1.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris;
+            this.panel1.BackgroundImage = global::OpenCBS.GUI.Properties.Resources.theme1_1_fond_gris;
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Controls.Add(this.butCancel);
             this.panel1.Controls.Add(this.buttonUpdate);
@@ -72,7 +72,7 @@ namespace Octopus.GUI.Configuration
             // 
             resources.ApplyResources(this.butCancel, "butCancel");
             this.butCancel.BackColor = System.Drawing.Color.Gainsboro;
-            this.butCancel.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_close;
+            this.butCancel.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_bouton_close;
             this.butCancel.Name = "butCancel";
             this.butCancel.UseVisualStyleBackColor = false;
             this.butCancel.Click += new System.EventHandler(this.butCancel_Click);
@@ -81,7 +81,7 @@ namespace Octopus.GUI.Configuration
             // 
             resources.ApplyResources(this.buttonUpdate, "buttonUpdate");
             this.buttonUpdate.BackColor = System.Drawing.Color.Gainsboro;
-            this.buttonUpdate.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_validity;
+            this.buttonUpdate.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_bouton_validity;
             this.buttonUpdate.Name = "buttonUpdate";
             this.buttonUpdate.UseVisualStyleBackColor = false;
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);

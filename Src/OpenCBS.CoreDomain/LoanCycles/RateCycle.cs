@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Octopus.Shared;
+using OpenCBS.Shared;
 
-namespace Octopus.CoreDomain.LoanCycles
+namespace OpenCBS.CoreDomain.LoanCycles
 {
     public class RateCycle:Cycle
     {

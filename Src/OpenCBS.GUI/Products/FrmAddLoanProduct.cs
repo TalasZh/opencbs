@@ -28,20 +28,20 @@ using System.Drawing;
 using System.Globalization;
 using System.Linq;
 using System.Windows.Forms;
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.Accounting;
-using Octopus.CoreDomain.Contracts.Loans.Installments;
-using Octopus.CoreDomain.FundingLines;
-using Octopus.CoreDomain.LoanCycles;
-using Octopus.CoreDomain.Products;
-using Octopus.Enums;
-using Octopus.ExceptionsHandler;
-using Octopus.GUI.UserControl;
-using Octopus.MultiLanguageRessources;
-using Octopus.Services;
-using Octopus.Shared.Settings;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.Accounting;
+using OpenCBS.CoreDomain.Contracts.Loans.Installments;
+using OpenCBS.CoreDomain.FundingLines;
+using OpenCBS.CoreDomain.LoanCycles;
+using OpenCBS.CoreDomain.Products;
+using OpenCBS.Enums;
+using OpenCBS.ExceptionsHandler;
+using OpenCBS.GUI.UserControl;
+using OpenCBS.MultiLanguageRessources;
+using OpenCBS.Services;
+using OpenCBS.Shared.Settings;
 
-namespace Octopus.GUI.Products
+namespace OpenCBS.GUI.Products
 {
 	/// <summary>
 	/// Description r�sum�e de AddPackage.

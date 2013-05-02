@@ -25,19 +25,19 @@
 using System;
 using System.ComponentModel;
 using System.Windows.Forms;
-using Octopus.CoreDomain.Accounting;
-using Octopus.CoreDomain.Clients;
-using Octopus.Enums;
-using Octopus.ExceptionsHandler;
-using Octopus.GUI.Accounting;
-using Octopus.GUI.Clients;
-using Octopus.Services;
-using Octopus.GUI.UserControl;
-using Octopus.Services.Accounting;
-using Octopus.Services.Currencies;
-using Octopus.Shared;
+using OpenCBS.CoreDomain.Accounting;
+using OpenCBS.CoreDomain.Clients;
+using OpenCBS.Enums;
+using OpenCBS.ExceptionsHandler;
+using OpenCBS.GUI.Accounting;
+using OpenCBS.GUI.Clients;
+using OpenCBS.Services;
+using OpenCBS.GUI.UserControl;
+using OpenCBS.Services.Accounting;
+using OpenCBS.Services.Currencies;
+using OpenCBS.Shared;
 
-namespace Octopus.GUI
+namespace OpenCBS.GUI
 {
     public class AddGuarantorForm : SweetBaseForm
     {

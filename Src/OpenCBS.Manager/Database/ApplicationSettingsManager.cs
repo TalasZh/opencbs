@@ -25,11 +25,11 @@
 using System;
 using System.Data.SqlClient;
 using System.Collections;
-using Octopus.CoreDomain;
-using Octopus.Shared;
-using Octopus.Shared.Settings;
+using OpenCBS.CoreDomain;
+using OpenCBS.Shared;
+using OpenCBS.Shared.Settings;
 
-namespace Octopus.Manager.Database
+namespace OpenCBS.Manager.Database
 {
 	/// <summary>
 	/// General settings database storage manager.

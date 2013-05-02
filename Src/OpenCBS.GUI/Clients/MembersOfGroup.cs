@@ -26,12 +26,12 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
-using Octopus.CoreDomain.Clients;
-using Octopus.CoreDomain.Contracts.Loans;
-using Octopus.Enums;
-using Octopus.Shared;
+using OpenCBS.CoreDomain.Clients;
+using OpenCBS.CoreDomain.Contracts.Loans;
+using OpenCBS.Enums;
+using OpenCBS.Shared;
 
-namespace Octopus.GUI.Clients
+namespace OpenCBS.GUI.Clients
 {
     public partial class MembersOfGroup : Form
     {

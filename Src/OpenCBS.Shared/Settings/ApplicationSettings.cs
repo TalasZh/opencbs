@@ -25,9 +25,9 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using Octopus.Enums;
+using OpenCBS.Enums;
 
-namespace Octopus.Shared.Settings
+namespace OpenCBS.Shared.Settings
 {
     public class ParamChangedEventArgs : EventArgs
     {

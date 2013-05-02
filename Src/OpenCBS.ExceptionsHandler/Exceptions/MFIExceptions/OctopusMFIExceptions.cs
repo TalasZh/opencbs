@@ -1,6 +1,6 @@
-﻿using System;
+using System;
 
-namespace Octopus.ExceptionsHandler
+namespace OpenCBS.ExceptionsHandler
 {
     [Serializable]
     public class OctopusMFIExceptions : OctopusException

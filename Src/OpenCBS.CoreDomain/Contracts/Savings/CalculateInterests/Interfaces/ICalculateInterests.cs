@@ -1,8 +1,8 @@
-﻿using System;
-using Octopus.CoreDomain.Events.Saving;
+using System;
+using OpenCBS.CoreDomain.Events.Saving;
 using System.Collections.Generic;
 
-namespace Octopus.CoreDomain.Contracts.Savings.CalculateInterests.Interfaces
+namespace OpenCBS.CoreDomain.Contracts.Savings.CalculateInterests.Interfaces
 {
     public interface ICalculateInterests
     {

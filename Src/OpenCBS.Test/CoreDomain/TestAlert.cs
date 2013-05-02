@@ -1,11 +1,11 @@
 using System;
 using System.Xml;
-using Octopus.CoreDomain;
+using OpenCBS.CoreDomain;
 using NUnit.Framework;
-using Octopus.Enums;
-using Octopus.Shared;
+using OpenCBS.Enums;
+using OpenCBS.Shared;
 
-namespace Octopus.Test.CoreDomain
+namespace OpenCBS.Test.CoreDomain
 {
 	/// <summary>
 	/// Summary description for TestAlert.

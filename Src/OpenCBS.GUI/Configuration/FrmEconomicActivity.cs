@@ -25,12 +25,12 @@
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
-using Octopus.CoreDomain.EconomicActivities;
-using Octopus.ExceptionsHandler;
-using Octopus.Services;
-using Octopus.GUI.UserControl;
+using OpenCBS.CoreDomain.EconomicActivities;
+using OpenCBS.ExceptionsHandler;
+using OpenCBS.Services;
+using OpenCBS.GUI.UserControl;
 
-namespace Octopus.GUI.Configuration
+namespace OpenCBS.GUI.Configuration
 {
     public partial class FrmEconomicActivity : SweetBaseForm
     {

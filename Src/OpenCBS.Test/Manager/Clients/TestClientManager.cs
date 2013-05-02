@@ -25,18 +25,18 @@
 using System;
 using System.Collections.Generic;
 using NUnit.Framework;
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.Clients;
-using Octopus.CoreDomain.EconomicActivities;
-using Octopus.CoreDomain.SearchResult;
-using Octopus.DatabaseConnection;
-using Octopus.Enums;
-using Octopus.Manager;
-using Octopus.Manager.Clients;
-using Octopus.Shared;
-using Octopus.Shared.Settings;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.Clients;
+using OpenCBS.CoreDomain.EconomicActivities;
+using OpenCBS.CoreDomain.SearchResult;
+using OpenCBS.DatabaseConnection;
+using OpenCBS.Enums;
+using OpenCBS.Manager;
+using OpenCBS.Manager.Clients;
+using OpenCBS.Shared;
+using OpenCBS.Shared.Settings;
 
-namespace Octopus.Test.Manager
+namespace OpenCBS.Test.Manager
 {
 	/// <summary>
 	/// Class containing tests ensuring the validity of ClientManagement methods.

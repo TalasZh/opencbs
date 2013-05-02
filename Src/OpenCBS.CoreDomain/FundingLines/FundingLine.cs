@@ -24,11 +24,11 @@
 
 using System;
 using System.Collections.Generic;
-using Octopus.CoreDomain.Accounting;
-using Octopus.Enums;
-using Octopus.Shared;
+using OpenCBS.CoreDomain.Accounting;
+using OpenCBS.Enums;
+using OpenCBS.Shared;
 
-namespace Octopus.CoreDomain.FundingLines
+namespace OpenCBS.CoreDomain.FundingLines
 {
     public interface IFundingLineLazyLoader
     {

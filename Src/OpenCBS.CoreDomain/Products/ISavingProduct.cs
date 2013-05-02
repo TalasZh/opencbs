@@ -1,9 +1,9 @@
-﻿using Octopus.CoreDomain.Contracts.Loans.Installments;
-using Octopus.Enums;
-using Octopus.Shared;
-using Octopus.CoreDomain.Accounting;
+using OpenCBS.CoreDomain.Contracts.Loans.Installments;
+using OpenCBS.Enums;
+using OpenCBS.Shared;
+using OpenCBS.CoreDomain.Accounting;
 
-namespace Octopus.CoreDomain.Products
+namespace OpenCBS.CoreDomain.Products
 {
     public interface ISavingProduct
     {

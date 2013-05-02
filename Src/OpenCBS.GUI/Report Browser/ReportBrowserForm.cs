@@ -1,9 +1,9 @@
 using System;
-using Octopus.ExceptionsHandler;
-using Octopus.GUI.UserControl;
-using Octopus.Reports;
+using OpenCBS.ExceptionsHandler;
+using OpenCBS.GUI.UserControl;
+using OpenCBS.Reports;
 
-namespace Octopus.GUI.Report_Browser
+namespace OpenCBS.GUI.Report_Browser
 {
     public partial class ReportBrowserForm : SweetForm
     {

@@ -27,14 +27,14 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
 using System.Linq;
-using Octopus.ExceptionsHandler;
-using Octopus.Services;
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.Accounting;
-using Octopus.GUI.UserControl;
-using Octopus.Shared;
+using OpenCBS.ExceptionsHandler;
+using OpenCBS.Services;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.Accounting;
+using OpenCBS.GUI.UserControl;
+using OpenCBS.Shared;
 
-namespace Octopus.GUI.Configuration
+namespace OpenCBS.GUI.Configuration
 {
     public partial class AddTellerForm : SweetOkCancelForm
     {

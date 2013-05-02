@@ -1,8 +1,8 @@
-﻿using System;
+using System;
 using System.Diagnostics;
 
 // TODO: merge this class with the same for savings
-namespace Octopus.CoreDomain.SearchResult
+namespace OpenCBS.CoreDomain.SearchResult
 {
     [Serializable]
     public class CreditSearchResult

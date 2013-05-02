@@ -1,13 +1,13 @@
-﻿
-using NUnit.Framework;
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.Accounting;
-using Octopus.ExceptionsHandler;
-using Octopus.Manager.Accounting;
-using Octopus.Services.Accounting;
-using Octopus.Test.Manager;
 
-namespace Octopus.Test.Services
+using NUnit.Framework;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.Accounting;
+using OpenCBS.ExceptionsHandler;
+using OpenCBS.Manager.Accounting;
+using OpenCBS.Services.Accounting;
+using OpenCBS.Test.Manager;
+
+namespace OpenCBS.Test.Services
 {
     [TestFixture]
     public class TestExchangeRateServices : BaseManagerTest

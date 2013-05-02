@@ -1,9 +1,9 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Octopus.CoreDomain.Export.Fields
+namespace OpenCBS.CoreDomain.Export.Fields
 {
     [Serializable]
     public class ComplexField : IField

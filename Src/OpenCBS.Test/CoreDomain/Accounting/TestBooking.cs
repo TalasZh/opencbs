@@ -1,8 +1,8 @@
 using System;
 using NUnit.Framework;
-using Octopus.CoreDomain.Accounting;
+using OpenCBS.CoreDomain.Accounting;
 
-namespace Octopus.Test.CoreDomain
+namespace OpenCBS.Test.CoreDomain
 {
 	/// <summary>
 	/// Description of TestBooking.

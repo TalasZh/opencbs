@@ -23,11 +23,11 @@
 // Technical contact email : tech(at)octopusnetwork.org 
 
 using NUnit.Framework;
-using Octopus.DatabaseConnection;
-using Octopus.Shared;
+using OpenCBS.DatabaseConnection;
+using OpenCBS.Shared;
 using System.Data;
 
-namespace Octopus.Test.Shared
+namespace OpenCBS.Test.Shared
 {
 	/// <summary>
 	/// Summary description for TestConnectionManagement.

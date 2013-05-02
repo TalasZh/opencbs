@@ -25,15 +25,15 @@
 using System;
 using System.Drawing;
 using System.Windows.Forms;
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.Clients;
-using Octopus.CoreDomain.Contracts.Loans;
-using Octopus.Services;
-using Octopus.Shared;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.Clients;
+using OpenCBS.CoreDomain.Contracts.Loans;
+using OpenCBS.Services;
+using OpenCBS.Shared;
 using System.Linq;
-using Octopus.MultiLanguageRessources;
+using OpenCBS.MultiLanguageRessources;
 
-namespace Octopus.GUI.Clients
+namespace OpenCBS.GUI.Clients
 {
     public partial class LoanSharesForm : Form
     {

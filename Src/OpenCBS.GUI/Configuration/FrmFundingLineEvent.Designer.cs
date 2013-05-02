@@ -1,4 +1,4 @@
-namespace Octopus.GUI.Configuration
+namespace OpenCBS.GUI.Configuration
 {
    partial class FrmFundingLineEvent
    {

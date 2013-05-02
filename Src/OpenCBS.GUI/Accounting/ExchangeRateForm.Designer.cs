@@ -2,10 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows.Forms;
-using Octopus.GUI.UserControl;
+using OpenCBS.GUI.UserControl;
 using ZedGraph;
 
-namespace Octopus.GUI.Accounting
+namespace OpenCBS.GUI.Accounting
 {
     public partial class ExchangeRateForm
     {
@@ -55,7 +55,7 @@ namespace Octopus.GUI.Accounting
             this.comboBoxCurrencies = new System.Windows.Forms.ComboBox();
             this.labelExternalCurrency = new System.Windows.Forms.Label();
             this.mCRate = new System.Windows.Forms.MonthCalendar();
-            this.textBoxRateValue = new Octopus.GUI.UserControl.TextDecimalNumericUserControl();
+            this.textBoxRateValue = new OpenCBS.GUI.UserControl.TextDecimalNumericUserControl();
             this.labelInternalCurrency = new System.Windows.Forms.Label();
             this.lbRateDetails = new System.Windows.Forms.Label();
             this.lvExchangeRate = new System.Windows.Forms.ListView();

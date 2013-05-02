@@ -1,4 +1,4 @@
-namespace Octopus.GUI.Export
+namespace OpenCBS.GUI.Export
 {
     partial class ComplexFieldPropertiesForm
     {
@@ -29,7 +29,7 @@ namespace Octopus.GUI.Export
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ComplexFieldPropertiesForm));
-            this.fieldListUserControl = new Octopus.GUI.Export.FieldListUserControl();
+            this.fieldListUserControl = new OpenCBS.GUI.Export.FieldListUserControl();
             this.labelName = new System.Windows.Forms.Label();
             this.textBoxName = new System.Windows.Forms.TextBox();
             this.buttonSave = new System.Windows.Forms.Button();

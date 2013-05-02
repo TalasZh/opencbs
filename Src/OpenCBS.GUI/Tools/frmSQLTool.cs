@@ -27,13 +27,13 @@ using System.IO;
 using System.Windows.Forms;
 using System.Drawing;
 using System.Text;
-using Octopus.MultiLanguageRessources;
-using Octopus.Services;
-using Octopus.Shared;
-using Octopus.Shared.Settings;
+using OpenCBS.MultiLanguageRessources;
+using OpenCBS.Services;
+using OpenCBS.Shared;
+using OpenCBS.Shared.Settings;
 using SyntaxHighlighter;
 
-namespace Octopus.GUI.Tools
+namespace OpenCBS.GUI.Tools
 {
     public partial class frmSQLTool : Form
     {

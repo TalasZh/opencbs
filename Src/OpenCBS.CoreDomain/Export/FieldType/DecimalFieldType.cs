@@ -1,11 +1,11 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Octopus.Shared;
+using OpenCBS.Shared;
 using System.Globalization;
 
-namespace Octopus.CoreDomain.Export.FieldType
+namespace OpenCBS.CoreDomain.Export.FieldType
 {
     [Serializable]
     public class DecimalFieldType : IFieldType

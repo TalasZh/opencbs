@@ -2,9 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using NUnit.Framework;
-using Octopus.CoreDomain;
+using OpenCBS.CoreDomain;
 
-namespace Octopus.Test.CoreDomain
+namespace OpenCBS.Test.CoreDomain
 {
     [TestFixture]
     public class TestAmountCycleStock

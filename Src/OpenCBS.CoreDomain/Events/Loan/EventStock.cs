@@ -1,5 +1,5 @@
 //Octopus MFS is an integrated suite for managing a Micro Finance Institution: clients, contracts, accounting, reporting and risk
-//Copyright © 2006,2007 OCTO Technology & OXUS Development Network
+//Copyright ï¿½ 2006,2007 OCTO Technology & OXUS Development Network
 //
 //This program is free software; you can redistribute it and/or modify
 //it under the terms of the GNU Lesser General Public License as published by
@@ -26,11 +26,11 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using Octopus.CoreDomain.Events.Loan;
-using Octopus.CoreDomain.Events.Saving;
-using Octopus.CoreDomain.Events.Teller;
+using OpenCBS.CoreDomain.Events.Loan;
+using OpenCBS.CoreDomain.Events.Saving;
+using OpenCBS.CoreDomain.Events.Teller;
 
-namespace Octopus.CoreDomain.Events
+namespace OpenCBS.CoreDomain.Events
 {
     /// <summary>
     /// Summary description for EventStock.

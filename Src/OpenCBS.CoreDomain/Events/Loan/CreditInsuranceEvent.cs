@@ -1,11 +1,11 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Octopus.CoreDomain.Events.Loan;
-using Octopus.Shared;
+using OpenCBS.CoreDomain.Events.Loan;
+using OpenCBS.Shared;
 
-namespace Octopus.CoreDomain.Events
+namespace OpenCBS.CoreDomain.Events
 {
     public class CreditInsuranceEvent:Event
     {

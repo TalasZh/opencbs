@@ -25,14 +25,14 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.Accounting;
-using Octopus.ExceptionsHandler;
-using Octopus.GUI.UserControl;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.Accounting;
+using OpenCBS.ExceptionsHandler;
+using OpenCBS.GUI.UserControl;
 using System.Windows.Forms;
-using Octopus.Services;
+using OpenCBS.Services;
 
-namespace Octopus.GUI.Configuration
+namespace OpenCBS.GUI.Configuration
 {
     public partial class AddBranchForm : SweetOkCancelForm
     {

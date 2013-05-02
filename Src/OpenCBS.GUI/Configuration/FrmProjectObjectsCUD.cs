@@ -1,8 +1,8 @@
 using System;
 using System.Windows.Forms;
-using Octopus.CoreDomain;
+using OpenCBS.CoreDomain;
 
-namespace Octopus.GUI
+namespace OpenCBS.GUI
 {
     public partial class FrmProjectObjectsCUD : Form
     {

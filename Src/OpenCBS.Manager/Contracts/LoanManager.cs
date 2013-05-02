@@ -1,4 +1,4 @@
-﻿//Octopus MFS is an integrated suite for managing a Micro Finance Institution: clients, contracts, accounting, reporting and risk
+//Octopus MFS is an integrated suite for managing a Micro Finance Institution: clients, contracts, accounting, reporting and risk
 //Copyright © 2006,2007 OCTO Technology & OXUS Development Network
 //
 //This program is free software; you can redistribute it and/or modify
@@ -26,27 +26,27 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.Accounting;
-using Octopus.CoreDomain.Alerts;
-using Octopus.CoreDomain.Clients;
-using Octopus.CoreDomain.Contracts.Collaterals;
-using Octopus.CoreDomain.Contracts.Loans;
-using Octopus.CoreDomain.Contracts.Loans.Installments;
-using Octopus.CoreDomain.Contracts.Loans.LoanRepayment;
-using Octopus.CoreDomain.Events;
-using Octopus.CoreDomain.Events.Loan;
-using Octopus.CoreDomain.SearchResult;
-using Octopus.Enums;
-using Octopus.Manager.Clients;
-using Octopus.Manager.Products;
-using Octopus.Manager.Events;
-using Octopus.Manager.QueryForObject;
-using Octopus.Shared;
-using Octopus.Shared.Settings;
-using Octopus.CoreDomain.Products.Collaterals;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.Accounting;
+using OpenCBS.CoreDomain.Alerts;
+using OpenCBS.CoreDomain.Clients;
+using OpenCBS.CoreDomain.Contracts.Collaterals;
+using OpenCBS.CoreDomain.Contracts.Loans;
+using OpenCBS.CoreDomain.Contracts.Loans.Installments;
+using OpenCBS.CoreDomain.Contracts.Loans.LoanRepayment;
+using OpenCBS.CoreDomain.Events;
+using OpenCBS.CoreDomain.Events.Loan;
+using OpenCBS.CoreDomain.SearchResult;
+using OpenCBS.Enums;
+using OpenCBS.Manager.Clients;
+using OpenCBS.Manager.Products;
+using OpenCBS.Manager.Events;
+using OpenCBS.Manager.QueryForObject;
+using OpenCBS.Shared;
+using OpenCBS.Shared.Settings;
+using OpenCBS.CoreDomain.Products.Collaterals;
 
-namespace Octopus.Manager.Contracts
+namespace OpenCBS.Manager.Contracts
 {
     /// <summary>
     /// CreditContractManagement contains all methods relative to selecting, inserting, updating

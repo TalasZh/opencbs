@@ -1,8 +1,8 @@
-﻿using System;
-using Octopus.Enums;
-using Octopus.MultiLanguageRessources;
+using System;
+using OpenCBS.Enums;
+using OpenCBS.MultiLanguageRessources;
 
-namespace Octopus.CoreDomain.Accounting
+namespace OpenCBS.CoreDomain.Accounting
 {
     public class PaymentMethod
     {

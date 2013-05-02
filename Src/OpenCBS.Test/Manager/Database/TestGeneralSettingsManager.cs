@@ -25,11 +25,11 @@
 using System;
 using System.Collections;
 using NUnit.Framework;
-using Octopus.Enums;
-using Octopus.Manager.Database;
-using Octopus.Shared.Settings;
+using OpenCBS.Enums;
+using OpenCBS.Manager.Database;
+using OpenCBS.Shared.Settings;
 
-namespace Octopus.Test.Manager.Database
+namespace OpenCBS.Test.Manager.Database
 {
     /// <summary>
     /// Summary description for TestDatabaseParametersManagement.

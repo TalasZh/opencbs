@@ -27,20 +27,20 @@ using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using NUnit.Framework;
 using NUnit.Mocks;
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.Products;
-using Octopus.Enums;
-using Octopus.Manager;
-using Octopus.Manager.Products;
-using Octopus.Services;
-using Octopus.ExceptionsHandler;
-using Octopus.Shared;
-using Octopus.Shared.Settings;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.Products;
+using OpenCBS.Enums;
+using OpenCBS.Manager;
+using OpenCBS.Manager.Products;
+using OpenCBS.Services;
+using OpenCBS.ExceptionsHandler;
+using OpenCBS.Shared;
+using OpenCBS.Shared.Settings;
 
-namespace Octopus.Test.Services
+namespace OpenCBS.Test.Services
 {
 	/// <summary>
-	/// Description résumée de TestProductServices.
+	/// Description rï¿½sumï¿½e de TestProductServices.
 	/// </summary>
 	/// 
 	[TestFixture]

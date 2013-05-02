@@ -29,9 +29,9 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using Microsoft.Win32;
-using Octopus.Enums;
+using OpenCBS.Enums;
 
-namespace Octopus.Shared.Settings
+namespace OpenCBS.Shared.Settings
 {
 	[Serializable]
 	public static class UserSettings
@@ -58,7 +58,7 @@ namespace Octopus.Shared.Settings
 
 	    public static string ApplicationPath
 	    {
-	        get { return Path.Combine(ApplicationDirectory, "Octopus.GUI.exe"); }
+	        get { return Path.Combine(ApplicationDirectory, "OpenCBS.GUI.exe"); }
 	    }
 
 	    public static string ApplicationDirectory

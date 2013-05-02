@@ -1,7 +1,7 @@
-﻿using Octopus.CoreDomain.Events.Loan;
-using Octopus.Shared;
+using OpenCBS.CoreDomain.Events.Loan;
+using OpenCBS.Shared;
 
-namespace Octopus.CoreDomain.Events
+namespace OpenCBS.CoreDomain.Events
 {
     public class LoanEntryFeeEvent: Event
     {

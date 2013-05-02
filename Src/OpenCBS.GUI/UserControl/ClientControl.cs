@@ -1,12 +1,12 @@
 using System.Windows.Forms;
 using System.Diagnostics;
-using Octopus.CoreDomain.Clients;
-using Octopus.CoreDomain.Products;
-using Octopus.Enums;
-using Octopus.MultiLanguageRessources;
-using Octopus.Services;
+using OpenCBS.CoreDomain.Clients;
+using OpenCBS.CoreDomain.Products;
+using OpenCBS.Enums;
+using OpenCBS.MultiLanguageRessources;
+using OpenCBS.Services;
 
-namespace Octopus.GUI.UserControl
+namespace OpenCBS.GUI.UserControl
 {
     public partial class ClientControl : System.Windows.Forms.UserControl
     {

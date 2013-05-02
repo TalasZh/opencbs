@@ -36,7 +36,7 @@
 	
 */
 
-namespace Octopus.GUI.UserControl
+namespace OpenCBS.GUI.UserControl
 {
 	using System;
 	using System.ComponentModel;

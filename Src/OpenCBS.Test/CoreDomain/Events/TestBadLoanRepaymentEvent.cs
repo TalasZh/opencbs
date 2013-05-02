@@ -24,11 +24,11 @@
 
 using System;
 using NUnit.Framework;
-using Octopus.CoreDomain;
-using Octopus.Enums;
-using Octopus.CoreDomain.Events;
+using OpenCBS.CoreDomain;
+using OpenCBS.Enums;
+using OpenCBS.CoreDomain.Events;
 
-namespace Octopus.Test.CoreDomain
+namespace OpenCBS.Test.CoreDomain
 {
 	/// <summary>
 	/// Summary description for TestBadLoanRepaymentEvent.

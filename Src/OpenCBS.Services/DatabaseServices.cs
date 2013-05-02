@@ -1,5 +1,5 @@
 //Octopus MFS is an integrated suite for managing a Micro Finance Institution: clients, contracts, accounting, reporting and risk
-//Copyright © 2006,2007 OCTO Technology & OXUS Development Network
+//Copyright ï¿½ 2006,2007 OCTO Technology & OXUS Development Network
 //
 //This program is free software; you can redistribute it and/or modify
 //it under the terms of the GNU Lesser General Public License as published by
@@ -30,16 +30,16 @@ using System.IO;
 using System.Windows.Forms;
 using System.Xml;
 using Moletrator.SQLDocumentor;
-using Octopus.CoreDomain.Database;
-using Octopus.DatabaseConnection;
-using Octopus.ExceptionsHandler;
-using Octopus.Manager;
-using Octopus.Manager.Database;
-using Octopus.Shared;
-using Octopus.Shared.Settings;
-using Octopus.Shared.Settings.Remote;
+using OpenCBS.CoreDomain.Database;
+using OpenCBS.DatabaseConnection;
+using OpenCBS.ExceptionsHandler;
+using OpenCBS.Manager;
+using OpenCBS.Manager.Database;
+using OpenCBS.Shared;
+using OpenCBS.Shared.Settings;
+using OpenCBS.Shared.Settings.Remote;
 
-namespace Octopus.Services
+namespace OpenCBS.Services
 {
     public class DatabaseServices : BaseServices
     {
@@ -112,7 +112,7 @@ namespace Octopus.Services
             string dest = Path.GetTempFileName();
             StreamReader sr = new StreamReader(src);
             string dllPath = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
-            dllPath = Path.Combine(dllPath, "Octopus.Stringifier.dll");
+            dllPath = Path.Combine(dllPath, "OpenCBS.Stringifier.dll");
             string body = sr.ReadToEnd();
             sr.Close();
             body = string.Format(body, database, dllPath);
@@ -151,7 +151,7 @@ namespace Octopus.Services
                 }
                 catch (Exception e)
                 {
-                    Debug.WriteLine("Cannot load Octopus.Stringifier.dll: " + e.Message);
+                    Debug.WriteLine("Cannot load OpenCBS.Stringifier.dll: " + e.Message);
                 }
 
                 connection.Close();
@@ -202,7 +202,7 @@ namespace Octopus.Services
                 }
                 catch (Exception e)
                 {
-                    Debug.WriteLine("Cannot load Octopus.Stringifier.dll: " + e.Message);
+                    Debug.WriteLine("Cannot load OpenCBS.Stringifier.dll: " + e.Message);
                 }
 
                 return true;

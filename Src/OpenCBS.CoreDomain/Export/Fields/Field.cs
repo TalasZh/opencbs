@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Octopus.CoreDomain.Export.FieldType;
+using OpenCBS.CoreDomain.Export.FieldType;
 
-namespace Octopus.CoreDomain.Export.Fields
+namespace OpenCBS.CoreDomain.Export.Fields
 {
     [Serializable]
     public class Field : IField

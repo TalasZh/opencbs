@@ -1,6 +1,6 @@
-using Octopus.GUI.UserControl;
+using OpenCBS.GUI.UserControl;
 
-namespace Octopus.GUI.Configuration
+namespace OpenCBS.GUI.Configuration
 {
     partial class FrmRoles
     {
@@ -82,13 +82,13 @@ namespace Octopus.GUI.Configuration
             // 
             // splitContainer2.Panel1
             // 
-            this.splitContainer2.Panel1.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris;
+            this.splitContainer2.Panel1.BackgroundImage = global::OpenCBS.GUI.Properties.Resources.theme1_1_fond_gris;
             resources.ApplyResources(this.splitContainer2.Panel1, "splitContainer2.Panel1");
             this.splitContainer2.Panel1.Controls.Add(this.splitContainerLeft);
             // 
             // splitContainer2.Panel2
             // 
-            this.splitContainer2.Panel2.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris;
+            this.splitContainer2.Panel2.BackgroundImage = global::OpenCBS.GUI.Properties.Resources.theme1_1_fond_gris;
             resources.ApplyResources(this.splitContainer2.Panel2, "splitContainer2.Panel2");
             this.splitContainer2.Panel2.Controls.Add(this.tabControlActions);
             // 
@@ -104,7 +104,7 @@ namespace Octopus.GUI.Configuration
             // 
             // splitContainerLeft.Panel2
             // 
-            this.splitContainerLeft.Panel2.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris;
+            this.splitContainerLeft.Panel2.BackgroundImage = global::OpenCBS.GUI.Properties.Resources.theme1_1_fond_gris;
             resources.ApplyResources(this.splitContainerLeft.Panel2, "splitContainerLeft.Panel2");
             this.splitContainerLeft.Panel2.Controls.Add(this.stateLabel);
             this.splitContainerLeft.Panel2.Controls.Add(this.btnNew);

@@ -25,7 +25,7 @@
 using System.Collections;
 using System.Resources;
 
-namespace Octopus.MultiLanguageRessources
+namespace OpenCBS.MultiLanguageRessources
 {
     public enum Ressource
     {
@@ -119,7 +119,7 @@ namespace Octopus.MultiLanguageRessources
             ResourceManager rm = (ResourceManager) _ressourceManagers[pRessourceName];
             if (rm == null)
             {
-                rm = new ResourceManager("Octopus.MultiLanguageRessources.resx." + pRessourceName, typeof(MultiLanguageStrings).Assembly);
+                rm = new ResourceManager("OpenCBS.MultiLanguageRessources.resx." + pRessourceName, typeof(MultiLanguageStrings).Assembly);
                 _ressourceManagers.Add(pRessourceName, rm);
             }
             return rm.GetString(pName);
@@ -130,7 +130,7 @@ namespace Octopus.MultiLanguageRessources
             ResourceManager rm = (ResourceManager)_ressourceManagers[res];
             if (rm == null)
             {
-                rm = new ResourceManager("Octopus.MultiLanguageRessources.resx." + res, typeof(MultiLanguageStrings).Assembly);
+                rm = new ResourceManager("OpenCBS.MultiLanguageRessources.resx." + res, typeof(MultiLanguageStrings).Assembly);
                 _ressourceManagers.Add(res, rm);
             }
             return rm.GetString(key);

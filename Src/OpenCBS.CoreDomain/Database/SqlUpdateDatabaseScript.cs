@@ -1,5 +1,5 @@
-﻿
-namespace Octopus.CoreDomain.Database
+
+namespace OpenCBS.CoreDomain.Database
 {
     public class SqlUpdateDatabaseScript
     {

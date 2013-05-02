@@ -1,12 +1,12 @@
-﻿
+
 using NUnit.Framework;
 using NUnit.Mocks;
-using Octopus.Manager;
-using Octopus.Services;
-using Octopus.CoreDomain;
-using Octopus.ExceptionsHandler;
+using OpenCBS.Manager;
+using OpenCBS.Services;
+using OpenCBS.CoreDomain;
+using OpenCBS.ExceptionsHandler;
 
-namespace Octopus.Test.Services
+namespace OpenCBS.Test.Services
 {
     [TestFixture]
     public class TestMFIServices

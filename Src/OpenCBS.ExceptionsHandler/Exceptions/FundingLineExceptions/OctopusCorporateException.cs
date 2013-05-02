@@ -1,7 +1,7 @@
-﻿using System;
+using System;
 using System.Runtime.Serialization;
 
-namespace Octopus.ExceptionsHandler.Exceptions.FundingLineExceptions
+namespace OpenCBS.ExceptionsHandler.Exceptions.FundingLineExceptions
 {
 
     [Serializable]

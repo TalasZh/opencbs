@@ -24,13 +24,13 @@
 
 using System;
 using System.Collections.Generic;
-using Octopus.CoreDomain;
+using OpenCBS.CoreDomain;
 using NUnit.Framework;
-using Octopus.CoreDomain.Clients;
-using Octopus.Shared;
-using Octopus.Enums;
+using OpenCBS.CoreDomain.Clients;
+using OpenCBS.Shared;
+using OpenCBS.Enums;
 
-namespace Octopus.Test.CoreDomain
+namespace OpenCBS.Test.CoreDomain
 {
 	/// <summary>
 	/// Tests for domain object
@@ -124,8 +124,8 @@ namespace Octopus.Test.CoreDomain
 		[Test]
 		public void TestIfAddressIsCorrectlySetAndRetrieved()
 		{
-			testGroup.Address = "50 avenue des Champs Elysées";
-			Assert.AreEqual("50 avenue des Champs Elysées",testGroup.Address);
+			testGroup.Address = "50 avenue des Champs Elysï¿½es";
+			Assert.AreEqual("50 avenue des Champs Elysï¿½es",testGroup.Address);
 		}
 
 		[Test]
@@ -150,8 +150,8 @@ namespace Octopus.Test.CoreDomain
 		[Test]
 		public void TestIfSecondaryAddressIsCorrectlySetAndRetrieved()
 		{
-			testGroup.SecondaryAddress = "50 avenue des Champs Elysées";
-			Assert.AreEqual("50 avenue des Champs Elysées",testGroup.SecondaryAddress);
+			testGroup.SecondaryAddress = "50 avenue des Champs Elysï¿½es";
+			Assert.AreEqual("50 avenue des Champs Elysï¿½es",testGroup.SecondaryAddress);
 		}
 
 		[Test]

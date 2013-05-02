@@ -5,14 +5,14 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Security.Cryptography;
 using System.Text;
-using Octopus.CoreDomain.Online;
-using Octopus.Shared.Settings;
-using Octopus.CoreDomain;
+using OpenCBS.CoreDomain.Online;
+using OpenCBS.Shared.Settings;
+using OpenCBS.CoreDomain;
 using System.IO;
-using Octopus.Shared.Settings.Remote;
-using Octopus.Shared;
+using OpenCBS.Shared.Settings.Remote;
+using OpenCBS.Shared;
 
-namespace Octopus.DatabaseConnection
+namespace OpenCBS.DatabaseConnection
 {
     [Serializable]
     public class Remoting : IConnectionManager
@@ -90,7 +90,7 @@ namespace Octopus.DatabaseConnection
             {
                 // Throw exeption
                 // FIXME
-                Log.RemotingServiceLogger.Error("Les User/Pass octo donnée ne sont pas valide");
+                Log.RemotingServiceLogger.Error("Les User/Pass octo donnï¿½e ne sont pas valide");
                 throw new Exception("messageBoxUserPasswordIncorrect.Text");
             }
 
@@ -127,7 +127,7 @@ namespace Octopus.DatabaseConnection
             // Set the connection in the connectionManager
             Log.RemotingServiceLogger.DebugFormat("ConnectionString: {0}", connection.ConnectionString);
             this.SetConnection(connection);
-            //Octopus.DatabaseConnection.ConnectionManager.GetInstance().SetConnection(connection);
+            //OpenCBS.DatabaseConnection.ConnectionManager.GetInstance().SetConnection(connection);
 
             Log.RemotingServiceUsersLogger.InfoFormat(@"[CONNECTION {3}\{4}] Users, branch name:{0} login:{1}, connected \n \t Connection string :{2}", pOctoAccount, pOctoLogin, connectionString, pComputerName, pLoginName);
             Log.RemotingServiceLogger.InfoFormat(@"[CONNECTION {3}\{4}] Users, branch name:{0} login:{1}, connected \n \t Connection string :{2}", pOctoAccount, pOctoLogin, connectionString, pComputerName, pLoginName);

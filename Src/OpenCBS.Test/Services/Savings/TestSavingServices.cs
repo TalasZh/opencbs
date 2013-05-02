@@ -25,26 +25,26 @@
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using NUnit.Framework;
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.Clients;
-using Octopus.CoreDomain.Contracts.Loans.Installments;
-using Octopus.CoreDomain.Contracts.Savings;
-using Octopus.CoreDomain.Products;
-using Octopus.Enums;
-using Octopus.ExceptionsHandler.Exceptions.SavingExceptions;
-using Octopus.Manager.Contracts;
-using Octopus.Services;
-using Octopus.Shared;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.Clients;
+using OpenCBS.CoreDomain.Contracts.Loans.Installments;
+using OpenCBS.CoreDomain.Contracts.Savings;
+using OpenCBS.CoreDomain.Products;
+using OpenCBS.Enums;
+using OpenCBS.ExceptionsHandler.Exceptions.SavingExceptions;
+using OpenCBS.Manager.Contracts;
+using OpenCBS.Services;
+using OpenCBS.Shared;
 using NUnit.Mocks;
-using Octopus.Manager.Events;
-using Octopus.Shared.Settings;
-using Octopus.CoreDomain.Accounting;
+using OpenCBS.Manager.Events;
+using OpenCBS.Shared.Settings;
+using OpenCBS.CoreDomain.Accounting;
 using System;
 
-namespace Octopus.Test.Services.Savings
+namespace OpenCBS.Test.Services.Savings
 {
 	/// <summary>
-	/// Description résumée de TestSavingServices.
+	/// Description rï¿½sumï¿½e de TestSavingServices.
 	/// </summary>
 	[TestFixture]
 	public class TestSavingServices

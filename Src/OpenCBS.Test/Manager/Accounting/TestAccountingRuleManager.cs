@@ -1,16 +1,16 @@
-﻿using NUnit.Framework;
-using Octopus.CoreDomain.Accounting;
-using Octopus.CoreDomain.EconomicActivities;
-using Octopus.CoreDomain.Events;
-using Octopus.Manager.Accounting;
-using Octopus.Enums;
-using Octopus.Manager.Events;
-using Octopus.Manager.Products;
-using Octopus.Manager;
-using Octopus.CoreDomain.Products;
-using Octopus.CoreDomain.FundingLines;
+using NUnit.Framework;
+using OpenCBS.CoreDomain.Accounting;
+using OpenCBS.CoreDomain.EconomicActivities;
+using OpenCBS.CoreDomain.Events;
+using OpenCBS.Manager.Accounting;
+using OpenCBS.Enums;
+using OpenCBS.Manager.Events;
+using OpenCBS.Manager.Products;
+using OpenCBS.Manager;
+using OpenCBS.CoreDomain.Products;
+using OpenCBS.CoreDomain.FundingLines;
 
-namespace Octopus.Test.Manager.Accounting
+namespace OpenCBS.Test.Manager.Accounting
 {
     [TestFixture]
     public class TestAccountingRuleManager : BaseManagerTest

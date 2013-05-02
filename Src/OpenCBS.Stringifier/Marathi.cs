@@ -1,6 +1,6 @@
-﻿using System;
+using System;
 
-namespace Octopus.Stringifier
+namespace OpenCBS.Stringifier
 {
     public class Marathi : IStringifiable
     {

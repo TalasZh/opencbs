@@ -3,11 +3,11 @@ using System.Diagnostics;
 using System.Linq;
 using System.Windows.Forms;
 using BrightIdeasSoftware;
-using Octopus.CoreDomain;
-using Octopus.GUI.UserControl;
-using Octopus.Services;
+using OpenCBS.CoreDomain;
+using OpenCBS.GUI.UserControl;
+using OpenCBS.Services;
 
-namespace Octopus.GUI.Configuration
+namespace OpenCBS.GUI.Configuration
 {
     public partial class EditUserForm : SweetOkCancelForm
     {

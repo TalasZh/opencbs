@@ -23,12 +23,12 @@
 // Technical contact email : tech(at)octopusnetwork.org 
 
 using System;
-using Octopus.CoreDomain.Accounting;
-using Octopus.CoreDomain.EconomicActivities;
-using Octopus.CoreDomain.Products;
-using Octopus.Enums;
+using OpenCBS.CoreDomain.Accounting;
+using OpenCBS.CoreDomain.EconomicActivities;
+using OpenCBS.CoreDomain.Products;
+using OpenCBS.Enums;
 
-namespace Octopus.CoreDomain.Events.Loan
+namespace OpenCBS.CoreDomain.Events.Loan
 {
     [Serializable]
 	public abstract class Event

@@ -1,7 +1,7 @@
 using System;
-using Octopus.Shared;
+using OpenCBS.Shared;
 
-namespace Octopus.GUI
+namespace OpenCBS.GUI
 {
     public class DecimalValueRange
     {

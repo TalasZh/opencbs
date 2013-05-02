@@ -25,14 +25,14 @@
 using System;
 using System.Data;
 using NUnit.Framework;
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.Accounting;
-using Octopus.Enums;
-using Octopus.Manager.Accounting;
-using Octopus.Manager.Currencies;
-using Octopus.Shared;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.Accounting;
+using OpenCBS.Enums;
+using OpenCBS.Manager.Accounting;
+using OpenCBS.Manager.Currencies;
+using OpenCBS.Shared;
 
-namespace Octopus.Test.Manager.Accounting
+namespace OpenCBS.Test.Manager.Accounting
 {
     [TestFixture]
     public class TestAccountingTransactionManager : BaseManagerTest

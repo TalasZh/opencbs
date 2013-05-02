@@ -25,15 +25,15 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Octopus.CoreDomain.Contracts.Loans.Installments;
-using Octopus.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.FeesRepayment;
-using Octopus.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.InterestRepayment;
-using Octopus.CoreDomain.Events;
-using Octopus.Enums;
-using Octopus.Shared;
-using Octopus.Shared.Settings;
+using OpenCBS.CoreDomain.Contracts.Loans.Installments;
+using OpenCBS.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.FeesRepayment;
+using OpenCBS.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.InterestRepayment;
+using OpenCBS.CoreDomain.Events;
+using OpenCBS.Enums;
+using OpenCBS.Shared;
+using OpenCBS.Shared.Settings;
 
-namespace Octopus.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments
+namespace OpenCBS.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments
 {
     /// <summary>
     /// Summary description for CalculateInstallments.

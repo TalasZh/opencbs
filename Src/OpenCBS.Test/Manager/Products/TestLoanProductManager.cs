@@ -23,22 +23,22 @@
 // Technical contact email : tech(at)octopusnetwork.org 
 
 using System.Collections.Generic;
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.Accounting;
-using Octopus.CoreDomain.Clients;
-using Octopus.CoreDomain.Contracts.Loans;
-using Octopus.CoreDomain.Contracts.Loans.Installments;
-using Octopus.CoreDomain.Contracts.Loans.LoanRepayment;
-using Octopus.CoreDomain.FundingLines;
-using Octopus.CoreDomain.Products;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.Accounting;
+using OpenCBS.CoreDomain.Clients;
+using OpenCBS.CoreDomain.Contracts.Loans;
+using OpenCBS.CoreDomain.Contracts.Loans.Installments;
+using OpenCBS.CoreDomain.Contracts.Loans.LoanRepayment;
+using OpenCBS.CoreDomain.FundingLines;
+using OpenCBS.CoreDomain.Products;
 using NUnit.Framework;
-using Octopus.Enums;
-using Octopus.Manager.Products;
+using OpenCBS.Enums;
+using OpenCBS.Manager.Products;
 
-namespace Octopus.Test.Manager.Products
+namespace OpenCBS.Test.Manager.Products
 {
     /// <summary>
-    /// Description résumée de TestProductManager.
+    /// Description rï¿½sumï¿½e de TestProductManager.
     /// </summary>
     [TestFixture]
     public class TestLoanProductManager : BaseManagerTest

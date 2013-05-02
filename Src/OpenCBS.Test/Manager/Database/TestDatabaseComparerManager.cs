@@ -1,8 +1,8 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Octopus.Test.Manager.Database
+namespace OpenCBS.Test.Manager.Database
 {
     class TestDatabaseComparerManager
     {

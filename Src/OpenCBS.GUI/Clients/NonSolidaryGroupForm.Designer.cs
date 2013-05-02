@@ -1,6 +1,6 @@
-using Octopus.GUI.UserControl;
+using OpenCBS.GUI.UserControl;
 
-namespace Octopus.GUI.Clients
+namespace OpenCBS.GUI.Clients
 {
     partial class NonSolidaryGroupForm
     {
@@ -50,7 +50,7 @@ namespace Octopus.GUI.Clients
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelNSGControls = new System.Windows.Forms.Panel();
-            this.btnPrint = new Octopus.GUI.UserControl.PrintButton();
+            this.btnPrint = new OpenCBS.GUI.UserControl.PrintButton();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnCancel2 = new System.Windows.Forms.Button();
             this.tabVillage = new System.Windows.Forms.TabControl();
@@ -284,11 +284,11 @@ namespace Octopus.GUI.Clients
             // btnPrint
             // 
             resources.ApplyResources(this.btnPrint, "btnPrint");
-            this.btnPrint.AttachmentPoint = Octopus.Reports.AttachmentPoint.VillageDetails;
+            this.btnPrint.AttachmentPoint = OpenCBS.Reports.AttachmentPoint.VillageDetails;
             this.btnPrint.Name = "btnPrint";
             this.btnPrint.ReportInitializer = null;
             this.btnPrint.UseVisualStyleBackColor = true;
-            this.btnPrint.Visibility = Octopus.Reports.Visibility.NonSolidaryGroup;
+            this.btnPrint.Visibility = OpenCBS.Reports.Visibility.NonSolidaryGroup;
             // 
             // btnSave
             // 

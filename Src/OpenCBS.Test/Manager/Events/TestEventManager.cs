@@ -26,14 +26,14 @@ using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using NUnit.Framework;
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.Accounting;
-using Octopus.CoreDomain.Events;
-using Octopus.CoreDomain.Events.Loan;
-using Octopus.Manager.Events;
-using Octopus.Shared;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.Accounting;
+using OpenCBS.CoreDomain.Events;
+using OpenCBS.CoreDomain.Events.Loan;
+using OpenCBS.Manager.Events;
+using OpenCBS.Shared;
 
-namespace Octopus.Test.Manager.Events
+namespace OpenCBS.Test.Manager.Events
 {
     [TestFixture]
     public class TestEventManager : BaseManagerTest

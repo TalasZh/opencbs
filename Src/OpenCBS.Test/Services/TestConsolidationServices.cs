@@ -1,12 +1,12 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using NUnit.Framework;
-using Octopus.CoreDomain;
-using Octopus.Shared;
+using OpenCBS.CoreDomain;
+using OpenCBS.Shared;
 using System.Collections;
-using Octopus.Services;
+using OpenCBS.Services;
 
-namespace Octopus.Test.Services
+namespace OpenCBS.Test.Services
 {
     [TestFixture]
     public class TestConsolidationServices

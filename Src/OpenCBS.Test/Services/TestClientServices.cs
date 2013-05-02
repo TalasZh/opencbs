@@ -1,4 +1,4 @@
-﻿//Octopus MFS is an integrated suite for managing a Micro Finance Institution: clients, contracts, accounting, reporting and risk
+//Octopus MFS is an integrated suite for managing a Micro Finance Institution: clients, contracts, accounting, reporting and risk
 //Copyright © 2006,2007 OCTO Technology & OXUS Development Network
 //
 //This program is free software; you can redistribute it and/or modify
@@ -26,18 +26,18 @@ using System;
 using System.Collections.Generic;
 using NUnit.Framework;
 using NUnit.Mocks;
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.Clients;
-using Octopus.CoreDomain.EconomicActivities;
-using Octopus.CoreDomain.SearchResult;
-using Octopus.Manager;
-using Octopus.Manager.Clients;
-using Octopus.Services;
-using Octopus.Enums;
-using Octopus.Shared;
-using Octopus.Shared.Settings;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.Clients;
+using OpenCBS.CoreDomain.EconomicActivities;
+using OpenCBS.CoreDomain.SearchResult;
+using OpenCBS.Manager;
+using OpenCBS.Manager.Clients;
+using OpenCBS.Services;
+using OpenCBS.Enums;
+using OpenCBS.Shared;
+using OpenCBS.Shared.Settings;
 
-namespace Octopus.Test.Services
+namespace OpenCBS.Test.Services
 {
     /// <summary>
     /// This is the test class of the class ClientServices.
@@ -116,7 +116,7 @@ namespace Octopus.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(Octopus.ExceptionsHandler.OctopusTiersSaveException))]
+        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
         public void TestIfTiersIsValidWhenTiersIsNull()
         {
             clientServices.CheckIfTiersIsValid(null);
@@ -130,7 +130,7 @@ namespace Octopus.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(Octopus.ExceptionsHandler.OctopusTiersSaveException))]
+        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
         public void TestIfSecondaryAddressPartiallyFilledButDistrictIsNull()
         {
             Person person = new Person();
@@ -142,7 +142,7 @@ namespace Octopus.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(Octopus.ExceptionsHandler.OctopusTiersSaveException))]
+        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
         public void TestIfSecondaryAddressPartiallyFilledButCityIsNull()
         {
             Person person = new Person();
@@ -165,7 +165,7 @@ namespace Octopus.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(Octopus.ExceptionsHandler.OctopusTiersSaveException))]
+        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
         public void TestSavePersonButActivityIsNull()
         {
             ApplicationSettings.GetInstance("").UpdateParameter(OGeneralSettings.ID_PATTERN, @"[0-9]{2}[a-z]{2}");
@@ -178,7 +178,7 @@ namespace Octopus.Test.Services
 
 
         [Test]
-        [ExpectedException(typeof(Octopus.ExceptionsHandler.OctopusTiersSaveException))]
+        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
         public void TestSavePersonButNbOfDependentsIsBad()
         {
             ApplicationSettings.GetInstance("").UpdateParameter(OGeneralSettings.ID_PATTERN, @"[0-9]{2}[a-z]{2}");
@@ -194,7 +194,7 @@ namespace Octopus.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(Octopus.ExceptionsHandler.OctopusTiersSaveException))]
+        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
         public void TestSavePersonButNbOfChildrensIsBad()
         {
             ApplicationSettings.GetInstance("").UpdateParameter(OGeneralSettings.ENFORCE_ID_PATTERN, 1);
@@ -210,7 +210,7 @@ namespace Octopus.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(Octopus.ExceptionsHandler.OctopusTiersSaveException))]
+        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
         public void TestSavePersonButNbOfChildrensWithBasicEducationIsBad()
         {
             ApplicationSettings.GetInstance("").UpdateParameter(OGeneralSettings.ID_PATTERN, @"[0-9]{2}[a-z]{2}");
@@ -226,7 +226,7 @@ namespace Octopus.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(Octopus.ExceptionsHandler.OctopusTiersSaveException))]
+        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
         public void TestSavePersonButExperienceIsBad()
         {
             ApplicationSettings.GetInstance("").UpdateParameter(OGeneralSettings.ID_PATTERN, @"[0-9]{2}[a-z]{2}");
@@ -243,7 +243,7 @@ namespace Octopus.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(Octopus.ExceptionsHandler.OctopusTiersSaveException))]
+        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
         public void TestSavePersonButNbOfPeopleIsBad()
         {
             ApplicationSettings.GetInstance("").UpdateParameter(OGeneralSettings.ID_PATTERN, @"[0-9]{2}[a-z]{2}");
@@ -261,7 +261,7 @@ namespace Octopus.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(Octopus.ExceptionsHandler.OctopusTiersSaveException))]
+        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
         public void TestSavePersonButAmountWithOtherOrganizationIsBad()
         {
             ApplicationSettings.GetInstance("").UpdateParameter(OGeneralSettings.ID_PATTERN, @"[0-9]{2}[a-z]{2}");
@@ -280,7 +280,7 @@ namespace Octopus.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(Octopus.ExceptionsHandler.OctopusTiersSaveException))]
+        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
         public void TestSavePersonButAmountWithOtherDebtsIsBad()
         {
             ApplicationSettings.GetInstance("").UpdateParameter(OGeneralSettings.ID_PATTERN, @"[0-9]{2}[a-z]{2}");
@@ -300,7 +300,7 @@ namespace Octopus.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(Octopus.ExceptionsHandler.OctopusTiersSaveException))]
+        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
         public void TestSavePersonButHomeSizeIsBad()
         {
             ApplicationSettings.GetInstance("").UpdateParameter(OGeneralSettings.ID_PATTERN, @"[0-9]{2}[a-z]{2}");
@@ -321,7 +321,7 @@ namespace Octopus.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(Octopus.ExceptionsHandler.OctopusTiersSaveException))]
+        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
         public void TestSavePersonButTimeLivingInIsBad()
         {
             ApplicationSettings.GetInstance("").UpdateParameter(OGeneralSettings.ID_PATTERN, @"[0-9]{2}[a-z]{2}");
@@ -342,7 +342,7 @@ namespace Octopus.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(Octopus.ExceptionsHandler.OctopusTiersSaveException))]
+        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
         public void TestSavePersonButLandPlotSizeIsBad()
         {
             ApplicationSettings.GetInstance("").UpdateParameter(OGeneralSettings.ID_PATTERN, @"[0-9]{2}[a-z]{2}");
@@ -364,7 +364,7 @@ namespace Octopus.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(Octopus.ExceptionsHandler.OctopusTiersSaveException))]
+        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
         public void TestSavePersonButLivestockNumberIsBad()
         {
             ApplicationSettings.GetInstance("").UpdateParameter(OGeneralSettings.ID_PATTERN, @"[0-9]{2}[a-z]{2}");
@@ -386,7 +386,7 @@ namespace Octopus.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(Octopus.ExceptionsHandler.OctopusTiersSaveException))]
+        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
         public void TestSavePersonButDistrictIsNull()
         {
             Person person = AddPerson(true, new EconomicActivity(1, "tiki", null, false), 1, "city", null, "nicolas", "mangin", 'M', "12345", true);
@@ -395,7 +395,7 @@ namespace Octopus.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(Octopus.ExceptionsHandler.OctopusTiersSaveException))]
+        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
         public void TestSavePersonButCityIsNull()
         {
             Person person = AddPerson(true, new EconomicActivity(1, "tiki", null, false), 1, null, new District(1, "district", new Province(1, "province")), "nicolas", "mangin", 'M', "12ED", true);
@@ -404,7 +404,7 @@ namespace Octopus.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(Octopus.ExceptionsHandler.OctopusTiersSaveException))]
+        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
         public void TestSavePersonButFirstNameIsNull()
         {
             Person person = AddPerson(true, new EconomicActivity(1, "tiki", null, false), 1, "city", new District(1, "district", new Province(1, "province")), null, "mangin", 'M', "12345", true);
@@ -413,7 +413,7 @@ namespace Octopus.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(Octopus.ExceptionsHandler.OctopusTiersSaveException))]
+        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
         public void TestSavePersonButSexIsNull()
         {
             Person person = AddPerson(true, new EconomicActivity(1, "tiki", null, false), 1, "city", new District(1, "district", new Province(1, "province")), "nicolas", "mangin", Convert.ToChar(0), "12345", true);
@@ -422,7 +422,7 @@ namespace Octopus.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(Octopus.ExceptionsHandler.OctopusTiersSaveException))]
+        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
         public void TestSavePersonButIdentificationDataIsNull()
         {
             // Ru55
@@ -432,7 +432,7 @@ namespace Octopus.Test.Services
             clientServices.SavePerson(ref person);
         }
         [Test]
-        [ExpectedException(typeof(Octopus.ExceptionsHandler.OctopusTiersSaveException))]
+        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
         public void TestSavePersonButIdentificationDataIsBad()
         {
             ApplicationSettings.GetInstance("").UpdateParameter(OGeneralSettings.ENFORCE_ID_PATTERN, 1);
@@ -441,7 +441,7 @@ namespace Octopus.Test.Services
             clientServices.SavePerson(ref person);
         }
         [Test]
-        [ExpectedException(typeof(Octopus.ExceptionsHandler.OctopusTiersSaveException))]
+        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
         public void TestSavePersonButLastNameIsNull()
         {
             ApplicationSettings.GetInstance("").UpdateParameter(OGeneralSettings.ID_PATTERN, @"[0-9]{2}[A-Z]{2}");
@@ -451,7 +451,7 @@ namespace Octopus.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(Octopus.ExceptionsHandler.OctopusTiersSaveException))]
+        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
         public void TestSavePersonWhenSecondaryAddressNotNullButSecondaryCityIsNull()
         {
             ApplicationSettings.GetInstance("").UpdateParameter(OGeneralSettings.ID_PATTERN, @"[0-9]{2}[A-Z]{2}");
@@ -465,7 +465,7 @@ namespace Octopus.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(Octopus.ExceptionsHandler.OctopusTiersSaveException))]
+        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
         public void TestSavePersonWhenSecondaryAddressNotNullButSecondaryDistrictIsNull()
         {
             ApplicationSettings.GetInstance("").UpdateParameter(OGeneralSettings.ID_PATTERN, @"[0-9]{2}[a-z]{2}");
@@ -478,7 +478,7 @@ namespace Octopus.Test.Services
             clientServices.SavePerson(ref person);
         }
         [Test]
-        [ExpectedException(typeof(Octopus.ExceptionsHandler.OctopusTiersSaveException))]
+        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
         public void TestSavePersonWhenDateOfBirthIsBad()
         {
             ApplicationSettings.GetInstance("").UpdateParameter(OGeneralSettings.ID_PATTERN, @"[0-9]{2}[a-z]{2}");
@@ -563,7 +563,7 @@ namespace Octopus.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(Octopus.ExceptionsHandler.OctopusTiersSaveException))]
+        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
         public void TestIfClientIsAPerson()
         {
             Person person = new Person();
@@ -574,7 +574,7 @@ namespace Octopus.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(Octopus.ExceptionsHandler.OctopusTiersSaveException))]
+        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
         public void TestIfClientCanBeAddToAGroupWhenClientAlreadyInThisGroup()
         {
             Person person = new Person {Id = 1};
@@ -585,7 +585,7 @@ namespace Octopus.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(Octopus.ExceptionsHandler.OctopusTiersSaveException))]
+        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
         public void TestIfClientCanBeAddToAGroupWhenClientIsActive()
         {
             Person person = new Person {Id = 1, Active = true};
@@ -598,7 +598,7 @@ namespace Octopus.Test.Services
         }
 
         [Test]
-        //[ExpectedException(typeof(Octopus.ExceptionsHandler.OctopusTiersSaveException))]
+        //[ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
         public void TestIfClientCanBeAddToAGroupWhenClientIsALeader()
         {
             Person person = new Person {Id = 1, Active = false};
@@ -612,7 +612,7 @@ namespace Octopus.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(Octopus.ExceptionsHandler.OctopusTiersSaveException))]
+        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
         public void TestSaveGroupWhenGroupIsNull()
         {
             ApplicationSettings dataParam = ApplicationSettings.GetInstance("");
@@ -648,7 +648,7 @@ namespace Octopus.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(Octopus.ExceptionsHandler.OctopusTiersSaveException))]
+        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
         public void TestSaveGroupWhenGroupNameIsNull()
         {
             ApplicationSettings dataParam = GetDataBaseParam(4, true);
@@ -661,7 +661,7 @@ namespace Octopus.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(Octopus.ExceptionsHandler.OctopusTiersSaveException))]
+        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
         public void TestSaveGroupWhenOtherOrganizationAmountsIsBadlyInformed()
         {
             ApplicationSettings dataParam = GetDataBaseParam(4, true);
@@ -676,7 +676,7 @@ namespace Octopus.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(Octopus.ExceptionsHandler.OctopusTiersSaveException))]
+        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
         public void TestSaveGroupWhenOtherOrganizationDebtsIsBadlyInformed()
         {
             ApplicationSettings dataParam = GetDataBaseParam(4, true);
@@ -692,7 +692,7 @@ namespace Octopus.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(Octopus.ExceptionsHandler.OctopusTiersSaveException))]
+        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
         public void TestSaveGroupWhenDistrictIsNull()
         {
             ApplicationSettings dataParam = GetDataBaseParam(4, true);
@@ -706,7 +706,7 @@ namespace Octopus.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(Octopus.ExceptionsHandler.OctopusTiersSaveException))]
+        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
         public void TestSaveGroupWhenNoEnoughMembers()
         {
             ApplicationSettings dataParam = GetDataBaseParam(4, true);
@@ -720,7 +720,7 @@ namespace Octopus.Test.Services
 
 
         [Test]
-        [ExpectedException(typeof(Octopus.ExceptionsHandler.OctopusTiersSaveException))]
+        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
         public void TestSaveGroupWhenCityIsNullButMandatory()
         {
             ApplicationSettings dataParam = GetDataBaseParam(4, true);
@@ -733,7 +733,7 @@ namespace Octopus.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(Octopus.ExceptionsHandler.OctopusTiersSaveException))]
+        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
         public void TestSaveGroupWhenLeaderIsNull()
         {
             ApplicationSettings dataParam = GetDataBaseParam(4, true);

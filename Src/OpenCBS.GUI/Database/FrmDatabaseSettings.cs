@@ -6,14 +6,14 @@ using System.Globalization;
 using System.IO;
 using System.Threading;
 using System.Windows.Forms;
-using Octopus.CoreDomain.Database;
-using Octopus.GUI.Tools;
-using Octopus.GUI.UserControl;
-using Octopus.MultiLanguageRessources;
-using Octopus.Services;
-using Octopus.Shared.Settings;
+using OpenCBS.CoreDomain.Database;
+using OpenCBS.GUI.Tools;
+using OpenCBS.GUI.UserControl;
+using OpenCBS.MultiLanguageRessources;
+using OpenCBS.Services;
+using OpenCBS.Shared.Settings;
 
-namespace Octopus.GUI.Database
+namespace OpenCBS.GUI.Database
 {
     public partial class FrmDatabaseSettings : SweetBaseForm
     {

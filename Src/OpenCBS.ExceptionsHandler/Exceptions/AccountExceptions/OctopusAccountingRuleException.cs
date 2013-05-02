@@ -1,7 +1,7 @@
-﻿using System;
+using System;
 using System.Runtime.Serialization;
 
-namespace Octopus.ExceptionsHandler.Exceptions.AccountExceptions
+namespace OpenCBS.ExceptionsHandler.Exceptions.AccountExceptions
 {
     [Serializable]
     public class OctopusAccountingRuleException : OctopusException

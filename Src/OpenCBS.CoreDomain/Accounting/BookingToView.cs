@@ -23,10 +23,10 @@
 // Technical contact email : tech(at)octopusnetwork.org 
 
 using System;
-using Octopus.Enums;
-using Octopus.Shared;
+using OpenCBS.Enums;
+using OpenCBS.Shared;
 
-namespace Octopus.CoreDomain.Accounting
+namespace OpenCBS.CoreDomain.Accounting
 {
     [Serializable]
     public class BookingToView

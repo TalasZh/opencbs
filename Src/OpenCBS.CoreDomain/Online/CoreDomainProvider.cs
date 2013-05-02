@@ -1,7 +1,7 @@
 
-using Octopus.Shared.Settings;
+using OpenCBS.Shared.Settings;
 
-namespace Octopus.CoreDomain.Online
+namespace OpenCBS.CoreDomain.Online
 {
     public class CoreDomainProvider
     {

@@ -1,6 +1,6 @@
-﻿using System;
+using System;
 
-namespace Octopus.CoreDomain.Clients
+namespace OpenCBS.CoreDomain.Clients
 {
     [Serializable]
     public class Bank

@@ -1,7 +1,7 @@
-﻿using Octopus.CoreDomain.Events;
-using Octopus.Enums;
+using OpenCBS.CoreDomain.Events;
+using OpenCBS.Enums;
 
-namespace Octopus.CoreDomain.Accounting
+namespace OpenCBS.CoreDomain.Accounting
 {
     public interface IAccountingRule
     {

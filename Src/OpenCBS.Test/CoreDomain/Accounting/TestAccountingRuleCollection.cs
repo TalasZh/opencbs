@@ -1,16 +1,16 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using NUnit.Framework;
-using Octopus.CoreDomain.Accounting;
-using Octopus.CoreDomain.EconomicActivities;
-using Octopus.Enums;
-using Octopus.CoreDomain.Products;
-using Octopus.CoreDomain.Clients;
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.Contracts.Savings;
-using Octopus.Shared.Settings;
-using Octopus.CoreDomain.Contracts.Loans;
+using OpenCBS.CoreDomain.Accounting;
+using OpenCBS.CoreDomain.EconomicActivities;
+using OpenCBS.Enums;
+using OpenCBS.CoreDomain.Products;
+using OpenCBS.CoreDomain.Clients;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.Contracts.Savings;
+using OpenCBS.Shared.Settings;
+using OpenCBS.CoreDomain.Contracts.Loans;
 
-namespace Octopus.Test.CoreDomain.Accounting
+namespace OpenCBS.Test.CoreDomain.Accounting
 {
     [TestFixture]
     public class TestAccountingRuleCollection

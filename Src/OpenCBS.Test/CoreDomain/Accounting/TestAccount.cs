@@ -23,13 +23,13 @@
 // Technical contact email : tech(at)octopusnetwork.org 
 
 using NUnit.Framework;
-using Octopus.CoreDomain.Accounting;
-using Octopus.Enums;
+using OpenCBS.CoreDomain.Accounting;
+using OpenCBS.Enums;
 
-namespace Octopus.Test.CoreDomain
+namespace OpenCBS.Test.CoreDomain
 {
 	/// <summary>
-	/// Description résumée de Class1.
+	/// Description rï¿½sumï¿½e de Class1.
 	/// </summary>
 	[TestFixture]
 	public class TestAccount

@@ -1,6 +1,6 @@
-using Octopus.GUI.UserControl;
+using OpenCBS.GUI.UserControl;
 
-namespace Octopus.GUI.Accounting
+namespace OpenCBS.GUI.Accounting
 {
     partial class AddBooking
     {
@@ -81,7 +81,7 @@ namespace Octopus.GUI.Accounting
             this.splitContainer1.Panel2.AccessibleDescription = null;
             this.splitContainer1.Panel2.AccessibleName = null;
             resources.ApplyResources(this.splitContainer1.Panel2, "splitContainer1.Panel2");
-            this.splitContainer1.Panel2.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris_180;
+            this.splitContainer1.Panel2.BackgroundImage = global::OpenCBS.GUI.Properties.Resources.theme1_1_fond_gris_180;
             this.splitContainer1.Panel2.Controls.Add(this.gbPanel);
             this.splitContainer1.Panel2.Font = null;
             // 

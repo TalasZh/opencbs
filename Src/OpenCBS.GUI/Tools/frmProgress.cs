@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace Octopus.GUI.Tools
+namespace OpenCBS.GUI.Tools
 {
     public partial class frmProgress : Form
     {

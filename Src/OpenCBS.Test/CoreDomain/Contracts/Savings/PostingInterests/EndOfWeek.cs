@@ -1,15 +1,15 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using NUnit.Framework;
-using Octopus.CoreDomain.Contracts.Loans.Installments;
-using Octopus.CoreDomain.Products;
-using Octopus.Enums;
-using Octopus.CoreDomain.Contracts.Savings;
-using Octopus.Shared.Settings;
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.Events.Saving;
+using OpenCBS.CoreDomain.Contracts.Loans.Installments;
+using OpenCBS.CoreDomain.Products;
+using OpenCBS.Enums;
+using OpenCBS.CoreDomain.Contracts.Savings;
+using OpenCBS.Shared.Settings;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.Events.Saving;
 
-namespace Octopus.Test.CoreDomain.Contracts.Savings.PostingInterests
+namespace OpenCBS.Test.CoreDomain.Contracts.Savings.PostingInterests
 {
     [TestFixture]
     public class EndOfWeek

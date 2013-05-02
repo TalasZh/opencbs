@@ -2,7 +2,7 @@ using System;
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace Octopus.Shared
+namespace OpenCBS.Shared
 {
 	public class ImageComboBox : ComboBox
 	{

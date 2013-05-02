@@ -1,11 +1,11 @@
 
 using System.Collections.Generic;
 using System.Windows.Forms;
-using Octopus.CoreDomain.Clients;
-using Octopus.Enums;
-using Octopus.Services;
+using OpenCBS.CoreDomain.Clients;
+using OpenCBS.Enums;
+using OpenCBS.Services;
 
-namespace Octopus.GUI
+namespace OpenCBS.GUI
 {
     public partial class ProjectFollowUp : Form
     {

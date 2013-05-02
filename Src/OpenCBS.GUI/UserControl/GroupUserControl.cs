@@ -28,22 +28,22 @@ using System.ComponentModel;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.Clients;
-using Octopus.CoreDomain.Contracts.Loans;
-using Octopus.Extensions;
-using Octopus.ExceptionsHandler;
-using Octopus.GUI.Clients;
-using Octopus.GUI.Tools;
-using Octopus.MultiLanguageRessources;
-using Octopus.Services;
-using Octopus.Services.Events;
-using Octopus.Enums;
-using Octopus.CoreDomain.Contracts.Savings;
-using Octopus.Shared.Settings;
-using Octopus.Shared;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.Clients;
+using OpenCBS.CoreDomain.Contracts.Loans;
+using OpenCBS.Extensions;
+using OpenCBS.ExceptionsHandler;
+using OpenCBS.GUI.Clients;
+using OpenCBS.GUI.Tools;
+using OpenCBS.MultiLanguageRessources;
+using OpenCBS.Services;
+using OpenCBS.Services.Events;
+using OpenCBS.Enums;
+using OpenCBS.CoreDomain.Contracts.Savings;
+using OpenCBS.Shared.Settings;
+using OpenCBS.Shared;
 
-namespace Octopus.GUI.UserControl
+namespace OpenCBS.GUI.UserControl
 {
     public delegate void MembersChangedEventHandler(object sender, EventArgs args);
 
@@ -200,7 +200,7 @@ namespace Octopus.GUI.UserControl
             this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabPageProjects = new System.Windows.Forms.TabPage();
             this.tabPageSaving = new System.Windows.Forms.TabPage();
-            this.savingsListUserControl1 = new Octopus.GUI.UserControl.SavingsListUserControl();
+            this.savingsListUserControl1 = new OpenCBS.GUI.UserControl.SavingsListUserControl();
             this.tabPageCustomizableFields = new System.Windows.Forms.TabPage();
             this.imageListTab = new System.Windows.Forms.ImageList(this.components);
             this.cbBranch = new System.Windows.Forms.ComboBox();
@@ -209,7 +209,7 @@ namespace Octopus.GUI.UserControl
             this.buttonPreview = new System.Windows.Forms.Button();
             this.labelHelpRequiredFields = new System.Windows.Forms.Label();
             this.groupBoxButtons = new System.Windows.Forms.GroupBox();
-            this.btnPrint = new Octopus.GUI.UserControl.PrintButton();
+            this.btnPrint = new OpenCBS.GUI.UserControl.PrintButton();
             this.buttonCancel = new System.Windows.Forms.Button();
             this.buttonSave = new System.Windows.Forms.Button();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
@@ -451,7 +451,7 @@ namespace Octopus.GUI.UserControl
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris;
+            this.tableLayoutPanel1.BackgroundImage = global::OpenCBS.GUI.Properties.Resources.theme1_1_fond_gris;
             resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
             this.tableLayoutPanel1.Controls.Add(this.groupBoxFirstAddress, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.groupBoxSecondaryAddress, 1, 0);
@@ -548,7 +548,7 @@ namespace Octopus.GUI.UserControl
             // savingsListUserControl1
             // 
             this.savingsListUserControl1.ButtonAddSavingsEnabled = true;
-            this.savingsListUserControl1.ClientType = Octopus.Enums.OClientTypes.Group;
+            this.savingsListUserControl1.ClientType = OpenCBS.Enums.OClientTypes.Group;
             resources.ApplyResources(this.savingsListUserControl1, "savingsListUserControl1");
             this.savingsListUserControl1.Name = "savingsListUserControl1";
             this.savingsListUserControl1.AddSelectedSaving += new System.EventHandler(this.savingsListUserControl1_AddSelectedSaving);
@@ -614,11 +614,11 @@ namespace Octopus.GUI.UserControl
             // btnPrint
             // 
             resources.ApplyResources(this.btnPrint, "btnPrint");
-            this.btnPrint.AttachmentPoint = Octopus.Reports.AttachmentPoint.GroupDetails;
+            this.btnPrint.AttachmentPoint = OpenCBS.Reports.AttachmentPoint.GroupDetails;
             this.btnPrint.Name = "btnPrint";
             this.btnPrint.ReportInitializer = null;
             this.btnPrint.UseVisualStyleBackColor = true;
-            this.btnPrint.Visibility = Octopus.Reports.Visibility.Group;
+            this.btnPrint.Visibility = OpenCBS.Reports.Visibility.Group;
             // 
             // buttonCancel
             // 

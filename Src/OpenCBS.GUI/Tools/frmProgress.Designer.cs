@@ -1,4 +1,4 @@
-namespace Octopus.GUI.Tools
+namespace OpenCBS.GUI.Tools
 {
     partial class frmProgress
     {

@@ -1,15 +1,15 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using NUnit.Framework;
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.Accounting;
-using Octopus.CoreDomain.EconomicActivities;
-using Octopus.CoreDomain.Events;
-using Octopus.CoreDomain.Events.Teller;
-using Octopus.CoreDomain.Products;
-using Octopus.Enums;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.Accounting;
+using OpenCBS.CoreDomain.EconomicActivities;
+using OpenCBS.CoreDomain.Events;
+using OpenCBS.CoreDomain.Events.Teller;
+using OpenCBS.CoreDomain.Products;
+using OpenCBS.Enums;
 
-namespace Octopus.Test.CoreDomain.Accounting
+namespace OpenCBS.Test.CoreDomain.Accounting
 {
     [TestFixture]
     class TestAccountingClosure

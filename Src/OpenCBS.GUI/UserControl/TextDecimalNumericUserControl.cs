@@ -2,7 +2,7 @@ using System;
 using System.Globalization;
 using System.Windows.Forms;
 
-namespace Octopus.GUI.UserControl
+namespace OpenCBS.GUI.UserControl
 {
     public partial class TextDecimalNumericUserControl : System.Windows.Forms.UserControl
     {

@@ -1,7 +1,7 @@
-﻿using System;
-using Octopus.CoreDomain.Events.Loan;
+using System;
+using OpenCBS.CoreDomain.Events.Loan;
 
-namespace Octopus.CoreDomain.Events
+namespace OpenCBS.CoreDomain.Events
 {
     [Serializable]
     public class UserLogEvent: Event

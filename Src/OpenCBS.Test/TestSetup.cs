@@ -1,4 +1,4 @@
-﻿//Octopus MFS is an integrated suite for managing a Micro Finance Institution: clients, contracts, accounting, reporting and risk
+//Octopus MFS is an integrated suite for managing a Micro Finance Institution: clients, contracts, accounting, reporting and risk
 //Copyright © 2006,2007 OCTO Technology & OXUS Development Network
 //
 //This program is free software; you can redistribute it and/or modify
@@ -24,7 +24,7 @@
 
 using NUnit.Framework;
 
-namespace Octopus.Test
+namespace OpenCBS.Test
 {
     [SetUpFixture]
     public class TestSetup
@@ -32,7 +32,7 @@ namespace Octopus.Test
         [SetUp]
         public void Setup()
         {
-            Octopus.CoreDomain.DatabaseConnection.IsProductionDatabase = false;
+            OpenCBS.CoreDomain.DatabaseConnection.IsProductionDatabase = false;
         }
     }
 }

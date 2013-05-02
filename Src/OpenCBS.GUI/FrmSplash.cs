@@ -28,15 +28,15 @@ using System.Globalization;
 using System.Threading;
 using System.Windows.Forms;
 using Microsoft.Win32;
-using Octopus.CoreDomain;
-using Octopus.GUI.Database;
-using Octopus.GUI.Login;
-using Octopus.GUI.UserControl;
-using Octopus.MultiLanguageRessources;
-using Octopus.Services;
-using Octopus.Shared.Settings;
+using OpenCBS.CoreDomain;
+using OpenCBS.GUI.Database;
+using OpenCBS.GUI.Login;
+using OpenCBS.GUI.UserControl;
+using OpenCBS.MultiLanguageRessources;
+using OpenCBS.Services;
+using OpenCBS.Shared.Settings;
 
-namespace Octopus.GUI
+namespace OpenCBS.GUI
 {
     public partial class FrmSplash : SweetBaseForm
     {

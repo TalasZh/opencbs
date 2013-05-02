@@ -26,9 +26,9 @@ using System;
 using System.ComponentModel;
 using System.Windows.Forms;
 using System.Drawing;
-using Octopus.Shared.Settings;
+using OpenCBS.Shared.Settings;
 
-namespace Octopus.GUI
+namespace OpenCBS.GUI
 {
 	/// <summary>
 	/// Summary description for AboutOctopus.

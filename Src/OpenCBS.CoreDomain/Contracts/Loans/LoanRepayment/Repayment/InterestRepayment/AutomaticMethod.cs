@@ -1,9 +1,9 @@
-using Octopus.CoreDomain.Contracts.Loans.Installments;
-using Octopus.CoreDomain.Contracts.Loans.LoanRepayment.Interfaces;
-using Octopus.Shared;
+using OpenCBS.CoreDomain.Contracts.Loans.Installments;
+using OpenCBS.CoreDomain.Contracts.Loans.LoanRepayment.Interfaces;
+using OpenCBS.Shared;
 using System;
 
-namespace Octopus.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.InterestRepayment
+namespace OpenCBS.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.InterestRepayment
 {
     [Serializable]
     public class AutomaticMethod : IInterestRepayment

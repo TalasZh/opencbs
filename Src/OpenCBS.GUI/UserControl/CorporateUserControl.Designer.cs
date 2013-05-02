@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
-using Octopus.ExceptionsHandler;
-using Octopus.GUI.Clients;
-using Octopus.GUI.Tools;
-using Octopus.Enums;
+using OpenCBS.ExceptionsHandler;
+using OpenCBS.GUI.Clients;
+using OpenCBS.GUI.Tools;
+using OpenCBS.Enums;
 
-namespace Octopus.GUI.UserControl
+namespace OpenCBS.GUI.UserControl
 {
     partial class CorporateUserControl
     {
@@ -54,13 +54,13 @@ namespace Octopus.GUI.UserControl
             this.tabPageContacts = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.tabPageSavings = new System.Windows.Forms.TabPage();
-            this.savingsListUserControl1 = new Octopus.GUI.UserControl.SavingsListUserControl();
+            this.savingsListUserControl1 = new OpenCBS.GUI.UserControl.SavingsListUserControl();
             this.tabPageCustomizableFields = new System.Windows.Forms.TabPage();
             this.cbBranch = new System.Windows.Forms.ComboBox();
             this.groupBoxCorporate = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.labelLastname = new System.Windows.Forms.Label();
-            this.eacCorporate = new Octopus.GUI.UserControl.EconomicActivityControl();
+            this.eacCorporate = new OpenCBS.GUI.UserControl.EconomicActivityControl();
             this.lblEconomicActivity = new System.Windows.Forms.Label();
             this.labelDateCrate = new System.Windows.Forms.Label();
             this.labelSigle = new System.Windows.Forms.Label();
@@ -79,7 +79,7 @@ namespace Octopus.GUI.UserControl
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.buttonCancel = new System.Windows.Forms.Button();
             this.buttonSave = new System.Windows.Forms.Button();
-            this.btnPrint = new Octopus.GUI.UserControl.PrintButton();
+            this.btnPrint = new OpenCBS.GUI.UserControl.PrintButton();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
@@ -188,7 +188,7 @@ namespace Octopus.GUI.UserControl
             // 
             // tableLayoutPanel3
             // 
-            this.tableLayoutPanel3.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris_180;
+            this.tableLayoutPanel3.BackgroundImage = global::OpenCBS.GUI.Properties.Resources.theme1_1_fond_gris_180;
             resources.ApplyResources(this.tableLayoutPanel3, "tableLayoutPanel3");
             this.tableLayoutPanel3.Controls.Add(this.splitContainer1, 0, 0);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
@@ -202,7 +202,7 @@ namespace Octopus.GUI.UserControl
             // savingsListUserControl1
             // 
             this.savingsListUserControl1.ButtonAddSavingsEnabled = true;
-            this.savingsListUserControl1.ClientType = Octopus.Enums.OClientTypes.Corporate;
+            this.savingsListUserControl1.ClientType = OpenCBS.Enums.OClientTypes.Corporate;
             resources.ApplyResources(this.savingsListUserControl1, "savingsListUserControl1");
             this.savingsListUserControl1.Name = "savingsListUserControl1";
             this.savingsListUserControl1.AddSelectedSaving += new System.EventHandler(this.SavingsListUserControl1AddSelectedSaving);
@@ -261,7 +261,7 @@ namespace Octopus.GUI.UserControl
             this.eacCorporate.Activity = null;
             resources.ApplyResources(this.eacCorporate, "eacCorporate");
             this.eacCorporate.Name = "eacCorporate";
-            this.eacCorporate.EconomicActivityChange += new System.EventHandler<Octopus.GUI.UserControl.EconomicActivtyEventArgs>(this.EacCorporateEconomicActivityChange);
+            this.eacCorporate.EconomicActivityChange += new System.EventHandler<OpenCBS.GUI.UserControl.EconomicActivtyEventArgs>(this.EacCorporateEconomicActivityChange);
             // 
             // lblEconomicActivity
             // 
@@ -384,11 +384,11 @@ namespace Octopus.GUI.UserControl
             // btnPrint
             // 
             resources.ApplyResources(this.btnPrint, "btnPrint");
-            this.btnPrint.AttachmentPoint = Octopus.Reports.AttachmentPoint.CorporateDetails;
+            this.btnPrint.AttachmentPoint = OpenCBS.Reports.AttachmentPoint.CorporateDetails;
             this.btnPrint.Name = "btnPrint";
             this.btnPrint.ReportInitializer = null;
             this.btnPrint.UseVisualStyleBackColor = true;
-            this.btnPrint.Visibility = Octopus.Reports.Visibility.Group;
+            this.btnPrint.Visibility = OpenCBS.Reports.Visibility.Group;
             // 
             // CorporateUserControl
             // 

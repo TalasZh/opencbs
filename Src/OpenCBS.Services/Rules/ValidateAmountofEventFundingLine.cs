@@ -1,7 +1,7 @@
-﻿using Octopus.CoreDomain.FundingLines;
-using Octopus.ExceptionsHandler.Exceptions.FundingLineExceptions;
+using OpenCBS.CoreDomain.FundingLines;
+using OpenCBS.ExceptionsHandler.Exceptions.FundingLineExceptions;
 
-namespace Octopus.Services.Rules
+namespace OpenCBS.Services.Rules
 {
    class ValidateAmountofEventFundingLine:IStrategyFundingLineEvent
    {

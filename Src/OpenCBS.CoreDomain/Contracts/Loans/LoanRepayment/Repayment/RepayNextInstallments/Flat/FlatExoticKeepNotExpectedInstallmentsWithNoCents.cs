@@ -24,11 +24,11 @@
 
 using System;
 using System.Collections.Generic;
-using Octopus.CoreDomain.Contracts.Loans.Installments;
-using Octopus.CoreDomain.Contracts.Loans.LoanRepayment.Interfaces;
-using Octopus.Shared;
+using OpenCBS.CoreDomain.Contracts.Loans.Installments;
+using OpenCBS.CoreDomain.Contracts.Loans.LoanRepayment.Interfaces;
+using OpenCBS.Shared;
 
-namespace Octopus.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayNextInstallments.Flat
+namespace OpenCBS.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayNextInstallments.Flat
 {
     /// <summary>
     /// Summary description for FlatExoticKeepNotExpectedInstallments.

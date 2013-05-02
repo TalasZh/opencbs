@@ -1,4 +1,4 @@
-namespace Octopus.GUI.UserControl
+namespace OpenCBS.GUI.UserControl
 {
     partial class SavingsListUserControl
     {

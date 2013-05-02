@@ -1,6 +1,6 @@
-﻿using System;
+using System;
 
-namespace Octopus.Shared
+namespace OpenCBS.Shared
 {
     public struct AuditTrailFilter
     {

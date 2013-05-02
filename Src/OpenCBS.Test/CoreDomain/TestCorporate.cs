@@ -1,11 +1,11 @@
-﻿
+
 
 using NUnit.Framework;
-using Octopus.CoreDomain.Clients;
-using Octopus.CoreDomain.FundingLines;
-using Octopus.Enums;
+using OpenCBS.CoreDomain.Clients;
+using OpenCBS.CoreDomain.FundingLines;
+using OpenCBS.Enums;
 
-namespace Octopus.Test.CoreDomain
+namespace OpenCBS.Test.CoreDomain
 {
     [TestFixture]
     public class TestCorporate

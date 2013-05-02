@@ -1,15 +1,15 @@
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
-using Octopus.Enums;
-using Octopus.ExceptionsHandler;
-using Octopus.Extensions;
-using Octopus.GUI.UserControl;
-using Octopus.Services;
-using Octopus.CoreDomain;
-using Octopus.MultiLanguageRessources;
+using OpenCBS.Enums;
+using OpenCBS.ExceptionsHandler;
+using OpenCBS.Extensions;
+using OpenCBS.GUI.UserControl;
+using OpenCBS.Services;
+using OpenCBS.CoreDomain;
+using OpenCBS.MultiLanguageRessources;
 
-namespace Octopus.GUI.Configuration
+namespace OpenCBS.GUI.Configuration
 {
     public partial class FrmRoles : SweetBaseForm
     {

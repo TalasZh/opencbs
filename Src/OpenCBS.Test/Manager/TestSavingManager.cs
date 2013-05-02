@@ -1,18 +1,18 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using NUnit.Framework;
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.Clients;
-using Octopus.CoreDomain.Contracts.Savings;
-using Octopus.CoreDomain.Events;
-using Octopus.Enums;
-using Octopus.Manager;
-using Octopus.Manager.Events;
-using Octopus.Shared;
-using Octopus.Test.Manager;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.Clients;
+using OpenCBS.CoreDomain.Contracts.Savings;
+using OpenCBS.CoreDomain.Events;
+using OpenCBS.Enums;
+using OpenCBS.Manager;
+using OpenCBS.Manager.Events;
+using OpenCBS.Shared;
+using OpenCBS.Test.Manager;
 
-namespace Octopus.Test.EventsManager
+namespace OpenCBS.Test.EventsManager
 {
 	[TestFixture]
 	public class TestSavingManager : BaseManagerTest
@@ -44,7 +44,7 @@ namespace Octopus.Test.EventsManager
         //    //Client client = new Person { Id = 1 };
 
         //    //DateTime date = new DateTime(2008, 11, 18);
-        //    //savingContract.Product = new Octopus.CoreDomain.Products.SavingProduct() { Id = 1 };
+        //    //savingContract.Product = new OpenCBS.CoreDomain.Products.SavingProduct() { Id = 1 };
         //    //savingContract.CreationDate = date;
         //    //savingContract.User = new User { Id = 6 };
         //    //savingContract.InterestRate = 0.2;
@@ -65,7 +65,7 @@ namespace Octopus.Test.EventsManager
         //    Client client = new Person { Id = 1, LastName="Guigui" };
 
         //    DateTime date = new DateTime(2008, 11, 18);
-        //    savingContract.Product = new Octopus.CoreDomain.Products.SavingProduct() { Id = 1, Name="SavingProduct" };
+        //    savingContract.Product = new OpenCBS.CoreDomain.Products.SavingProduct() { Id = 1, Name="SavingProduct" };
         //    savingContract.CreationDate = date;
         //    savingContract.User = new User { Id = 6 };
         //    savingContract.InterestRate = 0.2;
@@ -107,7 +107,7 @@ namespace Octopus.Test.EventsManager
         //    Client client = new Person { Id = 6, LastName = "EL Fanidi" };
 
         //    DateTime date = new DateTime(2008, 11, 18);
-        //    savingContract.Product = new Octopus.CoreDomain.Products.SavingProduct() { Id = 1, Name="SavingProduct" };
+        //    savingContract.Product = new OpenCBS.CoreDomain.Products.SavingProduct() { Id = 1, Name="SavingProduct" };
         //    savingContract.CreationDate = date;
         //    savingContract.User = new User { Id = 6 };
         //    savingContract.InterestRate = 0.2;
@@ -145,7 +145,7 @@ namespace Octopus.Test.EventsManager
 
         //    Assert.AreEqual(1, savingManager.GetNumberOfSavings(client));
         //    DateTime date = new DateTime(2008, 11, 18);
-        //    savingContract.Product = new Octopus.CoreDomain.Products.SavingProduct() { Id = 1, Name="SavingProduct" };
+        //    savingContract.Product = new OpenCBS.CoreDomain.Products.SavingProduct() { Id = 1, Name="SavingProduct" };
         //    savingContract.CreationDate = date;
         //    savingContract.User = new User { Id = 6 };
         //    savingContract.InterestRate = 0.2;

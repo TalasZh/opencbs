@@ -1,19 +1,19 @@
-﻿using System;
+using System;
 using NUnit.Framework;
-using Octopus.CoreDomain.Products;
-using Octopus.Manager.Events;
-using Octopus.Manager.Products;
-using Octopus.Manager.Contracts;
-using Octopus.Enums;
-using Octopus.CoreDomain.Contracts.Savings;
-using Octopus.Shared.Settings;
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.Clients;
-using Octopus.CoreDomain.SearchResult;
+using OpenCBS.CoreDomain.Products;
+using OpenCBS.Manager.Events;
+using OpenCBS.Manager.Products;
+using OpenCBS.Manager.Contracts;
+using OpenCBS.Enums;
+using OpenCBS.CoreDomain.Contracts.Savings;
+using OpenCBS.Shared.Settings;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.Clients;
+using OpenCBS.CoreDomain.SearchResult;
 using System.Collections.Generic;
-using Octopus.CoreDomain.Accounting;
+using OpenCBS.CoreDomain.Accounting;
 
-namespace Octopus.Test.Manager
+namespace OpenCBS.Test.Manager
 {
     [TestFixture]
     public class TestSavingsManager : BaseManagerTest

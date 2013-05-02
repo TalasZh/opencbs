@@ -24,13 +24,13 @@
 
 using System;
 using System.Windows.Forms;
-using Octopus.CoreDomain;
-using Octopus.Services;
-using Octopus.MultiLanguageRessources;
-using Octopus.Shared;
-using Octopus.Shared.Settings;
+using OpenCBS.CoreDomain;
+using OpenCBS.Services;
+using OpenCBS.MultiLanguageRessources;
+using OpenCBS.Shared;
+using OpenCBS.Shared.Settings;
 
-namespace Octopus.GUI
+namespace OpenCBS.GUI
 {
 	/// <summary>
 	/// Description r�sum�e de PasswordForm.

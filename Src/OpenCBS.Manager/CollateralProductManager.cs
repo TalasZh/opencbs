@@ -25,11 +25,11 @@
 using System;
 using System.Data.SqlClient;
 using System.Collections.Generic;
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.Products.Collaterals;
-using Octopus.Enums;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.Products.Collaterals;
+using OpenCBS.Enums;
 
-namespace Octopus.Manager
+namespace OpenCBS.Manager
 {
     /// <summary>
     /// This class provides all the methods required to manages Package datas in database

@@ -1,9 +1,9 @@
 
 using NUnit.Framework;
-using Octopus.CoreDomain.Events;
-using Octopus.CoreDomain.Events.Loan;
+using OpenCBS.CoreDomain.Events;
+using OpenCBS.CoreDomain.Events.Loan;
 
-namespace Octopus.Test.CoreDomain.Events
+namespace OpenCBS.Test.CoreDomain.Events
 {
     [TestFixture]
     public class TestEventStock

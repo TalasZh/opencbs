@@ -23,11 +23,11 @@
 // Technical contact email : tech(at)octopusnetwork.org 
 
 using System.Collections.Generic;
-using Octopus.CoreDomain;
+using OpenCBS.CoreDomain;
 using System.Data.SqlClient;
-using Octopus.CoreDomain.EconomicActivities;
+using OpenCBS.CoreDomain.EconomicActivities;
 
-namespace Octopus.Manager
+namespace OpenCBS.Manager
 {
 	/// <summary>
     /// Summary description for EconomicActivityManager.

@@ -1,18 +1,18 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using Octopus.CoreDomain.Contracts.Loans;
-using Octopus.CoreDomain.Contracts.Loans.Installments;
-using Octopus.Enums;
-using Octopus.CoreDomain.Accounting;
-using Octopus.CoreDomain.Clients;
-using Octopus.CoreDomain.Contracts.Savings.CalculateInterests;
-using Octopus.CoreDomain.Events.Saving;
-using Octopus.CoreDomain.Products;
-using Octopus.Shared;
-using Octopus.Shared.Settings;
+using OpenCBS.CoreDomain.Contracts.Loans;
+using OpenCBS.CoreDomain.Contracts.Loans.Installments;
+using OpenCBS.Enums;
+using OpenCBS.CoreDomain.Accounting;
+using OpenCBS.CoreDomain.Clients;
+using OpenCBS.CoreDomain.Contracts.Savings.CalculateInterests;
+using OpenCBS.CoreDomain.Events.Saving;
+using OpenCBS.CoreDomain.Products;
+using OpenCBS.Shared;
+using OpenCBS.Shared.Settings;
 
-namespace Octopus.CoreDomain.Contracts.Savings
+namespace OpenCBS.CoreDomain.Contracts.Savings
 {
     public delegate void AccountAtMaturityHandler(ISavingsContract savingDeposit, DateTime date, User user);
     [Serializable]

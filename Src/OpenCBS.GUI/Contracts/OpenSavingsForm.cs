@@ -1,9 +1,9 @@
 using System;
-using Octopus.Shared;
-using Octopus.CoreDomain.Products;
-using Octopus.GUI.UserControl;
+using OpenCBS.Shared;
+using OpenCBS.CoreDomain.Products;
+using OpenCBS.GUI.UserControl;
 
-namespace Octopus.GUI.Contracts
+namespace OpenCBS.GUI.Contracts
 {
     public partial class OpenSavingsForm : SweetBaseForm
     {

@@ -1,6 +1,6 @@
-﻿using System.ComponentModel;
+using System.ComponentModel;
 
-namespace Octopus.CoreDomain.CustomFields
+namespace OpenCBS.CoreDomain.CustomFields
 {
     public class CollectionItem
     {

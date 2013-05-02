@@ -3,16 +3,16 @@ using System.Collections;
 using System.Runtime.Remoting.Channels;
 using System.Runtime.Remoting.Channels.Http;
 using System.Runtime.Serialization.Formatters;
-using Octopus.CoreDomain;
-using Octopus.Services.Accounting;
-using Octopus.Services.Events;
-using Octopus.Services.Rules;
-using Octopus.Shared;
-using Octopus.Shared.Settings;
-using Octopus.Services.Currencies;
-using Octopus.Services.Export;
+using OpenCBS.CoreDomain;
+using OpenCBS.Services.Accounting;
+using OpenCBS.Services.Events;
+using OpenCBS.Services.Rules;
+using OpenCBS.Shared;
+using OpenCBS.Shared.Settings;
+using OpenCBS.Services.Currencies;
+using OpenCBS.Services.Export;
 
-namespace Octopus.Services
+namespace OpenCBS.Services
 {
     public class Remoting : IServices
     {

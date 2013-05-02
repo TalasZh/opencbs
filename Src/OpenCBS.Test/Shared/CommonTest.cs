@@ -1,8 +1,8 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using NUnit.Framework;
 
-namespace Octopus.Test.Shared
+namespace OpenCBS.Test.Shared
 {
     [TestFixture]
     public class CommonTest

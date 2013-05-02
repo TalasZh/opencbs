@@ -1,15 +1,15 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.Accounting;
-using Octopus.CoreDomain.FundingLines;
-using Octopus.Enums;
-using Octopus.Manager.Events;
-using Octopus.Shared;
-using FundingLine = Octopus.CoreDomain.FundingLines.FundingLine;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.Accounting;
+using OpenCBS.CoreDomain.FundingLines;
+using OpenCBS.Enums;
+using OpenCBS.Manager.Events;
+using OpenCBS.Shared;
+using FundingLine = OpenCBS.CoreDomain.FundingLines.FundingLine;
 
-namespace Octopus.Manager
+namespace OpenCBS.Manager
 {
     public class FundingLineManager : Manager, IFundingLineLazyLoader
     {

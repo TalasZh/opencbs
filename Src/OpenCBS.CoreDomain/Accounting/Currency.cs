@@ -1,6 +1,6 @@
-﻿using System;
+using System;
 
-namespace Octopus.CoreDomain.Accounting
+namespace OpenCBS.CoreDomain.Accounting
 {
     [Serializable]
     public class Currency

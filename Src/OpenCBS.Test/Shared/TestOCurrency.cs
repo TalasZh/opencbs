@@ -1,9 +1,9 @@
-﻿
+
 using System.Globalization;
 using NUnit.Framework;
-using Octopus.Shared;
+using OpenCBS.Shared;
 
-namespace Octopus.Test.Shared
+namespace OpenCBS.Test.Shared
 {
     [TestFixture]
     public class TestOCurrency

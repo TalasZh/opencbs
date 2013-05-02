@@ -2,11 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
-using Octopus.Services;
-using Octopus.CoreDomain;
+using OpenCBS.Services;
+using OpenCBS.CoreDomain;
 
 
-namespace Octopus.GUI.Configuration
+namespace OpenCBS.GUI.Configuration
 {
     public partial class frmUserSelection : Form
     {

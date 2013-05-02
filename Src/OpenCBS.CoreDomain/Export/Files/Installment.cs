@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Octopus.Shared;
+using OpenCBS.Shared;
 
-namespace Octopus.CoreDomain.Export.Files
+namespace OpenCBS.CoreDomain.Export.Files
 {
     [Serializable]
     public class Installment

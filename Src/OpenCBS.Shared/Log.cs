@@ -1,8 +1,8 @@
-﻿using log4net;
+using log4net;
 using log4net.Config;
 
 [assembly: XmlConfigurator(ConfigFile = "log4net.xml", Watch = true)]
-namespace Octopus.Shared
+namespace OpenCBS.Shared
 {
     public static class Log
     {

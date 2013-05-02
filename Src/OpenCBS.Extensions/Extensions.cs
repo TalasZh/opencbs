@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.Composition;
 using System.ComponentModel.Composition.Hosting;
@@ -9,7 +9,7 @@ using System.Reflection;
 using System.Windows.Forms;
 using System.Xml.Linq;
 
-namespace Octopus.Extensions
+namespace OpenCBS.Extensions
 {
     public class Extension : IDisposable
     {

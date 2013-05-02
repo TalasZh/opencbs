@@ -1,5 +1,5 @@
 //Octopus MFS is an integrated suite for managing a Micro Finance Institution: clients, contracts, accounting, reporting and risk
-//Copyright © 2006,2007 OCTO Technology & OXUS Development Network
+//Copyright ï¿½ 2006,2007 OCTO Technology & OXUS Development Network
 //
 //This program is free software; you can redistribute it and/or modify
 //it under the terms of the GNU Lesser General Public License as published by
@@ -26,25 +26,25 @@ using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Threading;
-using Octopus.CoreDomain.Clients;
-using Octopus.CoreDomain.Contracts.Loans;
-using Octopus.CoreDomain.Contracts.Loans.Installments;
-using Octopus.CoreDomain.LoanCycles;
-using Octopus.CoreDomain.Products;
-using Octopus.DatabaseConnection;
-using Octopus.Enums;
-using Octopus.Manager;
-using Octopus.CoreDomain;
-using Octopus.ExceptionsHandler;
-using Octopus.Manager.Products;
-using Octopus.MultiLanguageRessources;
-using Octopus.Services.Currencies;
-using Octopus.Shared.Settings;
+using OpenCBS.CoreDomain.Clients;
+using OpenCBS.CoreDomain.Contracts.Loans;
+using OpenCBS.CoreDomain.Contracts.Loans.Installments;
+using OpenCBS.CoreDomain.LoanCycles;
+using OpenCBS.CoreDomain.Products;
+using OpenCBS.DatabaseConnection;
+using OpenCBS.Enums;
+using OpenCBS.Manager;
+using OpenCBS.CoreDomain;
+using OpenCBS.ExceptionsHandler;
+using OpenCBS.Manager.Products;
+using OpenCBS.MultiLanguageRessources;
+using OpenCBS.Services.Currencies;
+using OpenCBS.Shared.Settings;
 
-namespace Octopus.Services
+namespace OpenCBS.Services
 {
 	/// <summary>
-	/// Description résumée de ProductServices.
+	/// Description rï¿½sumï¿½e de ProductServices.
 	/// </summary>
     public class ProductServices : MarshalByRefObject
 	{

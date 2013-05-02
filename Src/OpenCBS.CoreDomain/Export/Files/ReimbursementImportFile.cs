@@ -1,13 +1,13 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.IO;
-using Octopus.Shared;
-using Octopus.CoreDomain.Export.Fields;
-using Octopus.CoreDomain.Export.FieldType;
+using OpenCBS.Shared;
+using OpenCBS.CoreDomain.Export.Fields;
+using OpenCBS.CoreDomain.Export.FieldType;
 
-namespace Octopus.CoreDomain.Export.Files
+namespace OpenCBS.CoreDomain.Export.Files
 {
     [Serializable]
     public class ReimbursementImportFile : AImportFile<Installment>

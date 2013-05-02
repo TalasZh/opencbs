@@ -25,10 +25,10 @@
 using System;
 using System.Collections.Generic;
 using NUnit.Framework;
-using Octopus.Shared;
+using OpenCBS.Shared;
 using System.Collections;
 
-namespace Octopus.Test.Shared
+namespace OpenCBS.Test.Shared
 {
 	[TestFixture]
 	public class TestNonWorkingDateHelper

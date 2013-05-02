@@ -25,17 +25,17 @@
 using System;
 using System.Collections.Generic;
 using System.Globalization;
-using Octopus.CoreDomain;
-using Octopus.ExceptionsHandler;
-using Octopus.GUI.Configuration;
-using Octopus.GUI.Database;
-using Octopus.Services;
-using Octopus.Shared;
+using OpenCBS.CoreDomain;
+using OpenCBS.ExceptionsHandler;
+using OpenCBS.GUI.Configuration;
+using OpenCBS.GUI.Database;
+using OpenCBS.Services;
+using OpenCBS.Shared;
 using System.Threading;
 using System.Windows.Forms;
-using Octopus.Shared.Settings;
+using OpenCBS.Shared.Settings;
 
-namespace Octopus.GUI
+namespace OpenCBS.GUI
 {
     /// <summary>
     /// Application main.

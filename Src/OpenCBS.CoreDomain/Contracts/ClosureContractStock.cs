@@ -24,11 +24,11 @@
 
 using System;
 using System.Collections;
-using Octopus.CoreDomain.Contracts.Loans;
-using Octopus.CoreDomain.Events;
-using Octopus.CoreDomain.Events.Loan;
+using OpenCBS.CoreDomain.Contracts.Loans;
+using OpenCBS.CoreDomain.Events;
+using OpenCBS.CoreDomain.Events.Loan;
 
-namespace Octopus.CoreDomain.Contracts
+namespace OpenCBS.CoreDomain.Contracts
 {
     /// <summary>
     /// Summary description for ClosureContractStock.

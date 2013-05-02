@@ -1,4 +1,4 @@
-﻿//Octopus MFS is an integrated suite for managing a Micro Finance Institution: clients, contracts, accounting, reporting and risk
+//Octopus MFS is an integrated suite for managing a Micro Finance Institution: clients, contracts, accounting, reporting and risk
 //Copyright © 2006,2007 OCTO Technology & OXUS Development Network
 //
 //This program is free software; you can redistribute it and/or modify
@@ -26,15 +26,15 @@ using System.Collections;
 using System.Data.SqlClient;
 using System.Reflection;
 using NUnit.Framework;
-using Octopus.DatabaseConnection;
-using Octopus.Enums;
-using Octopus.Manager;
-using Octopus.Manager.Clients;
-using Octopus.Services;
+using OpenCBS.DatabaseConnection;
+using OpenCBS.Enums;
+using OpenCBS.Manager;
+using OpenCBS.Manager.Clients;
+using OpenCBS.Services;
 using System.IO;
-using Octopus.Shared.Settings;
+using OpenCBS.Shared.Settings;
 
-namespace Octopus.Test.Services
+namespace OpenCBS.Test.Services
 {
     public abstract class BaseServicesTest
     {
@@ -82,7 +82,7 @@ namespace Octopus.Test.Services
         private static void _InitScript()
         {
             Assembly a = Assembly.GetExecutingAssembly();
-            Stream stream = a.GetManifestResourceStream("Octopus.Test._Sql.Init.sql");
+            Stream stream = a.GetManifestResourceStream("OpenCBS.Test._Sql.Init.sql");
 
             if (stream == null)    return;
             StreamReader streamReader = new StreamReader(stream);

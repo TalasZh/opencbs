@@ -28,9 +28,9 @@ using System.Data.SqlTypes;
 using System.Data;
 using System.Drawing;
 using System.IO;
-using Octopus.Shared;
+using OpenCBS.Shared;
 
-namespace Octopus.Manager
+namespace OpenCBS.Manager
 {
 	/// <summary>
 	/// Summary description for DatabaseHelper.

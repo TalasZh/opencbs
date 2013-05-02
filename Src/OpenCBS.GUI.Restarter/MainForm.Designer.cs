@@ -1,4 +1,4 @@
-namespace Octopus.GUI.Restarter
+namespace OpenCBS.GUI.Restarter
 {
     partial class MainForm
     {

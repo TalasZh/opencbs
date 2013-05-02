@@ -24,14 +24,14 @@
 
 using System;
 using System.Windows.Forms;
-using Octopus.CoreDomain;
-using Octopus.GUI.Report_Browser;
-using Octopus.Reports;
-using Octopus.Reports.Forms;
-using Octopus.Services;
-using Octopus.GUI.Projets;
+using OpenCBS.CoreDomain;
+using OpenCBS.GUI.Report_Browser;
+using OpenCBS.Reports;
+using OpenCBS.Reports.Forms;
+using OpenCBS.Services;
+using OpenCBS.GUI.Projets;
 
-namespace Octopus.GUI
+namespace OpenCBS.GUI
 {
 	/// <summary>
 	/// Description r�sum�e de fastChoiceForm.

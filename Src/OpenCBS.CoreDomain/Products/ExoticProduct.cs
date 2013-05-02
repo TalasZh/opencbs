@@ -25,10 +25,10 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using Octopus.CoreDomain.Contracts.Loans.Installments;
-using Octopus.Enums;
+using OpenCBS.CoreDomain.Contracts.Loans.Installments;
+using OpenCBS.Enums;
 
-namespace Octopus.CoreDomain
+namespace OpenCBS.CoreDomain
 {
     /// <summary>
     /// Summary description for ExoticProduct.

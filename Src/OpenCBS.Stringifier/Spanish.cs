@@ -1,6 +1,6 @@
-﻿using System.Diagnostics;
+using System.Diagnostics;
 
-namespace Octopus.Stringifier
+namespace OpenCBS.Stringifier
 {
     public class Spanish : Stringifiable
     {

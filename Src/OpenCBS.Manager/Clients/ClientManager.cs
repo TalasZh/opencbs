@@ -25,19 +25,19 @@
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
-using Octopus.CoreDomain;
+using OpenCBS.CoreDomain;
 using System.Collections;
-using Octopus.CoreDomain.Clients;
-using Octopus.CoreDomain.Contracts.Loans;
-using Octopus.CoreDomain.FundingLines;
-using Octopus.CoreDomain.SearchResult;
-using Octopus.Enums;
-using Octopus.Manager.Contracts;
-using Octopus.Shared;
-using Octopus.Manager.QueryForObject;
-using Octopus.Shared.Settings;
+using OpenCBS.CoreDomain.Clients;
+using OpenCBS.CoreDomain.Contracts.Loans;
+using OpenCBS.CoreDomain.FundingLines;
+using OpenCBS.CoreDomain.SearchResult;
+using OpenCBS.Enums;
+using OpenCBS.Manager.Contracts;
+using OpenCBS.Shared;
+using OpenCBS.Manager.QueryForObject;
+using OpenCBS.Shared.Settings;
 
-namespace Octopus.Manager.Clients
+namespace OpenCBS.Manager.Clients
 {
     /// <summary>
     /// ClientManagement contains all methods relative to selecting, inserting, updating

@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Octopus.CoreDomain;
+using OpenCBS.CoreDomain;
 
-namespace Octopus.CoreDomain.Contracts.Loans
+namespace OpenCBS.CoreDomain.Contracts.Loans
 {
     public class LoanEntryFee
     {

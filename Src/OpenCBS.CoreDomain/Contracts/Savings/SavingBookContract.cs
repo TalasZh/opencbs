@@ -1,4 +1,4 @@
-﻿//Octopus MFS is an integrated suite for managing a Micro Finance Institution: clients, contracts, accounting, reporting and risk
+//Octopus MFS is an integrated suite for managing a Micro Finance Institution: clients, contracts, accounting, reporting and risk
 //Copyright ?2006,2007 OCTO Technology & OXUS Development Network
 //
 //This program is free software; you can redistribute it and/or modify
@@ -25,17 +25,17 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Octopus.CoreDomain.Clients;
-using Octopus.CoreDomain.Contracts.Loans.Installments;
-using Octopus.CoreDomain.Events.Saving;
-using Octopus.Enums;
-using Octopus.CoreDomain.Products;
-using Octopus.Shared;
-using Octopus.Shared.Settings;
-using Octopus.CoreDomain.Contracts.Savings.CalculateInterests;
-using Octopus.CoreDomain.Contracts.Loans;
+using OpenCBS.CoreDomain.Clients;
+using OpenCBS.CoreDomain.Contracts.Loans.Installments;
+using OpenCBS.CoreDomain.Events.Saving;
+using OpenCBS.Enums;
+using OpenCBS.CoreDomain.Products;
+using OpenCBS.Shared;
+using OpenCBS.Shared.Settings;
+using OpenCBS.CoreDomain.Contracts.Savings.CalculateInterests;
+using OpenCBS.CoreDomain.Contracts.Loans;
 
-namespace Octopus.CoreDomain.Contracts.Savings
+namespace OpenCBS.CoreDomain.Contracts.Savings
 {
     [Serializable]
 	public class SavingBookContract : SavingsContract

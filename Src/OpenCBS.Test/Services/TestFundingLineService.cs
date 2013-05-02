@@ -1,4 +1,4 @@
-﻿//Octopus MFS is an integrated suite for managing a Micro Finance Institution: clients, contracts, accounting, reporting and risk
+//Octopus MFS is an integrated suite for managing a Micro Finance Institution: clients, contracts, accounting, reporting and risk
 //Copyright © 2006,2007 OCTO Technology & OXUS Development Network
 //
 //This program is free software; you can redistribute it and/or modify
@@ -26,22 +26,22 @@ using System;
 using System.Collections.Generic;
 using NUnit.Framework;
 using NUnit.Mocks;
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.Accounting;
-using Octopus.CoreDomain.Clients;
-using Octopus.CoreDomain.FundingLines;
-using Octopus.ExceptionsHandler.Exceptions.FundingLineExceptions;
-using Octopus.Manager;
-using Octopus.Manager.Accounting;
-using Octopus.Manager.Products;
-using Octopus.Services;
-using Octopus.Shared;
-using Octopus.Shared.Settings;
-using FundingLine=Octopus.CoreDomain.FundingLines.FundingLine;
-using Octopus.Services.Events;
-using Octopus.Enums;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.Accounting;
+using OpenCBS.CoreDomain.Clients;
+using OpenCBS.CoreDomain.FundingLines;
+using OpenCBS.ExceptionsHandler.Exceptions.FundingLineExceptions;
+using OpenCBS.Manager;
+using OpenCBS.Manager.Accounting;
+using OpenCBS.Manager.Products;
+using OpenCBS.Services;
+using OpenCBS.Shared;
+using OpenCBS.Shared.Settings;
+using FundingLine=OpenCBS.CoreDomain.FundingLines.FundingLine;
+using OpenCBS.Services.Events;
+using OpenCBS.Enums;
 
-namespace Octopus.Test.Services
+namespace OpenCBS.Test.Services
 {
     [TestFixture]
     public class TestFundingLineService : BaseServicesTest
@@ -100,7 +100,7 @@ namespace Octopus.Test.Services
             var ev = new FundingLineEvent
                          {
                              Code = "KAO",
-                             Type = Octopus.Enums.OFundingLineEventTypes.Entry,
+                             Type = OpenCBS.Enums.OFundingLineEventTypes.Entry,
                              CreationDate = DateTime.Now,
                              EndDate = DateTime.Now.AddDays(1),
                              Amount = 1000
@@ -117,7 +117,7 @@ namespace Octopus.Test.Services
                          {
                              Id = 1,
                              Code = "NewKAO",
-                             Type = Octopus.Enums.OFundingLineEventTypes.Entry,
+                             Type = OpenCBS.Enums.OFundingLineEventTypes.Entry,
                              FundingLine = fundingLine
                          };
             int id = fundingLineServices.SelectFundingLineEventId(ev);

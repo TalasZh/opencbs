@@ -1,6 +1,6 @@
-using Octopus.GUI.UserControl;
+using OpenCBS.GUI.UserControl;
 
-namespace Octopus.GUI.Contracts
+namespace OpenCBS.GUI.Contracts
 {
     partial class VillageCreditCommitteeForm
     {
@@ -37,7 +37,7 @@ namespace Octopus.GUI.Contracts
             this.btnSave = new System.Windows.Forms.Button();
             this.tbAmount = new System.Windows.Forms.TextBox();
             this.tbEntryFee = new System.Windows.Forms.TextBox();
-            this.lvMembers = new Octopus.GUI.UserControl.ListViewEx();
+            this.lvMembers = new OpenCBS.GUI.UserControl.ListViewEx();
             this.chName = new System.Windows.Forms.ColumnHeader();
             this.chPassport = new System.Windows.Forms.ColumnHeader();
             this.chAmount = new System.Windows.Forms.ColumnHeader();
@@ -197,7 +197,7 @@ namespace Octopus.GUI.Contracts
         #endregion
 
         private System.Windows.Forms.Panel pnlButtons;
-        private Octopus.GUI.UserControl.ListViewEx lvMembers;
+        private OpenCBS.GUI.UserControl.ListViewEx lvMembers;
         private System.Windows.Forms.ColumnHeader chName;
         private System.Windows.Forms.ColumnHeader chPassport;
         private System.Windows.Forms.ColumnHeader chAmount;

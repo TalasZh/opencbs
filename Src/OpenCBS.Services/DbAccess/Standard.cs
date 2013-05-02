@@ -1,15 +1,15 @@
 using System;
-using Octopus.Services.Accounting;
-using Octopus.Services.Currencies;
-using Octopus.Services.Events;
-using Octopus.Services.Rules;
-using Octopus.Shared;
-using Octopus.Shared.Settings;
-using Reports = Octopus.Enums.OReports;
-using Octopus.CoreDomain;
-using Octopus.Services.Export;
+using OpenCBS.Services.Accounting;
+using OpenCBS.Services.Currencies;
+using OpenCBS.Services.Events;
+using OpenCBS.Services.Rules;
+using OpenCBS.Shared;
+using OpenCBS.Shared.Settings;
+using Reports = OpenCBS.Enums.OReports;
+using OpenCBS.CoreDomain;
+using OpenCBS.Services.Export;
 
-namespace Octopus.Services
+namespace OpenCBS.Services
 {
     public class Standard : IServices
     {
@@ -20,101 +20,101 @@ namespace Octopus.Services
 
         public UserServices GetUserServices()
         {
-            Console.WriteLine("UserServices coté client");
+            Console.WriteLine("UserServices cotï¿½ client");
             return new UserServices(CurrentUser);
         }
 
         public AccountingServices GetAccountingServices()
         {
-            Console.WriteLine("AccountingServices coté client");
+            Console.WriteLine("AccountingServices cotï¿½ client");
             return new AccountingServices(CurrentUser);
         }
         public RoleServices GetRoleServices()
         {
-            Console.WriteLine("RoleServices coté client");
+            Console.WriteLine("RoleServices cotï¿½ client");
             return new RoleServices(CurrentUser);
         }
         public RegExCheckerServices GetRegExCheckerServices()
         {
-            Console.WriteLine("RegExCheckerServices coté client");
+            Console.WriteLine("RegExCheckerServices cotï¿½ client");
             return new RegExCheckerServices(CurrentUser);
         }
         public ExchangeRateServices GetExchangeRateServices()
         {
-            Console.WriteLine("ExchangeRateServices coté client");
+            Console.WriteLine("ExchangeRateServices cotï¿½ client");
             return new ExchangeRateServices(CurrentUser);
         }
 
         //Permet d'initialiser le service "SavingProduct" en local
         public SavingProductServices GetSavingProductServices()
         {
-            Console.WriteLine("SavingProductServices coté client");
+            Console.WriteLine("SavingProductServices cotï¿½ client");
             return new SavingProductServices(CurrentUser);
         }
 
         public SavingServices GetSavingServices()
         {
-            Console.WriteLine("SavingServices coté client");
+            Console.WriteLine("SavingServices cotï¿½ client");
             return new SavingServices(CurrentUser);
         }
 
         public ChartOfAccountsServices GetChartOfAccountsServices()
         {
-            Console.WriteLine("GlobalAccountingParametersServices coté client");
+            Console.WriteLine("GlobalAccountingParametersServices cotï¿½ client");
             return new ChartOfAccountsServices(CurrentUser);
         }
 
         public StandardBookingServices GetStandardBookingServices()
         {
-            Console.WriteLine("StandardBookingServices coté client");
+            Console.WriteLine("StandardBookingServices cotï¿½ client");
             return new StandardBookingServices(CurrentUser);
         }
 
         public EventProcessorServices GetEventProcessorServices()
         {
-            Console.WriteLine("EventProcessorServices coté client");
+            Console.WriteLine("EventProcessorServices cotï¿½ client");
             return new EventProcessorServices(CurrentUser);
         }
 
         //public CashReceiptServices GetCashReceiptServices()
         //{
-        //    Console.WriteLine("CashReceiptServices coté client");
+        //    Console.WriteLine("CashReceiptServices cotï¿½ client");
         //    return new CashReceiptServices(User.CurrentUser);
         //}
 
         public ClientServices GetClientServices()
         {
-            Console.WriteLine("ClientServices coté client");
+            Console.WriteLine("ClientServices cotï¿½ client");
             return new ClientServices(CurrentUser);
         }
 
         public LoanServices GetContractServices()
         {
-            Console.WriteLine("ContractServices coté client");
+            Console.WriteLine("ContractServices cotï¿½ client");
             return new LoanServices(CurrentUser);
         }
 
         public DatabaseServices GetDatabaseServices()
         {
-            Console.WriteLine("DatabaseServices coté client");
+            Console.WriteLine("DatabaseServices cotï¿½ client");
             return new DatabaseServices(); 
         }
 
         public EconomicActivityServices GetEconomicActivityServices()
         {
-            Console.WriteLine("EconomicActivities coté client");
+            Console.WriteLine("EconomicActivities cotï¿½ client");
             return new EconomicActivityServices(CurrentUser);
         }
 
         public ApplicationSettingsServices GetApplicationSettingsServices()
         {
-            Console.WriteLine("GeneralSettingsServices coté client");
+            Console.WriteLine("GeneralSettingsServices cotï¿½ client");
             return new ApplicationSettingsServices(CurrentUser);
         }
 
         public GraphServices GetGraphServices()
         {
-            Console.WriteLine("GraphServices coté client");
+            Console.WriteLine("GraphServices cotï¿½ client");
             return new GraphServices(CurrentUser);
         }
 

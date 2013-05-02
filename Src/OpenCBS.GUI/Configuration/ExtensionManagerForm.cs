@@ -3,11 +3,11 @@ using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 using BrightIdeasSoftware;
-using Octopus.Extensions;
-using Octopus.GUI.UserControl;
-using Octopus.Shared;
+using OpenCBS.Extensions;
+using OpenCBS.GUI.UserControl;
+using OpenCBS.Shared;
 
-namespace Octopus.GUI.Configuration
+namespace OpenCBS.GUI.Configuration
 {
     public partial class ExtensionManagerForm : SweetForm
     {

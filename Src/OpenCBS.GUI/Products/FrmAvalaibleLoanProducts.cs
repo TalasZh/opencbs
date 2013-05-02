@@ -27,16 +27,16 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using System.Windows.Forms;
-using Octopus.CoreDomain.Products;
-using Octopus.Enums;
-using Octopus.ExceptionsHandler;
-using Octopus.Services;
+using OpenCBS.CoreDomain.Products;
+using OpenCBS.Enums;
+using OpenCBS.ExceptionsHandler;
+using OpenCBS.Services;
 using System.Security.Permissions;
-using Octopus.MultiLanguageRessources;
-using Octopus.Shared.Settings;
-using Octopus.GUI.UserControl;
+using OpenCBS.MultiLanguageRessources;
+using OpenCBS.Shared.Settings;
+using OpenCBS.GUI.UserControl;
 
-namespace Octopus.GUI.Products
+namespace OpenCBS.GUI.Products
 {
     /// <summary>
     /// Description r�sum�e de PackagesForm.

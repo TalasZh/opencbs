@@ -25,7 +25,7 @@
 using System;
 using System.Runtime.Serialization;
 
-namespace Octopus.ExceptionsHandler
+namespace OpenCBS.ExceptionsHandler
 {
 	/// <summary>
 	/// Summary description for OctopusContractSaveException.

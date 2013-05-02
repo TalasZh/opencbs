@@ -2,17 +2,17 @@ using System;
 using System.ComponentModel;
 using System.Collections.Generic;
 using System.Windows.Forms;
-using Octopus.CoreDomain.Contracts.Collaterals;
-using Octopus.CoreDomain.Clients;
-using Octopus.CoreDomain.Products.Collaterals;
-using Octopus.Enums;
-using Octopus.ExceptionsHandler;
-using Octopus.GUI.Clients;
-using Octopus.Services;
-using Octopus.Shared;
-using Octopus.GUI.UserControl;
+using OpenCBS.CoreDomain.Contracts.Collaterals;
+using OpenCBS.CoreDomain.Clients;
+using OpenCBS.CoreDomain.Products.Collaterals;
+using OpenCBS.Enums;
+using OpenCBS.ExceptionsHandler;
+using OpenCBS.GUI.Clients;
+using OpenCBS.Services;
+using OpenCBS.Shared;
+using OpenCBS.GUI.UserControl;
 
-namespace Octopus.GUI.Contracts
+namespace OpenCBS.GUI.Contracts
 {
     public partial class ContractCollateralForm : SweetBaseForm
     {

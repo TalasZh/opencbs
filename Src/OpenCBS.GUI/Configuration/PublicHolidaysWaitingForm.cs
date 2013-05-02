@@ -25,10 +25,10 @@
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
-using Octopus.CoreDomain.Contracts.Loans.Installments;
-using Octopus.Services;
+using OpenCBS.CoreDomain.Contracts.Loans.Installments;
+using OpenCBS.Services;
 
-namespace Octopus.GUI.Configuration
+namespace OpenCBS.GUI.Configuration
 {
     /// <summary>
     /// Summary description for PublicHolidaysWaitingForm.

@@ -1,21 +1,21 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.FundingLines;
-using Octopus.DatabaseConnection;
-using Octopus.Enums;
-using Octopus.Manager;
-using Octopus.ExceptionsHandler.Exceptions.FundingLineExceptions;
-using Octopus.Manager.Clients;
-using Octopus.Services.Events;
-using Octopus.Services.Rules;
-using Octopus.Shared;
-using FundingLine = Octopus.CoreDomain.FundingLines.FundingLine;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.FundingLines;
+using OpenCBS.DatabaseConnection;
+using OpenCBS.Enums;
+using OpenCBS.Manager;
+using OpenCBS.ExceptionsHandler.Exceptions.FundingLineExceptions;
+using OpenCBS.Manager.Clients;
+using OpenCBS.Services.Events;
+using OpenCBS.Services.Rules;
+using OpenCBS.Shared;
+using FundingLine = OpenCBS.CoreDomain.FundingLines.FundingLine;
 
-namespace Octopus.Services
+namespace OpenCBS.Services
 {
     public class FundingLineServices : MarshalByRefObject
     {

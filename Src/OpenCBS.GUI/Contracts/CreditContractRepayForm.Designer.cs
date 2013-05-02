@@ -1,8 +1,8 @@
 using System.ComponentModel;
 using System.Windows.Forms;
-using Octopus.GUI.UserControl;
+using OpenCBS.GUI.UserControl;
 
-namespace Octopus.GUI.Contracts
+namespace OpenCBS.GUI.Contracts
 {
     public partial class CreditContractRepayForm
     {
@@ -306,7 +306,7 @@ namespace Octopus.GUI.Contracts
             this.buttonSelectAGroupPerson.AccessibleName = null;
             resources.ApplyResources(this.buttonSelectAGroupPerson, "buttonSelectAGroupPerson");
             this.buttonSelectAGroupPerson.BackColor = System.Drawing.Color.Transparent;
-            this.buttonSelectAGroupPerson.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_pastille_personne;
+            this.buttonSelectAGroupPerson.BackgroundImage = global::OpenCBS.GUI.Properties.Resources.theme1_1_pastille_personne;
             this.buttonSelectAGroupPerson.Font = null;
             this.buttonSelectAGroupPerson.Name = "buttonSelectAGroupPerson";
             this.buttonSelectAGroupPerson.UseVisualStyleBackColor = false;

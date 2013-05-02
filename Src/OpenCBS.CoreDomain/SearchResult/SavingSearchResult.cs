@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 using System.Diagnostics;
-using Octopus.Enums;
-using Octopus.Shared;
+using OpenCBS.Enums;
+using OpenCBS.Shared;
 
 // TODO: merge this class with the same for loans
-namespace Octopus.CoreDomain.SearchResult
+namespace OpenCBS.CoreDomain.SearchResult
 {
     [Serializable]
     public class SavingSearchResult

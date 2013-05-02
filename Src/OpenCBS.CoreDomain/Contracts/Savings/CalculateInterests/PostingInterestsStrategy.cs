@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
-using Octopus.CoreDomain.Contracts.Savings.CalculateInterests.Interfaces;
-using Octopus.CoreDomain.Events.Saving;
-using Octopus.Enums;
+using OpenCBS.CoreDomain.Contracts.Savings.CalculateInterests.Interfaces;
+using OpenCBS.CoreDomain.Events.Saving;
+using OpenCBS.Enums;
 
-namespace Octopus.CoreDomain.Contracts.Savings.CalculateInterests
+namespace OpenCBS.CoreDomain.Contracts.Savings.CalculateInterests
 {
     public class PostingInterestsStrategy : IPostingInterests
     {

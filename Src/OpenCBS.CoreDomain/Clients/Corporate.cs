@@ -1,9 +1,9 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
-using Octopus.CoreDomain.EconomicActivities;
-using Octopus.Enums;
+using OpenCBS.CoreDomain.EconomicActivities;
+using OpenCBS.Enums;
 
-namespace Octopus.CoreDomain.Clients
+namespace OpenCBS.CoreDomain.Clients
 {
     [Serializable]
     public class Corporate : Client

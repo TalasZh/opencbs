@@ -24,7 +24,7 @@
 
 using System;
 
-namespace Octopus.CoreDomain
+namespace OpenCBS.CoreDomain
 {
 	/// <summary>
 	/// Summary description for ProvinceArea.

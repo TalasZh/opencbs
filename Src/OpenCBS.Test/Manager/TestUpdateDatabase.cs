@@ -1,8 +1,8 @@
-﻿using Octopus.Shared.FilesSearch;
+using OpenCBS.Shared.FilesSearch;
 using NUnit.Framework;
-using Octopus.Manager;
+using OpenCBS.Manager;
 
-namespace Octopus.Test.Manager
+namespace OpenCBS.Test.Manager
 {
     [TestFixture]
     public class TestUpdateDatabase:BaseUpdateDatabaseTest

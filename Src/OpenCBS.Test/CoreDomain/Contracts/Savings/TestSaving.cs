@@ -1,19 +1,19 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using NUnit.Framework;
-using Octopus.CoreDomain.Clients;
-using Octopus.CoreDomain.Contracts.Loans.Installments;
-using Octopus.CoreDomain.Contracts.Savings;
-using Octopus.CoreDomain.Events.Saving;
-using Octopus.CoreDomain.Products;
-using Octopus.Shared;
-using Octopus.Enums;
-using Octopus.CoreDomain;
-using Octopus.Shared.Settings;
-using Octopus.CoreDomain.Accounting;
+using OpenCBS.CoreDomain.Clients;
+using OpenCBS.CoreDomain.Contracts.Loans.Installments;
+using OpenCBS.CoreDomain.Contracts.Savings;
+using OpenCBS.CoreDomain.Events.Saving;
+using OpenCBS.CoreDomain.Products;
+using OpenCBS.Shared;
+using OpenCBS.Enums;
+using OpenCBS.CoreDomain;
+using OpenCBS.Shared.Settings;
+using OpenCBS.CoreDomain.Accounting;
 
-namespace Octopus.Test.CoreDomain.Contracts.Savings
+namespace OpenCBS.Test.CoreDomain.Contracts.Savings
 {
 	[TestFixture]
 	public class TestSaving 

@@ -22,7 +22,7 @@
 // Business contact: business(at)octopusnetwork.org
 // Technical contact email : tech(at)octopusnetwork.org 
 
-namespace Octopus.Enums
+namespace OpenCBS.Enums
 {
     public enum OAccountCategories
     {

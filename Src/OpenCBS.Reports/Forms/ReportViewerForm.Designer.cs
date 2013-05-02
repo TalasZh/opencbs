@@ -1,4 +1,4 @@
-﻿namespace Octopus.Reports.Forms
+namespace OpenCBS.Reports.Forms
 {
     partial class ReportViewerForm
     {

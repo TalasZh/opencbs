@@ -1,8 +1,8 @@
-﻿using System.Data.SqlClient;
+using System.Data.SqlClient;
 using System.Windows.Forms;
-using Octopus.CoreDomain.Contracts.Savings;
+using OpenCBS.CoreDomain.Contracts.Savings;
 
-namespace Octopus.Extensions
+namespace OpenCBS.Extensions
 {
     public interface ISavings
     {

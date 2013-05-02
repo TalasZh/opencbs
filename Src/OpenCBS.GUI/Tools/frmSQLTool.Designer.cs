@@ -1,4 +1,4 @@
-namespace Octopus.GUI.Tools
+namespace OpenCBS.GUI.Tools
 {
     partial class frmSQLTool
     {
@@ -104,7 +104,7 @@ namespace Octopus.GUI.Tools
             resources.ApplyResources(this.toolStripButton1, "toolStripButton1");
             this.toolStripButton1.BackgroundImage = null;
             this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton1.Image = global::Octopus.GUI.Properties.Resources.run;
+            this.toolStripButton1.Image = global::OpenCBS.GUI.Properties.Resources.run;
             this.toolStripButton1.Name = "toolStripButton1";
             this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 

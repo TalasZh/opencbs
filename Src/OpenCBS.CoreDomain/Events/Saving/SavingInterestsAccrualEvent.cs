@@ -1,7 +1,7 @@
-﻿using Octopus.Enums;
+using OpenCBS.Enums;
 using System;
 
-namespace Octopus.CoreDomain.Events.Saving
+namespace OpenCBS.CoreDomain.Events.Saving
 {
     [Serializable]
     public class SavingInterestsAccrualEvent : SavingEvent

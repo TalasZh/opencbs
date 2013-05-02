@@ -29,31 +29,31 @@ using System.Linq;
 using System.Data.SqlClient;
 using NUnit.Framework;
 using NUnit.Mocks;
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.Accounting;
-using Octopus.CoreDomain.Clients;
-using Octopus.CoreDomain.Contracts.Loans;
-using Octopus.CoreDomain.Contracts.Loans.Installments;
-using Octopus.CoreDomain.Contracts.Loans.LoanRepayment;
-using Octopus.CoreDomain.Contracts.Savings;
-using Octopus.CoreDomain.Events;
-using Octopus.CoreDomain.Events.Saving;
-using Octopus.CoreDomain.FundingLines;
-using Octopus.CoreDomain.Products;
-using Octopus.Enums;
-using Octopus.ExceptionsHandler;
-using Octopus.Manager;
-using Octopus.Manager.Accounting;
-using Octopus.Manager.Contracts;
-using Octopus.Services;
-using Octopus.Shared;
-using Octopus.Shared.Settings;
-using Octopus.Manager.Clients;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.Accounting;
+using OpenCBS.CoreDomain.Clients;
+using OpenCBS.CoreDomain.Contracts.Loans;
+using OpenCBS.CoreDomain.Contracts.Loans.Installments;
+using OpenCBS.CoreDomain.Contracts.Loans.LoanRepayment;
+using OpenCBS.CoreDomain.Contracts.Savings;
+using OpenCBS.CoreDomain.Events;
+using OpenCBS.CoreDomain.Events.Saving;
+using OpenCBS.CoreDomain.FundingLines;
+using OpenCBS.CoreDomain.Products;
+using OpenCBS.Enums;
+using OpenCBS.ExceptionsHandler;
+using OpenCBS.Manager;
+using OpenCBS.Manager.Accounting;
+using OpenCBS.Manager.Contracts;
+using OpenCBS.Services;
+using OpenCBS.Shared;
+using OpenCBS.Shared.Settings;
+using OpenCBS.Manager.Clients;
 
-namespace Octopus.Test.Services
+namespace OpenCBS.Test.Services
 {
 	/// <summary>
-	/// Description résumée de TestContractServices.
+	/// Description rï¿½sumï¿½e de TestContractServices.
 	/// </summary>
 
     [TestFixture]

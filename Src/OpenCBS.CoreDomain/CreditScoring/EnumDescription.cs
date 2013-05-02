@@ -1,7 +1,7 @@
-﻿using System;
+using System;
 using System.ComponentModel;
 
-namespace Octopus.CoreDomain.CreditScoring
+namespace OpenCBS.CoreDomain.CreditScoring
 {
     public class EnumToStringUsingDescription : TypeConverter
     {

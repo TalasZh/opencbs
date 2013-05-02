@@ -1,6 +1,6 @@
-﻿using System;
+using System;
 
-namespace Octopus.CoreDomain.FundingLines
+namespace OpenCBS.CoreDomain.FundingLines
 {
     [Serializable]
     public class LegalForm

@@ -26,11 +26,11 @@ using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Collections;
-using Octopus.CoreDomain;
-using Octopus.Shared;
-using Octopus.Shared.Settings;
+using OpenCBS.CoreDomain;
+using OpenCBS.Shared;
+using OpenCBS.Shared.Settings;
 
-namespace Octopus.Manager
+namespace OpenCBS.Manager
 {
     /// <summary>
     /// Summary description for NonWorkingDateManager.

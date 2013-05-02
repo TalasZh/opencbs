@@ -1,13 +1,13 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using NUnit.Framework;
-using Octopus.CoreDomain.Export;
-using Octopus.CoreDomain.Export.FieldType;
-using Octopus.CoreDomain.Export.Files;
+using OpenCBS.CoreDomain.Export;
+using OpenCBS.CoreDomain.Export.FieldType;
+using OpenCBS.CoreDomain.Export.Files;
 
-namespace Octopus.Test.CoreDomain.Export
+namespace OpenCBS.Test.CoreDomain.Export
 {
     [TestFixture]
     public class TestFieldType

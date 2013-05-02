@@ -26,14 +26,14 @@ using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Diagnostics;
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.Events.Saving;
-using Octopus.CoreDomain.Products;
-using Octopus.CoreDomain.Accounting;
-using Octopus.Enums;
-using Octopus.Manager.Products;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.Events.Saving;
+using OpenCBS.CoreDomain.Products;
+using OpenCBS.CoreDomain.Accounting;
+using OpenCBS.Enums;
+using OpenCBS.Manager.Products;
 
-namespace Octopus.Manager.Events
+namespace OpenCBS.Manager.Events
 {
 	public class SavingEventManager : Manager
 	{

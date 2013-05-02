@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Octopus.GUI.SoftwareUpdate {
+namespace OpenCBS.GUI.SoftwareUpdate {
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -27,12 +27,12 @@ namespace Octopus.GUI.SoftwareUpdate {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface VersionServicePortTypeChannel : Octopus.GUI.SoftwareUpdate.VersionServicePortType, System.ServiceModel.IClientChannel {
+    public interface VersionServicePortTypeChannel : OpenCBS.GUI.SoftwareUpdate.VersionServicePortType, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class VersionServicePortTypeClient : System.ServiceModel.ClientBase<Octopus.GUI.SoftwareUpdate.VersionServicePortType>, Octopus.GUI.SoftwareUpdate.VersionServicePortType {
+    public partial class VersionServicePortTypeClient : System.ServiceModel.ClientBase<OpenCBS.GUI.SoftwareUpdate.VersionServicePortType>, OpenCBS.GUI.SoftwareUpdate.VersionServicePortType {
         
         public VersionServicePortTypeClient() {
         }

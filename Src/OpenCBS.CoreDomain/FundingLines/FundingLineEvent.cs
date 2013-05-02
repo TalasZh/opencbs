@@ -1,10 +1,10 @@
-﻿using System;
-using Octopus.CoreDomain.Events;
-using Octopus.CoreDomain.Events.Loan;
-using Octopus.Enums;
-using Octopus.Shared;
+using System;
+using OpenCBS.CoreDomain.Events;
+using OpenCBS.CoreDomain.Events.Loan;
+using OpenCBS.Enums;
+using OpenCBS.Shared;
 
-namespace Octopus.CoreDomain.FundingLines
+namespace OpenCBS.CoreDomain.FundingLines
 {
     [Serializable]
     public class FundingLineEvent : Event

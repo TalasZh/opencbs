@@ -1,7 +1,7 @@
 using System;
 using System.Globalization;
 
-namespace Octopus.Shared
+namespace OpenCBS.Shared
 {
 	[Serializable]
 	public struct OCurrency

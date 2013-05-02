@@ -1,12 +1,12 @@
-﻿
-using System.Collections.Generic;
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.SearchResult;
-using NUnit.Framework;
-using Octopus.Manager.Contracts;
-using Octopus.Shared.Settings;
 
-namespace Octopus.Test.Manager
+using System.Collections.Generic;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.SearchResult;
+using NUnit.Framework;
+using OpenCBS.Manager.Contracts;
+using OpenCBS.Shared.Settings;
+
+namespace OpenCBS.Test.Manager
 {
     [TestFixture]
     public class TestCreditManagementProxy:BaseManagerTest

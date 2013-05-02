@@ -27,13 +27,13 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Drawing;
 using System.Windows.Forms;
-using Octopus.CoreDomain;
-using Octopus.GUI.Tools;
-using Octopus.GUI.UserControl;
-using Octopus.Services;
-using Octopus.ExceptionsHandler;
+using OpenCBS.CoreDomain;
+using OpenCBS.GUI.Tools;
+using OpenCBS.GUI.UserControl;
+using OpenCBS.Services;
+using OpenCBS.ExceptionsHandler;
 
-namespace Octopus.GUI.Configuration
+namespace OpenCBS.GUI.Configuration
 {
     public partial class UserForm : SweetForm
     {

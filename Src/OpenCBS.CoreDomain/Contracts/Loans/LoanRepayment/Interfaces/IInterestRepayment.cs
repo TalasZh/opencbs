@@ -1,8 +1,8 @@
 
-using Octopus.CoreDomain.Contracts.Loans.Installments;
-using Octopus.Shared;
+using OpenCBS.CoreDomain.Contracts.Loans.Installments;
+using OpenCBS.Shared;
 
-namespace Octopus.CoreDomain.Contracts.Loans.LoanRepayment.Interfaces
+namespace OpenCBS.CoreDomain.Contracts.Loans.LoanRepayment.Interfaces
 {
     public interface IInterestRepayment
     {

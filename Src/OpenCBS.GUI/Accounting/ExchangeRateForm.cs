@@ -27,15 +27,15 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Globalization;
 using System.Windows.Forms;
-using Octopus.ExceptionsHandler;
-using Octopus.MultiLanguageRessources;
-using Octopus.Shared;
-using Octopus.Shared.Settings;
+using OpenCBS.ExceptionsHandler;
+using OpenCBS.MultiLanguageRessources;
+using OpenCBS.Shared;
+using OpenCBS.Shared.Settings;
 using ZedGraph;
-using Octopus.Services;
-using Octopus.CoreDomain.Accounting;
+using OpenCBS.Services;
+using OpenCBS.CoreDomain.Accounting;
 
-namespace Octopus.GUI.Accounting
+namespace OpenCBS.GUI.Accounting
 {
 	/// <summary>
 	/// Summary description for ExchangeRate.

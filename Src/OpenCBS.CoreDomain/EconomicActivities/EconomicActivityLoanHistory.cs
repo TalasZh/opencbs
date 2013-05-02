@@ -23,10 +23,10 @@
 // Technical contact email : tech(at)octopusnetwork.org 
 
 using System;
-using Octopus.CoreDomain.Clients;
-using Octopus.CoreDomain.Contracts.Loans;
+using OpenCBS.CoreDomain.Clients;
+using OpenCBS.CoreDomain.Contracts.Loans;
 
-namespace Octopus.CoreDomain.EconomicActivities
+namespace OpenCBS.CoreDomain.EconomicActivities
 {
 	/// <summary>
     /// Summary description for EconomicActivityLoanHistory.

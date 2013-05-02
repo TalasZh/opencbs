@@ -1,6 +1,6 @@
-using Octopus.GUI.UserControl;
+using OpenCBS.GUI.UserControl;
 
-namespace Octopus.GUI.Database
+namespace OpenCBS.GUI.Database
 {
     partial class FrmDatabaseSettings
     {
@@ -373,7 +373,7 @@ namespace Octopus.GUI.Database
             // 
             // tableLayoutPanelDatabaseSettings
             // 
-            this.tableLayoutPanelDatabaseSettings.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris_180;
+            this.tableLayoutPanelDatabaseSettings.BackgroundImage = global::OpenCBS.GUI.Properties.Resources.theme1_1_fond_gris_180;
             resources.ApplyResources(this.tableLayoutPanelDatabaseSettings, "tableLayoutPanelDatabaseSettings");
             this.tableLayoutPanelDatabaseSettings.Controls.Add(this.groupBoxSQLDatabaseSettings, 0, 1);
             this.tableLayoutPanelDatabaseSettings.Controls.Add(this.groupBoxSQLDatabaseStructure, 0, 2);

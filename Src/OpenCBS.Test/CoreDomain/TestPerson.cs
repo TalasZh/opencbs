@@ -1,5 +1,5 @@
 //Octopus MFS is an integrated suite for managing a Micro Finance Institution: clients, contracts, accounting, reporting and risk
-//Copyright © 2006,2007 OCTO Technology & OXUS Development Network
+//Copyright ï¿½ 2006,2007 OCTO Technology & OXUS Development Network
 //
 //This program is free software; you can redistribute it and/or modify
 //it under the terms of the GNU Lesser General Public License as published by
@@ -24,12 +24,12 @@
 
 using System;
 using NUnit.Framework;
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.Clients;
-using Octopus.CoreDomain.EconomicActivities;
-using Octopus.Enums;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.Clients;
+using OpenCBS.CoreDomain.EconomicActivities;
+using OpenCBS.Enums;
 
-namespace Octopus.Test.CoreDomain
+namespace OpenCBS.Test.CoreDomain
 {
 	[TestFixture]
 	public class TestPerson
@@ -115,8 +115,8 @@ namespace Octopus.Test.CoreDomain
 		[Test]
 		public void TestIfAddressIsCorrectlySetAndRetrieved()
 		{
-			person.Address = "50 avenue des Champs Elysées";
-			Assert.AreEqual("50 avenue des Champs Elysées",person.Address);
+			person.Address = "50 avenue des Champs Elysï¿½es";
+			Assert.AreEqual("50 avenue des Champs Elysï¿½es",person.Address);
 		}
 
 		[Test]
@@ -141,8 +141,8 @@ namespace Octopus.Test.CoreDomain
 		[Test]
 		public void TestIfSecondaryAddressIsCorrectlySetAndRetrieved()
 		{
-			person.SecondaryAddress = "50 avenue des Champs Elysées";
-			Assert.AreEqual("50 avenue des Champs Elysées",person.SecondaryAddress);
+			person.SecondaryAddress = "50 avenue des Champs Elysï¿½es";
+			Assert.AreEqual("50 avenue des Champs Elysï¿½es",person.SecondaryAddress);
 		}
 
 		[Test]

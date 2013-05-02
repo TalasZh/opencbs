@@ -23,9 +23,9 @@
 // Technical contact email : tech(at)octopusnetwork.org 
 
 using System;
-using Octopus.CoreDomain.Events.Loan;
+using OpenCBS.CoreDomain.Events.Loan;
 
-namespace Octopus.CoreDomain.Events
+namespace OpenCBS.CoreDomain.Events
 {
 	/// <summary>
 	/// This is the event for manual entry

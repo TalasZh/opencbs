@@ -23,10 +23,10 @@
 // Technical contact email : tech(at)octopusnetwork.org 
 
 using System;
-using Octopus.CoreDomain.Contracts.Loans.LoanRepayment.Interfaces;
-using Octopus.Shared;
+using OpenCBS.CoreDomain.Contracts.Loans.LoanRepayment.Interfaces;
+using OpenCBS.Shared;
 
-namespace Octopus.CoreDomain.Contracts.Loans.LoanRepayment.CalculateFeesForAnticipatedRepayment
+namespace OpenCBS.CoreDomain.Contracts.Loans.LoanRepayment.CalculateFeesForAnticipatedRepayment
 {
     /// <summary>
     /// Summary description for AnticipatedFeesNotCalculate.

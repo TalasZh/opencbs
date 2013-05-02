@@ -1,9 +1,9 @@
-﻿using System;
+using System;
 using System.Collections;
-using Octopus.CoreDomain.Contracts.Loans;
-using Octopus.CoreDomain.Contracts.Loans.Installments;
+using OpenCBS.CoreDomain.Contracts.Loans;
+using OpenCBS.CoreDomain.Contracts.Loans.Installments;
 
-namespace Octopus.CoreDomain.Contracts
+namespace OpenCBS.CoreDomain.Contracts
 {
     [Serializable]
     public class FlatRoundingSchedule

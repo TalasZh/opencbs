@@ -1,7 +1,7 @@
-﻿using System;
+using System;
 using System.Text.RegularExpressions;
 
-namespace Octopus.Stringifier
+namespace OpenCBS.Stringifier
 {
     public class StringifiableFormatInfo : IFormatProvider, ICustomFormatter
     {

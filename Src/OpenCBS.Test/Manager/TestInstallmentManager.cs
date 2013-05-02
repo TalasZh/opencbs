@@ -25,15 +25,15 @@
 using System;
 using System.Collections.Generic;
 using NUnit.Framework;
-using Octopus.CoreDomain.Accounting;
-using Octopus.CoreDomain.Contracts.Loans.Installments;
-using Octopus.Manager;
-using Octopus.Shared;
+using OpenCBS.CoreDomain.Accounting;
+using OpenCBS.CoreDomain.Contracts.Loans.Installments;
+using OpenCBS.Manager;
+using OpenCBS.Shared;
 
-namespace Octopus.Test.Manager
+namespace OpenCBS.Test.Manager
 {
 	/// <summary>
-	/// Description résumée de TestInstallmentManagement.
+	/// Description rï¿½sumï¿½e de TestInstallmentManagement.
 	/// </summary>
 	[TestFixture]
 	public class TestInstallmentManager : BaseManagerTest

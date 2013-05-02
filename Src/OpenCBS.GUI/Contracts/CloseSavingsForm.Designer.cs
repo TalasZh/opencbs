@@ -1,6 +1,6 @@
-namespace Octopus.GUI.Contracts
+namespace OpenCBS.GUI.Contracts
 {
-    using Octopus.GUI.UserControl;
+    using OpenCBS.GUI.UserControl;
 
     partial class CloseSavingsForm
     {

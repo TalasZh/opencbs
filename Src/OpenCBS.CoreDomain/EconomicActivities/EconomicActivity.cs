@@ -25,7 +25,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Octopus.CoreDomain.EconomicActivities
+namespace OpenCBS.CoreDomain.EconomicActivities
 {
 	/// <summary>
     /// Summary description for EconomicActivity.

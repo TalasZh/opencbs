@@ -1,17 +1,17 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Octopus.CoreDomain.EconomicActivities;
-using Octopus.CoreDomain.Events;
-using Octopus.GUI.UserControl;
-using Octopus.Services;
-using Octopus.CoreDomain.Accounting;
-using Octopus.Enums;
-using Octopus.MultiLanguageRessources;
-using Octopus.CoreDomain.Products;
-using Octopus.GUI.Tools;
+using OpenCBS.CoreDomain.EconomicActivities;
+using OpenCBS.CoreDomain.Events;
+using OpenCBS.GUI.UserControl;
+using OpenCBS.Services;
+using OpenCBS.CoreDomain.Accounting;
+using OpenCBS.Enums;
+using OpenCBS.MultiLanguageRessources;
+using OpenCBS.CoreDomain.Products;
+using OpenCBS.GUI.Tools;
 
-namespace Octopus.GUI.Accounting
+namespace OpenCBS.GUI.Accounting
 {
     public partial class FrmAddContractAccountingRule : SweetBaseForm
     {

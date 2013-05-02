@@ -1,9 +1,9 @@
-﻿using System;
-using Octopus.CoreDomain.Products;
-using Octopus.Enums;
-using Octopus.CoreDomain.FundingLines;
+using System;
+using OpenCBS.CoreDomain.Products;
+using OpenCBS.Enums;
+using OpenCBS.CoreDomain.FundingLines;
 
-namespace Octopus.CoreDomain.Contracts
+namespace OpenCBS.CoreDomain.Contracts
 {
     public interface IContract
     {

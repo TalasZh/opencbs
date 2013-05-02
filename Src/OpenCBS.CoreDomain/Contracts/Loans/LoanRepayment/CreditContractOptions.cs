@@ -23,10 +23,10 @@
 // Technical contact email : tech(at)octopusnetwork.org 
 
 using System;
-using Octopus.Enums;
-using Octopus.Shared;
+using OpenCBS.Enums;
+using OpenCBS.Shared;
 
-namespace Octopus.CoreDomain.Contracts.Loans.LoanRepayment
+namespace OpenCBS.CoreDomain.Contracts.Loans.LoanRepayment
 {
     /// <summary>
     /// Summary description for CreditContractOptions.

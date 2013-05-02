@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Octopus.CoreDomain.Export.Fields;
+using OpenCBS.CoreDomain.Export.Fields;
 
-namespace Octopus.CoreDomain.Export.Files
+namespace OpenCBS.CoreDomain.Export.Files
 {
     public interface IFile
     {

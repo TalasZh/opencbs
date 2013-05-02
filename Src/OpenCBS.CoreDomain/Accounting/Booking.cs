@@ -23,14 +23,14 @@
 // Technical contact email : tech(at)octopusnetwork.org 
 
 using System;
-using Octopus.CoreDomain.Accounting.Interfaces;
-using Octopus.Enums;
-using Octopus.Shared;
+using OpenCBS.CoreDomain.Accounting.Interfaces;
+using OpenCBS.Enums;
+using OpenCBS.Shared;
 
-namespace Octopus.CoreDomain.Accounting
+namespace OpenCBS.CoreDomain.Accounting
 {
 	/// <summary>
-	/// Description résumée de Booking.
+	/// Description rï¿½sumï¿½e de Booking.
     /// </summary>
     [Serializable]
 	public class Booking : IBooking

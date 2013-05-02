@@ -1,4 +1,4 @@
-﻿namespace Octopus.CoreDomain
+namespace OpenCBS.CoreDomain
 {
     public  class EntryFee
     {

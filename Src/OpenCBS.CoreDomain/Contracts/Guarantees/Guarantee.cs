@@ -1,14 +1,14 @@
-﻿using System;
-using Octopus.CoreDomain.Clients;
-using Octopus.CoreDomain.FundingLines;
-using Octopus.CoreDomain.Products;
-using Octopus.Shared;
-using Octopus.Enums;
-using Octopus.CoreDomain.Accounting;
-using Octopus.Shared.Settings;
+using System;
+using OpenCBS.CoreDomain.Clients;
+using OpenCBS.CoreDomain.FundingLines;
+using OpenCBS.CoreDomain.Products;
+using OpenCBS.Shared;
+using OpenCBS.Enums;
+using OpenCBS.CoreDomain.Accounting;
+using OpenCBS.Shared.Settings;
 
 
-namespace Octopus.CoreDomain.Contracts.Guarantees
+namespace OpenCBS.CoreDomain.Contracts.Guarantees
 {
     [Serializable]
     public class Guarantee : IContract

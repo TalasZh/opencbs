@@ -1,8 +1,8 @@
 
 using System.Windows.Forms;
-using Octopus.GUI.UserControl;
+using OpenCBS.GUI.UserControl;
 
-namespace Octopus.GUI.Login
+namespace OpenCBS.GUI.Login
 {
     public partial class FrmLogin
     {
@@ -90,7 +90,7 @@ namespace Octopus.GUI.Login
             // 
             resources.ApplyResources(this.pictureBox, "pictureBox");
             this.pictureBox.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox.BackgroundImage = global::Octopus.GUI.Properties.Resources.LOGO;
+            this.pictureBox.BackgroundImage = global::OpenCBS.GUI.Properties.Resources.LOGO;
             this.pictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox.Name = "pictureBox";
             this.pictureBox.TabStop = false;

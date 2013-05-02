@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
-using Octopus.CoreDomain.Contracts.Savings.CalculateInterests.Interfaces;
-using Octopus.CoreDomain.Events.Saving;
-using Octopus.Shared;
+using OpenCBS.CoreDomain.Contracts.Savings.CalculateInterests.Interfaces;
+using OpenCBS.CoreDomain.Events.Saving;
+using OpenCBS.Shared;
 
-namespace Octopus.CoreDomain.Contracts.Savings.CalculateInterests.Posting
+namespace OpenCBS.CoreDomain.Contracts.Savings.CalculateInterests.Posting
 {
     public class EndOfWeek : IPostingInterests
     {

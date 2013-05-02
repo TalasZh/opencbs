@@ -23,9 +23,9 @@
 // Technical contact email : tech(at)octopusnetwork.org 
 
 using System.Reflection;
-using Octopus.Shared.Settings;
+using OpenCBS.Shared.Settings;
 
-[assembly: AssemblyTitle("Octopus.GUI")]
+[assembly: AssemblyTitle("OpenCBS.GUI")]
 [assembly: AssemblyDescription("Octopus User Interface")]
 
 [assembly: AssemblyCompany(TechnicalSettings.COMPANY)]

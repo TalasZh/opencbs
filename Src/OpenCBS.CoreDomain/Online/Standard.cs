@@ -1,6 +1,6 @@
-using Octopus.CoreDomain.Accounting;
+using OpenCBS.CoreDomain.Accounting;
 
-namespace Octopus.CoreDomain.Online
+namespace OpenCBS.CoreDomain.Online
 {
     public class Standard : ICoreDomain
     {

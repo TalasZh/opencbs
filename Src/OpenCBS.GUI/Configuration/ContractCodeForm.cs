@@ -23,11 +23,11 @@
 // Technical contact email : tech(at)octopusnetwork.org 
 
 using System.Windows.Forms;
-using Octopus.CoreDomain;
-using Octopus.Services;
-using Octopus.Shared.Settings;
+using OpenCBS.CoreDomain;
+using OpenCBS.Services;
+using OpenCBS.Shared.Settings;
 
-namespace Octopus.GUI.Configuration
+namespace OpenCBS.GUI.Configuration
 {
     public partial class ContractCodeForm : Form
     {

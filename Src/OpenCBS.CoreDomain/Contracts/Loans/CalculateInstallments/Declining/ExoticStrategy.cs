@@ -1,5 +1,5 @@
 //Octopus MFS is an integrated suite for managing a Micro Finance Institution: clients, contracts, accounting, reporting and risk
-//Copyright © 2006,2007 OCTO Technology & OXUS Development Network
+//Copyright ï¿½ 2006,2007 OCTO Technology & OXUS Development Network
 //
 //This program is free software; you can redistribute it and/or modify
 //it under the terms of the GNU Lesser General Public License as published by
@@ -24,12 +24,12 @@
 
 using System;
 using System.Collections.Generic;
-using Octopus.CoreDomain.Contracts.Loans.CalculateInstallments.Interfaces;
-using Octopus.CoreDomain.Contracts.Loans.Installments;
-using Octopus.Shared;
-using Octopus.Shared.Settings;
+using OpenCBS.CoreDomain.Contracts.Loans.CalculateInstallments.Interfaces;
+using OpenCBS.CoreDomain.Contracts.Loans.Installments;
+using OpenCBS.Shared;
+using OpenCBS.Shared.Settings;
 
-namespace Octopus.CoreDomain.Contracts.Loans.CalculateInstallments.Declining
+namespace OpenCBS.CoreDomain.Contracts.Loans.CalculateInstallments.Declining
 {
     /// <summary>
     /// Summary description for ExoticStrategy.

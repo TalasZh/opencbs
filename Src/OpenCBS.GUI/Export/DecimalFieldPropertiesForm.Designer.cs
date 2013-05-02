@@ -1,4 +1,4 @@
-namespace Octopus.GUI.Export
+namespace OpenCBS.GUI.Export
 {
     partial class DecimalFieldPropertiesForm
     {
@@ -30,7 +30,7 @@ namespace Octopus.GUI.Export
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DecimalFieldPropertiesForm));
             this.labelDecimalNumber = new System.Windows.Forms.Label();
-            this.tnDecimalNumber = new Octopus.GUI.UserControl.TextNumericUserControl();
+            this.tnDecimalNumber = new OpenCBS.GUI.UserControl.TextNumericUserControl();
             this.labelDecimalSeparator = new System.Windows.Forms.Label();
             this.textBoxDecimalSeparator = new System.Windows.Forms.TextBox();
             this.labelGroupSeparator = new System.Windows.Forms.Label();
@@ -167,7 +167,7 @@ namespace Octopus.GUI.Export
         #endregion
 
         private System.Windows.Forms.Label labelDecimalNumber;
-        private Octopus.GUI.UserControl.TextNumericUserControl tnDecimalNumber;
+        private OpenCBS.GUI.UserControl.TextNumericUserControl tnDecimalNumber;
         private System.Windows.Forms.Label labelDecimalSeparator;
         private System.Windows.Forms.TextBox textBoxDecimalSeparator;
         private System.Windows.Forms.Label labelGroupSeparator;

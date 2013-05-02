@@ -1,17 +1,17 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using NUnit.Framework;
-using Octopus.CoreDomain.Contracts.Loans.Installments;
-using Octopus.CoreDomain.Contracts.Savings;
-using Octopus.CoreDomain.Contracts.Savings.CalculateInterests;
-using Octopus.CoreDomain.Events.Saving;
-using Octopus.CoreDomain.Products;
-using Octopus.Enums;
-using Octopus.CoreDomain;
-using Octopus.Shared.Settings;
-using Octopus.CoreDomain.Accounting;
+using OpenCBS.CoreDomain.Contracts.Loans.Installments;
+using OpenCBS.CoreDomain.Contracts.Savings;
+using OpenCBS.CoreDomain.Contracts.Savings.CalculateInterests;
+using OpenCBS.CoreDomain.Events.Saving;
+using OpenCBS.CoreDomain.Products;
+using OpenCBS.Enums;
+using OpenCBS.CoreDomain;
+using OpenCBS.Shared.Settings;
+using OpenCBS.CoreDomain.Accounting;
 
-namespace Octopus.Test.CoreDomain.Contracts.Savings
+namespace OpenCBS.Test.CoreDomain.Contracts.Savings
 {
     [TestFixture]
 	public class TestSavingFees

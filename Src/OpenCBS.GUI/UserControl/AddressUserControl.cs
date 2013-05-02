@@ -27,12 +27,12 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Text.RegularExpressions;
-using Octopus.CoreDomain;
-using Octopus.Enums;
-using Octopus.Services;
-using Octopus.MultiLanguageRessources;
+using OpenCBS.CoreDomain;
+using OpenCBS.Enums;
+using OpenCBS.Services;
+using OpenCBS.MultiLanguageRessources;
 
-namespace Octopus.GUI
+namespace OpenCBS.GUI
 {
     /// <summary>
     /// Summary description for AddressUserControl.

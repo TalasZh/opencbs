@@ -1,14 +1,14 @@
 using System;
 using System.Windows.Forms;
 using System.Collections.Generic;
-using Octopus.Enums;
-using Octopus.GUI.UserControl;
-using Octopus.Shared;
-using Octopus.Services;
-using Octopus.ExceptionsHandler;
-using Octopus.CoreDomain.Products.Collaterals;
+using OpenCBS.Enums;
+using OpenCBS.GUI.UserControl;
+using OpenCBS.Shared;
+using OpenCBS.Services;
+using OpenCBS.ExceptionsHandler;
+using OpenCBS.CoreDomain.Products.Collaterals;
 
-namespace Octopus.GUI.Products
+namespace OpenCBS.GUI.Products
 {
     public partial class FrmAddCollateralProduct : SweetBaseForm
     {

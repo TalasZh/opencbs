@@ -1,7 +1,7 @@
-﻿using System;
+using System;
 using System.Diagnostics;
 
-namespace Octopus.Stringifier
+namespace OpenCBS.Stringifier
 {
     public class Russian : Stringifiable
     {

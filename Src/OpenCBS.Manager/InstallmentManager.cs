@@ -25,16 +25,16 @@
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.Contracts.Loans;
-using Octopus.CoreDomain.Contracts.Loans.Installments;
-using Octopus.CoreDomain.Events.Loan;
-using Octopus.Shared;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.Contracts.Loans;
+using OpenCBS.CoreDomain.Contracts.Loans.Installments;
+using OpenCBS.CoreDomain.Events.Loan;
+using OpenCBS.Shared;
 
-namespace Octopus.Manager
+namespace OpenCBS.Manager
 {
 	/// <summary>
-	/// Description résumée de InstallmentManagement.
+	/// Description rï¿½sumï¿½e de InstallmentManagement.
 	/// </summary>
 	public class InstallmentManager : Manager
 	{

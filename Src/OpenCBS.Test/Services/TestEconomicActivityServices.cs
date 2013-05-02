@@ -26,13 +26,13 @@ using System;
 using System.Collections.Generic;
 using NUnit.Framework;
 using NUnit.Mocks;
-using Octopus.CoreDomain.Clients;
-using Octopus.CoreDomain.EconomicActivities;
-using Octopus.Services;
-using Octopus.Manager;
-using Octopus.ExceptionsHandler;
+using OpenCBS.CoreDomain.Clients;
+using OpenCBS.CoreDomain.EconomicActivities;
+using OpenCBS.Services;
+using OpenCBS.Manager;
+using OpenCBS.ExceptionsHandler;
 
-namespace Octopus.Test.Services
+namespace OpenCBS.Test.Services
 {
 	/// <summary>
     /// Summary description for TestEconomicActivityServices.

@@ -25,21 +25,21 @@
 using System;
 using System.Collections.Generic;
 using NUnit.Framework;
-using Octopus.CoreDomain;
-using Octopus.Enums;
-using Octopus.Shared;
-using Octopus.CoreDomain.Accounting;
-using Octopus.Shared.Settings;
+using OpenCBS.CoreDomain;
+using OpenCBS.Enums;
+using OpenCBS.Shared;
+using OpenCBS.CoreDomain.Accounting;
+using OpenCBS.Shared.Settings;
 
-namespace Octopus.Test.Services.Accounting
+namespace OpenCBS.Test.Services.Accounting
 {
     /// <summary>
-    /// Description résumée de TestAccountingServices.
+    /// Description rï¿½sumï¿½e de TestAccountingServices.
     /// </summary>
     [TestFixture]
     public class TestAccountingServices
     {
-        private Octopus.Services.Accounting.AccountingServices _accountingServices;
+        private OpenCBS.Services.Accounting.AccountingServices _accountingServices;
 
         //[Test]
         //public void TestFindExchangeRateWhenConversionNotNeed()
@@ -48,14 +48,14 @@ namespace Octopus.Test.Services.Accounting
         //    paramInDatabaseServices.DeleteAllParameters();
         //    paramInDatabaseServices.AddParameter(OGeneralSettings.EXTERNALCURRENCY, null);
 
-        //    _accountingServices = new Octopus.Services.Accounting.AccountingServices(paramInDatabaseServices);
+        //    _accountingServices = new OpenCBS.Services.Accounting.AccountingServices(paramInDatabaseServices);
         //    Assert.IsNull(_accountingServices.FindExchangeRate(DateTime.Today, new Currency{Id = 1}));
         //}
 
         [Test]
         public void TestConvertAmountToExternalCurrency()
         {
-            _accountingServices = new Octopus.Services.Accounting.AccountingServices(DataUtil.TESTDB);
+            _accountingServices = new OpenCBS.Services.Accounting.AccountingServices(DataUtil.TESTDB);
             OCurrency amount = 100;
             ExchangeRate rate = new ExchangeRate {Date = DateTime.Today, Rate = 3, Currency = new Currency {Id = 1}};
             Assert.AreEqual(33.3333m, _accountingServices.ConvertAmountToExternalCurrency(amount, rate).Value);
@@ -63,7 +63,7 @@ namespace Octopus.Test.Services.Accounting
         [Test]
         public void TestFindAllBookings()
         {
-            //_accountingServices = new Octopus.Services.Accounting.AccountingServices(new User{Id = 5});
+            //_accountingServices = new OpenCBS.Services.Accounting.AccountingServices(new User{Id = 5});
             //OCurrency amount = 100;
 
             //Booking booking = new Booking();

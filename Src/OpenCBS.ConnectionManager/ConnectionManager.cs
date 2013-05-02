@@ -1,8 +1,8 @@
 using System;
 using System.Data.SqlClient;
-using Octopus.Shared.Settings;
+using OpenCBS.Shared.Settings;
 
-namespace Octopus.DatabaseConnection
+namespace OpenCBS.DatabaseConnection
 {
     [Serializable]
     public class ConnectionManager

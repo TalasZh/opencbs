@@ -1,4 +1,4 @@
-namespace Octopus.GUI.Database
+namespace OpenCBS.GUI.Database
 {
     partial class FrmDatabaseName
     {

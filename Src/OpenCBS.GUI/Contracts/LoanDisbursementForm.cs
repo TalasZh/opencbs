@@ -26,20 +26,20 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Windows.Forms;
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.Accounting;
-using Octopus.CoreDomain.Contracts.Loans;
-using Octopus.CoreDomain.Events;
-using Octopus.ExceptionsHandler;
-using Octopus.ExceptionsHandler.Exceptions.SavingExceptions;
-using Octopus.GUI.Accounting;
-using Octopus.GUI.UserControl;
-using Octopus.Reports;
-using Octopus.Services;
-using Octopus.Shared;
-using Octopus.Enums;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.Accounting;
+using OpenCBS.CoreDomain.Contracts.Loans;
+using OpenCBS.CoreDomain.Events;
+using OpenCBS.ExceptionsHandler;
+using OpenCBS.ExceptionsHandler.Exceptions.SavingExceptions;
+using OpenCBS.GUI.Accounting;
+using OpenCBS.GUI.UserControl;
+using OpenCBS.Reports;
+using OpenCBS.Services;
+using OpenCBS.Shared;
+using OpenCBS.Enums;
 
-namespace Octopus.GUI.Contracts
+namespace OpenCBS.GUI.Contracts
 {
     /// <summary>
     /// Summary description for CreditContractDisbursmentForm.

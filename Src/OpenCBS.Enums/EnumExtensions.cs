@@ -1,6 +1,6 @@
-﻿using System;
+using System;
 
-namespace Octopus.Enums
+namespace OpenCBS.Enums
 {
     public static class EnumExtensions
     {

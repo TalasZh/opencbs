@@ -1,4 +1,4 @@
-namespace Octopus.GUI.Export
+namespace OpenCBS.GUI.Export
 {
     partial class CustomizableExportConfigurationForm
     {
@@ -33,7 +33,7 @@ namespace Octopus.GUI.Export
             this.tabPageDescription = new System.Windows.Forms.TabPage();
             this.textBoxName = new System.Windows.Forms.TextBox();
             this.labelFileName = new System.Windows.Forms.Label();
-            this.fieldListUserControl1 = new Octopus.GUI.Export.FieldListUserControl();
+            this.fieldListUserControl1 = new OpenCBS.GUI.Export.FieldListUserControl();
             this.tabPageFormat = new System.Windows.Forms.TabPage();
             this.textBoxExtension = new System.Windows.Forms.TextBox();
             this.labelExtension = new System.Windows.Forms.Label();

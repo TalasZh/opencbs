@@ -1,10 +1,10 @@
-﻿using NUnit.Framework;
-using Octopus.CoreDomain.Accounting;
-using Octopus.CoreDomain.EconomicActivities;
-using Octopus.Enums;
-using Octopus.CoreDomain.Products;
+using NUnit.Framework;
+using OpenCBS.CoreDomain.Accounting;
+using OpenCBS.CoreDomain.EconomicActivities;
+using OpenCBS.Enums;
+using OpenCBS.CoreDomain.Products;
 
-namespace Octopus.Test.CoreDomain.Accounting
+namespace OpenCBS.Test.CoreDomain.Accounting
 {
     [TestFixture]
     public class TestContractAccountingRule

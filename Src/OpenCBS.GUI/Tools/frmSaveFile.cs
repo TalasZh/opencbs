@@ -28,7 +28,7 @@ using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
 
-namespace Octopus.GUI.Tools
+namespace OpenCBS.GUI.Tools
 {
     /// <summary>
     /// This dialog is used for selecting a target location when saving a file.

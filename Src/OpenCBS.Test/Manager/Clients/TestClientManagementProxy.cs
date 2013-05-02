@@ -1,10 +1,10 @@
-﻿
+
 using System.Collections.Generic;
 using NUnit.Framework;
-using Octopus.CoreDomain.SearchResult;
-using Octopus.Manager.Clients;
+using OpenCBS.CoreDomain.SearchResult;
+using OpenCBS.Manager.Clients;
 
-namespace Octopus.Test.Manager
+namespace OpenCBS.Test.Manager
 {
     [TestFixture]
     public class TestClientManagementProxy:BaseManagerTest

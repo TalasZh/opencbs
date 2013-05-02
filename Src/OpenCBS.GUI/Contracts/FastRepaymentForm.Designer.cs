@@ -1,6 +1,6 @@
-using Octopus.GUI.UserControl;
+using OpenCBS.GUI.UserControl;
 
-namespace Octopus.GUI.Contracts
+namespace OpenCBS.GUI.Contracts
 {
     partial class FastRepaymentForm
     {
@@ -37,7 +37,7 @@ namespace Octopus.GUI.Contracts
             this.btnOK = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.cbItem = new System.Windows.Forms.ComboBox();
-            this.lvContracts = new Octopus.GUI.UserControl.ListViewEx();
+            this.lvContracts = new OpenCBS.GUI.UserControl.ListViewEx();
             this.colName = new System.Windows.Forms.ColumnHeader();
             this.colContract = new System.Windows.Forms.ColumnHeader();
             this.colPrincipal = new System.Windows.Forms.ColumnHeader();
@@ -59,7 +59,7 @@ namespace Octopus.GUI.Contracts
             // 
             // pnlButton
             // 
-            this.pnlButton.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris_180;
+            this.pnlButton.BackgroundImage = global::OpenCBS.GUI.Properties.Resources.theme1_1_fond_gris_180;
             resources.ApplyResources(this.pnlButton, "pnlButton");
             this.pnlButton.Controls.Add(this.btnOK);
             this.pnlButton.Controls.Add(this.btnCancel);
@@ -111,11 +111,11 @@ namespace Octopus.GUI.Contracts
             this.lvContracts.Name = "lvContracts";
             this.lvContracts.UseCompatibleStateImageBehavior = false;
             this.lvContracts.View = System.Windows.Forms.View.Details;
-            this.lvContracts.SubItemClicked += new Octopus.GUI.UserControl.SubItemEventHandler(this.lvContracts_SubItemClicked);
+            this.lvContracts.SubItemClicked += new OpenCBS.GUI.UserControl.SubItemEventHandler(this.lvContracts_SubItemClicked);
             this.lvContracts.ItemChecked += new System.Windows.Forms.ItemCheckedEventHandler(this.lvContracts_ItemChecked);
             this.lvContracts.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.lvContracts_ItemCheck);
             this.lvContracts.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lvContracts_MouseDown);
-            this.lvContracts.SubItemEndEditing += new Octopus.GUI.UserControl.SubItemEndEditingEventHandler(this.lvContracts_SubItemEndEditing);
+            this.lvContracts.SubItemEndEditing += new OpenCBS.GUI.UserControl.SubItemEndEditingEventHandler(this.lvContracts_SubItemEndEditing);
             // 
             // colName
             // 

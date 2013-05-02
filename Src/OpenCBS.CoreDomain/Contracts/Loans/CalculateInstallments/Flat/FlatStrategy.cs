@@ -1,12 +1,12 @@
 using System;
 using System.Collections.Generic;
-using Octopus.CoreDomain.Contracts.Loans.CalculateInstallments.Interfaces;
-using Octopus.CoreDomain.Contracts.Loans.Installments;
-using Octopus.Enums;
-using Octopus.Shared;
-using Octopus.Shared.Settings;
+using OpenCBS.CoreDomain.Contracts.Loans.CalculateInstallments.Interfaces;
+using OpenCBS.CoreDomain.Contracts.Loans.Installments;
+using OpenCBS.Enums;
+using OpenCBS.Shared;
+using OpenCBS.Shared.Settings;
 
-namespace Octopus.CoreDomain.Contracts.Loans.CalculateInstallments.Flat
+namespace OpenCBS.CoreDomain.Contracts.Loans.CalculateInstallments.Flat
 {
     /// <summary>
     /// Summary description for FlatStrategy.

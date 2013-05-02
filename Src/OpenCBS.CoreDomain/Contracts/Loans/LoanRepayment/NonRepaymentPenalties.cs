@@ -1,6 +1,6 @@
 using System;
 
-namespace Octopus.CoreDomain.Contracts.Loans.LoanRepayment
+namespace OpenCBS.CoreDomain.Contracts.Loans.LoanRepayment
 {
     [Serializable]
     public class NonRepaymentPenalties

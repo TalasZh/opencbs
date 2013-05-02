@@ -27,11 +27,11 @@ using System.Diagnostics;
 using System.IO;
 using System.Windows.Forms;
 
-namespace Octopus.GUI.Restarter
+namespace OpenCBS.GUI.Restarter
 {
     public partial class MainForm : Form
     {
-        private static readonly string OCTOPUSEXE = "Octopus.GUI.exe";
+        private static readonly string OCTOPUSEXE = "OpenCBS.GUI.exe";
         private static readonly string ONLINE = " -online";
         private bool _onlineMode;
         public MainForm(bool pOnlineMode)

@@ -1,6 +1,6 @@
-using Octopus.GUI.UserControl;
+using OpenCBS.GUI.UserControl;
 
-namespace Octopus.GUI.Clients
+namespace OpenCBS.GUI.Clients
 {
     partial class MembersOfGroup
     {

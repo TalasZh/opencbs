@@ -1,8 +1,8 @@
-﻿using System;
-using Octopus.Enums;
-using Octopus.Shared;
+using System;
+using OpenCBS.Enums;
+using OpenCBS.Shared;
 
-namespace Octopus.CoreDomain.Events.Saving
+namespace OpenCBS.CoreDomain.Events.Saving
 {
     [Serializable]
     public class SavingDebitInterBranchTransferEvent : SavingTransferEvent

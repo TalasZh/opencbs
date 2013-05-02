@@ -27,22 +27,22 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-using Octopus.CoreDomain.Clients;
-using Octopus.CoreDomain.Contracts.Loans;
-using Octopus.CoreDomain.Contracts.Loans.Installments;
-using Octopus.CoreDomain.Events;
-using Octopus.CoreDomain.Events.Loan;
-using Octopus.GUI.Accounting;
-using Octopus.GUI.Clients;
-using Octopus.MultiLanguageRessources;
-using Octopus.Services;
-using Octopus.ExceptionsHandler;
-using Octopus.Shared;
-using Octopus.CoreDomain.Accounting;
-using Octopus.Enums;
-using Octopus.GUI.UserControl;
+using OpenCBS.CoreDomain.Clients;
+using OpenCBS.CoreDomain.Contracts.Loans;
+using OpenCBS.CoreDomain.Contracts.Loans.Installments;
+using OpenCBS.CoreDomain.Events;
+using OpenCBS.CoreDomain.Events.Loan;
+using OpenCBS.GUI.Accounting;
+using OpenCBS.GUI.Clients;
+using OpenCBS.MultiLanguageRessources;
+using OpenCBS.Services;
+using OpenCBS.ExceptionsHandler;
+using OpenCBS.Shared;
+using OpenCBS.CoreDomain.Accounting;
+using OpenCBS.Enums;
+using OpenCBS.GUI.UserControl;
 
-namespace Octopus.GUI.Contracts
+namespace OpenCBS.GUI.Contracts
 {
     /// <summary>
     /// Summary description for CreditContractRepayForm.

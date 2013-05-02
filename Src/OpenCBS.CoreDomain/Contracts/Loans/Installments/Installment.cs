@@ -23,14 +23,14 @@
 // Technical contact email : tech(at)octopusnetwork.org 
 
 using System;
-using Octopus.CoreDomain.Accounting;
-using Octopus.Shared;
-using Octopus.Enums;
+using OpenCBS.CoreDomain.Accounting;
+using OpenCBS.Shared;
+using OpenCBS.Enums;
 
-namespace Octopus.CoreDomain.Contracts.Loans.Installments
+namespace OpenCBS.CoreDomain.Contracts.Loans.Installments
 {
     /// <summary>
-    /// Description résumée de Installment.
+    /// Description rï¿½sumï¿½e de Installment.
     /// </summary>
     [Serializable]
     public class Installment : IInstallment

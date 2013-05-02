@@ -1,9 +1,9 @@
-﻿using System;
+using System;
 using System.Data;
 using System.IO;
 using System.Linq;
 
-namespace Octopus.Shared.CSV
+namespace OpenCBS.Shared.CSV
 {
     public class CsvImportExport
     {

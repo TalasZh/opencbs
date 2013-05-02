@@ -1,9 +1,9 @@
-using Octopus.CoreDomain.SearchResult;
-using Octopus.Enums;
-using Octopus.GUI.UserControl;
-using Octopus.Services;
+using OpenCBS.CoreDomain.SearchResult;
+using OpenCBS.Enums;
+using OpenCBS.GUI.UserControl;
+using OpenCBS.Services;
 
-namespace Octopus.GUI.Search
+namespace OpenCBS.GUI.Search
 {
     public class CFSearchClientForm : SearchClientForm
     {

@@ -1,19 +1,19 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.Accounting;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.Accounting;
 using System.Data.SqlClient;
-using Octopus.CoreDomain.EconomicActivities;
-using Octopus.CoreDomain.Events;
-using Octopus.Enums;
-using Octopus.CoreDomain.Products;
-using Octopus.Manager.Currencies;
-using Octopus.Manager.Products;
-using Octopus.CoreDomain.FundingLines;
+using OpenCBS.CoreDomain.EconomicActivities;
+using OpenCBS.CoreDomain.Events;
+using OpenCBS.Enums;
+using OpenCBS.CoreDomain.Products;
+using OpenCBS.Manager.Currencies;
+using OpenCBS.Manager.Products;
+using OpenCBS.CoreDomain.FundingLines;
 
-namespace Octopus.Manager.Accounting
+namespace OpenCBS.Manager.Accounting
 {
     public class AccountingRuleManager : Manager
     {

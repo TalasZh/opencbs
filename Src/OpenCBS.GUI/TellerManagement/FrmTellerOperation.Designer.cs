@@ -1,4 +1,4 @@
-namespace Octopus.GUI.TellerManagement
+namespace OpenCBS.GUI.TellerManagement
 {
     partial class FrmTellerOperation
     {

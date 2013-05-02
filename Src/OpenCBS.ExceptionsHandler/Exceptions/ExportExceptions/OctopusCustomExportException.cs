@@ -1,9 +1,9 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Runtime.Serialization;
 
-namespace Octopus.ExceptionsHandler.Exceptions.ExportExceptions
+namespace OpenCBS.ExceptionsHandler.Exceptions.ExportExceptions
 {
     [Serializable]
     public class OctopusCustomExportException : OctopusException

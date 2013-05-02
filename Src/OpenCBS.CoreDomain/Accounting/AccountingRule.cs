@@ -1,11 +1,11 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Octopus.Enums;
-using Octopus.CoreDomain.Products;
+using OpenCBS.Enums;
+using OpenCBS.CoreDomain.Products;
 
-namespace Octopus.CoreDomain.Accounting
+namespace OpenCBS.CoreDomain.Accounting
 {
     [Serializable]
     public class AccountingRule

@@ -1,13 +1,13 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using NUnit.Framework;
-using Octopus.CoreDomain.Events.Saving;
-using Octopus.CoreDomain.Products;
-using Octopus.Enums;
-using Octopus.Shared;
+using OpenCBS.CoreDomain.Events.Saving;
+using OpenCBS.CoreDomain.Products;
+using OpenCBS.Enums;
+using OpenCBS.Shared;
 
-namespace Octopus.Test.CoreDomain.Contracts.Savings
+namespace OpenCBS.Test.CoreDomain.Contracts.Savings
 {
 	[TestFixture]
 	public class TestSavingEvent

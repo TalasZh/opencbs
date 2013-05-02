@@ -1,8 +1,8 @@
-﻿using System.IO;
+using System.IO;
 using NUnit.Framework;
-using Octopus.Shared.CSV;
+using OpenCBS.Shared.CSV;
 
-namespace Octopus.Test.Shared
+namespace OpenCBS.Test.Shared
 {
     [TestFixture]
     public class CsvTests

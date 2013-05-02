@@ -26,16 +26,16 @@
 using System.Diagnostics;
 using System.IO;
 using System.Windows.Forms;
-using Octopus.Shared.Settings;
+using OpenCBS.Shared.Settings;
 
-namespace Octopus.GUI.Tools
+namespace OpenCBS.GUI.Tools
 {
     /// <summary>
     /// Application restart.<br/>
     /// </summary>
     public static class Restart
     {
-        private const string RESTARTER = "Octopus.GUI.Restarter.exe";
+        private const string RESTARTER = "OpenCBS.GUI.Restarter.exe";
         private const string ONLINE = " -online";
 
         /// <summary>

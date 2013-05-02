@@ -5,9 +5,9 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-using Octopus.Shared;
+using OpenCBS.Shared;
 
-namespace Octopus.GUI.Tools
+namespace OpenCBS.GUI.Tools
 {
     public partial class OMonthCalendar : MonthCalendar
     {

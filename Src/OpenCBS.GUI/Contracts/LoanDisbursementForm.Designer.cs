@@ -1,8 +1,8 @@
 using System.ComponentModel;
 using System.Windows.Forms;
-using Octopus.GUI.UserControl;
+using OpenCBS.GUI.UserControl;
 
-namespace Octopus.GUI.Contracts
+namespace OpenCBS.GUI.Contracts
 {
     public partial class LoanDisbursementForm
     {
@@ -60,7 +60,7 @@ namespace Octopus.GUI.Contracts
             this.lblEntryFeeCurrency = new System.Windows.Forms.Label();
             this.tbEntryFee = new System.Windows.Forms.TextBox();
             this.groupBoxButton = new System.Windows.Forms.GroupBox();
-            this.btnPrint = new Octopus.GUI.UserControl.PrintButton();
+            this.btnPrint = new OpenCBS.GUI.UserControl.PrintButton();
             this.buttonAddExchangeRate = new System.Windows.Forms.Button();
             this.buttonCancel = new System.Windows.Forms.Button();
             this.buttonSave = new System.Windows.Forms.Button();
@@ -207,7 +207,7 @@ namespace Octopus.GUI.Contracts
             // btnPrint
             // 
             resources.ApplyResources(this.btnPrint, "btnPrint");
-            this.btnPrint.AttachmentPoint = Octopus.Reports.AttachmentPoint.LoanDetails;
+            this.btnPrint.AttachmentPoint = OpenCBS.Reports.AttachmentPoint.LoanDetails;
             this.btnPrint.BackColor = System.Drawing.Color.Gainsboro;
             this.btnPrint.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.btnPrint.Name = "btnPrint";

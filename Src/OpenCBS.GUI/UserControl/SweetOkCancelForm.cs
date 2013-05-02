@@ -1,6 +1,6 @@
 using System.Drawing;
 
-namespace Octopus.GUI.UserControl
+namespace OpenCBS.GUI.UserControl
 {
     public partial class SweetOkCancelForm : SweetBaseForm
     {

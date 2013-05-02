@@ -23,11 +23,11 @@
 // Technical contact email : tech(at)octopusnetwork.org 
 
 using System.Windows.Forms;
-using Octopus.CoreDomain.Accounting;
-using Octopus.Services;
+using OpenCBS.CoreDomain.Accounting;
+using OpenCBS.Services;
 using System.Collections.Generic;
 
-namespace Octopus.GUI.Accounting
+namespace OpenCBS.GUI.Accounting
 {
     public partial class ClosureBookings : Form
     {

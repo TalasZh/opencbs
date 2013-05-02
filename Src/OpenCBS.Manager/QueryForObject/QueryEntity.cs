@@ -1,8 +1,8 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Octopus.Manager.QueryForObject
+namespace OpenCBS.Manager.QueryForObject
 {
     [Serializable]
     public class QueryEntity

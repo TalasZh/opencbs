@@ -1,7 +1,7 @@
 
 using System.Data.SqlClient;
 
-namespace Octopus.DatabaseConnection
+namespace OpenCBS.DatabaseConnection
 {
     public interface IConnectionManager
     {

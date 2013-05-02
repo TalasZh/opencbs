@@ -1,14 +1,14 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using Octopus.CoreDomain.Accounting;
-using Octopus.Manager.Export;
-using Octopus.CoreDomain;
-using Octopus.ExceptionsHandler.Exceptions.ExportExceptions;
-using Octopus.CoreDomain.Export.Files;
-using Octopus.CoreDomain.Export.Fields;
+using OpenCBS.CoreDomain.Accounting;
+using OpenCBS.Manager.Export;
+using OpenCBS.CoreDomain;
+using OpenCBS.ExceptionsHandler.Exceptions.ExportExceptions;
+using OpenCBS.CoreDomain.Export.Files;
+using OpenCBS.CoreDomain.Export.Fields;
 
-namespace Octopus.Services.Export
+namespace OpenCBS.Services.Export
 {
     public class ExportServices : MarshalByRefObject
     {
@@ -66,7 +66,7 @@ namespace Octopus.Services.Export
             ClientServices clientServices = new ClientServices(_user);
             LoanServices loanServices = new LoanServices(_user);
 
-            var client = clientServices.FindTiers(installment.ClientId, Octopus.Enums.OClientTypes.Person);
+            var client = clientServices.FindTiers(installment.ClientId, OpenCBS.Enums.OClientTypes.Person);
             var loan = loanServices.SelectLoan(installment.ContractId, true, true, true);
 
             loanServices.Repay(loan, client, installment.InstallmentNumber, installment.InstallmentDate, installment.InstallmentAmount,

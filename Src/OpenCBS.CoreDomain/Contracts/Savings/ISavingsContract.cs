@@ -1,13 +1,13 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
-using Octopus.CoreDomain.Contracts.Loans;
-using Octopus.CoreDomain.Products;
-using Octopus.Shared;
-using Octopus.CoreDomain.Events.Saving;
-using Octopus.CoreDomain.Clients;
-using Octopus.Enums;
+using OpenCBS.CoreDomain.Contracts.Loans;
+using OpenCBS.CoreDomain.Products;
+using OpenCBS.Shared;
+using OpenCBS.CoreDomain.Events.Saving;
+using OpenCBS.CoreDomain.Clients;
+using OpenCBS.Enums;
 
-namespace Octopus.CoreDomain.Contracts.Savings
+namespace OpenCBS.CoreDomain.Contracts.Savings
 {
     public interface ISavingsContract : ICloneable
     {

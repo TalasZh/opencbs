@@ -25,32 +25,32 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using Octopus.CoreDomain.Clients;
-using Octopus.CoreDomain.Contracts.Loans.CalculateInstallments;
-using Octopus.CoreDomain.Contracts.Loans.Installments;
-using Octopus.CoreDomain.Contracts.Loans.LoanRepayment;
-using Octopus.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments;
-using Octopus.CoreDomain.Contracts.Loans.Tranches;
-using Octopus.CoreDomain.Contracts.Rescheduling;
-using Octopus.CoreDomain.EconomicActivities;
-using Octopus.CoreDomain.Events;
-using Octopus.CoreDomain.Events.Loan;
-using Octopus.CoreDomain.Events.Saving;
-using Octopus.CoreDomain.FundingLines;
-using Octopus.CoreDomain.Products;
-using Octopus.Shared;
-using Octopus.Enums;
-using Octopus.CoreDomain.Accounting;
-using Octopus.Shared.Settings;
-using Octopus.ExceptionsHandler;
-using Octopus.CoreDomain.Contracts.Savings;
-using Octopus.CoreDomain.Contracts.Collaterals;
+using OpenCBS.CoreDomain.Clients;
+using OpenCBS.CoreDomain.Contracts.Loans.CalculateInstallments;
+using OpenCBS.CoreDomain.Contracts.Loans.Installments;
+using OpenCBS.CoreDomain.Contracts.Loans.LoanRepayment;
+using OpenCBS.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayLateInstallments;
+using OpenCBS.CoreDomain.Contracts.Loans.Tranches;
+using OpenCBS.CoreDomain.Contracts.Rescheduling;
+using OpenCBS.CoreDomain.EconomicActivities;
+using OpenCBS.CoreDomain.Events;
+using OpenCBS.CoreDomain.Events.Loan;
+using OpenCBS.CoreDomain.Events.Saving;
+using OpenCBS.CoreDomain.FundingLines;
+using OpenCBS.CoreDomain.Products;
+using OpenCBS.Shared;
+using OpenCBS.Enums;
+using OpenCBS.CoreDomain.Accounting;
+using OpenCBS.Shared.Settings;
+using OpenCBS.ExceptionsHandler;
+using OpenCBS.CoreDomain.Contracts.Savings;
+using OpenCBS.CoreDomain.Contracts.Collaterals;
 using System.Linq;
 
-namespace Octopus.CoreDomain.Contracts.Loans
+namespace OpenCBS.CoreDomain.Contracts.Loans
 {
     /// <summary>
-    /// Description résumée de CreditContract
+    /// Description rï¿½sumï¿½e de CreditContract
     /// </summary>
     [Serializable]
     public class Loan : IContract, IDisposable

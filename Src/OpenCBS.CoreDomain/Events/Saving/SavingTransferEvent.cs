@@ -1,6 +1,6 @@
-﻿using System;
+using System;
 
-namespace Octopus.CoreDomain.Events.Saving
+namespace OpenCBS.CoreDomain.Events.Saving
 {
     [Serializable]
     public abstract class SavingTransferEvent : SavingEvent

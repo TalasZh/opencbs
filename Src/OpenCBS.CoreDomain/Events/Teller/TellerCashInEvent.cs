@@ -1,4 +1,4 @@
-﻿namespace Octopus.CoreDomain.Events.Teller
+namespace OpenCBS.CoreDomain.Events.Teller
 {
     public class TellerCashInEvent : TellerEvent
     {

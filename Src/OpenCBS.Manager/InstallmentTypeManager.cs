@@ -24,10 +24,10 @@
 
 using System.Collections.Generic;
 using System.Data.SqlClient;
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.Contracts.Loans.Installments;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.Contracts.Loans.Installments;
 
-namespace Octopus.Manager
+namespace OpenCBS.Manager
 {
 	/// <summary>
 	/// Summary description for InstallmentTypeManagement.

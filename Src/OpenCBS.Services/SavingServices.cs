@@ -27,34 +27,34 @@ using System.ComponentModel;
 using System.Data.SqlClient;
 using System.Diagnostics;
 using System.Globalization;
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.Accounting;
-using Octopus.CoreDomain.Clients;
-using Octopus.CoreDomain.Contracts.Savings;
-using Octopus.CoreDomain.Events;
-using Octopus.CoreDomain.Events.Loan;
-using Octopus.CoreDomain.Events.Saving;
-using Octopus.CoreDomain.Products;
-using Octopus.ExceptionsHandler;
-using Octopus.ExceptionsHandler.Exceptions.SavingExceptions;
-using Octopus.Manager.Contracts;
-using Octopus.Manager.Events;
-using Octopus.Shared;
-using Octopus.Shared.Settings;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.Accounting;
+using OpenCBS.CoreDomain.Clients;
+using OpenCBS.CoreDomain.Contracts.Savings;
+using OpenCBS.CoreDomain.Events;
+using OpenCBS.CoreDomain.Events.Loan;
+using OpenCBS.CoreDomain.Events.Saving;
+using OpenCBS.CoreDomain.Products;
+using OpenCBS.ExceptionsHandler;
+using OpenCBS.ExceptionsHandler.Exceptions.SavingExceptions;
+using OpenCBS.Manager.Contracts;
+using OpenCBS.Manager.Events;
+using OpenCBS.Shared;
+using OpenCBS.Shared.Settings;
 using System.Collections.Generic;
-using Octopus.Services.Events;
-using Octopus.CoreDomain.SearchResult;
-using Octopus.Enums;
+using OpenCBS.Services.Events;
+using OpenCBS.CoreDomain.SearchResult;
+using OpenCBS.Enums;
 using System.Linq;
-using Octopus.CoreDomain.Contracts.Savings.CalculateInterests;
-using Octopus.CoreDomain.Contracts.Loans;
+using OpenCBS.CoreDomain.Contracts.Savings.CalculateInterests;
+using OpenCBS.CoreDomain.Contracts.Loans;
 
-namespace Octopus.Services
+namespace OpenCBS.Services
 {
     public delegate void GeneralClosureHandler(int current, int totalSavings);
 
 	/// <summary>
-	/// Description résumée de SavingServices.
+	/// Description rï¿½sumï¿½e de SavingServices.
 	/// </summary>
     [Security()]
     public class SavingServices : Services

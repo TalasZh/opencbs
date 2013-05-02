@@ -2,7 +2,7 @@ using System;
 using System.Windows.Forms;
 using System.Collections;
 
-namespace Octopus.GUI
+namespace OpenCBS.GUI
 {
     // Implements the manual sorting of items by column.
     class ListViewItemComparer : IComparer

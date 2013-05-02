@@ -25,20 +25,20 @@
 using System;
 using System.Drawing;
 using System.Windows.Forms;
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.Accounting;
-using Octopus.CoreDomain.Clients;
-using Octopus.CoreDomain.Products;
-using Octopus.Enums;
-using Octopus.ExceptionsHandler;
-using Octopus.GUI.Clients;
-using Octopus.GUI.UserControl;
-using Octopus.Services;
-using Octopus.Shared;
-using Octopus.CoreDomain.Online;
-using Octopus.CoreDomain.Contracts.Savings;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.Accounting;
+using OpenCBS.CoreDomain.Clients;
+using OpenCBS.CoreDomain.Products;
+using OpenCBS.Enums;
+using OpenCBS.ExceptionsHandler;
+using OpenCBS.GUI.Clients;
+using OpenCBS.GUI.UserControl;
+using OpenCBS.Services;
+using OpenCBS.Shared;
+using OpenCBS.CoreDomain.Online;
+using OpenCBS.CoreDomain.Contracts.Savings;
 
-namespace Octopus.GUI.Contracts
+namespace OpenCBS.GUI.Contracts
 {
     using LVSI = ListViewItem.ListViewSubItem;
     public partial class VillageAddSavingsForm : SweetBaseForm

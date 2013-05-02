@@ -1,6 +1,6 @@
-using Octopus.GUI.UserControl;
+using OpenCBS.GUI.UserControl;
 
-namespace Octopus.GUI.Contracts
+namespace OpenCBS.GUI.Contracts
 {
     partial class EditContractSchedule
     {
@@ -40,7 +40,7 @@ namespace Octopus.GUI.Contracts
             this.rbtnRoundTo5 = new System.Windows.Forms.RadioButton();
             this.textBox = new System.Windows.Forms.TextBox();
             this.dateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.lvSchedule = new Octopus.GUI.UserControl.ListViewEx();
+            this.lvSchedule = new OpenCBS.GUI.UserControl.ListViewEx();
             this.columnHeader1 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader2 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader3 = new System.Windows.Forms.ColumnHeader();
@@ -136,8 +136,8 @@ namespace Octopus.GUI.Contracts
             this.lvSchedule.Name = "lvSchedule";
             this.lvSchedule.UseCompatibleStateImageBehavior = false;
             this.lvSchedule.View = System.Windows.Forms.View.Details;
-            this.lvSchedule.SubItemClicked += new Octopus.GUI.UserControl.SubItemEventHandler(this.lvSchedule_SubItemClicked);
-            this.lvSchedule.SubItemEndEditing += new Octopus.GUI.UserControl.SubItemEndEditingEventHandler(this.lvSchedule_SubItemEndEditing);
+            this.lvSchedule.SubItemClicked += new OpenCBS.GUI.UserControl.SubItemEventHandler(this.lvSchedule_SubItemClicked);
+            this.lvSchedule.SubItemEndEditing += new OpenCBS.GUI.UserControl.SubItemEndEditingEventHandler(this.lvSchedule_SubItemEndEditing);
             // 
             // columnHeader1
             // 
@@ -207,7 +207,7 @@ namespace Octopus.GUI.Contracts
         private System.Windows.Forms.SplitContainer splitContainer;
         private System.Windows.Forms.TextBox textBox;
         private System.Windows.Forms.DateTimePicker dateTimePicker;
-        private Octopus.GUI.UserControl.ListViewEx lvSchedule;
+        private OpenCBS.GUI.UserControl.ListViewEx lvSchedule;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;

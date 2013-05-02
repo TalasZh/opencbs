@@ -1,9 +1,9 @@
-﻿using System;
-using Octopus.CoreDomain;
-using Octopus.Manager;
-using Octopus.ExceptionsHandler;
+using System;
+using OpenCBS.CoreDomain;
+using OpenCBS.Manager;
+using OpenCBS.ExceptionsHandler;
 
-namespace Octopus.Services
+namespace OpenCBS.Services
 {
     public class MFIServices : MarshalByRefObject
     {

@@ -24,11 +24,11 @@
 
 
 using NUnit.Framework;
-using Octopus.Enums;
-using Octopus.Shared;
-using Octopus.Shared.Settings;
+using OpenCBS.Enums;
+using OpenCBS.Shared;
+using OpenCBS.Shared.Settings;
 
-namespace Octopus.Test.Shared
+namespace OpenCBS.Test.Shared
 {
 	/// <summary>
 	/// Summary description for TestGeneralSettings.

@@ -1,6 +1,6 @@
-using Octopus.GUI.UserControl;
+using OpenCBS.GUI.UserControl;
 
-namespace Octopus.GUI.Configuration
+namespace OpenCBS.GUI.Configuration
 {
     partial class FrmCurrencyType
     {
@@ -76,7 +76,7 @@ namespace Octopus.GUI.Configuration
             // 
             // splitContainerVertical.Panel2
             // 
-            this.splitContainerVertical.Panel2.BackgroundImage = global::Octopus.GUI.Properties.Resources.theme1_1_fond_gris;
+            this.splitContainerVertical.Panel2.BackgroundImage = global::OpenCBS.GUI.Properties.Resources.theme1_1_fond_gris;
             resources.ApplyResources(this.splitContainerVertical.Panel2, "splitContainerVertical.Panel2");
             this.splitContainerVertical.Panel2.Controls.Add(this.chkUseCents);
             this.splitContainerVertical.Panel2.Controls.Add(this.groupBoxSwapRate);

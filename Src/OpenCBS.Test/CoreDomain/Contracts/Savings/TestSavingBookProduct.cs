@@ -1,11 +1,11 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using NUnit.Framework;
-using Octopus.CoreDomain.Products;
-using Octopus.Enums;
+using OpenCBS.CoreDomain.Products;
+using OpenCBS.Enums;
 
-namespace Octopus.Test.CoreDomain.Contracts.Savings
+namespace OpenCBS.Test.CoreDomain.Contracts.Savings
 {
 	[TestFixture]
 	public class TestSavingProduct

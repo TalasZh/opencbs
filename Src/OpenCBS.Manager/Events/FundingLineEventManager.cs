@@ -1,12 +1,12 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.FundingLines;
-using Octopus.Enums;
-using Octopus.Shared;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.FundingLines;
+using OpenCBS.Enums;
+using OpenCBS.Shared;
 
-namespace Octopus.Manager.Events
+namespace OpenCBS.Manager.Events
 {
     internal class FundingLineEventManager : Manager
     {

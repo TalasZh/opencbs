@@ -6,13 +6,13 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using Octopus.CoreDomain.Export;
-using Octopus.MultiLanguageRessources;
+using OpenCBS.CoreDomain.Export;
+using OpenCBS.MultiLanguageRessources;
 using BrightIdeasSoftware;
-using Octopus.CoreDomain.Export.Fields;
-using Octopus.CoreDomain.Export.FieldType;
+using OpenCBS.CoreDomain.Export.Fields;
+using OpenCBS.CoreDomain.Export.FieldType;
 
-namespace Octopus.GUI.Export
+namespace OpenCBS.GUI.Export
 {
     public partial class FieldListUserControl : System.Windows.Forms.UserControl
     {

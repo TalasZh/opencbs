@@ -1,4 +1,4 @@
-﻿namespace Octopus.ExceptionsHandler
+namespace OpenCBS.ExceptionsHandler
 {
     public class OctopusLocationException : OctopusException
     {

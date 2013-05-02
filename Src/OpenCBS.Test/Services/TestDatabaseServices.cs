@@ -1,9 +1,9 @@
-﻿
-using NUnit.Framework;
-using Octopus.Services;
-using Octopus.Shared.Settings;
 
-namespace Octopus.Test.Services
+using NUnit.Framework;
+using OpenCBS.Services;
+using OpenCBS.Shared.Settings;
+
+namespace OpenCBS.Test.Services
 {
     [TestFixture]
     public class TestDatabaseServices

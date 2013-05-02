@@ -1,10 +1,10 @@
-﻿using System;
-using Octopus.CoreDomain.Events;
-using Octopus.Enums;
-using Octopus.CoreDomain.Products;
-using Octopus.CoreDomain.EconomicActivities;
+using System;
+using OpenCBS.CoreDomain.Events;
+using OpenCBS.Enums;
+using OpenCBS.CoreDomain.Products;
+using OpenCBS.CoreDomain.EconomicActivities;
 
-namespace Octopus.CoreDomain.Accounting
+namespace OpenCBS.CoreDomain.Accounting
 {
     [Serializable]
     public class ContractAccountingRule : IAccountingRule

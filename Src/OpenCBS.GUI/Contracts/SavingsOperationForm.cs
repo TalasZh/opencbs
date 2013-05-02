@@ -1,22 +1,22 @@
 using System;
 using System.Diagnostics;
 using System.Windows.Forms;
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.Accounting;
-using Octopus.CoreDomain.SearchResult;
-using Octopus.CoreDomain.Contracts.Savings;
-using Octopus.CoreDomain.Products;
-using Octopus.Enums;
-using Octopus.ExceptionsHandler;
-using Octopus.ExceptionsHandler.Exceptions.SavingExceptions;
-using Octopus.Services;
-using Octopus.Shared;
-using Octopus.GUI.UserControl;
-using Octopus.GUI.Tools;
-using Octopus.MultiLanguageRessources;
-using Octopus.GUI.UserControl;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.Accounting;
+using OpenCBS.CoreDomain.SearchResult;
+using OpenCBS.CoreDomain.Contracts.Savings;
+using OpenCBS.CoreDomain.Products;
+using OpenCBS.Enums;
+using OpenCBS.ExceptionsHandler;
+using OpenCBS.ExceptionsHandler.Exceptions.SavingExceptions;
+using OpenCBS.Services;
+using OpenCBS.Shared;
+using OpenCBS.GUI.UserControl;
+using OpenCBS.GUI.Tools;
+using OpenCBS.MultiLanguageRessources;
+using OpenCBS.GUI.UserControl;
 
-namespace Octopus.GUI.Contracts
+namespace OpenCBS.GUI.Contracts
 {
     public partial class SavingsOperationForm : SweetBaseForm
     {

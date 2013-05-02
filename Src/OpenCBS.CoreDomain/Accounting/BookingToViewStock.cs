@@ -24,10 +24,10 @@
 
 using System;
 using System.Collections.Generic;
-using Octopus.Enums;
-using Octopus.Shared;
+using OpenCBS.Enums;
+using OpenCBS.Shared;
 
-namespace Octopus.CoreDomain.Accounting
+namespace OpenCBS.CoreDomain.Accounting
 {
     [Serializable]
     public class BookingToViewStock : List<BookingToView>

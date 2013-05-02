@@ -1,17 +1,17 @@
 using System;
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.Accounting;
-using Octopus.CoreDomain.Contracts.Loans;
-using Octopus.CoreDomain.Contracts.Loans.Installments;
-using Octopus.CoreDomain.Contracts.Loans.LoanRepayment;
-using Octopus.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayNextInstallments;
-using Octopus.CoreDomain.Products;
-using Octopus.Enums;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.Accounting;
+using OpenCBS.CoreDomain.Contracts.Loans;
+using OpenCBS.CoreDomain.Contracts.Loans.Installments;
+using OpenCBS.CoreDomain.Contracts.Loans.LoanRepayment;
+using OpenCBS.CoreDomain.Contracts.Loans.LoanRepayment.Repayment.RepayNextInstallments;
+using OpenCBS.CoreDomain.Products;
+using OpenCBS.Enums;
 using NUnit.Framework;
-using Octopus.Shared;
-using Octopus.Shared.Settings;
+using OpenCBS.Shared;
+using OpenCBS.Shared.Settings;
 
-namespace Octopus.Test.CoreDomain.Contracts.LoanRepayment.RepayNextInstallments
+namespace OpenCBS.Test.CoreDomain.Contracts.LoanRepayment.RepayNextInstallments
 {
     /// <summary>
     /// Summary description for TestRepayNextInstallments.

@@ -23,11 +23,11 @@
 // Technical contact email : tech(at)octopusnetwork.org 
 
 using System;
-using Octopus.CoreDomain.Events.Loan;
-using Octopus.Enums;
-using Octopus.Shared;
+using OpenCBS.CoreDomain.Events.Loan;
+using OpenCBS.Enums;
+using OpenCBS.Shared;
 
-namespace Octopus.CoreDomain.Events
+namespace OpenCBS.CoreDomain.Events
 {
     [Serializable]
 	public class BadLoanRepaymentEvent : RepaymentEvent

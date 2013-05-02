@@ -1,8 +1,8 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Octopus.Enums
+namespace OpenCBS.Enums
 {
     public enum OQuestionType
     {

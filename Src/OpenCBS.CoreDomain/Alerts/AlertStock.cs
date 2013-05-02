@@ -26,7 +26,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 
-namespace Octopus.CoreDomain
+namespace OpenCBS.CoreDomain
 {
 	/// <summary>
 	/// Summary description for AlertStock.

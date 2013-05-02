@@ -23,13 +23,13 @@
 // Technical contact email : tech(at)octopusnetwork.org
 
 using System;
-using Octopus.Enums;
-using Octopus.Shared;
+using OpenCBS.Enums;
+using OpenCBS.Shared;
 
-namespace Octopus.CoreDomain.Accounting
+namespace OpenCBS.CoreDomain.Accounting
 {
     /// <summary>
-    /// Description résumée de Account
+    /// Description rï¿½sumï¿½e de Account
     /// </summary>
     [Serializable]
     public class Account

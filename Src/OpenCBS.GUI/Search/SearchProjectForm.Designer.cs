@@ -1,4 +1,4 @@
-namespace Octopus.GUI.Projets
+namespace OpenCBS.GUI.Projets
 {
     partial class SearchProjectForm
     {
@@ -89,7 +89,7 @@ namespace Octopus.GUI.Projets
             resources.ApplyResources(this.buttonPreview, "buttonPreview");
             this.buttonPreview.BackColor = System.Drawing.Color.Gainsboro;
             this.buttonPreview.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonPreview.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_previous;
+            this.buttonPreview.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_bouton_previous;
             this.buttonPreview.Name = "buttonPreview";
             this.buttonPreview.UseVisualStyleBackColor = false;
             this.buttonPreview.Click += new System.EventHandler(this.buttonPreview_Click);
@@ -99,7 +99,7 @@ namespace Octopus.GUI.Projets
             resources.ApplyResources(this.buttonNext, "buttonNext");
             this.buttonNext.BackColor = System.Drawing.Color.Gainsboro;
             this.buttonNext.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonNext.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_next;
+            this.buttonNext.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_bouton_next;
             this.buttonNext.Name = "buttonNext";
             this.buttonNext.UseVisualStyleBackColor = false;
             this.buttonNext.Click += new System.EventHandler(this.buttonNext_Click);
@@ -110,7 +110,7 @@ namespace Octopus.GUI.Projets
             this.buttonCancel.BackColor = System.Drawing.Color.Gainsboro;
             this.buttonCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.buttonCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonCancel.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_close;
+            this.buttonCancel.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_bouton_close;
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.UseVisualStyleBackColor = false;
             // 
@@ -181,7 +181,7 @@ namespace Octopus.GUI.Projets
             resources.ApplyResources(this.btnSearch, "btnSearch");
             this.btnSearch.BackColor = System.Drawing.Color.Gainsboro;
             this.btnSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btnSearch.Image = global::Octopus.GUI.Properties.Resources.theme1_1_search;
+            this.btnSearch.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_search;
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.UseVisualStyleBackColor = false;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
@@ -191,7 +191,7 @@ namespace Octopus.GUI.Projets
             resources.ApplyResources(this.buttonPrintReport, "buttonPrintReport");
             this.buttonPrintReport.BackColor = System.Drawing.Color.Gainsboro;
             this.buttonPrintReport.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonPrintReport.Image = global::Octopus.GUI.Properties.Resources.theme1_1_bouton_print;
+            this.buttonPrintReport.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_bouton_print;
             this.buttonPrintReport.Name = "buttonPrintReport";
             this.buttonPrintReport.UseVisualStyleBackColor = false;
             // 
@@ -207,7 +207,7 @@ namespace Octopus.GUI.Projets
             resources.ApplyResources(this.buttonSearch, "buttonSearch");
             this.buttonSearch.BackColor = System.Drawing.Color.Gainsboro;
             this.buttonSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonSearch.Image = global::Octopus.GUI.Properties.Resources.theme1_1_search;
+            this.buttonSearch.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_search;
             this.buttonSearch.Name = "buttonSearch";
             this.buttonSearch.UseVisualStyleBackColor = false;
             // 

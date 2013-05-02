@@ -1,4 +1,4 @@
-﻿//Octopus MFS is an integrated suite for managing a Micro Finance Institution: clients, contracts, accounting, reporting and risk
+//Octopus MFS is an integrated suite for managing a Micro Finance Institution: clients, contracts, accounting, reporting and risk
 //Copyright © 2006,2007 OCTO Technology & OXUS Development Network
 //
 //This program is free software; you can redistribute it and/or modify
@@ -24,22 +24,22 @@
 
 using System.Collections.Generic;
 using System.Data.SqlClient;
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.Clients;
-using Octopus.CoreDomain.Products;
-using Octopus.Manager.Events;
-using Octopus.Manager.Products;
-using Octopus.CoreDomain.Contracts.Savings;
-using Octopus.Shared;
-using Octopus.Shared.Settings;
-using Octopus.CoreDomain.SearchResult;
-using Octopus.Manager.QueryForObject;
-using Octopus.Enums;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.Clients;
+using OpenCBS.CoreDomain.Products;
+using OpenCBS.Manager.Events;
+using OpenCBS.Manager.Products;
+using OpenCBS.CoreDomain.Contracts.Savings;
+using OpenCBS.Shared;
+using OpenCBS.Shared.Settings;
+using OpenCBS.CoreDomain.SearchResult;
+using OpenCBS.Manager.QueryForObject;
+using OpenCBS.Enums;
 using System;
-using Octopus.CoreDomain.Contracts.Loans;
-using Octopus.Manager.Clients;
+using OpenCBS.CoreDomain.Contracts.Loans;
+using OpenCBS.Manager.Clients;
 
-namespace Octopus.Manager.Contracts
+namespace OpenCBS.Manager.Contracts
 {
     /// <summary>
     /// CreditContractManagement contains all methods relative to selecting, inserting, updating

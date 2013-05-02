@@ -25,12 +25,12 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using Octopus.CoreDomain;
-using Octopus.Enums;
-using Octopus.GUI.UserControl;
-using Octopus.Services;
+using OpenCBS.CoreDomain;
+using OpenCBS.Enums;
+using OpenCBS.GUI.UserControl;
+using OpenCBS.Services;
 
-namespace Octopus.GUI.Configuration
+namespace OpenCBS.GUI.Configuration
 {
     public partial class CustomizableFieldsForm : SweetForm
     {

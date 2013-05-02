@@ -1,10 +1,10 @@
-﻿
-using NUnit.Framework;
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.Clients;
-using Octopus.Shared;
 
-namespace Octopus.Test.CoreDomain
+using NUnit.Framework;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.Clients;
+using OpenCBS.Shared;
+
+namespace OpenCBS.Test.CoreDomain
 {
     [TestFixture]
     public class TestMember

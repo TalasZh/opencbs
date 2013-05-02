@@ -25,11 +25,11 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-using Octopus.CoreDomain.EconomicActivities;
-using Octopus.Enums;
-using Octopus.Shared;
+using OpenCBS.CoreDomain.EconomicActivities;
+using OpenCBS.Enums;
+using OpenCBS.Shared;
 
-namespace Octopus.CoreDomain.Clients
+namespace OpenCBS.CoreDomain.Clients
 {
     [Serializable]
     public class Person : Client

@@ -6,11 +6,11 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using Octopus.CoreDomain;
-using Octopus.GUI.UserControl;
-using Octopus.MultiLanguageRessources;
+using OpenCBS.CoreDomain;
+using OpenCBS.GUI.UserControl;
+using OpenCBS.MultiLanguageRessources;
 
-namespace Octopus.GUI.Tools
+namespace OpenCBS.GUI.Tools
 {
     public partial class PasswordForm : SweetOkCancelForm
     {

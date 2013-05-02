@@ -1,8 +1,8 @@
 using System;
 using System.Drawing;
-using Octopus.CoreDomain.EconomicActivities;
+using OpenCBS.CoreDomain.EconomicActivities;
 
-namespace Octopus.GUI.UserControl
+namespace OpenCBS.GUI.UserControl
 {
     public partial class EconomicActivityControl : System.Windows.Forms.UserControl
     {

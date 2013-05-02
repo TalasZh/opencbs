@@ -24,10 +24,10 @@
 
 using System;
 using System.Windows.Forms;
-using Octopus.Services;
-using Octopus.Shared.Settings;
+using OpenCBS.Services;
+using OpenCBS.Shared.Settings;
 
-namespace Octopus.GUI.Tools
+namespace OpenCBS.GUI.Tools
 {
     public partial class frmDatabaseMaintenance : Form
     {

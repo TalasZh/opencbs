@@ -1,11 +1,11 @@
-﻿using System;
+using System;
 using System.Runtime.Remoting.Messaging;
 using System.Runtime.Remoting.Contexts;
 using System.Runtime.Remoting.Activation;
-using Octopus.CoreDomain;
-using Octopus.ExceptionsHandler;
+using OpenCBS.CoreDomain;
+using OpenCBS.ExceptionsHandler;
 
-namespace Octopus.Services
+namespace OpenCBS.Services
 {
     internal class SecurityAspect : IMessageSink
     {

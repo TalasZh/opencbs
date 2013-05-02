@@ -1,7 +1,7 @@
-﻿using Octopus.CoreDomain.Events;
+using OpenCBS.CoreDomain.Events;
 using System.Data.SqlClient;
 
-namespace Octopus.Manager.Events
+namespace OpenCBS.Manager.Events
 {
     public class TrancheEventManager : Manager
     {

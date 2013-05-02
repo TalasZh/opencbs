@@ -1,9 +1,9 @@
-﻿
-using Octopus.CoreDomain;
-using System.Data.SqlClient;
-using Octopus.Shared;
 
-namespace Octopus.Manager
+using OpenCBS.CoreDomain;
+using System.Data.SqlClient;
+using OpenCBS.Shared;
+
+namespace OpenCBS.Manager
 {
     public class MFIManager : Manager
     {

@@ -1,7 +1,7 @@
 using System.Windows.Forms;
-using Octopus.MultiLanguageRessources;
+using OpenCBS.MultiLanguageRessources;
 
-namespace Octopus.GUI
+namespace OpenCBS.GUI
 {
     public class MultiLanguageForm : Form
     {

@@ -24,9 +24,9 @@
 
 using System;
 using System.Windows.Forms;
-using Octopus.Services;
+using OpenCBS.Services;
 
-namespace Octopus.GUI.Accounting
+namespace OpenCBS.GUI.Accounting
 {
     public partial class EditFiscalYear : Form
     {

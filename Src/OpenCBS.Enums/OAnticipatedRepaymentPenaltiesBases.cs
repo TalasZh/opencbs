@@ -1,6 +1,6 @@
 using System;
 
-namespace Octopus.Enums
+namespace OpenCBS.Enums
 {
     [Serializable]
     public enum OAnticipatedRepaymentPenaltiesBases

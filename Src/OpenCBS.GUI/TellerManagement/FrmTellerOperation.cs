@@ -7,14 +7,14 @@ using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.Events.Teller;
-using Octopus.ExceptionsHandler;
-using Octopus.GUI.UserControl;
-using Octopus.Services;
-using Octopus.Shared;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.Events.Teller;
+using OpenCBS.ExceptionsHandler;
+using OpenCBS.GUI.UserControl;
+using OpenCBS.Services;
+using OpenCBS.Shared;
 
-namespace Octopus.GUI.TellerManagement
+namespace OpenCBS.GUI.TellerManagement
 {
     public partial class FrmTellerOperation : SweetBaseForm
     {

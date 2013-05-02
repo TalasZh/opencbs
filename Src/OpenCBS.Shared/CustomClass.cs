@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing.Design;
 
-namespace Octopus.Shared
+namespace OpenCBS.Shared
 {
 	/// <summary>
 	/// CustomClass (Which is binding to property grid)

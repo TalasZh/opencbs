@@ -1,15 +1,15 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Threading;
-using Octopus.CoreDomain;
-using Octopus.CoreDomain.Contracts.Loans.Installments;
-using Octopus.CoreDomain.Products;
-using Octopus.ExceptionsHandler;
-using Octopus.Manager;
-using Octopus.Manager.Products;
-using Octopus.Enums;
+using OpenCBS.CoreDomain;
+using OpenCBS.CoreDomain.Contracts.Loans.Installments;
+using OpenCBS.CoreDomain.Products;
+using OpenCBS.ExceptionsHandler;
+using OpenCBS.Manager;
+using OpenCBS.Manager.Products;
+using OpenCBS.Enums;
 
-namespace Octopus.Services
+namespace OpenCBS.Services
 {
 	public class SavingProductServices : MarshalByRefObject
 	{
