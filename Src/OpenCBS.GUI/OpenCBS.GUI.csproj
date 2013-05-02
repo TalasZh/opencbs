@@ -3287,6 +3287,7 @@
     <None Include="Resources\es.png" />
     <None Include="Resources\group.png" />
     <None Include="Resources\find.png" />
+    <None Include="Resources\database.png" />
     <Content Include="Resources\group_members_32x32.png" />
     <Content Include="Resources\ky_small.png" />
     <None Include="Resources\languages.png" />
@@ -3326,6 +3327,7 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <None Include="Resources\user_gray.png" />
     <Content Include="Template\cover.css" />
     <Content Include="Template\cover.js" />
     <Content Include="Template\package.png" />
