@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -190,7 +190,7 @@
     <value>progressBar</value>
   </data>
   <data name="&gt;&gt;progressBar.Type" xml:space="preserve">
-    <value>Octopus.GUI.OctopusProgressBar, Octopus.GUI, Version=1.1.1.24915, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.OctopusProgressBar, OpenCBS.GUI, Version=1.1.1.24915, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;progressBar.Parent" xml:space="preserve">
     <value>tableLayoutPanel1</value>

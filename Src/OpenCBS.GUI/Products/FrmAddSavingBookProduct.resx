@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -5050,7 +5050,7 @@
     <value>btSavingProduct</value>
   </data>
   <data name="&gt;&gt;btSavingProduct.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btSavingProduct.Parent" xml:space="preserve">
     <value>groupBox2</value>
@@ -5083,7 +5083,7 @@
     <value>bClose</value>
   </data>
   <data name="&gt;&gt;bClose.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;bClose.Parent" xml:space="preserve">
     <value>groupBox2</value>
@@ -5167,6 +5167,6 @@
     <value>FrmAddSavingBookProduct</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetBaseForm, Octopus.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetBaseForm, OpenCBS.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
   </data>
 </root>

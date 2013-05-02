@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -136,7 +136,7 @@
     <value>fieldListUserControl</value>
   </data>
   <data name="&gt;&gt;fieldListUserControl.Type" xml:space="preserve">
-    <value>Octopus.GUI.Export.FieldListUserControl, Octopus.GUI, Version=1.1.1.23511, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.Export.FieldListUserControl, OpenCBS.GUI, Version=1.1.1.23511, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;fieldListUserControl.Parent" xml:space="preserve">
     <value>$this</value>

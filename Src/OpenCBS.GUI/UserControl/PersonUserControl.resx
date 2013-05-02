@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -1255,7 +1255,7 @@
     <value>clSavingList</value>
   </data>
   <data name="&gt;&gt;clSavingList.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SavingsListUserControl, Octopus.GUI, Version=1.1.1.20665, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SavingsListUserControl, OpenCBS.GUI, Version=1.1.1.20665, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;clSavingList.Parent" xml:space="preserve">
     <value>tabPageSavings</value>
@@ -1817,7 +1817,7 @@
     <value>btnPrint</value>
   </data>
   <data name="&gt;&gt;btnPrint.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.PrintButton, Octopus.GUI, Version=1.1.1.20665, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.PrintButton, OpenCBS.GUI, Version=1.1.1.20665, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btnPrint.Parent" xml:space="preserve">
     <value>panelEconomicActivity</value>
@@ -2003,7 +2003,7 @@
     <value>eacPerson</value>
   </data>
   <data name="&gt;&gt;eacPerson.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.EconomicActivityControl, Octopus.GUI, Version=1.1.1.20665, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.EconomicActivityControl, OpenCBS.GUI, Version=1.1.1.20665, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;eacPerson.Parent" xml:space="preserve">
     <value>groupBoxCivilities</value>
@@ -2048,7 +2048,7 @@
     <value>textBoxNationality</value>
   </data>
   <data name="&gt;&gt;textBoxNationality.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.TextBoxLimit, Octopus.GUI, Version=1.1.1.20665, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.TextBoxLimit, OpenCBS.GUI, Version=1.1.1.20665, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;textBoxNationality.Parent" xml:space="preserve">
     <value>groupBoxCivilities</value>
@@ -2129,7 +2129,7 @@
     <value>textBoxBirthPlace</value>
   </data>
   <data name="&gt;&gt;textBoxBirthPlace.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.TextBoxLimit, Octopus.GUI, Version=1.1.1.20665, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.TextBoxLimit, OpenCBS.GUI, Version=1.1.1.20665, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;textBoxBirthPlace.Parent" xml:space="preserve">
     <value>groupBoxCivilities</value>
@@ -2246,7 +2246,7 @@
     <value>textBoxFatherName</value>
   </data>
   <data name="&gt;&gt;textBoxFatherName.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.TextBoxLimit, Octopus.GUI, Version=1.1.1.20665, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.TextBoxLimit, OpenCBS.GUI, Version=1.1.1.20665, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;textBoxFatherName.Parent" xml:space="preserve">
     <value>groupBoxCivilities</value>
@@ -2510,7 +2510,7 @@
     <value>textBoxLastname</value>
   </data>
   <data name="&gt;&gt;textBoxLastname.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.TextBoxLimit, Octopus.GUI, Version=1.1.1.20665, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.TextBoxLimit, OpenCBS.GUI, Version=1.1.1.20665, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;textBoxLastname.Parent" xml:space="preserve">
     <value>groupBoxCivilities</value>
@@ -2567,7 +2567,7 @@
     <value>textBoxIdentificationData</value>
   </data>
   <data name="&gt;&gt;textBoxIdentificationData.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.TextBoxLimit, Octopus.GUI, Version=1.1.1.20665, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.TextBoxLimit, OpenCBS.GUI, Version=1.1.1.20665, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;textBoxIdentificationData.Parent" xml:space="preserve">
     <value>groupBoxCivilities</value>
@@ -2714,7 +2714,7 @@
     <value>textBoxFirstName</value>
   </data>
   <data name="&gt;&gt;textBoxFirstName.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.TextBoxLimit, Octopus.GUI, Version=1.1.1.20665, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.TextBoxLimit, OpenCBS.GUI, Version=1.1.1.20665, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;textBoxFirstName.Parent" xml:space="preserve">
     <value>groupBoxCivilities</value>
@@ -4275,6 +4275,6 @@
     <value>PersonUserControl</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.ClientControl, Octopus.GUI, Version=1.1.1.20665, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.ClientControl, OpenCBS.GUI, Version=1.1.1.20665, Culture=neutral, PublicKeyToken=null</value>
   </data>
 </root>

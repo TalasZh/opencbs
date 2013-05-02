@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -283,7 +283,7 @@
     <value>buttonUpdate</value>
   </data>
   <data name="&gt;&gt;buttonUpdate.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;buttonUpdate.Parent" xml:space="preserve">
     <value>groupBox3</value>
@@ -646,7 +646,7 @@
     <value>buttonOK</value>
   </data>
   <data name="&gt;&gt;buttonOK.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;buttonOK.Parent" xml:space="preserve">
     <value>groupBoxAddUser</value>
@@ -1033,7 +1033,7 @@
     <value>buttonPublicHolidayDelete</value>
   </data>
   <data name="&gt;&gt;buttonPublicHolidayDelete.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;buttonPublicHolidayDelete.Parent" xml:space="preserve">
     <value>groupBox5</value>
@@ -1246,7 +1246,7 @@
     <value>buttonPublicHolidaysSave</value>
   </data>
   <data name="&gt;&gt;buttonPublicHolidaysSave.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;buttonPublicHolidaysSave.Parent" xml:space="preserve">
     <value>groupBox4</value>
@@ -1363,7 +1363,7 @@
     <value>buttonDeleteScale</value>
   </data>
   <data name="&gt;&gt;buttonDeleteScale.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;buttonDeleteScale.Parent" xml:space="preserve">
     <value>groupBox2</value>
@@ -1393,7 +1393,7 @@
     <value>buttonSaveScale</value>
   </data>
   <data name="&gt;&gt;buttonSaveScale.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;buttonSaveScale.Parent" xml:space="preserve">
     <value>groupBox2</value>
@@ -1717,7 +1717,7 @@
     <value>butImport</value>
   </data>
   <data name="&gt;&gt;butImport.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;butImport.Parent" xml:space="preserve">
     <value>groupBox1</value>
@@ -1750,7 +1750,7 @@
     <value>butExport</value>
   </data>
   <data name="&gt;&gt;butExport.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;butExport.Parent" xml:space="preserve">
     <value>groupBox1</value>
@@ -1783,7 +1783,7 @@
     <value>buttonCancel</value>
   </data>
   <data name="&gt;&gt;buttonCancel.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;buttonCancel.Parent" xml:space="preserve">
     <value>groupBox1</value>

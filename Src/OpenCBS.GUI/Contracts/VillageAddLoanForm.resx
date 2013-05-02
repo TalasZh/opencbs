@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -205,7 +205,7 @@
     <value>Compulsory percentage</value>
   </data>
   <data name="&gt;&gt;btnSave.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.27634, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.27634, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;chAmount.Type" xml:space="preserve">
     <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -262,7 +262,7 @@
     <value>Arial, 9.75pt</value>
   </data>
   <data name="&gt;&gt;btnCancel.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.27634, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.27634, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;chCreationDate.Type" xml:space="preserve">
     <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -403,7 +403,7 @@
     <value>tbInterest</value>
   </data>
   <data name="&gt;&gt;lvMembers.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.ListViewEx, Octopus.GUI, Version=1.1.1.27634, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.ListViewEx, OpenCBS.GUI, Version=1.1.1.27634, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="chCompulsorySavings.Width" type="System.Int32, mscorlib">
     <value>109</value>
@@ -541,7 +541,7 @@
     <value>cbLoanOfficer</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetBaseForm, Octopus.GUI, Version=1.1.1.27634, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetBaseForm, OpenCBS.GUI, Version=1.1.1.27634, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="udInstallments.Visible" type="System.Boolean, mscorlib">
     <value>False</value>

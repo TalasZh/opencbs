@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -367,7 +367,7 @@
     <value>buttonAdd</value>
   </data>
   <data name="&gt;&gt;buttonAdd.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;buttonAdd.Parent" xml:space="preserve">
     <value>groupBox1</value>
@@ -400,7 +400,7 @@
     <value>buttonDelete</value>
   </data>
   <data name="&gt;&gt;buttonDelete.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;buttonDelete.Parent" xml:space="preserve">
     <value>groupBox1</value>
@@ -433,7 +433,7 @@
     <value>buttonEdit</value>
   </data>
   <data name="&gt;&gt;buttonEdit.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;buttonEdit.Parent" xml:space="preserve">
     <value>groupBox1</value>
@@ -493,7 +493,7 @@
     <value>buttonExit</value>
   </data>
   <data name="&gt;&gt;buttonExit.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;buttonExit.Parent" xml:space="preserve">
     <value>$this</value>
@@ -544,6 +544,6 @@
     <value>FrmInstallmentTypes</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetBaseForm, Octopus.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetBaseForm, OpenCBS.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
   </data>
 </root>

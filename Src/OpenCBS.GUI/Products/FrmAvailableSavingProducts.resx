@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -175,7 +175,7 @@
     <value>buttonEditProduct</value>
   </data>
   <data name="&gt;&gt;buttonEditProduct.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;buttonEditProduct.Parent" xml:space="preserve">
     <value>groupBox1</value>
@@ -244,7 +244,7 @@
     <value>buttonAddProduct</value>
   </data>
   <data name="&gt;&gt;buttonAddProduct.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;buttonAddProduct.Parent" xml:space="preserve">
     <value>groupBox1</value>
@@ -283,7 +283,7 @@
     <value>buttonDeleteProduct</value>
   </data>
   <data name="&gt;&gt;buttonDeleteProduct.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;buttonDeleteProduct.Parent" xml:space="preserve">
     <value>groupBox1</value>
@@ -382,6 +382,6 @@
     <value>FrmAvailableSavingProducts</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetForm, Octopus.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetForm, OpenCBS.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
   </data>
 </root>

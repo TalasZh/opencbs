@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -949,7 +949,7 @@
     <value>savingsListUserControl1</value>
   </data>
   <data name="&gt;&gt;savingsListUserControl1.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SavingsListUserControl, Octopus.GUI, Version=1.1.1.29024, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SavingsListUserControl, OpenCBS.GUI, Version=1.1.1.29024, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;savingsListUserControl1.Parent" xml:space="preserve">
     <value>tabPageSaving</value>
@@ -1331,7 +1331,7 @@
     <value>btnPrint</value>
   </data>
   <data name="&gt;&gt;btnPrint.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.PrintButton, Octopus.GUI, Version=1.1.1.29024, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.PrintButton, OpenCBS.GUI, Version=1.1.1.29024, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btnPrint.Parent" xml:space="preserve">
     <value>groupBoxButtons</value>
@@ -2135,6 +2135,6 @@
     <value>GroupUserControl</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.ClientControl, Octopus.GUI, Version=1.1.1.29024, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.ClientControl, OpenCBS.GUI, Version=1.1.1.29024, Culture=neutral, PublicKeyToken=null</value>
   </data>
 </root>

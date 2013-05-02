@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -445,7 +445,7 @@
     <value>4</value>
   </data>
   <data name="&gt;&gt;buttonCancel.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.35737, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.35737, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="label14.TabIndex" type="System.Int32, mscorlib">
     <value>39</value>
@@ -973,7 +973,7 @@
     <value>5</value>
   </data>
   <data name="&gt;&gt;lvEntryFees.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.ListViewEx, Octopus.GUI, Version=1.1.1.35737, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.ListViewEx, OpenCBS.GUI, Version=1.1.1.35737, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;textBoxRateMin.Name" xml:space="preserve">
     <value>textBoxRateMin</value>
@@ -1201,7 +1201,7 @@
     <value>NoControl</value>
   </data>
   <data name="&gt;&gt;listViewLoanCycles.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.ListViewEx, Octopus.GUI, Version=1.1.1.35737, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.ListViewEx, OpenCBS.GUI, Version=1.1.1.35737, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="nudEntryFeescycleFrom.Location" type="System.Drawing.Point, System.Drawing">
     <value>426, 17</value>
@@ -1279,7 +1279,7 @@
     <value>tBOverduePrincipalMax</value>
   </data>
   <data name="&gt;&gt;buttonRemoveExoticInstallment.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.35737, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.35737, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="label17.Size" type="System.Drawing.Size, System.Drawing">
     <value>51, 16</value>
@@ -1591,7 +1591,7 @@
     <value>382, 85</value>
   </data>
   <data name="&gt;&gt;buttonDecreaseExoticInstallment.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.35737, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.35737, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
     <value>20, 16</value>
@@ -1804,7 +1804,7 @@
     <value>True</value>
   </data>
   <data name="&gt;&gt;buttonCancelExoticProduct.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.35737, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.35737, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;label39.Name" xml:space="preserve">
     <value>label39</value>
@@ -2212,7 +2212,7 @@
     <value>MiddleLeft</value>
   </data>
   <data name="&gt;&gt;swbtnEntryFeesRemoveCycle.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.35737, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.35737, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;tBOverdueInterestValue.Name" xml:space="preserve">
     <value>tBOverdueInterestValue</value>
@@ -3127,7 +3127,7 @@
     <value>Tranche maturity (number of installments)</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetBaseForm, Octopus.GUI, Version=1.1.1.35737, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetBaseForm, OpenCBS.GUI, Version=1.1.1.35737, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="rbCompulsoryAmountRate.Location" type="System.Drawing.Point, System.Drawing">
     <value>125, 22</value>
@@ -3250,7 +3250,7 @@
     <value>labelAmountMin</value>
   </data>
   <data name="&gt;&gt;buttonAmountCyclesSave.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.35737, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.35737, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="labelTotalInterest.TabIndex" type="System.Int32, mscorlib">
     <value>58</value>
@@ -3685,7 +3685,7 @@
     <value>149, 23</value>
   </data>
   <data name="&gt;&gt;buttonCancelAmountCycles.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.35737, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.35737, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="label11.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -4175,7 +4175,7 @@
     <value>9</value>
   </data>
   <data name="&gt;&gt;buttonSave.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.35737, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.35737, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="textBoxGracePeriod.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9.75pt</value>
@@ -4544,7 +4544,7 @@
     <value>False</value>
   </data>
   <data name="&gt;&gt;buttonSaveExoticProduct.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.35737, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.35737, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="label18.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -4628,7 +4628,7 @@
     <value>gbCSAmount</value>
   </data>
   <data name="&gt;&gt;buttonNewAmountCycles.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.35737, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.35737, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;groupBoxAnticipatedRepayment.ZOrder" xml:space="preserve">
     <value>3</value>
@@ -5801,7 +5801,7 @@
     <value>NoControl</value>
   </data>
   <data name="&gt;&gt;buttonAddExoticInstallment.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.35737, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.35737, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;labelNbIOr.ZOrder" xml:space="preserve">
     <value>2</value>
@@ -6122,7 +6122,7 @@
     <value>16, 25</value>
   </data>
   <data name="&gt;&gt;buttonRemoveAmountCycles.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.35737, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.35737, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;chEntryFeeId.Type" xml:space="preserve">
     <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -6587,7 +6587,7 @@
     <value>radioButtonAmountCycle</value>
   </data>
   <data name="&gt;&gt;buttonAddAmountCycle.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.35737, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.35737, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;label2.Name" xml:space="preserve">
     <value>label2</value>
@@ -6929,7 +6929,7 @@
     <value>groupBoxType</value>
   </data>
   <data name="&gt;&gt;buttonNewExoticProduct.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.35737, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.35737, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="label34.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -6947,7 +6947,7 @@
     <value>0</value>
   </data>
   <data name="&gt;&gt;buttonIncreaseExoticInstallment.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.35737, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.35737, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="buttonAddExoticInstallment.Size" type="System.Drawing.Size, System.Drawing">
     <value>95, 23</value>
@@ -7479,7 +7479,7 @@
     <value>3</value>
   </data>
   <data name="&gt;&gt;swbtnEntryFeesAddCycle.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.35737, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.35737, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="label17.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>

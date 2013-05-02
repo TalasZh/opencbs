@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -292,7 +292,7 @@
     <value>panelEC</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetBaseForm, Octopus.GUI, Version=1.1.1.22022, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetBaseForm, OpenCBS.GUI, Version=1.1.1.22022, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;nudECAmount.Type" xml:space="preserve">
     <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -427,7 +427,7 @@
     <value>0, 16</value>
   </data>
   <data name="&gt;&gt;buttonSave.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.22022, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.22022, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="labelRepayPrincipal.Location" type="System.Drawing.Point, System.Drawing">
     <value>16, 28</value>
@@ -1105,7 +1105,7 @@
     <value>3</value>
   </data>
   <data name="&gt;&gt;_btAddExchangeRate.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.22022, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.22022, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="_lbClientNameValue.Size" type="System.Drawing.Size, System.Drawing">
     <value>0, 16</value>
@@ -1123,7 +1123,7 @@
     <value>1</value>
   </data>
   <data name="&gt;&gt;buttonCancel.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.22022, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.22022, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="labelRepayFees.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>

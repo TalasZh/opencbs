@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -238,7 +238,7 @@
     <value>buttonAddSaving</value>
   </data>
   <data name="&gt;&gt;buttonAddSaving.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.29297, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.29297, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;buttonAddSaving.Parent" xml:space="preserve">
     <value>flowLayoutPanel1</value>
@@ -271,7 +271,7 @@
     <value>buttonViewSaving</value>
   </data>
   <data name="&gt;&gt;buttonViewSaving.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.29297, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.29297, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;buttonViewSaving.Parent" xml:space="preserve">
     <value>flowLayoutPanel1</value>

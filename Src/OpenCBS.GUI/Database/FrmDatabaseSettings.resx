@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -142,7 +142,7 @@
     <value>btnDefault</value>
   </data>
   <data name="&gt;&gt;btnDefault.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btnDefault.Parent" xml:space="preserve">
     <value>groupBoxSQLServerConnection</value>
@@ -172,7 +172,7 @@
     <value>btnGetServersList</value>
   </data>
   <data name="&gt;&gt;btnGetServersList.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btnGetServersList.Parent" xml:space="preserve">
     <value>groupBoxSQLServerConnection</value>
@@ -517,7 +517,7 @@
     <value>btnSQLServerChangeSettings</value>
   </data>
   <data name="&gt;&gt;btnSQLServerChangeSettings.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btnSQLServerChangeSettings.Parent" xml:space="preserve">
     <value>groupBoxSQLSettings</value>
@@ -631,7 +631,7 @@
     <value>btnSQLServerSettingsShowDetails</value>
   </data>
   <data name="&gt;&gt;btnSQLServerSettingsShowDetails.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btnSQLServerSettingsShowDetails.Parent" xml:space="preserve">
     <value>groupBoxDatabaseManagement</value>
@@ -661,7 +661,7 @@
     <value>btnRestore</value>
   </data>
   <data name="&gt;&gt;btnRestore.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btnRestore.Parent" xml:space="preserve">
     <value>groupBoxDatabaseManagement</value>
@@ -691,7 +691,7 @@
     <value>btnBackup</value>
   </data>
   <data name="&gt;&gt;btnBackup.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btnBackup.Parent" xml:space="preserve">
     <value>groupBoxDatabaseManagement</value>
@@ -721,7 +721,7 @@
     <value>btnSetAsDefault</value>
   </data>
   <data name="&gt;&gt;btnSetAsDefault.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btnSetAsDefault.Parent" xml:space="preserve">
     <value>groupBoxDatabaseManagement</value>
@@ -751,7 +751,7 @@
     <value>btnCreateNewDatabase</value>
   </data>
   <data name="&gt;&gt;btnCreateNewDatabase.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btnCreateNewDatabase.Parent" xml:space="preserve">
     <value>groupBoxDatabaseManagement</value>
@@ -883,7 +883,7 @@
     <value>btnDatabaseConnection</value>
   </data>
   <data name="&gt;&gt;btnDatabaseConnection.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btnDatabaseConnection.Parent" xml:space="preserve">
     <value>groupBoxSaveSettings</value>
@@ -913,7 +913,7 @@
     <value>btnExit</value>
   </data>
   <data name="&gt;&gt;btnExit.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btnExit.Parent" xml:space="preserve">
     <value>groupBoxSaveSettings</value>
@@ -970,7 +970,7 @@
     <value>btnSave</value>
   </data>
   <data name="&gt;&gt;btnSave.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btnSave.Parent" xml:space="preserve">
     <value>groupBoxSaveSettings</value>
@@ -1150,7 +1150,7 @@
     <value>btnSQLDatabaseSettingsUpgrade</value>
   </data>
   <data name="&gt;&gt;btnSQLDatabaseSettingsUpgrade.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btnSQLDatabaseSettingsUpgrade.Parent" xml:space="preserve">
     <value>groupBoxSQLDatabaseSettings</value>
@@ -1180,7 +1180,7 @@
     <value>btnSQLDatabaseSettingsChangeName</value>
   </data>
   <data name="&gt;&gt;btnSQLDatabaseSettingsChangeName.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btnSQLDatabaseSettingsChangeName.Parent" xml:space="preserve">
     <value>groupBoxSQLDatabaseSettings</value>
@@ -1297,7 +1297,7 @@
     <value>btnContinue</value>
   </data>
   <data name="&gt;&gt;btnContinue.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btnContinue.Parent" xml:space="preserve">
     <value>groupBoxSQLDatabaseStructure</value>
@@ -1582,6 +1582,6 @@
     <value>FrmDatabaseSettings</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetBaseForm, Octopus.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetBaseForm, OpenCBS.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
   </data>
 </root>

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -143,7 +143,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetBaseForm, Octopus.GUI, Version=1.1.1.28235, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetBaseForm, OpenCBS.GUI, Version=1.1.1.28235, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;lblDescription.Name" xml:space="preserve">
     <value>lblDescription</value>
@@ -187,7 +187,7 @@
     <value>33, 151</value>
   </data>
   <data name="&gt;&gt;btnConfirm.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.28235, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.28235, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="rbtnCashIn.Location" type="System.Drawing.Point, System.Drawing">
     <value>138, 55</value>
@@ -277,7 +277,7 @@
     <value>NoControl</value>
   </data>
   <data name="&gt;&gt;btnCancel.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.28235, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.28235, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btnConfirm.Name" xml:space="preserve">
     <value>btnConfirm</value>

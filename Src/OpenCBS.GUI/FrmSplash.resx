@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -1265,7 +1265,7 @@
     <value>oPBMacroProgression</value>
   </data>
   <data name="&gt;&gt;oPBMacroProgression.Type" xml:space="preserve">
-    <value>Octopus.GUI.OctopusProgressBar, Octopus.GUI, Version=1.1.1.19195, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.OctopusProgressBar, OpenCBS.GUI, Version=1.1.1.19195, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;oPBMacroProgression.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1292,7 +1292,7 @@
     <value>oPBarMicroProgression</value>
   </data>
   <data name="&gt;&gt;oPBarMicroProgression.Type" xml:space="preserve">
-    <value>Octopus.GUI.OctopusProgressBar, Octopus.GUI, Version=1.1.1.19195, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.OctopusProgressBar, OpenCBS.GUI, Version=1.1.1.19195, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;oPBarMicroProgression.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1331,6 +1331,6 @@
     <value>FrmSplash</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetBaseForm, Octopus.GUI, Version=1.1.1.19195, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetBaseForm, OpenCBS.GUI, Version=1.1.1.19195, Culture=neutral, PublicKeyToken=null</value>
   </data>
 </root>

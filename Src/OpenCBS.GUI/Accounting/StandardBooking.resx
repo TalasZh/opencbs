@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -189,7 +189,7 @@
     <value>112, 27</value>
   </data>
   <data name="&gt;&gt;btnCreate.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.21995, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.21995, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btnCreate.ZOrder" xml:space="preserve">
     <value>2</value>
@@ -280,7 +280,7 @@
     <value>0</value>
   </data>
   <data name="&gt;&gt;buttonClose.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.21995, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.21995, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="btnDelete.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -365,7 +365,7 @@
     <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>Octopus.GUI.MultiLanguageForm, Octopus.GUI, Version=1.1.1.21995, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.MultiLanguageForm, OpenCBS.GUI, Version=1.1.1.21995, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btnDelete.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -380,7 +380,7 @@
     <value>45</value>
   </data>
   <data name="&gt;&gt;btnDelete.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.21995, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.21995, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btnDelete.Name" xml:space="preserve">
     <value>btnDelete</value>
@@ -466,7 +466,7 @@
     <value>tableLayoutPanel1</value>
   </data>
   <data name="&gt;&gt;btnEdit.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.21995, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.21995, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="btnDelete.Size" type="System.Drawing.Size, System.Drawing">
     <value>150, 27</value>

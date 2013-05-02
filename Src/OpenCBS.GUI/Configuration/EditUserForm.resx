@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -430,6 +430,6 @@
     <value>EditUserForm</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetOkCancelForm, Octopus.GUI, Version=1.1.1.21837, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetOkCancelForm, OpenCBS.GUI, Version=1.1.1.21837, Culture=neutral, PublicKeyToken=null</value>
   </data>
 </root>

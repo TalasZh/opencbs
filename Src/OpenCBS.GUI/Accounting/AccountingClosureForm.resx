@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -316,7 +316,7 @@
     <value>0</value>
   </data>
   <data name="&gt;&gt;sweetButton1.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.26687, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.26687, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="btnClose.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -328,7 +328,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;btnGenerateEvents.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.26687, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.26687, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="sweetButton1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -364,7 +364,7 @@
     <value>Arial, 9.75pt</value>
   </data>
   <data name="&gt;&gt;btnView.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.26687, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.26687, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="tableLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
     <value>35</value>
@@ -439,10 +439,10 @@
     <value>Date</value>
   </data>
   <data name="&gt;&gt;btnPostBookings.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.26687, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.26687, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btnClose.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.26687, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.26687, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;sweetButton1.Name" xml:space="preserve">
     <value>sweetButton1</value>
@@ -484,7 +484,7 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnDeleteRule.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.26687, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.26687, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btnView.ZOrder" xml:space="preserve">
     <value>0</value>

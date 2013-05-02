@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -205,7 +205,7 @@
     <value>tbAddress</value>
   </data>
   <data name="&gt;&gt;tbAddress.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.TextBoxLimit, Octopus.GUI, Version=1.1.1.20818, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.TextBoxLimit, OpenCBS.GUI, Version=1.1.1.20818, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;tbAddress.Parent" xml:space="preserve">
     <value>$this</value>
@@ -268,7 +268,7 @@
     <value>textBoxCity</value>
   </data>
   <data name="&gt;&gt;textBoxCity.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.TextBoxLimit, Octopus.GUI, Version=1.1.1.20818, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.TextBoxLimit, OpenCBS.GUI, Version=1.1.1.20818, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;textBoxCity.Parent" xml:space="preserve">
     <value>$this</value>
@@ -397,7 +397,7 @@
     <value>buttonSave</value>
   </data>
   <data name="&gt;&gt;buttonSave.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.SweetButton, Octopus.GUI, Version=1.1.1.20818, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.20818, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;buttonSave.Parent" xml:space="preserve">
     <value>$this</value>
@@ -484,7 +484,7 @@
     <value>textBoxHomePhone</value>
   </data>
   <data name="&gt;&gt;textBoxHomePhone.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.TextBoxLimit, Octopus.GUI, Version=1.1.1.20818, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.TextBoxLimit, OpenCBS.GUI, Version=1.1.1.20818, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;textBoxHomePhone.Parent" xml:space="preserve">
     <value>$this</value>
@@ -511,7 +511,7 @@
     <value>textBoxPersonalPhone</value>
   </data>
   <data name="&gt;&gt;textBoxPersonalPhone.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.TextBoxLimit, Octopus.GUI, Version=1.1.1.20818, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.TextBoxLimit, OpenCBS.GUI, Version=1.1.1.20818, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;textBoxPersonalPhone.Parent" xml:space="preserve">
     <value>$this</value>
@@ -631,7 +631,7 @@
     <value>tbZipCode</value>
   </data>
   <data name="&gt;&gt;tbZipCode.Type" xml:space="preserve">
-    <value>Octopus.GUI.UserControl.TextBoxLimit, Octopus.GUI, Version=1.1.1.20818, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.TextBoxLimit, OpenCBS.GUI, Version=1.1.1.20818, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;tbZipCode.Parent" xml:space="preserve">
     <value>$this</value>
