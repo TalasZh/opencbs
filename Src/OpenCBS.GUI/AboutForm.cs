@@ -60,6 +60,7 @@ namespace OpenCBS.GUI
             // AboutForm
             // 
             resources.ApplyResources(this, "$this");
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.pictureBoxAboutOctopus);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
