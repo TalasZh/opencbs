@@ -723,11 +723,11 @@
     <Compile Include="UserControl\SweetBaseForm.Designer.cs">
       <DependentUpon>SweetBaseForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="OctopusProgressBar.cs">
+    <Compile Include="OpenCBSProgressBar.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="OctopusProgressBar.Designer.cs">
-      <DependentUpon>OctopusProgressBar.cs</DependentUpon>
+    <Compile Include="OpenCBSProgressBar.Designer.cs">
+      <DependentUpon>OpenCBSProgressBar.cs</DependentUpon>
     </Compile>
     <Compile Include="Products\FrmAddCollateralProduct.cs">
       <SubType>Form</SubType>
@@ -2385,8 +2385,8 @@
       <DependentUpon>frmMFI.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="OctopusProgressBar.resx">
-      <DependentUpon>OctopusProgressBar.cs</DependentUpon>
+    <EmbeddedResource Include="OpenCBSProgressBar.resx">
+      <DependentUpon>OpenCBSProgressBar.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Report Browser\RepaymentCollectionSheetForm.pt.resx">

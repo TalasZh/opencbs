@@ -58,8 +58,8 @@ namespace OpenCBS.GUI
             this.bWOneToSeven = new System.ComponentModel.BackgroundWorker();
             this.bWSeventToEight = new System.ComponentModel.BackgroundWorker();
             this.pictureBoxAboutOctopus = new System.Windows.Forms.PictureBox();
-            this.oPBMacroProgression = new OpenCBS.GUI.OctopusProgressBar();
-            this.oPBarMicroProgression = new OpenCBS.GUI.OctopusProgressBar();
+            this.oPBMacroProgression = new OpenCBS.GUI.OpenCBSProgressBar();
+            this.oPBarMicroProgression = new OpenCBS.GUI.OpenCBSProgressBar();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAboutOctopus)).BeginInit();
             this.SuspendLayout();
             // 
@@ -79,21 +79,21 @@ namespace OpenCBS.GUI
             // 
             this.bWOneToSeven.WorkerReportsProgress = true;
             this.bWOneToSeven.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker_DoWork);
-            this.bWOneToSeven.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker_RunWorkerCompleted);
             this.bWOneToSeven.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.backgroundWorker_ProgressChanged);
+            this.bWOneToSeven.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker_RunWorkerCompleted);
             // 
             // bWSeventToEight
             // 
             this.bWSeventToEight.WorkerReportsProgress = true;
             this.bWSeventToEight.DoWork += new System.ComponentModel.DoWorkEventHandler(this.bWSeventToEight_DoWork);
-            this.bWSeventToEight.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.bWSeventToEight_RunWorkerCompleted);
             this.bWSeventToEight.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.bWSeventToEight_ProgressChanged);
+            this.bWSeventToEight.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.bWSeventToEight_RunWorkerCompleted);
             // 
             // pictureBoxAboutOctopus
             // 
             resources.ApplyResources(this.pictureBoxAboutOctopus, "pictureBoxAboutOctopus");
             this.pictureBoxAboutOctopus.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxAboutOctopus.InitialImage = null;
+            this.pictureBoxAboutOctopus.BackgroundImage = global::OpenCBS.GUI.Properties.Resources.LOGO;
             this.pictureBoxAboutOctopus.Name = "pictureBoxAboutOctopus";
             this.pictureBoxAboutOctopus.TabStop = false;
             // 
@@ -141,8 +141,8 @@ namespace OpenCBS.GUI
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label labelConfigurationValue;
-        private OctopusProgressBar oPBarMicroProgression;
-        private OctopusProgressBar oPBMacroProgression;
+        private OpenCBSProgressBar oPBarMicroProgression;
+        private OpenCBSProgressBar oPBMacroProgression;
         private System.ComponentModel.BackgroundWorker bWOneToSeven;
         private System.ComponentModel.BackgroundWorker bWSeventToEight;
         private System.Windows.Forms.PictureBox pictureBoxAboutOctopus;

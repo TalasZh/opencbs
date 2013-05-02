@@ -1,6 +1,6 @@
 namespace OpenCBS.GUI
 {
-    partial class OctopusProgressBar
+    partial class OpenCBSProgressBar
     {
         /// <summary>
         /// Required designer variable.

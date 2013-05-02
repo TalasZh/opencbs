@@ -32,7 +32,7 @@ namespace OpenCBS.GUI.Export
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.labelTitle = new System.Windows.Forms.Label();
-            this.progressBar = new OpenCBS.GUI.OctopusProgressBar();
+            this.progressBar = new OpenCBS.GUI.OpenCBSProgressBar();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.buttonCancel = new System.Windows.Forms.Button();
             this.buttonRun = new System.Windows.Forms.Button();
@@ -120,7 +120,7 @@ namespace OpenCBS.GUI.Export
 
         private System.Windows.Forms.Label labelTitle;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private OctopusProgressBar progressBar;
+        private OpenCBSProgressBar progressBar;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label labelDetails;
         private System.Windows.Forms.Button buttonRun;

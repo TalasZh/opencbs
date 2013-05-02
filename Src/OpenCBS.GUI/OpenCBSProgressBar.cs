@@ -5,11 +5,11 @@ using System.Windows.Forms;
 
 namespace OpenCBS.GUI
 {
-    public partial class OctopusProgressBar : Label
+    public partial class OpenCBSProgressBar : Label
     {
         private int _value,_step, _maximum = 100, _minimum = 0;
         
-        public OctopusProgressBar()
+        public OpenCBSProgressBar()
         {
             InitializeComponent();
         }
@@ -35,14 +35,14 @@ namespace OpenCBS.GUI
 
         private void DrawProgressBar(Graphics g)
         {
-            SolidBrush brush = new SolidBrush(Color.FromArgb(0,88,56));
+            SolidBrush brush = new SolidBrush(Color.FromArgb(0,81,152));
             float percent = (float)(_value - _minimum) / (_maximum - _minimum);
             g.FillRectangle(brush, ClientRectangle.Left + 2, ClientRectangle.Top + 2, (int)((ClientRectangle.Width - 4) * percent), ClientRectangle.Height - 4);
         }
 
         private void DrawPrgressBarBorder(Graphics g)
         {
-            ControlPaint.DrawBorder(g, ClientRectangle, Color.FromArgb(0, 88, 56), ButtonBorderStyle.Solid);
+            ControlPaint.DrawBorder(g, ClientRectangle, Color.FromArgb(0, 81,152), ButtonBorderStyle.Solid);
         }
 
         public int Value
