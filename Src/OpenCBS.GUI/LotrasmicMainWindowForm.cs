@@ -837,7 +837,6 @@ namespace OpenCBS.GUI
             frenchToolStripMenuItem.Checked = (currentLanguage == "fr");
             russianToolStripMenuItem.Checked = (currentLanguage == "ru-RU");
             englishToolStripMenuItem.Checked = (currentLanguage == "en-US");
-            kyrgyzToolStripMenuItem.Checked = (currentLanguage == "ky-KG");
             spanishToolStripMenuItem.Checked = (currentLanguage == "es-ES");
         }
 
@@ -883,8 +882,7 @@ namespace OpenCBS.GUI
             string language = sender == frenchToolStripMenuItem ? "fr" :
                     (sender == russianToolStripMenuItem ? "ru-RU" :
                     (sender == englishToolStripMenuItem ? "en-US" :
-                    (sender == kyrgyzToolStripMenuItem ? "ky-KG" :
-                    (sender == spanishToolStripMenuItem ? "es-ES" : "pt"))));
+                    (sender == spanishToolStripMenuItem ? "es-ES" : "pt")));
 
             if (ServicesProvider.GetInstance().GetGeneralSettings().UseTellerManagement)
             {

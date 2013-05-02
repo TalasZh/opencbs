@@ -3275,13 +3275,25 @@
     </Content>
     <None Include="Resources\arrow_down_small.png" />
     <None Include="Resources\closure.png" />
+    <None Include="Resources\cog.png" />
+    <None Include="Resources\calendar.png" />
+    <None Include="Resources\book.png" />
     <Content Include="Resources\crystalreport.jpg" />
     <None Include="Resources\financial_information_bouton files_16x16.png" />
+    <None Include="Resources\database_gear.png" />
+    <None Include="Resources\fr.png" />
+    <None Include="Resources\gb.png" />
+    <None Include="Resources\es.png" />
+    <None Include="Resources\group.png" />
+    <None Include="Resources\find.png" />
     <Content Include="Resources\group_members_32x32.png" />
     <Content Include="Resources\ky_small.png" />
     <None Include="Resources\languages.png" />
     <None Include="Resources\logo.png" />
     <None Include="Resources\logo1.png" />
+    <None Include="Resources\money.png" />
+    <None Include="Resources\package.png" />
+    <None Include="Resources\page.png" />
     <Content Include="Resources\pastille_groupe.png" />
     <None Include="Resources\run.png" />
     <None Include="Resources\pastille_report.png" />
@@ -3289,6 +3301,8 @@
     <None Include="Resources\refresh.png" />
     <None Include="Resources\repayments_16x16.png" />
     <None Include="Resources\reschedule_16x16.png" />
+    <None Include="Resources\ru.png" />
+    <None Include="Resources\pt.png" />
     <Content Include="Resources\Spanish Flag.png" />
     <None Include="Resources\SuperAdmin_Background.png" />
     <None Include="Resources\SuperAdmin_Background_180.png" />
@@ -3927,7 +3941,7 @@ xcopy "$(ProjectDir)..\..\Lib\*.dll" "C:\OctopusLibs" /s /y</PostBuildEvent>
   </PropertyGroup>
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties GreenPepperConfigSutName="" GreenPepperConfigProjectName="" GreenPepperConfigRepositories="" GreenPepperConfigRunnerArgs="" GreenPepperCustomSud="" GreenPepperCustomSudArgs="" GreenPepperConfigRunnerProgram="" />
+      <UserProperties GreenPepperConfigRunnerProgram="" GreenPepperCustomSudArgs="" GreenPepperCustomSud="" GreenPepperConfigRunnerArgs="" GreenPepperConfigRepositories="" GreenPepperConfigProjectName="" GreenPepperConfigSutName="" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>
