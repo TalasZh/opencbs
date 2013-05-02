@@ -254,7 +254,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AboutOctopus.cs">
+    <Compile Include="AboutForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Accounting\AccountingClosureForm.cs">
@@ -1074,27 +1074,27 @@
     <Compile Include="UserControl\TextNumericUserControl.designer.cs">
       <DependentUpon>TextNumericUserControl.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AboutOctopus.es-ES.resx">
-      <DependentUpon>AboutOctopus.cs</DependentUpon>
+    <EmbeddedResource Include="AboutForm.es-ES.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="AboutOctopus.fr.resx">
-      <DependentUpon>AboutOctopus.cs</DependentUpon>
+    <EmbeddedResource Include="AboutForm.fr.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="AboutOctopus.ky-KG.resx">
-      <DependentUpon>AboutOctopus.cs</DependentUpon>
+    <EmbeddedResource Include="AboutForm.ky-KG.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="AboutOctopus.pt.resx">
-      <DependentUpon>AboutOctopus.cs</DependentUpon>
+    <EmbeddedResource Include="AboutForm.pt.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AboutOctopus.resx">
-      <DependentUpon>AboutOctopus.cs</DependentUpon>
+    <EmbeddedResource Include="AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="AboutOctopus.ru-RU.resx">
-      <DependentUpon>AboutOctopus.cs</DependentUpon>
+    <EmbeddedResource Include="AboutForm.ru-RU.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Accounting\AccountingClosureForm.es-ES.resx">

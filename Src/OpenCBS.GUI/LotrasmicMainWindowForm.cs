@@ -759,8 +759,8 @@ namespace OpenCBS.GUI
 
         private void menuItemAboutOctopus_Click(object sender, EventArgs e)
         {
-            AboutOctopus aboutOctopus = new AboutOctopus();
-            aboutOctopus.ShowDialog();
+            AboutForm aboutForm = new AboutForm();
+            aboutForm.ShowDialog();
         }
 
         private void OnChangeApplicationDateClick(object sender, EventArgs e)
