@@ -3,3 +3,4 @@ obj
 _ReSharper.OCTOPUS_2
 *.user
 *.suo
+*.cache
