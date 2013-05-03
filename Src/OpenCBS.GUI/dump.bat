@@ -1,1 +1,1 @@
-Octopus.GUI.exe -dumpSchema
+OpenCBS.GUI.exe -dumpSchema
