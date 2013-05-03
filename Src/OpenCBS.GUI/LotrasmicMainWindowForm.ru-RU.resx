@@ -400,15 +400,6 @@
   <data name="CustomizableFieldsToolStripMenuItem.Text" xml:space="preserve">
     <value>Настраиваемые поля</value>
   </data>
-  <data name="toolStripSeparator4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>214, 6</value>
-  </data>
-  <data name="mnuExtensionManager.Size" type="System.Drawing.Size, System.Drawing">
-    <value>217, 22</value>
-  </data>
-  <data name="mnuExtensionManager.Text" xml:space="preserve">
-    <value>Менеджер модулей</value>
-  </data>
   <data name="mnuConfiguration.Size" type="System.Drawing.Size, System.Drawing">
     <value>93, 20</value>
   </data>
@@ -455,8 +446,8 @@
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
-        ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAAy
-        CgAAAk1TRnQBSQFMAgEBBQEAAWwBAQFsAQEBEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAB0
+        CwAAAk1TRnQBSQFMAgEBBQEAAXwBAQF8AQEBEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
         AwABQAMAASADAAEBAQABCAYAAQgYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
         AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
         AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
@@ -484,22 +475,27 @@
         AcwBAAH/AZkB/wEAAf8BzAIAAf8BzAEzAQAB/wHMAWYBAAH/AcwBmQEAAf8CzAEAAf8BzAH/AQAC/wEz
         AQABzAH/AWYBAAL/AZkBAAL/AcwBAAJmAf8BAAFmAf8BZgEAAWYC/wEAAf8CZgEAAf8BZgH/AQAC/wFm
         AQABIQEAAaUBAANfAQADdwEAA4YBAAOWAQADywEAA7IBAAPXAQAD3QEAA+MBAAPqAQAD8QEAA/gBAAHw
-        AfsB/wEAAaQCoAEAA4ADAAH/AgAB/wMAAv8BAAH/AwAB/wEAAf8BAAL/AgAD/wEABf8B8wHwAnIB8wb/
-        MAAD/wEIAXIDUAFPAVABcgHxBP8wAAP/AZgCUAJXAlACTwHwA/8wAAP/AZgBUAGYAfMBHAFyAQgBTwFJ
-        AXID/zAAA/8BmAFyAv8BmAFzAQgCTwFyA/8wAAP/AZgBBwL/ARwDUAFPAXID/zAABv8BCAFRBFABcgP/
-        MAAE/wH0AXgBUQFXA1ABTwEHA/8wAAP/AfMBeAE2BFcBUAGYBP8wAAP/AZkBNgRXAXgB8QX/MAAD/wF5
-        AlgCVwF4Av8BmAEIA/8wAAP/AXgBNwFXAZgCeAH/AfEBUAEIA/8wAAP/AZEBNgFYAbwBmQF4AbwBVwE2
-        AQgD/zAAA/8B8QFQATYDWAJXAU8BBwP/MAAE/wHzAZgBVwJYAVcBcgGYAfQD/zAAB/8BmQF4AfMG/zAA
-        B/8B9wFyAfIM/wG7AXIBCAf/IAAH/wH3AUgBkQHyCv8BBwJsAQgH/yAAB/8B9wJIAZEB8gj/AQcBbAFI
-        AWwBCAf/IAAH/wH3A0gBkQHxBv8BBwFsAkgBbAEIB/8gAAe7AZEESAGRAfIE/wEHAWwDSAFsAZIHuwUA
-        BoYVAA1IAZEB8gL/AbsBbA1IBQABhgQNAYYMAAGnCAAOSAGRAbsBBwFsDkgFAAGnAQ0BSAENAWUBoQwA
-        AQ0BpwcAD0gCbA9IBgABhgINAYYMAAGnAQ0BZgcADkgBbAHvAQcBbA5IBgABpwINAacMAAFlAg0BpwYA
-        DUgBbAG7Av8BuwFsDUgHAAFlAYYMAAGnAQ0BSAENAWUGAAe7AZEESAFsAbsE/wEHAWwDSAFsAZIHuwcA
-        AqcMAAUNAacFAAf/AfcDSAFsAbsG/wEHAWwCSAFsAQgH/xQAAacFZgGGBQAH/wH3AkgBbAEHCP8BBwFs
-        AUgBbAEIB/8gAAf/AfcBSAGRAfEK/wEHAmwBCAf/IAAH/wH3AXIB8gz/AbsBcgEIB/8gAAf/AfMB8g7/
-        AfMB8gf/IAABQgFNAT4HAAE+AwABKAMAAUADAAEgAwABAQEAAQEGAAEBFgAD/4UABP8EAAT/BAAE/wQA
-        BP8EAAH4AR8C/wQAAfgBHwH+Af8EAAH4AR8B/gF/BAAB/AE/AfwBfwQAAfwBPwH8AT8EAAH+AX8B+AE/
-        BAAB/gF/AfgBHwQAAv8B8AEfBAAE/wQABP8EAAT/BAAE/ws=
+        AfsB/wEAAaQCoAEAA4ADAAH/AgAB/wMAAv8BAAH/AwAB/wEAAf8BAAL/AgAD/wcAAfAClwEIPAAEmDoA
+        AfEGmAHzNgAB/wiYAZcB9DUAAf8EmAHwAfMEmDYAAf8BCAHwAwAB9AKYAZc6AAH0AQgEmDcAAf8HmAHz
+        NwAHmAHzNwAB/wOYAQgB8wH/OQAB9AGYAQgBmAH/AQAB/wG8AQgB/zcACZg3AAEbApgBCASYAQg4AAH0
+        AZgCCAGYAQgB9joAAZgCCAGYPAAB8wKYAfA4AAH0AZgB8zwAAf8BmANyAfQB/wwAAfQBBwFzAm4BcwEH
+        AfQlAAH/AXgBCAFyAZcBcgGYAbwKAAHwAXMBdAOZAXkBUQFuAbwkAAEIAZgBlwGYAQgBlwFyAZcBcgHz
+        AfQGAAHwAXMBmQG8AbUCtAG1AQcBeQFLAfAiAAH/AXgBlwGYAQgBmAEIAZcBcgEIApgBCAH/AwAB9AFz
+        AZkBuwG1AfEC/wHxArUBmQFuAfQGAAaGFQABCAF4AZgBCAGXApgBCAKXAggBlwFyAbwB9AEAAQcBdAG8
+        AbUG/wG0AQcBdAHvBgABhgQNAYYMAAGnCAABeAGYAQgDmAF4AZgBCAGXAXIDCAFQAf8BAAEcARoBtQEZ
+        AvQBBwHzAf8BGQEJAbQBmQFzBgABpwENAUgBDQFlAaEMAAENAacHAAHxAXgBmAEIAZgBeAGYAfIBmAEI
+        AZcBcgEIAZcBCAIAAXQBGwG1A/QC7AG8Af8BGQG0ARoBcwcAAYYCDQGGDAABpwENAWYIAAH/ApgBCAGY
+        AfYBmAHyAZgBCAGXAnIB/wIAAXQB8wG1AfQC/wHsAe8B7AEHARkBtAEaAXMHAAGnAg0BpwwAAWUCDQGn
+        CQACmAEIARsB9gGYAXgBmAEIAXgBcgMAARwBGwEJARkB/wH0AZIB9AH/Ae8BGQG1AZkBcwgAAWUBhgwA
+        AacBDQFIAQ0BZQoAApgBCAWYAQgBeAFyAgABBwEaAfIBCQH/AfQB8gP/AbsB8AF0AQcIAAKnDAAFDQGn
+        CgACmAEIApgBlwEIAZgBcgH/AgAB9AF5ARsBvAEJAfMC9AHzAgkBGgFzAfQVAAGnBWYBhgsAApgBCAGY
+        AQgBmAGXAf8EAAEaAZkB8wHyAQkCtQEJAfEBGgF0AfEpAAKYAQgBmAGXAf8GAAHwAXkBGgEbAvQBGwGZ
+        AXQB8SsAA5gB/wgAAfQBGgKZAXkBmQEHAfQtAAGYAf81AAFCAU0BPgcAAT4DAAEoAwABQAMAASADAAEB
+        AQABAQYAAQEWAAP/AQAB/AE/BgAB/AE/BgAB8AEPBgABwAEHBgABwAEHBgAB4wGHBgAB/gEHBgAB8AEH
+        BgAB8AEPBgAB4AE/BgAB4AGHBgAB8AEHBgAB8AEHBgAB+AEPBgAB/AE/BgAB/AE/BgABxwf/AYAB/wHw
+        AQ8E/wGAAX8B4AEHBP8BgAEPAcABAwT/AQABAwGAAQEB+AEfAv8CAAGAAQEB+AEfAf4B/wIAAYABAQH4
+        AR8B/gF/AQABAQGAAQEB/AE/AfwBfwGAAQEBgAEBAfwBPwH8AT8B4AEDAYABAQH+AX8B+AE/AfABAQGA
+        AQEB/gF/AfgBHwH4AQEBgAEBAv8B8AEfAfwBAwHAAQME/wH+AQcB4AEHBf8BDwHwAQ8F/wGfBv8L
 </value>
   </data>
   <data name="miAuditTrail.Size" type="System.Drawing.Size, System.Drawing">
@@ -519,21 +515,6 @@
   </data>
   <data name="mView.Text" xml:space="preserve">
     <value>Вид</value>
-  </data>
-  <data name="closeTellerToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>174, 22</value>
-  </data>
-  <data name="closeTellerToolStripMenuItem.Text" xml:space="preserve">
-    <value>Закрыть кассу</value>
-  </data>
-  <data name="tellerOperationsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>174, 22</value>
-  </data>
-  <data name="tellerOperationsToolStripMenuItem.Text" xml:space="preserve">
-    <value>Кассовые операции</value>
-  </data>
-  <data name="tellerManagementToolStripMenuItem.Text" xml:space="preserve">
-    <value>Кассы</value>
   </data>
   <data name="mainMenu.Size" type="System.Drawing.Size, System.Drawing">
     <value>1370, 24</value>
@@ -592,42 +573,11 @@
   <data name="mainStatusBarLblUpdateVersion.Size" type="System.Drawing.Size, System.Drawing">
     <value>1030, 20</value>
   </data>
-  <data name="mainStatusBarLblUserName.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAAK9gAA
-        CvYBwq9wAwAAAftJREFUOE+lk11Ik2EUx1+su+66qZvu+roIiaibLqrFYlvSJPrUSqJhUpCLZqugEGEQ
-        fVAT10WlYW8LMy1rIqsUdK2arGJuzdacSpZmYB8657ZQ+vW+bzCSvUrgefjDeeCc3znPwzlCun2pMBep
-        Jrv8Xk6L1zglOrCKVViqrxKIRVArlAUwV19hnnEdgm4Vgj4XwSBJu5LFuzbg7w5mQaYBSqVkOThn62rm
-        G9dmlCP5gmY5Kwr0MwNiXwdZWKjBVFmBLxLiVSSoyPchhLc7QJ7tBMKaJTQ8aJwGyXTQM/yZBTvWU+dx
-        o2aNne0IuYu4JdaqA3w9YbRnj1Lb5iKenGBkbFThJFJJfibiuAM+lhUZOHPRpg64I1V2ep7Q8uYloY8x
-        xA433vdddEbf8VCq/qzLT1VzPXtKDqoDHC0NVLrqSKRTfyunk9S/aFP839KRzRN8zZbd+eqA3qFPaEoP
-        0Ox/rgRPTk3REX6b+Y4vP76xef92TEcOqwPkIbnvbeX60yYlqW94kPBAP9GhAeV+2/2IjUbd7HMQ6I+y
-        rfwYYxMJbrY+puJeDZebnHxPjpNXvA+LtWx2gNzFBecNCs9bmZTeHf+VYmR8lJ3mYjbptf83yjLkuN1G
-        wTkz9rs1GA7tRWc0qCbLsTNu4iWHnaISE5aT2W3/u1RzWmUZ9Ac+HFrAuZvmTAAAAABJRU5ErkJggg==
-</value>
-  </data>
   <data name="mainStatusBarLblUserName.Size" type="System.Drawing.Size, System.Drawing">
     <value>99, 20</value>
   </data>
   <data name="mainStatusBarLblUserName.Text" xml:space="preserve">
     <value>Пользователь</value>
-  </data>
-  <data name="mainStatusBarLblDate.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAAK9gAA
-        CvYBwq9wAwAAAgFJREFUOE+lk91LU3EcxvcX5I23ZYJGeKU3mvhSUBCKwnRY4luGrw0rX0Brow1saNSN
-        KCp2EQkiSBeKAy0RR8ZSS3M6516cR49mm1Obh72oTXj6noMIx80cdPHw8Du/7/n8nvPwO5JDXYzkf3T6
-        8ru+hwgH1NNbLJoTAB++TuC2qgbP33eiVzeCvs8fg9Q/OSbspTyrgLqj/BQiAFKV1YgovIPIBxmIqsoN
-        qav0/EqlFJdoLrUkTgyIrpZBIr0BSU4yifd/KRlpBdfFgKTGMsQ/LURCbdHFTjPSykQxoE07AMa5hWmr
-        EXbHJvTmRbA7TkxZFsFs/8KXZQPWXQ5MW4yCK5rzxICesSHojLOQqR9jfOE70qiTJZaBVPkIMzYT4uuL
-        YVizQUZFz9rNUGnygwGczwvbz3Xsky9vrsF/eAAruefADyNrh+9k7aW1SnM/GKA3L0D+RolJ0zxyWxth
-        IVjVqyb8YKy4q66BaYOB/LWCkqyETvDbw8FAw3vkc6sW8CfNk/PJvtFnePw+YZ/ze0Mn4IfqulqpyCWU
-        tr/ECpX5pEND8Vdxj5JZt1jUdrYISYI6eEslblDr2qkJsC4nBvTj2OX2MUzucO/SrRyFi3NDSzfW6d7D
-        i7MddH8axFEgEJb+HAfQoMgWl3g5Kx2xGbxuXqhrmbcgr4gVA8L5C8+b+QttGnuVYBSYlAAAAABJRU5E
-        rkJggg==
-</value>
   </data>
   <data name="toolStripStatusLabelTeller.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
