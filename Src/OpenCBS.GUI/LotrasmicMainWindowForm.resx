@@ -498,15 +498,6 @@
   <data name="CustomizableFieldsToolStripMenuItem.Text" xml:space="preserve">
     <value>Customizable fields</value>
   </data>
-  <data name="toolStripSeparator4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>221, 6</value>
-  </data>
-  <data name="mnuExtensionManager.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 22</value>
-  </data>
-  <data name="mnuExtensionManager.Text" xml:space="preserve">
-    <value>Extension manager</value>
-  </data>
   <data name="mnuConfiguration.Size" type="System.Drawing.Size, System.Drawing">
     <value>84, 20</value>
   </data>
@@ -560,7 +551,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAAy
-        CgAAAk1TRnQBSQFMAgEBBQEAAXgBDQF4AQ0BEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        CgAAAk1TRnQBSQFMAgEBBQEAAYABDQGAAQ0BEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
         AwABQAMAASADAAEBAQABCAYAAQgYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
         AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
         AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
@@ -626,24 +617,6 @@
   </data>
   <data name="mView.Text" xml:space="preserve">
     <value>View</value>
-  </data>
-  <data name="closeTellerToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>154, 22</value>
-  </data>
-  <data name="closeTellerToolStripMenuItem.Text" xml:space="preserve">
-    <value>Close teller</value>
-  </data>
-  <data name="tellerOperationsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>154, 22</value>
-  </data>
-  <data name="tellerOperationsToolStripMenuItem.Text" xml:space="preserve">
-    <value>Teller operations</value>
-  </data>
-  <data name="tellerManagementToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 20</value>
-  </data>
-  <data name="tellerManagementToolStripMenuItem.Text" xml:space="preserve">
-    <value>Tellers</value>
   </data>
   <data name="mainMenu.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -799,7 +772,7 @@
     <value>Microsoft Sans Serif, 9pt, style=Bold</value>
   </data>
   <data name="mainStatusBarLblUpdateVersion.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1022, 20</value>
+    <value>1053, 20</value>
   </data>
   <data name="mainStatusBarLblUserName.Size" type="System.Drawing.Size, System.Drawing">
     <value>76, 20</value>
@@ -1371,7 +1344,7 @@
     <value>splitter6</value>
   </data>
   <data name="&gt;&gt;splitter6.Type" xml:space="preserve">
-    <value>OpenCBS.GUI.UserControl.CollapsibleSplitter, OpenCBS.GUI, Version=1.1.1.30505, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.CollapsibleSplitter, OpenCBS.GUI, Version=1.1.1.16654, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;splitter6.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1396,9 +1369,6 @@
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 9.25pt</value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 6, 5, 6</value>
@@ -1442,10 +1412,22 @@
   <data name="&gt;&gt;newCorporateToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;mnuSearchClient.Name" xml:space="preserve">
+    <value>mnuSearchClient</value>
+  </data>
+  <data name="&gt;&gt;mnuSearchClient.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;mnuContracts.Name" xml:space="preserve">
     <value>mnuContracts</value>
   </data>
   <data name="&gt;&gt;mnuContracts.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mnuSearchContract.Name" xml:space="preserve">
+    <value>mnuSearchContract</value>
+  </data>
+  <data name="&gt;&gt;mnuSearchContract.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;reasignToolStripMenuItem.Name" xml:space="preserve">
@@ -1460,6 +1442,12 @@
   <data name="&gt;&gt;mnuAccounting.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;mnuChartOfAccounts.Name" xml:space="preserve">
+    <value>mnuChartOfAccounts</value>
+  </data>
+  <data name="&gt;&gt;mnuChartOfAccounts.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;accountingRulesToolStripMenuItem.Name" xml:space="preserve">
     <value>accountingRulesToolStripMenuItem</value>
   </data>
@@ -1470,6 +1458,12 @@
     <value>trialBalanceToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;trialBalanceToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItemAccountView.Name" xml:space="preserve">
+    <value>toolStripMenuItemAccountView</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItemAccountView.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;manualEntriesToolStripMenuItem.Name" xml:space="preserve">
@@ -1520,6 +1514,12 @@
   <data name="&gt;&gt;rolesToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;menuItemAddUser.Name" xml:space="preserve">
+    <value>menuItemAddUser</value>
+  </data>
+  <data name="&gt;&gt;menuItemAddUser.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;tellersToolStripMenuItem.Name" xml:space="preserve">
     <value>tellersToolStripMenuItem</value>
   </data>
@@ -1544,11 +1544,59 @@
   <data name="&gt;&gt;languagesToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;frenchToolStripMenuItem.Name" xml:space="preserve">
+    <value>frenchToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;frenchToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;englishToolStripMenuItem.Name" xml:space="preserve">
+    <value>englishToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;englishToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;russianToolStripMenuItem.Name" xml:space="preserve">
+    <value>russianToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;russianToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;spanishToolStripMenuItem.Name" xml:space="preserve">
+    <value>spanishToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;spanishToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;portugueseToolStripMenuItem.Name" xml:space="preserve">
+    <value>portugueseToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;portugueseToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;toolStripSeparatorConfig1.Name" xml:space="preserve">
     <value>toolStripSeparatorConfig1</value>
   </data>
   <data name="&gt;&gt;toolStripSeparatorConfig1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mnuPackages.Name" xml:space="preserve">
+    <value>mnuPackages</value>
+  </data>
+  <data name="&gt;&gt;mnuPackages.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;savingProductsToolStripMenuItem.Name" xml:space="preserve">
+    <value>savingProductsToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;savingProductsToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuItemCollateralProducts.Name" xml:space="preserve">
+    <value>menuItemCollateralProducts</value>
+  </data>
+  <data name="&gt;&gt;menuItemCollateralProducts.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;toolStripSeparator3.Name" xml:space="preserve">
     <value>toolStripSeparator3</value>
@@ -1604,11 +1652,29 @@
   <data name="&gt;&gt;menuItemExchangeRate.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;currenciesToolStripMenuItem.Name" xml:space="preserve">
+    <value>currenciesToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;currenciesToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;toolStripMenuItem1.Name" xml:space="preserve">
     <value>toolStripMenuItem1</value>
   </data>
   <data name="&gt;&gt;toolStripMenuItem1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuItemApplicationDate.Name" xml:space="preserve">
+    <value>menuItemApplicationDate</value>
+  </data>
+  <data name="&gt;&gt;menuItemApplicationDate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuItemSetting.Name" xml:space="preserve">
+    <value>menuItemSetting</value>
+  </data>
+  <data name="&gt;&gt;menuItemSetting.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;menuItemAdvancedSettings.Name" xml:space="preserve">
     <value>menuItemAdvancedSettings</value>
@@ -1622,22 +1688,16 @@
   <data name="&gt;&gt;CustomizableFieldsToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;toolStripSeparator4.Name" xml:space="preserve">
-    <value>toolStripSeparator4</value>
-  </data>
-  <data name="&gt;&gt;toolStripSeparator4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;mnuExtensionManager.Name" xml:space="preserve">
-    <value>mnuExtensionManager</value>
-  </data>
-  <data name="&gt;&gt;mnuExtensionManager.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;mnuDatamanagement.Name" xml:space="preserve">
     <value>mnuDatamanagement</value>
   </data>
   <data name="&gt;&gt;mnuDatamanagement.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuItemDatabaseControlPanel.Name" xml:space="preserve">
+    <value>menuItemDatabaseControlPanel</value>
+  </data>
+  <data name="&gt;&gt;menuItemDatabaseControlPanel.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;menuItemDatabaseMaintenance.Name" xml:space="preserve">
@@ -1688,35 +1748,65 @@
   <data name="&gt;&gt;miReports.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tellerManagementToolStripMenuItem.Name" xml:space="preserve">
-    <value>tellerManagementToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;tellerManagementToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;closeTellerToolStripMenuItem.Name" xml:space="preserve">
-    <value>closeTellerToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;closeTellerToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tellerOperationsToolStripMenuItem.Name" xml:space="preserve">
-    <value>tellerOperationsToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;tellerOperationsToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;timer.Name" xml:space="preserve">
     <value>timer</value>
   </data>
   <data name="&gt;&gt;timer.Type" xml:space="preserve">
     <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;toolBarButNew.Name" xml:space="preserve">
+    <value>toolBarButNew</value>
+  </data>
+  <data name="&gt;&gt;toolBarButNew.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSplitButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolBarButtonPerson.Name" xml:space="preserve">
+    <value>toolBarButtonPerson</value>
+  </data>
+  <data name="&gt;&gt;toolBarButtonPerson.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolBarButtonNewGroup.Name" xml:space="preserve">
+    <value>toolBarButtonNewGroup</value>
+  </data>
+  <data name="&gt;&gt;toolBarButtonNewGroup.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbbtnNewVillage.Name" xml:space="preserve">
+    <value>tbbtnNewVillage</value>
+  </data>
+  <data name="&gt;&gt;tbbtnNewVillage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;corporateToolStripMenuItem.Name" xml:space="preserve">
+    <value>corporateToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;corporateToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;toolStripSeparator1.Name" xml:space="preserve">
     <value>toolStripSeparator1</value>
   </data>
   <data name="&gt;&gt;toolStripSeparator1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolBarButtonSearchPerson.Name" xml:space="preserve">
+    <value>toolBarButtonSearchPerson</value>
+  </data>
+  <data name="&gt;&gt;toolBarButtonSearchPerson.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolBarButtonSearchContract.Name" xml:space="preserve">
+    <value>toolBarButtonSearchContract</value>
+  </data>
+  <data name="&gt;&gt;toolBarButtonSearchContract.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolBarButtonReports.Name" xml:space="preserve">
+    <value>toolBarButtonReports</value>
+  </data>
+  <data name="&gt;&gt;toolBarButtonReports.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;toolStripLabel1.Name" xml:space="preserve">
     <value>toolStripLabel1</value>
@@ -1736,6 +1826,18 @@
   <data name="&gt;&gt;mainStatusBarLblUpdateVersion.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;mainStatusBarLblUserName.Name" xml:space="preserve">
+    <value>mainStatusBarLblUserName</value>
+  </data>
+  <data name="&gt;&gt;mainStatusBarLblUserName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mainStatusBarLblDate.Name" xml:space="preserve">
+    <value>mainStatusBarLblDate</value>
+  </data>
+  <data name="&gt;&gt;mainStatusBarLblDate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;toolStripStatusLblBranchCode.Name" xml:space="preserve">
     <value>toolStripStatusLblBranchCode</value>
   </data>
@@ -1746,6 +1848,18 @@
     <value>mainStatusBarLblInfo</value>
   </data>
   <data name="&gt;&gt;mainStatusBarLblInfo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripStatusLabelTeller.Name" xml:space="preserve">
+    <value>toolStripStatusLabelTeller</value>
+  </data>
+  <data name="&gt;&gt;toolStripStatusLabelTeller.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripStatusLblDB.Name" xml:space="preserve">
+    <value>toolStripStatusLblDB</value>
+  </data>
+  <data name="&gt;&gt;toolStripStatusLblDB.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;bwAlerts.Name" xml:space="preserve">
@@ -1784,18 +1898,6 @@
   <data name="&gt;&gt;colAlerts_Phone.Type" xml:space="preserve">
     <value>BrightIdeasSoftware.OLVColumn, ObjectListView, Version=2.5.0.26223, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
   </data>
-  <data name="&gt;&gt;colAlerts_BranchName.Name" xml:space="preserve">
-    <value>colAlerts_BranchName</value>
-  </data>
-  <data name="&gt;&gt;colAlerts_BranchName.Type" xml:space="preserve">
-    <value>BrightIdeasSoftware.OLVColumn, ObjectListView, Version=2.5.0.26223, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
-  </data>
-  <data name="&gt;&gt;bwUserInformation.Name" xml:space="preserve">
-    <value>bwUserInformation</value>
-  </data>
-  <data name="&gt;&gt;bwUserInformation.Type" xml:space="preserve">
-    <value>System.ComponentModel.BackgroundWorker, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;colAlerts_ContractCode.Name" xml:space="preserve">
     <value>colAlerts_ContractCode</value>
   </data>
@@ -1832,179 +1934,17 @@
   <data name="&gt;&gt;colAlerts_Amount.Type" xml:space="preserve">
     <value>BrightIdeasSoftware.OLVColumn, ObjectListView, Version=2.5.0.26223, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
   </data>
-  <data name="&gt;&gt;mnuSearchClient.Name" xml:space="preserve">
-    <value>mnuSearchClient</value>
+  <data name="&gt;&gt;colAlerts_BranchName.Name" xml:space="preserve">
+    <value>colAlerts_BranchName</value>
   </data>
-  <data name="&gt;&gt;mnuSearchClient.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;colAlerts_BranchName.Type" xml:space="preserve">
+    <value>BrightIdeasSoftware.OLVColumn, ObjectListView, Version=2.5.0.26223, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
   </data>
-  <data name="&gt;&gt;mnuSearchContract.Name" xml:space="preserve">
-    <value>mnuSearchContract</value>
+  <data name="&gt;&gt;bwUserInformation.Name" xml:space="preserve">
+    <value>bwUserInformation</value>
   </data>
-  <data name="&gt;&gt;mnuSearchContract.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;mnuChartOfAccounts.Name" xml:space="preserve">
-    <value>mnuChartOfAccounts</value>
-  </data>
-  <data name="&gt;&gt;mnuChartOfAccounts.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;toolStripMenuItemAccountView.Name" xml:space="preserve">
-    <value>toolStripMenuItemAccountView</value>
-  </data>
-  <data name="&gt;&gt;toolStripMenuItemAccountView.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;menuItemAddUser.Name" xml:space="preserve">
-    <value>menuItemAddUser</value>
-  </data>
-  <data name="&gt;&gt;menuItemAddUser.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;frenchToolStripMenuItem.Name" xml:space="preserve">
-    <value>frenchToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;frenchToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;englishToolStripMenuItem.Name" xml:space="preserve">
-    <value>englishToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;englishToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;russianToolStripMenuItem.Name" xml:space="preserve">
-    <value>russianToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;russianToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;spanishToolStripMenuItem.Name" xml:space="preserve">
-    <value>spanishToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;spanishToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;portugueseToolStripMenuItem.Name" xml:space="preserve">
-    <value>portugueseToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;portugueseToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;mnuPackages.Name" xml:space="preserve">
-    <value>mnuPackages</value>
-  </data>
-  <data name="&gt;&gt;mnuPackages.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;savingProductsToolStripMenuItem.Name" xml:space="preserve">
-    <value>savingProductsToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;savingProductsToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;menuItemCollateralProducts.Name" xml:space="preserve">
-    <value>menuItemCollateralProducts</value>
-  </data>
-  <data name="&gt;&gt;menuItemCollateralProducts.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;currenciesToolStripMenuItem.Name" xml:space="preserve">
-    <value>currenciesToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;currenciesToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;menuItemApplicationDate.Name" xml:space="preserve">
-    <value>menuItemApplicationDate</value>
-  </data>
-  <data name="&gt;&gt;menuItemApplicationDate.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;menuItemSetting.Name" xml:space="preserve">
-    <value>menuItemSetting</value>
-  </data>
-  <data name="&gt;&gt;menuItemSetting.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;menuItemDatabaseControlPanel.Name" xml:space="preserve">
-    <value>menuItemDatabaseControlPanel</value>
-  </data>
-  <data name="&gt;&gt;menuItemDatabaseControlPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;toolBarButNew.Name" xml:space="preserve">
-    <value>toolBarButNew</value>
-  </data>
-  <data name="&gt;&gt;toolBarButNew.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripSplitButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;toolBarButtonPerson.Name" xml:space="preserve">
-    <value>toolBarButtonPerson</value>
-  </data>
-  <data name="&gt;&gt;toolBarButtonPerson.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;toolBarButtonNewGroup.Name" xml:space="preserve">
-    <value>toolBarButtonNewGroup</value>
-  </data>
-  <data name="&gt;&gt;toolBarButtonNewGroup.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tbbtnNewVillage.Name" xml:space="preserve">
-    <value>tbbtnNewVillage</value>
-  </data>
-  <data name="&gt;&gt;tbbtnNewVillage.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;corporateToolStripMenuItem.Name" xml:space="preserve">
-    <value>corporateToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;corporateToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;toolBarButtonSearchPerson.Name" xml:space="preserve">
-    <value>toolBarButtonSearchPerson</value>
-  </data>
-  <data name="&gt;&gt;toolBarButtonSearchPerson.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;toolBarButtonSearchContract.Name" xml:space="preserve">
-    <value>toolBarButtonSearchContract</value>
-  </data>
-  <data name="&gt;&gt;toolBarButtonSearchContract.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;toolBarButtonReports.Name" xml:space="preserve">
-    <value>toolBarButtonReports</value>
-  </data>
-  <data name="&gt;&gt;toolBarButtonReports.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;mainStatusBarLblUserName.Name" xml:space="preserve">
-    <value>mainStatusBarLblUserName</value>
-  </data>
-  <data name="&gt;&gt;mainStatusBarLblUserName.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;mainStatusBarLblDate.Name" xml:space="preserve">
-    <value>mainStatusBarLblDate</value>
-  </data>
-  <data name="&gt;&gt;mainStatusBarLblDate.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;toolStripStatusLabelTeller.Name" xml:space="preserve">
-    <value>toolStripStatusLabelTeller</value>
-  </data>
-  <data name="&gt;&gt;toolStripStatusLabelTeller.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;toolStripStatusLblDB.Name" xml:space="preserve">
-    <value>toolStripStatusLblDB</value>
-  </data>
-  <data name="&gt;&gt;toolStripStatusLblDB.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;bwUserInformation.Type" xml:space="preserve">
+    <value>System.ComponentModel.BackgroundWorker, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;alertBindingSource.Name" xml:space="preserve">
     <value>alertBindingSource</value>
@@ -2016,6 +1956,6 @@
     <value>LotrasmicMainWindowForm</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>OpenCBS.GUI.UserControl.SweetBaseForm, OpenCBS.GUI, Version=1.1.1.30505, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetBaseForm, OpenCBS.GUI, Version=1.1.1.16654, Culture=neutral, PublicKeyToken=null</value>
   </data>
 </root>
