@@ -148,8 +148,11 @@
   <data name="calendar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\calendar.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="package" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\package.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="theme1.1_bouton_down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\theme1.1_bouton_down.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pastille_report" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pastille_report.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bouton_report_standart_641" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bouton_report_standart_64.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -163,14 +166,14 @@
   <data name="theme1.1_pastille_option" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\theme1.1_pastille_option.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="fr_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fr_small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="financial_information_bouton files_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\financial_information_bouton files_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="money" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\money.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="database" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\database.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="theme1.1_bouton_close" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\theme1.1_bouton_close.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -178,20 +181,14 @@
   <data name="closure" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\closure.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Admin_Background_180" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Admin_Background_180.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="package" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\package.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="flecheHB" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\flecheHB.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cog" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cog.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="progress" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\progress.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="theme1.1_bouton_down" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\theme1.1_bouton_down.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="group" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\group.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -214,8 +211,8 @@
   <data name="theme1.1_bouton_previous" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\theme1.1_bouton_previous.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Admin_Background" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Admin_Background.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="fr_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fr_small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="theme1.1_fond_vert" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\theme1.1_fond_vert.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -271,17 +268,26 @@
   <data name="theme1.1_bouton_save" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\theme1.1_bouton_save.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Admin_Background_180" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Admin_Background_180.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="theme1.1_search" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\theme1.1_search.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="SuperAdmin_Background" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SuperAdmin_Background.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Admin_Background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Admin_Background.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ru_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ru_small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="theme1.1_bouton_new" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\theme1.1_bouton_new.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="theme1.1_bouton_print" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\theme1.1_bouton_print.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="SuperAdmin_Background_180" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SuperAdmin_Background_180.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -297,9 +303,6 @@
   </data>
   <data name="fr" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fr.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="en_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\en_small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pastille_groupe" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pastille_groupe.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -319,8 +322,8 @@
   <data name="theme1.1_doc" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\theme1.1_doc.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pastille_report" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pastille_report.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cog.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="theme1.1_pastille_contrat" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\theme1.1_pastille_contrat.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -328,8 +331,8 @@
   <data name="uparrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\uparrow.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="theme1.1_bouton_print" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\theme1.1_bouton_print.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="en_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\en_small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bouton_report_standart_1281" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bouton_report_standart_128.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -338,7 +341,7 @@
     <value>..\Resources\theme1.1_fond_gris.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="database" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\database.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bullet_arrow_down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bullet_arrow_down.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

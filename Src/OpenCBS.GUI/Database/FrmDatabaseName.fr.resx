@@ -117,43 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="buttonCancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>220, 89</value>
+  </data>
   <data name="buttonCancel.Text" xml:space="preserve">
     <value>Annuler</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="label5.Text" xml:space="preserve">
-    <value>Nom de la base de données</value>
-  </data>
-  <data name="buttonSave.Text" xml:space="preserve">
-    <value>Enregistrer</value>
-  </data>
-  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>155, 21</value>
-  </data>
-  <data name="buttonSave.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        R0lGODlhEgDEAPYAAPL29Pj6+fn7+tzn4ufv7Ovx7/P39e3z8O/08/f6+Je4qsLVzKvFuqXCtQBdRcbY
-        0Nrm4XynlgBZQWWZhleRfL3SyOrw7d3o487d1rXNwmCVggprVBFyWwhpUTiBa9nl31yTf+Lr6Pb597vQ
-        x+Ts6LPLwLbOw7/TyqjEt/H183ajkdbj3UGEb9Ph2gZnT5++sW6ei8zc1O7z8eLr55y7rs3d1a3HvGqb
-        iHmlkwFfSJq6rHKhj4yxooSsnCJ4YaPAs/r7+rjPxezy7zJ+aNfk3oGqmgRiS1CMeI+zpMfZ0EaGccPX
-        zoevn9/q5crb05O2p9Th2+Xt6uHq5ebu6w1uV/z9/Onv7NDf2EyKdRp1Xq/JvSt8ZvX49/v8+/v8/P3+
-        /f7+/v///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACwAAAAAEgDEAAAH/4BhgoOEhYaHiImK
-        i4yNjo+QkZKTlJWWl5iZmpucnZ6foKGio6SlpqeoqaqrrKRgr7CxsrO0tba3uLm6u7y9vr/AwcLCX8XG
-        x8jJysvMzc7P0NHSyVXV1tfY1l7b3N3e3+Dh4uPk5eVd6Onq6+zt7u/w8exA9PX29/UC+vv8/f7/AAMG
-        DECwoMGDCBMqXLgwgcOHECNKnEhRhMWLGDNe5MKxo8ePIEOKHEmyJEgDKFOqXMmypUsAMGPKnEmzps2b
-        N1Po3Mmz504EQIMKHUq0qFEZSJMqXZr0gNOnUKNKnUpViNWrWLNeLcC1q9evYMOKtUC2rNmzZa2oXcu2
-        7VoCcP/jyp1Lt67dKXjz6t2bN4rfv4AD/yVBuLDhw4VDKF7MuPHiGZAjS54cWYrly5gzX27CubPnz50v
-        iB5NuvToAahTq17NurVrCLBjy54d+4Pt27hz3ybCu7fv371XCB9OvPhwKMiTK1+evIXz59CjP79Cvbr1
-        69UxaN/Ovfv2GuDDix8fPob58+jTn3fCvr379+2TyJ9Pv/78B/jz69+ff4n//wAG+N8CBBZo4IEFnqDg
-        ggw2uGAFEEYo4YQRjmDhhRhmeGEQHHbo4YcdmiDiiCSWOGIGKKao4oopluDiizDG+KIWNNZo44012qDj
-        jjz2uCMDQAYp5JBBomDkkUgmeWT/A0w26eSTTf4g5ZRUVjnlC1hmqeWWWdLg5ZdghvmlDmSWaeaZZSqg
-        5ppstrnmE3DGKeeccSJh55145nknD3z26eeffTIh6KCEFjpoD4gmquiiiRbh6KOQRvpoBJRWaumlleKg
-        6aacdrqpCqCGKuqooe5g6qmopnoqDKy26uqrrd4g66y01jrrBLjmquuuuWrg66/ABvsrCMQWa+yxxVKg
-        7LLMNrvsEdBGK+200WJh7bXYZnutEtx26+233bIg7rjkljuuB+imq+666Q7h7rvwxvvuFvTWa++99fqg
-        77789rtvFgAHLPDAAXNg8MEIJ3wwFQw37PDDDW8g8cQUVzxxLgcYZ6zxxhm74PHHIIf8sREkl2zyySXn
-        oPLKLLe8sgMwxyzzzDFLYPPNOOd8cyAAOw==
-</value>
   </data>
   <data name="buttonSave.Location" type="System.Drawing.Point, System.Drawing">
     <value>58, 89</value>
@@ -161,36 +130,17 @@
   <data name="buttonSave.Size" type="System.Drawing.Size, System.Drawing">
     <value>120, 25</value>
   </data>
-  <data name="buttonCancel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>220, 89</value>
-  </data>
-  <data name="buttonCancel.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        R0lGODlhEgDEAPYAAPL29Pj6+fn7+tzn4ufv7Ovx7/P39e3z8O/08/f6+Je4qsLVzKvFuqXCtQBdRcbY
-        0Nrm4XynlgBZQWWZhleRfL3SyOrw7d3o487d1rXNwmCVggprVBFyWwhpUTiBa9nl31yTf+Lr6Pb597vQ
-        x+Ts6LPLwLbOw7/TyqjEt/H183ajkdbj3UGEb9Ph2gZnT5++sW6ei8zc1O7z8eLr55y7rs3d1a3HvGqb
-        iHmlkwFfSJq6rHKhj4yxooSsnCJ4YaPAs/r7+rjPxezy7zJ+aNfk3oGqmgRiS1CMeI+zpMfZ0EaGccPX
-        zoevn9/q5crb05O2p9Th2+Xt6uHq5ebu6w1uV/z9/Onv7NDf2EyKdRp1Xq/JvSt8ZvX49/v8+/v8/P3+
-        /f7+/v///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACwAAAAAEgDEAAAH/4BhgoOEhYaHiImK
-        i4yNjo+QkZKTlJWWl5iZmpucnZ6foKGio6SlpqeoqaqrrKRgr7CxsrO0tba3uLm6u7y9vr/AwcLCX8XG
-        x8jJysvMzc7P0NHSyVXV1tfY1l7b3N3e3+Dh4uPk5eVd6Onq6+zt7u/w8exA9PX29/UC+vv8/f7/AAMG
-        DECwoMGDCBMqXLgwgcOHECNKnEhRhMWLGDNe5MKxo8ePIEOKHEmyJEgDKFOqXMmypUsAMGPKnEmzps2b
-        N1Po3Mmz504EQIMKHUq0qFEZSJMqXZr0gNOnUKNKnUpViNWrWLNeLcC1q9evYMOKtUC2rNmzZa2oXcu2
-        7VoCcP/jyp1Lt67dKXjz6t2bN4rfv4AD/yVBuLDhw4VDKF7MuPHiGZAjS54cWYrly5gzX27CubPnz50v
-        iB5NuvToAahTq17NurVrCLBjy54d+4Pt27hz3ybCu7fv371XCB9OvPhwKMiTK1+evIXz59CjP79Cvbr1
-        69UxaN/Ovfv2GuDDix8fPob58+jTn3fCvr379+2TyJ9Pv/78B/jz69+ff4n//wAG+N8CBBZo4IEFnqDg
-        ggw2uGAFEEYo4YQRjmDhhRhmeGEQHHbo4YcdmiDiiCSWOGIGKKao4oopluDiizDG+KIWNNZo44012qDj
-        jjz2uCMDQAYp5JBBomDkkUgmeWT/A0w26eSTTf4g5ZRUVjnlC1hmqeWWWdLg5ZdghvmlDmSWaeaZZSqg
-        5ppstrnmE3DGKeeccSJh55145nknD3z26eeffTIh6KCEFjpoD4gmquiiiRbh6KOQRvpoBJRWaumlleKg
-        6aacdrqpCqCGKuqooe5g6qmopnoqDKy26uqrrd4g66y01jrrBLjmquuuuWrg66/ABvsrCMQWa+yxxVKg
-        7LLMNrvsEdBGK+200WJh7bXYZnutEtx26+233bIg7rjkljuuB+imq+666Q7h7rvwxvvuFvTWa++99fqg
-        77789rtvFgAHLPDAAXNg8MEIJ3wwFQw37PDDDW8g8cQUVzxxLgcYZ6zxxhm74PHHIIf8sREkl2zyySXn
-        oPLKLLe8sgMwxyzzzDFLYPPNOOd8cyAAOw==
-</value>
+  <data name="buttonSave.Text" xml:space="preserve">
+    <value>Enregistrer</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
     <value>23, 27</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 21</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Nom de la base de données</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Créer une base</value>

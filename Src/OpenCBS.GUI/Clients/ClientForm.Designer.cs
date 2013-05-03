@@ -1560,6 +1560,7 @@ namespace OpenCBS.GUI.Clients
             // 
             this.btnPrintLoanDetails.AttachmentPoint = OpenCBS.Reports.AttachmentPoint.LoanDetails;
             resources.ApplyResources(this.btnPrintLoanDetails, "btnPrintLoanDetails");
+            this.btnPrintLoanDetails.Image = global::OpenCBS.GUI.Properties.Resources.bullet_arrow_down;
             this.btnPrintLoanDetails.Name = "btnPrintLoanDetails";
             this.btnPrintLoanDetails.ReportInitializer = null;
             this.btnPrintLoanDetails.UseVisualStyleBackColor = true;
@@ -2293,6 +2294,7 @@ namespace OpenCBS.GUI.Clients
             // 
             this.btnPrintCreditCommittee.AttachmentPoint = OpenCBS.Reports.AttachmentPoint.CreditCommittee;
             resources.ApplyResources(this.btnPrintCreditCommittee, "btnPrintCreditCommittee");
+            this.btnPrintCreditCommittee.Image = global::OpenCBS.GUI.Properties.Resources.bullet_arrow_down;
             this.btnPrintCreditCommittee.Name = "btnPrintCreditCommittee";
             this.btnPrintCreditCommittee.ReportInitializer = null;
             this.btnPrintCreditCommittee.UseVisualStyleBackColor = true;
@@ -2507,6 +2509,7 @@ namespace OpenCBS.GUI.Clients
             // btnPrintLoanRepayment
             // 
             resources.ApplyResources(this.btnPrintLoanRepayment, "btnPrintLoanRepayment");
+            this.btnPrintLoanRepayment.Image = global::OpenCBS.GUI.Properties.Resources.bullet_arrow_down;
             this.btnPrintLoanRepayment.Name = "btnPrintLoanRepayment";
             this.btnPrintLoanRepayment.ReportInitializer = null;
             this.btnPrintLoanRepayment.UseVisualStyleBackColor = true;

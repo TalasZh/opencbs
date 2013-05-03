@@ -3279,6 +3279,7 @@
     <None Include="Resources\calendar.png" />
     <None Include="Resources\book.png" />
     <None Include="Resources\add.png" />
+    <None Include="Resources\bullet_arrow_down.png" />
     <Content Include="Resources\crystalreport.jpg" />
     <None Include="Resources\financial_information_bouton files_16x16.png" />
     <None Include="Resources\database_gear.png" />

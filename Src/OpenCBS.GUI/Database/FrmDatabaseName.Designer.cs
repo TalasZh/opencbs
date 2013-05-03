@@ -38,31 +38,27 @@ namespace OpenCBS.GUI.Database
             this.SuspendLayout();
             // 
             // groupBox1
-            //
+            // 
+            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Controls.Add(this.buttonCancel);
             this.groupBox1.Controls.Add(this.buttonSave);
             this.groupBox1.Controls.Add(this.textBoxDatabaseName);
             this.groupBox1.Controls.Add(this.label5);
-            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             // 
             // buttonCancel
             // 
-            this.buttonCancel.BackColor = System.Drawing.Color.Gainsboro;
             resources.ApplyResources(this.buttonCancel, "buttonCancel");
             this.buttonCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.buttonCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.UseVisualStyleBackColor = false;
             this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
             // buttonSave
             // 
-            this.buttonSave.BackColor = System.Drawing.Color.Gainsboro;
             resources.ApplyResources(this.buttonSave, "buttonSave");
             this.buttonSave.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.buttonSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.buttonSave.Name = "buttonSave";
             this.buttonSave.UseVisualStyleBackColor = false;
             this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
