@@ -153,4 +153,13 @@
   <data name="textInstallmentTypeUndefined.Text" xml:space="preserve">
     <value>undefined</value>
   </data>
+  <data name="userNameLabel" xml:space="preserve">
+    <value>User name: {0}</value>
+  </data>
+  <data name="userRoleLabel" xml:space="preserve">
+    <value>User role: {0}</value>
+  </data>
+  <data name="dateLabel" xml:space="preserve">
+    <value>Date: {0}</value>
+  </data>
 </root>

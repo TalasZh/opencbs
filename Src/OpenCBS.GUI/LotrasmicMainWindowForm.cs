@@ -410,43 +410,36 @@ namespace OpenCBS.GUI
             if (mnuName == "mnuNewClient")
             {
                 toolBarButNew.Enabled = mnuAct;
-                pFCF.labelNewClient.Enabled = mnuAct;
                 return;
             }
             if (mnuName == "mnuNewPerson")
             {
                 toolBarButtonPerson.Enabled = mnuAct;
-                pFCF.linkLabelNewPerson.Enabled = mnuAct;
                 return;
             }
             if (mnuName == "mnuNewGroup")
             {
                 toolBarButtonNewGroup.Enabled = mnuAct;
-                pFCF.linkLabelGroup.Enabled = mnuAct;
                 return;
             }
             if (mnuName == "mnuNewVillage")
             {
                 tbbtnNewVillage.Enabled = mnuAct;
-                pFCF.lnklblNewVillage.Enabled = mnuAct;
                 return;
             }
             if (mnuName == "newCorporateToolStripMenuItem")
             {
                 corporateToolStripMenuItem.Enabled = mnuAct;
-                pFCF.linkLabel1.Enabled = mnuAct;
                 return;
             }
             if (mnuName == "mnuSearchClient")
             {
                 toolBarButtonSearchPerson.Enabled = mnuAct;
-                pFCF.linkLabelSearchClient.Enabled = mnuAct;
                 return;
             }
             if (mnuName == "mnuSearchContract")
             {
                 toolBarButtonSearchContract.Enabled = mnuAct;
-                pFCF.linkLabelSearchCreditContract.Enabled = mnuAct;
                 return;
             }
 
