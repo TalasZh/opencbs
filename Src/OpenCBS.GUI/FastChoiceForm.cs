@@ -65,8 +65,24 @@ namespace OpenCBS.GUI
 
             var series = new Series();
             series.ChartType = SeriesChartType.Pie;
-            series.Points.Add(95).LegendText = "Performing: 95%";
-            series.Points.Add(5).LegendText = "PAR: 5%";
+            var point = series.Points.Add(60);
+            point.LegendText = "1-30: 60%";
+            point.Color = Color.FromArgb(28, 151, 234);
+            point = series.Points.Add(7);
+            point.LegendText = "31-60: 7%";
+            point.Color = Color.FromArgb(28, 198, 234);
+            point = series.Points.Add(15);
+            point.LegendText = "61-90: 15%";
+            point.Color = Color.FromArgb(234, 217, 28);
+            point = series.Points.Add(5);
+            point.LegendText = "91-180: 5%";
+            point.Color = Color.FromArgb(234, 178, 28);
+            point = series.Points.Add(10);
+            point.LegendText = "181-365: 10%";
+            point.Color = Color.FromArgb(234, 106, 28);
+            point = series.Points.Add(3);
+            point.LegendText = ">365: 3%";
+            point.Color = Color.FromArgb(234, 28, 28);
 
             var title = new Title
             {
