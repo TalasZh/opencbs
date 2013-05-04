@@ -118,17 +118,224 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="generalInfoPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="infoPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="infoPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>275, 0</value>
+  </data>
+  <data name="infoPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>639, 506</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="infoPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;infoPanel.Name" xml:space="preserve">
+    <value>infoPanel</value>
+  </data>
+  <data name="&gt;&gt;infoPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;infoPanel.Parent" xml:space="preserve">
+    <value>generalInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;infoPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="newCorporateClientLinkLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="newCorporateClientLinkLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 11pt</value>
+  </data>
+  <data name="newCorporateClientLinkLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="newCorporateClientLinkLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 167</value>
+  </data>
+  <data name="newCorporateClientLinkLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>153, 17</value>
+  </data>
+  <data name="newCorporateClientLinkLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="newCorporateClientLinkLabel.Text" xml:space="preserve">
+    <value>New corporate client...</value>
+  </data>
+  <data name="&gt;&gt;newCorporateClientLinkLabel.Name" xml:space="preserve">
+    <value>newCorporateClientLinkLabel</value>
+  </data>
+  <data name="&gt;&gt;newCorporateClientLinkLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;newCorporateClientLinkLabel.Parent" xml:space="preserve">
+    <value>quickLinksPanel</value>
+  </data>
+  <data name="&gt;&gt;newCorporateClientLinkLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="newNonSolidairtyGroupLinkLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="newNonSolidairtyGroupLinkLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 11pt</value>
+  </data>
+  <data name="newNonSolidairtyGroupLinkLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="newNonSolidairtyGroupLinkLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 134</value>
+  </data>
+  <data name="newNonSolidairtyGroupLinkLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 17</value>
+  </data>
+  <data name="newNonSolidairtyGroupLinkLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="newNonSolidairtyGroupLinkLabel.Text" xml:space="preserve">
+    <value>New non-solidarity group...</value>
+  </data>
+  <data name="&gt;&gt;newNonSolidairtyGroupLinkLabel.Name" xml:space="preserve">
+    <value>newNonSolidairtyGroupLinkLabel</value>
+  </data>
+  <data name="&gt;&gt;newNonSolidairtyGroupLinkLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;newNonSolidairtyGroupLinkLabel.Parent" xml:space="preserve">
+    <value>quickLinksPanel</value>
+  </data>
+  <data name="&gt;&gt;newNonSolidairtyGroupLinkLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="newSolidarityGroupLinkLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="newSolidarityGroupLinkLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 11pt</value>
+  </data>
+  <data name="newSolidarityGroupLinkLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="newSolidarityGroupLinkLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 101</value>
+  </data>
+  <data name="newSolidarityGroupLinkLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>151, 17</value>
+  </data>
+  <data name="newSolidarityGroupLinkLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="newSolidarityGroupLinkLabel.Text" xml:space="preserve">
+    <value>New solidarity group...</value>
+  </data>
+  <data name="&gt;&gt;newSolidarityGroupLinkLabel.Name" xml:space="preserve">
+    <value>newSolidarityGroupLinkLabel</value>
+  </data>
+  <data name="&gt;&gt;newSolidarityGroupLinkLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;newSolidarityGroupLinkLabel.Parent" xml:space="preserve">
+    <value>quickLinksPanel</value>
+  </data>
+  <data name="&gt;&gt;newSolidarityGroupLinkLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="newIndividualClientLinkLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="newIndividualClientLinkLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 11pt</value>
+  </data>
+  <data name="newIndividualClientLinkLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 68</value>
+  </data>
+  <data name="newIndividualClientLinkLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 17</value>
+  </data>
+  <data name="newIndividualClientLinkLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="newIndividualClientLinkLabel.Text" xml:space="preserve">
+    <value>New individual client...</value>
+  </data>
+  <data name="&gt;&gt;newIndividualClientLinkLabel.Name" xml:space="preserve">
+    <value>newIndividualClientLinkLabel</value>
+  </data>
+  <data name="&gt;&gt;newIndividualClientLinkLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;newIndividualClientLinkLabel.Parent" xml:space="preserve">
+    <value>quickLinksPanel</value>
+  </data>
+  <data name="&gt;&gt;newIndividualClientLinkLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="clientsLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="clientsLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 11pt</value>
+  </data>
+  <data name="clientsLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 35</value>
+  </data>
+  <data name="clientsLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 17</value>
+  </data>
+  <data name="clientsLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="clientsLabel.Text" xml:space="preserve">
+    <value>Clients</value>
+  </data>
+  <data name="&gt;&gt;clientsLabel.Name" xml:space="preserve">
+    <value>clientsLabel</value>
+  </data>
+  <data name="&gt;&gt;clientsLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;clientsLabel.Parent" xml:space="preserve">
+    <value>quickLinksPanel</value>
+  </data>
+  <data name="&gt;&gt;clientsLabel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="quickLinksPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="quickLinksPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="quickLinksPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>275, 506</value>
+  </data>
+  <data name="quickLinksPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;quickLinksPanel.Name" xml:space="preserve">
+    <value>quickLinksPanel</value>
+  </data>
+  <data name="&gt;&gt;quickLinksPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;quickLinksPanel.Parent" xml:space="preserve">
+    <value>generalInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;quickLinksPanel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="generalInfoPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
   <data name="generalInfoPanel.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
   <data name="generalInfoPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>989, 527</value>
+    <value>914, 506</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="generalInfoPanel.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
@@ -154,7 +361,7 @@
     <value>6, 15</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>989, 527</value>
+    <value>914, 506</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 9.75pt</value>
@@ -169,6 +376,6 @@
     <value>FastChoiceForm</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>OpenCBS.GUI.UserControl.SweetBaseForm, OpenCBS.GUI, Version=1.1.1.30621, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetBaseForm, OpenCBS.GUI, Version=1.1.1.29556, Culture=neutral, PublicKeyToken=null</value>
   </data>
 </root>
