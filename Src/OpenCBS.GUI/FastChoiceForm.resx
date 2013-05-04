@@ -123,10 +123,10 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="infoPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>275, 0</value>
+    <value>220, 0</value>
   </data>
   <data name="infoPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>639, 506</value>
+    <value>694, 506</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="infoPanel.TabIndex" type="System.Int32, mscorlib">
@@ -310,7 +310,7 @@
     <value>0, 0</value>
   </data>
   <data name="quickLinksPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>275, 506</value>
+    <value>220, 506</value>
   </data>
   <data name="quickLinksPanel.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -376,6 +376,6 @@
     <value>FastChoiceForm</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>OpenCBS.GUI.UserControl.SweetBaseForm, OpenCBS.GUI, Version=1.1.1.29556, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetBaseForm, OpenCBS.GUI, Version=1.1.1.36114, Culture=neutral, PublicKeyToken=null</value>
   </data>
 </root>

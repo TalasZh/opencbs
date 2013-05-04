@@ -20,6 +20,7 @@ namespace OpenCBS.GUI
         {
             CreatePortfolioPieChart();
             CreateParPieChart();
+            CreateDisbursementsRepaymentsChart();
         }
 
         private void CreatePortfolioPieChart()
@@ -45,9 +46,11 @@ namespace OpenCBS.GUI
             };
             chart.Titles.Add(title);
 
-            var legend = new Legend();
-            legend.Docking = Docking.Right;
-            legend.Alignment = StringAlignment.Center;
+            var legend = new Legend
+            {
+                Docking = Docking.Right, 
+                Alignment = StringAlignment.Center,
+            };
             chart.Legends.Add(legend);
 
             chart.Series.Add(series);
@@ -102,6 +105,47 @@ namespace OpenCBS.GUI
             chart.Size = new Size(250, 150);
 
             infoPanel.Controls.Add(chart);
+        }
+
+        private void CreateDisbursementsRepaymentsChart()
+        {
+            var chart = new Chart();
+            var chartArea = new ChartArea();
+            chart.ChartAreas.Add(chartArea);
+
+            var series = new Series();
+            series.Points.Add(1000);
+            series.Points.Add(2000);
+            series.Points.Add(1700);
+
+            var series2 = new Series();
+            series2.Points.Add(-700);
+            series2.Points.Add(-1000);
+            series2.Points.Add(-2000);
+
+
+            var title = new Title
+            {
+                Text = "Disbursements & Repayments",
+                ForeColor = Color.FromArgb(45, 45, 48),
+                Font = new Font("Arial", 9.75f)
+            };
+            chart.Titles.Add(title);
+
+            //var legend = new Legend
+            //{
+            //    Docking = Docking.Right,
+            //    Alignment = StringAlignment.Center,
+            //};
+            //chart.Legends.Add(legend);
+
+            chart.Series.Add(series);
+            chart.Series.Add(series2);
+            chart.Location = new Point(540, 10);
+            chart.Size = new Size(250, 150);
+
+            infoPanel.Controls.Add(chart);
+            
         }
 
         private void OpenClientForm(OClientTypes clientType)
