@@ -459,6 +459,7 @@ namespace OpenCBS.Manager
                         ContractCode = reader.GetString("contract_code"),
                         LoanOfficer = reader.GetString("loan_officer"),
                         PerformedAt = reader.GetDateTime("event_date"),
+                        ClientName = reader.GetString("client_name"),
                     };
                     dashboard.Actions.Add(action);
                 }

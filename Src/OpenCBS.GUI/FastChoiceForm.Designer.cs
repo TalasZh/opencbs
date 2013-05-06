@@ -29,8 +29,10 @@ namespace OpenCBS.GUI
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FastChoiceForm));
             this.generalInfoPanel = new System.Windows.Forms.Panel();
             this.infoPanel = new System.Windows.Forms.Panel();
+            this.activityPanel = new System.Windows.Forms.Panel();
             this.activityListView = new BrightIdeasSoftware.ObjectListView();
             this.activityPefrormedAtColumn = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
+            this.activityAction = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
             this.activityLoanOfficerColumn = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
             this.activtyContractCodeColumn = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
             this.activityAmountColumn = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
@@ -41,8 +43,10 @@ namespace OpenCBS.GUI
             this.newSolidarityGroupLinkLabel = new System.Windows.Forms.LinkLabel();
             this.newIndividualClientLinkLabel = new System.Windows.Forms.LinkLabel();
             this.clientsLabel = new System.Windows.Forms.Label();
+            this.activityClientColumn = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
             this.generalInfoPanel.SuspendLayout();
             this.infoPanel.SuspendLayout();
+            this.activityPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.activityListView)).BeginInit();
             this.quickLinksPanel.SuspendLayout();
             this.SuspendLayout();
@@ -57,22 +61,32 @@ namespace OpenCBS.GUI
             // infoPanel
             // 
             this.infoPanel.BackColor = System.Drawing.Color.White;
-            this.infoPanel.Controls.Add(this.activityListView);
+            this.infoPanel.Controls.Add(this.activityPanel);
             this.infoPanel.Controls.Add(this.activityStreamLabel);
             resources.ApplyResources(this.infoPanel, "infoPanel");
             this.infoPanel.Name = "infoPanel";
             // 
+            // activityPanel
+            // 
+            this.activityPanel.Controls.Add(this.activityListView);
+            resources.ApplyResources(this.activityPanel, "activityPanel");
+            this.activityPanel.Name = "activityPanel";
+            // 
             // activityListView
             // 
             this.activityListView.AllColumns.Add(this.activityPefrormedAtColumn);
+            this.activityListView.AllColumns.Add(this.activityAction);
             this.activityListView.AllColumns.Add(this.activityLoanOfficerColumn);
             this.activityListView.AllColumns.Add(this.activtyContractCodeColumn);
             this.activityListView.AllColumns.Add(this.activityAmountColumn);
+            this.activityListView.AllColumns.Add(this.activityClientColumn);
             this.activityListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.activityPefrormedAtColumn,
+            this.activityAction,
             this.activityLoanOfficerColumn,
             this.activtyContractCodeColumn,
-            this.activityAmountColumn});
+            this.activityAmountColumn,
+            this.activityClientColumn});
             resources.ApplyResources(this.activityListView, "activityListView");
             this.activityListView.FullRowSelect = true;
             this.activityListView.GridLines = true;
@@ -87,6 +101,11 @@ namespace OpenCBS.GUI
             this.activityPefrormedAtColumn.AspectName = "PerformedAt";
             this.activityPefrormedAtColumn.IsEditable = false;
             resources.ApplyResources(this.activityPefrormedAtColumn, "activityPefrormedAtColumn");
+            // 
+            // activityAction
+            // 
+            this.activityAction.AspectName = "Type";
+            resources.ApplyResources(this.activityAction, "activityAction");
             // 
             // activityLoanOfficerColumn
             // 
@@ -166,6 +185,11 @@ namespace OpenCBS.GUI
             this.clientsLabel.ForeColor = System.Drawing.Color.White;
             this.clientsLabel.Name = "clientsLabel";
             // 
+            // activityClientColumn
+            // 
+            this.activityClientColumn.AspectName = "ClientName";
+            resources.ApplyResources(this.activityClientColumn, "activityClientColumn");
+            // 
             // FastChoiceForm
             // 
             resources.ApplyResources(this, "$this");
@@ -178,6 +202,7 @@ namespace OpenCBS.GUI
             this.Load += new System.EventHandler(this.OnLoad);
             this.generalInfoPanel.ResumeLayout(false);
             this.infoPanel.ResumeLayout(false);
+            this.activityPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.activityListView)).EndInit();
             this.quickLinksPanel.ResumeLayout(false);
             this.quickLinksPanel.PerformLayout();
@@ -200,5 +225,8 @@ namespace OpenCBS.GUI
         private BrightIdeasSoftware.OLVColumn activityLoanOfficerColumn;
         private BrightIdeasSoftware.OLVColumn activityPefrormedAtColumn;
         private BrightIdeasSoftware.OLVColumn activityAmountColumn;
+        private System.Windows.Forms.Panel activityPanel;
+        private BrightIdeasSoftware.OLVColumn activityAction;
+        private BrightIdeasSoftware.OLVColumn activityClientColumn;
     }
 }

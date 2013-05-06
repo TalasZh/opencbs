@@ -1,6 +1,8 @@
 ﻿// LICENSE PLACEHOLDER
 
+using System;
 using System.Drawing;
+using System.Globalization;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
 using OpenCBS.Enums;
@@ -17,8 +19,26 @@ namespace OpenCBS.GUI
             InitializeComponent();
 		}
 
-        private void OnLoad(object sender, System.EventArgs e)
+        private void OnLoad(object sender, EventArgs e)
         {
+            var numberFormatInfo = new NumberFormatInfo
+            {
+                NumberGroupSeparator = " ",
+                NumberDecimalSeparator = ".",
+            };
+
+            activityPefrormedAtColumn.AspectToStringConverter = value =>
+            {
+                var date = (DateTime) value;
+                return date.ToString("dd.MM.yyyy HH:mm");
+            };
+
+            activityAmountColumn.AspectToStringConverter = value =>
+            {
+                var amount = (decimal) value;
+                return amount.ToString("N2", numberFormatInfo);
+            };
+
             //CreatePortfolioPieChart();
             //CreateParPieChart();
             //CreateDisbursementsRepaymentsChart();
@@ -177,10 +197,6 @@ namespace OpenCBS.GUI
         private void OnCorporateClientLinkLabelLinkClick(object sender, LinkLabelLinkClickedEventArgs e)
         {
             OpenClientForm(OClientTypes.Corporate);
-        }
-
-        private void FillActivityStream()
-        {
         }
 
         private void RefreshDashboard()
