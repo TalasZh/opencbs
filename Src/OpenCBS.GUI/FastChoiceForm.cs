@@ -10,7 +10,6 @@ using OpenCBS.Enums;
 using OpenCBS.GUI.Clients;
 using OpenCBS.GUI.UserControl;
 using OpenCBS.Services;
-using System.Linq;
 
 namespace OpenCBS.GUI
 {
@@ -18,6 +17,8 @@ namespace OpenCBS.GUI
     {
         private Chart _portfolioChart;
         private Chart _parChart;
+        private Chart _disbursementsChart;
+        private Chart _olbTrendChart;
 
         public FastChoiceForm()
 		{
@@ -46,7 +47,7 @@ namespace OpenCBS.GUI
 
             //CreatePortfolioPieChart();
             //CreateParPieChart();
-            //CreateDisbursementsRepaymentsChart();
+            //RefreshDisbursementsChart();
             //FillActivityStream();
             RefreshDashboard();
         }
@@ -80,14 +81,6 @@ namespace OpenCBS.GUI
             point.LegendText = string.Format("PAR: {0} %", parPercentage.ToString("N1", numberFormatInfo));
             point.Color = Color.FromArgb(234, 28, 28);
 
-            //var title = new Title
-            //{
-            //    Text = "Portfolio",
-            //    ForeColor = Color.FromArgb(45, 45, 48),
-            //    Font = new Font("Arial", 9.75f)
-            //};
-            //chart.Titles.Add(title);
-
             var legend = new Legend
             {
                 Docking = Docking.Right, 
@@ -97,7 +90,6 @@ namespace OpenCBS.GUI
 
             _portfolioChart.Series.Add(series);
             _portfolioChart.Location = new Point(0, 0);
-            //chart.Size = new Size(250, 150);
             _portfolioChart.Dock = DockStyle.Fill;
 
             portfolioPanel.Controls.Add(_portfolioChart);
@@ -166,52 +158,68 @@ namespace OpenCBS.GUI
 
             _parChart.Series.Add(series);
             _parChart.Location = new Point(0, 0);
-            //chart.Size = new Size(250, 150);
             _parChart.Dock = DockStyle.Fill;
 
             parPanel.Controls.Add(_parChart);
         }
 
-        private void CreateDisbursementsRepaymentsChart()
+        private void RefreshDisbursementsChart(Dashboard dashboard)
         {
-            var chart = new Chart();
+            if (_disbursementsChart != null)
+            {
+                disbursementsPanel.Controls.Remove(_disbursementsChart);
+            }
+            _disbursementsChart = new Chart();
             var chartArea = new ChartArea();
-            chart.ChartAreas.Add(chartArea);
+            chartArea.AxisX.LabelAutoFitMaxFontSize = 8;
+            chartArea.AxisX.LabelAutoFitMinFontSize = 8;
+            _disbursementsChart.ChartAreas.Add(chartArea);
 
             var series = new Series();
-            series.Points.Add(1000);
-            series.Points.Add(2000);
-            series.Points.Add(1700);
-
             var series2 = new Series();
-            series2.Points.Add(-700);
-            series2.Points.Add(-1000);
-            series2.Points.Add(-2000);
-
-
-            var title = new Title
+            foreach (var actionStat in dashboard.ActionStats)
             {
-                Text = "Disbursements & Repayments",
-                ForeColor = Color.FromArgb(45, 45, 48),
-                Font = new Font("Arial", 9.75f)
-            };
-            chart.Titles.Add(title);
+                var point = series.Points.Add(actionStat.NumberDisbursed);
+                point.AxisLabel = actionStat.Date.ToString("dd.MM");
+                point = series2.Points.Add(-actionStat.NumberRepaid);
+            }
 
-            //var legend = new Legend
-            //{
-            //    Docking = Docking.Right,
-            //    Alignment = StringAlignment.Center,
-            //};
-            //chart.Legends.Add(legend);
+            _disbursementsChart.Series.Add(series);
+            _disbursementsChart.Dock = DockStyle.Fill;
 
-            chart.Series.Add(series);
-            chart.Series.Add(series2);
-            chart.Location = new Point(540, 300);
-            chart.Size = new Size(250, 150);
-
-            infoPanel.Controls.Add(chart);
+            disbursementsPanel.Controls.Add(_disbursementsChart);
             
         }
+
+        private void RefreshOlbTrendChart(Dashboard dashboard)
+        {
+            if (_olbTrendChart != null)
+            {
+                olbTrendPanel.Controls.Remove(_olbTrendChart);
+            }
+            _olbTrendChart = new Chart();
+            var chartArea = new ChartArea();
+            chartArea.AxisX.LabelAutoFitMaxFontSize = 8;
+            chartArea.AxisX.LabelAutoFitMinFontSize = 8;
+            _olbTrendChart.ChartAreas.Add(chartArea);
+
+            var series = new Series();
+            var series2 = new Series();
+            foreach (var actionStat in dashboard.ActionStats)
+            {
+                var point = series.Points.Add(Convert.ToDouble(actionStat.OlbGrowth));
+                point.AxisLabel = actionStat.Date.ToString("dd.MM");
+                //point = series2.Points.Add(Convert.ToDouble(-actionStat.AmountRepaid));
+            }
+
+            _olbTrendChart.Series.Add(series);
+            //_olbTrendChart.Series.Add(series2);
+            _olbTrendChart.Dock = DockStyle.Fill;
+
+            olbTrendPanel.Controls.Add(_olbTrendChart);
+        }
+
+
 
         private void OpenClientForm(OClientTypes clientType)
         {
@@ -255,7 +263,8 @@ namespace OpenCBS.GUI
             RefreshActivityStream(dashboard);
             RefreshPortfolioPieChart(dashboard);
             RefreshParPieChart(dashboard);
-            //CreateDisbursementsRepaymentsChart();
+            RefreshDisbursementsChart(dashboard);
+            RefreshOlbTrendChart(dashboard);
         }
 
         private void button1_Click(object sender, EventArgs e)

@@ -477,6 +477,20 @@ namespace OpenCBS.Manager
                 dashboard.Par91To180 = reader.GetDecimal("par91_180");
                 dashboard.Par181To365 = reader.GetDecimal("par181_365");
                 dashboard.Par365 = reader.GetDecimal("par365");
+
+                reader.NextResult();
+                while (reader.Read())
+                {
+                    var stat = new ActionStat
+                    {
+                        Date = reader.GetDateTime("date"),
+                        AmountDisbursed = reader.GetDecimal("amount_disbursed"),
+                        NumberDisbursed = reader.GetInt("number_disbursed"),
+                        AmountRepaid = reader.GetDecimal("amount_repaid"),
+                        NumberRepaid = reader.GetInt("number_repaid"),
+                    };
+                    dashboard.ActionStats.Add(stat);
+                }
             }
 
             return dashboard;
