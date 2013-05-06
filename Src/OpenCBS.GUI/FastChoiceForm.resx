@@ -117,18 +117,105 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="activityPefrormedAtColumn.Text" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="activityPefrormedAtColumn.Width" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="activityLoanOfficerColumn.Text" xml:space="preserve">
+    <value>Loan officer</value>
+  </data>
+  <data name="activityLoanOfficerColumn.Width" type="System.Int32, mscorlib">
+    <value>200</value>
+  </data>
+  <data name="activtyContractCodeColumn.Text" xml:space="preserve">
+    <value>Contract code</value>
+  </data>
+  <data name="activtyContractCodeColumn.Width" type="System.Int32, mscorlib">
+    <value>150</value>
+  </data>
+  <data name="activityAmountColumn.Text" xml:space="preserve">
+    <value>Amount</value>
+  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="activityAmountColumn.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="activityAmountColumn.Width" type="System.Int32, mscorlib">
+    <value>80</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="activityListView.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="activityListView.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 23</value>
+  </data>
+  <data name="activityListView.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 5, 3, 5</value>
+  </data>
+  <data name="activityListView.Size" type="System.Drawing.Size, System.Drawing">
+    <value>676, 115</value>
+  </data>
+  <data name="activityListView.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
+  </data>
+  <data name="&gt;&gt;activityListView.Name" xml:space="preserve">
+    <value>activityListView</value>
+  </data>
+  <data name="&gt;&gt;activityListView.Type" xml:space="preserve">
+    <value>BrightIdeasSoftware.ObjectListView, ObjectListView, Version=2.5.0.26223, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
+  </data>
+  <data name="&gt;&gt;activityListView.Parent" xml:space="preserve">
+    <value>infoPanel</value>
+  </data>
+  <data name="&gt;&gt;activityListView.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="activityStreamLabel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="activityStreamLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt, style=Bold</value>
+  </data>
+  <data name="activityStreamLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="activityStreamLabel.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 0, 0</value>
+  </data>
+  <data name="activityStreamLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>694, 25</value>
+  </data>
+  <data name="activityStreamLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="activityStreamLabel.Text" xml:space="preserve">
+    <value>ACTIVITY STREAM</value>
+  </data>
+  <data name="&gt;&gt;activityStreamLabel.Name" xml:space="preserve">
+    <value>activityStreamLabel</value>
+  </data>
+  <data name="&gt;&gt;activityStreamLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;activityStreamLabel.Parent" xml:space="preserve">
+    <value>infoPanel</value>
+  </data>
+  <data name="&gt;&gt;activityStreamLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="infoPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="infoPanel.Location" type="System.Drawing.Point, System.Drawing">
     <value>220, 0</value>
   </data>
   <data name="infoPanel.Size" type="System.Drawing.Size, System.Drawing">
     <value>694, 506</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="infoPanel.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
@@ -372,10 +459,34 @@
   <data name="$this.Text" xml:space="preserve">
     <value>Start Page</value>
   </data>
+  <data name="&gt;&gt;activityPefrormedAtColumn.Name" xml:space="preserve">
+    <value>activityPefrormedAtColumn</value>
+  </data>
+  <data name="&gt;&gt;activityPefrormedAtColumn.Type" xml:space="preserve">
+    <value>BrightIdeasSoftware.OLVColumn, ObjectListView, Version=2.5.0.26223, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
+  </data>
+  <data name="&gt;&gt;activityLoanOfficerColumn.Name" xml:space="preserve">
+    <value>activityLoanOfficerColumn</value>
+  </data>
+  <data name="&gt;&gt;activityLoanOfficerColumn.Type" xml:space="preserve">
+    <value>BrightIdeasSoftware.OLVColumn, ObjectListView, Version=2.5.0.26223, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
+  </data>
+  <data name="&gt;&gt;activtyContractCodeColumn.Name" xml:space="preserve">
+    <value>activtyContractCodeColumn</value>
+  </data>
+  <data name="&gt;&gt;activtyContractCodeColumn.Type" xml:space="preserve">
+    <value>BrightIdeasSoftware.OLVColumn, ObjectListView, Version=2.5.0.26223, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
+  </data>
+  <data name="&gt;&gt;activityAmountColumn.Name" xml:space="preserve">
+    <value>activityAmountColumn</value>
+  </data>
+  <data name="&gt;&gt;activityAmountColumn.Type" xml:space="preserve">
+    <value>BrightIdeasSoftware.OLVColumn, ObjectListView, Version=2.5.0.26223, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
+  </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>FastChoiceForm</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>OpenCBS.GUI.UserControl.SweetBaseForm, OpenCBS.GUI, Version=1.1.1.36114, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetBaseForm, OpenCBS.GUI, Version=1.1.1.20884, Culture=neutral, PublicKeyToken=null</value>
   </data>
 </root>

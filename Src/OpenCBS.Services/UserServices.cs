@@ -3,6 +3,7 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using OpenCBS.CoreDomain.Dashboard;
 using OpenCBS.Enums;
 using OpenCBS.Manager;
 using OpenCBS.CoreDomain;
@@ -290,6 +291,11 @@ namespace OpenCBS.Services
         {
             LoadUsers();
             return _users.Find(item => (item.FirstName + (string.IsNullOrEmpty(item.LastName) ? "" : " ") + item.LastName) == fullName);
+        }
+
+        public Dashboard GetDashboard()
+        {
+            return _userManager.GetDashboard();
         }
     }
 }

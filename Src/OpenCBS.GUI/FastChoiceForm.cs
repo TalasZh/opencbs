@@ -6,6 +6,7 @@ using System.Windows.Forms.DataVisualization.Charting;
 using OpenCBS.Enums;
 using OpenCBS.GUI.Clients;
 using OpenCBS.GUI.UserControl;
+using OpenCBS.Services;
 
 namespace OpenCBS.GUI
 {
@@ -18,9 +19,11 @@ namespace OpenCBS.GUI
 
         private void OnLoad(object sender, System.EventArgs e)
         {
-            CreatePortfolioPieChart();
-            CreateParPieChart();
-            CreateDisbursementsRepaymentsChart();
+            //CreatePortfolioPieChart();
+            //CreateParPieChart();
+            //CreateDisbursementsRepaymentsChart();
+            //FillActivityStream();
+            RefreshDashboard();
         }
 
         private void CreatePortfolioPieChart()
@@ -174,6 +177,18 @@ namespace OpenCBS.GUI
         private void OnCorporateClientLinkLabelLinkClick(object sender, LinkLabelLinkClickedEventArgs e)
         {
             OpenClientForm(OClientTypes.Corporate);
+        }
+
+        private void FillActivityStream()
+        {
+        }
+
+        private void RefreshDashboard()
+        {
+            var us = ServicesProvider.GetInstance().GetUserServices();
+            var dashboard = us.GetDashboard();
+
+            activityListView.SetObjects(dashboard.Actions);
         }
     }
 }

@@ -3,6 +3,7 @@
 using System.Collections.Generic;
 using OpenCBS.CoreDomain;
 using System.Data.SqlClient;
+using OpenCBS.CoreDomain.Dashboard;
 
 namespace OpenCBS.Manager
 {
@@ -440,6 +441,30 @@ namespace OpenCBS.Manager
         {
             SaveSubordinates(user);
             SaveBranches(user);
+        }
+
+        public Dashboard GetDashboard()
+        {
+            var dashboard = new Dashboard();
+            using (var connection = GetConnection())
+            using (var command = new OctopusCommand("GetDashboard", connection).AsStoredProcedure())
+            using (var reader = command.ExecuteReader())
+            {
+                while (reader.Read())
+                {
+                    var action = new Action
+                    {
+                        Type = reader.GetString("type"),
+                        Amount = reader.GetDecimal("amount"),
+                        ContractCode = reader.GetString("contract_code"),
+                        LoanOfficer = reader.GetString("loan_officer"),
+                        PerformedAt = reader.GetDateTime("event_date"),
+                    };
+                    dashboard.Actions.Add(action);
+                }
+            }
+
+            return dashboard;
         }
     }
 }
