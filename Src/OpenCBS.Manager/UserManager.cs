@@ -469,21 +469,14 @@ namespace OpenCBS.Manager
                 }
 
                 reader.NextResult();
-                while (reader.Read())
-                {
-                    var portfolio = new Portfolio
-                    {
-                        LoanOfficer = reader.GetString("loan_officer"),
-                        Olb = reader.GetDecimal("olb"),
-                        Par1To30 = reader.GetDecimal("par1_30"),
-                        Par31To60 = reader.GetDecimal("par31_60"),
-                        Par61To90 = reader.GetDecimal("par61_90"),
-                        Par91To180 = reader.GetDecimal("par91_180"),
-                        Par181To365 = reader.GetDecimal("par181_365"),
-                        Par365 = reader.GetDecimal("par365"),
-                    };
-                    dashboard.Portfolios.Add(portfolio);
-                }
+                reader.Read();
+                dashboard.Olb = reader.GetDecimal("olb");
+                dashboard.Par1To30 = reader.GetDecimal("par1_30");
+                dashboard.Par31To60 = reader.GetDecimal("par31_60");
+                dashboard.Par61To90 = reader.GetDecimal("par61_90");
+                dashboard.Par91To180 = reader.GetDecimal("par91_180");
+                dashboard.Par181To365 = reader.GetDecimal("par181_365");
+                dashboard.Par365 = reader.GetDecimal("par365");
             }
 
             return dashboard;

@@ -352,7 +352,7 @@
     <value>Date</value>
   </data>
   <data name="activityPefrormedAtColumn.Width" type="System.Int32, mscorlib">
-    <value>100</value>
+    <value>80</value>
   </data>
   <data name="activityAction.Text" xml:space="preserve">
     <value>Action</value>
@@ -793,6 +793,6 @@
     <value>FastChoiceForm</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>OpenCBS.GUI.UserControl.SweetBaseForm, OpenCBS.GUI, Version=1.1.1.28419, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetBaseForm, OpenCBS.GUI, Version=1.1.1.30095, Culture=neutral, PublicKeyToken=null</value>
   </data>
 </root>

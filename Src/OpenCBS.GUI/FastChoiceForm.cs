@@ -35,7 +35,7 @@ namespace OpenCBS.GUI
             activityPefrormedAtColumn.AspectToStringConverter = value =>
             {
                 var date = (DateTime) value;
-                return date.ToString("dd.MM.yyyy HH:mm");
+                return date.ToString("dd.MM.yyyy");
             };
 
             activityAmountColumn.AspectToStringConverter = value =>
@@ -61,9 +61,7 @@ namespace OpenCBS.GUI
             var chartArea = new ChartArea();
             _portfolioChart.ChartAreas.Add(chartArea);
 
-            var olb = dashboard.Portfolios.Sum(item => item.Olb);
-            var par = dashboard.Portfolios.Sum(item => item.Par);
-            var parPercentage = Math.Round(100*par/olb, 1);
+            var parPercentage = 0 == dashboard.Olb ? 0 : Math.Round(100*dashboard.Par/dashboard.Olb, 1);
             var performingPercentage = 100 - parPercentage;
 
             var numberFormatInfo = new NumberFormatInfo
@@ -111,19 +109,20 @@ namespace OpenCBS.GUI
             {
                 parPanel.Controls.Remove(_parChart);
             }
+            if (0 == dashboard.Par) return;
+
             _parChart = new Chart();
             var chartArea = new ChartArea();
             _parChart.ChartAreas.Add(chartArea);
 
-            var par = dashboard.Portfolios.Sum(item => item.Par);
             var values = new[]
             {
-                dashboard.Portfolios.Sum(item => item.Par1To30),
-                dashboard.Portfolios.Sum(item => item.Par31To60),
-                dashboard.Portfolios.Sum(item => item.Par61To90),
-                dashboard.Portfolios.Sum(item => item.Par91To180),
-                dashboard.Portfolios.Sum(item => item.Par181To365),
-                dashboard.Portfolios.Sum(item => item.Par365),
+                dashboard.Par1To30,
+                dashboard.Par31To60,
+                dashboard.Par61To90,
+                dashboard.Par91To180,
+                dashboard.Par181To365,
+                dashboard.Par365,
             };
 
             var legends = new[]
@@ -150,7 +149,7 @@ namespace OpenCBS.GUI
             series.ChartType = SeriesChartType.Pie;
             for (var i = 0; i < 6; i++)
             {
-                var value = Math.Round(100*values[i]/par, 1);
+                var value = Math.Round(0 == dashboard.Par ? 0 : 100*values[i]/dashboard.Par, 1);
                 var point = series.Points.Add(Convert.ToDouble(value));
                 var numberFormat = Math.Round(value) == value ? "N0" : "N1";
                 point.LegendText = string.Format("{0}: {1}%", legends[i], value.ToString(numberFormat));
@@ -207,7 +206,7 @@ namespace OpenCBS.GUI
 
             chart.Series.Add(series);
             chart.Series.Add(series2);
-            chart.Location = new Point(540, 10);
+            chart.Location = new Point(540, 300);
             chart.Size = new Size(250, 150);
 
             infoPanel.Controls.Add(chart);
@@ -256,6 +255,7 @@ namespace OpenCBS.GUI
             RefreshActivityStream(dashboard);
             RefreshPortfolioPieChart(dashboard);
             RefreshParPieChart(dashboard);
+            //CreateDisbursementsRepaymentsChart();
         }
 
         private void button1_Click(object sender, EventArgs e)

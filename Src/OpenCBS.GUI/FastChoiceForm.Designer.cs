@@ -46,12 +46,12 @@ namespace OpenCBS.GUI
             this.activityClientColumn = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
             this.activityStreamLabel = new System.Windows.Forms.Label();
             this.quickLinksPanel = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.newCorporateClientLinkLabel = new System.Windows.Forms.LinkLabel();
             this.newNonSolidairtyGroupLinkLabel = new System.Windows.Forms.LinkLabel();
             this.newSolidarityGroupLinkLabel = new System.Windows.Forms.LinkLabel();
             this.newIndividualClientLinkLabel = new System.Windows.Forms.LinkLabel();
             this.clientsLabel = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.generalInfoPanel.SuspendLayout();
             this.infoPanel.SuspendLayout();
             this.riskTableLayoutPanel.SuspendLayout();
@@ -204,6 +204,13 @@ namespace OpenCBS.GUI
             resources.ApplyResources(this.quickLinksPanel, "quickLinksPanel");
             this.quickLinksPanel.Name = "quickLinksPanel";
             // 
+            // button1
+            // 
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.Name = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // newCorporateClientLinkLabel
             // 
             this.newCorporateClientLinkLabel.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
@@ -245,13 +252,6 @@ namespace OpenCBS.GUI
             resources.ApplyResources(this.clientsLabel, "clientsLabel");
             this.clientsLabel.ForeColor = System.Drawing.Color.White;
             this.clientsLabel.Name = "clientsLabel";
-            // 
-            // button1
-            // 
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // FastChoiceForm
             // 
