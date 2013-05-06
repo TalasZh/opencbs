@@ -74,9 +74,6 @@ namespace OpenCBS.GUI
 
         private bool InitializeTellerManagement()
         {
-            //tellerManagementToolStripMenuItem.Visible = false;
-            toolStripStatusLabelTeller.Visible = false;
-            
             if (ServicesProvider.GetInstance().GetGeneralSettings().UseTellerManagement)
             {
                 if (User.CurrentUser.UserRole.IsRoleForTeller)
@@ -89,8 +86,6 @@ namespace OpenCBS.GUI
                         if (frm.Teller != null && frm.Teller.Id != 0)
                         {
                             Teller.CurrentTeller = frm.Teller;
-                            toolStripStatusLabelTeller.Text = Teller.CurrentTeller.Name;
-                            toolStripStatusLabelTeller.Visible = true;
                             //tellerManagementToolStripMenuItem.Visible = true;
                             ServicesProvider.GetInstance().GetEventProcessorServices().LogUser(OUserEvents.OctopusUserOpenTellerEvent,
                                 Teller.CurrentTeller.Name + " opened", User.CurrentUser.Id);
@@ -664,7 +659,6 @@ namespace OpenCBS.GUI
 
         public void SetInfoMessage(string pMessage)
         {
-            mainStatusBarLblInfo.Text = pMessage;
         }
 
         private void mnuNewPerson_Click(object sender, EventArgs e)
@@ -884,7 +878,6 @@ namespace OpenCBS.GUI
                         {
                             _showTellerFormOnClose = false;
                             Teller.CurrentTeller = null;
-                            toolStripStatusLabelTeller.Visible = false;
                             ServicesProvider.GetInstance().GetEventProcessorServices().FireTellerEvent(
                                                                                     frm.CloseOfDayAmountEvent);
                             if (frm.CloseAmountNegativeDifferenceEvent != null)
@@ -1417,7 +1410,6 @@ namespace OpenCBS.GUI
                 {
                     string desc = Teller.CurrentTeller.Name + " closed";
                     Teller.CurrentTeller = null;
-                    toolStripStatusLabelTeller.Visible = false;
                     ServicesProvider.GetInstance().GetEventProcessorServices().LogUser(
                                                                         OUserEvents.OctopusUserCloseTellerEvent, 
                                                                         desc, 
@@ -1465,24 +1457,6 @@ namespace OpenCBS.GUI
         {
             TellersForm frm = new TellersForm() {MdiParent = this};
             frm.Show();
-        }
-
-        private void tellerOperationsToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FrmTellerOperation frm = new FrmTellerOperation();
-            frm.ShowDialog();
-
-            if (frm.DialogResult == DialogResult.OK)
-            {
-                Teller.CurrentTeller = null;
-                toolStripStatusLabelTeller.Visible = false;
-                if (frm.TellerCashOutEvent != null)
-                    ServicesProvider.GetInstance().GetEventProcessorServices().FireTellerEvent(
-                        frm.TellerCashOutEvent);
-                else if (frm.TellerCashInEvent != null)
-                    ServicesProvider.GetInstance().GetEventProcessorServices().FireTellerEvent(
-                        frm.TellerCashInEvent);
-            }
         }
     }
 }
