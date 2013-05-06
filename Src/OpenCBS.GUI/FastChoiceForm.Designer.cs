@@ -51,6 +51,7 @@ namespace OpenCBS.GUI
             this.newSolidarityGroupLinkLabel = new System.Windows.Forms.LinkLabel();
             this.newIndividualClientLinkLabel = new System.Windows.Forms.LinkLabel();
             this.clientsLabel = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.generalInfoPanel.SuspendLayout();
             this.infoPanel.SuspendLayout();
             this.riskTableLayoutPanel.SuspendLayout();
@@ -194,6 +195,7 @@ namespace OpenCBS.GUI
             // quickLinksPanel
             // 
             this.quickLinksPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.quickLinksPanel.Controls.Add(this.button1);
             this.quickLinksPanel.Controls.Add(this.newCorporateClientLinkLabel);
             this.quickLinksPanel.Controls.Add(this.newNonSolidairtyGroupLinkLabel);
             this.quickLinksPanel.Controls.Add(this.newSolidarityGroupLinkLabel);
@@ -244,6 +246,13 @@ namespace OpenCBS.GUI
             this.clientsLabel.ForeColor = System.Drawing.Color.White;
             this.clientsLabel.Name = "clientsLabel";
             // 
+            // button1
+            // 
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.Name = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FastChoiceForm
             // 
             resources.ApplyResources(this, "$this");
@@ -293,5 +302,6 @@ namespace OpenCBS.GUI
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel parPanel;
+        private System.Windows.Forms.Button button1;
     }
 }

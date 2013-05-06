@@ -501,6 +501,30 @@
   <data name="&gt;&gt;infoPanel.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 216</value>
+  </data>
+  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="button1.Text" xml:space="preserve">
+    <value>button1</value>
+  </data>
+  <data name="&gt;&gt;button1.Name" xml:space="preserve">
+    <value>button1</value>
+  </data>
+  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
+    <value>quickLinksPanel</value>
+  </data>
+  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="newCorporateClientLinkLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -532,7 +556,7 @@
     <value>quickLinksPanel</value>
   </data>
   <data name="&gt;&gt;newCorporateClientLinkLabel.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="newNonSolidairtyGroupLinkLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -565,7 +589,7 @@
     <value>quickLinksPanel</value>
   </data>
   <data name="&gt;&gt;newNonSolidairtyGroupLinkLabel.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="newSolidarityGroupLinkLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -598,7 +622,7 @@
     <value>quickLinksPanel</value>
   </data>
   <data name="&gt;&gt;newSolidarityGroupLinkLabel.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="newIndividualClientLinkLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -628,7 +652,7 @@
     <value>quickLinksPanel</value>
   </data>
   <data name="&gt;&gt;newIndividualClientLinkLabel.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="clientsLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -658,7 +682,7 @@
     <value>quickLinksPanel</value>
   </data>
   <data name="&gt;&gt;clientsLabel.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="quickLinksPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Left</value>
@@ -769,6 +793,6 @@
     <value>FastChoiceForm</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>OpenCBS.GUI.UserControl.SweetBaseForm, OpenCBS.GUI, Version=1.1.1.27440, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetBaseForm, OpenCBS.GUI, Version=1.1.1.28419, Culture=neutral, PublicKeyToken=null</value>
   </data>
 </root>
