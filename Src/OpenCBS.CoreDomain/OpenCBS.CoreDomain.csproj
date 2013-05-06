@@ -234,6 +234,7 @@
     <Compile Include="CreditScoring\QuestionList.cs" />
     <Compile Include="Dashboard\Action.cs" />
     <Compile Include="Dashboard\Dashboard.cs" />
+    <Compile Include="Dashboard\Portfolio.cs" />
     <Compile Include="DatabaseConnection.cs" />
     <Compile Include="Document.cs" />
     <Compile Include="Events\Teller\CloseAmountNegativeDifferenceEvent.cs" />

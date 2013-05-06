@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using OpenCBS.CoreDomain;
 using System.Data.SqlClient;
 using OpenCBS.CoreDomain.Dashboard;
+using OpenCBS.Shared;
 
 namespace OpenCBS.Manager
 {
@@ -447,7 +448,10 @@ namespace OpenCBS.Manager
         {
             var dashboard = new Dashboard();
             using (var connection = GetConnection())
-            using (var command = new OctopusCommand("GetDashboard", connection).AsStoredProcedure())
+            using (var command = new OctopusCommand("GetDashboard", connection).
+                AsStoredProcedure().
+                With("@date", TimeProvider.Today).
+                With("@userId", User.CurrentUser.Id))
             using (var reader = command.ExecuteReader())
             {
                 while (reader.Read())
@@ -462,6 +466,23 @@ namespace OpenCBS.Manager
                         ClientName = reader.GetString("client_name"),
                     };
                     dashboard.Actions.Add(action);
+                }
+
+                reader.NextResult();
+                while (reader.Read())
+                {
+                    var portfolio = new Portfolio
+                    {
+                        LoanOfficer = reader.GetString("loan_officer"),
+                        Olb = reader.GetDecimal("olb"),
+                        Par1To30 = reader.GetDecimal("par1_30"),
+                        Par31To60 = reader.GetDecimal("par31_60"),
+                        Par61To90 = reader.GetDecimal("par61_90"),
+                        Par91To180 = reader.GetDecimal("par91_180"),
+                        Par181To365 = reader.GetDecimal("par181_365"),
+                        Par365 = reader.GetDecimal("par365"),
+                    };
+                    dashboard.Portfolios.Add(portfolio);
                 }
             }
 

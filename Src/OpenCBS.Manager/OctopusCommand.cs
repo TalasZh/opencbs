@@ -32,6 +32,11 @@ namespace OpenCBS.Manager
             return _reader.Read();
         }
 
+        public bool NextResult()
+        {
+            return _reader.NextResult();
+        }
+
         public int GetInt(int num)
         {
             return _reader.GetInt32(num);
@@ -355,6 +360,12 @@ namespace OpenCBS.Manager
         public OctopusCommand AsStoredProcedure()
         {
             _cmd.CommandType = CommandType.StoredProcedure;
+            return this;
+        }
+
+        public OctopusCommand With(string paramName, object paramValue)
+        {
+            AddParam(paramName, paramValue);
             return this;
         }
     }

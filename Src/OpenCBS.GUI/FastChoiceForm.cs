@@ -5,10 +5,12 @@ using System.Drawing;
 using System.Globalization;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
+using OpenCBS.CoreDomain.Dashboard;
 using OpenCBS.Enums;
 using OpenCBS.GUI.Clients;
 using OpenCBS.GUI.UserControl;
 using OpenCBS.Services;
+using System.Linq;
 
 namespace OpenCBS.GUI
 {
@@ -46,28 +48,40 @@ namespace OpenCBS.GUI
             RefreshDashboard();
         }
 
-        private void CreatePortfolioPieChart()
+        private void RefreshPortfolioPieChart(Dashboard dashboard)
         {
             var chart = new Chart();
             var chartArea = new ChartArea();
             chart.ChartAreas.Add(chartArea);
 
+            var olb = dashboard.Portfolios.Sum(item => item.Olb);
+            var par = dashboard.Portfolios.Sum(item => item.Par);
+            var parPercentage = Math.Round(par/olb, 1);
+            var performingPercentage = 100 - parPercentage;
+
+            var numberFormatInfo = new NumberFormatInfo
+            {
+                NumberGroupSeparator = " ",
+                NumberDecimalSeparator = ",",
+            };
+
             var series = new Series();
             series.ChartType = SeriesChartType.Pie;
-            var point = series.Points.Add(95);
-            point.LegendText = "Performing: 95%";
+            var point = series.Points.Add(Convert.ToDouble(performingPercentage));
+            point.LegendText = string.Format("Performing: {0} %", performingPercentage.ToString("N1", numberFormatInfo));
             point.Color = Color.FromArgb(28, 151, 234);
-            point = series.Points.Add(5);
-            point.LegendText = "PAR: 5%";
+            
+            point = series.Points.Add(Convert.ToDouble(parPercentage));
+            point.LegendText = string.Format("PAR: {0} %", parPercentage.ToString("N1", numberFormatInfo));
             point.Color = Color.FromArgb(234, 28, 28);
 
-            var title = new Title
-            {
-                Text = "Portfolio",
-                ForeColor = Color.FromArgb(45, 45, 48),
-                Font = new Font("Arial", 9.75f)
-            };
-            chart.Titles.Add(title);
+            //var title = new Title
+            //{
+            //    Text = "Portfolio",
+            //    ForeColor = Color.FromArgb(45, 45, 48),
+            //    Font = new Font("Arial", 9.75f)
+            //};
+            //chart.Titles.Add(title);
 
             var legend = new Legend
             {
@@ -77,13 +91,14 @@ namespace OpenCBS.GUI
             chart.Legends.Add(legend);
 
             chart.Series.Add(series);
-            chart.Location = new Point(10, 10);
-            chart.Size = new Size(250, 150);
+            chart.Location = new Point(0, 0);
+            //chart.Size = new Size(250, 150);
+            chart.Dock = DockStyle.Fill;
 
-            infoPanel.Controls.Add(chart);
+            portfolioPanel.Controls.Add(chart);
         }
 
-        private void CreateParPieChart()
+        private void RefreshParPieChart(Dashboard dashboard)
         {
             var chart = new Chart();
             var chartArea = new ChartArea();
@@ -110,13 +125,13 @@ namespace OpenCBS.GUI
             point.LegendText = ">365: 3%";
             point.Color = Color.FromArgb(234, 28, 28);
 
-            var title = new Title
-            {
-                Text = "PAR",
-                ForeColor = Color.FromArgb(45, 45, 48),
-                Font = new Font("Arial", 9.75f)
-            };
-            chart.Titles.Add(title);
+            //var title = new Title
+            //{
+            //    Text = "PAR",
+            //    ForeColor = Color.FromArgb(45, 45, 48),
+            //    Font = new Font("Arial", 9.75f)
+            //};
+            //chart.Titles.Add(title);
 
             var legend = new Legend();
             legend.Docking = Docking.Right;
@@ -124,10 +139,11 @@ namespace OpenCBS.GUI
             chart.Legends.Add(legend);
 
             chart.Series.Add(series);
-            chart.Location = new Point(270, 10);
-            chart.Size = new Size(250, 150);
+            chart.Location = new Point(0, 0);
+            //chart.Size = new Size(250, 150);
+            chart.Dock = DockStyle.Fill;
 
-            infoPanel.Controls.Add(chart);
+            parPanel.Controls.Add(chart);
         }
 
         private void CreateDisbursementsRepaymentsChart()
@@ -199,12 +215,19 @@ namespace OpenCBS.GUI
             OpenClientForm(OClientTypes.Corporate);
         }
 
+        private void RefreshActivityStream(Dashboard dashboard)
+        {
+            activityListView.SetObjects(dashboard.Actions);
+        }
+
         private void RefreshDashboard()
         {
             var us = ServicesProvider.GetInstance().GetUserServices();
             var dashboard = us.GetDashboard();
 
-            activityListView.SetObjects(dashboard.Actions);
+            RefreshActivityStream(dashboard);
+            RefreshPortfolioPieChart(dashboard);
+            RefreshParPieChart(dashboard);
         }
     }
 }

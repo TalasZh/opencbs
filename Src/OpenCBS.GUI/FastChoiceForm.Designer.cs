@@ -29,6 +29,13 @@ namespace OpenCBS.GUI
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FastChoiceForm));
             this.generalInfoPanel = new System.Windows.Forms.Panel();
             this.infoPanel = new System.Windows.Forms.Panel();
+            this.riskTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.statsTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.portfolioPanel = new System.Windows.Forms.Panel();
+            this.parPanel = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.activityPanel = new System.Windows.Forms.Panel();
             this.activityListView = new BrightIdeasSoftware.ObjectListView();
             this.activityPefrormedAtColumn = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
@@ -36,6 +43,7 @@ namespace OpenCBS.GUI
             this.activityLoanOfficerColumn = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
             this.activtyContractCodeColumn = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
             this.activityAmountColumn = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
+            this.activityClientColumn = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
             this.activityStreamLabel = new System.Windows.Forms.Label();
             this.quickLinksPanel = new System.Windows.Forms.Panel();
             this.newCorporateClientLinkLabel = new System.Windows.Forms.LinkLabel();
@@ -43,9 +51,11 @@ namespace OpenCBS.GUI
             this.newSolidarityGroupLinkLabel = new System.Windows.Forms.LinkLabel();
             this.newIndividualClientLinkLabel = new System.Windows.Forms.LinkLabel();
             this.clientsLabel = new System.Windows.Forms.Label();
-            this.activityClientColumn = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
             this.generalInfoPanel.SuspendLayout();
             this.infoPanel.SuspendLayout();
+            this.riskTableLayoutPanel.SuspendLayout();
+            this.statsTableLayoutPanel.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
             this.activityPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.activityListView)).BeginInit();
             this.quickLinksPanel.SuspendLayout();
@@ -61,10 +71,54 @@ namespace OpenCBS.GUI
             // infoPanel
             // 
             this.infoPanel.BackColor = System.Drawing.Color.White;
+            this.infoPanel.Controls.Add(this.riskTableLayoutPanel);
+            this.infoPanel.Controls.Add(this.tableLayoutPanel1);
             this.infoPanel.Controls.Add(this.activityPanel);
             this.infoPanel.Controls.Add(this.activityStreamLabel);
             resources.ApplyResources(this.infoPanel, "infoPanel");
             this.infoPanel.Name = "infoPanel";
+            // 
+            // riskTableLayoutPanel
+            // 
+            resources.ApplyResources(this.riskTableLayoutPanel, "riskTableLayoutPanel");
+            this.riskTableLayoutPanel.Controls.Add(this.statsTableLayoutPanel, 0, 0);
+            this.riskTableLayoutPanel.Name = "riskTableLayoutPanel";
+            // 
+            // statsTableLayoutPanel
+            // 
+            resources.ApplyResources(this.statsTableLayoutPanel, "statsTableLayoutPanel");
+            this.statsTableLayoutPanel.Controls.Add(this.portfolioPanel, 0, 0);
+            this.statsTableLayoutPanel.Controls.Add(this.parPanel, 1, 0);
+            this.statsTableLayoutPanel.Name = "statsTableLayoutPanel";
+            // 
+            // portfolioPanel
+            // 
+            resources.ApplyResources(this.portfolioPanel, "portfolioPanel");
+            this.portfolioPanel.Name = "portfolioPanel";
+            // 
+            // parPanel
+            // 
+            resources.ApplyResources(this.parPanel, "parPanel");
+            this.parPanel.Name = "parPanel";
+            // 
+            // tableLayoutPanel1
+            // 
+            resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
+            this.tableLayoutPanel1.Controls.Add(this.label2, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label1, 1, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.label2.Name = "label2";
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.label1.Name = "label1";
             // 
             // activityPanel
             // 
@@ -126,6 +180,11 @@ namespace OpenCBS.GUI
             this.activityAmountColumn.IsEditable = false;
             resources.ApplyResources(this.activityAmountColumn, "activityAmountColumn");
             // 
+            // activityClientColumn
+            // 
+            this.activityClientColumn.AspectName = "ClientName";
+            resources.ApplyResources(this.activityClientColumn, "activityClientColumn");
+            // 
             // activityStreamLabel
             // 
             resources.ApplyResources(this.activityStreamLabel, "activityStreamLabel");
@@ -185,11 +244,6 @@ namespace OpenCBS.GUI
             this.clientsLabel.ForeColor = System.Drawing.Color.White;
             this.clientsLabel.Name = "clientsLabel";
             // 
-            // activityClientColumn
-            // 
-            this.activityClientColumn.AspectName = "ClientName";
-            resources.ApplyResources(this.activityClientColumn, "activityClientColumn");
-            // 
             // FastChoiceForm
             // 
             resources.ApplyResources(this, "$this");
@@ -202,6 +256,10 @@ namespace OpenCBS.GUI
             this.Load += new System.EventHandler(this.OnLoad);
             this.generalInfoPanel.ResumeLayout(false);
             this.infoPanel.ResumeLayout(false);
+            this.infoPanel.PerformLayout();
+            this.riskTableLayoutPanel.ResumeLayout(false);
+            this.statsTableLayoutPanel.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
             this.activityPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.activityListView)).EndInit();
             this.quickLinksPanel.ResumeLayout(false);
@@ -228,5 +286,12 @@ namespace OpenCBS.GUI
         private System.Windows.Forms.Panel activityPanel;
         private BrightIdeasSoftware.OLVColumn activityAction;
         private BrightIdeasSoftware.OLVColumn activityClientColumn;
+        private System.Windows.Forms.TableLayoutPanel riskTableLayoutPanel;
+        private System.Windows.Forms.TableLayoutPanel statsTableLayoutPanel;
+        private System.Windows.Forms.Panel portfolioPanel;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel parPanel;
     }
 }
