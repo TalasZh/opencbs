@@ -299,11 +299,6 @@ namespace OpenCBS.GUI
                 ToolStripMenuItem tsmiMenu = (ToolStripMenuItem)tsmi;
                 
                 MenuObject foundMO = GetMenuObject(tsmiMenu.Name);
-                if (tsmiMenu.Name == "miReports")
-                {
-                    toolBarButtonReports.Enabled = pRole.IsMenuAllowed(foundMO);
-                }
-
                 bool isAllowed = foundMO == null || pRole.IsMenuAllowed(foundMO);
                 tsmiMenu.Enabled = isAllowed;
 
@@ -397,47 +392,6 @@ namespace OpenCBS.GUI
 
         private void _CheckMenu(string mnuName, bool mnuAct)
         {
-            if (mnuName == "miReports")
-            {
-                toolBarButtonReports.Enabled = mnuAct;
-                return;
-            }
-            if (mnuName == "mnuNewClient")
-            {
-                toolBarButNew.Enabled = mnuAct;
-                return;
-            }
-            if (mnuName == "mnuNewPerson")
-            {
-                toolBarButtonPerson.Enabled = mnuAct;
-                return;
-            }
-            if (mnuName == "mnuNewGroup")
-            {
-                toolBarButtonNewGroup.Enabled = mnuAct;
-                return;
-            }
-            if (mnuName == "mnuNewVillage")
-            {
-                tbbtnNewVillage.Enabled = mnuAct;
-                return;
-            }
-            if (mnuName == "newCorporateToolStripMenuItem")
-            {
-                corporateToolStripMenuItem.Enabled = mnuAct;
-                return;
-            }
-            if (mnuName == "mnuSearchClient")
-            {
-                toolBarButtonSearchPerson.Enabled = mnuAct;
-                return;
-            }
-            if (mnuName == "mnuSearchContract")
-            {
-                toolBarButtonSearchContract.Enabled = mnuAct;
-                return;
-            }
-
         }
 
         private void SetActiveMenuItem(ToolStripMenuItem tsmi_menu)
@@ -781,36 +735,6 @@ namespace OpenCBS.GUI
             form.ShowDialog();
         }
 
-        private void toolBarButtonPerson_Click(object sender, EventArgs e)
-        {
-            InitializePersonForm();
-        }
-
-        private void toolBarButtonSearchPerson_Click(object sender, EventArgs e)
-        {
-            InitializeSearchClientForm();
-        }
-
-        private void toolBarButtonSearchContract_Click(object sender, EventArgs e)
-        {
-            InitializeSearchCreditContractForm();
-        }
-
-        private void toolBarButtonNewGroup_Click(object sender, EventArgs e)
-        {
-            InitializeGroupForm();
-        }
-
-        private void toolStripSplitButton1_ButtonClick(object sender, EventArgs e)
-        {
-            toolBarButNew.ShowDropDown();
-        }
-
-        private void toolBarButtonReports_Click(object sender, EventArgs e)
-        {
-            InitReportBrowser();
-        }
-
         private void FillDropDownMenuWithLanguages()
         {
             string currentLanguage = UserSettings.Language;
@@ -916,11 +840,6 @@ namespace OpenCBS.GUI
             InitializeReassingContractsForm();
         }
 
-        private void corporateToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            InitializeCorporateForm();
-        }
-
         private void newCorporateToolStripMenuItem_Click(object sender, EventArgs e)
         {
             InitializeCorporateForm();
@@ -929,22 +848,6 @@ namespace OpenCBS.GUI
         public void InitializePersonForm(Person member)
         {
             throw new NotImplementedException();
-        }
-
-        private void toolStripButtonSearchProject_Click(object sender, EventArgs e)
-        {
-            InitializeSearchProject();
-        }
-
-        private void questionnaireToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            MyInformationForm myInformationForm = new MyInformationForm();
-            myInformationForm.ShowDialog();
-        }
-
-        private void tbbtnNewVillage_Click(object sender, EventArgs e)
-        {
-            InitializeVillageForm();
         }
 
         private void mnuNewVillage_Click(object sender, EventArgs e)

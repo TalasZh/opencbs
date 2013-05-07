@@ -551,7 +551,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAB0
-        CwAAAk1TRnQBSQFMAgEBBQEAAcgBDQHIAQ0BEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        CwAAAk1TRnQBSQFMAgEBBQEAAdABDQHQAQ0BEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
         AwABQAMAASADAAEBAQABCAYAAQgYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
         AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
         AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
@@ -645,116 +645,11 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;mainMenu.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <metadata name="timer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>127, 17</value>
   </metadata>
-  <metadata name="mainStripToolBar.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>0, 24</value>
-  </metadata>
-  <data name="toolBarButtonPerson.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="toolBarButtonPerson.Size" type="System.Drawing.Size, System.Drawing">
-    <value>170, 22</value>
-  </data>
-  <data name="toolBarButtonPerson.Text" xml:space="preserve">
-    <value>Individual client</value>
-  </data>
-  <data name="toolBarButtonNewGroup.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="toolBarButtonNewGroup.Size" type="System.Drawing.Size, System.Drawing">
-    <value>170, 22</value>
-  </data>
-  <data name="toolBarButtonNewGroup.Text" xml:space="preserve">
-    <value>Solidarity group</value>
-  </data>
-  <data name="tbbtnNewVillage.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="tbbtnNewVillage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>170, 22</value>
-  </data>
-  <data name="tbbtnNewVillage.Text" xml:space="preserve">
-    <value>Non solidarity group</value>
-  </data>
-  <data name="corporateToolStripMenuItem.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="corporateToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>170, 22</value>
-  </data>
-  <data name="corporateToolStripMenuItem.Text" xml:space="preserve">
-    <value>Corporate client</value>
-  </data>
-  <data name="toolBarButNew.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="toolBarButNew.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 36</value>
-  </data>
-  <data name="toolBarButNew.Text" xml:space="preserve">
-    <value>New</value>
-  </data>
-  <data name="toolStripSeparator1.AutoSize" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>20, 39</value>
-  </data>
-  <data name="toolBarButtonSearchPerson.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="toolBarButtonSearchPerson.Size" type="System.Drawing.Size, System.Drawing">
-    <value>88, 36</value>
-  </data>
-  <data name="toolBarButtonSearchPerson.Text" xml:space="preserve">
-    <value>Search client</value>
-  </data>
-  <data name="toolBarButtonSearchContract.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="toolBarButtonSearchContract.Size" type="System.Drawing.Size, System.Drawing">
-    <value>103, 36</value>
-  </data>
-  <data name="toolBarButtonSearchContract.Text" xml:space="preserve">
-    <value>Search contract</value>
-  </data>
-  <data name="toolBarButtonReports.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="toolBarButtonReports.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 36</value>
-  </data>
-  <data name="toolBarButtonReports.Text" xml:space="preserve">
-    <value>Reports</value>
-  </data>
-  <data name="toolStripLabel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 36</value>
-  </data>
-  <data name="mainStripToolBar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 24</value>
-  </data>
-  <data name="mainStripToolBar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1362, 39</value>
-  </data>
-  <data name="mainStripToolBar.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="&gt;&gt;mainStripToolBar.Name" xml:space="preserve">
-    <value>mainStripToolBar</value>
-  </data>
-  <data name="&gt;&gt;mainStripToolBar.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;mainStripToolBar.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;mainStripToolBar.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
   <data name="toolBarLblVersion.AutoSize" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
@@ -919,7 +814,7 @@
     <value>3, 5, 3, 5</value>
   </data>
   <data name="olvAlerts.Size" type="System.Drawing.Size, System.Drawing">
-    <value>250, 462</value>
+    <value>250, 501</value>
   </data>
   <data name="olvAlerts.TabIndex" type="System.Int32, mscorlib">
     <value>41</value>
@@ -1246,7 +1141,7 @@
     <value>Bottom</value>
   </data>
   <data name="tabFilter.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 502</value>
+    <value>0, 541</value>
   </data>
   <data name="tabFilter.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 5, 3, 5</value>
@@ -1279,13 +1174,13 @@
     <value>Left</value>
   </data>
   <data name="panelLeft.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 63</value>
+    <value>0, 24</value>
   </data>
   <data name="panelLeft.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="panelLeft.Size" type="System.Drawing.Size, System.Drawing">
-    <value>250, 654</value>
+    <value>250, 693</value>
   </data>
   <data name="panelLeft.TabIndex" type="System.Int32, mscorlib">
     <value>24</value>
@@ -1306,7 +1201,7 @@
     <value>NoControl</value>
   </data>
   <data name="splitter6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>250, 63</value>
+    <value>250, 24</value>
   </data>
   <data name="splitter6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 5, 3, 5</value>
@@ -1318,7 +1213,7 @@
     <value>splitter6</value>
   </data>
   <data name="&gt;&gt;splitter6.Type" xml:space="preserve">
-    <value>OpenCBS.GUI.UserControl.CollapsibleSplitter, OpenCBS.GUI, Version=1.1.1.29222, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.CollapsibleSplitter, OpenCBS.GUI, Version=1.1.1.25044, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;splitter6.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1728,66 +1623,6 @@
   <data name="&gt;&gt;timer.Type" xml:space="preserve">
     <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;toolBarButNew.Name" xml:space="preserve">
-    <value>toolBarButNew</value>
-  </data>
-  <data name="&gt;&gt;toolBarButNew.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripSplitButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;toolBarButtonPerson.Name" xml:space="preserve">
-    <value>toolBarButtonPerson</value>
-  </data>
-  <data name="&gt;&gt;toolBarButtonPerson.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;toolBarButtonNewGroup.Name" xml:space="preserve">
-    <value>toolBarButtonNewGroup</value>
-  </data>
-  <data name="&gt;&gt;toolBarButtonNewGroup.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tbbtnNewVillage.Name" xml:space="preserve">
-    <value>tbbtnNewVillage</value>
-  </data>
-  <data name="&gt;&gt;tbbtnNewVillage.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;corporateToolStripMenuItem.Name" xml:space="preserve">
-    <value>corporateToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;corporateToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;toolStripSeparator1.Name" xml:space="preserve">
-    <value>toolStripSeparator1</value>
-  </data>
-  <data name="&gt;&gt;toolStripSeparator1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;toolBarButtonSearchPerson.Name" xml:space="preserve">
-    <value>toolBarButtonSearchPerson</value>
-  </data>
-  <data name="&gt;&gt;toolBarButtonSearchPerson.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;toolBarButtonSearchContract.Name" xml:space="preserve">
-    <value>toolBarButtonSearchContract</value>
-  </data>
-  <data name="&gt;&gt;toolBarButtonSearchContract.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;toolBarButtonReports.Name" xml:space="preserve">
-    <value>toolBarButtonReports</value>
-  </data>
-  <data name="&gt;&gt;toolBarButtonReports.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;toolStripLabel1.Name" xml:space="preserve">
-    <value>toolStripLabel1</value>
-  </data>
-  <data name="&gt;&gt;toolStripLabel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;toolBarLblVersion.Name" xml:space="preserve">
     <value>toolBarLblVersion</value>
   </data>
@@ -1918,6 +1753,6 @@
     <value>LotrasmicMainWindowForm</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>OpenCBS.GUI.UserControl.SweetBaseForm, OpenCBS.GUI, Version=1.1.1.29222, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetBaseForm, OpenCBS.GUI, Version=1.1.1.25044, Culture=neutral, PublicKeyToken=null</value>
   </data>
 </root>
