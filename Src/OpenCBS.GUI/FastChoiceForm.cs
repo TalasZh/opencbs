@@ -110,36 +110,24 @@ namespace OpenCBS.GUI
             var values = new[]
             {
                 dashboard.Par1To30,
-                dashboard.Par31To60,
-                dashboard.Par61To90,
-                dashboard.Par91To180,
-                dashboard.Par181To365,
-                dashboard.Par365,
+                dashboard.Par30,
             };
 
             var legends = new[]
             {
-                "1-30",
-                "31-60",
-                "61-90",
-                "91-180",
-                "181-365%",
-                ">365",
+                "PAR 1-30",
+                "PAR 30",
             };
 
             var colors = new[]
             {
                 Color.FromArgb(234, 200, 28),
-                Color.FromArgb(234, 160, 28),
-                Color.FromArgb(234, 120, 28),
-                Color.FromArgb(234, 80, 28),
-                Color.FromArgb(234, 40, 28),
-                Color.FromArgb(234, 0, 28),
+                Color.FromArgb(234, 28, 28),
             };
 
             var series = new Series();
             series.ChartType = SeriesChartType.Pie;
-            for (var i = 0; i < 6; i++)
+            for (var i = 0; i < 2; i++)
             {
                 var value = Math.Round(0 == dashboard.Par ? 0 : 100*values[i]/dashboard.Par, 1);
                 var point = series.Points.Add(Convert.ToDouble(value));
@@ -152,7 +140,7 @@ namespace OpenCBS.GUI
             {
                 Docking = Docking.Right,
                 Alignment = StringAlignment.Center,
-                Font = new Font("Arial", 8f),
+                Font = new Font("Arial", 7f),
             };
             _parChart.Legends.Add(legend);
 
@@ -254,6 +242,15 @@ namespace OpenCBS.GUI
             activityStreamLabel.Text = string.Format("ACTIVITY STREAM ({0:d0})", dashboard.Actions.Count);
         }
 
+        private void RefreshParTable(Dashboard dashboard)
+        {
+            var nfi = new NumberFormatInfo
+            {
+                NumberGroupSeparator = " ",
+                NumberDecimalSeparator = ",",
+            };
+        }
+
         private void RefreshDashboard()
         {
             var us = ServicesProvider.GetInstance().GetUserServices();
@@ -264,6 +261,7 @@ namespace OpenCBS.GUI
             RefreshParPieChart(dashboard);
             RefreshDisbursementsChart(dashboard);
             RefreshOlbTrendChart(dashboard);
+            RefreshParTable(dashboard);
         }
 
         private void button1_Click(object sender, EventArgs e)
