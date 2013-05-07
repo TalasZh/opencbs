@@ -8,6 +8,8 @@ using System.Windows.Forms.DataVisualization.Charting;
 using OpenCBS.CoreDomain.Dashboard;
 using OpenCBS.Enums;
 using OpenCBS.GUI.Clients;
+using OpenCBS.GUI.Configuration;
+using OpenCBS.GUI.Products;
 using OpenCBS.GUI.UserControl;
 using OpenCBS.Services;
 using System.Linq;
@@ -308,6 +310,30 @@ namespace OpenCBS.GUI
             searchForm.BringToFront();
             searchForm.WindowState = FormWindowState.Normal;
             searchForm.Show();
+        }
+
+        private void OnConfigureLoanProductsClick(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            var loanProductsForm = new FrmAvalaibleLoanProducts { MdiParent = Application.OpenForms[0] };
+            loanProductsForm.Show();
+        }
+
+        private void OnConfigureSavingsProductsClick(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            var savingsProductsForm = new FrmAvailableSavingProducts { MdiParent = Application.OpenForms[0] };
+            savingsProductsForm.Show();
+        }
+
+        private void OnConfigureCollateralProducts(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            var collateralProductsForm = new FrmAvalaibleCollateralProducts { MdiParent = Application.OpenForms[0] };
+            collateralProductsForm.Show();
+        }
+
+        private void OnConfigureSettingsClick(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            var settingsForm = new FrmGeneralSettings();
+            settingsForm.ShowDialog();
         }
     }
 }

@@ -855,6 +855,174 @@
   <data name="&gt;&gt;newCorporateClientLinkLabel.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
+  <data name="configureLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="configureLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt, style=Bold</value>
+  </data>
+  <data name="configureLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="configureLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 163</value>
+  </data>
+  <data name="configureLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 15, 3, 5</value>
+  </data>
+  <data name="configureLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 14</value>
+  </data>
+  <data name="configureLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="configureLabel.Text" xml:space="preserve">
+    <value>CONFIGURE</value>
+  </data>
+  <data name="&gt;&gt;configureLabel.Name" xml:space="preserve">
+    <value>configureLabel</value>
+  </data>
+  <data name="&gt;&gt;configureLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;configureLabel.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;configureLabel.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="configureLoanProductsLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="configureLoanProductsLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="configureLoanProductsLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 182</value>
+  </data>
+  <data name="configureLoanProductsLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 0, 3, 3</value>
+  </data>
+  <data name="configureLoanProductsLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 16</value>
+  </data>
+  <data name="configureLoanProductsLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="configureLoanProductsLabel.Text" xml:space="preserve">
+    <value>Loan products</value>
+  </data>
+  <data name="&gt;&gt;configureLoanProductsLabel.Name" xml:space="preserve">
+    <value>configureLoanProductsLabel</value>
+  </data>
+  <data name="&gt;&gt;configureLoanProductsLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;configureLoanProductsLabel.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;configureLoanProductsLabel.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="configureSavingsProductsLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="configureSavingsProductsLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="configureSavingsProductsLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 201</value>
+  </data>
+  <data name="configureSavingsProductsLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 0, 3, 3</value>
+  </data>
+  <data name="configureSavingsProductsLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 16</value>
+  </data>
+  <data name="configureSavingsProductsLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="configureSavingsProductsLabel.Text" xml:space="preserve">
+    <value>Savings products</value>
+  </data>
+  <data name="&gt;&gt;configureSavingsProductsLabel.Name" xml:space="preserve">
+    <value>configureSavingsProductsLabel</value>
+  </data>
+  <data name="&gt;&gt;configureSavingsProductsLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;configureSavingsProductsLabel.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;configureSavingsProductsLabel.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="configureCollateralProducts.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="configureCollateralProducts.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="configureCollateralProducts.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 220</value>
+  </data>
+  <data name="configureCollateralProducts.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 0, 3, 3</value>
+  </data>
+  <data name="configureCollateralProducts.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 16</value>
+  </data>
+  <data name="configureCollateralProducts.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="configureCollateralProducts.Text" xml:space="preserve">
+    <value>Collateral products</value>
+  </data>
+  <data name="&gt;&gt;configureCollateralProducts.Name" xml:space="preserve">
+    <value>configureCollateralProducts</value>
+  </data>
+  <data name="&gt;&gt;configureCollateralProducts.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;configureCollateralProducts.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;configureCollateralProducts.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="configureSettingsLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="configureSettingsLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="configureSettingsLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 239</value>
+  </data>
+  <data name="configureSettingsLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 0, 3, 3</value>
+  </data>
+  <data name="configureSettingsLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 16</value>
+  </data>
+  <data name="configureSettingsLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="configureSettingsLabel.Text" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="&gt;&gt;configureSettingsLabel.Name" xml:space="preserve">
+    <value>configureSettingsLabel</value>
+  </data>
+  <data name="&gt;&gt;configureSettingsLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;configureSettingsLabel.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;configureSettingsLabel.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
   <data name="flowLayoutPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
@@ -865,7 +1033,7 @@
     <value>0, 0</value>
   </data>
   <data name="flowLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>220, 303</value>
+    <value>220, 451</value>
   </data>
   <data name="flowLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -1033,6 +1201,6 @@
     <value>DashboardForm</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>OpenCBS.GUI.UserControl.SweetBaseForm, OpenCBS.GUI, Version=1.1.1.31506, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetBaseForm, OpenCBS.GUI, Version=1.1.1.32302, Culture=neutral, PublicKeyToken=null</value>
   </data>
 </root>

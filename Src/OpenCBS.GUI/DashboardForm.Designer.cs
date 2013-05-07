@@ -61,6 +61,11 @@ namespace OpenCBS.GUI
             this.newSolidarityGroupLinkLabel = new System.Windows.Forms.LinkLabel();
             this.newNonSolidairtyGroupLinkLabel = new System.Windows.Forms.LinkLabel();
             this.newCorporateClientLinkLabel = new System.Windows.Forms.LinkLabel();
+            this.configureLabel = new System.Windows.Forms.Label();
+            this.configureLoanProductsLabel = new System.Windows.Forms.LinkLabel();
+            this.configureSavingsProductsLabel = new System.Windows.Forms.LinkLabel();
+            this.configureCollateralProducts = new System.Windows.Forms.LinkLabel();
+            this.configureSettingsLabel = new System.Windows.Forms.LinkLabel();
             this.button1 = new System.Windows.Forms.Button();
             this.generalInfoPanel.SuspendLayout();
             this.infoPanel.SuspendLayout();
@@ -276,6 +281,11 @@ namespace OpenCBS.GUI
             this.flowLayoutPanel1.Controls.Add(this.newSolidarityGroupLinkLabel);
             this.flowLayoutPanel1.Controls.Add(this.newNonSolidairtyGroupLinkLabel);
             this.flowLayoutPanel1.Controls.Add(this.newCorporateClientLinkLabel);
+            this.flowLayoutPanel1.Controls.Add(this.configureLabel);
+            this.flowLayoutPanel1.Controls.Add(this.configureLoanProductsLabel);
+            this.flowLayoutPanel1.Controls.Add(this.configureSavingsProductsLabel);
+            this.flowLayoutPanel1.Controls.Add(this.configureCollateralProducts);
+            this.flowLayoutPanel1.Controls.Add(this.configureSettingsLabel);
             resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             // 
@@ -338,6 +348,48 @@ namespace OpenCBS.GUI
             this.newCorporateClientLinkLabel.Name = "newCorporateClientLinkLabel";
             this.newCorporateClientLinkLabel.TabStop = true;
             this.newCorporateClientLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.OnCorporateClientLinkLabelLinkClick);
+            // 
+            // configureLabel
+            // 
+            resources.ApplyResources(this.configureLabel, "configureLabel");
+            this.configureLabel.ForeColor = System.Drawing.Color.White;
+            this.configureLabel.Name = "configureLabel";
+            // 
+            // configureLoanProductsLabel
+            // 
+            this.configureLoanProductsLabel.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            resources.ApplyResources(this.configureLoanProductsLabel, "configureLoanProductsLabel");
+            this.configureLoanProductsLabel.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(151)))), ((int)(((byte)(234)))));
+            this.configureLoanProductsLabel.Name = "configureLoanProductsLabel";
+            this.configureLoanProductsLabel.TabStop = true;
+            this.configureLoanProductsLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.OnConfigureLoanProductsClick);
+            // 
+            // configureSavingsProductsLabel
+            // 
+            this.configureSavingsProductsLabel.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            resources.ApplyResources(this.configureSavingsProductsLabel, "configureSavingsProductsLabel");
+            this.configureSavingsProductsLabel.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(151)))), ((int)(((byte)(234)))));
+            this.configureSavingsProductsLabel.Name = "configureSavingsProductsLabel";
+            this.configureSavingsProductsLabel.TabStop = true;
+            this.configureSavingsProductsLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.OnConfigureSavingsProductsClick);
+            // 
+            // configureCollateralProducts
+            // 
+            this.configureCollateralProducts.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            resources.ApplyResources(this.configureCollateralProducts, "configureCollateralProducts");
+            this.configureCollateralProducts.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(151)))), ((int)(((byte)(234)))));
+            this.configureCollateralProducts.Name = "configureCollateralProducts";
+            this.configureCollateralProducts.TabStop = true;
+            this.configureCollateralProducts.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.OnConfigureCollateralProducts);
+            // 
+            // configureSettingsLabel
+            // 
+            this.configureSettingsLabel.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            resources.ApplyResources(this.configureSettingsLabel, "configureSettingsLabel");
+            this.configureSettingsLabel.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(151)))), ((int)(((byte)(234)))));
+            this.configureSettingsLabel.Name = "configureSettingsLabel";
+            this.configureSettingsLabel.TabStop = true;
+            this.configureSettingsLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.OnConfigureSettingsClick);
             // 
             // button1
             // 
@@ -408,5 +460,10 @@ namespace OpenCBS.GUI
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.LinkLabel searchClientLabel;
         private System.Windows.Forms.LinkLabel searchContractLabel;
+        private System.Windows.Forms.Label configureLabel;
+        private System.Windows.Forms.LinkLabel configureLoanProductsLabel;
+        private System.Windows.Forms.LinkLabel configureSavingsProductsLabel;
+        private System.Windows.Forms.LinkLabel configureCollateralProducts;
+        private System.Windows.Forms.LinkLabel configureSettingsLabel;
     }
 }
