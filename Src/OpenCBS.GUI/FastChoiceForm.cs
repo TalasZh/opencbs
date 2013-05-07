@@ -10,6 +10,7 @@ using OpenCBS.Enums;
 using OpenCBS.GUI.Clients;
 using OpenCBS.GUI.UserControl;
 using OpenCBS.Services;
+using System.Linq;
 
 namespace OpenCBS.GUI
 {
@@ -92,6 +93,7 @@ namespace OpenCBS.GUI
             {
                 Docking = Docking.Right, 
                 Alignment = StringAlignment.Center,
+                Font = new Font("Arial", 7f),
             };
             _portfolioChart.Legends.Add(legend);
 
@@ -114,25 +116,16 @@ namespace OpenCBS.GUI
             var chartArea = new ChartArea();
             _parChart.ChartAreas.Add(chartArea);
 
-            var values = new[]
-            {
-                dashboard.Par1To30,
-                dashboard.Par31To60,
-                dashboard.Par61To90,
-                dashboard.Par91To180,
-                dashboard.Par181To365,
-                dashboard.Par365,
-            };
-
-            var legends = new[]
-            {
-                "PAR 1-30",
-                "PAR 31-60",
-                "PAR 61-90",
-                "PAR 91-180",
-                "PAR 181-365",
-                "PAR >365",
-            };
+            var values = dashboard.
+                PortfolioLines.
+                Where(line => line.Name.StartsWith("PAR")).
+                Select(line => line.Amount).
+                ToArray();
+            var legends = dashboard.
+                PortfolioLines.
+                Where(line => line.Name.StartsWith("PAR")).
+                Select(line => line.Name).
+                ToArray();
 
             var colors = new[]
             {

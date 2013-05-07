@@ -469,14 +469,16 @@ namespace OpenCBS.Manager
                 }
 
                 reader.NextResult();
-                reader.Read();
-                dashboard.Olb = reader.GetDecimal("olb");
-                dashboard.Par1To30 = reader.GetDecimal("par1_30");
-                dashboard.Par31To60 = reader.GetDecimal("par31_60");
-                dashboard.Par61To90 = reader.GetDecimal("par61_90");
-                dashboard.Par91To180 = reader.GetDecimal("par91_180");
-                dashboard.Par181To365 = reader.GetDecimal("par181_365");
-                dashboard.Par365 = reader.GetDecimal("par365");
+                while (reader.Read())
+                {
+                    var portfolioLine = new PortfolioLine
+                    {
+                        Name = reader.GetString("name"),
+                        Amount = reader.GetDecimal("amount"),
+                        Quantity = reader.GetInt("quantity"),
+                    };
+                    dashboard.PortfolioLines.Add(portfolioLine);
+                }
 
                 reader.NextResult();
                 while (reader.Read())
