@@ -53,12 +53,15 @@ namespace OpenCBS.GUI
             this.activityClientColumn = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
             this.activityStreamLabel = new System.Windows.Forms.Label();
             this.quickLinksPanel = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.newCorporateClientLinkLabel = new System.Windows.Forms.LinkLabel();
-            this.newNonSolidairtyGroupLinkLabel = new System.Windows.Forms.LinkLabel();
-            this.newSolidarityGroupLinkLabel = new System.Windows.Forms.LinkLabel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.operateLabel = new System.Windows.Forms.Label();
+            this.searchClientLabel = new System.Windows.Forms.LinkLabel();
+            this.searchContractLabel = new System.Windows.Forms.LinkLabel();
             this.newIndividualClientLinkLabel = new System.Windows.Forms.LinkLabel();
-            this.clientsLabel = new System.Windows.Forms.Label();
+            this.newSolidarityGroupLinkLabel = new System.Windows.Forms.LinkLabel();
+            this.newNonSolidairtyGroupLinkLabel = new System.Windows.Forms.LinkLabel();
+            this.newCorporateClientLinkLabel = new System.Windows.Forms.LinkLabel();
+            this.button1 = new System.Windows.Forms.Button();
             this.generalInfoPanel.SuspendLayout();
             this.infoPanel.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -69,6 +72,7 @@ namespace OpenCBS.GUI
             this.activityPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.activityListView)).BeginInit();
             this.quickLinksPanel.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // generalInfoPanel
@@ -258,48 +262,46 @@ namespace OpenCBS.GUI
             // quickLinksPanel
             // 
             this.quickLinksPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.quickLinksPanel.Controls.Add(this.flowLayoutPanel1);
             this.quickLinksPanel.Controls.Add(this.button1);
-            this.quickLinksPanel.Controls.Add(this.newCorporateClientLinkLabel);
-            this.quickLinksPanel.Controls.Add(this.newNonSolidairtyGroupLinkLabel);
-            this.quickLinksPanel.Controls.Add(this.newSolidarityGroupLinkLabel);
-            this.quickLinksPanel.Controls.Add(this.newIndividualClientLinkLabel);
-            this.quickLinksPanel.Controls.Add(this.clientsLabel);
             resources.ApplyResources(this.quickLinksPanel, "quickLinksPanel");
             this.quickLinksPanel.Name = "quickLinksPanel";
             // 
-            // button1
+            // flowLayoutPanel1
             // 
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.flowLayoutPanel1.Controls.Add(this.operateLabel);
+            this.flowLayoutPanel1.Controls.Add(this.searchClientLabel);
+            this.flowLayoutPanel1.Controls.Add(this.searchContractLabel);
+            this.flowLayoutPanel1.Controls.Add(this.newIndividualClientLinkLabel);
+            this.flowLayoutPanel1.Controls.Add(this.newSolidarityGroupLinkLabel);
+            this.flowLayoutPanel1.Controls.Add(this.newNonSolidairtyGroupLinkLabel);
+            this.flowLayoutPanel1.Controls.Add(this.newCorporateClientLinkLabel);
+            resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             // 
-            // newCorporateClientLinkLabel
+            // operateLabel
             // 
-            this.newCorporateClientLinkLabel.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            resources.ApplyResources(this.newCorporateClientLinkLabel, "newCorporateClientLinkLabel");
-            this.newCorporateClientLinkLabel.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(151)))), ((int)(((byte)(234)))));
-            this.newCorporateClientLinkLabel.Name = "newCorporateClientLinkLabel";
-            this.newCorporateClientLinkLabel.TabStop = true;
-            this.newCorporateClientLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.OnCorporateClientLinkLabelLinkClick);
+            resources.ApplyResources(this.operateLabel, "operateLabel");
+            this.operateLabel.ForeColor = System.Drawing.Color.White;
+            this.operateLabel.Name = "operateLabel";
             // 
-            // newNonSolidairtyGroupLinkLabel
+            // searchClientLabel
             // 
-            this.newNonSolidairtyGroupLinkLabel.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            resources.ApplyResources(this.newNonSolidairtyGroupLinkLabel, "newNonSolidairtyGroupLinkLabel");
-            this.newNonSolidairtyGroupLinkLabel.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(151)))), ((int)(((byte)(234)))));
-            this.newNonSolidairtyGroupLinkLabel.Name = "newNonSolidairtyGroupLinkLabel";
-            this.newNonSolidairtyGroupLinkLabel.TabStop = true;
-            this.newNonSolidairtyGroupLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.OnNewNonSolidairtyGroupLinkLabelLinkClick);
+            this.searchClientLabel.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            resources.ApplyResources(this.searchClientLabel, "searchClientLabel");
+            this.searchClientLabel.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(151)))), ((int)(((byte)(234)))));
+            this.searchClientLabel.Name = "searchClientLabel";
+            this.searchClientLabel.TabStop = true;
+            this.searchClientLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.OnSearchClientClick);
             // 
-            // newSolidarityGroupLinkLabel
+            // searchContractLabel
             // 
-            this.newSolidarityGroupLinkLabel.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            resources.ApplyResources(this.newSolidarityGroupLinkLabel, "newSolidarityGroupLinkLabel");
-            this.newSolidarityGroupLinkLabel.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(151)))), ((int)(((byte)(234)))));
-            this.newSolidarityGroupLinkLabel.Name = "newSolidarityGroupLinkLabel";
-            this.newSolidarityGroupLinkLabel.TabStop = true;
-            this.newSolidarityGroupLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.OnNewSolidarityGroupLinkLabelLinkClick);
+            this.searchContractLabel.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            resources.ApplyResources(this.searchContractLabel, "searchContractLabel");
+            this.searchContractLabel.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(151)))), ((int)(((byte)(234)))));
+            this.searchContractLabel.Name = "searchContractLabel";
+            this.searchContractLabel.TabStop = true;
+            this.searchContractLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.OnSearchContractClick);
             // 
             // newIndividualClientLinkLabel
             // 
@@ -310,19 +312,47 @@ namespace OpenCBS.GUI
             this.newIndividualClientLinkLabel.TabStop = true;
             this.newIndividualClientLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.OnNewIndividualClientLinkLabelClick);
             // 
-            // clientsLabel
+            // newSolidarityGroupLinkLabel
             // 
-            resources.ApplyResources(this.clientsLabel, "clientsLabel");
-            this.clientsLabel.ForeColor = System.Drawing.Color.White;
-            this.clientsLabel.Name = "clientsLabel";
+            this.newSolidarityGroupLinkLabel.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            resources.ApplyResources(this.newSolidarityGroupLinkLabel, "newSolidarityGroupLinkLabel");
+            this.newSolidarityGroupLinkLabel.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(151)))), ((int)(((byte)(234)))));
+            this.newSolidarityGroupLinkLabel.Name = "newSolidarityGroupLinkLabel";
+            this.newSolidarityGroupLinkLabel.TabStop = true;
+            this.newSolidarityGroupLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.OnNewSolidarityGroupLinkLabelLinkClick);
             // 
-            // FastChoiceForm
+            // newNonSolidairtyGroupLinkLabel
+            // 
+            this.newNonSolidairtyGroupLinkLabel.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            resources.ApplyResources(this.newNonSolidairtyGroupLinkLabel, "newNonSolidairtyGroupLinkLabel");
+            this.newNonSolidairtyGroupLinkLabel.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(151)))), ((int)(((byte)(234)))));
+            this.newNonSolidairtyGroupLinkLabel.Name = "newNonSolidairtyGroupLinkLabel";
+            this.newNonSolidairtyGroupLinkLabel.TabStop = true;
+            this.newNonSolidairtyGroupLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.OnNewNonSolidairtyGroupLinkLabelLinkClick);
+            // 
+            // newCorporateClientLinkLabel
+            // 
+            this.newCorporateClientLinkLabel.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            resources.ApplyResources(this.newCorporateClientLinkLabel, "newCorporateClientLinkLabel");
+            this.newCorporateClientLinkLabel.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(151)))), ((int)(((byte)(234)))));
+            this.newCorporateClientLinkLabel.Name = "newCorporateClientLinkLabel";
+            this.newCorporateClientLinkLabel.TabStop = true;
+            this.newCorporateClientLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.OnCorporateClientLinkLabelLinkClick);
+            // 
+            // button1
+            // 
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.Name = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // DashboardForm
             // 
             resources.ApplyResources(this, "$this");
             this.ControlBox = false;
             this.Controls.Add(this.generalInfoPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Name = "FastChoiceForm";
+            this.Name = "DashboardForm";
             this.ShowInTaskbar = false;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.OnLoad);
@@ -336,7 +366,8 @@ namespace OpenCBS.GUI
             this.activityPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.activityListView)).EndInit();
             this.quickLinksPanel.ResumeLayout(false);
-            this.quickLinksPanel.PerformLayout();
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -345,7 +376,7 @@ namespace OpenCBS.GUI
         private System.Windows.Forms.Panel generalInfoPanel;
         private System.Windows.Forms.Panel quickLinksPanel;
         private System.Windows.Forms.Panel infoPanel;
-        private System.Windows.Forms.Label clientsLabel;
+        private System.Windows.Forms.Label operateLabel;
         private System.Windows.Forms.LinkLabel newIndividualClientLinkLabel;
         private System.Windows.Forms.LinkLabel newNonSolidairtyGroupLinkLabel;
         private System.Windows.Forms.LinkLabel newSolidarityGroupLinkLabel;
@@ -374,5 +405,8 @@ namespace OpenCBS.GUI
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.Panel disbursementsPanel;
         private System.Windows.Forms.Panel olbTrendPanel;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.LinkLabel searchClientLabel;
+        private System.Windows.Forms.LinkLabel searchContractLabel;
     }
 }

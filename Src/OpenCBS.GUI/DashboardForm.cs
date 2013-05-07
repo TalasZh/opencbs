@@ -293,5 +293,21 @@ namespace OpenCBS.GUI
         {
             RefreshDashboard();
         }
+
+        private void OnSearchClientClick(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            var searchForm = SearchClientForm.GetInstance(this);
+            searchForm.BringToFront();
+            searchForm.WindowState = FormWindowState.Normal;
+            searchForm.Show();
+        }
+
+        private void OnSearchContractClick(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            var searchForm = SearchCreditContractForm.GetInstance(this);
+            searchForm.BringToFront();
+            searchForm.WindowState = FormWindowState.Normal;
+            searchForm.Show();
+        }
     }
 }
