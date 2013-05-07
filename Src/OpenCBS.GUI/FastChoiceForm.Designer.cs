@@ -33,12 +33,6 @@ namespace OpenCBS.GUI
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.portfolioPanel = new System.Windows.Forms.Panel();
             this.parPanel = new System.Windows.Forms.Panel();
-            this.statsTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
-            this.disbursementsPanel = new System.Windows.Forms.Panel();
-            this.olbTrendPanel = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.activityPanel = new System.Windows.Forms.Panel();
             this.activityListView = new BrightIdeasSoftware.ObjectListView();
             this.activityPefrormedAtColumn = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
@@ -59,8 +53,6 @@ namespace OpenCBS.GUI
             this.infoPanel.SuspendLayout();
             this.riskTableLayoutPanel.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
-            this.statsTableLayoutPanel.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
             this.activityPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.activityListView)).BeginInit();
             this.quickLinksPanel.SuspendLayout();
@@ -77,7 +69,6 @@ namespace OpenCBS.GUI
             // 
             this.infoPanel.BackColor = System.Drawing.Color.White;
             this.infoPanel.Controls.Add(this.riskTableLayoutPanel);
-            this.infoPanel.Controls.Add(this.tableLayoutPanel1);
             this.infoPanel.Controls.Add(this.activityPanel);
             this.infoPanel.Controls.Add(this.activityStreamLabel);
             resources.ApplyResources(this.infoPanel, "infoPanel");
@@ -87,7 +78,6 @@ namespace OpenCBS.GUI
             // 
             resources.ApplyResources(this.riskTableLayoutPanel, "riskTableLayoutPanel");
             this.riskTableLayoutPanel.Controls.Add(this.tableLayoutPanel2, 0, 0);
-            this.riskTableLayoutPanel.Controls.Add(this.statsTableLayoutPanel, 1, 0);
             this.riskTableLayoutPanel.Name = "riskTableLayoutPanel";
             // 
             // tableLayoutPanel2
@@ -106,42 +96,6 @@ namespace OpenCBS.GUI
             // 
             resources.ApplyResources(this.parPanel, "parPanel");
             this.parPanel.Name = "parPanel";
-            // 
-            // statsTableLayoutPanel
-            // 
-            resources.ApplyResources(this.statsTableLayoutPanel, "statsTableLayoutPanel");
-            this.statsTableLayoutPanel.Controls.Add(this.disbursementsPanel, 0, 0);
-            this.statsTableLayoutPanel.Controls.Add(this.olbTrendPanel, 1, 0);
-            this.statsTableLayoutPanel.Name = "statsTableLayoutPanel";
-            // 
-            // disbursementsPanel
-            // 
-            resources.ApplyResources(this.disbursementsPanel, "disbursementsPanel");
-            this.disbursementsPanel.Name = "disbursementsPanel";
-            // 
-            // olbTrendPanel
-            // 
-            resources.ApplyResources(this.olbTrendPanel, "olbTrendPanel");
-            this.olbTrendPanel.Name = "olbTrendPanel";
-            // 
-            // tableLayoutPanel1
-            // 
-            resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
-            this.tableLayoutPanel1.Controls.Add(this.label2, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label1, 1, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            // 
-            // label2
-            // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.label2.Name = "label2";
-            // 
-            // label1
-            // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.label1.Name = "label1";
             // 
             // activityPanel
             // 
@@ -287,11 +241,8 @@ namespace OpenCBS.GUI
             this.Load += new System.EventHandler(this.OnLoad);
             this.generalInfoPanel.ResumeLayout(false);
             this.infoPanel.ResumeLayout(false);
-            this.infoPanel.PerformLayout();
             this.riskTableLayoutPanel.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
-            this.statsTableLayoutPanel.ResumeLayout(false);
-            this.tableLayoutPanel1.ResumeLayout(false);
             this.activityPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.activityListView)).EndInit();
             this.quickLinksPanel.ResumeLayout(false);
@@ -319,12 +270,6 @@ namespace OpenCBS.GUI
         private BrightIdeasSoftware.OLVColumn activityAction;
         private BrightIdeasSoftware.OLVColumn activityClientColumn;
         private System.Windows.Forms.TableLayoutPanel riskTableLayoutPanel;
-        private System.Windows.Forms.TableLayoutPanel statsTableLayoutPanel;
-        private System.Windows.Forms.Panel disbursementsPanel;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel olbTrendPanel;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Panel portfolioPanel;

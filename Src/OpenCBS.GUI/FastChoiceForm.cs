@@ -165,58 +165,57 @@ namespace OpenCBS.GUI
 
         private void RefreshDisbursementsChart(Dashboard dashboard)
         {
-            if (_disbursementsChart != null)
-            {
-                disbursementsPanel.Controls.Remove(_disbursementsChart);
-            }
-            _disbursementsChart = new Chart();
-            var chartArea = new ChartArea();
-            chartArea.AxisX.LabelAutoFitMaxFontSize = 8;
-            chartArea.AxisX.LabelAutoFitMinFontSize = 8;
-            _disbursementsChart.ChartAreas.Add(chartArea);
+            //if (_disbursementsChart != null)
+            //{
+            //    disbursementsPanel.Controls.Remove(_disbursementsChart);
+            //}
+            //_disbursementsChart = new Chart();
+            //var chartArea = new ChartArea();
+            //chartArea.AxisX.LabelAutoFitMaxFontSize = 8;
+            //chartArea.AxisX.LabelAutoFitMinFontSize = 8;
+            //_disbursementsChart.ChartAreas.Add(chartArea);
 
-            var series = new Series();
-            var series2 = new Series();
-            foreach (var actionStat in dashboard.ActionStats)
-            {
-                var point = series.Points.Add(actionStat.NumberDisbursed);
-                point.AxisLabel = actionStat.Date.ToString("dd.MM");
-                point = series2.Points.Add(-actionStat.NumberRepaid);
-            }
+            //var series = new Series();
+            //var series2 = new Series();
+            //foreach (var actionStat in dashboard.ActionStats)
+            //{
+            //    var point = series.Points.Add(actionStat.NumberDisbursed);
+            //    point.AxisLabel = actionStat.Date.ToString("dd.MM");
+            //    point = series2.Points.Add(-actionStat.NumberRepaid);
+            //}
 
-            _disbursementsChart.Series.Add(series);
-            _disbursementsChart.Dock = DockStyle.Fill;
+            //_disbursementsChart.Series.Add(series);
+            //_disbursementsChart.Dock = DockStyle.Fill;
 
-            disbursementsPanel.Controls.Add(_disbursementsChart);
-            
+            //disbursementsPanel.Controls.Add(_disbursementsChart);
         }
 
         private void RefreshOlbTrendChart(Dashboard dashboard)
         {
-            if (_olbTrendChart != null)
-            {
-                olbTrendPanel.Controls.Remove(_olbTrendChart);
-            }
-            _olbTrendChart = new Chart();
-            var chartArea = new ChartArea();
-            chartArea.AxisX.LabelAutoFitMaxFontSize = 8;
-            chartArea.AxisX.LabelAutoFitMinFontSize = 8;
-            _olbTrendChart.ChartAreas.Add(chartArea);
+            //if (_olbTrendChart != null)
+            //{
+            //    olbTrendPanel.Controls.Remove(_olbTrendChart);
+            //}
+            //_olbTrendChart = new Chart();
+            //var chartArea = new ChartArea();
+            //chartArea.AxisX.LabelAutoFitMaxFontSize = 8;
+            //chartArea.AxisX.LabelAutoFitMinFontSize = 8;
+            //_olbTrendChart.ChartAreas.Add(chartArea);
 
-            var series = new Series();
-            var series2 = new Series();
-            foreach (var actionStat in dashboard.ActionStats)
-            {
-                var point = series.Points.Add(Convert.ToDouble(actionStat.OlbGrowth));
-                point.AxisLabel = actionStat.Date.ToString("dd.MM");
-                //point = series2.Points.Add(Convert.ToDouble(-actionStat.AmountRepaid));
-            }
+            //var series = new Series();
+            //var series2 = new Series();
+            //foreach (var actionStat in dashboard.ActionStats)
+            //{
+            //    var point = series.Points.Add(Convert.ToDouble(actionStat.OlbGrowth));
+            //    point.AxisLabel = actionStat.Date.ToString("dd.MM");
+            //    //point = series2.Points.Add(Convert.ToDouble(-actionStat.AmountRepaid));
+            //}
 
-            _olbTrendChart.Series.Add(series);
-            //_olbTrendChart.Series.Add(series2);
-            _olbTrendChart.Dock = DockStyle.Fill;
+            //_olbTrendChart.Series.Add(series);
+            ////_olbTrendChart.Series.Add(series2);
+            //_olbTrendChart.Dock = DockStyle.Fill;
 
-            olbTrendPanel.Controls.Add(_olbTrendChart);
+            //olbTrendPanel.Controls.Add(_olbTrendChart);
         }
 
 
