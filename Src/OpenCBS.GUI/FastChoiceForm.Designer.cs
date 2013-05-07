@@ -29,6 +29,10 @@ namespace OpenCBS.GUI
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FastChoiceForm));
             this.generalInfoPanel = new System.Windows.Forms.Panel();
             this.infoPanel = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.disbursementsPanel = new System.Windows.Forms.Panel();
+            this.olbTrendPanel = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.riskTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.parListView = new BrightIdeasSoftware.ObjectListView();
@@ -55,19 +59,16 @@ namespace OpenCBS.GUI
             this.newSolidarityGroupLinkLabel = new System.Windows.Forms.LinkLabel();
             this.newIndividualClientLinkLabel = new System.Windows.Forms.LinkLabel();
             this.clientsLabel = new System.Windows.Forms.Label();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.disbursementsPanel = new System.Windows.Forms.Panel();
             this.generalInfoPanel.SuspendLayout();
             this.infoPanel.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
             this.riskTableLayoutPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.parListView)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
             this.activityPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.activityListView)).BeginInit();
             this.quickLinksPanel.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
-            this.tableLayoutPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // generalInfoPanel
@@ -88,6 +89,29 @@ namespace OpenCBS.GUI
             this.infoPanel.Controls.Add(this.activityStreamLabel);
             resources.ApplyResources(this.infoPanel, "infoPanel");
             this.infoPanel.Name = "infoPanel";
+            // 
+            // tableLayoutPanel1
+            // 
+            resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            // 
+            // tableLayoutPanel3
+            // 
+            resources.ApplyResources(this.tableLayoutPanel3, "tableLayoutPanel3");
+            this.tableLayoutPanel3.Controls.Add(this.disbursementsPanel, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.olbTrendPanel, 1, 0);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            // 
+            // disbursementsPanel
+            // 
+            resources.ApplyResources(this.disbursementsPanel, "disbursementsPanel");
+            this.disbursementsPanel.Name = "disbursementsPanel";
+            // 
+            // olbTrendPanel
+            // 
+            resources.ApplyResources(this.olbTrendPanel, "olbTrendPanel");
+            this.olbTrendPanel.Name = "olbTrendPanel";
             // 
             // label2
             // 
@@ -292,23 +316,6 @@ namespace OpenCBS.GUI
             this.clientsLabel.ForeColor = System.Drawing.Color.White;
             this.clientsLabel.Name = "clientsLabel";
             // 
-            // tableLayoutPanel1
-            // 
-            resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 0, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            // 
-            // tableLayoutPanel3
-            // 
-            resources.ApplyResources(this.tableLayoutPanel3, "tableLayoutPanel3");
-            this.tableLayoutPanel3.Controls.Add(this.disbursementsPanel, 0, 0);
-            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            // 
-            // disbursementsPanel
-            // 
-            resources.ApplyResources(this.disbursementsPanel, "disbursementsPanel");
-            this.disbursementsPanel.Name = "disbursementsPanel";
-            // 
             // FastChoiceForm
             // 
             resources.ApplyResources(this, "$this");
@@ -321,6 +328,8 @@ namespace OpenCBS.GUI
             this.Load += new System.EventHandler(this.OnLoad);
             this.generalInfoPanel.ResumeLayout(false);
             this.infoPanel.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel3.ResumeLayout(false);
             this.riskTableLayoutPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.parListView)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
@@ -328,8 +337,6 @@ namespace OpenCBS.GUI
             ((System.ComponentModel.ISupportInitialize)(this.activityListView)).EndInit();
             this.quickLinksPanel.ResumeLayout(false);
             this.quickLinksPanel.PerformLayout();
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -366,5 +373,6 @@ namespace OpenCBS.GUI
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.Panel disbursementsPanel;
+        private System.Windows.Forms.Panel olbTrendPanel;
     }
 }

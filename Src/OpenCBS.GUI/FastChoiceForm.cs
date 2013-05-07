@@ -83,7 +83,8 @@ namespace OpenCBS.GUI
             series.ChartType = SeriesChartType.Pie;
             var point = series.Points.Add(Convert.ToDouble(performingPercentage));
             point.LegendText = string.Format("Performing: {0} %", performingPercentage.ToString("N1", numberFormatInfo));
-            point.Color = Color.FromArgb(28, 151, 234);
+            //point.Color = Color.FromArgb(28, 151, 234);
+            point.Color = Color.FromArgb(72, 234, 28);
             
             point = series.Points.Add(Convert.ToDouble(parPercentage));
             point.LegendText = string.Format("PAR: {0} %", parPercentage.ToString("N1", numberFormatInfo));
@@ -171,8 +172,8 @@ namespace OpenCBS.GUI
             }
             _disbursementsChart = new Chart();
             var chartArea = new ChartArea();
-            chartArea.AxisX.LabelStyle.Font = new Font("Arial", 7f);
-            chartArea.AxisX.IsLabelAutoFit = false;
+            chartArea.AxisX.LabelStyle.Font = chartArea.AxisY.LabelStyle.Font = new Font("Arial", 7f);
+            chartArea.AxisX.IsLabelAutoFit = chartArea.AxisY.IsLabelAutoFit = false;
             _disbursementsChart.ChartAreas.Add(chartArea);
 
             var series = new Series();
@@ -191,30 +192,32 @@ namespace OpenCBS.GUI
 
         private void RefreshOlbTrendChart(Dashboard dashboard)
         {
-            //if (_olbTrendChart != null)
-            //{
-            //    olbTrendPanel.Controls.Remove(_olbTrendChart);
-            //}
-            //_olbTrendChart = new Chart();
-            //var chartArea = new ChartArea();
-            //chartArea.AxisX.LabelAutoFitMaxFontSize = 8;
-            //chartArea.AxisX.LabelAutoFitMinFontSize = 8;
-            //_olbTrendChart.ChartAreas.Add(chartArea);
+            if (_olbTrendChart != null)
+            {
+                olbTrendPanel.Controls.Remove(_olbTrendChart);
+            }
+            _olbTrendChart = new Chart();
+            var chartArea = new ChartArea();
+            chartArea.AxisX.LabelStyle.Font = chartArea.AxisY.LabelStyle.Font = new Font("Arial", 7f);
+            chartArea.AxisX.IsLabelAutoFit = chartArea.AxisY.IsLabelAutoFit = false;
+            _olbTrendChart.ChartAreas.Add(chartArea);
 
-            //var series = new Series();
-            //var series2 = new Series();
-            //foreach (var actionStat in dashboard.ActionStats)
-            //{
-            //    var point = series.Points.Add(Convert.ToDouble(actionStat.OlbGrowth));
-            //    point.AxisLabel = actionStat.Date.ToString("dd.MM");
-            //    //point = series2.Points.Add(Convert.ToDouble(-actionStat.AmountRepaid));
-            //}
+            var series = new Series();
+            series.ChartType = SeriesChartType.Line;
+            series.BorderWidth = 3;
+            series.MarkerStyle = MarkerStyle.Circle;
+            double value = 0;
+            foreach (var actionStat in dashboard.ActionStats)
+            {
+                series.Points.Add(value);
+                value += Convert.ToDouble(actionStat.OlbGrowth);
+            }
+            series.Points.Add(value);
 
-            //_olbTrendChart.Series.Add(series);
-            ////_olbTrendChart.Series.Add(series2);
-            //_olbTrendChart.Dock = DockStyle.Fill;
+            _olbTrendChart.Series.Add(series);
+            _olbTrendChart.Dock = DockStyle.Fill;
 
-            //olbTrendPanel.Controls.Add(_olbTrendChart);
+            olbTrendPanel.Controls.Add(_olbTrendChart);
         }
 
 
@@ -266,9 +269,9 @@ namespace OpenCBS.GUI
             RefreshActivityStream(dashboard);
             RefreshPortfolioPieChart(dashboard);
             RefreshParPieChart(dashboard);
+            RefreshParTable(dashboard);
             RefreshDisbursementsChart(dashboard);
             RefreshOlbTrendChart(dashboard);
-            RefreshParTable(dashboard);
         }
 
         private void button1_Click(object sender, EventArgs e)
