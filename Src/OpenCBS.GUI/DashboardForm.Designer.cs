@@ -2,7 +2,7 @@
 
 namespace OpenCBS.GUI
 {
-    partial class FastChoiceForm
+    partial class DashboardForm
     {
         private System.ComponentModel.IContainer components;
 
@@ -26,7 +26,7 @@ namespace OpenCBS.GUI
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FastChoiceForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DashboardForm));
             this.generalInfoPanel = new System.Windows.Forms.Panel();
             this.infoPanel = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();

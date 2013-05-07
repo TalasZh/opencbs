@@ -849,11 +849,11 @@
     <Compile Include="Search\SearchCreditContractForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FastChoiceForm.cs">
+    <Compile Include="DashboardForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FastChoiceForm.Designer.cs">
-      <DependentUpon>FastChoiceForm.cs</DependentUpon>
+    <Compile Include="DashboardForm.Designer.cs">
+      <DependentUpon>DashboardForm.cs</DependentUpon>
     </Compile>
     <Compile Include="frmShowError.cs">
       <SubType>Form</SubType>
@@ -2253,12 +2253,12 @@
       <DependentUpon>StringFieldPropertiesForm.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="FastChoiceForm.es-ES.resx">
-      <DependentUpon>FastChoiceForm.cs</DependentUpon>
+    <EmbeddedResource Include="DashboardForm.es-ES.resx">
+      <DependentUpon>DashboardForm.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="FastChoiceForm.pt.resx">
-      <DependentUpon>FastChoiceForm.cs</DependentUpon>
+    <EmbeddedResource Include="DashboardForm.pt.resx">
+      <DependentUpon>DashboardForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmShowError.es-ES.resx">
       <DependentUpon>frmShowError.cs</DependentUpon>
@@ -2750,20 +2750,20 @@
       <DependentUpon>ShowPictureForm.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="FastChoiceForm.fr.resx">
+    <EmbeddedResource Include="DashboardForm.fr.resx">
       <SubType>Designer</SubType>
-      <DependentUpon>FastChoiceForm.cs</DependentUpon>
+      <DependentUpon>DashboardForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FastChoiceForm.ky-KG.resx">
-      <DependentUpon>FastChoiceForm.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FastChoiceForm.resx">
-      <DependentUpon>FastChoiceForm.cs</DependentUpon>
+    <EmbeddedResource Include="DashboardForm.ky-KG.resx">
+      <DependentUpon>DashboardForm.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="FastChoiceForm.ru-RU.resx">
-      <DependentUpon>FastChoiceForm.cs</DependentUpon>
+    <EmbeddedResource Include="DashboardForm.resx">
+      <DependentUpon>DashboardForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardForm.ru-RU.resx">
+      <DependentUpon>DashboardForm.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="frmShowError.fr.resx">
@@ -3951,7 +3951,7 @@ xcopy "$(ProjectDir)..\..\Lib\*.dll" "C:\OctopusLibs" /s /y</PostBuildEvent>
   </PropertyGroup>
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties GreenPepperConfigRunnerProgram="" GreenPepperCustomSudArgs="" GreenPepperCustomSud="" GreenPepperConfigRunnerArgs="" GreenPepperConfigRepositories="" GreenPepperConfigProjectName="" GreenPepperConfigSutName="" />
+      <UserProperties GreenPepperConfigSutName="" GreenPepperConfigProjectName="" GreenPepperConfigRepositories="" GreenPepperConfigRunnerArgs="" GreenPepperCustomSud="" GreenPepperCustomSudArgs="" GreenPepperConfigRunnerProgram="" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>

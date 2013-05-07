@@ -874,7 +874,7 @@
     <value>Manual</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Start Page</value>
+    <value>Dashboard</value>
   </data>
   <data name="&gt;&gt;parNameColumn.Name" xml:space="preserve">
     <value>parNameColumn</value>
@@ -934,6 +934,6 @@
     <value>FastChoiceForm</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>OpenCBS.GUI.UserControl.SweetBaseForm, OpenCBS.GUI, Version=1.1.1.27152, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetBaseForm, OpenCBS.GUI, Version=1.1.1.29331, Culture=neutral, PublicKeyToken=null</value>
   </data>
 </root>

@@ -14,14 +14,14 @@ using System.Linq;
 
 namespace OpenCBS.GUI
 {
-    public partial class FastChoiceForm : SweetBaseForm
+    public partial class DashboardForm : SweetBaseForm
     {
         private Chart _portfolioChart;
         private Chart _parChart;
         private Chart _disbursementsChart;
         private Chart _olbTrendChart;
 
-        public FastChoiceForm()
+        public DashboardForm()
 		{
             InitializeComponent();
 		}
@@ -207,12 +207,14 @@ namespace OpenCBS.GUI
             series.BorderWidth = 3;
             series.MarkerStyle = MarkerStyle.Circle;
             double value = 0;
+            var point = series.Points.Add(value);
+            point.AxisLabel = dashboard.ActionStats[0].Date.AddDays(-1).ToString("dd.MM");
             foreach (var actionStat in dashboard.ActionStats)
             {
-                series.Points.Add(value);
                 value += Convert.ToDouble(actionStat.OlbGrowth);
+                point = series.Points.Add(value);
+                point.AxisLabel = actionStat.Date.ToString("dd.MM");
             }
-            series.Points.Add(value);
 
             _olbTrendChart.Series.Add(series);
             _olbTrendChart.Dock = DockStyle.Fill;

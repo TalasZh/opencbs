@@ -45,7 +45,7 @@ namespace OpenCBS.GUI
         private List<MenuObject> _menuItems;
         private bool _showTellerFormOnClose = true;
         private bool _triggerAlertsUpdate;
-        private FastChoiceForm pFCF; // it`s pointer for have access to FastChoiceForm component 
+        private DashboardForm pFCF; // it`s pointer for have access to FastChoiceForm component 
       
         public LotrasmicMainWindowForm()
         {
@@ -413,7 +413,7 @@ namespace OpenCBS.GUI
 
         private void DisplayFastChoiceForm()
         {
-            FastChoiceForm fastChoiceForm = new FastChoiceForm {MdiParent = this};
+            DashboardForm fastChoiceForm = new DashboardForm {MdiParent = this};
             fastChoiceForm.Show();
             pFCF = fastChoiceForm;
                        
