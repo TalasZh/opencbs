@@ -30,7 +30,7 @@ namespace OpenCBS.GUI
             var numberFormatInfo = new NumberFormatInfo
             {
                 NumberGroupSeparator = " ",
-                NumberDecimalSeparator = ".",
+                NumberDecimalSeparator = ",",
             };
 
             activityPefrormedAtColumn.AspectToStringConverter = value =>
@@ -39,16 +39,23 @@ namespace OpenCBS.GUI
                 return date.ToString("dd.MM.yyyy");
             };
 
-            activityAmountColumn.AspectToStringConverter = value =>
+            activityAmountColumn.AspectToStringConverter = 
+            parAmountColumn.AspectToStringConverter = value =>
             {
                 var amount = (decimal) value;
                 return amount.ToString("N2", numberFormatInfo);
             };
 
-            //CreatePortfolioPieChart();
-            //CreateParPieChart();
-            //RefreshDisbursementsChart();
-            //FillActivityStream();
+            parListView.RowFormatter = listViewItem =>
+            {
+                var portfolioLine = (PortfolioLine) listViewItem.RowObject;
+                if (portfolioLine.Name == "Total")
+                {
+                    var font = listViewItem.Font;
+                    listViewItem.Font = new Font(font.Name, font.Size, FontStyle.Bold);
+                }
+            };
+
             RefreshDashboard();
         }
 
@@ -110,24 +117,36 @@ namespace OpenCBS.GUI
             var values = new[]
             {
                 dashboard.Par1To30,
-                dashboard.Par30,
+                dashboard.Par31To60,
+                dashboard.Par61To90,
+                dashboard.Par91To180,
+                dashboard.Par181To365,
+                dashboard.Par365,
             };
 
             var legends = new[]
             {
                 "PAR 1-30",
-                "PAR 30",
+                "PAR 31-60",
+                "PAR 61-90",
+                "PAR 91-180",
+                "PAR 181-365",
+                "PAR >365",
             };
 
             var colors = new[]
             {
                 Color.FromArgb(234, 200, 28),
-                Color.FromArgb(234, 28, 28),
+                Color.FromArgb(234, 160, 28),
+                Color.FromArgb(234, 120, 28),
+                Color.FromArgb(234, 80, 28),
+                Color.FromArgb(234, 40, 28),
+                Color.FromArgb(234, 0, 28),
             };
 
             var series = new Series();
             series.ChartType = SeriesChartType.Pie;
-            for (var i = 0; i < 2; i++)
+            for (var i = 0; i < 6; i++)
             {
                 var value = Math.Round(0 == dashboard.Par ? 0 : 100*values[i]/dashboard.Par, 1);
                 var point = series.Points.Add(Convert.ToDouble(value));
@@ -244,11 +263,7 @@ namespace OpenCBS.GUI
 
         private void RefreshParTable(Dashboard dashboard)
         {
-            var nfi = new NumberFormatInfo
-            {
-                NumberGroupSeparator = " ",
-                NumberDecimalSeparator = ",",
-            };
+            parListView.SetObjects(dashboard.PortfolioLines);
         }
 
         private void RefreshDashboard()

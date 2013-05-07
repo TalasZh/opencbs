@@ -121,13 +121,28 @@
   <data name="riskTableLayoutPanel.ColumnCount" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="parPerformingColumn.Text" xml:space="preserve">
-    <value>Performing</value>
+  <data name="parNameColumn.Text" xml:space="preserve">
+    <value>Portfolio</value>
   </data>
-  <data name="parPerformingColumn.Width" type="System.Int32, mscorlib">
-    <value>80</value>
+  <data name="parNameColumn.Width" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="parAmountColumn.Text" xml:space="preserve">
+    <value>Amount</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="parAmountColumn.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="parAmountColumn.Width" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="parQuantityColumn.Text" xml:space="preserve">
+    <value>Quantity</value>
+  </data>
+  <data name="parQuantityColumn.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
   <data name="parListView.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -136,13 +151,13 @@
     <value>Arial, 8.25pt</value>
   </data>
   <data name="parListView.Location" type="System.Drawing.Point, System.Drawing">
-    <value>375, 5</value>
+    <value>449, 5</value>
   </data>
   <data name="parListView.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 5, 3, 5</value>
   </data>
   <data name="parListView.Size" type="System.Drawing.Size, System.Drawing">
-    <value>366, 140</value>
+    <value>292, 170</value>
   </data>
   <data name="parListView.TabIndex" type="System.Int32, mscorlib">
     <value>48</value>
@@ -169,7 +184,7 @@
     <value>3, 3</value>
   </data>
   <data name="portfolioPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>177, 138</value>
+    <value>214, 168</value>
   </data>
   <data name="portfolioPanel.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -190,10 +205,10 @@
     <value>Fill</value>
   </data>
   <data name="parPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>186, 3</value>
+    <value>223, 3</value>
   </data>
   <data name="parPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>177, 138</value>
+    <value>214, 168</value>
   </data>
   <data name="parPanel.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -220,7 +235,7 @@
     <value>1</value>
   </data>
   <data name="tableLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>366, 144</value>
+    <value>440, 174</value>
   </data>
   <data name="tableLayoutPanel2.TabIndex" type="System.Int32, mscorlib">
     <value>45</value>
@@ -244,16 +259,16 @@
     <value>Top</value>
   </data>
   <data name="riskTableLayoutPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 140</value>
+    <value>0, 165</value>
   </data>
   <data name="riskTableLayoutPanel.RowCount" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
   <data name="riskTableLayoutPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>744, 150</value>
+    <value>744, 180</value>
   </data>
   <data name="riskTableLayoutPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>47</value>
+    <value>48</value>
   </data>
   <data name="&gt;&gt;riskTableLayoutPanel.Name" xml:space="preserve">
     <value>riskTableLayoutPanel</value>
@@ -268,7 +283,43 @@
     <value>0</value>
   </data>
   <data name="riskTableLayoutPanel.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="parListView" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanel2" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="parListView" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanel2" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,60,Percent,40" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="label1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt, style=Bold</value>
+  </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 140</value>
+  </data>
+  <data name="label1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 0, 0</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>744, 25</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>RISK</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>infoPanel</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="activityPefrormedAtColumn.Text" xml:space="preserve">
     <value>Date</value>
@@ -364,7 +415,7 @@
     <value>infoPanel</value>
   </data>
   <data name="&gt;&gt;activityPanel.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="activityStreamLabel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -397,7 +448,7 @@
     <value>infoPanel</value>
   </data>
   <data name="&gt;&gt;activityStreamLabel.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="infoPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -675,6 +726,24 @@
   <data name="$this.Text" xml:space="preserve">
     <value>Start Page</value>
   </data>
+  <data name="&gt;&gt;parNameColumn.Name" xml:space="preserve">
+    <value>parNameColumn</value>
+  </data>
+  <data name="&gt;&gt;parNameColumn.Type" xml:space="preserve">
+    <value>BrightIdeasSoftware.OLVColumn, ObjectListView, Version=2.5.0.26223, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
+  </data>
+  <data name="&gt;&gt;parAmountColumn.Name" xml:space="preserve">
+    <value>parAmountColumn</value>
+  </data>
+  <data name="&gt;&gt;parAmountColumn.Type" xml:space="preserve">
+    <value>BrightIdeasSoftware.OLVColumn, ObjectListView, Version=2.5.0.26223, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
+  </data>
+  <data name="&gt;&gt;parQuantityColumn.Name" xml:space="preserve">
+    <value>parQuantityColumn</value>
+  </data>
+  <data name="&gt;&gt;parQuantityColumn.Type" xml:space="preserve">
+    <value>BrightIdeasSoftware.OLVColumn, ObjectListView, Version=2.5.0.26223, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
+  </data>
   <data name="&gt;&gt;activityPefrormedAtColumn.Name" xml:space="preserve">
     <value>activityPefrormedAtColumn</value>
   </data>
@@ -711,16 +780,10 @@
   <data name="&gt;&gt;activityClientColumn.Type" xml:space="preserve">
     <value>BrightIdeasSoftware.OLVColumn, ObjectListView, Version=2.5.0.26223, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
   </data>
-  <data name="&gt;&gt;parPerformingColumn.Name" xml:space="preserve">
-    <value>parPerformingColumn</value>
-  </data>
-  <data name="&gt;&gt;parPerformingColumn.Type" xml:space="preserve">
-    <value>BrightIdeasSoftware.OLVColumn, ObjectListView, Version=2.5.0.26223, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
-  </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>FastChoiceForm</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>OpenCBS.GUI.UserControl.SweetBaseForm, OpenCBS.GUI, Version=1.1.1.18076, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetBaseForm, OpenCBS.GUI, Version=1.1.1.21553, Culture=neutral, PublicKeyToken=null</value>
   </data>
 </root>

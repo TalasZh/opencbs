@@ -472,7 +472,11 @@ namespace OpenCBS.Manager
                 reader.Read();
                 dashboard.Olb = reader.GetDecimal("olb");
                 dashboard.Par1To30 = reader.GetDecimal("par1_30");
-                dashboard.Par30 = reader.GetDecimal("par30");
+                dashboard.Par31To60 = reader.GetDecimal("par31_60");
+                dashboard.Par61To90 = reader.GetDecimal("par61_90");
+                dashboard.Par91To180 = reader.GetDecimal("par91_180");
+                dashboard.Par181To365 = reader.GetDecimal("par181_365");
+                dashboard.Par365 = reader.GetDecimal("par365");
 
                 reader.NextResult();
                 while (reader.Read())
