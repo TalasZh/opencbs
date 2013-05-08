@@ -1072,9 +1072,6 @@ namespace OpenCBS.GUI
                 if (panelLeft.Visible) ReloadAlerts();
                 panelLeft.VisibleChanged += OnAlertsVisibleChanged;
                 panelLeft.SizeChanged += OnAlertsSizeChanged;
-                #if !DEBUG
-                    DisplayUserInformationForm();
-                #endif
             }
             else
             {
