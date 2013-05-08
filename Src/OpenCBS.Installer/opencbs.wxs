@@ -45,37 +45,37 @@
             <Component Id="ProductComponent" Guid="81c7391d-3b04-48ee-8602-445292fa5756">
               <File Id="ZedGraph.dll" Source="SourceDir\ZedGraph.dll" />
               <File Id="ObjectListView.dll" Source="SourceDir\ObjectListView.dll" />
+	      <!--
               <File Id="CrystalDecisions.CrystalReports.Engine.dll" Source="SourceDir\CrystalDecisions.CrystalReports.Engine.dll" />
               <File Id="CrystalDecisions.Shared.dll" Source="SourceDir\CrystalDecisions.Shared.dll" />
               <File Id="CrystalDecisions.Windows.Forms.dll" Source="SourceDir\CrystalDecisions.Windows.Forms.dll" />
-              <File Id="Octopus.CoreDomain.dll" Source="SourceDir\Octopus.CoreDomain.dll" />
-              <File Id="Octopus.Extensions.dll" Source="SourceDir\Octopus.Extensions.dll" />
-              <File Id="Octopus.Shared.dll" Source="SourceDir\Octopus.Shared.dll" />
-              <File Id="Octopus.Manager.dll" Source="SourceDir\Octopus.Manager.dll" />
+	      -->
+              <File Id="OpenCBS.CoreDomain.dll" Source="SourceDir\OpenCBS.CoreDomain.dll" />
+              <File Id="OpenCBS.Extensions.dll" Source="SourceDir\OpenCBS.Extensions.dll" />
+              <File Id="OpenCBS.Shared.dll" Source="SourceDir\OpenCBS.Shared.dll" />
+              <File Id="OpenCBS.Manager.dll" Source="SourceDir\OpenCBS.Manager.dll" />
               <File Id="ICSharpCode.SharpZipLib.dll" Source="SourceDir\ICSharpCode.SharpZipLib.dll" />
               <File Id="Ionic.Zip.dll" Source="SourceDir\Ionic.Zip.dll" />
               <File Id="System.ComponentModel.Composition.dll" Source="SourceDir\System.ComponentModel.Composition.dll" />
-              <File Id="Octopus.Services.dll" Source="SourceDir\Octopus.Services.dll" />
-              <File Id="Octopus.DatabaseConnection.dll" Source="SourceDir\Octopus.DatabaseConnection.dll" />
-              <File Id="Octopus.Enums.dll" Source="SourceDir\Octopus.Enums.dll" />
-              <File Id="Octopus.Remoting.Server.dll" Source="SourceDir\Octopus.Remoting.Server.dll" />
-              <File Id="DateDescriptionLib.dll" Source="SourceDir\DateDescriptionLib.dll" />
-              <File Id="Octopus.Stringifier.dll" Source="SourceDir\Octopus.Stringifier.dll" />
-              <File Id="Octopus.MultiLanguageRessources.dll" Source="SourceDir\Octopus.MultiLanguageRessources.dll" />
-              <File Id="Octopus.ExceptionsHandler.dll" Source="SourceDir\Octopus.ExceptionsHandler.dll" />
-              <File Id="Octopus.GUI.Restarter.exe" Source="SourceDir\Octopus.GUI.Restarter.exe" />
-              <File Id="Octopus.GUI.exe.config" Source="SourceDir\Octopus.GUI.exe.config" />
-              <File Id="Octopus.MFISynchronize.dll" Source="SourceDir\Octopus.MFISynchronize.dll" />
-              <File Id="Octopus.Reports.dll" Source="SourceDir\Octopus.Reports.dll" />
+              <File Id="OpenCBS.Services.dll" Source="SourceDir\OpenCBS.Services.dll" />
+              <File Id="OpenCBS.DatabaseConnection.dll" Source="SourceDir\OpenCBS.DatabaseConnection.dll" />
+              <File Id="OpenCBS.Enums.dll" Source="SourceDir\OpenCBS.Enums.dll" />
+              <File Id="OpenCBS.Stringifier.dll" Source="SourceDir\OpenCBS.Stringifier.dll" />
+              <File Id="OpenCBS.MultiLanguageRessources.dll" Source="SourceDir\OpenCBS.MultiLanguageRessources.dll" />
+              <File Id="OpenCBS.ExceptionsHandler.dll" Source="SourceDir\OpenCBS.ExceptionsHandler.dll" />
+              <File Id="OpenCBS.GUI.Restarter.exe" Source="SourceDir\OpenCBS.GUI.Restarter.exe" />
+              <File Id="OpenCBS.GUI.exe.config" Source="SourceDir\OpenCBS.GUI.exe.config" />
+              <File Id="OpenCBS.Reports.dll" Source="SourceDir\OpenCBS.Reports.dll" />
               <File Id="setup.bat" Source="SourceDir\setup.bat" />
               <File Id="dump.bat" Source="SourceDir\dump.bat" />
-			  <File Id="dumpObjects.bat" Source="SourceDir\dumpObjects.bat" />
+              <File Id="dumpObjects.bat" Source="SourceDir\dumpObjects.bat" />
             </Component>
-            <Component Id="BuildLabel.txt" Guid="67E3FC7F-3C61-42db-B7EC-B14FDF99E328">
+	    <!--<Component Id="BuildLabel.txt" Guid="67E3FC7F-3C61-42db-B7EC-B14FDF99E328">
               <File Id="BuildLabel.txt" Source="SourceDir\BuildLabel.txt" />
             </Component>
-            <Component Id="Octopus.GUI" Guid="CB26138B-9031-2360-D666-DD5F20038ED8">
-              <File Id="Octopus.GUI.exe" Source="SourceDir\Octopus.GUI.exe" />
+	    -->
+            <Component Id="OpenCBS.GUI" Guid="CB26138B-9031-2360-D666-DD5F20038ED8">
+              <File Id="OpenCBS.GUI.exe" Source="SourceDir\OpenCBS.GUI.exe" />
               <Shortcut Id="DesktopShortcut" Directory="DesktopFolder" Name="Octopus Micro Finance Suite" Icon="App.ico" WorkingDirectory="DIR_ROOT_VERSION" Advertise="yes"/>
             </Component>
 			<Component Id="Registry" Guid="674968e0-7c4a-4164-aaec-5ddf6922a2dc" Permanent="yes">
@@ -137,39 +137,39 @@
             </Directory>
             <Directory Id="DIR_RESSOURCES_FR" Name="fr">
               <Component Id="fr" Guid="a75ee299-2357-45fa-bef2-7ad60a136661">
-                <File Id="Octopus.GUI.resources.dll" Source="SourceDir\fr\Octopus.GUI.resources.dll" />
-                <File Id="Octopus.MultiLanguageRessources.resources.dll" Source="SourceDir\fr\Octopus.MultiLanguageRessources.resources.dll" />
-				<File Id="Octopus.Reports.resources.dll" Source="SourceDir\fr\Octopus.Reports.resources.dll" />
+                <File Id="OpenCBS.GUI.resources.dll" Source="SourceDir\fr\OpenCBS.GUI.resources.dll" />
+                <File Id="OpenCBS.MultiLanguageRessources.resources.dll" Source="SourceDir\fr\OpenCBS.MultiLanguageRessources.resources.dll" />
+				<File Id="OpenCBS.Reports.resources.dll" Source="SourceDir\fr\OpenCBS.Reports.resources.dll" />
               </Component>
             </Directory>
             <Directory Id="DIR_RESSOURCES_EN" Name="en">
               <Component Id="en" Guid="F0AA0279-AA60-E9A6-F4D2-F52EC785FB19">
-                <File Id="Octopus.GUI.resources.dll_0" Source="SourceDir\en\Octopus.GUI.resources.dll" />
+                <File Id="OpenCBS.GUI.resources.dll_0" Source="SourceDir\en\OpenCBS.GUI.resources.dll" />
               </Component>
             </Directory>
             <Directory Id="DIR_RESSOURCES_RU" Name="ru-RU">
               <Component Id="ru" Guid="E8B3DF4C-BA07-CBDB-78FA-953EB05C7993">
-                <File Id="Octopus.GUI.resources_1" Name="Octopus.GUI.resources.dll" Source="SourceDir\ru-RU\Octopus.GUI.resources.dll" />
-                <File Id="Octopus.MultiLanguageRessources.resources_1" Name="Octopus.MultiLanguageRessources.resources.dll" Source="SourceDir\ru-RU\Octopus.MultiLanguageRessources.resources.dll" />
-				<File Id="Octopus.Reports.resources_1" Name="Octopus.Reports.resources.dll" Source="SourceDir\ru-RU\Octopus.Reports.resources.dll" />
+                <File Id="OpenCBS.GUI.resources_1" Name="OpenCBS.GUI.resources.dll" Source="SourceDir\ru-RU\OpenCBS.GUI.resources.dll" />
+                <File Id="OpenCBS.MultiLanguageRessources.resources_1" Name="OpenCBS.MultiLanguageRessources.resources.dll" Source="SourceDir\ru-RU\OpenCBS.MultiLanguageRessources.resources.dll" />
+				<File Id="OpenCBS.Reports.resources_1" Name="OpenCBS.Reports.resources.dll" Source="SourceDir\ru-RU\OpenCBS.Reports.resources.dll" />
               </Component>
             </Directory>
             <Directory Id="DIR_RESSOURCES_KG" Name="ky-KG">
               <Component Id="kg" Guid="F822CC12-2754-33BE-7611-0D3A29AAA978">
-                <File Id="Octopus.GUI.resources_2" Name="Octopus.GUI.resources.dll" Source="SourceDir\ky-KG\Octopus.GUI.resources.dll" />
-                <File Id="Octopus.MultiLanguageRessources.resources_2" Name="Octopus.MultiLanguageRessources.resources.dll" Source="SourceDir\ky-KG\Octopus.MultiLanguageRessources.resources.dll" />
+                <File Id="OpenCBS.GUI.resources_2" Name="OpenCBS.GUI.resources.dll" Source="SourceDir\ky-KG\OpenCBS.GUI.resources.dll" />
+                <File Id="OpenCBS.MultiLanguageRessources.resources_2" Name="OpenCBS.MultiLanguageRessources.resources.dll" Source="SourceDir\ky-KG\OpenCBS.MultiLanguageRessources.resources.dll" />
               </Component>
             </Directory>
             <Directory Id="DIR_RESSOURCES_ES" Name="es-ES">
               <Component Id="es" Guid="F0AA0279-AA60-E9A6-F4D2-F52EC785F220">
-                <File Id="Octopus.GUI.resources.dll_3" Source="SourceDir\es-ES\Octopus.GUI.resources.dll" />
-                <File Id="Octopus.MultiLanguageRessources.resources.dll_3" Source="SourceDir\es-ES\Octopus.MultiLanguageRessources.resources.dll" />
+                <File Id="OpenCBS.GUI.resources.dll_3" Source="SourceDir\es-ES\OpenCBS.GUI.resources.dll" />
+                <File Id="OpenCBS.MultiLanguageRessources.resources.dll_3" Source="SourceDir\es-ES\OpenCBS.MultiLanguageRessources.resources.dll" />
               </Component>
             </Directory>
             <Directory Id="DIR_RESSOURCES_PT" Name="pt">
               <Component Id="pt" Guid="a0740dd0-6697-11e0-ae3e-0800200c9a66">
-                <File Id="Octopus.GUI.resources.dll_4" Source="SourceDir\pt\Octopus.GUI.resources.dll" />
-                <File Id="Octopus.MultiLanguageRessources.resources.dll_4" Source="SourceDir\pt\Octopus.MultiLanguageRessources.resources.dll" />
+                <File Id="OpenCBS.GUI.resources.dll_4" Source="SourceDir\pt\OpenCBS.GUI.resources.dll" />
+                <File Id="OpenCBS.MultiLanguageRessources.resources.dll_4" Source="SourceDir\pt\OpenCBS.MultiLanguageRessources.resources.dll" />
               </Component>
             </Directory>
             <Directory Id="DIR_UPDATE" Name="Update">
@@ -458,7 +458,7 @@
     <DirectoryRef Id="ApplicationProgramsFolder">
       <Component Id="ApplicationShortcut" Guid="E59F96B0-DB4B-4891-818A-18D80523650F">
         <Shortcut Id="ApplicationStartMenuShortcut" Name="Octopus Micro Finance Suite" Description="Octopus Micro Finance Suite"
-                  Target="[DIR_ROOT_VERSION]Octopus.GUI.exe" WorkingDirectory="DIR_ROOT_VERSION"/>
+                  Target="[DIR_ROOT_VERSION]OpenCBS.GUI.exe" WorkingDirectory="DIR_ROOT_VERSION"/>
         <Shortcut Id="UninstallProduct" Name="Uninstall Application" Description="Uninstall Application"
                   Target="[System64Folder]msiexec.exe" Arguments="/x [ProductCode]"/>
         <RemoveFolder Id="ApplicationProgramsFolder" On="uninstall"/>
@@ -486,17 +486,17 @@
       <ComponentRef Id="template" />
       <ComponentRef Id="TemplateReport" />
       <ComponentRef Id="ProductComponent" />
-      <ComponentRef Id="Octopus.GUI" />
+      <ComponentRef Id="OpenCBS.GUI" />
       <ComponentRef Id="Registry" />
       <ComponentRef Id="dir_desktop" />
-      <ComponentRef Id="BuildLabel.txt" />
+      <!--<ComponentRef Id="BuildLabel.txt" />-->
       <ComponentRef Id="ApplicationShortcut" />
       <ComponentRef Id="extensions" />      
     </Feature>
 
     <CustomAction Id="PreventDowngrading" Error="Newer version already installed." />
 
-    <Icon Id="App.ico" SourceFile="c:\bamboo-home\xml-data\build-dir\OMFS-DP-DJ\Src\Octopus.Installer\Bitmaps\App.ico"/>
+    <Icon Id="App.ico" SourceFile="d:\opencbs\Src\OpenCBS.Installer\Bitmaps\App.ico"/>
 
     <InstallExecuteSequence>
       <Custom Action="PreventDowngrading" After="FindRelatedProducts">NEWERPRODUCTFOUND</Custom>
@@ -507,10 +507,10 @@
       <Custom Action="PreventDowngrading" After="FindRelatedProducts">NEWERPRODUCTFOUND</Custom>
     </InstallUISequence>
 
-    <WixVariable Id="Wix" Value="c:\bamboo-home\xml-data\build-dir\OMFS-DP-DJ\Src\Octopus.Installer\License\LGPL3.rtf"/>
-    <WixVariable Id="WixUILicenseRtf" Value="c:\bamboo-home\xml-data\build-dir\OMFS-DP-DJ\Src\Octopus.Installer\License\LGPL3.rtf"/>
-    <WixVariable Id="WixUIDialogBmp" Value="c:\bamboo-home\xml-data\build-dir\OMFS-DP-DJ\Src\Octopus.Installer\Bitmaps\background.bmp"/>
-    <WixVariable Id="WixUIBannerBmp" Value="c:\bamboo-home\xml-data\build-dir\OMFS-DP-DJ\Src\Octopus.Installer\Bitmaps\banner.bmp"/>
+    <WixVariable Id="Wix" Value="d:\opencbs\Src\OpenCBS.Installer\License\LGPL3.rtf"/>
+    <WixVariable Id="WixUILicenseRtf" Value="d:\opencbs\Src\OpenCBS.Installer\License\LGPL3.rtf"/>
+    <WixVariable Id="WixUIDialogBmp" Value="d:\opencbs\Src\OpenCBS.Installer\Bitmaps\background.bmp"/>
+    <WixVariable Id="WixUIBannerBmp" Value="d:\opencbs\Src\OpenCBS.Installer\Bitmaps\banner.bmp"/>
     <Property Id="WIXUI_INSTALLDIR" Value="DIR_ROOT_VERSION" ></Property>
     <UIRef Id="WixUI_InstallDir"/>
   </Product>
