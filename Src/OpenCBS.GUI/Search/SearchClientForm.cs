@@ -656,14 +656,15 @@ namespace OpenCBS.GUI
 
                 if (test != 2)
                 {
+                    var mainForm = (LotrasmicMainWindowForm) Application.OpenForms[0];
                     if (pClient.Type == OClientTypes.Person)
-                        ((LotrasmicMainWindowForm)_mdiForm).InitializePersonForm((Person)_client, null);
+                        mainForm.InitializePersonForm((Person)_client, null);
                     if (pClient.Type == OClientTypes.Group)
-                        ((LotrasmicMainWindowForm)_mdiForm).InitializeGroupForm((Group)_client, null);
+                        mainForm.InitializeGroupForm((Group)_client, null);
                     if (pClient.Type == OClientTypes.Corporate)
-                        ((LotrasmicMainWindowForm)_mdiForm).InitializeCorporateForm((Corporate)_client, null);
+                        mainForm.InitializeCorporateForm((Corporate)_client, null);
                     if (OClientTypes.Village == pClient.Type)
-                        ((LotrasmicMainWindowForm)_mdiForm).InitializeVillageForm((Village)_client);
+                        mainForm.InitializeVillageForm((Village)_client);
                 }
                 else DialogResult = DialogResult.OK;
                 Close();

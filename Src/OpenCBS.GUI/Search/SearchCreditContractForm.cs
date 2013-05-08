@@ -15,11 +15,6 @@ using OpenCBS.Enums;
 
 namespace OpenCBS.GUI
 {
-    using OpenCBS.CoreDomain.Contracts.Loans;
-
-    /// <summary>
-    /// Description r�sum�e de SearchClientForm.
-    /// </summary>
     public class SearchCreditContractForm : SweetBaseForm
     {
         private GroupBox groupBoxButtonBottom;
@@ -201,7 +196,8 @@ namespace OpenCBS.GUI
 
                         if (clientServices.CheckIfTiersIsValid(client))
                         {
-                            ((LotrasmicMainWindowForm)_mdiForm).InitializeCreditContractForm(client, pCredit.Id);
+                            var mainForm = (LotrasmicMainWindowForm) Application.OpenForms[0];
+                            mainForm.InitializeCreditContractForm(client, pCredit.Id);
                         }
                     }
                 }
@@ -231,7 +227,8 @@ namespace OpenCBS.GUI
 
                     if (clientServices.CheckIfTiersIsValid(client))
                     {
-                        ((LotrasmicMainWindowForm)_mdiForm).InitializeSavingContractForm(client, saving.Id);
+                        var mainForm = (LotrasmicMainWindowForm)Application.OpenForms[0];
+                        mainForm.InitializeSavingContractForm(client, saving.Id);
                     }
                 }
                 catch (Exception ex)
