@@ -333,7 +333,8 @@ namespace OpenCBS.Manager.Database
                 "AccountMovements",
                 "Guarantors",
                 "Collaterals",
-                "GetTellerBalance"                
+                "GetTellerBalance",
+                "GetDashboard",
             };
             return retval;
         }

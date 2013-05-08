@@ -4852,4 +4852,249 @@ END
             )
             DROP PROCEDURE [dbo].[GetTellerBalance]]]></drop>
   </object>
+  <object name="GetDashboard" priority="80">
+    <create><![CDATA[
+CREATE PROCEDURE dbo.GetDashboard @date DATETIME, @userId INT
+AS BEGIN
+    DECLARE @users TABLE
+    (
+        id INT
+    )
+    INSERT INTO @users
+    SELECT @userId
+    INSERT INTO @users
+    SELECT subordinate_id
+    FROM dbo.UsersSubordinates
+    WHERE user_id = @userId
+    
+    ;
+    
+    -- Repayments
+    WITH actions AS
+    (
+        SELECT
+            'Repayment' type,
+            ISNULL(ce.parent_id, ce.id) parent_id,
+            ce.contract_id,
+            ce.user_id,
+            ce.event_date,
+            SUM(re.principal + re.interests + re.commissions + re.penalties) amount
+        FROM dbo.ContractEvents ce
+        INNER JOIN dbo.RepaymentEvents re 
+            ON re.id = ce.id
+        WHERE
+            ce.is_deleted = 0
+            AND CAST(ce.event_date AS DATE) = CAST(@date AS DATE)
+        GROUP BY
+            ce.contract_id,
+            ce.user_id,
+            ISNULL(ce.parent_id, ce.id),
+            ce.event_date
+            
+        UNION ALL
+        
+        SELECT
+            'Disbursement' type,
+            ISNULL(ce.parent_id, ce.id),
+            ce.contract_id,
+            ce.user_id,
+            ce.event_date,
+            de.amount
+        FROM dbo.ContractEvents ce
+        INNER JOIN dbo.LoanDisbursmentEvents de
+            ON de.id = ce.id
+        WHERE
+            ce.is_deleted = 0
+            AND CAST(ce.event_date AS DATE) = CAST(@date AS DATE)
+    )
+
+    SELECT
+        a.type,
+        a.event_date,
+        a.amount,
+        c.contract_code,
+        u.first_name + ' ' + u.last_name loan_officer,
+        cl.name client_name        
+    FROM actions a
+    LEFT JOIN dbo.Users u
+        ON u.id = a.user_id
+    LEFT JOIN dbo.Contracts c
+        ON c.id = a.contract_id
+    LEFT JOIN dbo.Projects j
+        ON j.id = c.project_id
+    LEFT JOIN dbo.Clients cl
+        ON cl.id = j.tiers_id
+    WHERE
+        a.user_id IN (SELECT id FROM @users)
+    ORDER BY
+        event_date, parent_id
+
+    DECLARE @activeLoans TABLE
+    (
+        id INT,
+        late_days INT,
+        olb MONEY
+    )
+    INSERT INTO @activeLoans
+    SELECT
+        id,
+        late_days,
+        olb
+    FROM dbo.ActiveLoans(@date, 0)
+    
+    SELECT 
+        'Performing' name,
+        ISNULL(SUM(olb), 0) amount,
+        ISNULL(COUNT(id), 0) quantity
+    FROM @activeLoans 
+    WHERE 
+        late_days = 0
+        
+    UNION ALL
+    
+    SELECT
+        'PAR 1-30',
+        ISNULL(SUM(olb), 0) amount,
+        ISNULL(COUNT(id), 0) quantity
+    FROM @activeLoans
+    WHERE
+        late_days BETWEEN 1 AND 30
+    
+    UNION ALL
+    
+    SELECT
+        'PAR 31-60',
+        ISNULL(SUM(olb), 0) amount,
+        ISNULL(COUNT(id), 0) quantity
+    FROM @activeLoans
+    WHERE
+        late_days BETWEEN 31 AND 60
+
+    UNION ALL
+    
+    SELECT
+        'PAR 61-90',
+        ISNULL(SUM(olb), 0) amount,
+        ISNULL(COUNT(id), 0) quantity
+    FROM @activeLoans
+    WHERE
+        late_days BETWEEN 61 AND 90
+    
+    UNION ALL
+    
+    SELECT
+        'PAR 91-180',
+        ISNULL(SUM(olb), 0) amount,
+        ISNULL(COUNT(id), 0) quantity
+    FROM @activeLoans
+    WHERE
+        late_days BETWEEN 91 AND 180
+
+    UNION ALL
+    
+    SELECT
+        'PAR 181-365',
+        ISNULL(SUM(olb), 0) amount,
+        ISNULL(COUNT(id), 0) quantity
+    FROM @activeLoans
+    WHERE
+        late_days BETWEEN 181 AND 365
+
+    UNION ALL
+    
+    SELECT
+        'PAR >365',
+        ISNULL(SUM(olb), 0) amount,
+        ISNULL(COUNT(id), 0) quantity
+    FROM @activeLoans
+    WHERE
+        late_days > 365
+        
+    UNION ALL
+    
+    SELECT
+        'Total',
+        ISNULL(SUM(olb), 0) amount,
+        ISNULL(COUNT(id), 0) quantity
+    FROM @activeLoans
+
+    --SELECT
+    --    ISNULL(SUM(al.olb), 0) olb,
+    --    ISNULL(SUM(CASE WHEN late_days BETWEEN 1 AND 30 THEN olb ELSE 0 END), 0) par1_30,
+    --    ISNULL(SUM(CASE WHEN late_days BETWEEN 31 AND 60 THEN olb ELSE 0 END), 0) par31_60,
+    --    ISNULL(SUM(CASE WHEN late_days BETWEEN 61 AND 90 THEN olb ELSE 0 END), 0) par61_90,
+    --    ISNULL(SUM(CASE WHEN late_days BETWEEN 91 AND 180 THEN olb ELSE 0 END), 0) par91_180,
+    --    ISNULL(SUM(CASE WHEN late_days BETWEEN 181 AND 365 THEN olb ELSE 0 END), 0) par181_365,
+    --    ISNULL(SUM(CASE WHEN late_days > 365 THEN olb ELSE 0 END), 0) par365,
+    --    ISNULL(COUNT(al.id), 0) olb_qty,
+    --    ISNULL(SUM(CASE WHEN late_days BETWEEN 1 AND 30 THEN 1 ELSE 0 END), 0) par1_30_qty,
+    --    ISNULL(SUM(CASE WHEN late_days BETWEEN 31 AND 60 THEN 1 ELSE 0 END), 0) par31_60_qty,
+    --    ISNULL(SUM(CASE WHEN late_days BETWEEN 61 AND 90 THEN 1 ELSE 0 END), 0) par61_90_qty,
+    --    ISNULL(SUM(CASE WHEN late_days BETWEEN 91 AND 180 THEN 1 ELSE 0 END), 0) par91_180_qty,
+    --    ISNULL(SUM(CASE WHEN late_days BETWEEN 181 AND 365 THEN 1 ELSE 0 END), 0) par181_365_qty,
+    --    ISNULL(SUM(CASE WHEN late_days > 365 THEN 1 ELSE 0 END), 0) par365_qty
+    --FROM dbo.ActiveLoans(@date, 0) al
+    --LEFT JOIN dbo.Credit cr
+    --    ON cr.id = al.id
+    --LEFT JOIN dbo.Users u
+    --    ON u.id = cr.loanofficer_id
+    --WHERE u.id IN (SELECT id FROM @users)
+    
+    DECLARE @endDate DATETIME = CAST(@date as date)
+    DECLARE @startDate DATETIME = CAST(DATEADD(DD, -9, @endDate) AS DATE)
+    ;
+    WITH dates AS
+    (
+        SELECT @startDate date
+        UNION ALL
+        SELECT date + 1
+        FROM dates
+        WHERE date + 1 <= @endDate
+    )
+
+    SELECT
+        d.date,
+        ISNULL(de.number, 0) number_disbursed,
+        ISNULL(de.amount, 0) amount_disbursed,
+        ISNULL(re.number, 0) number_repaid,
+        ISNULL(re.amount, 0) amount_repaid
+    FROM dates d
+    LEFT JOIN
+    (
+        SELECT
+            CAST(ce.event_date AS DATE) date,
+            COUNT(de.id) number,
+            SUM(de.amount) amount
+        FROM dbo.ContractEvents ce
+        INNER JOIN dbo.LoanDisbursmentEvents de 
+            ON de.id = ce.id
+        WHERE
+            ce.is_deleted = 0
+            AND ce.user_id IN (SELECT id FROM @users)
+        GROUP BY
+            CAST(ce.event_date AS DATE)
+    ) de ON de.date = d.date
+    LEFT JOIN
+    (
+        SELECT
+            CAST(ce.event_date AS DATE) date,
+            COUNT(ce.parent_id) number,
+            SUM(re.principal + re.interests + re.penalties + re.commissions) amount
+        FROM dbo.ContractEvents ce
+        INNER JOIN dbo.RepaymentEvents re
+            ON re.id = ce.id
+        WHERE
+            ce.is_deleted = 0
+            AND ce.user_id IN (SELECT id FROM @users)
+        GROUP BY
+            CAST(ce.event_date AS DATE)
+    ) re ON re.date = d.date
+END]]></create>
+    <drop><![CDATA[IF  EXISTS (
+                SELECT * 
+                FROM sys.objects 
+                WHERE object_id = OBJECT_ID(N'dbo.GetDashboard') AND type = N'P'
+            )
+            DROP PROCEDURE [dbo].[GetDashboard]]]></drop>
+  </object>
 </database>
