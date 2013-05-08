@@ -33,18 +33,18 @@ namespace OpenCBS.GUI.Contracts
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ReassignContractsForm));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.listViewAlert = new System.Windows.Forms.ListView();
-            this.columnHeaderContract = new System.Windows.Forms.ColumnHeader();
-            this.columnHeaderDate = new System.Windows.Forms.ColumnHeader();
-            this.columnHeaderAmount = new System.Windows.Forms.ColumnHeader();
-            this.columnHeaderClient = new System.Windows.Forms.ColumnHeader();
-            this.columnHeaderClientDistrict = new System.Windows.Forms.ColumnHeader();
-            this.columnHeaderStartDate = new System.Windows.Forms.ColumnHeader();
-            this.columnHeaderCloseDate = new System.Windows.Forms.ColumnHeader();
-            this.columnHeaderCreateDate = new System.Windows.Forms.ColumnHeader();
-            this.columnHeaderInstallmentType = new System.Windows.Forms.ColumnHeader();
-            this.columnHeaderInterestRate = new System.Windows.Forms.ColumnHeader();
-            this.columnHeaderOLB = new System.Windows.Forms.ColumnHeader();
-            this.columnHeaderContractId = new System.Windows.Forms.ColumnHeader();
+            this.columnHeaderContract = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderDate = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderAmount = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderClient = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderClientDistrict = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderStartDate = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderCloseDate = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderCreateDate = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderInstallmentType = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderInterestRate = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderOLB = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderContractId = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lblContractFilter = new System.Windows.Forms.Label();
             this.textBoxContractFilter = new System.Windows.Forms.TextBox();
             this.statusStripContacts = new System.Windows.Forms.StatusStrip();
@@ -52,13 +52,13 @@ namespace OpenCBS.GUI.Contracts
             this.gbLoanOffficers = new System.Windows.Forms.GroupBox();
             this.chkBox_only_active = new System.Windows.Forms.CheckBox();
             this.checkBoxAll = new System.Windows.Forms.CheckBox();
+            this.btnAssing = new System.Windows.Forms.Button();
             this.lblTo = new System.Windows.Forms.Label();
             this.lblFrom = new System.Windows.Forms.Label();
             this.cbLoanOfficerTo = new System.Windows.Forms.ComboBox();
             this.cbLoanOfficerFrom = new System.Windows.Forms.ComboBox();
             this.lblCaption = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.btnAssing = new System.Windows.Forms.Button();
             this.buttonClose = new System.Windows.Forms.Button();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -182,8 +182,7 @@ namespace OpenCBS.GUI.Contracts
             resources.ApplyResources(this.toolStripStatusLabelTotal, "toolStripStatusLabelTotal");
             // 
             // gbLoanOffficers
-            //
-            resources.ApplyResources(this.gbLoanOffficers, "gbLoanOffficers");
+            // 
             this.gbLoanOffficers.Controls.Add(this.chkBox_only_active);
             this.gbLoanOffficers.Controls.Add(this.checkBoxAll);
             this.gbLoanOffficers.Controls.Add(this.btnAssing);
@@ -191,6 +190,7 @@ namespace OpenCBS.GUI.Contracts
             this.gbLoanOffficers.Controls.Add(this.lblFrom);
             this.gbLoanOffficers.Controls.Add(this.cbLoanOfficerTo);
             this.gbLoanOffficers.Controls.Add(this.cbLoanOfficerFrom);
+            resources.ApplyResources(this.gbLoanOffficers, "gbLoanOffficers");
             this.gbLoanOffficers.Name = "gbLoanOffficers";
             this.gbLoanOffficers.TabStop = false;
             // 
@@ -206,16 +206,20 @@ namespace OpenCBS.GUI.Contracts
             this.checkBoxAll.Name = "checkBoxAll";
             this.checkBoxAll.CheckedChanged += new System.EventHandler(this.checkBoxAll_CheckedChanged);
             // 
+            // btnAssing
+            // 
+            resources.ApplyResources(this.btnAssing, "btnAssing");
+            this.btnAssing.Name = "btnAssing";
+            this.btnAssing.Click += new System.EventHandler(this.buttonAssing_Click);
+            // 
             // lblTo
             // 
             resources.ApplyResources(this.lblTo, "lblTo");
-            this.lblTo.BackColor = System.Drawing.Color.White;
             this.lblTo.Name = "lblTo";
             // 
             // lblFrom
             // 
             resources.ApplyResources(this.lblFrom, "lblFrom");
-            this.lblFrom.BackColor = System.Drawing.Color.White;
             this.lblFrom.Name = "lblFrom";
             // 
             // cbLoanOfficerTo
@@ -237,28 +241,25 @@ namespace OpenCBS.GUI.Contracts
             // 
             // lblCaption
             // 
-            this.lblCaption.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.lblCaption.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(81)))), ((int)(((byte)(152)))));
             resources.ApplyResources(this.lblCaption, "lblCaption");
+            this.lblCaption.ForeColor = System.Drawing.Color.White;
             this.lblCaption.Name = "lblCaption";
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.tableLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(81)))), ((int)(((byte)(152)))));
             resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
             this.tableLayoutPanel1.Controls.Add(this.lblCaption, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.buttonClose, 1, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             // 
-            // btnAssing
-            //
-            resources.ApplyResources(this.btnAssing, "btnAssing");
-            this.btnAssing.Name = "btnAssing";
-            this.btnAssing.Click += new System.EventHandler(this.buttonAssing_Click);
-            // 
             // buttonClose
             // 
             resources.ApplyResources(this.buttonClose, "buttonClose");
+            this.buttonClose.BackColor = System.Drawing.SystemColors.Control;
             this.buttonClose.Name = "buttonClose";
+            this.buttonClose.UseVisualStyleBackColor = false;
             this.buttonClose.Click += new System.EventHandler(this.button1_Click);
             // 
             // ReassignContractsForm

@@ -141,18 +141,6 @@
   <data name="splitContainerLeft.Orientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
     <value>Horizontal</value>
   </data>
-  <data name="chRoleName.Text" xml:space="preserve">
-    <value>Role Title</value>
-  </data>
-  <data name="chRoleName.Width" type="System.Int32, mscorlib">
-    <value>150</value>
-  </data>
-  <data name="chRoleDescription.Text" xml:space="preserve">
-    <value>Description</value>
-  </data>
-  <data name="chRoleDescription.Width" type="System.Int32, mscorlib">
-    <value>300</value>
-  </data>
   <data name="listViewRoles.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -244,7 +232,7 @@
     <value>btnNew</value>
   </data>
   <data name="&gt;&gt;btnNew.Type" xml:space="preserve">
-    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.29915, Culture=neutral, PublicKeyToken=null</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnNew.Parent" xml:space="preserve">
     <value>splitContainerLeft.Panel2</value>
@@ -286,7 +274,7 @@
     <value>8, 45</value>
   </data>
   <data name="lbRoleDescription.Size" type="System.Drawing.Size, System.Drawing">
-    <value>79, 16</value>
+    <value>73, 16</value>
   </data>
   <data name="lbRoleDescription.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -328,7 +316,7 @@
     <value>btnDelete</value>
   </data>
   <data name="&gt;&gt;btnDelete.Type" xml:space="preserve">
-    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.29915, Culture=neutral, PublicKeyToken=null</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnDelete.Parent" xml:space="preserve">
     <value>splitContainerLeft.Panel2</value>
@@ -349,7 +337,7 @@
     <value>8, 11</value>
   </data>
   <data name="lblRoleTitle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 16</value>
+    <value>66, 16</value>
   </data>
   <data name="lblRoleTitle.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -391,7 +379,7 @@
     <value>btnAdd</value>
   </data>
   <data name="&gt;&gt;btnAdd.Type" xml:space="preserve">
-    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.29915, Culture=neutral, PublicKeyToken=null</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnAdd.Parent" xml:space="preserve">
     <value>splitContainerLeft.Panel2</value>
@@ -471,45 +459,6 @@
   <data name="splitContainer2.Panel2.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
-  <data name="trvMenuItems.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="trvMenuItems.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="trvMenuItems.Size" type="System.Drawing.Size, System.Drawing">
-    <value>378, 481</value>
-  </data>
-  <data name="trvMenuItems.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;trvMenuItems.Name" xml:space="preserve">
-    <value>trvMenuItems</value>
-  </data>
-  <data name="&gt;&gt;trvMenuItems.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TreeView, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;trvMenuItems.Parent" xml:space="preserve">
-    <value>tabPageMenu</value>
-  </data>
-  <data name="&gt;&gt;trvMenuItems.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tabPageMenu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="tabPageMenu.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="tabPageMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>384, 487</value>
-  </data>
-  <data name="tabPageMenu.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="tabPageMenu.Text" xml:space="preserve">
-    <value>Menu Items</value>
-  </data>
   <data name="&gt;&gt;tabPageMenu.Name" xml:space="preserve">
     <value>tabPageMenu</value>
   </data>
@@ -522,45 +471,6 @@
   <data name="&gt;&gt;tabPageMenu.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="trwActionItems.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="trwActionItems.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="trwActionItems.Size" type="System.Drawing.Size, System.Drawing">
-    <value>378, 481</value>
-  </data>
-  <data name="trwActionItems.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;trwActionItems.Name" xml:space="preserve">
-    <value>trwActionItems</value>
-  </data>
-  <data name="&gt;&gt;trwActionItems.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TreeView, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;trwActionItems.Parent" xml:space="preserve">
-    <value>tabPageGUIActions</value>
-  </data>
-  <data name="&gt;&gt;trwActionItems.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tabPageGUIActions.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="tabPageGUIActions.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="tabPageGUIActions.Size" type="System.Drawing.Size, System.Drawing">
-    <value>384, 487</value>
-  </data>
-  <data name="tabPageGUIActions.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="tabPageGUIActions.Text" xml:space="preserve">
-    <value>Action Items</value>
-  </data>
   <data name="&gt;&gt;tabPageGUIActions.Name" xml:space="preserve">
     <value>tabPageGUIActions</value>
   </data>
@@ -572,75 +482,6 @@
   </data>
   <data name="&gt;&gt;tabPageGUIActions.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="trvOptions.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="trvOptions.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="trvOptions.Nodes" mimetype="application/x-microsoft.net.object.binary.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4w
-        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAAB1TeXN0
-        ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQgAAAAEVGV4dAROYW1lCUlzQ2hlY2tlZApJbWFnZUluZGV4
-        CEltYWdlS2V5ElNlbGVjdGVkSW1hZ2VJbmRleBBTZWxlY3RlZEltYWdlS2V5CkNoaWxkQ291bnQBAQAA
-        AQABAAEICAgCAAAABgMAAAAJVXNlIGxvYW5zBgQAAAAHbmRMb2FucwD/////BgUAAAAA/////wkFAAAA
-        AAAAAAs=
-</value>
-  </data>
-  <data name="trvOptions.Nodes1" mimetype="application/x-microsoft.net.object.binary.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4w
-        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAAB1TeXN0
-        ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQgAAAAEVGV4dAROYW1lCUlzQ2hlY2tlZApJbWFnZUluZGV4
-        CEltYWdlS2V5ElNlbGVjdGVkSW1hZ2VJbmRleBBTZWxlY3RlZEltYWdlS2V5CkNoaWxkQ291bnQBAQAA
-        AQABAAEICAgCAAAABgMAAAALVXNlIHNhdmluZ3MGBAAAAAluZFNhdmluZ3MA/////wYFAAAAAP////8J
-        BQAAAAAAAAAL
-</value>
-  </data>
-  <data name="trvOptions.Nodes2" mimetype="application/x-microsoft.net.object.binary.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4w
-        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAAB1TeXN0
-        ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQgAAAAEVGV4dAROYW1lCUlzQ2hlY2tlZApJbWFnZUluZGV4
-        CEltYWdlS2V5ElNlbGVjdGVkSW1hZ2VJbmRleBBTZWxlY3RlZEltYWdlS2V5CkNoaWxkQ291bnQBAQAA
-        AQABAAEICAgCAAAABgMAAAAKVXNlIHRlbGxlcgYEAAAACW5kVGVsbGVycwD/////BgUAAAAA/////wkF
-        AAAAAAAAAAs=
-</value>
-  </data>
-  <data name="trvOptions.Size" type="System.Drawing.Size, System.Drawing">
-    <value>378, 481</value>
-  </data>
-  <data name="trvOptions.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;trvOptions.Name" xml:space="preserve">
-    <value>trvOptions</value>
-  </data>
-  <data name="&gt;&gt;trvOptions.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TreeView, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;trvOptions.Parent" xml:space="preserve">
-    <value>tabPageOptions</value>
-  </data>
-  <data name="&gt;&gt;trvOptions.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tabPageOptions.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="tabPageOptions.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="tabPageOptions.Size" type="System.Drawing.Size, System.Drawing">
-    <value>384, 487</value>
-  </data>
-  <data name="tabPageOptions.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="tabPageOptions.Text" xml:space="preserve">
-    <value>Options</value>
   </data>
   <data name="&gt;&gt;tabPageOptions.Name" xml:space="preserve">
     <value>tabPageOptions</value>
@@ -711,6 +552,237 @@
   <data name="&gt;&gt;splitContainer2.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="chRoleName.Text" xml:space="preserve">
+    <value>Role Title</value>
+  </data>
+  <data name="chRoleName.Width" type="System.Int32, mscorlib">
+    <value>150</value>
+  </data>
+  <data name="chRoleDescription.Text" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="chRoleDescription.Width" type="System.Int32, mscorlib">
+    <value>300</value>
+  </data>
+  <data name="&gt;&gt;trvMenuItems.Name" xml:space="preserve">
+    <value>trvMenuItems</value>
+  </data>
+  <data name="&gt;&gt;trvMenuItems.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TreeView, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;trvMenuItems.Parent" xml:space="preserve">
+    <value>tabPageMenu</value>
+  </data>
+  <data name="&gt;&gt;trvMenuItems.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabPageMenu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tabPageMenu.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabPageMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>384, 487</value>
+  </data>
+  <data name="tabPageMenu.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tabPageMenu.Text" xml:space="preserve">
+    <value>Menu Items</value>
+  </data>
+  <data name="&gt;&gt;tabPageMenu.Name" xml:space="preserve">
+    <value>tabPageMenu</value>
+  </data>
+  <data name="&gt;&gt;tabPageMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPageMenu.Parent" xml:space="preserve">
+    <value>tabControlActions</value>
+  </data>
+  <data name="&gt;&gt;tabPageMenu.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="trvMenuItems.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="trvMenuItems.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="trvMenuItems.Size" type="System.Drawing.Size, System.Drawing">
+    <value>378, 481</value>
+  </data>
+  <data name="trvMenuItems.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;trvMenuItems.Name" xml:space="preserve">
+    <value>trvMenuItems</value>
+  </data>
+  <data name="&gt;&gt;trvMenuItems.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TreeView, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;trvMenuItems.Parent" xml:space="preserve">
+    <value>tabPageMenu</value>
+  </data>
+  <data name="&gt;&gt;trvMenuItems.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;trwActionItems.Name" xml:space="preserve">
+    <value>trwActionItems</value>
+  </data>
+  <data name="&gt;&gt;trwActionItems.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TreeView, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;trwActionItems.Parent" xml:space="preserve">
+    <value>tabPageGUIActions</value>
+  </data>
+  <data name="&gt;&gt;trwActionItems.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabPageGUIActions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tabPageGUIActions.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabPageGUIActions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>384, 487</value>
+  </data>
+  <data name="tabPageGUIActions.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tabPageGUIActions.Text" xml:space="preserve">
+    <value>Action Items</value>
+  </data>
+  <data name="&gt;&gt;tabPageGUIActions.Name" xml:space="preserve">
+    <value>tabPageGUIActions</value>
+  </data>
+  <data name="&gt;&gt;tabPageGUIActions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPageGUIActions.Parent" xml:space="preserve">
+    <value>tabControlActions</value>
+  </data>
+  <data name="&gt;&gt;tabPageGUIActions.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="trwActionItems.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="trwActionItems.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="trwActionItems.Size" type="System.Drawing.Size, System.Drawing">
+    <value>378, 481</value>
+  </data>
+  <data name="trwActionItems.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;trwActionItems.Name" xml:space="preserve">
+    <value>trwActionItems</value>
+  </data>
+  <data name="&gt;&gt;trwActionItems.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TreeView, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;trwActionItems.Parent" xml:space="preserve">
+    <value>tabPageGUIActions</value>
+  </data>
+  <data name="&gt;&gt;trwActionItems.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;trvOptions.Name" xml:space="preserve">
+    <value>trvOptions</value>
+  </data>
+  <data name="&gt;&gt;trvOptions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TreeView, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;trvOptions.Parent" xml:space="preserve">
+    <value>tabPageOptions</value>
+  </data>
+  <data name="&gt;&gt;trvOptions.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabPageOptions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tabPageOptions.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabPageOptions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>384, 487</value>
+  </data>
+  <data name="tabPageOptions.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tabPageOptions.Text" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="&gt;&gt;tabPageOptions.Name" xml:space="preserve">
+    <value>tabPageOptions</value>
+  </data>
+  <data name="&gt;&gt;tabPageOptions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPageOptions.Parent" xml:space="preserve">
+    <value>tabControlActions</value>
+  </data>
+  <data name="&gt;&gt;tabPageOptions.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="trvOptions.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="trvOptions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="trvOptions.Nodes" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAAB1TeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQkAAAAEVGV4dAtUb29sVGlwVGV4dAROYW1lCUlzQ2hlY2tl
+        ZApJbWFnZUluZGV4CEltYWdlS2V5ElNlbGVjdGVkSW1hZ2VJbmRleBBTZWxlY3RlZEltYWdlS2V5CkNo
+        aWxkQ291bnQBAQEAAAEAAQABCAgIAgAAAAYDAAAACVVzZSBsb2FucwYEAAAAAAYFAAAAB25kTG9hbnMA
+        /////wkEAAAA/////wkEAAAAAAAAAAs=
+</value>
+  </data>
+  <data name="trvOptions.Nodes1" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAAB1TeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQkAAAAEVGV4dAtUb29sVGlwVGV4dAROYW1lCUlzQ2hlY2tl
+        ZApJbWFnZUluZGV4CEltYWdlS2V5ElNlbGVjdGVkSW1hZ2VJbmRleBBTZWxlY3RlZEltYWdlS2V5CkNo
+        aWxkQ291bnQBAQEAAAEAAQABCAgIAgAAAAYDAAAAC1VzZSBzYXZpbmdzBgQAAAAABgUAAAAJbmRTYXZp
+        bmdzAP////8JBAAAAP////8JBAAAAAAAAAAL
+</value>
+  </data>
+  <data name="trvOptions.Nodes2" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAAB1TeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQkAAAAEVGV4dAtUb29sVGlwVGV4dAROYW1lCUlzQ2hlY2tl
+        ZApJbWFnZUluZGV4CEltYWdlS2V5ElNlbGVjdGVkSW1hZ2VJbmRleBBTZWxlY3RlZEltYWdlS2V5CkNo
+        aWxkQ291bnQBAQEAAAEAAQABCAgIAgAAAAYDAAAAClVzZSB0ZWxsZXIGBAAAAAAGBQAAAAluZFRlbGxl
+        cnMA/////wkEAAAA/////wkEAAAAAAAAAAs=
+</value>
+  </data>
+  <data name="trvOptions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>378, 481</value>
+  </data>
+  <data name="trvOptions.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;trvOptions.Name" xml:space="preserve">
+    <value>trvOptions</value>
+  </data>
+  <data name="&gt;&gt;trvOptions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TreeView, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;trvOptions.Parent" xml:space="preserve">
+    <value>tabPageOptions</value>
+  </data>
+  <data name="&gt;&gt;trvOptions.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="splitContainer1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -772,7 +844,7 @@
     <value>buttonAdd</value>
   </data>
   <data name="&gt;&gt;buttonAdd.Type" xml:space="preserve">
-    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.29915, Culture=neutral, PublicKeyToken=null</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;buttonAdd.Parent" xml:space="preserve">
     <value>splitContainer1.Panel1</value>
@@ -853,7 +925,7 @@
     <value>btnCancel</value>
   </data>
   <data name="&gt;&gt;btnCancel.Type" xml:space="preserve">
-    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.29915, Culture=neutral, PublicKeyToken=null</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnCancel.Parent" xml:space="preserve">
     <value>splitContainerMain.Panel1</value>
@@ -865,7 +937,7 @@
     <value>Fill</value>
   </data>
   <data name="lblRoles.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 15.75pt</value>
+    <value>Arial, 15.75pt, style=Bold</value>
   </data>
   <data name="lblRoles.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -973,6 +1045,6 @@
     <value>FrmRoles</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>OpenCBS.GUI.UserControl.SweetBaseForm, OpenCBS.GUI, Version=1.1.1.29915, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetBaseForm, OpenCBS.GUI, Version=1.1.1.28113, Culture=neutral, PublicKeyToken=null</value>
   </data>
 </root>

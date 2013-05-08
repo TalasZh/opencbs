@@ -34,8 +34,8 @@ namespace OpenCBS.GUI.Configuration
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.splitContainerLeft = new System.Windows.Forms.SplitContainer();
             this.listViewRoles = new System.Windows.Forms.ListView();
-            this.chRoleName = new System.Windows.Forms.ColumnHeader();
-            this.chRoleDescription = new System.Windows.Forms.ColumnHeader();
+            this.chRoleName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.chRoleDescription = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.stateLabel = new System.Windows.Forms.Label();
             this.btnNew = new System.Windows.Forms.Button();
             this.txtDescription = new System.Windows.Forms.TextBox();
@@ -104,7 +104,6 @@ namespace OpenCBS.GUI.Configuration
             // 
             // splitContainerLeft.Panel2
             // 
-            this.splitContainerLeft.Panel2.BackgroundImage = global::OpenCBS.GUI.Properties.Resources.theme1_1_fond_gris;
             resources.ApplyResources(this.splitContainerLeft.Panel2, "splitContainerLeft.Panel2");
             this.splitContainerLeft.Panel2.Controls.Add(this.stateLabel);
             this.splitContainerLeft.Panel2.Controls.Add(this.btnNew);
@@ -114,7 +113,6 @@ namespace OpenCBS.GUI.Configuration
             this.splitContainerLeft.Panel2.Controls.Add(this.lblRoleTitle);
             this.splitContainerLeft.Panel2.Controls.Add(this.btnAdd);
             this.splitContainerLeft.Panel2.Controls.Add(this.txtTitle);
-            this.splitContainerLeft.Panel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             // 
             // listViewRoles
             // 
@@ -143,12 +141,12 @@ namespace OpenCBS.GUI.Configuration
             resources.ApplyResources(this.chRoleDescription, "chRoleDescription");
             // 
             // stateLabel
-            //
+            // 
             resources.ApplyResources(this.stateLabel, "stateLabel");
             this.stateLabel.Name = "stateLabel";
             // 
             // btnNew
-            //
+            // 
             resources.ApplyResources(this.btnNew, "btnNew");
             this.btnNew.Name = "btnNew";
             this.btnNew.Click += new System.EventHandler(this.BtnNewClick);
@@ -164,7 +162,7 @@ namespace OpenCBS.GUI.Configuration
             this.lbRoleDescription.Name = "lbRoleDescription";
             // 
             // btnDelete
-            //
+            // 
             resources.ApplyResources(this.btnDelete, "btnDelete");
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Click += new System.EventHandler(this.BtnDeleteClick);
@@ -176,7 +174,7 @@ namespace OpenCBS.GUI.Configuration
             this.lblRoleTitle.Name = "lblRoleTitle";
             // 
             // btnAdd
-            //
+            // 
             resources.ApplyResources(this.btnAdd, "btnAdd");
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Click += new System.EventHandler(this.BtnAddClick);
@@ -254,7 +252,7 @@ namespace OpenCBS.GUI.Configuration
             this.labelRoles.Name = "labelRoles";
             // 
             // buttonAdd
-            //
+            // 
             resources.ApplyResources(this.buttonAdd, "buttonAdd");
             this.buttonAdd.Name = "buttonAdd";
             // 
@@ -282,8 +280,9 @@ namespace OpenCBS.GUI.Configuration
             // 
             // lblRoles
             // 
-            this.lblRoles.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.lblRoles.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(81)))), ((int)(((byte)(152)))));
             resources.ApplyResources(this.lblRoles, "lblRoles");
+            this.lblRoles.ForeColor = System.Drawing.Color.White;
             this.lblRoles.Name = "lblRoles";
             // 
             // FrmRoles
