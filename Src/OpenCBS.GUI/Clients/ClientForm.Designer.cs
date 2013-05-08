@@ -1008,6 +1008,7 @@ namespace OpenCBS.GUI.Clients
             // 
             this.lblGuarantorsList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(81)))), ((int)(((byte)(152)))));
             resources.ApplyResources(this.lblGuarantorsList, "lblGuarantorsList");
+            this.lblGuarantorsList.ForeColor = System.Drawing.Color.White;
             this.lblGuarantorsList.Name = "lblGuarantorsList";
             // 
             // listViewCollaterals
@@ -1078,6 +1079,7 @@ namespace OpenCBS.GUI.Clients
             // 
             this.lblCollaterals.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(81)))), ((int)(((byte)(152)))));
             resources.ApplyResources(this.lblCollaterals, "lblCollaterals");
+            this.lblCollaterals.ForeColor = System.Drawing.Color.White;
             this.lblCollaterals.Name = "lblCollaterals";
             // 
             // splitContainerContracts
@@ -1104,6 +1106,7 @@ namespace OpenCBS.GUI.Clients
             // 
             this.labelLoansContracts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(81)))), ((int)(((byte)(152)))));
             resources.ApplyResources(this.labelLoansContracts, "labelLoansContracts");
+            this.labelLoansContracts.ForeColor = System.Drawing.Color.White;
             this.labelLoansContracts.Name = "labelLoansContracts";
             // 
             // panelSavingsContracts
@@ -1115,6 +1118,7 @@ namespace OpenCBS.GUI.Clients
             // 
             this.labelSavingsContracts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(81)))), ((int)(((byte)(152)))));
             resources.ApplyResources(this.labelSavingsContracts, "labelSavingsContracts");
+            this.labelSavingsContracts.ForeColor = System.Drawing.Color.White;
             this.labelSavingsContracts.Name = "labelSavingsContracts";
             // 
             // splitContainer3

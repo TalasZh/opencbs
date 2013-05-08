@@ -445,7 +445,6 @@ namespace OpenCBS.GUI.Clients
             if (_person != null)
             {
                 Text = string.IsNullOrEmpty(title) ? MultiLanguageStrings.GetString(Ressource.ClientForm, "Person.Text") : title;
-                lblTitle.Image = Properties.Resources.theme1_1_pastille_personne;
                 if (_person.BadClient)
                 {
                     Text += "  " + MultiLanguageStrings.GetString(Ressource.ClientForm, "Bad.Text");
@@ -459,8 +458,6 @@ namespace OpenCBS.GUI.Clients
             else if (_group != null)
             {
                 Text = string.IsNullOrEmpty(title) ? MultiLanguageStrings.GetString(Ressource.ClientForm, "Group.Text") : title + " - (" + _group.LoanCycle + ")";
-
-                lblTitle.Image = Properties.Resources.pastille_groupe;
 
                 if (_group.BadClient)
                 {
