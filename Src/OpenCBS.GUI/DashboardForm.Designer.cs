@@ -66,7 +66,10 @@ namespace OpenCBS.GUI
             this.configureSavingsProductsLabel = new System.Windows.Forms.LinkLabel();
             this.configureCollateralProducts = new System.Windows.Forms.LinkLabel();
             this.configureSettingsLabel = new System.Windows.Forms.LinkLabel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.configurePermissionsLabel = new System.Windows.Forms.LinkLabel();
+            this.controlLabel = new System.Windows.Forms.Label();
+            this.auditTrailLabel = new System.Windows.Forms.LinkLabel();
+            this.reportsLink = new System.Windows.Forms.LinkLabel();
             this.generalInfoPanel.SuspendLayout();
             this.infoPanel.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -268,7 +271,6 @@ namespace OpenCBS.GUI
             // 
             this.quickLinksPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
             this.quickLinksPanel.Controls.Add(this.flowLayoutPanel1);
-            this.quickLinksPanel.Controls.Add(this.button1);
             resources.ApplyResources(this.quickLinksPanel, "quickLinksPanel");
             this.quickLinksPanel.Name = "quickLinksPanel";
             // 
@@ -286,6 +288,10 @@ namespace OpenCBS.GUI
             this.flowLayoutPanel1.Controls.Add(this.configureSavingsProductsLabel);
             this.flowLayoutPanel1.Controls.Add(this.configureCollateralProducts);
             this.flowLayoutPanel1.Controls.Add(this.configureSettingsLabel);
+            this.flowLayoutPanel1.Controls.Add(this.configurePermissionsLabel);
+            this.flowLayoutPanel1.Controls.Add(this.controlLabel);
+            this.flowLayoutPanel1.Controls.Add(this.auditTrailLabel);
+            this.flowLayoutPanel1.Controls.Add(this.reportsLink);
             resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             // 
@@ -391,12 +397,38 @@ namespace OpenCBS.GUI
             this.configureSettingsLabel.TabStop = true;
             this.configureSettingsLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.OnConfigureSettingsClick);
             // 
-            // button1
+            // configurePermissionsLabel
             // 
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.configurePermissionsLabel.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            resources.ApplyResources(this.configurePermissionsLabel, "configurePermissionsLabel");
+            this.configurePermissionsLabel.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(151)))), ((int)(((byte)(234)))));
+            this.configurePermissionsLabel.Name = "configurePermissionsLabel";
+            this.configurePermissionsLabel.TabStop = true;
+            this.configurePermissionsLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.OnConfigurePermissionsClick);
+            // 
+            // controlLabel
+            // 
+            resources.ApplyResources(this.controlLabel, "controlLabel");
+            this.controlLabel.ForeColor = System.Drawing.Color.White;
+            this.controlLabel.Name = "controlLabel";
+            // 
+            // auditTrailLabel
+            // 
+            this.auditTrailLabel.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            resources.ApplyResources(this.auditTrailLabel, "auditTrailLabel");
+            this.auditTrailLabel.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(151)))), ((int)(((byte)(234)))));
+            this.auditTrailLabel.Name = "auditTrailLabel";
+            this.auditTrailLabel.TabStop = true;
+            this.auditTrailLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.OnAuditTrailClick);
+            // 
+            // reportsLink
+            // 
+            this.reportsLink.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            resources.ApplyResources(this.reportsLink, "reportsLink");
+            this.reportsLink.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(151)))), ((int)(((byte)(234)))));
+            this.reportsLink.Name = "reportsLink";
+            this.reportsLink.TabStop = true;
+            this.reportsLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.OnReportsClick);
             // 
             // DashboardForm
             // 
@@ -442,7 +474,6 @@ namespace OpenCBS.GUI
         private System.Windows.Forms.Panel activityPanel;
         private BrightIdeasSoftware.OLVColumn activityAction;
         private BrightIdeasSoftware.OLVColumn activityClientColumn;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TableLayoutPanel riskTableLayoutPanel;
         private BrightIdeasSoftware.ObjectListView parListView;
         private BrightIdeasSoftware.OLVColumn parNameColumn;
@@ -465,5 +496,9 @@ namespace OpenCBS.GUI
         private System.Windows.Forms.LinkLabel configureSavingsProductsLabel;
         private System.Windows.Forms.LinkLabel configureCollateralProducts;
         private System.Windows.Forms.LinkLabel configureSettingsLabel;
+        private System.Windows.Forms.LinkLabel configurePermissionsLabel;
+        private System.Windows.Forms.Label controlLabel;
+        private System.Windows.Forms.LinkLabel auditTrailLabel;
+        private System.Windows.Forms.LinkLabel reportsLink;
     }
 }

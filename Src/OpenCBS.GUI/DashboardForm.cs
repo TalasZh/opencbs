@@ -7,9 +7,11 @@ using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
 using OpenCBS.CoreDomain.Dashboard;
 using OpenCBS.Enums;
+using OpenCBS.GUI.AuditTrail;
 using OpenCBS.GUI.Clients;
 using OpenCBS.GUI.Configuration;
 using OpenCBS.GUI.Products;
+using OpenCBS.GUI.Report_Browser;
 using OpenCBS.GUI.UserControl;
 using OpenCBS.Services;
 using System.Linq;
@@ -291,11 +293,6 @@ namespace OpenCBS.GUI
             RefreshOlbTrendChart(dashboard);
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            RefreshDashboard();
-        }
-
         private void OnSearchClientClick(object sender, LinkLabelLinkClickedEventArgs e)
         {
             var searchForm = SearchClientForm.GetInstance(this);
@@ -334,6 +331,25 @@ namespace OpenCBS.GUI
         {
             var settingsForm = new FrmGeneralSettings();
             settingsForm.ShowDialog();
+        }
+
+        private void OnConfigurePermissionsClick(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            var rolesForm = new FrmRoles(Application.OpenForms[0]) { MdiParent = Application.OpenForms[0] };
+            rolesForm.Show();
+
+        }
+
+        private void OnAuditTrailClick(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            var auditTrailForm = new AuditTrailForm { MdiParent = Application.OpenForms[0] };
+            auditTrailForm.Show();
+        }
+
+        private void OnReportsClick(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            var frm = new ReportBrowserForm { MdiParent = Application.OpenForms[0] };
+            frm.Show();
         }
     }
 }
