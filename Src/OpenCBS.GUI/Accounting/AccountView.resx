@@ -117,158 +117,125 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="lblBeginDate.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="spconDesk.SplitterDistance" type="System.Int32, mscorlib">
-    <value>660</value>
-  </data>
-  <data name="&gt;&gt;cmbCurrencies.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;columnHeaderPurpose.Name" xml:space="preserve">
-    <value>columnHeaderPurpose</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>General Ledger</value>
-  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btnClose.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
+  <data name="splitContainer4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="splitContainer4.IsSplitterFixed" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="splitContainer4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
   </data>
   <data name="splitContainer4.Orientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
     <value>Horizontal</value>
   </data>
-  <data name="&gt;&gt;splitContainer4.Panel2.Parent" xml:space="preserve">
-    <value>splitContainer4</value>
-  </data>
-  <data name="dateTimePickerEndDate.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;lblEndDate.Parent" xml:space="preserve">
-    <value>spconDesk.Panel2</value>
-  </data>
-  <data name="&gt;&gt;cmbBranches.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;gbBalance.Name" xml:space="preserve">
-    <value>gbBalance</value>
-  </data>
-  <data name="lblBeginDate.Text" xml:space="preserve">
-    <value>Begin date</value>
-  </data>
-  <data name="&gt;&gt;splitContainer4.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="cmbCurrencies.Size" type="System.Drawing.Size, System.Drawing">
-    <value>196, 21</value>
-  </data>
-  <data name="&gt;&gt;cmbCurrencies.Parent" xml:space="preserve">
-    <value>spconDesk.Panel2</value>
-  </data>
-  <data name="lblEndDate.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblAccountBalance.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;lblTitle.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lblCurrency.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 52</value>
-  </data>
-  <data name="btnRefrech.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="splitContainer4.SplitterDistance" type="System.Int32, mscorlib">
-    <value>40</value>
-  </data>
-  <data name="&gt;&gt;lblAccount.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;lblCurrency.Name" xml:space="preserve">
-    <value>lblCurrency</value>
-  </data>
-  <data name="&gt;&gt;cmbBranches.Parent" xml:space="preserve">
-    <value>spconDesk.Panel2</value>
+  <data name="btnClose.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
   </data>
   <data name="btnClose.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 9.75pt</value>
   </data>
-  <data name="lblTitle.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 15.75pt</value>
+  <data name="btnClose.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;btnRefrech.Type" xml:space="preserve">
+  <data name="btnClose.Location" type="System.Drawing.Point, System.Drawing">
+    <value>752, 7</value>
+  </data>
+  <data name="btnClose.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 25</value>
+  </data>
+  <data name="btnClose.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="btnClose.Text" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="&gt;&gt;btnClose.Name" xml:space="preserve">
+    <value>btnClose</value>
+  </data>
+  <data name="&gt;&gt;btnClose.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="lblCurrency.Size" type="System.Drawing.Size, System.Drawing">
-    <value>49, 13</value>
-  </data>
-  <data name="&gt;&gt;lblCurrency.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lblAccountBalance.Size" type="System.Drawing.Size, System.Drawing">
-    <value>29, 31</value>
-  </data>
-  <data name="&gt;&gt;lblAccountBalance.Name" xml:space="preserve">
-    <value>lblAccountBalance</value>
-  </data>
-  <data name="&gt;&gt;cmbCurrencies.Name" xml:space="preserve">
-    <value>cmbCurrencies</value>
-  </data>
-  <data name="&gt;&gt;splitContainer4.Panel1.Name" xml:space="preserve">
+  <data name="&gt;&gt;btnClose.Parent" xml:space="preserve">
     <value>splitContainer4.Panel1</value>
   </data>
-  <data name="dateTimePickerEndDate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>135, 20</value>
+  <data name="&gt;&gt;btnClose.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblTitle.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="lblTitle.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 15.75pt, style=Bold</value>
+  </data>
+  <data name="lblTitle.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblTitle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="lblTitle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>888, 40</value>
+  </data>
+  <data name="lblTitle.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="lblTitle.Text" xml:space="preserve">
+    <value>General Ledger</value>
+  </data>
+  <data name="lblTitle.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
   </data>
   <data name="&gt;&gt;lblTitle.Name" xml:space="preserve">
     <value>lblTitle</value>
   </data>
-  <data name="cmbCurrencies.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 68</value>
+  <data name="&gt;&gt;lblTitle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="lblBeginDate.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;lblTitle.Parent" xml:space="preserve">
+    <value>splitContainer4.Panel1</value>
   </data>
-  <data name="columnHeaderRate.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Right</value>
+  <data name="&gt;&gt;lblTitle.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
-  <data name="lvBooking.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+  <data name="&gt;&gt;splitContainer4.Panel1.Name" xml:space="preserve">
+    <value>splitContainer4.Panel1</value>
   </data>
-  <data name="splitContainer4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>888, 638</value>
-  </data>
-  <data name="&gt;&gt;spconDesk.Panel2.Type" xml:space="preserve">
+  <data name="&gt;&gt;splitContainer4.Panel1.Type" xml:space="preserve">
     <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;cbAccounts.Parent" xml:space="preserve">
-    <value>spconDesk.Panel2</value>
+  <data name="&gt;&gt;splitContainer4.Panel1.Parent" xml:space="preserve">
+    <value>splitContainer4</value>
   </data>
-  <data name="lblEndDate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 219</value>
-  </data>
-  <data name="&gt;&gt;btnClose.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;splitContainer4.Panel1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="spconDesk.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="lblDisplay.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+  <data name="spconDesk.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
   </data>
-  <data name="btnClose.Location" type="System.Drawing.Point, System.Drawing">
-    <value>752, 7</value>
+  <data name="columnHeaderId.Text" xml:space="preserve">
+    <value>Date</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>AccountView</value>
+  <data name="columnHeaderId.Width" type="System.Int32, mscorlib">
+    <value>84</value>
   </data>
-  <data name="cmbDisplayType.Size" type="System.Drawing.Size, System.Drawing">
-    <value>196, 21</value>
+  <data name="columnHeaderDebit.Text" xml:space="preserve">
+    <value>Debit</value>
+  </data>
+  <data name="columnHeaderDebit.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="columnHeaderDebit.Width" type="System.Int32, mscorlib">
+    <value>91</value>
+  </data>
+  <data name="columnHeaderCredit.Text" xml:space="preserve">
+    <value>Credit</value>
   </data>
   <data name="columnHeaderCredit.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
     <value>Right</value>
@@ -276,350 +243,104 @@
   <data name="columnHeaderCredit.Width" type="System.Int32, mscorlib">
     <value>97</value>
   </data>
-  <data name="lblAccount.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 13</value>
+  <data name="columnHeaderRate.Text" xml:space="preserve">
+    <value>Exchange rate</value>
   </data>
-  <data name="lblAccount.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;lblBranch.Parent" xml:space="preserve">
-    <value>spconDesk.Panel2</value>
-  </data>
-  <data name="&gt;&gt;columnHeaderId.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="columnHeaderAmountEC.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+  <data name="columnHeaderRate.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
     <value>Right</value>
-  </data>
-  <data name="btnRefrech.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;splitContainer4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lblDisplay.Text" xml:space="preserve">
-    <value>Display</value>
-  </data>
-  <data name="lblAccount.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="spconDesk.Size" type="System.Drawing.Size, System.Drawing">
-    <value>888, 594</value>
-  </data>
-  <data name="&gt;&gt;spconDesk.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;cmbDisplayType.Name" xml:space="preserve">
-    <value>cmbDisplayType</value>
-  </data>
-  <data name="lblTitle.TabIndex" type="System.Int32, mscorlib">
-    <value>29</value>
-  </data>
-  <data name="lblCurrency.Text" xml:space="preserve">
-    <value>Currency</value>
-  </data>
-  <data name="&gt;&gt;spconDesk.Panel2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;dateTimePickerBeginDate.Name" xml:space="preserve">
-    <value>dateTimePickerBeginDate</value>
-  </data>
-  <data name="&gt;&gt;splitContainer4.Panel2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="columnHeaderId.Width" type="System.Int32, mscorlib">
-    <value>84</value>
-  </data>
-  <data name="&gt;&gt;columnHeaderId.Name" xml:space="preserve">
-    <value>columnHeaderId</value>
-  </data>
-  <data name="&gt;&gt;lvBooking.Name" xml:space="preserve">
-    <value>lvBooking</value>
-  </data>
-  <data name="&gt;&gt;lblAccount.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="cmbBranches.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 157</value>
-  </data>
-  <data name="lblEndDate.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="dateTimePickerBeginDate.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;columnHeaderCredit.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblDisplay.Name" xml:space="preserve">
-    <value>lblDisplay</value>
-  </data>
-  <data name="lblDisplay.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 13</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
-  </data>
-  <data name="lblAccountBalance.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 18</value>
-  </data>
-  <data name="&gt;&gt;lblEndDate.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="lblBeginDate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 193</value>
-  </data>
-  <data name="lblCurrency.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="columnHeaderRate.Width" type="System.Int32, mscorlib">
     <value>88</value>
   </data>
-  <data name="spconDesk.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="columnHeaderAmountEC.Text" xml:space="preserve">
+    <value>Amount (currency pivot)</value>
   </data>
-  <data name="lblBranch.Text" xml:space="preserve">
-    <value>Branch</value>
+  <data name="columnHeaderAmountEC.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
   </data>
-  <data name="&gt;&gt;splitContainer4.Panel1.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="columnHeaderAmountEC.Width" type="System.Int32, mscorlib">
+    <value>143</value>
   </data>
-  <data name="&gt;&gt;lblBranch.Name" xml:space="preserve">
-    <value>lblBranch</value>
-  </data>
-  <data name="gbBalance.Text" xml:space="preserve">
-    <value>Balance</value>
-  </data>
-  <data name="&gt;&gt;lblAccountBalance.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lblTitle.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="dateTimePickerBeginDate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>135, 20</value>
-  </data>
-  <data name="&gt;&gt;lblCurrency.Parent" xml:space="preserve">
-    <value>spconDesk.Panel2</value>
-  </data>
-  <data name="columnHeaderDebit.Width" type="System.Int32, mscorlib">
-    <value>91</value>
-  </data>
-  <data name="&gt;&gt;spconDesk.Type" xml:space="preserve">
-    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lblTitle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>888, 40</value>
-  </data>
-  <data name="splitContainer4.IsSplitterFixed" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblBeginDate.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="cmbBranches.Size" type="System.Drawing.Size, System.Drawing">
-    <value>196, 21</value>
-  </data>
-  <data name="&gt;&gt;splitContainer4.Panel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="gbBalance.Size" type="System.Drawing.Size, System.Drawing">
-    <value>660, 56</value>
-  </data>
-  <data name="lblTitle.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblAccount.Text" xml:space="preserve">
-    <value>Account</value>
-  </data>
-  <data name="&gt;&gt;columnHeaderDebit.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblDisplay.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;cbAccounts.Name" xml:space="preserve">
-    <value>cbAccounts</value>
-  </data>
-  <data name="&gt;&gt;dateTimePickerBeginDate.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;lblDisplay.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lvBooking.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 56</value>
-  </data>
-  <data name="&gt;&gt;lblBeginDate.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="splitContainer4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="&gt;&gt;dateTimePickerEndDate.Parent" xml:space="preserve">
-    <value>spconDesk.Panel2</value>
-  </data>
-  <data name="btnClose.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;lblBeginDate.Parent" xml:space="preserve">
-    <value>spconDesk.Panel2</value>
-  </data>
-  <data name="gbBalance.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="&gt;&gt;lblBeginDate.Name" xml:space="preserve">
-    <value>lblBeginDate</value>
-  </data>
-  <data name="&gt;&gt;lblBranch.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="lvBooking.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;columnHeaderRate.Name" xml:space="preserve">
-    <value>columnHeaderRate</value>
-  </data>
-  <data name="lblTitle.Text" xml:space="preserve">
-    <value>General Ledger</value>
-  </data>
-  <data name="&gt;&gt;columnHeaderCredit.Name" xml:space="preserve">
-    <value>columnHeaderCredit</value>
-  </data>
-  <data name="&gt;&gt;lblTitle.Parent" xml:space="preserve">
-    <value>splitContainer4.Panel1</value>
-  </data>
-  <data name="lblDisplay.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;cmbDisplayType.Parent" xml:space="preserve">
-    <value>spconDesk.Panel2</value>
-  </data>
-  <data name="columnHeaderRate.Text" xml:space="preserve">
-    <value>Exchange rate</value>
-  </data>
-  <data name="dateTimePickerBeginDate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>75, 187</value>
-  </data>
-  <data name="lblBranch.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;cbAccounts.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cmbDisplayType.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;splitContainer4.Panel2.Name" xml:space="preserve">
-    <value>splitContainer4.Panel2</value>
-  </data>
-  <data name="lblEndDate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 13</value>
-  </data>
-  <data name="lblAccountBalance.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="lblCurrency.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;lblDisplay.Parent" xml:space="preserve">
-    <value>spconDesk.Panel2</value>
-  </data>
-  <data name="&gt;&gt;spconDesk.Panel1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;lblAccount.Parent" xml:space="preserve">
-    <value>spconDesk.Panel2</value>
-  </data>
-  <data name="&gt;&gt;lblBranch.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dateTimePickerBeginDate.Parent" xml:space="preserve">
-    <value>spconDesk.Panel2</value>
-  </data>
-  <data name="lblAccountBalance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 20pt</value>
-  </data>
-  <data name="&gt;&gt;btnClose.Name" xml:space="preserve">
-    <value>btnClose</value>
-  </data>
-  <data name="cbAccounts.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;btnClose.Parent" xml:space="preserve">
-    <value>splitContainer4.Panel1</value>
-  </data>
-  <data name="&gt;&gt;splitContainer4.Name" xml:space="preserve">
-    <value>splitContainer4</value>
-  </data>
-  <data name="&gt;&gt;btnRefrech.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="lblDisplay.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblBranch.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;columnHeaderAmountEC.Name" xml:space="preserve">
-    <value>columnHeaderAmountEC</value>
-  </data>
-  <data name="splitContainer4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="&gt;&gt;columnHeaderAmountEC.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lblEndDate.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;cmbBranches.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;lblEndDate.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblBeginDate.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lblBranch.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 13</value>
-  </data>
-  <data name="&gt;&gt;lblAccountBalance.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;cmbCurrencies.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lblAccountBalance.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;splitContainer4.Panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dateTimePickerBeginDate.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblAccount.Name" xml:space="preserve">
-    <value>lblAccount</value>
-  </data>
-  <data name="&gt;&gt;btnRefrech.Parent" xml:space="preserve">
-    <value>spconDesk.Panel2</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="columnHeaderPurpose.Text" xml:space="preserve">
+    <value>Purpose</value>
   </data>
   <data name="columnHeaderPurpose.Width" type="System.Int32, mscorlib">
     <value>390</value>
   </data>
+  <data name="lvBooking.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="lvBooking.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 56</value>
+  </data>
+  <data name="lvBooking.Size" type="System.Drawing.Size, System.Drawing">
+    <value>660, 538</value>
+  </data>
+  <data name="lvBooking.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;lvBooking.Name" xml:space="preserve">
+    <value>lvBooking</value>
+  </data>
+  <data name="&gt;&gt;lvBooking.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lvBooking.Parent" xml:space="preserve">
+    <value>spconDesk.Panel1</value>
+  </data>
+  <data name="&gt;&gt;lvBooking.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblAccountBalance.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblAccountBalance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 20pt</value>
+  </data>
   <data name="lblAccountBalance.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="lblBranch.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="lblAccountBalance.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 18</value>
   </data>
-  <data name="columnHeaderDebit.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Right</value>
+  <data name="lblAccountBalance.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 31</value>
+  </data>
+  <data name="lblAccountBalance.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblAccountBalance.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lblAccountBalance.Name" xml:space="preserve">
+    <value>lblAccountBalance</value>
+  </data>
+  <data name="&gt;&gt;lblAccountBalance.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblAccountBalance.Parent" xml:space="preserve">
+    <value>gbBalance</value>
+  </data>
+  <data name="&gt;&gt;lblAccountBalance.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="gbBalance.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="gbBalance.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="gbBalance.Size" type="System.Drawing.Size, System.Drawing">
+    <value>660, 56</value>
+  </data>
+  <data name="gbBalance.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="gbBalance.Text" xml:space="preserve">
+    <value>Balance</value>
+  </data>
+  <data name="&gt;&gt;gbBalance.Name" xml:space="preserve">
+    <value>gbBalance</value>
   </data>
   <data name="&gt;&gt;gbBalance.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -627,193 +348,472 @@
   <data name="&gt;&gt;gbBalance.Parent" xml:space="preserve">
     <value>spconDesk.Panel1</value>
   </data>
-  <data name="lblAccount.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="columnHeaderAmountEC.Text" xml:space="preserve">
-    <value>Amount (currency pivot)</value>
-  </data>
-  <data name="columnHeaderPurpose.Text" xml:space="preserve">
-    <value>Purpose</value>
-  </data>
-  <data name="splitContainer4.TabIndex" type="System.Int32, mscorlib">
-    <value>29</value>
-  </data>
-  <data name="columnHeaderAmountEC.Width" type="System.Int32, mscorlib">
-    <value>143</value>
-  </data>
-  <data name="btnRefrech.Text" xml:space="preserve">
-    <value>Refresh</value>
-  </data>
-  <data name="btnClose.Text" xml:space="preserve">
-    <value>Close</value>
-  </data>
-  <data name="lblAccount.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 9</value>
-  </data>
-  <data name="btnRefrech.Size" type="System.Drawing.Size, System.Drawing">
-    <value>196, 25</value>
-  </data>
-  <data name="lblCurrency.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;spconDesk.Panel2.Parent" xml:space="preserve">
-    <value>spconDesk</value>
-  </data>
-  <data name="&gt;&gt;lvBooking.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lblBranch.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 141</value>
-  </data>
-  <data name="&gt;&gt;splitContainer4.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lvBooking.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;lblTitle.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;lvBooking.Parent" xml:space="preserve">
-    <value>spconDesk.Panel1</value>
-  </data>
-  <data name="&gt;&gt;spconDesk.Panel2.Name" xml:space="preserve">
-    <value>spconDesk.Panel2</value>
-  </data>
-  <data name="&gt;&gt;spconDesk.Panel1.Parent" xml:space="preserve">
-    <value>spconDesk</value>
-  </data>
-  <data name="gbBalance.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="btnRefrech.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 239</value>
-  </data>
-  <data name="lblBeginDate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 13</value>
-  </data>
-  <data name="lblTitle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="columnHeaderId.Text" xml:space="preserve">
-    <value>Date</value>
-  </data>
-  <data name="&gt;&gt;lblCurrency.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="columnHeaderDebit.Text" xml:space="preserve">
-    <value>Debit</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>888, 638</value>
-  </data>
-  <data name="cmbBranches.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
   <data name="&gt;&gt;gbBalance.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="&gt;&gt;columnHeaderPurpose.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblAccountBalance.Parent" xml:space="preserve">
-    <value>gbBalance</value>
-  </data>
-  <data name="&gt;&gt;btnRefrech.Name" xml:space="preserve">
-    <value>btnRefrech</value>
-  </data>
-  <data name="gbBalance.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="cbAccounts.Size" type="System.Drawing.Size, System.Drawing">
-    <value>199, 21</value>
-  </data>
-  <data name="spconDesk.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="lblTitle.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;cmbDisplayType.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;spconDesk.Name" xml:space="preserve">
-    <value>spconDesk</value>
-  </data>
-  <data name="&gt;&gt;columnHeaderRate.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnClose.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 25</value>
-  </data>
-  <data name="cmbDisplayType.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;cbAccounts.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="cmbCurrencies.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="&gt;&gt;dateTimePickerEndDate.Name" xml:space="preserve">
-    <value>dateTimePickerEndDate</value>
-  </data>
-  <data name="columnHeaderCredit.Text" xml:space="preserve">
-    <value>Credit</value>
-  </data>
-  <data name="cmbDisplayType.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 111</value>
-  </data>
-  <data name="dateTimePickerEndDate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>75, 213</value>
-  </data>
-  <data name="btnClose.TabIndex" type="System.Int32, mscorlib">
-    <value>30</value>
-  </data>
-  <data name="&gt;&gt;splitContainer4.Panel1.Parent" xml:space="preserve">
-    <value>splitContainer4</value>
-  </data>
-  <data name="&gt;&gt;spconDesk.Parent" xml:space="preserve">
-    <value>splitContainer4.Panel2</value>
-  </data>
-  <data name="&gt;&gt;cmbBranches.Name" xml:space="preserve">
-    <value>cmbBranches</value>
-  </data>
-  <data name="&gt;&gt;spconDesk.Panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dateTimePickerEndDate.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnClose.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lblDisplay.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 95</value>
-  </data>
-  <data name="cbAccounts.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 25</value>
-  </data>
-  <data name="&gt;&gt;columnHeaderDebit.Name" xml:space="preserve">
-    <value>columnHeaderDebit</value>
-  </data>
-  <data name="lvBooking.Size" type="System.Drawing.Size, System.Drawing">
-    <value>660, 538</value>
-  </data>
-  <data name="&gt;&gt;dateTimePickerEndDate.ZOrder" xml:space="preserve">
-    <value>10</value>
   </data>
   <data name="&gt;&gt;spconDesk.Panel1.Name" xml:space="preserve">
     <value>spconDesk.Panel1</value>
   </data>
-  <data name="&gt;&gt;lblEndDate.Name" xml:space="preserve">
-    <value>lblEndDate</value>
+  <data name="&gt;&gt;spconDesk.Panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;spconDesk.Panel1.Parent" xml:space="preserve">
+    <value>spconDesk</value>
+  </data>
+  <data name="&gt;&gt;spconDesk.Panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnRefrech.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnRefrech.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 239</value>
+  </data>
+  <data name="btnRefrech.Size" type="System.Drawing.Size, System.Drawing">
+    <value>196, 25</value>
+  </data>
+  <data name="btnRefrech.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="btnRefrech.Text" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="&gt;&gt;btnRefrech.Name" xml:space="preserve">
+    <value>btnRefrech</value>
+  </data>
+  <data name="&gt;&gt;btnRefrech.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnRefrech.Parent" xml:space="preserve">
+    <value>spconDesk.Panel2</value>
+  </data>
+  <data name="&gt;&gt;btnRefrech.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="cbAccounts.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 25</value>
+  </data>
+  <data name="cbAccounts.Size" type="System.Drawing.Size, System.Drawing">
+    <value>199, 21</value>
+  </data>
+  <data name="cbAccounts.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;cbAccounts.Name" xml:space="preserve">
+    <value>cbAccounts</value>
+  </data>
+  <data name="&gt;&gt;cbAccounts.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbAccounts.Parent" xml:space="preserve">
+    <value>spconDesk.Panel2</value>
+  </data>
+  <data name="&gt;&gt;cbAccounts.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="cmbCurrencies.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 68</value>
+  </data>
+  <data name="cmbCurrencies.Size" type="System.Drawing.Size, System.Drawing">
+    <value>196, 21</value>
+  </data>
+  <data name="cmbCurrencies.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;cmbCurrencies.Name" xml:space="preserve">
+    <value>cmbCurrencies</value>
+  </data>
+  <data name="&gt;&gt;cmbCurrencies.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmbCurrencies.Parent" xml:space="preserve">
+    <value>spconDesk.Panel2</value>
+  </data>
+  <data name="&gt;&gt;cmbCurrencies.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblCurrency.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblCurrency.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblCurrency.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 52</value>
+  </data>
+  <data name="lblCurrency.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 13</value>
+  </data>
+  <data name="lblCurrency.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="lblCurrency.Text" xml:space="preserve">
+    <value>Currency</value>
+  </data>
+  <data name="&gt;&gt;lblCurrency.Name" xml:space="preserve">
+    <value>lblCurrency</value>
+  </data>
+  <data name="&gt;&gt;lblCurrency.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblCurrency.Parent" xml:space="preserve">
+    <value>spconDesk.Panel2</value>
+  </data>
+  <data name="&gt;&gt;lblCurrency.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lblAccount.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblAccount.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblAccount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 9</value>
+  </data>
+  <data name="lblAccount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 13</value>
+  </data>
+  <data name="lblAccount.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="lblAccount.Text" xml:space="preserve">
+    <value>Account</value>
+  </data>
+  <data name="&gt;&gt;lblAccount.Name" xml:space="preserve">
+    <value>lblAccount</value>
+  </data>
+  <data name="&gt;&gt;lblAccount.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblAccount.Parent" xml:space="preserve">
+    <value>spconDesk.Panel2</value>
+  </data>
+  <data name="&gt;&gt;lblAccount.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="cmbBranches.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 157</value>
+  </data>
+  <data name="cmbBranches.Size" type="System.Drawing.Size, System.Drawing">
+    <value>196, 21</value>
+  </data>
+  <data name="cmbBranches.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;cmbBranches.Name" xml:space="preserve">
+    <value>cmbBranches</value>
+  </data>
+  <data name="&gt;&gt;cmbBranches.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmbBranches.Parent" xml:space="preserve">
+    <value>spconDesk.Panel2</value>
+  </data>
+  <data name="&gt;&gt;cmbBranches.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="cmbDisplayType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 111</value>
+  </data>
+  <data name="cmbDisplayType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>196, 21</value>
+  </data>
+  <data name="cmbDisplayType.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;cmbDisplayType.Name" xml:space="preserve">
+    <value>cmbDisplayType</value>
+  </data>
+  <data name="&gt;&gt;cmbDisplayType.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmbDisplayType.Parent" xml:space="preserve">
+    <value>spconDesk.Panel2</value>
+  </data>
+  <data name="&gt;&gt;cmbDisplayType.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="lblBranch.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblBranch.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblBranch.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 141</value>
+  </data>
+  <data name="lblBranch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 13</value>
+  </data>
+  <data name="lblBranch.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="lblBranch.Text" xml:space="preserve">
+    <value>Branch</value>
+  </data>
+  <data name="&gt;&gt;lblBranch.Name" xml:space="preserve">
+    <value>lblBranch</value>
+  </data>
+  <data name="&gt;&gt;lblBranch.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblBranch.Parent" xml:space="preserve">
+    <value>spconDesk.Panel2</value>
+  </data>
+  <data name="&gt;&gt;lblBranch.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="dateTimePickerBeginDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>75, 187</value>
+  </data>
+  <data name="dateTimePickerBeginDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 20</value>
+  </data>
+  <data name="dateTimePickerBeginDate.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;dateTimePickerBeginDate.Name" xml:space="preserve">
+    <value>dateTimePickerBeginDate</value>
+  </data>
+  <data name="&gt;&gt;dateTimePickerBeginDate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dateTimePickerBeginDate.Parent" xml:space="preserve">
+    <value>spconDesk.Panel2</value>
+  </data>
+  <data name="&gt;&gt;dateTimePickerBeginDate.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="lblDisplay.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblDisplay.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblDisplay.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 95</value>
+  </data>
+  <data name="lblDisplay.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 13</value>
+  </data>
+  <data name="lblDisplay.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="lblDisplay.Text" xml:space="preserve">
+    <value>Display</value>
+  </data>
+  <data name="&gt;&gt;lblDisplay.Name" xml:space="preserve">
+    <value>lblDisplay</value>
+  </data>
+  <data name="&gt;&gt;lblDisplay.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblDisplay.Parent" xml:space="preserve">
+    <value>spconDesk.Panel2</value>
+  </data>
+  <data name="&gt;&gt;lblDisplay.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="dateTimePickerEndDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>75, 213</value>
+  </data>
+  <data name="dateTimePickerEndDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 20</value>
+  </data>
+  <data name="dateTimePickerEndDate.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;dateTimePickerEndDate.Name" xml:space="preserve">
+    <value>dateTimePickerEndDate</value>
+  </data>
+  <data name="&gt;&gt;dateTimePickerEndDate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dateTimePickerEndDate.Parent" xml:space="preserve">
+    <value>spconDesk.Panel2</value>
+  </data>
+  <data name="&gt;&gt;dateTimePickerEndDate.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="lblBeginDate.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblBeginDate.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblBeginDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 193</value>
+  </data>
+  <data name="lblBeginDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 13</value>
+  </data>
+  <data name="lblBeginDate.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="lblBeginDate.Text" xml:space="preserve">
+    <value>Begin date</value>
+  </data>
+  <data name="&gt;&gt;lblBeginDate.Name" xml:space="preserve">
+    <value>lblBeginDate</value>
+  </data>
+  <data name="&gt;&gt;lblBeginDate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblBeginDate.Parent" xml:space="preserve">
+    <value>spconDesk.Panel2</value>
+  </data>
+  <data name="&gt;&gt;lblBeginDate.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="lblEndDate.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblEndDate.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblEndDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 219</value>
+  </data>
+  <data name="lblEndDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 13</value>
+  </data>
+  <data name="lblEndDate.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
   </data>
   <data name="lblEndDate.Text" xml:space="preserve">
     <value>End date</value>
   </data>
+  <data name="&gt;&gt;lblEndDate.Name" xml:space="preserve">
+    <value>lblEndDate</value>
+  </data>
+  <data name="&gt;&gt;lblEndDate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblEndDate.Parent" xml:space="preserve">
+    <value>spconDesk.Panel2</value>
+  </data>
+  <data name="&gt;&gt;lblEndDate.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;spconDesk.Panel2.Name" xml:space="preserve">
+    <value>spconDesk.Panel2</value>
+  </data>
+  <data name="&gt;&gt;spconDesk.Panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;spconDesk.Panel2.Parent" xml:space="preserve">
+    <value>spconDesk</value>
+  </data>
+  <data name="&gt;&gt;spconDesk.Panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="spconDesk.Size" type="System.Drawing.Size, System.Drawing">
+    <value>888, 594</value>
+  </data>
+  <data name="spconDesk.SplitterDistance" type="System.Int32, mscorlib">
+    <value>660</value>
+  </data>
+  <data name="spconDesk.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;spconDesk.Name" xml:space="preserve">
+    <value>spconDesk</value>
+  </data>
+  <data name="&gt;&gt;spconDesk.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;spconDesk.Parent" xml:space="preserve">
+    <value>splitContainer4.Panel2</value>
+  </data>
+  <data name="&gt;&gt;spconDesk.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;splitContainer4.Panel2.Name" xml:space="preserve">
+    <value>splitContainer4.Panel2</value>
+  </data>
+  <data name="&gt;&gt;splitContainer4.Panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitContainer4.Panel2.Parent" xml:space="preserve">
+    <value>splitContainer4</value>
+  </data>
+  <data name="&gt;&gt;splitContainer4.Panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="splitContainer4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>888, 638</value>
+  </data>
+  <data name="splitContainer4.SplitterDistance" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="splitContainer4.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="&gt;&gt;splitContainer4.Name" xml:space="preserve">
+    <value>splitContainer4</value>
+  </data>
+  <data name="&gt;&gt;splitContainer4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitContainer4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;splitContainer4.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>888, 638</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>General Ledger</value>
+  </data>
+  <data name="&gt;&gt;columnHeaderId.Name" xml:space="preserve">
+    <value>columnHeaderId</value>
+  </data>
+  <data name="&gt;&gt;columnHeaderId.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;columnHeaderDebit.Name" xml:space="preserve">
+    <value>columnHeaderDebit</value>
+  </data>
+  <data name="&gt;&gt;columnHeaderDebit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;columnHeaderCredit.Name" xml:space="preserve">
+    <value>columnHeaderCredit</value>
+  </data>
+  <data name="&gt;&gt;columnHeaderCredit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;columnHeaderRate.Name" xml:space="preserve">
+    <value>columnHeaderRate</value>
+  </data>
+  <data name="&gt;&gt;columnHeaderRate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;columnHeaderAmountEC.Name" xml:space="preserve">
+    <value>columnHeaderAmountEC</value>
+  </data>
+  <data name="&gt;&gt;columnHeaderAmountEC.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;columnHeaderPurpose.Name" xml:space="preserve">
+    <value>columnHeaderPurpose</value>
+  </data>
+  <data name="&gt;&gt;columnHeaderPurpose.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>AccountView</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

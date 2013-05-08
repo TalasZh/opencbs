@@ -74,13 +74,11 @@ namespace OpenCBS.GUI.Accounting
             // 
             // splitContainer4.Panel1
             // 
-            resources.ApplyResources(this.splitContainer4.Panel1, "splitContainer4.Panel1");
             this.splitContainer4.Panel1.Controls.Add(this.btnClose);
             this.splitContainer4.Panel1.Controls.Add(this.lblTitle);
             // 
             // splitContainer4.Panel2
             // 
-            resources.ApplyResources(this.splitContainer4.Panel2, "splitContainer4.Panel2");
             this.splitContainer4.Panel2.Controls.Add(this.spconDesk);
             // 
             // btnClose
@@ -91,8 +89,9 @@ namespace OpenCBS.GUI.Accounting
             // 
             // lblTitle
             // 
-            resources.ApplyResources(this.lblTitle, "lblTitle");
             this.lblTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(81)))), ((int)(((byte)(152)))));
+            resources.ApplyResources(this.lblTitle, "lblTitle");
+            this.lblTitle.ForeColor = System.Drawing.Color.White;
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Click += new System.EventHandler(this.lblTitle_Click);
             // 
@@ -103,13 +102,11 @@ namespace OpenCBS.GUI.Accounting
             // 
             // spconDesk.Panel1
             // 
-            resources.ApplyResources(this.spconDesk.Panel1, "spconDesk.Panel1");
             this.spconDesk.Panel1.Controls.Add(this.lvBooking);
             this.spconDesk.Panel1.Controls.Add(this.gbBalance);
             // 
             // spconDesk.Panel2
             // 
-            resources.ApplyResources(this.spconDesk.Panel2, "spconDesk.Panel2");
             this.spconDesk.Panel2.Controls.Add(this.btnRefrech);
             this.spconDesk.Panel2.Controls.Add(this.cbAccounts);
             this.spconDesk.Panel2.Controls.Add(this.cmbCurrencies);
@@ -126,7 +123,6 @@ namespace OpenCBS.GUI.Accounting
             // 
             // lvBooking
             // 
-            resources.ApplyResources(this.lvBooking, "lvBooking");
             this.lvBooking.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeaderId,
             this.columnHeaderDebit,
@@ -134,6 +130,7 @@ namespace OpenCBS.GUI.Accounting
             this.columnHeaderRate,
             this.columnHeaderAmountEC,
             this.columnHeaderPurpose});
+            resources.ApplyResources(this.lvBooking, "lvBooking");
             this.lvBooking.FullRowSelect = true;
             this.lvBooking.GridLines = true;
             this.lvBooking.Name = "lvBooking";
@@ -166,8 +163,8 @@ namespace OpenCBS.GUI.Accounting
             // 
             // gbBalance
             // 
-            resources.ApplyResources(this.gbBalance, "gbBalance");
             this.gbBalance.Controls.Add(this.lblAccountBalance);
+            resources.ApplyResources(this.gbBalance, "gbBalance");
             this.gbBalance.Name = "gbBalance";
             this.gbBalance.TabStop = false;
             // 
@@ -184,18 +181,18 @@ namespace OpenCBS.GUI.Accounting
             // 
             // cbAccounts
             // 
-            resources.ApplyResources(this.cbAccounts, "cbAccounts");
             this.cbAccounts.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbAccounts.FormattingEnabled = true;
+            resources.ApplyResources(this.cbAccounts, "cbAccounts");
             this.cbAccounts.Name = "cbAccounts";
             this.cbAccounts.SelectionChangeCommitted += new System.EventHandler(this.comboBoxSelectAccount_SelectionChangeCommitted);
             // 
             // cmbCurrencies
             // 
-            resources.ApplyResources(this.cmbCurrencies, "cmbCurrencies");
             this.cmbCurrencies.DisplayMember = "Currency.Name";
             this.cmbCurrencies.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbCurrencies.FormattingEnabled = true;
+            resources.ApplyResources(this.cmbCurrencies, "cmbCurrencies");
             this.cmbCurrencies.Name = "cmbCurrencies";
             this.cmbCurrencies.SelectedIndexChanged += new System.EventHandler(this.comboBoxCurrencies_SelectedIndexChanged);
             // 
@@ -211,17 +208,17 @@ namespace OpenCBS.GUI.Accounting
             // 
             // cmbBranches
             // 
-            resources.ApplyResources(this.cmbBranches, "cmbBranches");
             this.cmbBranches.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBranches.FormattingEnabled = true;
+            resources.ApplyResources(this.cmbBranches, "cmbBranches");
             this.cmbBranches.Name = "cmbBranches";
             this.cmbBranches.SelectedIndexChanged += new System.EventHandler(this.cmbBranches_SelectedIndexChanged);
             // 
             // cmbDisplayType
             // 
-            resources.ApplyResources(this.cmbDisplayType, "cmbDisplayType");
             this.cmbDisplayType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbDisplayType.FormattingEnabled = true;
+            resources.ApplyResources(this.cmbDisplayType, "cmbDisplayType");
             this.cmbDisplayType.Name = "cmbDisplayType";
             this.cmbDisplayType.SelectedIndexChanged += new System.EventHandler(this.cmbDisplayType_SelectedIndexChanged);
             // 
@@ -232,8 +229,8 @@ namespace OpenCBS.GUI.Accounting
             // 
             // dateTimePickerBeginDate
             // 
-            resources.ApplyResources(this.dateTimePickerBeginDate, "dateTimePickerBeginDate");
             this.dateTimePickerBeginDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            resources.ApplyResources(this.dateTimePickerBeginDate, "dateTimePickerBeginDate");
             this.dateTimePickerBeginDate.Name = "dateTimePickerBeginDate";
             this.dateTimePickerBeginDate.ValueChanged += new System.EventHandler(this.dateTimePickerBeginDate_ValueChanged);
             // 
@@ -244,8 +241,8 @@ namespace OpenCBS.GUI.Accounting
             // 
             // dateTimePickerEndDate
             // 
-            resources.ApplyResources(this.dateTimePickerEndDate, "dateTimePickerEndDate");
             this.dateTimePickerEndDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            resources.ApplyResources(this.dateTimePickerEndDate, "dateTimePickerEndDate");
             this.dateTimePickerEndDate.Name = "dateTimePickerEndDate";
             this.dateTimePickerEndDate.ValueChanged += new System.EventHandler(this.dateTimePickerEndDate_ValueChanged);
             // 

@@ -63,17 +63,14 @@ namespace OpenCBS.GUI.Accounting
             // 
             // splitContainer1.Panel1
             // 
-            resources.ApplyResources(this.splitContainer1.Panel1, "splitContainer1.Panel1");
             this.splitContainer1.Panel1.Controls.Add(this.olvClosures);
             // 
             // splitContainer1.Panel2
             // 
-            resources.ApplyResources(this.splitContainer1.Panel2, "splitContainer1.Panel2");
             this.splitContainer1.Panel2.Controls.Add(this.groupBox1);
             // 
             // olvClosures
             // 
-            resources.ApplyResources(this.olvClosures, "olvClosures");
             this.olvClosures.AllColumns.Add(this.olvColumn_Id);
             this.olvClosures.AllColumns.Add(this.olvColumn_Date);
             this.olvClosures.AllColumns.Add(this.olvColumn_CountOfTransactions);
@@ -83,11 +80,11 @@ namespace OpenCBS.GUI.Accounting
             this.olvColumn_Date,
             this.olvColumn_CountOfTransactions,
             this.olvColumn_User});
+            resources.ApplyResources(this.olvClosures, "olvClosures");
             this.olvClosures.FullRowSelect = true;
             this.olvClosures.GridLines = true;
             this.olvClosures.HasCollapsibleGroups = false;
             this.olvClosures.Name = "olvClosures";
-            this.olvClosures.OverlayText.Text = resources.GetString("resource.Text");
             this.olvClosures.ShowGroups = false;
             this.olvClosures.UseCompatibleStateImageBehavior = false;
             this.olvClosures.View = System.Windows.Forms.View.Details;
@@ -116,11 +113,11 @@ namespace OpenCBS.GUI.Accounting
             // 
             // groupBox1
             // 
-            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Controls.Add(this.btnView);
             this.groupBox1.Controls.Add(this.btnGenerateEvents);
             this.groupBox1.Controls.Add(this.btnDeleteRule);
             this.groupBox1.Controls.Add(this.btnPostBookings);
+            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             // 
@@ -157,10 +154,10 @@ namespace OpenCBS.GUI.Accounting
             // 
             // panel1
             // 
-            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Controls.Add(this.sweetButton1);
             this.panel1.Controls.Add(this.btnClose);
             this.panel1.Controls.Add(this.lblTitle);
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 
             // sweetButton1
@@ -176,8 +173,9 @@ namespace OpenCBS.GUI.Accounting
             // 
             // lblTitle
             // 
-            resources.ApplyResources(this.lblTitle, "lblTitle");
             this.lblTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(81)))), ((int)(((byte)(152)))));
+            resources.ApplyResources(this.lblTitle, "lblTitle");
+            this.lblTitle.ForeColor = System.Drawing.Color.White;
             this.lblTitle.Name = "lblTitle";
             // 
             // tableLayoutPanel1

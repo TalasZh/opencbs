@@ -380,6 +380,7 @@ namespace OpenCBS.GUI.Accounting
             // 
             this._labelTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(81)))), ((int)(((byte)(152)))));
             resources.ApplyResources(this._labelTitle, "_labelTitle");
+            this._labelTitle.ForeColor = System.Drawing.Color.White;
             this._labelTitle.Name = "_labelTitle";
             // 
             // _tableLayoutPanel1

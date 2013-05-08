@@ -50,13 +50,13 @@ namespace OpenCBS.GUI.Accounting
             // 
             // listBookings
             // 
-            resources.ApplyResources(this.listBookings, "listBookings");
             this.listBookings.BackColor = System.Drawing.SystemColors.Window;
             this.listBookings.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.listBookings.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnName,
             this.columnDebit,
             this.columnCredit});
+            resources.ApplyResources(this.listBookings, "listBookings");
             this.listBookings.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.listBookings.FullRowSelect = true;
             this.listBookings.GridLines = true;
@@ -79,10 +79,10 @@ namespace OpenCBS.GUI.Accounting
             // 
             // gbBooking
             // 
-            resources.ApplyResources(this.gbBooking, "gbBooking");
             this.gbBooking.Controls.Add(this.btnDelete);
             this.gbBooking.Controls.Add(this.btnEdit);
             this.gbBooking.Controls.Add(this.btnCreate);
+            resources.ApplyResources(this.gbBooking, "gbBooking");
             this.gbBooking.Name = "gbBooking";
             this.gbBooking.TabStop = false;
             // 
@@ -106,8 +106,9 @@ namespace OpenCBS.GUI.Accounting
             // 
             // lblCaption
             // 
-            resources.ApplyResources(this.lblCaption, "lblCaption");
             this.lblCaption.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(81)))), ((int)(((byte)(152)))));
+            resources.ApplyResources(this.lblCaption, "lblCaption");
+            this.lblCaption.ForeColor = System.Drawing.Color.White;
             this.lblCaption.Name = "lblCaption";
             // 
             // buttonClose
@@ -127,8 +128,8 @@ namespace OpenCBS.GUI.Accounting
             // 
             // tableLayoutPanel2
             // 
-            resources.ApplyResources(this.tableLayoutPanel2, "tableLayoutPanel2");
             this.tableLayoutPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(81)))), ((int)(((byte)(152)))));
+            resources.ApplyResources(this.tableLayoutPanel2, "tableLayoutPanel2");
             this.tableLayoutPanel2.Controls.Add(this.lblCaption, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.buttonClose, 1, 0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";

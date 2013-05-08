@@ -490,7 +490,7 @@
     <value>Fill</value>
   </data>
   <data name="lblTitle.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 15.75pt</value>
+    <value>Arial, 15.75pt, style=Bold</value>
   </data>
   <data name="lblTitle.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -622,6 +622,6 @@
     <value>AccountTrialBalance</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>OpenCBS.GUI.UserControl.SweetBaseForm, OpenCBS.GUI, Version=1.1.1.21366, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetBaseForm, OpenCBS.GUI, Version=1.1.1.28164, Culture=neutral, PublicKeyToken=null</value>
   </data>
 </root>
