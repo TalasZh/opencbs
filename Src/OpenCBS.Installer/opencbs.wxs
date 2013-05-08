@@ -295,7 +295,19 @@
                 <File Id="Database_Update_v3.1.0_to_v3.2.0.sql" Source="SourceDir\Update\Database_Update_v3.1.0_to_v3.2.0.sql" />
                 <File Id="Database_Update_v3.2.0_to_v3.3.0.sql" Source="SourceDir\Update\Database_Update_v3.2.0_to_v3.3.0.sql" />
                 <File Id="Database_Update_v3.3.0_to_v3.4.0.sql" Source="SourceDir\Update\Database_Update_v3.3.0_to_v3.4.0.sql" />
-				<File Id="Database_Update_v3.4.0_to_v3.5.0.sql" Source="SourceDir\Update\Database_Update_v3.4.0_to_v3.5.0.sql" />
+                <File Id="Database_Update_v3.4.0_to_v3.5.0.sql" Source="SourceDir\Update\Database_Update_v3.4.0_to_v3.5.0.sql" />
+                <File Id="Database_Update_v3.5.0_to_v3.6.0.sql" Source="SourceDir\Update\Database_Update_v3.5.0_to_v3.6.0.sql" />
+                <File Id="Database_Update_v3.6.0_to_v3.7.0.sql" Source="SourceDir\Update\Database_Update_v3.6.0_to_v3.7.0.sql" />
+                <File Id="Database_Update_v3.7.0_to_v3.8.0.sql" Source="SourceDir\Update\Database_Update_v3.7.0_to_v3.8.0.sql" />
+                <File Id="Database_Update_v3.8.0_to_v3.9.0.sql" Source="SourceDir\Update\Database_Update_v3.8.0_to_v3.9.0.sql" />
+                <File Id="Database_Update_v3.9.0_to_v4.0.0.sql" Source="SourceDir\Update\Database_Update_v3.9.0_to_v4.0.0.sql" />
+                <File Id="Database_Update_v4.0.0_to_v4.1.0.sql" Source="SourceDir\Update\Database_Update_v4.0.0_to_v4.1.0.sql" />
+                <File Id="Database_Update_v4.1.0_to_v4.2.0.sql" Source="SourceDir\Update\Database_Update_v4.1.0_to_v4.2.0.sql" />
+                <File Id="Database_Update_v4.2.0_to_v4.3.0.sql" Source="SourceDir\Update\Database_Update_v4.2.0_to_v4.3.0.sql" />
+                <File Id="Database_Update_v4.3.0_to_v4.4.0.sql" Source="SourceDir\Update\Database_Update_v4.3.0_to_v4.4.0.sql" />
+                <File Id="Database_Update_v4.4.0_to_v4.5.0.sql" Source="SourceDir\Update\Database_Update_v4.4.0_to_v4.5.0.sql" />
+                <File Id="Database_Update_v4.5.0_to_v4.6.0.sql" Source="SourceDir\Update\Database_Update_v4.5.0_to_v4.6.0.sql" />
+                <File Id="Database_Update_v4.6.0_to_v4.7.0.sql" Source="SourceDir\Update\Database_Update_v4.6.0_to_v4.7.0.sql" />
               </Component>
               <Component Id="xml_data_schema" Guid="CB26138B-9031-2360-D666-DD5F20038ED9">
                 <File Id="OCTOPUS_Data_Schema_v1.1.0.xml" Name="OCTOPUS_Data_Schema_(v1.1.0).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v1.1.0).xml" />
