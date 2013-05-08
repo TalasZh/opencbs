@@ -30,23 +30,8 @@ namespace OpenCBS.GUI.Restarter
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.pbSplash = new System.Windows.Forms.PictureBox();
             this.timerMain = new System.Windows.Forms.Timer(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.pbSplash)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pbSplash
-            // 
-            this.pbSplash.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pbSplash.ErrorImage = null;
-            this.pbSplash.Image = global::OpenCBS.GUI.Restarter.Properties.Resources.logo;
-            this.pbSplash.InitialImage = null;
-            this.pbSplash.Location = new System.Drawing.Point(0, 0);
-            this.pbSplash.Name = "pbSplash";
-            this.pbSplash.Size = new System.Drawing.Size(341, 138);
-            this.pbSplash.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pbSplash.TabIndex = 1;
-            this.pbSplash.TabStop = false;
             // 
             // timerMain
             // 
@@ -56,29 +41,23 @@ namespace OpenCBS.GUI.Restarter
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(340, 138);
+            this.BackgroundImage = global::OpenCBS.GUI.Restarter.Properties.Resources.logo;
             this.ControlBox = false;
-            this.Controls.Add(this.pbSplash);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "MainForm";
             this.ShowInTaskbar = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            ((System.ComponentModel.ISupportInitialize)(this.pbSplash)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pbSplash;
         private System.Windows.Forms.Timer timerMain;
     }
 }
