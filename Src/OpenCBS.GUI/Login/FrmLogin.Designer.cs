@@ -54,7 +54,9 @@ namespace OpenCBS.GUI.Login
             // buttonOK
             // 
             resources.ApplyResources(this.buttonOK, "buttonOK");
+            this.buttonOK.BackColor = System.Drawing.SystemColors.Control;
             this.buttonOK.Name = "buttonOK";
+            this.buttonOK.UseVisualStyleBackColor = false;
             this.buttonOK.Click += new System.EventHandler(this.OnOkButtonClick);
             // 
             // textBoxUserName
@@ -82,8 +84,10 @@ namespace OpenCBS.GUI.Login
             // buttonExit
             // 
             resources.ApplyResources(this.buttonExit, "buttonExit");
+            this.buttonExit.BackColor = System.Drawing.SystemColors.Control;
             this.buttonExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.buttonExit.Name = "buttonExit";
+            this.buttonExit.UseVisualStyleBackColor = false;
             this.buttonExit.Click += new System.EventHandler(this.OnExitButtonClick);
             // 
             // pictureBox
@@ -91,7 +95,6 @@ namespace OpenCBS.GUI.Login
             resources.ApplyResources(this.pictureBox, "pictureBox");
             this.pictureBox.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox.BackgroundImage = global::OpenCBS.GUI.Properties.Resources.LOGO;
-            this.pictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox.Name = "pictureBox";
             this.pictureBox.TabStop = false;
             this.pictureBox.Click += new System.EventHandler(this.pictureBox_Click);
@@ -100,6 +103,7 @@ namespace OpenCBS.GUI.Login
             // 
             this.AcceptButton = this.buttonOK;
             resources.ApplyResources(this, "$this");
+            this.BackColor = System.Drawing.Color.White;
             this.CancelButton = this.buttonExit;
             this.ControlBox = false;
             this.Controls.Add(this.pictureBox);

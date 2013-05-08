@@ -120,22 +120,6 @@
   <data name="buttonOK.Text" xml:space="preserve">
     <value>Начать</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="textBoxUserName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>149, 160</value>
-  </data>
-  <data name="textBoxUserName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>126, 20</value>
-  </data>
-  <data name="textBoxPassword.Location" type="System.Drawing.Point, System.Drawing">
-    <value>149, 188</value>
-  </data>
-  <data name="textBoxPassword.Size" type="System.Drawing.Size, System.Drawing">
-    <value>126, 20</value>
-  </data>
-  <data name="labelUserName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 19</value>
-  </data>
   <data name="labelUserName.Text" xml:space="preserve">
     <value>Пользователь</value>
   </data>
@@ -144,9 +128,5 @@
   </data>
   <data name="buttonExit.Text" xml:space="preserve">
     <value>Выход</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
 </root>

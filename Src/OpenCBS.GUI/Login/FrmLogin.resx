@@ -135,7 +135,7 @@
     <value />
   </data>
   <data name="textBoxUserName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>133, 160</value>
+    <value>110, 132</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="labelUserName.TabIndex" type="System.Int32, mscorlib">
@@ -145,7 +145,7 @@
     <value>88, 25</value>
   </data>
   <data name="textBoxPassword.Location" type="System.Drawing.Point, System.Drawing">
-    <value>133, 188</value>
+    <value>110, 160</value>
   </data>
   <data name="pictureBox.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>AutoSize</value>
@@ -186,11 +186,11 @@
   <data name="&gt;&gt;pictureBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="pictureBox.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
   <data name="textBoxUserName.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
-  </data>
-  <data name="labelUserName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>95, 19</value>
   </data>
   <data name="labelPassword.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -202,13 +202,13 @@
     <value>textBoxPassword</value>
   </data>
   <data name="labelUserName.Text" xml:space="preserve">
-    <value>User Name:</value>
+    <value>Username:</value>
+  </data>
+  <data name="buttonOK.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
   <data name="labelUserName.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;buttonExit.ZOrder" xml:space="preserve">
-    <value>2</value>
   </data>
   <data name="buttonExit.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -216,8 +216,8 @@
   <data name="&gt;&gt;labelUserName.Name" xml:space="preserve">
     <value>labelUserName</value>
   </data>
-  <data name="buttonOK.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="&gt;&gt;textBoxPassword.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;textBoxUserName.Name" xml:space="preserve">
     <value>textBoxUserName</value>
@@ -240,17 +240,17 @@
   <data name="&gt;&gt;labelPassword.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="pictureBox.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
+  <data name="labelUserName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 19</value>
   </data>
   <data name="pictureBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>341, 137</value>
+    <value>341, 100</value>
   </data>
   <data name="labelUserName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>32, 161</value>
+    <value>9, 133</value>
   </data>
   <data name="buttonExit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>285, 188</value>
+    <value>262, 160</value>
   </data>
   <data name="buttonOK.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -265,7 +265,7 @@
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="pictureBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>35, 12</value>
+    <value>12, 12</value>
   </data>
   <data name="&gt;&gt;pictureBox.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -279,14 +279,17 @@
   <data name="&gt;&gt;textBoxPassword.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="pictureBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="&gt;&gt;labelPassword.Name" xml:space="preserve">
     <value>labelPassword</value>
   </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FrmLogin</value>
+  </data>
   <data name="buttonOK.Location" type="System.Drawing.Point, System.Drawing">
-    <value>285, 158</value>
+    <value>262, 130</value>
   </data>
   <data name="buttonOK.Text" xml:space="preserve">
     <value>Start</value>
@@ -303,17 +306,17 @@
   <data name="&gt;&gt;buttonExit.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="pictureBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="pictureBox.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Center</value>
   </data>
-  <data name="&gt;&gt;textBoxPassword.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;buttonExit.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="textBoxPassword.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
   <data name="labelPassword.Location" type="System.Drawing.Point, System.Drawing">
-    <value>32, 189</value>
+    <value>9, 161</value>
   </data>
   <data name="labelPassword.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 9.75pt</value>
@@ -337,10 +340,10 @@
     <value>142, 20</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>410, 222</value>
+    <value>366, 196</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>FrmLogin</value>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;buttonOK.ZOrder" xml:space="preserve">
     <value>4</value>
@@ -350,8 +353,5 @@
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
-  </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>pt</value>
   </metadata>
 </root>
