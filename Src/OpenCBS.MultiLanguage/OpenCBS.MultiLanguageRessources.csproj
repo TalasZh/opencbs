@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
   <PropertyGroup>
     <ProjectType>Local</ProjectType>
@@ -239,6 +239,8 @@
     <EmbeddedResource Include="resx\CreditContractForm.pt.resx" />
     <EmbeddedResource Include="resx\CreditContractRepayForm.pt.resx" />
     <EmbeddedResource Include="resx\CustomizableExport.pt.resx" />
+    <EmbeddedResource Include="resx\DashboardForm.resx" />
+    <EmbeddedResource Include="resx\DashboardForm.ru-RU.resx" />
     <EmbeddedResource Include="resx\DatabaseMaitenance.pt.resx" />
     <EmbeddedResource Include="resx\DateTimeUserControl.pt.resx" />
     <EmbeddedResource Include="resx\ElemMvtUserControl.pt.resx" />
@@ -251,7 +253,6 @@
     <EmbeddedResource Include="resx\ExtensionManagerForm.fr.resx" />
     <EmbeddedResource Include="resx\ExtensionManagerForm.resx" />
     <EmbeddedResource Include="resx\ExtensionManagerForm.ru-RU.resx" />
-    <EmbeddedResource Include="resx\FastChoiceForm.pt.resx" />
     <EmbeddedResource Include="resx\FastDepositForm.pt.resx" />
     <EmbeddedResource Include="resx\frmActivity.pt.resx" />
     <EmbeddedResource Include="resx\FrmAddCollateralProduct.pt.resx" />
@@ -653,9 +654,6 @@
     <EmbeddedResource Include="resx\ExportBookingsForm.es-ES.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="resx\FastChoiceForm.es-ES.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="resx\frmActivity.es-ES.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -890,18 +888,6 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="resx\ExportBookingsForm.ru-RU.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="resx\FastChoiceForm.fr.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="resx\FastChoiceForm.ky-KG.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="resx\FastChoiceForm.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="resx\FastChoiceForm.ru-RU.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="resx\frmActivity.fr.resx">
@@ -1219,7 +1205,7 @@
   </PropertyGroup>
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties GreenPepperConfigRunnerProgram="" GreenPepperCustomSudArgs="" GreenPepperCustomSud="" GreenPepperConfigRunnerArgs="" />
+      <UserProperties GreenPepperConfigRunnerArgs="" GreenPepperCustomSud="" GreenPepperCustomSudArgs="" GreenPepperConfigRunnerProgram="" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>

@@ -51,6 +51,11 @@ namespace OpenCBS.GUI
                 return amount.ToString("N2", numberFormatInfo);
             };
 
+            parNameColumn.AspectToStringConverter = value =>
+            {
+                var name = (string) value;
+                return GetString(name);
+            };
             parListView.RowFormatter = listViewItem =>
             {
                 var portfolioLine = (PortfolioLine)listViewItem.RowObject;
@@ -86,16 +91,22 @@ namespace OpenCBS.GUI
             var series = new Series();
             series.ChartType = SeriesChartType.Pie;
             var point = series.Points.Add(Convert.ToDouble(performingPercentage));
-            point.LegendText = string.Format("Performing: {0} %", performingPercentage.ToString("N1", numberFormatInfo));
+            point.LegendText = string.Format(
+                "{0}: {1} %", 
+                GetString("Performing"),
+                performingPercentage.ToString("N1", numberFormatInfo));
             //point.Color = Color.FromArgb(28, 151, 234);
             point.Color = Color.FromArgb(72, 234, 28);
 
             point = series.Points.Add(Convert.ToDouble(parPercentage));
-            point.LegendText = string.Format("PAR: {0} %", parPercentage.ToString("N1", numberFormatInfo));
+            point.LegendText = string.Format(
+                "{0}: {1} %",
+                GetString("PAR"),
+                parPercentage.ToString("N1", numberFormatInfo));
             point.Color = Color.FromArgb(234, 28, 28);
 
             AddLegend(_portfolioChart);
-            AddTitle(_portfolioChart, "Portfolio");
+            AddTitle(_portfolioChart, GetString("Portfolio"));
 
             _portfolioChart.Series.Add(series);
             _portfolioChart.Location = new Point(0, 0);
@@ -124,7 +135,7 @@ namespace OpenCBS.GUI
             var legends = dashboard.
                 PortfolioLines.
                 Where(line => line.Name.StartsWith("PAR")).
-                Select(line => line.Name).
+                Select(line => GetString(line.Name)).
                 ToArray();
 
             var colors = new[]
@@ -149,7 +160,7 @@ namespace OpenCBS.GUI
             }
 
             AddLegend(_parChart);
-            AddTitle(_parChart, "PAR");
+            AddTitle(_parChart, GetString("PAR"));
 
             _parChart.Series.Add(series);
             _parChart.Location = new Point(0, 0);
@@ -180,7 +191,7 @@ namespace OpenCBS.GUI
 
             _disbursementsChart.Series.Add(series);
             _disbursementsChart.Dock = DockStyle.Fill;
-            AddTitle(_disbursementsChart, "Number of disbursements in last 10 days");
+            AddTitle(_disbursementsChart, GetString("NumberOfDisbursements"));
 
             disbursementsPanel.Controls.Add(_disbursementsChart);
         }
@@ -213,7 +224,7 @@ namespace OpenCBS.GUI
 
             _olbTrendChart.Series.Add(series);
             _olbTrendChart.Dock = DockStyle.Fill;
-            AddTitle(_olbTrendChart, "OLB trend in last 10 days");
+            AddTitle(_olbTrendChart, GetString("OlbTrend"));
 
             olbTrendPanel.Controls.Add(_olbTrendChart);
         }
@@ -272,7 +283,7 @@ namespace OpenCBS.GUI
         private void RefreshActivityStream(Dashboard dashboard)
         {
             activityListView.SetObjects(dashboard.Actions);
-            activityStreamLabel.Text = string.Format("ACTIVITY STREAM ({0:d0})", dashboard.Actions.Count);
+            activityStreamLabel.Text = string.Format(GetString("ActivityStream"), dashboard.Actions.Count);
         }
 
         private void RefreshParTable(Dashboard dashboard)

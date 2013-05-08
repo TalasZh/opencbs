@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -117,40 +117,43 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="textAnd.Text" xml:space="preserve">
-    <value>жалпы калган суммасы бул суммадан аз</value>
+  <data name="ActivityStream" xml:space="preserve">
+    <value>ACTIVITY STREAM ({0:d0})</value>
   </data>
-  <data name="textInterestRate.Text" xml:space="preserve">
-    <value>толобоо учун максималдуу жана минималдуу олчомду киргизишиниз керек </value>
+  <data name="NumberOfDisbursements" xml:space="preserve">
+    <value>Number of disbursements in last 10 days</value>
   </data>
-  <data name="textAllPackages.Text" xml:space="preserve">
-    <value>продукциянын баары</value>
+  <data name="OlbTrend" xml:space="preserve">
+    <value>OLB trend in last 10 days</value>
   </data>
-  <data name="textPercentAnd.Text" xml:space="preserve">
-    <value>расписаниены принтерден откоруу</value>
+  <data name="PAR" xml:space="preserve">
+    <value>PAR</value>
   </data>
-  <data name="textDays.Text" xml:space="preserve">
-    <value>жоюго чейин толоонун турун тандап алышыныз керек</value>
+  <data name="PAR 1-30" xml:space="preserve">
+    <value>PAR 1-30</value>
   </data>
-  <data name="textNumberOfInstallments.Text" xml:space="preserve">
-    <value>толук эмес толоонун номери</value>
+  <data name="PAR 181-365" xml:space="preserve">
+    <value>PAR 181-365</value>
   </data>
-  <data name="textInstallmentType.Text" xml:space="preserve">
-    <value>контракттын бенефициары белгиленген эмес</value>
+  <data name="PAR 31-60" xml:space="preserve">
+    <value>PAR 31-60</value>
   </data>
-  <data name="textPackagingCaracteristics.Text" xml:space="preserve">
-    <value>Бул кызмат белгиленген.Сураныч кызматка башка ысымды танданыз</value>
+  <data name="PAR 61-90" xml:space="preserve">
+    <value>PAR 61-90</value>
   </data>
-  <data name="textName.Text" xml:space="preserve">
-    <value>баары</value>
+  <data name="PAR 91-180" xml:space="preserve">
+    <value>PAR 91-180</value>
   </data>
-  <data name="textBetween.Text" xml:space="preserve">
-    <value>маалымат база  тузуусу ийгилик менен аякталды</value>
+  <data name="PAR &gt;365" xml:space="preserve">
+    <value>PAR &gt;365</value>
   </data>
-  <data name="textGracePeriod.Text" xml:space="preserve">
-    <value>туулган куну бугунку кун боло албайт</value>
+  <data name="Performing" xml:space="preserve">
+    <value>Performing</value>
   </data>
-  <data name="textInstallmentTypeUndefined.Text" xml:space="preserve">
-    <value>тандалган элементардык кыймылды очуруу (тандаш учун элементардык кыймылды басып коюн)</value>
+  <data name="Portfolio" xml:space="preserve">
+    <value>Portfolio</value>
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value>Total</value>
   </data>
 </root>
