@@ -141,21 +141,21 @@
   <data name="columnHeader9.Text" xml:space="preserve">
     <value>Fecha de pago</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="_btAddExchangeRate.Text" xml:space="preserve">
     <value>Añadir tipo de interés</value>
   </data>
   <data name="buttonCancel.Text" xml:space="preserve">
     <value>Anular</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="checkBoxPending.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 20</value>
+    <value>135, 20</value>
   </data>
   <data name="checkBoxPending.Text" xml:space="preserve">
     <value>Pendiente de pago</value>
   </data>
   <data name="checkBoxTotalAmount.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 20</value>
+    <value>132, 20</value>
   </data>
   <data name="checkBoxTotalAmount.Text" xml:space="preserve">
     <value>Amortización total</value>
@@ -164,7 +164,7 @@
     <value>Monto</value>
   </data>
   <data name="_lbClientName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>133, 16</value>
+    <value>120, 16</value>
   </data>
   <data name="_lbClientName.Text" xml:space="preserve">
     <value>Nombre del cliente:</value>
@@ -181,20 +181,14 @@
   <data name="_rbKeepInitialSchedule.Text" xml:space="preserve">
     <value>Mantener tabla inicial</value>
   </data>
-  <data name="groupBoxTypeOfRepayment.Size" type="System.Drawing.Size, System.Drawing">
-    <value>452, 45</value>
-  </data>
-  <data name="groupBoxTypeOfRepayment.Text" xml:space="preserve">
-    <value>Tipo de reembolso</value>
-  </data>
   <data name="labelRepayPrincipal.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 16</value>
+    <value>48, 16</value>
   </data>
   <data name="labelRepayPrincipal.Text" xml:space="preserve">
     <value>Capital</value>
   </data>
   <data name="labelRepayInterest.Size" type="System.Drawing.Size, System.Drawing">
-    <value>51, 16</value>
+    <value>47, 16</value>
   </data>
   <data name="labelRepayInterest.Text" xml:space="preserve">
     <value>Interés</value>
@@ -203,7 +197,7 @@
     <value>Desactivar cálculo automático de intéreses</value>
   </data>
   <data name="labelRepayCommissions.Size" type="System.Drawing.Size, System.Drawing">
-    <value>81, 16</value>
+    <value>76, 16</value>
   </data>
   <data name="labelRepayCommissions.Text" xml:space="preserve">
     <value>Comisiones</value>
@@ -212,7 +206,7 @@
     <value>Desactivar cálculo automático de intéreses</value>
   </data>
   <data name="labelRepayFees.Size" type="System.Drawing.Size, System.Drawing">
-    <value>99, 16</value>
+    <value>91, 16</value>
   </data>
   <data name="labelRepayFees.Text" xml:space="preserve">
     <value>Penalidades : </value>
@@ -221,7 +215,7 @@
     <value>Cuota</value>
   </data>
   <data name="_lbInstalmentNb.Size" type="System.Drawing.Size, System.Drawing">
-    <value>102, 16</value>
+    <value>93, 16</value>
   </data>
   <data name="_lbInstalmentNb.Text" xml:space="preserve">
     <value>Cuota número:</value>
@@ -230,13 +224,13 @@
     <value>13, 149</value>
   </data>
   <data name="labelPaymentMethod.Size" type="System.Drawing.Size, System.Drawing">
-    <value>109, 16</value>
+    <value>99, 16</value>
   </data>
   <data name="labelPaymentMethod.Text" xml:space="preserve">
     <value>Forma de pago:</value>
   </data>
   <data name="_lbDate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>51, 16</value>
+    <value>48, 16</value>
   </data>
   <data name="_lbDate.Text" xml:space="preserve">
     <value>Fecha:</value>
@@ -248,13 +242,13 @@
     <value>(opcional)</value>
   </data>
   <data name="labelComment.Size" type="System.Drawing.Size, System.Drawing">
-    <value>92, 16</value>
+    <value>85, 16</value>
   </data>
   <data name="labelComment.Text" xml:space="preserve">
     <value>Comentarios:</value>
   </data>
   <data name="_lbLoanCode.Size" type="System.Drawing.Size, System.Drawing">
-    <value>137, 16</value>
+    <value>124, 16</value>
   </data>
   <data name="_lbLoanCode.Text" xml:space="preserve">
     <value>Código del contrato:</value>

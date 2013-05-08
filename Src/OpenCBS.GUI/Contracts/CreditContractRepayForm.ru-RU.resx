@@ -213,7 +213,7 @@
     <value>273, 54</value>
   </data>
   <data name="checkBoxPending.Size" type="System.Drawing.Size, System.Drawing">
-    <value>193, 20</value>
+    <value>177, 20</value>
   </data>
   <data name="checkBoxPending.Text" xml:space="preserve">
     <value>Ожидать подтверждения</value>
@@ -222,7 +222,7 @@
     <value>379, 119</value>
   </data>
   <data name="checkBoxTotalAmount.Size" type="System.Drawing.Size, System.Drawing">
-    <value>151, 20</value>
+    <value>140, 20</value>
   </data>
   <data name="checkBoxTotalAmount.Text" xml:space="preserve">
     <value>Полное погашение</value>
@@ -234,7 +234,7 @@
     <value>Сумма</value>
   </data>
   <data name="_lbClientName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>95, 16</value>
+    <value>87, 16</value>
   </data>
   <data name="_lbClientName.Text" xml:space="preserve">
     <value>Имя клиента:</value>
@@ -279,7 +279,7 @@
     <value>109, 30</value>
   </data>
   <data name="labelRepayPrincipal.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 16</value>
+    <value>114, 16</value>
   </data>
   <data name="labelRepayPrincipal.Text" xml:space="preserve">
     <value>Основная сумма:</value>
@@ -294,7 +294,7 @@
     <value>140, 12</value>
   </data>
   <data name="labelRepayInterest.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 16</value>
+    <value>61, 16</value>
   </data>
   <data name="labelRepayInterest.Text" xml:space="preserve">
     <value>Процент:</value>
@@ -340,7 +340,7 @@
     <value>9, 53</value>
   </data>
   <data name="labelRepayCommissions.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 16</value>
+    <value>71, 16</value>
   </data>
   <data name="labelRepayCommissions.Text" xml:space="preserve">
     <value>Комиссия:</value>
@@ -358,7 +358,7 @@
     <value>Arial, 9.75pt</value>
   </data>
   <data name="labelRepayFees.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 16</value>
+    <value>42, 16</value>
   </data>
   <data name="labelRepayFees.Text" xml:space="preserve">
     <value>Пеня:</value>
@@ -382,19 +382,19 @@
     <value>Событие</value>
   </data>
   <data name="_lbInstalmentNb.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 16</value>
+    <value>120, 16</value>
   </data>
   <data name="_lbInstalmentNb.Text" xml:space="preserve">
     <value>Номер погашения:</value>
   </data>
   <data name="labelPaymentMethod.Size" type="System.Drawing.Size, System.Drawing">
-    <value>106, 16</value>
+    <value>96, 16</value>
   </data>
   <data name="labelPaymentMethod.Text" xml:space="preserve">
     <value>Метод оплаты:</value>
   </data>
   <data name="_lbDate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>43, 16</value>
+    <value>40, 16</value>
   </data>
   <data name="_lbDate.Text" xml:space="preserve">
     <value>Дата:</value>
@@ -412,13 +412,13 @@
     <value>623, 263</value>
   </data>
   <data name="labelComment.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 16</value>
+    <value>92, 16</value>
   </data>
   <data name="labelComment.Text" xml:space="preserve">
     <value>Комментарий:</value>
   </data>
   <data name="_lbLoanCode.Size" type="System.Drawing.Size, System.Drawing">
-    <value>106, 16</value>
+    <value>96, 16</value>
   </data>
   <data name="_lbLoanCode.Text" xml:space="preserve">
     <value>Код контракта:</value>

@@ -5,3 +5,5 @@ _ReSharper.OCTOPUS_2
 *.suo
 *.cache
 *.wixobj
+*.wixpdb
+*.msi

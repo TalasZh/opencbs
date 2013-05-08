@@ -699,7 +699,7 @@ namespace OpenCBS.GUI.Contracts
                 ListViewItem listViewItem = new ListViewItem(installment.Number.ToString());
                 if (installment.IsRepaid)
                 {
-                    listViewItem.BackColor = Color.FromArgb(0, 88, 56);
+                    listViewItem.BackColor = Color.FromArgb(28, 151, 234);
                     listViewItem.ForeColor = Color.White;
                 }
                 if (installment.IsPending)

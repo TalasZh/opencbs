@@ -138,7 +138,6 @@
   <data name="columnHeader9.Text" xml:space="preserve">
     <value>Date de paiement</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="_btAddExchangeRate.Text" xml:space="preserve">
     <value>Ajouter un taux de change</value>
   </data>
@@ -148,6 +147,7 @@
   <data name="groupBoxDetails.Text" xml:space="preserve">
     <value>Détails</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="textBoxComment.Location" type="System.Drawing.Point, System.Drawing">
     <value>684, 263</value>
   </data>
@@ -159,19 +159,19 @@
     <value>False</value>
   </data>
   <data name="checkBoxPending.Location" type="System.Drawing.Point, System.Drawing">
-    <value>376, 140</value>
+    <value>310, 141</value>
   </data>
   <data name="checkBoxPending.Size" type="System.Drawing.Size, System.Drawing">
-    <value>201, 36</value>
+    <value>184, 36</value>
   </data>
   <data name="checkBoxPending.Text" xml:space="preserve">
     <value>Marqué le remboursement comme en attente</value>
   </data>
   <data name="checkBoxTotalAmount.Location" type="System.Drawing.Point, System.Drawing">
-    <value>376, 115</value>
+    <value>310, 113</value>
   </data>
   <data name="checkBoxTotalAmount.Size" type="System.Drawing.Size, System.Drawing">
-    <value>163, 20</value>
+    <value>151, 20</value>
   </data>
   <data name="checkBoxTotalAmount.Text" xml:space="preserve">
     <value>Remboursement total</value>
@@ -183,16 +183,13 @@
     <value>200, 56</value>
   </data>
   <data name="_lbClientName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 16</value>
+    <value>96, 16</value>
   </data>
   <data name="_lbClientName.Text" xml:space="preserve">
     <value>Nom du client :</value>
   </data>
   <data name="gbTypeOfRepayment.Text" xml:space="preserve">
     <value>Type de remboursement</value>
-  </data>
-  <data name="rbProportionPayment.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt</value>
   </data>
   <data name="rbProportionPayment.Location" type="System.Drawing.Point, System.Drawing">
     <value>393, 17</value>
@@ -203,9 +200,6 @@
   <data name="rbProportionPayment.Text" xml:space="preserve">
     <value>Garder les proportions</value>
   </data>
-  <data name="_rbKeepNotInitialSchedule.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt</value>
-  </data>
   <data name="_rbKeepNotInitialSchedule.Location" type="System.Drawing.Point, System.Drawing">
     <value>194, 18</value>
   </data>
@@ -214,9 +208,6 @@
   </data>
   <data name="_rbKeepNotInitialSchedule.Text" xml:space="preserve">
     <value>Ne pas garder l'échéancier</value>
-  </data>
-  <data name="_rbKeepInitialSchedule.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt</value>
   </data>
   <data name="_rbKeepInitialSchedule.Location" type="System.Drawing.Point, System.Drawing">
     <value>18, 18</value>
@@ -243,9 +234,6 @@
   <data name="labelRepayPrincipal.Location" type="System.Drawing.Point, System.Drawing">
     <value>9, 28</value>
   </data>
-  <data name="labelRepayPrincipal.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 16</value>
-  </data>
   <data name="groupBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
@@ -268,7 +256,7 @@
     <value>6, 50</value>
   </data>
   <data name="checkBoxInterests.Size" type="System.Drawing.Size, System.Drawing">
-    <value>318, 24</value>
+    <value>272, 24</value>
   </data>
   <data name="checkBoxInterests.Text" xml:space="preserve">
     <value>Désactiver le calcul automatique des intérêts</value>
@@ -281,6 +269,9 @@
   </data>
   <data name="labelRepayCommissions.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 52</value>
+  </data>
+  <data name="labelRepayCommissions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 16</value>
   </data>
   <data name="labelRepayCommissions.Text" xml:space="preserve">
     <value>Commissions :</value>
@@ -316,19 +307,19 @@
     <value>200, 24</value>
   </data>
   <data name="_lbInstalmentNb.Size" type="System.Drawing.Size, System.Drawing">
-    <value>190, 16</value>
+    <value>173, 16</value>
   </data>
   <data name="_lbInstalmentNb.Text" xml:space="preserve">
     <value>Numéro du remboursement :</value>
   </data>
   <data name="labelPaymentMethod.Size" type="System.Drawing.Size, System.Drawing">
-    <value>155, 16</value>
+    <value>141, 16</value>
   </data>
   <data name="labelPaymentMethod.Text" xml:space="preserve">
     <value>Méthode de paiement :</value>
   </data>
   <data name="_lbDate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 16</value>
+    <value>43, 16</value>
   </data>
   <data name="_lbDate.Text" xml:space="preserve">
     <value>Date :</value>
@@ -346,13 +337,13 @@
     <value>584, 263</value>
   </data>
   <data name="labelComment.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 16</value>
+    <value>92, 16</value>
   </data>
   <data name="labelComment.Text" xml:space="preserve">
     <value>Commentaires</value>
   </data>
   <data name="_lbLoanCode.Size" type="System.Drawing.Size, System.Drawing">
-    <value>117, 16</value>
+    <value>108, 16</value>
   </data>
   <data name="_lbLoanCode.Text" xml:space="preserve">
     <value>Code du contrat :</value>
