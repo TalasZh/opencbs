@@ -2,15 +2,15 @@
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi" xmlns:netfx="http://schemas.microsoft.com/wix/NetFxExtension">
   <!--Remember: you need to change ProductVersion and ProductCode-->
 
-  <?define PreviousVersion="4.6.0" ?>
-  <?define ProductVersion="4.7.0" ?>
+  <?define PreviousVersion="4.7.0" ?>
+  <?define ProductVersion="13.5.0" ?>
   <?define UpgradeCode="efd6c441-40ae-43b6-b789-3f4b6d2e7989"?>
   <?define ProductCode="057C7F84-0D7D-416a-955F-A82F8157A378"?>
 
-  <Product Id="$(var.ProductCode)" Name="Octopus MicroFinance Suite $(var.ProductVersion)" Language="1033"
-           Version="$(var.ProductVersion)" Manufacturer="Octopus MicroFinance" UpgradeCode="$(var.UpgradeCode)">
-    <Package Comments="Octopus Micro Finance Suite" Compressed="yes" InstallerVersion="200"
-             Keywords="Octopus Micro Finance Suite" Languages="1033" Manufacturer="Octopus MicroFinance"/>
+  <Product Id="$(var.ProductCode)" Name="OpenCBS $(var.ProductVersion)" Language="1033"
+           Version="$(var.ProductVersion)" Manufacturer="OpenCBS" UpgradeCode="$(var.UpgradeCode)">
+    <Package Comments="Open Core Banking System" Compressed="yes" InstallerVersion="200"
+             Keywords="OpenCBS" Languages="1033" Manufacturer="OpenCBS"/>
 
     <Media Id="1" Cabinet="media1.cab" EmbedCab="yes" CompressionLevel="high"/>
 
@@ -28,7 +28,7 @@
     <Directory Id="TARGETDIR" Name="SourceDir">
 
       <Directory Id="ProgramMenuFolder">
-        <Directory Id="ApplicationProgramsFolder" Name="Octopus Micro Finance Suite"/>
+        <Directory Id="ApplicationProgramsFolder" Name="OpenCBS"/>
       </Directory>
 
       <Directory Id="DesktopFolder" SourceName="User's Desktop">
@@ -40,7 +40,7 @@
       </Directory>
 
       <Directory Id="ProgramFilesFolder" SourceName="User's Programs Menu">
-        <Directory Id="DIR_ROOT" Name="OctopusMicroFinanceSuite" >
+        <Directory Id="DIR_ROOT" Name="OpenCBS" >
           <Directory Id="DIR_ROOT_VERSION" Name="$(var.ProductVersion)">
             <Component Id="ProductComponent" Guid="81c7391d-3b04-48ee-8602-445292fa5756">
               <File Id="ZedGraph.dll" Source="SourceDir\ZedGraph.dll" />
@@ -76,7 +76,7 @@
 	    -->
             <Component Id="OpenCBS.GUI" Guid="CB26138B-9031-2360-D666-DD5F20038ED8">
               <File Id="OpenCBS.GUI.exe" Source="SourceDir\OpenCBS.GUI.exe" />
-              <Shortcut Id="DesktopShortcut" Directory="DesktopFolder" Name="Octopus Micro Finance Suite" Icon="App.ico" WorkingDirectory="DIR_ROOT_VERSION" Advertise="yes"/>
+              <Shortcut Id="DesktopShortcut" Directory="DesktopFolder" Name="OpenCBS" Icon="App.ico" WorkingDirectory="DIR_ROOT_VERSION" Advertise="yes"/>
             </Component>
 			<Component Id="Registry" Guid="674968e0-7c4a-4164-aaec-5ddf6922a2dc" Permanent="yes">
 			  <RegistryKey Id="OctopusKey" Root="HKCU" Key="SOFTWARE\OctopusMicroFinanceSuite\Octopus $(var.ProductVersion)" Action="create">
@@ -457,7 +457,7 @@
 
     <DirectoryRef Id="ApplicationProgramsFolder">
       <Component Id="ApplicationShortcut" Guid="E59F96B0-DB4B-4891-818A-18D80523650F">
-        <Shortcut Id="ApplicationStartMenuShortcut" Name="Octopus Micro Finance Suite" Description="Octopus Micro Finance Suite"
+        <Shortcut Id="ApplicationStartMenuShortcut" Name="OpenCBS" Description="OpenCBS"
                   Target="[DIR_ROOT_VERSION]OpenCBS.GUI.exe" WorkingDirectory="DIR_ROOT_VERSION"/>
         <Shortcut Id="UninstallProduct" Name="Uninstall Application" Description="Uninstall Application"
                   Target="[System64Folder]msiexec.exe" Arguments="/x [ProductCode]"/>
