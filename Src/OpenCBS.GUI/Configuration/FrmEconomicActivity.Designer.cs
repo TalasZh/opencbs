@@ -49,31 +49,31 @@ namespace OpenCBS.GUI.Configuration
             this.SuspendLayout();
             // 
             // buttonExit
-            //
+            // 
             resources.ApplyResources(this.buttonExit, "buttonExit");
             this.buttonExit.Name = "buttonExit";
             this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
             // 
             // tvEconomicActivity
             // 
-            this.tvEconomicActivity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
+            this.tvEconomicActivity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(81)))), ((int)(((byte)(152)))));
             resources.ApplyResources(this.tvEconomicActivity, "tvEconomicActivity");
             this.tvEconomicActivity.Name = "tvEconomicActivity";
             // 
             // buttonDelete
-            //
+            // 
             resources.ApplyResources(this.buttonDelete, "buttonDelete");
             this.buttonDelete.Name = "buttonDelete";
             this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
             // 
             // buttonEdit
-            //
+            // 
             resources.ApplyResources(this.buttonEdit, "buttonEdit");
             this.buttonEdit.Name = "buttonEdit";
             this.buttonEdit.Click += new System.EventHandler(this.buttonEdit_Click);
             // 
             // buttonAdd
-            //
+            // 
             resources.ApplyResources(this.buttonAdd, "buttonAdd");
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);

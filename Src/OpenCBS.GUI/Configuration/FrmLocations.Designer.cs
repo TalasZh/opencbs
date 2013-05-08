@@ -44,19 +44,19 @@ namespace OpenCBS.GUI
             this.SuspendLayout();
             // 
             // buttonExit
-            //
+            // 
             resources.ApplyResources(this.buttonExit, "buttonExit");
             this.buttonExit.Name = "buttonExit";
             this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
             // 
             // buttonUpdate
-            //
+            // 
             resources.ApplyResources(this.buttonUpdate, "buttonUpdate");
             this.buttonUpdate.Name = "buttonUpdate";
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // buttonDelete
-            //
+            // 
             resources.ApplyResources(this.buttonDelete, "buttonDelete");
             this.buttonDelete.Name = "buttonDelete";
             this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
@@ -67,14 +67,14 @@ namespace OpenCBS.GUI
             this.tbName.Name = "tbName";
             // 
             // buttonAdd
-            //
+            // 
             resources.ApplyResources(this.buttonAdd, "buttonAdd");
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // treeViewLocations
             // 
-            this.treeViewLocations.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
+            this.treeViewLocations.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(81)))), ((int)(((byte)(152)))));
             resources.ApplyResources(this.treeViewLocations, "treeViewLocations");
             this.treeViewLocations.Name = "treeViewLocations";
             this.treeViewLocations.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeViewLocations_AfterSelect);
