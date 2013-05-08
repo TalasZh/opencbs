@@ -45,6 +45,7 @@
             <Component Id="ProductComponent" Guid="81c7391d-3b04-48ee-8602-445292fa5756">
               <File Id="ZedGraph.dll" Source="SourceDir\ZedGraph.dll" />
               <File Id="ObjectListView.dll" Source="SourceDir\ObjectListView.dll" />
+	      <File Id="System.Windows.Forms.DataVisualization.dll" Source="c:\Program Files (x86)\Microsoft Chart Controls\Assemblies\System.Windows.Forms.DataVisualization.dll" />
 	      <!--
               <File Id="CrystalDecisions.CrystalReports.Engine.dll" Source="SourceDir\CrystalDecisions.CrystalReports.Engine.dll" />
               <File Id="CrystalDecisions.Shared.dll" Source="SourceDir\CrystalDecisions.Shared.dll" />
