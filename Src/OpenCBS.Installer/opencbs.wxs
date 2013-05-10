@@ -181,69 +181,7 @@
                 <File Id="DropAndCreateUDF.sql" Source="SourceDir\Update\DropAndCreateUDF.sql" />
               </Component>
               <Component Id="sql_create_database" Guid="6A36DFA4-83F5-FC67-DDB2-0AD22AB03E72">
-                <File Id="CreateDatabase_v1.1.0.sql" Source="SourceDir\Update\CreateDatabase_v1.1.0.sql" />
-                <File Id="CreateDatabase_v1.1.1.sql" Source="SourceDir\Update\CreateDatabase_v1.1.1.sql" />
-                <File Id="CreateDatabase_v1.1.2.sql" Source="SourceDir\Update\CreateDatabase_v1.1.2.sql" />
-                <File Id="CreateDatabase_v1.1.3.sql" Source="SourceDir\Update\CreateDatabase_v1.1.3.sql" />
-                <File Id="CreateDatabase_v1.1.4.sql" Source="SourceDir\Update\CreateDatabase_v1.1.4.sql" />
-                <File Id="CreateDatabase_v1.1.5.sql" Source="SourceDir\Update\CreateDatabase_v1.1.5.sql" />
-                <File Id="CreateDatabase_v1.1.6.sql" Source="SourceDir\Update\CreateDatabase_v1.1.6.sql" />
-                <File Id="CreateDatabase_v1.1.7.sql" Source="SourceDir\Update\CreateDatabase_v1.1.7.sql" />
-                <File Id="CreateDatabase_v1.1.8.sql" Source="SourceDir\Update\CreateDatabase_v1.1.8.sql" />
-                <File Id="CreateDatabase_v1.1.9.sql" Source="SourceDir\Update\CreateDatabase_v1.1.9.sql" />
-                <File Id="CreateDatabase_v1.1.10.sql" Source="SourceDir\Update\CreateDatabase_v1.1.10.sql" />
-                <File Id="CreateDatabase_v1.2.0.sql" Source="SourceDir\Update\CreateDatabase_v1.2.0.sql" />
-                <File Id="CreateDatabase_v1.2.1.sql" Source="SourceDir\Update\CreateDatabase_v1.2.1.sql" />
-                <File Id="CreateDatabase_v1.2.2.sql" Source="SourceDir\Update\CreateDatabase_v1.2.2.sql" />
-                <File Id="CreateDatabase_v2.0.0.sql" Source="SourceDir\Update\CreateDatabase_v2.0.0.sql" />
-                <File Id="CreateDatabase_v2.0.1.sql" Source="SourceDir\Update\CreateDatabase_v2.0.1.sql" />
-                <File Id="CreateDatabase_v2.1.0.sql" Source="SourceDir\Update\CreateDatabase_v2.1.0.sql" />
-                <File Id="CreateDatabase_v2.5.0.sql" Source="SourceDir\Update\CreateDatabase_v2.5.0.sql" />
-                <File Id="CreateDatabase_v2.5.1.sql" Source="SourceDir\Update\CreateDatabase_v2.5.1.sql" />
-                <File Id="CreateDatabase_v2.5.2.sql" Source="SourceDir\Update\CreateDatabase_v2.5.2.sql" />
-                <File Id="CreateDatabase_v2.5.3.sql" Source="SourceDir\Update\CreateDatabase_v2.5.3.sql" />
-                <File Id="CreateDatabase_v2.5.4.sql" Source="SourceDir\Update\CreateDatabase_v2.5.4.sql" />
-                <File Id="CreateDatabase_v2.5.5.sql" Source="SourceDir\Update\CreateDatabase_v2.5.5.sql" />
-                <File Id="CreateDatabase_v2.5.6.sql" Source="SourceDir\Update\CreateDatabase_v2.5.6.sql" />
-                <File Id="CreateDatabase_v2.5.7.sql" Source="SourceDir\Update\CreateDatabase_v2.5.7.sql" />
-                <File Id="CreateDatabase_v2.5.8.sql" Source="SourceDir\Update\CreateDatabase_v2.5.8.sql" />
-                <File Id="CreateDatabase_v2.5.9.sql" Source="SourceDir\Update\CreateDatabase_v2.5.9.sql" />
-                <File Id="CreateDatabase_v2.6.0.sql" Source="SourceDir\Update\CreateDatabase_v2.6.0.sql" />
-                <File Id="CreateDatabase_v2.7.0.sql" Source="SourceDir\Update\CreateDatabase_v2.7.0.sql" />
-                <File Id="CreateDatabase_v2.8.0.sql" Source="SourceDir\Update\CreateDatabase_v2.8.0.sql" />
-                <File Id="CreateDatabase_v2.8.1.sql" Source="SourceDir\Update\CreateDatabase_v2.8.1.sql" />
-                <File Id="CreateDatabase_v2.8.2.sql" Source="SourceDir\Update\CreateDatabase_v2.8.2.sql" />
-                <File Id="CreateDatabase_v2.8.3.sql" Source="SourceDir\Update\CreateDatabase_v2.8.3.sql" />
-                <File Id="CreateDatabase_v2.8.4.sql" Source="SourceDir\Update\CreateDatabase_v2.8.4.sql" />
-                <File Id="CreateDatabase_v2.8.5.sql" Source="SourceDir\Update\CreateDatabase_v2.8.5.sql" />
-                <File Id="CreateDatabase_v2.8.6.sql" Source="SourceDir\Update\CreateDatabase_v2.8.6.sql" />
-                <File Id="CreateDatabase_v2.8.7.sql" Source="SourceDir\Update\CreateDatabase_v2.8.7.sql" />
-                <File Id="CreateDatabase_v2.8.8.sql" Source="SourceDir\Update\CreateDatabase_v2.8.8.sql" />
-                <File Id="CreateDatabase_v2.8.9.sql" Source="SourceDir\Update\CreateDatabase_v2.8.9.sql" />
-                <File Id="CreateDatabase_v2.8.10.sql" Source="SourceDir\Update\CreateDatabase_v2.8.10.sql" />
-                <File Id="CreateDatabase_v2.8.11.sql" Source="SourceDir\Update\CreateDatabase_v2.8.11.sql" />
-                <File Id="CreateDatabase_v2.8.12.sql" Source="SourceDir\Update\CreateDatabase_v2.8.12.sql" />
-                <File Id="CreateDatabase_v2.8.13.sql" Source="SourceDir\Update\CreateDatabase_v2.8.13.sql" />
-                <File Id="CreateDatabase_v2.8.14.sql" Source="SourceDir\Update\CreateDatabase_v2.8.14.sql" />
-                <File Id="CreateDatabase_v2.8.15.sql" Source="SourceDir\Update\CreateDatabase_v2.8.15.sql" />
-                <File Id="CreateDatabase_v3.0.0.sql" Source="SourceDir\Update\CreateDatabase_v3.0.0.sql" />
-                <File Id="CreateDatabase_v3.1.0.sql" Source="SourceDir\Update\CreateDatabase_v3.1.0.sql" />
-                <File Id="CreateDatabase_v3.2.0.sql" Source="SourceDir\Update\CreateDatabase_v3.2.0.sql" />
-                <File Id="CreateDatabase_v3.3.0.sql" Source="SourceDir\Update\CreateDatabase_v3.3.0.sql" />
-                <File Id="CreateDatabase_v3.4.0.sql" Source="SourceDir\Update\CreateDatabase_v3.4.0.sql" />
-               	<File Id="CreateDatabase_v3.5.0.sql" Source="SourceDir\Update\CreateDatabase_v3.5.0.sql" />
-                <File Id="CreateDatabase_v3.6.0.sql" Source="SourceDir\Update\CreateDatabase_v3.6.0.sql" />
-                <File Id="CreateDatabase_v3.7.0.sql" Source="SourceDir\Update\CreateDatabase_v3.7.0.sql" />
-				<File Id="CreateDatabase_v3.8.0.sql" Source="SourceDir\Update\CreateDatabase_v3.8.0.sql" />
-				<File Id="CreateDatabase_v3.9.0.sql" Source="SourceDir\Update\CreateDatabase_v3.9.0.sql" />
-				<File Id="CreateDatabase_v4.0.0.sql" Source="SourceDir\Update\CreateDatabase_v4.0.0.sql" />
-				<File Id="CreateDatabase_v4.1.0.sql" Source="SourceDir\Update\CreateDatabase_v4.1.0.sql" />
-				<File Id="CreateDatabase_v4.2.0.sql" Source="SourceDir\Update\CreateDatabase_v4.2.0.sql" />
-				<File Id="CreateDatabase_v4.3.0.sql" Source="SourceDir\Update\CreateDatabase_v4.3.0.sql" />
-				<File Id="CreateDatabase_v4.4.0.sql" Source="SourceDir\Update\CreateDatabase_v4.4.0.sql" />
-				<File Id="CreateDatabase_v4.5.0.sql" Source="SourceDir\Update\CreateDatabase_v4.5.0.sql" />
-				<File Id="CreateDatabase_v4.6.0.sql" Source="SourceDir\Update\CreateDatabase_v4.6.0.sql" />
-				<File Id="CreateDatabase_v4.7.0.sql" Source="SourceDir\Update\CreateDatabase_v4.7.0.sql" />
+                <File Id="CreateDatabase_v4.7.0.sql" Source="SourceDir\Update\CreateDatabase_v4.7.0.sql" />
               </Component>
               <Component Id="sql_update_database" Guid="BDBEE7A0-23E5-2E7D-BD1B-E58C5CFA0E65">
                 <File Id="Database_Update_v1.1.0_to_v1.1.1.sql" Source="SourceDir\Update\Database_Update_v1.1.0_to_v1.1.1.sql" />
@@ -310,69 +248,7 @@
                 <File Id="Database_Update_v4.6.0_to_v4.7.0.sql" Source="SourceDir\Update\Database_Update_v4.6.0_to_v4.7.0.sql" />
               </Component>
               <Component Id="xml_data_schema" Guid="CB26138B-9031-2360-D666-DD5F20038ED9">
-                <File Id="OCTOPUS_Data_Schema_v1.1.0.xml" Name="OCTOPUS_Data_Schema_(v1.1.0).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v1.1.0).xml" />
-                <File Id="OCTOPUS_Data_Schema_v1.1.1.xml" Name="OCTOPUS_Data_Schema_(v1.1.1).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v1.1.1).xml" />
-                <File Id="OCTOPUS_Data_Schema_v1.1.2.xml" Name="OCTOPUS_Data_Schema_(v1.1.2).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v1.1.2).xml" />
-                <File Id="OCTOPUS_Data_Schema_v1.1.3.xml" Name="OCTOPUS_Data_Schema_(v1.1.3).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v1.1.3).xml" />
-                <File Id="OCTOPUS_Data_Schema_v1.1.4.xml" Name="OCTOPUS_Data_Schema_(v1.1.4).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v1.1.4).xml" />
-                <File Id="OCTOPUS_Data_Schema_v1.1.5.xml" Name="OCTOPUS_Data_Schema_(v1.1.5).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v1.1.5).xml" />
-                <File Id="OCTOPUS_Data_Schema_v1.1.6.xml" Name="OCTOPUS_Data_Schema_(v1.1.6).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v1.1.6).xml" />
-                <File Id="OCTOPUS_Data_Schema_v1.1.7.xml" Name="OCTOPUS_Data_Schema_(v1.1.7).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v1.1.7).xml" />
-                <File Id="OCTOPUS_Data_Schema_v1.1.8.xml" Name="OCTOPUS_Data_Schema_(v1.1.8).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v1.1.8).xml" />
-                <File Id="OCTOPUS_Data_Schema_v1.1.9.xml" Name="OCTOPUS_Data_Schema_(v1.1.9).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v1.1.9).xml" />
-                <File Id="OCTOPUS_Data_Schema_v1.1.10.xml" Name="OCTOPUS_Data_Schema_(v1.1.10).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v1.1.10).xml" />
-                <File Id="OCTOPUS_Data_Schema_v1.2.0.xml" Name="OCTOPUS_Data_Schema_(v1.2.0).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v1.2.0).xml" />
-                <File Id="OCTOPUS_Data_Schema_v1.2.1.xml" Name="OCTOPUS_Data_Schema_(v1.2.1).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v1.2.1).xml" />
-                <File Id="OCTOPUS_Data_Schema_v1.2.2.xml" Name="OCTOPUS_Data_Schema_(v1.2.2).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v1.2.2).xml" />
-                <File Id="OCTOPUS_Data_Schema_v2.0.0.xml" Name="OCTOPUS_Data_Schema_(v2.2.0).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v2.0.0).xml" />
-                <File Id="OCTOPUS_Data_Schema_v2.0.1.xml" Name="OCTOPUS_Data_Schema_(v2.0.0).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v2.0.1).xml" />
-                <File Id="OCTOPUS_Data_Schema_v2.1.0.xml" Name="OCTOPUS_Data_Schema_(v2.1.0).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v2.1.0).xml" />
-                <File Id="OCTOPUS_Data_Schema_v2.5.0.xml" Name="OCTOPUS_Data_Schema_(v2.5.0).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v2.5.0).xml" />
-                <File Id="OCTOPUS_Data_Schema_v2.5.1.xml" Name="OCTOPUS_Data_Schema_(v2.5.1).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v2.5.1).xml" />
-                <File Id="OCTOPUS_Data_Schema_v2.5.2.xml" Name="OCTOPUS_Data_Schema_(v2.5.2).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v2.5.2).xml" />
-                <File Id="OCTOPUS_Data_Schema_v2.5.3.xml" Name="OCTOPUS_Data_Schema_(v2.5.3).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v2.5.3).xml" />
-                <File Id="OCTOPUS_Data_Schema_v2.5.4.xml" Name="OCTOPUS_Data_Schema_(v2.5.4).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v2.5.4).xml" />
-                <File Id="OCTOPUS_Data_Schema_v2.5.5.xml" Name="OCTOPUS_Data_Schema_(v2.5.5).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v2.5.5).xml" />
-                <File Id="OCTOPUS_Data_Schema_v2.5.6.xml" Name="OCTOPUS_Data_Schema_(v2.5.6).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v2.5.6).xml" />
-                <File Id="OCTOPUS_Data_Schema_v2.5.7.xml" Name="OCTOPUS_Data_Schema_(v2.5.7).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v2.5.7).xml" />
-                <File Id="OCTOPUS_Data_Schema_v2.5.8.xml" Name="OCTOPUS_Data_Schema_(v2.5.8).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v2.5.8).xml" />
-                <File Id="OCTOPUS_Data_Schema_v2.5.9.xml" Name="OCTOPUS_Data_Schema_(v2.5.9).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v2.5.9).xml" />
-                <File Id="OCTOPUS_Data_Schema_v2.6.0.xml" Name="OCTOPUS_Data_Schema_(v2.6.0).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v2.6.0).xml" />
-                <File Id="OCTOPUS_Data_Schema_v2.7.0.xml" Name="OCTOPUS_Data_Schema_(v2.7.0).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v2.7.0).xml" />
-                <File Id="OCTOPUS_Data_Schema_v2.8.0.xml" Name="OCTOPUS_Data_Schema_(v2.8.0).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v2.8.0).xml" />
-                <File Id="OCTOPUS_Data_Schema_v2.8.1.xml" Name="OCTOPUS_Data_Schema_(v2.8.1).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v2.8.1).xml" />
-                <File Id="OCTOPUS_Data_Schema_v2.8.2.xml" Name="OCTOPUS_Data_Schema_(v2.8.2).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v2.8.2).xml" />
-                <File Id="OCTOPUS_Data_Schema_v2.8.3.xml" Name="OCTOPUS_Data_Schema_(v2.8.3).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v2.8.3).xml" />
-                <File Id="OCTOPUS_Data_Schema_v2.8.4.xml" Name="OCTOPUS_Data_Schema_(v2.8.4).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v2.8.4).xml" />
-                <File Id="OCTOPUS_Data_Schema_v2.8.5.xml" Name="OCTOPUS_Data_Schema_(v2.8.5).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v2.8.5).xml" />
-                <File Id="OCTOPUS_Data_Schema_v2.8.6.xml" Name="OCTOPUS_Data_Schema_(v2.8.6).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v2.8.6).xml" />
-                <File Id="OCTOPUS_Data_Schema_v2.8.7.xml" Name="OCTOPUS_Data_Schema_(v2.8.7).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v2.8.7).xml" />
-                <File Id="OCTOPUS_Data_Schema_v2.8.8.xml" Name="OCTOPUS_Data_Schema_(v2.8.8).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v2.8.8).xml" />
-                <File Id="OCTOPUS_Data_Schema_v2.8.9.xml" Name="OCTOPUS_Data_Schema_(v2.8.9).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v2.8.9).xml" />
-                <File Id="OCTOPUS_Data_Schema_v2.8.10.xml" Name="OCTOPUS_Data_Schema_(v2.8.10).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v2.8.10).xml" />
-                <File Id="OCTOPUS_Data_Schema_v2.8.11.xml" Name="OCTOPUS_Data_Schema_(v2.8.11).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v2.8.11).xml" />
-                <File Id="OCTOPUS_Data_Schema_v2.8.12.xml" Name="OCTOPUS_Data_Schema_(v2.8.12).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v2.8.12).xml" />
-                <File Id="OCTOPUS_Data_Schema_v2.8.13.xml" Name="OCTOPUS_Data_Schema_(v2.8.13).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v2.8.13).xml" />
-                <File Id="OCTOPUS_Data_Schema_v2.8.14.xml" Name="OCTOPUS_Data_Schema_(v2.8.14).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v2.8.14).xml" />
-                <File Id="OCTOPUS_Data_Schema_v2.8.15.xml" Name="OCTOPUS_Data_Schema_(v2.8.15).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v2.8.15).xml" />
-                <File Id="OCTOPUS_Data_Schema_v3.0.0.xml" Name="OCTOPUS_Data_Schema_(v3.0.0).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v3.0.0).xml" />
-                <File Id="OCTOPUS_Data_Schema_v3.1.0.xml" Name="OCTOPUS_Data_Schema_(v3.1.0).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v3.1.0).xml" />
-                <File Id="OCTOPUS_Data_Schema_v3.2.0.xml" Name="OCTOPUS_Data_Schema_(v3.2.0).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v3.2.0).xml" />
-                <File Id="OCTOPUS_Data_Schema_v3.3.0.xml" Name="OCTOPUS_Data_Schema_(v3.3.0).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v3.3.0).xml" />
-                <File Id="OCTOPUS_Data_Schema_v3.4.0.xml" Name="OCTOPUS_Data_Schema_(v3.4.0).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v3.4.0).xml" />
-				<File Id="OCTOPUS_Data_Schema_v3.5.0.xml" Name="OCTOPUS_Data_Schema_(v3.5.0).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v3.5.0).xml" />
-				<File Id="OCTOPUS_Data_Schema_v3.6.0.xml" Name="OCTOPUS_Data_Schema_(v3.6.0).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v3.6.0).xml" />
-				<File Id="OCTOPUS_Data_Schema_v3.7.0.xml" Name="OCTOPUS_Data_Schema_(v3.7.0).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v3.7.0).xml" />
-				<File Id="OCTOPUS_Data_Schema_v3.8.0.xml" Name="OCTOPUS_Data_Schema_(v3.8.0).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v3.8.0).xml" />
-				<File Id="OCTOPUS_Data_Schema_v3.9.0.xml" Name="OCTOPUS_Data_Schema_(v3.9.0).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v3.9.0).xml" />
-				<File Id="OCTOPUS_Data_Schema_v4.0.0.xml" Name="OCTOPUS_Data_Schema_(v4.0.0).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v4.0.0).xml" />
-				<File Id="OCTOPUS_Data_Schema_v4.1.0.xml" Name="OCTOPUS_Data_Schema_(v4.1.0).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v4.1.0).xml" />
-				<File Id="OCTOPUS_Data_Schema_v4.2.0.xml" Name="OCTOPUS_Data_Schema_(v4.2.0).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v4.2.0).xml" />
-				<File Id="OCTOPUS_Data_Schema_v4.3.0.xml" Name="OCTOPUS_Data_Schema_(v4.3.0).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v4.3.0).xml" />
-				<File Id="OCTOPUS_Data_Schema_v4.4.0.xml" Name="OCTOPUS_Data_Schema_(v4.4.0).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v4.4.0).xml" />
-				<File Id="OCTOPUS_Data_Schema_v4.5.0.xml" Name="OCTOPUS_Data_Schema_(v4.5.0).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v4.5.0).xml" />
-				<File Id="OCTOPUS_Data_Schema_v4.6.0.xml" Name="OCTOPUS_Data_Schema_(v4.6.0).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v4.6.0).xml" />
-				<File Id="OCTOPUS_Data_Schema_v4.7.0.xml" Name="OCTOPUS_Data_Schema_(v4.7.0).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v4.7.0).xml" />
+                <File Id="OCTOPUS_Data_Schema_v4.7.0.xml" Name="OCTOPUS_Data_Schema_(v4.7.0).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v4.7.0).xml" />
                 <File Id="OCTOPUS_Upgrade_Schema.xml" Source="SourceDir\Update\OCTOPUS_Upgrade_Schema.xml" />
                 <File Id="Objects.xml" Source="SourceDir\Update\Objects.xml" />
               </Component>
