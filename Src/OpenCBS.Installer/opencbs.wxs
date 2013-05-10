@@ -80,7 +80,7 @@
               <Shortcut Id="DesktopShortcut" Directory="DesktopFolder" Name="OpenCBS" Icon="App.ico" WorkingDirectory="DIR_ROOT_VERSION" Advertise="yes"/>
             </Component>
             <Component Id="Registry" Guid="674968e0-7c4a-4164-aaec-5ddf6922a2dc" Permanent="yes">
-                <RegistryKey Id="OctopusKey" Root="HKCU" Key="SOFTWARE\Open Octopus Ltd\OpenCBS\$(var.ProductVersion)" Action="create">
+                <RegistryKey Id="OctopusKey" Root="HKLM" Key="SOFTWARE\Open Octopus Ltd\OpenCBS\$(var.ProductVersion)" Action="create">
                 <RegistryValue Id="DATABASE_LOGIN_NAME" Type="string" Name="DATABASE_LOGIN_NAME" Value="sa"/>
                 <RegistryValue Id="DATABASE_NAME" Type="string" Name="DATABASE_NAME" Value="opencbs"/>
                 <RegistryValue Id="DATABASE_SERVER_NAME" Type="string" Name="DATABASE_SERVER_NAME" Value="(local)"/>
