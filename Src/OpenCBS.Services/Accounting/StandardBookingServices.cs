@@ -35,13 +35,13 @@ namespace OpenCBS.Services.Accounting
         private void _checkStandardBooking(Booking pBooking)
         {
             if (string.IsNullOrEmpty(pBooking.Name))
-                throw new OctopusBookingException(OctopusBookingExceptionsEnum.NameIsEmpty);
+                throw new OpenCbsBookingException(OpenCbsBookingExceptionsEnum.NameIsEmpty);
             if (pBooking.CreditAccount == null)
-                throw new OctopusBookingException(OctopusBookingExceptionsEnum.CreditAccountIsEmpty);
+                throw new OpenCbsBookingException(OpenCbsBookingExceptionsEnum.CreditAccountIsEmpty);
             if (pBooking.DebitAccount == null)
-                throw new OctopusBookingException(OctopusBookingExceptionsEnum.DebitAccountIsEmpty);
+                throw new OpenCbsBookingException(OpenCbsBookingExceptionsEnum.DebitAccountIsEmpty);
             if (pBooking.CreditAccount.Number == pBooking.DebitAccount.Number)
-                throw new OctopusBookingException(OctopusBookingExceptionsEnum.DebitAndCreditAccountAreIdentical);
+                throw new OpenCbsBookingException(OpenCbsBookingExceptionsEnum.DebitAndCreditAccountAreIdentical);
         }
 
         public void CreateStandardBooking(Booking booking)

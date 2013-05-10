@@ -47,7 +47,7 @@ namespace OpenCBS.Services
             foreach (CustomizableField field in fields)
             {
                 if (field.Name.Contains(",") || field.Description.Contains(","))
-                    throw new OctopusCustomFieldNameException(OCustomFieldExceptionEnum.FieldNameCanNotContainComma);
+                    throw new OpenCbsCustomFieldNameException(OCustomFieldExceptionEnum.FieldNameCanNotContainComma);
             }
         }
 
@@ -130,7 +130,7 @@ namespace OpenCBS.Services
                             (fieldType == OCustomizableFieldTypes.Collection && fieldValue == null) ||
                             (fieldType == OCustomizableFieldTypes.Client && fieldValue == string.Empty)
                         )
-                            throw new OctopusContractSaveException(OctopusContractSaveExceptionEnum.FieldIsMandatory);
+                            throw new OpenCbsContractSaveException(OpenCbsContractSaveExceptionEnum.FieldIsMandatory);
 
                     if (fieldType == OCustomizableFieldTypes.Number)
                     {
@@ -138,15 +138,15 @@ namespace OpenCBS.Services
                         {
                             decimal result;
                             if (!Converter.CustomFieldDecimalParse(out result, fieldValue))
-                                throw new OctopusContractSaveException(
-                                    OctopusContractSaveExceptionEnum.NumberFieldIsNotANumber);
+                                throw new OpenCbsContractSaveException(
+                                    OpenCbsContractSaveExceptionEnum.NumberFieldIsNotANumber);
                         }
                     }
 
                     if (fieldType == OCustomizableFieldTypes.String)
                     {
                         if (fieldValue.Length>300)
-                            throw new OctopusCustomFieldNameException(OCustomFieldExceptionEnum.FieldLimited);
+                            throw new OpenCbsCustomFieldNameException(OCustomFieldExceptionEnum.FieldLimited);
                     }
 
                     if (field.IsUnique)
@@ -159,7 +159,7 @@ namespace OpenCBS.Services
                         )
                         {
                             if (customizableFieldsServices.FieldValueExists(linkId, linkType, customizableFieldValue.Field.Id, fieldValue))
-                                throw new OctopusContractSaveException(OctopusContractSaveExceptionEnum.FieldIsNotUnique);
+                                throw new OpenCbsContractSaveException(OpenCbsContractSaveExceptionEnum.FieldIsNotUnique);
                         }
                     }
 

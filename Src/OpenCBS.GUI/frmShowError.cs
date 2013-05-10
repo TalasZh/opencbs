@@ -159,14 +159,14 @@ namespace OpenCBS.GUI
 			Size = new Size(700, 137);
 			buttonShowDetail.Tag = false;
 
-            if (_expectionStatus.Ex is OctopusException)
+            if (_expectionStatus.Ex is OpenCbsException)
             {
-                if (((OctopusException) _expectionStatus.Ex).AdditionalOptions != null)
+                if (((OpenCbsException) _expectionStatus.Ex).AdditionalOptions != null)
                 {
-                    if (((OctopusException) _expectionStatus.Ex).AdditionalOptions.Count > 0)
+                    if (((OpenCbsException) _expectionStatus.Ex).AdditionalOptions.Count > 0)
                     {
                         _expectionStatus.Message = string.Format(_expectionStatus.Message,
-                                                                 ((OctopusException) _expectionStatus.Ex).
+                                                                 ((OpenCbsException) _expectionStatus.Ex).
                                                                      AdditionalOptions.
                                                                      ToArray());
                     }

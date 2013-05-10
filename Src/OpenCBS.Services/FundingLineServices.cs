@@ -83,15 +83,15 @@ namespace OpenCBS.Services
             try
             {
                 if (string.IsNullOrEmpty(fund.Purpose))
-                    throw new OctopusFundingLineException(OctopusFundingLineExceptionEnum.CodeIsEmpty);
+                    throw new OpenCbsFundingLineException(OpenCbsFundingLineExceptionEnum.CodeIsEmpty);
                 if (fund.StartDate > fund.EndDate)
-                    throw new OctopusFundingLineException(OctopusFundingLineExceptionEnum.BeginDateGreaterEndDate);
+                    throw new OpenCbsFundingLineException(OpenCbsFundingLineExceptionEnum.BeginDateGreaterEndDate);
                 if (string.IsNullOrEmpty(fund.Name))
-                    throw new OctopusFundingLineException(OctopusFundingLineExceptionEnum.NameIsEmpty);
+                    throw new OpenCbsFundingLineException(OpenCbsFundingLineExceptionEnum.NameIsEmpty);
                 if (fund.Currency == null)
-                    throw new OctopusFundingLineException(OctopusFundingLineExceptionEnum.CurrencyIsEmpty);
+                    throw new OpenCbsFundingLineException(OpenCbsFundingLineExceptionEnum.CurrencyIsEmpty);
                 if (fund.Currency.Id == 0)
-                    throw new OctopusFundingLineException(OctopusFundingLineExceptionEnum.CurrencyIsEmpty);
+                    throw new OpenCbsFundingLineException(OpenCbsFundingLineExceptionEnum.CurrencyIsEmpty);
                 FundingLine tempfund = _fundingLineManager.SelectFundingLineByNameAndPurpose(fund, sqlTransac, true);
 
                 if (tempfund.Id > 0)
@@ -102,7 +102,7 @@ namespace OpenCBS.Services
                         return fund;
                     }
                     else
-                        throw new OctopusFundingLineException(OctopusFundingLineExceptionEnum.FundingLineNameExists);
+                        throw new OpenCbsFundingLineException(OpenCbsFundingLineExceptionEnum.FundingLineNameExists);
 
                 fund.Id = _fundingLineManager.AddFundingLine(fund, sqlTransac);
 
@@ -134,11 +134,11 @@ namespace OpenCBS.Services
         public void UpdateFundingLine(FundingLine fund, SqlTransaction sqlTransac)
         {
             if (fund.Purpose == string.Empty)
-                throw new OctopusFundingLineException(OctopusFundingLineExceptionEnum.NameIsEmpty);
+                throw new OpenCbsFundingLineException(OpenCbsFundingLineExceptionEnum.NameIsEmpty);
             if (fund.StartDate > fund.EndDate)
-                throw new OctopusFundingLineException(OctopusFundingLineExceptionEnum.BeginDateGreaterEndDate);
+                throw new OpenCbsFundingLineException(OpenCbsFundingLineExceptionEnum.BeginDateGreaterEndDate);
             if (fund.Name == string.Empty)
-                throw new OctopusFundingLineException(OctopusFundingLineExceptionEnum.CodeIsEmpty);
+                throw new OpenCbsFundingLineException(OpenCbsFundingLineExceptionEnum.CodeIsEmpty);
 
             _fundingLineManager.UpdateFundingLine(fund, sqlTransac);
         }
@@ -161,7 +161,7 @@ namespace OpenCBS.Services
         public FundingLineEvent AddFundingLineEvent(FundingLineEvent newFundingLineEvent, SqlTransaction sqlTransac)
         {
             if (newFundingLineEvent.FundingLine == null)
-                throw new OctopusFundingLineException(OctopusFundingLineExceptionEnum.BadFundingLineID);
+                throw new OpenCbsFundingLineException(OpenCbsFundingLineExceptionEnum.BadFundingLineID);
 
             ApplyRulesAmountEventFundingLine(newFundingLineEvent);
             newFundingLineEvent.Id = _fundingLineManager.AddFundingLineEvent(newFundingLineEvent, sqlTransac);

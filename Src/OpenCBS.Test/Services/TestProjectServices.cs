@@ -16,7 +16,7 @@ namespace OpenCBS.Test.Services
     public class TestProjectServices:BaseServicesTest
     {
         [Test]
-        [ExpectedException(typeof(OctopusProjectSaveException))]
+        [ExpectedException(typeof(OpenCbsProjectSaveException))]
         public void SaveProject_CodeNull_ThrowException()
         {
             var project = new Project("NotSet") {Code = null};
@@ -26,7 +26,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OctopusProjectSaveException))]
+        [ExpectedException(typeof(OpenCbsProjectSaveException))]
         public void SaveProject_CodeEmpty_ThrowException()
         {
             var project = new Project("NotSet") { Code = String.Empty };
@@ -36,7 +36,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OctopusProjectSaveException))]
+        [ExpectedException(typeof(OpenCbsProjectSaveException))]
         public void SaveProject_NameNull_ThrowException()
         {
             var project = new Project("NotSet") {Code = "NotSet", Name = null};
@@ -45,7 +45,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OctopusProjectSaveException))]
+        [ExpectedException(typeof(OpenCbsProjectSaveException))]
         public void SaveProject_NameEmpty_ThrowException()
         {
             var project = new Project("NotSet") {Code = "NotSet", Name = String.Empty};
@@ -55,7 +55,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OctopusProjectSaveException))]
+        [ExpectedException(typeof(OpenCbsProjectSaveException))]
         public void SaveProject_AimNull_ThrowException()
         {
             var project = new Project("NotSet") {Code = "NotSet", Name = "NotSet", Aim = null};
@@ -65,7 +65,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OctopusProjectSaveException))]
+        [ExpectedException(typeof(OpenCbsProjectSaveException))]
         public void SaveProject_AimEmpty_ThrowException()
         {
             var project = new Project("NotSet") {Name = "NotSet", Code = "NotSet", Aim = String.Empty};

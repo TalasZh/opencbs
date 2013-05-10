@@ -147,34 +147,34 @@ namespace OpenCBS.Services
         public void ValidateTeller(Teller teller)
         {
             if (string.IsNullOrEmpty(teller.Name))
-                throw new OctopusTellerException(OctopusTellerExceptionEnum.NameIsEmpty);
+                throw new OpenCbsTellerException(OpenCbsTellerExceptionEnum.NameIsEmpty);
             
             if (teller.Account == null)
-                throw new OctopusTellerException(OctopusTellerExceptionEnum.AccountIsEmpty);
+                throw new OpenCbsTellerException(OpenCbsTellerExceptionEnum.AccountIsEmpty);
             
             if (teller.User == null)
-                throw new OctopusTellerException(OctopusTellerExceptionEnum.UserIsEmpty);
+                throw new OpenCbsTellerException(OpenCbsTellerExceptionEnum.UserIsEmpty);
 
             if (teller.Branch == null)
-                throw new OctopusTellerException(OctopusTellerExceptionEnum.BranchIsEmpty);
+                throw new OpenCbsTellerException(OpenCbsTellerExceptionEnum.BranchIsEmpty);
 
             if (teller.Currency == null)
-                throw new OctopusTellerException(OctopusTellerExceptionEnum.CurrencyIsEmpty);
+                throw new OpenCbsTellerException(OpenCbsTellerExceptionEnum.CurrencyIsEmpty);
 
             if (CheckMinMaxAndValueCorrectlyFilled(teller.MinAmountDeposit, teller.MaxAmountDeposit, null))
-                throw new OctopusTellerException(OctopusTellerExceptionEnum.MinMaxAmountIsInvalid);
+                throw new OpenCbsTellerException(OpenCbsTellerExceptionEnum.MinMaxAmountIsInvalid);
 
             if (CheckMinMaxAndValueCorrectlyFilled(teller.MinAmountWithdrawal, teller.MaxAmountWithdrawal, null))
-                throw new OctopusTellerException(OctopusTellerExceptionEnum.MinMaxAmountIsInvalid);
+                throw new OpenCbsTellerException(OpenCbsTellerExceptionEnum.MinMaxAmountIsInvalid);
 
             if (CheckMinMaxAndValueCorrectlyFilled(teller.MinAmountTeller, teller.MaxAmountTeller, null))
-                throw new OctopusTellerException(OctopusTellerExceptionEnum.MinMaxAmountIsInvalid);
+                throw new OpenCbsTellerException(OpenCbsTellerExceptionEnum.MinMaxAmountIsInvalid);
 
             if (teller.Id == null && Find(teller.Name) != null)
-                throw new OctopusTellerException(OctopusTellerExceptionEnum.NameIsExists);
+                throw new OpenCbsTellerException(OpenCbsTellerExceptionEnum.NameIsExists);
 
             if (teller.User.Id == 0 && _manager.SelectVault(teller.Branch.Id) != null)
-                throw new OctopusTellerException(OctopusTellerExceptionEnum.VaultExists);
+                throw new OpenCbsTellerException(OpenCbsTellerExceptionEnum.VaultExists);
         }
 
          public OCurrency GetLatestTellerOpenBalance(Teller teller)

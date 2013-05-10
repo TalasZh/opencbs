@@ -375,7 +375,7 @@ namespace OpenCBS.GUI.Contracts
                                                                 savingsMethod, rbxCredit.Checked, booking);
                                 break;
                             }
-                            throw new OctopusSavingException(OctopusSavingExceptionEnum.TransactionInvalid);
+                            throw new OpenCbsSavingException(OpenCbsSavingExceptionEnum.TransactionInvalid);
                         }
                 }
                

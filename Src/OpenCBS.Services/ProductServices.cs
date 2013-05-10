@@ -351,43 +351,43 @@ namespace OpenCBS.Services
             foreach (int cycle in product.EntryFeeCycles)
             {
                 if (cycle==newCycle)
-                    throw new OctopusPackageSaveException(OctopusPackageSaveExceptionEnum.CycleAlreadyExists);
+                    throw new OpenCbsPackageSaveException(OpenCbsPackageSaveExceptionEnum.CycleAlreadyExists);
             }
         }
 
 	    public void CheckCycleParams(List<LoanAmountCycle> loanAmountCycles, List<RateCycle> rateCycles, List<MaturityCycle> maturityCycles)
 	    {
 	        if (loanAmountCycles==null || rateCycles == null || maturityCycles==null)
-                throw new OctopusPackageSaveException(OctopusPackageSaveExceptionEnum.CycleParametersAreNotFilled);
+                throw new OpenCbsPackageSaveException(OpenCbsPackageSaveExceptionEnum.CycleParametersAreNotFilled);
 
             if (loanAmountCycles.Count==0 || rateCycles.Count==0 || maturityCycles.Count==0)
-                throw new OctopusPackageSaveException(OctopusPackageSaveExceptionEnum.CycleParametersAreNotFilled);
+                throw new OpenCbsPackageSaveException(OpenCbsPackageSaveExceptionEnum.CycleParametersAreNotFilled);
 
 	        foreach (var rateCycle in rateCycles)
 	        {
 	            bool result = ServicesHelper.CheckIfValueBetweenMinAndMaxOrValuesAreEqual(rateCycle.Min.Value,
 	                                                                                      rateCycle.Max.Value);
                 if (!result)
-                    throw  new OctopusPackageSaveException(OctopusPackageSaveExceptionEnum.CycleParametersHaveBeenFilledIncorrectly);
+                    throw  new OpenCbsPackageSaveException(OpenCbsPackageSaveExceptionEnum.CycleParametersHaveBeenFilledIncorrectly);
 	        }
 
 	        foreach (var amountCycle in loanAmountCycles)
 	        {
 	            bool result = ServicesHelper.CheckIfValueBetweenMinAndMaxOrValuesAreEqual(amountCycle.Min.Value, amountCycle.Max.Value);
 	            if (!result)
-	                throw new OctopusPackageSaveException((OctopusPackageSaveExceptionEnum.CycleParametersHaveBeenFilledIncorrectly));
+	                throw new OpenCbsPackageSaveException((OpenCbsPackageSaveExceptionEnum.CycleParametersHaveBeenFilledIncorrectly));
                 if (amountCycle.Min == 0 || amountCycle.Max==0)
-                    throw new  OctopusPackageSaveException((OctopusPackageSaveExceptionEnum.AmountCanNotBeZero));
+                    throw new  OpenCbsPackageSaveException((OpenCbsPackageSaveExceptionEnum.AmountCanNotBeZero));
 	        }
 
             foreach (var maturityCycle in maturityCycles)
 	        {
 	            bool result=ServicesHelper.CheckIfValueBetweenMinAndMaxOrValuesAreEqual(maturityCycle.Min.Value, maturityCycle.Max.Value);
                 if (!result)
-                    throw new OctopusPackageSaveException(OctopusPackageSaveExceptionEnum.CycleParametersHaveBeenFilledIncorrectly);
+                    throw new OpenCbsPackageSaveException(OpenCbsPackageSaveExceptionEnum.CycleParametersHaveBeenFilledIncorrectly);
 	            if (maturityCycle.Min==0 || maturityCycle.Max==0)
 	            {
-	                throw new OctopusPackageSaveException(OctopusPackageSaveExceptionEnum.MaturityCanNotBeZero);
+	                throw new OpenCbsPackageSaveException(OpenCbsPackageSaveExceptionEnum.MaturityCanNotBeZero);
 	            }
 	        }
 
@@ -408,9 +408,9 @@ namespace OpenCBS.Services
 		public int AddExoticProduct(ExoticInstallmentsTable pExoticProduct, OLoanTypes loanType)
 		{
             if (_productManager.IsThisExoticProductNameAlreadyExist(pExoticProduct.Name))
-				throw new OctopusPackageSaveException(OctopusPackageSaveExceptionEnum.ExoticProductNameAlreadyExist);
+				throw new OpenCbsPackageSaveException(OpenCbsPackageSaveExceptionEnum.ExoticProductNameAlreadyExist);
             if(!pExoticProduct.CheckIfSumIsOk(loanType))
-                throw new OctopusPackageSaveException(OctopusPackageSaveExceptionEnum.ExoticProductSumInIncorrect);
+                throw new OpenCbsPackageSaveException(OpenCbsPackageSaveExceptionEnum.ExoticProductSumInIncorrect);
 			
             pExoticProduct.Id = _productManager.AddExoticInstallmentsTable(pExoticProduct);
 
@@ -428,9 +428,9 @@ namespace OpenCBS.Services
             foreach (InstallmentType type in list)
             {
                 if(type.Name.ToLower() == pInstallmentType.Name.ToLower())
-                    throw new OctopusPackageSaveException(OctopusPackageSaveExceptionEnum.InstallmentTypeNameAlreadyExist);
+                    throw new OpenCbsPackageSaveException(OpenCbsPackageSaveExceptionEnum.InstallmentTypeNameAlreadyExist);
                 if(type.NbOfDays == pInstallmentType.NbOfDays && type.NbOfMonths == pInstallmentType.NbOfMonths)
-                    throw new OctopusPackageSaveException(OctopusPackageSaveExceptionEnum.InstallmentTypeValuesAlreadyExist);
+                    throw new OpenCbsPackageSaveException(OpenCbsPackageSaveExceptionEnum.InstallmentTypeValuesAlreadyExist);
             }
             return _installmentTypeManager.AddInstallmentType(pInstallmentType);
         }
@@ -443,7 +443,7 @@ namespace OpenCBS.Services
         public void DeleteInstallmentType(InstallmentType pInstallmentType)
         {
             if (_installmentTypeManager.NumberOfLinksToInstallmentType(pInstallmentType) > 0)
-                throw new OctopusPackageSaveException(OctopusPackageSaveExceptionEnum.InstallmentTypeValuesAreUsed);
+                throw new OpenCbsPackageSaveException(OpenCbsPackageSaveExceptionEnum.InstallmentTypeValuesAreUsed);
             
             _installmentTypeManager.DeleteInstallmentType(pInstallmentType);
         }
@@ -451,7 +451,7 @@ namespace OpenCBS.Services
 	    public int InsertLoanCycle(LoanCycle loanCycle)
         {
             if (_productManager.IsLoanCycleNameAlreadyExist(loanCycle.Name))
-                    throw new OctopusPackageSaveException(OctopusPackageSaveExceptionEnum.LoanCycleNameAlreadyExists);
+                    throw new OpenCbsPackageSaveException(OpenCbsPackageSaveExceptionEnum.LoanCycleNameAlreadyExists);
             using (SqlConnection conn = _productManager.GetConnection())
             using (SqlTransaction t = conn.BeginTransaction())
             {
@@ -525,13 +525,13 @@ namespace OpenCBS.Services
 		public bool DeletePackage(LoanProduct package)
 		{
 			if(package == null)
-				throw new OctopusPackageDeleteException(OctopusPackageDeleteExceptionEnum.PackageIsNull);
+				throw new OpenCbsPackageDeleteException(OpenCbsPackageDeleteExceptionEnum.PackageIsNull);
 
 			if(package.Id == 0)
-				throw new OctopusPackageDeleteException(OctopusPackageDeleteExceptionEnum.PackageIsNull);
+				throw new OpenCbsPackageDeleteException(OpenCbsPackageDeleteExceptionEnum.PackageIsNull);
 
 			if(package.Delete)
-				throw new OctopusPackageDeleteException(OctopusPackageDeleteExceptionEnum.AlreadyDeleted);
+				throw new OpenCbsPackageDeleteException(OpenCbsPackageDeleteExceptionEnum.AlreadyDeleted);
 
 			_productManager.DeleteProduct(package.Id);
 			
@@ -584,7 +584,7 @@ namespace OpenCBS.Services
 			if (!declining)
 			{
 				if(exoticInstallment.PrincipalCoeff == 0 && !exoticInstallment.InterestCoeff.HasValue)
-					throw new OctopusPackageSaveException(OctopusPackageSaveExceptionEnum.ExoticInstallmentIsNull);
+					throw new OpenCbsPackageSaveException(OpenCbsPackageSaveExceptionEnum.ExoticInstallmentIsNull);
 			}
 
 			exoticInstallment.Number = installmentCount;
@@ -605,69 +605,69 @@ namespace OpenCBS.Services
 		private void CheckValueForPackageName(string pName)
 		{
             if (string.IsNullOrEmpty(pName))
-				throw new OctopusPackageSaveException(OctopusPackageSaveExceptionEnum.NameIsNull);
+				throw new OpenCbsPackageSaveException(OpenCbsPackageSaveExceptionEnum.NameIsNull);
             
             if (_productManager.IsThisProductNameAlreadyExist(pName))
-				throw new OctopusPackageSaveException(OctopusPackageSaveExceptionEnum.NameAlreadyExist);
+				throw new OpenCbsPackageSaveException(OpenCbsPackageSaveExceptionEnum.NameAlreadyExist);
 		}
 
 		private static void CheckValueForPackageInstallmentType(InstallmentType pInstallmentType)
 		{
             if (pInstallmentType == null)
-				throw new OctopusPackageSaveException(OctopusPackageSaveExceptionEnum.InstallmentTypeIsNull);
+				throw new OpenCbsPackageSaveException(OpenCbsPackageSaveExceptionEnum.InstallmentTypeIsNull);
             
             if (pInstallmentType.Id == 0)
-				throw new OctopusPackageSaveException(OctopusPackageSaveExceptionEnum.InstallmentTypeIsBad);
+				throw new OpenCbsPackageSaveException(OpenCbsPackageSaveExceptionEnum.InstallmentTypeIsBad);
 		}
 
         private static void CheckValueForPackageInterestRate(LoanProduct pPackage)
 		{
             if (pPackage.UseLoanCycle==false)
             if (!ServicesHelper.CheckMinMaxAndValueCorrectlyFilled(pPackage.InterestRateMin, pPackage.InterestRateMax, pPackage.InterestRate))
-				throw new OctopusPackageSaveException(OctopusPackageSaveExceptionEnum.InterestRateGroupBadlyInformed);
+				throw new OpenCbsPackageSaveException(OpenCbsPackageSaveExceptionEnum.InterestRateGroupBadlyInformed);
 		}
 
         private static void CheckValueForPackageGracePeriod(LoanProduct pPackage)
 		{
             if (!ServicesHelper.CheckMinMaxAndValueCorrectlyFilled(pPackage.GracePeriodMin, pPackage.GracePeriodMax, pPackage.GracePeriod))
-				throw new OctopusPackageSaveException(OctopusPackageSaveExceptionEnum.GracePeriodGroupBadlyInformed);
+				throw new OpenCbsPackageSaveException(OpenCbsPackageSaveExceptionEnum.GracePeriodGroupBadlyInformed);
 		}
 
         private static void CheckValueForPackageNonRepaymentPenalties(LoanProduct pPackage)
 		{
             if (!ServicesHelper.CheckMinMaxAndValueCorrectlyFilled(pPackage.NonRepaymentPenaltiesMin.InitialAmount, pPackage.NonRepaymentPenaltiesMax.InitialAmount, pPackage.NonRepaymentPenalties.InitialAmount))
-                throw new OctopusPackageSaveException(OctopusPackageSaveExceptionEnum.NonRepaymentPenaltiesBadlyInformed);
+                throw new OpenCbsPackageSaveException(OpenCbsPackageSaveExceptionEnum.NonRepaymentPenaltiesBadlyInformed);
 
             if (!ServicesHelper.CheckMinMaxAndValueCorrectlyFilled(pPackage.NonRepaymentPenaltiesMin.OLB, pPackage.NonRepaymentPenaltiesMax.OLB, pPackage.NonRepaymentPenalties.OLB))
-                throw new OctopusPackageSaveException(OctopusPackageSaveExceptionEnum.NonRepaymentPenaltiesBadlyInformed);
+                throw new OpenCbsPackageSaveException(OpenCbsPackageSaveExceptionEnum.NonRepaymentPenaltiesBadlyInformed);
 
             if (!ServicesHelper.CheckMinMaxAndValueCorrectlyFilled(pPackage.NonRepaymentPenaltiesMin.OverDueInterest, pPackage.NonRepaymentPenaltiesMax.OverDueInterest, pPackage.NonRepaymentPenalties.OverDueInterest))
-                throw new OctopusPackageSaveException(OctopusPackageSaveExceptionEnum.NonRepaymentPenaltiesBadlyInformed);
+                throw new OpenCbsPackageSaveException(OpenCbsPackageSaveExceptionEnum.NonRepaymentPenaltiesBadlyInformed);
 
             if (!ServicesHelper.CheckMinMaxAndValueCorrectlyFilled(pPackage.NonRepaymentPenaltiesMin.OverDuePrincipal, pPackage.NonRepaymentPenaltiesMax.OverDuePrincipal, pPackage.NonRepaymentPenalties.OverDuePrincipal))
-                throw new OctopusPackageSaveException(OctopusPackageSaveExceptionEnum.NonRepaymentPenaltiesBadlyInformed);
+                throw new OpenCbsPackageSaveException(OpenCbsPackageSaveExceptionEnum.NonRepaymentPenaltiesBadlyInformed);
 		}
 
         private static void CheckValueForPackageAnticipatedTotalRepaymentPenalties(LoanProduct pPackage)
 		{
             if (!ServicesHelper.CheckMinMaxAndValueCorrectlyFilled(pPackage.AnticipatedTotalRepaymentPenaltiesMin,pPackage.AnticipatedTotalRepaymentPenaltiesMax, pPackage.AnticipatedTotalRepaymentPenalties))
-				throw new OctopusPackageSaveException(OctopusPackageSaveExceptionEnum.AnticipatedRepaymentPenaltiesBadlyInformed);
+				throw new OpenCbsPackageSaveException(OpenCbsPackageSaveExceptionEnum.AnticipatedRepaymentPenaltiesBadlyInformed);
 		}
 
         private static void CheckValuesForPackageAnticipatedPartialRepaymentPenalties(LoanProduct product)
         {
             if (!ServicesHelper.CheckMinMaxAndValueCorrectlyFilled(product.AnticipatedPartialRepaymentPenaltiesMin, product.AnticipatedPartialRepaymentPenaltiesMax, product.AnticipatedPartialRepaymentPenalties))
-                throw new OctopusPackageSaveException(OctopusPackageSaveExceptionEnum.AnticipatedRepaymentPenaltiesBadlyInformed);
+                throw new OpenCbsPackageSaveException(OpenCbsPackageSaveExceptionEnum.AnticipatedRepaymentPenaltiesBadlyInformed);
         }
 
         private static void CheckValueForLineOfCredit(LoanProduct pPackage)
         {
             if ((pPackage.AmountUnderLoc == null && pPackage.AmountUnderLocMin == null && pPackage.AmountUnderLocMax == null) || (pPackage.MaturityLoc == null && pPackage.MaturityLocMin == null && pPackage.MaturityLocMax == null))
-                throw  new OctopusPackageSaveException(OctopusPackageSaveExceptionEnum.LOCFieldsAreNotFilled);
+                throw  new OpenCbsPackageSaveException(OpenCbsPackageSaveExceptionEnum.LOCFieldsAreNotFilled);
             if (!ServicesHelper.CheckMinMaxAndValueCorrectlyFilled(pPackage.AmountUnderLocMin, pPackage.AmountUnderLocMax, pPackage.AmountUnderLoc))
-                throw new OctopusPackageSaveException(OctopusPackageSaveExceptionEnum.LOCAmountHaveBeenFilledIncorrectly);
+                throw new OpenCbsPackageSaveException(OpenCbsPackageSaveExceptionEnum.LOCAmountHaveBeenFilledIncorrectly);
             if (!ServicesHelper.CheckMinMaxAndValueCorrectlyFilled(pPackage.MaturityLocMin, pPackage.MaturityLocMax, pPackage.MaturityLoc))
-                throw new OctopusPackageSaveException(OctopusPackageSaveExceptionEnum.LOCMaturityHaveBeenFilledIncorrectly);
+                throw new OpenCbsPackageSaveException(OpenCbsPackageSaveExceptionEnum.LOCMaturityHaveBeenFilledIncorrectly);
         }
 
         private static void CheckValueForPackageEntryFees(LoanProduct pPackage)
@@ -678,38 +678,38 @@ namespace OpenCBS.Services
             foreach (EntryFee entryFee in pPackage.EntryFees)
             {
                 if (!ServicesHelper.CheckMinMaxAndValueCorrectlyFilled(entryFee.Min, entryFee.Max, entryFee.Value))
-                    throw new OctopusPackageSaveException(OctopusPackageSaveExceptionEnum.EntryFeesBadlyInformed);
+                    throw new OpenCbsPackageSaveException(OpenCbsPackageSaveExceptionEnum.EntryFeesBadlyInformed);
             }
 		}
 
         private static void CheckCumpolsorySavingSettings(LoanProduct pPackage)
         {
             if (!ServicesHelper.CheckMinMaxAndValueCorrectlyFilled(pPackage.CompulsoryAmountMin, pPackage.CompulsoryAmountMax, pPackage.CompulsoryAmount))
-                throw new OctopusPackageSaveException(OctopusPackageSaveExceptionEnum.CompulsorySavingSettingsEmpty);
+                throw new OpenCbsPackageSaveException(OpenCbsPackageSaveExceptionEnum.CompulsorySavingSettingsEmpty);
         }
 
         private void CheckValueForPackageNumberOfInstallments(LoanProduct pPackage)
         {
             if (pPackage.UseLoanCycle) return;
             if (!ServicesHelper.CheckMinMaxAndValueCorrectlyFilled(pPackage.NbOfInstallmentsMin, pPackage.NbOfInstallmentsMax, pPackage.NbOfInstallments))
-                throw new OctopusPackageSaveException(OctopusPackageSaveExceptionEnum.NumberOfInstallmentBadlyInformed);
+                throw new OpenCbsPackageSaveException(OpenCbsPackageSaveExceptionEnum.NumberOfInstallmentBadlyInformed);
 
             if (pPackage.NbOfInstallmentsMin != null)
                 if (pPackage.NbOfInstallmentsMin > ApplicationSettings.GetInstance(_user != null ? _user.Md5 : "").MaxNumberInstallment)
                 {
-                    throw new OctopusPackageSaveException(OctopusPackageSaveExceptionEnum.NumberOfInstallmentBadlyInformed);
+                    throw new OpenCbsPackageSaveException(OpenCbsPackageSaveExceptionEnum.NumberOfInstallmentBadlyInformed);
                 }
 
             if (pPackage.NbOfInstallmentsMax != null)
                 if (pPackage.NbOfInstallmentsMax > ApplicationSettings.GetInstance(_user != null ? _user.Md5 : "").MaxNumberInstallment)
                 {
-                    throw new OctopusPackageSaveException(OctopusPackageSaveExceptionEnum.NumberOfInstallmentBadlyInformed);
+                    throw new OpenCbsPackageSaveException(OpenCbsPackageSaveExceptionEnum.NumberOfInstallmentBadlyInformed);
                 }
             int maxInstallments = ApplicationSettings.GetInstance(_user != null ? _user.Md5 : "").MaxNumberInstallment;
             if (pPackage.NbOfInstallments != null)
                 if (pPackage.NbOfInstallments > ApplicationSettings.GetInstance(_user != null ? _user.Md5 : "").MaxNumberInstallment)
                 {
-                    throw new OctopusPackageSaveException(OctopusPackageSaveExceptionEnum.NumberOfInstallmentBadlyInformed);
+                    throw new OpenCbsPackageSaveException(OpenCbsPackageSaveExceptionEnum.NumberOfInstallmentBadlyInformed);
                 }
         }
 
@@ -717,23 +717,23 @@ namespace OpenCBS.Services
 		{
             if (pPackage.UseLoanCycle)return;
             if(!ServicesHelper.CheckMinMaxAndValueCorrectlyFilled(pPackage.AmountMin,pPackage.AmountMax, pPackage.Amount))
-				throw new OctopusPackageSaveException(OctopusPackageSaveExceptionEnum.AmountBadlyInformed);
+				throw new OpenCbsPackageSaveException(OpenCbsPackageSaveExceptionEnum.AmountBadlyInformed);
 		}
 
         private static void CheckValueForCreditInsuranceValues(LoanProduct pPackage)
         {
             if (pPackage.CreditInsuranceMin>pPackage.CreditInsuranceMax)
             {
-                throw  new OctopusPackageSaveException(OctopusPackageSaveExceptionEnum.InsuranceBadlyFilled);
+                throw  new OpenCbsPackageSaveException(OpenCbsPackageSaveExceptionEnum.InsuranceBadlyFilled);
             }
         }
 
         private static void CheckValueForPackageExoticProduct(ExoticInstallmentsTable exoticProduct)
 		{
 			if(exoticProduct == null)
-				throw new OctopusPackageSaveException(OctopusPackageSaveExceptionEnum.ExoticProductIsNull);
+				throw new OpenCbsPackageSaveException(OpenCbsPackageSaveExceptionEnum.ExoticProductIsNull);
 			if(exoticProduct.Id == 0)
-				throw new OctopusPackageSaveException(OctopusPackageSaveExceptionEnum.ExoticProductIsBad);
+				throw new OpenCbsPackageSaveException(OpenCbsPackageSaveExceptionEnum.ExoticProductIsBad);
 		}
 
         public void ParseFieldsAndCheckErrors(LoanProduct pPackage, bool pUseExoticProduct, int clientTypeCheckBoxCounter)
@@ -748,17 +748,17 @@ namespace OpenCBS.Services
                 CheckValueForPackageName(pPackage.Name);
 
             if(string.IsNullOrEmpty(pPackage.Code))
-                throw new OctopusPackageSaveException(OctopusPackageSaveExceptionEnum.CodeIsEmpty);
+                throw new OpenCbsPackageSaveException(OpenCbsPackageSaveExceptionEnum.CodeIsEmpty);
 
             if (pPackage.Currency==null)
-                throw new OctopusPackageSaveException(OctopusPackageSaveExceptionEnum.CurrencyIsEmpty);
+                throw new OpenCbsPackageSaveException(OpenCbsPackageSaveExceptionEnum.CurrencyIsEmpty);
             if (pPackage.Currency.Id == 0)
-                throw new OctopusPackageSaveException(OctopusPackageSaveExceptionEnum.CurrencyIsEmpty);
+                throw new OpenCbsPackageSaveException(OpenCbsPackageSaveExceptionEnum.CurrencyIsEmpty);
             if(pPackage.FundingLine!=null)
                 if(!pPackage.Currency.Equals(pPackage.FundingLine.Currency))
-                    throw new OctopusPackageSaveException(OctopusPackageSaveExceptionEnum.CurrencyMisMatch);
+                    throw new OpenCbsPackageSaveException(OpenCbsPackageSaveExceptionEnum.CurrencyMisMatch);
             if (_clientTypeCheckBoxCounter<=0)
-                throw new OctopusPackageSaveException(OctopusPackageSaveExceptionEnum.ClientTypeIsEmpty);
+                throw new OpenCbsPackageSaveException(OpenCbsPackageSaveExceptionEnum.ClientTypeIsEmpty);
 		    CheckValueForPackageAmount(pPackage);
             CheckValueForPackageInstallmentType(pPackage.InstallmentType);
             CheckValueForPackageInterestRate(pPackage);
@@ -771,7 +771,7 @@ namespace OpenCBS.Services
             CheckValueForFundingLine(pPackage);
 		    CheckValueForCreditInsuranceValues(pPackage);
             if (pPackage.GracePeriodOfLateFees == null)
-                throw new OctopusPackageSaveException(OctopusPackageSaveExceptionEnum.GracePeriodOfLateFeesIsNotFilled);
+                throw new OpenCbsPackageSaveException(OpenCbsPackageSaveExceptionEnum.GracePeriodOfLateFeesIsNotFilled);
 
             if (!pPackage.ActivatedLOC)
             {

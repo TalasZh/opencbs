@@ -63,9 +63,9 @@ namespace OpenCBS.Test.Services.Savings
                 _savingProductServices.SaveProduct(savingsProduct);
                 Assert.Fail("Saving Contract shouldn't pass validation test while trying to save (Name is Null).");
             }
-            catch (OctopusSavingProductException exception)
+            catch (OpenCbsSavingProductException exception)
             {
-                Assert.AreEqual(OctopusSavingProductExceptionEnum.NameIsEmpty, exception.Code);
+                Assert.AreEqual(OpenCbsSavingProductExceptionEnum.NameIsEmpty, exception.Code);
             }
         }
 
@@ -107,9 +107,9 @@ namespace OpenCBS.Test.Services.Savings
                 _savingProductServices.SaveProduct(savingsProduct);
                 Assert.Fail("Saving Contract shouldn't pass validation test while trying to save (Name is Already Exist).");
             }
-            catch (OctopusSavingProductException exception)
+            catch (OpenCbsSavingProductException exception)
             {
-                Assert.AreEqual(OctopusSavingProductExceptionEnum.DuplicateProductName, exception.Code);
+                Assert.AreEqual(OpenCbsSavingProductExceptionEnum.DuplicateProductName, exception.Code);
             }
         }
 
@@ -150,9 +150,9 @@ namespace OpenCBS.Test.Services.Savings
                 _savingProductServices.SaveProduct(savingsProduct);
                 Assert.Fail("Saving Contract shouldn't pass validation test while trying to save (Code is Null).");
             }
-            catch (OctopusSavingProductException exception)
+            catch (OpenCbsSavingProductException exception)
             {
-                Assert.AreEqual(OctopusSavingProductExceptionEnum.CodeIsEmpty, exception.Code);
+                Assert.AreEqual(OpenCbsSavingProductExceptionEnum.CodeIsEmpty, exception.Code);
             }
         }
 
@@ -193,9 +193,9 @@ namespace OpenCBS.Test.Services.Savings
                 _savingProductServices.SaveProduct(savingsProduct);
                 Assert.Fail("Saving Contract shouldn't pass validation test while trying to save (Code is Already Exist).");
             }
-            catch (OctopusSavingProductException exception)
+            catch (OpenCbsSavingProductException exception)
             {
-                Assert.AreEqual(OctopusSavingProductExceptionEnum.DuplicateProductCode, exception.Code);
+                Assert.AreEqual(OpenCbsSavingProductExceptionEnum.DuplicateProductCode, exception.Code);
             }
         }
 
@@ -234,9 +234,9 @@ namespace OpenCBS.Test.Services.Savings
                 _savingProductServices.SaveProduct(savingsProduct);
                 Assert.Fail("Saving Contract shouldn't pass validation test while trying to save (Initial Amount Min is Null).");
             }
-            catch (OctopusSavingProductException exception)
+            catch (OpenCbsSavingProductException exception)
             {
-                Assert.AreEqual(OctopusSavingProductExceptionEnum.InitialAmountIsInvalid, exception.Code);
+                Assert.AreEqual(OpenCbsSavingProductExceptionEnum.InitialAmountIsInvalid, exception.Code);
             }
         }
 
@@ -276,9 +276,9 @@ namespace OpenCBS.Test.Services.Savings
                 _savingProductServices.SaveProduct(savingsProduct);
                 Assert.Fail("Saving Contract shouldn't pass validation test while trying to save (Initial Amount Min < 0).");
             }
-            catch (OctopusSavingProductException exception)
+            catch (OpenCbsSavingProductException exception)
             {
-                Assert.AreEqual(OctopusSavingProductExceptionEnum.InitialAmountMinIsInvalid, exception.Code);
+                Assert.AreEqual(OpenCbsSavingProductExceptionEnum.InitialAmountMinIsInvalid, exception.Code);
             }
         }
 
@@ -316,9 +316,9 @@ namespace OpenCBS.Test.Services.Savings
                 _savingProductServices.SaveProduct(savingsProduct);
                 Assert.Fail("Saving Contract shouldn't pass validation test while trying to save (Initial Amount Max is Null).");
             }
-            catch (OctopusSavingProductException exception)
+            catch (OpenCbsSavingProductException exception)
             {
-                Assert.AreEqual(OctopusSavingProductExceptionEnum.InitialAmountIsInvalid, exception.Code);
+                Assert.AreEqual(OpenCbsSavingProductExceptionEnum.InitialAmountIsInvalid, exception.Code);
             }
         }
 
@@ -358,9 +358,9 @@ namespace OpenCBS.Test.Services.Savings
                 _savingProductServices.SaveProduct(savingsProduct);
                 Assert.Fail("Saving Contract shouldn't pass validation test while trying to save (Initial Amount Min is Greater than Initial Amount Max).");
             }
-            catch (OctopusSavingProductException exception)
+            catch (OpenCbsSavingProductException exception)
             {
-                Assert.AreEqual(OctopusSavingProductExceptionEnum.InitialAmountIsInvalid, exception.Code);
+                Assert.AreEqual(OpenCbsSavingProductExceptionEnum.InitialAmountIsInvalid, exception.Code);
             }
         }
 
@@ -397,9 +397,9 @@ namespace OpenCBS.Test.Services.Savings
                 _savingProductServices.SaveProduct(savingsProduct);
                 Assert.Fail("Saving Contract shouldn't pass validation test while trying to save (initial amount < balance.min).");
             }
-            catch (OctopusSavingProductException exception)
+            catch (OpenCbsSavingProductException exception)
             {
-                Assert.AreEqual(OctopusSavingProductExceptionEnum.InitialAmountMinNotInBalance, exception.Code);
+                Assert.AreEqual(OpenCbsSavingProductExceptionEnum.InitialAmountMinNotInBalance, exception.Code);
             }
         }
 
@@ -438,9 +438,9 @@ namespace OpenCBS.Test.Services.Savings
                 _savingProductServices.SaveProduct(savingsProduct);
                 Assert.Fail("Saving Contract shouldn't pass validation test while trying to save (initial amount > balance.max).");
             }
-            catch (OctopusSavingProductException exception)
+            catch (OpenCbsSavingProductException exception)
             {
-                Assert.AreEqual(OctopusSavingProductExceptionEnum.InitialAmountMaxNotInBalance, exception.Code);
+                Assert.AreEqual(OpenCbsSavingProductExceptionEnum.InitialAmountMaxNotInBalance, exception.Code);
             }
         }
 
@@ -477,9 +477,9 @@ namespace OpenCBS.Test.Services.Savings
                 _savingProductServices.SaveProduct(savingsProduct);
                 Assert.Fail("Saving Contract shouldn't pass validation test while trying to save (Deposit Min is Null).");
             }
-            catch (OctopusSavingProductException exception)
+            catch (OpenCbsSavingProductException exception)
             {
-                Assert.AreEqual(OctopusSavingProductExceptionEnum.DepositAmountIsInvalid, exception.Code);
+                Assert.AreEqual(OpenCbsSavingProductExceptionEnum.DepositAmountIsInvalid, exception.Code);
             }
         }
 
@@ -519,9 +519,9 @@ namespace OpenCBS.Test.Services.Savings
                 _savingProductServices.SaveProduct(savingsProduct);
                 Assert.Fail("Saving Contract shouldn't pass validation test while trying to save (Deposit Min < 0).");
             }
-            catch (OctopusSavingProductException exception)
+            catch (OpenCbsSavingProductException exception)
             {
-                Assert.AreEqual(OctopusSavingProductExceptionEnum.DepositMinAmountIsInvalid, exception.Code);
+                Assert.AreEqual(OpenCbsSavingProductExceptionEnum.DepositMinAmountIsInvalid, exception.Code);
             }
         }
 
@@ -559,9 +559,9 @@ namespace OpenCBS.Test.Services.Savings
                 _savingProductServices.SaveProduct(savingsProduct);
                 Assert.Fail("Saving Contract shouldn't pass validation test while trying to save (Deposit Max is Null).");
             }
-            catch (OctopusSavingProductException exception)
+            catch (OpenCbsSavingProductException exception)
             {
-                Assert.AreEqual(OctopusSavingProductExceptionEnum.DepositAmountIsInvalid, exception.Code);
+                Assert.AreEqual(OpenCbsSavingProductExceptionEnum.DepositAmountIsInvalid, exception.Code);
             }
         }
 
@@ -601,9 +601,9 @@ namespace OpenCBS.Test.Services.Savings
                 _savingProductServices.SaveProduct(savingsProduct);
                 Assert.Fail("Saving Contract shouldn't pass validation test while trying to save (Deposit Min > Deposit Max).");
             }
-            catch (OctopusSavingProductException exception)
+            catch (OpenCbsSavingProductException exception)
             {
-                Assert.AreEqual(OctopusSavingProductExceptionEnum.DepositAmountIsInvalid, exception.Code);
+                Assert.AreEqual(OpenCbsSavingProductExceptionEnum.DepositAmountIsInvalid, exception.Code);
             }
         }
 
@@ -643,9 +643,9 @@ namespace OpenCBS.Test.Services.Savings
                 _savingProductServices.SaveProduct(savingsProduct);
                 Assert.Fail("Saving Contract shouldn't pass validation test while trying to save (Deposit Min And Deposit Max = 0).");
             }
-            catch (OctopusSavingProductException exception)
+            catch (OpenCbsSavingProductException exception)
             {
-                Assert.AreEqual(OctopusSavingProductExceptionEnum.DepositAmountIsInvalid, exception.Code);
+                Assert.AreEqual(OpenCbsSavingProductExceptionEnum.DepositAmountIsInvalid, exception.Code);
             }
         }
 
@@ -684,9 +684,9 @@ namespace OpenCBS.Test.Services.Savings
                 _savingProductServices.SaveProduct(savingsProduct);
                 Assert.Fail("Saving Contract shouldn't pass validation test while trying to save (Withdraw Min is Null).");
             }
-            catch (OctopusSavingProductException exception)
+            catch (OpenCbsSavingProductException exception)
             {
-                Assert.AreEqual(OctopusSavingProductExceptionEnum.WithdrawAmountIsInvalid, exception.Code);
+                Assert.AreEqual(OpenCbsSavingProductExceptionEnum.WithdrawAmountIsInvalid, exception.Code);
             }
         }
 
@@ -726,9 +726,9 @@ namespace OpenCBS.Test.Services.Savings
                 _savingProductServices.SaveProduct(savingsProduct);
                 Assert.Fail("Saving Contract shouldn't pass validation test while trying to save (Withdraw Min < 0).");
             }
-            catch (OctopusSavingProductException exception)
+            catch (OpenCbsSavingProductException exception)
             {
-                Assert.AreEqual(OctopusSavingProductExceptionEnum.WithdrawMinAmountIsInvalid, exception.Code);
+                Assert.AreEqual(OpenCbsSavingProductExceptionEnum.WithdrawMinAmountIsInvalid, exception.Code);
             }
         }
 
@@ -766,9 +766,9 @@ namespace OpenCBS.Test.Services.Savings
                 _savingProductServices.SaveProduct(savingsProduct);
                 Assert.Fail("Saving Contract shouldn't pass validation test while trying to save (Withdraw Max is Null).");
             }
-            catch (OctopusSavingProductException exception)
+            catch (OpenCbsSavingProductException exception)
             {
-                Assert.AreEqual(OctopusSavingProductExceptionEnum.WithdrawAmountIsInvalid, exception.Code);
+                Assert.AreEqual(OpenCbsSavingProductExceptionEnum.WithdrawAmountIsInvalid, exception.Code);
             }
         }
 
@@ -808,9 +808,9 @@ namespace OpenCBS.Test.Services.Savings
                 _savingProductServices.SaveProduct(savingsProduct);
                 Assert.Fail("Saving Contract shouldn't pass validation test while trying to save (Withdraw Min > Withdraw Max).");
             }
-            catch (OctopusSavingProductException exception)
+            catch (OpenCbsSavingProductException exception)
             {
-                Assert.AreEqual(OctopusSavingProductExceptionEnum.WithdrawAmountIsInvalid, exception.Code);
+                Assert.AreEqual(OpenCbsSavingProductExceptionEnum.WithdrawAmountIsInvalid, exception.Code);
             }
         }
 
@@ -848,9 +848,9 @@ namespace OpenCBS.Test.Services.Savings
                 _savingProductServices.SaveProduct(savingsProduct);
                 Assert.Fail("Saving Contract shouldn't pass validation test while trying to save (Withdraw Min And Withdraw Max = 0).");
             }
-            catch (OctopusSavingProductException exception)
+            catch (OpenCbsSavingProductException exception)
             {
-                Assert.AreEqual(OctopusSavingProductExceptionEnum.WithdrawAmountIsInvalid, exception.Code);
+                Assert.AreEqual(OpenCbsSavingProductExceptionEnum.WithdrawAmountIsInvalid, exception.Code);
             }
         }
 
@@ -889,9 +889,9 @@ namespace OpenCBS.Test.Services.Savings
                 _savingProductServices.SaveProduct(savingsProduct);
                 Assert.Fail("Saving Contract shouldn't pass validation test while trying to save (Interest Rate Min and Interest Rate are Null).");
             }
-            catch (OctopusSavingProductException exception)
+            catch (OpenCbsSavingProductException exception)
             {
-                Assert.AreEqual(OctopusSavingProductExceptionEnum.InterestRateMinMaxIsInvalid, exception.Code);
+                Assert.AreEqual(OpenCbsSavingProductExceptionEnum.InterestRateMinMaxIsInvalid, exception.Code);
             }
         }
 
@@ -930,9 +930,9 @@ namespace OpenCBS.Test.Services.Savings
                 _savingProductServices.SaveProduct(savingsProduct);
                 Assert.Fail("Saving Contract shouldn't pass validation test while trying to save (Interest Rate Max and Interest Rate are Null).");
             }
-            catch (OctopusSavingProductException exception)
+            catch (OpenCbsSavingProductException exception)
             {
-                Assert.AreEqual(OctopusSavingProductExceptionEnum.InterestRateMinMaxIsInvalid, exception.Code);
+                Assert.AreEqual(OpenCbsSavingProductExceptionEnum.InterestRateMinMaxIsInvalid, exception.Code);
             }
         }
 
@@ -972,9 +972,9 @@ namespace OpenCBS.Test.Services.Savings
                 _savingProductServices.SaveProduct(savingsProduct);
                 Assert.Fail("Saving Contract shouldn't pass validation test while trying to save (Interest Rate Min < 0).");
             }
-            catch (OctopusSavingProductException exception)
+            catch (OpenCbsSavingProductException exception)
             {
-                Assert.AreEqual(OctopusSavingProductExceptionEnum.InterestRateMinIsInvalid, exception.Code);
+                Assert.AreEqual(OpenCbsSavingProductExceptionEnum.InterestRateMinIsInvalid, exception.Code);
             }
         }
 
@@ -1012,9 +1012,9 @@ namespace OpenCBS.Test.Services.Savings
                 _savingProductServices.SaveProduct(savingsProduct);
                 Assert.Fail("Saving Contract shouldn't pass validation test while trying to save (Interest Rate Max and Interest Rate are Null).");
             }
-            catch (OctopusSavingProductException exception)
+            catch (OpenCbsSavingProductException exception)
             {
-                Assert.AreEqual(OctopusSavingProductExceptionEnum.InterestRateMinMaxIsInvalid, exception.Code);
+                Assert.AreEqual(OpenCbsSavingProductExceptionEnum.InterestRateMinMaxIsInvalid, exception.Code);
             }
         }
 
@@ -1053,9 +1053,9 @@ namespace OpenCBS.Test.Services.Savings
                 _savingProductServices.SaveProduct(savingsProduct);
                 Assert.Fail("Saving Contract shouldn't pass validation test while trying to save (Interest Rate <0).");
             }
-            catch (OctopusSavingProductException exception)
+            catch (OpenCbsSavingProductException exception)
             {
-                Assert.AreEqual(OctopusSavingProductExceptionEnum.InterestRateIsInvalid, exception.Code);
+                Assert.AreEqual(OpenCbsSavingProductExceptionEnum.InterestRateIsInvalid, exception.Code);
             }
         }
 
@@ -1093,9 +1093,9 @@ namespace OpenCBS.Test.Services.Savings
                 _savingProductServices.SaveProduct(savingsProduct);
                 Assert.Fail("Saving Contract shouldn't pass validation test while trying to save (Interest Base is Null).");
             }
-            catch (OctopusSavingProductException exception)
+            catch (OpenCbsSavingProductException exception)
             {
-                Assert.AreEqual(OctopusSavingProductExceptionEnum.InterestsBaseIsInvalid, exception.Code);
+                Assert.AreEqual(OpenCbsSavingProductExceptionEnum.InterestsBaseIsInvalid, exception.Code);
             }
         }
 
@@ -1129,9 +1129,9 @@ namespace OpenCBS.Test.Services.Savings
                 _savingProductServices.SaveProduct(savingsProduct);
                 Assert.Fail("Saving Contract shouldn't pass validation test while trying to save (Interest Frequency is Null).");
             }
-            catch (OctopusSavingProductException exception)
+            catch (OpenCbsSavingProductException exception)
             {
-                Assert.AreEqual(OctopusSavingProductExceptionEnum.InterestsFrequencyIsInvalid, exception.Code);
+                Assert.AreEqual(OpenCbsSavingProductExceptionEnum.InterestsFrequencyIsInvalid, exception.Code);
             }
         }
 
@@ -1168,9 +1168,9 @@ namespace OpenCBS.Test.Services.Savings
                 _savingProductServices.SaveProduct(savingsProduct);
                 Assert.Fail("Saving Contract shouldn't pass validation test while trying to save (Interest Frequency is incorrect).");
             }
-            catch (OctopusSavingProductException exception)
+            catch (OpenCbsSavingProductException exception)
             {
-                Assert.AreEqual(OctopusSavingProductExceptionEnum.InterestBaseIncompatibleFrequency, exception.Code);
+                Assert.AreEqual(OpenCbsSavingProductExceptionEnum.InterestBaseIncompatibleFrequency, exception.Code);
             }
         }
 
@@ -1207,9 +1207,9 @@ namespace OpenCBS.Test.Services.Savings
                 _savingProductServices.SaveProduct(savingsProduct);
                 Assert.Fail("Saving Contract shouldn't pass validation test while trying to save (Interest Frequency is incorrect).");
             }
-            catch (OctopusSavingProductException exception)
+            catch (OpenCbsSavingProductException exception)
             {
-                Assert.AreEqual(OctopusSavingProductExceptionEnum.InterestBaseIncompatibleFrequency, exception.Code);
+                Assert.AreEqual(OpenCbsSavingProductExceptionEnum.InterestBaseIncompatibleFrequency, exception.Code);
             }
         }
 
@@ -1246,9 +1246,9 @@ namespace OpenCBS.Test.Services.Savings
                 _savingProductServices.SaveProduct(savingsProduct);
                 Assert.Fail("Saving Contract shouldn't pass validation test while trying to save (Interest Frequency is incorrect).");
             }
-            catch (OctopusSavingProductException exception)
+            catch (OpenCbsSavingProductException exception)
             {
-                Assert.AreEqual(OctopusSavingProductExceptionEnum.InterestBaseIncompatibleFrequency, exception.Code);
+                Assert.AreEqual(OpenCbsSavingProductExceptionEnum.InterestBaseIncompatibleFrequency, exception.Code);
             }
         }
 
@@ -1549,9 +1549,9 @@ namespace OpenCBS.Test.Services.Savings
                 _savingProductServices.SaveProduct(savingsProduct, 0);
                 Assert.Fail("Saving Contract shouldn't pass validation test while trying to save (Client Type is Null).");
             }
-            catch (OctopusSavingProductException exception)
+            catch (OpenCbsSavingProductException exception)
             {
-                Assert.AreEqual(OctopusSavingProductExceptionEnum.ClientTypeIsInvalid, exception.Code);
+                Assert.AreEqual(OpenCbsSavingProductExceptionEnum.ClientTypeIsInvalid, exception.Code);
             }
         }
 
@@ -1592,9 +1592,9 @@ namespace OpenCBS.Test.Services.Savings
                 _savingProductServices.SaveProduct(savingsProduct);
                 Assert.Fail("Saving Contract shouldn't pass validation test while trying to save (Entry Fees and Entry Fees Min are Null).");
             }
-            catch (OctopusSavingProductException exception)
+            catch (OpenCbsSavingProductException exception)
             {
-                Assert.AreEqual(OctopusSavingProductExceptionEnum.EntryFeesMinMaxIsInvalid, exception.Code);
+                Assert.AreEqual(OpenCbsSavingProductExceptionEnum.EntryFeesMinMaxIsInvalid, exception.Code);
             }
         }
 
@@ -1635,9 +1635,9 @@ namespace OpenCBS.Test.Services.Savings
                 _savingProductServices.SaveProduct(savingsProduct);
                 Assert.Fail("Saving Contract shouldn't pass validation test while trying to save (Entry Fees and Entry Fees Max are Null).");
             }
-            catch (OctopusSavingProductException exception)
+            catch (OpenCbsSavingProductException exception)
             {
-                Assert.AreEqual(OctopusSavingProductExceptionEnum.EntryFeesMinMaxIsInvalid, exception.Code);
+                Assert.AreEqual(OpenCbsSavingProductExceptionEnum.EntryFeesMinMaxIsInvalid, exception.Code);
             }
         }
 
@@ -1679,9 +1679,9 @@ namespace OpenCBS.Test.Services.Savings
                 _savingProductServices.SaveProduct(savingsProduct);
                 Assert.Fail("Saving Contract shouldn't pass validation test while trying to save (Entry Fees Min is Greater than Entry Fees Max).");
             }
-            catch (OctopusSavingProductException exception)
+            catch (OpenCbsSavingProductException exception)
             {
-                Assert.AreEqual(OctopusSavingProductExceptionEnum.EntryFeesMinMaxIsInvalid, exception.Code);
+                Assert.AreEqual(OpenCbsSavingProductExceptionEnum.EntryFeesMinMaxIsInvalid, exception.Code);
             }
         }
 
@@ -1721,9 +1721,9 @@ namespace OpenCBS.Test.Services.Savings
                 _savingProductServices.SaveProduct(savingsProduct);
                 Assert.Fail("Saving Contract shouldn't pass validation test while trying to save (Entry Fees is Negative).");
             }
-            catch (OctopusSavingProductException exception)
+            catch (OpenCbsSavingProductException exception)
             {
-                Assert.AreEqual(OctopusSavingProductExceptionEnum.EntryFeesIsInvalid, exception.Code);
+                Assert.AreEqual(OpenCbsSavingProductExceptionEnum.EntryFeesIsInvalid, exception.Code);
             }
         }
 
@@ -1885,9 +1885,9 @@ namespace OpenCBS.Test.Services.Savings
                 _savingProductServices.SaveProduct(savingsProduct);
                 Assert.Fail("Saving Contract shouldn't pass validation test while trying to save (Withdraw Fees Type is Empty).");
             }
-            catch (OctopusSavingProductException exception)
+            catch (OpenCbsSavingProductException exception)
             {
-                Assert.AreEqual(OctopusSavingProductExceptionEnum.WithdrawFeesTypeEmpty, exception.Code);
+                Assert.AreEqual(OpenCbsSavingProductExceptionEnum.WithdrawFeesTypeEmpty, exception.Code);
             }
         }
 
@@ -1941,9 +1941,9 @@ namespace OpenCBS.Test.Services.Savings
                 _savingProductServices.SaveProduct(savingsProduct);
                 Assert.Fail("Saving Contract shouldn't pass validation test while trying to save (Flat Withdraw Fees are Empty).");
             }
-            catch (OctopusSavingProductException exception)
+            catch (OpenCbsSavingProductException exception)
             {
-                Assert.AreEqual(OctopusSavingProductExceptionEnum.FlatWithdrawFeesMinMaxIsInvalid, exception.Code);
+                Assert.AreEqual(OpenCbsSavingProductExceptionEnum.FlatWithdrawFeesMinMaxIsInvalid, exception.Code);
             }
         }
 
@@ -1997,9 +1997,9 @@ namespace OpenCBS.Test.Services.Savings
                 _savingProductServices.SaveProduct(savingsProduct);
                 Assert.Fail("Saving Contract shouldn't pass validation test while trying to save (Rate Withdraw Fees are Empty).");
             }
-            catch (OctopusSavingProductException exception)
+            catch (OpenCbsSavingProductException exception)
             {
-                Assert.AreEqual(OctopusSavingProductExceptionEnum.RateWithdrawFeesMinMaxIsInvalid, exception.Code);
+                Assert.AreEqual(OpenCbsSavingProductExceptionEnum.RateWithdrawFeesMinMaxIsInvalid, exception.Code);
             }
         }
 
@@ -2054,9 +2054,9 @@ namespace OpenCBS.Test.Services.Savings
                 _savingProductServices.SaveProduct(savingsProduct);
                 Assert.Fail("Saving Contract shouldn't pass validation test while trying to save (Flat Withdraw Fees is Negative).");
             }
-            catch (OctopusSavingProductException exception)
+            catch (OpenCbsSavingProductException exception)
             {
-                Assert.AreEqual(OctopusSavingProductExceptionEnum.FlatWithdrawFeesIsInvalid, exception.Code);
+                Assert.AreEqual(OpenCbsSavingProductExceptionEnum.FlatWithdrawFeesIsInvalid, exception.Code);
             }
         }
 
@@ -2112,9 +2112,9 @@ namespace OpenCBS.Test.Services.Savings
                 _savingProductServices.SaveProduct(savingsProduct);
                 Assert.Fail("Saving Contract shouldn't pass validation test while trying to save (Flat Withdraw Fees Min is Negative).");
             }
-            catch (OctopusSavingProductException exception)
+            catch (OpenCbsSavingProductException exception)
             {
-                Assert.AreEqual(OctopusSavingProductExceptionEnum.FlatWithdrawFeesMinIsInvalid, exception.Code);
+                Assert.AreEqual(OpenCbsSavingProductExceptionEnum.FlatWithdrawFeesMinIsInvalid, exception.Code);
             }
         }
 
@@ -2170,9 +2170,9 @@ namespace OpenCBS.Test.Services.Savings
                 _savingProductServices.SaveProduct(savingsProduct);
                 Assert.Fail("Saving Contract shouldn't pass validation test while trying to save (Flat Withdraw Fees Min is Higher than Flat Withdraw Fees Max).");
             }
-            catch (OctopusSavingProductException exception)
+            catch (OpenCbsSavingProductException exception)
             {
-                Assert.AreEqual(OctopusSavingProductExceptionEnum.FlatWithdrawFeesMinMaxIsInvalid, exception.Code);
+                Assert.AreEqual(OpenCbsSavingProductExceptionEnum.FlatWithdrawFeesMinMaxIsInvalid, exception.Code);
             }
         }
 
@@ -2332,9 +2332,9 @@ namespace OpenCBS.Test.Services.Savings
                 _savingProductServices.SaveProduct(savingsProduct);
                 Assert.Fail("Saving Contract shouldn't pass validation test while trying to save (Rate Withdraw Fees is Negative).");
             }
-            catch (OctopusSavingProductException exception)
+            catch (OpenCbsSavingProductException exception)
             {
-                Assert.AreEqual(OctopusSavingProductExceptionEnum.RateWithdrawFeesIsInvalid, exception.Code);
+                Assert.AreEqual(OpenCbsSavingProductExceptionEnum.RateWithdrawFeesIsInvalid, exception.Code);
             }
         }
 
@@ -2390,9 +2390,9 @@ namespace OpenCBS.Test.Services.Savings
                 _savingProductServices.SaveProduct(savingsProduct);
                 Assert.Fail("Saving Contract shouldn't pass validation test while trying to save (Rate Withdraw Fees Min is Negative).");
             }
-            catch (OctopusSavingProductException exception)
+            catch (OpenCbsSavingProductException exception)
             {
-                Assert.AreEqual(OctopusSavingProductExceptionEnum.RateWithdrawFeesMinIsInvalid, exception.Code);
+                Assert.AreEqual(OpenCbsSavingProductExceptionEnum.RateWithdrawFeesMinIsInvalid, exception.Code);
             }
         }
 
@@ -2448,9 +2448,9 @@ namespace OpenCBS.Test.Services.Savings
                 _savingProductServices.SaveProduct(savingsProduct);
                 Assert.Fail("Saving Contract shouldn't pass validation test while trying to save (Rate Withdraw Fees Min is Higher than Rate Withdraw Fees Max).");
             }
-            catch (OctopusSavingProductException exception)
+            catch (OpenCbsSavingProductException exception)
             {
-                Assert.AreEqual(OctopusSavingProductExceptionEnum.RateWithdrawFeesMinMaxIsInvalid, exception.Code);
+                Assert.AreEqual(OpenCbsSavingProductExceptionEnum.RateWithdrawFeesMinMaxIsInvalid, exception.Code);
             }
         }
 
@@ -2608,9 +2608,9 @@ namespace OpenCBS.Test.Services.Savings
                 _savingProductServices.SaveProduct(savingsProduct);
                 Assert.Fail("Saving Contract shouldn't pass validation test while trying to save (Withdraw Fees Type is Empty).");
             }
-            catch (OctopusSavingProductException exception)
+            catch (OpenCbsSavingProductException exception)
             {
-                Assert.AreEqual(OctopusSavingProductExceptionEnum.TransferFeesTypeEmpty, exception.Code);
+                Assert.AreEqual(OpenCbsSavingProductExceptionEnum.TransferFeesTypeEmpty, exception.Code);
             }
         }
 
@@ -2664,9 +2664,9 @@ namespace OpenCBS.Test.Services.Savings
                 _savingProductServices.SaveProduct(savingsProduct);
                 Assert.Fail("Saving Contract shouldn't pass validation test while trying to save (Flat Withdraw Fees are Empty).");
             }
-            catch (OctopusSavingProductException exception)
+            catch (OpenCbsSavingProductException exception)
             {
-                Assert.AreEqual(OctopusSavingProductExceptionEnum.FlatTransferFeesMinMaxIsInvalid, exception.Code);
+                Assert.AreEqual(OpenCbsSavingProductExceptionEnum.FlatTransferFeesMinMaxIsInvalid, exception.Code);
             }
         }
 
@@ -2720,9 +2720,9 @@ namespace OpenCBS.Test.Services.Savings
                 _savingProductServices.SaveProduct(savingsProduct);
                 Assert.Fail("Saving Contract shouldn't pass validation test while trying to save (Rate Withdraw Fees are Empty).");
             }
-            catch (OctopusSavingProductException exception)
+            catch (OpenCbsSavingProductException exception)
             {
-                Assert.AreEqual(OctopusSavingProductExceptionEnum.RateTransferFeesMinMaxIsInvalid, exception.Code);
+                Assert.AreEqual(OpenCbsSavingProductExceptionEnum.RateTransferFeesMinMaxIsInvalid, exception.Code);
             }
         }
 
@@ -2777,9 +2777,9 @@ namespace OpenCBS.Test.Services.Savings
                 _savingProductServices.SaveProduct(savingsProduct);
                 Assert.Fail("Saving Contract shouldn't pass validation test while trying to save (Flat Withdraw Fees is Negative).");
             }
-            catch (OctopusSavingProductException exception)
+            catch (OpenCbsSavingProductException exception)
             {
-                Assert.AreEqual(OctopusSavingProductExceptionEnum.FlatTransferFeesIsInvalid, exception.Code);
+                Assert.AreEqual(OpenCbsSavingProductExceptionEnum.FlatTransferFeesIsInvalid, exception.Code);
             }
         }
 
@@ -2835,9 +2835,9 @@ namespace OpenCBS.Test.Services.Savings
                 _savingProductServices.SaveProduct(savingsProduct);
                 Assert.Fail("Saving Contract shouldn't pass validation test while trying to save (Flat Withdraw Fees Min is Negative).");
             }
-            catch (OctopusSavingProductException exception)
+            catch (OpenCbsSavingProductException exception)
             {
-                Assert.AreEqual(OctopusSavingProductExceptionEnum.FlatTransferFeesMinIsInvalid, exception.Code);
+                Assert.AreEqual(OpenCbsSavingProductExceptionEnum.FlatTransferFeesMinIsInvalid, exception.Code);
             }
         }
 
@@ -2893,9 +2893,9 @@ namespace OpenCBS.Test.Services.Savings
                 _savingProductServices.SaveProduct(savingsProduct);
                 Assert.Fail("Saving Contract shouldn't pass validation test while trying to save (Flat Withdraw Fees Min is Higher than Flat Withdraw Fees Max).");
             }
-            catch (OctopusSavingProductException exception)
+            catch (OpenCbsSavingProductException exception)
             {
-                Assert.AreEqual(OctopusSavingProductExceptionEnum.FlatTransferFeesMinMaxIsInvalid, exception.Code);
+                Assert.AreEqual(OpenCbsSavingProductExceptionEnum.FlatTransferFeesMinMaxIsInvalid, exception.Code);
             }
         }
 
@@ -3055,9 +3055,9 @@ namespace OpenCBS.Test.Services.Savings
                 _savingProductServices.SaveProduct(savingsProduct);
                 Assert.Fail("Saving Contract shouldn't pass validation test while trying to save (Rate Withdraw Fees is Negative).");
             }
-            catch (OctopusSavingProductException exception)
+            catch (OpenCbsSavingProductException exception)
             {
-                Assert.AreEqual(OctopusSavingProductExceptionEnum.RateTransferFeesIsInvalid, exception.Code);
+                Assert.AreEqual(OpenCbsSavingProductExceptionEnum.RateTransferFeesIsInvalid, exception.Code);
             }
         }
 
@@ -3113,9 +3113,9 @@ namespace OpenCBS.Test.Services.Savings
                 _savingProductServices.SaveProduct(savingsProduct);
                 Assert.Fail("Saving Contract shouldn't pass validation test while trying to save (Rate Withdraw Fees Min is Negative).");
             }
-            catch (OctopusSavingProductException exception)
+            catch (OpenCbsSavingProductException exception)
             {
-                Assert.AreEqual(OctopusSavingProductExceptionEnum.RateTransferFeesMinIsInvalid, exception.Code);
+                Assert.AreEqual(OpenCbsSavingProductExceptionEnum.RateTransferFeesMinIsInvalid, exception.Code);
             }
         }
 
@@ -3171,9 +3171,9 @@ namespace OpenCBS.Test.Services.Savings
                 _savingProductServices.SaveProduct(savingsProduct);
                 Assert.Fail("Saving Contract shouldn't pass validation test while trying to save (Rate Withdraw Fees Min is Higher than Rate Withdraw Fees Max).");
             }
-            catch (OctopusSavingProductException exception)
+            catch (OpenCbsSavingProductException exception)
             {
-                Assert.AreEqual(OctopusSavingProductExceptionEnum.RateTransferFeesMinMaxIsInvalid, exception.Code);
+                Assert.AreEqual(OpenCbsSavingProductExceptionEnum.RateTransferFeesMinMaxIsInvalid, exception.Code);
             }
         }
 
@@ -3315,9 +3315,9 @@ namespace OpenCBS.Test.Services.Savings
                 _savingProductServices.SaveProduct(savingsProduct);
                 Assert.Fail("Saving Contract shouldn't pass validation test while trying to save (Transfer Min is Null).");
             }
-            catch (OctopusSavingProductException exception)
+            catch (OpenCbsSavingProductException exception)
             {
-                Assert.AreEqual(OctopusSavingProductExceptionEnum.TransferAmountIsInvalid, exception.Code);
+                Assert.AreEqual(OpenCbsSavingProductExceptionEnum.TransferAmountIsInvalid, exception.Code);
             }
         }
 
@@ -3372,9 +3372,9 @@ namespace OpenCBS.Test.Services.Savings
                 _savingProductServices.SaveProduct(savingsProduct);
                 Assert.Fail("Saving Contract shouldn't pass validation test while trying to save (Transfer Min < 0).");
             }
-            catch (OctopusSavingProductException exception)
+            catch (OpenCbsSavingProductException exception)
             {
-                Assert.AreEqual(OctopusSavingProductExceptionEnum.TransferAmountMinIsInvalid, exception.Code);
+                Assert.AreEqual(OpenCbsSavingProductExceptionEnum.TransferAmountMinIsInvalid, exception.Code);
             }
         }
 
@@ -3413,9 +3413,9 @@ namespace OpenCBS.Test.Services.Savings
                 _savingProductServices.SaveProduct(savingsProduct);
                 Assert.Fail("Saving Contract shouldn't pass validation test while trying to save (Transfer Max is Null).");
             }
-            catch (OctopusSavingProductException exception)
+            catch (OpenCbsSavingProductException exception)
             {
-                Assert.AreEqual(OctopusSavingProductExceptionEnum.TransferAmountIsInvalid, exception.Code);
+                Assert.AreEqual(OpenCbsSavingProductExceptionEnum.TransferAmountIsInvalid, exception.Code);
             }
         }
 
@@ -3455,9 +3455,9 @@ namespace OpenCBS.Test.Services.Savings
                 _savingProductServices.SaveProduct(savingsProduct);
                 Assert.Fail("Saving Contract shouldn't pass validation test while trying to save (Transfer Min > Transfer Max).");
             }
-            catch (OctopusSavingProductException exception)
+            catch (OpenCbsSavingProductException exception)
             {
-                Assert.AreEqual(OctopusSavingProductExceptionEnum.TransferAmountIsInvalid, exception.Code);
+                Assert.AreEqual(OpenCbsSavingProductExceptionEnum.TransferAmountIsInvalid, exception.Code);
             }
         }
 
@@ -3496,9 +3496,9 @@ namespace OpenCBS.Test.Services.Savings
                 _savingProductServices.SaveProduct(savingsProduct);
                 Assert.Fail("Saving Contract shouldn't pass validation test while trying to save (Transfer Min And Transfer Max = 0).");
             }
-            catch (OctopusSavingProductException exception)
+            catch (OpenCbsSavingProductException exception)
             {
-                Assert.AreEqual(OctopusSavingProductExceptionEnum.TransferAmountIsInvalid, exception.Code);
+                Assert.AreEqual(OpenCbsSavingProductExceptionEnum.TransferAmountIsInvalid, exception.Code);
             }
         }
     }

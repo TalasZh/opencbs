@@ -94,7 +94,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
+        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OpenCbsTiersSaveException))]
         public void TestIfTiersIsValidWhenTiersIsNull()
         {
             clientServices.CheckIfTiersIsValid(null);
@@ -108,7 +108,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
+        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OpenCbsTiersSaveException))]
         public void TestIfSecondaryAddressPartiallyFilledButDistrictIsNull()
         {
             Person person = new Person();
@@ -120,7 +120,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
+        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OpenCbsTiersSaveException))]
         public void TestIfSecondaryAddressPartiallyFilledButCityIsNull()
         {
             Person person = new Person();
@@ -143,7 +143,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
+        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OpenCbsTiersSaveException))]
         public void TestSavePersonButActivityIsNull()
         {
             ApplicationSettings.GetInstance("").UpdateParameter(OGeneralSettings.ID_PATTERN, @"[0-9]{2}[a-z]{2}");
@@ -156,7 +156,7 @@ namespace OpenCBS.Test.Services
 
 
         [Test]
-        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
+        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OpenCbsTiersSaveException))]
         public void TestSavePersonButNbOfDependentsIsBad()
         {
             ApplicationSettings.GetInstance("").UpdateParameter(OGeneralSettings.ID_PATTERN, @"[0-9]{2}[a-z]{2}");
@@ -172,7 +172,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
+        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OpenCbsTiersSaveException))]
         public void TestSavePersonButNbOfChildrensIsBad()
         {
             ApplicationSettings.GetInstance("").UpdateParameter(OGeneralSettings.ENFORCE_ID_PATTERN, 1);
@@ -188,7 +188,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
+        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OpenCbsTiersSaveException))]
         public void TestSavePersonButNbOfChildrensWithBasicEducationIsBad()
         {
             ApplicationSettings.GetInstance("").UpdateParameter(OGeneralSettings.ID_PATTERN, @"[0-9]{2}[a-z]{2}");
@@ -204,7 +204,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
+        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OpenCbsTiersSaveException))]
         public void TestSavePersonButExperienceIsBad()
         {
             ApplicationSettings.GetInstance("").UpdateParameter(OGeneralSettings.ID_PATTERN, @"[0-9]{2}[a-z]{2}");
@@ -221,7 +221,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
+        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OpenCbsTiersSaveException))]
         public void TestSavePersonButNbOfPeopleIsBad()
         {
             ApplicationSettings.GetInstance("").UpdateParameter(OGeneralSettings.ID_PATTERN, @"[0-9]{2}[a-z]{2}");
@@ -239,7 +239,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
+        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OpenCbsTiersSaveException))]
         public void TestSavePersonButAmountWithOtherOrganizationIsBad()
         {
             ApplicationSettings.GetInstance("").UpdateParameter(OGeneralSettings.ID_PATTERN, @"[0-9]{2}[a-z]{2}");
@@ -258,7 +258,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
+        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OpenCbsTiersSaveException))]
         public void TestSavePersonButAmountWithOtherDebtsIsBad()
         {
             ApplicationSettings.GetInstance("").UpdateParameter(OGeneralSettings.ID_PATTERN, @"[0-9]{2}[a-z]{2}");
@@ -278,7 +278,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
+        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OpenCbsTiersSaveException))]
         public void TestSavePersonButHomeSizeIsBad()
         {
             ApplicationSettings.GetInstance("").UpdateParameter(OGeneralSettings.ID_PATTERN, @"[0-9]{2}[a-z]{2}");
@@ -299,7 +299,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
+        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OpenCbsTiersSaveException))]
         public void TestSavePersonButTimeLivingInIsBad()
         {
             ApplicationSettings.GetInstance("").UpdateParameter(OGeneralSettings.ID_PATTERN, @"[0-9]{2}[a-z]{2}");
@@ -320,7 +320,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
+        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OpenCbsTiersSaveException))]
         public void TestSavePersonButLandPlotSizeIsBad()
         {
             ApplicationSettings.GetInstance("").UpdateParameter(OGeneralSettings.ID_PATTERN, @"[0-9]{2}[a-z]{2}");
@@ -342,7 +342,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
+        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OpenCbsTiersSaveException))]
         public void TestSavePersonButLivestockNumberIsBad()
         {
             ApplicationSettings.GetInstance("").UpdateParameter(OGeneralSettings.ID_PATTERN, @"[0-9]{2}[a-z]{2}");
@@ -364,7 +364,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
+        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OpenCbsTiersSaveException))]
         public void TestSavePersonButDistrictIsNull()
         {
             Person person = AddPerson(true, new EconomicActivity(1, "tiki", null, false), 1, "city", null, "nicolas", "mangin", 'M', "12345", true);
@@ -373,7 +373,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
+        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OpenCbsTiersSaveException))]
         public void TestSavePersonButCityIsNull()
         {
             Person person = AddPerson(true, new EconomicActivity(1, "tiki", null, false), 1, null, new District(1, "district", new Province(1, "province")), "nicolas", "mangin", 'M', "12ED", true);
@@ -382,7 +382,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
+        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OpenCbsTiersSaveException))]
         public void TestSavePersonButFirstNameIsNull()
         {
             Person person = AddPerson(true, new EconomicActivity(1, "tiki", null, false), 1, "city", new District(1, "district", new Province(1, "province")), null, "mangin", 'M', "12345", true);
@@ -391,7 +391,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
+        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OpenCbsTiersSaveException))]
         public void TestSavePersonButSexIsNull()
         {
             Person person = AddPerson(true, new EconomicActivity(1, "tiki", null, false), 1, "city", new District(1, "district", new Province(1, "province")), "nicolas", "mangin", Convert.ToChar(0), "12345", true);
@@ -400,7 +400,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
+        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OpenCbsTiersSaveException))]
         public void TestSavePersonButIdentificationDataIsNull()
         {
             // Ru55
@@ -410,7 +410,7 @@ namespace OpenCBS.Test.Services
             clientServices.SavePerson(ref person);
         }
         [Test]
-        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
+        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OpenCbsTiersSaveException))]
         public void TestSavePersonButIdentificationDataIsBad()
         {
             ApplicationSettings.GetInstance("").UpdateParameter(OGeneralSettings.ENFORCE_ID_PATTERN, 1);
@@ -419,7 +419,7 @@ namespace OpenCBS.Test.Services
             clientServices.SavePerson(ref person);
         }
         [Test]
-        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
+        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OpenCbsTiersSaveException))]
         public void TestSavePersonButLastNameIsNull()
         {
             ApplicationSettings.GetInstance("").UpdateParameter(OGeneralSettings.ID_PATTERN, @"[0-9]{2}[A-Z]{2}");
@@ -429,7 +429,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
+        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OpenCbsTiersSaveException))]
         public void TestSavePersonWhenSecondaryAddressNotNullButSecondaryCityIsNull()
         {
             ApplicationSettings.GetInstance("").UpdateParameter(OGeneralSettings.ID_PATTERN, @"[0-9]{2}[A-Z]{2}");
@@ -443,7 +443,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
+        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OpenCbsTiersSaveException))]
         public void TestSavePersonWhenSecondaryAddressNotNullButSecondaryDistrictIsNull()
         {
             ApplicationSettings.GetInstance("").UpdateParameter(OGeneralSettings.ID_PATTERN, @"[0-9]{2}[a-z]{2}");
@@ -456,7 +456,7 @@ namespace OpenCBS.Test.Services
             clientServices.SavePerson(ref person);
         }
         [Test]
-        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
+        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OpenCbsTiersSaveException))]
         public void TestSavePersonWhenDateOfBirthIsBad()
         {
             ApplicationSettings.GetInstance("").UpdateParameter(OGeneralSettings.ID_PATTERN, @"[0-9]{2}[a-z]{2}");
@@ -541,7 +541,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
+        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OpenCbsTiersSaveException))]
         public void TestIfClientIsAPerson()
         {
             Person person = new Person();
@@ -552,7 +552,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
+        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OpenCbsTiersSaveException))]
         public void TestIfClientCanBeAddToAGroupWhenClientAlreadyInThisGroup()
         {
             Person person = new Person {Id = 1};
@@ -563,7 +563,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
+        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OpenCbsTiersSaveException))]
         public void TestIfClientCanBeAddToAGroupWhenClientIsActive()
         {
             Person person = new Person {Id = 1, Active = true};
@@ -576,7 +576,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        //[ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
+        //[ExpectedException(typeof(OpenCBS.ExceptionsHandler.OpenCbsTiersSaveException))]
         public void TestIfClientCanBeAddToAGroupWhenClientIsALeader()
         {
             Person person = new Person {Id = 1, Active = false};
@@ -590,7 +590,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
+        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OpenCbsTiersSaveException))]
         public void TestSaveGroupWhenGroupIsNull()
         {
             ApplicationSettings dataParam = ApplicationSettings.GetInstance("");
@@ -626,7 +626,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
+        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OpenCbsTiersSaveException))]
         public void TestSaveGroupWhenGroupNameIsNull()
         {
             ApplicationSettings dataParam = GetDataBaseParam(4, true);
@@ -639,7 +639,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
+        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OpenCbsTiersSaveException))]
         public void TestSaveGroupWhenOtherOrganizationAmountsIsBadlyInformed()
         {
             ApplicationSettings dataParam = GetDataBaseParam(4, true);
@@ -654,7 +654,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
+        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OpenCbsTiersSaveException))]
         public void TestSaveGroupWhenOtherOrganizationDebtsIsBadlyInformed()
         {
             ApplicationSettings dataParam = GetDataBaseParam(4, true);
@@ -670,7 +670,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
+        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OpenCbsTiersSaveException))]
         public void TestSaveGroupWhenDistrictIsNull()
         {
             ApplicationSettings dataParam = GetDataBaseParam(4, true);
@@ -684,7 +684,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
+        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OpenCbsTiersSaveException))]
         public void TestSaveGroupWhenNoEnoughMembers()
         {
             ApplicationSettings dataParam = GetDataBaseParam(4, true);
@@ -698,7 +698,7 @@ namespace OpenCBS.Test.Services
 
 
         [Test]
-        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
+        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OpenCbsTiersSaveException))]
         public void TestSaveGroupWhenCityIsNullButMandatory()
         {
             ApplicationSettings dataParam = GetDataBaseParam(4, true);
@@ -711,7 +711,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OctopusTiersSaveException))]
+        [ExpectedException(typeof(OpenCBS.ExceptionsHandler.OpenCbsTiersSaveException))]
         public void TestSaveGroupWhenLeaderIsNull()
         {
             ApplicationSettings dataParam = GetDataBaseParam(4, true);

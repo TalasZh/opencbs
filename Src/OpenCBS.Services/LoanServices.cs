@@ -240,7 +240,7 @@ namespace OpenCBS.Services
             LoanDisbursmentEvent loanDisbursmentEvent = clonedLoan.Disburse(pDateToDisburse, pAlignInstallmentsDatesOnRealDisbursmentDate, pDisableFees);
             
             if (loanDisbursmentEvent == null)
-                throw new OctopusContractSaveException(OctopusContractSaveExceptionEnum.DisburseIsNull);
+                throw new OpenCbsContractSaveException(OpenCbsContractSaveExceptionEnum.DisburseIsNull);
 
             loanDisbursmentEvent.User = _user;
             return loanDisbursmentEvent;
@@ -321,7 +321,7 @@ namespace OpenCBS.Services
             else if (pLoan.Project.Client is Corporate)
             {
                 if (((Corporate) pLoan.Project.Client).Activity == null)
-                    throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.EconomicActivityIsNull);
+                    throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.EconomicActivityIsNull);
 
                 if (
                     !_econimcActivityServices.EconomicActivityLoanHistoryExists(pLoan.Id,
@@ -457,19 +457,19 @@ namespace OpenCBS.Services
             if (copyLoan == null) throw new ArgumentNullException("copyLoan");
 
             if (copyLoan.FundingLine == null)
-                throw new OctopusContractSaveException(OctopusContractSaveExceptionEnum.FundingLineIsNull);
+                throw new OpenCbsContractSaveException(OpenCbsContractSaveExceptionEnum.FundingLineIsNull);
 
             if (!copyLoan.FundingLine.Currency.Equals(copyLoan.Product.Currency))
-                throw new OctopusContractSaveException(OctopusContractSaveExceptionEnum.CurrencyMisMatch);
+                throw new OpenCbsContractSaveException(OpenCbsContractSaveExceptionEnum.CurrencyMisMatch);
 
             if(((DateTime) copyLoan.CreditCommiteeDate).Date > pDateToDisburse.Date)
-                throw new OctopusContractSaveException(OctopusContractSaveExceptionEnum.LoanWasValidatedLaterThanDisbursed);
+                throw new OpenCbsContractSaveException(OpenCbsContractSaveExceptionEnum.LoanWasValidatedLaterThanDisbursed);
 
             if (copyLoan.Product.UseCompulsorySavings && copyLoan.CompulsorySavings == null)
-                throw new OctopusContractSaveException(OctopusContractSaveExceptionEnum.LoanHasNoCompulsorySavings);
+                throw new OpenCbsContractSaveException(OpenCbsContractSaveExceptionEnum.LoanHasNoCompulsorySavings);
             
             if(copyLoan.Disbursed || _loanManager.IsLoanDisbursed(copyLoan.Id))
-                throw new OctopusContractSaveException(OctopusContractSaveExceptionEnum.LoanAlreadyDisbursed);
+                throw new OpenCbsContractSaveException(OpenCbsContractSaveExceptionEnum.LoanAlreadyDisbursed);
         }
 
         public Loan ChangeRepaymentType(Loan loan, IClient client, int installmentNumber, DateTime date,
@@ -517,12 +517,12 @@ namespace OpenCBS.Services
         {
             if (payDate.Date < curentLoan.StartDate.Date)
             {
-                throw new OctopusRepayException(OctopusRepayExceptionsEnum.RepaymentBeforeDisburse);
+                throw new OpenCbsRepayException(OpenCbsRepayExceptionsEnum.RepaymentBeforeDisburse);
             }
 
             if (curentLoan.Events.GetRepaymentEvents().Any(r => !r.Deleted && r.Date > payDate))
             {
-                throw new OctopusRepayException(OctopusRepayExceptionsEnum.RepaymentBeforeLastEventDate);
+                throw new OpenCbsRepayException(OpenCbsRepayExceptionsEnum.RepaymentBeforeLastEventDate);
             }
             CheckOperationDate(payDate);
 
@@ -675,7 +675,7 @@ namespace OpenCBS.Services
         private void DoRepaymentFromSavings(Loan savedContract, RepaymentEvent repayEvent, OCurrency amount, SqlTransaction sqlTransaction)
         {
             if (savedContract.CompulsorySavings == null)
-                throw new OctopusSavingException(OctopusSavingExceptionEnum.NoCompulsorySavings);
+                throw new OpenCbsSavingException(OpenCbsSavingExceptionEnum.NoCompulsorySavings);
 
             string description = string.Format("Repayment for loan {0}", savedContract.Code);
 
@@ -1091,19 +1091,19 @@ namespace OpenCBS.Services
         {
             if (loan.Product.DrawingsNumber.Value <= loan.GivenTranches.Count - 1)
             {
-                throw new OctopusContractSaveException(OctopusContractSaveExceptionEnum.TrancheMaturityError);
+                throw new OpenCbsContractSaveException(OpenCbsContractSaveExceptionEnum.TrancheMaturityError);
             }
 
             if (loan.Product.LoanType == OLoanTypes.Flat)
             {
-                throw new OctopusContractSaveException(OctopusContractSaveExceptionEnum.LoanIsFlatForTranche);
+                throw new OpenCbsContractSaveException(OpenCbsContractSaveExceptionEnum.LoanIsFlatForTranche);
             }
 
             foreach (Installment installment in loan.InstallmentList)
             {
                 if (installment.IsPartiallyRepaid)
                 {
-                    throw new OctopusContractSaveException(OctopusContractSaveExceptionEnum.CurrentInstallmentIsNotFullyRepaid);
+                    throw new OpenCbsContractSaveException(OpenCbsContractSaveExceptionEnum.CurrentInstallmentIsNotFullyRepaid);
                 }
             }
 
@@ -1116,14 +1116,14 @@ namespace OpenCBS.Services
             {
                 if (pDate.Date < loan.GetLastFullyRepaidInstallment().PaidDate.Value.Date)
                 {
-                    throw new OctopusContractSaveException(OctopusContractSaveExceptionEnum.TrancheDate);
+                    throw new OpenCbsContractSaveException(OpenCbsContractSaveExceptionEnum.TrancheDate);
                 }
             }
             else
             {
                 if (loan.StartDate>pDate.Date)
                 {
-                    throw new OctopusContractSaveException(OctopusContractSaveExceptionEnum.TrancheDate);
+                    throw new OpenCbsContractSaveException(OpenCbsContractSaveExceptionEnum.TrancheDate);
                 }
             }
                
@@ -1131,19 +1131,19 @@ namespace OpenCBS.Services
             {
                 if (loan.Amount + pTrancheAmount  > loan.AmountUnderLoc)
                 {
-                    throw new OctopusContractSaveException(OctopusContractSaveExceptionEnum.TrancheAmount);
+                    throw new OpenCbsContractSaveException(OpenCbsContractSaveExceptionEnum.TrancheAmount);
                 }
             }
             else
             {
                 if (pTrancheAmount  > loan.Product.AmountUnderLoc)
                 {
-                    throw new OctopusContractSaveException(OctopusContractSaveExceptionEnum.TrancheAmount);
+                    throw new OpenCbsContractSaveException(OpenCbsContractSaveExceptionEnum.TrancheAmount);
                 }
             }
 
             if(pTrancheAmount == 0)
-                throw new OctopusContractSaveException(OctopusContractSaveExceptionEnum.TrancheAmount);
+                throw new OpenCbsContractSaveException(OpenCbsContractSaveExceptionEnum.TrancheAmount);
         }
 
         public Loan Reschedule(Loan pContract, DateTime pDate, int pNbOfMaturity, int dateOffset, 
@@ -1216,11 +1216,11 @@ namespace OpenCBS.Services
             {
                 if (amount != Decimal.Ceiling(amount.Value))
                 {
-                    throw new OctopusRepayException(OctopusRepayExceptionsEnum.DecimalAmount);
+                    throw new OpenCbsRepayException(OpenCbsRepayExceptionsEnum.DecimalAmount);
                 }
             }
             else if (amount < 0)
-                throw new OctopusRepayException(OctopusRepayExceptionsEnum.NegativeAmount);
+                throw new OpenCbsRepayException(OpenCbsRepayExceptionsEnum.NegativeAmount);
 
             Loan fakeContract = pContract.Copy();
 
@@ -1239,7 +1239,7 @@ namespace OpenCBS.Services
             if (!disableFees && !isTotalRepayment)
             {
                 if (AmountComparer.Compare(amount, expectedMaxAmount) > 0)
-                    throw new OctopusRepayException(OctopusRepayExceptionsEnum.AmountGreaterThanTotalRemainingAmount);
+                    throw new OpenCbsRepayException(OpenCbsRepayExceptionsEnum.AmountGreaterThanTotalRemainingAmount);
                 
             }
             else
@@ -1351,13 +1351,13 @@ namespace OpenCBS.Services
                    Event evnt = contract.GetLastNonDeletedEvent();
                    
                    if (null == evnt)
-                       throw new OctopusContractSaveException(OctopusContractSaveExceptionEnum.EventIsNull);
+                       throw new OpenCbsContractSaveException(OpenCbsContractSaveExceptionEnum.EventIsNull);
 
                    if (!evnt.Cancelable)
-                       throw new OctopusContractSaveException(OctopusContractSaveExceptionEnum.EventNotCancelable);
+                       throw new OpenCbsContractSaveException(OpenCbsContractSaveExceptionEnum.EventNotCancelable);
 
                    if (string.IsNullOrEmpty(comment))
-                       throw new OctopusContractSaveException(OctopusContractSaveExceptionEnum.EventCommentIsEmpty);
+                       throw new OpenCbsContractSaveException(OpenCbsContractSaveExceptionEnum.EventCommentIsEmpty);
 
                    if (pClient is Person)
                        evnt.ClientType = OClientTypes.Person;
@@ -1698,8 +1698,8 @@ namespace OpenCBS.Services
                 try
                 {
                     if (credit.StartDate.Date < ((DateTime) credit.CreditCommiteeDate).Date)
-                        throw new OctopusContractSaveException(
-                            OctopusContractSaveExceptionEnum.LoanWasValidatedLaterThanDisbursed);
+                        throw new OpenCbsContractSaveException(
+                            OpenCbsContractSaveExceptionEnum.LoanWasValidatedLaterThanDisbursed);
 
                     Loan tempLoan = credit.Copy();
 
@@ -1887,49 +1887,49 @@ namespace OpenCBS.Services
         private static void _CheckLoanFilling(Loan pLoan, IClient pClient)
         {
             if (pLoan.Amount == 0)
-                throw new OctopusContractSaveException(OctopusContractSaveExceptionEnum.AmountIsNull);
+                throw new OpenCbsContractSaveException(OpenCbsContractSaveExceptionEnum.AmountIsNull);
             if (pLoan.InterestRate == -1)
-                throw new OctopusContractSaveException(OctopusContractSaveExceptionEnum.InterestRateIsNull);
+                throw new OpenCbsContractSaveException(OpenCbsContractSaveExceptionEnum.InterestRateIsNull);
             if (pLoan.NbOfInstallments == 0)
-                throw new OctopusContractSaveException(OctopusContractSaveExceptionEnum.NumberOfInstallmentIsNull);
+                throw new OpenCbsContractSaveException(OpenCbsContractSaveExceptionEnum.NumberOfInstallmentIsNull);
             if (pLoan.InstallmentType == null)
-                throw new OctopusContractSaveException(OctopusContractSaveExceptionEnum.InstallmentTypeIsNull);
+                throw new OpenCbsContractSaveException(OpenCbsContractSaveExceptionEnum.InstallmentTypeIsNull);
             if (pLoan.AnticipatedTotalRepaymentPenalties == -1)
-                throw new OctopusContractSaveException(OctopusContractSaveExceptionEnum.AnticipatedRepaymentPenaltiesIsNull);
+                throw new OpenCbsContractSaveException(OpenCbsContractSaveExceptionEnum.AnticipatedRepaymentPenaltiesIsNull);
             if (pLoan.NonRepaymentPenalties.InitialAmount == -1)
-                throw new OctopusContractSaveException(OctopusContractSaveExceptionEnum.NonRepaymentPenaltiesIsNull);
+                throw new OpenCbsContractSaveException(OpenCbsContractSaveExceptionEnum.NonRepaymentPenaltiesIsNull);
             if (pLoan.NonRepaymentPenalties.OLB == -1)
-                throw new OctopusContractSaveException(OctopusContractSaveExceptionEnum.NonRepaymentPenaltiesIsNull);
+                throw new OpenCbsContractSaveException(OpenCbsContractSaveExceptionEnum.NonRepaymentPenaltiesIsNull);
             if (pLoan.NonRepaymentPenalties.OverDueInterest == -1)
-                throw new OctopusContractSaveException(OctopusContractSaveExceptionEnum.NonRepaymentPenaltiesIsNull);
+                throw new OpenCbsContractSaveException(OpenCbsContractSaveExceptionEnum.NonRepaymentPenaltiesIsNull);
             if (pLoan.NonRepaymentPenalties.OverDuePrincipal == -1)
-                throw new OctopusContractSaveException(OctopusContractSaveExceptionEnum.NonRepaymentPenaltiesIsNull);
+                throw new OpenCbsContractSaveException(OpenCbsContractSaveExceptionEnum.NonRepaymentPenaltiesIsNull);
             if (!pLoan.GracePeriod.HasValue)
-                throw new OctopusContractSaveException(OctopusContractSaveExceptionEnum.GracePeriodIsNull);
+                throw new OpenCbsContractSaveException(OpenCbsContractSaveExceptionEnum.GracePeriodIsNull);
             if (pLoan.LoanEntryFeesList==null)
-                throw new OctopusContractSaveException(OctopusContractSaveExceptionEnum.EntryFeesIsNull);
+                throw new OpenCbsContractSaveException(OpenCbsContractSaveExceptionEnum.EntryFeesIsNull);
             if (pLoan.LoanOfficer == null)
-                throw new OctopusContractSaveException(OctopusContractSaveExceptionEnum.LoanOfficerIsNull);
+                throw new OpenCbsContractSaveException(OpenCbsContractSaveExceptionEnum.LoanOfficerIsNull);
             if (pLoan.FundingLine == null)
-                throw new OctopusContractSaveException(OctopusContractSaveExceptionEnum.FundingLineIsNull);
+                throw new OpenCbsContractSaveException(OpenCbsContractSaveExceptionEnum.FundingLineIsNull);
             if (!pLoan.FundingLine.Currency.Equals(pLoan.Product.Currency))
-                throw new OctopusContractSaveException(OctopusContractSaveExceptionEnum.CurrencyMisMatch);
+                throw new OpenCbsContractSaveException(OpenCbsContractSaveExceptionEnum.CurrencyMisMatch);
             if (pClient!=null)
                 if (pClient.BadClient)
-                    throw new OctopusContractSaveException(OctopusContractSaveExceptionEnum.BeneficiaryIsBad);
+                    throw new OpenCbsContractSaveException(OpenCbsContractSaveExceptionEnum.BeneficiaryIsBad);
             if(pLoan.EconomicActivityId == 0)
-                throw new OctopusContractSaveException(OctopusContractSaveExceptionEnum.EconomicActivityNotSet);
+                throw new OpenCbsContractSaveException(OpenCbsContractSaveExceptionEnum.EconomicActivityNotSet);
         }
 
         private void AddLoan(ref Loan pLoan, int pProjectId, ref IClient pClient, SqlTransaction transaction)
         {
             if (pProjectId == 0)
-                throw new OctopusContractSaveException(OctopusContractSaveExceptionEnum.ProjectIsNull);
+                throw new OpenCbsContractSaveException(OpenCbsContractSaveExceptionEnum.ProjectIsNull);
 
             ApplicationSettings appSettings = ApplicationSettings.GetInstance(_user.Md5);
 
             if (!appSettings.IsAllowMultipleLoans && pClient.Active)
-                throw new OctopusContractSaveException(OctopusContractSaveExceptionEnum.BeneficiaryIsActive);
+                throw new OpenCbsContractSaveException(OpenCbsContractSaveExceptionEnum.BeneficiaryIsActive);
 
             Loan clonedLoan = pLoan.Copy();
             IClient clonedClient = pClient.Copy();
@@ -2238,13 +2238,13 @@ namespace OpenCBS.Services
             Event foundEvent = credit.GetLastNonDeletedEvent();
 
             if (foundEvent == null)
-                throw new OctopusContractSaveException(OctopusContractSaveExceptionEnum.EventIsNull);
+                throw new OpenCbsContractSaveException(OpenCbsContractSaveExceptionEnum.EventIsNull);
             if (!(foundEvent is RepaymentEvent))
-                throw new OctopusContractSaveException(OctopusContractSaveExceptionEnum.WrongEvent);
+                throw new OpenCbsContractSaveException(OpenCbsContractSaveExceptionEnum.WrongEvent);
             if (!foundEvent.Cancelable)
-                throw new OctopusContractSaveException(OctopusContractSaveExceptionEnum.EventNotCancelable);
+                throw new OpenCbsContractSaveException(OpenCbsContractSaveExceptionEnum.EventNotCancelable);
             if (((RepaymentEvent) foundEvent).Fees == 0)
-                throw new OctopusContractSaveException(OctopusContractSaveExceptionEnum.ZeroFee);
+                throw new OpenCbsContractSaveException(OpenCbsContractSaveExceptionEnum.ZeroFee);
 
             string fee = ((RepaymentEvent) foundEvent).Fees.GetFormatedValue(credit.UseCents);
             String comment = "FEE WAIVED [" + fee.Replace("�", string.Empty) + "]";
@@ -2298,7 +2298,7 @@ namespace OpenCBS.Services
 
         private void CheckOperationDate(DateTime date)
         {
-            if (!IsDateWithinCurrentFiscalYear(date)) throw new OctopusContractSaveException(OctopusContractSaveExceptionEnum.OperationOutsideCurrentFiscalYear);
+            if (!IsDateWithinCurrentFiscalYear(date)) throw new OpenCbsContractSaveException(OpenCbsContractSaveExceptionEnum.OperationOutsideCurrentFiscalYear);
         }
     }
 }

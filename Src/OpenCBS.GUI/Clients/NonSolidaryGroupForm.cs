@@ -675,8 +675,8 @@ namespace OpenCBS.GUI.Clients
                     coaServices.SelectFiscalYears().Find(y => y.OpenDate <= TimeProvider.Now && y.CloseDate == null);
                 if (fiscalYear == null)
                 {
-                    throw new OctopusContractSaveException(
-                        OctopusContractSaveExceptionEnum.OperationOutsideCurrentFiscalYear);
+                    throw new OpenCbsContractSaveException(
+                        OpenCbsContractSaveExceptionEnum.OperationOutsideCurrentFiscalYear);
                 }
                 return true;
             }

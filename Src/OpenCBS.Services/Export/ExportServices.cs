@@ -36,13 +36,13 @@ namespace OpenCBS.Services.Export
         public bool ValidateFile(IFile pFile)
         {
             if (string.IsNullOrEmpty(pFile.Name))
-                throw new OctopusCustomExportException(OctopusCustomExportExceptionEnum.FileNameIsEmpty);
+                throw new OpenCbsCustomExportException(OpenCbsCustomExportExceptionEnum.FileNameIsEmpty);
             if (string.IsNullOrEmpty(pFile.Extension))
-                throw new OctopusCustomExportException(OctopusCustomExportExceptionEnum.FileExtensionIsIncorrect);
+                throw new OpenCbsCustomExportException(OpenCbsCustomExportExceptionEnum.FileExtensionIsIncorrect);
             if (!System.Text.RegularExpressions.Regex.IsMatch(pFile.Extension, @"^\.[a-zA-Z0-9]+$"))
-                throw new OctopusCustomExportException(OctopusCustomExportExceptionEnum.FileExtensionIsIncorrect);
+                throw new OpenCbsCustomExportException(OpenCbsCustomExportExceptionEnum.FileExtensionIsIncorrect);
             if (!pFile.IsExportFile && !_verifyRequiredFields(pFile))
-                throw new OctopusCustomExportException(OctopusCustomExportExceptionEnum.SomeRequiredFieldsAreMissing);
+                throw new OpenCbsCustomExportException(OpenCbsCustomExportExceptionEnum.SomeRequiredFieldsAreMissing);
 
             return true;
         }

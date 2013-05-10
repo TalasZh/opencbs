@@ -78,13 +78,13 @@ namespace OpenCBS.Services.Accounting
         private void ValidateAccountingRule(IAccountingRule pRule)
         {
             if (!_validateAccount(pRule.DebitAccount))
-                throw new OctopusAccountingRuleException(OctopusAccountingRuleExceptionEnum.GenericAccountIsInvalid);
+                throw new OpenCbsAccountingRuleException(OctopusAccountingRuleExceptionEnum.GenericAccountIsInvalid);
 
             if (!_validateAccount(pRule.CreditAccount))
-                throw new OctopusAccountingRuleException(OctopusAccountingRuleExceptionEnum.SpecificAccountIsInvalid);
+                throw new OpenCbsAccountingRuleException(OctopusAccountingRuleExceptionEnum.SpecificAccountIsInvalid);
 
             if (pRule.DebitAccount.Id == pRule.CreditAccount.Id)
-                throw new OctopusAccountingRuleException(OctopusAccountingRuleExceptionEnum.GenericAndSpecificAccountsAreIdentical);
+                throw new OpenCbsAccountingRuleException(OctopusAccountingRuleExceptionEnum.GenericAndSpecificAccountsAreIdentical);
 
             if (pRule is ContractAccountingRule)
                 ValidateContractAccountingRule(pRule as ContractAccountingRule);
@@ -93,10 +93,10 @@ namespace OpenCBS.Services.Accounting
         private void ValidateContractAccountingRule(ContractAccountingRule pRule)
         {
             if (!Enum.IsDefined(typeof(OProductTypes), pRule.ProductType.ToString()))
-                throw new OctopusAccountingRuleException(OctopusAccountingRuleExceptionEnum.ProductTypeIsInvalid);
+                throw new OpenCbsAccountingRuleException(OctopusAccountingRuleExceptionEnum.ProductTypeIsInvalid);
 
             if (!Enum.IsDefined(typeof(OClientTypes), pRule.ClientType.ToString()))
-                throw new OctopusAccountingRuleException(OctopusAccountingRuleExceptionEnum.ClientTypeIsInvalid);
+                throw new OpenCbsAccountingRuleException(OctopusAccountingRuleExceptionEnum.ClientTypeIsInvalid);
         }
 
         private bool _validateAccount(Account pAccount)

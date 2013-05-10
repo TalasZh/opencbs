@@ -46,23 +46,23 @@ namespace OpenCBS.Services
         {
             if (string.IsNullOrEmpty(branch.Name))
             {
-                throw new OctopusBranchNameIsEmptyException();
+                throw new OpenCbsBranchNameIsEmptyException();
             }
             if (string.IsNullOrEmpty(branch.Code))
             {
-                throw new OctopusBranchCodeIsEmptyException();
+                throw new OpenCbsBranchCodeIsEmptyException();
             }
             if (string.IsNullOrEmpty(branch.Address))
             {
-                throw new OctopusBranchAddressIsEmptyException();
+                throw new OpenCbsBranchAddressIsEmptyException();
             }
             if (_manager.NameExists(branch.Id, branch.Name))
             {
-                throw new OctopusBranchSameNameException();
+                throw new OpenCbsBranchSameNameException();
             }
             if (_manager.CodeExists(branch.Id, branch.Code))
             {
-                throw new OctopusBranchSameCodeException();
+                throw new OpenCbsBranchSameCodeException();
             }
         }
 

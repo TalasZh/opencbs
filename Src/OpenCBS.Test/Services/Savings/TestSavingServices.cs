@@ -102,9 +102,9 @@ namespace OpenCBS.Test.Services.Savings
                 saving.FirstDeposit(1000, new DateTime(2009, 01, 01), null, new User(), Teller.CurrentTeller);
                 Assert.Fail("Saving Contract shouldn't pass validation test before save (Initial Amount is Null).");
             }
-            catch (OctopusSavingException exception)
+            catch (OpenCbsSavingException exception)
             {
-                Assert.AreEqual(exception.Code, OctopusSavingExceptionEnum.EntryFeesIsInvalid);
+                Assert.AreEqual(exception.Code, OpenCbsSavingExceptionEnum.EntryFeesIsInvalid);
             }
         }       
 
@@ -123,9 +123,9 @@ namespace OpenCBS.Test.Services.Savings
                 _savingServices.SaveContract(saving, new Person { Id = 6 });
                 Assert.Fail("Saving Contract shouldn't pass validation test before save (Interest Rate is Null).");
             }
-            catch (OctopusSavingException exception)
+            catch (OpenCbsSavingException exception)
             {
-                Assert.AreEqual(exception.Code, OctopusSavingExceptionEnum.InterestRateIsInvalid);
+                Assert.AreEqual(exception.Code, OpenCbsSavingExceptionEnum.InterestRateIsInvalid);
             }
         }
 
@@ -144,9 +144,9 @@ namespace OpenCBS.Test.Services.Savings
                 _savingServices.SaveContract(saving, new Person { Id = 6 });
                 Assert.Fail("Saving Contract shouldn't pass validation test before save (Product is Null).");
             }
-            catch (OctopusSavingException exception)
+            catch (OpenCbsSavingException exception)
             {
-                Assert.AreEqual(exception.Code, OctopusSavingExceptionEnum.ProductIsInvalid);
+                Assert.AreEqual(exception.Code, OpenCbsSavingExceptionEnum.ProductIsInvalid);
             }
         }
 
@@ -166,9 +166,9 @@ namespace OpenCBS.Test.Services.Savings
                 saving.FirstDeposit(1, new DateTime(2009, 01, 01), null, new User(), Teller.CurrentTeller);
 				Assert.Fail("Saving Contract shouldn't pass validation test before save (initial amount < product.min).");
 			}
-			catch (OctopusSavingException exception)
+			catch (OpenCbsSavingException exception)
 			{
-				Assert.AreEqual((int)OctopusSavingExceptionEnum.EntryFeesIsInvalid, (int)exception.Code);
+				Assert.AreEqual((int)OpenCbsSavingExceptionEnum.EntryFeesIsInvalid, (int)exception.Code);
 			}
 		}
 
@@ -251,7 +251,7 @@ namespace OpenCBS.Test.Services.Savings
 
                 Assert.GreaterOrEqual(_savingServices.SaveContract(saving, client), 0);
             }
-            catch (OctopusSavingException exception)
+            catch (OpenCbsSavingException exception)
             {
                 Assert.Fail(exception.Code.ToString());
             }
@@ -273,9 +273,9 @@ namespace OpenCBS.Test.Services.Savings
                 saving.FirstDeposit(100000000, new DateTime(2009, 01, 01), null, new User(), Teller.CurrentTeller);
 				Assert.Fail("Saving Contract shouldn't pass validation test before save (initial amount > product.max).");
 			}
-			catch (OctopusSavingException exception)
+			catch (OpenCbsSavingException exception)
 			{
-				Assert.AreEqual((int)OctopusSavingExceptionEnum.EntryFeesIsInvalid, (int)exception.Code);
+				Assert.AreEqual((int)OpenCbsSavingExceptionEnum.EntryFeesIsInvalid, (int)exception.Code);
 			}
 		}
 
@@ -297,9 +297,9 @@ namespace OpenCBS.Test.Services.Savings
                 _savingServices.Transfer(saving, savingTarget, TimeProvider.Today, 99, 0, "transfer", new User(), false);
                 Assert.Fail("Saving Contract shouldn't pass validation test before transfer (transfer amount < transfer.min).");
             }
-            catch (OctopusSavingException exception)
+            catch (OpenCbsSavingException exception)
             {
-                Assert.AreEqual((int)OctopusSavingExceptionEnum.TransferAmountIsInvalid, (int)exception.Code);
+                Assert.AreEqual((int)OpenCbsSavingExceptionEnum.TransferAmountIsInvalid, (int)exception.Code);
             }
 
             _savingManagerMock.Expect("UpdateAccountsBalance", saving, null);
@@ -310,9 +310,9 @@ namespace OpenCBS.Test.Services.Savings
                 _savingServices.Transfer(saving, savingTarget, TimeProvider.Today, 301, 0, "transfer", new User(), false);
                 Assert.Fail("Saving Contract shouldn't pass validation test before transfer (transfer amount > transfer.max).");
             }
-            catch (OctopusSavingException exception)
+            catch (OpenCbsSavingException exception)
             {
-                Assert.AreEqual((int)OctopusSavingExceptionEnum.TransferAmountIsInvalid, (int)exception.Code);
+                Assert.AreEqual((int)OpenCbsSavingExceptionEnum.TransferAmountIsInvalid, (int)exception.Code);
             }
 
             _savingManagerMock.Expect("UpdateAccountsBalance", saving, null);
@@ -323,9 +323,9 @@ namespace OpenCBS.Test.Services.Savings
                 _savingServices.Transfer(saving, savingTarget, TimeProvider.Today, 200, 0, "transfer", new User(), false);
                 Assert.Fail("Saving Contract shouldn't pass validation test before transfer (balance < balance.min).");
             }
-            catch (OctopusSavingException exception)
+            catch (OpenCbsSavingException exception)
             {
-                Assert.AreEqual((int)OctopusSavingExceptionEnum.BalanceIsInvalid, (int)exception.Code);
+                Assert.AreEqual((int)OpenCbsSavingExceptionEnum.BalanceIsInvalid, (int)exception.Code);
             }
         }
 
@@ -342,9 +342,9 @@ namespace OpenCBS.Test.Services.Savings
                 _savingServices.Transfer(saving, saving, TimeProvider.Today, 99, 0, "transfer", new User(), false);
                 Assert.Fail("Saving Contract shouldn't pass validation test before transfer (Saving source = Saving Target).");
             }
-            catch (OctopusSavingException exception)
+            catch (OpenCbsSavingException exception)
             {
-                Assert.AreEqual((int)OctopusSavingExceptionEnum.SavingsContractForTransferIdenticals, (int)exception.Code);
+                Assert.AreEqual((int)OpenCbsSavingExceptionEnum.SavingsContractForTransferIdenticals, (int)exception.Code);
             }
 
             try
@@ -352,9 +352,9 @@ namespace OpenCBS.Test.Services.Savings
                 _savingServices.Transfer(saving, savingTarget, TimeProvider.Today, 99, 0, "transfer", new User(), false);
                 Assert.Fail("Saving Contract shouldn't pass validation test before transfer (Saving Target is Closed).");
             }
-            catch (OctopusSavingException exception)
+            catch (OpenCbsSavingException exception)
             {
-                Assert.AreEqual((int)OctopusSavingExceptionEnum.CreditTransferAccountInvalid, (int)exception.Code);
+                Assert.AreEqual((int)OpenCbsSavingExceptionEnum.CreditTransferAccountInvalid, (int)exception.Code);
             }
         }
 
@@ -379,9 +379,9 @@ namespace OpenCBS.Test.Services.Savings
             {
                 _savingServices.SaveContract(saving, client);
             }
-            catch (OctopusSavingException exception)
+            catch (OpenCbsSavingException exception)
             {
-                Assert.AreEqual((int)OctopusSavingExceptionEnum.WithdrawFeesIsInvalid, (int)exception.Code);
+                Assert.AreEqual((int)OpenCbsSavingExceptionEnum.WithdrawFeesIsInvalid, (int)exception.Code);
             }
 
             saving.FlatWithdrawFees = 0;
@@ -390,9 +390,9 @@ namespace OpenCBS.Test.Services.Savings
             {
                 _savingServices.SaveContract(saving, client);
             }
-            catch (OctopusSavingException exception)
+            catch (OpenCbsSavingException exception)
             {
-                Assert.AreEqual((int)OctopusSavingExceptionEnum.WithdrawFeesIsInvalid, (int)exception.Code);
+                Assert.AreEqual((int)OpenCbsSavingExceptionEnum.WithdrawFeesIsInvalid, (int)exception.Code);
             }
 
             saving.FlatWithdrawFees = 6;
@@ -401,9 +401,9 @@ namespace OpenCBS.Test.Services.Savings
             {
                 _savingServices.SaveContract(saving, client);
             }
-            catch (OctopusSavingException exception)
+            catch (OpenCbsSavingException exception)
             {
-                Assert.AreEqual((int)OctopusSavingExceptionEnum.WithdrawFeesIsInvalid, (int)exception.Code);
+                Assert.AreEqual((int)OpenCbsSavingExceptionEnum.WithdrawFeesIsInvalid, (int)exception.Code);
             }
 
             saving.FlatWithdrawFees = 3;
@@ -422,9 +422,9 @@ namespace OpenCBS.Test.Services.Savings
             {
                 _savingServices.SaveContract(saving, client);
             }
-            catch (OctopusSavingException exception)
+            catch (OpenCbsSavingException exception)
             {
-                Assert.AreEqual((int)OctopusSavingExceptionEnum.WithdrawFeesIsInvalid, (int)exception.Code);
+                Assert.AreEqual((int)OpenCbsSavingExceptionEnum.WithdrawFeesIsInvalid, (int)exception.Code);
             }
 
             saving.FlatWithdrawFees = 1;
@@ -433,9 +433,9 @@ namespace OpenCBS.Test.Services.Savings
             {
                 _savingServices.SaveContract(saving, client);
             }
-            catch (OctopusSavingException exception)
+            catch (OpenCbsSavingException exception)
             {
-                Assert.AreEqual((int)OctopusSavingExceptionEnum.WithdrawFeesIsInvalid, (int)exception.Code);
+                Assert.AreEqual((int)OpenCbsSavingExceptionEnum.WithdrawFeesIsInvalid, (int)exception.Code);
             }
 
             saving.FlatWithdrawFees = 3;
@@ -444,9 +444,9 @@ namespace OpenCBS.Test.Services.Savings
             {
                 _savingServices.SaveContract(saving, client);
             }
-            catch (OctopusSavingException exception)
+            catch (OpenCbsSavingException exception)
             {
-                Assert.AreEqual((int)OctopusSavingExceptionEnum.WithdrawFeesIsInvalid, (int)exception.Code);
+                Assert.AreEqual((int)OpenCbsSavingExceptionEnum.WithdrawFeesIsInvalid, (int)exception.Code);
             }
 
             saving.FlatWithdrawFees = 2;
@@ -478,9 +478,9 @@ namespace OpenCBS.Test.Services.Savings
             {
                 _savingServices.SaveContract(saving, client);
             }
-            catch (OctopusSavingException exception)
+            catch (OpenCbsSavingException exception)
             {
-                Assert.AreEqual((int)OctopusSavingExceptionEnum.WithdrawFeesIsInvalid, (int)exception.Code);
+                Assert.AreEqual((int)OpenCbsSavingExceptionEnum.WithdrawFeesIsInvalid, (int)exception.Code);
             }
 
             saving.RateWithdrawFees = 0;
@@ -489,9 +489,9 @@ namespace OpenCBS.Test.Services.Savings
             {
                 _savingServices.SaveContract(saving, client);
             }
-            catch (OctopusSavingException exception)
+            catch (OpenCbsSavingException exception)
             {
-                Assert.AreEqual((int)OctopusSavingExceptionEnum.WithdrawFeesIsInvalid, (int)exception.Code);
+                Assert.AreEqual((int)OpenCbsSavingExceptionEnum.WithdrawFeesIsInvalid, (int)exception.Code);
             }
 
             saving.RateWithdrawFees = 0.06;
@@ -500,9 +500,9 @@ namespace OpenCBS.Test.Services.Savings
             {
                 _savingServices.SaveContract(saving, client);
             }
-            catch (OctopusSavingException exception)
+            catch (OpenCbsSavingException exception)
             {
-                Assert.AreEqual((int)OctopusSavingExceptionEnum.WithdrawFeesIsInvalid, (int)exception.Code);
+                Assert.AreEqual((int)OpenCbsSavingExceptionEnum.WithdrawFeesIsInvalid, (int)exception.Code);
             }
 
             saving.RateWithdrawFees = 0.03;
@@ -521,9 +521,9 @@ namespace OpenCBS.Test.Services.Savings
             {
                 _savingServices.SaveContract(saving, client);
             }
-            catch (OctopusSavingException exception)
+            catch (OpenCbsSavingException exception)
             {
-                Assert.AreEqual((int)OctopusSavingExceptionEnum.WithdrawFeesIsInvalid, (int)exception.Code);
+                Assert.AreEqual((int)OpenCbsSavingExceptionEnum.WithdrawFeesIsInvalid, (int)exception.Code);
             }
 
             saving.RateWithdrawFees = 0.01;
@@ -532,9 +532,9 @@ namespace OpenCBS.Test.Services.Savings
             {
                 _savingServices.SaveContract(saving, client);
             }
-            catch (OctopusSavingException exception)
+            catch (OpenCbsSavingException exception)
             {
-                Assert.AreEqual((int)OctopusSavingExceptionEnum.WithdrawFeesIsInvalid, (int)exception.Code);
+                Assert.AreEqual((int)OpenCbsSavingExceptionEnum.WithdrawFeesIsInvalid, (int)exception.Code);
             }
 
             saving.RateWithdrawFees = 0.03;
@@ -543,9 +543,9 @@ namespace OpenCBS.Test.Services.Savings
             {
                 _savingServices.SaveContract(saving, client);
             }
-            catch (OctopusSavingException exception)
+            catch (OpenCbsSavingException exception)
             {
-                Assert.AreEqual((int)OctopusSavingExceptionEnum.WithdrawFeesIsInvalid, (int)exception.Code);
+                Assert.AreEqual((int)OpenCbsSavingExceptionEnum.WithdrawFeesIsInvalid, (int)exception.Code);
             }
 
             saving.RateWithdrawFees = 0.02;
@@ -573,9 +573,9 @@ namespace OpenCBS.Test.Services.Savings
             {
                 _savingServices.SaveContract(saving, client);
             }
-            catch (OctopusSavingException exception)
+            catch (OpenCbsSavingException exception)
             {
-                Assert.AreEqual((int)OctopusSavingExceptionEnum.TransferFeesIsInvalid, (int)exception.Code);
+                Assert.AreEqual((int)OpenCbsSavingExceptionEnum.TransferFeesIsInvalid, (int)exception.Code);
             }
 
             saving.FlatTransferFees = 0;
@@ -584,9 +584,9 @@ namespace OpenCBS.Test.Services.Savings
             {
                 _savingServices.SaveContract(saving, client);
             }
-            catch (OctopusSavingException exception)
+            catch (OpenCbsSavingException exception)
             {
-                Assert.AreEqual((int)OctopusSavingExceptionEnum.TransferFeesIsInvalid, (int)exception.Code);
+                Assert.AreEqual((int)OpenCbsSavingExceptionEnum.TransferFeesIsInvalid, (int)exception.Code);
             }
 
             saving.FlatTransferFees = 6;
@@ -595,9 +595,9 @@ namespace OpenCBS.Test.Services.Savings
             {
                 _savingServices.SaveContract(saving, client);
             }
-            catch (OctopusSavingException exception)
+            catch (OpenCbsSavingException exception)
             {
-                Assert.AreEqual((int)OctopusSavingExceptionEnum.TransferFeesIsInvalid, (int)exception.Code);
+                Assert.AreEqual((int)OpenCbsSavingExceptionEnum.TransferFeesIsInvalid, (int)exception.Code);
             }
 
             saving.FlatTransferFees = 3;
@@ -616,9 +616,9 @@ namespace OpenCBS.Test.Services.Savings
             {
                 _savingServices.SaveContract(saving, client);
             }
-            catch (OctopusSavingException exception)
+            catch (OpenCbsSavingException exception)
             {
-                Assert.AreEqual((int)OctopusSavingExceptionEnum.TransferFeesIsInvalid, (int)exception.Code);
+                Assert.AreEqual((int)OpenCbsSavingExceptionEnum.TransferFeesIsInvalid, (int)exception.Code);
             }
 
             saving.FlatTransferFees = 1;
@@ -627,9 +627,9 @@ namespace OpenCBS.Test.Services.Savings
             {
                 _savingServices.SaveContract(saving, client);
             }
-            catch (OctopusSavingException exception)
+            catch (OpenCbsSavingException exception)
             {
-                Assert.AreEqual((int)OctopusSavingExceptionEnum.TransferFeesIsInvalid, (int)exception.Code);
+                Assert.AreEqual((int)OpenCbsSavingExceptionEnum.TransferFeesIsInvalid, (int)exception.Code);
             }
 
             saving.FlatTransferFees = 3;
@@ -638,9 +638,9 @@ namespace OpenCBS.Test.Services.Savings
             {
                 _savingServices.SaveContract(saving, client);
             }
-            catch (OctopusSavingException exception)
+            catch (OpenCbsSavingException exception)
             {
-                Assert.AreEqual((int)OctopusSavingExceptionEnum.TransferFeesIsInvalid, (int)exception.Code);
+                Assert.AreEqual((int)OpenCbsSavingExceptionEnum.TransferFeesIsInvalid, (int)exception.Code);
             }
 
             saving.FlatTransferFees = 2;
@@ -672,9 +672,9 @@ namespace OpenCBS.Test.Services.Savings
             {
                 _savingServices.SaveContract(saving, client);
             }
-            catch (OctopusSavingException exception)
+            catch (OpenCbsSavingException exception)
             {
-                Assert.AreEqual((int)OctopusSavingExceptionEnum.TransferFeesIsInvalid, (int)exception.Code);
+                Assert.AreEqual((int)OpenCbsSavingExceptionEnum.TransferFeesIsInvalid, (int)exception.Code);
             }
 
             saving.RateTransferFees = 0;
@@ -683,9 +683,9 @@ namespace OpenCBS.Test.Services.Savings
             {
                 _savingServices.SaveContract(saving, client);
             }
-            catch (OctopusSavingException exception)
+            catch (OpenCbsSavingException exception)
             {
-                Assert.AreEqual((int)OctopusSavingExceptionEnum.TransferFeesIsInvalid, (int)exception.Code);
+                Assert.AreEqual((int)OpenCbsSavingExceptionEnum.TransferFeesIsInvalid, (int)exception.Code);
             }
 
             saving.RateTransferFees = 0.06;
@@ -694,9 +694,9 @@ namespace OpenCBS.Test.Services.Savings
             {
                 _savingServices.SaveContract(saving, client);
             }
-            catch (OctopusSavingException exception)
+            catch (OpenCbsSavingException exception)
             {
-                Assert.AreEqual((int)OctopusSavingExceptionEnum.TransferFeesIsInvalid, (int)exception.Code);
+                Assert.AreEqual((int)OpenCbsSavingExceptionEnum.TransferFeesIsInvalid, (int)exception.Code);
             }
 
             saving.RateTransferFees = 0.03;
@@ -715,9 +715,9 @@ namespace OpenCBS.Test.Services.Savings
             {
                 _savingServices.SaveContract(saving, client);
             }
-            catch (OctopusSavingException exception)
+            catch (OpenCbsSavingException exception)
             {
-                Assert.AreEqual((int)OctopusSavingExceptionEnum.TransferFeesIsInvalid, (int)exception.Code);
+                Assert.AreEqual((int)OpenCbsSavingExceptionEnum.TransferFeesIsInvalid, (int)exception.Code);
             }
 
             saving.RateTransferFees = 0.01;
@@ -726,9 +726,9 @@ namespace OpenCBS.Test.Services.Savings
             {
                 _savingServices.SaveContract(saving, client);
             }
-            catch (OctopusSavingException exception)
+            catch (OpenCbsSavingException exception)
             {
-                Assert.AreEqual((int)OctopusSavingExceptionEnum.TransferFeesIsInvalid, (int)exception.Code);
+                Assert.AreEqual((int)OpenCbsSavingExceptionEnum.TransferFeesIsInvalid, (int)exception.Code);
             }
 
             saving.RateTransferFees = 0.03;
@@ -737,9 +737,9 @@ namespace OpenCBS.Test.Services.Savings
             {
                 _savingServices.SaveContract(saving, client);
             }
-            catch (OctopusSavingException exception)
+            catch (OpenCbsSavingException exception)
             {
-                Assert.AreEqual((int)OctopusSavingExceptionEnum.TransferFeesIsInvalid, (int)exception.Code);
+                Assert.AreEqual((int)OpenCbsSavingExceptionEnum.TransferFeesIsInvalid, (int)exception.Code);
             }
 
             saving.RateTransferFees = 0.02;
@@ -769,9 +769,9 @@ namespace OpenCBS.Test.Services.Savings
             {
                 _savingServices.SaveContract(saving, client);
             }
-            catch (OctopusSavingException exception)
+            catch (OpenCbsSavingException exception)
             {
-                Assert.AreEqual((int)OctopusSavingExceptionEnum.AgioFeesIsInvalid, (int)exception.Code);
+                Assert.AreEqual((int)OpenCbsSavingExceptionEnum.AgioFeesIsInvalid, (int)exception.Code);
             }
 
             try
@@ -805,7 +805,7 @@ namespace OpenCBS.Test.Services.Savings
                 _savingManagerMock.ExpectAndReturn("Add", 7, saving, client, null);
                 saving.InterestRate = 0.21;
             }
-            catch (OctopusSavingException exception)
+            catch (OpenCbsSavingException exception)
             {
                 Assert.Fail(exception.Code.ToString());
             }
@@ -816,9 +816,9 @@ namespace OpenCBS.Test.Services.Savings
                 _savingManagerMock.ExpectAndReturn("Add", 8, saving, client, null);
                 _savingServices.SaveContract(saving, client);
             }
-            catch (OctopusSavingException exception)
+            catch (OpenCbsSavingException exception)
             {
-                Assert.AreEqual((int)OctopusSavingExceptionEnum.InterestRateIsInvalid, (int)exception.Code);
+                Assert.AreEqual((int)OpenCbsSavingExceptionEnum.InterestRateIsInvalid, (int)exception.Code);
             }
 
             //Test InterestRate is valid (equals to required value)
@@ -834,9 +834,9 @@ namespace OpenCBS.Test.Services.Savings
                 _savingManagerMock.ExpectAndReturn("Add", 9, saving, client, null);
                 _savingServices.SaveContract(saving, client);
             }
-            catch (OctopusSavingException exception)
+            catch (OpenCbsSavingException exception)
             {
-                Assert.AreEqual((int)OctopusSavingExceptionEnum.InterestRateIsInvalid, (int)exception.Code);
+                Assert.AreEqual((int)OpenCbsSavingExceptionEnum.InterestRateIsInvalid, (int)exception.Code);
             }
 
 
@@ -852,9 +852,9 @@ namespace OpenCBS.Test.Services.Savings
                 _savingManagerMock.ExpectAndReturn("Add", 11, saving, client, null);
                 _savingServices.SaveContract(saving, client);
             }
-            catch (OctopusSavingException exception)
+            catch (OpenCbsSavingException exception)
             {
-                Assert.AreEqual((int)OctopusSavingExceptionEnum.InterestRateIsInvalid, (int)exception.Code);
+                Assert.AreEqual((int)OpenCbsSavingExceptionEnum.InterestRateIsInvalid, (int)exception.Code);
             }
 
 		}
@@ -895,7 +895,7 @@ namespace OpenCBS.Test.Services.Savings
             //    _savingManagerMock.Expect("UpdateAccountsBalance", savings, null);
             //    _savingServices.Deposit(savings, TimeProvider.Today, 250, "", user);
             //}
-            //catch (OctopusSavingException exception)
+            //catch (OpenCbsSavingException exception)
             //{
             //    Assert.Fail(exception.Code.ToString());
             //}
@@ -905,43 +905,43 @@ namespace OpenCBS.Test.Services.Savings
             //    _savingServices.Deposit(savings, TimeProvider.Today, 300, "", user);
             //    Assert.Fail("Saving Contract shouldn't pass validation test before save (balance > product.max).");
             //}
-            //catch (OctopusSavingException exception)
+            //catch (OpenCbsSavingException exception)
             //{
-            //    Assert.AreEqual((int)OctopusSavingExceptionEnum.BalanceIsInvalid, (int)exception.Code);
+            //    Assert.AreEqual((int)OpenCbsSavingExceptionEnum.BalanceIsInvalid, (int)exception.Code);
             //}
 
             //_savingManagerMock.Expect("UpdateAccountsBalance", savings, null);
             //_savingServices.Deposit(savings, TimeProvider.Today, 250, "", user);
 		}
 
-		public void HandleOctopusSavingException_BalanceIsInvalid(OctopusSavingException ex)
+		public void HandleOctopusSavingException_BalanceIsInvalid(OpenCbsSavingException ex)
 		{
-			Assert.AreEqual(OctopusSavingExceptionEnum.BalanceIsInvalid, ex.Code);
+			Assert.AreEqual(OpenCbsSavingExceptionEnum.BalanceIsInvalid, ex.Code);
 		}
 
-		public void HandleOctopusSavingException_DepositAmountIsInvalid(OctopusSavingException ex)
+		public void HandleOctopusSavingException_DepositAmountIsInvalid(OpenCbsSavingException ex)
 		{
-			Assert.AreEqual(OctopusSavingExceptionEnum.DepositAmountIsInvalid, ex.Code);
+			Assert.AreEqual(OpenCbsSavingExceptionEnum.DepositAmountIsInvalid, ex.Code);
 		}
 
-		public void HandleOctopusSavingException_InitialAmountIsInvalid(OctopusSavingException ex)
+		public void HandleOctopusSavingException_InitialAmountIsInvalid(OpenCbsSavingException ex)
 		{
-			Assert.AreNotEqual(OctopusSavingExceptionEnum.InitialAmountIsInvalid, ex.Code);
+			Assert.AreNotEqual(OpenCbsSavingExceptionEnum.InitialAmountIsInvalid, ex.Code);
 		}
 
-		public void HandleOctopusSavingException_InterestRateIsInvalid(OctopusSavingException ex)
+		public void HandleOctopusSavingException_InterestRateIsInvalid(OpenCbsSavingException ex)
 		{
-			Assert.AreEqual(OctopusSavingExceptionEnum.InterestRateIsInvalid, ex.Code);
+			Assert.AreEqual(OpenCbsSavingExceptionEnum.InterestRateIsInvalid, ex.Code);
 		}
 
-		public void HandleOctopusSavingException_SavingContractIsNull(OctopusSavingException ex)
+		public void HandleOctopusSavingException_SavingContractIsNull(OpenCbsSavingException ex)
 		{
-			Assert.AreEqual(OctopusSavingExceptionEnum.SavingContractIsNull, ex.Code);
+			Assert.AreEqual(OpenCbsSavingExceptionEnum.SavingContractIsNull, ex.Code);
 		}
 
-		public void HandleOctopusSavingException_WithdrawAmountIsInvalid(OctopusSavingException ex)
+		public void HandleOctopusSavingException_WithdrawAmountIsInvalid(OpenCbsSavingException ex)
 		{
-			Assert.AreEqual(OctopusSavingExceptionEnum.WithdrawAmountIsInvalid, ex.Code);
+			Assert.AreEqual(OpenCbsSavingExceptionEnum.WithdrawAmountIsInvalid, ex.Code);
 		}
 
         [Test]

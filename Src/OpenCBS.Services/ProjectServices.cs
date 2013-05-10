@@ -43,30 +43,30 @@ namespace OpenCBS.Services
         public int SaveProject(Project pProject, IClient pClient)
         {
             if (pClient.Id == 0)
-                throw new OctopusProjectSaveException(OctopusProjectSaveExceptionEnum.ClientIsEmpty);
+                throw new OpenCbsProjectSaveException(OpenCbsProjectSaveExceptionEnum.ClientIsEmpty);
             
             if (string.IsNullOrEmpty(pProject.Name))
-                throw new OctopusProjectSaveException(OctopusProjectSaveExceptionEnum.NameIsEmpty);
+                throw new OpenCbsProjectSaveException(OpenCbsProjectSaveExceptionEnum.NameIsEmpty);
 
             if (string.IsNullOrEmpty(pProject.Aim))
-                throw new OctopusProjectSaveException(OctopusProjectSaveExceptionEnum.AimIsEmpty);
+                throw new OpenCbsProjectSaveException(OpenCbsProjectSaveExceptionEnum.AimIsEmpty);
 
             if (pProject.BeginDate == DateTime.MinValue)
-                throw new OctopusProjectSaveException(OctopusProjectSaveExceptionEnum.BeginDateEmpty);
+                throw new OpenCbsProjectSaveException(OpenCbsProjectSaveExceptionEnum.BeginDateEmpty);
 
             if (pProject.CorporateCA.HasValue && pProject.CorporateCA.Value == -1)
-                throw new OctopusProjectSaveException(OctopusProjectSaveExceptionEnum.CAIsBad);
+                throw new OpenCbsProjectSaveException(OpenCbsProjectSaveExceptionEnum.CAIsBad);
 
             if (pProject.CorporateFinancialPlanAmount.HasValue && pProject.CorporateFinancialPlanAmount.Value == -1)
-                throw new OctopusProjectSaveException(OctopusProjectSaveExceptionEnum.FinancialPlanAmountIsBad);
+                throw new OpenCbsProjectSaveException(OpenCbsProjectSaveExceptionEnum.FinancialPlanAmountIsBad);
 
             if (pProject.CorporateFinancialPlanTotalAmount.HasValue && pProject.CorporateFinancialPlanTotalAmount.Value == -1)
-                throw new OctopusProjectSaveException(OctopusProjectSaveExceptionEnum.FinancialTotalPlanAmountIsBad);
+                throw new OpenCbsProjectSaveException(OpenCbsProjectSaveExceptionEnum.FinancialTotalPlanAmountIsBad);
 
             foreach (FollowUp up in pProject.FollowUps)
             {
                 if(!up.CA.HasValue)
-                    throw new OctopusProjectSaveException(OctopusProjectSaveExceptionEnum.CACannotBeNullInFollowUp);
+                    throw new OpenCbsProjectSaveException(OpenCbsProjectSaveExceptionEnum.CACannotBeNullInFollowUp);
             }
 
             using (SqlConnection conn = _ProjectManager.GetConnection())

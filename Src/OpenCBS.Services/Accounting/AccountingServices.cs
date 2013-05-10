@@ -74,7 +74,7 @@ namespace OpenCBS.Services.Accounting
         public void DeleteClosure(int closureId)
         {
             if (!_movementSetManagement.IsDeletable(closureId))
-                throw new OctopusBookingException(OctopusBookingExceptionsEnum.NotDeletableClosure);
+                throw new OpenCbsBookingException(OpenCbsBookingExceptionsEnum.NotDeletableClosure);
 
             using (SqlConnection conn = _movementSetManagement.GetConnection())
             {
@@ -197,11 +197,11 @@ namespace OpenCBS.Services.Accounting
                 try
                 {
                     if (booking.Amount <= 0)
-                        throw new OctopusAccountException(OctopusAccountExceptionsEnum.IncorrectAmountFormat);
+                        throw new OpenCbsAccountException(OpenCbsAccountExceptionsEnum.IncorrectAmountFormat);
 
                     if (booking.DebitAccount.Id == booking.CreditAccount.Id)
                     {
-                        throw new OctopusAccountException(OctopusAccountExceptionsEnum.EqualAccounts);
+                        throw new OpenCbsAccountException(OpenCbsAccountExceptionsEnum.EqualAccounts);
                     }
 
                     _movementSetManagement.InsertManualMovment(booking, sqlTransac);
@@ -246,7 +246,7 @@ namespace OpenCBS.Services.Accounting
                 {
                     exchangeRate = _exchangeRateServices.SelectExchangeRate(pDate.Date, pCurrency);
                     if (exchangeRate == null)
-                        throw new OctopusExchangeRateException(OctopusExchangeRateExceptionEnum.ExchangeRateIsNull);
+                        throw new OpenCbsExchangeRateException(OpenCbsExchangeRateExceptionEnum.ExchangeRateIsNull);
                 }
             }
             else

@@ -117,7 +117,7 @@ namespace OpenCBS.Test.Services
 		}
 
 		[Test]
-		[ExpectedException(typeof(OctopusPackageDeleteException))]
+		[ExpectedException(typeof(OpenCbsPackageDeleteException))]
 		public void TestDeletePackageWhenPackageAlreadyDeleted()
 		{
             LoanProduct pack1 = new LoanProduct();
@@ -235,7 +235,7 @@ namespace OpenCBS.Test.Services
 		}
 				
 		[Test]
-		[ExpectedException(typeof(OctopusPackageSaveException))]
+		[ExpectedException(typeof(OpenCbsPackageSaveException))]
 		public void TestAddExoticInstallmentInExoticProductWhenInstallmentIsNull()
 		{
 			ExoticInstallmentsTable product = new ExoticInstallmentsTable();
@@ -359,7 +359,7 @@ namespace OpenCBS.Test.Services
         #endregion
 
         [Test]
-		[ExpectedException(typeof(OctopusPackageSaveException))]
+		[ExpectedException(typeof(OpenCbsPackageSaveException))]
 		public void TestParseFieldsAndCheckErrorsWhenNameIsNull()
 		{
             var currency = new Currency();
@@ -410,7 +410,7 @@ namespace OpenCBS.Test.Services
 		}
 
 		[Test]
-		[ExpectedException(typeof(OctopusPackageSaveException))]
+		[ExpectedException(typeof(OpenCbsPackageSaveException))]
 		public void TestParseFieldsAndCheckErrorsWhenInstallmentTypeIsNull()
 		{
             var currency = new Currency();
@@ -462,7 +462,7 @@ namespace OpenCBS.Test.Services
 		}
 
 		[Test]
-		[ExpectedException(typeof(OctopusPackageSaveException))]
+		[ExpectedException(typeof(OpenCbsPackageSaveException))]
 		public void TestParseFieldsAndCheckErrorsWhenNonRepaymentPenaltiesIsNull()
 		{
             var currency = new Currency();
@@ -514,7 +514,7 @@ namespace OpenCBS.Test.Services
 		}
 
         [Test]
-        [ExpectedException(typeof(OctopusPackageSaveException))]
+        [ExpectedException(typeof(OpenCbsPackageSaveException))]
         public void TestParseFieldsAndCheckErrorsWhenAnticipatedPartialRepaymentPenaltiesIsNull()
         {
             var currency = new Currency();
@@ -568,7 +568,7 @@ namespace OpenCBS.Test.Services
 
 
 	    [Test]
-		[ExpectedException(typeof(OctopusPackageSaveException))]
+		[ExpectedException(typeof(OpenCbsPackageSaveException))]
 		public void TestParseFieldsAndCheckErrorsWhenAnticipatedTotalRepaymentPenaltiesIsNull()
 		{
             var currency = new Currency();
@@ -672,7 +672,7 @@ namespace OpenCBS.Test.Services
 		}
 
 		[Test]
-		[ExpectedException(typeof(OctopusPackageSaveException))]
+		[ExpectedException(typeof(OpenCbsPackageSaveException))]
 		public void TestParseFieldsAndCheckErrorsWhenGracePeriodIsNull()
 		{
             var currency = new Currency();
@@ -725,7 +725,7 @@ namespace OpenCBS.Test.Services
 		}
 
 		[Test]
-		[ExpectedException(typeof(OctopusPackageSaveException))]
+		[ExpectedException(typeof(OpenCbsPackageSaveException))]
 		public void TestParseFieldsAndCheckErrorsWhenNumberOfInstallmentsIsNull()
 		{
             var currency = new Currency();
@@ -778,7 +778,7 @@ namespace OpenCBS.Test.Services
 		}
 
 		[Test]
-		[ExpectedException(typeof(OctopusPackageSaveException))]
+		[ExpectedException(typeof(OpenCbsPackageSaveException))]
 		public void TestParseFieldsAndCheckErrorsWhenAmountMustBeNotNull()
 		{
             LoanProduct package = CreatePackage(
@@ -827,7 +827,7 @@ namespace OpenCBS.Test.Services
 		}
 		
 		[Test]
-		[ExpectedException(typeof(OctopusPackageSaveException))]
+		[ExpectedException(typeof(OpenCbsPackageSaveException))]
 		public void TestParseFieldsAndCheckErrorsWhenExoticProductMustBeNotNull()
 		{
             LoanProduct package = CreatePackage(
@@ -875,7 +875,7 @@ namespace OpenCBS.Test.Services
 		}
 
 		[Test]
-		[ExpectedException(typeof(OctopusPackageSaveException))]
+		[ExpectedException(typeof(OpenCbsPackageSaveException))]
 		public void TestParseFieldsAndCheckErrorsWhenPackageNameAlreadyExist()
 		{
 			mockPackageManagement.ExpectAndReturn("IsThisProductNameAlreadyExist",true,"pack1");
@@ -927,7 +927,7 @@ namespace OpenCBS.Test.Services
 		}
 
         [Test]
-        [ExpectedException(typeof(OctopusPackageSaveException))]
+        [ExpectedException(typeof(OpenCbsPackageSaveException))]
         public void TestProductWithoutAmountCycle()
         {
             LoanProductManager productManager = new LoanProductManager(DataUtil.TESTDB);
@@ -987,7 +987,7 @@ namespace OpenCBS.Test.Services
         }
 
 	    [Test]
-        [ExpectedException(typeof(OctopusPackageSaveException))]
+        [ExpectedException(typeof(OpenCbsPackageSaveException))]
         public void TestProductWithoutRateCycle()
         {
             var loanAmountCycles = GetLoanAmountCycles();
@@ -1047,7 +1047,7 @@ namespace OpenCBS.Test.Services
         }
 
 	    [Test]
-        [ExpectedException(typeof(OctopusPackageSaveException))]
+        [ExpectedException(typeof(OpenCbsPackageSaveException))]
         public void TestProductWithoutMaturityCycle()
         {
             var loanAmountCycles = new List<LoanAmountCycle>();
@@ -1216,7 +1216,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OctopusPackageSaveException))]
+        [ExpectedException(typeof(OpenCbsPackageSaveException))]
         public void TestSavingOfLoanCycleWithWrongParams()
         {
             var loanAmountCycles = GetLoanAmountCycles();

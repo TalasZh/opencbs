@@ -17,7 +17,7 @@ namespace OpenCBS.ExceptionsHandler
 	{
 		public static ExceptionStatus ShowExceptionText(Exception ex)
 		{
-		    string resourceName = ex is OctopusException ? ex.ToString() : "sqlError.Text";
+		    string resourceName = ex is OpenCbsException ? ex.ToString() : "sqlError.Text";
 		    return ShowExceptionText(ex, resourceName);
 		}
 

@@ -81,7 +81,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OctopusMFIExceptions))]
+        [ExpectedException(typeof(OpenCbsMfiExceptions))]
         public void TestCreateMFINameIsEmpty()
         {
             MFI mfi = new MFI { Name = "", Login = "Login", Password = "Password" };
@@ -92,7 +92,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OctopusMFIExceptions))]
+        [ExpectedException(typeof(OpenCbsMfiExceptions))]
         public void TestCreateMFILoginIsEmptyAndPasswordIsFilled()
         {
             MFI mfi = new MFI { Name = "MFI", Login = "", Password = "Password" };
@@ -103,7 +103,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OctopusMFIExceptions))]
+        [ExpectedException(typeof(OpenCbsMfiExceptions))]
         public void TestCreateMFILoginIsFilledAndPasswordIsEmpty()
         {
             MFI mfi = new MFI { Name = "MFI", Login = "Login", Password = "" };
@@ -136,7 +136,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OctopusMFIExceptions))]
+        [ExpectedException(typeof(OpenCbsMfiExceptions))]
         public void TestUpdateMFINameIsEmpty()
         {
             MFI mfi = new MFI { Name = "", Login = "Login", Password = "Password" };
@@ -147,7 +147,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OctopusMFIExceptions))]
+        [ExpectedException(typeof(OpenCbsMfiExceptions))]
         public void TestUpdateMFILoginIsEmptyAndPasswordIsFilled()
         {
             MFI mfi = new MFI { Name = "MFI", Login = "", Password = "Password" };
@@ -158,7 +158,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OctopusMFIExceptions))]
+        [ExpectedException(typeof(OpenCbsMfiExceptions))]
         public void TestUpdateMFILoginIsFilledAndPasswordIsEmpty()
         {
             MFI mfi = new MFI { Name = "MFI", Login = "Login", Password = "" };
@@ -179,7 +179,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OctopusMFIExceptions))]
+        [ExpectedException(typeof(OpenCbsMfiExceptions))]
         public void TestCheckIfSamePasswordFailure()
         {
             MFIServices mfiServices = new MFIServices(User.CurrentUser);

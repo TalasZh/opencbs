@@ -58,7 +58,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OctopusDOASaveException))]
+        [ExpectedException(typeof(OpenCbsDoaSaveException))]
         public void AddEconomicActivityWhenNameIsEmpty()
         {
             _dynamicMock = new DynamicMock(typeof(EconomicActivityManager));
@@ -73,7 +73,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OctopusDOASaveException))]
+        [ExpectedException(typeof(OpenCbsDoaSaveException))]
         public void AddEconomicActivityWhenNameAlreadyExist()
         {
             _dynamicMock = new DynamicMock(typeof(EconomicActivityManager));
@@ -105,7 +105,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OctopusDOASaveException))]
+        [ExpectedException(typeof(OpenCbsDoaSaveException))]
         public void UpdateEconomicActivityButNewNameAlreadyExist()
         {
             _dynamicMock = new DynamicMock(typeof(EconomicActivityManager));
@@ -149,7 +149,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OctopusDOAUpdateException))]
+        [ExpectedException(typeof(OpenCbsDoaUpdateException))]
         public void TestNodeEditableWhenDOAIsNull()
         {
             EconomicActivity dom = null;
@@ -158,7 +158,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OctopusDOAUpdateException))]
+        [ExpectedException(typeof(OpenCbsDoaUpdateException))]
         public void TestNodeEditableWhenObjectNotADAO()
         {
             Person dom = new Person();
@@ -174,7 +174,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OctopusDOAUpdateException))]
+        [ExpectedException(typeof(OpenCbsDoaUpdateException))]
         public void TestChangeDomainNameWhenNewNameIsEmpty()
         {
             EconomicActivity dom = new EconomicActivity
@@ -187,7 +187,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OctopusDOADeleteException))]
+        [ExpectedException(typeof(OpenCbsDoaDeleteException))]
         public void TestDeleteDomainWhenDomainHasChildrens()
         {
             _dynamicMock = new DynamicMock(typeof(EconomicActivityManager));

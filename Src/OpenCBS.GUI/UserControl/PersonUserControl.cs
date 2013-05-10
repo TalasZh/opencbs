@@ -704,7 +704,7 @@ namespace OpenCBS.GUI.UserControl
                 if (textBoxIdentificationData.Text != String.Empty)
                     if (ServicesProvider.GetInstance().GetClientServices().CheckIfIdentificationDataAlreadyExists(
                         textBoxIdentificationData.Text, _tempPerson.Id))
-                            throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.IdentificationDataAlreadyUsed);
+                            throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.IdentificationDataAlreadyUsed);
                 _tempPerson.IdentificationData = ServicesHelper.CheckTextBoxText(textBoxIdentificationData.Text);
             }
             catch (Exception ex)

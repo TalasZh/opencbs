@@ -4488,16 +4488,16 @@ namespace OpenCBS.GUI.Clients
                 Event foundEvent = _credit.GetLastNonDeletedEvent();
 
                 if (foundEvent == null)
-                    throw new OctopusContractSaveException(OctopusContractSaveExceptionEnum.EventIsNull);
+                    throw new OpenCbsContractSaveException(OpenCbsContractSaveExceptionEnum.EventIsNull);
 
                 if (!foundEvent.Cancelable)
-                    throw new OctopusContractSaveException(OctopusContractSaveExceptionEnum.EventNotCancelable);
+                    throw new OpenCbsContractSaveException(OpenCbsContractSaveExceptionEnum.EventNotCancelable);
 
                 var coaServices = ServicesProvider.GetInstance().GetChartOfAccountsServices();
                 var fiscalYear = coaServices.SelectFiscalYears().Find(y => y.OpenDate <= foundEvent.Date && (y.CloseDate >= foundEvent.Date || y.CloseDate == null));
                 if (null == fiscalYear || !fiscalYear.Open)
                 {
-                    throw new OctopusContractSaveException(OctopusContractSaveExceptionEnum.OperationOutsideCurrentFiscalYear);
+                    throw new OpenCbsContractSaveException(OpenCbsContractSaveExceptionEnum.OperationOutsideCurrentFiscalYear);
                 }
 
                 List<Installment> archivedInstallments = cServices.GetArchivedInstallments(foundEvent.Id);
@@ -4849,7 +4849,7 @@ namespace OpenCBS.GUI.Clients
             OContractStatus newStatus = GetNewCreditStatus();
 
             if (newStatus.Equals(_credit.ContractStatus))
-                throw new OctopusContractSaveException(OctopusContractSaveExceptionEnum.StatusNotModified);
+                throw new OpenCbsContractSaveException(OpenCbsContractSaveExceptionEnum.StatusNotModified);
 
 
             if (newStatus.Equals(OContractStatus.Validated))
@@ -4858,7 +4858,7 @@ namespace OpenCBS.GUI.Clients
                 {
                     _credit.CompulsorySavings = SavingServices.GetSavingForLoan(_credit.Id, true);
                     if (_credit.CompulsorySavings == null)
-                        throw new OctopusSavingException(OctopusSavingExceptionEnum.NoCompulsorySavings);
+                        throw new OpenCbsSavingException(OpenCbsSavingExceptionEnum.NoCompulsorySavings);
                 }
             }
             return newStatus;
@@ -5548,8 +5548,8 @@ namespace OpenCBS.GUI.Clients
                     coaServices.SelectFiscalYears().Find(y => y.OpenDate <= TimeProvider.Now && y.CloseDate == null);
                 if (fiscalYear == null)
                 {
-                    throw new OctopusContractSaveException(
-                        OctopusContractSaveExceptionEnum.OperationOutsideCurrentFiscalYear);
+                    throw new OpenCbsContractSaveException(
+                        OpenCbsContractSaveExceptionEnum.OperationOutsideCurrentFiscalYear);
                 }
                 return true;
             }
@@ -5577,8 +5577,8 @@ namespace OpenCBS.GUI.Clients
                         y => y.OpenDate <= foundEvent.Date && (y.CloseDate >= foundEvent.Date || y.CloseDate == null));
                 if (null == fiscalYear || !fiscalYear.Open)
                 {
-                    throw new OctopusContractSaveException(
-                        OctopusContractSaveExceptionEnum.OperationOutsideCurrentFiscalYear);
+                    throw new OpenCbsContractSaveException(
+                        OpenCbsContractSaveExceptionEnum.OperationOutsideCurrentFiscalYear);
                 }
 
                 string message = GetString("ConfirmCancelLastEvent");

@@ -41,7 +41,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof (OctopusFundingLineException))]
+        [ExpectedException(typeof (OpenCbsFundingLineException))]
         public void AddFundinLineWithNameThatAlreadyExists()
         {
             var fundingLineServices = (FundingLineServices) container["FundingLineServices"];
@@ -69,7 +69,7 @@ namespace OpenCBS.Test.Services
 
         //Funding Line Events Test
         [Test]
-        [ExpectedException(typeof (OctopusFundingLineException))]
+        [ExpectedException(typeof (OpenCbsFundingLineException))]
         public void AddEventFundingLineWithoutFundingLine()
         {
             //Add Funding Line Event

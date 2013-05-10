@@ -2,7 +2,7 @@
 
 namespace OpenCBS.ExceptionsHandler
 {
-    public abstract class ReschedulingException : OctopusException
+    public abstract class ReschedulingException : OpenCbsException
     {
     }
 }

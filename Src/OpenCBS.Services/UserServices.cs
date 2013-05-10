@@ -46,13 +46,13 @@ namespace OpenCBS.Services
         public bool Delete(User user)
         {
             if (user.Id == 0)
-                throw new OctopusUserDeleteException(OctopusUserDeleteExceptionEnum.UserIsNull);
+                throw new OpenCbsUserDeleteException(OpenCbsUserDeleteExceptionEnum.UserIsNull);
 
             if (user.Id == 1)
-                throw new OctopusUserDeleteException(OctopusUserDeleteExceptionEnum.AdministratorUser);
+                throw new OpenCbsUserDeleteException(OpenCbsUserDeleteExceptionEnum.AdministratorUser);
 
             if (_tellerManager.SelectTellerOfUser(user.Id).Id != null)
-                throw new OctopusUserDeleteException(OctopusUserDeleteExceptionEnum.UserHasTeller);
+                throw new OpenCbsUserDeleteException(OpenCbsUserDeleteExceptionEnum.UserHasTeller);
 
             user.IsDeleted = true;
             _userManager.DeleteUser(user);

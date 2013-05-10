@@ -65,32 +65,32 @@ namespace OpenCBS.GUI.Configuration
                 _saved = true;
 
                 if (comboBoxDirection.SelectedIndex == -1)
-                    throw new OctopusFundingLineEventException(OctopusFundingLineEventExceptionEnum.DirectionIsEmpty);
+                    throw new OpenCbsFundingLineEventException(OpenCbsFundingLineEventExceptionEnum.DirectionIsEmpty);
 
                 _fundingLineEvent.Movement = (OBookingDirections)((DictionaryEntry)comboBoxDirection.SelectedItem).Value;
 
 
                 if (textBoxCode.Text == string.Empty)
-                    throw new OctopusFundingLineEventException(OctopusFundingLineEventExceptionEnum.CodeIsEmpty);
+                    throw new OpenCbsFundingLineEventException(OpenCbsFundingLineEventExceptionEnum.CodeIsEmpty);
 
                 _fundingLineEvent.Code = textBoxCode.Text;
 
                 if (textBoxAmount.Text == string.Empty)
-                    throw new OctopusFundingLineEventException(OctopusFundingLineEventExceptionEnum.AmountIsEmpty);
+                    throw new OpenCbsFundingLineEventException(OpenCbsFundingLineEventExceptionEnum.AmountIsEmpty);
 
                 decimal amount;
 
                 if (!decimal.TryParse(textBoxAmount.Text, out amount))
-                    throw new OctopusFundingLineEventException(OctopusFundingLineEventExceptionEnum.AmountIsNonCompliant);
+                    throw new OpenCbsFundingLineEventException(OpenCbsFundingLineEventExceptionEnum.AmountIsNonCompliant);
 
                 if (amount >= 1000000000000000)
-                    throw new OctopusFundingLineEventException(OctopusFundingLineEventExceptionEnum.AmountIsBigger);
+                    throw new OpenCbsFundingLineEventException(OpenCbsFundingLineEventExceptionEnum.AmountIsBigger);
 
                 _fundingLineEvent.Amount = amount;
 
                 if (_exchangeRate == null)
                 {
-                    throw new OctopusExchangeRateException(OctopusExchangeRateExceptionEnum.ExchangeRateIsNull);
+                    throw new OpenCbsExchangeRateException(OpenCbsExchangeRateExceptionEnum.ExchangeRateIsNull);
                 }
                 _fundingLineEvent.CreationDate = dateTimePickerEvent.Value;
                 _fundingLineEvent.FundingLine = _FundingLine;
@@ -104,7 +104,7 @@ namespace OpenCBS.GUI.Configuration
                 _saved = false;
                 SetExchangeRate();
                 new frmShowError(CustomExceptionHandler.ShowExceptionText(ex)).ShowDialog();
-                //if(ex is OctopusExchangeRateException)
+                //if(ex is OpenCbsExchangeRateException)
                 //{
                 //    ExchangeRateForm _xrForm = new ExchangeRateForm(new DateTime(_fundingLineEvent.CreationDate.Year, _fundingLineEvent.CreationDate.Month, _fundingLineEvent.CreationDate.Day), _fundingLineEvent.FundingLine.Currency);
                 //    _xrForm.ShowDialog();

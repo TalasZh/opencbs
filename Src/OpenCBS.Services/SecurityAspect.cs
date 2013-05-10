@@ -66,7 +66,7 @@ namespace OpenCBS.Services
             Console.WriteLine(@"Security validating : {0} for {1}", callStr, Environment.UserName);
 
             if (!User.CurrentUser.UserRole.IsActionAllowed(new ActionItemObject(callType.Name, call.MethodName)))
-                throw new OctopusRoleDeleteException(OctopusRoleDeleteExceptionsEnum.ActionProhibited, call.MethodName);
+                throw new OpenCbsRoleDeleteException(OpenCbsRoleDeleteExceptionsEnum.ActionProhibited, call.MethodName);
             
             // call some security validating code
         }

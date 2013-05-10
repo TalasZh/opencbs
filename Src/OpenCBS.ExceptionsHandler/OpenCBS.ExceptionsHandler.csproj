@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
   <PropertyGroup>
     <ProjectType>Local</ProjectType>
@@ -133,68 +133,68 @@
     <Compile Include="CustomExceptionHandler.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Exceptions\AccountExceptions\OctopusBookingException.cs" />
-    <Compile Include="Exceptions\AccountExceptions\OctopusAccountException.cs" />
-    <Compile Include="Exceptions\AccountExceptions\OctopusAccountingRuleException.cs" />
-    <Compile Include="Exceptions\CollateralExceptions\OctopusCollateralDeleteException.cs" />
-    <Compile Include="Exceptions\CollateralExceptions\OctopusCollateralException.cs" />
-    <Compile Include="Exceptions\CollateralExceptions\OctopusCollateralSaveException.cs" />
-    <Compile Include="Exceptions\CollateralExceptions\OctopusCollateralUpdateException.cs" />
+    <Compile Include="Exceptions\AccountExceptions\OpenCbsBookingException.cs" />
+    <Compile Include="Exceptions\AccountExceptions\OpenCbsAccountException.cs" />
+    <Compile Include="Exceptions\AccountExceptions\OpenCbsAccountingRuleException.cs" />
+    <Compile Include="Exceptions\CollateralExceptions\OpenCbsCollateralDeleteException.cs" />
+    <Compile Include="Exceptions\CollateralExceptions\OpenCbsCollateralException.cs" />
+    <Compile Include="Exceptions\CollateralExceptions\OpenCbsCollateralSaveException.cs" />
+    <Compile Include="Exceptions\CollateralExceptions\OpenCbsCollateralUpdateException.cs" />
     <Compile Include="Exceptions\ContractExceptions\OctopusContractExceptions.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Exceptions\ContractExceptions\OctopusContractSaveException.cs">
+    <Compile Include="Exceptions\ContractExceptions\OpenCbsContractSaveException.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Exceptions\ContractExceptions\OctopusDisburseException.cs" />
-    <Compile Include="Exceptions\ContractExceptions\OctopusInstallmentsException.cs" />
-    <Compile Include="Exceptions\ContractExceptions\OctopusPastDueDaysException.cs" />
-    <Compile Include="Exceptions\ContractExceptions\OctopusRepayException.cs" />
-    <Compile Include="Exceptions\ContractExceptions\OctopusReportsException.cs" />
+    <Compile Include="Exceptions\ContractExceptions\OpenCbsDisburseException.cs" />
+    <Compile Include="Exceptions\ContractExceptions\OpenCbsInstallmentsException.cs" />
+    <Compile Include="Exceptions\ContractExceptions\OpenCbsPastDueDaysException.cs" />
+    <Compile Include="Exceptions\ContractExceptions\OpenCbsRepayException.cs" />
+    <Compile Include="Exceptions\ContractExceptions\OpenCbsReportsException.cs" />
     <Compile Include="Exceptions\ContractExceptions\Rescheduling\ReschedulingContractClosedException.cs" />
     <Compile Include="Exceptions\ContractExceptions\Rescheduling\ReschedulingException.cs" />
-    <Compile Include="Exceptions\CustomFieldExceptions\OctopusCustomFieldNameException.cs" />
-    <Compile Include="Exceptions\DOAExceptions\OctopusDOADeleteException.cs">
+    <Compile Include="Exceptions\CustomFieldExceptions\OpenCbsCustomFieldNameException.cs" />
+    <Compile Include="Exceptions\DOAExceptions\OpenCbsDoaDeleteException.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Exceptions\DOAExceptions\OctopusDOAException.cs" />
-    <Compile Include="Exceptions\DOAExceptions\OctopusDOASaveException.cs">
+    <Compile Include="Exceptions\DOAExceptions\OpenCbsDoaException.cs" />
+    <Compile Include="Exceptions\DOAExceptions\OpenCbsDoaSaveException.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Exceptions\DOAExceptions\OctopusDOAUpdateException.cs">
+    <Compile Include="Exceptions\DOAExceptions\OpenCbsDoaUpdateException.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Exceptions\ExchangeRateExceptions\OctopusExchangeRateException.cs" />
-    <Compile Include="Exceptions\ExportExceptions\OctopusCustomExportException.cs" />
-    <Compile Include="Exceptions\FundingLineExceptions\OctopusCorporateException.cs" />
-    <Compile Include="Exceptions\FundingLineExceptions\OctopusFundingLineEventException.cs" />
-    <Compile Include="Exceptions\FundingLineExceptions\OctopusFundingLineException.cs" />
+    <Compile Include="Exceptions\ExchangeRateExceptions\OpenCbsExchangeRateException.cs" />
+    <Compile Include="Exceptions\ExportExceptions\OpenCbsCustomExportException.cs" />
+    <Compile Include="Exceptions\FundingLineExceptions\OpenCbsCorporateException.cs" />
+    <Compile Include="Exceptions\FundingLineExceptions\OpenCbsFundingLineEventException.cs" />
+    <Compile Include="Exceptions\FundingLineExceptions\OpenCbsFundingLineException.cs" />
     <Compile Include="Exceptions\GeneralSettingExceptions\GeneralSettingException.cs" />
-    <Compile Include="Exceptions\MFIExceptions\OctopusMFIExceptions.cs" />
-    <Compile Include="Exceptions\TellerExceptions\OctopusTellerException.cs" />
-    <Compile Include="Exceptions\UserExceptions\OctopusRoleDeleteException.cs" />
-    <Compile Include="Exceptions\PackageExceptions\OctopusPackageDeleteException.cs">
+    <Compile Include="Exceptions\MFIExceptions\OpenCbsMfiExceptions.cs" />
+    <Compile Include="Exceptions\TellerExceptions\OpenCbsTellerException.cs" />
+    <Compile Include="Exceptions\UserExceptions\OpenCbsRoleDeleteException.cs" />
+    <Compile Include="Exceptions\PackageExceptions\OpenCbsPackageDeleteException.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Exceptions\PackageExceptions\OctopusPackageException.cs" />
-    <Compile Include="Exceptions\PackageExceptions\OctopusPackageSaveException.cs">
+    <Compile Include="Exceptions\PackageExceptions\OpenCbsPackageException.cs" />
+    <Compile Include="Exceptions\PackageExceptions\OpenCbsPackageSaveException.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Exceptions\ProjectExceptions\OctopusProjectException.cs" />
-    <Compile Include="Exceptions\ProjectExceptions\OctopusProjectSaveException.cs" />
-    <Compile Include="Exceptions\SavingExceptions\OctopusSavingProductException.cs" />
-    <Compile Include="Exceptions\SavingExceptions\OctopusSavingException.cs" />
-    <Compile Include="Exceptions\Tiers\OctopusTiersException.cs" />
-    <Compile Include="Exceptions\Tiers\OctopusTiersSaveException.cs">
+    <Compile Include="Exceptions\ProjectExceptions\OpenCbsProjectException.cs" />
+    <Compile Include="Exceptions\ProjectExceptions\OpenCbsProjectSaveException.cs" />
+    <Compile Include="Exceptions\SavingExceptions\OpenCbsSavingProductException.cs" />
+    <Compile Include="Exceptions\SavingExceptions\OpenCbsSavingException.cs" />
+    <Compile Include="Exceptions\Tiers\OpenCbsTiersException.cs" />
+    <Compile Include="Exceptions\Tiers\OpenCbsTiersSaveException.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Exceptions\UserExceptions\OctopusUserDeleteException.cs">
+    <Compile Include="Exceptions\UserExceptions\OpenCbsUserDeleteException.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Exceptions\UserExceptions\OctopusUserException.cs" />
-    <Compile Include="OctopusLocationException.cs" />
+    <Compile Include="Exceptions\UserExceptions\OpenCbsUserException.cs" />
+    <Compile Include="OpenCbsLocationException.cs" />
     <Compile Include="OctopusBranchException.cs" />
-    <Compile Include="OctopusException.cs" />
+    <Compile Include="OpenCbsException.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\OpenCBS.Enums\OpenCBS.Enums.csproj">
@@ -219,7 +219,7 @@
   </PropertyGroup>
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties GreenPepperConfigRunnerProgram="" GreenPepperConfigRunnerArgs="" GreenPepperCustomSud="" GreenPepperCustomSudArgs="" GreenPepperConfigRepositories="" GreenPepperConfigProjectName="" GreenPepperConfigSutName="" />
+      <UserProperties GreenPepperConfigSutName="" GreenPepperConfigProjectName="" GreenPepperConfigRepositories="" GreenPepperCustomSudArgs="" GreenPepperCustomSud="" GreenPepperConfigRunnerArgs="" GreenPepperConfigRunnerProgram="" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>

@@ -1168,7 +1168,7 @@ namespace OpenCBS.GUI.Products
                 string msg = MultiLanguageStrings.GetString(Ressource.PackagesForm, "CyclesSaved.Text");
                 MessageBox.Show(msg, "", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            catch (OctopusPackageSaveException exception)
+            catch (OpenCbsPackageSaveException exception)
             {
                 new frmShowError(CustomExceptionHandler.ShowExceptionText(exception)).ShowDialog();
             }

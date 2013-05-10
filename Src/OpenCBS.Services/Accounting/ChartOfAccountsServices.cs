@@ -94,30 +94,30 @@ namespace OpenCBS.Services.Accounting
 	    private static void CheckAccountParent(Account account, Account parentAccount)
 	    {
 	        if (parentAccount == null)
-	            throw new OctopusAccountException(OctopusAccountExceptionsEnum.ParentAccountDoesntExists);
+	            throw new OpenCbsAccountException(OpenCbsAccountExceptionsEnum.ParentAccountDoesntExists);
 	        if (parentAccount.AccountCategory != account.AccountCategory)
-	            throw new OctopusAccountException(OctopusAccountExceptionsEnum.ParentAccountNotSameDescription);
+	            throw new OpenCbsAccountException(OpenCbsAccountExceptionsEnum.ParentAccountNotSameDescription);
 	        if (parentAccount.Id == account.Id)
-	            throw new OctopusAccountException(OctopusAccountExceptionsEnum.ParentAccountIsInvalid);
+	            throw new OpenCbsAccountException(OpenCbsAccountExceptionsEnum.ParentAccountIsInvalid);
 	    }
 
 	    private void CheckAccountData(Account account)
 	    {
 	        if (account == null)
-	            throw new OctopusAccountException(OctopusAccountExceptionsEnum.AccountIsNull);
+	            throw new OpenCbsAccountException(OpenCbsAccountExceptionsEnum.AccountIsNull);
 	        if (string.IsNullOrEmpty(account.Number))
-	            throw new OctopusAccountException(OctopusAccountExceptionsEnum.NumberIsNull);
+	            throw new OpenCbsAccountException(OpenCbsAccountExceptionsEnum.NumberIsNull);
 	        if (string.IsNullOrEmpty(account.Label))
-	            throw new OctopusAccountException(OctopusAccountExceptionsEnum.LabelIsNull);
+	            throw new OpenCbsAccountException(OpenCbsAccountExceptionsEnum.LabelIsNull);
 	        if (_accountManagement.SelectAccountCategoriesById((int) account.AccountCategory) == null)
-	            throw new OctopusAccountException(OctopusAccountExceptionsEnum.ParentAccountDoesntExists);
+	            throw new OpenCbsAccountException(OpenCbsAccountExceptionsEnum.ParentAccountDoesntExists);
 	    }
 
 	    public void CheckAccountCategory(AccountCategory accountCategory)
         {
                 List<Account> accounts = _accountManagement.SelectAccountByCategory(accountCategory);
                 if (accounts != null)
-                    throw new OctopusAccountException(OctopusAccountExceptionsEnum.AccountCannotBeDeleted);
+                    throw new OpenCbsAccountException(OpenCbsAccountExceptionsEnum.AccountCannotBeDeleted);
                
         }
 
@@ -145,7 +145,7 @@ namespace OpenCBS.Services.Accounting
                     if (exception is SqlException)
                         if (((SqlException)exception).Number==2627)
                             //2627 is a standard number of error related to unique keys duplication
-                            throw new OctopusAccountException(OctopusAccountExceptionsEnum.DuplicatedAccount);
+                            throw new OpenCbsAccountException(OpenCbsAccountExceptionsEnum.DuplicatedAccount);
                     throw;
                 }
             }
@@ -157,10 +157,10 @@ namespace OpenCBS.Services.Accounting
             if(!deleteRelated && accounts.Any())
             {
                 int[] ids = accounts.Select(a => a.Id).ToArray();
-                if (_accountManagement.IdsExist(ids)) throw new OctopusAccountException(OctopusAccountExceptionsEnum.ImportIdExist);
+                if (_accountManagement.IdsExist(ids)) throw new OpenCbsAccountException(OpenCbsAccountExceptionsEnum.ImportIdExist);
                 
                 string[] accountNumbers = accounts.Select(a => a.Number).ToArray();
-                if (_accountManagement.NumbersExist(accountNumbers)) throw new OctopusAccountException(OctopusAccountExceptionsEnum.ImportNumbersExist);
+                if (_accountManagement.NumbersExist(accountNumbers)) throw new OpenCbsAccountException(OpenCbsAccountExceptionsEnum.ImportNumbersExist);
             }
             RunAction(transaction=>
                     {
@@ -206,7 +206,7 @@ namespace OpenCBS.Services.Accounting
                                     {
                                         if (exception.Number == 2627)
                                             //2627 is a standard number of error related to unique keys duplication
-                                            throw new OctopusAccountException(OctopusAccountExceptionsEnum.DuplicatedAccount);
+                                            throw new OpenCbsAccountException(OpenCbsAccountExceptionsEnum.DuplicatedAccount);
                                     }
                                     
                                     insertedAccounts.Add(account);
@@ -216,7 +216,7 @@ namespace OpenCBS.Services.Accounting
                             }
 
                             if (oldCount == insertedAccounts.Count)
-                                throw new OctopusException(string.Format(
+                                throw new OpenCbsException(string.Format(
                                     "Chart of accounts contain non valid tree. Please check these accounts {0}.",
                                     string.Join(",", accountsToInsert.Select(a => a.Number).ToArray())));
                         }
@@ -246,7 +246,7 @@ namespace OpenCBS.Services.Accounting
         public void DeleteAccount(Account account)
         {
             if (_accountManagement.SelectAccountingRuleByChartOfAccountsId(account))
-                throw new OctopusAccountException(OctopusAccountExceptionsEnum.AccountIsUsed);
+                throw new OpenCbsAccountException(OpenCbsAccountExceptionsEnum.AccountIsUsed);
 
             CheckDatasAreCorrecltyFilled(account);
             _accountManagement.DeleteAccount(account);
@@ -288,9 +288,9 @@ namespace OpenCBS.Services.Accounting
         {
             LoanScaleTable lT = LoanScaleTable.GetInstance(_user);
             if (lR.ScaleMin == 0)
-                throw new OctopusAccountException(OctopusAccountExceptionsEnum.LoanScaleTableMin);
+                throw new OpenCbsAccountException(OpenCbsAccountExceptionsEnum.LoanScaleTableMin);
             if (lR.ScaleMax == 0)
-                throw new OctopusAccountException(OctopusAccountExceptionsEnum.LoanScaleTableMax);
+                throw new OpenCbsAccountException(OpenCbsAccountExceptionsEnum.LoanScaleTableMax);
 
             lR.Number = lT.LoanScaleRates.Count + 1;
         

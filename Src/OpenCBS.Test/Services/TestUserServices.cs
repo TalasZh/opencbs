@@ -53,7 +53,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OctopusUserDeleteException))]
+        [ExpectedException(typeof(OpenCbsUserDeleteException))]
         public void TestDeleteUserWhenUserIsNull()
         {
             List<User> users = new List<User>();
@@ -69,7 +69,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OctopusUserDeleteException))]
+        [ExpectedException(typeof(OpenCbsUserDeleteException))]
         public void TestDeleteAdministratorUser()
         {
             List<User> users = new List<User>();

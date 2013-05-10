@@ -48,7 +48,7 @@ namespace OpenCBS.Services
                 }
                 catch
                 {
-                    throw new OctopusRepayException(OctopusRepayExceptionsEnum.AmountIsNull);
+                    throw new OpenCbsRepayException(OpenCbsRepayExceptionsEnum.AmountIsNull);
                 }
             }
             return defaultValue;
@@ -65,7 +65,7 @@ namespace OpenCBS.Services
                 }
                 catch
                 {
-                    throw new OctopusRepayException(OctopusRepayExceptionsEnum.AmountIsNull);
+                    throw new OpenCbsRepayException(OpenCbsRepayExceptionsEnum.AmountIsNull);
                 }
             }
             return defaultValue;

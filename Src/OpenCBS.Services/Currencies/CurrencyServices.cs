@@ -63,12 +63,12 @@ namespace OpenCBS.Services.Currencies
             {
                 int cId = 0;
                 if (_currencyManager.IsThisCurrencyAlreadyExist(pNewCurrency.Code, pNewCurrency.Name))
-                    throw new OctopusAccountException(OctopusAccountExceptionsEnum.CurrencyAlreadyExists);
+                    throw new OpenCbsAccountException(OpenCbsAccountExceptionsEnum.CurrencyAlreadyExists);
 
                 SqlTransaction sqlTransac = conn.BeginTransaction();
 
                 if (_currencyManager.SelectAllCurrencies(sqlTransac).Count > 1)
-                    throw new OctopusAccountException(OctopusAccountExceptionsEnum.MaximumCurrencyLimitReached);
+                    throw new OpenCbsAccountException(OpenCbsAccountExceptionsEnum.MaximumCurrencyLimitReached);
 
                 try
                 {

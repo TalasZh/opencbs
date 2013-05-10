@@ -40,7 +40,7 @@ namespace OpenCBS.Services
         private void CheckCollateralProductNameExistance(string productName)
         {
             var exists = collateralProductManager.PorductExists(productName);
-            if (exists) throw new OctopusCollateralSaveException(OctopusCollateralSaveExceptionEnum.AlreadyExist);
+            if (exists) throw new OpenCbsCollateralSaveException(OpenCbsCollateralSaveExceptionEnum.AlreadyExist);
         }
 
         public void AddCollateralProperty(int collateralProductId, CollateralProperty collateralProperty)

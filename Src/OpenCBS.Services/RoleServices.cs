@@ -43,13 +43,13 @@ namespace OpenCBS.Services
         {
             //IF role is null 
             if (string.IsNullOrEmpty(pRoleName))
-                throw new OctopusRoleDeleteException(OctopusRoleDeleteExceptionsEnum.RoleIsNull);
+                throw new OpenCbsRoleDeleteException(OpenCbsRoleDeleteExceptionsEnum.RoleIsNull);
             
             if(_roleManager.SelectUserForThisRole(pRoleName) > 0)
-                throw new OctopusRoleDeleteException(OctopusRoleDeleteExceptionsEnum.RoleHasUsers);
+                throw new OpenCbsRoleDeleteException(OpenCbsRoleDeleteExceptionsEnum.RoleHasUsers);
             
             //if (pRole.Id == 1)
-            //    throw new OctopusRoleDeleteException(OctopusRoleDeleteExceptionEnum.AdministratorRole);
+            //    throw new OpenCbsRoleDeleteException(OctopusRoleDeleteExceptionEnum.AdministratorRole);
 
             _roleManager.DeleteRole(pRoleName);
             return true;

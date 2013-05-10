@@ -9,21 +9,21 @@ namespace OpenCBS.ExceptionsHandler
 	/// Summary description for OctopusContractExceptions.
 	/// </summary>
     [Serializable]
-    public class OctopusContractException : OctopusException
+    public class OpenCbsContractException : OpenCbsException
 	{
 		private string _message;
-		public OctopusContractException()
+		public OpenCbsContractException()
 		{
 			_message = String.Empty;
 		}
 
-        protected OctopusContractException(SerializationInfo info, StreamingContext context)
+        protected OpenCbsContractException(SerializationInfo info, StreamingContext context)
             : base(info, context)
         {
             _message = info.GetString("Code");
         }
 
-		public OctopusContractException(string message)
+		public OpenCbsContractException(string message)
 		{
 			_message = message;
 		}

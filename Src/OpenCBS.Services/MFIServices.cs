@@ -34,13 +34,13 @@ namespace OpenCBS.Services
         public bool UpdateMFI(MFI pMFI)
         {
             if (pMFI.Name == String.Empty)
-                throw new OctopusMFIExceptions(OctopusMFIExceptionEnum.NameIsEmpty);
+                throw new OpenCbsMfiExceptions(OpenCbsMFIExceptionEnum.NameIsEmpty);
             
             if (pMFI.Login == String.Empty)
-                throw new OctopusMFIExceptions(OctopusMFIExceptionEnum.LoginIsNotFilled);
+                throw new OpenCbsMfiExceptions(OpenCbsMFIExceptionEnum.LoginIsNotFilled);
 
             if (pMFI.Password == String.Empty)
-                throw new OctopusMFIExceptions(OctopusMFIExceptionEnum.PasswordIsNotFilled);
+                throw new OpenCbsMfiExceptions(OpenCbsMFIExceptionEnum.PasswordIsNotFilled);
 
            return _MFIManager.UpdateMFI(pMFI);            
         }
@@ -48,13 +48,13 @@ namespace OpenCBS.Services
         public bool CreateMFI(MFI pMFI)
         {
             if (pMFI.Name == String.Empty)
-                throw new OctopusMFIExceptions(OctopusMFIExceptionEnum.NameIsEmpty);
+                throw new OpenCbsMfiExceptions(OpenCbsMFIExceptionEnum.NameIsEmpty);
 
             if (pMFI.Login == String.Empty)
-                throw new OctopusMFIExceptions(OctopusMFIExceptionEnum.LoginIsNotFilled);
+                throw new OpenCbsMfiExceptions(OpenCbsMFIExceptionEnum.LoginIsNotFilled);
 
             if (pMFI.Password == String.Empty)
-                throw new OctopusMFIExceptions(OctopusMFIExceptionEnum.PasswordIsNotFilled);
+                throw new OpenCbsMfiExceptions(OpenCbsMFIExceptionEnum.PasswordIsNotFilled);
 
             return _MFIManager.CreateMFI(pMFI);           
         }
@@ -62,7 +62,7 @@ namespace OpenCBS.Services
         public bool CheckIfSamePassword(string pMdp1, string pMdp2)
         {
             if (pMdp1 != pMdp2)
-                throw new OctopusMFIExceptions(OctopusMFIExceptionEnum.DifferentPassword);
+                throw new OpenCbsMfiExceptions(OpenCbsMFIExceptionEnum.DifferentPassword);
 
             return true;
         }

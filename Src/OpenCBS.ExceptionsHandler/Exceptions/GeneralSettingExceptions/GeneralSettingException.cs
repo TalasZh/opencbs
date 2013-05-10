@@ -9,7 +9,7 @@ namespace OpenCBS.ExceptionsHandler
 	/// Summary description for OctopusAccountException.
 	/// </summary>
     [Serializable]
-    public class GeneralSettingException : OctopusException
+    public class GeneralSettingException : OpenCbsException
 	{
 		private string _code;
         public GeneralSettingException(GeneralSettingEnumException exceptionCode)

@@ -68,7 +68,7 @@ namespace OpenCBS.Test.Services.Accounting
                 _accountingRuleServices.SaveAccountingRule(rule);
                 Assert.Fail("Accounting Rule shouldn't pass validation test while trying to save (Generic Account is Null).");
             }
-            catch (OctopusAccountingRuleException exception)
+            catch (OpenCbsAccountingRuleException exception)
             {
                 Assert.AreEqual(OctopusAccountingRuleExceptionEnum.GenericAccountIsInvalid, exception.Code);
             }
@@ -87,7 +87,7 @@ namespace OpenCBS.Test.Services.Accounting
                 _accountingRuleServices.SaveAccountingRule(rule);
                 Assert.Fail("Accounting Rule shouldn't pass validation test while trying to save (Generic Account is Null).");
             }
-            catch (OctopusAccountingRuleException exception)
+            catch (OpenCbsAccountingRuleException exception)
             {
                 Assert.AreEqual(OctopusAccountingRuleExceptionEnum.GenericAccountIsInvalid, exception.Code);
             }
@@ -108,7 +108,7 @@ namespace OpenCBS.Test.Services.Accounting
                 _accountingRuleServices.SaveAccountingRule(rule);
                 Assert.Fail("Accounting Rule shouldn't pass validation test while trying to save (Generic Account is Null).");
             }
-            catch (OctopusAccountingRuleException exception)
+            catch (OpenCbsAccountingRuleException exception)
             {
                 Assert.AreEqual(OctopusAccountingRuleExceptionEnum.SpecificAccountIsInvalid, exception.Code);
             }
@@ -127,7 +127,7 @@ namespace OpenCBS.Test.Services.Accounting
                 _accountingRuleServices.SaveAccountingRule(rule);
                 Assert.Fail("Accounting Rule shouldn't pass validation test while trying to save (Generic Account is Null).");
             }
-            catch (OctopusAccountingRuleException exception)
+            catch (OpenCbsAccountingRuleException exception)
             {
                 Assert.AreEqual(OctopusAccountingRuleExceptionEnum.SpecificAccountIsInvalid, exception.Code);
             }
@@ -148,7 +148,7 @@ namespace OpenCBS.Test.Services.Accounting
                 _accountingRuleServices.SaveAccountingRule(rule);
                 Assert.Fail("Accounting Rule shouldn't pass validation test while trying to save (Client Type is Null).");
             }
-            catch (OctopusAccountingRuleException exception)
+            catch (OpenCbsAccountingRuleException exception)
             {
                 Assert.AreEqual(OctopusAccountingRuleExceptionEnum.ClientTypeIsInvalid, exception.Code);
             }
@@ -170,7 +170,7 @@ namespace OpenCBS.Test.Services.Accounting
                 _accountingRuleServices.SaveAccountingRule(rule);
                 Assert.Fail("Accounting Rule shouldn't pass validation test while trying to save (Product Type is Null).");
             }
-            catch (OctopusAccountingRuleException exception)
+            catch (OpenCbsAccountingRuleException exception)
             {
                 Assert.AreEqual(OctopusAccountingRuleExceptionEnum.ProductTypeIsInvalid, exception.Code);
             }

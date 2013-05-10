@@ -2,7 +2,7 @@
 
 namespace OpenCBS.ExceptionsHandler
 {
-    public class OctopusBranchSameNameException : OctopusException
+    public class OpenCbsBranchSameNameException : OpenCbsException
     {
         public override string ToString()
         {
@@ -10,7 +10,7 @@ namespace OpenCBS.ExceptionsHandler
         }
     }
 
-    public class OctopusBranchSameCodeException : OctopusException
+    public class OpenCbsBranchSameCodeException : OpenCbsException
     {
         public override string ToString()
         {
@@ -18,7 +18,7 @@ namespace OpenCBS.ExceptionsHandler
         }
     }
 
-    public class OctopusBranchNameIsEmptyException : OctopusException
+    public class OpenCbsBranchNameIsEmptyException : OpenCbsException
     {
         public override string ToString()
         {
@@ -26,7 +26,7 @@ namespace OpenCBS.ExceptionsHandler
         }
     }
 
-    public class OctopusBranchCodeIsEmptyException : OctopusException
+    public class OpenCbsBranchCodeIsEmptyException : OpenCbsException
     {
         public override string ToString()
         {
@@ -34,7 +34,7 @@ namespace OpenCBS.ExceptionsHandler
         }
     }
 
-    public class OctopusBranchAddressIsEmptyException : OctopusException
+    public class OpenCbsBranchAddressIsEmptyException : OpenCbsException
     {
         public override string ToString()
         {

@@ -13,14 +13,14 @@ namespace OpenCBS.Services.Rules
         {
 
             if (e.Amount <= decimal.Zero)
-                throw new OctopusFundingLineEventException(OctopusFundingLineEventExceptionEnum.AmountIsLessZero);
+                throw new OpenCbsFundingLineEventException(OpenCbsFundingLineEventExceptionEnum.AmountIsLessZero);
             if (e.Code == string.Empty)
-               throw new OctopusFundingLineEventException(OctopusFundingLineEventExceptionEnum.AmountIsEmpty);
+               throw new OpenCbsFundingLineEventException(OpenCbsFundingLineEventExceptionEnum.AmountIsEmpty);
             if (e.Amount > e.FundingLine.RealRemainingAmount && e.Type == Enums.OFundingLineEventTypes.Disbursment)
-               throw new OctopusFundingLineEventException(OctopusFundingLineEventExceptionEnum.CommitmentFinancialIsNotEnough);
+               throw new OpenCbsFundingLineEventException(OpenCbsFundingLineEventExceptionEnum.CommitmentFinancialIsNotEnough);
             if (e.Amount > e.FundingLine.AnticipatedRemainingAmount && 
                 e.Movement == Enums.OBookingDirections.Debit && e.Type != Enums.OFundingLineEventTypes.Disbursment)
-                throw new OctopusFundingLineEventException(OctopusFundingLineEventExceptionEnum.CommitmentFinancialIsNotEnough);
+                throw new OpenCbsFundingLineEventException(OpenCbsFundingLineEventExceptionEnum.CommitmentFinancialIsNotEnough);
         }
             
 

@@ -169,7 +169,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OctopusContractSaveException))]
+        [ExpectedException(typeof(OpenCbsContractSaveException))]
         public void CheckLoanFilling_AmountIsEmpty()
         {
             Loan loan = new Loan{Amount = 0};
@@ -178,7 +178,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OctopusContractSaveException))]
+        [ExpectedException(typeof(OpenCbsContractSaveException))]
         public void CheckLoanFilling_InterestRateIsEmpty()
         {
             Loan loan = new Loan { Amount = 10, InterestRate = -1};
@@ -187,7 +187,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OctopusContractSaveException))]
+        [ExpectedException(typeof(OpenCbsContractSaveException))]
         public void CheckLoanFilling_NbOfInstallmentsIsEmpty()
         {
             Loan loan = new Loan { Amount = 11, InterestRate = 1, NbOfInstallments = 0};
@@ -197,7 +197,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OctopusContractSaveException))]
+        [ExpectedException(typeof(OpenCbsContractSaveException))]
         public void CheckLoanFilling_InstallmentTypeIsEmpty()
         {
             Loan loan = new Loan
@@ -213,7 +213,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OctopusContractSaveException))]
+        [ExpectedException(typeof(OpenCbsContractSaveException))]
         public void CheckLoanFilling_AnticipatedRepaymentPenaltiesIsEmpty()
         {
             Loan loan = new Loan
@@ -230,7 +230,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OctopusContractSaveException))]
+        [ExpectedException(typeof(OpenCbsContractSaveException))]
         public void CheckLoanFilling_NonRepaymentPenalties_InitialAmountIsEmpty()
         {
             Loan loan = new Loan
@@ -248,7 +248,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OctopusContractSaveException))]
+        [ExpectedException(typeof(OpenCbsContractSaveException))]
         public void CheckLoanFilling_NonRepaymentPenalties_OLBIsEmpty()
         {
             Loan loan = new Loan
@@ -266,7 +266,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OctopusContractSaveException))]
+        [ExpectedException(typeof(OpenCbsContractSaveException))]
         public void CheckLoanFilling_NonRepaymentPenalties_OverDueInterestIsEmpty()
         {
             Loan loan = new Loan
@@ -283,7 +283,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OctopusContractSaveException))]
+        [ExpectedException(typeof(OpenCbsContractSaveException))]
         public void CheckLoanFilling_NonRepaymentPenalties_OverDuePrincipalIsEmpty()
         {
             Loan loan = new Loan
@@ -300,7 +300,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OctopusContractSaveException))]
+        [ExpectedException(typeof(OpenCbsContractSaveException))]
         public void CheckLoanFilling_NonRepaymentPenalties_EntryFeesIsEmpty()
         {
             Loan loan = new Loan
@@ -318,7 +318,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OctopusContractSaveException))]
+        [ExpectedException(typeof(OpenCbsContractSaveException))]
         public void CheckLoanFilling_NonRepaymentPenalties_GracePeriodIsEmpty()
         {
             Loan loan = new Loan
@@ -363,7 +363,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OctopusContractSaveException))]
+        [ExpectedException(typeof(OpenCbsContractSaveException))]
         public void SaveLoan_AddLoan_ProjectIsEmpty()
         {
             Loan loan = new Loan
@@ -382,7 +382,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OctopusContractSaveException))]
+        [ExpectedException(typeof(OpenCbsContractSaveException))]
         public void SaveLoan_AddLoan_FundingLineIsEmpty()
         {
             Loan loan = new Loan
@@ -402,7 +402,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OctopusContractSaveException))]
+        [ExpectedException(typeof(OpenCbsContractSaveException))]
         public void SaveLoan_AddLoan_LoanOfficerIsEmpty()
         {
             Loan loan = new Loan
@@ -423,7 +423,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OctopusContractSaveException))]
+        [ExpectedException(typeof(OpenCbsContractSaveException))]
         public void SaveLoan_AddLoan_DontAllowMultipleLoans_ClientIsActive()
         {
             ApplicationSettings.GetInstance("").UpdateParameter(OGeneralSettings.ALLOWSMULTIPLELOANS, false);
@@ -447,7 +447,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OctopusContractSaveException))]
+        [ExpectedException(typeof(OpenCbsContractSaveException))]
         public void SaveLoan_AddLoan_ClientIsBad()
         {
             ApplicationSettings.GetInstance("").UpdateParameter(OGeneralSettings.ALLOWSMULTIPLELOANS, false);
@@ -471,7 +471,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OctopusContractSaveException))]
+        [ExpectedException(typeof(OpenCbsContractSaveException))]
         public void SaveLoan_AddLoan_FundingLineCurrencyIsNotEqualToProductCurrency()
         {
             ApplicationSettings.GetInstance("").UpdateParameter(OGeneralSettings.ALLOWSMULTIPLELOANS, false);
@@ -757,7 +757,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OctopusContractSaveException))]
+        [ExpectedException(typeof(OpenCbsContractSaveException))]
         public void DisburseLoan_FundingLineIsNull()
         {
             Loan loan = new Loan(new User(), ApplicationSettings.GetInstance(""), NonWorkingDateSingleton.GetInstance(""), ProvisionTable.GetInstance(new User()), ChartOfAccounts.GetInstance(new User()))
@@ -783,7 +783,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OctopusContractSaveException))]
+        [ExpectedException(typeof(OpenCbsContractSaveException))]
         public void DisburseLoan_FundingLineCurrencyIsNotEgualToProductCurrency()
         {
             Loan loan = new Loan(new User(), ApplicationSettings.GetInstance(""), NonWorkingDateSingleton.GetInstance(""), ProvisionTable.GetInstance(new User()), ChartOfAccounts.GetInstance(new User()))
@@ -946,7 +946,7 @@ namespace OpenCBS.Test.Services
         }
 
         [Test]
-        [ExpectedException(typeof(OctopusRepayException))]
+        [ExpectedException(typeof(OpenCbsRepayException))]
         public void RepayLoanBeforeDisburse()
         {
             ApplicationSettings.GetInstance("").UpdateParameter(OGeneralSettings.ALLOWSMULTIPLELOANS, false);
@@ -1048,7 +1048,7 @@ namespace OpenCBS.Test.Services
                 loan.Disbursed = true;
                 loanServices.Disburse(loan, new DateTime(2005, 10, 10), true, false, method);
                 Assert.Fail("Contract should not be validated");
-            } catch(OctopusContractSaveException)
+            } catch(OpenCbsContractSaveException)
             {                
             }            
             try
@@ -1058,7 +1058,7 @@ namespace OpenCBS.Test.Services
                 loanServices.Disburse(loan, new DateTime(2005, 10, 10), true, false, method);
                 Assert.Fail("Contract should not be failed due to double disbursements");
             }
-            catch (OctopusContractSaveException)
+            catch (OpenCbsContractSaveException)
             {
             }
         }

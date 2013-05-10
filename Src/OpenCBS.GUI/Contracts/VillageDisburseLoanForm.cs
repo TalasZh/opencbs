@@ -305,7 +305,7 @@ namespace OpenCBS.GUI.Contracts
                             }
                             else
                             {
-                                throw new OctopusSavingException(OctopusSavingExceptionEnum.CompulsorySavingsContractIsNotActive);
+                                throw new OpenCbsSavingException(OpenCbsSavingExceptionEnum.CompulsorySavingsContractIsNotActive);
                             }
                         }
                         else

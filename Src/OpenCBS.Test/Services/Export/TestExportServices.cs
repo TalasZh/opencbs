@@ -38,9 +38,9 @@ namespace OpenCBS.Test.Services.Export
                 _exportServices.ValidateFile(file);
                 Assert.Fail("File Name can't be empty");
             }
-            catch (OctopusCustomExportException e)
+            catch (OpenCbsCustomExportException e)
             {
-                Assert.AreEqual(OctopusCustomExportExceptionEnum.FileNameIsEmpty, e.Code);
+                Assert.AreEqual(OpenCbsCustomExportExceptionEnum.FileNameIsEmpty, e.Code);
             }
 
             file.Name = "Export File";
@@ -51,9 +51,9 @@ namespace OpenCBS.Test.Services.Export
                 _exportServices.ValidateFile(file);
                 Assert.Fail("File Extension is incorrect");
             }
-            catch (OctopusCustomExportException e)
+            catch (OpenCbsCustomExportException e)
             {
-                Assert.AreEqual(OctopusCustomExportExceptionEnum.FileExtensionIsIncorrect, e.Code);
+                Assert.AreEqual(OpenCbsCustomExportExceptionEnum.FileExtensionIsIncorrect, e.Code);
             }
 
             file.Extension = "txt";
@@ -63,9 +63,9 @@ namespace OpenCBS.Test.Services.Export
                 _exportServices.ValidateFile(file);
                 Assert.Fail("File Extension is incorrect");
             }
-            catch (OctopusCustomExportException e)
+            catch (OpenCbsCustomExportException e)
             {
-                Assert.AreEqual(OctopusCustomExportExceptionEnum.FileExtensionIsIncorrect, e.Code);
+                Assert.AreEqual(OpenCbsCustomExportExceptionEnum.FileExtensionIsIncorrect, e.Code);
             }
 
             file.Extension = "*.txt";
@@ -75,9 +75,9 @@ namespace OpenCBS.Test.Services.Export
                 _exportServices.ValidateFile(file);
                 Assert.Fail("File Extension is incorrect");
             }
-            catch (OctopusCustomExportException e)
+            catch (OpenCbsCustomExportException e)
             {
-                Assert.AreEqual(OctopusCustomExportExceptionEnum.FileExtensionIsIncorrect, e.Code);
+                Assert.AreEqual(OpenCbsCustomExportExceptionEnum.FileExtensionIsIncorrect, e.Code);
             }
 
             file.Extension = ".txt";
@@ -98,9 +98,9 @@ namespace OpenCBS.Test.Services.Export
                 _exportServices.ValidateFile(file);
                 Assert.Fail("Required fields are missing");
             }
-            catch (OctopusCustomExportException e)
+            catch (OpenCbsCustomExportException e)
             {
-                Assert.AreEqual(OctopusCustomExportExceptionEnum.SomeRequiredFieldsAreMissing, e.Code);
+                Assert.AreEqual(OpenCbsCustomExportExceptionEnum.SomeRequiredFieldsAreMissing, e.Code);
             }
 
             file.SelectedFields.Add(file.DefaultList.OfType<Field>().First(item => item.IsRequired).Clone() as IField);
@@ -110,9 +110,9 @@ namespace OpenCBS.Test.Services.Export
                 _exportServices.ValidateFile(file);
                 Assert.Fail("Required fields are missing");
             }
-            catch (OctopusCustomExportException e)
+            catch (OpenCbsCustomExportException e)
             {
-                Assert.AreEqual(OctopusCustomExportExceptionEnum.SomeRequiredFieldsAreMissing, e.Code);
+                Assert.AreEqual(OpenCbsCustomExportExceptionEnum.SomeRequiredFieldsAreMissing, e.Code);
             }
 
             file.SelectedFields.Clear();

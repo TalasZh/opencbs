@@ -349,7 +349,7 @@ namespace OpenCBS.Services
         public bool CheckIfTiersIsValid(IClient client)
         {
             if (client == null)
-                throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.TiersIsNull);
+                throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.TiersIsNull);
             return true;
         }
 
@@ -365,15 +365,15 @@ namespace OpenCBS.Services
             {
                 result = false;
                 if (client.SecondaryDistrict == null)
-                    throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.SecondaryDistrictIsNull);
+                    throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.SecondaryDistrictIsNull);
 
                 if (client.SecondaryDistrict.Id == 0)
-                    throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.SecondaryDistrictIsBad);
+                    throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.SecondaryDistrictIsBad);
 
                 if (_dataParam.IsCityMandatory)
                 {
                     if (client.SecondaryCity == null)
-                        throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.SecondaryCityIsNull);
+                        throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.SecondaryCityIsNull);
                 }
                 else
                     result = true;
@@ -400,7 +400,7 @@ namespace OpenCBS.Services
                 if (person.Id == 0)
                 {
                     if (CheckIfIdentificationDataAlreadyExists(person.IdentificationData, 0))
-                        throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.IdentificationDataAlreadyUsed);
+                        throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.IdentificationDataAlreadyUsed);
 
                     person.SetStatus();
                     person.Id = AddPerson(person, action);
@@ -409,7 +409,7 @@ namespace OpenCBS.Services
                 else
                 {
                     if (CheckIfIdentificationDataAlreadyExists(person.IdentificationData, person.Id))
-                        throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.IdentificationDataAlreadyUsed);
+                        throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.IdentificationDataAlreadyUsed);
                     UpdatePerson(person, action);
                     SavePicture(person);
                 }
@@ -420,74 +420,74 @@ namespace OpenCBS.Services
         private void CheckPersonFilling(Person person)
         {
             if (person.Activity == null)
-                throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.EconomicActivityIsNull);
+                throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.EconomicActivityIsNull);
             /*
             if (person.LoanCycle == 0)
-                throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.LoanCycleIsEmpty);
+                throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.LoanCycleIsEmpty);
             */
             if (person.District == null)
-                throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.DistrictIsNull);
+                throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.DistrictIsNull);
 
             if (person.District.Id == 0)
-                throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.DistrictIsBad);
+                throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.DistrictIsBad);
 
             if (_dataParam.IsCityMandatory)
             {
                 if (person.City == null)
-                    throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.CityIsNull);
+                    throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.CityIsNull);
             }
 
             if (person.FirstName == null)
-                throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.FirstNameIsNull);
+                throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.FirstNameIsNull);
 
 
             if (person.Sex == 0)
-                throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.SexIsNull);
+                throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.SexIsNull);
 
             if (!_dataParam.IsAutomaticID && person.IdentificationData == null)
-                throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.IdentificationDataIsNull);
+                throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.IdentificationDataIsNull);
 
             if (_dataParam.EnforceIDPattern)
             {
                 if (!new RegExCheckerServices(_user).CheckID(person.IdentificationData))
-                    throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.WrongIdPattern);
+                    throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.WrongIdPattern);
             }
 
             if (person.LastName == null)
-                throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.LastNameIsEmpty);
+                throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.LastNameIsEmpty);
 
             if (person.NbOfDependents.HasValue && person.NbOfDependents.Value == ERRORVALUE)
-                throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.NbOfDependantsIsBadlyInformed);
+                throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.NbOfDependantsIsBadlyInformed);
 
             if (person.NbOfChildren.HasValue && person.NbOfChildren.Value == ERRORVALUE)
-                throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.NbOfChildrensIsBadlyInformed);
+                throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.NbOfChildrensIsBadlyInformed);
 
             if (person.ChildrenBasicEducation.HasValue && person.ChildrenBasicEducation.Value == ERRORVALUE)
-                throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.NbOfChidrensWithBasicEducationisBadlyInformed);
+                throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.NbOfChidrensWithBasicEducationisBadlyInformed);
 
             if (person.Experience.HasValue && person.Experience.Value == ERRORVALUE)
-                throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.ExperienceIsBadlyInformed);
+                throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.ExperienceIsBadlyInformed);
 
             if (person.NbOfPeople.HasValue && person.NbOfPeople.Value == ERRORVALUE)
-                throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.NbOfPeopleWorkingWithinIsBadlyInformed);
+                throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.NbOfPeopleWorkingWithinIsBadlyInformed);
 
             if (person.OtherOrgAmount.HasValue && person.OtherOrgAmount.Value == ERRORVALUE)
-                throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.OtherOrganizationAmountIsBadlyInformed);
+                throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.OtherOrganizationAmountIsBadlyInformed);
 
             if (person.OtherOrgDebts.HasValue && person.OtherOrgDebts.Value == ERRORVALUE)
-                throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.OtherOrganizationDebtsIsBadlyInformed);
+                throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.OtherOrganizationDebtsIsBadlyInformed);
 
             if (person.HomeSize.HasValue && person.HomeSize.Value == ERRORVALUE)
-                throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.HouseSizeIsBadlyInformed);
+                throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.HouseSizeIsBadlyInformed);
 
             if (person.HomeTimeLivingIn.HasValue && person.HomeTimeLivingIn.Value == ERRORVALUE)
-                throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.HouseTimeLivingInIsBadlyInformed);
+                throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.HouseTimeLivingInIsBadlyInformed);
 
             if (person.LandplotSize.HasValue && person.LandplotSize.Value == ERRORVALUE)
-                throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.LandPlotSizeIsBadlyInformed);
+                throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.LandPlotSizeIsBadlyInformed);
 
             if (person.LivestockNumber.HasValue && person.LivestockNumber.Value == ERRORVALUE)
-                throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.LivestockNumberIsBadlyInformed);
+                throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.LivestockNumberIsBadlyInformed);
 
             if (person.DateOfBirth != null)
             {
@@ -502,16 +502,16 @@ namespace OpenCBS.Services
                     List<string> temp = new List<string>();
                     temp.Add(_dataParam.ClientAgeMin.ToString());
                     temp.Add(_dataParam.ClientAgeMax.ToString());
-                    throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.AgeIsNotInRange, temp);
+                    throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.AgeIsNotInRange, temp);
                 }
             }
             else
             {
-                throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.BirthDateIsWrong);    
+                throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.BirthDateIsWrong);    
             }
             
             if (null == person.Branch)
-                throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.BranchIsEmpty);
+                throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.BranchIsEmpty);
         }
 
         private void SavePicture(Person person)
@@ -658,9 +658,9 @@ namespace OpenCBS.Services
             if (client != null)
             {
                 if (client is Group)
-                    throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.TiersIsGroup);
+                    throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.TiersIsGroup);
                 if (client is Corporate)
-                    throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.TiersIsCorporate);
+                    throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.TiersIsCorporate);
                 else if (client is Person)
                     status = true;
             }
@@ -673,9 +673,9 @@ namespace OpenCBS.Services
             if (client != null)
             {
                 if (client is Person)
-                    throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.TiersIsPerson);
+                    throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.TiersIsPerson);
                 if (client is Corporate)
-                    throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.TiersIsCorporate);
+                    throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.TiersIsCorporate);
                 else if (client is Group)
                     result = true;
             }
@@ -689,9 +689,9 @@ namespace OpenCBS.Services
             if (client != null)
             {
                 if (client is Group)
-                    throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.TiersIsGroup);
+                    throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.TiersIsGroup);
                 if (client is Person)
-                    throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.TiersIsPerson);
+                    throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.TiersIsPerson);
                 else if (client is Corporate)
                     result = true;
             }
@@ -704,7 +704,7 @@ namespace OpenCBS.Services
             {
                 List<string> temp = new List<string>();
                 temp.Add(ServicesProvider.GetInstance().GetGeneralSettings().MaxLoansCovered.ToString());
-                throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.GuarantorMaxLoansCoveredExceed, temp);
+                throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.GuarantorMaxLoansCoveredExceed, temp);
             }
         }
 
@@ -722,13 +722,13 @@ namespace OpenCBS.Services
                 foreach (Member member in ((Group)client).Members)
                 {
                     if (member.Tiers.Active)
-                        throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.PersonIsActive);
+                        throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.PersonIsActive);
                 }
             }
             else
             {
                 if (client.Active)
-                    throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.PersonIsActive);
+                    throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.PersonIsActive);
             }
         }
 
@@ -770,14 +770,14 @@ namespace OpenCBS.Services
             foreach (Member selectedPerson in group.Members)
             {
                 if (selectedPerson.Tiers.Id == personId)
-                    throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.PersonAlreadyInThisGroup);
+                    throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.PersonAlreadyInThisGroup);
             }
 
             if (person.Active && !ApplicationSettings.GetInstance(_user != null ? _user.Md5 : "").IsAllowMultipleGroups)
-                throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.PersonIsActive);
+                throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.PersonIsActive);
             
             if (_clientManagement.IsLeaderIsActive(personId))
-                throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.PersonIsALeader);
+                throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.PersonIsALeader);
 
             CheckPersonGroupCount(personId);
 
@@ -789,7 +789,7 @@ namespace OpenCBS.Services
             if (!ServicesProvider.GetInstance().GetGeneralSettings().IsAllowMultipleGroups
                 && GetPersonGroupCount(personId) > 0)
             {
-                throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.PersonIsInTheGroup);
+                throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.PersonIsInTheGroup);
             }
         }
 
@@ -799,11 +799,11 @@ namespace OpenCBS.Services
 
             if (corporate.Contacts.Any(selectedPerson => selectedPerson.Tiers.Id == person.Id))
             {
-                throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.PersonAlreadyInThisGroup);
+                throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.PersonAlreadyInThisGroup);
             }
 
             if (person.Active && !ApplicationSettings.GetInstance(_user != null ? _user.Md5 : "").IsAllowMultipleGroups)
-                throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.PersonIsActive);
+                throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.PersonIsActive);
 
             return true;
         }
@@ -814,7 +814,7 @@ namespace OpenCBS.Services
             {
                 List<string> L = new List<string>();
                 L.Add(_dataParam.GroupMinMembers.ToString());
-                throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.NoEnoughPersonsInThisGroup, L);
+                throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.NoEnoughPersonsInThisGroup, L);
             }
         }
 
@@ -824,7 +824,7 @@ namespace OpenCBS.Services
             {
                 List<string> L = new List<string>();
                 L.Add(_dataParam.GroupMaxMembers.ToString());
-                throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.TooMuchPersonsInThisGroup, L);
+                throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.TooMuchPersonsInThisGroup, L);
             }
         }
 
@@ -858,60 +858,60 @@ namespace OpenCBS.Services
         {
             string status = String.Empty;
             if (group == null)
-                throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.TiersIsNull);
+                throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.TiersIsNull);
 
             if (group.Name == null)
-                throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.NameIsEmpty);
+                throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.NameIsEmpty);
 
             if (group.District == null)
-                throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.DistrictIsNull);
+                throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.DistrictIsNull);
 
             if (group.District.Id == 0)
-                throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.DistrictIsBad);
+                throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.DistrictIsBad);
 
             if (_dataParam.IsCityMandatory)
             {
                 if (group.City == null)
-                    throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.CityIsNull);
+                    throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.CityIsNull);
             }
 
             if (group.GetNumberOfMembers < _dataParam.GroupMinMembers)
             {
                 List<string> L = new List<string>();
                 L.Add(_dataParam.GroupMinMembers.ToString());
-                throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.NoEnoughPersonsInThisGroup, L);
+                throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.NoEnoughPersonsInThisGroup, L);
             }
 
             if (group.GetNumberOfMembers > _dataParam.GroupMaxMembers)
             {
                 List<string> L = new List<string>();
                 L.Add(_dataParam.GroupMaxMembers.ToString());
-                throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.TooMuchPersonsInThisGroup, L);
+                throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.TooMuchPersonsInThisGroup, L);
             }
 
             if (group.Leader == null)
-                throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.LeaderIsEmpty);
+                throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.LeaderIsEmpty);
 
             if (group.Leader.Tiers.Id == 0)
-                throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.LeaderIsEmpty);
+                throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.LeaderIsEmpty);
 
             if (group.OtherOrgAmount.HasValue && group.OtherOrgAmount.Value == ERRORVALUE)
-                throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.OtherOrganizationAmountIsBadlyInformed);
+                throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.OtherOrganizationAmountIsBadlyInformed);
 
             if (group.OtherOrgDebts.HasValue && group.OtherOrgDebts.Value == ERRORVALUE)
-                throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.OtherOrganizationDebtsIsBadlyInformed);
+                throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.OtherOrganizationDebtsIsBadlyInformed);
 
             if (group.BadClient && group.Comments == null)
-                throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.CommentsNeedFullIfBadClient);
+                throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.CommentsNeedFullIfBadClient);
 
             if (null == group.Branch)
-                throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.BranchIsEmpty);
+                throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.BranchIsEmpty);
 
             if (group.Id == 0 && IsGroupNameAlreadyUsedInDistrict(group.Name, group.District))
-                throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.NameAlreadyUsedInDistrict);
+                throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.NameAlreadyUsedInDistrict);
             
             if (group.Id != 0 && !group.Leader.CurrentlyIn)
-                throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.LeaderIsEmpty);
+                throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.LeaderIsEmpty);
             return status;
         }
 
@@ -1013,15 +1013,15 @@ namespace OpenCBS.Services
         private void ValidateCorporate(Corporate body)
         {
             if (body.Activity == null)
-                throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.EconomicActivityIsNull);
+                throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.EconomicActivityIsNull);
             if (string.IsNullOrEmpty(body.Name))
-                throw new OctopusCorporateException(OctopusCorporateExceptionEnum.NameIsEmpty);
+                throw new OpenCbsCorporateException(OpenCbsCorporateExceptionEnum.NameIsEmpty);
             if (string.IsNullOrEmpty(body.City))
-                throw new OctopusCorporateException(OctopusCorporateExceptionEnum.CityIsEmpty);
+                throw new OpenCbsCorporateException(OpenCbsCorporateExceptionEnum.CityIsEmpty);
             if (body.District == null)
-                throw new OctopusCorporateException(OctopusCorporateExceptionEnum.DistrictIsEmpty);
+                throw new OpenCbsCorporateException(OpenCbsCorporateExceptionEnum.DistrictIsEmpty);
             if (null == body.Branch)
-                throw new OctopusCorporateException(OctopusCorporateExceptionEnum.BranchIsEmpty);
+                throw new OpenCbsCorporateException(OpenCbsCorporateExceptionEnum.BranchIsEmpty);
         }
 
         public void UpdateBodyCorporate(Corporate body, Action<SqlTransaction> action)
@@ -1033,20 +1033,20 @@ namespace OpenCBS.Services
                 try
                 {
                     if (body.Activity == null)
-                        throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.EconomicActivityIsNull);
+                        throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.EconomicActivityIsNull);
                     if (string.IsNullOrEmpty(body.Name))
-                        throw new OctopusCorporateException(OctopusCorporateExceptionEnum.NameIsEmpty);
+                        throw new OpenCbsCorporateException(OpenCbsCorporateExceptionEnum.NameIsEmpty);
                     if (string.IsNullOrEmpty(body.City))
-                        throw new OctopusCorporateException(OctopusCorporateExceptionEnum.CityIsEmpty);
+                        throw new OpenCbsCorporateException(OpenCbsCorporateExceptionEnum.CityIsEmpty);
                     if (body.District.Name == string.Empty || body.District == null)
-                        throw new OctopusCorporateException(OctopusCorporateExceptionEnum.DistrictIsEmpty);
+                        throw new OpenCbsCorporateException(OpenCbsCorporateExceptionEnum.DistrictIsEmpty);
                     if (body.VolunteerCount == (int) EnumIHM.ErrorSaisieVolunteer)
-                        throw new OctopusCorporateException(OctopusCorporateExceptionEnum.VolunteerIsFalseFormat);
+                        throw new OpenCbsCorporateException(OpenCbsCorporateExceptionEnum.VolunteerIsFalseFormat);
                     if (body.EmployeeCount == (int) EnumIHM.ErrorSaisieEmployeeCount)
-                        throw new OctopusCorporateException(OctopusCorporateExceptionEnum.EmployeeIsFalseFormat);
+                        throw new OpenCbsCorporateException(OpenCbsCorporateExceptionEnum.EmployeeIsFalseFormat);
 
                     if (null == body.Branch)
-                        throw new OctopusCorporateException(OctopusCorporateExceptionEnum.BranchIsEmpty);
+                        throw new OpenCbsCorporateException(OpenCbsCorporateExceptionEnum.BranchIsEmpty);
 
                     _clientManagement.UpdateBodyCorporate(body, sqlTransac);
                     UpdateClientBranchHistory(body, oldCorporate, sqlTransac);
@@ -1096,41 +1096,41 @@ namespace OpenCBS.Services
         private void ValidateVillage(Village village)
         {
             if (null == village)
-                throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.TiersIsNull);
+                throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.TiersIsNull);
 
             if (null == village.LoanOfficer)
-                throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.LoanOfficerIsEmpty);
+                throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.LoanOfficerIsEmpty);
 
             if (string.IsNullOrEmpty(village.Name))
-                throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.NameIsEmpty);
+                throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.NameIsEmpty);
 
             if (village.District == null)
-                throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.DistrictIsNull);
+                throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.DistrictIsNull);
 
             if (village.District.Id == 0)
-                throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.DistrictIsBad);
+                throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.DistrictIsBad);
 
             if (_dataParam.IsCityMandatory)
             {
                 if (village.City == null)
-                    throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.CityIsNull);
+                    throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.CityIsNull);
             }
 
             if (null == village.Branch)
-                throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.BranchIsEmpty);
+                throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.BranchIsEmpty);
 
             if (village.Members.Count < _dataParam.VillageMinMembers)
             {
                 List<string> L = new List<string>();
                 L.Add(_dataParam.VillageMinMembers.ToString());
-                throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.NoEnoughPersonsInThisGroup, L);
+                throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.NoEnoughPersonsInThisGroup, L);
             }
 
             if (village.Members.Count > _dataParam.VillageMaxMembers)
             {
                 List<string> L = new List<string>();
                 L.Add(_dataParam.VillageMaxMembers.ToString());
-                throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.TooMuchPersonsInThisGroup, L);
+                throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.TooMuchPersonsInThisGroup, L);
             }
         }
 

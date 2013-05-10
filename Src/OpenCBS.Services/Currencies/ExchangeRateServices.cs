@@ -122,13 +122,13 @@ namespace OpenCBS.Services.Currencies
         public void SaveRate(DateTime pDate, double pRate, Currency pCurrency)
         {
             if (pDate == DateTime.MinValue)
-                throw new OctopusExchangeRateException(OctopusExchangeRateExceptionEnum.DateIsNull);
+                throw new OpenCbsExchangeRateException(OpenCbsExchangeRateExceptionEnum.DateIsNull);
 
             if (pRate == 0)
-                throw new OctopusExchangeRateException(OctopusExchangeRateExceptionEnum.RateIsEmpty);
+                throw new OpenCbsExchangeRateException(OpenCbsExchangeRateExceptionEnum.RateIsEmpty);
 
             if (pCurrency ==null)
-                throw new OctopusExchangeRateException(OctopusExchangeRateExceptionEnum.RateIsEmpty);
+                throw new OpenCbsExchangeRateException(OpenCbsExchangeRateExceptionEnum.RateIsEmpty);
 
             if (SelectExchangeRate(pDate,pCurrency) != null)
                 _rateManager.Update(pDate, pRate, pCurrency);

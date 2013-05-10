@@ -269,15 +269,15 @@ namespace OpenCBS.Services
         public bool IsCompuslorySavingsValid(Loan pLoan, SavingBookContract pSaving, Client pClient)
         {
             if (pLoan.Product.Currency.Id != pSaving.Product.Currency.Id)
-                throw new OctopusSavingException(OctopusSavingExceptionEnum.LoanHasNotSameCurrency);
+                throw new OpenCbsSavingException(OpenCbsSavingExceptionEnum.LoanHasNotSameCurrency);
 
             //if (saving.Id == 0) 
             if (new ClientServices(_user).FindTiersByContractId(pLoan.Id).Id != pClient.Id)
-                    throw new OctopusSavingException(OctopusSavingExceptionEnum.LoanHasNotSameClient);
+                    throw new OpenCbsSavingException(OpenCbsSavingExceptionEnum.LoanHasNotSameClient);
 
             //if (loan.Id == 0) 
             if (new ClientServices(_user).FindTiersBySavingsId(pSaving.Id).Id != pClient.Id)
-                    throw new OctopusSavingException(OctopusSavingExceptionEnum.LoanHasNotSameClient);
+                    throw new OpenCbsSavingException(OpenCbsSavingExceptionEnum.LoanHasNotSameClient);
 
             return true;
         }
@@ -291,7 +291,7 @@ namespace OpenCBS.Services
                                                      SqlTransaction sqlTransaction)
         {
             if (savingsContract.GetBalance() - amount < 0)
-                throw new OctopusSavingException(OctopusSavingExceptionEnum.WithdrawAmountIsInvalid);
+                throw new OpenCbsSavingException(OpenCbsSavingExceptionEnum.WithdrawAmountIsInvalid);
             
             User user = User.CurrentUser;
             Teller teller = Teller.CurrentTeller;
@@ -380,7 +380,7 @@ namespace OpenCBS.Services
                 try
                 {
                     if (!IsDepositAmountCorrect(depositAmount, saving, savingsMethod))
-                        throw new OctopusSavingException(OctopusSavingExceptionEnum.DepositAmountIsInvalid);
+                        throw new OpenCbsSavingException(OpenCbsSavingExceptionEnum.DepositAmountIsInvalid);
 
                     ISavingsContract savingSimulation = (ISavingsContract) saving.Clone();
                         // Create a fake Saving object
@@ -390,7 +390,7 @@ namespace OpenCBS.Services
                                              pendingEventId, teller);
 
                     if (!IsSavingBalanceCorrect(savingSimulation)) // Check balance simulation
-                        throw new OctopusSavingException(OctopusSavingExceptionEnum.BalanceIsInvalid);
+                        throw new OpenCbsSavingException(OpenCbsSavingExceptionEnum.BalanceIsInvalid);
 
                     List<SavingEvent> events = saving.Deposit(depositAmount, dateTime, description, user, false,
                                                               isPending,
@@ -425,7 +425,7 @@ namespace OpenCBS.Services
               string description, User pUser, OSavingsMethods savingsMethod, bool isCredit, Booking booking)
        {
            if (booking == null)
-               throw new OctopusBookingException(OctopusBookingExceptionsEnum.BookingIsEmpty);
+               throw new OpenCbsBookingException(OpenCbsBookingExceptionsEnum.BookingIsEmpty);
 
            booking.Amount = amount;
            booking.Description = description;
@@ -465,7 +465,7 @@ namespace OpenCBS.Services
                       savingSimulation.SpecialOperationCredit(creditAmount, pDate, pDescription, pUser);
                       // Check balance simulation
                       if (!IsSavingBalanceCorrect(savingSimulation))
-                          throw new OctopusSavingException(OctopusSavingExceptionEnum.BalanceIsInvalid);
+                          throw new OpenCbsSavingException(OpenCbsSavingExceptionEnum.BalanceIsInvalid);
 
                       SavingCreditOperationEvent events = pSaving.SpecialOperationCredit(creditAmount, pDate,
                                                                                          pDescription, pUser);
@@ -506,8 +506,8 @@ namespace OpenCBS.Services
                                                                   ((SavingBookContract) pSaving).GetBalance().Value -
                                                                   vBalance)
                                                           };
-                              throw new OctopusSavingException(
-                                  OctopusSavingExceptionEnum.BalanceOnCurrentSavingAccountForTransfer, messages);
+                              throw new OpenCbsSavingException(
+                                  OpenCbsSavingExceptionEnum.BalanceOnCurrentSavingAccountForTransfer, messages);
                           }
                       }
 
@@ -517,7 +517,7 @@ namespace OpenCBS.Services
                       savingSimulation.SpecialOperationDebit(debitAmount, pDate, pDescription, pUser);
                       // Check balance simulation
                       if (!IsSavingBalanceCorrect(savingSimulation))
-                          throw new OctopusSavingException(OctopusSavingExceptionEnum.BalanceIsInvalid);
+                          throw new OpenCbsSavingException(OpenCbsSavingExceptionEnum.BalanceIsInvalid);
 
                       SavingDebitOperationEvent events = pSaving.SpecialOperationDebit(debitAmount, pDate, pDescription,
                                                                                         pUser);
@@ -595,7 +595,7 @@ namespace OpenCBS.Services
 	    private void ValidateWithdrawal(OCurrency pWithdrawAmount, ISavingsContract pSaving, DateTime pDate, string pDescription, User pUser, Teller teller)
 	    {
 	        if (!IsWithdrawAmountCorrect(pWithdrawAmount, pSaving))
-	            throw new OctopusSavingException(OctopusSavingExceptionEnum.WithdrawAmountIsInvalid);
+	            throw new OpenCbsSavingException(OpenCbsSavingExceptionEnum.WithdrawAmountIsInvalid);
 
 	        if (pSaving is SavingBookContract)
 	        {
@@ -624,7 +624,7 @@ namespace OpenCBS.Services
 	                                                ServicesHelper.ConvertDecimalToString(((SavingBookContract) pSaving).GetBalance().Value - vBalance)
 	                                            };
 
-	                throw new OctopusSavingException(OctopusSavingExceptionEnum.BalanceOnCurrentSavingAccount, messages);
+	                throw new OpenCbsSavingException(OpenCbsSavingExceptionEnum.BalanceOnCurrentSavingAccount, messages);
 	            }
 	        }
 
@@ -634,7 +634,7 @@ namespace OpenCBS.Services
 	        savingSimulation.Withdraw(pWithdrawAmount, pDate, pDescription, pUser, false, teller);
 	        // Check balance simulation
 	        if (!IsSavingBalanceCorrect(savingSimulation))
-	            throw new OctopusSavingException(OctopusSavingExceptionEnum.BalanceIsInvalid);
+	            throw new OpenCbsSavingException(OpenCbsSavingExceptionEnum.BalanceIsInvalid);
 	    }
 
 	    public List<SavingEvent> Transfer(ISavingsContract from, ISavingsContract to, DateTime date, OCurrency amount, OCurrency fee, string description, User user, bool noFee)
@@ -650,10 +650,10 @@ namespace OpenCBS.Services
 	    private void CheckTransfer(ISavingsContract to, ISavingsContract from, OCurrency amount, OCurrency fee, DateTime date, string description)
 	    {
 	        if (to == null)
-	            throw new OctopusSavingException(OctopusSavingExceptionEnum.TransferAccountIsInvalid);
+	            throw new OpenCbsSavingException(OpenCbsSavingExceptionEnum.TransferAccountIsInvalid);
 
 	        if (to.Status == OSavingsStatus.Closed)
-	            throw new OctopusSavingException(OctopusSavingExceptionEnum.CreditTransferAccountInvalid);
+	            throw new OpenCbsSavingException(OpenCbsSavingExceptionEnum.CreditTransferAccountInvalid);
 
 	        if (from is SavingBookContract)
 	        {
@@ -668,25 +668,25 @@ namespace OpenCBS.Services
 	                                                ((SavingBookContract) from).Loans.Count.ToString(),
 	                                                ServicesHelper.ConvertDecimalToString(((SavingBookContract) from).GetBalance().Value - vBalance)
 	                                            };
-	                throw new OctopusSavingException(
-	                    OctopusSavingExceptionEnum.BalanceOnCurrentSavingAccountForTransfer, messages);
+	                throw new OpenCbsSavingException(
+	                    OpenCbsSavingExceptionEnum.BalanceOnCurrentSavingAccountForTransfer, messages);
 	            }
 	        }
 
 	        if (from.Id == to.Id)
-	            throw new OctopusSavingException(OctopusSavingExceptionEnum.SavingsContractForTransferIdenticals);
+	            throw new OpenCbsSavingException(OpenCbsSavingExceptionEnum.SavingsContractForTransferIdenticals);
 
 	        if (from.Product.Currency.Id != to.Product.Currency.Id)
-	            throw new OctopusSavingException(OctopusSavingExceptionEnum.SavingsContractForTransferNotSameCurrncy);
+	            throw new OpenCbsSavingException(OpenCbsSavingExceptionEnum.SavingsContractForTransferNotSameCurrncy);
 
 	        if (!IsTransferAmountCorrect(amount, from))
-	                throw new OctopusSavingException(OctopusSavingExceptionEnum.TransferAmountIsInvalid);
+	                throw new OpenCbsSavingException(OpenCbsSavingExceptionEnum.TransferAmountIsInvalid);
             
             ISavingsContract fromCopy = (ISavingsContract)from.Clone();
             ISavingsContract toCopy = (ISavingsContract)to.Clone();
             fromCopy.Transfer(toCopy, amount, fee, date, description);
             if (!IsSavingBalanceCorrect(fromCopy))
-                throw new OctopusSavingException(OctopusSavingExceptionEnum.BalanceIsInvalid);
+                throw new OpenCbsSavingException(OpenCbsSavingExceptionEnum.BalanceIsInvalid);
 	    }
 
 	    private static bool IsCompulsorySavingBalanceOk(ISavingsContract saving, OCurrency amount)
@@ -712,7 +712,7 @@ namespace OpenCBS.Services
         public SavingEvent CancelLastEvent(ISavingsContract saving, User user, string pDescription)
         {
             if (string.IsNullOrEmpty(pDescription))
-                throw new OctopusSavingException(OctopusSavingExceptionEnum.SavingsEventCommentIsEmpty);
+                throw new OpenCbsSavingException(OpenCbsSavingExceptionEnum.SavingsEventCommentIsEmpty);
             
             Debug.Assert(_ePS != null, "Event processor is null");
             SavingEvent lastSavingEvent = saving.GetCancelableEvent();
@@ -727,7 +727,7 @@ namespace OpenCBS.Services
                     if (((SavingBookContract)saving).Loans != null && ((SavingBookContract)saving).Loans.Count > 0)
                     {
                         if (!IsCompulsorySavingBalanceOk(saving, lastSavingEvent.Amount))
-                            throw new OctopusSavingException(OctopusSavingExceptionEnum.SavingsEventCannotBeCanceled);
+                            throw new OpenCbsSavingException(OpenCbsSavingExceptionEnum.SavingsEventCannotBeCanceled);
                     }
                 }
             }
@@ -738,7 +738,7 @@ namespace OpenCBS.Services
                 if (((SavingBookContract)saving).Loans != null && ((SavingBookContract)saving).Loans.Count > 0)
                 {
                     if (!IsCompulsorySavingBalanceOk(saving, lastSavingEvent.Amount))
-                        throw new OctopusSavingException(OctopusSavingExceptionEnum.SavingsEventCannotBeCanceled);
+                        throw new OpenCbsSavingException(OpenCbsSavingExceptionEnum.SavingsEventCannotBeCanceled);
                 }
 
                 Booking booking = ServicesProvider.GetInstance().GetAccountingServices().SelectBookingByEventId(lastSavingEvent.Id);
@@ -855,7 +855,7 @@ namespace OpenCBS.Services
 	       
 	        if (balance != withdrawAmount)
 	        {
-	            throw new OctopusSavingException(OctopusSavingExceptionEnum.WithdrawAmountIsInvalid);
+	            throw new OpenCbsSavingException(OpenCbsSavingExceptionEnum.WithdrawAmountIsInvalid);
 	        }
 
 	        List<SavingEvent> events = saving.Withdraw(withdrawAmount, date, "Withdraw savings", user, true,
@@ -887,19 +887,19 @@ namespace OpenCBS.Services
             OCurrency amount, bool pIsDesactivateFees, Teller teller)
         {
             if (to.Status == OSavingsStatus.Closed)
-                throw new OctopusSavingException(OctopusSavingExceptionEnum.CreditTransferAccountInvalid);
+                throw new OpenCbsSavingException(OpenCbsSavingExceptionEnum.CreditTransferAccountInvalid);
 
             if (from.Id == to.Id)
-                throw new OctopusSavingException(OctopusSavingExceptionEnum.SavingsContractForTransferIdenticals);
+                throw new OpenCbsSavingException(OpenCbsSavingExceptionEnum.SavingsContractForTransferIdenticals);
 
             if (from.Product.Currency.Id != to.Product.Currency.Id)
-                throw new OctopusSavingException(OctopusSavingExceptionEnum.SavingsContractForTransferNotSameCurrncy);
+                throw new OpenCbsSavingException(OpenCbsSavingExceptionEnum.SavingsContractForTransferNotSameCurrncy);
 
             OCurrency balance = SimulateCloseAccount(from, date, pUser, pIsDesactivateFees, teller).GetBalance(date);
             if (from is SavingBookContract && !pIsDesactivateFees) balance -= ((SavingBookContract)from).CloseFees;
 
             if (balance != amount)
-                throw new OctopusSavingException(OctopusSavingExceptionEnum.TransferAmountIsInvalid);
+                throw new OpenCbsSavingException(OpenCbsSavingExceptionEnum.TransferAmountIsInvalid);
 
             List<SavingEvent> events = new List<SavingEvent>();
             events.AddRange(from.Transfer(to, amount, 0, date, "Closing transfer"));
@@ -1178,7 +1178,7 @@ namespace OpenCBS.Services
 
 	    public int GetSavingCount(Client pClient)
         {
-            if (pClient == null) throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.TiersIsNull);
+            if (pClient == null) throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.TiersIsNull);
             
             return _savingManager.GetNumberOfSavings(pClient.Id);
         }
@@ -1191,45 +1191,45 @@ namespace OpenCBS.Services
         public bool ValidateSavingsContract(ISavingsContract saving, Client client)
         {
             if (!IsProductCorrect(saving))
-                throw new OctopusSavingException(OctopusSavingExceptionEnum.ProductIsInvalid);
+                throw new OpenCbsSavingException(OpenCbsSavingExceptionEnum.ProductIsInvalid);
             if (!IsInterestRateCorrect(saving))
-                throw new OctopusSavingException(OctopusSavingExceptionEnum.InterestRateIsInvalid);
+                throw new OpenCbsSavingException(OpenCbsSavingExceptionEnum.InterestRateIsInvalid);
             if (!IsWithdrawFeesCorrect((SavingBookContract)saving))
-                throw new OctopusSavingException(OctopusSavingExceptionEnum.WithdrawFeesIsInvalid);
+                throw new OpenCbsSavingException(OpenCbsSavingExceptionEnum.WithdrawFeesIsInvalid);
 
             if (!IsTransferFeesCorrect((SavingBookContract)saving))
-                throw new OctopusSavingException(OctopusSavingExceptionEnum.TransferFeesIsInvalid);
+                throw new OpenCbsSavingException(OpenCbsSavingExceptionEnum.TransferFeesIsInvalid);
 
             if (!IsDepositFeesCorrect((SavingBookContract)saving))
-                throw new OctopusSavingException(OctopusSavingExceptionEnum.DepositFeesIsInvalid);
+                throw new OpenCbsSavingException(OpenCbsSavingExceptionEnum.DepositFeesIsInvalid);
 
             if (!IsCloseFeesCorrect((SavingBookContract)saving))
-                throw new OctopusSavingException(OctopusSavingExceptionEnum.CloseFeesIsInvalid);
+                throw new OpenCbsSavingException(OpenCbsSavingExceptionEnum.CloseFeesIsInvalid);
 
             if (!IsManagementFeesCorrect((SavingBookContract)saving))
-                throw new OctopusSavingException(OctopusSavingExceptionEnum.ManagementFeesIsInvalid);
+                throw new OpenCbsSavingException(OpenCbsSavingExceptionEnum.ManagementFeesIsInvalid);
 
             if (!IsAgioFeesCorrect((SavingBookContract)saving))
-                throw new OctopusSavingException(OctopusSavingExceptionEnum.AgioFeesIsInvalid);
+                throw new OpenCbsSavingException(OpenCbsSavingExceptionEnum.AgioFeesIsInvalid);
 
             if (((SavingBookContract)saving).Loans != null)
             {
                 //IsLoanValid((Saving)saving, pClient);
 
                 //if (!_IsLoanAmountCorrect((Saving)saving, ((Saving)saving).Loan))
-                //    throw new OctopusSavingException(OctopusSavingExceptionEnum.InitialAmountIsInvalid);
+                //    throw new OpenCbsSavingException(OpenCbsSavingExceptionEnum.InitialAmountIsInvalid);
             }
             else
             {
                 if (!IsInitialAmountCorrect(saving))
-                    throw new OctopusSavingException(OctopusSavingExceptionEnum.InitialAmountIsInvalid);
+                    throw new OpenCbsSavingException(OpenCbsSavingExceptionEnum.InitialAmountIsInvalid);
             }
             if (((SavingBookContract)saving).UseTermDeposit)
             {
                 if (((SavingBookContract)saving).Rollover != OSavingsRollover.PrincipalAndInterests)
                 {
                     if (((SavingBookContract)saving).TransferAccount == null)
-                        throw new OctopusSavingException(OctopusSavingExceptionEnum.TransferAccountIsInvalid);
+                        throw new OpenCbsSavingException(OpenCbsSavingExceptionEnum.TransferAccountIsInvalid);
                 }
 
             }
@@ -1241,10 +1241,10 @@ namespace OpenCBS.Services
                                  OCurrency entryFees, User user, Teller teller)
         {
             if (!IsEntryFeesCorrect(saving, entryFees))
-                throw new OctopusSavingException(OctopusSavingExceptionEnum.EntryFeesIsInvalid);
+                throw new OpenCbsSavingException(OpenCbsSavingExceptionEnum.EntryFeesIsInvalid);
 
             if (!IsSavingBalanceCorrect(saving, initialAmount))
-                throw new OctopusSavingException(OctopusSavingExceptionEnum.BalanceIsInvalid);
+                throw new OpenCbsSavingException(OpenCbsSavingExceptionEnum.BalanceIsInvalid);
             using(SqlConnection conn = _savingManager.GetConnection())
             using (SqlTransaction sqlTransaction = conn.BeginTransaction())
             {
@@ -1276,7 +1276,7 @@ namespace OpenCBS.Services
 	    public void CheckIfTransferAccountHasWrongCurrency(ISavingsContract currentContract, SavingSearchResult transferAccount)
         {
             if (currentContract.Product.Currency.Id != transferAccount.CurrencyId)
-                throw new OctopusSavingException(OctopusSavingExceptionEnum.TransferAccountHasWrongCurrency);
+                throw new OpenCbsSavingException(OpenCbsSavingExceptionEnum.TransferAccountHasWrongCurrency);
         }
 
         public int SaveContract(ISavingsContract saving, Client client)
@@ -1287,7 +1287,7 @@ namespace OpenCBS.Services
         public int SaveContract(ISavingsContract saving, Client client, Action<SqlTransaction, int> action)
         {
             if (client == null)
-                throw new OctopusTiersSaveException(OctopusTiersSaveExceptionEnum.TiersIsNull);
+                throw new OpenCbsTiersSaveException(OpenCbsTiersSaveExceptionEnum.TiersIsNull);
 
             ValidateSavingsContract(saving, client);
 
@@ -1346,11 +1346,11 @@ namespace OpenCBS.Services
             foreach (Loan loan in oldSavings.Loans)
             {
                 if (loan != null && (loan.ContractStatus == OContractStatus.Active || loan.ContractStatus == OContractStatus.Validated))
-                    throw new OctopusSavingException(OctopusSavingExceptionEnum.CompulsorySavingsLinkedToLoan);
+                    throw new OpenCbsSavingException(OpenCbsSavingExceptionEnum.CompulsorySavingsLinkedToLoan);
 
                 if (loan != null)
                     if (new ClientServices(_user).FindTiersByContractId(loan.Id).Id != new ClientServices(_user).FindTiersBySavingsId(pSaving.Id).Id)
-                        throw new OctopusSavingException(OctopusSavingExceptionEnum.LoanHasNotSameClient);
+                        throw new OpenCbsSavingException(OpenCbsSavingExceptionEnum.LoanHasNotSameClient);
             }
         }
 

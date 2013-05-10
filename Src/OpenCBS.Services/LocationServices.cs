@@ -47,7 +47,7 @@ namespace OpenCBS.Services
         private static void CheckLocation(string name)
         {
             if (name == null || name.Trim(' ') == string.Empty)
-                throw new OctopusEmptyLocationException();
+                throw new OpenCbsEmptyLocationException();
         }
 
         public bool UpdateProvince(Province province)
@@ -106,7 +106,7 @@ namespace OpenCBS.Services
         private void CheckDistrictToDelete(int districtId)
         {
             if (_locationsManager.IsDistrictUsed(districtId))
-                throw new OctopusDistrictUsedException();
+                throw new OpenCbsDistrictUsedException();
         }
 
         public int AddCity(City city)
@@ -124,7 +124,7 @@ namespace OpenCBS.Services
         private void CheckCityToDelete(int cityId)
         {
             if (_locationsManager.IsCityUsed(cityId))
-                throw new OctopusCityUsedException();
+                throw new OpenCbsCityUsedException();
         }
 
         public bool UpdateCity(City city)

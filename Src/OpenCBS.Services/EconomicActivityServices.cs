@@ -40,10 +40,10 @@ namespace OpenCBS.Services
         public int AddEconomicActivity(EconomicActivity pEconomicActivity)
         {
             if (pEconomicActivity.Name == String.Empty)
-                throw new OctopusDOASaveException(OctopusDOASaveExceptionEnum.NameIsNull);
+                throw new OpenCbsDoaSaveException(OpenCbsDOASaveExceptionEnum.NameIsNull);
 
             if (_doam.ThisActivityAlreadyExist(pEconomicActivity.Name, pEconomicActivity.Parent.Id))
-                throw new OctopusDOASaveException(OctopusDOASaveExceptionEnum.AlreadyExist);
+                throw new OpenCbsDoaSaveException(OpenCbsDOASaveExceptionEnum.AlreadyExist);
            
             if (pEconomicActivity.Parent.Id == 0) pEconomicActivity.Parent = null;
            
@@ -53,10 +53,10 @@ namespace OpenCBS.Services
 	    public bool NodeEditable(Object pEconomicActivity)
         {
             if (pEconomicActivity == null)
-                throw new OctopusDOAUpdateException(OctopusDOAUpdateExceptionEnum.NoSelect);
+                throw new OpenCbsDoaUpdateException(OpenCbsDOAUpdateExceptionEnum.NoSelect);
 
             if (!(pEconomicActivity is EconomicActivity))
-                throw new OctopusDOAUpdateException(OctopusDOAUpdateExceptionEnum.NoSelect);
+                throw new OpenCbsDoaUpdateException(OpenCbsDOAUpdateExceptionEnum.NoSelect);
 
             return true;
         }
@@ -64,10 +64,10 @@ namespace OpenCBS.Services
         public bool ChangeDomainOfApplicationName(EconomicActivity pEconomicActivity, string newName)
         {
             if (newName == String.Empty)
-                throw new OctopusDOAUpdateException(OctopusDOAUpdateExceptionEnum.NewNameIsNull);
+                throw new OpenCbsDoaUpdateException(OpenCbsDOAUpdateExceptionEnum.NewNameIsNull);
 
             if (_doam.ThisActivityAlreadyExist(newName, pEconomicActivity.Parent.Id))
-                throw new OctopusDOASaveException(OctopusDOASaveExceptionEnum.AlreadyExist);
+                throw new OpenCbsDoaSaveException(OpenCbsDOASaveExceptionEnum.AlreadyExist);
 
             EconomicActivity activity = pEconomicActivity;
             activity.Name = newName;
@@ -90,7 +90,7 @@ namespace OpenCBS.Services
         public void DeleteEconomicActivity(EconomicActivity pEconomicActivity)
         {
             if (pEconomicActivity.HasChildrens)
-                throw new OctopusDOADeleteException(OctopusDOADeleteExceptionEnum.HasChildrens);
+                throw new OpenCbsDoaDeleteException(OpenCbsDOADeleteExceptionEnum.HasChildrens);
 
             pEconomicActivity.Deleted = true;
             _doam.UpdateEconomicActivity(pEconomicActivity);

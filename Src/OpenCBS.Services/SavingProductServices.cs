@@ -80,172 +80,172 @@ namespace OpenCBS.Services
             if (fee.IsFlat)
             {
                 if (fee.Value.HasValue && fee.Value < 0)
-                    throw new OctopusSavingProductException(OctopusSavingProductExceptionEnum.InterBranchFlatTransferFeesIsInvalid);
+                    throw new OpenCbsSavingProductException(OpenCbsSavingProductExceptionEnum.InterBranchFlatTransferFeesIsInvalid);
 
                 if (!ServicesHelper.CheckMinMaxAndValueCorrectlyFilled(fee.Min, fee.Max, fee.Value))
-                    throw new OctopusSavingProductException(OctopusSavingProductExceptionEnum.InterBranchFlatTransferFeesMinMaxIsInvalid);
+                    throw new OpenCbsSavingProductException(OpenCbsSavingProductExceptionEnum.InterBranchFlatTransferFeesMinMaxIsInvalid);
 
                 if (!fee.Value.HasValue && fee.Min < 0)
-                    throw new OctopusSavingProductException(OctopusSavingProductExceptionEnum.InterBranchFlatTransferFeesMinIsInvalid);
+                    throw new OpenCbsSavingProductException(OpenCbsSavingProductExceptionEnum.InterBranchFlatTransferFeesMinIsInvalid);
             }
             else
             {
                 if (fee.Value.HasValue && fee.Value < 0)
-                    throw new OctopusSavingProductException(OctopusSavingProductExceptionEnum.InterBranchRateTransferFeesIsInvalid);
+                    throw new OpenCbsSavingProductException(OpenCbsSavingProductExceptionEnum.InterBranchRateTransferFeesIsInvalid);
 
                 if (!ServicesHelper.CheckMinMaxAndValueCorrectlyFilled(fee.Min, fee.Max, fee.Value))
-                    throw new OctopusSavingProductException(OctopusSavingProductExceptionEnum.InterBranchRateTransferFeesMinMaxIsInvalid);
+                    throw new OpenCbsSavingProductException(OpenCbsSavingProductExceptionEnum.InterBranchRateTransferFeesMinMaxIsInvalid);
 
                 if (!fee.Value.HasValue && fee.Value < 0)
-                    throw new OctopusSavingProductException(OctopusSavingProductExceptionEnum.InterBranchRateTransferFeesMinIsInvalid);
+                    throw new OpenCbsSavingProductException(OpenCbsSavingProductExceptionEnum.InterBranchRateTransferFeesMinIsInvalid);
             }
         }
 
         private static void ValidateSavingBookProduct(SavingsBookProduct savingsProduct)
         {
             if (!Enum.IsDefined(typeof(OSavingInterestFrequency), savingsProduct.InterestFrequency.ToString()))
-                throw new OctopusSavingProductException(OctopusSavingProductExceptionEnum.InterestsFrequencyIsInvalid);
+                throw new OpenCbsSavingProductException(OpenCbsSavingProductExceptionEnum.InterestsFrequencyIsInvalid);
 
             if (!Enum.IsDefined(typeof(OSavingInterestBase), savingsProduct.InterestBase.ToString()))
-                throw new OctopusSavingProductException(OctopusSavingProductExceptionEnum.InterestsBaseIsInvalid);
+                throw new OpenCbsSavingProductException(OpenCbsSavingProductExceptionEnum.InterestsBaseIsInvalid);
 
             if (savingsProduct.InterestBase == OSavingInterestBase.Monthly
                 && (savingsProduct.InterestFrequency != OSavingInterestFrequency.EndOfYear 
                 && savingsProduct.InterestFrequency != OSavingInterestFrequency.EndOfMonth))
-                throw new OctopusSavingProductException(OctopusSavingProductExceptionEnum.InterestBaseIncompatibleFrequency);
+                throw new OpenCbsSavingProductException(OpenCbsSavingProductExceptionEnum.InterestBaseIncompatibleFrequency);
 
             if (savingsProduct.InterestBase == OSavingInterestBase.Weekly
                 && (savingsProduct.InterestFrequency == OSavingInterestFrequency.EndOfDay))
-                throw new OctopusSavingProductException(OctopusSavingProductExceptionEnum.InterestBaseIncompatibleFrequency);
+                throw new OpenCbsSavingProductException(OpenCbsSavingProductExceptionEnum.InterestBaseIncompatibleFrequency);
 
             if (savingsProduct.InterestBase != OSavingInterestBase.Daily
                 && (!savingsProduct.CalculAmountBase.HasValue))
-                throw new OctopusSavingProductException(OctopusSavingProductExceptionEnum.CalculAmountBaseIsNull);
+                throw new OpenCbsSavingProductException(OpenCbsSavingProductExceptionEnum.CalculAmountBaseIsNull);
 
             if (!ServicesHelper.CheckMinMaxAndValueCorrectlyFilled(savingsProduct.WithdrawingMin, savingsProduct.WithdrawingMax, null))
-                    throw new OctopusSavingProductException(OctopusSavingProductExceptionEnum.WithdrawAmountIsInvalid);
+                    throw new OpenCbsSavingProductException(OpenCbsSavingProductExceptionEnum.WithdrawAmountIsInvalid);
 
             if (!ServicesHelper.CheckMinMaxAndValueCorrectlyFilled(savingsProduct.DepositMin, savingsProduct.DepositMax, null))
-                    throw new OctopusSavingProductException(OctopusSavingProductExceptionEnum.DepositAmountIsInvalid);
+                    throw new OpenCbsSavingProductException(OpenCbsSavingProductExceptionEnum.DepositAmountIsInvalid);
 
             if (savingsProduct.DepositMin <= 0)
-                throw new OctopusSavingProductException(OctopusSavingProductExceptionEnum.DepositMinAmountIsInvalid);
+                throw new OpenCbsSavingProductException(OpenCbsSavingProductExceptionEnum.DepositMinAmountIsInvalid);
             if (savingsProduct.ChequeDepositMin<=0)
-                throw new OctopusSavingProductException(OctopusSavingProductExceptionEnum.ChequeDepositIsInvalid);
+                throw new OpenCbsSavingProductException(OpenCbsSavingProductExceptionEnum.ChequeDepositIsInvalid);
             if (savingsProduct.ChequeDepositMin>savingsProduct.ChequeDepositMax)
-                throw new OctopusSavingProductException(OctopusSavingProductExceptionEnum.ChequeDepositIsInvalid);
+                throw new OpenCbsSavingProductException(OpenCbsSavingProductExceptionEnum.ChequeDepositIsInvalid);
 
             if (savingsProduct.WithdrawingMin <= 0)
-                throw new OctopusSavingProductException(OctopusSavingProductExceptionEnum.WithdrawMinAmountIsInvalid);
+                throw new OpenCbsSavingProductException(OpenCbsSavingProductExceptionEnum.WithdrawMinAmountIsInvalid);
 
             if (!ServicesHelper.CheckMinMaxAndValueCorrectlyFilled(savingsProduct.TransferMin, savingsProduct.TransferMax, null))
-                throw new OctopusSavingProductException(OctopusSavingProductExceptionEnum.TransferAmountIsInvalid);
+                throw new OpenCbsSavingProductException(OpenCbsSavingProductExceptionEnum.TransferAmountIsInvalid);
 
             if (savingsProduct.DepositFeesMin < 0)
-                throw new OctopusSavingProductException(OctopusSavingProductExceptionEnum.DepositFeesMinIsInvalid);
+                throw new OpenCbsSavingProductException(OpenCbsSavingProductExceptionEnum.DepositFeesMinIsInvalid);
             if (savingsProduct.ChequeDepositFeesMin < 0)
-                throw new OctopusSavingProductException(OctopusSavingProductExceptionEnum.ChequeDepositFeesIsInvalid);
+                throw new OpenCbsSavingProductException(OpenCbsSavingProductExceptionEnum.ChequeDepositFeesIsInvalid);
             if (!ServicesHelper.CheckMinMaxAndValueCorrectlyFilled(savingsProduct.DepositFeesMin, savingsProduct.DepositFeesMax, savingsProduct.DepositFees))
-                throw new OctopusSavingProductException(OctopusSavingProductExceptionEnum.DepositFeesIsInvalid);
+                throw new OpenCbsSavingProductException(OpenCbsSavingProductExceptionEnum.DepositFeesIsInvalid);
             if (!ServicesHelper.CheckMinMaxAndValueCorrectlyFilled(savingsProduct.ChequeDepositFeesMin, savingsProduct.ChequeDepositFeesMax, savingsProduct.ChequeDepositFees))
-                throw new OctopusSavingProductException(OctopusSavingProductExceptionEnum.ChequeDepositFeesIsInvalid);
+                throw new OpenCbsSavingProductException(OpenCbsSavingProductExceptionEnum.ChequeDepositFeesIsInvalid);
 
             if (savingsProduct.ReopenFeesMin < 0)
-                throw new OctopusSavingProductException(OctopusSavingProductExceptionEnum.ReopenFeesMinIsInvalid);
+                throw new OpenCbsSavingProductException(OpenCbsSavingProductExceptionEnum.ReopenFeesMinIsInvalid);
             if (!ServicesHelper.CheckMinMaxAndValueCorrectlyFilled(savingsProduct.ReopenFeesMin, savingsProduct.ReopenFeesMax, savingsProduct.ReopenFees))
-                throw new OctopusSavingProductException(OctopusSavingProductExceptionEnum.ReopenFeesIsInvalid);
+                throw new OpenCbsSavingProductException(OpenCbsSavingProductExceptionEnum.ReopenFeesIsInvalid);
 
             if (savingsProduct.OverdraftFeesMin < 0)
-                throw new OctopusSavingProductException(OctopusSavingProductExceptionEnum.OverdraftFeesMinIsInvalid);
+                throw new OpenCbsSavingProductException(OpenCbsSavingProductExceptionEnum.OverdraftFeesMinIsInvalid);
             if (!ServicesHelper.CheckMinMaxAndValueCorrectlyFilled(savingsProduct.OverdraftFeesMin, savingsProduct.OverdraftFeesMax, savingsProduct.OverdraftFees))
-                throw new OctopusSavingProductException(OctopusSavingProductExceptionEnum.OverdraftFeesIsInvalid);
+                throw new OpenCbsSavingProductException(OpenCbsSavingProductExceptionEnum.OverdraftFeesIsInvalid);
 
             if (savingsProduct.AgioFeesMin < 0)
-                throw new OctopusSavingProductException(OctopusSavingProductExceptionEnum.AgioFeesMinIsInvalid);
+                throw new OpenCbsSavingProductException(OpenCbsSavingProductExceptionEnum.AgioFeesMinIsInvalid);
             if (!ServicesHelper.CheckMinMaxAndValueCorrectlyFilled(savingsProduct.AgioFeesMin, savingsProduct.AgioFeesMax, savingsProduct.AgioFees))
-                throw new OctopusSavingProductException(OctopusSavingProductExceptionEnum.AgioFeesIsInvalid);
+                throw new OpenCbsSavingProductException(OpenCbsSavingProductExceptionEnum.AgioFeesIsInvalid);
 
             if (savingsProduct.CloseFeesMin < 0)
-                throw new OctopusSavingProductException(OctopusSavingProductExceptionEnum.CloseFeesMinIsInvalid);
+                throw new OpenCbsSavingProductException(OpenCbsSavingProductExceptionEnum.CloseFeesMinIsInvalid);
             if (!ServicesHelper.CheckMinMaxAndValueCorrectlyFilled(savingsProduct.CloseFeesMin, savingsProduct.CloseFeesMax, savingsProduct.CloseFees))
-                throw new OctopusSavingProductException(OctopusSavingProductExceptionEnum.CloseFeesIsInvalid);
+                throw new OpenCbsSavingProductException(OpenCbsSavingProductExceptionEnum.CloseFeesIsInvalid);
 
             if (savingsProduct.ManagementFeesMin < 0)
-                throw new OctopusSavingProductException(OctopusSavingProductExceptionEnum.ManagementFeesMinIsInvalid);
+                throw new OpenCbsSavingProductException(OpenCbsSavingProductExceptionEnum.ManagementFeesMinIsInvalid);
             if (!ServicesHelper.CheckMinMaxAndValueCorrectlyFilled(savingsProduct.ManagementFeesMin, savingsProduct.ManagementFeesMax, savingsProduct.ManagementFees))
-                throw new OctopusSavingProductException(OctopusSavingProductExceptionEnum.ManagementFeesIsInvalid);
+                throw new OpenCbsSavingProductException(OpenCbsSavingProductExceptionEnum.ManagementFeesIsInvalid);
 
             if (savingsProduct.TransferMin <= 0)
-                throw new OctopusSavingProductException(OctopusSavingProductExceptionEnum.TransferAmountMinIsInvalid);
+                throw new OpenCbsSavingProductException(OpenCbsSavingProductExceptionEnum.TransferAmountMinIsInvalid);
 
             if (!Enum.IsDefined(typeof(OSavingsFeesType), savingsProduct.WithdrawFeesType.ToString()))
-                throw new OctopusSavingProductException(OctopusSavingProductExceptionEnum.WithdrawFeesTypeEmpty);
+                throw new OpenCbsSavingProductException(OpenCbsSavingProductExceptionEnum.WithdrawFeesTypeEmpty);
 
             if (savingsProduct.WithdrawFeesType == OSavingsFeesType.Flat)
             {
                 if (savingsProduct.FlatWithdrawFees.HasValue && savingsProduct.FlatWithdrawFees.Value < 0)
-                    throw new OctopusSavingProductException(OctopusSavingProductExceptionEnum.FlatWithdrawFeesIsInvalid);
+                    throw new OpenCbsSavingProductException(OpenCbsSavingProductExceptionEnum.FlatWithdrawFeesIsInvalid);
 
                 if (!ServicesHelper.CheckMinMaxAndValueCorrectlyFilled(savingsProduct.FlatWithdrawFeesMin, savingsProduct.FlatWithdrawFeesMax, savingsProduct.FlatWithdrawFees))
-                    throw new OctopusSavingProductException(OctopusSavingProductExceptionEnum.FlatWithdrawFeesMinMaxIsInvalid);
+                    throw new OpenCbsSavingProductException(OpenCbsSavingProductExceptionEnum.FlatWithdrawFeesMinMaxIsInvalid);
 
                 if (!savingsProduct.FlatWithdrawFees.HasValue && savingsProduct.FlatWithdrawFeesMin.Value < 0)
-                    throw new OctopusSavingProductException(OctopusSavingProductExceptionEnum.FlatWithdrawFeesMinIsInvalid);
+                    throw new OpenCbsSavingProductException(OpenCbsSavingProductExceptionEnum.FlatWithdrawFeesMinIsInvalid);
             }
             else
             {
                 if (savingsProduct.RateWithdrawFees.HasValue && savingsProduct.RateWithdrawFees.Value < 0)
-                    throw new OctopusSavingProductException(OctopusSavingProductExceptionEnum.RateWithdrawFeesIsInvalid);
+                    throw new OpenCbsSavingProductException(OpenCbsSavingProductExceptionEnum.RateWithdrawFeesIsInvalid);
 
                 if (!ServicesHelper.CheckMinMaxAndValueCorrectlyFilled(savingsProduct.RateWithdrawFeesMin, savingsProduct.RateWithdrawFeesMax, savingsProduct.RateWithdrawFees))
-                    throw new OctopusSavingProductException(OctopusSavingProductExceptionEnum.RateWithdrawFeesMinMaxIsInvalid);
+                    throw new OpenCbsSavingProductException(OpenCbsSavingProductExceptionEnum.RateWithdrawFeesMinMaxIsInvalid);
 
                 if (!savingsProduct.RateWithdrawFees.HasValue && savingsProduct.RateWithdrawFeesMin.Value < 0)
-                    throw new OctopusSavingProductException(OctopusSavingProductExceptionEnum.RateWithdrawFeesMinIsInvalid);
+                    throw new OpenCbsSavingProductException(OpenCbsSavingProductExceptionEnum.RateWithdrawFeesMinIsInvalid);
             }
 
             if (!Enum.IsDefined(typeof(OSavingsFeesType), savingsProduct.TransferFeesType.ToString()))
-                throw new OctopusSavingProductException(OctopusSavingProductExceptionEnum.TransferFeesTypeEmpty);
+                throw new OpenCbsSavingProductException(OpenCbsSavingProductExceptionEnum.TransferFeesTypeEmpty);
 
             if (savingsProduct.TransferFeesType == OSavingsFeesType.Flat)
             {
                 if (savingsProduct.FlatTransferFees.HasValue && savingsProduct.FlatTransferFees.Value < 0)
-                    throw new OctopusSavingProductException(OctopusSavingProductExceptionEnum.FlatTransferFeesIsInvalid);
+                    throw new OpenCbsSavingProductException(OpenCbsSavingProductExceptionEnum.FlatTransferFeesIsInvalid);
 
                 if (!ServicesHelper.CheckMinMaxAndValueCorrectlyFilled(savingsProduct.FlatTransferFeesMin, savingsProduct.FlatTransferFeesMax, savingsProduct.FlatTransferFees))
-                    throw new OctopusSavingProductException(OctopusSavingProductExceptionEnum.FlatTransferFeesMinMaxIsInvalid);
+                    throw new OpenCbsSavingProductException(OpenCbsSavingProductExceptionEnum.FlatTransferFeesMinMaxIsInvalid);
 
                 if (!savingsProduct.FlatTransferFees.HasValue && savingsProduct.FlatTransferFeesMin.Value < 0)
-                    throw new OctopusSavingProductException(OctopusSavingProductExceptionEnum.FlatTransferFeesMinIsInvalid);
+                    throw new OpenCbsSavingProductException(OpenCbsSavingProductExceptionEnum.FlatTransferFeesMinIsInvalid);
             }
             else
             {
                 if (savingsProduct.RateTransferFees.HasValue && savingsProduct.RateTransferFees.Value < 0)
-                    throw new OctopusSavingProductException(OctopusSavingProductExceptionEnum.RateTransferFeesIsInvalid);
+                    throw new OpenCbsSavingProductException(OpenCbsSavingProductExceptionEnum.RateTransferFeesIsInvalid);
 
                 if (!ServicesHelper.CheckMinMaxAndValueCorrectlyFilled(savingsProduct.RateTransferFeesMin, savingsProduct.RateTransferFeesMax, savingsProduct.RateTransferFees))
-                    throw new OctopusSavingProductException(OctopusSavingProductExceptionEnum.RateTransferFeesMinMaxIsInvalid);
+                    throw new OpenCbsSavingProductException(OpenCbsSavingProductExceptionEnum.RateTransferFeesMinMaxIsInvalid);
 
                 if (!savingsProduct.RateTransferFees.HasValue && savingsProduct.RateTransferFeesMin.Value < 0)
-                    throw new OctopusSavingProductException(OctopusSavingProductExceptionEnum.RateTransferFeesMinIsInvalid);
+                    throw new OpenCbsSavingProductException(OpenCbsSavingProductExceptionEnum.RateTransferFeesMinIsInvalid);
             }
 
             ValidateInterBranchTransferFees(savingsProduct);
 
             if (!savingsProduct.OverdraftFees.HasValue && !(savingsProduct.OverdraftFeesMin.HasValue && savingsProduct.OverdraftFeesMax.HasValue))
-                throw new OctopusSavingProductException(OctopusSavingProductExceptionEnum.OverdraftFeesIsInvalid);
+                throw new OpenCbsSavingProductException(OpenCbsSavingProductExceptionEnum.OverdraftFeesIsInvalid);
             if (!savingsProduct.AgioFees.HasValue && !(savingsProduct.AgioFeesMin.HasValue && savingsProduct.AgioFeesMax.HasValue))
-                throw new OctopusSavingProductException(OctopusSavingProductExceptionEnum.AgioFeesIsInvalid);
+                throw new OpenCbsSavingProductException(OpenCbsSavingProductExceptionEnum.AgioFeesIsInvalid);
             if (savingsProduct.UseTermDeposit)
             {
                 if (savingsProduct.TermDepositPeriodMin>savingsProduct.TermDepositPeriodMax)
-                    throw new OctopusSavingProductException(OctopusSavingProductExceptionEnum.PostingFrequencyIsInvalid);
+                    throw new OpenCbsSavingProductException(OpenCbsSavingProductExceptionEnum.PostingFrequencyIsInvalid);
                 if (savingsProduct.TermDepositPeriodMax<=0 || savingsProduct.TermDepositPeriodMin<=0)
-                    throw new OctopusSavingProductException(OctopusSavingProductExceptionEnum.PostingFrequencyIsInvalid);
+                    throw new OpenCbsSavingProductException(OpenCbsSavingProductExceptionEnum.PostingFrequencyIsInvalid);
                 if (savingsProduct.TermDepositPeriodMin==null || savingsProduct.TermDepositPeriodMax == null)
-                    throw new OctopusSavingProductException(OctopusSavingProductExceptionEnum.PostingFrequencyIsInvalid);
+                    throw new OpenCbsSavingProductException(OpenCbsSavingProductExceptionEnum.PostingFrequencyIsInvalid);
                 if (savingsProduct.Periodicity == null)
-                    throw new OctopusSavingProductException(OctopusSavingProductExceptionEnum.PeriodicityIsNotSet);
+                    throw new OpenCbsSavingProductException(OpenCbsSavingProductExceptionEnum.PeriodicityIsNotSet);
             }
 
             return;
@@ -256,55 +256,55 @@ namespace OpenCBS.Services
         public bool ValidateProduct(ISavingProduct savingsProduct, int clientTypeCounter)
         {
             if (string.IsNullOrEmpty(savingsProduct.Name))
-                throw new OctopusSavingProductException(OctopusSavingProductExceptionEnum.NameIsEmpty);
+                throw new OpenCbsSavingProductException(OpenCbsSavingProductExceptionEnum.NameIsEmpty);
 
             if (string.IsNullOrEmpty(savingsProduct.Code))
-                throw new OctopusSavingProductException(OctopusSavingProductExceptionEnum.CodeIsEmpty);
+                throw new OpenCbsSavingProductException(OpenCbsSavingProductExceptionEnum.CodeIsEmpty);
 
             if (savingsProduct.Id == 0 && _savingProductManager.IsThisProductNameAlreadyExist(savingsProduct.Name))
-                throw new OctopusSavingProductException(OctopusSavingProductExceptionEnum.DuplicateProductName);
+                throw new OpenCbsSavingProductException(OpenCbsSavingProductExceptionEnum.DuplicateProductName);
 
             if (savingsProduct.Id == 0 && _savingProductManager.IsThisProductCodeAlreadyExist(savingsProduct.Code))
-                throw new OctopusSavingProductException(OctopusSavingProductExceptionEnum.DuplicateProductCode);
+                throw new OpenCbsSavingProductException(OpenCbsSavingProductExceptionEnum.DuplicateProductCode);
 
             if (!ServicesHelper.CheckMinMaxAndValueCorrectlyFilled(savingsProduct.InitialAmountMin, savingsProduct.InitialAmountMax, null))
-                throw new OctopusSavingProductException(OctopusSavingProductExceptionEnum.InitialAmountIsInvalid);
+                throw new OpenCbsSavingProductException(OpenCbsSavingProductExceptionEnum.InitialAmountIsInvalid);
 
             if (savingsProduct.InitialAmountMin < 0)
-                throw new OctopusSavingProductException(OctopusSavingProductExceptionEnum.InitialAmountMinIsInvalid);
+                throw new OpenCbsSavingProductException(OpenCbsSavingProductExceptionEnum.InitialAmountMinIsInvalid);
 
             if (!ServicesHelper.CheckIfValueBetweenMinAndMax(savingsProduct.BalanceMin, savingsProduct.BalanceMax, savingsProduct.InitialAmountMin))
-                throw new OctopusSavingProductException(OctopusSavingProductExceptionEnum.InitialAmountMinNotInBalance);
+                throw new OpenCbsSavingProductException(OpenCbsSavingProductExceptionEnum.InitialAmountMinNotInBalance);
 
             if (!ServicesHelper.CheckIfValueBetweenMinAndMax(savingsProduct.BalanceMin, savingsProduct.BalanceMax, savingsProduct.InitialAmountMax))
-                throw new OctopusSavingProductException(OctopusSavingProductExceptionEnum.InitialAmountMaxNotInBalance);
+                throw new OpenCbsSavingProductException(OpenCbsSavingProductExceptionEnum.InitialAmountMaxNotInBalance);
 
             if (!ServicesHelper.CheckMinMaxAndValueCorrectlyFilled(savingsProduct.BalanceMin, savingsProduct.BalanceMax, null))
-                throw new OctopusSavingProductException(OctopusSavingProductExceptionEnum.BalanceIsInvalid);
+                throw new OpenCbsSavingProductException(OpenCbsSavingProductExceptionEnum.BalanceIsInvalid);
 
             if (!ServicesHelper.CheckMinMaxAndValueCorrectlyFilled(savingsProduct.InterestRateMin, savingsProduct.InterestRateMax, savingsProduct.InterestRate))
-                throw new OctopusSavingProductException(OctopusSavingProductExceptionEnum.InterestRateMinMaxIsInvalid);
+                throw new OpenCbsSavingProductException(OpenCbsSavingProductExceptionEnum.InterestRateMinMaxIsInvalid);
 
             if (savingsProduct.InterestRate.HasValue && savingsProduct.InterestRate < 0)
-                throw new OctopusSavingProductException(OctopusSavingProductExceptionEnum.InterestRateIsInvalid);
+                throw new OpenCbsSavingProductException(OpenCbsSavingProductExceptionEnum.InterestRateIsInvalid);
 
             if (!savingsProduct.InterestRate.HasValue && savingsProduct.InterestRateMin < 0)
-                throw new OctopusSavingProductException(OctopusSavingProductExceptionEnum.InterestRateMinIsInvalid);
+                throw new OpenCbsSavingProductException(OpenCbsSavingProductExceptionEnum.InterestRateMinIsInvalid);
            
             if (savingsProduct.Currency == null)
-                throw new OctopusSavingProductException(OctopusSavingProductExceptionEnum.CurrencyIsEmpty);
+                throw new OpenCbsSavingProductException(OpenCbsSavingProductExceptionEnum.CurrencyIsEmpty);
 
             if (savingsProduct.Currency.Id == 0)
-                throw new OctopusSavingProductException(OctopusSavingProductExceptionEnum.CurrencyIsEmpty);
+                throw new OpenCbsSavingProductException(OpenCbsSavingProductExceptionEnum.CurrencyIsEmpty);
 
             if (clientTypeCounter < 1)
-                throw new OctopusSavingProductException(OctopusSavingProductExceptionEnum.ClientTypeIsInvalid);
+                throw new OpenCbsSavingProductException(OpenCbsSavingProductExceptionEnum.ClientTypeIsInvalid);
 
             if (!ServicesHelper.CheckMinMaxAndValueCorrectlyFilled(savingsProduct.EntryFeesMin, savingsProduct.EntryFeesMax, savingsProduct.EntryFees))
-                throw new OctopusSavingProductException(OctopusSavingProductExceptionEnum.EntryFeesMinMaxIsInvalid);
+                throw new OpenCbsSavingProductException(OpenCbsSavingProductExceptionEnum.EntryFeesMinMaxIsInvalid);
 
             if (savingsProduct.EntryFees.HasValue && savingsProduct.EntryFees.Value < 0)
-                throw new OctopusSavingProductException(OctopusSavingProductExceptionEnum.EntryFeesIsInvalid);
+                throw new OpenCbsSavingProductException(OpenCbsSavingProductExceptionEnum.EntryFeesIsInvalid);
 
             if (savingsProduct is SavingsBookProduct)
                 ValidateSavingBookProduct((SavingsBookProduct)savingsProduct);

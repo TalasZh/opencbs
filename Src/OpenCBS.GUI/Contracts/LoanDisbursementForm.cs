@@ -216,7 +216,7 @@ namespace OpenCBS.GUI.Contracts
                 {
                     if (_loan.CompulsorySavings == null)
                     {
-                        throw new OctopusSavingException(OctopusSavingExceptionEnum.NoCompulsorySavings);
+                        throw new OpenCbsSavingException(OpenCbsSavingExceptionEnum.NoCompulsorySavings);
                     }
 
                     if (_loan.CompulsorySavings.Status == OSavingsStatus.Active)
@@ -236,7 +236,7 @@ namespace OpenCBS.GUI.Contracts
                     }
                     else
                     {
-                        throw new OctopusSavingException(OctopusSavingExceptionEnum.CompulsorySavingsContractIsNotActive);
+                        throw new OpenCbsSavingException(OpenCbsSavingExceptionEnum.CompulsorySavingsContractIsNotActive);
                     }
                 }
                 else
