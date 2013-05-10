@@ -155,12 +155,6 @@
 				<File Id="OpenCBS.Reports.resources_1" Name="OpenCBS.Reports.resources.dll" Source="SourceDir\ru-RU\OpenCBS.Reports.resources.dll" />
               </Component>
             </Directory>
-            <Directory Id="DIR_RESSOURCES_KG" Name="ky-KG">
-              <Component Id="kg" Guid="F822CC12-2754-33BE-7611-0D3A29AAA978">
-                <File Id="OpenCBS.GUI.resources_2" Name="OpenCBS.GUI.resources.dll" Source="SourceDir\ky-KG\OpenCBS.GUI.resources.dll" />
-                <File Id="OpenCBS.MultiLanguageRessources.resources_2" Name="OpenCBS.MultiLanguageRessources.resources.dll" Source="SourceDir\ky-KG\OpenCBS.MultiLanguageRessources.resources.dll" />
-              </Component>
-            </Directory>
             <Directory Id="DIR_RESSOURCES_ES" Name="es-ES">
               <Component Id="es" Guid="F0AA0279-AA60-E9A6-F4D2-F52EC785F220">
                 <File Id="OpenCBS.GUI.resources.dll_3" Source="SourceDir\es-ES\OpenCBS.GUI.resources.dll" />
