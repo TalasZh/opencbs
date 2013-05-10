@@ -17,7 +17,7 @@ namespace OpenCBS.Manager.Currencies
         {
             const string q = @"INSERT INTO [Currencies] ([name], [code], [is_pivot], [is_swapped],use_cents)
                                     VALUES(@name, @code, @is_pivot, @is_swapped,@use_cents) SELECT SCOPE_IDENTITY()";
-            using (OctopusCommand c = new OctopusCommand(q, t.Connection, t))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, t.Connection, t))
             {
                 c.AddParam("@name", pCurrency.Name);
                 c.AddParam("@code", pCurrency.Code);
@@ -34,7 +34,7 @@ namespace OpenCBS.Manager.Currencies
                                             [is_pivot] = @is_pivot, [is_swapped] = @is_swapped, use_cents = @use_cents
                                     WHERE [id] = @currencyID";
             
-            using (OctopusCommand c = new OctopusCommand(q, t.Connection, t))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, t.Connection, t))
             {
                 c.AddParam("@currencyID", pCurrency.Id);
                 c.AddParam("@name", pCurrency.Name);
@@ -50,8 +50,8 @@ namespace OpenCBS.Manager.Currencies
             List<Currency> currencies = new List<Currency>();
             const string q = @"SELECT * FROM Currencies ORDER BY is_pivot DESC";
 
-            using (OctopusCommand c = new OctopusCommand(q, t.Connection, t))
-            using (OctopusReader r = c.ExecuteReader())
+            using (OpenCbsCommand c = new OpenCbsCommand(q, t.Connection, t))
+            using (OpenCbsReader r = c.ExecuteReader())
             {
                 if (r == null || r.Empty) return currencies;
                 while (r.Read())
@@ -76,8 +76,8 @@ namespace OpenCBS.Manager.Currencies
             const string q = "SELECT * FROM Currencies where is_pivot = 1";
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
-            using (OctopusReader r = c.ExecuteReader())
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
+            using (OpenCbsReader r = c.ExecuteReader())
             {
                 if (r == null || r.Empty) return pivot;
                 while (r.Read())
@@ -101,10 +101,10 @@ namespace OpenCBS.Manager.Currencies
         {
             const string q = @"SELECT name, code, is_pivot, is_swapped, use_cents FROM [Currencies] where id = @id";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@id", id);
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (r == null || r.Empty) return null;
 
@@ -126,10 +126,10 @@ namespace OpenCBS.Manager.Currencies
         {
             const string q = @"SELECT id, code, is_pivot, is_swapped, use_cents FROM [Currencies] WHERE name = @name";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@name", name);
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (r == null || r.Empty) return null;
 
@@ -151,10 +151,10 @@ namespace OpenCBS.Manager.Currencies
         //{
         //    const string q = @"SELECT id, name, code, is_pivot, is_swapped FROM [Currencies] where name = @name";
         //    using (SqlConnection conn = GetConnection())
-        //    using (OctopusCommand c = new OctopusCommand(q, conn))
+        //    using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
         //    {
         //        c.AddParam("@name", pName);
-        //        using (OctopusReader r = c.ExecuteReader())
+        //        using (OpenCbsReader r = c.ExecuteReader())
         //        {
         //            if (r == null || r.Empty) return null;
 
@@ -177,12 +177,12 @@ namespace OpenCBS.Manager.Currencies
         {
             const string q = @"SELECT * FROM [Currencies] where name = @name AND code = @code";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@code",pCode);
                 c.AddParam("@name", pName);
 
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (r == null || r.Empty) return false;
 
@@ -200,7 +200,7 @@ namespace OpenCBS.Manager.Currencies
                             INNER JOIN Credit ON Credit.package_id=Pack.id
                             WHERE Cur.id=@currency_id";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@currency_id", currencyId);
                 return (int)c.ExecuteScalar();

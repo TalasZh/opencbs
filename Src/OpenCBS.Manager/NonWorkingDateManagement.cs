@@ -39,8 +39,8 @@ namespace OpenCBS.Manager
                                     ORDER BY date";
 
             using (SqlConnection connection = GetConnection())
-            using (OctopusCommand select = new OctopusCommand(sqlText, connection))
-            using (OctopusReader reader = select.ExecuteReader())
+            using (OpenCbsCommand select = new OpenCbsCommand(sqlText, connection))
+            using (OpenCbsReader reader = select.ExecuteReader())
             {
                 while (reader.Read())
                 {
@@ -64,7 +64,7 @@ namespace OpenCBS.Manager
         {
             const string sqlText = "DELETE PublicHolidays";
             using (SqlConnection connection = GetConnection())
-            using (OctopusCommand cmd = new OctopusCommand(sqlText, connection))
+            using (OpenCbsCommand cmd = new OpenCbsCommand(sqlText, connection))
                 cmd.ExecuteNonQuery();
         }
 
@@ -73,7 +73,7 @@ namespace OpenCBS.Manager
         {
             const string sqlText = "INSERT INTO [PublicHolidays]([date], [name]) VALUES(@date, @name)";
             using(SqlConnection connection = GetConnection())
-            using (OctopusCommand cmd = new OctopusCommand(sqlText, connection))
+            using (OpenCbsCommand cmd = new OpenCbsCommand(sqlText, connection))
             {
                 cmd.AddParam("@date",Convert.ToDateTime(entry.Key));
                 cmd.AddParam("@name", entry.Value.ToString());
@@ -85,7 +85,7 @@ namespace OpenCBS.Manager
         {
             const string sqlText = "DELETE FROM [PublicHolidays] WHERE [date] = @date";
             using (SqlConnection connection = GetConnection())
-            using (OctopusCommand cmd = new OctopusCommand(sqlText, connection))
+            using (OpenCbsCommand cmd = new OpenCbsCommand(sqlText, connection))
             {
                 cmd.AddParam("@date", Convert.ToDateTime(entry.Key));
                 cmd.ExecuteNonQuery();
@@ -96,7 +96,7 @@ namespace OpenCBS.Manager
         {
             const string sqlText = "UPDATE [PublicHolidays] SET [name] = @name WHERE [date]= @date";
             using (SqlConnection connection = GetConnection())
-            using (OctopusCommand cmd = new OctopusCommand(sqlText, connection))
+            using (OpenCbsCommand cmd = new OpenCbsCommand(sqlText, connection))
             {
                 cmd.AddParam("@date", Convert.ToDateTime(entry.Key));
                 cmd.AddParam("@name", entry.Value.ToString());

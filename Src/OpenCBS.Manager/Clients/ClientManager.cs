@@ -90,7 +90,7 @@ namespace OpenCBS.Manager.Clients
                                         , branch_id = @branch_id
                                 WHERE id = @id";
 
-            using (OctopusCommand c = new OctopusCommand(q, pSqlTransac.Connection, pSqlTransac))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, pSqlTransac.Connection, pSqlTransac))
             {
                 c.AddParam("@zipCode", pTiers.ZipCode);
                 c.AddParam("@secondaryZipCode", pTiers.SecondaryZipCode);
@@ -242,7 +242,7 @@ namespace OpenCBS.Manager.Clients
                         )";
 
 
-            using (OctopusCommand c = new OctopusCommand(q, pSqlTransac.Connection, pSqlTransac))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, pSqlTransac.Connection, pSqlTransac))
             {
                 
                 c.AddParam("@handicapped", pPerson.Handicapped);
@@ -303,7 +303,7 @@ namespace OpenCBS.Manager.Clients
             string q =
                 @"UPDATE Persons SET identification_data = @identificationData
                                WHERE id = @id";
-            using (OctopusCommand c = new OctopusCommand(q, sqlTransac.Connection, sqlTransac))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, sqlTransac.Connection, sqlTransac))
             {
                 c.AddParam("@id", pPersonId);
                 c.AddParam("@identificationData", pPersonId.ToString());
@@ -401,11 +401,11 @@ namespace OpenCBS.Manager.Clients
 
             
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@id", pPersonId);
 
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (!r.Empty)
                     {
@@ -449,7 +449,7 @@ namespace OpenCBS.Manager.Clients
             return person;
         }
 
-        private Person GetPersonFromReader(OctopusReader r)
+        private Person GetPersonFromReader(OpenCbsReader r)
         {
             Person person;
             person = new Person
@@ -541,11 +541,11 @@ namespace OpenCBS.Manager.Clients
         {
             const string q = @"SELECT id FROM dbo.Persons WHERE first_name + ' ' + last_name = @name";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@name", name);
                 int id;
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (r.Empty) return null;
                     r.Read();
@@ -571,7 +571,7 @@ namespace OpenCBS.Manager.Clients
                 @"INSERT INTO [ClientBranchHistory] (date_changed, branch_from_id, branch_to_id, client_id, user_id)
             VALUES(@date, @branch_from_id, @branch_to_id, @client_id, @user_id)";
 
-            using (OctopusCommand c = new OctopusCommand(q, sqlTransaction.Connection, sqlTransaction))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, sqlTransaction.Connection, sqlTransaction))
             {
                 c.AddParam("@date", TimeProvider.Today);
                 c.AddParam("@branch_from_id", oldClient.Branch.Id);
@@ -629,7 +629,7 @@ namespace OpenCBS.Manager.Clients
                                 WHERE id = @id";
 
 
-            using (OctopusCommand c = new OctopusCommand(q, sqlTransac.Connection, sqlTransac))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, sqlTransac.Connection, sqlTransac))
             {
 
                 var formatInfo = new NameFormatInfo();
@@ -698,11 +698,11 @@ namespace OpenCBS.Manager.Clients
                                FROM [PersonGroupBelonging] 
                                WHERE person_id = @id AND currently_in = 1";
 
-            using (OctopusCommand c = new OctopusCommand(q, transac.Connection, transac))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, transac.Connection, transac))
             {
                 c.AddParam("@id", personId);
 
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     r.Read();
                     if (!r.Empty)
@@ -725,12 +725,12 @@ namespace OpenCBS.Manager.Clients
                               AND currently_in = 1";
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@id", personId);
                 c.AddParam("@group_id", groupId);
 
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     r.Read();
                     if (!r.Empty)
@@ -752,10 +752,10 @@ namespace OpenCBS.Manager.Clients
                             WHERE person_id = @id
                               AND currently_in = 1";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@id", personId);
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     r.Read();
                     if (!r.Empty)
@@ -779,10 +779,10 @@ namespace OpenCBS.Manager.Clients
                               AND Tiers.active = 1";
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@id", personId);
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     r.Read();
                     if (!r.Empty)
@@ -826,7 +826,7 @@ namespace OpenCBS.Manager.Clients
                                 @meeting_day
                             )";
 
-            using (OctopusCommand c = new OctopusCommand(q, sqlTransac.Connection, sqlTransac))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, sqlTransac.Connection, sqlTransac))
             {
                 c.AddParam("@id", tiersId);
                 c.AddParam("@name", group.Name);
@@ -880,7 +880,7 @@ namespace OpenCBS.Manager.Clients
                                         ,@leftDate
                                     )";
 
-            using (OctopusCommand c = new OctopusCommand(q, sqlTransac.Connection, sqlTransac))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, sqlTransac.Connection, sqlTransac))
             {
                 c.AddParam("@personId", pMember.Tiers.Id);
                 c.AddParam("@groupId", group.Id);
@@ -902,7 +902,7 @@ namespace OpenCBS.Manager.Clients
                                WHERE [person_id]= @personId
                                AND [group_id]= @groupId";
 
-            using (OctopusCommand c = new OctopusCommand(q, sqlTransac.Connection, sqlTransac))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, sqlTransac.Connection, sqlTransac))
             {
                 c.AddParam("@personId", pMember.Tiers.Id);
                 c.AddParam("@groupId", groupId);
@@ -922,7 +922,7 @@ namespace OpenCBS.Manager.Clients
                                WHERE group_id = @groupId 
                                AND person_id = @personId";
 
-            using (OctopusCommand c = new OctopusCommand(q, sqlTransac.Connection, sqlTransac))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, sqlTransac.Connection, sqlTransac))
             {
                 c.AddParam("@groupId", groupId);
                 c.AddParam("@personId", personId);
@@ -933,7 +933,7 @@ namespace OpenCBS.Manager.Clients
 
             q = @"UPDATE [Tiers] SET active = 0 WHERE id = @personId";
 
-            using (OctopusCommand c = new OctopusCommand(q, sqlTransac.Connection, sqlTransac))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, sqlTransac.Connection, sqlTransac))
             {
                 c.AddParam("@personId", personId);
                 c.ExecuteNonQuery();
@@ -948,7 +948,7 @@ namespace OpenCBS.Manager.Clients
                                 WHERE village_id = @village_id 
                                 AND person_id = @person_id";
             
-            using (OctopusCommand c = new OctopusCommand(q, t.Connection, t))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, t.Connection, t))
             {
                 c.AddParam("@village_id", village_id);
                 c.AddParam("@person_id", person_id);
@@ -966,10 +966,10 @@ namespace OpenCBS.Manager.Clients
                                       AND VillagesPersons.person_id = @personId";
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@personId", pPersonId);
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (!r.Empty)
                     {
@@ -1000,10 +1000,10 @@ namespace OpenCBS.Manager.Clients
 
             using (SqlConnection conn = GetConnection())
             {
-                using (OctopusCommand c = new OctopusCommand(q, conn))
+                using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
                 {
                     c.AddParam("@personId", pPersonId);
-                    using (OctopusReader r = c.ExecuteReader())
+                    using (OpenCbsReader r = c.ExecuteReader())
                     {
                         if (!r.Empty)
                         {
@@ -1080,12 +1080,12 @@ namespace OpenCBS.Manager.Clients
                 WHERE Groups.id = @id";
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
 
                 c.AddParam("@id", pGroupId);
 
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (r != null && !r.Empty)
                     {
@@ -1218,12 +1218,12 @@ namespace OpenCBS.Manager.Clients
                             WHERE Villages.id = @id";
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
 
                 c.AddParam("@id", id);
 
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (r != null && !r.Empty)
                     {
@@ -1257,7 +1257,7 @@ namespace OpenCBS.Manager.Clients
             return village;
         }
 
-        private Village GetVillageFromReader(OctopusReader r)
+        private Village GetVillageFromReader(OpenCbsReader r)
         {
             Village village;
             village = new Village
@@ -1321,10 +1321,10 @@ namespace OpenCBS.Manager.Clients
                 }
             }
 
-            using (OctopusCommand c = new OctopusCommand(q, transac.Connection, transac))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, transac.Connection, transac))
             {
                 c.AddParam("@id", groupId);
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (r != null)
                     {
@@ -1378,10 +1378,10 @@ namespace OpenCBS.Manager.Clients
                     q += " AND currently_in = 0";
                 }
             }
-            using (OctopusCommand c = new OctopusCommand(q, t.Connection, t))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, t.Connection, t))
             {
                 c.AddParam("@id", id);
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (r != null)
                     {
@@ -1396,7 +1396,7 @@ namespace OpenCBS.Manager.Clients
             return retval;
         }
 
-        private VillageMember GetMemberFromReader(OctopusReader r)
+        private VillageMember GetMemberFromReader(OpenCbsReader r)
         {
             return new VillageMember
                        {
@@ -1450,12 +1450,12 @@ namespace OpenCBS.Manager.Clients
                                   AND l.group_id = @group_id";
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@group_id", pGroupId);
                 c.AddParam("@contract_id", pContractId);
 
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (r != null)
                     {
@@ -1504,7 +1504,7 @@ namespace OpenCBS.Manager.Clients
                                      [meeting_day] = @meeting_day 
                                    WHERE id = @id";
 
-            using (OctopusCommand c = new OctopusCommand(q, sqlTransac.Connection, sqlTransac))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, sqlTransac.Connection, sqlTransac))
             {
                 c.AddParam("@id", group.Id);
                 c.AddParam("@name", group.Name);
@@ -1559,11 +1559,11 @@ namespace OpenCBS.Manager.Clients
             string q = "SELECT group_id FROM PersonGroupBelonging WHERE person_id = @personId";
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@personId", persId);
 
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     while (r.Read())
                     {
@@ -1607,7 +1607,7 @@ namespace OpenCBS.Manager.Clients
                 "WHERE 1 = 1" + BuildWhereConditionsForSearchClients(pQuery, OClientTypes.Person);
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
 
                 c.AddParam("@name", string.Format("%{0}%", pQuery));
@@ -1653,7 +1653,7 @@ namespace OpenCBS.Manager.Clients
                 "WHERE 1 = 1" + BuildWhereConditionsForSearchClients(pQuery, OClientTypes.Group);
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@name", string.Format("%{0}%", pQuery));
                 c.AddParam("@district", string.Format("%{0}%", pQuery));
@@ -1670,7 +1670,7 @@ namespace OpenCBS.Manager.Clients
                 "WHERE 1 = 1" + BuildWhereConditionsForSearchClients(pQuery, OClientTypes.Corporate);
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
 
                 c.AddParam("@name", string.Format("%{0}%", pQuery));
@@ -1686,7 +1686,7 @@ namespace OpenCBS.Manager.Clients
             string q = pId == 0 ? "SELECT COUNT(*) FROM Persons WHERE identification_data = @data" : "SELECT COUNT(*) FROM Persons WHERE identification_data = @data AND id <> @id";
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@data", pIdentificationData);
                 if (pId != 0)
@@ -1712,10 +1712,10 @@ namespace OpenCBS.Manager.Clients
             string q = "SELECT id, first_name, last_name, identification_data FROM Persons WHERE id!=@id AND (" + param + ")";
             List<Person> _persons = new List<Person>();
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@id", pID);
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (!r.Empty)
                     {
@@ -1741,7 +1741,7 @@ namespace OpenCBS.Manager.Clients
             List<ClientSearchResult> list = new List<ClientSearchResult>();
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
 
                 c.AddParam("@name", string.Format("%{0}%", pQuery));
@@ -1753,7 +1753,7 @@ namespace OpenCBS.Manager.Clients
                     c.AddParam("@passportNumber", string.Format("%{0}%", pQuery));
                 }
 
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (!r.Empty)
                     {
@@ -1787,14 +1787,14 @@ namespace OpenCBS.Manager.Clients
             List<ClientSearchResult> list = new List<ClientSearchResult>();
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@name", string.Format("%{0}%", pQuery));
                 c.AddParam("@district", string.Format("%{0}%", pQuery));
                 c.AddParam("@city", string.Format("%{0}%", pQuery));
                 c.AddParam("@siret", string.Format("%{0}%", pQuery));
 
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (!r.Empty)
                     {
@@ -1975,9 +1975,9 @@ namespace OpenCBS.Manager.Clients
                             INNER JOIN Persons ON Tiers.id = Persons.id";
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (!r.Empty)
                     {
@@ -2041,7 +2041,7 @@ namespace OpenCBS.Manager.Clients
             string pSqlText = q.ConstructSQLEntityByCriteresProxy(20, (pageNumber - 1) * 20);
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(pSqlText, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(pSqlText, conn))
             {
 
                 foreach (var item in q.DynamiqParameters())
@@ -2051,7 +2051,7 @@ namespace OpenCBS.Manager.Clients
 
                 OClientTypes pClientType = OClientTypes.Person;
 
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (!r.Empty)
                     {
@@ -2101,14 +2101,14 @@ namespace OpenCBS.Manager.Clients
             string sqlText = q.ConstructSQLEntityByCriteresProxy(20, (pageNumber - 1) * 20);
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(sqlText, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(sqlText, conn))
             {
                 foreach (var item in q.DynamiqParameters())
                 {
                     c.AddParam(item.Key, string.Format("%{0}%", item.Value));
                 }
                 c.AddParam("@user_id", User.CurrentUser.Id);
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (null == r || r.Empty) return list;
                     while (r.Read())
@@ -2161,12 +2161,12 @@ namespace OpenCBS.Manager.Clients
             string pSqlText = q.ConstructSQLEntityByCriteresProxy(20, (pageNumber - 1) * 20);
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(pSqlText, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(pSqlText, conn))
             {
                 foreach (var item in q.DynamiqParameters())
                     c.AddParam(item.Key, string.Format("%{0}%", item.Value));
 
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (!r.Empty)
                     {
@@ -2205,7 +2205,7 @@ namespace OpenCBS.Manager.Clients
             string pSqlText = q.ConstructSQLEntityByCriteresProxy(20, (pageNumber - 1) * 20);
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(pSqlText, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(pSqlText, conn))
             {
 
                 foreach (var item in q.DynamiqParameters())
@@ -2213,7 +2213,7 @@ namespace OpenCBS.Manager.Clients
                     c.AddParam(item.Key, string.Format("%{0}%", item.Value));
                 }
 
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (!r.Empty)
                     {
@@ -2255,7 +2255,7 @@ namespace OpenCBS.Manager.Clients
             string pSqlText = q.ConstructSQLEntityByCriteresProxy(20, (pageNumber - 1) * 20);
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(pSqlText, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(pSqlText, conn))
             {
 
                 foreach (var item in q.DynamiqParameters())
@@ -2263,7 +2263,7 @@ namespace OpenCBS.Manager.Clients
                     c.AddParam(item.Key, string.Format("%{0}%", item.Value));
                 }
 
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (!r.Empty)
                     {
@@ -2309,7 +2309,7 @@ namespace OpenCBS.Manager.Clients
             string pSqlText = q.ConstructSQLEntityNumberProxy();
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(pSqlText, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(pSqlText, conn))
             {
 
                 foreach (var item in q.DynamiqParameters())
@@ -2336,7 +2336,7 @@ namespace OpenCBS.Manager.Clients
             string pSqlText = q.ConstructSQLEntityNumberProxy();
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(pSqlText, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(pSqlText, conn))
             {
 
                 foreach (var item in q.DynamiqParameters())
@@ -2360,7 +2360,7 @@ namespace OpenCBS.Manager.Clients
             string pSqlText = q.ConstructSQLEntityNumberProxy();
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(pSqlText, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(pSqlText, conn))
             {
 
                 foreach (var item in q.DynamiqParameters())
@@ -2384,7 +2384,7 @@ namespace OpenCBS.Manager.Clients
             string pSqlText = q.ConstructSQLEntityNumberProxy();
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(pSqlText, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(pSqlText, conn))
             {
                 foreach (var item in q.DynamiqParameters())
                 {
@@ -2397,7 +2397,7 @@ namespace OpenCBS.Manager.Clients
         public int GetFoundRecordsNumber(string query, int isActive, int includePersons, int includeGroups, int includeVillages)
         {
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = GenerateSearchQuery(true, query, isActive, 0, includePersons, includeGroups, includeVillages, conn))
+            using (OpenCbsCommand c = GenerateSearchQuery(true, query, isActive, 0, includePersons, includeGroups, includeVillages, conn))
                 return (int) c.ExecuteScalar();
         }
 
@@ -2407,8 +2407,8 @@ namespace OpenCBS.Manager.Clients
 
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = GenerateSearchQuery(false, pQuery, activeOnly, currentPage, includePersons, includeGroups, includeVillages, conn))
-            using (OctopusReader r = c.ExecuteReader())
+            using (OpenCbsCommand c = GenerateSearchQuery(false, pQuery, activeOnly, currentPage, includePersons, includeGroups, includeVillages, conn))
+            using (OpenCbsReader r = c.ExecuteReader())
             {
                 if (!r.Empty)
                 {
@@ -2439,7 +2439,7 @@ namespace OpenCBS.Manager.Clients
             return list;
         }
 
-        private OctopusCommand GenerateSearchQuery(bool count, String query, int activeOnly, int currentPage,
+        private OpenCbsCommand GenerateSearchQuery(bool count, String query, int activeOnly, int currentPage,
                                        int includePersons, int includeGroups, int includeVillages, SqlConnection conn)
         {
             string sign;
@@ -2556,7 +2556,7 @@ namespace OpenCBS.Manager.Clients
 
             if (!count) sqlText += ") matable where matable._rowNum between @startRow and @endRow order by name";
 
-            var select = new OctopusCommand(sqlText, conn);
+            var select = new OpenCbsCommand(sqlText, conn);
             
             select.AddParam("@district", "%" + query + "%");
             select.AddParam("@city", "%" + query + "%");
@@ -2599,7 +2599,7 @@ namespace OpenCBS.Manager.Clients
             string sqlText = q.ConstructSQLEntityNumberProxy();
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(sqlText, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(sqlText, conn))
             {
                 foreach (var item in q.DynamiqParameters())
                 {
@@ -2614,7 +2614,7 @@ namespace OpenCBS.Manager.Clients
         {
             string q = @"SELECT COUNT(*) FROM Tiers INNER JOIN Groups ON Tiers.id = Groups.id WHERE { fn UCASE(Groups.name) } = @name AND Tiers.district_id=@disctrictId";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@name", pName.ToUpper());
                 c.AddParam("@disctrictId", pDistrict.Id);
@@ -2631,7 +2631,7 @@ namespace OpenCBS.Manager.Clients
                                INNER JOIN Tiers ON Tiers.id = Projects.tiers_id
                                WHERE Contracts.id = @id";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@id", pId);
 
@@ -2666,7 +2666,7 @@ namespace OpenCBS.Manager.Clients
                                WHERE Projects.id = @id";
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@id", pId);
 
@@ -2688,7 +2688,7 @@ namespace OpenCBS.Manager.Clients
                                FROM SavingContracts
                                WHERE SavingContracts.id =@id";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@id", pId);
 
@@ -2713,7 +2713,7 @@ namespace OpenCBS.Manager.Clients
             VALUES(@id,@name,@deleted,@sigle,@small_name,@volunteer_count,@agrement_date,@agrement_solidarity,
             @insertionType,@employee_count,@siret,@activity_id,@legalForm,@fiscalStatus,@registre, @date_create)";
 
-            using (OctopusCommand c = new OctopusCommand(q, sqlTransac.Connection, sqlTransac))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, sqlTransac.Connection, sqlTransac))
             {
                 c.AddParam("@id", body.Id);
                 c.AddParam("@name", body.Name);
@@ -2754,7 +2754,7 @@ namespace OpenCBS.Manager.Clients
         {
             string q = "INSERT INTO [CorporatePersonBelonging] (corporate_id, person_id, position) VALUES (@corporate_id, @person_id, @position)";
 
-            using (OctopusCommand c = new OctopusCommand(q, sqlTransac.Connection, sqlTransac))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, sqlTransac.Connection, sqlTransac))
             {
                 c.AddParam("@corporate_id", pCorporateId);
                 c.AddParam("@person_id", contact.Tiers.Id);
@@ -2766,7 +2766,7 @@ namespace OpenCBS.Manager.Clients
         public void DeleteBodyPersonByCorporate(int pCorporateId, SqlTransaction sqlTransac)
         {
             string q = "DELETE FROM [CorporatePersonBelonging] WHERE corporate_id=@corporate_id";
-            using (OctopusCommand c = new OctopusCommand(q, sqlTransac.Connection, sqlTransac))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, sqlTransac.Connection, sqlTransac))
             {
                 c.AddParam("@corporate_id", pCorporateId);
                 c.ExecuteScalar();
@@ -2782,7 +2782,7 @@ namespace OpenCBS.Manager.Clients
                 [siret]=@siret,[insertionType]=@insertionType,[activity_id]=@activity_id,[fiscal_status]=@fiscalStatus,[registre]=@registre,
                 [legalForm]=@legalForm,[agrement_date]=@agrement_date,[date_create]=@date_create WHERE [id] = @id";
 
-            using (OctopusCommand c = new OctopusCommand(q, sqlTransac.Connection, sqlTransac))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, sqlTransac.Connection, sqlTransac))
             {
                 c.AddParam("@id", body.Id);
                 c.AddParam("@name", body.Name);
@@ -2827,11 +2827,11 @@ namespace OpenCBS.Manager.Clients
             WHERE [deleted] = 0 AND Tiers.id=@id";
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@id", id);
 
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (r != null && !r.Empty)
                     {
@@ -2938,11 +2938,11 @@ namespace OpenCBS.Manager.Clients
             List<Contact> contacts = new List<Contact>();
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(sqlContactText, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(sqlContactText, conn))
             {
                 c.AddParam("@id", id);
 
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (r != null && !r.Empty)
                     {
@@ -2979,8 +2979,8 @@ namespace OpenCBS.Manager.Clients
             var liste = new List<ContactRole>();
             var q = @"SELECT * FROM Roles";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
-            using (OctopusReader r = c.ExecuteReader())
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
+            using (OpenCbsReader r = c.ExecuteReader())
             {
                 while (r.Read())
                 {
@@ -3000,7 +3000,7 @@ namespace OpenCBS.Manager.Clients
         {
             const string q = "UPDATE [Tiers] SET [status] = @status, [active] = @active WHERE id = @id";
 
-            using (OctopusCommand c = new OctopusCommand(q, sqlTransaction.Connection, sqlTransaction))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, sqlTransaction.Connection, sqlTransaction))
             {
                 c.AddParam("@id", pClient.Id);
                 c.AddParam("@status", (int)pClient.Status);
@@ -3020,7 +3020,7 @@ namespace OpenCBS.Manager.Clients
                                      FROM LinkGuarantorCredit lgc
                                      INNER JOIN Contracts c ON lgc.contract_id = c.id
                                      WHERE tiers_id = @id AND c.closed = 0";
-            using (OctopusCommand c = new OctopusCommand(q,sqlTransaction.Connection, sqlTransaction))
+            using (OpenCbsCommand c = new OpenCbsCommand(q,sqlTransaction.Connection, sqlTransaction))
             {
                 c.AddParam("@id", TiersID);
                 return Convert.ToInt32(c.ExecuteScalar());
@@ -3032,7 +3032,7 @@ namespace OpenCBS.Manager.Clients
             const string q = @"UPDATE Persons
                                  SET [loan_officer_id]=@loan_officer_id
                                  WHERE Persons.id=@person_id";
-            using (OctopusCommand c = new OctopusCommand(q, transaction.Connection, transaction))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, transaction.Connection, transaction))
             {
                 c.AddParam("@person_id", clientId);
                 c.AddParam("@loan_officer_id", loanOfficerId);
@@ -3046,7 +3046,7 @@ namespace OpenCBS.Manager.Clients
                                   @"UPDATE Groups
                                   SET loan_officer_id=@loan_officer_id
                                   WHERE Groups.id=@group_id";
-            using (OctopusCommand c = new OctopusCommand(q, transaction.Connection, transaction))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, transaction.Connection, transaction))
             {
                 c.AddParam("@group_id", groupId);
                 c.AddParam("@loan_officer_id", loanOfficerId);
@@ -3061,7 +3061,7 @@ namespace OpenCBS.Manager.Clients
                                   SET loan_officer_id=@loan_officer_id
                                   WHERE Corporates.id=@corporate_id";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@corporate_id", corporateId);
                 c.AddParam("@loan_officer_id", loanOfficerId);
@@ -3076,7 +3076,7 @@ namespace OpenCBS.Manager.Clients
                 "SELECT j.tiers_id FROM dbo.Projects AS j " +
                 "LEFT JOIN dbo.Contracts AS c ON c.project_id = j.id " +
                 "WHERE c.id = @contractId)";
-            using (OctopusCommand c = new OctopusCommand(q, t.Connection, t))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, t.Connection, t))
             {
                 c.AddParam("@contractId", contractId);
                 c.ExecuteNonQuery();
@@ -3085,7 +3085,7 @@ namespace OpenCBS.Manager.Clients
             const string query2 = "UPDATE dbo.Tiers SET loan_cycle = loan_cycle + 1 " +
                 "WHERE id IN (" +
                 "SELECT person_id FROM dbo.LoanShareAmounts WHERE contract_id = @contractId)";
-            using (OctopusCommand cmd = new OctopusCommand(query2, t.Connection, t))
+            using (OpenCbsCommand cmd = new OpenCbsCommand(query2, t.Connection, t))
             {
                 cmd.AddParam("@contractId", contractId);
                 cmd.ExecuteNonQuery();
@@ -3099,7 +3099,7 @@ namespace OpenCBS.Manager.Clients
                 "SELECT j.tiers_id FROM dbo.Projects AS j " +
                 "LEFT JOIN dbo.Contracts AS c ON c.project_id = j.id " +
                 "WHERE c.id = @contractId)";
-            using (OctopusCommand c = new OctopusCommand(q, t.Connection, t))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, t.Connection, t))
             {
                 c.AddParam("@contractId", contractId);
                 c.ExecuteNonQuery();
@@ -3108,7 +3108,7 @@ namespace OpenCBS.Manager.Clients
             const string query2 = "UPDATE dbo.Tiers SET loan_cycle = loan_cycle - 1 " +
                 "WHERE id IN (" +
                 "SELECT person_id FROM dbo.LoanShareAmounts WHERE contract_id = @contractId)";
-            using (OctopusCommand cmd = new OctopusCommand(query2, t.Connection, t))
+            using (OpenCbsCommand cmd = new OpenCbsCommand(query2, t.Connection, t))
             {
                 cmd.AddParam("@contractId", contractId);
                 cmd.ExecuteNonQuery();
@@ -3120,9 +3120,9 @@ namespace OpenCBS.Manager.Clients
             List<string> list = new List<string>();
             string q = string.Format("SELECT * FROM {0}", pFieldsType);
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (r == null || r.Empty) return new List<string>();
                     while (r.Read())
@@ -3155,7 +3155,7 @@ namespace OpenCBS.Manager.Clients
                                          @meeting_day
                                     )";
 
-            using (OctopusCommand c = new OctopusCommand(q, pSqlTransac.Connection, pSqlTransac))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, pSqlTransac.Connection, pSqlTransac))
             {
                 c.AddParam("@id", id);
                 c.AddParam("@name", pVillage.Name);
@@ -3182,7 +3182,7 @@ namespace OpenCBS.Manager.Clients
                                          [meeting_day] = @meeting_day 
                                      WHERE id = @id";
 
-            using (OctopusCommand c = new OctopusCommand(q, pSqlTransac.Connection, pSqlTransac))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, pSqlTransac.Connection, pSqlTransac))
             {
                 SetNonSolidaryGroup(pVillage, c);
                 c.ExecuteNonQuery();
@@ -3214,7 +3214,7 @@ namespace OpenCBS.Manager.Clients
             }
         }
 
-        private void SetNonSolidaryGroup(Village pVillage, OctopusCommand c)
+        private void SetNonSolidaryGroup(Village pVillage, OpenCbsCommand c)
         {
             c.AddParam("@id", pVillage.Id);
             c.AddParam("@name", pVillage.Name);
@@ -3247,7 +3247,7 @@ namespace OpenCBS.Manager.Clients
                                     @currentlyIn
                                 )";
 
-            using (OctopusCommand c = new OctopusCommand(q, pSqlTransac.Connection, pSqlTransac))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, pSqlTransac.Connection, pSqlTransac))
             {
                 c.AddParam("@village_id", pVillage.Id);
                 c.AddParam("@person_id", pMember.Tiers.Id);
@@ -3267,7 +3267,7 @@ namespace OpenCBS.Manager.Clients
                                 WHERE village_id = @village_id
                                 AND person_id = @person_id";
             
-            using (OctopusCommand c = new OctopusCommand(q, pSqlTransac.Connection, pSqlTransac))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, pSqlTransac.Connection, pSqlTransac))
             {
                 c.AddParam("@village_id", pVillage.Id);
                 c.AddParam("@person_id", pMember.Tiers.Id);
@@ -3374,7 +3374,7 @@ namespace OpenCBS.Manager.Clients
                                         @branchId) 
                                       SELECT SCOPE_IDENTITY()";
 
-            using (OctopusCommand c = new OctopusCommand(q, pSqlTransac.Connection, pSqlTransac))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, pSqlTransac.Connection, pSqlTransac))
             {
                 c.AddParam("@creationDate", TimeProvider.Today);
                 c.AddParam("@clientTypeCode", _GetClientChar(pTiers.Type));
@@ -3434,12 +3434,12 @@ namespace OpenCBS.Manager.Clients
                               AND contract_id = @contract_id";
             int personId;
 
-            using (OctopusCommand c = new OctopusCommand(q, pSqlTransac.Connection, pSqlTransac))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, pSqlTransac.Connection, pSqlTransac))
             {
                 c.AddParam("@event_id", pEventId);
                 c.AddParam("@contract_id", pLoan.Id);
 
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (r != null && !r.Empty)
                     {
@@ -3457,7 +3457,7 @@ namespace OpenCBS.Manager.Clients
                         WHERE group_id  = @groupId 
                         AND person_id = @personId";
 
-            using (OctopusCommand c = new OctopusCommand(q, pSqlTransac.Connection, pSqlTransac))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, pSqlTransac.Connection, pSqlTransac))
             {
                 c.AddParam("@groupId", pLoan.Project.Client.Id);
                 c.AddParam("@personId", personId);
@@ -3471,7 +3471,7 @@ namespace OpenCBS.Manager.Clients
                              AND group_id = @group_id
                              AND contract_id = @contract_id";
 
-            using (OctopusCommand c = new OctopusCommand(q, pSqlTransac.Connection, pSqlTransac))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, pSqlTransac.Connection, pSqlTransac))
             {
                 c.AddParam("@payment_date", null);
                 c.AddParam("@event_id", null);
@@ -3496,7 +3496,7 @@ namespace OpenCBS.Manager.Clients
             const string q = @"SELECT id FROM dbo.Persons
             WHERE identification_data = @passport";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@passport", passport);
                 object val = c.ExecuteScalar();
@@ -3509,7 +3509,7 @@ namespace OpenCBS.Manager.Clients
             const string q = @"SELECT id FROM dbo.Groups
             WHERE name COLLATE Latin1_General_CS_AS = @name";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@name", name);
                 object val = c.ExecuteScalar();
@@ -3524,7 +3524,7 @@ namespace OpenCBS.Manager.Clients
             inner join dbo.Projects j on j.id = c.project_id
             where c.contract_code = @code";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@code", code);
                 object value = c.ExecuteScalar();
@@ -3539,7 +3539,7 @@ namespace OpenCBS.Manager.Clients
                                  "SELECT @result = @result + COUNT(1) FROM VillagesPersons WHERE person_id = @personId AND currently_in = 1" +
                                  "SELECT @result";
             using (var connection = GetConnection())
-            using (var command = new OctopusCommand(query, connection))
+            using (var command = new OpenCbsCommand(query, connection))
             {
                 command.AddParam("personId", personId);
                 return Convert.ToInt32(command.ExecuteScalar());

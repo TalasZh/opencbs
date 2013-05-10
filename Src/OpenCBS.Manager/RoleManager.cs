@@ -37,7 +37,7 @@ namespace OpenCBS.Manager
 
             using (SqlConnection conn = GetConnection())
             {
-                using (OctopusCommand c = new OctopusCommand(q, conn))
+                using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
                 {
                     c.AddParam("@deleted", false);
                     c.AddParam("@code", pRole.RoleName);
@@ -71,7 +71,7 @@ namespace OpenCBS.Manager
 
             using (SqlConnection conn = GetConnection())
             {
-                using (OctopusCommand c = new OctopusCommand(q, conn))
+                using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
                 {
                     c.AddParam("@RoleId", pRole.Id);
                     c.AddParam("@deleted", pRole.IsDeleted);
@@ -99,7 +99,7 @@ namespace OpenCBS.Manager
 
             using (SqlConnection conn = GetConnection())
             {
-                using (OctopusCommand c = new OctopusCommand(q, conn))
+                using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
                 {
                     c.AddParam("@code", pRoleName);
                     c.ExecuteNonQuery();
@@ -123,10 +123,10 @@ namespace OpenCBS.Manager
                 q += " AND [deleted] = 0";
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@id", pRoleId);
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (r != null)
                     {
@@ -152,10 +152,10 @@ namespace OpenCBS.Manager
             int foundId = 0;
             using (SqlConnection conn = GetConnection())
             {
-                using (OctopusCommand c = new OctopusCommand(q, conn))
+                using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
                 {
                     c.AddParam("@roleCode", pRoleName);
-                    using (OctopusReader r = c.ExecuteReader())
+                    using (OpenCbsReader r = c.ExecuteReader())
                     {
                         if (r != null)
                         {
@@ -193,9 +193,9 @@ namespace OpenCBS.Manager
 
             using (SqlConnection conn = GetConnection())
             {
-                using (OctopusCommand c = new OctopusCommand(q, conn))
+                using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
                 {
-                    using (OctopusReader r = c.ExecuteReader())
+                    using (OpenCbsReader r = c.ExecuteReader())
                     {
                         if (r != null)
                         {
@@ -228,11 +228,11 @@ namespace OpenCBS.Manager
 
             using (SqlConnection conn = GetConnection())
             {
-                using (OctopusCommand c = new OctopusCommand(q, conn))
+                using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
                 {
                     c.AddParam("@name", pRoleName);
                     Role role;
-                    using (OctopusReader r = c.ExecuteReader())
+                    using (OpenCbsReader r = c.ExecuteReader())
                     {
                         if (r == null || r.Empty) return null;
 
@@ -257,7 +257,7 @@ namespace OpenCBS.Manager
 
                     using (SqlConnection conn = GetConnection())
                     {
-                        using (OctopusCommand c = new OctopusCommand(q, conn))
+                        using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
                         {
                             c.AddParam("@menu", mi.Name);
                             c.ExecuteScalar();
@@ -288,11 +288,11 @@ namespace OpenCBS.Manager
 
             using (SqlConnection conn = GetConnection())
             {
-                using (OctopusCommand c = new OctopusCommand(q, conn))
+                using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
                 {
                     c.AddParam("@roleId", pRoleId);
 
-                    using (OctopusReader r = c.ExecuteReader())
+                    using (OpenCbsReader r = c.ExecuteReader())
                     {
                         if (r != null)
                         {
@@ -329,11 +329,11 @@ namespace OpenCBS.Manager
 
             using (SqlConnection conn = GetConnection())
             {
-                using (OctopusCommand c = new OctopusCommand(q, conn))
+                using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
                 {
                     c.AddParam("@roleId", pRoleId);
 
-                    using (OctopusReader r = c.ExecuteReader())
+                    using (OpenCbsReader r = c.ExecuteReader())
                     {
                         if (r != null)
                         {
@@ -362,11 +362,11 @@ namespace OpenCBS.Manager
 
             using (SqlConnection conn = GetConnection())
             {
-                using (OctopusCommand c = new OctopusCommand(q, conn))
+                using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
                 {
                     c.AddParam("@roleId", pRoleId);
                     c.AddParam("@actionId", pAction.Id);
-                    using (OctopusReader r = c.ExecuteReader())
+                    using (OpenCbsReader r = c.ExecuteReader())
                     {
                         if (r != null)
                         {
@@ -390,12 +390,12 @@ namespace OpenCBS.Manager
 
                 using (SqlConnection conn = GetConnection())
                 {
-                    using (OctopusCommand c = new OctopusCommand(q, conn))
+                    using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
                     {
                         c.AddParam("@roleId", pRole.Id);
                         c.AddParam("@menuId", kvp.Key.Id);
 
-                        using (OctopusReader r = c.ExecuteReader())
+                        using (OpenCbsReader r = c.ExecuteReader())
                         {
                             if (r != null)
                             {
@@ -433,11 +433,11 @@ namespace OpenCBS.Manager
 
                 using (SqlConnection conn = GetConnection())
                 {
-                    using (OctopusCommand c = new OctopusCommand(q, conn))
+                    using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
                     {
                         c.AddParam("@roleId", pRole.Id);
                         c.AddParam("@actionId", kvp.Key.Id);
-                        using (OctopusReader r = c.ExecuteReader())
+                        using (OpenCbsReader r = c.ExecuteReader())
                         {
                             if (r != null)
                             {
@@ -470,7 +470,7 @@ namespace OpenCBS.Manager
 
             using (SqlConnection conn = GetConnection())
             {
-                using (OctopusCommand c = new OctopusCommand(q, conn))
+                using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
                 {
                     c.AddParam("@allowed", pAllowed);
                     c.AddParam("@menuId", pMenuId);
@@ -487,7 +487,7 @@ namespace OpenCBS.Manager
 
             using (SqlConnection conn = GetConnection())
             {
-                using (OctopusCommand c = new OctopusCommand(q, conn))
+                using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
                 {
                     c.AddParam("@allowed", pAllowed);
                     c.AddParam("@menuId", pMenuId);
@@ -497,7 +497,7 @@ namespace OpenCBS.Manager
             }
         }
 
-        private static Role GetRole(OctopusReader r)
+        private static Role GetRole(OpenCbsReader r)
         {
             return new Role
                 {           
@@ -520,9 +520,9 @@ namespace OpenCBS.Manager
             Dictionary<int, int> userToRole = new Dictionary<int, int>();
             using (SqlConnection conn = GetConnection())
             {
-                using (OctopusCommand c = new OctopusCommand(q, conn))
+                using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
                 {
-                    using (OctopusReader r = c.ExecuteReader())
+                    using (OpenCbsReader r = c.ExecuteReader())
                     {
                         if (r.Empty) return userToRole;
 

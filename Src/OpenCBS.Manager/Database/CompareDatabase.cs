@@ -25,7 +25,7 @@ namespace OpenCBS.Manager.Database
             string sql = string.Format(@"USE [{0}] SELECT table_name, column_name, data_type, is_nullable 
 			                FROM information_schema.columns WHERE(table_name IN (SELECT table_name FROM Information_Schema.Tables 
 		                    WHERE Table_Type = 'Base Table')) ORDER BY table_name", pDatabaseName);
-            OctopusCommand command = new OctopusCommand(sql, pSqlConnection);
+            OpenCbsCommand command = new OpenCbsCommand(sql, pSqlConnection);
 
             string path = !pDestination 
                               ? Path.Combine(UserSettings.GetUpdatePath,string.Format(SCHEMA_FILE_NAME, TechnicalSettings.SoftwareVersion)) 
@@ -38,7 +38,7 @@ namespace OpenCBS.Manager.Database
             xml.WriteAttributeString("SystemDate", DateTime.Today.ToString("dd MM yyyy"));
 
             bool firstTable = true;
-            using(OctopusReader reader = command.ExecuteReader())
+            using(OpenCbsReader reader = command.ExecuteReader())
             {
                 string tableName = "";
                 while(reader.Read())

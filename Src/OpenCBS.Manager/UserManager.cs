@@ -51,7 +51,7 @@ namespace OpenCBS.Manager
                                      SELECT SCOPE_IDENTITY()";
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand sqlCommand = new OctopusCommand(sqlText, conn))
+            using (OpenCbsCommand sqlCommand = new OpenCbsCommand(sqlText, conn))
             {
                 sqlCommand.AddParam("@deleted", false);
                 SetUser(sqlCommand, pUser);
@@ -75,7 +75,7 @@ namespace OpenCBS.Manager
                                      WHERE [id] = @userId";
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand sqlCommand = new OctopusCommand(sqlText, conn))
+            using (OpenCbsCommand sqlCommand = new OpenCbsCommand(sqlText, conn))
             {
                 sqlCommand.AddParam("@userId", pUser.Id);
                 SetUser(sqlCommand, pUser);
@@ -90,7 +90,7 @@ namespace OpenCBS.Manager
                                    VALUES(@role_id, @user_id)";
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand sqlCommand = new OctopusCommand(sqlText, conn))
+            using (OpenCbsCommand sqlCommand = new OpenCbsCommand(sqlText, conn))
             {
                 sqlCommand.AddParam("@role_id", pRoleId);
                 sqlCommand.AddParam("@user_id", pUserId);
@@ -105,7 +105,7 @@ namespace OpenCBS.Manager
                                     WHERE [user_id] = @user_id";
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand sqlCommand = new OctopusCommand(sqlText, conn))
+            using (OpenCbsCommand sqlCommand = new OpenCbsCommand(sqlText, conn))
             {
                 sqlCommand.AddParam("@role_id", pRoleId);
                 sqlCommand.AddParam("@user_id",  pUserId);
@@ -113,7 +113,7 @@ namespace OpenCBS.Manager
             }
         }
 
-        private static User _GetUser(OctopusReader pReader)
+        private static User _GetUser(OpenCbsReader pReader)
         {
             User user = new User
                             {
@@ -141,7 +141,7 @@ namespace OpenCBS.Manager
             return user;
         }
 
-        private static void SetUser(OctopusCommand sqlCommand, User pUser)
+        private static void SetUser(OpenCbsCommand sqlCommand, User pUser)
         {
             sqlCommand.AddParam("@username", pUser.UserName);
             sqlCommand.AddParam("@userpass", pUser.Password);
@@ -158,7 +158,7 @@ namespace OpenCBS.Manager
             const string sqlText = "UPDATE [Users] SET deleted = 1 WHERE [id] = @userId";
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand sqlCommand = new OctopusCommand(sqlText, conn))
+            using (OpenCbsCommand sqlCommand = new OpenCbsCommand(sqlText, conn))
             {
                 sqlCommand.AddParam("@userId", pUser.Id);
                 sqlCommand.ExecuteNonQuery();
@@ -213,10 +213,10 @@ namespace OpenCBS.Manager
                                    [Roles].[role_of_teller]";
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand sqlCommand = new OctopusCommand(sqlText, conn))
+            using (OpenCbsCommand sqlCommand = new OpenCbsCommand(sqlText, conn))
             {
                 sqlCommand.AddParam("@id", pUserId);
-                using (OctopusReader reader = sqlCommand.ExecuteReader())
+                using (OpenCbsReader reader = sqlCommand.ExecuteReader())
                 {
                     if (reader != null)
                     {
@@ -250,8 +250,8 @@ namespace OpenCBS.Manager
 
             List<User> users = new List<User>();
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
-            using (OctopusReader r = c.ExecuteReader())
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
+            using (OpenCbsReader r = c.ExecuteReader())
             {
                 if (r.Empty) return users;
 
@@ -304,12 +304,12 @@ namespace OpenCBS.Manager
 
             List<User> users = new List<User>();
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@branch_id", branch.Id);
                 c.AddParam("@boss_id", User.CurrentUser.Id);
                 c.AddParam("@user_id", user == null ? 0 : user.Id);
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (r.Empty) return users;
 
@@ -342,8 +342,8 @@ namespace OpenCBS.Manager
 
             Dictionary<int, List<int>> retval = new Dictionary<int, List<int>>();
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
-            using (OctopusReader r = c.ExecuteReader())
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
+            using (OpenCbsReader r = c.ExecuteReader())
             {
                 if (r.Empty) return retval;
 
@@ -369,8 +369,8 @@ namespace OpenCBS.Manager
             ORDER BY user_id";
             Dictionary<int, List<int>> retval = new Dictionary<int, List<int>>();
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
-            using (OctopusReader r = c.ExecuteReader())
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
+            using (OpenCbsReader r = c.ExecuteReader())
             {
                 if (r.Empty) return retval;
 
@@ -389,7 +389,7 @@ namespace OpenCBS.Manager
             const string query = @"DELETE FROM dbo.UsersSubordinates
             WHERE user_id = @id";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(query, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(query, conn))
             {
                 c.AddParam("id", user.Id);
                 c.ExecuteNonQuery();
@@ -417,7 +417,7 @@ namespace OpenCBS.Manager
             const string query = @"DELETE FROM dbo.UsersBranches
                                    WHERE user_id = @id";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(query, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(query, conn))
             {
                 c.AddParam("@id", user.Id);
                 c.ExecuteNonQuery();
@@ -448,7 +448,7 @@ namespace OpenCBS.Manager
         {
             var dashboard = new Dashboard();
             using (var connection = GetConnection())
-            using (var command = new OctopusCommand("GetDashboard", connection).
+            using (var command = new OpenCbsCommand("GetDashboard", connection).
                 AsStoredProcedure().
                 With("@date", TimeProvider.Today).
                 With("@userId", User.CurrentUser.Id))

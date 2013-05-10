@@ -76,7 +76,7 @@ namespace OpenCBS.Manager.Database
             WHEN DB_ID('{0}') IS NULL THEN 0 ELSE 1 END";
             q = string.Format(q, name);
 
-            OctopusCommand cmd = new OctopusCommand();
+            OpenCbsCommand cmd = new OpenCbsCommand();
             cmd.CommandText = q;
             cmd.Connection = conn;
             return Convert.ToBoolean(cmd.ExecuteScalar());
@@ -123,9 +123,9 @@ namespace OpenCBS.Manager.Database
             // To perform a backup we first need to get the appropriate backup folder, which is a bit tricky.
             // First, we need to get the service name.
             const string query = "SELECT @@SERVICENAME AS name";
-            OctopusCommand cmd = new OctopusCommand(query, connection);
+            OpenCbsCommand cmd = new OpenCbsCommand(query, connection);
             string serviceName = string.Empty;
-            using (OctopusReader reader = cmd.ExecuteReader())
+            using (OpenCbsReader reader = cmd.ExecuteReader())
             {
                 if (reader.Empty) return null;
                 reader.Read();
@@ -156,8 +156,8 @@ namespace OpenCBS.Manager.Database
 
             string q = @"RESTORE FILELISTONLY FROM DISK = '{0}'";
             q = string.Format(q, file);
-            OctopusCommand cmd = new OctopusCommand(q, connection);
-            using (OctopusReader reader = cmd.ExecuteReader())
+            OpenCbsCommand cmd = new OpenCbsCommand(q, connection);
+            using (OpenCbsReader reader = cmd.ExecuteReader())
             {
                 if (null == reader || reader.Empty) return null;
                 while (reader.Read())
@@ -220,7 +220,7 @@ namespace OpenCBS.Manager.Database
                 }
             }
 
-            using (OctopusCommand command = new OctopusCommand(query, conn))
+            using (OpenCbsCommand command = new OpenCbsCommand(query, conn))
             {
                 command.CommandTimeout = 300;
                 command.ExecuteNonQuery();
@@ -233,7 +233,7 @@ namespace OpenCBS.Manager.Database
         {
             string sqlText = string.Format(@"ALTER DATABASE {0} SET SINGLE_USER WITH ROLLBACK IMMEDIATE", pDatabaseName);
 
-            using (OctopusCommand cmd = new OctopusCommand(sqlText, pSqlConnection))
+            using (OpenCbsCommand cmd = new OpenCbsCommand(sqlText, pSqlConnection))
             {
                 cmd.ExecuteNonQuery();
             }
@@ -243,7 +243,7 @@ namespace OpenCBS.Manager.Database
         {
             string sqlText = string.Format(@"ALTER DATABASE {0} SET MULTI_USER", pDatabaseName);
 
-            using (OctopusCommand cmd = new OctopusCommand(sqlText, pSqlConnection))
+            using (OpenCbsCommand cmd = new OpenCbsCommand(sqlText, pSqlConnection))
             {
                 cmd.ExecuteNonQuery();
             }
@@ -303,34 +303,34 @@ namespace OpenCBS.Manager.Database
                 = @"SELECT CONVERT(INTEGER, CONVERT(FLOAT, CONVERT(VARCHAR(3), SERVERPROPERTY('productversion'))))";
             
             // Ensure recovery mode is FULL
-            var cmd = new OctopusCommand(sqlRecoveryMode1, pSqlConnection);
+            var cmd = new OpenCbsCommand(sqlRecoveryMode1, pSqlConnection);
             cmd.CommandTimeout = 300;
             cmd.ExecuteNonQuery();
 
              //Ensure auto shrink is on
-            cmd = new OctopusCommand(sqlAutoShrink2, pSqlConnection);
+            cmd = new OpenCbsCommand(sqlAutoShrink2, pSqlConnection);
             cmd.CommandTimeout = 300;
             cmd.ExecuteNonQuery();
 
             // Backup data int file
-            cmd = new OctopusCommand(sqlBackupFile3, pSqlConnection);
+            cmd = new OpenCbsCommand(sqlBackupFile3, pSqlConnection);
             cmd.CommandTimeout = 300;
             cmd.ExecuteNonQuery();
 
             // Trunc transaction log
-            cmd = new OctopusCommand(sqlSqlServerVersion, pSqlConnection);
+            cmd = new OpenCbsCommand(sqlSqlServerVersion, pSqlConnection);
             cmd.CommandTimeout = 300;
             var sqlVersion = (int)cmd.ExecuteScalar();
 
             if (sqlVersion < 10) // If SQL Server is 2000 or 2005
             {
-                cmd = new OctopusCommand(sqlTruncLogFile4, pSqlConnection);
+                cmd = new OpenCbsCommand(sqlTruncLogFile4, pSqlConnection);
                 cmd.CommandTimeout = 300;
                 cmd.ExecuteNonQuery();
             }
             else // If SQL Server is 2008 or higher
             {
-                cmd = new OctopusCommand(sqlTruncLogFile5, pSqlConnection);
+                cmd = new OpenCbsCommand(sqlTruncLogFile5, pSqlConnection);
                 cmd.CommandTimeout = 300;
                 cmd.ExecuteNonQuery();
             }

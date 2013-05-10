@@ -32,9 +32,9 @@ namespace OpenCBS.Manager
             List<MenuObject> menus = new List<MenuObject>();
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (r != null && !r.Empty)
                     {
@@ -63,7 +63,7 @@ namespace OpenCBS.Manager
 
             using (SqlConnection conn = GetConnection())
             {
-                using (OctopusCommand c = new OctopusCommand(q, conn))
+                using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
                 {
                     c.AddParam("@menu", name.Trim());
                     newMenu.Id = int.Parse(c.ExecuteScalar().ToString());
@@ -80,10 +80,10 @@ namespace OpenCBS.Manager
                                    FROM MenuItems 
                                    WHERE component_name = @menuItem";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand cmd = new OctopusCommand(query, conn))
+            using (OpenCbsCommand cmd = new OpenCbsCommand(query, conn))
             {
                 cmd.AddParam("menuItem", menuItem);
-                OctopusReader reader = cmd.ExecuteReader();
+                OpenCbsReader reader = cmd.ExecuteReader();
                 if (reader == null || !reader.Read()) return null;
                 return new MenuObject
                            {
@@ -101,7 +101,7 @@ namespace OpenCBS.Manager
 
             using (SqlConnection conn = GetConnection())
             {
-                using (OctopusCommand c = new OctopusCommand(q, conn))
+                using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
                 {
                     c.AddParam("@allowed", pAllowed);
                     c.AddParam("@actionId", pActionId);
@@ -121,7 +121,7 @@ namespace OpenCBS.Manager
 
             using (SqlConnection conn = GetConnection())
             {
-                using (OctopusCommand c = new OctopusCommand(q, conn))
+                using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
                 {
                     c.AddParam("@allowed", pAllowed);
                     c.AddParam("@actionId", pActionId);
@@ -138,7 +138,7 @@ namespace OpenCBS.Manager
 
             using (SqlConnection conn = GetConnection())
             {
-                using (OctopusCommand c = new OctopusCommand(q, conn))
+                using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
                 {
                     c.AddParam("@menu_item_id", menu.Id);
                     c.ExecuteNonQuery();
@@ -150,7 +150,7 @@ namespace OpenCBS.Manager
 
             using (SqlConnection conn = GetConnection())
             {
-                using (OctopusCommand c = new OctopusCommand(q1, conn))
+                using (OpenCbsCommand c = new OpenCbsCommand(q1, conn))
                 {
                     c.AddParam("@id", menu.Id);
                     c.ExecuteNonQuery();

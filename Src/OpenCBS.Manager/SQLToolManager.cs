@@ -12,7 +12,7 @@ namespace OpenCBS.Manager
 
         public void RunSQL(string sqlText, SqlTransaction tran)
         {
-            using (OctopusCommand sqlCommand = new OctopusCommand(sqlText, tran.Connection, tran))
+            using (OpenCbsCommand sqlCommand = new OpenCbsCommand(sqlText, tran.Connection, tran))
             {
                 sqlCommand.ExecuteNonQuery();
             }

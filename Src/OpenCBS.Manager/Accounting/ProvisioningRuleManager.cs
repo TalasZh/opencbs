@@ -27,14 +27,14 @@ namespace OpenCBS.Manager.Accounting
                                       @provisioningPercentage) 
                                    SELECT SCOPE_IDENTITY()";
 
-            using (OctopusCommand insert = new OctopusCommand(sqlText, sqlTransac.Connection, sqlTransac))
+            using (OpenCbsCommand insert = new OpenCbsCommand(sqlText, sqlTransac.Connection, sqlTransac))
             {
                 SetProvisioningRate(insert, pR);
                 insert.ExecuteScalar();
             }
         }
 
-        private static void SetProvisioningRate(OctopusCommand octCommand, ProvisioningRate pProvisionningRate)
+        private static void SetProvisioningRate(OpenCbsCommand octCommand, ProvisioningRate pProvisionningRate)
         {
             octCommand.AddParam("@number", pProvisionningRate.Number);
             octCommand.AddParam("@numberOfDaysMin", pProvisionningRate.NbOfDaysMin);
@@ -57,9 +57,9 @@ namespace OpenCBS.Manager.Accounting
                                      FROM ProvisioningRules";
             using (SqlConnection conn = GetConnection())
             {
-                using (OctopusCommand select = new OctopusCommand(sqlText, conn))
+                using (OpenCbsCommand select = new OpenCbsCommand(sqlText, conn))
                 {
-                    using (OctopusReader reader = select.ExecuteReader())
+                    using (OpenCbsReader reader = select.ExecuteReader())
                     {
                         if (reader.Empty) return list;
                         while (reader.Read())
@@ -72,7 +72,7 @@ namespace OpenCBS.Manager.Accounting
             }
         }
 
-        private static ProvisioningRate GetProvisionningRate(OctopusReader reader)
+        private static ProvisioningRate GetProvisionningRate(OpenCbsReader reader)
         {
             return new ProvisioningRate
                        {
@@ -86,7 +86,7 @@ namespace OpenCBS.Manager.Accounting
         public void DeleteAllProvisioningRules(SqlTransaction sqlTransac)
         {
             const string sqlText = "DELETE FROM ProvisioningRules";
-            using (OctopusCommand delete = new OctopusCommand(sqlText, sqlTransac.Connection, sqlTransac))
+            using (OpenCbsCommand delete = new OpenCbsCommand(sqlText, sqlTransac.Connection, sqlTransac))
             {
                 delete.ExecuteNonQuery();
             }

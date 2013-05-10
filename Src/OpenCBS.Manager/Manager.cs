@@ -46,7 +46,7 @@ namespace OpenCBS.Manager
             const string checkSql = "IF EXISTS(SELECT 1 FROM {0}) SELECT 1 ELSE SELECT 0";
             string query = string.Format(checkSql, tableName);
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand command = new OctopusCommand(query, conn))
+            using (OpenCbsCommand command = new OpenCbsCommand(query, conn))
                     return Convert.ToInt32(command.ExecuteScalar()) == 1;
         }
 
@@ -54,7 +54,7 @@ namespace OpenCBS.Manager
         {
             const string deleteSql = "DELETE FROM {0}";
             string query = string.Format(deleteSql, tableName);
-            using (OctopusCommand command = new OctopusCommand(query, transaction.Connection, transaction))
+            using (OpenCbsCommand command = new OpenCbsCommand(query, transaction.Connection, transaction))
                 command.ExecuteNonQuery();
         }
     }

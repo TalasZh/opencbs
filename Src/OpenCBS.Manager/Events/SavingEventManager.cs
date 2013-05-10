@@ -86,7 +86,7 @@ namespace OpenCBS.Manager.Events
                                        @loan_event_id)
 				                     SELECT CONVERT(int, SCOPE_IDENTITY())";
 
-            using (OctopusCommand c = new OctopusCommand(q, sqlTransac.Connection, sqlTransac))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, sqlTransac.Connection, sqlTransac))
             {
                 SetInsertCommandForSavingEvent(c, pSavingEvent, pSavingContractId);
                 pSavingEvent.Id = Convert.ToInt32(c.ExecuteScalar());
@@ -94,7 +94,7 @@ namespace OpenCBS.Manager.Events
             }
 		}
 
-	    private static void SetInsertCommandForSavingEvent(OctopusCommand c, SavingEvent pSavingEvent, int pSavingContractId)
+	    private static void SetInsertCommandForSavingEvent(OpenCbsCommand c, SavingEvent pSavingEvent, int pSavingContractId)
 	    {
 	        c.AddParam("@user_id", pSavingEvent.User.Id);
 	        c.AddParam("@contract_id", pSavingContractId);
@@ -162,7 +162,7 @@ namespace OpenCBS.Manager.Events
                                      SET [is_fired] = @is_fired 
                                      WHERE [id] = @id";
 
-            using (OctopusCommand c = new OctopusCommand(q, sqlTransac.Connection, sqlTransac))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, sqlTransac.Connection, sqlTransac))
             {
                 c.AddParam("@is_fired", true);
                 c.AddParam("@id", savingEventId);
@@ -177,7 +177,7 @@ namespace OpenCBS.Manager.Events
                                      SET [is_exported] = @is_exported 
                                      WHERE [id] = @id";
 
-            using (OctopusCommand c = new OctopusCommand(q, sqlTransac.Connection, sqlTransac))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, sqlTransac.Connection, sqlTransac))
             {
                 c.AddParam("@is_exported", true);
                 c.AddParam("@id", pSavingEventId);
@@ -193,7 +193,7 @@ namespace OpenCBS.Manager.Events
                                      WHERE [id] = @id";
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@pending", isPending);
                 c.AddParam("@id", pSavingEventId);
@@ -208,7 +208,7 @@ namespace OpenCBS.Manager.Events
                                      SET [description] = @description 
                                      WHERE [id] = @id";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@description", pDescription);
                 c.AddParam("@id", pSavingEventId);
@@ -260,11 +260,11 @@ namespace OpenCBS.Manager.Events
 				                WHERE SavingEvents.contract_id = @id 
                                 ORDER BY SavingEvents.id";
             using (SqlConnection conn = GetConnection())
-            using(OctopusCommand c = new OctopusCommand(q, conn))
+            using(OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@id", pSavingId);
 
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if(r == null || r.Empty) return new List<SavingEvent>();
 
@@ -331,13 +331,13 @@ namespace OpenCBS.Manager.Events
 
             List<SavingEvent> eventList = new List<SavingEvent>();
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@beginDate", beginDate);
                 c.AddParam("@endDate", endDate);
                 c.AddParam("@branch_id", branch.Id);
 
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (r == null || r.Empty) return eventList;
 
@@ -356,7 +356,7 @@ namespace OpenCBS.Manager.Events
             return eventList;
         }
 
-        private static SavingEvent ReadEvent(OctopusReader r, ISavingProduct pProduct)
+        private static SavingEvent ReadEvent(OpenCbsReader r, ISavingProduct pProduct)
         {
             string code = r.GetString("code");
             SavingEvent e = GetSavingsEvent(code);
@@ -365,7 +365,7 @@ namespace OpenCBS.Manager.Events
             return e;
         }
 
-	    private static void SetSavingsEvent(OctopusReader r, SavingEvent e, ISavingProduct pProduct)
+	    private static void SetSavingsEvent(OpenCbsReader r, SavingEvent e, ISavingProduct pProduct)
 	    {
 	        e.Id = r.GetInt("id");
             e.ContracId = r.GetInt("contract_id");
@@ -528,7 +528,7 @@ namespace OpenCBS.Manager.Events
                                                                     ,[cancel_date] = @cancel_date
                                                                     WHERE id = @id";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@id", pSavingEvent.Id);
                 c.AddParam("@cancel_date", pSavingEvent.CancelDate.Value);
@@ -541,7 +541,7 @@ namespace OpenCBS.Manager.Events
             const string q =
                 @"UPDATE [dbo].[SavingEvents] SET [deleted]=1, [is_exported]=0
                   WHERE loan_event_id = @loan_event_id";
-            using (OctopusCommand c = new OctopusCommand(q, sqlTransaction.Connection, sqlTransaction))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, sqlTransaction.Connection, sqlTransaction))
             {
                 c.AddParam("@loan_event_id", loanEventId);
                 c.ExecuteNonQuery();
@@ -553,7 +553,7 @@ namespace OpenCBS.Manager.Events
             const string q = @"UPDATE [SavingEvents] SET [deleted] = 1, is_exported = 0 
                                                WHERE contract_id = @savings_id AND loan_event_id = @loan_event_id ";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@savings_id", savingsId);
                 c.AddParam("@loan_event_id", loanEventId);

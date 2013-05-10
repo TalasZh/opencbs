@@ -23,9 +23,9 @@ namespace OpenCBS.Manager
                     
             List<string> entities = new List<string>();
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand cmd = new OctopusCommand(sqlText, conn))
+            using (OpenCbsCommand cmd = new OpenCbsCommand(sqlText, conn))
             {
-                using (OctopusReader reader = cmd.ExecuteReader())
+                using (OpenCbsReader reader = cmd.ExecuteReader())
                 {
                     if (reader.Empty) 
                         return new List<string>();
@@ -54,9 +54,9 @@ namespace OpenCBS.Manager
 
             List<CustomizableFieldSearchResult> entities = new List<CustomizableFieldSearchResult>();
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand cmd = new OctopusCommand(sqlText, conn))
+            using (OpenCbsCommand cmd = new OpenCbsCommand(sqlText, conn))
             {
-                using (OctopusReader reader = cmd.ExecuteReader())
+                using (OpenCbsReader reader = cmd.ExecuteReader())
                 {
                     if (reader.Empty) return new List<CustomizableFieldSearchResult>();
                     while (reader.Read())
@@ -81,11 +81,11 @@ namespace OpenCBS.Manager
 
             CommaDelimitedStringCollection commaStr = new CommaDelimitedStringCollection();
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand cmd = new OctopusCommand(sqlText, conn))
+            using (OpenCbsCommand cmd = new OpenCbsCommand(sqlText, conn))
             {
                 cmd.AddParam("@entity_id", entityId);
 
-                using (OctopusReader reader = cmd.ExecuteReader())
+                using (OpenCbsReader reader = cmd.ExecuteReader())
                 {
                     if (reader.Empty) 
                         return string.Empty;
@@ -125,7 +125,7 @@ namespace OpenCBS.Manager
                                 , @is_unique)
                                SELECT CONVERT(int, SCOPE_IDENTITY())";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand insertCmd = new OctopusCommand(sqlText, conn))
+            using (OpenCbsCommand insertCmd = new OpenCbsCommand(sqlText, conn))
             {                
                 insertCmd.AddParam("@entity_id", (int)field.Entity);
                 insertCmd.AddParam("@type_id", (int)field.Type);
@@ -155,7 +155,7 @@ namespace OpenCBS.Manager
                                     ([field_id], [value]) 
                                    VALUES (@field_id, @col_item)";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand insertCmd = new OctopusCommand(sqlListText, conn))
+            using (OpenCbsCommand insertCmd = new OpenCbsCommand(sqlListText, conn))
             {
                 insertCmd.AddParam("@field_id", fieldId);
                 insertCmd.AddParam("@col_item", colItem);
@@ -168,7 +168,7 @@ namespace OpenCBS.Manager
             string sqlListText = @"DELETE FROM [AdvancedFieldsCollections] 
                                    WHERE [field_id] = @field_id";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand insertCmd = new OctopusCommand(sqlListText, conn))
+            using (OpenCbsCommand insertCmd = new OpenCbsCommand(sqlListText, conn))
             {
                 insertCmd.AddParam("@field_id", fieldId);
                 insertCmd.ExecuteNonQuery();
@@ -193,10 +193,10 @@ namespace OpenCBS.Manager
            
             using (SqlConnection conn = GetConnection())
             {
-                using (OctopusCommand selectCmd = new OctopusCommand(sqlPropertyText, conn))
+                using (OpenCbsCommand selectCmd = new OpenCbsCommand(sqlPropertyText, conn))
                 {
                     selectCmd.AddParam("@entity_id", entityId);
-                    using (OctopusReader reader = selectCmd.ExecuteReader())
+                    using (OpenCbsReader reader = selectCmd.ExecuteReader())
                     {
                         if (reader == null || reader.Empty) return null;
 
@@ -236,10 +236,10 @@ namespace OpenCBS.Manager
                                                         WHERE field_id = @field_id";
 
                 using (SqlConnection conn2 = GetConnection())
-                using (OctopusCommand selectList = new OctopusCommand(sqlListText, conn2))
+                using (OpenCbsCommand selectList = new OpenCbsCommand(sqlListText, conn2))
                 {
                     selectList.AddParam("@field_id", customizableField.Id);
-                    using (OctopusReader listReader = selectList.ExecuteReader())
+                    using (OpenCbsReader listReader = selectList.ExecuteReader())
                     {
                         if (listReader == null || listReader.Empty) return null;
 
@@ -262,12 +262,12 @@ namespace OpenCBS.Manager
                                FROM dbo.AdvancedFields 
                                WHERE [entity_id] = @entity_id ";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand selectCmd = new OctopusCommand(sqlText, conn))
+            using (OpenCbsCommand selectCmd = new OpenCbsCommand(sqlText, conn))
             {
                 selectCmd.AddParam("@entity_id",
                                    (int) Enum.Parse(typeof (OCustomizableFieldEntities), entity.ToString()));
 
-                using (OctopusReader reader = selectCmd.ExecuteReader())
+                using (OpenCbsReader reader = selectCmd.ExecuteReader())
                 {
                     if (reader == null || reader.Empty) return false;
                     reader.Read();
@@ -287,12 +287,12 @@ namespace OpenCBS.Manager
                                WHERE link_id = @link_id 
                                AND link_type = @link_type ";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand selectCmd = new OctopusCommand(sqlText, conn))
+            using (OpenCbsCommand selectCmd = new OpenCbsCommand(sqlText, conn))
             {
                 selectCmd.AddParam("@link_id", linkId);
                 selectCmd.AddParam("@link_type", linkType);
 
-                using (OctopusReader reader = selectCmd.ExecuteReader())
+                using (OpenCbsReader reader = selectCmd.ExecuteReader())
                 {
                     if (reader.Empty) groupId = 0;
                     else
@@ -312,7 +312,7 @@ namespace OpenCBS.Manager
                         VALUES (@link_id, @link_type) 
                         SELECT CONVERT(int, SCOPE_IDENTITY())";
                 using (SqlConnection conn = GetConnection())
-                using (OctopusCommand insertCmd = new OctopusCommand(sqlText, conn))
+                using (OpenCbsCommand insertCmd = new OpenCbsCommand(sqlText, conn))
                 {
                     insertCmd.AddParam("@link_id", linkId);
                     insertCmd.AddParam("@link_type", linkType);
@@ -336,12 +336,12 @@ namespace OpenCBS.Manager
                                         WHERE entity_field_id = @entity_field_id 
                                         AND field_id = @field_id ";
                     using (SqlConnection conn = GetConnection())
-                    using (OctopusCommand selCmd = new OctopusCommand(sqlTextSel, conn))
+                    using (OpenCbsCommand selCmd = new OpenCbsCommand(sqlTextSel, conn))
                     {
                         selCmd.AddParam("@entity_field_id", groupId);
                         selCmd.AddParam("@field_id", fieldValue.Field.Id);
 
-                        using (OctopusReader reader = selCmd.ExecuteReader())
+                        using (OpenCbsReader reader = selCmd.ExecuteReader())
                         {
                             if (reader == null || reader.Empty)
                             {
@@ -379,7 +379,7 @@ namespace OpenCBS.Manager
                             AND [field_id] = @field_id";
             }
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand insertValue = new OctopusCommand(sqlText, conn))
+            using (OpenCbsCommand insertValue = new OpenCbsCommand(sqlText, conn))
             {
                 insertValue.AddParam("@entity_field_id", groupId);
                 insertValue.AddParam("@field_id", fieldValue.Field.Id);
@@ -398,12 +398,12 @@ namespace OpenCBS.Manager
                                WHERE link_id = @link_id 
                                AND link_type = @link_type ";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand selectCmd = new OctopusCommand(sqlText, conn))
+            using (OpenCbsCommand selectCmd = new OpenCbsCommand(sqlText, conn))
             {
                 selectCmd.AddParam("@link_id", linkId);
                 selectCmd.AddParam("@link_type", linkType);
 
-                using (OctopusReader reader = selectCmd.ExecuteReader())
+                using (OpenCbsReader reader = selectCmd.ExecuteReader())
                 {
                     if (reader == null || reader.Empty) return null;
                     reader.Read();
@@ -422,10 +422,10 @@ namespace OpenCBS.Manager
                             FROM dbo.AdvancedFieldsValues
                             WHERE [entity_field_id] = @entity_field_id ";
                 using (SqlConnection conn = GetConnection())
-                using (OctopusCommand selectValues = new OctopusCommand(sqlText, conn))
+                using (OpenCbsCommand selectValues = new OpenCbsCommand(sqlText, conn))
                 {
                     selectValues.AddParam("@entity_field_id", groupId);
-                    using (OctopusReader readerValues = selectValues.ExecuteReader())
+                    using (OpenCbsReader readerValues = selectValues.ExecuteReader())
                     {
                         if (readerValues == null || readerValues.Empty) return null;
 
@@ -463,11 +463,11 @@ namespace OpenCBS.Manager
 
             CustomizableField field;
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand selectCmd = new OctopusCommand(sqlPropertyText, conn))
+            using (OpenCbsCommand selectCmd = new OpenCbsCommand(sqlPropertyText, conn))
             {
                 selectCmd.AddParam("@id", fieldId);
 
-                using (OctopusReader reader = selectCmd.ExecuteReader())
+                using (OpenCbsReader reader = selectCmd.ExecuteReader())
                 {
                     if (reader == null || reader.Empty) return null;
                     reader.Read();
@@ -499,10 +499,10 @@ namespace OpenCBS.Manager
                                                  FROM AdvancedFieldsCollections 
                                                  WHERE field_id = @field_id";
                     using (SqlConnection conn2 = GetConnection())
-                    using (OctopusCommand selectList = new OctopusCommand(sqlListText, conn2))
+                    using (OpenCbsCommand selectList = new OpenCbsCommand(sqlListText, conn2))
                     {
                         selectList.AddParam("@field_id", field.Id);
-                        using (OctopusReader listReader = selectList.ExecuteReader())
+                        using (OpenCbsReader listReader = selectList.ExecuteReader())
                         {
                             if (listReader == null || listReader.Empty) return null;
 
@@ -528,12 +528,12 @@ namespace OpenCBS.Manager
                                     WHERE link_id = @link_id 
                                     AND link_type = @link_type ";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand selectGroup = new OctopusCommand(sqlTextGroup, conn))
+            using (OpenCbsCommand selectGroup = new OpenCbsCommand(sqlTextGroup, conn))
             {
                 selectGroup.AddParam("@link_id", linkId);
                 selectGroup.AddParam("@link_type", linkType);
 
-                using (OctopusReader reader = selectGroup.ExecuteReader())
+                using (OpenCbsReader reader = selectGroup.ExecuteReader())
                 {
                     if (reader == null || reader.Empty)
                     {
@@ -554,12 +554,12 @@ namespace OpenCBS.Manager
                                    WHERE field_id = @field_id 
                                    AND [value] = @value ";
                 using (SqlConnection conn = GetConnection())
-                using (OctopusCommand selectCmd = new OctopusCommand(sqlText, conn))
+                using (OpenCbsCommand selectCmd = new OpenCbsCommand(sqlText, conn))
                 {
                     selectCmd.AddParam("@field_id", fieldId);
                     selectCmd.AddParam("@value", value);
 
-                    using (OctopusReader reader = selectCmd.ExecuteReader())
+                    using (OpenCbsReader reader = selectCmd.ExecuteReader())
                     {
                         if (reader == null || reader.Empty) return false;
                         reader.Read();
@@ -577,13 +577,13 @@ namespace OpenCBS.Manager
                                    AND field_id = @field_id 
                                    AND [value] = @value ";
                 using (SqlConnection conn = GetConnection())
-                using (OctopusCommand selectCmd = new OctopusCommand(sqlText, conn))
+                using (OpenCbsCommand selectCmd = new OpenCbsCommand(sqlText, conn))
                 {
                     selectCmd.AddParam("@entity_field_id", groupId);
                     selectCmd.AddParam("@field_id", fieldId);
                     selectCmd.AddParam("@value", value);
 
-                    using (OctopusReader reader = selectCmd.ExecuteReader())
+                    using (OpenCbsReader reader = selectCmd.ExecuteReader())
                     {
                         if (reader == null || reader.Empty) return false;
                         reader.Read();
@@ -602,11 +602,11 @@ namespace OpenCBS.Manager
                                FROM dbo.AdvancedFieldsValues 
                                WHERE field_id = @field_id";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand selectCmd = new OctopusCommand(sqlText, conn))
+            using (OpenCbsCommand selectCmd = new OpenCbsCommand(sqlText, conn))
             {
                 selectCmd.AddParam("@field_id", fieldId);
 
-                using (OctopusReader reader = selectCmd.ExecuteReader())
+                using (OpenCbsReader reader = selectCmd.ExecuteReader())
                 {
                     if (reader == null || reader.Empty) return false;
                     reader.Read();
@@ -624,7 +624,7 @@ namespace OpenCBS.Manager
                 string sqlColText = @"DELETE FROM dbo.AdvancedFieldsCollections 
                                       WHERE field_id = @field_id";
                 using (SqlConnection conn = GetConnection())
-                using (OctopusCommand deleteCmd = new OctopusCommand(sqlColText, conn))
+                using (OpenCbsCommand deleteCmd = new OpenCbsCommand(sqlColText, conn))
                 {
                     deleteCmd.AddParam("@field_id", field.Id);
                     deleteCmd.ExecuteNonQuery();
@@ -634,7 +634,7 @@ namespace OpenCBS.Manager
             string sqlText = @"DELETE FROM dbo.AdvancedFields 
                                WHERE id = @field_id";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand deleteCmd = new OctopusCommand(sqlText, conn))
+            using (OpenCbsCommand deleteCmd = new OpenCbsCommand(sqlText, conn))
             {
                 deleteCmd.AddParam("@field_id", field.Id);
                 deleteCmd.ExecuteNonQuery();

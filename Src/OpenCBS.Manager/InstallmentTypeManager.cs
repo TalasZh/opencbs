@@ -22,7 +22,7 @@ namespace OpenCBS.Manager
 			                         VALUES(@name, @days, @months) SELECT SCOPE_IDENTITY()";
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
 			{
 			    SetInstallmentType(c, installmentType);
 			    return int.Parse(c.ExecuteScalar().ToString());
@@ -35,7 +35,7 @@ namespace OpenCBS.Manager
                                      WHERE id = @id";
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 SetInstallmentType(c, installmentType);
                 c.AddParam("@id", installmentType.Id);
@@ -48,14 +48,14 @@ namespace OpenCBS.Manager
             const string q = @"DELETE FROM [InstallmentTypes] WHERE id = @id";
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@id", installmentType.Id);
                 c.ExecuteNonQuery();
             }
         }
 
-	    private static void SetInstallmentType(OctopusCommand c, InstallmentType pInstallmentType)
+	    private static void SetInstallmentType(OpenCbsCommand c, InstallmentType pInstallmentType)
 	    {
 	        c.AddParam("@name", pInstallmentType.Name);
 	        c.AddParam("@days", pInstallmentType.NbOfDays);
@@ -79,7 +79,7 @@ namespace OpenCBS.Manager
                                     WHERE T.installment_type = @id";
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@id", installmentType.Id);
                 return int.Parse(c.ExecuteScalar().ToString());
@@ -93,8 +93,8 @@ namespace OpenCBS.Manager
             const string q = "SELECT * FROM InstallmentTypes ";
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
-            using (OctopusReader r = c.ExecuteReader())
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
+            using (OpenCbsReader r = c.ExecuteReader())
             {
                 if (r == null || r.Empty) return list;
                 while (r.Read())
@@ -105,7 +105,7 @@ namespace OpenCBS.Manager
             }
 		}
 
-        private static InstallmentType GetInstallmentTypeFromReader(OctopusReader r)
+        private static InstallmentType GetInstallmentTypeFromReader(OpenCbsReader r)
         {
             return new InstallmentType
                        {
@@ -126,10 +126,10 @@ namespace OpenCBS.Manager
 			const string q = "SELECT * FROM InstallmentTypes WHERE id = @id";
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
 			{
                 c.AddParam("@id", pInstallmentTypeId);
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (r == null || r.Empty) return null;
                     r.Read();
@@ -143,11 +143,11 @@ namespace OpenCBS.Manager
 			const string q = "SELECT * FROM InstallmentTypes WHERE name = @name";
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
 			{
                 c.AddParam("@name", name);
 
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (r == null || r.Empty) return null;
                     r.Read();

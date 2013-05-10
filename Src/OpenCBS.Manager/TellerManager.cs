@@ -54,10 +54,10 @@ namespace OpenCBS.Manager
                                     FROM dbo.Tellers
                                     WHERE user_id = @user_id AND deleted = 0";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@user_id", userId);
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (r.Empty) return teller;
 
@@ -98,10 +98,10 @@ namespace OpenCBS.Manager
                                     WHERE branch_id = @branch_id AND deleted = 0 AND user_id = 0";
 
             using (var conn = GetConnection())
-            using (var c = new OctopusCommand(q, conn))
+            using (var c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@branch_id", branchId);
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     r.Read();
                     if (r.Empty) return null;
@@ -146,8 +146,8 @@ namespace OpenCBS.Manager
                                     , withdrawal_amount_max
                                     FROM dbo.Tellers";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
-            using (OctopusReader r = c.ExecuteReader())
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
+            using (OpenCbsReader r = c.ExecuteReader())
             {
                 if (r.Empty) return tellers;
 
@@ -195,10 +195,10 @@ namespace OpenCBS.Manager
                                     FROM dbo.Tellers
                                     WHERE user_id = @user_id AND deleted = 0";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@user_id", userId);
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (r.Empty) return tellers;
 
@@ -247,10 +247,10 @@ namespace OpenCBS.Manager
                                     FROM dbo.Tellers
                                     WHERE id = @id";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@id", tellerId);
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (r.Empty) return null;
 
@@ -282,7 +282,7 @@ namespace OpenCBS.Manager
                                    VALUES (@name, @desc, @account_id, @branch_id, @user_id, @currency_id,
                                             @amount_min, @amount_max, @deposit_amount_min, @deposit_amount_max, @withdrawal_amount_min, @withdrawal_amount_max) 
                                             SELECT SCOPE_IDENTITY()";
-            using (var c = new OctopusCommand(sqlText, t.Connection, t))
+            using (var c = new OpenCbsCommand(sqlText, t.Connection, t))
             {
 
                 c.AddParam("@name", teller.Name);
@@ -336,7 +336,7 @@ namespace OpenCBS.Manager
                                                  withdrawal_amount_min = @withdrawal_amount_min,
                                                  withdrawal_amount_max = @withdrawal_amount_max
                                               WHERE id = @id";
-            using (var c = new OctopusCommand(sqlText, t.Connection, t))
+            using (var c = new OpenCbsCommand(sqlText, t.Connection, t))
             {
                 c.AddParam("@id", teller.Id);
                 c.AddParam("@name", teller.Name);
@@ -378,7 +378,7 @@ namespace OpenCBS.Manager
             const string q = @"UPDATE dbo.Tellers SET deleted = 1                                                           
                                         WHERE id = @id";
             using (SqlConnection conn = GetConnection())
-            using (var c = new OctopusCommand(q, conn))
+            using (var c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@id", id);
                 c.ExecuteNonQuery();
@@ -388,7 +388,7 @@ namespace OpenCBS.Manager
         public void DeleteAll(SqlTransaction transaction)
         {
             const string q = @"DELETE FROM dbo.Tellers";
-            using (var c = new OctopusCommand(q, transaction.Connection, transaction))
+            using (var c = new OpenCbsCommand(q, transaction.Connection, transaction))
             {
                 c.ExecuteNonQuery();
             }
@@ -398,7 +398,7 @@ namespace OpenCBS.Manager
         {
             using (SqlConnection conn = GetConnection())
             {
-                using (var c = new OctopusCommand("GetTellerBalance", conn).AsStoredProcedure())
+                using (var c = new OpenCbsCommand("GetTellerBalance", conn).AsStoredProcedure())
                 {
                     c.AddParam("@teller_id", teller.Id);
                     return decimal.Parse(c.ExecuteScalar().ToString());
@@ -416,7 +416,7 @@ namespace OpenCBS.Manager
                                 ORDER BY id DESC";
             using (SqlConnection connection = GetConnection())
             {
-                using (OctopusCommand cmd = new OctopusCommand(sql, connection))
+                using (OpenCbsCommand cmd = new OpenCbsCommand(sql, connection))
                 {
                     cmd.AddParam("@teller_id", teller.Id);
                     object balance = cmd.ExecuteScalar();

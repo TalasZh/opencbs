@@ -29,8 +29,8 @@ namespace OpenCBS.Manager
 
             string sqlText = "SELECT * FROM [MFI]";
             using (SqlConnection connection = GetConnection())
-            using (OctopusCommand select = new OctopusCommand(sqlText, connection))
-            using (OctopusReader reader = select.ExecuteReader())
+            using (OpenCbsCommand select = new OpenCbsCommand(sqlText, connection))
+            using (OpenCbsReader reader = select.ExecuteReader())
             {
                 if (!reader.Empty)
                 {
@@ -51,7 +51,7 @@ namespace OpenCBS.Manager
                 string sqlText = @"UPDATE [MFI] SET [name]=@name, [login]=@login, [password]=@password";
 
                 using (SqlConnection connection = GetConnection())
-                using (OctopusCommand cmd = new OctopusCommand(sqlText, connection))
+                using (OpenCbsCommand cmd = new OpenCbsCommand(sqlText, connection))
                 {
                     cmd.AddParam("@name", pMFI.Name);
                     cmd.AddParam("@login", pMFI.Login);
@@ -71,7 +71,7 @@ namespace OpenCBS.Manager
                 string sqlText = "INSERT INTO [MFI] ([name], [login], [password]) VALUES(@name,@login,@password)";
 
                 using (SqlConnection connection = GetConnection())
-                using (OctopusCommand cmd = new OctopusCommand(sqlText, connection))
+                using (OpenCbsCommand cmd = new OpenCbsCommand(sqlText, connection))
                 {
                     cmd.AddParam("@name", pMFI.Name);
                     cmd.AddParam("@login", pMFI.Login);
@@ -89,7 +89,7 @@ namespace OpenCBS.Manager
             {
                 string sqlText = "DELETE FROM [MFI]";
                 using (SqlConnection connection = GetConnection())
-                using (OctopusCommand cmd = new OctopusCommand(sqlText, connection))
+                using (OpenCbsCommand cmd = new OpenCbsCommand(sqlText, connection))
                     cmd.ExecuteNonQuery();
             }
         }

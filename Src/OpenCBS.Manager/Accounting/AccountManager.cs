@@ -36,10 +36,10 @@ namespace OpenCBS.Manager.Accounting
                                      WHERE id = @id";
             using (SqlConnection conn = GetConnection())
             {
-                using (OctopusCommand select = new OctopusCommand(sqlText, conn))
+                using (OpenCbsCommand select = new OpenCbsCommand(sqlText, conn))
                 {
                     select.AddParam("@id", pAccountId);
-                    using (OctopusReader reader = select.ExecuteReader())
+                    using (OpenCbsReader reader = select.ExecuteReader())
                     {
                         if (reader == null || reader.Empty) return null;
 
@@ -64,10 +64,10 @@ namespace OpenCBS.Manager.Accounting
                                      WHERE id = @id";
             using (SqlConnection conn = GetConnection())
             {
-                using (OctopusCommand select = new OctopusCommand(sqlText, conn))
+                using (OpenCbsCommand select = new OpenCbsCommand(sqlText, conn))
                 {
                     select.AddParam("@id", pAccountId);
-                    using (OctopusReader reader = select.ExecuteReader())
+                    using (OpenCbsReader reader = select.ExecuteReader())
                     {
                         if (reader == null || reader.Empty) return null;
 
@@ -93,10 +93,10 @@ namespace OpenCBS.Manager.Accounting
             List<Account> accounts = new List<Account>();
             using (SqlConnection conn = GetConnection())
             {
-                using (OctopusCommand select = new OctopusCommand(sqlText, conn))
+                using (OpenCbsCommand select = new OpenCbsCommand(sqlText, conn))
                 {
                     select.AddParam("@account_category_id", accountCategory.Id);
-                    using (OctopusReader reader = select.ExecuteReader())
+                    using (OpenCbsReader reader = select.ExecuteReader())
                     {
                         if (reader == null || reader.Empty) return null;
 
@@ -128,9 +128,9 @@ namespace OpenCBS.Manager.Accounting
 
             using (SqlConnection conn = GetConnection())
             {
-                using (OctopusCommand select = new OctopusCommand(sqlText, conn))
+                using (OpenCbsCommand select = new OpenCbsCommand(sqlText, conn))
                 {
-                    using (OctopusReader reader = select.ExecuteReader())
+                    using (OpenCbsReader reader = select.ExecuteReader())
                     {
                         if (reader == null || reader.Empty) return list;
                         while (reader.Read())
@@ -161,10 +161,10 @@ namespace OpenCBS.Manager.Accounting
 
             using (SqlConnection conn = GetConnection())
             {
-                using (OctopusCommand select = new OctopusCommand(sqlText, conn))
+                using (OpenCbsCommand select = new OpenCbsCommand(sqlText, conn))
                 {
                     select.AddParam("@id", accountId);
-                    using (OctopusReader reader = select.ExecuteReader())
+                    using (OpenCbsReader reader = select.ExecuteReader())
                     {
                         if (reader == null || reader.Empty) return list;
                         while (reader.Read())
@@ -213,9 +213,9 @@ namespace OpenCBS.Manager.Accounting
             const string sqlText = @"SELECT id, name FROM AccountsCategory";
             using (SqlConnection conn = GetConnection())
             {
-                using (OctopusCommand select = new OctopusCommand(sqlText, conn))
+                using (OpenCbsCommand select = new OpenCbsCommand(sqlText, conn))
                 {
-                    using (OctopusReader reader = select.ExecuteReader())
+                    using (OpenCbsReader reader = select.ExecuteReader())
                     {
                         if (reader == null || reader.Empty) return list;
                         while (reader.Read())
@@ -241,10 +241,10 @@ namespace OpenCBS.Manager.Accounting
 
             using (SqlConnection conn = GetConnection())
             {
-                using (OctopusCommand select = new OctopusCommand(sqlText, conn))
+                using (OpenCbsCommand select = new OpenCbsCommand(sqlText, conn))
                 {
                     select.AddParam("@id", id);
-                    using (OctopusReader reader = select.ExecuteReader())
+                    using (OpenCbsReader reader = select.ExecuteReader())
                     {
                         if (reader == null || reader.Empty) return null;
                         reader.Read();
@@ -263,7 +263,7 @@ namespace OpenCBS.Manager.Accounting
         {
             const string sqlText = @"INSERT INTO AccountsCategory (name) VALUES (@name) SELECT SCOPE_IDENTITY()";
 
-            using (OctopusCommand insert = new OctopusCommand(sqlText, pSqlTransac.Connection, pSqlTransac))
+            using (OpenCbsCommand insert = new OpenCbsCommand(sqlText, pSqlTransac.Connection, pSqlTransac))
             {
                 insert.AddParam("@name",  accountCategory.Name);
 
@@ -276,7 +276,7 @@ namespace OpenCBS.Manager.Accounting
             const string sqlText = @"DELETE FROM AccountsCategory WHERE id = @id";
             using (SqlConnection conn = GetConnection())
             {
-                using (OctopusCommand delete = new OctopusCommand(sqlText, conn))
+                using (OpenCbsCommand delete = new OpenCbsCommand(sqlText, conn))
                 {
                     delete.AddParam("@id", accountCategory.Id);
                     delete.ExecuteNonQuery();
@@ -284,7 +284,7 @@ namespace OpenCBS.Manager.Accounting
             }
         }
 
-	    private static Account GetAccount(OctopusReader pReader)
+	    private static Account GetAccount(OpenCbsReader pReader)
         {
             return new Account
             {
@@ -314,7 +314,7 @@ namespace OpenCBS.Manager.Accounting
 
             using (SqlConnection conn = GetConnection())
             {
-                using (OctopusCommand update = new OctopusCommand(sqlText, conn))
+                using (OpenCbsCommand update = new OpenCbsCommand(sqlText, conn))
                 {
                     update.AddParam("@id",  pAccount.Id);
                     SetAccount(update, pAccount);
@@ -340,7 +340,7 @@ namespace OpenCBS.Manager.Accounting
                                              ELSE MAX(rgt) + 1 
                                     END
                                     FROM dbo.ChartOfAccounts";
-                using (OctopusCommand cmd = new OctopusCommand(sqlText, sqlTransac.Connection, sqlTransac))
+                using (OpenCbsCommand cmd = new OpenCbsCommand(sqlText, sqlTransac.Connection, sqlTransac))
                 {
                     rightMostSibling = Convert.ToInt32(cmd.ExecuteScalar());
                 }
@@ -351,7 +351,7 @@ namespace OpenCBS.Manager.Accounting
                  sqlText = @"SELECT rgt
                                     FROM dbo.ChartOfAccounts
                                     WHERE id = @parent_account_id";
-                using (OctopusCommand cmd = new OctopusCommand(sqlText, sqlTransac.Connection, sqlTransac))
+                using (OpenCbsCommand cmd = new OpenCbsCommand(sqlText, sqlTransac.Connection, sqlTransac))
                 {
                     cmd.AddParam("@parent_account_id", account.ParentAccountId);
                     rightMostSibling = Convert.ToInt32(cmd.ExecuteScalar());
@@ -368,7 +368,7 @@ namespace OpenCBS.Manager.Accounting
                                           ELSE rgt 
                                         END
                                 WHERE rgt >= @right_most_sibling";
-            using (OctopusCommand cmd = new OctopusCommand(sqlText, sqlTransac.Connection, sqlTransac))
+            using (OpenCbsCommand cmd = new OpenCbsCommand(sqlText, sqlTransac.Connection, sqlTransac))
             {
                 cmd.AddParam("@right_most_sibling", rightMostSibling);
                 cmd.ExecuteNonQuery();
@@ -404,7 +404,7 @@ namespace OpenCBS.Manager.Accounting
                                   @rgt)
                                 SET IDENTITY_INSERT [ChartOFAccounts] OFF
                 ";
-                using (OctopusCommand cmd = new OctopusCommand(sqlText, sqlTransac.Connection, sqlTransac))
+                using (OpenCbsCommand cmd = new OpenCbsCommand(sqlText, sqlTransac.Connection, sqlTransac))
                 {
                     cmd.AddParam("@id", account.Id);
                     SetAccount(cmd, account);
@@ -434,7 +434,7 @@ namespace OpenCBS.Manager.Accounting
                                   @parentAccountId, 
                                   @lft, 
                                   @rgt)";
-                using (OctopusCommand cmd = new OctopusCommand(sqlText, sqlTransac.Connection, sqlTransac))
+                using (OpenCbsCommand cmd = new OpenCbsCommand(sqlText, sqlTransac.Connection, sqlTransac))
                 {
                     SetAccount(cmd, account);
                     cmd.ExecuteNonQuery();
@@ -446,7 +446,7 @@ namespace OpenCBS.Manager.Accounting
         {
             using (SqlConnection conn = GetConnection())
             {
-                OctopusCommand cmd = new OctopusCommand
+                OpenCbsCommand cmd = new OpenCbsCommand
                                          {
                                              Connection = conn,
                                              CommandText =
@@ -489,7 +489,7 @@ namespace OpenCBS.Manager.Accounting
             DeleteDatasFromTable("ChartOfAccounts", transaction);
         }
 
-        private static void SetAccount(OctopusCommand cmd, Account pAccount)
+        private static void SetAccount(OpenCbsCommand cmd, Account pAccount)
         {
             cmd.AddParam("@number", pAccount.Number);
             cmd.AddParam("@label",  pAccount.Label);
@@ -513,12 +513,12 @@ namespace OpenCBS.Manager.Accounting
 
             using (SqlConnection conn = GetConnection())
             {
-                using (OctopusCommand select = new OctopusCommand(sqlText, conn))
+                using (OpenCbsCommand select = new OpenCbsCommand(sqlText, conn))
                 {
                     select.AddParam("@id", account.Id);
 
                     int? inUse;
-                    using (OctopusReader reader = select.ExecuteReader())
+                    using (OpenCbsReader reader = select.ExecuteReader())
                     {
                         if (reader == null || reader.Empty) return false;
 
@@ -563,7 +563,7 @@ namespace OpenCBS.Manager.Accounting
 	            string.Join(",", idStrings)
 	            );
 	        using (SqlConnection connection = GetConnection())
-            using (OctopusCommand command = new OctopusCommand(query, connection))
+            using (OpenCbsCommand command = new OpenCbsCommand(query, connection))
                 return Convert.ToInt32(command.ExecuteScalar()) == 1;
 	    }
 
@@ -575,7 +575,7 @@ namespace OpenCBS.Manager.Accounting
 	            );
 
             using (SqlConnection connection = GetConnection())
-            using (OctopusCommand command = new OctopusCommand(query, connection))
+            using (OpenCbsCommand command = new OpenCbsCommand(query, connection))
                 return Convert.ToInt32(command.ExecuteScalar()) == 1;
 	    }
 
@@ -591,7 +591,7 @@ namespace OpenCBS.Manager.Accounting
                               @open_date , 
                               @close_date 
                             )";
-            using (OctopusCommand command = new OctopusCommand(sqlText, sqlTransaction.Connection, sqlTransaction))
+            using (OpenCbsCommand command = new OpenCbsCommand(sqlText, sqlTransaction.Connection, sqlTransaction))
             {
                 command.AddParam("@name", fiscalYear.Name);
                 if (fiscalYear.OpenDate != null)
@@ -621,7 +621,7 @@ namespace OpenCBS.Manager.Accounting
             const string sqlText =
                    @"DELETE FROM dbo.FiscalYear
                      WHERE id = @id";
-            using (OctopusCommand command = new OctopusCommand(sqlText, sqlTransaction.Connection, sqlTransaction))
+            using (OpenCbsCommand command = new OpenCbsCommand(sqlText, sqlTransaction.Connection, sqlTransaction))
             {
                 command.AddParam("@id", fiscalYear.Id);
                 command.ExecuteNonQuery();
@@ -636,7 +636,7 @@ namespace OpenCBS.Manager.Accounting
                     open_date = @open_date,
                     name = @name
                     WHERE id = @id";
-            using (OctopusCommand command = new OctopusCommand(sqlText, sqlTransaction.Connection, sqlTransaction))
+            using (OpenCbsCommand command = new OpenCbsCommand(sqlText, sqlTransaction.Connection, sqlTransaction))
             {
                 if (fiscalYear.OpenDate != null)
                 {
@@ -674,9 +674,9 @@ namespace OpenCBS.Manager.Accounting
             
             using (SqlConnection conn = GetConnection())
             {
-                using (OctopusCommand select = new OctopusCommand(sqlText, conn))
+                using (OpenCbsCommand select = new OpenCbsCommand(sqlText, conn))
                 {
-                    using (OctopusReader reader = select.ExecuteReader())
+                    using (OpenCbsReader reader = select.ExecuteReader())
                     {
                         if (reader.Empty) return null;
                         while (reader.Read())

@@ -43,7 +43,7 @@ namespace OpenCBS.Manager.Database
         public static void CreateDatabase(string pDatabaseName, SqlConnection pSqlConnection)
         {
             string sqlText = "CREATE DATABASE " + pDatabaseName;
-            OctopusCommand cmd = new OctopusCommand(sqlText, pSqlConnection);
+            OpenCbsCommand cmd = new OpenCbsCommand(sqlText, pSqlConnection);
 
             cmd.ExecuteNonQuery();
         }
@@ -51,11 +51,11 @@ namespace OpenCBS.Manager.Database
         public static void DeleteDatabase(string pDatabaseName, SqlConnection pSqlConnection)
         {
             string sqlText = string.Format("ALTER DATABASE {0} SET SINGLE_USER WITH ROLLBACK IMMEDIATE", pDatabaseName);
-            OctopusCommand cmd = new OctopusCommand(sqlText, pSqlConnection);
+            OpenCbsCommand cmd = new OpenCbsCommand(sqlText, pSqlConnection);
             cmd.ExecuteNonQuery();
 
             sqlText = "DROP DATABASE " + pDatabaseName;
-            cmd = new OctopusCommand(sqlText, pSqlConnection);
+            cmd = new OpenCbsCommand(sqlText, pSqlConnection);
             cmd.ExecuteNonQuery();
         }
         
@@ -78,7 +78,7 @@ namespace OpenCBS.Manager.Database
 
             foreach (string query in queries)
             {
-                OctopusCommand command = new OctopusCommand(query, pSqlConnection) { CommandTimeout = 480 };
+                OpenCbsCommand command = new OpenCbsCommand(query, pSqlConnection) { CommandTimeout = 480 };
                 command.ExecuteNonQuery();
             }
         }
@@ -146,8 +146,8 @@ namespace OpenCBS.Manager.Database
 
             string sqlText = string.Format(
                 "USE [{0}] SELECT [value] FROM [TechnicalParameters] WHERE [name]='version'", pDatabase);
-            using (OctopusCommand select = new OctopusCommand(sqlText, pSqlConnection))
-            using (OctopusReader reader = select.ExecuteReader())
+            using (OpenCbsCommand select = new OpenCbsCommand(sqlText, pSqlConnection))
+            using (OpenCbsReader reader = select.ExecuteReader())
             {
                 if (reader.Empty) return string.Empty;
                 reader.Read();
@@ -160,16 +160,16 @@ namespace OpenCBS.Manager.Database
             string query =
                 string.Format("USE [{0}] SELECT 1 FROM sys.tables WHERE NAME = 'TechnicalParameters'", dbName);
 
-            using (OctopusCommand command = new OctopusCommand(query, connection))
+            using (OpenCbsCommand command = new OpenCbsCommand(query, connection))
                 return command.ExecuteScalar() != null;
         }
 
         public static string GetDatabaseBranchCode(string pDatabaseName, SqlConnection pSqlConnection)
         {
             string sqlText = string.Format("USE [{0}] SELECT [value] FROM [GeneralParameters] WHERE [key]='BRANCH_CODE'", pDatabaseName);
-            using (OctopusCommand select = new OctopusCommand(sqlText, pSqlConnection))
+            using (OpenCbsCommand select = new OpenCbsCommand(sqlText, pSqlConnection))
             {
-                using (OctopusReader reader = select.ExecuteReader())
+                using (OpenCbsReader reader = select.ExecuteReader())
                 {
                     if (reader.Empty) return string.Empty;
                     reader.Read();
@@ -181,9 +181,9 @@ namespace OpenCBS.Manager.Database
         public static string GetDatabaseBranchCodeFromBranches(string pDatabaseName, SqlConnection pSqlConnection)
         {
             string sqlText = string.Format("USE [{0}] SELECT TOP 1 [code] FROM [Branches] WHERE [deleted] = 0", pDatabaseName);
-            using (OctopusCommand select = new OctopusCommand(sqlText, pSqlConnection))
+            using (OpenCbsCommand select = new OpenCbsCommand(sqlText, pSqlConnection))
             {
-                using (OctopusReader reader = select.ExecuteReader())
+                using (OpenCbsReader reader = select.ExecuteReader())
                 {
                     if (reader.Empty) return string.Empty;
                     reader.Read();
@@ -200,9 +200,9 @@ namespace OpenCBS.Manager.Database
         {
             string sql = string.Format("USE [{0}] EXEC sp_spaceused", pDatabase);
 
-            using (OctopusCommand cmd = new OctopusCommand(sql, pSqlConnection))
+            using (OpenCbsCommand cmd = new OpenCbsCommand(sql, pSqlConnection))
             {
-                using (OctopusReader reader = cmd.ExecuteReader())
+                using (OpenCbsReader reader = cmd.ExecuteReader())
                 {
                     if (reader.Empty) return string.Empty;
                     if (reader.Read())
@@ -223,7 +223,7 @@ namespace OpenCBS.Manager.Database
                     WHERE  database_id = 1 AND FILE_ID = 1
                 ";
 
-            using (OctopusCommand select = new OctopusCommand(sqlText, pSqlConnection))
+            using (OpenCbsCommand select = new OpenCbsCommand(sqlText, pSqlConnection))
             {
                 string dbFilePath = (string)select.ExecuteScalar();
                 return Path.GetDirectoryName(dbFilePath);
@@ -239,13 +239,13 @@ namespace OpenCBS.Manager.Database
 
             try
             {
-                OctopusCommand cmd = new OctopusCommand(sql1, pSqlConnection);
+                OpenCbsCommand cmd = new OpenCbsCommand(sql1, pSqlConnection);
                 cmd.ExecuteNonQuery();
-                cmd = new OctopusCommand(sql2, pSqlConnection);
+                cmd = new OpenCbsCommand(sql2, pSqlConnection);
                 cmd.ExecuteNonQuery();
 
                 string sql = String.Format("DBCC SHRINKDATABASE ({0})", database);
-                cmd = new OctopusCommand(sql, pSqlConnection);
+                cmd = new OpenCbsCommand(sql, pSqlConnection);
                 cmd.ExecuteNonQuery();
             }
             catch (Exception) { }
@@ -342,10 +342,10 @@ namespace OpenCBS.Manager.Database
         public static string GetObjectCreateScript(string db, string name, SqlConnection conn)
         {
             string q = string.Format("{0}..sp_helptext", db);
-            OctopusCommand cmd = new OctopusCommand(q, conn).AsStoredProcedure();
+            OpenCbsCommand cmd = new OpenCbsCommand(q, conn).AsStoredProcedure();
             cmd.AddParam("@objname", name);
             var buffer = new StringBuilder(2048);
-            using (OctopusReader reader = cmd.ExecuteReader())
+            using (OpenCbsReader reader = cmd.ExecuteReader())
             {
                 if (null == reader) return string.Empty;
                 while (reader.Read())
@@ -363,7 +363,7 @@ namespace OpenCBS.Manager.Database
             WHERE name = @name";
             q = string.Format(q, db);
 
-            OctopusCommand c = new OctopusCommand(q, conn);
+            OpenCbsCommand c = new OpenCbsCommand(q, conn);
             c.AddParam("@name", name);
             string xtype = c.ExecuteScalar().ToString().Trim();
 
@@ -441,7 +441,7 @@ namespace OpenCBS.Manager.Database
                                    ([account_name],[database_name],[user_name],[password],[active])
                                     VALUES (@accountName, @databaseName, @login, @password,1)";
 
-            using (OctopusCommand insert = new OctopusCommand(sqlText, pSqlConnection))
+            using (OpenCbsCommand insert = new OpenCbsCommand(sqlText, pSqlConnection))
             {
                 insert.AddParam("@accountName",  pAccountName);
                 insert.AddParam("@databaseName",  pDatabaseName);
@@ -457,7 +457,7 @@ namespace OpenCBS.Manager.Database
             const string sqlText = @"UPDATE [Accounts].[dbo].[SqlAccounts]
                                      SET active = @active
                                      WHERE [account_name] = @accountName";
-            using (OctopusCommand update = new OctopusCommand(sqlText, pSqlConnection))
+            using (OpenCbsCommand update = new OpenCbsCommand(sqlText, pSqlConnection))
             {
                 update.AddParam("@active",  pActive);
                 update.AddParam("@accountName",  pAccountName);
@@ -476,9 +476,9 @@ namespace OpenCBS.Manager.Database
             if (pSqlConnection.State == ConnectionState.Closed)
                 pSqlConnection.Open();
 
-            using (OctopusCommand select = new OctopusCommand(sqlText, pSqlConnection))
+            using (OpenCbsCommand select = new OpenCbsCommand(sqlText, pSqlConnection))
             {
-                using (OctopusReader reader = select.ExecuteReader())
+                using (OpenCbsReader reader = select.ExecuteReader())
                 {
 
                     if (reader == null || reader.Empty) return databases;
@@ -514,7 +514,7 @@ namespace OpenCBS.Manager.Database
             if (pSqlConnection.State == ConnectionState.Closed)
                 pSqlConnection.Open();
 
-            using (OctopusCommand select = new OctopusCommand(sqlText, pSqlConnection))
+            using (OpenCbsCommand select = new OpenCbsCommand(sqlText, pSqlConnection))
             {
                 select.AddParam("@account", pAccountName);
                 return (string)select.ExecuteScalar();
@@ -537,7 +537,7 @@ namespace OpenCBS.Manager.Database
             if (pSqlConnection.State == ConnectionState.Closed)
                 pSqlConnection.Open();
 
-            using (OctopusCommand update = new OctopusCommand(sqlText, pSqlConnection))
+            using (OpenCbsCommand update = new OpenCbsCommand(sqlText, pSqlConnection))
             {
                 update.AddParam("@account",  pAccountName);
                 update.AddParam("@password",  pPassword);
@@ -552,7 +552,7 @@ namespace OpenCBS.Manager.Database
             WHEN DB_ID('{0}') IS NULL THEN 0 ELSE 1 END";
             q = string.Format(q, name);
 
-            OctopusCommand cmd = new OctopusCommand {CommandText = q, Connection = conn};
+            OpenCbsCommand cmd = new OpenCbsCommand {CommandText = q, Connection = conn};
             return Convert.ToBoolean(cmd.ExecuteScalar());
         }
     }

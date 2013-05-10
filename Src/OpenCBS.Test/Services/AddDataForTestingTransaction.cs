@@ -87,16 +87,16 @@ namespace OpenCBS.Test.Services
 		public int AddGenericTiersIntoDatabase(string type)
 		{
 			int districtId = AddDistrictIntoDatabase().Id;
-            OctopusCommand command = new OctopusCommand("INSERT INTO Tiers (creation_date,client_type_code,active,bad_client,district_id,city,loan_cycle) VALUES ('1/1/2007','G',1,0,@districtId,'Tress',1) SELECT SCOPE_IDENTITY()", _connection);
+            OpenCbsCommand command = new OpenCbsCommand("INSERT INTO Tiers (creation_date,client_type_code,active,bad_client,district_id,city,loan_cycle) VALUES ('1/1/2007','G',1,0,@districtId,'Tress',1) SELECT SCOPE_IDENTITY()", _connection);
             command.AddParam("@districtId", districtId);
 			int tiersId = int.Parse(command.ExecuteScalar().ToString());
 
-            OctopusCommand insert = null;
+            OpenCbsCommand insert = null;
 			
 			if (type.Equals("group"))
-                insert = new OctopusCommand("INSERT INTO Groups (id,name) VALUES (" + tiersId + ",'SCG')", _connection);
+                insert = new OpenCbsCommand("INSERT INTO Groups (id,name) VALUES (" + tiersId + ",'SCG')", _connection);
 			else if (type.Equals("person"))
-                insert = new OctopusCommand("INSERT INTO Persons (id,first_name,sex,identification_data,last_name,household_head) VALUES (" + tiersId + ",'Nicolas','M','123KH','BARON',1)", _connection);
+                insert = new OpenCbsCommand("INSERT INTO Persons (id,first_name,sex,identification_data,last_name,household_head) VALUES (" + tiersId + ",'Nicolas','M','123KH','BARON',1)", _connection);
 			
             if (insert != null) insert.ExecuteNonQuery();
 
@@ -109,27 +109,27 @@ namespace OpenCBS.Test.Services
 		}
 		public void DeletePackage()
 		{
-            OctopusCommand delete = new OctopusCommand("DELETE Packages", _connection);
+            OpenCbsCommand delete = new OpenCbsCommand("DELETE Packages", _connection);
 			delete.ExecuteNonQuery();
 		}
 		public void DeleteCreditContract()
 		{
 
-            OctopusCommand deleteLinkSavings = new OctopusCommand("DELETE FROM [LoansLinkSavingsBook]", _connection);
+            OpenCbsCommand deleteLinkSavings = new OpenCbsCommand("DELETE FROM [LoansLinkSavingsBook]", _connection);
 		    deleteLinkSavings.ExecuteNonQuery();
-            OctopusCommand deleteLinkGuarantor3 = new OctopusCommand("DELETE LoanDisbursmentEvents", _connection);
+            OpenCbsCommand deleteLinkGuarantor3 = new OpenCbsCommand("DELETE LoanDisbursmentEvents", _connection);
             deleteLinkGuarantor3.ExecuteNonQuery();
-            OctopusCommand deleteInstallmentHistory = new OctopusCommand("DELETE InstallmentHistory", _connection);
+            OpenCbsCommand deleteInstallmentHistory = new OpenCbsCommand("DELETE InstallmentHistory", _connection);
             deleteInstallmentHistory.ExecuteNonQuery();
-            OctopusCommand deleteLinkGuarantor2 = new OctopusCommand("DELETE ContractEvents", _connection);
+            OpenCbsCommand deleteLinkGuarantor2 = new OpenCbsCommand("DELETE ContractEvents", _connection);
             deleteLinkGuarantor2.ExecuteNonQuery();
-            OctopusCommand deleteLinkGuarantor = new OctopusCommand("DELETE LinkGuarantorCredit", _connection);
+            OpenCbsCommand deleteLinkGuarantor = new OpenCbsCommand("DELETE LinkGuarantorCredit", _connection);
 			deleteLinkGuarantor.ExecuteNonQuery();
-            OctopusCommand deleteCredit = new OctopusCommand("DELETE Credit", _connection);
+            OpenCbsCommand deleteCredit = new OpenCbsCommand("DELETE Credit", _connection);
 			deleteCredit.ExecuteNonQuery();
 			DeletePackage();
             DeleteFundingLine();
-            OctopusCommand deleteContract = new OctopusCommand("DELETE Contracts", _connection);
+            OpenCbsCommand deleteContract = new OpenCbsCommand("DELETE Contracts", _connection);
 			deleteContract.ExecuteNonQuery();
 			DeleteTiers();
             DeleteCity();
@@ -138,31 +138,31 @@ namespace OpenCBS.Test.Services
 		}
         public void DeleteCorporatePerson()
         {
-            OctopusCommand deleteCorporatePerson = new OctopusCommand("DELETE CorporatePersonBelonging", _connection);
+            OpenCbsCommand deleteCorporatePerson = new OpenCbsCommand("DELETE CorporatePersonBelonging", _connection);
             deleteCorporatePerson.ExecuteNonQuery();
 
         }
         public void DeleteCorporate()
         {
-            OctopusCommand deleteCorporatePerson = new OctopusCommand("DELETE Corporates", _connection);
+            OpenCbsCommand deleteCorporatePerson = new OpenCbsCommand("DELETE Corporates", _connection);
             deleteCorporatePerson.ExecuteNonQuery();
 
         }
 
 		public int AddGenericPackage()
 		{
-            OctopusCommand insert = new OctopusCommand("INSERT INTO Packages (currency_id, deleted,name,client_type,installment_type,loan_type,charge_interest_within_grace_period,keep_expected_installment,anticipated_total_repayment_base) VALUES (" + AddGenericCurrency() + ", 0,'Package','G',1,1,0,0,1) SELECT SCOPE_IDENTITY()", _connection);
+            OpenCbsCommand insert = new OpenCbsCommand("INSERT INTO Packages (currency_id, deleted,name,client_type,installment_type,loan_type,charge_interest_within_grace_period,keep_expected_installment,anticipated_total_repayment_base) VALUES (" + AddGenericCurrency() + ", 0,'Package','G',1,1,0,0,1) SELECT SCOPE_IDENTITY()", _connection);
 			return int.Parse(insert.ExecuteScalar().ToString());
 		}
         public int AddGenericCurrency()
         {
-            OctopusCommand insert = new OctopusCommand("INSERT INTO Currencies (name, code, is_pivot, is_swapped) VALUES ('USD', 'USD', 1, 0) SELECT SCOPE_IDENTITY()", _connection);
+            OpenCbsCommand insert = new OpenCbsCommand("INSERT INTO Currencies (name, code, is_pivot, is_swapped) VALUES ('USD', 'USD', 1, 0) SELECT SCOPE_IDENTITY()", _connection);
             return int.Parse(insert.ExecuteScalar().ToString());
         }
 
 		public int AddGenericFundingLine()
 		{
-            OctopusCommand insert = new OctopusCommand("INSERT INTO FundingLines (name,amount, purpose, deleted, currency_id, begin_date, end_date) VALUES ('AFD130',0, 'Not Set', 0, " + AddGenericCurrency() + ", '20080101', '20120101') SELECT SCOPE_IDENTITY()", _connection);
+            OpenCbsCommand insert = new OpenCbsCommand("INSERT INTO FundingLines (name,amount, purpose, deleted, currency_id, begin_date, end_date) VALUES ('AFD130',0, 'Not Set', 0, " + AddGenericCurrency() + ", '20080101', '20120101') SELECT SCOPE_IDENTITY()", _connection);
             return int.Parse(insert.ExecuteScalar().ToString());
 		}
 
@@ -172,12 +172,12 @@ namespace OpenCBS.Test.Services
 
 			int tiersId = AddGenericTiersIntoDatabase("group");
 
-            OctopusCommand insertProject = new OctopusCommand(@"INSERT INTO Projects([tiers_id], [status], [name], [code], [aim], [begin_date]) VALUES 
+            OpenCbsCommand insertProject = new OpenCbsCommand(@"INSERT INTO Projects([tiers_id], [status], [name], [code], [aim], [begin_date]) VALUES 
     (" + tiersId + " , 2,'NOT SET','NOT SET','NOT SET','10/10/2005') SELECT SCOPE_IDENTITY()", _connection);
             int projectId = int.Parse(insertProject.ExecuteScalar().ToString());
 
 
-            OctopusCommand insertContract = new OctopusCommand("INSERT INTO [Contracts]([contract_code], [branch_code], [creation_date], [start_date], [close_date], [closed], [project_id], [activity_id]) VALUES " +
+            OpenCbsCommand insertContract = new OpenCbsCommand("INSERT INTO [Contracts]([contract_code], [branch_code], [creation_date], [start_date], [close_date], [closed], [project_id], [activity_id]) VALUES " +
                 "('KH/130','SU','10/10/2004','10/10/2005','10/10/2006',0," + projectId + ", 1) SELECT SCOPE_IDENTITY()", _connection);
 			int contractId = int.Parse(insertContract.ExecuteScalar().ToString());
 
@@ -207,14 +207,14 @@ namespace OpenCBS.Test.Services
                                 VALUES(@id, @packageId, 1000, 2, 1, 2, 2 ,2 ,2 ,3 ,2 ,0 ,1 ,{0} ,6 ,0 ,0 ,0)
                                     ", fundingline_id);
 
-            OctopusCommand insertCredit = new OctopusCommand(sqlText, _connection);
+            OpenCbsCommand insertCredit = new OpenCbsCommand(sqlText, _connection);
 
             insertCredit.AddParam("@id", contractId);
             insertCredit.AddParam("@packageId", packageId);
 
 			insertCredit.ExecuteNonQuery();
 
-            OctopusCommand insertInstallment = new OctopusCommand(@"INSERT INTO [Installments]([expected_date],[interest_repayment],[capital_repayment],[contract_id],
+            OpenCbsCommand insertInstallment = new OpenCbsCommand(@"INSERT INTO [Installments]([expected_date],[interest_repayment],[capital_repayment],[contract_id],
                                 [number],[paid_interest],[paid_capital],[fees_unpaid])
                                     VALUES (01/01/2007,100,200,@contractId,1,0,0,0)
                                                             INSERT INTO [Installments]([expected_date],[interest_repayment],[capital_repayment],[contract_id],
@@ -245,25 +245,25 @@ namespace OpenCBS.Test.Services
 
 		public void DeleteTiers()
 		{
-            OctopusCommand deleteClientBranchHistory = new OctopusCommand("DELETE ClientBranchHistory", _connection);
+            OpenCbsCommand deleteClientBranchHistory = new OpenCbsCommand("DELETE ClientBranchHistory", _connection);
 		    deleteClientBranchHistory.ExecuteNonQuery();
-            OctopusCommand deletePersonGroupBelonging = new OctopusCommand("DELETE PersonGroupBelonging", _connection);
+            OpenCbsCommand deletePersonGroupBelonging = new OpenCbsCommand("DELETE PersonGroupBelonging", _connection);
 			deletePersonGroupBelonging.ExecuteNonQuery();
-            OctopusCommand deletePersons = new OctopusCommand("DELETE Persons", _connection);
+            OpenCbsCommand deletePersons = new OpenCbsCommand("DELETE Persons", _connection);
 			deletePersons.ExecuteNonQuery();
-            OctopusCommand deleteGroups = new OctopusCommand("DELETE Groups", _connection);
+            OpenCbsCommand deleteGroups = new OpenCbsCommand("DELETE Groups", _connection);
 			deleteGroups.ExecuteNonQuery();
-            OctopusCommand deleteProject = new OctopusCommand("DELETE Projects", _connection);
+            OpenCbsCommand deleteProject = new OpenCbsCommand("DELETE Projects", _connection);
             deleteProject.ExecuteNonQuery();
-            OctopusCommand deleteSavingEvents = new OctopusCommand("DELETE SavingEvents", _connection);
+            OpenCbsCommand deleteSavingEvents = new OpenCbsCommand("DELETE SavingEvents", _connection);
             deleteSavingEvents.ExecuteNonQuery();
-            OctopusCommand deleteSavingBookContracts = new OctopusCommand("DELETE FROM SavingBookContracts", _connection);
+            OpenCbsCommand deleteSavingBookContracts = new OpenCbsCommand("DELETE FROM SavingBookContracts", _connection);
             deleteSavingBookContracts.ExecuteNonQuery();
-            OctopusCommand deleteSavingDepositContracts = new OctopusCommand("DELETE FROM SavingDepositContracts", _connection);
+            OpenCbsCommand deleteSavingDepositContracts = new OpenCbsCommand("DELETE FROM SavingDepositContracts", _connection);
             deleteSavingDepositContracts.ExecuteNonQuery();
-            OctopusCommand deleteSavingContracts = new OctopusCommand("DELETE SavingContracts", _connection);
+            OpenCbsCommand deleteSavingContracts = new OpenCbsCommand("DELETE SavingContracts", _connection);
             deleteSavingContracts.ExecuteNonQuery();
-            OctopusCommand deleteTiers = new OctopusCommand("DELETE Tiers", _connection);
+            OpenCbsCommand deleteTiers = new OpenCbsCommand("DELETE Tiers", _connection);
 			deleteTiers.ExecuteNonQuery();
 		}
 
@@ -405,22 +405,22 @@ namespace OpenCBS.Test.Services
 
 		public void DeleteSaving()
 		{
-            OctopusCommand deleteSVE = new OctopusCommand("DELETE SavingEvents", _connection);
+            OpenCbsCommand deleteSVE = new OpenCbsCommand("DELETE SavingEvents", _connection);
 			deleteSVE.ExecuteNonQuery();
-            OctopusCommand deleteSBC = new OctopusCommand("DELETE FROM SavingBookContracts", _connection);
+            OpenCbsCommand deleteSBC = new OpenCbsCommand("DELETE FROM SavingBookContracts", _connection);
             deleteSBC.ExecuteNonQuery();
-            OctopusCommand deleteSDC = new OctopusCommand("DELETE FROM SavingDepositContracts", _connection);
+            OpenCbsCommand deleteSDC = new OpenCbsCommand("DELETE FROM SavingDepositContracts", _connection);
             deleteSDC.ExecuteNonQuery();
-            OctopusCommand deleteSVC = new OctopusCommand("DELETE SavingContracts", _connection);
+            OpenCbsCommand deleteSVC = new OpenCbsCommand("DELETE SavingContracts", _connection);
 			deleteSVC.ExecuteNonQuery();
-            OctopusCommand deleteSVP = new OctopusCommand("DELETE SavingBookProducts", _connection);
+            OpenCbsCommand deleteSVP = new OpenCbsCommand("DELETE SavingBookProducts", _connection);
             deleteSVP.ExecuteNonQuery();
-            OctopusCommand deleteSBP = new OctopusCommand("DELETE SavingProducts", _connection);
+            OpenCbsCommand deleteSBP = new OpenCbsCommand("DELETE SavingProducts", _connection);
 			deleteSVP.ExecuteNonQuery();
 		}
         public void AddGeneralParameterIntoDatabase()
         {
-            OctopusCommand insert = new OctopusCommand("INSERT INTO [GeneralParameters]([key], [value]) VALUES('ID_PATTERN', '/d/d/w/w') SELECT SCOPE_IDENTITY()", _connection);
+            OpenCbsCommand insert = new OpenCbsCommand("INSERT INTO [GeneralParameters]([key], [value]) VALUES('ID_PATTERN', '/d/d/w/w') SELECT SCOPE_IDENTITY()", _connection);
             insert.ExecuteScalar();
         }
 	}

@@ -20,14 +20,14 @@ namespace OpenCBS.Manager.Currencies
             const string q = "INSERT INTO [ExchangeRates] ([exchange_date], [exchange_rate],[currency_id]) " +
                              "VALUES(@date,@rate,@currency)";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 SetExchangeRate(c, pDate.Date, pRate,pCurrency);
                 c.ExecuteNonQuery();
             }
         }
 
-        private static void SetExchangeRate(OctopusCommand c, DateTime pDate, double pRate, Currency pCurrency)
+        private static void SetExchangeRate(OpenCbsCommand c, DateTime pDate, double pRate, Currency pCurrency)
         {
             c.AddParam("@date", pDate);
             c.AddParam("@rate", pRate);
@@ -42,7 +42,7 @@ namespace OpenCBS.Manager.Currencies
                                  AND currency_id = @currency";
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 SetExchangeRate(c, pDate.Date, pRate, pCurrency);
                 c.ExecuteNonQuery();
@@ -58,10 +58,10 @@ namespace OpenCBS.Manager.Currencies
             
             List<ExchangeRate> rates;
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@date", pDate);
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (r == null || r.Empty) return null;
 
@@ -105,11 +105,11 @@ namespace OpenCBS.Manager.Currencies
 
             List<ExchangeRate> rates;
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@beginDate", beginDate.Date);
                 c.AddParam("@endDate", endDate.Date);
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (r == null || r.Empty) return null;
 
@@ -143,12 +143,12 @@ namespace OpenCBS.Manager.Currencies
                                 WHERE DATEADD(dd, 0, DATEDIFF(dd, 0, exchange_date)) = @date 
                                   AND currency_id = @currency";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@date", pDate.Date);
                 c.AddParam("@currency", pCurrency.Id);
 
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (r.Empty)
                         return null;
@@ -173,7 +173,7 @@ namespace OpenCBS.Manager.Currencies
                                     ORDER BY exchange_date DESC";
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@currency",pCurrency.Id);
                 c.AddParam("@date", pDate);
@@ -189,7 +189,7 @@ namespace OpenCBS.Manager.Currencies
                                     ORDER BY exchange_date DESC";
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@currency", pCurrency.Id);
                 c.AddParam("@date", pDate);

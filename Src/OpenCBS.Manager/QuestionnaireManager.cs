@@ -54,7 +54,7 @@ namespace OpenCBS.Manager
                                                 , @OtherMessages
                                                 , @isSent)";
             
-            using (OctopusCommand cmd = new OctopusCommand(sqlText, sqlTransac.Connection, sqlTransac))
+            using (OpenCbsCommand cmd = new OpenCbsCommand(sqlText, sqlTransac.Connection, sqlTransac))
             {
                 SetFields(cmd, 
                         mfiName, 
@@ -78,7 +78,7 @@ namespace OpenCBS.Manager
             string sql = @"UPDATE [dbo].[Questionnaire]
                            SET [is_sent] = @isSent";
             using (SqlConnection conn = GetConnection())
-            using (var cmd = new OctopusCommand(sql, conn))
+            using (var cmd = new OpenCbsCommand(sql, conn))
             {
                 cmd.AddParam("@isSent", isSent);
                 cmd.ExecuteNonQuery();
@@ -115,7 +115,7 @@ namespace OpenCBS.Manager
                           ,[PurposeOfUsage] = @PurposeOfUsage
                           ,[is_sent] = @isSent
                      ";
-            using (OctopusCommand cmd = new OctopusCommand(sql,sqlTransac.Connection, sqlTransac))
+            using (OpenCbsCommand cmd = new OpenCbsCommand(sql,sqlTransac.Connection, sqlTransac))
             {
                 SetFields(  cmd,
                             mfiName,
@@ -135,7 +135,7 @@ namespace OpenCBS.Manager
             }
         }
 
-        private void SetFields(OctopusCommand cmd, 
+        private void SetFields(OpenCbsCommand cmd, 
                                         string mfiName, 
                                         string country, 
                                         string numberOfClients, 
@@ -182,9 +182,9 @@ namespace OpenCBS.Manager
             MyInformation myInformation = new MyInformation();
             myInformation.MfiName = null;
             using (SqlConnection conn = GetConnection())
-            using (var cmd = new OctopusCommand(sqlText, conn))
+            using (var cmd = new OpenCbsCommand(sqlText, conn))
             {
-                using(OctopusReader reader = cmd.ExecuteReader())
+                using(OpenCbsReader reader = cmd.ExecuteReader())
                 {
                     if (!reader.Empty)
                     {

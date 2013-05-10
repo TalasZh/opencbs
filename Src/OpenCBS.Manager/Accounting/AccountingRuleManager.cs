@@ -70,7 +70,7 @@ namespace OpenCBS.Manager.Accounting
                                     SELECT SCOPE_IDENTITY()";
             using (SqlConnection conn = GetConnection())
             {
-                using (OctopusCommand insert = new OctopusCommand(sqlText, conn))
+                using (OpenCbsCommand insert = new OpenCbsCommand(sqlText, conn))
                 {
                     insert.AddParam("@debit_account_number_id",  pRule.DebitAccount.Id);
                     insert.AddParam("@credit_account_number_id", pRule.CreditAccount.Id);
@@ -113,7 +113,7 @@ namespace OpenCBS.Manager.Accounting
 
             using (SqlConnection conn = GetConnection())
             {
-                using (OctopusCommand cmd = new OctopusCommand(sqlText, conn))
+                using (OpenCbsCommand cmd = new OpenCbsCommand(sqlText, conn))
                 {
                     SetAccountingRule(cmd, rule);
                     cmd.ExecuteNonQuery();
@@ -134,7 +134,7 @@ namespace OpenCBS.Manager.Accounting
                                      WHERE id = @id";
             using (SqlConnection conn = GetConnection())
             {
-                using (OctopusCommand cmd = new OctopusCommand(sqlText, conn))
+                using (OpenCbsCommand cmd = new OpenCbsCommand(sqlText, conn))
                 {
                     cmd.AddParam("@id", rule.Id);
                     cmd.AddParam("@debit_account_number_id", rule.DebitAccount.Id);
@@ -164,7 +164,7 @@ namespace OpenCBS.Manager.Accounting
                                      WHERE id = @id";
             using (SqlConnection conn = GetConnection())
             {
-                using (OctopusCommand cmd = new OctopusCommand(sqlText, conn))
+                using (OpenCbsCommand cmd = new OpenCbsCommand(sqlText, conn))
                 {
                     SetAccountingRule(cmd, rule);
                     cmd.ExecuteNonQuery();
@@ -180,7 +180,7 @@ namespace OpenCBS.Manager.Accounting
 
             using (SqlConnection conn = GetConnection())
             {
-                using (OctopusCommand delete = new OctopusCommand(sqlText, conn))
+                using (OpenCbsCommand delete = new OpenCbsCommand(sqlText, conn))
                 {
                     delete.AddParam("@id", pRule.Id);
                     delete.ExecuteNonQuery();
@@ -193,14 +193,14 @@ namespace OpenCBS.Manager.Accounting
             const string sqlText1 = @"DELETE FROM [ContractAccountingRules]";
             using (SqlConnection conn = GetConnection())
             {
-                using (OctopusCommand delete = new OctopusCommand(sqlText1, conn))
+                using (OpenCbsCommand delete = new OpenCbsCommand(sqlText1, conn))
                 {
                     delete.ExecuteNonQuery();
                 }
 
                 const string sqlText2 = @"DELETE FROM [AccountingRules]";
 
-                using (OctopusCommand delete = new OctopusCommand(sqlText2, conn))
+                using (OpenCbsCommand delete = new OpenCbsCommand(sqlText2, conn))
                 {
                     delete.ExecuteNonQuery();
                 }
@@ -217,11 +217,11 @@ namespace OpenCBS.Manager.Accounting
             IAccountingRule rule = new ContractAccountingRule();
             using (SqlConnection conn = GetConnection())
             {
-                using (OctopusCommand select = new OctopusCommand(sqlText, conn))
+                using (OpenCbsCommand select = new OpenCbsCommand(sqlText, conn))
                 {
                     select.AddParam("@id", pId);
 
-                    using (OctopusReader reader = select.ExecuteReader())
+                    using (OpenCbsReader reader = select.ExecuteReader())
                     {
                         if (reader.Empty) return null;
 
@@ -269,11 +269,11 @@ namespace OpenCBS.Manager.Accounting
             ContractAccountingRule rule;
             using (SqlConnection conn = GetConnection())
             {
-                using (OctopusCommand select = new OctopusCommand(sqlText, conn))
+                using (OpenCbsCommand select = new OpenCbsCommand(sqlText, conn))
                 {
                     select.AddParam("@id", pId);
 
-                    using (OctopusReader reader = select.ExecuteReader())
+                    using (OpenCbsReader reader = select.ExecuteReader())
                     {
                         if (reader.Empty) return null;
 
@@ -318,11 +318,11 @@ namespace OpenCBS.Manager.Accounting
             FundingLineAccountingRule rule;
             using (SqlConnection conn = GetConnection())
             {
-                using (OctopusCommand select = new OctopusCommand(sqlText, conn))
+                using (OpenCbsCommand select = new OpenCbsCommand(sqlText, conn))
                 {
                     select.AddParam("@id", pId);
 
-                    using (OctopusReader reader = select.ExecuteReader())
+                    using (OpenCbsReader reader = select.ExecuteReader())
                     {
                         if (reader.Empty) return null;
 
@@ -347,9 +347,9 @@ namespace OpenCBS.Manager.Accounting
             AccountingRuleCollection rules = new AccountingRuleCollection();
             using (SqlConnection conn = GetConnection())
             {
-                using (OctopusCommand select = new OctopusCommand(sqlText, conn))
+                using (OpenCbsCommand select = new OpenCbsCommand(sqlText, conn))
                 {
-                    using (OctopusReader reader = select.ExecuteReader())
+                    using (OpenCbsReader reader = select.ExecuteReader())
                     {
                         if (reader.Empty) return rules;
 
@@ -425,11 +425,11 @@ namespace OpenCBS.Manager.Accounting
             AccountingRuleCollection rules = new AccountingRuleCollection();
             using (SqlConnection conn = GetConnection())
             {
-                using (OctopusCommand select = new OctopusCommand(sqlText, conn))
+                using (OpenCbsCommand select = new OpenCbsCommand(sqlText, conn))
                 {
                     select.AddParam("@event_type", type);
 
-                    using (OctopusReader reader = select.ExecuteReader())
+                    using (OpenCbsReader reader = select.ExecuteReader())
                     {
                         if (reader.Empty) return rules;
 
@@ -463,7 +463,7 @@ namespace OpenCBS.Manager.Accounting
             return rules;
         }
 
-        private void SetAccountingRule(OctopusCommand cmd, ContractAccountingRule rule)
+        private void SetAccountingRule(OpenCbsCommand cmd, ContractAccountingRule rule)
         {
             cmd.AddParam("@id", rule.Id);
             cmd.AddParam("@productType", (int)rule.ProductType);
@@ -500,7 +500,7 @@ namespace OpenCBS.Manager.Accounting
                 cmd.AddParam("@activityId", null);
         }
 
-        private static ContractAccountingRule GetContractAccountingRule(OctopusReader reader)
+        private static ContractAccountingRule GetContractAccountingRule(OpenCbsReader reader)
         {
             ContractAccountingRule rule = new ContractAccountingRule();
 
@@ -545,7 +545,7 @@ namespace OpenCBS.Manager.Accounting
             return rule;
         }
 
-        private FundingLineAccountingRule _getFundingLineAccountingRule(OctopusReader reader)
+        private FundingLineAccountingRule _getFundingLineAccountingRule(OpenCbsReader reader)
         {
             FundingLineAccountingRule rule = new FundingLineAccountingRule();
 

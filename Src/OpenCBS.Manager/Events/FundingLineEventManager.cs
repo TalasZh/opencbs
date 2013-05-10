@@ -47,11 +47,11 @@ namespace OpenCBS.Manager.Events
                   WHERE fundingline_id = @fundingline_id 
                   ORDER BY creation_date DESC, id DESC";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand cmd = new OctopusCommand(sqlText, conn))
+            using (OpenCbsCommand cmd = new OpenCbsCommand(sqlText, conn))
             {
                 cmd.AddParam("@fundingline_id", fundingLine.Id);
 
-                using (OctopusReader reader = cmd.ExecuteReader())
+                using (OpenCbsReader reader = cmd.ExecuteReader())
                 {
                     if (reader == null || reader.Empty) return list;
                     {
@@ -97,7 +97,7 @@ namespace OpenCBS.Manager.Events
                                  AND [fundingline_id] = @fundinglineid";
             if (!includeDeleted) sqlText += " and deleted = @deleted";
 
-            OctopusCommand cmd = new OctopusCommand(sqlText, sqlTransac.Connection, sqlTransac);
+            OpenCbsCommand cmd = new OpenCbsCommand(sqlText, sqlTransac.Connection, sqlTransac);
             cmd.AddParam("@code", pFundingLineEvent.Code);
             cmd.AddParam("@amount", pFundingLineEvent.Amount);
             cmd.AddParam("@direction", (int)pFundingLineEvent.Movement);
@@ -105,7 +105,7 @@ namespace OpenCBS.Manager.Events
             cmd.AddParam("@fundinglineid", pFundingLineEvent.FundingLine.Id);
             if (!includeDeleted) cmd.AddParam("@deleted", pFundingLineEvent.IsDeleted);
 
-            using (OctopusReader reader = cmd.ExecuteReader())
+            using (OpenCbsReader reader = cmd.ExecuteReader())
             {
                 if (reader != null)
                 {
@@ -126,7 +126,7 @@ namespace OpenCBS.Manager.Events
                                 UPDATE [FundingLineEvents] 
                                 SET [deleted]=1 
                                 WHERE [id] = @id";
-            using (OctopusCommand c = new OctopusCommand(sqlText, sqlTransac.Connection, sqlTransac))
+            using (OpenCbsCommand c = new OpenCbsCommand(sqlText, sqlTransac.Connection, sqlTransac))
             {
                 c.AddParam("@id", pFundingLineEvent.Id);
                 c.AddParam("@deleted", true);
@@ -160,9 +160,9 @@ namespace OpenCBS.Manager.Events
                             ) 
                 SELECT SCOPE_IDENTITY()";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand cmd = pTransac == null
-                                    ? new OctopusCommand(sqlText, conn)
-                                    : new OctopusCommand(sqlText, pTransac.Connection, pTransac))
+            using (OpenCbsCommand cmd = pTransac == null
+                                    ? new OpenCbsCommand(sqlText, conn)
+                                    : new OpenCbsCommand(sqlText, pTransac.Connection, pTransac))
             {
                 cmd.AddParam("@code", pFundingLineEvent.Code);
                 cmd.AddParam("@amount", pFundingLineEvent.Amount);
@@ -190,7 +190,7 @@ namespace OpenCBS.Manager.Events
                                     SET [deleted] = @deleted 
                                     WHERE [id] = @id";
 
-            using (OctopusCommand c = new OctopusCommand(sqlText, sqlTransac.Connection, sqlTransac))
+            using (OpenCbsCommand c = new OpenCbsCommand(sqlText, sqlTransac.Connection, sqlTransac))
             {
                 c.AddParam("@id", pFundingLineEvent.Id);
                 c.AddParam("@deleted", pFundingLineEvent.IsDeleted);

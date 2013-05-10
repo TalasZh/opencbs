@@ -57,12 +57,12 @@ namespace OpenCBS.Manager.Export
                                            OR (i2.paid_date IS NOT NULL AND i2.pending = 1))) = 0";
 
             using (SqlConnection connection = GetConnection())
-            using (OctopusCommand cmd = new OctopusCommand(sqlText, connection))
+            using (OpenCbsCommand cmd = new OpenCbsCommand(sqlText, connection))
             {
                 cmd.AddParam("@startDate", pStartDate);
                 cmd.AddParam("@endDate",  pEndDate);
 
-                using (OctopusReader reader = cmd.ExecuteReader())
+                using (OpenCbsReader reader = cmd.ExecuteReader())
                 {
                     if (reader == null || reader.Empty) return rows;
 

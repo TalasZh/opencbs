@@ -58,13 +58,13 @@ namespace OpenCBS.Manager
                 ? "SELECT thumbnail,name FROM Pictures WHERE [group]=@group AND id=@id AND subid=@subid"
                 : "SELECT picture,name FROM Pictures WHERE [group]=@group AND id=@id AND subid=@subid";
 
-            using (OctopusCommand c = new OctopusCommand(sql, AttachmentsConnection))
+            using (OpenCbsCommand c = new OpenCbsCommand(sql, AttachmentsConnection))
             {
                 c.AddParam("@group", pGroup);
                 c.AddParam("@id", pId);
                 c.AddParam("@subid", pSubID);
 
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (r == null || r.Empty) return null;
 
@@ -128,7 +128,7 @@ namespace OpenCBS.Manager
         {
             string q = @"DELETE FROM Pictures 
             WHERE [Pictures].[group]=@group AND [Pictures].[id]=@id AND [Pictures].[subid]=@subid";
-            using (OctopusCommand c = new OctopusCommand(q, AttachmentsConnection))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, AttachmentsConnection))
             {
                 c.AddParam("group", pGroup);
                 c.AddParam("id", pId);
@@ -165,7 +165,7 @@ namespace OpenCBS.Manager
             string q =
                 @"INSERT INTO Pictures ([group], [id] ,[subid] ,[picture] ,[thumbnail] ,[name]) 
                 VALUES (@group ,@id ,@subid ,@picture ,@thumbnail ,@name)";
-            using (OctopusCommand c = new OctopusCommand(q, AttachmentsConnection))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, AttachmentsConnection))
             {
                 c.AddParam("group", pGroup);
                 c.AddParam("id", pId);
@@ -187,12 +187,12 @@ namespace OpenCBS.Manager
                            FROM Pictures 
                            WHERE [group]=@group AND id=@id 
                            ORDER BY subid ASC";
-            using (OctopusCommand c = new OctopusCommand(q, AttachmentsConnection))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, AttachmentsConnection))
             {
                 c.AddParam("group", pGroup);
                 c.AddParam("id", pId);
                 List<int> subIds = new List<int>();
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     while (r.Read())
                     {
@@ -210,7 +210,7 @@ namespace OpenCBS.Manager
                 ([group], [id] ,[subid] ,[picture] ,[thumbnail] ,[name]) 
                 VALUES (@group ,@person_id ,@subid ,@picture ,@thumbnail ,@name)
                 SELECT CONVERT(int, SCOPE_IDENTITY())");
-            using (OctopusCommand c = new OctopusCommand(q, AttachmentsConnection))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, AttachmentsConnection))
             {
                 c.AddParam("group", "SECOND_PICTURE");
                 c.AddParam("picture", picture);
@@ -224,7 +224,7 @@ namespace OpenCBS.Manager
                 string.Format(
                     @"INSERT INTO PersonsPhotos ([person_id], [picture_id]) 
                      VALUES (@person_id, @picture_id)");
-            using (OctopusCommand c = new OctopusCommand(q, AttachmentsConnection))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, AttachmentsConnection))
             {
                 c.AddParam("person_id", person_id);
                 c.AddParam("picture_id", pictureId);
@@ -241,7 +241,7 @@ namespace OpenCBS.Manager
                     WHERE [Pictures].[group]=@group 
                     AND id=@person_id 
                     AND [Pictures].[subid]=@photo_sub_id");
-            using (OctopusCommand c = new OctopusCommand(q, AttachmentsConnection))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, AttachmentsConnection))
             {
                 c.AddParam("group", group);
                 c.AddParam("person_id", personId);
@@ -273,11 +273,11 @@ namespace OpenCBS.Manager
                         AND [Pictures].[subid]=@sub_id");
             }
 
-            using (OctopusCommand c = new OctopusCommand(q, AttachmentsConnection))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, AttachmentsConnection))
             {
                 c.AddParam("person_id", personId);
                 c.AddParam("@sub_id", photoSubId);
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     while (r.Read())
                     {
@@ -311,12 +311,12 @@ namespace OpenCBS.Manager
                         ");
             }
 
-            using (OctopusCommand c = new OctopusCommand(q, AttachmentsConnection))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, AttachmentsConnection))
             {
                 c.AddParam("client_type", clientType);
                 c.AddParam("client_id", clientId);
                 c.AddParam("photo_sub_id", photoSubId);
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (r.Read())
                         return r.GetBytes(0);

@@ -46,7 +46,7 @@ namespace OpenCBS.Manager
                                  SELECT CONVERT(int, SCOPE_IDENTITY())";
 
             using (SqlConnection connection = GetConnection())
-            using (OctopusCommand cmd = new OctopusCommand(sqlText, connection))
+            using (OpenCbsCommand cmd = new OpenCbsCommand(sqlText, connection))
             {
                 cmd.AddParam("@name", colProduct.Name);
                 cmd.AddParam("@desc", colProduct.Description);
@@ -80,7 +80,7 @@ namespace OpenCBS.Manager
                              SELECT CONVERT(int, SCOPE_IDENTITY())";
 
             using (SqlConnection connection = GetConnection())
-            using (OctopusCommand cmd = new OctopusCommand(sqlText, connection))
+            using (OpenCbsCommand cmd = new OpenCbsCommand(sqlText, connection))
             {
                 cmd.AddParam("@product_id", collateralProductId);
                 cmd.AddParam("@prop_name", collateralProperty.Name);
@@ -106,7 +106,7 @@ namespace OpenCBS.Manager
                                             , @col_item)";
 
             using (SqlConnection connection = GetConnection())
-            using (OctopusCommand cmd = new OctopusCommand(sqlListText, connection))
+            using (OpenCbsCommand cmd = new OpenCbsCommand(sqlListText, connection))
             {
                 cmd.AddParam("@property_id", collateralPropertyId);
                 cmd.AddParam("@col_item", colItem);
@@ -130,9 +130,9 @@ namespace OpenCBS.Manager
                 sqlText += " AND deleted = 0";
 
             using (SqlConnection connection = GetConnection())
-            using (OctopusCommand selectPackages = new OctopusCommand(sqlText, connection))
+            using (OpenCbsCommand selectPackages = new OpenCbsCommand(sqlText, connection))
             {
-                using (OctopusReader reader = selectPackages.ExecuteReader())
+                using (OpenCbsReader reader = selectPackages.ExecuteReader())
                 {
                     if (reader.Empty) return new List<CollateralProduct>();
                     while (reader.Read())
@@ -166,10 +166,10 @@ namespace OpenCBS.Manager
 
             CollateralProduct colProduct = new CollateralProduct();
             using (SqlConnection connection = GetConnection())
-            using (OctopusCommand cmd = new OctopusCommand(sqlText, connection))
+            using (OpenCbsCommand cmd = new OpenCbsCommand(sqlText, connection))
             {
                 cmd.AddParam("@id", colProductId);
-                using (OctopusReader reader = cmd.ExecuteReader())
+                using (OpenCbsReader reader = cmd.ExecuteReader())
                 {
                     if (reader.Empty) return null;
                     reader.Read();
@@ -191,10 +191,10 @@ namespace OpenCBS.Manager
                                                      WHERE product_id = @product_id";
 
             using (SqlConnection connection = GetConnection())
-            using (OctopusCommand cmd = new OctopusCommand(sqlPropertyText, connection))
+            using (OpenCbsCommand cmd = new OpenCbsCommand(sqlPropertyText, connection))
             {
                 cmd.AddParam("@product_id", colProduct.Id);
-                using (OctopusReader reader = cmd.ExecuteReader())
+                using (OpenCbsReader reader = cmd.ExecuteReader())
                 {
                     if (reader.Empty) return null;
 
@@ -214,10 +214,10 @@ namespace OpenCBS.Manager
                                                          FROM CollateralPropertyCollections 
                                                          WHERE property_id = @property_id";
                             using (SqlConnection conn = GetConnection())
-                            using (OctopusCommand selectList = new OctopusCommand(sqlListText, conn))
+                            using (OpenCbsCommand selectList = new OpenCbsCommand(sqlListText, conn))
                             {
                                 selectList.AddParam("@property_id", collateralProperty.Id);
-                                using (OctopusReader listReader = selectList.ExecuteReader())
+                                using (OpenCbsReader listReader = selectList.ExecuteReader())
                                 {
                                     if (listReader.Empty) return null;
 
@@ -247,10 +247,10 @@ namespace OpenCBS.Manager
                                              WHERE id = @id ";
 
            using (SqlConnection connection = GetConnection())
-           using (OctopusCommand cmd = new OctopusCommand(sqlProductIdText, connection))
+           using (OpenCbsCommand cmd = new OpenCbsCommand(sqlProductIdText, connection))
             {
                 cmd.AddParam("@id", propertyId);
-                using (OctopusReader reader = cmd.ExecuteReader())
+                using (OpenCbsReader reader = cmd.ExecuteReader())
                 {
                     if (reader.Empty) return null; // nothing is coming... (c)
                     reader.Read();
@@ -266,10 +266,10 @@ namespace OpenCBS.Manager
                                     WHERE id = @id";
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand selectProduct = new OctopusCommand(sqlText, conn))
+            using (OpenCbsCommand selectProduct = new OpenCbsCommand(sqlText, conn))
             {
                 selectProduct.AddParam("@id", productId);
-                using (OctopusReader reader = selectProduct.ExecuteReader())
+                using (OpenCbsReader reader = selectProduct.ExecuteReader())
                 {
                     if (reader.Empty) return null;
                     reader.Read();
@@ -299,10 +299,10 @@ namespace OpenCBS.Manager
             CollateralProperty collateralProperty = new CollateralProperty();
 
             using (SqlConnection connection = GetConnection())
-            using (OctopusCommand selectProperty = new OctopusCommand(sqlPropertyText, connection))
+            using (OpenCbsCommand selectProperty = new OpenCbsCommand(sqlPropertyText, connection))
             {
                 selectProperty.AddParam("@id", propertyId);
-                using (OctopusReader propertyReader = selectProperty.ExecuteReader())
+                using (OpenCbsReader propertyReader = selectProperty.ExecuteReader())
                 {
                     if (propertyReader.Empty) return null; // nothing is coming! (c)
                     propertyReader.Read();
@@ -321,10 +321,10 @@ namespace OpenCBS.Manager
                                                      WHERE property_id = @property_id";
 
                         using (SqlConnection conn = GetConnection())
-                        using (OctopusCommand selectList = new OctopusCommand(sqlListText, conn))
+                        using (OpenCbsCommand selectList = new OpenCbsCommand(sqlListText, conn))
                         {
                             selectList.AddParam("@property_id", collateralProperty.Id);
-                            using (OctopusReader listReader = selectList.ExecuteReader())
+                            using (OpenCbsReader listReader = selectList.ExecuteReader())
                             {
                                 if (listReader.Empty) return null;
 
@@ -349,7 +349,7 @@ namespace OpenCBS.Manager
                                     WHERE [id] = @id";
 
             using (SqlConnection connection = GetConnection())
-            using (OctopusCommand command = new OctopusCommand(sqlText, connection))
+            using (OpenCbsCommand command = new OpenCbsCommand(sqlText, connection))
             {
                 command.AddParam("@id", colProductId);
                 command.ExecuteNonQuery();
@@ -363,7 +363,7 @@ namespace OpenCBS.Manager
                                          [desc] = @desc 
                                     WHERE id = @product_id";
             using (SqlConnection connection  = GetConnection())
-            using (OctopusCommand updateProduct = new OctopusCommand(sqlText, connection))
+            using (OpenCbsCommand updateProduct = new OpenCbsCommand(sqlText, connection))
             {
                 updateProduct.AddParam("@product_id", productId);
                 updateProduct.AddParam("@name", name);
@@ -376,7 +376,7 @@ namespace OpenCBS.Manager
         {
             const string sqlText = @"SELECT 1 FROM [CollateralProducts] WHERE [name] = @name";
             using (var connection  = GetConnection())
-            using (var cmd = new OctopusCommand(sqlText, connection))
+            using (var cmd = new OpenCbsCommand(sqlText, connection))
             {
                 cmd.AddParam("name", productName);
                 return cmd.ExecuteScalar() != null;

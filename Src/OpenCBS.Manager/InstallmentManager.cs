@@ -70,7 +70,7 @@ namespace OpenCBS.Manager
                                         @start_date,
                                         @olb)";
 
-            using(OctopusCommand c = new OctopusCommand(q, pSqlTransac.Connection, pSqlTransac))
+            using(OpenCbsCommand c = new OpenCbsCommand(q, pSqlTransac.Connection, pSqlTransac))
             {
                 foreach(Installment installment in pInstallments)
                 {
@@ -95,7 +95,7 @@ namespace OpenCBS.Manager
         {
             const string q = @"DELETE FROM Installments WHERE contract_id = @contractId";
 
-            using (OctopusCommand c = new OctopusCommand(q, pSqlTransac.Connection, pSqlTransac))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, pSqlTransac.Connection, pSqlTransac))
             {
                 c.AddParam("@contractId", pLoanId);
                 c.ExecuteNonQuery();
@@ -131,11 +131,11 @@ namespace OpenCBS.Manager
                                             olb
                                     FROM Installments WHERE contract_id = @id";
 
-            using (OctopusCommand c = new OctopusCommand(sqlText, pSqlTransac.Connection, pSqlTransac))
+            using (OpenCbsCommand c = new OpenCbsCommand(sqlText, pSqlTransac.Connection, pSqlTransac))
             {
                 c.AddParam("@id", pLoanId);
                 List<Installment> installmentList = new List<Installment>();
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (r.Empty) return installmentList;
                     while (r.Read())
@@ -171,9 +171,9 @@ namespace OpenCBS.Manager
                                     AND paid_interest = 0"; 
             //select only those Installments that have not had any repayments
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (r == null || r.Empty) return new List<KeyValuePair<int, Installment>>();
 
@@ -207,11 +207,11 @@ namespace OpenCBS.Manager
                                     FROM InstallmentHistory 
                                     WHERE event_id = @event_id 
                                       AND delete_date IS NULL";
-            using (OctopusCommand c = new OctopusCommand(query, t.Connection, t))
+            using (OpenCbsCommand c = new OpenCbsCommand(query, t.Connection, t))
             {
                 c.AddParam("@event_id", eventId);
                 List<Installment> retval = new List<Installment>();
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (null == r || r.Empty) return retval;
                     while (r.Read())
@@ -225,7 +225,7 @@ namespace OpenCBS.Manager
             }
         }
 
-	    private static Installment GetInstallmentHistoryFromReader(OctopusReader r)
+	    private static Installment GetInstallmentHistoryFromReader(OpenCbsReader r)
 	    {
 	        var i = new Installment
 	                    {
@@ -268,7 +268,7 @@ namespace OpenCBS.Manager
             UpdateInstallment(installment, contractId, eventId, sqlTransac, false);
         }
 
-	    private static void SetInstallment(Installment pInstallment, int pLoanId, OctopusCommand c)
+	    private static void SetInstallment(Installment pInstallment, int pLoanId, OpenCbsCommand c)
 	    {
             //primary key = loanId + number
             c.AddParam("@contractId", pLoanId);
@@ -288,7 +288,7 @@ namespace OpenCBS.Manager
             c.AddParam("@olb", pInstallment.OLB);
 	    }
 
-        private static Installment GetInstallment(OctopusReader r)
+        private static Installment GetInstallment(OpenCbsReader r)
         {
             var installment = new Installment
             {
@@ -348,7 +348,7 @@ namespace OpenCBS.Manager
                                      WHERE contract_id = @contractId 
                                        AND number = @number";
 
-            using (OctopusCommand c = new OctopusCommand(q, pSqlTransac.Connection, pSqlTransac))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, pSqlTransac.Connection, pSqlTransac))
             {
                 //primary key = contractId + number
                 c.AddParam("@contractId", pContractId);
@@ -388,7 +388,7 @@ namespace OpenCBS.Manager
                                  AND number = @number";
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 //primary key = contractId + number
                 c.AddParam("@contractId", id);
@@ -416,7 +416,7 @@ namespace OpenCBS.Manager
                                WHERE contract_id = @contractId 
                                  AND number = @number";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 //primary key = contractId + number
                 c.AddParam("@contractId", pContractId);
@@ -461,7 +461,7 @@ namespace OpenCBS.Manager
                                             @pending,
                                             @start_date,
                                             @olb)";
-            using (OctopusCommand c = new OctopusCommand(q, transaction.Connection, transaction))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, transaction.Connection, transaction))
             {
                 c.AddParam("@contract_id", contractId);
                 c.AddParam("@event_id", e.Id);
@@ -491,7 +491,7 @@ namespace OpenCBS.Manager
             // DeleteAccount existing installments
             const string queryDelete = @"DELETE FROM dbo.Installments 
                                         WHERE contract_id = @contract_id";
-            using (OctopusCommand c = new OctopusCommand(queryDelete, t.Connection, t))
+            using (OpenCbsCommand c = new OpenCbsCommand(queryDelete, t.Connection, t))
             {
                 c.AddParam("@contract_id", loan.Id);
                 c.ExecuteNonQuery();
@@ -531,7 +531,7 @@ namespace OpenCBS.Manager
                                                @start_date,
                                                @olb)";
 
-                using (OctopusCommand c = new OctopusCommand(queryInsert, t.Connection, t))
+                using (OpenCbsCommand c = new OpenCbsCommand(queryInsert, t.Connection, t))
                 {
                     c.AddParam("@expected_date", i.ExpectedDate);
                     c.AddParam("@interest_repayment", i.InterestsRepayment.Value);
@@ -555,7 +555,7 @@ namespace OpenCBS.Manager
             const string queryUpdate = @"UPDATE dbo.InstallmentHistory 
                                          SET delete_date = @delete_date 
                                          WHERE event_id = @event_id";
-            using (OctopusCommand c = new OctopusCommand(queryUpdate, t.Connection, t))
+            using (OpenCbsCommand c = new OpenCbsCommand(queryUpdate, t.Connection, t))
             {
                 c.AddParam("@delete_date", TimeProvider.Today);
                 c.AddParam("@event_id", e.Id);

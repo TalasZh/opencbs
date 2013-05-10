@@ -42,8 +42,8 @@ namespace OpenCBS.Manager
             List<PaymentMethod> paymentMethods = new List<PaymentMethod>();
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
-            using (OctopusReader r = c.ExecuteReader())
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
+            using (OpenCbsReader r = c.ExecuteReader())
             {
                 if (r!=null && !r.Empty)
                 while (r.Read())
@@ -68,8 +68,8 @@ namespace OpenCBS.Manager
             List<PaymentMethod> paymentMethods = new List<PaymentMethod>();
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
-            using (OctopusReader r = c.ExecuteReader())
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
+            using (OpenCbsReader r = c.ExecuteReader())
             {
                 if (r != null && !r.Empty)
                     while (r.Read())
@@ -97,10 +97,10 @@ namespace OpenCBS.Manager
             List<PaymentMethod> paymentMethods = new List<PaymentMethod>();
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@id", branchId);
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (r.Empty) return paymentMethods;
                     while (r.Read())
@@ -134,10 +134,10 @@ namespace OpenCBS.Manager
                             WHERE pm.id = @id";
             PaymentMethod pm = new PaymentMethod();
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@id", paymentMethodId);
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (r != null && !r.Empty)
                     {
@@ -160,10 +160,10 @@ namespace OpenCBS.Manager
                             WHERE [name] = @name";
             PaymentMethod pm = new PaymentMethod();
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@name", name);
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (r != null && !r.Empty)
                     {
@@ -175,7 +175,7 @@ namespace OpenCBS.Manager
             return pm;
         }
         
-        private PaymentMethod GetPaymentMethodFromReader(OctopusReader r)
+        private PaymentMethod GetPaymentMethodFromReader(OpenCbsReader r)
         {
             //Do not change this calling of constructor by Object initializer
             PaymentMethod pm = new PaymentMethod(
@@ -194,7 +194,7 @@ namespace OpenCBS.Manager
                 @"INSERT INTO LinkBranchesPaymentMethods (branch_id, payment_method_id, account_id)
                                             VALUES (@branch_id, @payment_method_id, @account_id)";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@branch_id", paymentMethod.Branch.Id);
                 c.AddParam("@payment_method_id", paymentMethod.Id);
@@ -210,7 +210,7 @@ namespace OpenCBS.Manager
                                      WHERE id = @link_id";
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@link_id", paymentMethod.LinkId);
                 c.ExecuteNonQuery();
@@ -224,7 +224,7 @@ namespace OpenCBS.Manager
                                     WHERE id = @id";
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@account_id", paymentMethod.Account.Id);
                 c.AddParam("@payment_method_id", paymentMethod.Id);

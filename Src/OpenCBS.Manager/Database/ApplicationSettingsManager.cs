@@ -36,8 +36,8 @@ namespace OpenCBS.Manager.Database
             string sqlText = "SELECT  UPPER([key]) as [key], [value] FROM GeneralParameters";
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(sqlText, conn))
-            using (OctopusReader r = c.ExecuteReader())
+            using (OpenCbsCommand c = new OpenCbsCommand(sqlText, conn))
+            using (OpenCbsReader r = c.ExecuteReader())
             {
                 while (r.Read())
                     ApplicationSettings.GetInstance(_user.Md5).AddParameter(r.GetString("key"),
@@ -50,10 +50,10 @@ namespace OpenCBS.Manager.Database
             string sqlText = "SELECT [value] FROM GeneralParameters WHERE [key] = @name";
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(sqlText, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(sqlText, conn))
             {
                 c.AddParam("@name", key);
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (!r.Empty)
                     {
@@ -69,8 +69,8 @@ namespace OpenCBS.Manager.Database
         {
             string query = "SELECT [value] FROM TechnicalParameters WHERE [name] = 'GUID'";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(query, conn))
-            using (OctopusReader r = c.ExecuteReader())
+            using (OpenCbsCommand c = new OpenCbsCommand(query, conn))
+            using (OpenCbsReader r = c.ExecuteReader())
             {
                 if (!r.Empty)
                 {
@@ -86,7 +86,7 @@ namespace OpenCBS.Manager.Database
         {
             string query = "INSERT INTO [TechnicalParameters] ([name], [value]) VALUES ('GUID', @value)";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(query, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(query, conn))
             {
                 c.AddParam("@value", guid.ToString());
                 c.ExecuteNonQuery();
@@ -96,7 +96,7 @@ namespace OpenCBS.Manager.Database
         {
             string query = "UPDATE [TechnicalParameters] SET [value]=@value WHERE [name]='BuildNumber'";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(query, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(query, conn))
             {
                 c.AddParam("@value", buildNum);
                 c.ExecuteNonQuery();
@@ -111,7 +111,7 @@ namespace OpenCBS.Manager.Database
                 " VALUES(@name,@value)";
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(sqlText, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(sqlText, conn))
             {
                 c.AddParam("@name", entry.Key.ToString());
 
@@ -129,7 +129,7 @@ namespace OpenCBS.Manager.Database
             ApplicationSettings.GetInstance(_user.Md5).UpdateParameter(pName, null);
             string sql = "UPDATE GeneralParameters SET [value] = @value WHERE upper([key]) = @key";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(sql, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(sql, conn))
             {
                 c.AddParam("@value", null);
                 c.AddParam("@key", pName);
@@ -144,7 +144,7 @@ namespace OpenCBS.Manager.Database
 
             string sql = "UPDATE GeneralParameters SET [value] = @value WHERE upper([key]) = @key";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(sql, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(sql, conn))
             {
                 c.AddParam("@value", pNewValue);
                 c.AddParam("@key", pName);
@@ -159,7 +159,7 @@ namespace OpenCBS.Manager.Database
 
             string sql = "UPDATE GeneralParameters SET [value] = @value WHERE upper([key]) = @key";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(sql, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(sql, conn))
             {
                 c.AddParam("@value", pNewValue.ToString());
                 c.AddParam("@key", pName);
@@ -173,7 +173,7 @@ namespace OpenCBS.Manager.Database
             ApplicationSettings.GetInstance(_user.Md5).UpdateParameter(pName, pNewValue);
             string sql = "UPDATE GeneralParameters SET [value] = @value WHERE upper([key]) = @key";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(sql, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(sql, conn))
             {
                 if (pNewValue)
                     c.AddParam("@value", "1");
@@ -189,7 +189,7 @@ namespace OpenCBS.Manager.Database
         {
             string sqlText = "DELETE FROM GeneralParameters WHERE  upper([key]) = @name";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(sqlText, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(sqlText, conn))
             {
                 c.AddParam("@name", key);
                 c.ExecuteNonQuery();

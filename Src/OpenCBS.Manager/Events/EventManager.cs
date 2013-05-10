@@ -28,7 +28,7 @@ namespace OpenCBS.Manager.Events
             string insertCommandText=string.Format(@"INSERT INTO dbo.TraceUserLogs 
                                             VALUES('{0}', GETDATE(),'{1}','{2}')", eventCode, userId, eventDescription);
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(insertCommandText, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(insertCommandText, conn))
             c.ExecuteNonQuery();
         }
    
@@ -38,7 +38,7 @@ namespace OpenCBS.Manager.Events
 
             List<AuditTrailEvent> retval = new List<AuditTrailEvent>();
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@from", filter.From);
                 c.AddParam("@to", filter.To);
@@ -47,7 +47,7 @@ namespace OpenCBS.Manager.Events
                 c.AddParam("@types", filter.Types);
                 c.AddParam("@del", filter.IncludeDeleted);
 
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (r.Empty) return retval;
 
@@ -193,14 +193,14 @@ namespace OpenCBS.Manager.Events
                     AND union_events.event_type LIKE @eventType {0}",
                     userId > 0 ? "AND ContractEvents.user_id = @userId ORDER BY union_events.event_date" : "ORDER BY union_events.event_date");
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@beginDate", beginDate);
                 c.AddParam("@endDate", endDate);
                 c.AddParam("@userId", userId);
                 c.AddParam("@eventType", string.Format("%{0}%", eventType) );
                 
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (!(r == null || r.Empty)) 
                     
@@ -316,10 +316,10 @@ namespace OpenCBS.Manager.Events
                     WHERE (ContractEvents.contract_id = @id)
                     ORDER BY ContractEvents.id";
             using (SqlConnection conn = GetConnection())
-            using(OctopusCommand c = new OctopusCommand(q, conn))
+            using(OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@id", pContractId);
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if(r == null || r.Empty) return new EventStock();
                     EventStock list = new EventStock();
@@ -350,11 +350,11 @@ namespace OpenCBS.Manager.Events
                                     ";
             var tellerEvents = new List<TellerEvent>();
             using (SqlConnection connection = GetConnection())
-            using (OctopusCommand cmd = new OctopusCommand(sql, connection))
+            using (OpenCbsCommand cmd = new OpenCbsCommand(sql, connection))
             {
                 cmd.AddParam("@beginDate", beginDate);
                 cmd.AddParam("@endDate", endDate);
-                using (OctopusReader r = cmd.ExecuteReader())
+                using (OpenCbsReader r = cmd.ExecuteReader())
                 {
                     if (r.Empty) return tellerEvents;
                     while (r.Read())
@@ -548,13 +548,13 @@ namespace OpenCBS.Manager.Events
                     ORDER BY ContractEvents.id";
             using (SqlConnection conn = GetConnection())
             {
-                using (OctopusCommand c = new OctopusCommand(q, conn))
+                using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
                 {
                     c.AddParam("@beginDate", beginDate);
                     c.AddParam("@endDate", endDate);
                     c.AddParam("@branch_id", branch.Id);
 
-                    using (OctopusReader r = c.ExecuteReader())
+                    using (OpenCbsReader r = c.ExecuteReader())
                     {
                         if (r == null || r.Empty) return new EventStock();
                         EventStock list = new EventStock();
@@ -579,8 +579,8 @@ namespace OpenCBS.Manager.Events
 
             List<EventType> list = new List<EventType>();
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
-            using (OctopusReader r = c.ExecuteReader())
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
+            using (OpenCbsReader r = c.ExecuteReader())
             {
                 if (r.Empty) return list;
 
@@ -607,8 +607,8 @@ namespace OpenCBS.Manager.Events
 
             List<EventType> list = new List<EventType>();
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
-            using (OctopusReader r = c.ExecuteReader())
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
+            using (OpenCbsReader r = c.ExecuteReader())
             {
                 if (r.Empty) return list;
 
@@ -633,11 +633,11 @@ namespace OpenCBS.Manager.Events
                                      FROM EventAttributes
                                      WHERE [event_type] = @event_type";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@event_type", eventType);
 
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (r == null || r.Empty) return new List<EventAttribute>();
                     List<EventAttribute> list = new List<EventAttribute>();
@@ -662,11 +662,11 @@ namespace OpenCBS.Manager.Events
                                      FROM EventTypes
                                      WHERE event_type = @event_type";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@event_type", eventType);
 
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (r == null || r.Empty) return new EventType();
                     EventType evntType = new EventType();
@@ -691,11 +691,11 @@ namespace OpenCBS.Manager.Events
                                      FROM EventAttributes
                                      WHERE name = @name";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@name", name);
 
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (r == null || r.Empty) return new EventAttribute();
                     EventAttribute eventType = new EventAttribute();
@@ -736,7 +736,7 @@ namespace OpenCBS.Manager.Events
                                        @comment)
                                      SELECT SCOPE_IDENTITY()";
 
-            using (OctopusCommand c = new OctopusCommand(q, pSqlTransac.Connection, pSqlTransac))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, pSqlTransac.Connection, pSqlTransac))
             {
                 SetLoanEvent(c, pEvent, pContractId);
                 return int.Parse(c.ExecuteScalar().ToString());
@@ -769,7 +769,7 @@ namespace OpenCBS.Manager.Events
 			const string q = @"INSERT INTO [LoanDisbursmentEvents]([id], [amount], [fees], [interest], [payment_method_id]) 
                                     VALUES(@id, @amount, @fees, @interest, @payment_method_id)";
 
-            using(OctopusCommand c = new OctopusCommand(q, sqlTransac.Connection, sqlTransac))
+            using(OpenCbsCommand c = new OpenCbsCommand(q, sqlTransac.Connection, sqlTransac))
             {
                 GetLoanDisbursmentEvent(evnt, c);
                 c.ExecuteNonQuery();
@@ -791,14 +791,14 @@ namespace OpenCBS.Manager.Events
                                         ,@fee
                                         ,@disbursement_event_id
                                     )";
-            using (OctopusCommand c = new OctopusCommand(q, pSqlTransac.Connection, pSqlTransac))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, pSqlTransac.Connection, pSqlTransac))
             {
                 SetEntryFeesEvent(pEvent, c);
                 c.ExecuteNonQuery();
             }
         }
 
-        private static void SetEntryFeesEvent(LoanEntryFeeEvent pEvent, OctopusCommand c)
+        private static void SetEntryFeesEvent(LoanEntryFeeEvent pEvent, OpenCbsCommand c)
         {
             c.AddParam("@id", pEvent.Id);
             c.AddParam("@fee", pEvent.Fee);
@@ -816,14 +816,14 @@ namespace OpenCBS.Manager.Events
                        (@id
                        ,@commission
                        ,@principal)";
-            using (OctopusCommand c = new OctopusCommand(q, pSqlTransac.Connection, pSqlTransac))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, pSqlTransac.Connection, pSqlTransac))
             {
                 SetCreditInsuranceEvent(pEvent, c);
                 c.ExecuteNonQuery();
             }
         }
 
-	    private void SetCreditInsuranceEvent(CreditInsuranceEvent pEvent, OctopusCommand c)
+	    private void SetCreditInsuranceEvent(CreditInsuranceEvent pEvent, OpenCbsCommand c)
 	    {
 	        c.AddParam("@id", pEvent.Id);
             c.AddParam("@commission", pEvent.Commission.Value);
@@ -868,7 +868,7 @@ namespace OpenCBS.Manager.Events
                                         @unpaid_penalties)
                                      ";
 
-            using (OctopusCommand c = new OctopusCommand(q, sqlTransac.Connection, sqlTransac))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, sqlTransac.Connection, sqlTransac))
             {
                 SetLoanRepaymentEvent(evnt, c);
                 c.ExecuteNonQuery();
@@ -883,7 +883,7 @@ namespace OpenCBS.Manager.Events
                                      ([id],[interest_rate],[amount],[maturity],[start_date], [applied_new_interest], [started_from_installment]) 
                                      VALUES(@id, @interest_rate, @amount, @maturity, @start_date, @applied_new_interest, @started_from_installment)";
 
-            using (OctopusCommand c = new OctopusCommand(q, sqlTransac.Connection, sqlTransac))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, sqlTransac.Connection, sqlTransac))
             {
                 SetLoanTrancheEvent(trancheEvent, c);
                 c.ExecuteNonQuery();
@@ -916,7 +916,7 @@ namespace OpenCBS.Manager.Events
                                     ([id], [amount], [nb_of_maturity], [date_offset], [interest], [grace_period], [charge_interest_during_shift], [charge_interest_during_grace_period]) 
                                     VALUES(@id, @amount, @maturity,@dateOffset, @interest, @gracePeriod, @chargeInterestDuringShift, @chargeInterestDuringGracePeriod)";
 
-            using(OctopusCommand c = new OctopusCommand(q, sqlTransac.Connection, sqlTransac))
+            using(OpenCbsCommand c = new OpenCbsCommand(q, sqlTransac.Connection, sqlTransac))
             {
                 SetLoanReschedulingEvent(rescheduleLoanEvent, c);
                 c.ExecuteNonQuery();
@@ -934,7 +934,7 @@ namespace OpenCBS.Manager.Events
                                        overdue_days) 
                                      VALUES(@id, @amount, @rate, @overdue_days)";
 
-            using (OctopusCommand c = new OctopusCommand(q, sqlTransac.Connection, sqlTransac))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, sqlTransac.Connection, sqlTransac))
             {
                 c.AddParam("@id", provisionEvent.Id);
                 c.AddParam("@amount", provisionEvent.Amount);
@@ -955,7 +955,7 @@ namespace OpenCBS.Manager.Events
                                        [overdue_principal]) 
                                      VALUES(@id, @olb, @overdue_days, @overdue_principal)";
 
-            using (OctopusCommand c = new OctopusCommand(q, sqlTransac.Connection, sqlTransac))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, sqlTransac.Connection, sqlTransac))
             {
                 c.AddParam("@id", overdueEvent.Id);
                 c.AddParam("@olb", overdueEvent.OLB);
@@ -997,7 +997,7 @@ namespace OpenCBS.Manager.Events
                                      VALUES(@id, @olb, @accruedInterests, @accruedPenalties, @pastDueDays, @overdue_principal)
                                     SELECT SCOPE_IDENTITY()";
 
-            using(OctopusCommand c = new OctopusCommand(q, sqlTransac.Connection, sqlTransac))
+            using(OpenCbsCommand c = new OpenCbsCommand(q, sqlTransac.Connection, sqlTransac))
             {
                 SetLoanWriteOffEvent(writeOffEvent, c);
                 c.ExecuteNonQuery();
@@ -1038,7 +1038,7 @@ namespace OpenCBS.Manager.Events
                                         @rescheduled, 
                                         @installmentNumber)";
 
-            using (OctopusCommand c = new OctopusCommand(q, transac.Connection, transac))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, transac.Connection, transac))
             {
                 SetLoanInterestAccruingEvent(pEvent, c);
                 c.ExecuteNonQuery();
@@ -1085,7 +1085,7 @@ namespace OpenCBS.Manager.Events
 		               ,@date
                        ,@description
                        )";
-            using (OctopusCommand cmd  = new OctopusCommand(sql, sqlTransaction.Connection, sqlTransaction))
+            using (OpenCbsCommand cmd  = new OpenCbsCommand(sql, sqlTransaction.Connection, sqlTransaction))
             {
                 cmd.AddParam("@teller_id", tellerEvent.TellerId);
                 cmd.AddParam("@event_code", tellerEvent.Code);
@@ -1102,7 +1102,7 @@ namespace OpenCBS.Manager.Events
                                      SET [comment] = @comment 
                                      WHERE id = @id";
 
-            using (OctopusCommand c = new OctopusCommand(q, pSqlTransac.Connection, pSqlTransac))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, pSqlTransac.Connection, pSqlTransac))
             {
                 c.AddParam("@id", pEvent.Id);
                 c.AddParam("@comment", pEvent.Comment);
@@ -1139,7 +1139,7 @@ namespace OpenCBS.Manager.Events
                                  OR parent_id IN (SELECT parent_id FROM [ContractEvents] WHERE id = @id)
                                  OR id IN (SELECT parent_id FROM [ContractEvents] WHERE id = @id)";
 
-            using (OctopusCommand c = new OctopusCommand(q, pSqlTransac.Connection, pSqlTransac))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, pSqlTransac.Connection, pSqlTransac))
             {
                 c.AddParam("@id", pEvent.Id);
                 c.AddParam("@cancel_date", pEvent.CancelDate);
@@ -1153,7 +1153,7 @@ namespace OpenCBS.Manager.Events
                       @"UPDATE [dbo].[TellerEvents]
                         SET [is_exported] = 1
                         WHERE id = @id";
-            using (OctopusCommand cmd = new OctopusCommand(sql, sqlTransaction.Connection, sqlTransaction))
+            using (OpenCbsCommand cmd = new OpenCbsCommand(sql, sqlTransaction.Connection, sqlTransaction))
             {
                 cmd.AddParam("@id", eventId);
                 cmd.ExecuteNonQuery();
@@ -1166,14 +1166,14 @@ namespace OpenCBS.Manager.Events
                                SET [is_exported] = 1 
                                WHERE id = @id";
 
-            using (OctopusCommand c = new OctopusCommand(q, pSqlTransac.Connection, pSqlTransac))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, pSqlTransac.Connection, pSqlTransac))
             {
                 c.AddParam("@id", eventId);
                 c.ExecuteNonQuery();
             }
         }
 
-        private static void SetLoanWriteOffEvent(WriteOffEvent pEvent, OctopusCommand c)
+        private static void SetLoanWriteOffEvent(WriteOffEvent pEvent, OpenCbsCommand c)
         {
             c.AddParam("@id", pEvent.Id);
             c.AddParam("@olb", pEvent.OLB);
@@ -1183,7 +1183,7 @@ namespace OpenCBS.Manager.Events
             c.AddParam("@overdue_principal", pEvent.OverduePrincipal);
         }
 
-        private static void SetLoanTrancheEvent(TrancheEvent pEvent, OctopusCommand c)
+        private static void SetLoanTrancheEvent(TrancheEvent pEvent, OpenCbsCommand c)
         {
             c.AddParam("@id", pEvent.Id);
             c.AddParam("@interest_rate", pEvent.InterestRate);
@@ -1194,7 +1194,7 @@ namespace OpenCBS.Manager.Events
             c.AddParam("@started_from_installment", pEvent.StartedFromInstallment);
         }
 
-        private static void SetLoanReschedulingEvent(RescheduleLoanEvent pEvent, OctopusCommand c)
+        private static void SetLoanReschedulingEvent(RescheduleLoanEvent pEvent, OpenCbsCommand c)
         {
             c.AddParam("@id", pEvent.Id);
             c.AddParam("@amount", pEvent.Amount);
@@ -1206,7 +1206,7 @@ namespace OpenCBS.Manager.Events
             c.AddParam("@chargeInterestDuringGracePeriod", pEvent.ChargeInterestDuringGracePeriod);
         }
 
-        private static void SetLoanRepaymentEvent(RepaymentEvent evnt, OctopusCommand c)
+        private static void SetLoanRepaymentEvent(RepaymentEvent evnt, OpenCbsCommand c)
         {
             c.AddParam("@id", evnt.Id);
             c.AddParam("@pastDueDays", evnt.PastDueDays);
@@ -1221,7 +1221,7 @@ namespace OpenCBS.Manager.Events
             c.AddParam("@unpaid_penalties", evnt.UnpaidPenalties);
         }
 
-        private static void GetLoanDisbursmentEvent(LoanDisbursmentEvent evnt, OctopusCommand c)
+        private static void GetLoanDisbursmentEvent(LoanDisbursmentEvent evnt, OpenCbsCommand c)
         {
             c.AddParam("@id", evnt.Id);
             c.AddParam("@amount", evnt.Amount.Value);
@@ -1230,7 +1230,7 @@ namespace OpenCBS.Manager.Events
             c.AddParam("@payment_method_id", evnt.PaymentMethod.Id);
         }
 
-        private static void SetLoanInterestAccruingEvent(AccruedInterestEvent pEvent, OctopusCommand c)
+        private static void SetLoanInterestAccruingEvent(AccruedInterestEvent pEvent, OpenCbsCommand c)
 	    {
             c.AddParam("@id", pEvent.Id);
             c.AddParam("@interestPrepayment", pEvent.Interest.Value);
@@ -1239,7 +1239,7 @@ namespace OpenCBS.Manager.Events
             c.AddParam("@installmentNumber", pEvent.InstallmentNumber);
 	    }
 
-        private static void SetLoanEvent(OctopusCommand c, Event pEvent, int pContractId)
+        private static void SetLoanEvent(OpenCbsCommand c, Event pEvent, int pContractId)
         {
             c.AddParam("@eventType", pEvent.Code);
             c.AddParam("@contractId", pContractId);
@@ -1251,7 +1251,7 @@ namespace OpenCBS.Manager.Events
             c.AddParam("@comment", pEvent.Comment);
         }
 
-        private Event ReadEvent(OctopusReader r)
+        private Event ReadEvent(OpenCbsReader r)
         {
             Event e;
 
@@ -1314,7 +1314,7 @@ namespace OpenCBS.Manager.Events
             return e;
         }
 
-	    private static Event GetCreditInsuranceEvent(OctopusReader r)
+	    private static Event GetCreditInsuranceEvent(OpenCbsReader r)
 	    {
 	        CreditInsuranceEvent cie = new CreditInsuranceEvent();
             cie.Id = r.GetInt("cie_id");
@@ -1338,10 +1338,10 @@ namespace OpenCBS.Manager.Events
                                 WHERE ContractEvents.event_type LIKE 'LEE%' AND
                                 LoanEntryFeeEvents.[disbursement_event_id]=@disbursement_event_id";
             using (SqlConnection conn = GetConnection())
-	        using (OctopusCommand c = new OctopusCommand(q, conn))
+	        using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
 	        {
                 c.AddParam("@disbursement_event_id", disbursementEventId);
-	            using (OctopusReader r = c.ExecuteReader())
+	            using (OpenCbsReader r = c.ExecuteReader())
 	            {
 	                while (r.Read())
 	                {
@@ -1363,7 +1363,7 @@ namespace OpenCBS.Manager.Events
 	        return entryFeeEvents;
 	    }
 
-	    private static Event GetSavingEvent(OctopusReader r)
+	    private static Event GetSavingEvent(OpenCbsReader r)
         {
             SavingEvent e;
 
@@ -1409,7 +1409,7 @@ namespace OpenCBS.Manager.Events
             return e;
         }
 
-        private static void GetEvent(OctopusReader r, Event pEvent)
+        private static void GetEvent(OpenCbsReader r, Event pEvent)
         {
             //abstract class Event attributes
             string eventType = r.GetString("event_type");
@@ -1475,7 +1475,7 @@ namespace OpenCBS.Manager.Events
                 pEvent.Description = r.GetString("contract_code");
         }
 
-	    private static AccruedInterestEvent GetLoanInterestAccruingEvent(OctopusReader r)
+	    private static AccruedInterestEvent GetLoanInterestAccruingEvent(OpenCbsReader r)
         {
             return new AccruedInterestEvent{
                            Id = r.GetInt("liae_id"),
@@ -1486,7 +1486,7 @@ namespace OpenCBS.Manager.Events
                        };
         }
 
-	    private static OverdueEvent GetOverdueEvent(OctopusReader r)
+	    private static OverdueEvent GetOverdueEvent(OpenCbsReader r)
         {
             return new OverdueEvent{
                 Id = r.GetInt("ov_id"),
@@ -1496,7 +1496,7 @@ namespace OpenCBS.Manager.Events
             };
         }
 
-        private static ProvisionEvent GetProvisionEvent(OctopusReader r)
+        private static ProvisionEvent GetProvisionEvent(OpenCbsReader r)
         {
             return new ProvisionEvent{
                 Id = r.GetInt("pe_id"),
@@ -1505,7 +1505,7 @@ namespace OpenCBS.Manager.Events
             };
         }
 
-        private static LoanEntryFeeEvent GetEntryFeeEvent(OctopusReader r)
+        private static LoanEntryFeeEvent GetEntryFeeEvent(OpenCbsReader r)
         {
             return new LoanEntryFeeEvent
             {
@@ -1516,7 +1516,7 @@ namespace OpenCBS.Manager.Events
             };
         }
 
-        private static TrancheEvent GetTrancheLoanEvent(OctopusReader r)
+        private static TrancheEvent GetTrancheLoanEvent(OpenCbsReader r)
         {
             return new TrancheEvent{
                 Id = r.GetInt("tranche_id"),
@@ -1527,7 +1527,7 @@ namespace OpenCBS.Manager.Events
             };
         }
 
-        private RepaymentEvent GetRepaymentEvent(OctopusReader r)
+        private RepaymentEvent GetRepaymentEvent(OpenCbsReader r)
 	    {
             RepaymentEvent e = new RepaymentEvent {Id = r.GetInt("rpe_id")};
             switch (r.GetString("event_type"))
@@ -1615,7 +1615,7 @@ namespace OpenCBS.Manager.Events
 	        return e;
 	    }
 
-        private static RescheduleLoanEvent GetReschedulingLoanEvent(OctopusReader r)
+        private static RescheduleLoanEvent GetReschedulingLoanEvent(OpenCbsReader r)
 	    {
             return new RescheduleLoanEvent{
                 Id = r.GetInt("rle_id"),
@@ -1625,7 +1625,7 @@ namespace OpenCBS.Manager.Events
             };
 	    }
 
-	    private static Event GetWriteOffEvent(OctopusReader r)
+	    private static Event GetWriteOffEvent(OpenCbsReader r)
 	    {
 	        return new WriteOffEvent
                                   {
@@ -1638,7 +1638,7 @@ namespace OpenCBS.Manager.Events
                                   };
 	    }
 
-	    private LoanDisbursmentEvent GetLoanDisbursmentEvent(OctopusReader r)
+	    private LoanDisbursmentEvent GetLoanDisbursmentEvent(OpenCbsReader r)
 	    {
 	        return new LoanDisbursmentEvent
 	                   {
@@ -1662,7 +1662,7 @@ namespace OpenCBS.Manager.Events
             string desc = save ? "{0} saved." : "{0} updated.";
             desc = string.Format(desc, client);
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@user_id", userId);
                 c.AddParam("@event_description", desc);
@@ -1676,7 +1676,7 @@ namespace OpenCBS.Manager.Events
             FROM dbo.ContractEvents
             WHERE id = @id";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand cmd = new OctopusCommand(query, conn))
+            using (OpenCbsCommand cmd = new OpenCbsCommand(query, conn))
             {
                 cmd.AddParam("@id", id);
                 return Convert.ToBoolean(cmd.ExecuteScalar());

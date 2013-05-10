@@ -887,10 +887,10 @@ namespace OpenCBS.Test.Manager
 		{
 			ConnectionManager cm = ConnectionManager.GetInstance("Octopus_test");
 
-            OctopusCommand select = new OctopusCommand("SELECT currently_in FROM PersonGroupBelonging WHERE person_id = " + personId,
+            OpenCbsCommand select = new OpenCbsCommand("SELECT currently_in FROM PersonGroupBelonging WHERE person_id = " + personId,
 				cm.SqlConnection);
 			
-			using (OctopusReader reader = select.ExecuteReader())
+			using (OpenCbsReader reader = select.ExecuteReader())
 			{
 				reader.Read();
                 return reader.GetBool("currently_in");

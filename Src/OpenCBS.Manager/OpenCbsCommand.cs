@@ -8,12 +8,12 @@ using OpenCBS.Shared;
 
 namespace OpenCBS.Manager
 {
-    public class OctopusReader : IDisposable
+    public class OpenCbsReader : IDisposable
     {
         private readonly SqlDataReader _reader;
         private bool _disposed;
 
-        public OctopusReader(SqlDataReader reader)
+        public OpenCbsReader(SqlDataReader reader)
         {
             _reader = reader;
         }
@@ -218,21 +218,21 @@ namespace OpenCBS.Manager
         }
     }
 
-    public class OctopusCommand : IDisposable
+    public class OpenCbsCommand : IDisposable
     {
         private readonly SqlCommand _cmd;
 
-        public OctopusCommand()
+        public OpenCbsCommand()
         {
             _cmd = new SqlCommand();
         }
 
-        public OctopusCommand(string query, SqlConnection conn)
+        public OpenCbsCommand(string query, SqlConnection conn)
         {
             _cmd = new SqlCommand(query, conn) {CommandTimeout = conn.ConnectionTimeout};
         }
 
-        public OctopusCommand(string query, SqlConnection conn, SqlTransaction transaction)
+        public OpenCbsCommand(string query, SqlConnection conn, SqlTransaction transaction)
         {
             _cmd = new SqlCommand(query, conn, transaction) {CommandTimeout = conn.ConnectionTimeout};
         }
@@ -271,20 +271,20 @@ namespace OpenCBS.Manager
             _cmd.CommandType = CommandType.StoredProcedure;
         }
 
-        public OctopusReader ExecuteReader()
+        public OpenCbsReader ExecuteReader()
         {
-            return new OctopusReader(_cmd.ExecuteReader());
+            return new OpenCbsReader(_cmd.ExecuteReader());
         }
 
-        public OctopusReader ExecuteReader(CommandType commandType)
+        public OpenCbsReader ExecuteReader(CommandType commandType)
         {
             _cmd.CommandType = commandType;
-            return new OctopusReader(_cmd.ExecuteReader());
+            return new OpenCbsReader(_cmd.ExecuteReader());
         }
 
-        public OctopusReader ExecuteReader(CommandBehavior commandBehavior)
+        public OpenCbsReader ExecuteReader(CommandBehavior commandBehavior)
         {
-            return new OctopusReader(_cmd.ExecuteReader(commandBehavior));
+            return new OpenCbsReader(_cmd.ExecuteReader(commandBehavior));
         }
 
         public int ExecuteNonQuery()
@@ -357,13 +357,13 @@ namespace OpenCBS.Manager
             _cmd.Dispose();
         }
 
-        public OctopusCommand AsStoredProcedure()
+        public OpenCbsCommand AsStoredProcedure()
         {
             _cmd.CommandType = CommandType.StoredProcedure;
             return this;
         }
 
-        public OctopusCommand With(string paramName, object paramValue)
+        public OpenCbsCommand With(string paramName, object paramValue)
         {
             AddParam(paramName, paramValue);
             return this;

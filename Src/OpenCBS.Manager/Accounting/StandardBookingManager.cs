@@ -28,7 +28,7 @@ namespace OpenCBS.Manager.Accounting
             const string sqlText = @"INSERT INTO StandardBookings([Name], debit_account_id, credit_account_id) 
                                      VALUES (@name, @debit_account_id, @credit_account_id)";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand insertIntoTable = new OctopusCommand(sqlText, conn))
+            using (OpenCbsCommand insertIntoTable = new OpenCbsCommand(sqlText, conn))
                 {
                     insertIntoTable.AddParam("@name", booking.Name);
                     insertIntoTable.AddParam("@debit_account_id", booking.DebitAccount.Id);
@@ -47,7 +47,7 @@ namespace OpenCBS.Manager.Accounting
                                     WHERE Id = @Id";
             using (SqlConnection conn = GetConnection())
             {
-                using (OctopusCommand insertIntoTable = new OctopusCommand(sqlText, conn))
+                using (OpenCbsCommand insertIntoTable = new OpenCbsCommand(sqlText, conn))
                 {
                     insertIntoTable.AddParam("@name", booking.Name);
                     insertIntoTable.AddParam("@debit_account_id", booking.DebitAccount.Id);
@@ -66,11 +66,11 @@ namespace OpenCBS.Manager.Accounting
             Booking standardBooking = new Booking();
             using (SqlConnection conn = GetConnection())
             {
-                using (OctopusCommand select = new OctopusCommand(sqlText, conn))
+                using (OpenCbsCommand select = new OpenCbsCommand(sqlText, conn))
                 {
                     select.AddParam("@Id", id);
 
-                    using (OctopusReader reader = select.ExecuteReader())
+                    using (OpenCbsReader reader = select.ExecuteReader())
                     {
                         while (reader.Read())
                         {
@@ -96,7 +96,7 @@ namespace OpenCBS.Manager.Accounting
             const string sqlText = @"DELETE FROM StandardBookings WHERE Id = @Id";
             using (SqlConnection conn = GetConnection())
             {
-                using (OctopusCommand insertIntoTable = new OctopusCommand(sqlText, conn))
+                using (OpenCbsCommand insertIntoTable = new OpenCbsCommand(sqlText, conn))
                 {
                     insertIntoTable.AddParam("@Id", id);
                     insertIntoTable.ExecuteNonQuery();
@@ -110,9 +110,9 @@ namespace OpenCBS.Manager.Accounting
             List<Booking> list = new List<Booking>();
             using (SqlConnection conn = GetConnection())
             {
-                using (OctopusCommand select = new OctopusCommand(sqlText, conn))
+                using (OpenCbsCommand select = new OpenCbsCommand(sqlText, conn))
                 {
-                    using (OctopusReader reader = select.ExecuteReader())
+                    using (OpenCbsReader reader = select.ExecuteReader())
                     {
                         if (reader.Empty) return list;
                         while (reader.Read())

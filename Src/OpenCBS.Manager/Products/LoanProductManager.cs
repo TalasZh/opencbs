@@ -33,7 +33,7 @@ namespace OpenCBS.Manager.Products
             installmentTypeManagement = new InstallmentTypeManager(testDB);
         }
 
-        private static void SetProduct(OctopusCommand c, LoanProduct pPackage)
+        private static void SetProduct(OpenCbsCommand c, LoanProduct pPackage)
         {
             c.AddParam("@packageId", pPackage.Id);
             c.AddParam("@deleted", pPackage.Delete);
@@ -293,7 +293,7 @@ namespace OpenCBS.Manager.Products
                 SELECT SCOPE_IDENTITY()";
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand insertPackage = new OctopusCommand(q, conn))
+            using (OpenCbsCommand insertPackage = new OpenCbsCommand(q, conn))
             {
                 SetProduct(insertPackage, pPackage);
                 identity= int.Parse(insertPackage.ExecuteScalar().ToString());
@@ -308,7 +308,7 @@ namespace OpenCBS.Manager.Products
                                                           VALUES({0}, {1})", 
                                                             clientType.TypeId, identity);
                     using (SqlConnection conn = GetConnection())
-                    using (OctopusCommand c = new OctopusCommand(sqlTextForClientTypes, conn))
+                    using (OpenCbsCommand c = new OpenCbsCommand(sqlTextForClientTypes, conn))
                     {
                         c.ExecuteNonQuery();
                     }
@@ -390,7 +390,7 @@ namespace OpenCBS.Manager.Products
                 WHERE id = @packageId";
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand updatePackage = new OctopusCommand(q, conn))
+            using (OpenCbsCommand updatePackage = new OpenCbsCommand(q, conn))
             {
                 SetProduct(updatePackage, pPackage);
                 updatePackage.ExecuteNonQuery();
@@ -398,7 +398,7 @@ namespace OpenCBS.Manager.Products
 
             q = string.Format(@"DELETE FROM PackagesClientTypes WHERE package_id={0}", pPackage.Id);
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             c.ExecuteNonQuery();
 
             
@@ -409,7 +409,7 @@ namespace OpenCBS.Manager.Products
                     q = string.Format(@"INSERT INTO PackagesClientTypes ([client_type_id], [package_id])
                                      VALUES({0}, {1})", clientType.TypeId, pPackage.Id);
                     using (SqlConnection conn = GetConnection())
-                    using (OctopusCommand c = new OctopusCommand(q, conn))
+                    using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
                     {
                         c.ExecuteNonQuery();
                     }
@@ -434,7 +434,7 @@ namespace OpenCBS.Manager.Products
                        WHERE package_id = @packageId";
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand updatePackage = new OctopusCommand(q, conn))
+            using (OpenCbsCommand updatePackage = new OpenCbsCommand(q, conn))
             {
                 updatePackage.AddParam("@anticipated_total_repayment_penalties", pPackage.AnticipatedTotalRepaymentPenalties??pPackage.AnticipatedTotalRepaymentPenaltiesMin);
                 updatePackage.AddParam("@anticipated_partial_repayment_penalties", pPackage.AnticipatedPartialRepaymentPenalties??pPackage.AnticipatedPartialRepaymentPenaltiesMin);
@@ -465,7 +465,7 @@ namespace OpenCBS.Manager.Products
                          WHERE id_product=@id";
             if (product.DeletedEntryFees== null) return;
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@id", product.Id);
                 c.ExecuteNonQuery();
@@ -487,7 +487,7 @@ namespace OpenCBS.Manager.Products
             foreach (var entryFee in entryFees)
             {
                 using (SqlConnection conn = GetConnection())
-                using (OctopusCommand c = new OctopusCommand(q, conn))
+                using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
                 {
                     c.AddParam("@id_product", productId);
                     c.AddParam("@name_of_fee", entryFee.Name);
@@ -514,10 +514,10 @@ namespace OpenCBS.Manager.Products
                 q += " AND [is_deleted]<>1";
                  q+= " ORDER BY cycle_id";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@package_id", productId);
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (r!=null && !r.Empty)
                         while (r.Read())
@@ -533,8 +533,8 @@ namespace OpenCBS.Manager.Products
             List<LoanCycle> loanCycles = new List<LoanCycle>();
             string q = @"SELECT [id], [name]  FROM [dbo].[Cycles]";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
-            using (OctopusReader r = c.ExecuteReader())
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
+            using (OpenCbsReader r = c.ExecuteReader())
             {
                 while (r.Read())
                 {
@@ -562,11 +562,11 @@ namespace OpenCBS.Manager.Products
                                     AND [cycle_id]=@cycle_id
                               ORDER BY [loan_cycle]";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@cycle_id", cycleId);
 
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     while (r.Read())
                     {
@@ -598,11 +598,11 @@ namespace OpenCBS.Manager.Products
                                     AND [cycle_id]=@cycle_id
                               ORDER BY [loan_cycle]";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@cycle_id", cycleId);
 
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     while (r.Read())
                     {
@@ -634,11 +634,11 @@ namespace OpenCBS.Manager.Products
                                     AND [cycle_id]=@cycle_id
                               ORDER BY [loan_cycle]";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@cycle_id", cycleId);
 
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     while (r.Read())
                     {
@@ -663,7 +663,7 @@ namespace OpenCBS.Manager.Products
                               WHERE [cycle_object_id]=@cycle_object_id 
                               AND [cycle_id]=@cycle_id";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@cycle_object_id", objectId);
                 c.AddParam("@cycle_id", cycleId);
@@ -689,7 +689,7 @@ namespace OpenCBS.Manager.Products
             foreach (var amountCycle in loanAmountCycles)
             {
                 using (SqlConnection conn = GetConnection())
-                using (OctopusCommand c = new OctopusCommand(q, conn))
+                using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
                 {
                     SetCommand(c, amountCycle);
                     c.ExecuteNonQuery();
@@ -697,7 +697,7 @@ namespace OpenCBS.Manager.Products
             }
         }
 
-        private void SetCommand(OctopusCommand c, Cycle cycle)
+        private void SetCommand(OpenCbsCommand c, Cycle cycle)
         {
             c.AddParam("@loan_cycle", cycle.LoanCycle);
             c.AddParam("@min", cycle.Min.Value);
@@ -724,7 +724,7 @@ namespace OpenCBS.Manager.Products
             foreach (var rateCycle in rateCycles)
             {
                 using (SqlConnection conn = GetConnection())
-                using (OctopusCommand c = new OctopusCommand(q, conn))
+                using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
                 {
                     SetCommand(c, rateCycle);
                     c.ExecuteNonQuery();
@@ -750,7 +750,7 @@ namespace OpenCBS.Manager.Products
             foreach (var maturityCycle in maturityCycles)
             {
                 using (SqlConnection conn = GetConnection())
-                using (OctopusCommand c = new OctopusCommand(q, conn))
+                using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
                 {
                     SetCommand(c, maturityCycle);
                     c.ExecuteNonQuery();
@@ -766,9 +766,9 @@ namespace OpenCBS.Manager.Products
 
             List<CycleObject> cycleObjects = new List<CycleObject>();
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     while (r.Read())
                     {
@@ -798,10 +798,10 @@ namespace OpenCBS.Manager.Products
                 q += " AND [is_deleted]<>1";
             q += @" ORDER BY [fee_index]";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@id_product", productId);
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     while (r.Read())
                     {
@@ -819,7 +819,7 @@ namespace OpenCBS.Manager.Products
                 FROM [dbo].[EntryFees]
                 WHERE [id_product]=@product_id AND cycle_id<=@client_cycle AND cycle_id IS NOT NULL";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@product_id", productId);
                 c.AddParam("@client_cycle", clientCycle);
@@ -845,11 +845,11 @@ namespace OpenCBS.Manager.Products
                 q += " AND [is_deleted]<>1";
             q += @" ORDER BY [fee_index]";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@id_product", productId);
                 c.AddParam("@cycle_id", cycle);
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                    if (r!= null && !r.Empty)
                     while (r.Read())
@@ -879,10 +879,10 @@ namespace OpenCBS.Manager.Products
                 q += " AND [is_deleted]<>1";
             q += @" ORDER BY [fee_index]";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@id_product", productId);
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (r!=null && !r.Empty)
                     while (r.Read())
@@ -894,7 +894,7 @@ namespace OpenCBS.Manager.Products
             return entryFees;
         }
 
-        private static EntryFee GetEntryFee(OctopusReader r)
+        private static EntryFee GetEntryFee(OpenCbsReader r)
         {
             EntryFee entryFee = new EntryFee
                                {
@@ -925,10 +925,10 @@ namespace OpenCBS.Manager.Products
                             FROM [dbo].[EntryFees]
                             WHERE [id]=@entry_fee_id";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@entry_fee_id", entryFeeId);
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (r!= null && !r.Empty)
                     while (r.Read())
@@ -943,10 +943,10 @@ namespace OpenCBS.Manager.Products
         private bool _IsThisNameAreadyExist(string q,string pExpectedName)
         {
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@name", pExpectedName);
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (r == null || r.Empty) return false;
                     return true;
@@ -987,7 +987,7 @@ namespace OpenCBS.Manager.Products
             return _IsThisNameAreadyExist(sqlText, pAmountCycleStockName);
         }
 
-        private static LoanProduct GetProduct(OctopusReader r)
+        private static LoanProduct GetProduct(OpenCbsReader r)
         {
             LoanProduct package = new LoanProduct();
             package.Id = r.GetInt("id");
@@ -1117,11 +1117,11 @@ namespace OpenCBS.Manager.Products
                                      WHERE Packages.id  = @id";
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@id", pProductId);
 
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (r == null || r.Empty) return null;
                     r.Read();
@@ -1161,11 +1161,11 @@ namespace OpenCBS.Manager.Products
                                      WHERE Credit.id  = @id";
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@id", contractId);
 
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (r == null || r.Empty) return null;
                     r.Read();
@@ -1202,11 +1202,11 @@ namespace OpenCBS.Manager.Products
                 WHERE Packages.name  = @name OR Packages.code = @name";
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@name", name);
 
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (r == null || r.Empty) return null;
                     r.Read();
@@ -1255,8 +1255,8 @@ namespace OpenCBS.Manager.Products
             }
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
-            using (OctopusReader r = c.ExecuteReader())
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
+            using (OpenCbsReader r = c.ExecuteReader())
             {
                 if (r == null || r.Empty) return new List<LoanProduct>();
                 while (r.Read())
@@ -1285,7 +1285,7 @@ namespace OpenCBS.Manager.Products
             const string q = @"UPDATE Packages SET deleted = 1 WHERE id = @id";
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@id", pProductId);
                 c.ExecuteNonQuery();
@@ -1302,7 +1302,7 @@ namespace OpenCBS.Manager.Products
             const string q = @"INSERT INTO Exotics (name) VALUES (@name) SELECT SCOPE_IDENTITY()";
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@name", pExoticInstallmentsTable.Name);
                 return Convert.ToInt32(c.ExecuteScalar());
@@ -1319,14 +1319,14 @@ namespace OpenCBS.Manager.Products
         {
             const string q = "INSERT INTO Cycles (name) VALUES (@name) SELECT SCOPE_IDENTITY()";
 
-            using (OctopusCommand c = new OctopusCommand(q, t.Connection, t))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, t.Connection, t))
             {
                 c.AddParam("@name", loanCycle.Name);
                 return Convert.ToInt32(c.ExecuteScalar());
             }
         }
 
-        private static ExoticInstallmentsTable _GetExoticProduct(OctopusReader r)
+        private static ExoticInstallmentsTable _GetExoticProduct(OpenCbsReader r)
         {
             return new ExoticInstallmentsTable
                        {
@@ -1342,10 +1342,10 @@ namespace OpenCBS.Manager.Products
             const string q = "SELECT [id], name FROM Exotics WHERE id = @id";
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@id", exoId);
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (r == null || r.Empty) return null;
 
@@ -1368,9 +1368,9 @@ namespace OpenCBS.Manager.Products
             const string q = "SELECT [id],name FROM Exotics";
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if(r == null || r.Empty) return new List<ExoticInstallmentsTable>();
                     while (r.Read())
@@ -1398,7 +1398,7 @@ namespace OpenCBS.Manager.Products
                          VALUES (@number,@principalCoeff,@interestCoeff,@exoticId)";
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@number", exoticInstallment.Number);
                 c.AddParam("@principalCoeff", exoticInstallment.PrincipalCoeff);
@@ -1416,11 +1416,11 @@ namespace OpenCBS.Manager.Products
                                    WHERE exotic_id =@exoticId";
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@exoticId", productId);
 
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if(r == null || r.Empty) return new List<ExoticInstallment>();
                     while (r.Read())
@@ -1433,7 +1433,7 @@ namespace OpenCBS.Manager.Products
             }
         }
 
-        private static ExoticInstallment _GetExoticInstallment(OctopusReader r)
+        private static ExoticInstallment _GetExoticInstallment(OpenCbsReader r)
         {
             return new ExoticInstallment
                        {
@@ -1449,9 +1449,9 @@ namespace OpenCBS.Manager.Products
             string q = @"SELECT [id], [type_name] 
                              FROM  [dbo].[ClientTypes]";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     while (r.Read())
                     {
@@ -1473,8 +1473,8 @@ namespace OpenCBS.Manager.Products
                      WHERE client_type_id={0} AND package_id={1}",
                     clientType.TypeId, productId);
                 using (SqlConnection conn = GetConnection())
-                using (OctopusCommand c = new OctopusCommand(q, conn))
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
+                using (OpenCbsReader r = c.ExecuteReader())
                 if (!r.Empty)
                 {
                     clientType.IsChecked = true;
@@ -1488,7 +1488,7 @@ namespace OpenCBS.Manager.Products
             from dbo.Packages
             where code = @code";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@code", code);
                 object v = c.ExecuteScalar();
@@ -1502,7 +1502,7 @@ namespace OpenCBS.Manager.Products
             FROM dbo.Packages
             WHERE id = @id";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@id", id);
                 return Convert.ToInt32(c.ExecuteScalar());

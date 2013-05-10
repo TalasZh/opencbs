@@ -176,7 +176,7 @@ namespace OpenCBS.Manager.Contracts
                         @insurance
                         )";
 
-            using (OctopusCommand c = new OctopusCommand(q, pSqlTransac.Connection, pSqlTransac))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, pSqlTransac.Connection, pSqlTransac))
             {
                 SetLoan(pLoan, c);
                 c.ExecuteNonQuery();
@@ -204,7 +204,7 @@ namespace OpenCBS.Manager.Contracts
 
             List<Loan> list = new List<Loan>();
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@id", pClientId);
                 c.AddParam("@status1", (int)OContractStatus.Active);
@@ -212,7 +212,7 @@ namespace OpenCBS.Manager.Contracts
                 c.AddParam("@status3", (int)OContractStatus.Pending);
                 c.AddParam("@status4", (int)OContractStatus.Postponed);
 
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (r == null || r.Empty) return list;
 
@@ -233,11 +233,11 @@ namespace OpenCBS.Manager.Contracts
 
             List<Loan> list = new List<Loan>();
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(sql, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(sql, conn))
             {
                 c.AddParam("@id", pClientId);
 
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (r == null || r.Empty) return list;
 
@@ -254,7 +254,7 @@ namespace OpenCBS.Manager.Contracts
                                      FROM Contracts
                                      WHERE contract_code = @contractCode";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@contractCode", pLoanContractCode);
                 object val = c.ExecuteScalar();
@@ -268,7 +268,7 @@ namespace OpenCBS.Manager.Contracts
                                 (NOT ((SELECT SUM(interest_repayment) + SUM(capital_repayment) - SUM(paid_interest) - SUM(paid_capital) 
                                 FROM Installments WHERE contract_id = Credit.id) < 0.02))";
             using (SqlConnection conn = GetConnection())
-            using(OctopusCommand c = new OctopusCommand(q, conn))
+            using(OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 return Convert.ToInt32(c.ExecuteScalar());
             }
@@ -347,13 +347,13 @@ namespace OpenCBS.Manager.Contracts
             count = 0;
             var list = new List<CreditSearchResult>();
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand cmd = new OctopusCommand(query, conn))
+            using (OpenCbsCommand cmd = new OpenCbsCommand(query, conn))
             {
                 cmd.AddParam("user_id", User.CurrentUser.Id);
                 cmd.AddParam("startRow", startRow);
                 cmd.AddParam("endRow", endRow);
                 cmd.AddParam("criteria", string.Format("%{0}%", pQuery));
-                using (OctopusReader reader = cmd.ExecuteReader())
+                using (OpenCbsReader reader = cmd.ExecuteReader())
                     while (reader.Read())
                     {
                         if (count == 0) count = reader.GetInt("row_count");
@@ -391,11 +391,11 @@ namespace OpenCBS.Manager.Contracts
                                      LEFT OUTER JOIN Persons ON Persons.id = Tiers.id
                                      WHERE LinkGuarantorCredit.contract_id = @id";
             using (SqlConnection conn = GetConnection())
-            using(OctopusCommand c = new OctopusCommand(q, conn))
+            using(OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@id", pLoanId);
 
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if(r == null || r.Empty) return new List<Guarantor>();
 
@@ -452,7 +452,7 @@ namespace OpenCBS.Manager.Contracts
         {
             const string q = @"UPDATE Credit SET written_off = 1, bad_loan = 0 WHERE id = @id";
             
-            using (OctopusCommand c = new OctopusCommand(q, pSqlTransac.Connection, pSqlTransac))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, pSqlTransac.Connection, pSqlTransac))
             {
                 c.AddParam("@id", pLoanId);
                 c.ExecuteNonQuery();
@@ -461,7 +461,7 @@ namespace OpenCBS.Manager.Contracts
             // Updating contract status to WritenOff
             const string sqlTextContract = @"UPDATE Contracts SET status = @status WHERE id = @id";
 
-            using (OctopusCommand c = new OctopusCommand(sqlTextContract, pSqlTransac.Connection, pSqlTransac))
+            using (OpenCbsCommand c = new OpenCbsCommand(sqlTextContract, pSqlTransac.Connection, pSqlTransac))
             {
                 c.AddParam("@id", pLoanId);
                 c.AddParam("@status", (int)OContractStatus.WrittenOff);
@@ -493,7 +493,7 @@ namespace OpenCBS.Manager.Contracts
                                          interest_rate = @newInterestRate                                         
                                      WHERE id = @id";
 
-            using(OctopusCommand c = new OctopusCommand(q, pSqlTransac.Connection, pSqlTransac))
+            using(OpenCbsCommand c = new OpenCbsCommand(q, pSqlTransac.Connection, pSqlTransac))
             {
                 c.AddParam("@id", pLoan.Id);
                 c.AddParam("@nbOfInstallment", pLoan.NbOfInstallments);
@@ -510,7 +510,7 @@ namespace OpenCBS.Manager.Contracts
                                          amount = @amount 
                                      WHERE id = @id";
 
-            using (OctopusCommand c = new OctopusCommand(q, pSqlTransac.Connection, pSqlTransac))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, pSqlTransac.Connection, pSqlTransac))
             {
                 c.AddParam("@id", pLoan.Id);
                 c.AddParam("@nbOfInstallment", pLoan.NbOfInstallments);
@@ -542,7 +542,7 @@ namespace OpenCBS.Manager.Contracts
                                      SET bad_loan = 1
                                      WHERE id = @id";
 
-            using (OctopusCommand c = new OctopusCommand(q, pSqlTransac.Connection, pSqlTransac))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, pSqlTransac.Connection, pSqlTransac))
             {
                 c.AddParam("@id", pLoanId);
                 c.ExecuteNonQuery();
@@ -588,7 +588,7 @@ namespace OpenCBS.Manager.Contracts
                                 [insurance]=@insurance
                               WHERE id = @id";
             
-            using(OctopusCommand c = new OctopusCommand(q, pSqlTransac.Connection, pSqlTransac))
+            using(OpenCbsCommand c = new OpenCbsCommand(q, pSqlTransac.Connection, pSqlTransac))
             {
                 SetLoanForUpdate(c, pLoan);
 
@@ -606,7 +606,7 @@ namespace OpenCBS.Manager.Contracts
                         activity_id = @activityId
                         WHERE id = @id";
 
-            using(OctopusCommand c = new OctopusCommand(q, pSqlTransac.Connection, pSqlTransac))
+            using(OpenCbsCommand c = new OpenCbsCommand(q, pSqlTransac.Connection, pSqlTransac))
             {
                 c.AddParam("@startDate", pLoan.StartDate);
                 c.AddParam("@align_disbursed_date", pLoan.AlignDisbursementDate);
@@ -627,7 +627,7 @@ namespace OpenCBS.Manager.Contracts
                             SET active = @active 
                             WHERE id = @id";
 
-                using (OctopusCommand c = new OctopusCommand(q, pSqlTransac.Connection, pSqlTransac))
+                using (OpenCbsCommand c = new OpenCbsCommand(q, pSqlTransac.Connection, pSqlTransac))
                 {
                     c.AddParam("@active", pLoan.Project.Client.Active);
                     c.AddParam("@id", pLoan.Project.Client.Id);
@@ -647,7 +647,7 @@ namespace OpenCBS.Manager.Contracts
                             AND group_id = @group_id
                             AND contract_id = @contract_id";
 
-                using (OctopusCommand c = new OctopusCommand(q, pSqlTransac.Connection, pSqlTransac))
+                using (OpenCbsCommand c = new OpenCbsCommand(q, pSqlTransac.Connection, pSqlTransac))
                 {
                     c.AddParam("@payment_date", pLoan.GetLastNonDeletedEvent().Date);
                     c.AddParam("@event_id", pLoan.GetLastNonDeletedEvent().Id);
@@ -682,10 +682,10 @@ namespace OpenCBS.Manager.Contracts
                                          FROM LoansLinkSavingsBook
                                          WHERE loan_id = @loan_id";
 
-                using (OctopusCommand c = new OctopusCommand(sqlCompulsory, pSqlTransac.Connection, pSqlTransac))
+                using (OpenCbsCommand c = new OpenCbsCommand(sqlCompulsory, pSqlTransac.Connection, pSqlTransac))
                 {
                     c.AddParam("@loan_id", pLoan.Id);
-                    using (OctopusReader r = c.ExecuteReader())
+                    using (OpenCbsReader r = c.ExecuteReader())
                     {
                         if (r == null || r.Empty)
                         {
@@ -704,7 +704,7 @@ namespace OpenCBS.Manager.Contracts
                     sqlCompulsory = @"INSERT INTO LoansLinkSavingsBook ([loan_id], [savings_id], [loan_percentage])
                                       VALUES (@loanId, @savingsId, @loanPercentage)";
 
-                    using (OctopusCommand c = new OctopusCommand(sqlCompulsory, pSqlTransac.Connection, pSqlTransac))
+                    using (OpenCbsCommand c = new OpenCbsCommand(sqlCompulsory, pSqlTransac.Connection, pSqlTransac))
                     {
                         if (pLoan.CompulsorySavings != null)
                             c.AddParam("@savingsId", pLoan.CompulsorySavings.Id);
@@ -722,7 +722,7 @@ namespace OpenCBS.Manager.Contracts
                                              SET savings_id = @savingsId, loan_percentage = @loanPercentage
                                              WHERE loan_id = @loanId";
 
-                    using (OctopusCommand c = new OctopusCommand(sqlCompulsory, pSqlTransac.Connection, pSqlTransac))
+                    using (OpenCbsCommand c = new OpenCbsCommand(sqlCompulsory, pSqlTransac.Connection, pSqlTransac))
                     {
                         c.AddParam("@savingsId", pLoan.CompulsorySavings.Id);
                         c.AddParam("@loanId", pLoan.Id);
@@ -733,7 +733,7 @@ namespace OpenCBS.Manager.Contracts
             }
         }
 
-        private void SetLoanForUpdate(OctopusCommand c, Loan pLoan)
+        private void SetLoanForUpdate(OpenCbsCommand c, Loan pLoan)
         {
             c.AddParam("@id", pLoan.Id);
             c.AddParam("@fundingLine_id", pLoan.FundingLine.Id);
@@ -769,7 +769,7 @@ namespace OpenCBS.Manager.Contracts
         {
             const string q = "DELETE FROM [LinkGuarantorCredit] WHERE contract_id = @contractId";
 
-            using(OctopusCommand c = new OctopusCommand(q, pSqlTransac.Connection, pSqlTransac))
+            using(OpenCbsCommand c = new OpenCbsCommand(q, pSqlTransac.Connection, pSqlTransac))
             {
                 c.AddParam("@contractId", pLoanId);
                 c.ExecuteNonQuery();
@@ -783,10 +783,10 @@ namespace OpenCBS.Manager.Contracts
             const string q =
                 @"SELECT [id] FROM [CollateralsLinkContracts] WHERE contract_id = @contract_id ";
 
-            using (OctopusCommand c = new OctopusCommand(q, pSqlTransac.Connection, pSqlTransac))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, pSqlTransac.Connection, pSqlTransac))
             {
                 c.AddParam("@contract_id", pLoanId);
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (r.Empty) return; // nothing is coming... (c)
                     while (r.Read()) collateralIds.Add(r.GetInt("id"));
@@ -798,7 +798,7 @@ namespace OpenCBS.Manager.Contracts
                 string sqlText =
                     @"DELETE FROM CollateralPropertyValues WHERE [contract_collateral_id] = @contract_collateral_id";
 
-                using (OctopusCommand c = new OctopusCommand(sqlText, pSqlTransac.Connection, pSqlTransac))
+                using (OpenCbsCommand c = new OpenCbsCommand(sqlText, pSqlTransac.Connection, pSqlTransac))
                 {
                     c.AddParam("@contract_collateral_id", collateralId);
                     c.ExecuteNonQuery();
@@ -807,7 +807,7 @@ namespace OpenCBS.Manager.Contracts
 
             string sqlText2 = @"DELETE FROM CollateralsLinkContracts WHERE [contract_id] = @contract_id";
 
-            using (OctopusCommand c = new OctopusCommand(sqlText2, pSqlTransac.Connection, pSqlTransac))
+            using (OpenCbsCommand c = new OpenCbsCommand(sqlText2, pSqlTransac.Connection, pSqlTransac))
             {
                 c.AddParam("@contract_id", pLoanId);
                 c.ExecuteNonQuery();
@@ -833,7 +833,7 @@ namespace OpenCBS.Manager.Contracts
         public void UpdateLoanLoanOfficer(int pLoanId, int pOfficerToId, int pOfficerFromId, SqlTransaction pTransac)
         {
             string q = @"UPDATE Credit SET loanofficer_id = @loanofficerID WHERE id = @ID";
-            using(OctopusCommand c = new OctopusCommand(q, pTransac.Connection, pTransac))
+            using(OpenCbsCommand c = new OpenCbsCommand(q, pTransac.Connection, pTransac))
             {
                 c.AddParam("@loanofficerID", pOfficerToId);
                 c.AddParam("@ID", pLoanId);
@@ -846,7 +846,7 @@ namespace OpenCBS.Manager.Contracts
                 q = @"INSERT INTO ContractAssignHistory (loanofficerFrom_id, loanofficerTo_id, contract_id)
                             VALUES (@loanofficerFrom_id, @loanofficerTo_id, @contract_id)";
                 
-                using (OctopusCommand c = new OctopusCommand(q, pTransac.Connection, pTransac))
+                using (OpenCbsCommand c = new OpenCbsCommand(q, pTransac.Connection, pTransac))
                 {
                     c.AddParam("@loanofficerFrom_id", pOfficerFromId);
                     c.AddParam("@loanofficerTo_id", pOfficerToId);
@@ -857,7 +857,7 @@ namespace OpenCBS.Manager.Contracts
             }
         }
 
-        private static Alert GetAlert(OctopusReader pReader, char pType)
+        private static Alert GetAlert(OpenCbsReader pReader, char pType)
         {
             int i = 0;            
             var alert = new Alert();
@@ -917,12 +917,12 @@ namespace OpenCBS.Manager.Contracts
                                   {0}
                                   ORDER BY contract_id, effect_date DESC", addLoanOfficer);
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand cmdSelectRepayment = new OctopusCommand(sqlTextRepaymentAlert, conn))
+            using (OpenCbsCommand cmdSelectRepayment = new OpenCbsCommand(sqlTextRepaymentAlert, conn))
             {
                 if (pLoanOfficerId != 0)
                     cmdSelectRepayment.AddParam("@loanOfficerId", pLoanOfficerId);
 
-                using (OctopusReader reader = cmdSelectRepayment.ExecuteReader())
+                using (OpenCbsReader reader = cmdSelectRepayment.ExecuteReader())
                 {
                     if(reader.Empty) return new AlertStock();
 
@@ -1025,12 +1025,12 @@ namespace OpenCBS.Manager.Contracts
             }
             
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand cmdSelectRepayment = new OctopusCommand(sqlTextRepaymentAlert, conn))
+            using (OpenCbsCommand cmdSelectRepayment = new OpenCbsCommand(sqlTextRepaymentAlert, conn))
             {
                 if (pLoanOfficerId != 0)
                     cmdSelectRepayment.AddParam("@loanOfficerId", pLoanOfficerId);
 
-                using (OctopusReader reader = cmdSelectRepayment.ExecuteReader())
+                using (OpenCbsReader reader = cmdSelectRepayment.ExecuteReader())
                 {
                     if (reader.Empty) return new AlertStock();
 
@@ -1051,12 +1051,12 @@ namespace OpenCBS.Manager.Contracts
                     AND Contracts.start_date >= @startDate AND Contracts.start_date <= @endDate
                     GROUP BY Contracts.start_date ORDER BY Contracts.start_date ";
             using (SqlConnection conn = GetConnection())
-            using(OctopusCommand c = new OctopusCommand(q,conn))
+            using(OpenCbsCommand c = new OpenCbsCommand(q,conn))
             {
                 c.AddParam("@startDate", pStartDate);
                 c.AddParam("@endDate", pEndDate);
 
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (r.Empty) return new List<KeyValuePair<DateTime, decimal>>();
 
@@ -1083,12 +1083,12 @@ namespace OpenCBS.Manager.Contracts
                                     GROUP BY Installments.expected_date
                                     ORDER BY Installments.expected_date";
             using (SqlConnection conn = GetConnection())
-            using(OctopusCommand c = new OctopusCommand(q, conn))
+            using(OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@startDate", pStartDate);
                 c.AddParam("@endDate", pEndDate);
 
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if(r == null || r.Empty) return new List<KeyValuePair<DateTime, decimal>>();
 
@@ -1130,10 +1130,10 @@ namespace OpenCBS.Manager.Contracts
                             GROUP BY Installments.expected_date";
             }
             using (SqlConnection conn = GetConnection())
-            using(OctopusCommand c = new OctopusCommand(q, conn))
+            using(OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@fundingLineId", pFundingLineId);
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if(r == null || r.Empty) return new List<KeyValuePair<DateTime, decimal>>();
 
@@ -1156,7 +1156,7 @@ namespace OpenCBS.Manager.Contracts
                       AND (Credit.written_off = 0) 
                       AND (Credit.bad_loan = 0)";
             using (SqlConnection conn = GetConnection())
-            using(OctopusCommand c = new OctopusCommand(q, conn))
+            using(OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 return Convert.ToDecimal(c.ExecuteScalar());
             }
@@ -1170,11 +1170,11 @@ namespace OpenCBS.Manager.Contracts
                                      INNER JOIN Tiers AS Tr ON Tr.id = Pr.tiers_id
                                      WHERE Tr.id = @id";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@id", clientId);
 
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (r == null || r.Empty) return new List<Loan>();
 
@@ -1197,11 +1197,11 @@ namespace OpenCBS.Manager.Contracts
                                     FROM Contracts,Credit 
                                     WHERE Contracts.id = Credit.id AND project_id = @id";
             using (SqlConnection conn = GetConnection())
-            using(OctopusCommand c = new OctopusCommand(q, conn))
+            using(OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@id", pProjectId);
 
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if(r == null || r.Empty) return new List<Loan>();
                     while (r.Read())
@@ -1237,7 +1237,7 @@ namespace OpenCBS.Manager.Contracts
                                                       [credit_commitee_code] = @credit_commitee_code,
                                                       [closed] = @closed WHERE id = @id";
 
-            using(OctopusCommand c = new OctopusCommand(q, pTransaction.Connection, pTransaction))
+            using(OpenCbsCommand c = new OpenCbsCommand(q, pTransaction.Connection, pTransaction))
             {
                 c.AddParam("@id", pLoan.Id);
                 c.AddParam("@status", (int)pLoan.ContractStatus);
@@ -1254,7 +1254,7 @@ namespace OpenCBS.Manager.Contracts
             {
                 q = @"UPDATE Tiers SET active = @active WHERE id = @id";
 
-                using (OctopusCommand c = new OctopusCommand(q, pTransaction.Connection, pTransaction))
+                using (OpenCbsCommand c = new OpenCbsCommand(q, pTransaction.Connection, pTransaction))
                 {
                     c.AddParam("@active", pLoan.Project.Client.Active);
                     c.AddParam("@id", pLoan.Project.Client.Id);
@@ -1274,8 +1274,8 @@ namespace OpenCBS.Manager.Contracts
                                        AND Contracts.closed = 0";
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
-            using (OctopusReader r = c.ExecuteReader())
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
+            using (OpenCbsReader r = c.ExecuteReader())
             {
                 if (r == null || r.Empty) return new List<Loan>();
                 while (r.Read())
@@ -1316,9 +1316,9 @@ namespace OpenCBS.Manager.Contracts
                                           AND (Credit.bad_loan = 0) 
                                           AND (Contracts.closed = 0)";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (r == null || r.Empty) return new List<Loan>();
 
@@ -1353,7 +1353,7 @@ namespace OpenCBS.Manager.Contracts
 	                                 WHERE disbursed=1)
                                    )";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@group_id", groupId);
                 c.ExecuteNonQuery();
@@ -1369,7 +1369,7 @@ namespace OpenCBS.Manager.Contracts
                                      AND group_id = @group_id 
                                      AND contract_id = @contract_id";
             bool exists;
-            using (OctopusCommand c = new OctopusCommand(q, pSqlTransac.Connection, pSqlTransac))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, pSqlTransac.Connection, pSqlTransac))
             {
                 c.AddParam("@person_id", pLoanShare.PersonId);
                 c.AddParam("@group_id", pGroupId);
@@ -1393,7 +1393,7 @@ namespace OpenCBS.Manager.Contracts
                           VALUES (@person_id, @group_id, @contract_id, @amount)";
             }
             
-            using(OctopusCommand c = new OctopusCommand(query, pSqlTransac.Connection, pSqlTransac))
+            using(OpenCbsCommand c = new OpenCbsCommand(query, pSqlTransac.Connection, pSqlTransac))
             {
                 c.AddParam("@person_id", pLoanShare.PersonId);
                 c.AddParam("@group_id", pGroupId);
@@ -1439,7 +1439,7 @@ namespace OpenCBS.Manager.Contracts
             @activityId)
             SELECT SCOPE_IDENTITY()";
 
-            using (OctopusCommand c = new OctopusCommand(q, pSqlTransac.Connection, pSqlTransac))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, pSqlTransac.Connection, pSqlTransac))
             {
 
                 c.AddParam("@code", "fake_code");
@@ -1479,7 +1479,7 @@ namespace OpenCBS.Manager.Contracts
                 const string sqlText = @"INSERT INTO LoansLinkSavingsBook ([loan_id], [savings_id], [loan_percentage])
                                                    VALUES (@loanId, @savingsId, @loanPercentage)";
 
-                using (OctopusCommand c = new OctopusCommand(sqlText, pSqlTransac.Connection, pSqlTransac))
+                using (OpenCbsCommand c = new OpenCbsCommand(sqlText, pSqlTransac.Connection, pSqlTransac))
                 {
                     if (pContract.CompulsorySavings != null)
                         c.AddParam("@savingsId", pContract.CompulsorySavings.Id);
@@ -1498,7 +1498,7 @@ namespace OpenCBS.Manager.Contracts
         public void UpdateContractCode (int contractId, string contractCode, SqlTransaction pSqlTransac)
         {
             const string q = @"UPDATE Contracts SET contract_code = @code WHERE id = @id";
-            using (OctopusCommand c = new OctopusCommand(q, pSqlTransac.Connection, pSqlTransac))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, pSqlTransac.Connection, pSqlTransac))
             {
                 c.AddParam("@code", contractCode);
                 c.AddParam("@id", contractId);
@@ -1511,7 +1511,7 @@ namespace OpenCBS.Manager.Contracts
             string q = @"INSERT INTO [CollateralsLinkContracts] ([contract_id]) 
                                       VALUES (@contract_id) SELECT CONVERT(int, SCOPE_IDENTITY())";
 
-            using (OctopusCommand c = new OctopusCommand(q, pSqlTransac.Connection, pSqlTransac))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, pSqlTransac.Connection, pSqlTransac))
             {
                 c.AddParam("@contract_id", contractId);
                 contractCollateral.Id = Convert.ToInt32(c.ExecuteScalar());
@@ -1528,7 +1528,7 @@ namespace OpenCBS.Manager.Contracts
             string q = @"INSERT INTO [CollateralPropertyValues] ([contract_collateral_id], [property_id], [value]) 
                                        VALUES (@contract_collateral_id, @property_id, @value)";
 
-            using (OctopusCommand c = new OctopusCommand(q, pSqlTransac.Connection, pSqlTransac))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, pSqlTransac.Connection, pSqlTransac))
             {
                 c.AddParam("@contract_collateral_id", contractCollateral.Id);
                 c.AddParam("@property_id", propertyValue.Property.Id);
@@ -1542,7 +1542,7 @@ namespace OpenCBS.Manager.Contracts
             const string q = @"INSERT INTO [LinkGuarantorCredit]([tiers_id], [contract_id], [guarantee_amount], [guarantee_desc]) 
                             VALUES(@tiersId, @contractId, @guaranteeAmount, @guaranteeDesc)";
 
-            using (OctopusCommand c = new OctopusCommand(q, pSqlTransac.Connection, pSqlTransac))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, pSqlTransac.Connection, pSqlTransac))
             {
                 c.AddParam("@tiersId", pGuarantor.Tiers.Id);
                 c.AddParam("@contractId", pLoanId);
@@ -1559,7 +1559,7 @@ namespace OpenCBS.Manager.Contracts
                                            SET savings_id = NULL 
                                            WHERE loan_id = @loanId";
 
-            using (OctopusCommand c = new OctopusCommand(q, pSqlTransac.Connection, pSqlTransac))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, pSqlTransac.Connection, pSqlTransac))
             {
                 c.AddParam("@loanId", loanId);
                 c.ExecuteNonQuery();
@@ -1575,7 +1575,7 @@ namespace OpenCBS.Manager.Contracts
                                          SELECT SCOPE_IDENTITY()";
 
                 using (SqlConnection conn = GetConnection())
-                using (OctopusCommand c = new OctopusCommand(q, conn))
+                using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
                 {
                     c.AddParam("@attended", attendee.Attended);
                     c.AddParam("@comment", attendee.Comment);
@@ -1594,7 +1594,7 @@ namespace OpenCBS.Manager.Contracts
                                             AND person_id = @person_id 
                                         AND [date] = @attended_date";
                 using (SqlConnection conn = GetConnection())
-                using (OctopusCommand c = new OctopusCommand(q, conn))
+                using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
                 {
                     c.AddParam("@attended", attendee.Attended);
                     c.AddParam("@comment", attendee.Comment);
@@ -1624,11 +1624,11 @@ namespace OpenCBS.Manager.Contracts
                     WHERE village_id = @village_id AND [date] = @attended_date";
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@village_id", villageId);
                 c.AddParam("@attended_date", date);
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     while (r.Read())
                     {
@@ -1673,11 +1673,11 @@ namespace OpenCBS.Manager.Contracts
                     AND c.[status] = 5";
 
                 using (SqlConnection conn = GetConnection())
-                using (OctopusCommand c = new OctopusCommand(q, conn))
+                using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
                 {
                     c.AddParam("@village_id", villageId);
                     c.AddParam("@attended_date", date);
-                    using (OctopusReader r = c.ExecuteReader())
+                    using (OpenCbsReader r = c.ExecuteReader())
                     {
                         while (r.Read())
                         {
@@ -1714,10 +1714,10 @@ namespace OpenCBS.Manager.Contracts
                     GROUP BY Installments.expected_date
                     ORDER BY Installments.expected_date";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@village_id", villageId);
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     while (r.Read())
                     {
@@ -1738,10 +1738,10 @@ namespace OpenCBS.Manager.Contracts
                   FROM [dbo].[CreditEntryFees] 
                   WHERE [credit_id]=@credit_id";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@credit_id", loanId);
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     while (r.Read())
                     {
@@ -1769,7 +1769,7 @@ namespace OpenCBS.Manager.Contracts
                  VALUES (@credit_id, @entry_fee_id, @fee_value)";
             foreach (LoanEntryFee entryFee in loanEntryFees)
             {
-                using (var c = new OctopusCommand(q, transaction.Connection, transaction))
+                using (var c = new OpenCbsCommand(q, transaction.Connection, transaction))
                 {
                     c.AddParam("@credit_id", loanId);
                     c.AddParam("@entry_fee_id", entryFee.ProductEntryFee.Id);
@@ -1787,7 +1787,7 @@ namespace OpenCBS.Manager.Contracts
                 WHERE id=@loan_entry_fee_id";
             foreach (LoanEntryFee entryFee in loanEntryFees)
             {
-                using (OctopusCommand c =  new OctopusCommand(q, transaction.Connection, transaction))
+                using (OpenCbsCommand c =  new OpenCbsCommand(q, transaction.Connection, transaction))
                 {
                     c.AddParam("@loan_entry_fee_id", entryFee.Id);
                     c.AddParam("@fee_value", entryFee.FeeValue);
@@ -1868,10 +1868,10 @@ namespace OpenCBS.Manager.Contracts
                                         LEFT JOIN LoansLinkSavingsBook ON LoansLinkSavingsBook.loan_id = Contracts.id
                                         WHERE Credit.id = @id";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@id", pLoanId);
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (r == null || r.Empty) return null;
 
@@ -1935,7 +1935,7 @@ namespace OpenCBS.Manager.Contracts
             return loan;
         }
 
-        private static void SetLoan(Loan pLoan, OctopusCommand c)
+        private static void SetLoan(Loan pLoan, OpenCbsCommand c)
         {
             c.AddParam("@id", pLoan.Id);
             c.AddParam("@packageId", pLoan.Product.Id);
@@ -1989,11 +1989,11 @@ namespace OpenCBS.Manager.Contracts
                                INNER JOIN dbo.Installments ON dbo.Credit.id = dbo.Installments.contract_id
                                WHERE dbo.Installments.expected_date BETWEEN DATEADD(dd, -1, @date) AND DATEADD(dd, 1, @date)";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@date", date);
 
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     Dictionary<int, int> ListOfContractsInstallment = new Dictionary<int, int>();
 
@@ -2007,7 +2007,7 @@ namespace OpenCBS.Manager.Contracts
             }
         }
 
-        private Loan _GetLoan(OctopusReader r)
+        private Loan _GetLoan(OpenCbsReader r)
         {
             return new Loan(_user, ApplicationSettings.GetInstance(_user.Md5),
                             NonWorkingDateSingleton.GetInstance(_user.Md5),
@@ -2082,7 +2082,7 @@ namespace OpenCBS.Manager.Contracts
                 FROM dbo.Projects AS p
                 LEFT JOIN dbo.Contracts AS c ON c.project_id = p.id
                 WHERE c.id = @contract_id";
-            using (OctopusCommand c = new OctopusCommand(q, pSqlTransac.Connection, pSqlTransac))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, pSqlTransac.Connection, pSqlTransac))
             {
                 c.AddParam("@contract_id", pLoan.Id);
                 group_id = Convert.ToInt32(c.ExecuteScalar());
@@ -2091,7 +2091,7 @@ namespace OpenCBS.Manager.Contracts
             const string sqlText = @"INSERT INTO LoanShareAmounts (person_id, group_id, contract_id, amount)
                                      VALUES (@person_id, @group_id, @contract_id, @amount)";
 
-            using(OctopusCommand c = new OctopusCommand(sqlText, pSqlTransac.Connection, pSqlTransac))
+            using(OpenCbsCommand c = new OpenCbsCommand(sqlText, pSqlTransac.Connection, pSqlTransac))
             {
                 foreach (LoanShare ls in pLoan.LoanShares)
                 {
@@ -2112,10 +2112,10 @@ namespace OpenCBS.Manager.Contracts
 
             const string q = @"SELECT [id] FROM [CollateralsLinkContracts] WHERE contract_id = @contract_id ";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@contract_id", pLoanId);
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (r == null || r.Empty) return new List<ContractCollateral>();
                     while (r.Read()) collateralIds.Add(r.GetInt("id"));
@@ -2133,10 +2133,10 @@ namespace OpenCBS.Manager.Contracts
                                            FROM [CollateralPropertyValues] 
                                            WHERE contract_collateral_id = @contract_collateral_id ";
                 using (SqlConnection conn = GetConnection())
-                using (OctopusCommand c = new OctopusCommand(sqlPropertyText, conn))
+                using (OpenCbsCommand c = new OpenCbsCommand(sqlPropertyText, conn))
                 {
                     c.AddParam("@contract_collateral_id", collateralId);
-                    using (OctopusReader r = c.ExecuteReader())
+                    using (OpenCbsReader r = c.ExecuteReader())
                     {
                         if (r == null || r.Empty) return new List<ContractCollateral>();
 
@@ -2175,10 +2175,10 @@ namespace OpenCBS.Manager.Contracts
                                      LEFT JOIN Persons AS p ON p.id = lsa.person_id 
                                      WHERE contract_id = @contract_id";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("contract_id", pContractId);
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (r == null || r.Empty) return new List<LoanShare>();
 
@@ -2196,7 +2196,7 @@ namespace OpenCBS.Manager.Contracts
         }
 
 
-        private static TrancheEvent GetTransh(OctopusReader r)
+        private static TrancheEvent GetTransh(OpenCbsReader r)
         {
             return new TrancheEvent
             {
@@ -2266,10 +2266,10 @@ namespace OpenCBS.Manager.Contracts
                                 WHERE   contract_id = @id
                                   AND ce.is_deleted = 0";
 
-            using (OctopusCommand c = new OctopusCommand(q, pSqlTransac.Connection, pSqlTransac))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, pSqlTransac.Connection, pSqlTransac))
             {
                 c.AddParam("@id", pLoanId);
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     List<TrancheEvent> trancheList = new List<TrancheEvent>();
 
@@ -2291,14 +2291,14 @@ namespace OpenCBS.Manager.Contracts
             string q = "SELECT * FROM dbo.Alerts(@date, @user_id, @branch_id)";
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.CommandTimeout = 600;
                 c.AddParam("@date", date.Date);
                 c.AddParam("@user_id", userId);
                 c.AddParam("@branch_id", 1);
 
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (r.Empty) return alerts;
 
@@ -2335,9 +2335,9 @@ namespace OpenCBS.Manager.Contracts
             from dbo.Contracts";
             List<int> list = new List<int>();
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     while (r.Read())
                     {
@@ -2356,10 +2356,10 @@ namespace OpenCBS.Manager.Contracts
 
             string code = null;
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@id", clientId);
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (r == null || r.Empty) return null;
                     while (r.Read())
@@ -2376,7 +2376,7 @@ namespace OpenCBS.Manager.Contracts
             const string query =
                 "SELECT [disbursed] FROM Credit WHERE id = @contractId";
             using (var connection = GetConnection())
-            using (var cmd = new OctopusCommand(query, connection))
+            using (var cmd = new OpenCbsCommand(query, connection))
             {
                 cmd.AddParam("contractId", contractId);
                 var result = cmd.ExecuteScalar();

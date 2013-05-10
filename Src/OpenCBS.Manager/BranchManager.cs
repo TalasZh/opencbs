@@ -29,8 +29,8 @@ namespace OpenCBS.Manager
                     , code, address, description
             FROM dbo.Branches";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
-            using (OctopusReader r = c.ExecuteReader())
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
+            using (OpenCbsReader r = c.ExecuteReader())
             {
                 if (r.Empty) return branches;
 
@@ -70,8 +70,8 @@ namespace OpenCBS.Manager
                     FROM dbo.Branches
                     WHERE id IN (SELECT branch_id FROM Tellers WHERE user_id = 0 AND deleted = 0)";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
-            using (OctopusReader r = c.ExecuteReader())
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
+            using (OpenCbsReader r = c.ExecuteReader())
             {
                 if (r.Empty) return branches;
 
@@ -98,7 +98,7 @@ namespace OpenCBS.Manager
                               (name, code, address, description)
                               VALUES (@name, @code, @address, @description)
                               SELECT SCOPE_IDENTITY()";
-            using (OctopusCommand c = new OctopusCommand(q, t.Connection, t))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, t.Connection, t))
             {
                 c.AddParam("@name", branch.Name);
                 c.AddParam("@code", branch.Code);
@@ -117,7 +117,7 @@ namespace OpenCBS.Manager
                                 , description = @description
                                 , address = @address
                                 WHERE id = @id";
-            using (OctopusCommand c = new OctopusCommand(q, t.Connection, t))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, t.Connection, t))
             {   
                 c.AddParam("@id", branch.Id);
                 c.AddParam("@name", branch.Name);
@@ -133,7 +133,7 @@ namespace OpenCBS.Manager
             const string q = @"UPDATE dbo.Branches
             SET deleted = 1 WHERE id = @id";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@id", id);
                 c.ExecuteNonQuery();
@@ -147,7 +147,7 @@ namespace OpenCBS.Manager
             from dbo.Branches
             where name = @name and id <> @id";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@id", id);
                 c.AddParam("@name", name);
@@ -162,7 +162,7 @@ namespace OpenCBS.Manager
             from dbo.Branches
             where code = @code and id <> @id";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@id", id);
                 c.AddParam("@code", code);
@@ -176,11 +176,11 @@ namespace OpenCBS.Manager
                          INNER JOIN Branches ON Branches.id = Tiers.branch_id
                          WHERE Tiers.id = @id";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@id", clientId);
                 string code = string.Empty;
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (r.Empty) return null;
                     if (r.Read())
@@ -196,11 +196,11 @@ namespace OpenCBS.Manager
                                     FROM Tiers
                                     INNER JOIN Branches ON Branches.id = Tiers.branch_id
                                     WHERE Tiers.id = @id";
-            OctopusCommand c = new OctopusCommand(sqlText, sqlTransaction.Connection, sqlTransaction);
+            OpenCbsCommand c = new OpenCbsCommand(sqlText, sqlTransaction.Connection, sqlTransaction);
             {
                 c.AddParam("@id", clientId);
                 string code = string.Empty;
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (r.Empty) return null;
                     if (r.Read())
@@ -241,10 +241,10 @@ namespace OpenCBS.Manager
                                      FROM [Branches] 
                                      WHERE id = @id";
 
-            using (OctopusCommand c = new OctopusCommand(sqlText, pSqlTransac.Connection, pSqlTransac))
+            using (OpenCbsCommand c = new OpenCbsCommand(sqlText, pSqlTransac.Connection, pSqlTransac))
             {
                 c.AddParam("@id", branchId);
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (r.Empty) return null;
 
@@ -275,8 +275,8 @@ namespace OpenCBS.Manager
             WHERE name LIKE '%{0}%'";
             query = string.Format(query, name);
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand cmd = new OctopusCommand(query, conn))
-            using (OctopusReader r = cmd.ExecuteReader())
+            using (OpenCbsCommand cmd = new OpenCbsCommand(query, conn))
+            using (OpenCbsReader r = cmd.ExecuteReader())
             {
                 if (r.Empty) return null;
                 if (!r.Read()) return null;

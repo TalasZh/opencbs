@@ -27,7 +27,7 @@ namespace OpenCBS.Manager
                         VALUES (@name,@parentId,@deleted) SELECT SCOPE_IDENTITY()";
 
 		    using (SqlConnection connection = GetConnection())
-            using (OctopusCommand insert = new OctopusCommand(sqlText, connection))
+            using (OpenCbsCommand insert = new OpenCbsCommand(sqlText, connection))
 		    {
                 insert.AddParam("@name", pEconomicActivity.Name);
                 insert.AddParam("@deleted", pEconomicActivity.Deleted);
@@ -51,9 +51,9 @@ namespace OpenCBS.Manager
             const string sqlText = "SELECT id FROM EconomicActivities WHERE parent_id IS NULL AND deleted = 0";
 
             using (SqlConnection connection = GetConnection())
-            using (OctopusCommand selectAll = new OctopusCommand(sqlText, connection))
+            using (OpenCbsCommand selectAll = new OpenCbsCommand(sqlText, connection))
             {
-                using (OctopusReader reader = selectAll.ExecuteReader())
+                using (OpenCbsReader reader = selectAll.ExecuteReader())
                 {
                     while (reader.Read())
                     {
@@ -79,7 +79,7 @@ namespace OpenCBS.Manager
             const string sqlText = "UPDATE EconomicActivities SET name = @name,deleted = @wasDeleted WHERE id = @id";
 
             using (SqlConnection connection = GetConnection())
-            using (OctopusCommand update = new OctopusCommand(sqlText, connection))
+            using (OpenCbsCommand update = new OpenCbsCommand(sqlText, connection))
 		    {
                 update.AddParam("@id", pEconomicActivity.Id);
                 update.AddParam("@name",  pEconomicActivity.Name);
@@ -95,10 +95,10 @@ namespace OpenCBS.Manager
             const string sqlText = "SELECT id, name, deleted FROM EconomicActivities WHERE parent_id = @id AND deleted = 0";
 
             using (SqlConnection connection = GetConnection())
-            using (OctopusCommand sqlCommand = new OctopusCommand(sqlText, connection))
+            using (OpenCbsCommand sqlCommand = new OpenCbsCommand(sqlText, connection))
             {
                 sqlCommand.AddParam("@id", pParentId);
-                using (OctopusReader reader = sqlCommand.ExecuteReader())
+                using (OpenCbsReader reader = sqlCommand.ExecuteReader())
                 {
                     while (reader.Read())
                     {
@@ -124,12 +124,12 @@ namespace OpenCBS.Manager
             const string sqlText = @"SELECT id, name, deleted FROM EconomicActivities WHERE parent_id = @id 
                     AND name = @name AND deleted = 0";
             using (SqlConnection connection = GetConnection())
-            using (OctopusCommand sqlCommand = new OctopusCommand(sqlText, connection))
+            using (OpenCbsCommand sqlCommand = new OpenCbsCommand(sqlText, connection))
             {
                 sqlCommand.AddParam("@name", pName);
                 sqlCommand.AddParam("@id", pParentId);
 
-                using (OctopusReader reader = sqlCommand.ExecuteReader())
+                using (OpenCbsReader reader = sqlCommand.ExecuteReader())
                 {
                     if (!reader.Empty)
                     {
@@ -155,10 +155,10 @@ namespace OpenCBS.Manager
                                      FROM EconomicActivities 
                                      WHERE id = @id";
             using (SqlConnection connection = GetConnection())
-            using (OctopusCommand selectById = new OctopusCommand(sqlText, connection))
+            using (OpenCbsCommand selectById = new OpenCbsCommand(sqlText, connection))
             {
                 selectById.AddParam("@id", pId);
-                using (OctopusReader reader = selectById.ExecuteReader())
+                using (OpenCbsReader reader = selectById.ExecuteReader())
                 {
                     doa = GetEconomicActivity(reader);
                 }
@@ -168,7 +168,7 @@ namespace OpenCBS.Manager
             return doa;
         }
 
-        private static EconomicActivity GetEconomicActivity(OctopusReader pReader)
+        private static EconomicActivity GetEconomicActivity(OpenCbsReader pReader)
         {
             EconomicActivity doa = new EconomicActivity();
             if (pReader != null)
@@ -190,10 +190,10 @@ namespace OpenCBS.Manager
 
             const string sqlText = "SELECT id, name, deleted FROM EconomicActivities WHERE name = @name";
             using (SqlConnection connection = GetConnection())
-            using (OctopusCommand selectById = new OctopusCommand(sqlText, connection))
+            using (OpenCbsCommand selectById = new OpenCbsCommand(sqlText, connection))
             {
                 selectById.AddParam("@name", pName);
-                using (OctopusReader reader = selectById.ExecuteReader())
+                using (OpenCbsReader reader = selectById.ExecuteReader())
                 {
                     doa = GetEconomicActivity(reader);
                 }
@@ -209,7 +209,7 @@ namespace OpenCBS.Manager
                                     ([contract_id],[person_id],[group_id],[economic_activity_id],[deleted]) 
                                     VALUES (@contract_id, @person_id, @group_id, @economic_activity_id, @deleted)";
 
-            using (OctopusCommand insert = new OctopusCommand(sqlText, sqlTransaction.Connection, sqlTransaction))
+            using (OpenCbsCommand insert = new OpenCbsCommand(sqlText, sqlTransaction.Connection, sqlTransaction))
             {
                 insert.AddParam("@contract_id",  activityLoanHistory.Contract.Id);
                 insert.AddParam("@person_id",  activityLoanHistory.Person.Id);
@@ -231,7 +231,7 @@ namespace OpenCBS.Manager
                                     SET deleted = @deleted, economic_activity_id = @economic_activity_id 
                                     WHERE contract_id = @contract_id AND person_id = @person_id";
 
-            using (OctopusCommand update = new OctopusCommand(sqlText, sqlTransaction.Connection, sqlTransaction))
+            using (OpenCbsCommand update = new OpenCbsCommand(sqlText, sqlTransaction.Connection, sqlTransaction))
             {
                 update.AddParam("@contract_id",  contractId);
                 update.AddParam("@person_id",  personId);
@@ -248,12 +248,12 @@ namespace OpenCBS.Manager
                                      FROM EconomicActivityLoanHistory 
                                      WHERE contract_id = @contract_id AND person_id = @person_id ";
 
-            using (OctopusCommand sqlCommand = new OctopusCommand(sqlText, sqlTransaction.Connection, sqlTransaction))
+            using (OpenCbsCommand sqlCommand = new OpenCbsCommand(sqlText, sqlTransaction.Connection, sqlTransaction))
             {
                 sqlCommand.AddParam("@contract_id",  contractId);
                 sqlCommand.AddParam("@person_id",  personId);
 
-                using (OctopusReader reader = sqlCommand.ExecuteReader())
+                using (OpenCbsReader reader = sqlCommand.ExecuteReader())
                 {
                     if (!reader.Empty)
                     {
@@ -272,12 +272,12 @@ namespace OpenCBS.Manager
                                      FROM EconomicActivityLoanHistory 
                                      WHERE contract_id = @contract_id AND person_id = @person_id AND deleted = 1";
 
-            using (OctopusCommand sqlCommand = new OctopusCommand(sqlText, sqlTransaction.Connection, sqlTransaction))
+            using (OpenCbsCommand sqlCommand = new OpenCbsCommand(sqlText, sqlTransaction.Connection, sqlTransaction))
             {
                 sqlCommand.AddParam("@contract_id",  contractId);
                 sqlCommand.AddParam("@person_id",  personId);
 
-                using (OctopusReader reader = sqlCommand.ExecuteReader())
+                using (OpenCbsReader reader = sqlCommand.ExecuteReader())
                 {
                     if (!reader.Empty)
                     {

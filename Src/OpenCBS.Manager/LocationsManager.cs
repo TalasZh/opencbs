@@ -22,9 +22,9 @@ namespace OpenCBS.Manager
             const string q = "SELECT [id],[name] FROM [Provinces]  WHERE [deleted] = 0 ORDER BY name";
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (r != null)
                     {
@@ -47,8 +47,8 @@ namespace OpenCBS.Manager
             const string q = "SELECT [id], [name] ,[district_id]FROM [City] WHERE [deleted]=0 ORDER BY name ";
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
-            using (OctopusReader r = c.ExecuteReader())
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
+            using (OpenCbsReader r = c.ExecuteReader())
             {
                 if (r != null)
                 {
@@ -75,8 +75,8 @@ namespace OpenCBS.Manager
             const string q = "SELECT [id], [name], [province_id] FROM [Districts]  WHERE [deleted]=0 ORDER BY name";
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
-            using (OctopusReader reader = c.ExecuteReader())
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
+            using (OpenCbsReader reader = c.ExecuteReader())
             {
                 if (reader != null)
                 {
@@ -105,7 +105,7 @@ namespace OpenCBS.Manager
         {
             const string q = "INSERT INTO [Districts] ([name],[province_id],[deleted]) VALUES( @name, @province,0) SELECT SCOPE_IDENTITY()";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@name", pName);
                 c.AddParam("@province", pProvinceId);
@@ -124,11 +124,11 @@ namespace OpenCBS.Manager
                                    "Provinces ON Districts.province_id = Provinces.id " +
                                    "WHERE Districts.id= @id ORDER BY Districts.name";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@id", pId);
 
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (r != null)
                     {
@@ -158,11 +158,11 @@ namespace OpenCBS.Manager
                                    "Provinces ON Districts.province_id = Provinces.id " +
                                    "WHERE Districts.name= @name";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@name", name);
 
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (r != null)
                     {
@@ -186,7 +186,7 @@ namespace OpenCBS.Manager
         {
             const string q = "INSERT INTO [Provinces] ([name], [deleted]) VALUES (@name,0) SELECT SCOPE_IDENTITY()";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@name", pName);
                 c.AddParam("@deleted", false);
@@ -201,7 +201,7 @@ namespace OpenCBS.Manager
             {
                 const string q = "UPDATE [Provinces] SET [name]=@name WHERE id=@id";
                 using (SqlConnection conn = GetConnection())
-                using (OctopusCommand c = new OctopusCommand(q, conn))
+                using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
                 {
                     c.AddParam("@id", pProvince.Id);
                     c.AddParam("@name", pProvince.Name);
@@ -221,7 +221,7 @@ namespace OpenCBS.Manager
             const string q = "UPDATE [Provinces]  SET [deleted]=1 WHERE id=@id";
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@id", pProvinceId);
                 c.ExecuteNonQuery();
@@ -232,7 +232,7 @@ namespace OpenCBS.Manager
         {
             const string q = "INSERT INTO [Districts]([name], [province_id],[deleted]) VALUES(@name,@provinceId,0) SELECT SCOPE_IDENTITY()";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@name", pDistrict.Name);
                 c.AddParam("@provinceId", pDistrict.Province.Id);
@@ -248,7 +248,7 @@ namespace OpenCBS.Manager
             {
                 const string q = "UPDATE [Districts] SET [name]=@name WHERE id=@id";
                 using (SqlConnection conn = GetConnection())
-                using (OctopusCommand c = new OctopusCommand(q, conn))
+                using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
                 {
                     c.AddParam("@id", pDistrict.Id);
                     c.AddParam("@name", pDistrict.Name);
@@ -268,7 +268,7 @@ namespace OpenCBS.Manager
             const string q = "UPDATE [Districts]  SET [deleted]=1 WHERE id=@id";
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@id", districtID);
                 c.ExecuteNonQuery();
@@ -279,7 +279,7 @@ namespace OpenCBS.Manager
         {
             const string q = "INSERT INTO [City] ([name], [district_id],[deleted]) VALUES (@name,@district_id,0) SELECT SCOPE_IDENTITY()";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@name", pCity.Name);
                 c.AddParam("@district_id", pCity.DistrictId);
@@ -296,7 +296,7 @@ namespace OpenCBS.Manager
                 {
                     const string q = "UPDATE [City] SET [name]=@name WHERE id=@id";
                     using (SqlConnection conn = GetConnection())
-                    using (OctopusCommand c = new OctopusCommand(q, conn))
+                    using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
                     {
                         c.AddParam("@id", pCity.Id);
                         c.AddParam("@name", pCity.Name);
@@ -317,7 +317,7 @@ namespace OpenCBS.Manager
             const string q = "UPDATE [City]  SET [deleted]=1 WHERE id=@id";
 
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@id", pCityId);
                 c.ExecuteNonQuery();
@@ -336,10 +336,10 @@ namespace OpenCBS.Manager
                                    "Provinces ON Districts.province_id = Provinces.id " +
                                    "WHERE Provinces.id= @id AND Districts.deleted = 0 ORDER BY Districts.name";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@id", pProvinceId);
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (r != null)
                     {
@@ -365,8 +365,8 @@ namespace OpenCBS.Manager
 
             const string q = "SELECT id,name FROM Provinces ORDER BY name";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
-            using (OctopusReader r = c.ExecuteReader())
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
+            using (OpenCbsReader r = c.ExecuteReader())
             {
                 if (r != null)
                 {
@@ -389,10 +389,10 @@ namespace OpenCBS.Manager
         {
             const string q = "SELECT id,name FROM Provinces WHERE name = @name";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@name", name);
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (null == r || r.Empty) return null;
                     r.Read();
@@ -412,10 +412,10 @@ namespace OpenCBS.Manager
 
             const string q = "SELECT name, id FROM City WHERE district_id = @id and deleted = 0 ORDER BY name";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@id", pDistrictId);
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (r != null)
                     {
@@ -447,8 +447,8 @@ namespace OpenCBS.Manager
             WHERE c.name LIKE N'%{0}%'";
             query = string.Format(query, name);
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand cmd = new OctopusCommand(query, conn))
-            using (OctopusReader r = cmd.ExecuteReader())
+            using (OpenCbsCommand cmd = new OpenCbsCommand(query, conn))
+            using (OpenCbsReader r = cmd.ExecuteReader())
             {
                 if (null == r) return null;
                 if (!r.Read()) return null;
@@ -471,7 +471,7 @@ namespace OpenCBS.Manager
         {
             const string query = "SELECT TOP 1 district_id FROM Tiers WHERE district_id = @districtId OR secondary_district_id = @districtId";
             using (var connection = GetConnection())
-            using (var cmd = new OctopusCommand(query, connection))
+            using (var cmd = new OpenCbsCommand(query, connection))
             {
                 cmd.AddParam("districtId", districtId);
                 return cmd.ExecuteScalar() != null;
@@ -485,7 +485,7 @@ namespace OpenCBS.Manager
                                  "    ON c.[name] = t.city OR c.[name] = t.secondary_city " +
                                  "WHERE c.id = @cityId";
             using (var connection = GetConnection())
-            using (var cmd = new OctopusCommand(query, connection))
+            using (var cmd = new OpenCbsCommand(query, connection))
             {
                 cmd.AddParam("cityId", cityId);
                 return cmd.ExecuteScalar() != null;

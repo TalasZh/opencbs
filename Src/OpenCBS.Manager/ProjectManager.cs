@@ -72,7 +72,7 @@ namespace OpenCBS.Manager
                 @corporateFinancialPlanType, @corporateFinancialPlanAmount, @corporateFinancialPlanTotalAmount,
                 @address,@city, @zipCode, @districtId, @homePhone, @personalPhone,@Email,@hometype,@corporateRegistre) SELECT SCOPE_IDENTITY()";
 
-            using (OctopusCommand c = new OctopusCommand(q, pSqlTransac.Connection, pSqlTransac))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, pSqlTransac.Connection, pSqlTransac))
             {
                 c.AddParam("@tiersId", pTiersId);
                 c.AddParam("@status", (int) pProject.ProjectStatus);
@@ -128,7 +128,7 @@ namespace OpenCBS.Manager
                 ,[comment]) VALUES(@projectId,@year,@CA,@jobs1,@jobs2,@personalSituation,@activity,@comment)
                 SELECT SCOPE_IDENTITY()";
 
-            using (OctopusCommand c = new OctopusCommand(q, pTransac.Connection, pTransac))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, pTransac.Connection, pTransac))
             {
                 c.AddParam("@projectId", pId);
                 c.AddParam("@year", pUp.Year);
@@ -148,11 +148,11 @@ namespace OpenCBS.Manager
 
             string sqlText = "SELECT * FROM Projects WHERE id = @id";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand select = new OctopusCommand(sqlText, conn))
+            using (OpenCbsCommand select = new OpenCbsCommand(sqlText, conn))
             {
                 select.AddParam("@id", pId);
 
-                using (OctopusReader reader = select.ExecuteReader())
+                using (OpenCbsReader reader = select.ExecuteReader())
                 {
                     if (reader != null)
                         if (!reader.Empty)
@@ -182,7 +182,7 @@ namespace OpenCBS.Manager
             return project;
         }
 
-        private Project GetProject(OctopusReader reader)
+        private Project GetProject(OpenCbsReader reader)
         {
             Project project = new Project();
             project.Id = reader.GetInt("id");
@@ -228,10 +228,10 @@ namespace OpenCBS.Manager
             List<FollowUp> list = new List<FollowUp>();
             const string sqlText = "SELECT * FROM FollowUp WHERE project_id = @pId";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand select = new OctopusCommand(sqlText, conn))
+            using (OpenCbsCommand select = new OpenCbsCommand(sqlText, conn))
             {
                 select.AddParam("@pId", pProjectId);
-                using (OctopusReader reader = select.ExecuteReader())
+                using (OpenCbsReader reader = select.ExecuteReader())
                 {
                     if (reader == null || reader.Empty) return new List<FollowUp>();
                     while (reader.Read())
@@ -269,7 +269,7 @@ namespace OpenCBS.Manager
                 [personalPhone] = @personalPhone, [Email] = @Email, [hometype] = @hometype,
                 [corporate_registre] = @corporateRegistre WHERE id = @id";
 
-            using (OctopusCommand c = new OctopusCommand(q, pSqlTransaction.Connection, pSqlTransaction))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, pSqlTransaction.Connection, pSqlTransaction))
             {
                 c.AddParam("@status", (int) pProject.ProjectStatus);
                 c.AddParam("@id", pProject.Id);
@@ -321,7 +321,7 @@ namespace OpenCBS.Manager
             const string q = @"UPDATE [FollowUp] SET [year] = @year,[CA] = @CA,[Jobs1] = @Jobs1 ,[Jobs2] = @Jobs2
                 ,[PersonalSituation] = @PersonalSituation ,[activity] = @activity ,[comment] = @comment WHERE id = @id";
 
-            using (OctopusCommand c = new OctopusCommand(q, pTransaction.Connection, pTransaction))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, pTransaction.Connection, pTransaction))
             {
                 c.AddParam("@id", pUp.Id);
                 c.AddParam("@year", pUp.Year);
@@ -342,11 +342,11 @@ namespace OpenCBS.Manager
 
             const string query = "SELECT id FROM Projects WHERE tiers_id = @tiersId";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand select = new OctopusCommand(query, conn))
+            using (OpenCbsCommand select = new OpenCbsCommand(query, conn))
             {
                 select.AddParam("@tiersId", pClientId);
 
-                using (OctopusReader reader = select.ExecuteReader())
+                using (OpenCbsReader reader = select.ExecuteReader())
                 {
                     if (reader != null)
                         if (!reader.Empty)
@@ -375,11 +375,11 @@ namespace OpenCBS.Manager
 
             Project project = null;
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand select = new OctopusCommand(sqlText, conn))
+            using (OpenCbsCommand select = new OpenCbsCommand(sqlText, conn))
             {
                 select.AddParam("@contractId", pContractId);
 
-                using (OctopusReader reader = select.ExecuteReader())
+                using (OpenCbsReader reader = select.ExecuteReader())
                 {
                     if (!reader.Empty)
                     {
@@ -413,14 +413,14 @@ namespace OpenCBS.Manager
             QueryEntity q = new QueryEntity(pQuery, SELECT_FROM_PROJET_, CloseWhere);
             string pSqlText = q.ConstructSQLEntityByCriteresProxy(20, (pageNumber - 1) * 20);
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand select = new OctopusCommand(pSqlText, conn))
+            using (OpenCbsCommand select = new OpenCbsCommand(pSqlText, conn))
             {
 
                 foreach (var item in q.DynamiqParameters())
                 {
                     select.AddParam(item.Key, string.Format("%{0}%", item.Value));
                 }
-                using (OctopusReader reader = select.ExecuteReader())
+                using (OpenCbsReader reader = select.ExecuteReader())
                 {
                     while (reader.Read())
                     {
@@ -457,14 +457,14 @@ namespace OpenCBS.Manager
             QueryEntity q = new QueryEntity(pQuery, SELECT_FROM_PROJET_, CloseWhere);
             string pSqlText = q.ConstructSQLEntityNumberProxy();
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand select = new OctopusCommand(pSqlText, conn))
+            using (OpenCbsCommand select = new OpenCbsCommand(pSqlText, conn))
             {
 
                 foreach (var item in q.DynamiqParameters())
                 {
                     select.AddParam(item.Key, string.Format("%{0}%", item.Value));
                 }
-                using (OctopusReader reader = select.ExecuteReader())
+                using (OpenCbsReader reader = select.ExecuteReader())
                 {
                     reader.Read();
                     return reader.GetInt(0);
@@ -477,10 +477,10 @@ namespace OpenCBS.Manager
             List<string> list = new List<string>();
             const string sqlText = "SELECT * FROM ProjectPurposes";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand select = new OctopusCommand(sqlText, conn))
+            using (OpenCbsCommand select = new OpenCbsCommand(sqlText, conn))
             {
 
-                using (OctopusReader reader = select.ExecuteReader())
+                using (OpenCbsReader reader = select.ExecuteReader())
                 {
                     if (!reader.Empty)
                     {
@@ -498,7 +498,7 @@ namespace OpenCBS.Manager
         {
             const string q = "UPDATE [Projects] SET [status] = @status WHERE id = @id";
             
-            using (OctopusCommand c = new OctopusCommand(q, pTransaction.Connection, pTransaction))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, pTransaction.Connection, pTransaction))
             {
                 c.AddParam("@id", pProject.Id);
                 c.AddParam("@status", (int) pProject.ProjectStatus);
@@ -511,7 +511,7 @@ namespace OpenCBS.Manager
             const string q = @"SELECT id FROM dbo.Projects
             WHERE code = @code";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@code", code);
                 object val = c.ExecuteScalar();

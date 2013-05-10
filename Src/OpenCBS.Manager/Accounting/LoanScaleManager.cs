@@ -20,14 +20,14 @@ namespace OpenCBS.Manager.Accounting
         {
             const string sqlText = @"INSERT INTO LoanScale(id,ScaleMin, ScaleMax) VALUES(@number,@Min, @Max)";
 
-            using (OctopusCommand insert = new OctopusCommand(sqlText, pSqlTransaction.Connection, pSqlTransaction))
+            using (OpenCbsCommand insert = new OpenCbsCommand(sqlText, pSqlTransaction.Connection, pSqlTransaction))
             {
                 SetLoanScale(insert, pLoanScaleRate);
                 insert.ExecuteNonQuery();
             }
         }
 
-        private static void SetLoanScale(OctopusCommand octCmd, LoanScaleRate pLoanScaleRate)
+        private static void SetLoanScale(OpenCbsCommand octCmd, LoanScaleRate pLoanScaleRate)
         {
             octCmd.AddParam("@number", pLoanScaleRate.Number);
             octCmd.AddParam("@Min", pLoanScaleRate.ScaleMin);
@@ -42,9 +42,9 @@ namespace OpenCBS.Manager.Accounting
             
             using (SqlConnection conn = GetConnection())
             {
-                using (OctopusCommand select = new OctopusCommand(sqlText, conn))
+                using (OpenCbsCommand select = new OpenCbsCommand(sqlText, conn))
                 {
-                    using (OctopusReader reader = select.ExecuteReader())
+                    using (OpenCbsReader reader = select.ExecuteReader())
                     {
                         if (reader.Empty) return;
                         while (reader.Read())
@@ -56,7 +56,7 @@ namespace OpenCBS.Manager.Accounting
             }
         }
 
-        private static LoanScaleRate GetLoanScale(OctopusReader pReader)
+        private static LoanScaleRate GetLoanScale(OpenCbsReader pReader)
         {
             return new LoanScaleRate
                        {
@@ -69,7 +69,7 @@ namespace OpenCBS.Manager.Accounting
         public void Delete(SqlTransaction pSqlTransaction)
         {
             const string sqltext = "DELETE FROM LoanScale";
-            using (OctopusCommand delete = new OctopusCommand(sqltext, pSqlTransaction.Connection, pSqlTransaction))
+            using (OpenCbsCommand delete = new OpenCbsCommand(sqltext, pSqlTransaction.Connection, pSqlTransaction))
             {
                 delete.ExecuteNonQuery();
             }

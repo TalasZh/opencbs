@@ -12,7 +12,7 @@ namespace OpenCBS.Manager.Events
             
         }
 
-        private static void SetTrancheEvent(OctopusCommand cmd, TrancheEvent trancheEvent)
+        private static void SetTrancheEvent(OpenCbsCommand cmd, TrancheEvent trancheEvent)
         {
             cmd.AddParam("@Id",  trancheEvent.Id);
             cmd.AddParam("@InterestRate", trancheEvent.InterestRate);
@@ -47,7 +47,7 @@ namespace OpenCBS.Manager.Events
                              @applied_new_interest) 
                 SELECT SCOPE_IDENTITY()";
             using (SqlConnection conn = GetConnection())
-            using (var cmd = new OctopusCommand(sqlText, conn))
+            using (var cmd = new OpenCbsCommand(sqlText, conn))
             {
                 SetTrancheEvent(cmd, trancheEvent);
                 return int.Parse(cmd.ExecuteScalar().ToString());
@@ -65,7 +65,7 @@ namespace OpenCBS.Manager.Events
                             [applied_new_interest] = @applied_new_interest
                             WHERE id = @Id";
             using (SqlConnection conn = GetConnection())
-            using (var cmd = new OctopusCommand(sqlText, conn))
+            using (var cmd = new OpenCbsCommand(sqlText, conn))
             {
                 SetTrancheEvent(cmd, trancheEvent);
                 cmd.ExecuteNonQuery();

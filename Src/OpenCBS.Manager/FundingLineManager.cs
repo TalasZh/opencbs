@@ -63,10 +63,10 @@ namespace OpenCBS.Manager
                                WHERE fundingline_id = @id
                                ORDER BY creation_date DESC, id DESC";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@id", fl.Id);
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (null == r || r.Empty) return list;
                     while (r.Read())
@@ -102,7 +102,7 @@ namespace OpenCBS.Manager
             AND type ";
             q += equals ? "= @type" : "<> @type";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@id", fl.Id);
                 c.AddParam("@date", TimeProvider.Now.Date);
@@ -140,11 +140,11 @@ namespace OpenCBS.Manager
                         FROM [FundingLines] 
                         LEFT JOIN Currencies ON FundingLines.currency_id = Currencies.id
                         WHERE FundingLines.[id]=@id AND [deleted]=0";
-            using (OctopusCommand c = new OctopusCommand(q, sqlTrans.Connection, sqlTrans))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, sqlTrans.Connection, sqlTrans))
             {
                 c.AddParam("@id", id);
 
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (!r.Empty)
                     {
@@ -193,11 +193,11 @@ namespace OpenCBS.Manager
                         LEFT JOIN Currencies ON FundingLines.currency_id = Currencies.id
                         WHERE FundingLines.[name]=@name AND [deleted]=0";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@name", name);
 
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (r != null)
                     {
@@ -248,11 +248,11 @@ namespace OpenCBS.Manager
                               LEFT JOIN Currencies ON FundingLines.currency_id = Currencies.id
                               WHERE FundingLines.[id]=@id AND [deleted]=0";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@id", id);
 
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (r != null)
                     {
@@ -302,14 +302,14 @@ namespace OpenCBS.Manager
                 WHERE [purpose] = @purpose AND
                 FundingLines.[name] = @name";
             if (!includeAll) q += "and [deleted]=@deleted";
-            using (OctopusCommand c = new OctopusCommand(q, sqlTransac.Connection, sqlTransac))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, sqlTransac.Connection, sqlTransac))
             {
                 c.AddParam("@purpose", lookupFundingLine.Purpose);
                 c.AddParam("@name", lookupFundingLine.Name);
 
                 if (!includeAll) c.AddParam("@deleted", lookupFundingLine.Deleted);
 
-                using (OctopusReader r = c.ExecuteReader())
+                using (OpenCbsReader r = c.ExecuteReader())
                 {
                     if (r != null)
                     {
@@ -385,8 +385,8 @@ namespace OpenCBS.Manager
                 LEFT JOIN Currencies ON FundingLines.currency_id = Currencies.id
                 WHERE [deleted] = 0";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
-            using (OctopusReader r = c.ExecuteReader())
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
+            using (OpenCbsReader r = c.ExecuteReader())
             {
                 while (r.Read())
                 {
@@ -440,7 +440,7 @@ namespace OpenCBS.Manager
                 @"INSERT INTO [FundingLines]([name],[begin_date],[end_date],[amount],[purpose], [deleted], [currency_id]) 
                     VALUES(@name,@beginDate,@endDate,@amount,@purpose,@deleted, @currency_id ) SELECT SCOPE_IDENTITY()";
 
-            using (OctopusCommand c = new OctopusCommand(q, sqlTransac.Connection, sqlTransac))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, sqlTransac.Connection, sqlTransac))
             {
                 c.AddParam("@name", pFund.Name);
                 c.AddParam("@beginDate", pFund.StartDate);
@@ -495,7 +495,7 @@ namespace OpenCBS.Manager
                         [currency_id] = @currency_id
                         WHERE [id] = @id";
 
-            using (OctopusCommand c = new OctopusCommand(q, pSqlTransac.Connection, pSqlTransac))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, pSqlTransac.Connection, pSqlTransac))
             {
                 c.AddParam("@id", fund.Id);
                 c.AddParam("@name", fund.Name);
@@ -555,7 +555,7 @@ namespace OpenCBS.Manager
         {
             string q = "UPDATE [FundingLines] SET [deleted] = @deleted WHERE [id] = @id";
             using (SqlConnection conn = GetConnection())
-            using (OctopusCommand c = new OctopusCommand(q, conn))
+            using (OpenCbsCommand c = new OpenCbsCommand(q, conn))
             {
                 c.AddParam("@id", fund.Id);
                 c.AddParam("@deleted", true);
