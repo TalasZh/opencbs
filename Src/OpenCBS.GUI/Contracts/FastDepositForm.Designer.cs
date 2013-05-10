@@ -51,7 +51,6 @@ namespace OpenCBS.GUI.Contracts
             this.pnlButton.AccessibleDescription = null;
             this.pnlButton.AccessibleName = null;
             resources.ApplyResources(this.pnlButton, "pnlButton");
-            this.pnlButton.BackgroundImage = global::OpenCBS.GUI.Properties.Resources.theme1_1_fond_gris_180;
             this.pnlButton.Controls.Add(this.btnOK);
             this.pnlButton.Controls.Add(this.btnCancel);
             this.pnlButton.Font = null;

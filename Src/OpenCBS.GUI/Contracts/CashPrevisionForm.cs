@@ -185,7 +185,6 @@ namespace OpenCBS.GUI
             resources.ApplyResources(this.buttonRepaymentExit, "buttonRepaymentExit");
             this.buttonRepaymentExit.BackColor = System.Drawing.Color.Gainsboro;
             this.buttonRepaymentExit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonRepaymentExit.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_bouton_close;
             this.buttonRepaymentExit.Name = "buttonRepaymentExit";
             this.buttonRepaymentExit.UseVisualStyleBackColor = false;
             this.buttonRepaymentExit.Click += new System.EventHandler(this.buttonRepaymentExit_Click);
@@ -197,7 +196,6 @@ namespace OpenCBS.GUI
             resources.ApplyResources(this.buttonPreview, "buttonPreview");
             this.buttonPreview.BackColor = System.Drawing.Color.Gainsboro;
             this.buttonPreview.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonPreview.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_bouton_previous;
             this.buttonPreview.Name = "buttonPreview";
             this.buttonPreview.UseVisualStyleBackColor = false;
             this.buttonPreview.Click += new System.EventHandler(this.buttonPreview_Click);
@@ -209,7 +207,6 @@ namespace OpenCBS.GUI
             resources.ApplyResources(this.buttonNext, "buttonNext");
             this.buttonNext.BackColor = System.Drawing.Color.Gainsboro;
             this.buttonNext.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonNext.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_bouton_next;
             this.buttonNext.Name = "buttonNext";
             this.buttonNext.UseVisualStyleBackColor = false;
             this.buttonNext.Click += new System.EventHandler(this.buttonNext_Click);

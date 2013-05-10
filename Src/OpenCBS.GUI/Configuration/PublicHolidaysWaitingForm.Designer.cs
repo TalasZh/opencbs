@@ -61,7 +61,6 @@ namespace OpenCBS.GUI.Configuration
             // 
             // panel1
             // 
-            this.panel1.BackgroundImage = global::OpenCBS.GUI.Properties.Resources.theme1_1_fond_gris;
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Controls.Add(this.butCancel);
             this.panel1.Controls.Add(this.buttonUpdate);
@@ -72,7 +71,6 @@ namespace OpenCBS.GUI.Configuration
             // 
             resources.ApplyResources(this.butCancel, "butCancel");
             this.butCancel.BackColor = System.Drawing.Color.Gainsboro;
-            this.butCancel.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_bouton_close;
             this.butCancel.Name = "butCancel";
             this.butCancel.UseVisualStyleBackColor = false;
             this.butCancel.Click += new System.EventHandler(this.butCancel_Click);
@@ -81,7 +79,6 @@ namespace OpenCBS.GUI.Configuration
             // 
             resources.ApplyResources(this.buttonUpdate, "buttonUpdate");
             this.buttonUpdate.BackColor = System.Drawing.Color.Gainsboro;
-            this.buttonUpdate.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_bouton_validity;
             this.buttonUpdate.Name = "buttonUpdate";
             this.buttonUpdate.UseVisualStyleBackColor = false;
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);

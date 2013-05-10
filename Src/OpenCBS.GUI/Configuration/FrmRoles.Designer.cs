@@ -82,13 +82,11 @@ namespace OpenCBS.GUI.Configuration
             // 
             // splitContainer2.Panel1
             // 
-            this.splitContainer2.Panel1.BackgroundImage = global::OpenCBS.GUI.Properties.Resources.theme1_1_fond_gris;
             resources.ApplyResources(this.splitContainer2.Panel1, "splitContainer2.Panel1");
             this.splitContainer2.Panel1.Controls.Add(this.splitContainerLeft);
             // 
             // splitContainer2.Panel2
             // 
-            this.splitContainer2.Panel2.BackgroundImage = global::OpenCBS.GUI.Properties.Resources.theme1_1_fond_gris;
             resources.ApplyResources(this.splitContainer2.Panel2, "splitContainer2.Panel2");
             this.splitContainer2.Panel2.Controls.Add(this.tabControlActions);
             // 

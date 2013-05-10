@@ -188,7 +188,6 @@ namespace OpenCBS.GUI.UserControl
             // 
             // tableLayoutPanel3
             // 
-            this.tableLayoutPanel3.BackgroundImage = global::OpenCBS.GUI.Properties.Resources.theme1_1_fond_gris_180;
             resources.ApplyResources(this.tableLayoutPanel3, "tableLayoutPanel3");
             this.tableLayoutPanel3.Controls.Add(this.splitContainer1, 0, 0);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";

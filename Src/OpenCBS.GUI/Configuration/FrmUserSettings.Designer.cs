@@ -215,27 +215,23 @@ namespace OpenCBS.GUI.Configuration
             // pictureBox3
             // 
             resources.ApplyResources(this.pictureBox3, "pictureBox3");
-            this.pictureBox3.Image = global::OpenCBS.GUI.Properties.Resources.ru_small;
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.TabStop = false;
             // 
             // pictureBox6
             // 
-            this.pictureBox6.Image = global::OpenCBS.GUI.Properties.Resources.Spanish_Flag1;
             resources.ApplyResources(this.pictureBox6, "pictureBox6");
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.TabStop = false;
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::OpenCBS.GUI.Properties.Resources.en_small;
             resources.ApplyResources(this.pictureBox2, "pictureBox2");
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::OpenCBS.GUI.Properties.Resources.fr_small;
             resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;

@@ -166,7 +166,6 @@ namespace OpenCBS.GUI.Configuration
             // 
             // panelPaymentMethods
             // 
-            this.panelPaymentMethods.BackgroundImage = global::OpenCBS.GUI.Properties.Resources.theme1_1_fond_gris;
             resources.ApplyResources(this.panelPaymentMethods, "panelPaymentMethods");
             this.panelPaymentMethods.Controls.Add(this.btnDeletePaymentMethod);
             this.panelPaymentMethods.Controls.Add(this.btnEditPaymentMethod);

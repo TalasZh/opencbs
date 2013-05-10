@@ -364,7 +364,6 @@ namespace OpenCBS.GUI.Database
             // 
             // tableLayoutPanelDatabaseSettings
             // 
-            this.tableLayoutPanelDatabaseSettings.BackgroundImage = global::OpenCBS.GUI.Properties.Resources.theme1_1_fond_gris_180;
             resources.ApplyResources(this.tableLayoutPanelDatabaseSettings, "tableLayoutPanelDatabaseSettings");
             this.tableLayoutPanelDatabaseSettings.Controls.Add(this.groupBoxSQLDatabaseSettings, 0, 1);
             this.tableLayoutPanelDatabaseSettings.Controls.Add(this.groupBoxSQLDatabaseStructure, 0, 2);

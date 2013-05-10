@@ -478,7 +478,6 @@ namespace OpenCBS.GUI
             this.buttonCancel.BackColor = System.Drawing.Color.Gainsboro;
             this.buttonCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.buttonCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonCancel.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_bouton_close;
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.UseVisualStyleBackColor = false;
             this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);

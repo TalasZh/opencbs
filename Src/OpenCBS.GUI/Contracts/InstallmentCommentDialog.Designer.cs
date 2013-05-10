@@ -41,10 +41,8 @@ namespace OpenCBS.GUI.Contracts
             this.buttonCancel.AccessibleName = null;
             resources.ApplyResources(this.buttonCancel, "buttonCancel");
             this.buttonCancel.BackColor = System.Drawing.Color.Transparent;
-            this.buttonCancel.BackgroundImage = global::OpenCBS.GUI.Properties.Resources.theme1_1_fond_vert;
             this.buttonCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.buttonCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonCancel.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_bouton_close;
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.UseVisualStyleBackColor = false;
             // 
@@ -54,10 +52,8 @@ namespace OpenCBS.GUI.Contracts
             this.buttonOK.AccessibleName = null;
             resources.ApplyResources(this.buttonOK, "buttonOK");
             this.buttonOK.BackColor = System.Drawing.Color.Transparent;
-            this.buttonOK.BackgroundImage = global::OpenCBS.GUI.Properties.Resources.theme1_1_fond_vert;
             this.buttonOK.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.buttonOK.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonOK.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_bouton_validity;
             this.buttonOK.Name = "buttonOK";
             this.buttonOK.UseVisualStyleBackColor = false;
             // 

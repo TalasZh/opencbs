@@ -284,7 +284,6 @@ namespace OpenCBS.GUI.Contracts
             // buttonSelectAGroupPerson
             // 
             this.buttonSelectAGroupPerson.BackColor = System.Drawing.Color.Transparent;
-            this.buttonSelectAGroupPerson.BackgroundImage = global::OpenCBS.GUI.Properties.Resources.theme1_1_pastille_personne;
             resources.ApplyResources(this.buttonSelectAGroupPerson, "buttonSelectAGroupPerson");
             this.buttonSelectAGroupPerson.Name = "buttonSelectAGroupPerson";
             this.buttonSelectAGroupPerson.UseVisualStyleBackColor = false;

@@ -3362,10 +3362,8 @@ namespace OpenCBS.GUI.Clients
             // 
             // btSearchContract2
             // 
-            this.btSearchContract2.BackgroundImage = global::OpenCBS.GUI.Properties.Resources.theme1_1_fond_bouton;
             resources.ApplyResources(this.btSearchContract2, "btSearchContract2");
             this.btSearchContract2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.btSearchContract2.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_search;
             this.btSearchContract2.Name = "btSearchContract2";
             this.btSearchContract2.UseVisualStyleBackColor = true;
             this.btSearchContract2.Click += new System.EventHandler(this.btSearchContract_Click);
@@ -3687,7 +3685,6 @@ namespace OpenCBS.GUI.Clients
             this.buttonPrintSchedule.BackColor = System.Drawing.Color.Gainsboro;
             resources.ApplyResources(this.buttonPrintSchedule, "buttonPrintSchedule");
             this.buttonPrintSchedule.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonPrintSchedule.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_bouton_print;
             this.buttonPrintSchedule.Name = "buttonPrintSchedule";
             this.buttonPrintSchedule.UseVisualStyleBackColor = false;
             // 

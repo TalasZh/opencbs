@@ -137,7 +137,6 @@ namespace OpenCBS.GUI.Configuration
             // 
             // pnlButtons
             // 
-            this.pnlButtons.BackgroundImage = global::OpenCBS.GUI.Properties.Resources.theme1_1_fond_gris_180;
             this.pnlButtons.Controls.Add(this.btnOK);
             this.pnlButtons.Controls.Add(this.btnCancel);
             resources.ApplyResources(this.pnlButtons, "pnlButtons");

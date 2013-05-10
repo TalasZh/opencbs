@@ -429,7 +429,6 @@ namespace OpenCBS.GUI.UserControl
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.BackgroundImage = global::OpenCBS.GUI.Properties.Resources.theme1_1_fond_gris;
             resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
             this.tableLayoutPanel1.Controls.Add(this.groupBoxFirstAddress, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.groupBoxSecondaryAddress, 1, 0);

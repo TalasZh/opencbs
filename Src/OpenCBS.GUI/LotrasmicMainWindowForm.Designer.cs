@@ -772,7 +772,6 @@ namespace OpenCBS.GUI
             // panelLeft
             // 
             this.panelLeft.BackColor = System.Drawing.Color.Transparent;
-            this.panelLeft.BackgroundImage = global::OpenCBS.GUI.Properties.Resources.theme1_1_fond_gris;
             resources.ApplyResources(this.panelLeft, "panelLeft");
             this.panelLeft.Controls.Add(this.olvAlerts);
             this.panelLeft.Controls.Add(this.lblTitle);

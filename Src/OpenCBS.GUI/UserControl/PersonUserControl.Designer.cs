@@ -350,7 +350,6 @@ namespace OpenCBS.GUI.UserControl
             resources.ApplyResources(this.buttonProjectAddGuarantee, "buttonProjectAddGuarantee");
             this.buttonProjectAddGuarantee.BackColor = System.Drawing.Color.Gainsboro;
             this.buttonProjectAddGuarantee.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonProjectAddGuarantee.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_bouton_new;
             this.buttonProjectAddGuarantee.Name = "buttonProjectAddGuarantee";
             this.buttonProjectAddGuarantee.UseVisualStyleBackColor = false;
             // 
@@ -359,7 +358,6 @@ namespace OpenCBS.GUI.UserControl
             resources.ApplyResources(this.buttonProjectViewContract, "buttonProjectViewContract");
             this.buttonProjectViewContract.BackColor = System.Drawing.Color.Gainsboro;
             this.buttonProjectViewContract.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonProjectViewContract.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_view;
             this.buttonProjectViewContract.Name = "buttonProjectViewContract";
             this.buttonProjectViewContract.UseVisualStyleBackColor = false;
             // 
@@ -368,7 +366,6 @@ namespace OpenCBS.GUI.UserControl
             resources.ApplyResources(this.buttonProjectAddContract, "buttonProjectAddContract");
             this.buttonProjectAddContract.BackColor = System.Drawing.Color.Gainsboro;
             this.buttonProjectAddContract.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.buttonProjectAddContract.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_bouton_new;
             this.buttonProjectAddContract.Name = "buttonProjectAddContract";
             this.buttonProjectAddContract.UseVisualStyleBackColor = false;
             // 
@@ -473,7 +470,6 @@ namespace OpenCBS.GUI.UserControl
             // tableLayoutPanelAddress
             // 
             resources.ApplyResources(this.tableLayoutPanelAddress, "tableLayoutPanelAddress");
-            this.tableLayoutPanelAddress.BackgroundImage = global::OpenCBS.GUI.Properties.Resources.theme1_1_fond_gris_180;
             this.tableLayoutPanelAddress.Controls.Add(this.groupBoxFirstAddress, 0, 0);
             this.tableLayoutPanelAddress.Controls.Add(this.groupBoxSecondaryAddress, 1, 0);
             this.tableLayoutPanelAddress.Name = "tableLayoutPanelAddress";
@@ -1152,7 +1148,6 @@ namespace OpenCBS.GUI.UserControl
             resources.ApplyResources(this.button1, "button1");
             this.button1.BackColor = System.Drawing.Color.Gainsboro;
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.button1.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_bouton_new;
             this.button1.Name = "button1";
             this.button1.UseVisualStyleBackColor = false;
             // 
@@ -1161,7 +1156,6 @@ namespace OpenCBS.GUI.UserControl
             resources.ApplyResources(this.button2, "button2");
             this.button2.BackColor = System.Drawing.Color.Gainsboro;
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.button2.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_search;
             this.button2.Name = "button2";
             this.button2.UseVisualStyleBackColor = false;
             // 
@@ -1170,7 +1164,6 @@ namespace OpenCBS.GUI.UserControl
             resources.ApplyResources(this.button3, "button3");
             this.button3.BackColor = System.Drawing.Color.Gainsboro;
             this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.button3.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_bouton_new;
             this.button3.Name = "button3";
             this.button3.UseVisualStyleBackColor = false;
             // 
@@ -1179,7 +1172,6 @@ namespace OpenCBS.GUI.UserControl
             resources.ApplyResources(this.button4, "button4");
             this.button4.BackColor = System.Drawing.Color.Gainsboro;
             this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.button4.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_search;
             this.button4.Name = "button4";
             this.button4.UseVisualStyleBackColor = false;
             // 
@@ -1188,7 +1180,6 @@ namespace OpenCBS.GUI.UserControl
             resources.ApplyResources(this.button5, "button5");
             this.button5.BackColor = System.Drawing.Color.Gainsboro;
             this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.button5.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_view;
             this.button5.Name = "button5";
             this.button5.UseVisualStyleBackColor = false;
             // 
@@ -1197,7 +1188,6 @@ namespace OpenCBS.GUI.UserControl
             resources.ApplyResources(this.button6, "button6");
             this.button6.BackColor = System.Drawing.Color.Gainsboro;
             this.button6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.button6.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_bouton_new;
             this.button6.Name = "button6";
             this.button6.UseVisualStyleBackColor = false;
             // 
@@ -1206,7 +1196,6 @@ namespace OpenCBS.GUI.UserControl
             resources.ApplyResources(this.button7, "button7");
             this.button7.BackColor = System.Drawing.Color.Gainsboro;
             this.button7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.button7.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_view;
             this.button7.Name = "button7";
             this.button7.UseVisualStyleBackColor = false;
             // 
@@ -1215,7 +1204,6 @@ namespace OpenCBS.GUI.UserControl
             resources.ApplyResources(this.button8, "button8");
             this.button8.BackColor = System.Drawing.Color.Gainsboro;
             this.button8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.button8.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_bouton_new;
             this.button8.Name = "button8";
             this.button8.UseVisualStyleBackColor = false;
             // 
@@ -1224,7 +1212,6 @@ namespace OpenCBS.GUI.UserControl
             resources.ApplyResources(this.button9, "button9");
             this.button9.BackColor = System.Drawing.Color.Gainsboro;
             this.button9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.button9.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_view;
             this.button9.Name = "button9";
             this.button9.UseVisualStyleBackColor = false;
             // 
@@ -1233,7 +1220,6 @@ namespace OpenCBS.GUI.UserControl
             resources.ApplyResources(this.button10, "button10");
             this.button10.BackColor = System.Drawing.Color.Gainsboro;
             this.button10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.button10.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_bouton_new;
             this.button10.Name = "button10";
             this.button10.UseVisualStyleBackColor = false;
             // 
@@ -1242,7 +1228,6 @@ namespace OpenCBS.GUI.UserControl
             resources.ApplyResources(this.button11, "button11");
             this.button11.BackColor = System.Drawing.Color.Gainsboro;
             this.button11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.button11.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_bouton_new;
             this.button11.Name = "button11";
             this.button11.UseVisualStyleBackColor = false;
             // 
@@ -1251,7 +1236,6 @@ namespace OpenCBS.GUI.UserControl
             resources.ApplyResources(this.button12, "button12");
             this.button12.BackColor = System.Drawing.Color.Gainsboro;
             this.button12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.button12.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_view;
             this.button12.Name = "button12";
             this.button12.UseVisualStyleBackColor = false;
             // 
@@ -1260,7 +1244,6 @@ namespace OpenCBS.GUI.UserControl
             resources.ApplyResources(this.button13, "button13");
             this.button13.BackColor = System.Drawing.Color.Gainsboro;
             this.button13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
-            this.button13.Image = global::OpenCBS.GUI.Properties.Resources.theme1_1_bouton_new;
             this.button13.Name = "button13";
             this.button13.UseVisualStyleBackColor = false;
             // 
