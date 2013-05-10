@@ -3,7 +3,7 @@
   <!--Remember: you need to change ProductVersion and ProductCode-->
 
   <?define PreviousVersion="4.7.0" ?>
-  <?define ProductVersion="13.5.0" ?>
+  <?define ProductVersion="13.5.0.0" ?>
   <?define UpgradeCode="efd6c441-40ae-43b6-b789-3f4b6d2e7989"?>
   <?define ProductCode="057C7F84-0D7D-416a-955F-A82F8157A378"?>
 
@@ -79,15 +79,15 @@
               <File Id="OpenCBS.GUI.exe" Source="SourceDir\OpenCBS.GUI.exe" />
               <Shortcut Id="DesktopShortcut" Directory="DesktopFolder" Name="OpenCBS" Icon="App.ico" WorkingDirectory="DIR_ROOT_VERSION" Advertise="yes"/>
             </Component>
-			<Component Id="Registry" Guid="674968e0-7c4a-4164-aaec-5ddf6922a2dc" Permanent="yes">
-			  <RegistryKey Id="OctopusKey" Root="HKCU" Key="SOFTWARE\OctopusMicroFinanceSuite\Octopus $(var.ProductVersion)" Action="create">
+            <Component Id="Registry" Guid="674968e0-7c4a-4164-aaec-5ddf6922a2dc" Permanent="yes">
+                <RegistryKey Id="OctopusKey" Root="HKCU" Key="SOFTWARE\Open Octopus Ltd\OpenCBS\$(var.ProductVersion)" Action="create">
                 <RegistryValue Id="DATABASE_LOGIN_NAME" Type="string" Name="DATABASE_LOGIN_NAME" Value="sa"/>
-                <RegistryValue Id="DATABASE_NAME" Type="string" Name="DATABASE_NAME" Value="octopus"/>
+                <RegistryValue Id="DATABASE_NAME" Type="string" Name="DATABASE_NAME" Value="opencbs"/>
                 <RegistryValue Id="DATABASE_SERVER_NAME" Type="string" Name="DATABASE_SERVER_NAME" Value="(local)"/>
-                <RegistryValue Id="DATABASE_PASSWORD" Type="string" Name="DATABASE_PASSWORD" Value="octopus"/>
+                <RegistryValue Id="DATABASE_PASSWORD" Type="string" Name="DATABASE_PASSWORD" Value="opencbs"/>
                 <RegistryValue Id="DATABASE_TIMEOUT" Type="string" Name="DATABASE_TIMEOUT" Value="10"/>
               </RegistryKey>
-			</Component>
+            </Component>
             <Directory Id="DIR_TEMPLATE" Name="Template">
               <Directory Id="TemplateReport" Name="Reports">
                 <Component Id="TemplateReport" Guid="A983FDBB-6C60-5B96-3436-A85638338092">

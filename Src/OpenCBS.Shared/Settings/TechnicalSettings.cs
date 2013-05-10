@@ -1,7 +1,10 @@
 ﻿// LICENSE PLACEHOLDER
 
 using System;
+using System.Diagnostics;
 using System.IO;
+using System.Linq;
+using System.Reflection;
 using System.Windows.Forms;
 using System.Collections.Generic;
 using Microsoft.Win32;
@@ -11,7 +14,9 @@ namespace OpenCBS.Shared.Settings
     [Serializable]
     public static class TechnicalSettings
     {
-        public const string BaseRegistryPath = @"Software\OctopusMicroFinanceSuite";
+        private static Version _version;
+
+        public const string RegistryPathTemplate = @"Software\Open Octopus Ltd\OpenCBS\{0}";
 
         private static bool _useOnlineMode;
         private static bool _useDebugMode;
@@ -20,73 +25,13 @@ namespace OpenCBS.Shared.Settings
 
         private static readonly Dictionary<string, string> Settings = new Dictionary<string, string>();
 
-        static TechnicalSettings()
+        private static Version GetVersion()
         {
-            RegistryKey key = Registry.LocalMachine.OpenSubKey(GetRegistryPath());
-            if (key != null)
-            {
-                key.Close();
-                return;
-            }
+            if (_version != null) return _version;
 
-            using (key = Registry.LocalMachine.OpenSubKey(BaseRegistryPath))
-            {
-                if (null == key) return;
-                string[] subkeys = key.GetSubKeyNames();
-                Version version = null;
-                foreach (string subkey in subkeys)
-                {
-                    string number = subkey.Split(new[] {' '})[1];
-                    Version v = new Version(number);
-                    if (null == version || version < v) version = v;
-                }
-
-                string databaseName = string.Empty;
-                string databaseServerName = "(local)";
-                string databaseUser = "sa";
-                string databasePassword = "octopus";
-                string databaseTimeout = "10";
-                string databaseList = string.Empty;
-                if (version != null)
-                {
-                    string currentVersion = string.Format("Octopus {0}.{1}.{2}", 
-                        version.Major, 
-                        version.Minor,
-                        version.Build);
-                    string sourceKeyPath = Path.Combine(BaseRegistryPath, currentVersion);
-                    using (RegistryKey sourceKey = Registry.LocalMachine.OpenSubKey(sourceKeyPath))
-                    {
-                        if (sourceKey != null)
-                        {
-                            databaseServerName = sourceKey.GetValue("DATABASE_SERVER_NAME").ToString();
-                            databaseName = sourceKey.GetValue("DATABASE_NAME").ToString();
-                            databaseUser = sourceKey.GetValue("DATABASE_LOGIN_NAME").ToString();
-                            databasePassword = sourceKey.GetValue("DATABASE_PASSWORD").ToString();
-                            databaseTimeout = sourceKey.GetValue("DATABASE_TIMEOUT").ToString();
-                            databaseList = sourceKey.GetValue("DATABASE_LIST").ToString();
-                        }
-                    }
-                }
-
-                using (RegistryKey targetKey = Registry.LocalMachine.CreateSubKey(GetRegistryPath()))
-                {
-                    if (targetKey != null)
-                    {
-                        targetKey.SetValue("DATABASE_SERVER_NAME", databaseServerName);
-                        targetKey.SetValue("DATABASE_NAME", databaseName);
-                        targetKey.SetValue("DATABASE_LOGIN_NAME", databaseUser);
-                        targetKey.SetValue("DATABASE_PASSWORD", databasePassword);
-                        targetKey.SetValue("DATABASE_TIMEOUT", databaseTimeout);
-                        targetKey.SetValue("DATABASE_LIST", databaseList);
-                    }
-                }
-            }
-        }
-
-        public static void GenerateBaseKey()
-        {
-            string registryPath = GetRegistryPath();
-            Registry.LocalMachine.CreateSubKey(registryPath);
+            var assembly = Assembly.GetEntryAssembly();
+            var fileVersionInfo = FileVersionInfo.GetVersionInfo(assembly.Location);
+            return (_version = new Version(fileVersionInfo.FileVersion));
         }
 
         public static string DatabaseName
@@ -117,7 +62,7 @@ namespace OpenCBS.Shared.Settings
         {
             get
             {
-                List<string> retval = new List<string>();
+                var retval = new List<string>();
                 string val = GetValue("DATABASE_LIST", string.Empty);
                 val = val.Replace(" ", "");
                 if (string.IsNullOrEmpty(val)) return retval;
@@ -149,21 +94,6 @@ namespace OpenCBS.Shared.Settings
         public static string SoftwareVersion
         {
             get { return "v" + CurrentVersion; }
-        }
-
-        public static bool IsThisVersionNewer(string version)
-        {
-            try
-            {
-                Version v = new Version(version.ToLower().Replace("v", ""));
-                Version c = new Version(CurrentVersion);
-                return (v > c);
-            }
-            catch (Exception ex)
-            {
-                System.Diagnostics.Debug.WriteLine(ex);
-                return false;
-            }
         }
 
         public static bool UseOnlineMode
@@ -262,21 +192,19 @@ namespace OpenCBS.Shared.Settings
 
         public static bool CheckSettings()
         {
-            List<string> values = new List<string>();
-            values.Add(DatabaseLoginName);
-            values.Add(DatabaseName);
-            values.Add(DatabasePassword);
-            values.Add(DatabaseServerName);
-            foreach (string value in values)
+            var values = new[]
             {
-                if (string.IsNullOrEmpty(value)) return false;
-            }
-            return true;
+                DatabaseLoginName,
+                DatabaseName,
+                DatabasePassword,
+            };
+            return values.All(value => !string.IsNullOrEmpty(value));
         }
 
         private static string GetRegistryPath()
         {
-            return Path.Combine(BaseRegistryPath, string.Format("Octopus {0}", CurrentVersion));
+            var version = GetVersion();
+            return string.Format(RegistryPathTemplate, version);
         }
 
         private static void SetValue(string key, string value)
