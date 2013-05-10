@@ -38,19 +38,19 @@ namespace OpenCBS.ExceptionsHandler.Exceptions.FundingLineExceptions
             switch (exception)
             {
                 case OpenCbsFundingLineExceptionEnum.CodeIsEmpty:
-                    returned = "OctopusFundingLineExceptionCodeIsEmpty.Text";
+                    returned = "OpenCbsFundingLineExceptionCodeIsEmpty.Text";
                     break;
                 case OpenCbsFundingLineExceptionEnum.NameIsEmpty:
-                    returned = "OctopusFundingLineExceptionNameIsEmpty.Text";
+                    returned = "OpenCbsFundingLineExceptionNameIsEmpty.Text";
                     break;
                 case OpenCbsFundingLineExceptionEnum.BeginDateGreaterEndDate:
-                    returned = "OctopusFundingLineExceptionBeginDateGreaterEndDate.Text";
+                    returned = "OpenCbsFundingLineExceptionBeginDateGreaterEndDate.Text";
                     break;
                 case OpenCbsFundingLineExceptionEnum.BadFundingLineID:
-                    returned = "OctopusFundingLineExceptionBadFundingLineId.Text";
+                    returned = "OpenCbsFundingLineExceptionBadFundingLineId.Text";
                     break;
                 case OpenCbsFundingLineExceptionEnum.FundingLineNameExists:
-                    returned = "OctopusFundingLineExceptionFundingLineNameExists.Text";
+                    returned = "OpenCbsFundingLineExceptionFundingLineNameExists.Text";
                     break;
                 case OpenCbsFundingLineExceptionEnum.CurrencyIsEmpty:
                     returned = "CurrencyIsEmpty.Text";

@@ -9,9 +9,9 @@ namespace OpenCBS.ExceptionsHandler.Exceptions.AccountExceptions
     public class OpenCbsAccountingRuleException : OpenCbsException
     {
         private readonly string _message;
-        private OctopusAccountingRuleExceptionEnum _code;
+        private OpenCbsAccountingRuleExceptionEnum _code;
 
-        public OctopusAccountingRuleExceptionEnum Code
+        public OpenCbsAccountingRuleExceptionEnum Code
         { get { return _code; } }
 
         protected OpenCbsAccountingRuleException(SerializationInfo info, StreamingContext context)
@@ -31,7 +31,7 @@ namespace OpenCBS.ExceptionsHandler.Exceptions.AccountExceptions
             _message = string.Empty;
 		}
 
-        public OpenCbsAccountingRuleException(OctopusAccountingRuleExceptionEnum exceptionCode)
+        public OpenCbsAccountingRuleException(OpenCbsAccountingRuleExceptionEnum exceptionCode)
         {
             _code = exceptionCode;
             _message = _findException(exceptionCode);
@@ -47,23 +47,23 @@ namespace OpenCBS.ExceptionsHandler.Exceptions.AccountExceptions
 			return _message;
 		}
 
-        private string _findException(OctopusAccountingRuleExceptionEnum exceptionCode)
+        private string _findException(OpenCbsAccountingRuleExceptionEnum exceptionCode)
         {
             switch (exceptionCode)
             {
-                case OctopusAccountingRuleExceptionEnum.GenericAccountIsInvalid:
+                case OpenCbsAccountingRuleExceptionEnum.GenericAccountIsInvalid:
                     return "AccountingRuleGenericAccountIsInvalid.Text";
 
-                case OctopusAccountingRuleExceptionEnum.SpecificAccountIsInvalid:
+                case OpenCbsAccountingRuleExceptionEnum.SpecificAccountIsInvalid:
                     return "AccountingRuleSpecificAccountIsInvalid.Text";
 
-                case OctopusAccountingRuleExceptionEnum.GenericAndSpecificAccountsAreIdentical:
+                case OpenCbsAccountingRuleExceptionEnum.GenericAndSpecificAccountsAreIdentical:
                     return "AccountingRuleGenericAndSpecificAccountsAreIdentical.Text";
 
-                case OctopusAccountingRuleExceptionEnum.ClientTypeIsInvalid:
+                case OpenCbsAccountingRuleExceptionEnum.ClientTypeIsInvalid:
                     return "AccountingRuleClientTypeIsInvalid.Text";
 
-                case OctopusAccountingRuleExceptionEnum.ProductTypeIsInvalid:
+                case OpenCbsAccountingRuleExceptionEnum.ProductTypeIsInvalid:
                     return "AccountingRuleProductTypeIsInvalid.Text";
 
                 default:
@@ -74,7 +74,7 @@ namespace OpenCBS.ExceptionsHandler.Exceptions.AccountExceptions
     }
 
     [Serializable]
-    public enum OctopusAccountingRuleExceptionEnum
+    public enum OpenCbsAccountingRuleExceptionEnum
     {
         GenericAccountIsInvalid,
         SpecificAccountIsInvalid,

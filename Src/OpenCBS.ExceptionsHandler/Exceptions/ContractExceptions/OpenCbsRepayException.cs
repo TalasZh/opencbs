@@ -5,9 +5,6 @@ using System.Runtime.Serialization;
 
 namespace OpenCBS.ExceptionsHandler
 {
-	/// <summary>
-	/// Summary description for OpenCbsRepayException.
-	/// </summary>
     [Serializable]
     public class OpenCbsRepayException : OpenCbsException
 	{

@@ -70,7 +70,7 @@ namespace OpenCBS.Test.Services.Accounting
             }
             catch (OpenCbsAccountingRuleException exception)
             {
-                Assert.AreEqual(OctopusAccountingRuleExceptionEnum.GenericAccountIsInvalid, exception.Code);
+                Assert.AreEqual(OpenCbsAccountingRuleExceptionEnum.GenericAccountIsInvalid, exception.Code);
             }
         }
 
@@ -89,7 +89,7 @@ namespace OpenCBS.Test.Services.Accounting
             }
             catch (OpenCbsAccountingRuleException exception)
             {
-                Assert.AreEqual(OctopusAccountingRuleExceptionEnum.GenericAccountIsInvalid, exception.Code);
+                Assert.AreEqual(OpenCbsAccountingRuleExceptionEnum.GenericAccountIsInvalid, exception.Code);
             }
         }
 
@@ -110,7 +110,7 @@ namespace OpenCBS.Test.Services.Accounting
             }
             catch (OpenCbsAccountingRuleException exception)
             {
-                Assert.AreEqual(OctopusAccountingRuleExceptionEnum.SpecificAccountIsInvalid, exception.Code);
+                Assert.AreEqual(OpenCbsAccountingRuleExceptionEnum.SpecificAccountIsInvalid, exception.Code);
             }
         }
 
@@ -129,7 +129,7 @@ namespace OpenCBS.Test.Services.Accounting
             }
             catch (OpenCbsAccountingRuleException exception)
             {
-                Assert.AreEqual(OctopusAccountingRuleExceptionEnum.SpecificAccountIsInvalid, exception.Code);
+                Assert.AreEqual(OpenCbsAccountingRuleExceptionEnum.SpecificAccountIsInvalid, exception.Code);
             }
         }
 
@@ -150,7 +150,7 @@ namespace OpenCBS.Test.Services.Accounting
             }
             catch (OpenCbsAccountingRuleException exception)
             {
-                Assert.AreEqual(OctopusAccountingRuleExceptionEnum.ClientTypeIsInvalid, exception.Code);
+                Assert.AreEqual(OpenCbsAccountingRuleExceptionEnum.ClientTypeIsInvalid, exception.Code);
             }
         }
 
@@ -172,7 +172,7 @@ namespace OpenCBS.Test.Services.Accounting
             }
             catch (OpenCbsAccountingRuleException exception)
             {
-                Assert.AreEqual(OctopusAccountingRuleExceptionEnum.ProductTypeIsInvalid, exception.Code);
+                Assert.AreEqual(OpenCbsAccountingRuleExceptionEnum.ProductTypeIsInvalid, exception.Code);
             }
         }
 

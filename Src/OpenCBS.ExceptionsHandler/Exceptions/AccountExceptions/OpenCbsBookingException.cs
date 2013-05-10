@@ -40,22 +40,22 @@ namespace OpenCBS.ExceptionsHandler
 			switch(exceptionId)
 			{
 				case OpenCbsBookingExceptionsEnum.NameIsEmpty:
-					returned = "OctopusBookingExceptionsNameIsEmpty.Text";
+					returned = "OpenCbsBookingExceptionsNameIsEmpty.Text";
                     break;
                 case OpenCbsBookingExceptionsEnum.CreditAccountIsEmpty:
-                    returned = "OctopusBookingExceptionsCreditAccountIsEmpty.Text";
+                    returned = "OpenCbsBookingExceptionsCreditAccountIsEmpty.Text";
                     break;
                 case OpenCbsBookingExceptionsEnum.DebitAccountIsEmpty:
-                    returned = "OctopusBookingExceptionsDebitAccountIsEmpty.Text";
+                    returned = "OpenCbsBookingExceptionsDebitAccountIsEmpty.Text";
                     break;   
                 case OpenCbsBookingExceptionsEnum.DebitAndCreditAccountAreIdentical:
-                    returned = "OctopusBookingExceptionDebitAndCreditAccountAreIdentical.Text";
+                    returned = "OpenCbsBookingExceptionDebitAndCreditAccountAreIdentical.Text";
                     break;
                 case OpenCbsBookingExceptionsEnum.BookingIsEmpty:
                     returned = "BookingIsEmpty.Text";
                     break;
                 case OpenCbsBookingExceptionsEnum.NotDeletableClosure:
-                    returned = "OctopusNotDeletableClosure.Text";
+                    returned = "OpenCbsNotDeletableClosure.Text";
                     break;
 			}
 			return returned;

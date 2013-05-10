@@ -38,37 +38,37 @@ namespace OpenCBS.ExceptionsHandler.Exceptions.FundingLineExceptions
             switch (exception)
             {
                 case OpenCbsFundingLineEventExceptionEnum.CodeIsEmpty:
-                    returned = "OctopusFundingLineEventExceptionCodeIsEmpty.Text";
+                    returned = "OpenCbsFundingLineEventExceptionCodeIsEmpty.Text";
                     break;
 
                 case OpenCbsFundingLineEventExceptionEnum.NameIsEmpty:
-                    returned = "OctopusFundingLineEventExceptionNameIsEmpty.Text";
+                    returned = "OpenCbsFundingLineEventExceptionNameIsEmpty.Text";
                     break;
 
 
                 case OpenCbsFundingLineEventExceptionEnum.AmountIsEmpty:
-                    returned = "OctopusFundingLineEventExceptionAmountIsEmpty.Text";
+                    returned = "OpenCbsFundingLineEventExceptionAmountIsEmpty.Text";
                     break;
 
                 case OpenCbsFundingLineEventExceptionEnum.AmountIsLessZero:
-                    returned = "OctopusFundingLineEventExceptionAmountIsLessZero.Text";
+                    returned = "OpenCbsFundingLineEventExceptionAmountIsLessZero.Text";
                     break;
                 case OpenCbsFundingLineEventExceptionEnum.DirectionIsEmpty:
-                    returned = "OctopusFundingLineEventExceptionDirectionIsEmpty.Text";
+                    returned = "OpenCbsFundingLineEventExceptionDirectionIsEmpty.Text";
                     break;
                 case OpenCbsFundingLineEventExceptionEnum.AmountIsTaller:
-                    returned = "OctopusFundingLineEventExceptionAmountIsTaller.Text";
+                    returned = "OpenCbsFundingLineEventExceptionAmountIsTaller.Text";
                     break;
 
                 case OpenCbsFundingLineEventExceptionEnum.AmountIsBigger:
-                    returned = "OctopusFundingLineEventExceptionAmountIsBigger.Text";
+                    returned = "OpenCbsFundingLineEventExceptionAmountIsBigger.Text";
                     break;
                 case OpenCbsFundingLineEventExceptionEnum.CommitmentFinancialIsNotEnough:
-                    returned = "OctopusFundingLineEventExceptionCommitmentFinancialIsNotEnough.Text";
+                    returned = "OpenCbsFundingLineEventExceptionCommitmentFinancialIsNotEnough.Text";
                     break;
 
                 case OpenCbsFundingLineEventExceptionEnum.AmountIsNonCompliant:
-                    returned = "OctopusFundingLineEventExceptionAmountIsNonCompliant.Text";
+                    returned = "OpenCbsFundingLineEventExceptionAmountIsNonCompliant.Text";
                     break;
             }
             return returned;

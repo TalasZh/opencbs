@@ -38,26 +38,26 @@ namespace OpenCBS.ExceptionsHandler.Exceptions.FundingLineExceptions
             switch (exception)
             {
                 case OpenCbsCorporateExceptionEnum.CodeIsEmpty:
-                    returned = "OctopusCorporateExceptionCodeIsEmpty.Text";
+                    returned = "OpenCbsCorporateExceptionCodeIsEmpty.Text";
                     break;
 
                 case OpenCbsCorporateExceptionEnum.NameIsEmpty:
-                    returned = "OctopusCorporateExceptionNameIsEmpty.Text";
+                    returned = "OpenCbsCorporateExceptionNameIsEmpty.Text";
                     break;
                 case OpenCbsCorporateExceptionEnum.CityIsEmpty:
-                    returned = "OctopusCorporateExceptionCityIsEmpty.Text";
+                    returned = "OpenCbsCorporateExceptionCityIsEmpty.Text";
                     break;
                 case OpenCbsCorporateExceptionEnum.ProvinceIsEmpty:
-                    returned = "OctopusCorporateExceptionProvinceIsEmpty.Text";
+                    returned = "OpenCbsCorporateExceptionProvinceIsEmpty.Text";
                     break;
                 case OpenCbsCorporateExceptionEnum.DistrictIsEmpty:
-                    returned = "OctopusCorporateExceptionDistrictIsEmpty.Text";
+                    returned = "OpenCbsCorporateExceptionDistrictIsEmpty.Text";
                     break;
                 case OpenCbsCorporateExceptionEnum.EmployeeIsFalseFormat:
-                    returned = "OctopusCorporateExceptionEmployeeIsFalseFormat.Text";
+                    returned = "OpenCbsCorporateExceptionEmployeeIsFalseFormat.Text";
                     break;
                 case OpenCbsCorporateExceptionEnum.VolunteerIsFalseFormat:
-                    returned = "OctopusCorporateExceptionVolunteerIsFalseFormat.Text";
+                    returned = "OpenCbsCorporateExceptionVolunteerIsFalseFormat.Text";
                     break;
 
                 case OpenCbsCorporateExceptionEnum.BranchIsEmpty:

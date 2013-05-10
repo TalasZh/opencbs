@@ -5,9 +5,6 @@ using System.Runtime.Serialization;
 
 namespace OpenCBS.ExceptionsHandler
 {
-	/// <summary>
-	/// Summary description for OctopusContractExceptions.
-	/// </summary>
     [Serializable]
     public class OpenCbsContractException : OpenCbsException
 	{

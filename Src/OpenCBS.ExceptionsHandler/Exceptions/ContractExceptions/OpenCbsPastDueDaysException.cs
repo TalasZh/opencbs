@@ -5,9 +5,6 @@ using System.Runtime.Serialization;
 
 namespace OpenCBS.ExceptionsHandler
 {
-	/// <summary>
-	/// Summary description for OctopusPastDueDaysExceptions.
-	/// </summary>
     [Serializable]
     public class OpenCbsPastDueDaysException : OpenCbsException
 	{
