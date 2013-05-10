@@ -151,6 +151,6 @@
     <value>Penalidades</value>
   </data>
   <data name="WriteOffDegradationNeedful.Text" xml:space="preserve">
-    <value>Cuidado, este préstamo está atrasado (debería ser castigado). Octopus tiene que actualizar las cuentas financieras antes de proceder. Desea continuar?</value>
+    <value>Cuidado, este préstamo está atrasado (debería ser castigado). OpenCBS tiene que actualizar las cuentas financieras antes de proceder. Desea continuar?</value>
   </data>
 </root>

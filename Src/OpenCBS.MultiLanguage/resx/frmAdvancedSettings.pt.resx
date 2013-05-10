@@ -140,6 +140,6 @@ Um novo banco de dados será criado.</value>
     <value>O teste foi bem sucedido</value>
   </data>
   <data name="title.Text" xml:space="preserve">
-    <value>As configurações de conexão de banco de dados de Octopus</value>
+    <value>As configurações de conexão de banco de dados de OpenCBS</value>
   </data>
 </root>

@@ -267,58 +267,58 @@
   <data name="InstallmentExceptionNotFirstInstallmentToCancelRepay.Text" xml:space="preserve">
     <value>No se puede cancelar esta cuota ya que las posteriores  no han sido canceladas todavía</value>
   </data>
-  <data name="OctopusCorporateEventExceptionAmountIsBigger.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateEventExceptionAmountIsBigger.Text" xml:space="preserve">
     <value>El monto es demasiado alto (solo puede ser inferior a 100 millones)</value>
   </data>
-  <data name="OctopusCorporateEventExceptionAmountIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateEventExceptionAmountIsEmpty.Text" xml:space="preserve">
     <value>El campo "monto" está vacío</value>
   </data>
-  <data name="OctopusCorporateEventExceptionAmountIsLessZero.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateEventExceptionAmountIsLessZero.Text" xml:space="preserve">
     <value>El monto es inferior a 0</value>
   </data>
-  <data name="OctopusCorporateEventExceptionAmountIsTaller.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateEventExceptionAmountIsTaller.Text" xml:space="preserve">
     <value>Las líneas de fondeo seleccionadas no tienen suficientes fondos para este préstamo</value>
   </data>
-  <data name="OctopusCorporateEventExceptionCodeIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateEventExceptionCodeIsEmpty.Text" xml:space="preserve">
     <value>El campo "código" está vacío</value>
   </data>
-  <data name="OctopusCorporateEventExceptionCommitmentFinancialIsNotEnough.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateEventExceptionCommitmentFinancialIsNotEnough.Text" xml:space="preserve">
     <value>El compromiso financiero no es suficiente</value>
   </data>
-  <data name="OctopusCorporateEventExceptionNameIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateEventExceptionNameIsEmpty.Text" xml:space="preserve">
     <value>El campo "Nombre" está vacío</value>
   </data>
-  <data name="OctopusCorporateExceptionCityIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateExceptionCityIsEmpty.Text" xml:space="preserve">
     <value>El campo "ciudad" está vacío</value>
   </data>
-  <data name="OctopusCorporateExceptionCodeIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateExceptionCodeIsEmpty.Text" xml:space="preserve">
     <value>El campo "código" está vacío</value>
   </data>
-  <data name="OctopusCorporateExceptionDistrictIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateExceptionDistrictIsEmpty.Text" xml:space="preserve">
     <value>El campo "localidad" está vacío</value>
   </data>
-  <data name="OctopusCorporateExceptionEmployeeIsFalseFormat.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateExceptionEmployeeIsFalseFormat.Text" xml:space="preserve">
     <value>El campo "Empleados" tiene que ser un número</value>
   </data>
-  <data name="OctopusCorporateExceptionNameIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateExceptionNameIsEmpty.Text" xml:space="preserve">
     <value>El campo "nombre " está vacío</value>
   </data>
-  <data name="OctopusCorporateExceptionProvinceIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateExceptionProvinceIsEmpty.Text" xml:space="preserve">
     <value>El campo "provincia" está vacío</value>
   </data>
-  <data name="OctopusCorporateExceptionVolunteerIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateExceptionVolunteerIsEmpty.Text" xml:space="preserve">
     <value>El campo "voluntario" está vacío</value>
   </data>
-  <data name="OctopusCorporateExceptionVolunteerIsFalseFormat.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateExceptionVolunteerIsFalseFormat.Text" xml:space="preserve">
     <value>El campo "voluntarios" tiene que ser un número</value>
   </data>
-  <data name="OctopusFundingLineExceptionBeginDateGreaterEndDate.Text" xml:space="preserve">
+  <data name="OpenCbsFundingLineExceptionBeginDateGreaterEndDate.Text" xml:space="preserve">
     <value>La fecha de inicio es posterior a la fecha de cierre</value>
   </data>
-  <data name="OctopusFundingLineExceptionCodeIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsFundingLineExceptionCodeIsEmpty.Text" xml:space="preserve">
     <value>El campo "código" está vacío</value>
   </data>
-  <data name="OctopusFundingLineExceptionNameIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsFundingLineExceptionNameIsEmpty.Text" xml:space="preserve">
     <value>El campo " nombre" está vacío</value>
   </data>
   <data name="OME1.Text" xml:space="preserve">

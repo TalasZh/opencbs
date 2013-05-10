@@ -136,6 +136,6 @@
     <value>Test completado con éxito</value>
   </data>
   <data name="title.Text" xml:space="preserve">
-    <value>Parametros de conexión a la base de datos de Octopus</value>
+    <value>Parametros de conexión a la base de datos de OpenCBS</value>
   </data>
 </root>

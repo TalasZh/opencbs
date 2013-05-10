@@ -151,8 +151,8 @@
     <value>Check technical settings...</value>
   </data>
   <data name="NoCrystalReportsInstalled.Text" xml:space="preserve">
-    <value>Octopus has determined that you do not have the Crystal Report on your computer!!.  
-                In order to have Octopus run well you should install it!!</value>
+    <value>OpenCBS has determined that you do not have the Crystal Report on your computer!!.  
+                In order to have OpenCBS run well you should install it!!</value>
   </data>
   <data name="UpdateDetails.Text" xml:space="preserve">
     <value>Database is being upgraded, please wait until completion</value>

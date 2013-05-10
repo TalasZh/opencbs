@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="registryNotOk.Text" xml:space="preserve">
-    <value>Octopus n'a pas correctement demarré: il manque les paramètres de connection à la base de données</value>
+    <value>OpenCBS n'a pas correctement demarré: il manque les paramètres de connection à la base de données</value>
   </data>
   <data name="databaseConnectionNotOk.Text" xml:space="preserve">
     <value>La connexion à la base n'est pas configurée correctement</value>
@@ -127,7 +127,7 @@
     <value>Actuellement</value>
   </data>
   <data name="restart.Text" xml:space="preserve">
-    <value>Octopus va maintenant redémarrer</value>
+    <value>OpenCBS va maintenant redémarrer</value>
   </data>
   <data name="test1.Text" xml:space="preserve">
     <value>Vous utilisez actuellement une version obsolète de la base de données</value>
@@ -145,7 +145,7 @@
     <value>Colonnes supplémentaires</value>
   </data>
   <data name="test6.Text" xml:space="preserve">
-    <value>La structure de la base nécessite une mise a jour avant de pouvoir utiliser Octopus</value>
+    <value>La structure de la base nécessite une mise a jour avant de pouvoir utiliser OpenCBS</value>
   </data>
   <data name="createDatabase.Text" xml:space="preserve">
     <value>Créer la base de données</value>
@@ -163,7 +163,7 @@
     <value>Création de la base impossible. L'application doit fermer</value>
   </data>
   <data name="databaseFound.Text" xml:space="preserve">
-    <value>Base de données Octopus trouvée</value>
+    <value>Base de données OpenCBS trouvée</value>
   </data>
   <data name="databaseSchema.Text" xml:space="preserve">
     <value>Schéma de la base de données</value>

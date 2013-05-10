@@ -124,10 +124,10 @@
     <value>Max:</value>
   </data>
   <data name="PastDueDegradationNeedful.Text" xml:space="preserve">
-    <value>Внимание этот кредит просрочен(должен быть списан) Octopus необходимо обновить главную книгу прежде чем продолжить.Вы хотите продолжить?</value>
+    <value>Внимание этот кредит просрочен(должен быть списан) OpenCBS необходимо обновить главную книгу прежде чем продолжить.Вы хотите продолжить?</value>
   </data>
   <data name="WriteOffDegradationNeedful.Text" xml:space="preserve">
-    <value>Внимание этот кредит просрочен Octopus необходимо обновить главную книгу прежде чем продолжить.Вы хотите продолжить?</value>
+    <value>Внимание этот кредит просрочен OpenCBS необходимо обновить главную книгу прежде чем продолжить.Вы хотите продолжить?</value>
   </data>
   <data name="amountToGoNormal.Text" xml:space="preserve">
     <value>Сумма для возврата к нормальному состоянию</value>

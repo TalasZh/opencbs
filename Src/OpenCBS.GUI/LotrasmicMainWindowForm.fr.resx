@@ -164,7 +164,7 @@
     <value>205, 22</value>
   </data>
   <data name="reasignToolStripMenuItem.Text" xml:space="preserve">
-    <value>Réassigner les contrats</value>
+    <value>Reassigner les contrats</value>
   </data>
   <data name="mnuContracts.Size" type="System.Drawing.Size, System.Drawing">
     <value>61, 20</value>
@@ -182,7 +182,7 @@
     <value>216, 22</value>
   </data>
   <data name="accountingRulesToolStripMenuItem.Text" xml:space="preserve">
-    <value>Règles comptables</value>
+    <value>Regles comptables</value>
   </data>
   <data name="trialBalanceToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>216, 22</value>
@@ -200,7 +200,7 @@
     <value>216, 22</value>
   </data>
   <data name="manualEntriesToolStripMenuItem.Text" xml:space="preserve">
-    <value>Entrées manuelles</value>
+    <value>Entrees manuelles</value>
   </data>
   <data name="standardToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>216, 22</value>
@@ -215,28 +215,28 @@
     <value>216, 22</value>
   </data>
   <data name="menuItemExportTransaction.Text" xml:space="preserve">
-    <value>Exportation de la comptabilité</value>
+    <value>Exportation de la comptabilite</value>
   </data>
   <data name="mnuNewclosure.Size" type="System.Drawing.Size, System.Drawing">
     <value>216, 22</value>
   </data>
   <data name="mnuNewclosure.Text" xml:space="preserve">
-    <value>Clôture comptable</value>
+    <value>Cloture comptable</value>
   </data>
   <data name="fiscalYearToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>216, 22</value>
   </data>
   <data name="fiscalYearToolStripMenuItem.Text" xml:space="preserve">
-    <value>Année fiscale</value>
+    <value>Annee fiscale</value>
   </data>
   <data name="mnuAccounting.Size" type="System.Drawing.Size, System.Drawing">
     <value>78, 20</value>
   </data>
   <data name="mnuAccounting.Text" xml:space="preserve">
-    <value>Comptabilité</value>
+    <value>Comptabilite</value>
   </data>
   <data name="rolesToolStripMenuItem.Text" xml:space="preserve">
-    <value>Rôles</value>
+    <value>Roles</value>
   </data>
   <data name="menuItemAddUser.Text" xml:space="preserve">
     <value>Utilisateurs</value>
@@ -251,7 +251,7 @@
     <value>125, 22</value>
   </data>
   <data name="frenchToolStripMenuItem.Text" xml:space="preserve">
-    <value>Français</value>
+    <value>Francais</value>
   </data>
   <data name="englishToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>125, 22</value>
@@ -281,10 +281,10 @@
     <value>Langue</value>
   </data>
   <data name="mnuPackages.Text" xml:space="preserve">
-    <value>Produits de crédit</value>
+    <value>Produits de credit</value>
   </data>
   <data name="savingProductsToolStripMenuItem.Text" xml:space="preserve">
-    <value>Produits d'épargne</value>
+    <value>Produits d'epargne</value>
   </data>
   <data name="menuItemCollateralProducts.Text" xml:space="preserve">
     <value>Produits de gage</value>
@@ -293,13 +293,13 @@
     <value>Lignes de financement</value>
   </data>
   <data name="mnuDomainOfApplication.Text" xml:space="preserve">
-    <value>Activités économiques</value>
+    <value>Activites economiques</value>
   </data>
   <data name="menuItemLocations.Text" xml:space="preserve">
-    <value>Régions, départements et villes</value>
+    <value>Regions, departements et villes</value>
   </data>
   <data name="toolStripMenuItemInstallmentTypes.Text" xml:space="preserve">
-    <value>Types d'échéances</value>
+    <value>Types d'echeances</value>
   </data>
   <data name="miContractCode.Text" xml:space="preserve">
     <value>Code contrat</value>
@@ -314,10 +314,10 @@
     <value>Changer la date de l'application</value>
   </data>
   <data name="menuItemSetting.Text" xml:space="preserve">
-    <value>Paramètres généraux</value>
+    <value>Parametres generaux</value>
   </data>
   <data name="menuItemAdvancedSettings.Text" xml:space="preserve">
-    <value>Paramètres avancés</value>
+    <value>Parametres avances</value>
   </data>
   <data name="CustomizableFieldsToolStripMenuItem.Text" xml:space="preserve">
     <value>Champs personnalisables</value>
@@ -326,28 +326,28 @@
     <value>206, 22</value>
   </data>
   <data name="menuItemDatabaseControlPanel.Text" xml:space="preserve">
-    <value>Outil de contrôle de la base</value>
+    <value>Outil de controle de la base</value>
   </data>
   <data name="menuItemDatabaseMaintenance.Size" type="System.Drawing.Size, System.Drawing">
     <value>206, 22</value>
   </data>
   <data name="menuItemDatabaseMaintenance.Text" xml:space="preserve">
-    <value>Opérations de maintenance</value>
+    <value>Operations de maintenance</value>
   </data>
   <data name="mnuDatamanagement.Size" type="System.Drawing.Size, System.Drawing">
     <value>119, 20</value>
   </data>
   <data name="mnuDatamanagement.Text" xml:space="preserve">
-    <value>Gestion des données</value>
+    <value>Gestion des donnees</value>
   </data>
   <data name="mnuWindow.Text" xml:space="preserve">
-    <value>Fenêtre</value>
+    <value>Fenetre</value>
   </data>
-  <data name="menuItemAboutOctopus.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="aboutMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>168, 22</value>
   </data>
-  <data name="menuItemAboutOctopus.Text" xml:space="preserve">
-    <value>A propos d'Octopus</value>
+  <data name="aboutMenuItem.Text" xml:space="preserve">
+    <value>A propos d'OpenCBS</value>
   </data>
   <data name="mnuHelp.Text" xml:space="preserve">
     <value>Aide</value>
@@ -412,7 +412,7 @@
     <value>191, 22</value>
   </data>
   <data name="miAuditTrail.Text" xml:space="preserve">
-    <value>Journal d'évènements...</value>
+    <value>Journal d'evenements...</value>
   </data>
   <data name="miReports.Size" type="System.Drawing.Size, System.Drawing">
     <value>191, 22</value>
@@ -546,7 +546,7 @@
     <value>Statut</value>
   </data>
   <data name="colAlerts_LoanOfficer.Text" xml:space="preserve">
-    <value>Agent de crédit</value>
+    <value>Agent de credit</value>
   </data>
   <data name="colAlerts_Amount.Text" xml:space="preserve">
     <value>Montant</value>
@@ -567,7 +567,7 @@
     <value>109, 20</value>
   </data>
   <data name="chkPostponedLoans.Text" xml:space="preserve">
-    <value>Prêts reportés</value>
+    <value>Prets reportes</value>
   </data>
   <data name="tbFilter.Size" type="System.Drawing.Size, System.Drawing">
     <value>258, 22</value>
@@ -579,31 +579,31 @@
     <value>113, 20</value>
   </data>
   <data name="chkLateLoans.Text" xml:space="preserve">
-    <value>Prêts en retard</value>
+    <value>Prets en retard</value>
   </data>
   <data name="chkPendingLoans.Size" type="System.Drawing.Size, System.Drawing">
     <value>120, 20</value>
   </data>
   <data name="chkPendingLoans.Text" xml:space="preserve">
-    <value>Prêts en attente</value>
+    <value>Prets en attente</value>
   </data>
   <data name="chkPendingSavings.Size" type="System.Drawing.Size, System.Drawing">
     <value>130, 20</value>
   </data>
   <data name="chkPendingSavings.Text" xml:space="preserve">
-    <value>Dépôts en attente</value>
+    <value>Depots en attente</value>
   </data>
   <data name="chkOverdraftSavings.Size" type="System.Drawing.Size, System.Drawing">
     <value>91, 20</value>
   </data>
   <data name="chkOverdraftSavings.Text" xml:space="preserve">
-    <value>Découverts</value>
+    <value>Decouverts</value>
   </data>
   <data name="chkValidatedLoan.Size" type="System.Drawing.Size, System.Drawing">
     <value>101, 20</value>
   </data>
   <data name="chkValidatedLoan.Text" xml:space="preserve">
-    <value>Prêts validés</value>
+    <value>Prets valides</value>
   </data>
   <data name="tabFilter.Size" type="System.Drawing.Size, System.Drawing">
     <value>307, 152</value>

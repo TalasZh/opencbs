@@ -865,9 +865,6 @@
     <Compile Include="Search\SearchProjectForm.Designer.cs">
       <DependentUpon>SearchProjectForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Login\PasswordFormOnline.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Configuration\FrmFundingLine.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -2248,9 +2245,6 @@
     <EmbeddedResource Include="Login\FrmLogin.pt.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login\PasswordFormOnline.pt.resx">
-      <DependentUpon>PasswordFormOnline.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="LotrasmicMainWindowForm.pt.resx">
       <DependentUpon>LotrasmicMainWindowForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -2349,10 +2343,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Report Browser\RepaymentCollectionSheetForm.resx">
       <DependentUpon>RepaymentCollectionSheetForm.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Login\PasswordFormOnline.es-ES.resx">
-      <DependentUpon>PasswordFormOnline.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="LotrasmicMainWindowForm.es-ES.resx">
@@ -2706,18 +2696,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="InputBox.ru-RU.resx">
       <DependentUpon>InputBox.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Login\PasswordFormOnline.fr.resx">
-      <DependentUpon>PasswordFormOnline.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Login\PasswordFormOnline.resx">
-      <DependentUpon>PasswordFormOnline.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Login\PasswordFormOnline.ru-RU.resx">
-      <DependentUpon>PasswordFormOnline.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Configuration\FrmFundingLine.resx">
@@ -3803,7 +3781,7 @@ xcopy "$(ProjectDir)..\..\Lib\*.dll" "C:\OctopusLibs" /s /y</PostBuildEvent>
   </PropertyGroup>
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties GreenPepperConfigSutName="" GreenPepperConfigProjectName="" GreenPepperConfigRepositories="" GreenPepperConfigRunnerArgs="" GreenPepperCustomSud="" GreenPepperCustomSudArgs="" GreenPepperConfigRunnerProgram="" />
+      <UserProperties GreenPepperConfigRunnerProgram="" GreenPepperCustomSudArgs="" GreenPepperCustomSud="" GreenPepperConfigRunnerArgs="" GreenPepperConfigRepositories="" GreenPepperConfigProjectName="" GreenPepperConfigSutName="" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>

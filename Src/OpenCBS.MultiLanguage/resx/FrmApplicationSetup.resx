@@ -118,16 +118,16 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="registryNotOk.Text" xml:space="preserve">
-    <value>Octopus is not correctly setup: required database settings are missing</value>
+    <value>OpenCBS is not correctly setup: required database settings are missing</value>
   </data>
   <data name="databaseConnectionNotOk.Text" xml:space="preserve">
-    <value>Octopus is not correctly configured: the database connection is incorrect</value>
+    <value>OpenCBS is not correctly configured: the database connection is incorrect</value>
   </data>
   <data name="Currently.Text" xml:space="preserve">
     <value>Currently</value>
   </data>
   <data name="restart.Text" xml:space="preserve">
-    <value>Octopus will now  restart</value>
+    <value>OpenCBS will now  restart</value>
   </data>
   <data name="test1.Text" xml:space="preserve">
     <value>You are using an obsolete database version</value>
@@ -163,19 +163,19 @@
     <value>Database creation failed. Application cannot continue</value>
   </data>
   <data name="databaseFound.Text" xml:space="preserve">
-    <value>Octopus database found</value>
+    <value>OpenCBS database found</value>
   </data>
   <data name="databaseSchema.Text" xml:space="preserve">
-    <value>Octopus database schema</value>
+    <value>OpenCBS database schema</value>
   </data>
   <data name="databaseSeverStatus.Text" xml:space="preserve">
     <value>SQL Server</value>
   </data>
   <data name="databaseVersionOk.Text" xml:space="preserve">
-    <value>Octopus database version</value>
+    <value>OpenCBS database version</value>
   </data>
   <data name="settingsStatus.Text" xml:space="preserve">
-    <value>Octopus settings found</value>
+    <value>OpenCBS settings found</value>
   </data>
   <data name="upgradeDatabase.Text" xml:space="preserve">
     <value>Upgrade database</value>

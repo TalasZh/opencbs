@@ -203,7 +203,7 @@
     <value>217, 22</value>
   </data>
   <data name="menuItemExportTransaction.Text" xml:space="preserve">
-    <value>Transacciones de exportación</value>
+    <value>Transacciones de exportacion</value>
   </data>
   <data name="mnuNewclosure.Size" type="System.Drawing.Size, System.Drawing">
     <value>217, 22</value>
@@ -245,10 +245,10 @@
     <value>225, 22</value>
   </data>
   <data name="frenchToolStripMenuItem.Text" xml:space="preserve">
-    <value>Francés</value>
+    <value>Frances</value>
   </data>
   <data name="englishToolStripMenuItem.Text" xml:space="preserve">
-    <value>Inglés </value>
+    <value>Ingles </value>
   </data>
   <data name="russianToolStripMenuItem.Text" xml:space="preserve">
     <value>Ruso</value>
@@ -266,7 +266,7 @@
     <value>225, 22</value>
   </data>
   <data name="mnuPackages.Text" xml:space="preserve">
-    <value>Productos de crédito</value>
+    <value>Productos de credito</value>
   </data>
   <data name="savingProductsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>225, 22</value>
@@ -287,7 +287,7 @@
     <value>225, 22</value>
   </data>
   <data name="toolStripMenuItemFundingLines.Text" xml:space="preserve">
-    <value>Líneas de financiamiento</value>
+    <value>Lineas de financiamiento</value>
   </data>
   <data name="toolStripSeparatorConfig2.Size" type="System.Drawing.Size, System.Drawing">
     <value>222, 6</value>
@@ -296,7 +296,7 @@
     <value>225, 22</value>
   </data>
   <data name="mnuDomainOfApplication.Text" xml:space="preserve">
-    <value>Actividad económica</value>
+    <value>Actividad economica</value>
   </data>
   <data name="menuItemLocations.Size" type="System.Drawing.Size, System.Drawing">
     <value>225, 22</value>
@@ -332,19 +332,19 @@
     <value>225, 22</value>
   </data>
   <data name="menuItemApplicationDate.Text" xml:space="preserve">
-    <value>Modificar fecha de aplicación</value>
+    <value>Modificar fecha de aplicacion</value>
   </data>
   <data name="menuItemSetting.Size" type="System.Drawing.Size, System.Drawing">
     <value>225, 22</value>
   </data>
   <data name="menuItemSetting.Text" xml:space="preserve">
-    <value>Parámetros generales</value>
+    <value>Parametros generales</value>
   </data>
   <data name="menuItemAdvancedSettings.Size" type="System.Drawing.Size, System.Drawing">
     <value>225, 22</value>
   </data>
   <data name="menuItemAdvancedSettings.Text" xml:space="preserve">
-    <value>Parámetros de conexión</value>
+    <value>Parametros de conexion</value>
   </data>
   <data name="CustomizableFieldsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>225, 22</value>
@@ -356,7 +356,7 @@
     <value>85, 20</value>
   </data>
   <data name="mnuConfiguration.Text" xml:space="preserve">
-    <value>Configuración</value>
+    <value>Configuracion</value>
   </data>
   <data name="menuItemDatabaseControlPanel.Size" type="System.Drawing.Size, System.Drawing">
     <value>215, 22</value>
@@ -373,11 +373,11 @@
   <data name="mnuWindow.Text" xml:space="preserve">
     <value>Ventana</value>
   </data>
-  <data name="menuItemAboutOctopus.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="aboutMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>165, 22</value>
   </data>
-  <data name="menuItemAboutOctopus.Text" xml:space="preserve">
-    <value>Acerca de Octopus</value>
+  <data name="aboutMenuItem.Text" xml:space="preserve">
+    <value>Acerca de OpenCBS</value>
   </data>
   <data name="imageListAlert.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>

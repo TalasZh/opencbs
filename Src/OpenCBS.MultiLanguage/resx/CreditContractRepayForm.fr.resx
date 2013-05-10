@@ -124,10 +124,10 @@
     <value>Max: </value>
   </data>
   <data name="PastDueDegradationNeedful.Text" xml:space="preserve">
-    <value>Attention ce prêt est en retard. Octopus doit mettre à jour la comptabilité générale avant de pocéder. Voulez-vous continuer ?</value>
+    <value>Attention ce prêt est en retard. OpenCBS doit mettre à jour la comptabilité générale avant de pocéder. Voulez-vous continuer ?</value>
   </data>
   <data name="WriteOffDegradationNeedful.Text" xml:space="preserve">
-    <value>Attention ce prêt est en retard (devrait être passé en perte). Octopus doit mettre à jour la comptabilité générale avant de procéder. Voulez-vous continuer ?</value>
+    <value>Attention ce prêt est en retard (devrait être passé en perte). OpenCBS doit mettre à jour la comptabilité générale avant de procéder. Voulez-vous continuer ?</value>
   </data>
   <data name="amountToGoNormal.Text" xml:space="preserve">
     <value>Montant necessaire pour revenir à l'état sain</value>

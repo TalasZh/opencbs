@@ -128,7 +128,7 @@
     <value>206, 22</value>
   </data>
   <data name="mnuNewGroup.Text" xml:space="preserve">
-    <value>Grupo solidário</value>
+    <value>Grupo solidario</value>
   </data>
   <data name="mnuNewVillage.Size" type="System.Drawing.Size, System.Drawing">
     <value>206, 22</value>
@@ -212,7 +212,7 @@
     <value>179, 22</value>
   </data>
   <data name="standardToolStripMenuItem.Text" xml:space="preserve">
-    <value>Padrão dos livros</value>
+    <value>Padrao dos livros</value>
   </data>
   <data name="toolStripSeparator2.Size" type="System.Drawing.Size, System.Drawing">
     <value>176, 6</value>
@@ -239,7 +239,7 @@
     <value>246, 22</value>
   </data>
   <data name="rolesToolStripMenuItem.Text" xml:space="preserve">
-    <value>Funções</value>
+    <value>Funcoes</value>
   </data>
   <data name="menuItemAddUser.Size" type="System.Drawing.Size, System.Drawing">
     <value>246, 22</value>
@@ -266,13 +266,13 @@
     <value>123, 22</value>
   </data>
   <data name="frenchToolStripMenuItem.Text" xml:space="preserve">
-    <value>Francês</value>
+    <value>Frances</value>
   </data>
   <data name="englishToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>123, 22</value>
   </data>
   <data name="englishToolStripMenuItem.Text" xml:space="preserve">
-    <value>Inglês</value>
+    <value>Ingles</value>
   </data>
   <data name="russianToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>123, 22</value>
@@ -290,7 +290,7 @@
     <value>123, 22</value>
   </data>
   <data name="portugueseToolStripMenuItem.Text" xml:space="preserve">
-    <value>Português</value>
+    <value>Portugues</value>
   </data>
   <data name="languagesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>246, 22</value>
@@ -305,13 +305,13 @@
     <value>246, 22</value>
   </data>
   <data name="mnuPackages.Text" xml:space="preserve">
-    <value>Empréstimos</value>
+    <value>Emprestimos</value>
   </data>
   <data name="savingProductsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>246, 22</value>
   </data>
   <data name="savingProductsToolStripMenuItem.Text" xml:space="preserve">
-    <value>Poupanças, seguros e emolumentos</value>
+    <value>Poupancas, seguros e emolumentos</value>
   </data>
   <data name="menuItemCollateralProducts.Size" type="System.Drawing.Size, System.Drawing">
     <value>246, 22</value>
@@ -335,7 +335,7 @@
     <value>246, 22</value>
   </data>
   <data name="mnuDomainOfApplication.Text" xml:space="preserve">
-    <value>Actividades económicas</value>
+    <value>Actividades economicas</value>
   </data>
   <data name="menuItemLocations.Size" type="System.Drawing.Size, System.Drawing">
     <value>246, 22</value>
@@ -347,13 +347,13 @@
     <value>246, 22</value>
   </data>
   <data name="toolStripMenuItemInstallmentTypes.Text" xml:space="preserve">
-    <value>Periodicidade das prestações</value>
+    <value>Periodicidade das prestacoes</value>
   </data>
   <data name="miContractCode.Size" type="System.Drawing.Size, System.Drawing">
     <value>246, 22</value>
   </data>
   <data name="miContractCode.Text" xml:space="preserve">
-    <value>Código do contrato</value>
+    <value>Codigo do contrato</value>
   </data>
   <data name="toolStripSeparatorConfig3.Size" type="System.Drawing.Size, System.Drawing">
     <value>243, 6</value>
@@ -362,13 +362,13 @@
     <value>246, 22</value>
   </data>
   <data name="menuItemExchangeRate.Text" xml:space="preserve">
-    <value>Taxa de câmbio</value>
+    <value>Taxa de cambio</value>
   </data>
   <data name="currenciesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>246, 22</value>
   </data>
   <data name="currenciesToolStripMenuItem.Text" xml:space="preserve">
-    <value>Moéda</value>
+    <value>Moeda</value>
   </data>
   <data name="toolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
     <value>243, 6</value>
@@ -377,31 +377,31 @@
     <value>246, 22</value>
   </data>
   <data name="menuItemApplicationDate.Text" xml:space="preserve">
-    <value>Mudar a data da aplicação</value>
+    <value>Mudar a data da aplicacao</value>
   </data>
   <data name="menuItemSetting.Size" type="System.Drawing.Size, System.Drawing">
     <value>246, 22</value>
   </data>
   <data name="menuItemSetting.Text" xml:space="preserve">
-    <value>Configurações gerais</value>
+    <value>Configuracoes gerais</value>
   </data>
   <data name="menuItemAdvancedSettings.Size" type="System.Drawing.Size, System.Drawing">
     <value>246, 22</value>
   </data>
   <data name="menuItemAdvancedSettings.Text" xml:space="preserve">
-    <value>Configuraçôes do utilizador</value>
+    <value>Configuracoes do utilizador</value>
   </data>
   <data name="CustomizableFieldsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>246, 22</value>
   </data>
   <data name="CustomizableFieldsToolStripMenuItem.Text" xml:space="preserve">
-    <value>Campos customizáveis</value>
+    <value>Campos customizaveis</value>
   </data>
   <data name="mnuConfiguration.Size" type="System.Drawing.Size, System.Drawing">
     <value>88, 20</value>
   </data>
   <data name="mnuConfiguration.Text" xml:space="preserve">
-    <value>Configurações</value>
+    <value>Configuracoes</value>
   </data>
   <data name="menuItemDatabaseControlPanel.Size" type="System.Drawing.Size, System.Drawing">
     <value>153, 22</value>
@@ -413,13 +413,13 @@
     <value>153, 22</value>
   </data>
   <data name="menuItemDatabaseMaintenance.Text" xml:space="preserve">
-    <value>Manunteção</value>
+    <value>Manuntecao</value>
   </data>
   <data name="mnuDatamanagement.Size" type="System.Drawing.Size, System.Drawing">
     <value>133, 20</value>
   </data>
   <data name="mnuDatamanagement.Text" xml:space="preserve">
-    <value>Administração de dados</value>
+    <value>Administracao de dados</value>
   </data>
   <data name="mnuWindow.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 20</value>
@@ -427,11 +427,11 @@
   <data name="mnuWindow.Text" xml:space="preserve">
     <value>Janelas</value>
   </data>
-  <data name="menuItemAboutOctopus.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="aboutMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>154, 22</value>
   </data>
-  <data name="menuItemAboutOctopus.Text" xml:space="preserve">
-    <value>Sobre o Octopus</value>
+  <data name="aboutMenuItem.Text" xml:space="preserve">
+    <value>Sobre o OpenCBS</value>
   </data>
   <data name="mnuHelp.Size" type="System.Drawing.Size, System.Drawing">
     <value>47, 20</value>
@@ -505,7 +505,7 @@
     <value>172, 22</value>
   </data>
   <data name="miReports.Text" xml:space="preserve">
-    <value>Relatórios...</value>
+    <value>Relatorios...</value>
   </data>
   <data name="mView.Size" type="System.Drawing.Size, System.Drawing">
     <value>35, 20</value>
@@ -523,7 +523,7 @@
     <value>172, 22</value>
   </data>
   <data name="toolBarButtonNewGroup.Text" xml:space="preserve">
-    <value>Grupo solidário</value>
+    <value>Grupo solidario</value>
   </data>
   <data name="tbbtnNewVillage.Size" type="System.Drawing.Size, System.Drawing">
     <value>172, 22</value>
@@ -559,7 +559,7 @@
     <value>75, 36</value>
   </data>
   <data name="toolBarButtonReports.Text" xml:space="preserve">
-    <value>Relatórios</value>
+    <value>Relatorios</value>
   </data>
   <data name="mainStatusBarLblUpdateVersion.Size" type="System.Drawing.Size, System.Drawing">
     <value>1058, 20</value>
@@ -618,7 +618,7 @@
 </value>
   </data>
   <data name="colAlerts_Address.Text" xml:space="preserve">
-    <value>Endereço</value>
+    <value>Endereco</value>
   </data>
   <data name="colAlerts_City.Text" xml:space="preserve">
     <value>Cidade</value>
@@ -627,7 +627,7 @@
     <value>Telefone</value>
   </data>
   <data name="colAlerts_ContractCode.Text" xml:space="preserve">
-    <value>Código do contrato</value>
+    <value>Codigo do contrato</value>
   </data>
   <data name="colAlerts_Status.Text" xml:space="preserve">
     <value>Estatus</value>
@@ -672,6 +672,6 @@
     <value>137, 20</value>
   </data>
   <data name="chkOverdraftSavings.Text" xml:space="preserve">
-    <value>Poupança overdraft</value>
+    <value>Poupanca overdraft</value>
   </data>
 </root>

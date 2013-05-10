@@ -660,7 +660,7 @@
     <value>150, 36</value>
   </data>
   <data name="toolBarLblVersion.Text" xml:space="preserve">
-    <value>Octopus v?.?.?</value>
+    <value>OpenCBS</value>
   </data>
   <metadata name="mainStatusBar.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>0, 717</value>

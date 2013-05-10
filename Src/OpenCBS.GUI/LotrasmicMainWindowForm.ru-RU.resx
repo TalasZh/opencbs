@@ -430,10 +430,10 @@
   <data name="mnuWindow.Text" xml:space="preserve">
     <value>Окно</value>
   </data>
-  <data name="menuItemAboutOctopus.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="aboutMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>138, 22</value>
   </data>
-  <data name="menuItemAboutOctopus.Text" xml:space="preserve">
+  <data name="aboutMenuItem.Text" xml:space="preserve">
     <value>О программе</value>
   </data>
   <data name="mnuHelp.Size" type="System.Drawing.Size, System.Drawing">
@@ -741,6 +741,6 @@
     <value>1370, 753</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Octopus</value>
+    <value>OpenCBS</value>
   </data>
 </root>

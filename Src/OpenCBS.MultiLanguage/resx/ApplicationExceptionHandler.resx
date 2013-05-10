@@ -524,43 +524,43 @@ You must complete either "min" and "max" or "value". Amount cannot be null (Main
   <data name="ProjectExceptionClientIsNull.Text" xml:space="preserve">
     <value>Please, Save client before</value>
   </data>
-  <data name="OctopusCorporateEventExceptionAmountIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateEventExceptionAmountIsEmpty.Text" xml:space="preserve">
     <value>Amount is empty</value>
   </data>
-  <data name="OctopusCorporateEventExceptionAmountIsLessZero.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateEventExceptionAmountIsLessZero.Text" xml:space="preserve">
     <value>Amount is less zero</value>
   </data>
-  <data name="OctopusCorporateEventExceptionCodeIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateEventExceptionCodeIsEmpty.Text" xml:space="preserve">
     <value>Code is empty</value>
   </data>
-  <data name="OctopusCorporateEventExceptionNameIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateEventExceptionNameIsEmpty.Text" xml:space="preserve">
     <value>Name is empty</value>
   </data>
-  <data name="OctopusCorporateExceptionCityIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateExceptionCityIsEmpty.Text" xml:space="preserve">
     <value>City is empty</value>
   </data>
-  <data name="OctopusCorporateExceptionCodeIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateExceptionCodeIsEmpty.Text" xml:space="preserve">
     <value>Code is empty</value>
   </data>
-  <data name="OctopusCorporateExceptionDistrictIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateExceptionDistrictIsEmpty.Text" xml:space="preserve">
     <value>District is empty</value>
   </data>
-  <data name="OctopusCorporateExceptionNameIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateExceptionNameIsEmpty.Text" xml:space="preserve">
     <value>Name is empty</value>
   </data>
-  <data name="OctopusCorporateExceptionProvinceIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateExceptionProvinceIsEmpty.Text" xml:space="preserve">
     <value>Province is empty</value>
   </data>
-  <data name="OctopusFundingLineExceptionBeginDateGreaterEndDate.Text" xml:space="preserve">
+  <data name="OpenCbsFundingLineExceptionBeginDateGreaterEndDate.Text" xml:space="preserve">
     <value>Begin date is greater than End date</value>
   </data>
-  <data name="OctopusFundingLineExceptionCodeIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsFundingLineExceptionCodeIsEmpty.Text" xml:space="preserve">
     <value>Code is empty</value>
   </data>
-  <data name="OctopusFundingLineExceptionNameIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsFundingLineExceptionNameIsEmpty.Text" xml:space="preserve">
     <value>Name is empty</value>
   </data>
-  <data name="OctopusCorporateEventExceptionDirectionIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateEventExceptionDirectionIsEmpty.Text" xml:space="preserve">
     <value>Forget debit credit </value>
   </data>
   <data name="onlyChars.Text" xml:space="preserve">
@@ -575,13 +575,13 @@ You must complete either "min" and "max" or "value". Amount cannot be null (Main
   <data name="OUE9.Text" xml:space="preserve">
     <value>User has contracts, please reasign</value>
   </data>
-  <data name="OctopusCorporateExceptionVolunteerIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateExceptionVolunteerIsEmpty.Text" xml:space="preserve">
     <value>Volunteer is empty</value>
   </data>
-  <data name="OctopusCorporateExceptionEmployeeIsFalseFormat.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateExceptionEmployeeIsFalseFormat.Text" xml:space="preserve">
     <value>Employee is not number</value>
   </data>
-  <data name="OctopusCorporateExceptionVolunteerIsFalseFormat.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateExceptionVolunteerIsFalseFormat.Text" xml:space="preserve">
     <value>Volunteer is not number</value>
   </data>
   <data name="ContractExceptionCreditCommiteeCommentNotModified.Text" xml:space="preserve">
@@ -590,10 +590,10 @@ You must complete either "min" and "max" or "value". Amount cannot be null (Main
   <data name="ContractExceptionStatusNotModified.Text" xml:space="preserve">
     <value>Status must be modified!</value>
   </data>
-  <data name="OctopusCorporateEventExceptionCommitmentFinancialIsNotEnough.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateEventExceptionCommitmentFinancialIsNotEnough.Text" xml:space="preserve">
     <value> This loan's funding line does not have enough funds to perform this action. You have to credit it.</value>
   </data>
-  <data name="OctopusCorporateEventExceptionAmountIsTaller.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateEventExceptionAmountIsTaller.Text" xml:space="preserve">
     <value>Selected funding line doesn't have enough money for this loan</value>
   </data>
   <data name="PackageExceptionExoticProductInIncorrect.Text" xml:space="preserve">
@@ -605,7 +605,7 @@ You must complete either "min" and "max" or "value". Amount cannot be null (Main
   <data name="PackageExceptionGuarantedFeesBadlyInformed.Text" xml:space="preserve">
     <value>You must enter min and max values OR a fixed value for guaranted fees</value>
   </data>
-  <data name="OctopusCorporateEventExceptionAmountIsNonCompliant.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateEventExceptionAmountIsNonCompliant.Text" xml:space="preserve">
     <value>Amount is non-Compliant</value>
   </data>
   <data name="OME1.Text" xml:space="preserve">
@@ -620,7 +620,7 @@ You must complete either "min" and "max" or "value". Amount cannot be null (Main
   <data name="OME4.Text" xml:space="preserve">
     <value>The passwords are different</value>
   </data>
-  <data name="OctopusCorporateEventExceptionAmountIsBigger.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateEventExceptionAmountIsBigger.Text" xml:space="preserve">
     <value>Amount is bigger (only lower than 100 millions)</value>
   </data>
   <data name="ProjectExceptionCAIsBad.Text" xml:space="preserve">
@@ -693,34 +693,34 @@ You must complete "min" and "max". (tab Transactions)</value>
   <data name="BadFundingLineID.Text" xml:space="preserve">
     <value>Funding line's ID is invalid.</value>
   </data>
-  <data name="OctopusFundingLineEventExceptionAmountIsBigger.Text" xml:space="preserve">
+  <data name="OpenCbsFundingLineEventExceptionAmountIsBigger.Text" xml:space="preserve">
     <value>Entered amount should not be bigger than 99999999999999</value>
   </data>
-  <data name="OctopusFundingLineEventExceptionAmountIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsFundingLineEventExceptionAmountIsEmpty.Text" xml:space="preserve">
     <value>Funding line's amount is empty</value>
   </data>
-  <data name="OctopusFundingLineEventExceptionAmountIsLessZero.Text" xml:space="preserve">
+  <data name="OpenCbsFundingLineEventExceptionAmountIsLessZero.Text" xml:space="preserve">
     <value>Amount is less zero</value>
   </data>
-  <data name="OctopusFundingLineEventExceptionAmountIsNonCompliant.Text" xml:space="preserve">
+  <data name="OpenCbsFundingLineEventExceptionAmountIsNonCompliant.Text" xml:space="preserve">
     <value>Amount is non-Compliant</value>
   </data>
-  <data name="OctopusFundingLineEventExceptionAmountIsTaller.Text" xml:space="preserve">
+  <data name="OpenCbsFundingLineEventExceptionAmountIsTaller.Text" xml:space="preserve">
     <value>Selected funding line doesn't have enough money for this loan</value>
   </data>
-  <data name="OctopusFundingLineEventExceptionCodeIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsFundingLineEventExceptionCodeIsEmpty.Text" xml:space="preserve">
     <value>Funding Line's Code is Empty</value>
   </data>
-  <data name="OctopusFundingLineEventExceptionCommitmentFinancialIsNotEnough.Text" xml:space="preserve">
+  <data name="OpenCbsFundingLineEventExceptionCommitmentFinancialIsNotEnough.Text" xml:space="preserve">
     <value>Financial Commitment is not enough</value>
   </data>
-  <data name="OctopusFundingLineEventExceptionDirectionIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsFundingLineEventExceptionDirectionIsEmpty.Text" xml:space="preserve">
     <value>Forget debit credit</value>
   </data>
-  <data name="OctopusFundingLineEventExceptionNameIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsFundingLineEventExceptionNameIsEmpty.Text" xml:space="preserve">
     <value>Funding Line's Name is Empty</value>
   </data>
-  <data name="OctopusFundingLineExceptionFundingLineNameExists.Text" xml:space="preserve">
+  <data name="OpenCbsFundingLineExceptionFundingLineNameExists.Text" xml:space="preserve">
     <value>Funding line with this name and purpose already exists. 
 You can use existing funding line or add a funding line with different name/purpose.</value>
   </data>
@@ -740,7 +740,7 @@ You can use existing funding line or add a funding line with different name/purp
     <value>This currency already exists in the database</value>
   </data>
   <data name="MaximumCurrencyLimitReached.Text" xml:space="preserve">
-    <value>Octopus allows only up to 2 currencies. You cannot add more</value>
+    <value>OpenCbs allows only up to 2 currencies. You cannot add more</value>
   </data>
   <data name="CurrencyIsEmpty.Text" xml:space="preserve">
     <value>Please, choose currency for loan product.</value>
@@ -1013,16 +1013,16 @@ You must complete either "min" and "max" or "value". If you do not want to use t
   <data name="AccountExceptionParentAccountIsInvalid.Text" xml:space="preserve">
     <value>The parent account is invalid</value>
   </data>
-  <data name="OctopusBookingExceptionDebitAndCreditAccountAreIdentical.Text" xml:space="preserve">
+  <data name="OpenCbsBookingExceptionDebitAndCreditAccountAreIdentical.Text" xml:space="preserve">
     <value>Debit and Credit accounts can not refer to the same account</value>
   </data>
-  <data name="OctopusBookingExceptionsCreditAccountIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsBookingExceptionsCreditAccountIsEmpty.Text" xml:space="preserve">
     <value>Credit Account is empty</value>
   </data>
-  <data name="OctopusBookingExceptionsDebitAccountIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsBookingExceptionsDebitAccountIsEmpty.Text" xml:space="preserve">
     <value>Debit Account is empty</value>
   </data>
-  <data name="OctopusBookingExceptionsNameIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsBookingExceptionsNameIsEmpty.Text" xml:space="preserve">
     <value>Name is empty</value>
   </data>
   <data name="TrancheDateError.Text" xml:space="preserve">
@@ -1276,12 +1276,12 @@ You must complete either "min" and "max" or "value". (tab Line of Credit)</value
     <value>The currency of the target account differs. Please select contract with the same currency as currency of current contract.</value>
   </data>
   <data name="LoadExtensionError.Text" xml:space="preserve">
-    <value>Error has occured while loading extensions. Please try to remove problematic extensions and start Octopus again.</value>
+    <value>Error has occured while loading extensions. Please try to remove problematic extensions and start OpenCbs again.</value>
   </data>
   <data name="SelectBeforeConf.Text" xml:space="preserve">
     <value>You must select a transaction before confirming operation</value>
   </data>
-  <data name="OctopusNotDeletableClosure.Text" xml:space="preserve">
+  <data name="OpenCbsNotDeletableClosure.Text" xml:space="preserve">
     <value>You can not delete that closure because transactions were exported</value>
   </data>
   <data name="FieldNameCanNotContainComma.Text" xml:space="preserve">
@@ -1343,13 +1343,13 @@ You must complete either "min" and "max" or "value". (tab Line of Credit)</value
 Enter another account number.
 </value>
   </data>
-  <data name="OctopusEmptyLocationException.Text" xml:space="preserve">
+  <data name="OpenCbsEmptyLocationException.Text" xml:space="preserve">
     <value>Location name cannot be empty.</value>
   </data>
-  <data name="OctopusCityUsedException.Text" xml:space="preserve">
+  <data name="OpenCbsCityUsedException.Text" xml:space="preserve">
     <value>City is used by one or more clients.</value>
   </data>
-  <data name="OctopusDistrictUsedException.Text" xml:space="preserve">
+  <data name="OpenCbsDistrictUsedException.Text" xml:space="preserve">
     <value>District is used by one or more clients.</value>
   </data>
   <data name="TellerVaultExists.Text" xml:space="preserve">

@@ -394,7 +394,6 @@
     <EmbeddedResource Include="resx\FrmDatabaseSettings.fr.resx" />
     <EmbeddedResource Include="resx\FrmDatabaseSettings.pt.resx" />
     <EmbeddedResource Include="resx\FrmEconomicActivity.pt.resx" />
-    <EmbeddedResource Include="resx\FrmExportSage.pt.resx" />
     <EmbeddedResource Include="resx\FrmFundingLine.pt.resx" />
     <EmbeddedResource Include="resx\FrmFundingLineEvent.pt.resx" />
     <EmbeddedResource Include="resx\FrmLocations.pt.resx" />
@@ -581,9 +580,6 @@
     <EmbeddedResource Include="resx\CustomizableExport.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="resx\FrmExportSage.fr.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="resx\FrmCurrencyType.ru-RU.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -639,9 +635,6 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="resx\FrmDatabaseSettings.ru-RU.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="resx\FrmExportSage.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="resx\FrmFundingLine.fr.resx">
@@ -1075,7 +1068,7 @@
   </PropertyGroup>
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties GreenPepperConfigRunnerProgram="" GreenPepperCustomSudArgs="" GreenPepperCustomSud="" GreenPepperConfigRunnerArgs="" />
+      <UserProperties GreenPepperConfigRunnerArgs="" GreenPepperCustomSud="" GreenPepperCustomSudArgs="" GreenPepperConfigRunnerProgram="" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>

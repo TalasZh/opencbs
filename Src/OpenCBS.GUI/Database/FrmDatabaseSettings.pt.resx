@@ -146,7 +146,7 @@
     <value>642, 15</value>
   </data>
   <data name="lblFindDBInfo.Text" xml:space="preserve">
-    <value>Octopus precisa saber onde encontrar o banco de dados. Por favor, indique os detalhes abaixo e clique em Conectar</value>
+    <value>OpenCBS precisa saber onde encontrar o banco de dados. Por favor, indique os detalhes abaixo e clique em Conectar</value>
   </data>
   <data name="groupBoxSQLSettings.Text" xml:space="preserve">
     <value>Configurações do servidor SQL</value>
@@ -248,7 +248,7 @@
     <value>Backups|*.bak;*.zip</value>
   </data>
   <data name="btnSave.Text" xml:space="preserve">
-    <value>lançamento Octopus</value>
+    <value>lançamento OpenCBS</value>
   </data>
   <data name="lblServerName.Text" xml:space="preserve">
     <value>Nome do Servidor</value>

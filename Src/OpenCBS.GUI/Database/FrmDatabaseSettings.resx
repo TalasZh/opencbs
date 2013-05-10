@@ -277,7 +277,7 @@
     <value>24</value>
   </data>
   <data name="txtPassword.Text" xml:space="preserve">
-    <value>octopus</value>
+    <value></value>
   </data>
   <data name="&gt;&gt;txtPassword.Name" xml:space="preserve">
     <value>txtPassword</value>
@@ -430,7 +430,7 @@
     <value>0</value>
   </data>
   <data name="lblFindDBInfo.Text" xml:space="preserve">
-    <value>Octopus needs to know where to find the database. Please enter in the details below and click on Connect</value>
+    <value>OpenCBS needs to know where to find the database. Please enter in the details below and click on Connect</value>
   </data>
   <data name="&gt;&gt;lblFindDBInfo.Name" xml:space="preserve">
     <value>lblFindDBInfo</value>
@@ -937,7 +937,7 @@
     <value>35</value>
   </data>
   <data name="btnSave.Text" xml:space="preserve">
-    <value>Launch Octopus</value>
+    <value>Launch OpenCBS</value>
   </data>
   <data name="&gt;&gt;btnSave.Name" xml:space="preserve">
     <value>btnSave</value>

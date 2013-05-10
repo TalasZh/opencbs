@@ -161,7 +161,7 @@
     <value>595, 15</value>
   </data>
   <data name="lblFindDBInfo.Text" xml:space="preserve">
-    <value>Renseignez les paramètres de votre serveur de base de données SQL pour qu'Octopus puisse s'y connecter</value>
+    <value>Renseignez les paramètres de votre serveur de base de données SQL pour qu'OpenCBS puisse s'y connecter</value>
   </data>
   <data name="btnSQLServerChangeSettings.Text" xml:space="preserve">
     <value>Changer</value>
@@ -218,7 +218,7 @@
     <value>Quitter</value>
   </data>
   <data name="btnSave.Text" xml:space="preserve">
-    <value>Lancer Octopus</value>
+    <value>Lancer OpenCBS</value>
   </data>
   <data name="tabPageSQLServerConnection.Text" xml:space="preserve">
     <value>Se connecter à SQLServer</value>

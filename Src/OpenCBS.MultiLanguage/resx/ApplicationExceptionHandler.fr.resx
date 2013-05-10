@@ -497,43 +497,43 @@ Vous devez remplir soit "min" et "max", soit "valeur". Le montant ne peut pas ê
   <data name="OTE40.Text" xml:space="preserve">
     <value>Le numéro de passport ne peut contenir que des caractères alphanumériques en majuscules</value>
   </data>
-  <data name="OctopusCorporateEventExceptionAmountIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateEventExceptionAmountIsEmpty.Text" xml:space="preserve">
     <value>Le montant est vide</value>
   </data>
-  <data name="OctopusCorporateEventExceptionAmountIsLessZero.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateEventExceptionAmountIsLessZero.Text" xml:space="preserve">
     <value>le montant est inférieur a 0</value>
   </data>
-  <data name="OctopusCorporateEventExceptionCodeIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateEventExceptionCodeIsEmpty.Text" xml:space="preserve">
     <value>Le code n'est pas renseigné</value>
   </data>
-  <data name="OctopusCorporateEventExceptionNameIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateEventExceptionNameIsEmpty.Text" xml:space="preserve">
     <value>Le nom n'est pas renseigné</value>
   </data>
-  <data name="OctopusCorporateExceptionCityIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateExceptionCityIsEmpty.Text" xml:space="preserve">
     <value>La ville n'est pas renseignée</value>
   </data>
-  <data name="OctopusCorporateExceptionCodeIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateExceptionCodeIsEmpty.Text" xml:space="preserve">
     <value>Le code n'est pas renseigné</value>
   </data>
-  <data name="OctopusCorporateExceptionDistricIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateExceptionDistricIsEmpty.Text" xml:space="preserve">
     <value>Le district n'est pas renseigné</value>
   </data>
-  <data name="OctopusCorporateExceptionNameIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateExceptionNameIsEmpty.Text" xml:space="preserve">
     <value>Le nom n'est pas renseigné</value>
   </data>
-  <data name="OctopusCorporateExceptionProvinceIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateExceptionProvinceIsEmpty.Text" xml:space="preserve">
     <value>La région ou le département ne sont pas renseignés</value>
   </data>
-  <data name="OctopusFundingLineExceptionBeginDateGreaterEndDate.Text" xml:space="preserve">
+  <data name="OpenCbsFundingLineExceptionBeginDateGreaterEndDate.Text" xml:space="preserve">
     <value>La date de debut est superieur a la date de fin</value>
   </data>
-  <data name="OctopusFundingLineExceptionCodeIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsFundingLineExceptionCodeIsEmpty.Text" xml:space="preserve">
     <value>Le code n'est pas renseigné</value>
   </data>
-  <data name="OctopusFundingLineExceptionNameIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsFundingLineExceptionNameIsEmpty.Text" xml:space="preserve">
     <value>Le nom n'est pas renseigné</value>
   </data>
-  <data name="OctopusCorporateEventExceptionCommitmentFinancialIsNotEnough.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateEventExceptionCommitmentFinancialIsNotEnough.Text" xml:space="preserve">
     <value>La capacité d'engagement de la ligne de financement est insuffisante</value>
   </data>
   <data name="ProjectExceptionCAIsBad.Text" xml:space="preserve">
@@ -548,7 +548,7 @@ Vous devez remplir soit "min" et "max", soit "valeur". Le montant ne peut pas ê
   <data name="ProjectExceptionCACannotBeNullInFollowUp.Text" xml:space="preserve">
     <value>Le CA n'est pas renseigné dans le Suivi</value>
   </data>
-  <data name="OctopusFundingLineEventExceptionCommitmentFinancialIsNotEnough.Text" xml:space="preserve">
+  <data name="OpenCbsFundingLineEventExceptionCommitmentFinancialIsNotEnough.Text" xml:space="preserve">
     <value>La ligne de financement n'est pas suffisamment créditée</value>
   </data>
   <data name="CustomExportFileExtensionIsIncorrect.Text" xml:space="preserve">
@@ -566,7 +566,7 @@ Vous devez remplir soit "min" et "max", soit "valeur". Le montant ne peut pas ê
   <data name="OTE42.Text" xml:space="preserve">
     <value>Le champ personnalisable n'est pas unique. Veuillez vérifier vos données.</value>
   </data>
-  <data name="OctopusFundingLineEventExceptionAmountIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsFundingLineEventExceptionAmountIsEmpty.Text" xml:space="preserve">
     <value>Le montant est vide</value>
   </data>
   <data name="LoanScaleTableMax.Text" xml:space="preserve">
@@ -936,64 +936,64 @@ Vous devez remplir soit "min" et "max", soit "valeur". Si vous ne souhaitez pas 
   <data name="MaximumCurrencyLimitReached.Text" xml:space="preserve">
     <value>Ocotpus supporte uniquement 2 devises</value>
   </data>
-  <data name="OctopusBookingExceptionDebitAndCreditAccountAreIdentical.Text" xml:space="preserve">
+  <data name="OpenCbsBookingExceptionDebitAndCreditAccountAreIdentical.Text" xml:space="preserve">
     <value>Les comptes de débit et de crédit sont identiques</value>
   </data>
-  <data name="OctopusBookingExceptionsCreditAccountIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsBookingExceptionsCreditAccountIsEmpty.Text" xml:space="preserve">
     <value>Le compte de crédit n'est pas renseigné</value>
   </data>
-  <data name="OctopusBookingExceptionsDebitAccountIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsBookingExceptionsDebitAccountIsEmpty.Text" xml:space="preserve">
     <value>Le compte de débit n'est pas renseigné</value>
   </data>
-  <data name="OctopusBookingExceptionsNameIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsBookingExceptionsNameIsEmpty.Text" xml:space="preserve">
     <value>Le nom n'est pas renseigné</value>
   </data>
-  <data name="OctopusCorporateEventExceptionAmountIsBigger.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateEventExceptionAmountIsBigger.Text" xml:space="preserve">
     <value>Le montant est trop élevé</value>
   </data>
-  <data name="OctopusCorporateEventExceptionAmountIsNonCompliant.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateEventExceptionAmountIsNonCompliant.Text" xml:space="preserve">
     <value>Le montant n'est pas conforme</value>
   </data>
-  <data name="OctopusCorporateEventExceptionAmountIsTaller.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateEventExceptionAmountIsTaller.Text" xml:space="preserve">
     <value>La ligne de financement sélectionnée n'est pas suffisamment créditée</value>
   </data>
-  <data name="OctopusCorporateEventExceptionDirectionIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateEventExceptionDirectionIsEmpty.Text" xml:space="preserve">
     <value>le debit ou le credit n'est pas renseigné</value>
   </data>
-  <data name="OctopusCorporateExceptionDistrictIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateExceptionDistrictIsEmpty.Text" xml:space="preserve">
     <value>Le district n'est pas renseigné</value>
   </data>
-  <data name="OctopusCorporateExceptionEmployeeIsFalseFormat.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateExceptionEmployeeIsFalseFormat.Text" xml:space="preserve">
     <value>L'employé n'est pas un nombre</value>
   </data>
-  <data name="OctopusCorporateExceptionVolunteerIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateExceptionVolunteerIsEmpty.Text" xml:space="preserve">
     <value>Le champ "volontaires" est vide</value>
   </data>
-  <data name="OctopusCorporateExceptionVolunteerIsFalseFormat.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateExceptionVolunteerIsFalseFormat.Text" xml:space="preserve">
     <value>Le champ "volontaires" n'est pas un nombre</value>
   </data>
-  <data name="OctopusFundingLineEventExceptionAmountIsBigger.Text" xml:space="preserve">
+  <data name="OpenCbsFundingLineEventExceptionAmountIsBigger.Text" xml:space="preserve">
     <value>Le montant ne doit pas dépasser 999999999999999</value>
   </data>
-  <data name="OctopusFundingLineEventExceptionAmountIsLessZero.Text" xml:space="preserve">
+  <data name="OpenCbsFundingLineEventExceptionAmountIsLessZero.Text" xml:space="preserve">
     <value>Le montant est négatif</value>
   </data>
-  <data name="OctopusFundingLineEventExceptionAmountIsNonCompliant.Text" xml:space="preserve">
+  <data name="OpenCbsFundingLineEventExceptionAmountIsNonCompliant.Text" xml:space="preserve">
     <value>Le montant n'est pas conforme</value>
   </data>
-  <data name="OctopusFundingLineEventExceptionAmountIsTaller.Text" xml:space="preserve">
+  <data name="OpenCbsFundingLineEventExceptionAmountIsTaller.Text" xml:space="preserve">
     <value>la ligne de financement sélectionée n'est pas suffisamment créditée pour ce prêt</value>
   </data>
-  <data name="OctopusFundingLineEventExceptionCodeIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsFundingLineEventExceptionCodeIsEmpty.Text" xml:space="preserve">
     <value>le code de la ligne de financement n'est pas renseigné</value>
   </data>
-  <data name="OctopusFundingLineEventExceptionDirectionIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsFundingLineEventExceptionDirectionIsEmpty.Text" xml:space="preserve">
     <value>Le débit ou crédit n'est pas renseigné</value>
   </data>
-  <data name="OctopusFundingLineEventExceptionNameIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsFundingLineEventExceptionNameIsEmpty.Text" xml:space="preserve">
     <value>Le nom de la ligne de financement n'est pas renseigné</value>
   </data>
-  <data name="OctopusFundingLineExceptionFundingLineNameExists.Text" xml:space="preserve">
+  <data name="OpenCbsFundingLineExceptionFundingLineNameExists.Text" xml:space="preserve">
     <value>Une ligne de financement avec ce nom existe déjà</value>
   </data>
   <data name="OME1.Text" xml:space="preserve">
@@ -1111,7 +1111,7 @@ Vous devez remplir soit "min" et "max", soit "valeur". Si vous ne souhaitez pas 
     <value>Vérifier la date de la tranche</value>
   </data>
   <data name="WrongIDPattern.Text" xml:space="preserve">
-    <value>Le n° d'ID que vous avez entré ne correspond pas au standard défini dans  la configuration d'Octopus</value>
+    <value>Le n° d'ID que vous avez entré ne correspond pas au standard défini dans  la configuration d'OpenCbs</value>
   </data>
   <data name="LoanHasNoCompulsorySavingsError.Text" xml:space="preserve">
     <value>Un compte d'épargne obligatoire est nécessaire pour décaisser ce prêt</value>
@@ -1285,13 +1285,13 @@ Vous devez remplir soit "min" et "max", soit "valeur". Si vous ne souhaitez pas 
     <value>Modifiez le numéro de compte que vous venez d'entrer.
 Il ne peut y avoir deux comptes possédant le même numéro.</value>
   </data>
-  <data name="OctopusEmptyLocationException.Text" xml:space="preserve">
+  <data name="OpenCbsEmptyLocationException.Text" xml:space="preserve">
     <value>Emplacement ne peut pas être vide</value>
   </data>
-  <data name="OctopusCityUsedException.Text" xml:space="preserve">
+  <data name="OpenCbsCityUsedException.Text" xml:space="preserve">
     <value>Ville est utilisée par un ou plusieurs clients.</value>
   </data>
-  <data name="OctopusDistrictUsedException.Text" xml:space="preserve">
+  <data name="OpenCbsDistrictUsedException.Text" xml:space="preserve">
     <value>District est utilisée par un ou plusieurs clients.</value>
   </data>
 </root>

@@ -167,7 +167,7 @@ Pode confirmar este reembolso?</value>
     <value>O capital vencido</value>
   </data>
   <data name="PastDueDegradationNeedful.Text" xml:space="preserve">
-    <value>Atenção, este empréstimo está atrasado.  O Octopus precisa de actualizar o razão geral antes de prosseguir. Quer continuar?</value>
+    <value>Atenção, este empréstimo está atrasado.  O OpenCBS precisa de actualizar o razão geral antes de prosseguir. Quer continuar?</value>
   </data>
   <data name="Penalty.Text" xml:space="preserve">
     <value>Os juros de moura</value>
@@ -183,6 +183,6 @@ Pode confirmar este reembolso?</value>
   </data>
   <data name="WriteOffDegradationNeedful.Text" xml:space="preserve">
     <value>Atenção, este empréstimo está atrasado (deveria 
-ser abatido). O Octopus precisa de actualizar o razão geral antes de prosseguir. Quer continuar?</value>
+ser abatido). O OpenCBS precisa de actualizar o razão geral antes de prosseguir. Quer continuar?</value>
   </data>
 </root>

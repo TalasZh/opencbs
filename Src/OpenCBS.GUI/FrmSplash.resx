@@ -131,7 +131,7 @@
   <data name="&gt;&gt;oPBMacroProgression.Type" xml:space="preserve">
     <value>OpenCBS.GUI.OpenCBSProgressBar, OpenCBS.GUI, Version=1.1.1.1191, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;pictureBoxAboutOctopus.Parent" xml:space="preserve">
+  <data name="&gt;&gt;aboutPictureBox.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="oPBMacroProgression.Text" xml:space="preserve">
@@ -141,16 +141,16 @@
     <value>MiddleLeft</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="pictureBoxAboutOctopus.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+  <data name="aboutPictureBox.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="pictureBoxAboutOctopus.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+  <data name="aboutPictureBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
-  <data name="pictureBoxAboutOctopus.TabIndex" type="System.Int32, mscorlib">
+  <data name="aboutPictureBox.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="pictureBoxAboutOctopus.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="aboutPictureBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>573, 231</value>
   </data>
   <data name="&gt;&gt;bWSeventToEight.Name" xml:space="preserve">
@@ -195,7 +195,7 @@
   <data name="&gt;&gt;bWSeventToEight.Type" xml:space="preserve">
     <value>System.ComponentModel.BackgroundWorker, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="pictureBoxAboutOctopus.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="aboutPictureBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="&gt;&gt;oPBarMicroProgression.Parent" xml:space="preserve">
@@ -210,7 +210,7 @@
   <data name="labelConfigurationValue.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="&gt;&gt;pictureBoxAboutOctopus.Type" xml:space="preserve">
+  <data name="&gt;&gt;aboutPictureBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label1.Parent" xml:space="preserve">
@@ -219,7 +219,7 @@
   <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="pictureBoxAboutOctopus.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+  <data name="aboutPictureBox.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Center</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
@@ -228,13 +228,13 @@
   <data name="&gt;&gt;oPBMacroProgression.Name" xml:space="preserve">
     <value>oPBMacroProgression</value>
   </data>
-  <data name="pictureBoxAboutOctopus.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="aboutPictureBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 7</value>
   </data>
   <data name="labelConfigurationValue.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
-  <data name="&gt;&gt;pictureBoxAboutOctopus.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;aboutPictureBox.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="&gt;&gt;label1.Type" xml:space="preserve">
@@ -288,8 +288,8 @@
   <data name="oPBarMicroProgression.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;pictureBoxAboutOctopus.Name" xml:space="preserve">
-    <value>pictureBoxAboutOctopus</value>
+  <data name="&gt;&gt;aboutPictureBox.Name" xml:space="preserve">
+    <value>aboutPictureBox</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value />

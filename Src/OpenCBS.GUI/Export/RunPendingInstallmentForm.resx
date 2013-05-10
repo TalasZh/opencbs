@@ -190,7 +190,7 @@
     <value>progressBar</value>
   </data>
   <data name="&gt;&gt;progressBar.Type" xml:space="preserve">
-    <value>OpenCBS.GUI.OctopusProgressBar, OpenCBS.GUI, Version=1.1.1.24915, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.OpenCBSProgressBar, OpenCBS.GUI, Version=1.1.1.24915, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;progressBar.Parent" xml:space="preserve">
     <value>tableLayoutPanel1</value>

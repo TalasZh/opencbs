@@ -124,10 +124,10 @@
     <value>Max: </value>
   </data>
   <data name="PastDueDegradationNeedful.Text" xml:space="preserve">
-    <value>Warning, this loan is late. Octopus needs to update the general ledger before proceeding. Do you want to continue?</value>
+    <value>Warning, this loan is late. OpenCBS needs to update the general ledger before proceeding. Do you want to continue?</value>
   </data>
   <data name="WriteOffDegradationNeedful.Text" xml:space="preserve">
-    <value>Warning, this loan is late (should be written off), Octopus needs to update the general ledger before proceeding, do you want to continue?</value>
+    <value>Warning, this loan is late (should be written off), OpenCBS needs to update the general ledger before proceeding, do you want to continue?</value>
   </data>
   <data name="amountToGoNormal.Text" xml:space="preserve">
     <value>Amount to go back normal</value>

@@ -139,31 +139,31 @@
     <value>actualmente</value>
   </data>
   <data name="databaseConnectionNotOk.Text" xml:space="preserve">
-    <value>O Octopus não está configurado correctamente: a conexão do banco de dados está incorrecta</value>
+    <value>O OpenCBS não está configurado correctamente: a conexão do banco de dados está incorrecta</value>
   </data>
   <data name="databaseFound.Text" xml:space="preserve">
-    <value>O banco de dados de Octopus foi localizado</value>
+    <value>O banco de dados de OpenCBS foi localizado</value>
   </data>
   <data name="databaseSchema.Text" xml:space="preserve">
-    <value>O esquema do banco de dados de Octopus</value>
+    <value>O esquema do banco de dados de OpenCBS</value>
   </data>
   <data name="databaseSeverStatus.Text" xml:space="preserve">
     <value>O servidor de SQL</value>
   </data>
   <data name="databaseVersionOk.Text" xml:space="preserve">
-    <value>A versão do banco de dados de Octopus</value>
+    <value>A versão do banco de dados de OpenCBS</value>
   </data>
   <data name="noDatabase.Text" xml:space="preserve">
     <value>Nenhum banco de dados foi encontrado.</value>
   </data>
   <data name="registryNotOk.Text" xml:space="preserve">
-    <value>O Octopus não está configurado correctamente: faltam as configurações requeridas do banco de dados </value>
+    <value>O OpenCBS não está configurado correctamente: faltam as configurações requeridas do banco de dados </value>
   </data>
   <data name="restart.Text" xml:space="preserve">
-    <value>O Octopus irá reiniciar</value>
+    <value>O OpenCBS irá reiniciar</value>
   </data>
   <data name="settingsStatus.Text" xml:space="preserve">
-    <value>As configurações de Octopus foram encontradas</value>
+    <value>As configurações de OpenCBS foram encontradas</value>
   </data>
   <data name="test1.Text" xml:space="preserve">
     <value>Está a usar uma versão do banco de dados antiquada e não está em uso</value>

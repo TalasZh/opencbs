@@ -84,13 +84,8 @@ namespace OpenCBS.GUI
         
         private void _LoadLoginForm(bool pUseOnlineMode)
         {
-            if (!pUseOnlineMode)
-            {
-                FrmLogin login = new FrmLogin(_user, _password);
-                login.ShowDialog();
-            }
-            else
-                new PasswordFormOnline().ShowDialog();
+            FrmLogin login = new FrmLogin(_user, _password);
+            login.ShowDialog();
         }
 
         private void _CheckEnvironnement()

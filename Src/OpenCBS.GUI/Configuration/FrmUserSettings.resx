@@ -734,7 +734,7 @@
     <value>19</value>
   </data>
   <data name="cbAutoUpdate.Text" xml:space="preserve">
-    <value>Check for updates and share anonymous information to improve Octopus.</value>
+    <value>Check for updates and share anonymous information to improve OpenCBS.</value>
   </data>
   <data name="&gt;&gt;cbAutoUpdate.Name" xml:space="preserve">
     <value>cbAutoUpdate</value>

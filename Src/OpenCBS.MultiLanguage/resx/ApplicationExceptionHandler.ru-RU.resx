@@ -120,31 +120,31 @@
   <data name="PackageExceptionExoticProductNameAlreadyExist" xml:space="preserve">
     <value>Имя не типичного продукта уже существует</value>
   </data>
-  <data name="OctopusFundingLineEventExceptionAmountIsBigger.Text" xml:space="preserve">
+  <data name="OpenCbsFundingLineEventExceptionAmountIsBigger.Text" xml:space="preserve">
     <value>Слишком большая сумма (должно быть менее 1 квадриллиона 10^15)</value>
   </data>
-  <data name="OctopusFundingLineEventExceptionAmountIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsFundingLineEventExceptionAmountIsEmpty.Text" xml:space="preserve">
     <value>Отсутствует сумма в фондовой линии</value>
   </data>
-  <data name="OctopusFundingLineEventExceptionAmountIsLessZero.Text" xml:space="preserve">
+  <data name="OpenCbsFundingLineEventExceptionAmountIsLessZero.Text" xml:space="preserve">
     <value>Сумма отрицательна</value>
   </data>
-  <data name="OctopusFundingLineEventExceptionAmountIsNonCompliant.Text" xml:space="preserve">
+  <data name="OpenCbsFundingLineEventExceptionAmountIsNonCompliant.Text" xml:space="preserve">
     <value>Сумма не корректна</value>
   </data>
-  <data name="OctopusFundingLineEventExceptionAmountIsTaller.Text" xml:space="preserve">
+  <data name="OpenCbsFundingLineEventExceptionAmountIsTaller.Text" xml:space="preserve">
     <value>Указанная фондовая линия не имеет достаточных средств для этого кредита</value>
   </data>
-  <data name="OctopusFundingLineEventExceptionCodeIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsFundingLineEventExceptionCodeIsEmpty.Text" xml:space="preserve">
     <value>Отсутствует код фондовой линии</value>
   </data>
-  <data name="OctopusFundingLineEventExceptionCommitmentFinancialIsNotEnough.Text" xml:space="preserve">
+  <data name="OpenCbsFundingLineEventExceptionCommitmentFinancialIsNotEnough.Text" xml:space="preserve">
     <value>Не хватает средств в фондовой линии</value>
   </data>
-  <data name="OctopusFundingLineEventExceptionNameIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsFundingLineEventExceptionNameIsEmpty.Text" xml:space="preserve">
     <value>Отсутствует имя фондовой линии</value>
   </data>
-  <data name="OctopusFundingLineExceptionFundingLineNameExists.Text" xml:space="preserve">
+  <data name="OpenCbsFundingLineExceptionFundingLineNameExists.Text" xml:space="preserve">
     <value>Фондовая лини с таким именем уже существует.</value>
   </data>
   <data name="OTE41.Text" xml:space="preserve">
@@ -348,61 +348,61 @@
   <data name="InstallmentExceptionNotFirstInstallmentToRepay.Text" xml:space="preserve">
     <value>Нет предыдущих погашений !!</value>
   </data>
-  <data name="OctopusCorporateEventExceptionAmountIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateEventExceptionAmountIsEmpty.Text" xml:space="preserve">
     <value>Значение не указано</value>
   </data>
-  <data name="OctopusCorporateEventExceptionAmountIsLessZero.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateEventExceptionAmountIsLessZero.Text" xml:space="preserve">
     <value>Значение менее нуля</value>
   </data>
-  <data name="OctopusCorporateEventExceptionAmountIsNonCompliant.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateEventExceptionAmountIsNonCompliant.Text" xml:space="preserve">
     <value>Значение не подходящие</value>
   </data>
-  <data name="OctopusCorporateEventExceptionAmountIsTaller.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateEventExceptionAmountIsTaller.Text" xml:space="preserve">
     <value>Выбраная фондовая линия не имеет достаточно денег для этого контракта</value>
   </data>
-  <data name="OctopusCorporateEventExceptionCodeIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateEventExceptionCodeIsEmpty.Text" xml:space="preserve">
     <value>Код не указан</value>
   </data>
-  <data name="OctopusCorporateEventExceptionCommitmentFinancialIsNotEnough.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateEventExceptionCommitmentFinancialIsNotEnough.Text" xml:space="preserve">
     <value>Финансовое подтверждение не достаточно</value>
   </data>
-  <data name="OctopusCorporateEventExceptionDirectionIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateEventExceptionDirectionIsEmpty.Text" xml:space="preserve">
     <value>Не указан дебет и кредит</value>
   </data>
-  <data name="OctopusCorporateEventExceptionNameIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateEventExceptionNameIsEmpty.Text" xml:space="preserve">
     <value>Имя не указано</value>
   </data>
-  <data name="OctopusCorporateExceptionCityIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateExceptionCityIsEmpty.Text" xml:space="preserve">
     <value>Город не указан</value>
   </data>
-  <data name="OctopusCorporateExceptionCodeIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateExceptionCodeIsEmpty.Text" xml:space="preserve">
     <value>Код не указан</value>
   </data>
-  <data name="OctopusCorporateExceptionDistrictIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateExceptionDistrictIsEmpty.Text" xml:space="preserve">
     <value>Район не указан</value>
   </data>
-  <data name="OctopusCorporateExceptionEmployeeIsFalseFormat.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateExceptionEmployeeIsFalseFormat.Text" xml:space="preserve">
     <value>Сотрудник не число</value>
   </data>
-  <data name="OctopusCorporateExceptionNameIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateExceptionNameIsEmpty.Text" xml:space="preserve">
     <value>Имя не указано</value>
   </data>
-  <data name="OctopusCorporateExceptionProvinceIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateExceptionProvinceIsEmpty.Text" xml:space="preserve">
     <value>Область не казана</value>
   </data>
-  <data name="OctopusCorporateExceptionVolunteerIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateExceptionVolunteerIsEmpty.Text" xml:space="preserve">
     <value>Доброволец не указан</value>
   </data>
-  <data name="OctopusCorporateExceptionVolunteerIsFalseFormat.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateExceptionVolunteerIsFalseFormat.Text" xml:space="preserve">
     <value>Волонтер это не число</value>
   </data>
-  <data name="OctopusFundingLineExceptionBeginDateGreaterEndDate.Text" xml:space="preserve">
+  <data name="OpenCbsFundingLineExceptionBeginDateGreaterEndDate.Text" xml:space="preserve">
     <value>Начальная дата позже конечной</value>
   </data>
-  <data name="OctopusFundingLineExceptionCodeIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsFundingLineExceptionCodeIsEmpty.Text" xml:space="preserve">
     <value>Код не указан</value>
   </data>
-  <data name="OctopusFundingLineExceptionNameIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsFundingLineExceptionNameIsEmpty.Text" xml:space="preserve">
     <value>Имя не указано</value>
   </data>
   <data name="OME1.Text" xml:space="preserve">
@@ -948,16 +948,16 @@
   <data name="AccountExceptionParentAccountIsInvalid.Text" xml:space="preserve">
     <value>Неверный родительский счет</value>
   </data>
-  <data name="OctopusBookingExceptionDebitAndCreditAccountAreIdentical.Text" xml:space="preserve">
+  <data name="OpenCbsBookingExceptionDebitAndCreditAccountAreIdentical.Text" xml:space="preserve">
     <value>Дебетовый и кредитовый счет должны быть разными</value>
   </data>
-  <data name="OctopusBookingExceptionsCreditAccountIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsBookingExceptionsCreditAccountIsEmpty.Text" xml:space="preserve">
     <value>Пустой кредитовый счет</value>
   </data>
-  <data name="OctopusBookingExceptionsDebitAccountIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsBookingExceptionsDebitAccountIsEmpty.Text" xml:space="preserve">
     <value>Пустой дебетовый счет</value>
   </data>
-  <data name="OctopusBookingExceptionsNameIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsBookingExceptionsNameIsEmpty.Text" xml:space="preserve">
     <value>Название не введено</value>
   </data>
   <data name="RoleHasUsers.Text" xml:space="preserve">
@@ -1036,13 +1036,13 @@
     <value>Счет с таким номером уже существует. 
 Введите другой номер счета.</value>
   </data>
-  <data name="OctopusEmptyLocationException.Text" xml:space="preserve">
+  <data name="OpenCbsEmptyLocationException.Text" xml:space="preserve">
     <value>Местоположение не может быть пустым.</value>
   </data>
-  <data name="OctopusCityUsedException.Text" xml:space="preserve">
+  <data name="OpenCbsCityUsedException.Text" xml:space="preserve">
     <value>Город использован в клиентах.</value>
   </data>
-  <data name="OctopusDistrictUsedException.Text" xml:space="preserve">
+  <data name="OpenCbsDistrictUsedException.Text" xml:space="preserve">
     <value>Район использован в клиентах.</value>
   </data>
   <data name="TellerVaultExists.Text" xml:space="preserve">

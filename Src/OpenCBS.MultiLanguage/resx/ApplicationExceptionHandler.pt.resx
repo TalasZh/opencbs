@@ -518,127 +518,127 @@ Deve completar ou "min" e "Max" ou 
     <value>Número de prestações não pode ser zero.</value>
   </data>
   <data name="MaximumCurrencyLimitReached.Text" xml:space="preserve">
-    <value>Octopus permite apenas até 2 moedas. 
+    <value>OpenCBS permite apenas até 2 moedas. 
 Não pode adicionar mais</value>
   </data>
   <data name="NumberFieldIsNotANumber.Text" xml:space="preserve">
     <value>O campo personalizado do tipo de número
 contém símbolos impróprios.</value>
   </data>
-  <data name="OctopusBookingExceptionDebitAndCreditAccountAreIdentical.Text" xml:space="preserve">
+  <data name="OpenCbsBookingExceptionDebitAndCreditAccountAreIdentical.Text" xml:space="preserve">
     <value>As contas de débito e de crédito não podem
 referir-se a mesma conta</value>
   </data>
-  <data name="OctopusBookingExceptionsCreditAccountIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsBookingExceptionsCreditAccountIsEmpty.Text" xml:space="preserve">
     <value>A conta de crédito não está preenchida</value>
   </data>
-  <data name="OctopusBookingExceptionsDebitAccountIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsBookingExceptionsDebitAccountIsEmpty.Text" xml:space="preserve">
     <value>A conta de débito  não está preenchida</value>
   </data>
-  <data name="OctopusBookingExceptionsNameIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsBookingExceptionsNameIsEmpty.Text" xml:space="preserve">
     <value>O nome não está preenchido</value>
   </data>
-  <data name="OctopusCorporateEventExceptionAmountIsBigger.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateEventExceptionAmountIsBigger.Text" xml:space="preserve">
     <value>A quantia deve ser menos do que 100 milhões</value>
   </data>
-  <data name="OctopusCorporateEventExceptionAmountIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateEventExceptionAmountIsEmpty.Text" xml:space="preserve">
     <value>O valor não está preenchido</value>
   </data>
-  <data name="OctopusCorporateEventExceptionAmountIsLessZero.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateEventExceptionAmountIsLessZero.Text" xml:space="preserve">
     <value>A quantia é menos de zero</value>
   </data>
-  <data name="OctopusCorporateEventExceptionAmountIsNonCompliant.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateEventExceptionAmountIsNonCompliant.Text" xml:space="preserve">
     <value>O valor não está em conformidade</value>
   </data>
-  <data name="OctopusCorporateEventExceptionAmountIsTaller.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateEventExceptionAmountIsTaller.Text" xml:space="preserve">
     <value>A rúbrica escolhida não tem
 dinheiro suficiente para este empréstimo</value>
   </data>
-  <data name="OctopusCorporateEventExceptionCodeIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateEventExceptionCodeIsEmpty.Text" xml:space="preserve">
     <value>O código não está preenchido</value>
   </data>
-  <data name="OctopusCorporateEventExceptionCommitmentFinancialIsNotEnough.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateEventExceptionCommitmentFinancialIsNotEnough.Text" xml:space="preserve">
     <value>A rúbrica escolhida não tem
 dinheiro suficiente para executar esta operação.
 Tem que creditar este movimento</value>
   </data>
-  <data name="OctopusCorporateEventExceptionDirectionIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateEventExceptionDirectionIsEmpty.Text" xml:space="preserve">
     <value>Esqueça de crédito de débito</value>
   </data>
-  <data name="OctopusCorporateEventExceptionNameIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateEventExceptionNameIsEmpty.Text" xml:space="preserve">
     <value>O nome não está preenchido</value>
   </data>
-  <data name="OctopusCorporateExceptionCityIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateExceptionCityIsEmpty.Text" xml:space="preserve">
     <value>A cidade não está preenchida</value>
   </data>
-  <data name="OctopusCorporateExceptionCodeIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateExceptionCodeIsEmpty.Text" xml:space="preserve">
     <value>O código não está preenchido</value>
   </data>
-  <data name="OctopusCorporateExceptionDistricIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateExceptionDistricIsEmpty.Text" xml:space="preserve">
     <value />
   </data>
-  <data name="OctopusCorporateExceptionDistrictIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateExceptionDistrictIsEmpty.Text" xml:space="preserve">
     <value>O distrito não está preenchido</value>
   </data>
-  <data name="OctopusCorporateExceptionEmployeeIsFalseFormat.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateExceptionEmployeeIsFalseFormat.Text" xml:space="preserve">
     <value>Requere-se um registo numérico</value>
   </data>
-  <data name="OctopusCorporateExceptionNameIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateExceptionNameIsEmpty.Text" xml:space="preserve">
     <value>O nome não está preenchido</value>
   </data>
-  <data name="OctopusCorporateExceptionProvinceIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateExceptionProvinceIsEmpty.Text" xml:space="preserve">
     <value>A província não está preenchida</value>
   </data>
-  <data name="OctopusCorporateExceptionVolunteerIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateExceptionVolunteerIsEmpty.Text" xml:space="preserve">
     <value>O voluntário não está preenchido</value>
   </data>
-  <data name="OctopusCorporateExceptionVolunteerIsFalseFormat.Text" xml:space="preserve">
+  <data name="OpenCbsCorporateExceptionVolunteerIsFalseFormat.Text" xml:space="preserve">
     <value>Requere-se um registo numérico</value>
   </data>
-  <data name="OctopusFundingLineEventExceptionAmountIsBigger.Text" xml:space="preserve">
+  <data name="OpenCbsFundingLineEventExceptionAmountIsBigger.Text" xml:space="preserve">
     <value>A quantia lançada não pode ser superior à
 99999999999999</value>
   </data>
-  <data name="OctopusFundingLineEventExceptionAmountIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsFundingLineEventExceptionAmountIsEmpty.Text" xml:space="preserve">
     <value>A rúbrica da linha de verba não está preenchida</value>
   </data>
-  <data name="OctopusFundingLineEventExceptionAmountIsLessZero.Text" xml:space="preserve">
+  <data name="OpenCbsFundingLineEventExceptionAmountIsLessZero.Text" xml:space="preserve">
     <value>A quantidade é menos de zero</value>
   </data>
-  <data name="OctopusFundingLineEventExceptionAmountIsNonCompliant.Text" xml:space="preserve">
+  <data name="OpenCbsFundingLineEventExceptionAmountIsNonCompliant.Text" xml:space="preserve">
     <value>O valor não está em conformidade</value>
   </data>
-  <data name="OctopusFundingLineEventExceptionAmountIsTaller.Text" xml:space="preserve">
+  <data name="OpenCbsFundingLineEventExceptionAmountIsTaller.Text" xml:space="preserve">
     <value>A rúbrica de financiamento escolhida não tem
 dinheiro suficiente para este empréstimo</value>
   </data>
-  <data name="OctopusFundingLineEventExceptionCodeIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsFundingLineEventExceptionCodeIsEmpty.Text" xml:space="preserve">
     <value>O código da rúbrica de financiamento não está preenchido</value>
   </data>
-  <data name="OctopusFundingLineEventExceptionCommitmentFinancialIsNotEnough.Text" xml:space="preserve">
+  <data name="OpenCbsFundingLineEventExceptionCommitmentFinancialIsNotEnough.Text" xml:space="preserve">
     <value>Compromisso financeiro não é suficiente</value>
   </data>
-  <data name="OctopusFundingLineEventExceptionDirectionIsEmpty.Text" xml:space="preserve">
-    <value>O Octopus não permite que uma transação de débito seja feita ao mesmo tempo que uma transação de crédito</value>
+  <data name="OpenCbsFundingLineEventExceptionDirectionIsEmpty.Text" xml:space="preserve">
+    <value>O OpenCbs não permite que uma transação de débito seja feita ao mesmo tempo que uma transação de crédito</value>
   </data>
-  <data name="OctopusFundingLineEventExceptionNameIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsFundingLineEventExceptionNameIsEmpty.Text" xml:space="preserve">
     <value>O nome da rúbrica de financiamento não está
 preenchido</value>
   </data>
-  <data name="OctopusFundingLineExceptionBeginDateGreaterEndDate.Text" xml:space="preserve">
+  <data name="OpenCbsFundingLineExceptionBeginDateGreaterEndDate.Text" xml:space="preserve">
     <value>A data de início é maior do que a data final</value>
   </data>
-  <data name="OctopusFundingLineExceptionCodeIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsFundingLineExceptionCodeIsEmpty.Text" xml:space="preserve">
     <value>O código não está preenchido</value>
   </data>
-  <data name="OctopusFundingLineExceptionFundingLineNameExists.Text" xml:space="preserve">
+  <data name="OpenCbsFundingLineExceptionFundingLineNameExists.Text" xml:space="preserve">
     <value>Já existe uma rúbrica de financiamento com este nome e
 objectivo.
 Pode usar a rúbrica de financiamento
 existente ou adicionar uma rúbrica de
 financiamento com nome diferente / objectivo.</value>
   </data>
-  <data name="OctopusFundingLineExceptionNameIsEmpty.Text" xml:space="preserve">
+  <data name="OpenCbsFundingLineExceptionNameIsEmpty.Text" xml:space="preserve">
     <value>O nome não está preenchido</value>
   </data>
   <data name="OME1.Text" xml:space="preserve">
