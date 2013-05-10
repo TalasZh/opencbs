@@ -1380,8 +1380,8 @@ namespace OpenCBS.GUI.Configuration
 
         private void butImport_Click(object sender, EventArgs e)
         {
-            openFileDialog.Filter = @"Octopus Settings files|*.Settings";
-            openFileDialog.FileName = @"Octopus.Settings";
+            openFileDialog.Filter = @"OpenCBS Settings files|*.Settings";
+            openFileDialog.FileName = @"OpenCBS.Settings";
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
                 string fileName = openFileDialog.FileName;

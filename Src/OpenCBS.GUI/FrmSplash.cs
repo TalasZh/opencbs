@@ -42,7 +42,7 @@ namespace OpenCBS.GUI
             bWOneToSeven.RunWorkerAsync();
         }
 
-        private void _CheckOctopusConfiguration(bool pOneToSeven)
+        private void CheckConfiguration(bool pOneToSeven)
         {
             if(pOneToSeven)
             {
@@ -174,7 +174,7 @@ namespace OpenCBS.GUI
 
             if(!_crystalReportIsOk)
                 MessageBox.Show(@MultiLanguageStrings.GetString(Ressource.FrmSplash, "NoCrystalReportsInstalled.Text"),
-                @"Octopus Control Panel");
+                @"OpenCBS Control Panel");
 
             _crystalReportIsOk = true;
         }
@@ -250,7 +250,7 @@ namespace OpenCBS.GUI
             FrmDatabaseSettings databaseSettings = new FrmDatabaseSettings(pFrmDatabaseSettingsEnum,true,false);
             databaseSettings.ShowDialog();
 
-            _CheckOctopusConfiguration(true);
+            CheckConfiguration(true);
         }
 
         private void _DatabaseUpdateScript()
@@ -264,7 +264,7 @@ namespace OpenCBS.GUI
 
             databaseServices.UpdateDatabase(TechnicalSettings.SoftwareVersion, TechnicalSettings.DatabaseName, UserSettings.GetUpdatePath);
 
-            _CheckOctopusConfiguration(true);
+            CheckConfiguration(true);
         }
 
         private void FrmSplash_UpdateDatabaseEvent(string pCurrentDatabase, string pExpectedDatabase)
@@ -279,7 +279,7 @@ namespace OpenCBS.GUI
 
         private void backgroundWorker_DoWork(object sender, System.ComponentModel.DoWorkEventArgs e)
         {
-            _CheckOctopusConfiguration(true);
+            CheckConfiguration(true);
         }
 
         private void backgroundWorker_ProgressChanged(object sender, System.ComponentModel.ProgressChangedEventArgs e)
@@ -318,7 +318,7 @@ namespace OpenCBS.GUI
 
         private void bWSeventToEight_DoWork(object sender, System.ComponentModel.DoWorkEventArgs e)
         {
-            _CheckOctopusConfiguration(false);
+            CheckConfiguration(false);
         }
 
         private void bWSeventToEight_ProgressChanged(object sender, System.ComponentModel.ProgressChangedEventArgs e)

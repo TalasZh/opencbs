@@ -142,11 +142,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>LoanSharesForm.resx</DependentUpon>
     </Compile>
-    <Compile Include="resx\MyInforamtionForm.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>MyInforamtionForm.resx</DependentUpon>
-    </Compile>
     <Compile Include="resx\ReassingContract.Designer.cs" />
     <Compile Include="resx\ShowPictureForm.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -465,12 +460,6 @@
     <EmbeddedResource Include="resx\LoanSharesForm.pt.resx" />
     <EmbeddedResource Include="resx\LotrasmicMainWindowForm.pt.resx" />
     <EmbeddedResource Include="resx\ManualEntryForm.pt.resx" />
-    <EmbeddedResource Include="resx\MyInforamtionForm.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>MyInforamtionForm.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="resx\MyInformationForm.fr.resx" />
-    <EmbeddedResource Include="resx\MyInformationForm.ru-Ru.resx" />
     <EmbeddedResource Include="resx\NonSolidaryGroupForm.fr.resx" />
     <EmbeddedResource Include="resx\NonSolidaryGroupForm.pt.resx" />
     <EmbeddedResource Include="resx\NonSolidaryGroupForm.resx" />

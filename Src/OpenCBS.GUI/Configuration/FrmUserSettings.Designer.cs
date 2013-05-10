@@ -19,7 +19,6 @@ namespace OpenCBS.GUI.Configuration
         /// </summary>
         private System.ComponentModel.Container components = null;
         private System.Windows.Forms.Button buttonSave;
-        private LinkLabel llHelp;
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
@@ -81,7 +80,6 @@ namespace OpenCBS.GUI.Configuration
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.llHelp = new System.Windows.Forms.LinkLabel();
             this.cbAutoUpdate = new System.Windows.Forms.CheckBox();
             this.buttonSave = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
@@ -97,7 +95,7 @@ namespace OpenCBS.GUI.Configuration
             this.SuspendLayout();
             // 
             // groupBoxFolders
-            //
+            // 
             this.groupBoxFolders.Controls.Add(this.buttonFindExportPath);
             this.groupBoxFolders.Controls.Add(this.buttonFindBackupPath);
             this.groupBoxFolders.Controls.Add(this.txtExportConsoPath);
@@ -109,13 +107,13 @@ namespace OpenCBS.GUI.Configuration
             this.groupBoxFolders.TabStop = false;
             // 
             // buttonFindExportPath
-            //
+            // 
             resources.ApplyResources(this.buttonFindExportPath, "buttonFindExportPath");
             this.buttonFindExportPath.Name = "buttonFindExportPath";
             this.buttonFindExportPath.Click += new System.EventHandler(this.buttonFindExportPath_Click);
             // 
             // buttonFindBackupPath
-            //
+            // 
             resources.ApplyResources(this.buttonFindBackupPath, "buttonFindBackupPath");
             this.buttonFindBackupPath.Name = "buttonFindBackupPath";
             this.buttonFindBackupPath.Click += new System.EventHandler(this.buttonFindBackupPath_Click);
@@ -143,11 +141,11 @@ namespace OpenCBS.GUI.Configuration
             // saveDiag
             // 
             this.saveDiag.DefaultExt = "udl";
-            this.saveDiag.FileName = "octopus.udl";
+            this.saveDiag.FileName = "opencbs.udl";
             resources.ApplyResources(this.saveDiag, "saveDiag");
             // 
             // groupBox4
-            //
+            // 
             this.groupBox4.Controls.Add(this.rbTadjik);
             this.groupBox4.Controls.Add(this.pictureBox5);
             this.groupBox4.Controls.Add(this.rbKyrgyz);
@@ -242,28 +240,19 @@ namespace OpenCBS.GUI.Configuration
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
             // 
-            // llHelp
-            // 
-            resources.ApplyResources(this.llHelp, "llHelp");
-            this.llHelp.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.llHelp.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.llHelp.Name = "llHelp";
-            this.llHelp.TabStop = true;
-            this.llHelp.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llHelp_LinkClicked);
-            // 
             // cbAutoUpdate
-            //
+            // 
             resources.ApplyResources(this.cbAutoUpdate, "cbAutoUpdate");
             this.cbAutoUpdate.Name = "cbAutoUpdate";
             // 
             // buttonSave
-            //
+            // 
             resources.ApplyResources(this.buttonSave, "buttonSave");
             this.buttonSave.Name = "buttonSave";
             this.buttonSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnClose
-            //
+            // 
             resources.ApplyResources(this.btnClose, "btnClose");
             this.btnClose.Name = "btnClose";
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
@@ -272,7 +261,6 @@ namespace OpenCBS.GUI.Configuration
             // 
             resources.ApplyResources(this, "$this");
             this.Controls.Add(this.cbAutoUpdate);
-            this.Controls.Add(this.llHelp);
             this.Controls.Add(this.buttonSave);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.btnClose);

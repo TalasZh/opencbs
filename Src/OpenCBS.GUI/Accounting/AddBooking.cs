@@ -98,7 +98,7 @@ namespace OpenCBS.GUI.Accounting
                     btnSave.Enabled = false;
 
                     ServicesProvider.GetInstance().GetAccountingServices().BookManualEntry(booking, User.CurrentUser);
-                    ServicesProvider.GetInstance().GetEventProcessorServices().LogUser(OUserEvents.OctopusUserStandardBookingEvent, textBoxDescription.Text, User.CurrentUser.Id);
+                    ServicesProvider.GetInstance().GetEventProcessorServices().LogUser(OUserEvents.UserStandardBookingEvent, textBoxDescription.Text, User.CurrentUser.Id);
                     cbBookings.Text = "";
                     textBoxAmount.Text = "";
                     textBoxDescription.Text = "";

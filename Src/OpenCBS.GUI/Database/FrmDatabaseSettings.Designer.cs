@@ -36,7 +36,6 @@ namespace OpenCBS.GUI.Database
             this.btnGetServersList = new System.Windows.Forms.Button();
             this.lblInstallInstructionSQLServer = new System.Windows.Forms.Label();
             this.lblHelpServerName = new System.Windows.Forms.Label();
-            this.linkLabelSQLServerInstallInstruction = new System.Windows.Forms.LinkLabel();
             this.cbServerName = new System.Windows.Forms.ComboBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.lblPassword = new System.Windows.Forms.Label();
@@ -56,10 +55,10 @@ namespace OpenCBS.GUI.Database
             this.btnCreateNewDatabase = new System.Windows.Forms.Button();
             this.lblDatabases = new System.Windows.Forms.Label();
             this.listViewDatabases = new System.Windows.Forms.ListView();
-            this.columnHeaderName = new System.Windows.Forms.ColumnHeader();
-            this.columnHeaderBranchCode = new System.Windows.Forms.ColumnHeader();
-            this.columnHeaderVersion = new System.Windows.Forms.ColumnHeader();
-            this.columnHeaderSize = new System.Windows.Forms.ColumnHeader();
+            this.columnHeaderName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderBranchCode = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderVersion = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderSize = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.groupBoxSaveSettings = new System.Windows.Forms.GroupBox();
             this.btnDatabaseConnection = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
@@ -104,12 +103,11 @@ namespace OpenCBS.GUI.Database
             this.SuspendLayout();
             // 
             // groupBoxSQLServerConnection
-            //
+            // 
             this.groupBoxSQLServerConnection.Controls.Add(this.btnDefault);
             this.groupBoxSQLServerConnection.Controls.Add(this.btnGetServersList);
             this.groupBoxSQLServerConnection.Controls.Add(this.lblInstallInstructionSQLServer);
             this.groupBoxSQLServerConnection.Controls.Add(this.lblHelpServerName);
-            this.groupBoxSQLServerConnection.Controls.Add(this.linkLabelSQLServerInstallInstruction);
             this.groupBoxSQLServerConnection.Controls.Add(this.cbServerName);
             this.groupBoxSQLServerConnection.Controls.Add(this.txtPassword);
             this.groupBoxSQLServerConnection.Controls.Add(this.lblPassword);
@@ -122,13 +120,13 @@ namespace OpenCBS.GUI.Database
             this.groupBoxSQLServerConnection.TabStop = false;
             // 
             // btnDefault
-            //
+            // 
             resources.ApplyResources(this.btnDefault, "btnDefault");
             this.btnDefault.Name = "btnDefault";
             this.btnDefault.Click += new System.EventHandler(this.buttonDefault_Click);
             // 
             // btnGetServersList
-            //
+            // 
             resources.ApplyResources(this.btnGetServersList, "btnGetServersList");
             this.btnGetServersList.Name = "btnGetServersList";
             this.btnGetServersList.Click += new System.EventHandler(this.buttonGetServersList_Click);
@@ -142,13 +140,6 @@ namespace OpenCBS.GUI.Database
             // 
             resources.ApplyResources(this.lblHelpServerName, "lblHelpServerName");
             this.lblHelpServerName.Name = "lblHelpServerName";
-            // 
-            // linkLabelSQLServerInstallInstruction
-            // 
-            resources.ApplyResources(this.linkLabelSQLServerInstallInstruction, "linkLabelSQLServerInstallInstruction");
-            this.linkLabelSQLServerInstallInstruction.Name = "linkLabelSQLServerInstallInstruction";
-            this.linkLabelSQLServerInstallInstruction.TabStop = true;
-            this.linkLabelSQLServerInstallInstruction.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelSQLServerInstallInstruction_LinkClicked);
             // 
             // cbServerName
             // 
@@ -190,7 +181,7 @@ namespace OpenCBS.GUI.Database
             this.lblFindDBInfo.Name = "lblFindDBInfo";
             // 
             // groupBoxSQLSettings
-            //
+            // 
             this.groupBoxSQLSettings.Controls.Add(this.btnSQLServerChangeSettings);
             this.groupBoxSQLSettings.Controls.Add(this.lblSQLServerSettings);
             resources.ApplyResources(this.groupBoxSQLSettings, "groupBoxSQLSettings");
@@ -209,7 +200,7 @@ namespace OpenCBS.GUI.Database
             this.lblSQLServerSettings.Name = "lblSQLServerSettings";
             // 
             // groupBoxDatabaseManagement
-            //
+            // 
             this.groupBoxDatabaseManagement.Controls.Add(this.lblDetectDatabasesInProgress);
             this.groupBoxDatabaseManagement.Controls.Add(this.btnSQLServerSettingsShowDetails);
             this.groupBoxDatabaseManagement.Controls.Add(this.btnRestore);
@@ -298,7 +289,7 @@ namespace OpenCBS.GUI.Database
             resources.ApplyResources(this.columnHeaderSize, "columnHeaderSize");
             // 
             // groupBoxSaveSettings
-            //
+            // 
             this.groupBoxSaveSettings.Controls.Add(this.btnDatabaseConnection);
             this.groupBoxSaveSettings.Controls.Add(this.btnExit);
             this.groupBoxSaveSettings.Controls.Add(this.lblResultMessage);
@@ -314,9 +305,9 @@ namespace OpenCBS.GUI.Database
             this.btnDatabaseConnection.Click += new System.EventHandler(this.btnDatabaseConnection_Click);
             // 
             // btnExit
-            //
-            resources.ApplyResources(this.btnExit, "btnExit");
+            // 
             this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            resources.ApplyResources(this.btnExit, "btnExit");
             this.btnExit.Name = "btnExit";
             // 
             // lblResultMessage
@@ -340,9 +331,9 @@ namespace OpenCBS.GUI.Database
             this.tabControlDatabase.SelectedIndex = 0;
             // 
             // tabPageSQLServerConnection
-            //
-            resources.ApplyResources(this.tabPageSQLServerConnection, "tabPageSQLServerConnection");
+            // 
             this.tabPageSQLServerConnection.Controls.Add(this.tableLayoutPanelServerSettings);
+            resources.ApplyResources(this.tabPageSQLServerConnection, "tabPageSQLServerConnection");
             this.tabPageSQLServerConnection.Name = "tabPageSQLServerConnection";
             // 
             // tableLayoutPanelServerSettings
@@ -352,9 +343,9 @@ namespace OpenCBS.GUI.Database
             this.tableLayoutPanelServerSettings.Name = "tableLayoutPanelServerSettings";
             // 
             // tabPageSQLServerSettings
-            //
-            resources.ApplyResources(this.tabPageSQLServerSettings, "tabPageSQLServerSettings");
+            // 
             this.tabPageSQLServerSettings.Controls.Add(this.tableLayoutPanelSQLSettings);
+            resources.ApplyResources(this.tabPageSQLServerSettings, "tabPageSQLServerSettings");
             this.tabPageSQLServerSettings.Name = "tabPageSQLServerSettings";
             // 
             // tableLayoutPanelSQLSettings
@@ -470,8 +461,8 @@ namespace OpenCBS.GUI.Database
             // 
             this.bWDatabaseUpdate.WorkerReportsProgress = true;
             this.bWDatabaseUpdate.DoWork += new System.ComponentModel.DoWorkEventHandler(this.bWDatabaseUpdate_DoWork);
-            this.bWDatabaseUpdate.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.bWDatabaseUpdate_RunWorkerCompleted);
             this.bWDatabaseUpdate.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.bWDatabaseUpdate_ProgressChanged);
+            this.bWDatabaseUpdate.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.bWDatabaseUpdate_RunWorkerCompleted);
             // 
             // FrmDatabaseSettings
             // 
@@ -516,7 +507,6 @@ namespace OpenCBS.GUI.Database
         private System.Windows.Forms.TextBox txtLoginName;
         private System.Windows.Forms.Label lblLoginName;
         private System.Windows.Forms.Label lblServerName;
-        private System.Windows.Forms.LinkLabel linkLabelSQLServerInstallInstruction;
         private System.Windows.Forms.GroupBox groupBoxSQLSettings;
         private System.Windows.Forms.Button btnSQLServerChangeSettings;
         private System.Windows.Forms.Label lblSQLServerSettings;

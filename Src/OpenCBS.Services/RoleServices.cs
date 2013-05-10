@@ -38,7 +38,7 @@ namespace OpenCBS.Services
         /// Delete the selected role
         /// </summary>
         /// <param name="pRoleName"></param>
-        /// <returns>true/false or throw an Octopus's Exception</returns>
+        /// <returns>true/false or throw an exception</returns>
         public bool DeleteRole(string pRoleName)
         {
             //IF role is null 
@@ -48,9 +48,6 @@ namespace OpenCBS.Services
             if(_roleManager.SelectUserForThisRole(pRoleName) > 0)
                 throw new OpenCbsRoleDeleteException(OpenCbsRoleDeleteExceptionsEnum.RoleHasUsers);
             
-            //if (pRole.Id == 1)
-            //    throw new OpenCbsRoleDeleteException(OctopusRoleDeleteExceptionEnum.AdministratorRole);
-
             _roleManager.DeleteRole(pRoleName);
             return true;
         }

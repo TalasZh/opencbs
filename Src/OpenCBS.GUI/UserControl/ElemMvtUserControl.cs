@@ -285,7 +285,7 @@ namespace OpenCBS.GUI.UserControl
                                       };
 
                 ServicesProvider.GetInstance().GetAccountingServices().BookManualEntry(booking, User.CurrentUser);
-                ServicesProvider.GetInstance().GetEventProcessorServices().LogUser(OUserEvents.OctopusUserManualEntryEvent, txbDescription.Text, User.CurrentUser.Id);
+                ServicesProvider.GetInstance().GetEventProcessorServices().LogUser(OUserEvents.UserManualEntryEvent, txbDescription.Text, User.CurrentUser.Id);
                 
                 _deleteIsPossible = false;
 

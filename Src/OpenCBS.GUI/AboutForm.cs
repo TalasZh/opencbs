@@ -1,10 +1,7 @@
 ﻿// LICENSE PLACEHOLDER
 
-using System;
 using System.ComponentModel;
 using System.Windows.Forms;
-using System.Drawing;
-using OpenCBS.Shared.Settings;
 
 namespace OpenCBS.GUI
 {
@@ -13,7 +10,7 @@ namespace OpenCBS.GUI
 	/// </summary>
 	public class AboutForm : Form
     {
-        private PictureBox pictureBoxAboutOctopus;
+        private PictureBox aboutPictureBox;
         private IContainer components;
 
 		public AboutForm()
@@ -45,37 +42,32 @@ namespace OpenCBS.GUI
 		private void InitializeComponent()
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AboutForm));
-            this.pictureBoxAboutOctopus = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAboutOctopus)).BeginInit();
+            this.aboutPictureBox = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.aboutPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBoxAboutOctopus
+            // aboutPictureBox
             // 
-            resources.ApplyResources(this.pictureBoxAboutOctopus, "pictureBoxAboutOctopus");
-            this.pictureBoxAboutOctopus.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxAboutOctopus.BackgroundImage = global::OpenCBS.GUI.Properties.Resources.LOGO;
-            this.pictureBoxAboutOctopus.Name = "pictureBoxAboutOctopus";
-            this.pictureBoxAboutOctopus.TabStop = false;
+            resources.ApplyResources(this.aboutPictureBox, "aboutPictureBox");
+            this.aboutPictureBox.BackColor = System.Drawing.Color.Transparent;
+            this.aboutPictureBox.BackgroundImage = global::OpenCBS.GUI.Properties.Resources.LOGO;
+            this.aboutPictureBox.Name = "aboutPictureBox";
+            this.aboutPictureBox.TabStop = false;
             // 
             // AboutForm
             // 
             resources.ApplyResources(this, "$this");
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.pictureBoxAboutOctopus);
+            this.Controls.Add(this.aboutPictureBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "AboutForm";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAboutOctopus)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aboutPictureBox)).EndInit();
             this.ResumeLayout(false);
 
 		}
 
 		#endregion
-
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            System.Diagnostics.Process.Start("http://www.octopusnetwork.org");
-        }
 	}
 }

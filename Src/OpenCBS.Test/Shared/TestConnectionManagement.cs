@@ -26,7 +26,7 @@ namespace OpenCBS.Test.Shared
 		[Test]
 			public void TestIfConenctionCorrectlyGetWhenConnectWithoutRegistry()
 		{
-			connectionManager = ConnectionManager.GetInstance("octopus_user", "octopus", "octopus", "octopus_test","30");
+			connectionManager = ConnectionManager.GetInstance("sa", "opencbs", "(local)", "opencbs_test","30");
 			Assert.AreEqual(ConnectionState.Open,connectionManager.SqlConnection.State);
 			connectionManager.CloseConnection();
 		}

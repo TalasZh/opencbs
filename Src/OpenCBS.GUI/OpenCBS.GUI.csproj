@@ -436,12 +436,6 @@
     <Compile Include="Configuration\AddCustomizableFields.Designer.cs">
       <DependentUpon>AddCustomizableFields.cs</DependentUpon>
     </Compile>
-    <Compile Include="Configuration\ExtensionManagerForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Configuration\ExtensionManagerForm.Designer.cs">
-      <DependentUpon>ExtensionManagerForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="Configuration\TellersForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -843,12 +837,6 @@
     <Compile Include="MFI\frmMFI.Designer.cs">
       <DependentUpon>frmMFI.cs</DependentUpon>
     </Compile>
-    <Compile Include="MyInformationForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MyInformationForm.Designer.cs">
-      <DependentUpon>MyInformationForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="Search\SearchCreditContractForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -944,16 +932,6 @@
     </Compile>
     <Compile Include="Configuration\PublicHolidaysWaitingForm.cs">
       <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Service References\AvailableReport\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
-    <Compile Include="Service References\SoftwareUpdate\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
     <Compile Include="Tools\DatabaseMaintenance.cs">
       <SubType>Form</SubType>
@@ -1574,15 +1552,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Configuration\AddCustomizableFields.ru-RU.resx">
       <DependentUpon>AddCustomizableFields.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Configuration\ExtensionManagerForm.fr.resx">
-      <DependentUpon>ExtensionManagerForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Configuration\ExtensionManagerForm.resx">
-      <DependentUpon>ExtensionManagerForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Configuration\ExtensionManagerForm.ru-RU.resx">
-      <DependentUpon>ExtensionManagerForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Configuration\FrmEconomicActivity.es.resx">
       <DependentUpon>FrmEconomicActivity.cs</DependentUpon>
@@ -2355,12 +2324,6 @@
     <EmbeddedResource Include="Products\FrmAvalaibleLoanProducts.ru-RU.resx">
       <DependentUpon>FrmAvalaibleLoanProducts.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MyInformationForm.es-ES.resx">
-      <DependentUpon>MyInformationForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MyInformationForm.pt.resx">
-      <DependentUpon>MyInformationForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Report Browser\RepaymentCollectionSheetForm.es-ES.resx">
       <DependentUpon>RepaymentCollectionSheetForm.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -2610,18 +2573,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MFI\frmMFI.resx">
       <DependentUpon>frmMFI.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MyInformationForm.fr.resx">
-      <DependentUpon>MyInformationForm.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MyInformationForm.resx">
-      <DependentUpon>MyInformationForm.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MyInformationForm.ru-RU.resx">
-      <DependentUpon>MyInformationForm.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Report Browser\RepaymentCollectionSheetForm.ru-RU.resx">
@@ -3323,19 +3274,6 @@
     <Content Include="Resources\theme1.1_bouton_up_small.png" />
     <Content Include="Resources\tj_small.png" />
     <None Include="Resources\uparrow.png" />
-    <None Include="Service References\AvailableReport\GuidService.wsdl" />
-    <None Include="Service References\SoftwareUpdate\configuration91.svcinfo" />
-    <None Include="Service References\SoftwareUpdate\configuration.svcinfo" />
-    <None Include="Service References\SoftwareUpdate\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
-    <None Include="Service References\AvailableReport\configuration91.svcinfo" />
-    <None Include="Service References\AvailableReport\configuration.svcinfo" />
-    <None Include="Service References\AvailableReport\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
     <None Include="Resources\user_gray.png" />
     <Content Include="Template\cover.css" />
     <Content Include="Template\cover.js" />
@@ -3643,7 +3581,6 @@
     <None Include="Resources\ru_small.png" />
     <None Include="Resources\en_small.png" />
     <None Include="Resources\fr_small.png" />
-    <None Include="Service References\SoftwareUpdate\SoftwareUpdate.wsdl" />
     <None Include="setup.bat">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
@@ -3899,10 +3836,6 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadataStorage Include="Service References\AvailableReport\" />
-    <WCFMetadataStorage Include="Service References\SoftwareUpdate\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

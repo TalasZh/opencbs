@@ -531,10 +531,10 @@
   <data name="mnuWindow.Text" xml:space="preserve">
     <value>Window</value>
   </data>
-  <data name="menuItemAboutOctopus.Size" type="System.Drawing.Size, System.Drawing">
-    <value>103, 22</value>
+  <data name="aboutMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
   </data>
-  <data name="menuItemAboutOctopus.Text" xml:space="preserve">
+  <data name="aboutMenuItem.Text" xml:space="preserve">
     <value>About</value>
   </data>
   <data name="mnuHelp.Size" type="System.Drawing.Size, System.Drawing">
@@ -551,7 +551,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAB0
-        CwAAAk1TRnQBSQFMAgEBBQEAAdABDQHQAQ0BEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        CwAAAk1TRnQBSQFMAgEBBQEAAdgBDQHYAQ0BEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
         AwABQAMAASADAAEBAQABCAYAAQgYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
         AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
         AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
@@ -1213,7 +1213,7 @@
     <value>splitter6</value>
   </data>
   <data name="&gt;&gt;splitter6.Type" xml:space="preserve">
-    <value>OpenCBS.GUI.UserControl.CollapsibleSplitter, OpenCBS.GUI, Version=1.1.1.25044, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.CollapsibleSplitter, OpenCBS.GUI, Version=13.5.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;splitter6.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1587,10 +1587,10 @@
   <data name="&gt;&gt;mnuHelp.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;menuItemAboutOctopus.Name" xml:space="preserve">
-    <value>menuItemAboutOctopus</value>
+  <data name="&gt;&gt;aboutMenuItem.Name" xml:space="preserve">
+    <value>aboutMenuItem</value>
   </data>
-  <data name="&gt;&gt;menuItemAboutOctopus.Type" xml:space="preserve">
+  <data name="&gt;&gt;aboutMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;imageListAlert.Name" xml:space="preserve">
@@ -1753,6 +1753,6 @@
     <value>LotrasmicMainWindowForm</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>OpenCBS.GUI.UserControl.SweetBaseForm, OpenCBS.GUI, Version=1.1.1.25044, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetBaseForm, OpenCBS.GUI, Version=13.5.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
 </root>

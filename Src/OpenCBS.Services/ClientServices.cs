@@ -30,7 +30,7 @@ namespace OpenCBS.Services
     {
         private readonly ClientManager _clientManagement;
 
-        private static readonly string TESTDB = "octopus_test";
+        private static readonly string TESTDB = "opencbs_test";
         private readonly ConnectionManager _connectionManager;
         private readonly int ERRORVALUE = -1;
         private readonly ApplicationSettings _dataParam;

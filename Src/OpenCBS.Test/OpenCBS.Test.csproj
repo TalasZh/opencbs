@@ -188,6 +188,7 @@
     <Compile Include="Manager\Accounting\TestProvisioningRuleManager.cs" />
     <Compile Include="Manager\Database\TestDatabaseComparerManager.cs" />
     <Compile Include="Manager\TestSavingsManager.cs" />
+    <Compile Include="Services\TestExchangeRateServices.cs" />
     <Compile Include="TestSetup.cs" />
     <Compile Include="Services\Accounting\TestAccountingRuleServices.cs" />
     <Compile Include="Services\Accounting\TestAccountingServices.cs" />
@@ -249,7 +250,6 @@
     </Compile>
     <Compile Include="Manager\Events\TestSavingEventManager.cs" />
     <Compile Include="Services\Accounting\TestStandardBookingServices.cs" />
-    <Compile Include="ExceptionsHandler\TestOctopusExceptionsHelper.cs" />
     <Compile Include="Manager\BaseManagerTest.cs" />
     <Compile Include="Manager\DataHelper.cs">
       <SubType>Code</SubType>

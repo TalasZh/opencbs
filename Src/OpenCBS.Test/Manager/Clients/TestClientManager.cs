@@ -885,7 +885,7 @@ namespace OpenCBS.Test.Manager
 
 		private static bool SelectCurrentlyIn(int personId)
 		{
-			ConnectionManager cm = ConnectionManager.GetInstance("Octopus_test");
+			ConnectionManager cm = ConnectionManager.GetInstance("opencbs_test");
 
             OpenCbsCommand select = new OpenCbsCommand("SELECT currently_in FROM PersonGroupBelonging WHERE person_id = " + personId,
 				cm.SqlConnection);

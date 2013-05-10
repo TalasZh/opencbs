@@ -173,7 +173,7 @@ namespace OpenCBS.GUI.Configuration
             }
             else
             {
-                FrmSaveFile frm = new FrmSaveFile("Settings export", null, "Octopus.Settings");
+                FrmSaveFile frm = new FrmSaveFile("Settings export", null, "OpenCBS.Settings");
                 DialogResult dresult =  frm.ShowDialog();
                 if (dresult == DialogResult.OK)
                 {

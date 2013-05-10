@@ -29,7 +29,7 @@ namespace OpenCBS.Test.Shared
         [Test]
         public void TestApplyRegularExpressions1()
         {
-            string fileName = @"D:\Octopus\DatabaseUpdate\CreateDatabase_v1.0.10.sql";
+            string fileName = @"D:\OpenCBS\DatabaseUpdate\CreateDatabase_v1.0.10.sql";
             Regex regExp = new Regex(@"\D+(\d+)\.(\d+)\.(\d+)\.sql");
             Match match = regExp.Match(fileName);
             

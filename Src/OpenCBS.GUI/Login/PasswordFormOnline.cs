@@ -10,16 +10,10 @@ using OpenCBS.Shared.Settings;
 
 namespace OpenCBS.GUI
 {
-	/// <summary>
-	/// Description r�sum�e de PasswordForm.
-	/// </summary>
 	public class PasswordFormOnline : Form
 	{
 		private string _userName;
 	    private string _password;
-		/// <summary>
-		/// Variable n�cessaire au concepteur.
-		/// </summary>
         private System.ComponentModel.Container components = null;
 		private System.Windows.Forms.Panel panel3;
 		private System.Windows.Forms.Button buttonOK;
@@ -28,8 +22,7 @@ namespace OpenCBS.GUI
 		private System.Windows.Forms.Label labelUserName;
 		private System.Windows.Forms.Label labelPassword;
 		private System.Windows.Forms.Button buttonExit;
-		private System.Windows.Forms.Label labelVersion;
-		private System.Windows.Forms.LinkLabel llOctopusWeb;
+        private System.Windows.Forms.Label labelVersion;
         private Label label1;
         private TextBox textBoxAccountName;
         private Label labelAccountName;
@@ -91,7 +84,6 @@ namespace OpenCBS.GUI
             this.labelUserName = new System.Windows.Forms.Label();
             this.labelPassword = new System.Windows.Forms.Label();
             this.buttonExit = new System.Windows.Forms.Button();
-            this.llOctopusWeb = new System.Windows.Forms.LinkLabel();
             this.pictureBox = new System.Windows.Forms.PictureBox();
             this.linkLabelHide = new System.Windows.Forms.LinkLabel();
             this.panel3.SuspendLayout();
@@ -115,7 +107,6 @@ namespace OpenCBS.GUI
             this.panel3.Controls.Add(this.labelUserName);
             this.panel3.Controls.Add(this.labelPassword);
             this.panel3.Controls.Add(this.buttonExit);
-            this.panel3.Controls.Add(this.llOctopusWeb);
             this.panel3.Controls.Add(this.pictureBox);
             this.panel3.Controls.Add(this.linkLabelHide);
             resources.ApplyResources(this.panel3, "panel3");
@@ -235,14 +226,6 @@ namespace OpenCBS.GUI
             this.buttonExit.Name = "buttonExit";
             this.buttonExit.UseVisualStyleBackColor = false;
             this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
-            // 
-            // llOctopusWeb
-            // 
-            resources.ApplyResources(this.llOctopusWeb, "llOctopusWeb");
-            this.llOctopusWeb.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.llOctopusWeb.Name = "llOctopusWeb";
-            this.llOctopusWeb.TabStop = true;
-            this.llOctopusWeb.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llOctopusWeb_LinkClicked);
             // 
             // pictureBox
             // 
@@ -385,11 +368,6 @@ namespace OpenCBS.GUI
 
 		    if (_password != null)
 		        textBoxPassword.Text = _password;
-		}
-
-		private void llOctopusWeb_LinkClicked(object sender, System.Windows.Forms.LinkLabelLinkClickedEventArgs e)
-		{
-			System.Diagnostics.Process.Start("http://www.octopusnetwork.org");
 		}
 
         private void _showConfiguration()

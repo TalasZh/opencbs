@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btnDefault.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 9.75pt</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btnDefault.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -142,7 +142,7 @@
     <value>btnDefault</value>
   </data>
   <data name="&gt;&gt;btnDefault.Type" xml:space="preserve">
-    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnDefault.Parent" xml:space="preserve">
     <value>groupBoxSQLServerConnection</value>
@@ -172,7 +172,7 @@
     <value>btnGetServersList</value>
   </data>
   <data name="&gt;&gt;btnGetServersList.Type" xml:space="preserve">
-    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnGetServersList.Parent" xml:space="preserve">
     <value>groupBoxSQLServerConnection</value>
@@ -240,33 +240,6 @@
   <data name="&gt;&gt;lblHelpServerName.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="linkLabelSQLServerInstallInstruction.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="linkLabelSQLServerInstallInstruction.Location" type="System.Drawing.Point, System.Drawing">
-    <value>545, 147</value>
-  </data>
-  <data name="linkLabelSQLServerInstallInstruction.Size" type="System.Drawing.Size, System.Drawing">
-    <value>146, 13</value>
-  </data>
-  <data name="linkLabelSQLServerInstallInstruction.TabIndex" type="System.Int32, mscorlib">
-    <value>32</value>
-  </data>
-  <data name="linkLabelSQLServerInstallInstruction.Text" xml:space="preserve">
-    <value>SQLServer Install Instructions</value>
-  </data>
-  <data name="&gt;&gt;linkLabelSQLServerInstallInstruction.Name" xml:space="preserve">
-    <value>linkLabelSQLServerInstallInstruction</value>
-  </data>
-  <data name="&gt;&gt;linkLabelSQLServerInstallInstruction.Type" xml:space="preserve">
-    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;linkLabelSQLServerInstallInstruction.Parent" xml:space="preserve">
-    <value>groupBoxSQLServerConnection</value>
-  </data>
-  <data name="&gt;&gt;linkLabelSQLServerInstallInstruction.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
   <data name="cbServerName.Location" type="System.Drawing.Point, System.Drawing">
     <value>119, 51</value>
   </data>
@@ -289,7 +262,7 @@
     <value>groupBoxSQLServerConnection</value>
   </data>
   <data name="&gt;&gt;cbServerName.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>4</value>
   </data>
   <data name="txtPassword.Location" type="System.Drawing.Point, System.Drawing">
     <value>390, 115</value>
@@ -316,7 +289,7 @@
     <value>groupBoxSQLServerConnection</value>
   </data>
   <data name="&gt;&gt;txtPassword.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>5</value>
   </data>
   <data name="lblPassword.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt</value>
@@ -349,7 +322,7 @@
     <value>groupBoxSQLServerConnection</value>
   </data>
   <data name="&gt;&gt;lblPassword.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>6</value>
   </data>
   <data name="txtLoginName.Location" type="System.Drawing.Point, System.Drawing">
     <value>119, 115</value>
@@ -373,7 +346,7 @@
     <value>groupBoxSQLServerConnection</value>
   </data>
   <data name="&gt;&gt;txtLoginName.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>7</value>
   </data>
   <data name="lblLoginName.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt</value>
@@ -406,7 +379,7 @@
     <value>groupBoxSQLServerConnection</value>
   </data>
   <data name="&gt;&gt;lblLoginName.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>8</value>
   </data>
   <data name="lblServerName.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt</value>
@@ -439,7 +412,7 @@
     <value>groupBoxSQLServerConnection</value>
   </data>
   <data name="&gt;&gt;lblServerName.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>9</value>
   </data>
   <data name="lblFindDBInfo.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -469,7 +442,7 @@
     <value>groupBoxSQLServerConnection</value>
   </data>
   <data name="&gt;&gt;lblFindDBInfo.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>10</value>
   </data>
   <data name="groupBoxSQLServerConnection.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -517,7 +490,7 @@
     <value>btnSQLServerChangeSettings</value>
   </data>
   <data name="&gt;&gt;btnSQLServerChangeSettings.Type" xml:space="preserve">
-    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnSQLServerChangeSettings.Parent" xml:space="preserve">
     <value>groupBoxSQLSettings</value>
@@ -589,7 +562,7 @@
     <value>123, 97</value>
   </data>
   <data name="lblDetectDatabasesInProgress.Size" type="System.Drawing.Size, System.Drawing">
-    <value>308, 17</value>
+    <value>267, 17</value>
   </data>
   <data name="lblDetectDatabasesInProgress.TabIndex" type="System.Int32, mscorlib">
     <value>39</value>
@@ -631,7 +604,7 @@
     <value>btnSQLServerSettingsShowDetails</value>
   </data>
   <data name="&gt;&gt;btnSQLServerSettingsShowDetails.Type" xml:space="preserve">
-    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnSQLServerSettingsShowDetails.Parent" xml:space="preserve">
     <value>groupBoxDatabaseManagement</value>
@@ -661,7 +634,7 @@
     <value>btnRestore</value>
   </data>
   <data name="&gt;&gt;btnRestore.Type" xml:space="preserve">
-    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnRestore.Parent" xml:space="preserve">
     <value>groupBoxDatabaseManagement</value>
@@ -691,7 +664,7 @@
     <value>btnBackup</value>
   </data>
   <data name="&gt;&gt;btnBackup.Type" xml:space="preserve">
-    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnBackup.Parent" xml:space="preserve">
     <value>groupBoxDatabaseManagement</value>
@@ -721,7 +694,7 @@
     <value>btnSetAsDefault</value>
   </data>
   <data name="&gt;&gt;btnSetAsDefault.Type" xml:space="preserve">
-    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnSetAsDefault.Parent" xml:space="preserve">
     <value>groupBoxDatabaseManagement</value>
@@ -751,7 +724,7 @@
     <value>btnCreateNewDatabase</value>
   </data>
   <data name="&gt;&gt;btnCreateNewDatabase.Type" xml:space="preserve">
-    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnCreateNewDatabase.Parent" xml:space="preserve">
     <value>groupBoxDatabaseManagement</value>
@@ -883,7 +856,7 @@
     <value>btnDatabaseConnection</value>
   </data>
   <data name="&gt;&gt;btnDatabaseConnection.Type" xml:space="preserve">
-    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnDatabaseConnection.Parent" xml:space="preserve">
     <value>groupBoxSaveSettings</value>
@@ -913,7 +886,7 @@
     <value>btnExit</value>
   </data>
   <data name="&gt;&gt;btnExit.Type" xml:space="preserve">
-    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnExit.Parent" xml:space="preserve">
     <value>groupBoxSaveSettings</value>
@@ -970,7 +943,7 @@
     <value>btnSave</value>
   </data>
   <data name="&gt;&gt;btnSave.Type" xml:space="preserve">
-    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnSave.Parent" xml:space="preserve">
     <value>groupBoxSaveSettings</value>
@@ -1150,7 +1123,7 @@
     <value>btnSQLDatabaseSettingsUpgrade</value>
   </data>
   <data name="&gt;&gt;btnSQLDatabaseSettingsUpgrade.Type" xml:space="preserve">
-    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnSQLDatabaseSettingsUpgrade.Parent" xml:space="preserve">
     <value>groupBoxSQLDatabaseSettings</value>
@@ -1180,7 +1153,7 @@
     <value>btnSQLDatabaseSettingsChangeName</value>
   </data>
   <data name="&gt;&gt;btnSQLDatabaseSettingsChangeName.Type" xml:space="preserve">
-    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnSQLDatabaseSettingsChangeName.Parent" xml:space="preserve">
     <value>groupBoxSQLDatabaseSettings</value>
@@ -1297,7 +1270,7 @@
     <value>btnContinue</value>
   </data>
   <data name="&gt;&gt;btnContinue.Type" xml:space="preserve">
-    <value>OpenCBS.GUI.UserControl.SweetButton, OpenCBS.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnContinue.Parent" xml:space="preserve">
     <value>groupBoxSQLDatabaseStructure</value>
@@ -1315,7 +1288,7 @@
     <value>206, 48</value>
   </data>
   <data name="lblDatabaseSettingsMessage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 17</value>
+    <value>337, 17</value>
   </data>
   <data name="lblDatabaseSettingsMessage.TabIndex" type="System.Int32, mscorlib">
     <value>40</value>
@@ -1582,6 +1555,6 @@
     <value>FrmDatabaseSettings</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>OpenCBS.GUI.UserControl.SweetBaseForm, OpenCBS.GUI, Version=1.1.1.28732, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetBaseForm, OpenCBS.GUI, Version=13.5.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
 </root>

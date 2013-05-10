@@ -275,11 +275,6 @@ namespace OpenCBS.GUI.Database
             listViewDatabases.Focus();
         }
 
-        private void linkLabelSQLServerInstallInstruction_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            System.Diagnostics.Process.Start("http://www.octopusnetwork.org/dmdocuments/Octopus_Installation_Guide-EN.pdf");
-        }
-
         private void FrmDatabaseSettings_FormClosed(object sender, FormClosedEventArgs e)
         {
             if(_exitApplicationIfClose) Environment.Exit(0);

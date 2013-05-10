@@ -18,7 +18,6 @@ namespace OpenCBS.Extensions
         private readonly string _extensionName;
         private readonly string _filePath;
         private readonly long _fileSize;
-        private readonly string _octopusVersion;
         private readonly Guid _guid;
         private readonly string _version;
         private readonly string _vendor;
@@ -28,7 +27,6 @@ namespace OpenCBS.Extensions
             _extensionName = extension.GetMeta("Name");
 
             Type extensionType = extension.GetType();
-            _octopusVersion = extension.GetMeta("OctopusVersion");
             _guid = extension.Guid;
             
             Assembly extensionAssembly = extensionType.Assembly;
@@ -47,11 +45,6 @@ namespace OpenCBS.Extensions
         public Guid Guid
         {
             get { return _guid; }
-        }
-
-        public string OctopusVersion
-        {
-            get { return _octopusVersion; }
         }
 
         public long FileSize

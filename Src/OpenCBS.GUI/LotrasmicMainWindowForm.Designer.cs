@@ -138,7 +138,7 @@ namespace OpenCBS.GUI
             this.menuItemDatabaseMaintenance = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuWindow = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuHelp = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuItemAboutOctopus = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.imageListAlert = new System.Windows.Forms.ImageList(this.components);
             this.mainMenu = new System.Windows.Forms.MenuStrip();
             this.mView = new System.Windows.Forms.ToolStripMenuItem();
@@ -591,15 +591,15 @@ namespace OpenCBS.GUI
             // mnuHelp
             // 
             this.mnuHelp.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuItemAboutOctopus});
+            this.aboutMenuItem});
             this.mnuHelp.Name = "mnuHelp";
             resources.ApplyResources(this.mnuHelp, "mnuHelp");
             // 
-            // menuItemAboutOctopus
+            // aboutMenuItem
             // 
-            this.menuItemAboutOctopus.Name = "menuItemAboutOctopus";
-            resources.ApplyResources(this.menuItemAboutOctopus, "menuItemAboutOctopus");
-            this.menuItemAboutOctopus.Click += new System.EventHandler(this.menuItemAboutOctopus_Click);
+            this.aboutMenuItem.Name = "aboutMenuItem";
+            resources.ApplyResources(this.aboutMenuItem, "aboutMenuItem");
+            this.aboutMenuItem.Click += new System.EventHandler(this.OnAboutMenuItemClick);
             // 
             // imageListAlert
             // 
@@ -1027,7 +1027,7 @@ namespace OpenCBS.GUI
         private System.ComponentModel.BackgroundWorker bwUserInformation;
         private ToolStripMenuItem fiscalYearToolStripMenuItem;
         private ToolStripMenuItem tellersToolStripMenuItem;
-        private ToolStripMenuItem menuItemAboutOctopus;
+        private ToolStripMenuItem aboutMenuItem;
 
 
     }

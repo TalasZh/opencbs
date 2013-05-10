@@ -118,15 +118,15 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="pictureBoxAboutOctopus.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="aboutPictureBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="pictureBoxAboutOctopus.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="aboutPictureBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 12</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="pictureBoxAboutOctopus.TabIndex" type="System.Int32, mscorlib">
+  <data name="aboutPictureBox.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
   <data name="$this.Text" xml:space="preserve">

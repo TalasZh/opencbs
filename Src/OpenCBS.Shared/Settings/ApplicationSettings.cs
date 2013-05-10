@@ -31,9 +31,6 @@ namespace OpenCBS.Shared.Settings
 
     public delegate void ParamChangedEventHandler(object sender, ParamChangedEventArgs e);
 
-    /// <summary>
-    /// Octopus general parameters.
-    /// </summary>
     [Serializable]
     public class ApplicationSettings
     {

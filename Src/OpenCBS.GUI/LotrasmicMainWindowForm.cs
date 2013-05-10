@@ -61,14 +61,13 @@ namespace OpenCBS.GUI
         {
             string folder = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
             Trace.AutoFlush = true;
-            Trace.WriteLine("Octopus has started");
+            Trace.WriteLine("Application has started");
         }
 
         private void DisplayWinFormDetails()
         {           
             _DisplayDetails();
             InitializeContractCurrencies();
-            _CheckForUpdate();
             InitAlerts();
         }
 
@@ -87,7 +86,7 @@ namespace OpenCBS.GUI
                         {
                             Teller.CurrentTeller = frm.Teller;
                             //tellerManagementToolStripMenuItem.Visible = true;
-                            ServicesProvider.GetInstance().GetEventProcessorServices().LogUser(OUserEvents.OctopusUserOpenTellerEvent,
+                            ServicesProvider.GetInstance().GetEventProcessorServices().LogUser(OUserEvents.UserOpenTellerEvent,
                                 Teller.CurrentTeller.Name + " opened", User.CurrentUser.Id);
                             ServicesProvider.GetInstance().GetEventProcessorServices().FireTellerEvent(frm.OpenOfDayAmountEvent);
 
@@ -113,148 +112,6 @@ namespace OpenCBS.GUI
             mnuChartOfAccounts.Click += mnuChartOfAccounts_Click;
         }
 
-        private void bwCheckVersion_DoWork(object sender, DoWorkEventArgs e)
-        {
-            try
-            {
-                Guid guid = (Guid) e.Argument;
-                string url = "http://www.octopusnetwork.org/info/getversion.php?guid=";
-                url += guid + "&version=" + TechnicalSettings.SoftwareVersion;
-                string buildNumber;
-                try
-                {
-                    StreamReader bn = new StreamReader(Path.Combine(Application.StartupPath, "BuildLabel.txt"));
-                    buildNumber = bn.ReadLine();
-                    if (string.IsNullOrEmpty(buildNumber)) buildNumber = "NA";
-                }
-                catch
-                {
-                    buildNumber = "debug";
-                }
-                url += "." + buildNumber;
-                HttpWebRequest request = (HttpWebRequest) WebRequest.Create(url);
-                request.Method = "GET";
-                request.UserAgent = "octopus";
-                request.Timeout = 20000;
-                WebResponse response = request.GetResponse();
-                StreamReader sr = new StreamReader(response.GetResponseStream(), System.Text.Encoding.UTF8);
-                string result = sr.ReadToEnd();
-                sr.Close();
-                response.Close();
-            }
-            catch (Exception error)
-            {
-                Debug.WriteLine(error.Message);
-            }
-        }
-
-        private void bwCheckVersionAtSourceForge_DoWork(object sender, DoWorkEventArgs e)
-        {
-            try
-            {
-                const string source = "http://sourceforge.net/projects/omfs/feed?filter=file";
-                //const string source = "http://www.octopusnetwork.org/version.html";
-                HttpWebRequest request = (HttpWebRequest)WebRequest.Create(source);
-                request.Method = "GET";
-                request.Timeout = 20000;
-                WebResponse response = request.GetResponse();
-                StreamReader sr = new StreamReader(response.GetResponseStream(), System.Text.Encoding.UTF8);
-                string result = sr.ReadToEnd();
-                sr.Close();
-                response.Close();
-
-                Re.Match m = Re.Regex.Match(result, @"<a\shref=""(.*)"">.*_(.*)\.msi<\/a\>", Re.RegexOptions.Multiline);
-                if (m.Success)
-                {
-                    string version = m.Groups[2].ToString();
-                    string url = "http://sourceforge.net" + m.Groups[1];
-                    e.Result = new object[] { version, url };
-                    return;
-                }
-                (sender as BackgroundWorker).CancelAsync();
-            }
-            catch (Exception error)
-            {
-                Debug.WriteLine(error.Message);
-                (sender as BackgroundWorker).CancelAsync();
-            }
-        }
-
-        private void bwCheckVersionAtSourceForge_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
-        {
-            if (e.Cancelled) return;
-            try
-            {
-                object[] result = e.Result as object[];
-                string version = result[0].ToString();
-                //string url = result[1].ToString();
-                string url = "http://wiki.octopusnetwork.org/display/Release/Home";
-                //int versionRemote = int.Parse(result[0].ToString().Replace(".", ""));
-                //int versionLocal = int.Parse(TechnicalSettings.SoftwareVersion.Replace("v", "").Replace(".", ""));
-
-                string remote = version;
-                string local = TechnicalSettings.SoftwareVersion.Replace("v", "");
-
-                if (remote.Length > local.Length)
-                    for (int i = 1; i <= remote.Length - local.Length; i++)
-                        local += ".0";
-                else
-                    for (int i = 1; i <= local.Length - remote.Length; i++)
-                        remote += ".0";
-
-                string[] versionNumbersRemote = remote.Split('.');
-                string[] versionNumbersLocal = local.Split('.');
-
-                bool show = false;
-                for (int i = 0; i < versionNumbersLocal.Length; i++)
-                {
-                    if (i < 2 && int.Parse(versionNumbersRemote[i]) < int.Parse(versionNumbersLocal[i]))
-                        return;
-                    if (int.Parse(versionNumbersRemote[i]) > int.Parse(versionNumbersLocal[i]))
-                    {
-                        show = true;
-                        break;
-                    }
-                }
-
-
-                if (show)
-                {
-                    nIUpdateAvailable.Visible = true;
-                    nIUpdateAvailable.Tag = url;
-                    nIUpdateAvailable.ShowBalloonTip(8000, string.Format("OMFS version {0} available", version),
-                        string.Format("Click here to download version {0} of\nOctopus Microfinance Suite.", version), ToolTipIcon.Info);
-                }
-            }
-            catch { }
-        }
-
-        private void _CheckForUpdate()
-        {
-            if (UserSettings.AutoUpdate)
-            {
-                Guid? guid = ServicesProvider.GetInstance().GetApplicationSettingsServices().GetGuid();
-                if (!guid.HasValue)
-                {
-                    Guid temp = Guid.NewGuid();
-                    ServicesProvider.GetInstance().GetApplicationSettingsServices().SetGuid(temp);
-                    guid = temp;
-                }
-                BackgroundWorker bw = new BackgroundWorker();
-                bw.WorkerSupportsCancellation = false;
-                bw.DoWork += bwCheckVersion_DoWork;
-                bw.RunWorkerAsync(guid);
-
-                #if !DEBUG
-                BackgroundWorker bwSF = new BackgroundWorker();
-                bwSF.WorkerSupportsCancellation = true;
-                bwSF.DoWork += bwCheckVersionAtSourceForge_DoWork;
-                bwSF.RunWorkerCompleted += bwCheckVersionAtSourceForge_RunWorkerCompleted;
-                bwSF.RunWorkerAsync();
-                #endif
-            }
-        }
-
         private void _DisplayDetails()
         {
             mainStatusBarLblUserName.Text = String.Format("{0} ({1})", User.CurrentUser.FirstName, User.CurrentUser.UserRole);
@@ -264,7 +121,7 @@ namespace OpenCBS.GUI
              
             //mainStatusBarLblUserName.ForeColor = Color.Red;
 
-            toolBarLblVersion.Text = String.Format("Octopus {0}", TechnicalSettings.SoftwareVersion);
+            toolBarLblVersion.Text = String.Format("OpenCBS {0}", TechnicalSettings.SoftwareVersion);
             if (TechnicalSettings.UseOnlineMode)
                 menuItemDatabaseControlPanel.Visible = false;
         }
@@ -315,79 +172,6 @@ namespace OpenCBS.GUI
         {
             MenuObject foundObject = _menuItems.Find(item => item == pText.Trim());
             return foundObject;
-        }
-
-        private  void DisplayUserInformationForm()
-        {
-           MyInformation myInformation = 
-                ServicesProvider.GetInstance().GetQuestionnaireServices().GetQuestionnaire();
-           if (myInformation==null)
-            {
-                var myInformationForm = new MyInformationForm();
-                    DialogResult dr = myInformationForm.ShowDialog(this);
-                if (dr ==DialogResult.Yes)
-                   Close();
-            }
-            else if (string.IsNullOrEmpty(myInformation.MfiName) ||
-                     string.IsNullOrEmpty(myInformation.Email) ||
-                     string.IsNullOrEmpty(myInformation.Country))
-            {
-                var myInformationForm = new MyInformationForm();
-                DialogResult dr = myInformationForm.ShowDialog(this);
-                if(dr==DialogResult.Yes)
-                    Close();
-            }
-            else if (!myInformation.IsSent)
-            {
-                bwUserInformation.DoWork += SendMfiInformation;
-                bwUserInformation.RunWorkerAsync();
-            }
-        }
-
-       private void SendMfiInformation(object o, DoWorkEventArgs eventArgs)
-        {
-            try
-            {
-                MyInformation myInformation =
-                         ServicesProvider.GetInstance().GetQuestionnaireServices().GetQuestionnaire();
-                
-                Guid? guid = ServicesProvider.GetInstance().GetApplicationSettingsServices().GetGuid();
-                string url = "http://www.octopusnetwork.org/info/questionnaire.php?guid=";
-                url += guid + "&version=" + TechnicalSettings.SoftwareVersion;
-                string buildNumber;
-                try
-                {
-                    StreamReader bn = new StreamReader(Path.Combine(Application.StartupPath, "BuildLabel.txt"));
-                    buildNumber = bn.ReadLine();
-                    if (string.IsNullOrEmpty(buildNumber)) buildNumber = "NA";
-                }
-                catch
-                {
-                    buildNumber = "debug";
-                }
-                url += "." + buildNumber;
-                url += "&Name=" + myInformation.MfiName;
-                url += "&Country=" + myInformation.Country;
-                url += "&Email=" + myInformation.Email;
-                url += "&PositionInCompony=" + myInformation.PositionInCompany;
-                url += "&OtherMessages=" + myInformation.Comment;
-                url += "&GrossPortfolio=" + myInformation.GrossPortfolio;
-                url += "&NumberOfClients=" + myInformation.NumberOfClients;
-                url += "&PersonName=" + myInformation.PersonName;
-                url += "&Phone=" + myInformation.PersonName;
-                url += "&Skype=" + myInformation.Skype;
-                url += "&PurposeOfUsage=" + myInformation.PurposeOfUsage;
-
-                HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
-                request.Method = "GET";
-                request.UserAgent = "octopus";
-                request.Timeout = 20000;
-                request.GetResponse();
-                ServicesProvider.GetInstance().GetQuestionnaireServices().UpdateIfSent(request.HaveResponse);
-            }
-            catch
-            {
-            }
         }
 
         private void _CheckMenu(string mnuName, bool mnuAct)
@@ -692,7 +476,7 @@ namespace OpenCBS.GUI
             generalSettings.ShowDialog();
         }
 
-        private void menuItemAboutOctopus_Click(object sender, EventArgs e)
+        private void OnAboutMenuItemClick(object sender, EventArgs e)
         {
             AboutForm aboutForm = new AboutForm();
             aboutForm.ShowDialog();
@@ -774,8 +558,8 @@ namespace OpenCBS.GUI
             UserSettings.SetUserLanguage(language);
             UserSettings.Language = language;
             ServicesProvider.GetInstance().GetEventProcessorServices().LogUser(
-                OUserEvents.OctopusUserCloseTellerEvent,
-                OUserEvents.OctopusUserCloseTellerDescription,
+                OUserEvents.UserCloseTellerEvent,
+                OUserEvents.UserCloseTellerDescription,
                 User.CurrentUser.Id);
 
             MessageBox.Show(MultiLanguageStrings.GetString(Ressource.LotrasmicMainWindowForm, "advancedSettingsChanged.Text"));
@@ -828,11 +612,6 @@ namespace OpenCBS.GUI
         {
             FrmInstallmentTypes frmInstallmentTypes = new FrmInstallmentTypes();
             frmInstallmentTypes.ShowDialog();
-        }
-
-        private void octopusForumToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Process.Start("http://www.octopusnetwork.org/forum");
         }
 
         private void reasignToolStripMenuItem_Click(object sender, EventArgs e)
@@ -1081,8 +860,8 @@ namespace OpenCBS.GUI
 
         private void LogUser()
         {
-            ServicesProvider.GetInstance().GetEventProcessorServices().LogUser(OUserEvents.OctopusUserLogInEvent,
-                OUserEvents.OctopusUserLoginDescription, User.CurrentUser.Id);
+            ServicesProvider.GetInstance().GetEventProcessorServices().LogUser(OUserEvents.UserLogInEvent,
+                OUserEvents.UserLoginDescription, User.CurrentUser.Id);
         }
 
         private static void LoadReports()
@@ -1229,8 +1008,8 @@ namespace OpenCBS.GUI
             UserSettings.SetAlertState(olvAlerts.SaveState());
             try
             {
-                ServicesProvider.GetInstance().GetEventProcessorServices().LogUser(OUserEvents.OctopusUserLogOutEvent, 
-                    OUserEvents.OctopusUserLogoutDescription, User.CurrentUser.Id);
+                ServicesProvider.GetInstance().GetEventProcessorServices().LogUser(OUserEvents.UserLogOutEvent, 
+                    OUserEvents.UserLogoutDescription, User.CurrentUser.Id);
             }
             catch {}
         }
@@ -1250,16 +1029,6 @@ namespace OpenCBS.GUI
         private void menuItemCollateralProducts_Click(object sender, EventArgs e)
         {
             InitializeCollateralProductsForm();
-        }
-
-        private void wIKIHelpToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Process.Start("http://wiki.octopusnetwork.org/");
-        }
-
-        private void userGuideToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Process.Start("http://wiki.octopusnetwork.org/display/OctopusUserGuide/Octopus+User+Guide+-+English+version");
         }
 
         private void miReports_Click(object sender, EventArgs e)
@@ -1311,7 +1080,7 @@ namespace OpenCBS.GUI
                     string desc = Teller.CurrentTeller.Name + " closed";
                     Teller.CurrentTeller = null;
                     ServicesProvider.GetInstance().GetEventProcessorServices().LogUser(
-                                                                        OUserEvents.OctopusUserCloseTellerEvent, 
+                                                                        OUserEvents.UserCloseTellerEvent, 
                                                                         desc, 
                                                                         User.CurrentUser.Id);
                     ServicesProvider.GetInstance().GetEventProcessorServices().FireTellerEvent(frm.CloseOfDayAmountEvent);
@@ -1331,13 +1100,6 @@ namespace OpenCBS.GUI
         private void CustomizableFieldsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             CustomizableFieldsForm frm = new CustomizableFieldsForm { MdiParent = this };
-            frm.Show();
-        }
-
-
-        private void MnuExtensionManagerClick(object sender, EventArgs e)
-        {
-            ExtensionManagerForm frm = new ExtensionManagerForm { MdiParent = this };
             frm.Show();
         }
 

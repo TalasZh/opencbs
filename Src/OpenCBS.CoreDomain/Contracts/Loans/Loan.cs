@@ -1377,7 +1377,7 @@ namespace OpenCBS.CoreDomain.Contracts.Loans
         }
 
         /// <summary>
-        /// This method manages all the repayment cases implemented in OCTOPUS
+        /// This method manages all the repayment cases implemented in the software
         /// </summary>
         /// <param name="pNumber">pNumber of the installment paid</param>
         /// <param name="pDate">pDate of the payment</param>
@@ -1413,7 +1413,7 @@ namespace OpenCBS.CoreDomain.Contracts.Loans
         }
 
         /// <summary>
-        /// This method manages all the repayment cases implemented in OCTOPUS
+        /// This method manages all the repayment cases implemented in software
         /// </summary>
         /// <param name="pNumber">pNumber of the installment paid</param>
         /// <param name="pDate">pDate of the payment</param>
@@ -1463,7 +1463,7 @@ namespace OpenCBS.CoreDomain.Contracts.Loans
 
 
         /// <summary>
-        /// This method manages all the repayment cases implemented in OCTOPUS
+        /// This method manages all the repayment cases implemented in the software
         /// </summary>
         /// <param name="pNumber">pNumber of the installment paid</param>
         /// <param name="pDate">pDate of the payment</param>

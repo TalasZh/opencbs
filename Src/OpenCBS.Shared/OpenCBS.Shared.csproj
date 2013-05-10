@@ -177,7 +177,6 @@
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="AutoUpdate.cs" />
     <Compile Include="ExportFile.cs">
       <SubType>Code</SubType>
     </Compile>

@@ -117,7 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;pictureBoxAboutOctopus.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;aboutPictureBox.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
@@ -128,47 +128,47 @@
     <value>414, 188</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="pictureBoxAboutOctopus.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+  <data name="aboutPictureBox.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>StretchImage</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="pictureBoxAboutOctopus.TabIndex" type="System.Int32, mscorlib">
+  <data name="aboutPictureBox.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="pictureBoxAboutOctopus.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+  <data name="aboutPictureBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
-  <data name="&gt;&gt;pictureBoxAboutOctopus.Parent" xml:space="preserve">
+  <data name="&gt;&gt;aboutPictureBox.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>About</value>
   </data>
-  <data name="pictureBoxAboutOctopus.ErrorImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+  <data name="aboutPictureBox.ErrorImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="pictureBoxAboutOctopus.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="aboutPictureBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>390, 170</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>AboutForm</value>
   </data>
-  <data name="&gt;&gt;pictureBoxAboutOctopus.Name" xml:space="preserve">
-    <value>pictureBoxAboutOctopus</value>
+  <data name="&gt;&gt;aboutPictureBox.Name" xml:space="preserve">
+    <value>aboutPictureBox</value>
   </data>
-  <data name="&gt;&gt;pictureBoxAboutOctopus.Type" xml:space="preserve">
+  <data name="&gt;&gt;aboutPictureBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="pictureBoxAboutOctopus.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="aboutPictureBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 6</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
   </data>
-  <data name="pictureBoxAboutOctopus.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+  <data name="aboutPictureBox.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Center</value>
   </data>
-  <data name="pictureBoxAboutOctopus.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+  <data name="aboutPictureBox.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="$this.AutoScaleBaseSize" type="System.Drawing.Size, System.Drawing">

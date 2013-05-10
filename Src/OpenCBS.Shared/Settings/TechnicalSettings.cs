@@ -11,11 +11,6 @@ namespace OpenCBS.Shared.Settings
     [Serializable]
     public static class TechnicalSettings
     {
-        public const string ASSEMBLY_VERSION = "1.1.1.*";
-        public const string COMPANY = "Octopus Micro Finance";
-        public const string PRODUCT = "OCTOPUS Micro Finance Suite";
-        public const string COPYRIGHT = "Octopus Micro Finance";
-        public const string TRADEMARK = "Octopus Micro Finance";
         public const string BaseRegistryPath = @"Software\OctopusMicroFinanceSuite";
 
         private static bool _useOnlineMode;

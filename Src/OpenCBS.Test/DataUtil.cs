@@ -9,6 +9,6 @@ namespace OpenCBS.Test
     {
         private DataUtil() {}
 
-        public static readonly string TESTDB = "Octopus_test";
+        public static readonly string TESTDB = "opencbs_test";
     }
 }

@@ -98,11 +98,6 @@ namespace OpenCBS.GUI.Configuration
             Close();
         }
 
-        private void llHelp_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            System.Diagnostics.Process.Start("http://wiki.octopusnetwork.org");
-        }
-
         private void buttonFindBackupPath_Click(object sender, EventArgs e)
         {
             fBDPath.ShowDialog();
