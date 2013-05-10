@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
   <PropertyGroup>
     <ProjectType>Local</ProjectType>
@@ -144,6 +144,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\SolutionInfo.cs">
+      <Link>Properties\SolutionInfo.cs</Link>
+    </Compile>
     <Compile Include="AmountComparer.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -171,7 +174,7 @@
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AssemblyInfo.cs">
+    <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="AutoUpdate.cs" />
@@ -223,9 +226,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Properties\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PreBuildEvent>
@@ -235,7 +236,7 @@
   </PropertyGroup>
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties GreenPepperConfigRunnerProgram="" GreenPepperCustomSudArgs="" GreenPepperCustomSud="" GreenPepperConfigRunnerArgs="" GreenPepperConfigRepositories="" GreenPepperConfigProjectName="" GreenPepperConfigSutName="" />
+      <UserProperties GreenPepperConfigSutName="" GreenPepperConfigProjectName="" GreenPepperConfigRepositories="" GreenPepperConfigRunnerArgs="" GreenPepperCustomSud="" GreenPepperCustomSudArgs="" GreenPepperConfigRunnerProgram="" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>

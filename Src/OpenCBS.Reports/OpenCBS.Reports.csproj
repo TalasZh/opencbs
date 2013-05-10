@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -68,6 +68,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\SolutionInfo.cs">
+      <Link>Properties\SolutionInfo.cs</Link>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Report.cs" />
     <Compile Include="Forms\ReportBrowserControl.cs">
@@ -193,7 +196,7 @@
   -->
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties GreenPepperConfigRunnerArgs="" GreenPepperCustomSud="" GreenPepperCustomSudArgs="" GreenPepperConfigRunnerProgram="" />
+      <UserProperties GreenPepperConfigRunnerProgram="" GreenPepperCustomSudArgs="" GreenPepperCustomSud="" GreenPepperConfigRunnerArgs="" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>

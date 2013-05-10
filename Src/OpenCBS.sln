@@ -29,6 +29,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenCBS.GUI", "OpenCBS.GUI\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenCBS.GUI.Restarter", "OpenCBS.GUI.Restarter\OpenCBS.GUI.Restarter.csproj", "{90B5218E-10F0-4123-80E3-C4E65D6CF209}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D00CD3CC-414B-493B-B859-9D1CD282A94D}"
+	ProjectSection(SolutionItems) = preProject
+		SolutionInfo.cs = SolutionInfo.cs
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -96,7 +101,7 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		GreenPepperConfigXmlRpcHandler = greenpepper1
 		GreenPepperConfigServerUrl = http://wiki.octopusnetwork.org
+		GreenPepperConfigXmlRpcHandler = greenpepper1
 	EndGlobalSection
 EndGlobal

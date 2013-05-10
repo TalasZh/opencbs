@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
   <PropertyGroup>
     <ProjectType>Local</ProjectType>
@@ -179,6 +179,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\SolutionInfo.cs">
+      <Link>Properties\SolutionInfo.cs</Link>
+    </Compile>
     <Compile Include="Accounting\AccountingRuleServices.cs" />
     <Compile Include="Accounting\AccountingServices.cs" />
     <Compile Include="BranchService.cs" />
@@ -191,7 +194,7 @@
     <Compile Include="Currencies\ExchangeRateServices.cs" />
     <Compile Include="Accounting\ChartOfAccountsServices.cs" />
     <Compile Include="Accounting\StandardBookingServices.cs" />
-    <Compile Include="AssemblyInfo.cs">
+    <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="ClientServices.cs">
@@ -253,7 +256,7 @@
   </PropertyGroup>
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties GreenPepperConfigRunnerArgs="" GreenPepperCustomSud="" GreenPepperCustomSudArgs="" GreenPepperConfigRunnerProgram="" GreenPepperConfigRepositories="" GreenPepperConfigProjectName="" GreenPepperConfigSutName="" />
+      <UserProperties GreenPepperConfigSutName="" GreenPepperConfigProjectName="" GreenPepperConfigRepositories="" GreenPepperConfigRunnerProgram="" GreenPepperCustomSudArgs="" GreenPepperCustomSud="" GreenPepperConfigRunnerArgs="" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>

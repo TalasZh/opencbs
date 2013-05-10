@@ -154,6 +154,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\SolutionInfo.cs">
+      <Link>Properties\SolutionInfo.cs</Link>
+    </Compile>
     <Compile Include="Accounting\AccountingRuleManager.cs" />
     <Compile Include="Accounting\AccountManager.cs" />
     <Compile Include="BranchManager.cs" />
@@ -167,7 +170,7 @@
     <Compile Include="Accounting\AccountingTransactionManager.cs" />
     <Compile Include="Accounting\ProvisioningRuleManager.cs" />
     <Compile Include="Accounting\StandardBookingManager.cs" />
-    <Compile Include="AssemblyInfo.cs">
+    <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Clients\ClientManager.cs">
@@ -231,7 +234,7 @@
   </PropertyGroup>
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties GreenPepperConfigSutName="" GreenPepperConfigProjectName="" GreenPepperConfigRepositories="" GreenPepperCustomSudArgs="" GreenPepperCustomSud="" GreenPepperConfigRunnerArgs="" GreenPepperConfigRunnerProgram="" />
+      <UserProperties GreenPepperConfigRunnerProgram="" GreenPepperConfigRunnerArgs="" GreenPepperCustomSud="" GreenPepperCustomSudArgs="" GreenPepperConfigRepositories="" GreenPepperConfigProjectName="" GreenPepperConfigSutName="" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>

@@ -143,6 +143,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\SolutionInfo.cs">
+      <Link>Properties\SolutionInfo.cs</Link>
+    </Compile>
     <Compile Include="Accounting\Account.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -583,7 +586,7 @@
   </PropertyGroup>
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties GreenPepperCustomSudArgs="" GreenPepperCustomSud="" GreenPepperConfigRunnerArgs="" GreenPepperConfigRunnerProgram="" GreenPepperConfigRepositories="" GreenPepperConfigProjectName="" GreenPepperConfigSutName="" />
+      <UserProperties GreenPepperConfigSutName="" GreenPepperConfigProjectName="" GreenPepperConfigRepositories="" GreenPepperConfigRunnerProgram="" GreenPepperConfigRunnerArgs="" GreenPepperCustomSud="" GreenPepperCustomSudArgs="" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>

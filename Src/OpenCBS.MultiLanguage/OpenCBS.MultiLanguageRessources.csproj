@@ -121,7 +121,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="..\SolutionInfo.cs">
+      <Link>Properties\SolutionInfo.cs</Link>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="MultiLanguageStrings.cs" />
     <Compile Include="resx\AccountView.Designer.cs" />
     <Compile Include="resx\ClientControl.ru-RU.Designer.cs">
@@ -1205,7 +1208,7 @@
   </PropertyGroup>
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties GreenPepperConfigRunnerArgs="" GreenPepperCustomSud="" GreenPepperCustomSudArgs="" GreenPepperConfigRunnerProgram="" />
+      <UserProperties GreenPepperConfigRunnerProgram="" GreenPepperCustomSudArgs="" GreenPepperCustomSud="" GreenPepperConfigRunnerArgs="" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>
