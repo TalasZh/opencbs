@@ -1068,10 +1068,6 @@
       <DependentUpon>AboutForm.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="AboutForm.ky-KG.resx">
-      <DependentUpon>AboutForm.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="AboutForm.pt.resx">
       <DependentUpon>AboutForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -1122,10 +1118,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Accounting\AccountView.fr.resx">
       <DependentUpon>AccountView.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Accounting\AccountView.ky-KG.resx">
-      <DependentUpon>AccountView.cs</DependentUpon>
-      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Accounting\AccountView.pt.resx">
       <DependentUpon>AccountView.cs</DependentUpon>
@@ -1287,10 +1279,6 @@
     <EmbeddedResource Include="Accounting\ExportBookingsForm.fr.resx">
       <SubType>Designer</SubType>
       <DependentUpon>ExportBookingsForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Accounting\ExportBookingsForm.ky-KG.resx">
-      <DependentUpon>ExportBookingsForm.cs</DependentUpon>
-      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Accounting\ExportBookingsForm.resx">
       <DependentUpon>ExportBookingsForm.cs</DependentUpon>
@@ -2340,10 +2328,6 @@
       <DependentUpon>FrmLogin.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login\FrmLogin.ky-KG.resx">
-      <DependentUpon>FrmLogin.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="Login\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -2439,10 +2423,6 @@
       <DependentUpon>FrmProjectsPurposeR.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Configuration\FrmProjectsPurposeR.ky-KG.resx">
-      <DependentUpon>FrmProjectsPurposeR.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="Configuration\FrmProjectsPurposeR.resx">
       <DependentUpon>FrmProjectsPurposeR.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -2465,10 +2445,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Configuration\FrmInstallmentType.resx">
       <DependentUpon>FrmInstallmentType.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Configuration\FrmEconomicActivity.ky-KG.resx">
-      <DependentUpon>FrmEconomicActivity.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Configuration\frmActivity.fr.resx">
@@ -2661,10 +2637,6 @@
     <EmbeddedResource Include="Tools\frmProgress.es-ES.resx">
       <DependentUpon>frmProgress.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Tools\frmProgress.ky-KG.resx">
-      <DependentUpon>frmProgress.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="Tools\frmProgress.pt.resx">
       <DependentUpon>frmProgress.cs</DependentUpon>
     </EmbeddedResource>
@@ -2700,17 +2672,9 @@
       <DependentUpon>ShowPictureForm.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Tools\ShowPictureForm.ky-KG.resx">
-      <DependentUpon>ShowPictureForm.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="DashboardForm.fr.resx">
       <SubType>Designer</SubType>
       <DependentUpon>DashboardForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DashboardForm.ky-KG.resx">
-      <DependentUpon>DashboardForm.cs</DependentUpon>
-      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="DashboardForm.resx">
       <DependentUpon>DashboardForm.cs</DependentUpon>
@@ -2723,10 +2687,6 @@
     <EmbeddedResource Include="frmShowError.fr.resx">
       <SubType>Designer</SubType>
       <DependentUpon>frmShowError.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmShowError.ky-KG.resx">
-      <DependentUpon>frmShowError.cs</DependentUpon>
-      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="frmShowError.resx">
       <DependentUpon>frmShowError.cs</DependentUpon>
@@ -2749,10 +2709,6 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Login\PasswordFormOnline.fr.resx">
-      <DependentUpon>PasswordFormOnline.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Login\PasswordFormOnline.ky-KG.resx">
       <DependentUpon>PasswordFormOnline.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -2877,10 +2833,6 @@
       <SubType>Designer</SubType>
       <DependentUpon>ApplicationDate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Configuration\ApplicationDate.ky-KG.resx">
-      <DependentUpon>ApplicationDate.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="Configuration\ApplicationDate.resx">
       <DependentUpon>ApplicationDate.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -2890,10 +2842,6 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Configuration\FrmGeneralSettings.fr.resx">
-      <DependentUpon>FrmGeneralSettings.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Configuration\FrmGeneralSettings.ky-KG.resx">
       <DependentUpon>FrmGeneralSettings.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -2925,10 +2873,6 @@
       <SubType>Designer</SubType>
       <DependentUpon>DatabaseMaintenance.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Tools\DatabaseMaintenance.ky-KG.resx">
-      <DependentUpon>DatabaseMaintenance.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="Tools\DatabaseMaintenance.resx">
       <SubType>Designer</SubType>
       <DependentUpon>DatabaseMaintenance.cs</DependentUpon>
@@ -2950,10 +2894,6 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Tools\frmSaveFile.fr.resx">
-      <DependentUpon>frmSaveFile.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Tools\frmSaveFile.ky-KG.resx">
       <DependentUpon>frmSaveFile.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -3318,10 +3258,6 @@
       <DependentUpon>AddressUserControl.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\AddressUserControl.ky-KG.resx">
-      <DependentUpon>AddressUserControl.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="UserControl\AddressUserControl.pt.resx">
       <DependentUpon>AddressUserControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -3368,10 +3304,6 @@
       <DependentUpon>DateTimeUserControl.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\DateTimeUserControl.ky-KG.resx">
-      <DependentUpon>DateTimeUserControl.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="UserControl\DateTimeUserControl.resx">
       <DependentUpon>DateTimeUserControl.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -3391,10 +3323,6 @@
       <DependentUpon>ElemMvtUserControl.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\ElemMvtUserControl.ky-KG.resx">
-      <DependentUpon>ElemMvtUserControl.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="UserControl\ElemMvtUserControl.pt.resx">
       <DependentUpon>ElemMvtUserControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -3411,10 +3339,6 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl\GroupUserControl.fr.resx">
-      <DependentUpon>GroupUserControl.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\GroupUserControl.ky-KG.resx">
       <DependentUpon>GroupUserControl.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -3451,10 +3375,6 @@
       <DependentUpon>PersonUserControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl\PersonUserControl.fr.resx">
-      <DependentUpon>PersonUserControl.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\PersonUserControl.ky-KG.resx">
       <DependentUpon>PersonUserControl.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -3526,10 +3446,6 @@
       <DependentUpon>SweetOkCancelForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl\TextCurrencyUserControl.fr.resx">
-      <DependentUpon>TextCurrencyUserControl.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\TextCurrencyUserControl.ky-KG.resx">
       <DependentUpon>TextCurrencyUserControl.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>

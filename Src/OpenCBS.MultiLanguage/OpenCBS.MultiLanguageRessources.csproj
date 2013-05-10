@@ -194,9 +194,6 @@
     <EmbeddedResource Include="resx\AddGuarantorForm.fr.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="resx\AddGuarantorForm.ky-KG.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="resx\AddGuarantorForm.pt.resx" />
     <EmbeddedResource Include="resx\AddGuarantorForm.resx">
       <SubType>Designer</SubType>
@@ -211,7 +208,6 @@
     <EmbeddedResource Include="resx\AddressUserControl.pt.resx" />
     <EmbeddedResource Include="resx\AddTellerForm.pt.resx" />
     <EmbeddedResource Include="resx\AddTrancheForm.fr.resx" />
-    <EmbeddedResource Include="resx\AddTrancheForm.ky-KG.resx" />
     <EmbeddedResource Include="resx\AddTrancheForm.pt.resx" />
     <EmbeddedResource Include="resx\AddTrancheForm.resx" />
     <EmbeddedResource Include="resx\AddTrancheForm.ru-RU.resx" />
@@ -260,9 +256,6 @@
     <EmbeddedResource Include="resx\FrmAddLoanProduct.fr.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="resx\FrmAddLoanProduct.ky-KG.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="resx\FrmAddLoanProduct.pt.resx" />
     <EmbeddedResource Include="resx\FrmAddLoanProduct.resx">
       <SubType>Designer</SubType>
@@ -274,9 +267,6 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="resx\AddressUserControl.fr.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="resx\AddressUserControl.ky-KG.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="resx\AddressUserControl.resx">
@@ -310,9 +300,6 @@
     <EmbeddedResource Include="resx\BadLoanRepaymentForm.fr.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="resx\BadLoanRepaymentForm.ky-KG.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="resx\BadLoanRepaymentForm.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -329,9 +316,6 @@
     <EmbeddedResource Include="resx\CashPrevisionForm.fr.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="resx\CashPrevisionForm.ky-KG.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="resx\CashPrevisionForm.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -344,9 +328,6 @@
     <EmbeddedResource Include="resx\CashReceiptForm.fr.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="resx\CashReceiptForm.ky-KG.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="resx\CashReceiptForm.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -354,9 +335,6 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="resx\ChartOfAccountsForm.fr.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="resx\ChartOfAccountsForm.ky-KG.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="resx\ChartOfAccountsForm.resx">
@@ -378,9 +356,6 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="resx\ContractReschedulingForm.fr.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="resx\ContractReschedulingForm.ky-KG.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="resx\ContractReschedulingForm.resx">
@@ -447,7 +422,6 @@
     <EmbeddedResource Include="resx\FrmSaveSaving.pt.resx" />
     <EmbeddedResource Include="resx\frmSettingsImportExport.es-ES.resx" />
     <EmbeddedResource Include="resx\frmSettingsImportExport.fr.resx" />
-    <EmbeddedResource Include="resx\frmSettingsImportExport.ky-KG.resx" />
     <EmbeddedResource Include="resx\frmSettingsImportExport.pt.resx" />
     <EmbeddedResource Include="resx\frmSettingsImportExport.resx" />
     <EmbeddedResource Include="resx\frmSettingsImportExport.ru-RU.resx" />
@@ -538,9 +512,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="resx\FrmCurrencyType.resx" />
     <EmbeddedResource Include="resx\FrmDatabaseSettings.resx" />
-    <EmbeddedResource Include="resx\FrmSaveSaving.ky-KG.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="resx\FrmSaveSaving.ru-RU.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -673,9 +644,6 @@
     <EmbeddedResource Include="resx\FrmExportSage.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="resx\FrmFundingLine.ky-KG.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="resx\FrmFundingLine.fr.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -683,9 +651,6 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="resx\CorporateUserControl.fr.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="resx\CorporateUserControl.ky-KG.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="resx\CorporateUserControl.resx">
@@ -704,9 +669,6 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="resx\FrmCustomReportWizard.fr.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="resx\FrmCustomReportWizard.ky-KG.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="resx\FrmCustomReportWizard.resx">
@@ -789,9 +751,6 @@
     <EmbeddedResource Include="resx\CreditContractDisbursmentForm.fr.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="resx\CreditContractDisbursmentForm.ky-KG.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="resx\CreditContractDisbursmentForm.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -799,9 +758,6 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="resx\CreditContractForm.fr.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="resx\CreditContractForm.ky-KG.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="resx\CreditContractForm.resx">
@@ -813,9 +769,6 @@
     <EmbeddedResource Include="resx\CreditContractRepayForm.fr.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="resx\CreditContractRepayForm.ky-KG.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="resx\CreditContractRepayForm.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -823,9 +776,6 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="resx\DateTimeUserControl.fr.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="resx\DateTimeUserControl.ky-KG.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="resx\DateTimeUserControl.resx">
@@ -837,9 +787,6 @@
     <EmbeddedResource Include="resx\FrmEconomicActivity.fr.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="resx\FrmEconomicActivity.ky-KG.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="resx\FrmEconomicActivity.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -847,9 +794,6 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="resx\ElemMvtUserControl.fr.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="resx\ElemMvtUserControl.ky-KG.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="resx\ElemMvtUserControl.resx">
@@ -861,9 +805,6 @@
     <EmbeddedResource Include="resx\ExchangeRateForm.fr.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="resx\ExchangeRateForm.ky-KG.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="resx\ExchangeRateForm.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -871,9 +812,6 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="resx\ExportBookingsForm.fr.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="resx\ExportBookingsForm.ky-KG.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="resx\ExportBookingsForm.resx">
@@ -885,9 +823,6 @@
     <EmbeddedResource Include="resx\frmActivity.fr.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="resx\frmActivity.ky-KG.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="resx\frmActivity.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -895,9 +830,6 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="resx\frmAdvancedSettings.fr.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="resx\frmAdvancedSettings.ky-KG.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="resx\frmAdvancedSettings.resx">
@@ -909,9 +841,6 @@
     <EmbeddedResource Include="resx\FrmApplicationSetup.fr.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="resx\FrmApplicationSetup.ky-KG.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="resx\FrmApplicationSetup.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -919,9 +848,6 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="resx\FrmBackup.fr.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="resx\FrmBackup.ky-KG.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="resx\FrmBackup.resx">
@@ -936,9 +862,6 @@
     <EmbeddedResource Include="resx\FrmReportBrowser.fr.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="resx\FrmReportBrowser.ky-KG.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="resx\FrmReportBrowser.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -946,9 +869,6 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="resx\FrmReportViewer.fr.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="resx\FrmReportViewer.ky-KG.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="resx\FrmReportViewer.resx">
@@ -960,9 +880,6 @@
     <EmbeddedResource Include="resx\FrmRestore.fr.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="resx\FrmRestore.ky-KG.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="resx\FrmRestore.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -970,9 +887,6 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="resx\GeneralSettings.fr.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="resx\GeneralSettings.ky-KG.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="resx\GeneralSettings.resx">
@@ -984,9 +898,6 @@
     <EmbeddedResource Include="resx\GroupForm.fr.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="resx\GroupForm.ky-KG.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="resx\GroupForm.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -994,9 +905,6 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="resx\GroupUserControl.fr.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="resx\GroupUserControl.ky-KG.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="resx\GroupUserControl.resx">
@@ -1008,9 +916,6 @@
     <EmbeddedResource Include="resx\InternalReportsForm.fr.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="resx\InternalReportsForm.ky-KG.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="resx\InternalReportsForm.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -1018,9 +923,6 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="resx\LotrasmicMainWindowForm.fr.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="resx\LotrasmicMainWindowForm.ky-KG.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="resx\LotrasmicMainWindowForm.resx">
@@ -1032,9 +934,6 @@
     <EmbeddedResource Include="resx\ManualEntryForm.fr.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="resx\ManualEntryForm.ky-KG.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="resx\ManualEntryForm.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -1044,9 +943,6 @@
     <EmbeddedResource Include="resx\PackagesForm.fr.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="resx\PackagesForm.ky-KG.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="resx\PackagesForm.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -1054,9 +950,6 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="resx\PasswordForm.fr.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="resx\PasswordForm.ky-KG.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="resx\PasswordForm.resx">
@@ -1083,9 +976,6 @@
     <EmbeddedResource Include="resx\PersonUserControl.fr.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="resx\PersonUserControl.ky-KG.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="resx\PersonUserControl.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -1107,9 +997,6 @@
     <EmbeddedResource Include="resx\SearchClientForm.fr.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="resx\SearchClientForm.ky-KG.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="resx\SearchClientForm.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -1120,9 +1007,6 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="resx\SearchCreditContractForm.fr.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="resx\SearchCreditContractForm.ky-KG.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="resx\SearchCreditContractForm.resx">
@@ -1149,9 +1033,6 @@
     <EmbeddedResource Include="resx\stringRes.fr.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="resx\stringRes.ky-KG.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="resx\stringRes.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -1162,9 +1043,6 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="resx\UserForm.fr.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="resx\UserForm.ky-KG.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="resx\UserForm.resx">

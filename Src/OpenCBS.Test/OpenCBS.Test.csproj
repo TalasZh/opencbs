@@ -188,7 +188,6 @@
     <Compile Include="Manager\Accounting\TestProvisioningRuleManager.cs" />
     <Compile Include="Manager\Database\TestDatabaseComparerManager.cs" />
     <Compile Include="Manager\TestSavingsManager.cs" />
-    <Compile Include="Services\TestExchangeRateServices.cs" />
     <Compile Include="TestSetup.cs" />
     <Compile Include="Services\Accounting\TestAccountingRuleServices.cs" />
     <Compile Include="Services\Accounting\TestAccountingServices.cs" />
@@ -290,7 +289,6 @@
     </Compile>
     <Compile Include="Services\TestProjectServices.cs" />
     <Compile Include="Services\TestServicesHelper.cs" />
-    <Compile Include="Services\TestServiceSynchronize.cs" />
     <Compile Include="Services\TestUserServices.cs" />
     <Compile Include="Shared\CommonTest.cs" />
     <Compile Include="Shared\CsvTests.cs" />
