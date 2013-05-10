@@ -357,7 +357,6 @@
       <ComponentRef Id="sql_update_database" />
       <ComponentRef Id="sql_create_database" />
       <ComponentRef Id="sql_divers" />
-      <ComponentRef Id="kg" />
       <ComponentRef Id="en" />
       <ComponentRef Id="ru" />
       <ComponentRef Id="fr" />
