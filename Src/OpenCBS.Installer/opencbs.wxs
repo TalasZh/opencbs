@@ -3,14 +3,15 @@
   <!--Remember: you need to change ProductVersion and ProductCode-->
 
   <?define PreviousVersion="4.7.0" ?>
-  <?define ProductVersion="13.5" ?>
+  <?define ProductVersion="13.5.0.0" ?>
+  <?define ProductVersionReduced="13.5" ?>
   <?define UpgradeCode="efd6c441-40ae-43b6-b789-3f4b6d2e7989"?>
   <?define ProductCode="057C7F84-0D7D-416a-955F-A82F8157A378"?>
 
   <Product Id="$(var.ProductCode)" Name="OpenCBS $(var.ProductVersion)" Language="1033"
            Version="$(var.ProductVersion)" Manufacturer="OpenCBS" UpgradeCode="$(var.UpgradeCode)">
     <Package Comments="Open Core Banking System" Compressed="yes" InstallerVersion="200"
-             Keywords="OpenCBS" Languages="1033" Manufacturer="OpenCBS"/>
+             Keywords="OpenCBS" Languages="1033" Manufacturer="Open Octopus"/>
 
     <Media Id="1" Cabinet="media1.cab" EmbedCab="yes" CompressionLevel="high"/>
 
@@ -77,15 +78,16 @@
 	    -->
             <Component Id="OpenCBS.GUI" Guid="CB26138B-9031-2360-D666-DD5F20038ED8">
               <File Id="OpenCBS.GUI.exe" Source="SourceDir\OpenCBS.GUI.exe" />
-              <Shortcut Id="DesktopShortcut" Directory="DesktopFolder" Name="OpenCBS" Icon="App.ico" WorkingDirectory="DIR_ROOT_VERSION" Advertise="yes"/>
+              <Shortcut Id="DesktopShortcut" Directory="DesktopFolder" Name="OpenCBS $(var.ProductVersionReduced)" Icon="App.ico" WorkingDirectory="DIR_ROOT_VERSION" Advertise="yes"/>
             </Component>
             <Component Id="Registry" Guid="674968e0-7c4a-4164-aaec-5ddf6922a2dc" Permanent="yes">
-                <RegistryKey Id="OctopusKey" Root="HKLM" Key="SOFTWARE\Open Octopus Ltd\OpenCBS\$(var.ProductVersion)" Action="create">
-                <RegistryValue Id="DATABASE_LOGIN_NAME" Type="string" Name="DATABASE_LOGIN_NAME" Value="sa"/>
-                <RegistryValue Id="DATABASE_NAME" Type="string" Name="DATABASE_NAME" Value="opencbs"/>
-                <RegistryValue Id="DATABASE_SERVER_NAME" Type="string" Name="DATABASE_SERVER_NAME" Value="(local)"/>
-                <RegistryValue Id="DATABASE_PASSWORD" Type="string" Name="DATABASE_PASSWORD" Value="opencbs"/>
-                <RegistryValue Id="DATABASE_TIMEOUT" Type="string" Name="DATABASE_TIMEOUT" Value="10"/>
+                <RegistryKey Id="OpenCbsKey" Root="HKLM" Key="SOFTWARE\Open Octopus Ltd\OpenCBS\$(var.ProductVersion)" Action="create">
+                    <Permission User="Everyone" GenericAll="yes"/>
+                    <RegistryValue Id="DATABASE_LOGIN_NAME" Type="string" Name="DATABASE_LOGIN_NAME" Value="sa"/>
+                    <RegistryValue Id="DATABASE_NAME" Type="string" Name="DATABASE_NAME" Value="opencbs"/>
+                    <RegistryValue Id="DATABASE_SERVER_NAME" Type="string" Name="DATABASE_SERVER_NAME" Value="(local)"/>
+                    <RegistryValue Id="DATABASE_PASSWORD" Type="string" Name="DATABASE_PASSWORD" Value="opencbs"/>
+                    <RegistryValue Id="DATABASE_TIMEOUT" Type="string" Name="DATABASE_TIMEOUT" Value="10"/>
               </RegistryKey>
             </Component>
             <Directory Id="DIR_TEMPLATE" Name="Template">
@@ -345,11 +347,11 @@
         <Shortcut Id="UninstallProduct" Name="Uninstall Application" Description="Uninstall Application"
                   Target="[System64Folder]msiexec.exe" Arguments="/x [ProductCode]"/>
         <RemoveFolder Id="ApplicationProgramsFolder" On="uninstall"/>
-        <RegistryValue Root="HKCU" Key="Software\Microsoft\OctopusMicroFinanceSuite\$(var.ProductVersion)" Name="installed" Type="integer" Value="1" KeyPath="yes"/>
+        <RegistryValue Root="HKCU" Key="Software\Microsoft\OpenCBS\$(var.ProductVersion)" Name="installed" Type="integer" Value="1" KeyPath="yes"/>
       </Component>
     </DirectoryRef>
 
-    <Feature Id="ProductFeature" Title="Octopus" Level="1">
+    <Feature Id="ProductFeature" Title="OpenCBS" Level="1">
       <ComponentRef Id="dir_standard" />
       <ComponentRef Id="dir_internal" />
       <ComponentRef Id="dir_consolidated" />
