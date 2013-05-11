@@ -154,6 +154,15 @@
     <value>ЛЕНТА СОБЫТИЙ</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="refreshLinkLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>680, 0</value>
+  </data>
+  <data name="refreshLinkLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 19</value>
+  </data>
+  <data name="refreshLinkLabel.Text" xml:space="preserve">
+    <value>Обновить</value>
+  </data>
   <data name="operateLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 14</value>
   </data>

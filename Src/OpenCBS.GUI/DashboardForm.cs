@@ -362,5 +362,10 @@ namespace OpenCBS.GUI
             var frm = new ReportBrowserForm { MdiParent = Application.OpenForms[0] };
             frm.Show();
         }
+
+        private void OnRefreshLinkLabelClick(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            RefreshDashboard();
+        }
     }
 }

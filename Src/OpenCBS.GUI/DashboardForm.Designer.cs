@@ -52,6 +52,8 @@ namespace OpenCBS.GUI
             this.activityAmountColumn = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
             this.activityClientColumn = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
             this.activityStreamLabel = new System.Windows.Forms.Label();
+            this.topBarPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.refreshLinkLabel = new System.Windows.Forms.LinkLabel();
             this.quickLinksPanel = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.operateLabel = new System.Windows.Forms.Label();
@@ -79,6 +81,7 @@ namespace OpenCBS.GUI
             this.tableLayoutPanel2.SuspendLayout();
             this.activityPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.activityListView)).BeginInit();
+            this.topBarPanel.SuspendLayout();
             this.quickLinksPanel.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -100,6 +103,7 @@ namespace OpenCBS.GUI
             this.infoPanel.Controls.Add(this.label1);
             this.infoPanel.Controls.Add(this.activityPanel);
             this.infoPanel.Controls.Add(this.activityStreamLabel);
+            this.infoPanel.Controls.Add(this.topBarPanel);
             this.infoPanel.Name = "infoPanel";
             // 
             // tableLayoutPanel1
@@ -268,6 +272,21 @@ namespace OpenCBS.GUI
             resources.ApplyResources(this.activityStreamLabel, "activityStreamLabel");
             this.activityStreamLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
             this.activityStreamLabel.Name = "activityStreamLabel";
+            // 
+            // topBarPanel
+            // 
+            resources.ApplyResources(this.topBarPanel, "topBarPanel");
+            this.topBarPanel.Controls.Add(this.refreshLinkLabel, 1, 0);
+            this.topBarPanel.Name = "topBarPanel";
+            // 
+            // refreshLinkLabel
+            // 
+            resources.ApplyResources(this.refreshLinkLabel, "refreshLinkLabel");
+            this.refreshLinkLabel.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.refreshLinkLabel.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(151)))), ((int)(((byte)(234)))));
+            this.refreshLinkLabel.Name = "refreshLinkLabel";
+            this.refreshLinkLabel.TabStop = true;
+            this.refreshLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.OnRefreshLinkLabelClick);
             // 
             // quickLinksPanel
             // 
@@ -444,6 +463,7 @@ namespace OpenCBS.GUI
             this.Load += new System.EventHandler(this.OnLoad);
             this.generalInfoPanel.ResumeLayout(false);
             this.infoPanel.ResumeLayout(false);
+            this.infoPanel.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.riskTableLayoutPanel.ResumeLayout(false);
@@ -451,6 +471,8 @@ namespace OpenCBS.GUI
             this.tableLayoutPanel2.ResumeLayout(false);
             this.activityPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.activityListView)).EndInit();
+            this.topBarPanel.ResumeLayout(false);
+            this.topBarPanel.PerformLayout();
             this.quickLinksPanel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
@@ -502,5 +524,7 @@ namespace OpenCBS.GUI
         private System.Windows.Forms.Label controlLabel;
         private System.Windows.Forms.LinkLabel auditTrailLabel;
         private System.Windows.Forms.LinkLabel reportsLink;
+        private System.Windows.Forms.TableLayoutPanel topBarPanel;
+        private System.Windows.Forms.LinkLabel refreshLinkLabel;
     }
 }

@@ -128,8 +128,8 @@
   <data name="operateLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 15, 3, 5</value>
   </data>
-  <data name="&gt;&gt;auditTrailLabel.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
+  <data name="parQuantityColumn.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
   </data>
   <data name="&gt;&gt;searchContractLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -152,6 +152,9 @@
   </data>
   <data name="configureSettingsLabel.Text" xml:space="preserve">
     <value>Settings</value>
+  </data>
+  <data name="&gt;&gt;activityStreamLabel.Parent" xml:space="preserve">
+    <value>infoPanel</value>
   </data>
   <data name="&gt;&gt;parPanel.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -192,11 +195,14 @@
   <data name="&gt;&gt;riskTableLayoutPanel.Type" xml:space="preserve">
     <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="topBarPanel.ColumnCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
   <data name="flowLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
     <value>220, 519</value>
   </data>
   <data name="tableLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 415</value>
+    <value>0, 417</value>
   </data>
   <data name="&gt;&gt;searchContractLabel.Parent" xml:space="preserve">
     <value>flowLayoutPanel1</value>
@@ -211,7 +217,7 @@
     <value>Loan products</value>
   </data>
   <data name="riskTableLayoutPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 195</value>
+    <value>0, 197</value>
   </data>
   <data name="&gt;&gt;activtyContractCodeColumn.Type" xml:space="preserve">
     <value>BrightIdeasSoftware.OLVColumn, ObjectListView, Version=2.5.0.26223, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
@@ -225,9 +231,6 @@
   <data name="&gt;&gt;configurePermissionsLabel.Parent" xml:space="preserve">
     <value>flowLayoutPanel1</value>
   </data>
-  <data name="newSolidarityGroupLinkLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 16</value>
-  </data>
   <data name="&gt;&gt;newNonSolidairtyGroupLinkLabel.Name" xml:space="preserve">
     <value>newNonSolidairtyGroupLinkLabel</value>
   </data>
@@ -237,8 +240,11 @@
   <data name="tableLayoutPanel2.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="portfolioPanel" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="parPanel" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
-  <data name="&gt;&gt;configureLoanProductsLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="refreshLinkLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;auditTrailLabel.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
   </data>
   <data name="&gt;&gt;flowLayoutPanel1.Parent" xml:space="preserve">
     <value>quickLinksPanel</value>
@@ -270,6 +276,9 @@
   <data name="configureSettingsLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>56, 16</value>
   </data>
+  <data name="auditTrailLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="&gt;&gt;configureSavingsProductsLabel.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
@@ -279,11 +288,14 @@
   <data name="&gt;&gt;tableLayoutPanel1.Parent" xml:space="preserve">
     <value>infoPanel</value>
   </data>
+  <data name="searchContractLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label2.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
-  <data name="&gt;&gt;activityStreamLabel.Name" xml:space="preserve">
-    <value>activityStreamLabel</value>
+  <data name="newNonSolidairtyGroupLinkLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 0, 3, 3</value>
   </data>
   <data name="&gt;&gt;configureSettingsLabel.ZOrder" xml:space="preserve">
     <value>11</value>
@@ -318,9 +330,6 @@
   <data name="&gt;&gt;tableLayoutPanel2.Name" xml:space="preserve">
     <value>tableLayoutPanel2</value>
   </data>
-  <data name="configureCollateralProducts.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 16</value>
-  </data>
   <data name="parAmountColumn.Text" xml:space="preserve">
     <value>Amount</value>
   </data>
@@ -342,23 +351,17 @@
   <data name="&gt;&gt;activityClientColumn.Type" xml:space="preserve">
     <value>BrightIdeasSoftware.OLVColumn, ObjectListView, Version=2.5.0.26223, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>964, 519</value>
-  </data>
   <data name="quickLinksPanel.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
   <data name="&gt;&gt;newIndividualClientLinkLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="tableLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
-    <value>49</value>
+  <data name="activityStreamLabel.Text" xml:space="preserve">
+    <value>ACTIVITY STREAM</value>
   </data>
   <data name="&gt;&gt;parPanel.Name" xml:space="preserve">
     <value>parPanel</value>
-  </data>
-  <data name="infoPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>220, 0</value>
   </data>
   <data name="flowLayoutPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -390,6 +393,9 @@
   <data name="&gt;&gt;newNonSolidairtyGroupLinkLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="topBarPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
   <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 8.25pt, style=Bold</value>
   </data>
@@ -410,6 +416,9 @@
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>3</value>
+  </data>
+  <data name="generalInfoPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
   <data name="&gt;&gt;infoPanel.Name" xml:space="preserve">
     <value>infoPanel</value>
@@ -432,7 +441,7 @@
   <data name="activityListView.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 8.25pt</value>
   </data>
-  <data name="configureSettingsLabel.AutoSize" type="System.Boolean, mscorlib">
+  <data name="topBarPanel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="tableLayoutPanel2.TabIndex" type="System.Int32, mscorlib">
@@ -441,14 +450,20 @@
   <data name="disbursementsPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="&gt;&gt;activityStreamLabel.Parent" xml:space="preserve">
-    <value>infoPanel</value>
+  <data name="refreshLinkLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>690, 0</value>
   </data>
-  <data name="reportsLink.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 0, 3, 3</value>
+  <data name="refreshLinkLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 19</value>
+  </data>
+  <data name="olbTrendPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 375</value>
+    <value>0, 377</value>
+  </data>
+  <data name="&gt;&gt;refreshLinkLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;activityPefrormedAtColumn.Name" xml:space="preserve">
     <value>activityPefrormedAtColumn</value>
@@ -465,14 +480,14 @@
   <data name="configurePermissionsLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="reportsLink.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 330</value>
+  </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>OpenCBS.GUI.UserControl.SweetBaseForm, OpenCBS.GUI, Version=1.1.1.30860, Culture=neutral, PublicKeyToken=null</value>
+    <value>OpenCBS.GUI.UserControl.SweetBaseForm, OpenCBS.GUI, Version=13.5.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;configureCollateralProducts.ZOrder" xml:space="preserve">
     <value>10</value>
-  </data>
-  <data name="flowLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
   </data>
   <data name="$this.AutoScaleBaseSize" type="System.Drawing.Size, System.Drawing">
     <value>6, 15</value>
@@ -486,17 +501,20 @@
   <data name="configureLabel.Text" xml:space="preserve">
     <value>CONFIGURE</value>
   </data>
+  <data name="configureLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 15, 3, 5</value>
+  </data>
   <data name="newNonSolidairtyGroupLinkLabel.Text" xml:space="preserve">
     <value>New non-solidarity group</value>
+  </data>
+  <data name="infoPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
   <data name="&gt;&gt;parQuantityColumn.Name" xml:space="preserve">
     <value>parQuantityColumn</value>
   </data>
   <data name="searchContractLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 0, 3, 3</value>
-  </data>
-  <data name="configureCollateralProducts.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
   </data>
   <data name="&gt;&gt;newNonSolidairtyGroupLinkLabel.Parent" xml:space="preserve">
     <value>flowLayoutPanel1</value>
@@ -507,8 +525,8 @@
   <data name="olbTrendPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="configureLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 15, 3, 5</value>
+  <data name="configureLoanProductsLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="configureLoanProductsLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 182</value>
@@ -537,6 +555,9 @@
   <data name="generalInfoPanel.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
+  <data name="&gt;&gt;topBarPanel.Parent" xml:space="preserve">
+    <value>infoPanel</value>
+  </data>
   <data name="&gt;&gt;olbTrendPanel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -555,6 +576,12 @@
   <data name="configureSettingsLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 0, 3, 3</value>
   </data>
+  <data name="refreshLinkLabel.Text" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="&gt;&gt;searchClientLabel.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
   <data name="riskTableLayoutPanel.ColumnCount" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
@@ -566,9 +593,6 @@
   </data>
   <data name="&gt;&gt;olbTrendPanel.Name" xml:space="preserve">
     <value>olbTrendPanel</value>
-  </data>
-  <data name="&gt;&gt;searchClientLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="controlLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -606,9 +630,6 @@
   <data name="activityAction.Text" xml:space="preserve">
     <value>Action</value>
   </data>
-  <data name="newNonSolidairtyGroupLinkLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 0, 3, 3</value>
-  </data>
   <data name="tableLayoutPanel3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -630,17 +651,14 @@
   <data name="disbursementsPanel.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;newIndividualClientLinkLabel.Name" xml:space="preserve">
-    <value>newIndividualClientLinkLabel</value>
+  <data name="activtyContractCodeColumn.Width" type="System.Int32, mscorlib">
+    <value>150</value>
   </data>
-  <data name="&gt;&gt;controlLabel.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
+  <data name="&gt;&gt;searchContractLabel.Name" xml:space="preserve">
+    <value>searchContractLabel</value>
   </data>
-  <data name="configureLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 8.25pt, style=Bold</value>
-  </data>
-  <data name="&gt;&gt;configureSavingsProductsLabel.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
+  <data name="&gt;&gt;generalInfoPanel.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="newSolidarityGroupLinkLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -678,11 +696,17 @@
   <data name="parListView.TabIndex" type="System.Int32, mscorlib">
     <value>48</value>
   </data>
+  <data name="&gt;&gt;refreshLinkLabel.Name" xml:space="preserve">
+    <value>refreshLinkLabel</value>
+  </data>
   <data name="&gt;&gt;parAmountColumn.Type" xml:space="preserve">
     <value>BrightIdeasSoftware.OLVColumn, ObjectListView, Version=2.5.0.26223, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
   </data>
-  <data name="configureCollateralProducts.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 0, 3, 3</value>
+  <data name="&gt;&gt;topBarPanel.Name" xml:space="preserve">
+    <value>topBarPanel</value>
+  </data>
+  <data name="newCorporateClientLinkLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="controlLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>105, 14</value>
@@ -717,8 +741,8 @@
   <data name="&gt;&gt;disbursementsPanel.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
   </data>
-  <data name="&gt;&gt;configureLoanProductsLabel.Name" xml:space="preserve">
-    <value>configureLoanProductsLabel</value>
+  <data name="refreshLinkLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 0, 3, 3</value>
   </data>
   <data name="&gt;&gt;disbursementsPanel.Name" xml:space="preserve">
     <value>disbursementsPanel</value>
@@ -733,7 +757,7 @@
     <value>8</value>
   </data>
   <data name="activityStreamLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+    <value>0, 22</value>
   </data>
   <data name="&gt;&gt;label2.Name" xml:space="preserve">
     <value>label2</value>
@@ -744,11 +768,14 @@
   <data name="configurePermissionsLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>80, 16</value>
   </data>
-  <data name="searchContractLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="&gt;&gt;activityStreamLabel.Name" xml:space="preserve">
+    <value>activityStreamLabel</value>
   </data>
   <data name="parListView.Size" type="System.Drawing.Size, System.Drawing">
     <value>292, 170</value>
+  </data>
+  <data name="refreshLinkLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
   <data name="&gt;&gt;newSolidarityGroupLinkLabel.ZOrder" xml:space="preserve">
     <value>4</value>
@@ -765,17 +792,11 @@
   <data name="label2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <data name="operateLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 15</value>
-  </data>
   <data name="parListView.Location" type="System.Drawing.Point, System.Drawing">
     <value>449, 5</value>
   </data>
   <data name="controlLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 292</value>
-  </data>
-  <data name="newIndividualClientLinkLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
     <value>PRODUCTIVITY</value>
@@ -785,6 +806,9 @@
   </data>
   <data name="newSolidarityGroupLinkLabel.Text" xml:space="preserve">
     <value>New solidarity group</value>
+  </data>
+  <data name="&gt;&gt;refreshLinkLabel.Parent" xml:space="preserve">
+    <value>topBarPanel</value>
   </data>
   <data name="newSolidarityGroupLinkLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 91</value>
@@ -798,8 +822,11 @@
   <data name="resource.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="&gt;&gt;generalInfoPanel.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;configureSavingsProductsLabel.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="topBarPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>744, 22</value>
   </data>
   <data name="&gt;&gt;newCorporateClientLinkLabel.ZOrder" xml:space="preserve">
     <value>6</value>
@@ -807,8 +834,11 @@
   <data name="infoPanel.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="generalInfoPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+  <data name="configureCollateralProducts.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 16</value>
+  </data>
+  <data name="configureCollateralProducts.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 0, 3, 3</value>
   </data>
   <data name="searchClientLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 0, 3, 3</value>
@@ -818,9 +848,6 @@
   </data>
   <data name="portfolioPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
-  </data>
-  <data name="disbursementsPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
   </data>
   <data name="&gt;&gt;quickLinksPanel.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -846,6 +873,9 @@
   <data name="&gt;&gt;portfolioPanel.Name" xml:space="preserve">
     <value>portfolioPanel</value>
   </data>
+  <data name="topBarPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
   <data name="label2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 20, 0, 0</value>
   </data>
@@ -855,8 +885,8 @@
   <data name="&gt;&gt;tableLayoutPanel1.Name" xml:space="preserve">
     <value>tableLayoutPanel1</value>
   </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="topBarPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
   </data>
   <data name="&gt;&gt;portfolioPanel.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
@@ -867,8 +897,8 @@
   <data name="label1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <data name="activtyContractCodeColumn.Width" type="System.Int32, mscorlib">
-    <value>150</value>
+  <data name="operateLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 15</value>
   </data>
   <data name="operateLabel.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -885,11 +915,11 @@
   <data name="&gt;&gt;disbursementsPanel.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="configureSavingsProductsLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
+  <data name="tableLayoutPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
   </data>
-  <data name="resource.Text1" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="newSolidarityGroupLinkLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 0, 3, 3</value>
@@ -898,19 +928,13 @@
     <value>Top</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 155</value>
-  </data>
-  <data name="&gt;&gt;quickLinksPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>0, 157</value>
   </data>
   <data name="configureLabel.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
-  <data name="controlLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="activityStreamLabel.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 15, 0, 0</value>
+    <value>5, 0, 0, 0</value>
   </data>
   <data name="&gt;&gt;activityPanel.Parent" xml:space="preserve">
     <value>infoPanel</value>
@@ -920,6 +944,9 @@
   </data>
   <data name="&gt;&gt;activityAmountColumn.Type" xml:space="preserve">
     <value>BrightIdeasSoftware.OLVColumn, ObjectListView, Version=2.5.0.26223, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
+  </data>
+  <data name="activtyContractCodeColumn.Text" xml:space="preserve">
+    <value>Contract code</value>
   </data>
   <data name="activityListView.Location" type="System.Drawing.Point, System.Drawing">
     <value>5, 0</value>
@@ -945,8 +972,8 @@
   <data name="&gt;&gt;activityStreamLabel.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="olbTrendPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="controlLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="&gt;&gt;generalInfoPanel.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -954,8 +981,14 @@
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 9.75pt</value>
   </data>
-  <data name="configureLoanProductsLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="activityPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 42</value>
+  </data>
+  <data name="&gt;&gt;controlLabel.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt, style=Bold</value>
   </data>
   <data name="operateLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -963,8 +996,8 @@
   <data name="configureSettingsLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="activityStreamLabel.Text" xml:space="preserve">
-    <value>ACTIVITY STREAM</value>
+  <data name="tableLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>49</value>
   </data>
   <data name="&gt;&gt;tableLayoutPanel2.Parent" xml:space="preserve">
     <value>riskTableLayoutPanel</value>
@@ -972,14 +1005,23 @@
   <data name="configureLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="generalInfoPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>964, 519</value>
+  <data name="olbTrendPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>214, 168</value>
   </data>
   <data name="searchContractLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;tableLayoutPanel3.Name" xml:space="preserve">
-    <value>tableLayoutPanel3</value>
+  <data name="searchContractLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="refreshLinkLabel.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 5, 0, 0</value>
+  </data>
+  <data name="configureSettingsLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="reportsLink.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 0, 3, 3</value>
   </data>
   <data name="activityPefrormedAtColumn.Width" type="System.Int32, mscorlib">
     <value>80</value>
@@ -987,14 +1029,14 @@
   <data name="&gt;&gt;activityListView.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="riskTableLayoutPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>744, 180</value>
-  </data>
   <data name="activityPanel.Size" type="System.Drawing.Size, System.Drawing">
     <value>744, 115</value>
   </data>
   <data name="&gt;&gt;activityListView.Name" xml:space="preserve">
     <value>activityListView</value>
+  </data>
+  <data name="parAmountColumn.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
   </data>
   <data name="portfolioPanel.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 3</value>
@@ -1008,8 +1050,14 @@
   <data name="tableLayoutPanel3.Size" type="System.Drawing.Size, System.Drawing">
     <value>440, 174</value>
   </data>
+  <data name="topBarPanel.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="refreshLinkLabel" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100,AutoSize,0" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
   <data name="configureSavingsProductsLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 201</value>
+  </data>
+  <data name="configureSavingsProductsLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
   </data>
   <data name="flowLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -1026,8 +1074,14 @@
   <data name="configureSettingsLabel.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
   </data>
+  <data name="&gt;&gt;riskTableLayoutPanel.Parent" xml:space="preserve">
+    <value>infoPanel</value>
+  </data>
   <data name="parPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;activityAction.Name" xml:space="preserve">
+    <value>activityAction</value>
   </data>
   <data name="configureSavingsProductsLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>107, 16</value>
@@ -1037,6 +1091,9 @@
   </data>
   <data name="&gt;&gt;activityPefrormedAtColumn.Type" xml:space="preserve">
     <value>BrightIdeasSoftware.OLVColumn, ObjectListView, Version=2.5.0.26223, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
+  </data>
+  <data name="&gt;&gt;configureLoanProductsLabel.Name" xml:space="preserve">
+    <value>configureLoanProductsLabel</value>
   </data>
   <data name="configureLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>67, 14</value>
@@ -1059,8 +1116,8 @@
   <data name="configureLoanProductsLabel.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
   </data>
-  <data name="newCorporateClientLinkLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="&gt;&gt;topBarPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;operateLabel.Name" xml:space="preserve">
     <value>operateLabel</value>
@@ -1071,8 +1128,8 @@
   <data name="&gt;&gt;parQuantityColumn.Type" xml:space="preserve">
     <value>BrightIdeasSoftware.OLVColumn, ObjectListView, Version=2.5.0.26223, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
   </data>
-  <data name="parAmountColumn.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Right</value>
+  <data name="&gt;&gt;newIndividualClientLinkLabel.Name" xml:space="preserve">
+    <value>newIndividualClientLinkLabel</value>
   </data>
   <data name="activityAmountColumn.Text" xml:space="preserve">
     <value>Amount</value>
@@ -1083,8 +1140,8 @@
   <data name="&gt;&gt;controlLabel.ZOrder" xml:space="preserve">
     <value>13</value>
   </data>
-  <data name="activityPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 40</value>
+  <data name="riskTableLayoutPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>744, 180</value>
   </data>
   <data name="olbTrendPanel.Location" type="System.Drawing.Point, System.Drawing">
     <value>223, 3</value>
@@ -1110,17 +1167,26 @@
   <data name="operateLabel.Text" xml:space="preserve">
     <value>OPERATE</value>
   </data>
-  <data name="auditTrailLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;searchClientLabel.Parent" xml:space="preserve">
+  <data name="&gt;&gt;configureLabel.Parent" xml:space="preserve">
     <value>flowLayoutPanel1</value>
+  </data>
+  <data name="infoPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>220, 0</value>
+  </data>
+  <data name="generalInfoPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>964, 519</value>
+  </data>
+  <data name="configureLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt, style=Bold</value>
   </data>
   <data name="&gt;&gt;tableLayoutPanel1.Type" xml:space="preserve">
     <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;reportsLink.Parent" xml:space="preserve">
     <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;portfolioPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;configureCollateralProducts.Name" xml:space="preserve">
     <value>configureCollateralProducts</value>
@@ -1140,14 +1206,14 @@
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;searchContractLabel.Name" xml:space="preserve">
-    <value>searchContractLabel</value>
-  </data>
   <data name="newIndividualClientLinkLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="activtyContractCodeColumn.Text" xml:space="preserve">
-    <value>Contract code</value>
+  <data name="&gt;&gt;refreshLinkLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="disbursementsPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
   </data>
   <data name="controlLabel.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -1161,17 +1227,20 @@
   <data name="&gt;&gt;newIndividualClientLinkLabel.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;activityAction.Name" xml:space="preserve">
-    <value>activityAction</value>
+  <data name="configureLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="resource.Text1" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="configureSavingsProductsLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 0, 3, 3</value>
   </data>
-  <data name="&gt;&gt;configureLabel.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
+  <data name="&gt;&gt;quickLinksPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="olbTrendPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>214, 168</value>
+  <data name="&gt;&gt;searchClientLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="parListView.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 5, 3, 5</value>
@@ -1179,11 +1248,20 @@
   <data name="newIndividualClientLinkLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>76, 16</value>
   </data>
+  <data name="refreshLinkLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt, style=Bold</value>
+  </data>
   <data name="activityListView.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 5, 3, 5</value>
   </data>
+  <data name="refreshLinkLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="&gt;&gt;label1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="topBarPanel.RowCount" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
   <data name="infoPanel.Size" type="System.Drawing.Size, System.Drawing">
     <value>744, 519</value>
@@ -1191,8 +1269,8 @@
   <data name="&gt;&gt;parListView.Type" xml:space="preserve">
     <value>BrightIdeasSoftware.ObjectListView, ObjectListView, Version=2.5.0.26223, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
   </data>
-  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 8.25pt, style=Bold</value>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>964, 519</value>
   </data>
   <data name="parPanel.Size" type="System.Drawing.Size, System.Drawing">
     <value>214, 168</value>
@@ -1205,9 +1283,6 @@
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Dashboard</value>
-  </data>
-  <data name="&gt;&gt;portfolioPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="controlLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 15, 3, 5</value>
@@ -1231,7 +1306,7 @@
     <value>0, 0</value>
   </data>
   <data name="activityStreamLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>744, 40</value>
+    <value>744, 20</value>
   </data>
   <data name="&gt;&gt;tableLayoutPanel3.Type" xml:space="preserve">
     <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1239,11 +1314,14 @@
   <data name="configureSavingsProductsLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="searchContractLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+  <data name="&gt;&gt;portfolioPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="configureLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="flowLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;configureLoanProductsLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="searchClientLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 34</value>
@@ -1260,9 +1338,6 @@
   <data name="&gt;&gt;configurePermissionsLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="parQuantityColumn.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Center</value>
-  </data>
   <data name="portfolioPanel.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
@@ -1275,20 +1350,20 @@
   <data name="newCorporateClientLinkLabel.Text" xml:space="preserve">
     <value>New company</value>
   </data>
-  <data name="infoPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+  <data name="newIndividualClientLinkLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
   <data name="configureLoanProductsLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 0, 3, 3</value>
   </data>
-  <data name="&gt;&gt;riskTableLayoutPanel.Parent" xml:space="preserve">
-    <value>infoPanel</value>
+  <data name="&gt;&gt;tableLayoutPanel3.Name" xml:space="preserve">
+    <value>tableLayoutPanel3</value>
+  </data>
+  <data name="&gt;&gt;topBarPanel.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
   <data name="&gt;&gt;searchClientLabel.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="tableLayoutPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
   </data>
   <data name="activityStreamLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 8.25pt, style=Bold</value>
@@ -1302,8 +1377,8 @@
   <data name="riskTableLayoutPanel.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="parListView" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanel2" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,60,Percent,40" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
-  <data name="&gt;&gt;portfolioPanel.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="configureCollateralProducts.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
   </data>
   <data name="&gt;&gt;newIndividualClientLinkLabel.Parent" xml:space="preserve">
     <value>flowLayoutPanel1</value>
@@ -1311,14 +1386,11 @@
   <data name="tableLayoutPanel3.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 3</value>
   </data>
-  <data name="reportsLink.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 330</value>
+  <data name="newSolidarityGroupLinkLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 16</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
-  </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>ru-RU</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>42</value>
