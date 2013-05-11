@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi" xmlns:netfx="http://schemas.microsoft.com/wix/NetFxExtension">
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi" xmlns:netfx="http://schemas.microsoft.com/wix/NetFxExtension" xmlns:util="http://schemas.microsoft.com/wix/UtilExtension">
   <!--Remember: you need to change ProductVersion and ProductCode-->
 
   <?define PreviousVersion="4.7.0" ?>
@@ -82,7 +82,7 @@
             </Component>
             <Component Id="Registry" Guid="674968e0-7c4a-4164-aaec-5ddf6922a2dc" Permanent="yes">
                 <RegistryKey Id="OpenCbsKey" Root="HKLM" Key="SOFTWARE\Open Octopus Ltd\OpenCBS\$(var.ProductVersion)" Action="create">
-                    <Permission User="Everyone" GenericAll="yes"/>
+                    <util:PermissionEx User="Users" GenericAll="yes"/>
                     <RegistryValue Id="DATABASE_LOGIN_NAME" Type="string" Name="DATABASE_LOGIN_NAME" Value="sa"/>
                     <RegistryValue Id="DATABASE_NAME" Type="string" Name="DATABASE_NAME" Value="opencbs"/>
                     <RegistryValue Id="DATABASE_SERVER_NAME" Type="string" Name="DATABASE_SERVER_NAME" Value="(local)"/>
