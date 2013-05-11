@@ -3,7 +3,7 @@
   <!--Remember: you need to change ProductVersion and ProductCode-->
 
   <?define PreviousVersion="4.7.0" ?>
-  <?define ProductVersion="13.5.0.0" ?>
+  <?define ProductVersion="13.5" ?>
   <?define UpgradeCode="efd6c441-40ae-43b6-b789-3f4b6d2e7989"?>
   <?define ProductCode="057C7F84-0D7D-416a-955F-A82F8157A378"?>
 
