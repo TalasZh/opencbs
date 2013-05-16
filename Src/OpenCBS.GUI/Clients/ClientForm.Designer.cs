@@ -1651,7 +1651,6 @@ namespace OpenCBS.GUI.Clients
             resources.ApplyResources(this.dtpDateOfFirstInstallment, "dtpDateOfFirstInstallment");
             this.dtpDateOfFirstInstallment.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpDateOfFirstInstallment.Name = "dtpDateOfFirstInstallment";
-            this.dtpDateOfFirstInstallment.ValueChanged += new System.EventHandler(this.OnFirstInstallmentDateChanged);
             // 
             // labelLoanGracePeriodMinMax
             // 

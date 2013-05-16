@@ -2365,9 +2365,18 @@ namespace OpenCBS.GUI.Clients
         private void SetPackageValuesForLoanDetails(Loan pLoan, bool pForCreation)
         {
             gbxLoanDetails.Text = MultiLanguageStrings.GetString(Ressource.CreditContractForm, "LoanType.Text") + pLoan.Product.Name;
-            dateLoanStart.Value = pForCreation ? TimeProvider.Today : _credit.StartDate;
+            if (pForCreation)
+            {
+                dateLoanStart.Value = TimeProvider.Today;
+            }
+            else
+            {
+                _toChangeAlignDate = false;
+                dateLoanStart.Value = _credit.StartDate;
+                _toChangeAlignDate = true;
+            }
             _oldDisbursmentDate = dateLoanStart.Value;
-            dtpDateOfFirstInstallment.Value = pForCreation ? GetFirstInstallmentDate() : _credit.InstallmentList[0].ExpectedDate;
+            dtpDateOfFirstInstallment.Value = pForCreation ? GetFirstInstallmentDate() : _credit.FirstInstallmentDate;
             _oldFirstInstalmentDate = dtpDateOfFirstInstallment.Value;
             InitializeLabelMinMax();
             InitializePackageGracePeriod(pLoan.Product, pForCreation);
@@ -3369,7 +3378,7 @@ namespace OpenCBS.GUI.Clients
                                        Convert.ToInt32(nudLoanNbOfInstallments.Value),
                                        Convert.ToInt32(numericUpDownLoanGracePeriod.Value),
                                        dateLoanStart.Value,
-                                       dateLoanStart.Value,
+                                       dtpDateOfFirstInstallment.Value,
                                        User.CurrentUser,
                                        ServicesProvider.GetInstance().GetGeneralSettings(),
                                        ServicesProvider.GetInstance().GetNonWorkingDate(),
@@ -5810,8 +5819,6 @@ namespace OpenCBS.GUI.Clients
                 }
             }
 
-            _credit.AlignDisbursementDate = dateLoanStart.Value;
-
             if (_group != null)
             {
                 if (_group.MeetingDay.HasValue)
@@ -6876,7 +6883,6 @@ namespace OpenCBS.GUI.Clients
 
         private void dateLoanStart_ValueChanged(object sender, EventArgs e)
         {
-            _toChangeAlignDate = true;
             _changeDisDateBool = true;
             dtpDateOfFirstInstallment.Value = GetFirstInstallmentDate();
             _oldFirstInstalmentDate = dtpDateOfFirstInstallment.Value;

@@ -1439,7 +1439,8 @@ namespace OpenCBS.Manager.Contracts
             [loan_purpose],
             [comments],
             [nsg_id],
-            [activity_id])
+            [activity_id],
+            preferred_first_installment_date)
             VALUES(@code, 
             @branchCode, 
             @closed, 
@@ -1455,7 +1456,8 @@ namespace OpenCBS.Manager.Contracts
             @loanPurpose,
             @comments,
             @NsgID,
-            @activityId)
+            @activityId,
+            @preferredFirstInstallmentDate)
             SELECT SCOPE_IDENTITY()";
 
             using (OpenCbsCommand c = new OpenCbsCommand(q, pSqlTransac.Connection, pSqlTransac))
@@ -1477,6 +1479,7 @@ namespace OpenCBS.Manager.Contracts
                 c.AddParam("@comments", pContract.Comments);
                 c.AddParam("@NsgID", pContract.NsgID);
                 c.AddParam("activityId", pContract.EconomicActivityId);
+                c.AddParam("@preferredFirstInstallmentDate",pContract.FirstInstallmentDate);
 
                 pContract.Id = Convert.ToInt32(c.ExecuteScalar());
             }
@@ -1871,6 +1874,7 @@ namespace OpenCBS.Manager.Contracts
                                         Contracts.comments,
                                         Contracts.nsg_id,
                                         Contracts.activity_id,
+                                        Contracts.preferred_first_installment_date,
                                         LoansLinkSavingsBook.loan_percentage,
                                         Credit.[amount_min],
                                         Credit.[amount_max],
@@ -1908,7 +1912,6 @@ namespace OpenCBS.Manager.Contracts
             loan.InstallmentList = _installmentManagement.SelectInstallments(loan.Id);
             loan.EconomicActivity = _economicActivityManager.SelectEconomicActivity(loan.EconomicActivityId);
             loan.GivenTranches = SelectTranches(loan.Id);
-            loan.FirstInstallmentDate = loan.InstallmentList[0].ExpectedDate;
             
             if (pAddGeneralInformation)
             {
@@ -2089,7 +2092,8 @@ namespace OpenCBS.Manager.Contracts
                            LoanCycle = r.GetNullInt("loan_cycle"),
                            Insurance = r.GetDecimal("insurance"),
                            NsgID = r.GetNullInt("nsg_id"),
-                           EconomicActivityId = r.GetInt("activity_id")
+                           EconomicActivityId = r.GetInt("activity_id"),
+                           FirstInstallmentDate = r.GetDateTime("preferred_first_installment_date"),
             };
         }
 
