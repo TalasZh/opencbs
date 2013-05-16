@@ -242,9 +242,10 @@
                 <File Id="Database_Update_v4.4.0_to_v4.5.0.sql" Source="SourceDir\Update\Database_Update_v4.4.0_to_v4.5.0.sql" />
                 <File Id="Database_Update_v4.5.0_to_v4.6.0.sql" Source="SourceDir\Update\Database_Update_v4.5.0_to_v4.6.0.sql" />
                 <File Id="Database_Update_v4.6.0_to_v4.7.0.sql" Source="SourceDir\Update\Database_Update_v4.6.0_to_v4.7.0.sql" />
+                <File Id="Database_Update_v4.7.0_to_v13.5.0.0.sql" Source="SourceDir\Update\Database_Update_v4.7.0_to_v13.5.0.0.sql" />
               </Component>
               <Component Id="xml_data_schema" Guid="CB26138B-9031-2360-D666-DD5F20038ED9">
-                <File Id="OCTOPUS_Data_Schema_v4.7.0.xml" Name="OCTOPUS_Data_Schema_(v4.7.0).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v4.7.0).xml" />
+                <File Id="OCTOPUS_Data_Schema_v13.5.0.0.xml" Name="OCTOPUS_Data_Schema_(v13.5.0.0).xml" Source="SourceDir\Update\OCTOPUS_Data_Schema_(v13.5.0.0).xml" />
                 <File Id="OCTOPUS_Upgrade_Schema.xml" Source="SourceDir\Update\OCTOPUS_Upgrade_Schema.xml" />
                 <File Id="Objects.xml" Source="SourceDir\Update\Objects.xml" />
               </Component>
