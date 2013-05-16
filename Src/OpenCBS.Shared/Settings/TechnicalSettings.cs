@@ -107,7 +107,7 @@ namespace OpenCBS.Shared.Settings
 
         public static string CurrentVersion
         {
-            get { return GlobalSettings.Default.Version; }
+            get { return GetVersion().ToString(); }
         }
 
         public static string SoftwareVersion
