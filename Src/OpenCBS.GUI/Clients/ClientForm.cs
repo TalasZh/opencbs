@@ -1877,7 +1877,6 @@ namespace OpenCBS.GUI.Clients
             InitializeInstallmentTypes();
             InitializeLoanOfficer();
             SetPackageValuesForLoanDetails(pCredit, false);
-            SetDisbursementAndInstallmentDateControl(!pCredit.Disbursed);
             DisableContractDetails(pCredit.ContractStatus);
 
             DisableCommitteeDecision(pCredit.ContractStatus);
@@ -2002,6 +2001,7 @@ namespace OpenCBS.GUI.Clients
             tbLoanAnticipatedPartialFees.Enabled = isPendingOrPostponed;
             comboBoxLoanInstallmentType.Enabled = isPendingOrPostponed;
             groupBoxLoanLateFees.Enabled = isPendingOrPostponed;
+            dateLoanStart.Enabled = dtpDateOfFirstInstallment.Enabled = isPendingOrPostponed;
 
             //comboBoxLoanCorporate.Enabled = isPending;
             comboBoxLoanFundingLine.Enabled = isPendingOrPostponed;
@@ -2040,24 +2040,10 @@ namespace OpenCBS.GUI.Clients
             {
                 buttonCreditCommiteeSaveDecision.Text = GetString("save");
                 SetCcEnabled(false);
-                SetDisbursementAndInstallmentDateControl(false);
             }
 
         }
-        private void SetDisbursementAndInstallmentDateControl(bool pEnabled)
-        {
-            dateLoanStart.Enabled = pEnabled;
-            // Check if the user has the permission to change the first installment date
-            try
-            {
-                ServicesProvider.GetInstance().GetContractServices().ModifyFirstInstalmentDate(dateLoanStart.Value.Date);
-                dtpDateOfFirstInstallment.Enabled = pEnabled;
-            }
-            catch
-            {
-                dtpDateOfFirstInstallment.Enabled = false;
-            }
-        }
+
         private void EnableBoxCreditCommitteeComponents(bool toEnable)
         {
             pnlCCStatus.Enabled = toEnable;
@@ -2168,7 +2154,6 @@ namespace OpenCBS.GUI.Clients
             InitializeInstallmentTypes();
             InitializeLoanOfficer();
             SetPackageValuesForLoanDetails(_credit, true);
-            SetDisbursementAndInstallmentDateControl(true);
             SetSecurityForTabPageLoansDetails(true);
             InitLoanDetails(true, false, false);
             InitializeTabPageGuaranteesDetailsButtons(_credit.Product.UseGuarantorCollateral);
@@ -4572,7 +4557,6 @@ namespace OpenCBS.GUI.Clients
 
                         buttonLoanDisbursment.Enabled = true;
                         DisableCommitteeDecision(_credit.ContractStatus);
-                        SetDisbursementAndInstallmentDateControl(!_credit.Disbursed);
 
                         // If loan was disbursed to savings
                         if (_credit.CompulsorySavings != null)
