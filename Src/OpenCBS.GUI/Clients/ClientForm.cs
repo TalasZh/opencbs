@@ -311,7 +311,7 @@ namespace OpenCBS.GUI.Clients
             else if (pCredit.Closed)
             {
                 lblLoanStatus.Text = MultiLanguageStrings.GetString(Ressource.CreditContractForm, "fullyRepaid.Text");
-                lblLoanStatus.ForeColor = Color.FromArgb(0, 88, 56);
+                lblLoanStatus.ForeColor = Color.FromArgb(61, 153, 57);
                 lblLoanStatus.Visible = true;
             }
             else if (pCredit.Rescheduled)
@@ -1145,7 +1145,7 @@ namespace OpenCBS.GUI.Clients
                     }
                 case OSavingsStatus.Active:
                     {
-                        groupBoxSaving.ForeColor = Color.FromArgb(0, 88, 56);
+                        groupBoxSaving.ForeColor = Color.FromArgb(61, 153, 57);
                         pnlSavingsButtons.Enabled = true;
                         buttonFirstDeposit.Visible = false;
                         buttonCloseSaving.Visible = true;
@@ -3669,7 +3669,7 @@ namespace OpenCBS.GUI.Clients
 
                 if (installment.IsRepaid)
                 {
-                    listViewItem.BackColor = Color.FromArgb(28, 151, 234);
+                    listViewItem.BackColor = Color.FromArgb(61, 153, 57);
                     listViewItem.ForeColor = Color.White;
                 }
                 else
