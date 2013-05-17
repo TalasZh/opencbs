@@ -118,50 +118,59 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="_lbAmountValue.Location" type="System.Drawing.Point, System.Drawing">
-    <value>433, 111</value>
+  <data name="tableLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
   </data>
-  <data name="labelPivotCurrency.Location" type="System.Drawing.Point, System.Drawing">
-    <value>610, 111</value>
+  <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>649, 202</value>
+  </data>
+  <data name="groupBoxButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>666, 52</value>
+  </data>
+  <data name="splitContainer1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>666, 274</value>
+  </data>
+  <data name="_lbAmountValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>392, 102</value>
+  </data>
+  <data name="lblPivotCurrency.Location" type="System.Drawing.Point, System.Drawing">
+    <value>617, 102</value>
   </data>
   <data name="_lbFundingLine.Size" type="System.Drawing.Size, System.Drawing">
-    <value>155, 39</value>
+    <value>112, 36</value>
   </data>
   <data name="_lbFundingLine.Text" xml:space="preserve">
     <value>Фондовая линия:</value>
   </data>
   <data name="_lbFundingLineValue.Location" type="System.Drawing.Point, System.Drawing">
-    <value>239, 72</value>
+    <value>229, 66</value>
   </data>
   <data name="_lbLoanCode.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 39</value>
+    <value>106, 36</value>
   </data>
   <data name="_lbLoanCode.Text" xml:space="preserve">
     <value>Код контракта:</value>
   </data>
   <data name="_lbLoanCodeValue.Location" type="System.Drawing.Point, System.Drawing">
-    <value>239, 33</value>
+    <value>229, 30</value>
   </data>
   <data name="cmbPaymentMethod.Location" type="System.Drawing.Point, System.Drawing">
-    <value>239, 3</value>
+    <value>229, 3</value>
   </data>
   <data name="_lbAmount.Size" type="System.Drawing.Size, System.Drawing">
-    <value>71, 29</value>
+    <value>53, 26</value>
   </data>
   <data name="_lbAmount.Text" xml:space="preserve">
     <value>Сумма:</value>
   </data>
   <data name="_lbFees.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 29</value>
+    <value>165, 26</value>
   </data>
   <data name="_lbFees.Text" xml:space="preserve">
     <value>Административный взнос:</value>
   </data>
-  <data name="_lbFeesValue.Location" type="System.Drawing.Point, System.Drawing">
-    <value>433, 140</value>
-  </data>
-  <data name="labelFeesCurrencyPivot.Location" type="System.Drawing.Point, System.Drawing">
-    <value>610, 140</value>
+  <data name="lblFeesCurrencyPivot.Location" type="System.Drawing.Point, System.Drawing">
+    <value>617, 137</value>
   </data>
   <data name="checkBoxFees.Size" type="System.Drawing.Size, System.Drawing">
     <value>176, 24</value>
@@ -170,32 +179,19 @@
     <value>Не взымать взнос</value>
   </data>
   <data name="_lbPaymentMethod.Size" type="System.Drawing.Size, System.Drawing">
-    <value>146, 29</value>
+    <value>105, 26</value>
   </data>
   <data name="_lbPaymentMethod.Text" xml:space="preserve">
     <value>Способ выдачи:</value>
   </data>
-  <data name="tableLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
+  <data name="lblAmountCurrency.Location" type="System.Drawing.Point, System.Drawing">
+    <value>427, 102</value>
   </data>
-  <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>649, 199</value>
+  <data name="lblEntryFeeCurrency.Location" type="System.Drawing.Point, System.Drawing">
+    <value>427, 137</value>
   </data>
-  <data name="btnPrint.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABIAAADECAIAAAAdy+YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAkNJREFUaEPt1EtI
-        VGEchvE3iIigRduWbdu1auuiCAoqCCS6B10FI8EwGApDLEoQEYtMkjIxzBIRTTRLxmzK1Ia8XyYZdXSa
-        i6OOOs5F7exnMfgsBOP7+G2fzcv/HK2jJ1StmyxpNzOJmST1x2SuxFyJuZLUC5grSb2R+ZeYKzFXknoB
-        cyWpN9IaeiZLms1MskUnWV1bBQQaKzFZ0tpKrCYAxRMJ4D/P4vHEhlmTbLixkk3OYvEYoGg8BmxythKL
-        AgKNldAsElsBBBor0XI0AmhpJQJsjSwcWQIEGivRwvIisMnZ/FIYUGgxDNBsNjwPKBieA2gWWAgB8s+H
-        AJr55oKA/oYCgGZCAYBm07N+QJ6gD9BUwAtowu8FrGwGkNvnATTu8wByeScBjc1MADQbmXYDGvaMAxqc
-        +gNoYNIFqM89CqjXPQLIOT4EqMc1AKjb1Q+oa6wPUOdoLyDHsBPQtyEnoPbBHkD2/i5AX3o7AbX+/g6o
-        xekA1PSrA1BjTzughm47oPqfbYBqf7QCeu/4BOhdRzOgt18/Aqq0NwCqaKsHVP65DlBZywdApc01gJ41
-        VQMqbqwCVFj/BlBB3WtAD2vLAeXVlAHKrS4FZKt6CuhuZTGgOxVFgLJeFQLKfPkE0M0XjwBdeZ4P6GLJ
-        A0Bni+8DSi+yATpRkAPo2ONsQIfzbwNKy7sF6GBuBqAD964D2m+7CmhfziVAe7PPA9qTdQbQ7sx0QLsy
-        TgHaeeMkoB3XjgPafvkooG0XjgDSuUOETqcB/wDGrhdauanTEAAAAABJRU5ErkJggg==
-</value>
+  <data name="tbEntryFee.Location" type="System.Drawing.Point, System.Drawing">
+    <value>229, 140</value>
   </data>
   <data name="btnPrint.Location" type="System.Drawing.Point, System.Drawing">
     <value>163, 12</value>
@@ -228,18 +224,8 @@
   <data name="buttonSave.Text" xml:space="preserve">
     <value>Ок</value>
   </data>
-  <data name="groupBoxButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>666, 52</value>
-  </data>
-  <data name="splitContainer1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>666, 260</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="splitContainer1.SplitterDistance" type="System.Int32, mscorlib">
-    <value>204</value>
-  </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>666, 260</value>
+    <value>666, 274</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Выдача</value>

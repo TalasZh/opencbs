@@ -79,12 +79,12 @@ namespace OpenCBS.GUI.Contracts
             // 
             // splitContainer1.Panel1
             // 
-            this.splitContainer1.Panel1.BackColor = System.Drawing.SystemColors.Window;
             resources.ApplyResources(this.splitContainer1.Panel1, "splitContainer1.Panel1");
             this.splitContainer1.Panel1.Controls.Add(this.tableLayoutPanel1);
             // 
             // splitContainer1.Panel2
             // 
+            resources.ApplyResources(this.splitContainer1.Panel2, "splitContainer1.Panel2");
             this.splitContainer1.Panel2.Controls.Add(this.groupBoxButton);
             // 
             // tableLayoutPanel1
@@ -142,9 +142,9 @@ namespace OpenCBS.GUI.Contracts
             // 
             // cmbPaymentMethod
             // 
+            resources.ApplyResources(this.cmbPaymentMethod, "cmbPaymentMethod");
             this.cmbPaymentMethod.DisplayMember = "Name";
             this.cmbPaymentMethod.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.cmbPaymentMethod, "cmbPaymentMethod");
             this.cmbPaymentMethod.FormattingEnabled = true;
             this.cmbPaymentMethod.Name = "cmbPaymentMethod";
             this.cmbPaymentMethod.ValueMember = "Id";
@@ -165,7 +165,7 @@ namespace OpenCBS.GUI.Contracts
             this.lblFeesCurrencyPivot.Name = "lblFeesCurrencyPivot";
             // 
             // checkBoxFees
-            //
+            // 
             resources.ApplyResources(this.checkBoxFees, "checkBoxFees");
             this.checkBoxFees.Name = "checkBoxFees";
             this.checkBoxFees.CheckedChanged += new System.EventHandler(this.CheckBoxFeesCheckedChanged);
@@ -195,7 +195,7 @@ namespace OpenCBS.GUI.Contracts
             this.tbEntryFee.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TbEntryFeeValueKeyPress);
             // 
             // groupBoxButton
-            //
+            // 
             resources.ApplyResources(this.groupBoxButton, "groupBoxButton");
             this.groupBoxButton.Controls.Add(this.btnPrint);
             this.groupBoxButton.Controls.Add(this.buttonAddExchangeRate);
@@ -208,35 +208,35 @@ namespace OpenCBS.GUI.Contracts
             // 
             resources.ApplyResources(this.btnPrint, "btnPrint");
             this.btnPrint.AttachmentPoint = OpenCBS.Reports.AttachmentPoint.LoanDetails;
-            this.btnPrint.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnPrint.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(88)))), ((int)(((byte)(56)))));
             this.btnPrint.Name = "btnPrint";
             this.btnPrint.ReportInitializer = null;
-            this.btnPrint.UseVisualStyleBackColor = true;
+            this.btnPrint.UseVisualStyleBackColor = false;
             // 
             // buttonAddExchangeRate
-            //
+            // 
             resources.ApplyResources(this.buttonAddExchangeRate, "buttonAddExchangeRate");
             this.buttonAddExchangeRate.Name = "buttonAddExchangeRate";
             this.buttonAddExchangeRate.Click += new System.EventHandler(this.ButtonAddExchangeRateClick);
             // 
             // buttonCancel
-            //
+            // 
             resources.ApplyResources(this.buttonCancel, "buttonCancel");
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
             // buttonSave
-            //
+            // 
             resources.ApplyResources(this.buttonSave, "buttonSave");
             this.buttonSave.Name = "buttonSave";
             this.buttonSave.Click += new System.EventHandler(this.ButtonSaveClick);
             // 
             // LoanDisbursementForm
-            //
+            // 
             resources.ApplyResources(this, "$this");
             this.Controls.Add(this.splitContainer1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "LoanDisbursementForm";
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();

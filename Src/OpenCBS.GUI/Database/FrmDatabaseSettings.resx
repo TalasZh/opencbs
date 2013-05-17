@@ -117,1355 +117,1424 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnCreateNewDatabase.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btnDefault.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="tabPageSQLServerSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>835, 351</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelDatabaseSettings.Parent" xml:space="preserve">
+    <value>tabPageSqlDatabaseSettings</value>
+  </data>
+  <data name="&gt;&gt;lblHelpServerName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblPassword.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelSQLSettings.Parent" xml:space="preserve">
+    <value>tabPageSQLServerSettings</value>
+  </data>
+  <data name="tabPageSQLServerConnection.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tBDatabaseSettingsSchemaResult.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 16</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSaveSettings.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnSQLServerChangeSettings.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="btnGetServersList.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 9.75pt</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btnDefault.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="btnSQLDatabaseSettingsUpgrade.Location" type="System.Drawing.Point, System.Drawing">
+    <value>532, 48</value>
   </data>
-  <data name="btnDefault.Location" type="System.Drawing.Point, System.Drawing">
-    <value>259, 79</value>
+  <data name="lblSQLDatabaseSettingsVersion.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 54</value>
   </data>
-  <data name="btnDefault.Size" type="System.Drawing.Size, System.Drawing">
-    <value>134, 22</value>
+  <data name="btnSetAsDefault.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="&gt;&gt;tBDatabaseSettingsSchemaResult.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblDetectDatabasesInProgress.Size" type="System.Drawing.Size, System.Drawing">
+    <value>267, 17</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSQLServerConnection.Name" xml:space="preserve">
+    <value>groupBoxSQLServerConnection</value>
+  </data>
+  <data name="btnRestore.Text" xml:space="preserve">
+    <value>Restore</value>
+  </data>
+  <data name="lblDatabases.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="tabPageSqlDatabaseSettings.Text" xml:space="preserve">
+    <value>SQL Database settings</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btnDefault.TabIndex" type="System.Int32, mscorlib">
     <value>39</value>
   </data>
-  <data name="btnDefault.Text" xml:space="preserve">
-    <value>Default</value>
-  </data>
-  <data name="&gt;&gt;btnDefault.Name" xml:space="preserve">
-    <value>btnDefault</value>
-  </data>
-  <data name="&gt;&gt;btnDefault.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnDefault.Parent" xml:space="preserve">
-    <value>groupBoxSQLServerConnection</value>
-  </data>
-  <data name="&gt;&gt;btnDefault.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="btnGetServersList.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9.75pt</value>
-  </data>
-  <data name="btnGetServersList.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btnGetServersList.Location" type="System.Drawing.Point, System.Drawing">
-    <value>119, 79</value>
-  </data>
-  <data name="btnGetServersList.Size" type="System.Drawing.Size, System.Drawing">
-    <value>134, 22</value>
-  </data>
-  <data name="btnGetServersList.TabIndex" type="System.Int32, mscorlib">
-    <value>38</value>
-  </data>
-  <data name="btnGetServersList.Text" xml:space="preserve">
-    <value>Get servers list</value>
-  </data>
-  <data name="&gt;&gt;btnGetServersList.Name" xml:space="preserve">
-    <value>btnGetServersList</value>
-  </data>
-  <data name="&gt;&gt;btnGetServersList.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnGetServersList.Parent" xml:space="preserve">
-    <value>groupBoxSQLServerConnection</value>
-  </data>
-  <data name="&gt;&gt;btnGetServersList.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="lblInstallInstructionSQLServer.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblInstallInstructionSQLServer.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblInstallInstructionSQLServer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>71, 147</value>
-  </data>
-  <data name="lblInstallInstructionSQLServer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>451, 13</value>
-  </data>
-  <data name="lblInstallInstructionSQLServer.TabIndex" type="System.Int32, mscorlib">
-    <value>34</value>
-  </data>
-  <data name="lblInstallInstructionSQLServer.Text" xml:space="preserve">
-    <value>If you do not have SQLServer installed then click on the following link for detailed instructions. </value>
-  </data>
-  <data name="&gt;&gt;lblInstallInstructionSQLServer.Name" xml:space="preserve">
-    <value>lblInstallInstructionSQLServer</value>
-  </data>
-  <data name="&gt;&gt;lblInstallInstructionSQLServer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblInstallInstructionSQLServer.Parent" xml:space="preserve">
-    <value>groupBoxSQLServerConnection</value>
-  </data>
-  <data name="&gt;&gt;lblInstallInstructionSQLServer.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="lblHelpServerName.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
-  </data>
-  <data name="lblHelpServerName.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt, style=Italic</value>
-  </data>
-  <data name="lblHelpServerName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>399, 55</value>
-  </data>
-  <data name="lblHelpServerName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>251, 13</value>
-  </data>
-  <data name="lblHelpServerName.TabIndex" type="System.Int32, mscorlib">
-    <value>33</value>
-  </data>
-  <data name="lblHelpServerName.Text" xml:space="preserve">
-    <value>typically in the form computer_name\SQLEXPRESS</value>
-  </data>
-  <data name="&gt;&gt;lblHelpServerName.Name" xml:space="preserve">
-    <value>lblHelpServerName</value>
-  </data>
-  <data name="&gt;&gt;lblHelpServerName.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblHelpServerName.Parent" xml:space="preserve">
-    <value>groupBoxSQLServerConnection</value>
-  </data>
-  <data name="&gt;&gt;lblHelpServerName.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="cbServerName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>119, 51</value>
-  </data>
-  <data name="cbServerName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>274, 21</value>
-  </data>
-  <data name="cbServerName.TabIndex" type="System.Int32, mscorlib">
-    <value>26</value>
-  </data>
-  <data name="cbServerName.Text" xml:space="preserve">
-    <value>localhost</value>
-  </data>
-  <data name="&gt;&gt;cbServerName.Name" xml:space="preserve">
-    <value>cbServerName</value>
-  </data>
-  <data name="&gt;&gt;cbServerName.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cbServerName.Parent" xml:space="preserve">
-    <value>groupBoxSQLServerConnection</value>
-  </data>
-  <data name="&gt;&gt;cbServerName.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="txtPassword.Location" type="System.Drawing.Point, System.Drawing">
-    <value>390, 115</value>
-  </data>
-  <data name="txtPassword.PasswordChar" type="System.Char, mscorlib" xml:space="preserve">
-    <value>*</value>
-  </data>
-  <data name="txtPassword.Size" type="System.Drawing.Size, System.Drawing">
-    <value>163, 20</value>
-  </data>
-  <data name="txtPassword.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="txtPassword.Text" xml:space="preserve">
-    <value></value>
-  </data>
-  <data name="&gt;&gt;txtPassword.Name" xml:space="preserve">
-    <value>txtPassword</value>
-  </data>
-  <data name="&gt;&gt;txtPassword.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtPassword.Parent" xml:space="preserve">
-    <value>groupBoxSQLServerConnection</value>
-  </data>
-  <data name="&gt;&gt;txtPassword.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="lblPassword.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
-  </data>
-  <data name="lblPassword.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblPassword.Location" type="System.Drawing.Point, System.Drawing">
-    <value>278, 112</value>
-  </data>
-  <data name="lblPassword.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 24</value>
-  </data>
-  <data name="lblPassword.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
-  </data>
-  <data name="lblPassword.Text" xml:space="preserve">
-    <value>Password</value>
-  </data>
-  <data name="lblPassword.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;lblPassword.Name" xml:space="preserve">
-    <value>lblPassword</value>
-  </data>
-  <data name="&gt;&gt;lblPassword.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblPassword.Parent" xml:space="preserve">
-    <value>groupBoxSQLServerConnection</value>
-  </data>
-  <data name="&gt;&gt;lblPassword.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="txtLoginName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>119, 115</value>
-  </data>
-  <data name="txtLoginName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 20</value>
-  </data>
-  <data name="txtLoginName.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
-  </data>
-  <data name="txtLoginName.Text" xml:space="preserve">
-    <value>sa</value>
-  </data>
-  <data name="&gt;&gt;txtLoginName.Name" xml:space="preserve">
-    <value>txtLoginName</value>
-  </data>
-  <data name="&gt;&gt;txtLoginName.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtLoginName.Parent" xml:space="preserve">
-    <value>groupBoxSQLServerConnection</value>
-  </data>
-  <data name="&gt;&gt;txtLoginName.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="lblLoginName.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
-  </data>
-  <data name="lblLoginName.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblLoginName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 115</value>
-  </data>
-  <data name="lblLoginName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>90, 20</value>
-  </data>
-  <data name="lblLoginName.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
-  </data>
-  <data name="lblLoginName.Text" xml:space="preserve">
-    <value>Login Name</value>
-  </data>
-  <data name="lblLoginName.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;lblLoginName.Name" xml:space="preserve">
-    <value>lblLoginName</value>
-  </data>
-  <data name="&gt;&gt;lblLoginName.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblLoginName.Parent" xml:space="preserve">
-    <value>groupBoxSQLServerConnection</value>
-  </data>
-  <data name="&gt;&gt;lblLoginName.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="lblServerName.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
-  </data>
-  <data name="lblServerName.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblServerName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 51</value>
-  </data>
-  <data name="lblServerName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>90, 21</value>
-  </data>
-  <data name="lblServerName.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="lblServerName.Text" xml:space="preserve">
-    <value>Server Name</value>
-  </data>
-  <data name="lblServerName.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;lblServerName.Name" xml:space="preserve">
-    <value>lblServerName</value>
-  </data>
-  <data name="&gt;&gt;lblServerName.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblServerName.Parent" xml:space="preserve">
-    <value>groupBoxSQLServerConnection</value>
-  </data>
-  <data name="&gt;&gt;lblServerName.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="lblFindDBInfo.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblFindDBInfo.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9pt</value>
-  </data>
-  <data name="lblFindDBInfo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>123, 26</value>
-  </data>
-  <data name="lblFindDBInfo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>580, 15</value>
-  </data>
-  <data name="lblFindDBInfo.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="lblFindDBInfo.Text" xml:space="preserve">
-    <value>OpenCBS needs to know where to find the database. Please enter in the details below and click on Connect</value>
-  </data>
-  <data name="&gt;&gt;lblFindDBInfo.Name" xml:space="preserve">
-    <value>lblFindDBInfo</value>
-  </data>
-  <data name="&gt;&gt;lblFindDBInfo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblFindDBInfo.Parent" xml:space="preserve">
-    <value>groupBoxSQLServerConnection</value>
-  </data>
-  <data name="&gt;&gt;lblFindDBInfo.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="groupBoxSQLServerConnection.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="groupBoxSQLServerConnection.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="groupBoxSQLServerConnection.Size" type="System.Drawing.Size, System.Drawing">
-    <value>823, 177</value>
-  </data>
-  <data name="groupBoxSQLServerConnection.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;groupBoxSQLServerConnection.Name" xml:space="preserve">
-    <value>groupBoxSQLServerConnection</value>
-  </data>
-  <data name="&gt;&gt;groupBoxSQLServerConnection.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBoxSQLServerConnection.Parent" xml:space="preserve">
-    <value>tableLayoutPanelServerSettings</value>
-  </data>
-  <data name="&gt;&gt;groupBoxSQLServerConnection.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="btnSQLServerChangeSettings.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Right</value>
-  </data>
-  <data name="btnSQLServerChangeSettings.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btnSQLServerChangeSettings.Location" type="System.Drawing.Point, System.Drawing">
-    <value>567, 21</value>
-  </data>
-  <data name="btnSQLServerChangeSettings.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 24</value>
-  </data>
-  <data name="btnSQLServerChangeSettings.TabIndex" type="System.Int32, mscorlib">
-    <value>34</value>
-  </data>
-  <data name="btnSQLServerChangeSettings.Text" xml:space="preserve">
-    <value>Change</value>
-  </data>
-  <data name="&gt;&gt;btnSQLServerChangeSettings.Name" xml:space="preserve">
-    <value>btnSQLServerChangeSettings</value>
-  </data>
-  <data name="&gt;&gt;btnSQLServerChangeSettings.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnSQLServerChangeSettings.Parent" xml:space="preserve">
-    <value>groupBoxSQLSettings</value>
-  </data>
-  <data name="&gt;&gt;btnSQLServerChangeSettings.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="lblSQLServerSettings.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblSQLServerSettings.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
   </data>
   <data name="lblSQLServerSettings.Location" type="System.Drawing.Point, System.Drawing">
     <value>23, 27</value>
   </data>
-  <data name="lblSQLServerSettings.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 13</value>
+  <data name="&gt;&gt;lblDatabaseSettingsMessage.Parent" xml:space="preserve">
+    <value>groupBoxSQLDatabaseStructure</value>
   </data>
-  <data name="lblSQLServerSettings.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="&gt;&gt;lblLoginName.ZOrder" xml:space="preserve">
+    <value>8</value>
   </data>
-  <data name="&gt;&gt;lblSQLServerSettings.Name" xml:space="preserve">
-    <value>lblSQLServerSettings</value>
-  </data>
-  <data name="&gt;&gt;lblSQLServerSettings.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblSQLServerSettings.Parent" xml:space="preserve">
-    <value>groupBoxSQLSettings</value>
-  </data>
-  <data name="&gt;&gt;lblSQLServerSettings.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="groupBoxSQLSettings.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="groupBoxSQLSettings.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="tableLayoutPanelServerSettings.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 3</value>
   </data>
-  <data name="groupBoxSQLSettings.Size" type="System.Drawing.Size, System.Drawing">
-    <value>823, 57</value>
+  <data name="btnSQLDatabaseSettingsUpgrade.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
   </data>
-  <data name="groupBoxSQLSettings.TabIndex" type="System.Int32, mscorlib">
+  <data name="tableLayoutPanelServerSettings.ColumnCount" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="groupBoxSQLSettings.Text" xml:space="preserve">
-    <value>SQLServer Settings</value>
-  </data>
-  <data name="&gt;&gt;groupBoxSQLSettings.Name" xml:space="preserve">
-    <value>groupBoxSQLSettings</value>
-  </data>
-  <data name="&gt;&gt;groupBoxSQLSettings.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBoxSQLSettings.Parent" xml:space="preserve">
+  <data name="&gt;&gt;groupBoxSaveSettings.Parent" xml:space="preserve">
     <value>tableLayoutPanelSQLSettings</value>
   </data>
-  <data name="&gt;&gt;groupBoxSQLSettings.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;cbServerName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="lblDetectDatabasesInProgress.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;btnContinue.Name" xml:space="preserve">
+    <value>btnContinue</value>
   </data>
-  <data name="lblDetectDatabasesInProgress.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt</value>
-  </data>
-  <data name="lblDetectDatabasesInProgress.Location" type="System.Drawing.Point, System.Drawing">
-    <value>123, 97</value>
-  </data>
-  <data name="lblDetectDatabasesInProgress.Size" type="System.Drawing.Size, System.Drawing">
-    <value>267, 17</value>
-  </data>
-  <data name="lblDetectDatabasesInProgress.TabIndex" type="System.Int32, mscorlib">
-    <value>39</value>
-  </data>
-  <data name="lblDetectDatabasesInProgress.Text" xml:space="preserve">
-    <value>Please wait during databases detection...</value>
-  </data>
-  <data name="&gt;&gt;lblDetectDatabasesInProgress.Name" xml:space="preserve">
-    <value>lblDetectDatabasesInProgress</value>
-  </data>
-  <data name="&gt;&gt;lblDetectDatabasesInProgress.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblDetectDatabasesInProgress.Parent" xml:space="preserve">
-    <value>groupBoxDatabaseManagement</value>
-  </data>
-  <data name="&gt;&gt;lblDetectDatabasesInProgress.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="btnSQLServerSettingsShowDetails.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Right</value>
-  </data>
-  <data name="btnSQLServerSettingsShowDetails.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btnSQLServerSettingsShowDetails.Location" type="System.Drawing.Point, System.Drawing">
-    <value>567, 76</value>
-  </data>
-  <data name="btnSQLServerSettingsShowDetails.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 24</value>
-  </data>
-  <data name="btnSQLServerSettingsShowDetails.TabIndex" type="System.Int32, mscorlib">
-    <value>40</value>
-  </data>
-  <data name="btnSQLServerSettingsShowDetails.Text" xml:space="preserve">
-    <value>See details</value>
-  </data>
-  <data name="&gt;&gt;btnSQLServerSettingsShowDetails.Name" xml:space="preserve">
-    <value>btnSQLServerSettingsShowDetails</value>
-  </data>
-  <data name="&gt;&gt;btnSQLServerSettingsShowDetails.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnSQLServerSettingsShowDetails.Parent" xml:space="preserve">
-    <value>groupBoxDatabaseManagement</value>
-  </data>
-  <data name="&gt;&gt;btnSQLServerSettingsShowDetails.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="btnRestore.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Right</value>
-  </data>
-  <data name="btnRestore.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btnRestore.Location" type="System.Drawing.Point, System.Drawing">
-    <value>567, 116</value>
-  </data>
-  <data name="btnRestore.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 24</value>
-  </data>
-  <data name="btnRestore.TabIndex" type="System.Int32, mscorlib">
-    <value>38</value>
-  </data>
-  <data name="btnRestore.Text" xml:space="preserve">
-    <value>Restore</value>
-  </data>
-  <data name="&gt;&gt;btnRestore.Name" xml:space="preserve">
-    <value>btnRestore</value>
-  </data>
-  <data name="&gt;&gt;btnRestore.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnRestore.Parent" xml:space="preserve">
-    <value>groupBoxDatabaseManagement</value>
-  </data>
-  <data name="&gt;&gt;btnRestore.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="btnBackup.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Right</value>
-  </data>
-  <data name="btnBackup.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btnBackup.Location" type="System.Drawing.Point, System.Drawing">
-    <value>567, 146</value>
-  </data>
-  <data name="btnBackup.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 24</value>
-  </data>
-  <data name="btnBackup.TabIndex" type="System.Int32, mscorlib">
-    <value>37</value>
-  </data>
-  <data name="btnBackup.Text" xml:space="preserve">
-    <value>Backup</value>
-  </data>
-  <data name="&gt;&gt;btnBackup.Name" xml:space="preserve">
-    <value>btnBackup</value>
-  </data>
-  <data name="&gt;&gt;btnBackup.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnBackup.Parent" xml:space="preserve">
-    <value>groupBoxDatabaseManagement</value>
-  </data>
-  <data name="&gt;&gt;btnBackup.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="btnSetAsDefault.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Right</value>
-  </data>
-  <data name="btnSetAsDefault.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btnSetAsDefault.Location" type="System.Drawing.Point, System.Drawing">
-    <value>567, 46</value>
-  </data>
-  <data name="btnSetAsDefault.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 24</value>
-  </data>
-  <data name="btnSetAsDefault.TabIndex" type="System.Int32, mscorlib">
-    <value>36</value>
-  </data>
-  <data name="btnSetAsDefault.Text" xml:space="preserve">
-    <value>Set as default</value>
-  </data>
-  <data name="&gt;&gt;btnSetAsDefault.Name" xml:space="preserve">
-    <value>btnSetAsDefault</value>
-  </data>
-  <data name="&gt;&gt;btnSetAsDefault.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnSetAsDefault.Parent" xml:space="preserve">
-    <value>groupBoxDatabaseManagement</value>
-  </data>
-  <data name="&gt;&gt;btnSetAsDefault.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="btnCreateNewDatabase.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Right</value>
-  </data>
-  <data name="btnCreateNewDatabase.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btnCreateNewDatabase.Location" type="System.Drawing.Point, System.Drawing">
-    <value>390, 185</value>
-  </data>
-  <data name="btnCreateNewDatabase.Size" type="System.Drawing.Size, System.Drawing">
-    <value>174, 24</value>
-  </data>
-  <data name="btnCreateNewDatabase.TabIndex" type="System.Int32, mscorlib">
-    <value>35</value>
-  </data>
-  <data name="btnCreateNewDatabase.Text" xml:space="preserve">
-    <value>Create new database</value>
-  </data>
-  <data name="&gt;&gt;btnCreateNewDatabase.Name" xml:space="preserve">
-    <value>btnCreateNewDatabase</value>
-  </data>
-  <data name="&gt;&gt;btnCreateNewDatabase.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnCreateNewDatabase.Parent" xml:space="preserve">
-    <value>groupBoxDatabaseManagement</value>
-  </data>
-  <data name="&gt;&gt;btnCreateNewDatabase.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="lblDatabases.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
-  </data>
-  <data name="lblDatabases.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblDatabases.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 23</value>
-  </data>
-  <data name="lblDatabases.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 21</value>
-  </data>
-  <data name="lblDatabases.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
-  <data name="lblDatabases.Text" xml:space="preserve">
-    <value>Databases</value>
-  </data>
-  <data name="lblDatabases.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;lblDatabases.Name" xml:space="preserve">
-    <value>lblDatabases</value>
-  </data>
-  <data name="&gt;&gt;lblDatabases.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblDatabases.Parent" xml:space="preserve">
-    <value>groupBoxDatabaseManagement</value>
-  </data>
-  <data name="&gt;&gt;lblDatabases.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="columnHeaderName.Width" type="System.Int32, mscorlib">
-    <value>300</value>
-  </data>
-  <data name="columnHeaderBranchCode.DisplayIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="columnHeaderBranchCode.Width" type="System.Int32, mscorlib">
-    <value>70</value>
-  </data>
-  <data name="columnHeaderVersion.DisplayIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="columnHeaderVersion.Width" type="System.Int32, mscorlib">
-    <value>100</value>
+  <data name="tableLayoutPanelDatabaseSettings.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
   </data>
   <data name="columnHeaderSize.DisplayIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="columnHeaderSize.Width" type="System.Int32, mscorlib">
-    <value>70</value>
-  </data>
-  <data name="listViewDatabases.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 46</value>
-  </data>
-  <data name="listViewDatabases.Size" type="System.Drawing.Size, System.Drawing">
-    <value>547, 133</value>
-  </data>
-  <data name="listViewDatabases.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;listViewDatabases.Name" xml:space="preserve">
-    <value>listViewDatabases</value>
-  </data>
-  <data name="&gt;&gt;listViewDatabases.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;listViewDatabases.Parent" xml:space="preserve">
-    <value>groupBoxDatabaseManagement</value>
-  </data>
-  <data name="&gt;&gt;listViewDatabases.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="groupBoxDatabaseManagement.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="groupBoxDatabaseManagement.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 66</value>
-  </data>
-  <data name="groupBoxDatabaseManagement.Size" type="System.Drawing.Size, System.Drawing">
-    <value>823, 218</value>
-  </data>
-  <data name="groupBoxDatabaseManagement.TabIndex" type="System.Int32, mscorlib">
+  <data name="tabPageSqlDatabaseSettings.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="groupBoxDatabaseManagement.Text" xml:space="preserve">
-    <value>Database Management</value>
+  <data name="groupBoxSQLDatabaseSettings.Text" xml:space="preserve">
+    <value>SQL Database settings</value>
+  </data>
+  <data name="&gt;&gt;btnSQLServerChangeSettings.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tabPageSQLServerConnection.Parent" xml:space="preserve">
+    <value>tabControlDatabase</value>
   </data>
   <data name="&gt;&gt;groupBoxDatabaseManagement.Name" xml:space="preserve">
     <value>groupBoxDatabaseManagement</value>
   </data>
-  <data name="&gt;&gt;groupBoxDatabaseManagement.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="groupBoxSQLDatabaseStructure.Size" type="System.Drawing.Size, System.Drawing">
+    <value>829, 138</value>
   </data>
-  <data name="&gt;&gt;groupBoxDatabaseManagement.Parent" xml:space="preserve">
-    <value>tableLayoutPanelSQLSettings</value>
-  </data>
-  <data name="&gt;&gt;groupBoxDatabaseManagement.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="btnDatabaseConnection.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Right</value>
-  </data>
-  <data name="btnDatabaseConnection.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btnDatabaseConnection.Location" type="System.Drawing.Point, System.Drawing">
-    <value>687, 18</value>
-  </data>
-  <data name="btnDatabaseConnection.Size" type="System.Drawing.Size, System.Drawing">
-    <value>109, 24</value>
-  </data>
-  <data name="btnDatabaseConnection.TabIndex" type="System.Int32, mscorlib">
-    <value>41</value>
-  </data>
-  <data name="btnDatabaseConnection.Text" xml:space="preserve">
-    <value>Connect</value>
-  </data>
-  <data name="&gt;&gt;btnDatabaseConnection.Name" xml:space="preserve">
-    <value>btnDatabaseConnection</value>
-  </data>
-  <data name="&gt;&gt;btnDatabaseConnection.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnContinue.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btnDatabaseConnection.Parent" xml:space="preserve">
-    <value>groupBoxSaveSettings</value>
+  <data name="&gt;&gt;lblServerName.ZOrder" xml:space="preserve">
+    <value>9</value>
   </data>
-  <data name="&gt;&gt;btnDatabaseConnection.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;lblSQLDatabaseSettingsVersion.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;lblSQLDatabaseSettingsName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblDatabases.Name" xml:space="preserve">
+    <value>lblDatabases</value>
   </data>
   <data name="btnExit.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt</value>
   </data>
-  <data name="btnExit.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btnExit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 20</value>
-  </data>
-  <data name="btnExit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>88, 22</value>
-  </data>
-  <data name="btnExit.TabIndex" type="System.Int32, mscorlib">
-    <value>37</value>
-  </data>
-  <data name="btnExit.Text" xml:space="preserve">
-    <value>Quit</value>
-  </data>
-  <data name="&gt;&gt;btnExit.Name" xml:space="preserve">
-    <value>btnExit</value>
-  </data>
-  <data name="&gt;&gt;btnExit.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnExit.Parent" xml:space="preserve">
-    <value>groupBoxSaveSettings</value>
-  </data>
-  <data name="&gt;&gt;btnExit.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;btnBackup.Name" xml:space="preserve">
+    <value>btnBackup</value>
   </data>
   <data name="lblResultMessage.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="lblResultMessage.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9pt</value>
+  <data name="btnGetServersList.Text" xml:space="preserve">
+    <value>Get servers list</value>
   </data>
-  <data name="lblResultMessage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>167, 23</value>
+  <data name="&gt;&gt;columnHeaderSize.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="lblResultMessage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 15</value>
+  <data name="btnSQLServerChangeSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>129, 24</value>
   </data>
-  <data name="lblResultMessage.TabIndex" type="System.Int32, mscorlib">
-    <value>36</value>
+  <data name="lblLoginName.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
   </data>
-  <data name="&gt;&gt;lblResultMessage.Name" xml:space="preserve">
-    <value>lblResultMessage</value>
+  <data name="btnContinue.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="btnContinue.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;tabPageSqlDatabaseSettings.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblSQLServerSettings.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="groupBoxDatabaseManagement.Size" type="System.Drawing.Size, System.Drawing">
+    <value>823, 218</value>
+  </data>
+  <data name="lblSQLDatabaseSettingsName.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;txtLoginName.Parent" xml:space="preserve">
+    <value>groupBoxSQLServerConnection</value>
+  </data>
+  <data name="&gt;&gt;btnSQLServerSettingsShowDetails.Parent" xml:space="preserve">
+    <value>groupBoxDatabaseManagement</value>
+  </data>
+  <data name="&gt;&gt;txtPassword.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tableLayoutPanelServerSettings.RowCount" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;btnDefault.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblSQLDatabaseSettingsName.Name" xml:space="preserve">
+    <value>lblSQLDatabaseSettingsName</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSQLDatabaseStructure.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;listViewDatabases.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;btnBackup.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelServerSettings.Name" xml:space="preserve">
+    <value>tableLayoutPanelServerSettings</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Database Control Panel</value>
+  </data>
+  <data name="lblDatabaseSettingsMessage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>206, 48</value>
+  </data>
+  <data name="groupBoxSQLSettings.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="btnBackup.Size" type="System.Drawing.Size, System.Drawing">
+    <value>129, 24</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSQLDatabaseSettings.Parent" xml:space="preserve">
+    <value>tableLayoutPanelDatabaseSettings</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSQLDatabaseSettings.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnSQLServerChangeSettings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>567, 21</value>
+  </data>
+  <data name="lblDatabases.Text" xml:space="preserve">
+    <value>Databases</value>
+  </data>
+  <data name="groupBoxDatabaseManagement.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
   <data name="&gt;&gt;lblResultMessage.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;lblResultMessage.Parent" xml:space="preserve">
+  <data name="btnExit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 22</value>
+  </data>
+  <data name="&gt;&gt;lblServerName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;columnHeaderSize.Name" xml:space="preserve">
+    <value>columnHeaderSize</value>
+  </data>
+  <data name="&gt;&gt;columnHeaderVersion.Name" xml:space="preserve">
+    <value>columnHeaderVersion</value>
+  </data>
+  <data name="&gt;&gt;btnExit.Parent" xml:space="preserve">
     <value>groupBoxSaveSettings</value>
   </data>
-  <data name="&gt;&gt;lblResultMessage.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="lblServerName.Text" xml:space="preserve">
+    <value>Server Name</value>
   </data>
-  <data name="btnSave.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Right</value>
+  <data name="&gt;&gt;groupBoxSQLDatabaseStructure.Parent" xml:space="preserve">
+    <value>tableLayoutPanelDatabaseSettings</value>
   </data>
-  <data name="btnSave.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="&gt;&gt;tableLayoutPanelSQLSettings.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="listViewDatabases.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lblDetectDatabasesInProgress.Name" xml:space="preserve">
+    <value>lblDetectDatabasesInProgress</value>
+  </data>
+  <data name="openFileDialog.Title" xml:space="preserve">
+    <value>Select the backup file to restore</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelServerSettings.Parent" xml:space="preserve">
+    <value>tabPageSQLServerConnection</value>
+  </data>
+  <data name="btnGetServersList.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="btnSave.Location" type="System.Drawing.Point, System.Drawing">
-    <value>687, 19</value>
+  <data name="&gt;&gt;groupBoxSQLSettings.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="btnSave.Size" type="System.Drawing.Size, System.Drawing">
-    <value>130, 24</value>
+  <data name="btnBackup.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
   </data>
-  <data name="btnSave.TabIndex" type="System.Int32, mscorlib">
-    <value>35</value>
+  <data name="btnSQLServerChangeSettings.Text" xml:space="preserve">
+    <value>Change</value>
   </data>
-  <data name="btnSave.Text" xml:space="preserve">
-    <value>Launch OpenCBS</value>
+  <data name="lblSQLDatabaseSettingsVersion.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
-  <data name="&gt;&gt;btnSave.Name" xml:space="preserve">
-    <value>btnSave</value>
+  <data name="btnSQLServerChangeSettings.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
   </data>
-  <data name="&gt;&gt;btnSave.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;groupBoxSQLDatabaseSettings.Name" xml:space="preserve">
+    <value>groupBoxSQLDatabaseSettings</value>
   </data>
-  <data name="&gt;&gt;btnSave.Parent" xml:space="preserve">
+  <data name="lblResultMessage.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="btnSQLServerSettingsShowDetails.Text" xml:space="preserve">
+    <value>See details</value>
+  </data>
+  <data name="&gt;&gt;btnDatabaseConnection.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lblPassword.Parent" xml:space="preserve">
+    <value>groupBoxSQLServerConnection</value>
+  </data>
+  <data name="groupBoxSQLDatabaseSettings.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblServerName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSaveSettings.Name" xml:space="preserve">
     <value>groupBoxSaveSettings</value>
   </data>
-  <data name="&gt;&gt;btnSave.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btnCreateNewDatabase.Name" xml:space="preserve">
+    <value>btnCreateNewDatabase</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSQLDatabaseStructure.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="btnSQLServerSettingsShowDetails.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="btnCreateNewDatabase.Text" xml:space="preserve">
+    <value>Create new database</value>
+  </data>
+  <data name="tableLayoutPanelServerSettings.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="groupBoxSQLServerConnection" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100" /&gt;&lt;Rows Styles="Absolute,183,Percent,100,Absolute,52" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="&gt;&gt;bWDatabaseRestore.Name" xml:space="preserve">
+    <value>bWDatabaseRestore</value>
+  </data>
+  <data name="btnExit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 20</value>
+  </data>
+  <data name="txtLoginName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 20</value>
+  </data>
+  <data name="btnDatabaseConnection.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 24</value>
+  </data>
+  <data name="&gt;&gt;folderBrowserDialog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FolderBrowserDialog, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tabPageSQLServerConnection.Text" xml:space="preserve">
+    <value>Connect to SQLServer</value>
+  </data>
+  <data name="&gt;&gt;tabPageSQLServerSettings.Parent" xml:space="preserve">
+    <value>tabControlDatabase</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSQLServerConnection.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tabPageSQLServerSettings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="txtPassword.Size" type="System.Drawing.Size, System.Drawing">
+    <value>163, 20</value>
+  </data>
+  <data name="groupBoxDatabaseManagement.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;lblDatabases.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tabControlDatabase.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;groupBoxDatabaseManagement.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="groupBoxSaveSettings.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
   <data name="groupBoxSaveSettings.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="groupBoxSaveSettings.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 290</value>
+  <data name="&gt;&gt;btnRestore.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
-  <data name="groupBoxSaveSettings.Size" type="System.Drawing.Size, System.Drawing">
-    <value>823, 52</value>
+  <data name="&gt;&gt;btnSQLDatabaseSettingsChangeName.Name" xml:space="preserve">
+    <value>btnSQLDatabaseSettingsChangeName</value>
   </data>
-  <data name="groupBoxSaveSettings.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>OpenCBS.GUI.UserControl.SweetBaseForm, OpenCBS.GUI, Version=13.5.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;groupBoxSaveSettings.Name" xml:space="preserve">
-    <value>groupBoxSaveSettings</value>
+  <data name="lblSQLDatabaseSettingsVersion.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
   </data>
-  <data name="&gt;&gt;groupBoxSaveSettings.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBoxSaveSettings.Parent" xml:space="preserve">
-    <value>tableLayoutPanelSQLSettings</value>
-  </data>
-  <data name="&gt;&gt;groupBoxSaveSettings.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="tableLayoutPanelServerSettings.ColumnCount" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="tableLayoutPanelServerSettings.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="groupBoxSQLDatabaseStructure.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="tableLayoutPanelServerSettings.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
+  <data name="&gt;&gt;lblDatabases.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
-  <data name="tableLayoutPanelServerSettings.RowCount" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="lblLoginName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 115</value>
   </data>
-  <data name="tableLayoutPanelServerSettings.Size" type="System.Drawing.Size, System.Drawing">
-    <value>829, 345</value>
+  <data name="&gt;&gt;btnRestore.Parent" xml:space="preserve">
+    <value>groupBoxDatabaseManagement</value>
   </data>
-  <data name="tableLayoutPanelServerSettings.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;groupBoxDatabaseManagement.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblPassword.Location" type="System.Drawing.Point, System.Drawing">
+    <value>278, 112</value>
+  </data>
+  <data name="&gt;&gt;btnSave.Parent" xml:space="preserve">
+    <value>groupBoxSaveSettings</value>
+  </data>
+  <data name="&gt;&gt;btnSQLDatabaseSettingsChangeName.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanelServerSettings.Name" xml:space="preserve">
-    <value>tableLayoutPanelServerSettings</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanelServerSettings.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanelServerSettings.Parent" xml:space="preserve">
-    <value>tabPageSQLServerConnection</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanelServerSettings.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tableLayoutPanelServerSettings.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="groupBoxSQLServerConnection" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100" /&gt;&lt;Rows Styles="Absolute,183,Percent,100,Absolute,52" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="tabPageSQLServerConnection.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
   </data>
-  <data name="tabPageSQLServerConnection.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
+  <data name="&gt;&gt;lblFindDBInfo.Name" xml:space="preserve">
+    <value>lblFindDBInfo</value>
   </data>
-  <data name="tabPageSQLServerConnection.Size" type="System.Drawing.Size, System.Drawing">
-    <value>835, 351</value>
+  <data name="lblLoginName.Text" xml:space="preserve">
+    <value>Login Name</value>
   </data>
-  <data name="tabPageSQLServerConnection.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="cbServerName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>274, 21</value>
   </data>
-  <data name="tabPageSQLServerConnection.Text" xml:space="preserve">
-    <value>Connect to SQLServer</value>
+  <data name="&gt;&gt;btnSetAsDefault.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
-  <data name="&gt;&gt;tabPageSQLServerConnection.Name" xml:space="preserve">
-    <value>tabPageSQLServerConnection</value>
+  <data name="btnDefault.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9.75pt</value>
   </data>
-  <data name="&gt;&gt;tabPageSQLServerConnection.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;btnCreateNewDatabase.Parent" xml:space="preserve">
+    <value>groupBoxDatabaseManagement</value>
   </data>
-  <data name="&gt;&gt;tabPageSQLServerConnection.Parent" xml:space="preserve">
-    <value>tabControlDatabase</value>
+  <data name="tableLayoutPanelSQLSettings.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="tabPageSQLServerSettings.Text" xml:space="preserve">
+    <value>SQLServer settings</value>
+  </data>
+  <data name="btnExit.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="lblInstallInstructionSQLServer.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="tabControlDatabase.Size" type="System.Drawing.Size, System.Drawing">
+    <value>843, 377</value>
+  </data>
+  <data name="&gt;&gt;btnSave.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;btnExit.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btnSave.Name" xml:space="preserve">
+    <value>btnSave</value>
+  </data>
+  <data name="&gt;&gt;tabPageSqlDatabaseSettings.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;lblResultMessage.Name" xml:space="preserve">
+    <value>lblResultMessage</value>
+  </data>
+  <data name="groupBoxDatabaseManagement.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 66</value>
   </data>
   <data name="&gt;&gt;tabPageSQLServerConnection.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="btnSQLDatabaseSettingsUpgrade.Text" xml:space="preserve">
+    <value>Upgrade</value>
+  </data>
+  <data name="lblDetectDatabasesInProgress.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="btnSQLDatabaseSettingsUpgrade.Size" type="System.Drawing.Size, System.Drawing">
+    <value>187, 24</value>
+  </data>
+  <data name="&gt;&gt;lblSQLDatabaseSettingsVersion.Parent" xml:space="preserve">
+    <value>groupBoxSQLDatabaseSettings</value>
+  </data>
+  <data name="&gt;&gt;lblSQLServerSettings.Name" xml:space="preserve">
+    <value>lblSQLServerSettings</value>
+  </data>
+  <data name="btnSave.Text" xml:space="preserve">
+    <value>Launch OpenCBS</value>
+  </data>
+  <data name="groupBoxSQLServerConnection.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;btnSQLServerSettingsShowDetails.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblHelpServerName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>399, 55</value>
+  </data>
+  <data name="btnRestore.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="btnDatabaseConnection.Location" type="System.Drawing.Point, System.Drawing">
+    <value>687, 18</value>
+  </data>
+  <data name="&gt;&gt;lblServerName.Name" xml:space="preserve">
+    <value>lblServerName</value>
+  </data>
+  <data name="btnGetServersList.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="&gt;&gt;cbServerName.Parent" xml:space="preserve">
+    <value>groupBoxSQLServerConnection</value>
+  </data>
+  <data name="btnSQLServerSettingsShowDetails.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="groupBoxSQLDatabaseStructure.Text" xml:space="preserve">
+    <value>SQL Database structure</value>
+  </data>
+  <data name="lblSQLDatabaseSettingsVersion.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 13</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSQLDatabaseStructure.Name" xml:space="preserve">
+    <value>groupBoxSQLDatabaseStructure</value>
+  </data>
+  <data name="lblDatabaseSettingsMessage.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="&gt;&gt;tabPageSqlDatabaseSettings.Name" xml:space="preserve">
+    <value>tabPageSqlDatabaseSettings</value>
+  </data>
+  <data name="&gt;&gt;btnSQLServerSettingsShowDetails.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="columnHeaderVersion.Width" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="txtPassword.PasswordChar" type="System.Char, mscorlib" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="btnSetAsDefault.Location" type="System.Drawing.Point, System.Drawing">
+    <value>567, 46</value>
+  </data>
+  <data name="&gt;&gt;lblResultMessage.Parent" xml:space="preserve">
+    <value>groupBoxSaveSettings</value>
+  </data>
+  <data name="btnSQLDatabaseSettingsChangeName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>532, 21</value>
+  </data>
+  <data name="lblSQLServerSettings.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnSQLDatabaseSettingsUpgrade.Parent" xml:space="preserve">
+    <value>groupBoxSQLDatabaseSettings</value>
+  </data>
+  <data name="lblDatabases.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 23</value>
+  </data>
+  <data name="lblHelpServerName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>251, 13</value>
+  </data>
+  <data name="&gt;&gt;lblDatabaseSettingsMessage.Name" xml:space="preserve">
+    <value>lblDatabaseSettingsMessage</value>
+  </data>
+  <data name="&gt;&gt;tabPageSqlDatabaseSettings.Parent" xml:space="preserve">
+    <value>tabControlDatabase</value>
+  </data>
+  <data name="&gt;&gt;columnHeaderName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnSQLDatabaseSettingsChangeName.Parent" xml:space="preserve">
+    <value>groupBoxSQLDatabaseSettings</value>
+  </data>
+  <data name="&gt;&gt;btnContinue.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblLoginName.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelServerSettings.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnSQLServerSettingsShowDetails.Size" type="System.Drawing.Size, System.Drawing">
+    <value>129, 24</value>
+  </data>
+  <data name="btnSetAsDefault.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSQLServerConnection.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblSQLServerSettings.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="columnHeaderSize.Width" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="tabPageSQLServerSettings.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="&gt;&gt;btnSQLServerChangeSettings.Parent" xml:space="preserve">
+    <value>groupBoxSQLSettings</value>
+  </data>
+  <data name="tableLayoutPanelServerSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>829, 345</value>
+  </data>
+  <data name="lblServerName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 51</value>
+  </data>
+  <data name="btnSQLDatabaseSettingsChangeName.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="tBDatabaseSettingsSchemaResult.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="groupBoxSQLDatabaseSettings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 66</value>
+  </data>
+  <data name="lblDetectDatabasesInProgress.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="lblDatabaseSettingsMessage.Text" xml:space="preserve">
+    <value>Please ugrade your database to the current version!</value>
+  </data>
+  <data name="tableLayoutPanelSQLSettings.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="groupBoxSQLSettings" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="groupBoxSaveSettings" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="groupBoxDatabaseManagement" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100" /&gt;&lt;Rows Styles="Absolute,63,Absolute,224,Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="tabPageSQLServerSettings.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="cbServerName.Text" xml:space="preserve">
+    <value>localhost</value>
+  </data>
+  <data name="&gt;&gt;btnDatabaseConnection.Parent" xml:space="preserve">
+    <value>groupBoxSaveSettings</value>
+  </data>
+  <data name="lblLoginName.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;tBDatabaseSettingsSchemaResult.Name" xml:space="preserve">
+    <value>tBDatabaseSettingsSchemaResult</value>
+  </data>
+  <data name="&gt;&gt;btnCreateNewDatabase.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblServerName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 21</value>
+  </data>
+  <data name="&gt;&gt;openFileDialog.Name" xml:space="preserve">
+    <value>openFileDialog</value>
+  </data>
+  <data name="&gt;&gt;btnSQLServerChangeSettings.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="groupBoxSQLDatabaseStructure.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lblDetectDatabasesInProgress.Text" xml:space="preserve">
+    <value>Please wait during databases detection...</value>
+  </data>
+  <data name="&gt;&gt;lblPassword.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="groupBoxSQLServerConnection.Size" type="System.Drawing.Size, System.Drawing">
+    <value>823, 177</value>
+  </data>
+  <data name="&gt;&gt;tabPageSQLServerConnection.Name" xml:space="preserve">
+    <value>tabPageSQLServerConnection</value>
+  </data>
+  <data name="columnHeaderName.Width" type="System.Int32, mscorlib">
+    <value>300</value>
+  </data>
+  <data name="lblServerName.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;lblFindDBInfo.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSQLDatabaseSettings.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnBackup.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;btnSetAsDefault.Parent" xml:space="preserve">
+    <value>groupBoxDatabaseManagement</value>
+  </data>
+  <data name="btnGetServersList.Location" type="System.Drawing.Point, System.Drawing">
+    <value>119, 79</value>
+  </data>
+  <data name="lblPassword.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="openFileDialog.Filter" xml:space="preserve">
+    <value>Backups|*.bak;*.zip</value>
+  </data>
+  <data name="lblHelpServerName.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="lblInstallInstructionSQLServer.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="btnSave.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="&gt;&gt;txtLoginName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="txtLoginName.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="tableLayoutPanelSQLSettings.RowCount" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="lblDatabaseSettingsMessage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>337, 17</value>
+  </data>
+  <data name="lblFindDBInfo.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnRestore.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblResultMessage.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
+  <data name="&gt;&gt;btnSQLDatabaseSettingsUpgrade.Name" xml:space="preserve">
+    <value>btnSQLDatabaseSettingsUpgrade</value>
+  </data>
+  <data name="&gt;&gt;listViewDatabases.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tabPageSQLServerConnection.Size" type="System.Drawing.Size, System.Drawing">
+    <value>835, 351</value>
+  </data>
+  <data name="&gt;&gt;bWDatabasesDetection.Name" xml:space="preserve">
+    <value>bWDatabasesDetection</value>
+  </data>
+  <data name="btnBackup.Text" xml:space="preserve">
+    <value>Backup</value>
+  </data>
+  <data name="&gt;&gt;lblDetectDatabasesInProgress.Parent" xml:space="preserve">
+    <value>groupBoxDatabaseManagement</value>
+  </data>
+  <data name="&gt;&gt;tabControlDatabase.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tabControlDatabase.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnGetServersList.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="groupBoxSQLSettings.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;bWDatabaseRestore.Type" xml:space="preserve">
+    <value>System.ComponentModel.BackgroundWorker, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblInstallInstructionSQLServer.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelSQLSettings.Name" xml:space="preserve">
+    <value>tableLayoutPanelSQLSettings</value>
+  </data>
+  <data name="&gt;&gt;btnDefault.Name" xml:space="preserve">
+    <value>btnDefault</value>
+  </data>
+  <data name="&gt;&gt;btnSetAsDefault.Name" xml:space="preserve">
+    <value>btnSetAsDefault</value>
+  </data>
+  <data name="&gt;&gt;lblInstallInstructionSQLServer.Parent" xml:space="preserve">
+    <value>groupBoxSQLServerConnection</value>
+  </data>
+  <data name="&gt;&gt;btnExit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tableLayoutPanelDatabaseSettings.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="groupBoxSQLDatabaseSettings" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="groupBoxSQLDatabaseStructure" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100" /&gt;&lt;Rows Styles="Absolute,63,Absolute,92,Percent,100,Absolute,52" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="&gt;&gt;btnExit.Name" xml:space="preserve">
+    <value>btnExit</value>
+  </data>
+  <data name="&gt;&gt;groupBoxDatabaseManagement.Parent" xml:space="preserve">
+    <value>tableLayoutPanelSQLSettings</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelDatabaseSettings.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lblInstallInstructionSQLServer.Name" xml:space="preserve">
+    <value>lblInstallInstructionSQLServer</value>
+  </data>
+  <data name="lblSQLDatabaseSettingsName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 27</value>
+  </data>
+  <data name="lblFindDBInfo.Text" xml:space="preserve">
+    <value>OpenCBS needs to know where to find the database. Please enter in the details below and click on Connect</value>
+  </data>
+  <data name="&gt;&gt;lblSQLDatabaseSettingsName.Parent" xml:space="preserve">
+    <value>groupBoxSQLDatabaseSettings</value>
+  </data>
+  <data name="&gt;&gt;bWDatabaseBackup.Name" xml:space="preserve">
+    <value>bWDatabaseBackup</value>
+  </data>
+  <data name="&gt;&gt;bWDatabaseCreation.Type" xml:space="preserve">
+    <value>System.ComponentModel.BackgroundWorker, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbServerName.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="txtLoginName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>119, 115</value>
+  </data>
+  <data name="&gt;&gt;lblPassword.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="btnSQLDatabaseSettingsChangeName.Text" xml:space="preserve">
+    <value>Change</value>
+  </data>
+  <data name="groupBoxSQLDatabaseStructure.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 158</value>
+  </data>
+  <data name="&gt;&gt;lblSQLDatabaseSettingsVersion.Name" xml:space="preserve">
+    <value>lblSQLDatabaseSettingsVersion</value>
+  </data>
+  <data name="btnExit.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSQLSettings.Name" xml:space="preserve">
+    <value>groupBoxSQLSettings</value>
+  </data>
+  <data name="&gt;&gt;lblDatabaseSettingsMessage.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnRestore.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="lblDatabases.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnSQLDatabaseSettingsChangeName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>187, 24</value>
+  </data>
+  <data name="lblInstallInstructionSQLServer.Text" xml:space="preserve">
+    <value>If you do not have SQLServer installed then click on the following link for detailed instructions. </value>
+  </data>
+  <data name="&gt;&gt;lblSQLServerSettings.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;columnHeaderVersion.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="listViewDatabases.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 46</value>
+  </data>
+  <data name="btnContinue.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
+  </data>
+  <data name="btnDefault.Text" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="btnContinue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>532, 68</value>
+  </data>
+  <data name="&gt;&gt;tabPageSQLServerConnection.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblSQLDatabaseSettingsVersion.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblSQLServerSettings.Parent" xml:space="preserve">
+    <value>groupBoxSQLSettings</value>
+  </data>
+  <data name="&gt;&gt;tabControlDatabase.Name" xml:space="preserve">
+    <value>tabControlDatabase</value>
+  </data>
+  <data name="&gt;&gt;btnSQLServerChangeSettings.Name" xml:space="preserve">
+    <value>btnSQLServerChangeSettings</value>
+  </data>
+  <data name="&gt;&gt;bWDatabaseUpdate.Type" xml:space="preserve">
+    <value>System.ComponentModel.BackgroundWorker, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnCreateNewDatabase.Location" type="System.Drawing.Point, System.Drawing">
+    <value>390, 185</value>
+  </data>
+  <data name="btnSave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 24</value>
+  </data>
+  <data name="cbServerName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>119, 51</value>
+  </data>
+  <data name="btnDatabaseConnection.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="tBDatabaseSettingsSchemaResult.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;columnHeaderBranchCode.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tabControlDatabase.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="lblSQLServerSettings.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tBDatabaseSettingsSchemaResult.Size" type="System.Drawing.Size, System.Drawing">
+    <value>823, 119</value>
+  </data>
+  <data name="&gt;&gt;bWDatabaseCreation.Name" xml:space="preserve">
+    <value>bWDatabaseCreation</value>
+  </data>
   <data name="tableLayoutPanelSQLSettings.ColumnCount" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="tableLayoutPanelSQLSettings.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="btnSQLServerSettingsShowDetails.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;btnSQLServerSettingsShowDetails.Name" xml:space="preserve">
+    <value>btnSQLServerSettingsShowDetails</value>
+  </data>
+  <data name="&gt;&gt;bWDatabaseUpdate.Name" xml:space="preserve">
+    <value>bWDatabaseUpdate</value>
+  </data>
+  <data name="&gt;&gt;lblInstallInstructionSQLServer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;openFileDialog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblSQLDatabaseSettingsName.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="btnSQLDatabaseSettingsChangeName.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="tabControlDatabase.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="tableLayoutPanelSQLSettings.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
+  <data name="groupBoxSQLSettings.Text" xml:space="preserve">
+    <value>SQLServer Settings</value>
   </data>
-  <data name="tableLayoutPanelSQLSettings.RowCount" type="System.Int32, mscorlib">
+  <data name="lblInstallInstructionSQLServer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>451, 13</value>
+  </data>
+  <data name="groupBoxSaveSettings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 290</value>
+  </data>
+  <data name="&gt;&gt;lblFindDBInfo.Parent" xml:space="preserve">
+    <value>groupBoxSQLServerConnection</value>
+  </data>
+  <data name="lblDatabases.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 21</value>
+  </data>
+  <data name="tableLayoutPanelServerSettings.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="groupBoxDatabaseManagement.Text" xml:space="preserve">
+    <value>Database Management</value>
+  </data>
+  <data name="&gt;&gt;lblHelpServerName.Parent" xml:space="preserve">
+    <value>groupBoxSQLServerConnection</value>
+  </data>
+  <data name="&gt;&gt;btnSQLDatabaseSettingsChangeName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;listViewDatabases.Parent" xml:space="preserve">
+    <value>groupBoxDatabaseManagement</value>
+  </data>
+  <data name="lblDatabaseSettingsMessage.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="btnSQLDatabaseSettingsUpgrade.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnSQLServerChangeSettings.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;folderBrowserDialog.Name" xml:space="preserve">
+    <value>folderBrowserDialog</value>
+  </data>
+  <data name="txtPassword.Location" type="System.Drawing.Point, System.Drawing">
+    <value>390, 115</value>
+  </data>
+  <data name="lblHelpServerName.Text" xml:space="preserve">
+    <value>typically in the form computer_name\SQLEXPRESS</value>
+  </data>
+  <data name="&gt;&gt;lblHelpServerName.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
   <data name="tableLayoutPanelSQLSettings.Size" type="System.Drawing.Size, System.Drawing">
     <value>829, 345</value>
   </data>
-  <data name="tableLayoutPanelSQLSettings.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+  <data name="tableLayoutPanelSQLSettings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
   </data>
-  <data name="&gt;&gt;tableLayoutPanelSQLSettings.Name" xml:space="preserve">
-    <value>tableLayoutPanelSQLSettings</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanelSQLSettings.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanelSQLSettings.Parent" xml:space="preserve">
-    <value>tabPageSQLServerSettings</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanelSQLSettings.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tableLayoutPanelSQLSettings.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="groupBoxSQLSettings" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="groupBoxSaveSettings" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="groupBoxDatabaseManagement" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100" /&gt;&lt;Rows Styles="Absolute,63,Absolute,224,Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="tabPageSQLServerSettings.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="tabPageSQLServerSettings.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="tabPageSQLServerSettings.Size" type="System.Drawing.Size, System.Drawing">
-    <value>835, 351</value>
-  </data>
-  <data name="tabPageSQLServerSettings.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="tabPageSQLServerSettings.Text" xml:space="preserve">
-    <value>SQLServer settings</value>
-  </data>
-  <data name="&gt;&gt;tabPageSQLServerSettings.Name" xml:space="preserve">
-    <value>tabPageSQLServerSettings</value>
-  </data>
-  <data name="&gt;&gt;tabPageSQLServerSettings.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPageSQLServerSettings.Parent" xml:space="preserve">
-    <value>tabControlDatabase</value>
-  </data>
-  <data name="&gt;&gt;tabPageSQLServerSettings.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="tableLayoutPanelDatabaseSettings.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="tableLayoutPanelDatabaseSettings.ColumnCount" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="btnSQLDatabaseSettingsUpgrade.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Right</value>
-  </data>
-  <data name="btnSQLDatabaseSettingsUpgrade.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btnSQLDatabaseSettingsUpgrade.Location" type="System.Drawing.Point, System.Drawing">
-    <value>532, 48</value>
-  </data>
-  <data name="btnSQLDatabaseSettingsUpgrade.Size" type="System.Drawing.Size, System.Drawing">
-    <value>187, 24</value>
-  </data>
-  <data name="btnSQLDatabaseSettingsUpgrade.TabIndex" type="System.Int32, mscorlib">
-    <value>36</value>
-  </data>
-  <data name="btnSQLDatabaseSettingsUpgrade.Text" xml:space="preserve">
-    <value>Upgrade</value>
-  </data>
-  <data name="&gt;&gt;btnSQLDatabaseSettingsUpgrade.Name" xml:space="preserve">
-    <value>btnSQLDatabaseSettingsUpgrade</value>
-  </data>
-  <data name="&gt;&gt;btnSQLDatabaseSettingsUpgrade.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnDatabaseConnection.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btnSQLDatabaseSettingsUpgrade.Parent" xml:space="preserve">
-    <value>groupBoxSQLDatabaseSettings</value>
+  <data name="lblPassword.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
   </data>
-  <data name="&gt;&gt;btnSQLDatabaseSettingsUpgrade.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="btnSQLDatabaseSettingsChangeName.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Right</value>
-  </data>
-  <data name="btnSQLDatabaseSettingsChangeName.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btnSQLDatabaseSettingsChangeName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>532, 21</value>
-  </data>
-  <data name="btnSQLDatabaseSettingsChangeName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>187, 24</value>
-  </data>
-  <data name="btnSQLDatabaseSettingsChangeName.TabIndex" type="System.Int32, mscorlib">
-    <value>35</value>
-  </data>
-  <data name="btnSQLDatabaseSettingsChangeName.Text" xml:space="preserve">
-    <value>Change</value>
-  </data>
-  <data name="&gt;&gt;btnSQLDatabaseSettingsChangeName.Name" xml:space="preserve">
-    <value>btnSQLDatabaseSettingsChangeName</value>
-  </data>
-  <data name="&gt;&gt;btnSQLDatabaseSettingsChangeName.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnSQLDatabaseSettingsChangeName.Parent" xml:space="preserve">
-    <value>groupBoxSQLDatabaseSettings</value>
-  </data>
-  <data name="&gt;&gt;btnSQLDatabaseSettingsChangeName.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="lblSQLDatabaseSettingsVersion.AutoSize" type="System.Boolean, mscorlib">
+  <data name="lblFindDBInfo.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="lblSQLDatabaseSettingsVersion.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
-  </data>
-  <data name="lblSQLDatabaseSettingsVersion.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 54</value>
-  </data>
-  <data name="lblSQLDatabaseSettingsVersion.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 13</value>
-  </data>
-  <data name="lblSQLDatabaseSettingsVersion.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;lblSQLDatabaseSettingsVersion.Name" xml:space="preserve">
-    <value>lblSQLDatabaseSettingsVersion</value>
-  </data>
-  <data name="&gt;&gt;lblSQLDatabaseSettingsVersion.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblSQLDatabaseSettingsVersion.Parent" xml:space="preserve">
-    <value>groupBoxSQLDatabaseSettings</value>
-  </data>
-  <data name="&gt;&gt;lblSQLDatabaseSettingsVersion.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="lblSQLDatabaseSettingsName.AutoSize" type="System.Boolean, mscorlib">
+  <data name="lblInstallInstructionSQLServer.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="lblSQLDatabaseSettingsName.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
+  <data name="&gt;&gt;txtLoginName.ZOrder" xml:space="preserve">
+    <value>7</value>
   </data>
-  <data name="lblSQLDatabaseSettingsName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 27</value>
-  </data>
-  <data name="lblSQLDatabaseSettingsName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 13</value>
-  </data>
-  <data name="lblSQLDatabaseSettingsName.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;lblSQLDatabaseSettingsName.Name" xml:space="preserve">
-    <value>lblSQLDatabaseSettingsName</value>
-  </data>
-  <data name="&gt;&gt;lblSQLDatabaseSettingsName.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblSQLDatabaseSettingsName.Parent" xml:space="preserve">
-    <value>groupBoxSQLDatabaseSettings</value>
-  </data>
-  <data name="&gt;&gt;lblSQLDatabaseSettingsName.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="groupBoxSQLDatabaseSettings.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="groupBoxSQLDatabaseSettings.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 66</value>
-  </data>
-  <data name="groupBoxSQLDatabaseSettings.Size" type="System.Drawing.Size, System.Drawing">
-    <value>829, 86</value>
-  </data>
-  <data name="groupBoxSQLDatabaseSettings.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="groupBoxSQLDatabaseSettings.Text" xml:space="preserve">
-    <value>SQL Database settings</value>
-  </data>
-  <data name="&gt;&gt;groupBoxSQLDatabaseSettings.Name" xml:space="preserve">
-    <value>groupBoxSQLDatabaseSettings</value>
-  </data>
-  <data name="&gt;&gt;groupBoxSQLDatabaseSettings.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBoxSQLDatabaseSettings.Parent" xml:space="preserve">
-    <value>tableLayoutPanelDatabaseSettings</value>
-  </data>
-  <data name="&gt;&gt;groupBoxSQLDatabaseSettings.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="btnContinue.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Right</value>
-  </data>
-  <data name="btnContinue.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
-  </data>
-  <data name="btnContinue.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btnContinue.Location" type="System.Drawing.Point, System.Drawing">
-    <value>532, 68</value>
-  </data>
-  <data name="btnContinue.Size" type="System.Drawing.Size, System.Drawing">
-    <value>142, 24</value>
-  </data>
-  <data name="btnContinue.TabIndex" type="System.Int32, mscorlib">
-    <value>42</value>
-  </data>
-  <data name="btnContinue.Text" xml:space="preserve">
-    <value>CONTINUE</value>
-  </data>
-  <data name="btnContinue.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;btnContinue.Name" xml:space="preserve">
-    <value>btnContinue</value>
-  </data>
-  <data name="&gt;&gt;btnContinue.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnContinue.Parent" xml:space="preserve">
-    <value>groupBoxSQLDatabaseStructure</value>
-  </data>
-  <data name="&gt;&gt;btnContinue.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="lblDatabaseSettingsMessage.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblDatabaseSettingsMessage.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt</value>
-  </data>
-  <data name="lblDatabaseSettingsMessage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>206, 48</value>
-  </data>
-  <data name="lblDatabaseSettingsMessage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>337, 17</value>
-  </data>
-  <data name="lblDatabaseSettingsMessage.TabIndex" type="System.Int32, mscorlib">
-    <value>40</value>
-  </data>
-  <data name="lblDatabaseSettingsMessage.Text" xml:space="preserve">
-    <value>Please ugrade your database to the current version!</value>
-  </data>
-  <data name="&gt;&gt;lblDatabaseSettingsMessage.Name" xml:space="preserve">
-    <value>lblDatabaseSettingsMessage</value>
-  </data>
-  <data name="&gt;&gt;lblDatabaseSettingsMessage.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblDatabaseSettingsMessage.Parent" xml:space="preserve">
-    <value>groupBoxSQLDatabaseStructure</value>
-  </data>
-  <data name="&gt;&gt;lblDatabaseSettingsMessage.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="tBDatabaseSettingsSchemaResult.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="tBDatabaseSettingsSchemaResult.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 16</value>
-  </data>
-  <data name="tBDatabaseSettingsSchemaResult.Size" type="System.Drawing.Size, System.Drawing">
-    <value>823, 119</value>
+  <data name="lblHelpServerName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Italic</value>
   </data>
   <data name="tBDatabaseSettingsSchemaResult.TabIndex" type="System.Int32, mscorlib">
     <value>41</value>
   </data>
-  <data name="tBDatabaseSettingsSchemaResult.Text" xml:space="preserve">
-    <value />
+  <data name="cbServerName.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
   </data>
-  <data name="&gt;&gt;tBDatabaseSettingsSchemaResult.Name" xml:space="preserve">
-    <value>tBDatabaseSettingsSchemaResult</value>
+  <data name="txtPassword.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
   </data>
-  <data name="&gt;&gt;tBDatabaseSettingsSchemaResult.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="btnDatabaseConnection.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblInstallInstructionSQLServer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>71, 147</value>
+  </data>
+  <data name="&gt;&gt;btnSQLDatabaseSettingsUpgrade.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnDefault.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lblDetectDatabasesInProgress.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;columnHeaderBranchCode.Name" xml:space="preserve">
+    <value>columnHeaderBranchCode</value>
+  </data>
+  <data name="&gt;&gt;btnDatabaseConnection.Name" xml:space="preserve">
+    <value>btnDatabaseConnection</value>
+  </data>
+  <data name="btnDefault.Size" type="System.Drawing.Size, System.Drawing">
+    <value>134, 22</value>
+  </data>
+  <data name="&gt;&gt;btnContinue.Parent" xml:space="preserve">
+    <value>groupBoxSQLDatabaseStructure</value>
+  </data>
+  <data name="btnGetServersList.Size" type="System.Drawing.Size, System.Drawing">
+    <value>134, 22</value>
+  </data>
+  <data name="&gt;&gt;btnGetServersList.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblResultMessage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 15</value>
+  </data>
+  <data name="lblFindDBInfo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>123, 26</value>
   </data>
   <data name="&gt;&gt;tBDatabaseSettingsSchemaResult.Parent" xml:space="preserve">
     <value>groupBoxSQLDatabaseStructure</value>
   </data>
-  <data name="&gt;&gt;tBDatabaseSettingsSchemaResult.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;lblHelpServerName.Name" xml:space="preserve">
+    <value>lblHelpServerName</value>
   </data>
-  <data name="groupBoxSQLDatabaseStructure.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+  <data name="btnCreateNewDatabase.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 24</value>
   </data>
-  <data name="groupBoxSQLDatabaseStructure.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 158</value>
+  <data name="btnSetAsDefault.Text" xml:space="preserve">
+    <value>Set as default</value>
   </data>
-  <data name="groupBoxSQLDatabaseStructure.Size" type="System.Drawing.Size, System.Drawing">
-    <value>829, 138</value>
+  <data name="btnRestore.Location" type="System.Drawing.Point, System.Drawing">
+    <value>567, 116</value>
   </data>
-  <data name="groupBoxSQLDatabaseStructure.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="btnCreateNewDatabase.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="groupBoxSQLDatabaseStructure.Text" xml:space="preserve">
-    <value>SQL Database structure</value>
+  <data name="groupBoxSQLSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>823, 57</value>
   </data>
-  <data name="&gt;&gt;groupBoxSQLDatabaseStructure.Name" xml:space="preserve">
-    <value>groupBoxSQLDatabaseStructure</value>
+  <data name="lblPassword.Text" xml:space="preserve">
+    <value>Password</value>
   </data>
-  <data name="&gt;&gt;groupBoxSQLDatabaseStructure.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="groupBoxSQLSettings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
   </data>
-  <data name="&gt;&gt;groupBoxSQLDatabaseStructure.Parent" xml:space="preserve">
-    <value>tableLayoutPanelDatabaseSettings</value>
+  <data name="tabPageSQLServerConnection.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
-  <data name="&gt;&gt;groupBoxSQLDatabaseStructure.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="lblDatabaseSettingsMessage.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
   </data>
-  <data name="tableLayoutPanelDatabaseSettings.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+  <data name="lblSQLDatabaseSettingsVersion.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="tableLayoutPanelDatabaseSettings.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+  <data name="lblLoginName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 20</value>
   </data>
-  <data name="tableLayoutPanelDatabaseSettings.RowCount" type="System.Int32, mscorlib">
-    <value>4</value>
+  <data name="btnContinue.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;btnRestore.Name" xml:space="preserve">
+    <value>btnRestore</value>
   </data>
   <data name="tableLayoutPanelDatabaseSettings.Size" type="System.Drawing.Size, System.Drawing">
     <value>835, 351</value>
   </data>
-  <data name="tableLayoutPanelDatabaseSettings.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;lblSQLDatabaseSettingsName.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;btnGetServersList.Name" xml:space="preserve">
+    <value>btnGetServersList</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSQLServerConnection.Parent" xml:space="preserve">
+    <value>tableLayoutPanelServerSettings</value>
+  </data>
+  <data name="&gt;&gt;listViewDatabases.Name" xml:space="preserve">
+    <value>listViewDatabases</value>
+  </data>
+  <data name="btnSQLDatabaseSettingsChangeName.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="&gt;&gt;columnHeaderName.Name" xml:space="preserve">
+    <value>columnHeaderName</value>
+  </data>
+  <data name="&gt;&gt;lblDatabases.Parent" xml:space="preserve">
+    <value>groupBoxDatabaseManagement</value>
+  </data>
+  <data name="btnSave.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSaveSettings.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;txtLoginName.Name" xml:space="preserve">
+    <value>txtLoginName</value>
+  </data>
+  <data name="lblSQLDatabaseSettingsName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="btnDatabaseConnection.Text" xml:space="preserve">
+    <value>Connect</value>
+  </data>
+  <data name="groupBoxSaveSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>823, 52</value>
+  </data>
+  <data name="btnDefault.Location" type="System.Drawing.Point, System.Drawing">
+    <value>259, 79</value>
+  </data>
+  <data name="btnBackup.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="&gt;&gt;bWDatabaseBackup.Type" xml:space="preserve">
+    <value>System.ComponentModel.BackgroundWorker, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tableLayoutPanelDatabaseSettings.ColumnCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lblServerName.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="tableLayoutPanelDatabaseSettings.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="btnContinue.Text" xml:space="preserve">
+    <value>CONTINUE</value>
+  </data>
+  <data name="&gt;&gt;btnSQLDatabaseSettingsUpgrade.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;tableLayoutPanelDatabaseSettings.Name" xml:space="preserve">
-    <value>tableLayoutPanelDatabaseSettings</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanelDatabaseSettings.Type" xml:space="preserve">
+  <data name="&gt;&gt;tableLayoutPanelSQLSettings.Type" xml:space="preserve">
     <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tableLayoutPanelDatabaseSettings.Parent" xml:space="preserve">
-    <value>tabPageSqlDatabaseSettings</value>
+  <data name="btnSQLDatabaseSettingsUpgrade.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
   </data>
-  <data name="&gt;&gt;tableLayoutPanelDatabaseSettings.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="groupBoxSQLServerConnection.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
   </data>
-  <data name="tableLayoutPanelDatabaseSettings.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="groupBoxSQLDatabaseSettings" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="groupBoxSQLDatabaseStructure" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100" /&gt;&lt;Rows Styles="Absolute,63,Absolute,92,Percent,100,Absolute,52" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FrmDatabaseSettings</value>
+  </data>
+  <data name="listViewDatabases.Size" type="System.Drawing.Size, System.Drawing">
+    <value>547, 133</value>
+  </data>
+  <data name="&gt;&gt;cbServerName.Name" xml:space="preserve">
+    <value>cbServerName</value>
+  </data>
+  <data name="lblDetectDatabasesInProgress.Location" type="System.Drawing.Point, System.Drawing">
+    <value>123, 97</value>
+  </data>
+  <data name="groupBoxSQLDatabaseSettings.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;btnRestore.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="columnHeaderBranchCode.Width" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="btnContinue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>142, 24</value>
+  </data>
+  <data name="lblDatabases.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="&gt;&gt;lblFindDBInfo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnBackup.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>843, 377</value>
+  </data>
+  <data name="&gt;&gt;tBDatabaseSettingsSchemaResult.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblDetectDatabasesInProgress.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnExit.Text" xml:space="preserve">
+    <value>Quit</value>
+  </data>
+  <data name="&gt;&gt;btnBackup.Parent" xml:space="preserve">
+    <value>groupBoxDatabaseManagement</value>
+  </data>
+  <data name="tableLayoutPanelDatabaseSettings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="btnSQLServerSettingsShowDetails.Location" type="System.Drawing.Point, System.Drawing">
+    <value>567, 76</value>
+  </data>
+  <data name="&gt;&gt;lblLoginName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblServerName.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
   </data>
   <data name="tabPageSqlDatabaseSettings.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
   </data>
-  <data name="tabPageSqlDatabaseSettings.Size" type="System.Drawing.Size, System.Drawing">
-    <value>835, 351</value>
+  <data name="btnSetAsDefault.Size" type="System.Drawing.Size, System.Drawing">
+    <value>129, 24</value>
   </data>
-  <data name="tabPageSqlDatabaseSettings.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="tabPageSqlDatabaseSettings.Text" xml:space="preserve">
-    <value>SQL Database settings</value>
-  </data>
-  <data name="&gt;&gt;tabPageSqlDatabaseSettings.Name" xml:space="preserve">
-    <value>tabPageSqlDatabaseSettings</value>
-  </data>
-  <data name="&gt;&gt;tabPageSqlDatabaseSettings.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPageSqlDatabaseSettings.Parent" xml:space="preserve">
-    <value>tabControlDatabase</value>
-  </data>
-  <data name="&gt;&gt;tabPageSqlDatabaseSettings.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="tabControlDatabase.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="tabControlDatabase.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="tabControlDatabase.Size" type="System.Drawing.Size, System.Drawing">
-    <value>843, 377</value>
-  </data>
-  <data name="tabControlDatabase.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;tabControlDatabase.Name" xml:space="preserve">
-    <value>tabControlDatabase</value>
+  <data name="btnDefault.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="&gt;&gt;tabControlDatabase.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tabControlDatabase.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="lblDetectDatabasesInProgress.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
   </data>
-  <data name="&gt;&gt;tabControlDatabase.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;txtPassword.Name" xml:space="preserve">
+    <value>txtPassword</value>
+  </data>
+  <data name="&gt;&gt;btnDefault.Parent" xml:space="preserve">
+    <value>groupBoxSQLServerConnection</value>
+  </data>
+  <data name="tableLayoutPanelSQLSettings.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="lblSQLServerSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 13</value>
+  </data>
+  <data name="tabPageSqlDatabaseSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>835, 351</value>
+  </data>
+  <data name="lblLoginName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="lblDatabases.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="columnHeaderBranchCode.DisplayIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="groupBoxSQLServerConnection.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
+  <data name="&gt;&gt;tableLayoutPanelServerSettings.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnSetAsDefault.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblSQLDatabaseSettingsName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 13</value>
+  </data>
+  <data name="&gt;&gt;txtPassword.Parent" xml:space="preserve">
+    <value>groupBoxSQLServerConnection</value>
+  </data>
+  <data name="&gt;&gt;bWDatabasesDetection.Type" xml:space="preserve">
+    <value>System.ComponentModel.BackgroundWorker, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSQLSettings.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPageSQLServerSettings.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblPassword.Name" xml:space="preserve">
+    <value>lblPassword</value>
+  </data>
+  <data name="btnSave.Location" type="System.Drawing.Point, System.Drawing">
+    <value>687, 19</value>
+  </data>
+  <data name="&gt;&gt;txtPassword.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="tableLayoutPanelDatabaseSettings.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblResultMessage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>167, 23</value>
+  </data>
+  <data name="btnContinue.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="&gt;&gt;tabPageSQLServerSettings.Name" xml:space="preserve">
+    <value>tabPageSQLServerSettings</value>
+  </data>
+  <data name="btnBackup.Location" type="System.Drawing.Point, System.Drawing">
+    <value>567, 146</value>
+  </data>
+  <data name="btnDatabaseConnection.TabIndex" type="System.Int32, mscorlib">
+    <value>41</value>
+  </data>
+  <data name="&gt;&gt;lblServerName.Parent" xml:space="preserve">
+    <value>groupBoxSQLServerConnection</value>
+  </data>
+  <data name="&gt;&gt;btnSave.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblDatabaseSettingsMessage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnCreateNewDatabase.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSQLSettings.Parent" xml:space="preserve">
+    <value>tableLayoutPanelSQLSettings</value>
+  </data>
+  <data name="lblFindDBInfo.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
+  <data name="&gt;&gt;lblLoginName.Parent" xml:space="preserve">
+    <value>groupBoxSQLServerConnection</value>
+  </data>
+  <data name="tableLayoutPanelServerSettings.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;btnGetServersList.Parent" xml:space="preserve">
+    <value>groupBoxSQLServerConnection</value>
+  </data>
+  <data name="&gt;&gt;lblResultMessage.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;btnSetAsDefault.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="columnHeaderVersion.DisplayIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="btnSave.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblPassword.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblFindDBInfo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>589, 15</value>
+  </data>
+  <data name="groupBoxSQLDatabaseSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>829, 86</value>
+  </data>
+  <data name="lblPassword.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 24</value>
+  </data>
+  <data name="&gt;&gt;tabPageSQLServerSettings.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="txtLoginName.Text" xml:space="preserve">
+    <value>sa</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelDatabaseSettings.Name" xml:space="preserve">
+    <value>tableLayoutPanelDatabaseSettings</value>
+  </data>
+  <data name="tableLayoutPanelDatabaseSettings.RowCount" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelDatabaseSettings.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblLoginName.Name" xml:space="preserve">
+    <value>lblLoginName</value>
+  </data>
+  <data name="&gt;&gt;btnCreateNewDatabase.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="btnRestore.Size" type="System.Drawing.Size, System.Drawing">
+    <value>129, 24</value>
+  </data>
+  <metadata name="bWDatabaseCreation.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>406, 5</value>
+  </metadata>
   <metadata name="bWDatabasesDetection.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>6, 5</value>
   </metadata>
   <metadata name="openFileDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>296, 5</value>
-  </metadata>
-  <data name="openFileDialog.Filter" xml:space="preserve">
-    <value>Backups|*.bak;*.zip</value>
-  </data>
-  <data name="openFileDialog.Title" xml:space="preserve">
-    <value>Select the backup file to restore</value>
-  </data>
-  <metadata name="bWDatabaseCreation.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>406, 5</value>
-  </metadata>
-  <metadata name="bWDatabaseBackup.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>686, 5</value>
-  </metadata>
-  <metadata name="bWDatabaseRestore.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>548, 5</value>
-  </metadata>
-  <metadata name="bWDatabaseUpdate.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>160, 5</value>
-  </metadata>
-  <metadata name="folderBrowserDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>822, 6</value>
   </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -1473,88 +1542,16 @@
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>32</value>
   </metadata>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>843, 377</value>
-  </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Database Control Panel</value>
-  </data>
-  <data name="&gt;&gt;columnHeaderName.Name" xml:space="preserve">
-    <value>columnHeaderName</value>
-  </data>
-  <data name="&gt;&gt;columnHeaderName.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;columnHeaderBranchCode.Name" xml:space="preserve">
-    <value>columnHeaderBranchCode</value>
-  </data>
-  <data name="&gt;&gt;columnHeaderBranchCode.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;columnHeaderVersion.Name" xml:space="preserve">
-    <value>columnHeaderVersion</value>
-  </data>
-  <data name="&gt;&gt;columnHeaderVersion.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;columnHeaderSize.Name" xml:space="preserve">
-    <value>columnHeaderSize</value>
-  </data>
-  <data name="&gt;&gt;columnHeaderSize.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;bWDatabasesDetection.Name" xml:space="preserve">
-    <value>bWDatabasesDetection</value>
-  </data>
-  <data name="&gt;&gt;bWDatabasesDetection.Type" xml:space="preserve">
-    <value>System.ComponentModel.BackgroundWorker, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;openFileDialog.Name" xml:space="preserve">
-    <value>openFileDialog</value>
-  </data>
-  <data name="&gt;&gt;openFileDialog.Type" xml:space="preserve">
-    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;bWDatabaseCreation.Name" xml:space="preserve">
-    <value>bWDatabaseCreation</value>
-  </data>
-  <data name="&gt;&gt;bWDatabaseCreation.Type" xml:space="preserve">
-    <value>System.ComponentModel.BackgroundWorker, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;bWDatabaseBackup.Name" xml:space="preserve">
-    <value>bWDatabaseBackup</value>
-  </data>
-  <data name="&gt;&gt;bWDatabaseBackup.Type" xml:space="preserve">
-    <value>System.ComponentModel.BackgroundWorker, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;bWDatabaseRestore.Name" xml:space="preserve">
-    <value>bWDatabaseRestore</value>
-  </data>
-  <data name="&gt;&gt;bWDatabaseRestore.Type" xml:space="preserve">
-    <value>System.ComponentModel.BackgroundWorker, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;bWDatabaseUpdate.Name" xml:space="preserve">
-    <value>bWDatabaseUpdate</value>
-  </data>
-  <data name="&gt;&gt;bWDatabaseUpdate.Type" xml:space="preserve">
-    <value>System.ComponentModel.BackgroundWorker, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;folderBrowserDialog.Name" xml:space="preserve">
-    <value>folderBrowserDialog</value>
-  </data>
-  <data name="&gt;&gt;folderBrowserDialog.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FolderBrowserDialog, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>FrmDatabaseSettings</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>OpenCBS.GUI.UserControl.SweetBaseForm, OpenCBS.GUI, Version=13.5.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
+  <metadata name="bWDatabaseUpdate.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>160, 5</value>
+  </metadata>
+  <metadata name="folderBrowserDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>822, 6</value>
+  </metadata>
+  <metadata name="bWDatabaseRestore.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>548, 5</value>
+  </metadata>
+  <metadata name="bWDatabaseBackup.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>686, 5</value>
+  </metadata>
 </root>

@@ -117,24 +117,18 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnDefault.Text" xml:space="preserve">
     <value>По-умолчанию</value>
   </data>
   <data name="btnGetServersList.Text" xml:space="preserve">
     <value>Список серверов</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="lblInstallInstructionSQLServer.Size" type="System.Drawing.Size, System.Drawing">
     <value>389, 13</value>
   </data>
   <data name="lblInstallInstructionSQLServer.Text" xml:space="preserve">
     <value>Если сервер не установлен нажмите на ссылку для детальных инструкций</value>
-  </data>
-  <data name="linkLabelSQLServerInstallInstruction.Size" type="System.Drawing.Size, System.Drawing">
-    <value>207, 13</value>
-  </data>
-  <data name="linkLabelSQLServerInstallInstruction.Text" xml:space="preserve">
-    <value>Инструкции по установке SQL Сервера</value>
   </data>
   <data name="lblPassword.Text" xml:space="preserve">
     <value>Пароль</value>
@@ -151,14 +145,17 @@
   <data name="lblFindDBInfo.Text" xml:space="preserve">
     <value>Программа необходимо знать как подключаться к базе. Пожалуйста, введите настройки.</value>
   </data>
-  <data name="btnSQLServerChangeSettings.Text" xml:space="preserve">
-    <value>Изменить</value>
-  </data>
   <data name="groupBoxSQLSettings.Text" xml:space="preserve">
     <value>Настройки SQL Сервера</value>
   </data>
+  <data name="btnSQLServerChangeSettings.Text" xml:space="preserve">
+    <value>Изменить</value>
+  </data>
+  <data name="groupBoxDatabaseManagement.Text" xml:space="preserve">
+    <value>Управление базами данных</value>
+  </data>
   <data name="lblDetectDatabasesInProgress.Size" type="System.Drawing.Size, System.Drawing">
-    <value>427, 17</value>
+    <value>378, 17</value>
   </data>
   <data name="lblDetectDatabasesInProgress.Text" xml:space="preserve">
     <value>Пожалуйста подождите пока определятся базы данных</value>
@@ -188,13 +185,10 @@
     <value>Сделать основной</value>
   </data>
   <data name="btnCreateNewDatabase.Text" xml:space="preserve">
-    <value>       Создать новую базу данных</value>
+    <value>Создать</value>
   </data>
   <data name="lblDatabases.Text" xml:space="preserve">
     <value>Базы данных</value>
-  </data>
-  <data name="groupBoxDatabaseManagement.Text" xml:space="preserve">
-    <value>Управление базами данных</value>
   </data>
   <data name="btnDatabaseConnection.Text" xml:space="preserve">
     <value>Соединить</value>
@@ -203,7 +197,7 @@
     <value>118, 22</value>
   </data>
   <data name="btnExit.Text" xml:space="preserve">
-    <value>Закрыть Октопус</value>
+    <value>Закрыть</value>
   </data>
   <data name="btnSave.Text" xml:space="preserve">
     <value>Перезапустить</value>
@@ -214,29 +208,29 @@
   <data name="tabPageSQLServerSettings.Text" xml:space="preserve">
     <value>Настройки SQL Сервера</value>
   </data>
+  <data name="tabPageSqlDatabaseSettings.Text" xml:space="preserve">
+    <value>Настройки базы данных SQL </value>
+  </data>
+  <data name="groupBoxSQLDatabaseSettings.Text" xml:space="preserve">
+    <value>Настройки базы данных SQL </value>
+  </data>
   <data name="btnSQLDatabaseSettingsUpgrade.Text" xml:space="preserve">
     <value>Обновление</value>
   </data>
   <data name="btnSQLDatabaseSettingsChangeName.Text" xml:space="preserve">
     <value>Изменить</value>
   </data>
-  <data name="groupBoxSQLDatabaseSettings.Text" xml:space="preserve">
-    <value>Настройки базы данных SQL </value>
+  <data name="groupBoxSQLDatabaseStructure.Text" xml:space="preserve">
+    <value>Структура базы данных SQL</value>
   </data>
   <data name="btnContinue.Text" xml:space="preserve">
     <value>Продолжить</value>
   </data>
   <data name="lblDatabaseSettingsMessage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>419, 17</value>
+    <value>370, 17</value>
   </data>
   <data name="lblDatabaseSettingsMessage.Text" xml:space="preserve">
     <value>Пожалуйста обновите базу данных до текущей версии</value>
-  </data>
-  <data name="groupBoxSQLDatabaseStructure.Text" xml:space="preserve">
-    <value>Структура базы данных SQL</value>
-  </data>
-  <data name="tabPageSqlDatabaseSettings.Text" xml:space="preserve">
-    <value>Настройки базы данных SQL </value>
   </data>
   <data name="openFileDialog.Title" xml:space="preserve">
     <value>Выберите файл бэкапа</value>
