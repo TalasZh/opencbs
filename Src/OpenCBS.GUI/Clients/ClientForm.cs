@@ -3478,8 +3478,10 @@ namespace OpenCBS.GUI.Clients
                 _credit.NbOfInstallments = Convert.ToInt32(nudLoanNbOfInstallments.Value);
                 _credit.InstallmentType = ServicesProvider.GetInstance().GetProductServices().FindInstallmentType((int)comboBoxLoanInstallmentType.Tag);
                 _credit.AmountUnderLoc = ServicesHelper.ConvertStringToDecimal(tbLocAmount.Text, _credit.UseCents);
-                if (_credit.AlignDisbursementDate == null || _credit.AlignDisbursementDate.Date == new DateTime(1, 1, 1))
-                    _credit.AlignDisbursementDate = _credit.CalculateAlignDisbursementDate(_firstInstallmentDate);
+                if (_credit.ContractStatus == OContractStatus.Pending)
+                {
+                    _credit.AlignDisbursementDate = _credit.CalculateAlignDisbursementDate(_credit.FirstInstallmentDate);
+                }
 
                 _credit.AnticipatedTotalRepaymentPenalties = ServicesHelper.ConvertStringToNullableDouble(textBoxLoanAnticipatedTotalFees.Text, true, -1).Value;
                 _credit.AnticipatedPartialRepaymentPenalties = ServicesHelper.ConvertStringToNullableDouble(tbLoanAnticipatedPartialFees.Text, true, -1).Value;

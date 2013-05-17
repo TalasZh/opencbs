@@ -622,7 +622,8 @@ namespace OpenCBS.Manager.Contracts
                         status = @status,
                         loan_purpose = @loanPurpose,
                         comments = @comments,
-                        activity_id = @activityId
+                        activity_id = @activityId,
+                        preferred_first_installment_date = @preferredFirstInstallmentDate
                         WHERE id = @id";
 
             using(OpenCbsCommand c = new OpenCbsCommand(q, pSqlTransac.Connection, pSqlTransac))
@@ -635,7 +636,8 @@ namespace OpenCBS.Manager.Contracts
                 c.AddParam("@id", pLoan.Id);
                 c.AddParam("@loanPurpose", pLoan.LoanPurpose);
                 c.AddParam("@comments", pLoan.Comments);
-                c.AddParam("activityId", pLoan.EconomicActivityId);
+                c.AddParam("@activityId", pLoan.EconomicActivityId);
+                c.AddParam("@preferredFirstInstallmentDate", pLoan.FirstInstallmentDate);
                 c.ExecuteNonQuery();
             }
 
