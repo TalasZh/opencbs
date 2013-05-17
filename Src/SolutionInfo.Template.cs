@@ -1,4 +1,4 @@
-// Copyright © 2013 Open Octopus Ltd.
+﻿// Copyright © 2013 Open Octopus Ltd.
 //
 // This program is free software; you can redistribute it and/or modify
 // it under the terms of the GNU Lesser General Public License as published by
@@ -22,4 +22,4 @@ using System.Reflection;
 [assembly: AssemblyCompany("Open Octopus Ltd.")]
 [assembly: AssemblyProduct("OpenCBS")]
 //[assembly: AssemblyCopyright("Copyright (c) Open Octopus Ltd. 2013")]
-[assembly: AssemblyVersion("13.5.0.0")]
+[assembly: AssemblyVersion("13.5.build.0")]

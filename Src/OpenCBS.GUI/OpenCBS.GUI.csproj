@@ -3733,8 +3733,7 @@
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PreBuildEvent>
-    </PreBuildEvent>
+    <PreBuildEvent>if $(ConfigurationName) == Debug $(SolutionDir)buildinfo.exe $(SolutionDir)SolutionInfo.Template.cs $(SolutionDir)SolutionInfo.cs 0 0</PreBuildEvent>
     <PostBuildEvent>if not exist  "$(TargetDir)Update" md  "$(TargetDir)Update"
 if not exist  "$(TargetDir)Reports" md  "$(TargetDir)Reports"
 if not exist  "$(TargetDir)Reports\Consolidated" md  "$(TargetDir)Reports\Consolidated"
