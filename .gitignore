@@ -10,3 +10,4 @@ _ReSharper.OCTOPUS_2
 *.psd
 icon16.png
 icon32.png
+Src/SolutionInfo.cs
