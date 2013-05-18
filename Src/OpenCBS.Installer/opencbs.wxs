@@ -78,7 +78,7 @@
 	    -->
             <Component Id="OpenCBS.GUI" Guid="CB26138B-9031-2360-D666-DD5F20038ED8">
               <File Id="OpenCBS.GUI.exe" Source="SourceDir\OpenCBS.GUI.exe" />
-              <Shortcut Id="DesktopShortcut" Directory="DesktopFolder" Name="OpenCBS $(var.ProductVersionReduced)" Icon="App.ico" WorkingDirectory="DIR_ROOT_VERSION" Advertise="yes"/>
+              <Shortcut Id="DesktopShortcut" Directory="DesktopFolder" Name="OpenCBS $(var.ProductVersionReduced)" Icon="opencbs.ico" WorkingDirectory="DIR_ROOT_VERSION" Advertise="yes"/>
             </Component>
             <Component Id="Registry" Guid="674968e0-7c4a-4164-aaec-5ddf6922a2dc" Permanent="yes">
                 <RegistryKey Id="OpenCbsKey" Root="HKLM" Key="SOFTWARE\Open Octopus Ltd\OpenCBS\$(var.ProductVersion)" Action="create">
@@ -177,7 +177,7 @@
                 <File Id="DropAndCreateUDF.sql" Source="SourceDir\Update\DropAndCreateUDF.sql" />
               </Component>
               <Component Id="sql_create_database" Guid="6A36DFA4-83F5-FC67-DDB2-0AD22AB03E72">
-                <File Id="CreateDatabase_v4.7.0.sql" Source="SourceDir\Update\CreateDatabase_v4.7.0.sql" />
+                <File Id="CreateDatabase_v13.5.0.0.sql" Source="SourceDir\Update\CreateDatabase_v13.5.0.0.sql" />
               </Component>
               <Component Id="sql_update_database" Guid="BDBEE7A0-23E5-2E7D-BD1B-E58C5CFA0E65">
                 <File Id="Database_Update_v1.1.0_to_v1.1.1.sql" Source="SourceDir\Update\Database_Update_v1.1.0_to_v1.1.1.sql" />
@@ -381,7 +381,7 @@
 
     <CustomAction Id="PreventDowngrading" Error="Newer version already installed." />
 
-    <Icon Id="App.ico" SourceFile="d:\opencbs\Src\OpenCBS.Installer\Bitmaps\App.ico"/>
+    <Icon Id="opencbs.ico" SourceFile="d:\opencbs\Src\OpenCBS.Installer\Bitmaps\opencbs.ico"/>
 
     <InstallExecuteSequence>
       <Custom Action="PreventDowngrading" After="FindRelatedProducts">NEWERPRODUCTFOUND</Custom>
