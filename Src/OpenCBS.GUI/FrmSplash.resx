@@ -199,10 +199,10 @@
     <value />
   </data>
   <data name="pictureBoxAboutOctopus.Location" type="System.Drawing.Point, System.Drawing">
-    <value>128, 19</value>
+    <value>12, 19</value>
   </data>
   <data name="pictureBoxAboutOctopus.Size" type="System.Drawing.Size, System.Drawing">
-    <value>320, 134</value>
+    <value>577, 134</value>
   </data>
   <data name="pictureBoxAboutOctopus.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>

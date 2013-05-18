@@ -53,8 +53,8 @@ namespace OpenCBS.GUI.Login
             // 
             // buttonOK
             // 
-            resources.ApplyResources(this.buttonOK, "buttonOK");
             this.buttonOK.BackColor = System.Drawing.SystemColors.Control;
+            resources.ApplyResources(this.buttonOK, "buttonOK");
             this.buttonOK.Name = "buttonOK";
             this.buttonOK.UseVisualStyleBackColor = false;
             this.buttonOK.Click += new System.EventHandler(this.OnOkButtonClick);
@@ -71,30 +71,30 @@ namespace OpenCBS.GUI.Login
             // 
             // labelUserName
             // 
-            resources.ApplyResources(this.labelUserName, "labelUserName");
             this.labelUserName.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.labelUserName, "labelUserName");
             this.labelUserName.Name = "labelUserName";
             // 
             // labelPassword
             // 
-            resources.ApplyResources(this.labelPassword, "labelPassword");
             this.labelPassword.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.labelPassword, "labelPassword");
             this.labelPassword.Name = "labelPassword";
             // 
             // buttonExit
             // 
-            resources.ApplyResources(this.buttonExit, "buttonExit");
             this.buttonExit.BackColor = System.Drawing.SystemColors.Control;
             this.buttonExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            resources.ApplyResources(this.buttonExit, "buttonExit");
             this.buttonExit.Name = "buttonExit";
             this.buttonExit.UseVisualStyleBackColor = false;
             this.buttonExit.Click += new System.EventHandler(this.OnExitButtonClick);
             // 
             // pictureBox
             // 
-            resources.ApplyResources(this.pictureBox, "pictureBox");
             this.pictureBox.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox.BackgroundImage = global::OpenCBS.GUI.Properties.Resources.LOGO;
+            resources.ApplyResources(this.pictureBox, "pictureBox");
             this.pictureBox.Name = "pictureBox";
             this.pictureBox.TabStop = false;
             this.pictureBox.Click += new System.EventHandler(this.pictureBox_Click);
