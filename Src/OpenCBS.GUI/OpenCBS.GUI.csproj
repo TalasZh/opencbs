@@ -7,7 +7,7 @@
     <ProjectGuid>{098C8842-6538-4B87-8851-BB1B1FA379FE}</ProjectGuid>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ApplicationIcon>App.ico</ApplicationIcon>
+    <ApplicationIcon>opencbs.ico</ApplicationIcon>
     <AssemblyKeyContainerName>
     </AssemblyKeyContainerName>
     <AssemblyName>OpenCBS.GUI</AssemblyName>
@@ -2914,7 +2914,6 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <None Include="App.config" />
-    <Content Include="App.ico" />
     <None Include="dump.bat">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
@@ -2922,6 +2921,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="Properties\app.manifest" />
+    <Content Include="opencbs.ico" />
     <Content Include="Reports\Internal\Collection_Sheet.zip">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -3170,7 +3170,6 @@
     <Content Include="Resources\ky_small.png" />
     <None Include="Resources\languages.png" />
     <None Include="Resources\logo.png" />
-    <None Include="Resources\logo1.png" />
     <None Include="Resources\money.png" />
     <None Include="Resources\package.png" />
     <None Include="Resources\page.png" />

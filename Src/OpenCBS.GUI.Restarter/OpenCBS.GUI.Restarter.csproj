@@ -10,7 +10,8 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>OpenCBS.GUI.Restarter</RootNamespace>
     <AssemblyName>OpenCBS.GUI.Restarter</AssemblyName>
-    <ApplicationIcon>App.ico</ApplicationIcon>
+    <ApplicationIcon>
+    </ApplicationIcon>
     <SignAssembly>false</SignAssembly>
     <AssemblyOriginatorKeyFile>
     </AssemblyOriginatorKeyFile>
@@ -110,7 +111,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App.ico" />
     <None Include="Resources\logo.png" />
     <Content Include="Restarter.ico" />
   </ItemGroup>
@@ -130,7 +130,7 @@
   -->
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties GreenPepperCustomSudArgs="" GreenPepperCustomSud="" GreenPepperConfigRunnerArgs="" GreenPepperConfigRunnerProgram="" GreenPepperConfigRepositories="" GreenPepperConfigProjectName="" GreenPepperConfigSutName="" />
+      <UserProperties GreenPepperConfigSutName="" GreenPepperConfigProjectName="" GreenPepperConfigRepositories="" GreenPepperConfigRunnerProgram="" GreenPepperConfigRunnerArgs="" GreenPepperCustomSud="" GreenPepperCustomSudArgs="" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>
