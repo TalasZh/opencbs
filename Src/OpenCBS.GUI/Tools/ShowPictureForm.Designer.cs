@@ -58,7 +58,6 @@ namespace OpenCBS.GUI.Tools
             // addPhotoButton
             // 
             resources.ApplyResources(this.addPhotoButton, "addPhotoButton");
-            this.addPhotoButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(56)))));
             this.addPhotoButton.Name = "addPhotoButton";
             this.addPhotoButton.UseVisualStyleBackColor = true;
             this.addPhotoButton.Click += new System.EventHandler(this.AddPhotoButtonClick);
@@ -66,7 +65,6 @@ namespace OpenCBS.GUI.Tools
             // deletePhotoButton
             // 
             resources.ApplyResources(this.deletePhotoButton, "deletePhotoButton");
-            this.deletePhotoButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(56)))));
             this.deletePhotoButton.Name = "deletePhotoButton";
             this.deletePhotoButton.UseVisualStyleBackColor = true;
             this.deletePhotoButton.Click += new System.EventHandler(this.deletePhotoButton_Click);
@@ -89,16 +87,15 @@ namespace OpenCBS.GUI.Tools
             // changePhotoButton
             // 
             resources.ApplyResources(this.changePhotoButton, "changePhotoButton");
-            this.changePhotoButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(56)))));
             this.changePhotoButton.Name = "changePhotoButton";
             this.changePhotoButton.UseVisualStyleBackColor = true;
             this.changePhotoButton.Click += new System.EventHandler(this.changePhotoButton_Click);
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Controls.Add(this.labelPersonName);
+            this.panel1.ForeColor = System.Drawing.Color.White;
             this.panel1.Name = "panel1";
             // 
             // labelPersonName
@@ -109,14 +106,14 @@ namespace OpenCBS.GUI.Tools
             // closeButton
             // 
             resources.ApplyResources(this.closeButton, "closeButton");
-            this.closeButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(86)))), ((int)(((byte)(56)))));
+            this.closeButton.BackColor = System.Drawing.SystemColors.Control;
             this.closeButton.Name = "closeButton";
-            this.closeButton.UseVisualStyleBackColor = true;
+            this.closeButton.UseVisualStyleBackColor = false;
             this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.tableLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(81)))), ((int)(((byte)(152)))));
             resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
             this.tableLayoutPanel1.Controls.Add(this.closeButton, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 0);

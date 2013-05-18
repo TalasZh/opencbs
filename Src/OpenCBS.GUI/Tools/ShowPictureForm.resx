@@ -141,9 +141,6 @@
   <data name="addPhotoButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
-  <data name="addPhotoButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
   <data name="addPhotoButton.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 9.75pt</value>
   </data>
@@ -173,9 +170,6 @@
   </data>
   <data name="deletePhotoButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
-  </data>
-  <data name="deletePhotoButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
   </data>
   <data name="deletePhotoButton.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 9.75pt</value>
@@ -239,9 +233,6 @@
   </data>
   <data name="changePhotoButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
-  </data>
-  <data name="changePhotoButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
   </data>
   <data name="changePhotoButton.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 9.75pt</value>
@@ -331,13 +322,13 @@
     <value>True</value>
   </data>
   <data name="labelPersonName.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 15.75pt, style=Italic</value>
+    <value>Arial, 15.75pt</value>
   </data>
   <data name="labelPersonName.Location" type="System.Drawing.Point, System.Drawing">
     <value>213, 3</value>
   </data>
   <data name="labelPersonName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>63, 24</value>
+    <value>61, 24</value>
   </data>
   <data name="labelPersonName.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -386,9 +377,6 @@
   </data>
   <data name="closeButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
-  </data>
-  <data name="closeButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
   </data>
   <data name="closeButton.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 9.75pt</value>
