@@ -236,6 +236,7 @@ namespace OpenCBS.Shared.Settings
         private static string GetRegistryPath()
         {
             var version = GetVersion();
+            var textVersion = string.Format("{0}.{1}.0.0", version.Major, version.Minor);
             return string.Format(RegistryPathTemplate, version);
         }
 
