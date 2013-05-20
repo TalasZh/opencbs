@@ -150,7 +150,6 @@
     <Compile Include="AmountComparer.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="AssemblyGitRevision.cs" />
     <Compile Include="AuditTrailFilter.cs" />
     <Compile Include="Converter.cs" />
     <Compile Include="CSV\CsvFileReader.cs" />
@@ -236,7 +235,7 @@
   </PropertyGroup>
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties GreenPepperConfigRunnerProgram="" GreenPepperCustomSudArgs="" GreenPepperCustomSud="" GreenPepperConfigRunnerArgs="" GreenPepperConfigRepositories="" GreenPepperConfigProjectName="" GreenPepperConfigSutName="" />
+      <UserProperties GreenPepperConfigSutName="" GreenPepperConfigProjectName="" GreenPepperConfigRepositories="" GreenPepperConfigRunnerArgs="" GreenPepperCustomSud="" GreenPepperCustomSudArgs="" GreenPepperConfigRunnerProgram="" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>

@@ -17,6 +17,7 @@
 // Website: http://www.opencbs.com
 // Contact: contact@opencbs.com
 
+using System;
 using System.Reflection;
 
 [assembly: AssemblyCompany("Open Octopus Ltd.")]
@@ -24,3 +25,13 @@ using System.Reflection;
 //[assembly: AssemblyCopyright("Copyright (c) Open Octopus Ltd. 2013")]
 [assembly: AssemblyVersion("13.5.build.0")]
 [assembly: AssemblyGitRevision("revision")]
+
+[AttributeUsage(AttributeTargets.Assembly)]
+public class AssemblyGitRevision : Attribute
+{
+    public string Revision { get; set; }
+    public AssemblyGitRevision(string rev)
+    {
+        Revision = rev;
+    }
+}
