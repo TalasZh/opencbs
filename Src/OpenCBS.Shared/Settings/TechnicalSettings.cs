@@ -48,9 +48,22 @@ namespace OpenCBS.Shared.Settings
         {
             if (_version != null) return _version;
 
-            var assembly = Assembly.GetEntryAssembly();
+            var assembly = Assembly.GetExecutingAssembly();
             var fileVersionInfo = FileVersionInfo.GetVersionInfo(assembly.Location);
             return (_version = new Version(fileVersionInfo.FileVersion));
+        }
+
+        public static string GetDisplayVersion()
+        {
+            var version = GetVersion();
+            var textVersion = string.Format("{0}.{1}.{2}", version.Major, version.Minor, version.Build);
+            var attribute =
+                (AssemblyGitRevision)
+                (Assembly.GetExecutingAssembly().GetCustomAttributes(typeof (AssemblyGitRevision), true).FirstOrDefault());
+            if (attribute == null) return textVersion;
+            var revision = attribute.Revision;
+            revision = revision.Length > 7 ? revision.Substring(0, 7) : revision;
+            return textVersion + "." + revision;
         }
 
         public static string DatabaseName

@@ -21,6 +21,7 @@
 
 using System.ComponentModel;
 using System.Windows.Forms;
+using OpenCBS.Shared.Settings;
 
 namespace OpenCBS.GUI
 {
@@ -30,6 +31,7 @@ namespace OpenCBS.GUI
 	public class AboutForm : Form
     {
         private PictureBox aboutPictureBox;
+        private Label versionLabel;
         private IContainer components;
 
 		public AboutForm()
@@ -62,6 +64,7 @@ namespace OpenCBS.GUI
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AboutForm));
             this.aboutPictureBox = new System.Windows.Forms.PictureBox();
+            this.versionLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.aboutPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -73,20 +76,32 @@ namespace OpenCBS.GUI
             this.aboutPictureBox.Name = "aboutPictureBox";
             this.aboutPictureBox.TabStop = false;
             // 
+            // versionLabel
+            // 
+            resources.ApplyResources(this.versionLabel, "versionLabel");
+            this.versionLabel.Name = "versionLabel";
+            // 
             // AboutForm
             // 
             resources.ApplyResources(this, "$this");
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.versionLabel);
             this.Controls.Add(this.aboutPictureBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "AboutForm";
+            this.Load += new System.EventHandler(this.OnLoad);
             ((System.ComponentModel.ISupportInitialize)(this.aboutPictureBox)).EndInit();
             this.ResumeLayout(false);
 
 		}
 
 		#endregion
+
+        private void OnLoad(object sender, System.EventArgs e)
+        {
+            versionLabel.Text = "version " + TechnicalSettings.GetDisplayVersion();
+        }
 	}
 }
