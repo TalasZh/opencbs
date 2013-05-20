@@ -120,7 +120,11 @@ namespace OpenCBS.Shared.Settings
 
         public static string CurrentVersion
         {
-            get { return GetVersion().ToString(); }
+            get 
+            { 
+                var version = GetVersion();
+                return string.Format("{0}.{1}.0.0", version.Major, version.Minor);
+            }
         }
 
         public static string SoftwareVersion
