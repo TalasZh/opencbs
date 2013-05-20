@@ -23,3 +23,4 @@ using System.Reflection;
 [assembly: AssemblyProduct("OpenCBS")]
 //[assembly: AssemblyCopyright("Copyright (c) Open Octopus Ltd. 2013")]
 [assembly: AssemblyVersion("13.5.build.0")]
+[assembly: AssemblyGitRevision("revision")]
