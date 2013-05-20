@@ -4853,8 +4853,7 @@ END
             DROP PROCEDURE [dbo].[GetTellerBalance]]]></drop>
   </object>
   <object name="GetDashboard" priority="80">
-    <create><![CDATA[
-CREATE PROCEDURE dbo.GetDashboard @date DATETIME, @userId INT
+    <create><![CDATA[CREATE PROCEDURE [dbo].[GetDashboard] @date DATETIME, @userId INT
 AS BEGIN
     DECLARE @users TABLE
     (
@@ -4869,66 +4868,6 @@ AS BEGIN
     
     ;
     
-    -- Repayments
-    WITH actions AS
-    (
-        SELECT
-            'Repayment' type,
-            ISNULL(ce.parent_id, ce.id) parent_id,
-            ce.contract_id,
-            ce.user_id,
-            ce.event_date,
-            SUM(re.principal + re.interests + re.commissions + re.penalties) amount
-        FROM dbo.ContractEvents ce
-        INNER JOIN dbo.RepaymentEvents re 
-            ON re.id = ce.id
-        WHERE
-            ce.is_deleted = 0
-            AND CAST(ce.event_date AS DATE) = CAST(@date AS DATE)
-        GROUP BY
-            ce.contract_id,
-            ce.user_id,
-            ISNULL(ce.parent_id, ce.id),
-            ce.event_date
-            
-        UNION ALL
-        
-        SELECT
-            'Disbursement' type,
-            ISNULL(ce.parent_id, ce.id),
-            ce.contract_id,
-            ce.user_id,
-            ce.event_date,
-            de.amount
-        FROM dbo.ContractEvents ce
-        INNER JOIN dbo.LoanDisbursmentEvents de
-            ON de.id = ce.id
-        WHERE
-            ce.is_deleted = 0
-            AND CAST(ce.event_date AS DATE) = CAST(@date AS DATE)
-    )
-
-    SELECT
-        a.type,
-        a.event_date,
-        a.amount,
-        c.contract_code,
-        u.first_name + ' ' + u.last_name loan_officer,
-        cl.name client_name        
-    FROM actions a
-    LEFT JOIN dbo.Users u
-        ON u.id = a.user_id
-    LEFT JOIN dbo.Contracts c
-        ON c.id = a.contract_id
-    LEFT JOIN dbo.Projects j
-        ON j.id = c.project_id
-    LEFT JOIN dbo.Clients cl
-        ON cl.id = j.tiers_id
-    WHERE
-        a.user_id IN (SELECT id FROM @users)
-    ORDER BY
-        event_date, parent_id
-
     DECLARE @activeLoans TABLE
     (
         id INT,
@@ -4969,7 +4908,6 @@ AS BEGIN
     FROM @activeLoans
     WHERE
         late_days BETWEEN 31 AND 60
-
     UNION ALL
     
     SELECT
@@ -4989,7 +4927,6 @@ AS BEGIN
     FROM @activeLoans
     WHERE
         late_days BETWEEN 91 AND 180
-
     UNION ALL
     
     SELECT
@@ -4999,7 +4936,6 @@ AS BEGIN
     FROM @activeLoans
     WHERE
         late_days BETWEEN 181 AND 365
-
     UNION ALL
     
     SELECT
@@ -5017,7 +4953,6 @@ AS BEGIN
         ISNULL(SUM(olb), 0) amount,
         ISNULL(COUNT(id), 0) quantity
     FROM @activeLoans
-
     --SELECT
     --    ISNULL(SUM(al.olb), 0) olb,
     --    ISNULL(SUM(CASE WHEN late_days BETWEEN 1 AND 30 THEN olb ELSE 0 END), 0) par1_30,
@@ -5051,7 +4986,6 @@ AS BEGIN
         FROM dates
         WHERE date + 1 <= @endDate
     )
-
     SELECT
         d.date,
         ISNULL(de.number, 0) number_disbursed,
@@ -5089,7 +5023,8 @@ AS BEGIN
         GROUP BY
             CAST(ce.event_date AS DATE)
     ) re ON re.date = d.date
-END]]></create>
+END
+]]></create>
     <drop><![CDATA[IF  EXISTS (
                 SELECT * 
                 FROM sys.objects 
