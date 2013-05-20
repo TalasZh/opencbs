@@ -43,17 +43,10 @@ namespace OpenCBS.GUI
             this.portfolioPanel = new System.Windows.Forms.Panel();
             this.parPanel = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.activityPanel = new System.Windows.Forms.Panel();
-            this.activityListView = new BrightIdeasSoftware.ObjectListView();
-            this.activityPefrormedAtColumn = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
-            this.activityAction = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
-            this.activityLoanOfficerColumn = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
-            this.activtyContractCodeColumn = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
-            this.activityAmountColumn = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
-            this.activityClientColumn = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
-            this.activityStreamLabel = new System.Windows.Forms.Label();
             this.topBarPanel = new System.Windows.Forms.TableLayoutPanel();
             this.refreshLinkLabel = new System.Windows.Forms.LinkLabel();
+            this.smallLogoPictureBox = new System.Windows.Forms.PictureBox();
+            this.aboutLabel = new System.Windows.Forms.Label();
             this.quickLinksPanel = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.operateLabel = new System.Windows.Forms.Label();
@@ -79,9 +72,8 @@ namespace OpenCBS.GUI
             this.riskTableLayoutPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.parListView)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
-            this.activityPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.activityListView)).BeginInit();
             this.topBarPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.smallLogoPictureBox)).BeginInit();
             this.quickLinksPanel.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -101,8 +93,6 @@ namespace OpenCBS.GUI
             this.infoPanel.Controls.Add(this.label2);
             this.infoPanel.Controls.Add(this.riskTableLayoutPanel);
             this.infoPanel.Controls.Add(this.label1);
-            this.infoPanel.Controls.Add(this.activityPanel);
-            this.infoPanel.Controls.Add(this.activityStreamLabel);
             this.infoPanel.Controls.Add(this.topBarPanel);
             this.infoPanel.Name = "infoPanel";
             // 
@@ -201,82 +191,12 @@ namespace OpenCBS.GUI
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
             this.label1.Name = "label1";
             // 
-            // activityPanel
-            // 
-            resources.ApplyResources(this.activityPanel, "activityPanel");
-            this.activityPanel.Controls.Add(this.activityListView);
-            this.activityPanel.Name = "activityPanel";
-            // 
-            // activityListView
-            // 
-            resources.ApplyResources(this.activityListView, "activityListView");
-            this.activityListView.AllColumns.Add(this.activityPefrormedAtColumn);
-            this.activityListView.AllColumns.Add(this.activityAction);
-            this.activityListView.AllColumns.Add(this.activityLoanOfficerColumn);
-            this.activityListView.AllColumns.Add(this.activtyContractCodeColumn);
-            this.activityListView.AllColumns.Add(this.activityAmountColumn);
-            this.activityListView.AllColumns.Add(this.activityClientColumn);
-            this.activityListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.activityPefrormedAtColumn,
-            this.activityAction,
-            this.activityLoanOfficerColumn,
-            this.activtyContractCodeColumn,
-            this.activityAmountColumn,
-            this.activityClientColumn});
-            this.activityListView.FullRowSelect = true;
-            this.activityListView.GridLines = true;
-            this.activityListView.HasCollapsibleGroups = false;
-            this.activityListView.Name = "activityListView";
-            this.activityListView.OverlayText.Text = resources.GetString("resource.Text1");
-            this.activityListView.ShowGroups = false;
-            this.activityListView.UseCompatibleStateImageBehavior = false;
-            this.activityListView.View = System.Windows.Forms.View.Details;
-            // 
-            // activityPefrormedAtColumn
-            // 
-            this.activityPefrormedAtColumn.AspectName = "PerformedAt";
-            resources.ApplyResources(this.activityPefrormedAtColumn, "activityPefrormedAtColumn");
-            this.activityPefrormedAtColumn.IsEditable = false;
-            // 
-            // activityAction
-            // 
-            this.activityAction.AspectName = "Type";
-            resources.ApplyResources(this.activityAction, "activityAction");
-            // 
-            // activityLoanOfficerColumn
-            // 
-            this.activityLoanOfficerColumn.AspectName = "LoanOfficer";
-            resources.ApplyResources(this.activityLoanOfficerColumn, "activityLoanOfficerColumn");
-            this.activityLoanOfficerColumn.IsEditable = false;
-            // 
-            // activtyContractCodeColumn
-            // 
-            this.activtyContractCodeColumn.AspectName = "ContractCode";
-            resources.ApplyResources(this.activtyContractCodeColumn, "activtyContractCodeColumn");
-            this.activtyContractCodeColumn.IsEditable = false;
-            // 
-            // activityAmountColumn
-            // 
-            this.activityAmountColumn.AspectName = "Amount";
-            resources.ApplyResources(this.activityAmountColumn, "activityAmountColumn");
-            this.activityAmountColumn.HeaderTextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.activityAmountColumn.IsEditable = false;
-            // 
-            // activityClientColumn
-            // 
-            this.activityClientColumn.AspectName = "ClientName";
-            resources.ApplyResources(this.activityClientColumn, "activityClientColumn");
-            // 
-            // activityStreamLabel
-            // 
-            resources.ApplyResources(this.activityStreamLabel, "activityStreamLabel");
-            this.activityStreamLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.activityStreamLabel.Name = "activityStreamLabel";
-            // 
             // topBarPanel
             // 
             resources.ApplyResources(this.topBarPanel, "topBarPanel");
-            this.topBarPanel.Controls.Add(this.refreshLinkLabel, 1, 0);
+            this.topBarPanel.Controls.Add(this.refreshLinkLabel, 2, 0);
+            this.topBarPanel.Controls.Add(this.smallLogoPictureBox, 0, 0);
+            this.topBarPanel.Controls.Add(this.aboutLabel, 1, 0);
             this.topBarPanel.Name = "topBarPanel";
             // 
             // refreshLinkLabel
@@ -287,6 +207,18 @@ namespace OpenCBS.GUI
             this.refreshLinkLabel.Name = "refreshLinkLabel";
             this.refreshLinkLabel.TabStop = true;
             this.refreshLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.OnRefreshLinkLabelClick);
+            // 
+            // smallLogoPictureBox
+            // 
+            resources.ApplyResources(this.smallLogoPictureBox, "smallLogoPictureBox");
+            this.smallLogoPictureBox.Image = global::OpenCBS.GUI.Properties.Resources.SmallLogo;
+            this.smallLogoPictureBox.Name = "smallLogoPictureBox";
+            this.smallLogoPictureBox.TabStop = false;
+            // 
+            // aboutLabel
+            // 
+            resources.ApplyResources(this.aboutLabel, "aboutLabel");
+            this.aboutLabel.Name = "aboutLabel";
             // 
             // quickLinksPanel
             // 
@@ -469,10 +401,9 @@ namespace OpenCBS.GUI
             this.riskTableLayoutPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.parListView)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
-            this.activityPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.activityListView)).EndInit();
             this.topBarPanel.ResumeLayout(false);
             this.topBarPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.smallLogoPictureBox)).EndInit();
             this.quickLinksPanel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
@@ -489,15 +420,6 @@ namespace OpenCBS.GUI
         private System.Windows.Forms.LinkLabel newNonSolidairtyGroupLinkLabel;
         private System.Windows.Forms.LinkLabel newSolidarityGroupLinkLabel;
         private System.Windows.Forms.LinkLabel newCorporateClientLinkLabel;
-        private System.Windows.Forms.Label activityStreamLabel;
-        private BrightIdeasSoftware.ObjectListView activityListView;
-        private BrightIdeasSoftware.OLVColumn activtyContractCodeColumn;
-        private BrightIdeasSoftware.OLVColumn activityLoanOfficerColumn;
-        private BrightIdeasSoftware.OLVColumn activityPefrormedAtColumn;
-        private BrightIdeasSoftware.OLVColumn activityAmountColumn;
-        private System.Windows.Forms.Panel activityPanel;
-        private BrightIdeasSoftware.OLVColumn activityAction;
-        private BrightIdeasSoftware.OLVColumn activityClientColumn;
         private System.Windows.Forms.TableLayoutPanel riskTableLayoutPanel;
         private BrightIdeasSoftware.ObjectListView parListView;
         private BrightIdeasSoftware.OLVColumn parNameColumn;
@@ -526,5 +448,7 @@ namespace OpenCBS.GUI
         private System.Windows.Forms.LinkLabel reportsLink;
         private System.Windows.Forms.TableLayoutPanel topBarPanel;
         private System.Windows.Forms.LinkLabel refreshLinkLabel;
+        private System.Windows.Forms.PictureBox smallLogoPictureBox;
+        private System.Windows.Forms.Label aboutLabel;
     }
 }

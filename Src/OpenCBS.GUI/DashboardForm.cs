@@ -55,19 +55,6 @@ namespace OpenCBS.GUI
                 NumberDecimalSeparator = ",",
             };
 
-            activityPefrormedAtColumn.AspectToStringConverter = value =>
-            {
-                var date = (DateTime)value;
-                return date.ToString("dd.MM.yyyy");
-            };
-
-            activityAmountColumn.AspectToStringConverter =
-            parAmountColumn.AspectToStringConverter = value =>
-            {
-                var amount = (decimal)value;
-                return amount.ToString("N2", numberFormatInfo);
-            };
-
             parNameColumn.AspectToStringConverter = value =>
             {
                 var name = (string) value;
@@ -297,12 +284,6 @@ namespace OpenCBS.GUI
             OpenClientForm(OClientTypes.Corporate);
         }
 
-        private void RefreshActivityStream(Dashboard dashboard)
-        {
-            activityListView.SetObjects(dashboard.Actions);
-            activityStreamLabel.Text = string.Format(GetString("ActivityStream"), dashboard.Actions.Count);
-        }
-
         private void RefreshParTable(Dashboard dashboard)
         {
             parListView.SetObjects(dashboard.PortfolioLines);
@@ -313,7 +294,6 @@ namespace OpenCBS.GUI
             var us = ServicesProvider.GetInstance().GetUserServices();
             var dashboard = us.GetDashboard();
 
-            RefreshActivityStream(dashboard);
             RefreshPortfolioPieChart(dashboard);
             RefreshParPieChart(dashboard);
             RefreshParTable(dashboard);

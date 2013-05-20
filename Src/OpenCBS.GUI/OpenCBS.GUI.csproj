@@ -3183,6 +3183,7 @@
     <None Include="Resources\ru.png" />
     <None Include="Resources\pt.png" />
     <None Include="Resources\report.png" />
+    <None Include="Resources\SmallLogo.png" />
     <Content Include="Resources\Spanish Flag.png" />
     <None Include="Resources\SuperAdmin_Background.png" />
     <None Include="Resources\SuperAdmin_Background_180.png" />
@@ -3779,7 +3780,7 @@ xcopy "$(ProjectDir)..\..\Lib\*.dll" "C:\OpenCbsLibs" /s /y</PostBuildEvent>
   </PropertyGroup>
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties GreenPepperConfigRunnerProgram="" GreenPepperCustomSudArgs="" GreenPepperCustomSud="" GreenPepperConfigRunnerArgs="" GreenPepperConfigRepositories="" GreenPepperConfigProjectName="" GreenPepperConfigSutName="" />
+      <UserProperties GreenPepperConfigSutName="" GreenPepperConfigProjectName="" GreenPepperConfigRepositories="" GreenPepperConfigRunnerArgs="" GreenPepperCustomSud="" GreenPepperCustomSudArgs="" GreenPepperConfigRunnerProgram="" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>

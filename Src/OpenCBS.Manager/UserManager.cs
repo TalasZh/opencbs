@@ -475,21 +475,6 @@ namespace OpenCBS.Manager
             {
                 while (reader.Read())
                 {
-                    var action = new Action
-                    {
-                        Type = reader.GetString("type"),
-                        Amount = reader.GetDecimal("amount"),
-                        ContractCode = reader.GetString("contract_code"),
-                        LoanOfficer = reader.GetString("loan_officer"),
-                        PerformedAt = reader.GetDateTime("event_date"),
-                        ClientName = reader.GetString("client_name"),
-                    };
-                    dashboard.Actions.Add(action);
-                }
-
-                reader.NextResult();
-                while (reader.Read())
-                {
                     var portfolioLine = new PortfolioLine
                     {
                         Name = reader.GetString("name"),

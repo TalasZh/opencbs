@@ -253,6 +253,16 @@ namespace OpenCBS.GUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap SmallLogo {
+            get {
+                object obj = ResourceManager.GetObject("SmallLogo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap user_gray {
             get {
                 object obj = ResourceManager.GetObject("user_gray", resourceCulture);
