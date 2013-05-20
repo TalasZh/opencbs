@@ -132,36 +132,21 @@
   <data name="label1.Text" xml:space="preserve">
     <value>РИСК</value>
   </data>
-  <data name="activityPefrormedAtColumn.Text" xml:space="preserve">
-    <value>Дата</value>
-  </data>
-  <data name="activityAction.Text" xml:space="preserve">
-    <value>Событие</value>
-  </data>
-  <data name="activityLoanOfficerColumn.Text" xml:space="preserve">
-    <value>Кредитный специалист</value>
-  </data>
-  <data name="activtyContractCodeColumn.Text" xml:space="preserve">
-    <value>Код контракта</value>
-  </data>
-  <data name="activityAmountColumn.Text" xml:space="preserve">
-    <value>Сумма</value>
-  </data>
-  <data name="activityClientColumn.Text" xml:space="preserve">
-    <value>Клиент</value>
-  </data>
-  <data name="activityStreamLabel.Text" xml:space="preserve">
-    <value>ЛЕНТА СОБЫТИЙ</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="refreshLinkLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>680, 0</value>
+    <value>680, 5</value>
   </data>
   <data name="refreshLinkLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>61, 19</value>
   </data>
   <data name="refreshLinkLabel.Text" xml:space="preserve">
     <value>Обновить</value>
+  </data>
+  <data name="aboutLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>209, 106</value>
+  </data>
+  <data name="aboutLabel.Text" xml:space="preserve">
+    <value>Добро пожаловать. Внизу отражена краткая статистика по вашему портфелю. Слева - быстрый доступ к самым важным операциям.</value>
   </data>
   <data name="operateLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 14</value>
