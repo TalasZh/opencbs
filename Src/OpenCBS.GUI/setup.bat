@@ -1,1 +1,1 @@
-Octopus.GUI.exe -setup
+OpenCBS.GUI.exe -setup
