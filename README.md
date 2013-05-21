@@ -14,3 +14,11 @@ The main features are:
 - Report generation
 
 The mid- and long-term vision is to convert the program into a platform through a service-oriented architecture. It means minimizing the core, improving the extensibility framework, and making it frictionless for third-party developers to build upon.
+
+Here is a list of big themes that we want implemented in the coming year:
+
+- [API](issues/10)
+- [WPF](isuses/11)
+- [Localization](issues/13)
+- [Specflow](issues/18)
+- [MS Office](issues/5)
