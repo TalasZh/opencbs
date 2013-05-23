@@ -393,10 +393,10 @@
       <Custom Action="PreventDowngrading" After="FindRelatedProducts">NEWERPRODUCTFOUND</Custom>
     </InstallUISequence>
 
-    <WixVariable Id="Wix" Value="d:\opencbs\Src\OpenCBS.Installer\License\LGPL3.rtf"/>
-    <WixVariable Id="WixUILicenseRtf" Value="d:\opencbs\Src\OpenCBS.Installer\License\LGPL3.rtf"/>
-    <WixVariable Id="WixUIDialogBmp" Value="d:\opencbs\Src\OpenCBS.Installer\Bitmaps\background.bmp"/>
-    <WixVariable Id="WixUIBannerBmp" Value="d:\opencbs\Src\OpenCBS.Installer\Bitmaps\banner.bmp"/>
+    <WixVariable Id="Wix" Value="d:\build\Src\OpenCBS.Installer\License\LGPL3.rtf"/>
+    <WixVariable Id="WixUILicenseRtf" Value="d:\build\Src\OpenCBS.Installer\License\LGPL3.rtf"/>
+    <WixVariable Id="WixUIDialogBmp" Value="d:\build\Src\OpenCBS.Installer\Bitmaps\background.bmp"/>
+    <WixVariable Id="WixUIBannerBmp" Value="d:\build\Src\OpenCBS.Installer\Bitmaps\banner.bmp"/>
     <Property Id="WIXUI_INSTALLDIR" Value="DIR_ROOT_VERSION" ></Property>
     <UIRef Id="WixUI_InstallDir"/>
   </Product>
