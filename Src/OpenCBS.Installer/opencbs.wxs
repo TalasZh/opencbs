@@ -382,7 +382,7 @@
 
     <CustomAction Id="PreventDowngrading" Error="Newer version already installed." />
 
-    <Icon Id="opencbs.ico" SourceFile="d:\opencbs\Src\OpenCBS.Installer\Bitmaps\opencbs.ico"/>
+    <Icon Id="opencbs.ico" SourceFile="d:\build\Src\OpenCBS.Installer\Bitmaps\opencbs.ico"/>
 
     <InstallExecuteSequence>
       <Custom Action="PreventDowngrading" After="FindRelatedProducts">NEWERPRODUCTFOUND</Custom>
