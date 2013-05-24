@@ -13,7 +13,7 @@ using TechTalk.SpecFlow;
 namespace OpenCBS.Specflow
 {
     [Binding]
-    public class SimpleFixedInstallmentScheduleSteps
+    public class ScheduleSteps
     {
         private static readonly ApplicationSettings Settings = ApplicationSettings.GetInstance("");
         private static readonly NonWorkingDateSingleton NonWorkingDays = NonWorkingDateSingleton.GetInstance("");
@@ -119,6 +119,15 @@ namespace OpenCBS.Specflow
 
                 var expectedDate = DateTime.Parse(row["Expected Date"], russianCultureInfo, DateTimeStyles.AssumeLocal);
                 Assert.That(installment.ExpectedDate, Is.EqualTo(expectedDate));
+
+                var expectedInterest = (OCurrency) Convert.ToDecimal(row["Expected Interest"], russianCultureInfo);
+                Assert.That(installment.InterestsRepayment, Is.EqualTo(expectedInterest));
+
+                var expectedPrincipal = (OCurrency) Convert.ToDecimal(row["Expected Principal"], russianCultureInfo);
+                Assert.That(installment.CapitalRepayment, Is.EqualTo(expectedPrincipal));
+
+                var olb = (OCurrency) Convert.ToDecimal(row["Olb"], russianCultureInfo);
+                Assert.That(installment.OLB, Is.EqualTo(olb));
 
                 i++;
             }
