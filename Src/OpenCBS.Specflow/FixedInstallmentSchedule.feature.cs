@@ -19,8 +19,8 @@ namespace OpenCBS.Specflow
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "1.9.0.77")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("FixedInstallmentSchedule")]
-    public partial class FixedInstallmentScheduleFeature
+    [NUnit.Framework.DescriptionAttribute("Simple fixed installment schedule")]
+    public partial class SimpleFixedInstallmentScheduleFeature
     {
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
@@ -32,8 +32,7 @@ namespace OpenCBS.Specflow
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "FixedInstallmentSchedule", "In order to avoid silly mistakes\r\nAs a math idiot\r\nI want to be told the sum of t" +
-                    "wo numbers", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Simple fixed installment schedule", "", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -66,22 +65,87 @@ namespace OpenCBS.Specflow
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Add two numbers")]
-        [NUnit.Framework.CategoryAttribute("mytag")]
-        public virtual void AddTwoNumbers()
+        [NUnit.Framework.DescriptionAttribute("Generate fixed installment schedule")]
+        public virtual void GenerateFixedInstallmentSchedule()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add two numbers", new string[] {
-                        "mytag"});
-#line 7
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Generate fixed installment schedule", ((string[])(null)));
+#line 3
 this.ScenarioSetup(scenarioInfo);
-#line 8
- testRunner.Given("I have entered 50 into the calculator", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 9
- testRunner.And("I have entered 70 into the calculator", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 10
- testRunner.When("I press add", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 11
- testRunner.Then("the result should be 120 on the screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 4
+    testRunner.Given("the \"IL Monthly Repayment - Declining rate\" loan product", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+            TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Name",
+                        "Value"});
+            table1.AddRow(new string[] {
+                        "Installments",
+                        "6"});
+            table1.AddRow(new string[] {
+                        "Amount",
+                        "1000"});
+            table1.AddRow(new string[] {
+                        "Interest rate",
+                        "0.03"});
+            table1.AddRow(new string[] {
+                        "Grace period",
+                        "0"});
+            table1.AddRow(new string[] {
+                        "Start date",
+                        "01.01.2013"});
+#line 5
+    testRunner.When("I create a loan with the attributes", ((string)(null)), table1, "When ");
+#line hidden
+            TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Number",
+                        "Expected Date",
+                        "Expected Interest",
+                        "Expected Principal",
+                        "Expected Total",
+                        "Olb"});
+            table2.AddRow(new string[] {
+                        "1",
+                        "01.02.2013",
+                        "30",
+                        "155",
+                        "185",
+                        "1000"});
+            table2.AddRow(new string[] {
+                        "2",
+                        "01.03.2013",
+                        "25",
+                        "160",
+                        "185",
+                        "845"});
+            table2.AddRow(new string[] {
+                        "3",
+                        "01.04.2013",
+                        "21",
+                        "163",
+                        "184",
+                        "685"});
+            table2.AddRow(new string[] {
+                        "4",
+                        "01.05.2013",
+                        "16",
+                        "169",
+                        "185",
+                        "522"});
+            table2.AddRow(new string[] {
+                        "5",
+                        "03.06.2013",
+                        "11",
+                        "173",
+                        "184",
+                        "353"});
+            table2.AddRow(new string[] {
+                        "6",
+                        "01.07.2013",
+                        "05",
+                        "180",
+                        "185",
+                        "180"});
+#line 12
+    testRunner.Then("the schedule is", ((string)(null)), table2, "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
