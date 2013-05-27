@@ -3762,22 +3762,13 @@ xcopy "$(SolutionDir)..\Sql\DropAndCreateFunctions.sql" "$(TargetDir)Update" /y
 xcopy "$(SolutionDir)..\Sql\DropAndCreateUDF.sql" "$(TargetDir)Update" /y
 xcopy "$(SolutionDir)..\Sql\AccountingRules.sql" "$(TargetDir)Update" /y
 xcopy "$(SolutionDir)..\Sql\Objects.xml" "$(TargetDir)Update" /y
+
 mkdir "C:\OpenCbsLibs"
-xcopy "$(TargetDir)OpenCBS.CoreDomain.dll" "C:\OpenCbsLibs" /s /y
-xcopy "$(TargetDir)OpenCBS.Enums.dll" "C:\OpenCbsLibs" /s /y
-xcopy "$(TargetDir)OpenCBS.GUI.exe" "C:\OpenCbsLibs" /s /y
-xcopy "$(TargetDir)OpenCBS.Services.dll" "C:\OpenCbsLibs" /s /y
-xcopy "$(TargetDir)OpenCBS.Shared.dll" "C:\OpenCbsLibs" /s /y
-xcopy "$(TargetDir)OpenCBS.Extensions.dll" "C:\OpenCbsLibs" /s /y
-xcopy "$(TargetDir)OpenCBS.ExceptionsHandler.dll" "C:\OpenCbsLibs" /s /y
-xcopy "$(TargetDir)OpenCBS.Manager.dll" "C:\OpenCbsLibs" /s /y
-xcopy "$(TargetDir)OpenCBS.DatabaseConnection.dll" "C:\OpenCbsLibs" /s /y
-xcopy "$(TargetDir)OpenCBS.MultiLanguageRessources.dll" "C:\OpenCbsLibs" /s /y
-xcopy "$(ProjectDir)..\..\Lib\*.dll" "C:\OpenCbsLibs" /s /y</PostBuildEvent>
+xcopy "$(TargetDir)OpenCBS.*.dll" "C:\OpenCbsLibs" /s /y</PostBuildEvent>
   </PropertyGroup>
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties GreenPepperConfigRunnerProgram="" GreenPepperCustomSudArgs="" GreenPepperCustomSud="" GreenPepperConfigRunnerArgs="" GreenPepperConfigRepositories="" GreenPepperConfigProjectName="" GreenPepperConfigSutName="" />
+      <UserProperties GreenPepperConfigSutName="" GreenPepperConfigProjectName="" GreenPepperConfigRepositories="" GreenPepperConfigRunnerArgs="" GreenPepperCustomSud="" GreenPepperCustomSudArgs="" GreenPepperConfigRunnerProgram="" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>
