@@ -34,8 +34,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		SolutionInfo.cs = SolutionInfo.cs
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenCBS.Specflow", "OpenCBS.Specflow\OpenCBS.Specflow.csproj", "{A030BDC1-FCF1-4E99-B4CE-C055EBE80155}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -100,16 +98,12 @@ Global
 		{90B5218E-10F0-4123-80E3-C4E65D6CF209}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90B5218E-10F0-4123-80E3-C4E65D6CF209}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90B5218E-10F0-4123-80E3-C4E65D6CF209}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A030BDC1-FCF1-4E99-B4CE-C055EBE80155}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A030BDC1-FCF1-4E99-B4CE-C055EBE80155}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A030BDC1-FCF1-4E99-B4CE-C055EBE80155}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A030BDC1-FCF1-4E99-B4CE-C055EBE80155}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		GreenPepperConfigServerUrl = http://wiki.octopusnetwork.org
 		GreenPepperConfigXmlRpcHandler = greenpepper1
+		GreenPepperConfigServerUrl = http://wiki.octopusnetwork.org
 	EndGlobalSection
 EndGlobal
